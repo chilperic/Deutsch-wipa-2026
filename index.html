@@ -48,7 +48,6 @@ input:focus,select:focus{border-color:var(--gold2)}
 .word-area{text-align:center;padding:24px 12px 20px}
 .word-main{font-family:var(--serif);font-style:italic;font-size:clamp(38px,7vw,62px);color:var(--text);line-height:1.1}
 .word-note{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;letter-spacing:.1em;text-transform:uppercase}
-.phase-lbl{font-family:var(--mono);font-size:10px;color:var(--gold2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;text-align:center}
 .opt-list{display:flex;flex-direction:column;gap:8px;padding:0 4px}
 .opt{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;text-align:left;width:100%;font-family:var(--body);font-size:17px;color:var(--text)}
 .opt:hover:not(:disabled):not(.correct):not(.wrong){background:var(--s3);border-color:var(--gold2)}
@@ -236,12 +235,18 @@ hr{border:none;border-top:1px solid var(--bdr)}
 <input type="file" id="file-input" accept=".json" onchange="importFile(event)">
 
 <script>
+// FORCE CACHE RESET to clear corrupted states from old app structures
+if (localStorage.getItem('vok_v4') !== 'true') {
+  localStorage.clear();
+  localStorage.setItem('vok_v4', 'true');
+}
+
 const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili','Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'];
 const RTL = new Set(['Arabic','Persian']);
 const ARTICLES = ['der','die','das'];
 
 function extLinks(word) {
-  const base = encodeURIComponent(word.replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim());
+  const base = encodeURIComponent(String(word||'').replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim());
   return [
     {n:'Duden', u:`https://www.duden.de/suchen/dudenonline/${base}`},
     {n:'DWDS', u:`https://www.dwds.de/?q=${base}`},
@@ -251,7 +256,7 @@ function extLinks(word) {
   ];
 }
 
-// BAKE PRE-TRANSLATED VOCABULARY DATA DIRECTLY HERE TO RUN INSTANTLY WITHOUT API KEYS
+// BAKE PRE-TRANSLATED VOCABULARY DATA
 let W = {
   meta: { "targetLanguages": ["English","French","Arabic","Persian","Spanish","Ukrainian","Russian","Italian","Swahili"], "explanationLanguage": "English" },
   words: [
@@ -261,9 +266,7 @@ let W = {
       "notes": "Noun · §1",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "trade fair / exhibition", "French": "foire / salon de commerce", "Arabic": "معرض تجاري", "Persian": "نمایشگاه بازرگانی", "Spanish": "feria comercial", "Ukrainian": "торгова виставка", "Russian": "торговая выставка", "Italian": "fiera commerciale", "Swahili": "maonyesho ya biashara"
-        },
+        "translations": { "English": "trade fair / exhibition", "French": "foire / salon de commerce", "Arabic": "معرض تجاري", "Persian": "نمایشگاه بازرگانی", "Spanish": "feria comercial", "Ukrainian": "торгова виставка", "Russian": "торговая выставка", "Italian": "fiera commerciale", "Swahili": "maonyesho ya biashara" },
         "explanation": "die Messe, Plural: die Messen. A large exhibition, particularly for industry, trade, or business.",
         "example_de": "Wir besuchen nächste Woche die Frankfurter Buchmesse.",
         "example_translated": "We are visiting the Frankfurt Book Fair next week."
@@ -275,9 +278,7 @@ let W = {
       "notes": "Noun · §1",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "breakthrough", "French": "percée / avancée", "Arabic": "انطلاقة / نجاح باهر", "Persian": "پیشرفت غیرمنتظره", "Spanish": "gran avance / logro", "Ukrainian": "прорив", "Russian": "прорыв / крупное достижение", "Italian": "svolta / passo avanti", "Swahili": "hatua kubwa ya mafanikio"
-        },
+        "translations": { "English": "breakthrough", "French": "percée / avancée", "Arabic": "انطلاقة / نجاح باهر", "Persian": "پیشرفت غیرمنتظره", "Spanish": "gran avance / logro", "Ukrainian": "прорив", "Russian": "прорыв / крупное достижение", "Italian": "svolta / passo avanti", "Swahili": "hatua kubwa ya mafanikio" },
         "explanation": "der Durchbruch, Plural: die Durchbrüche. Means a sudden, major advance or success.",
         "example_de": "Dem Forschungsteam gelang ein medizinischer Durchbruch.",
         "example_translated": "The research team achieved a medical breakthrough."
@@ -289,9 +290,7 @@ let W = {
       "notes": "Noun · §1",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "unique selling proposition (USP)", "French": "argument clé de vente", "Arabic": "ميزة تنافسية فريدة", "Persian": "ویژگی منحصر به فرد فروش", "Spanish": "propuesta única de venta", "Ukrainian": "унікальна торгова пропозиція", "Russian": "уникальное торговое предложение", "Italian": "proposta unica di vendita", "Swahili": "sifa ya kipekee ya biashara"
-        },
+        "translations": { "English": "unique selling proposition (USP)", "French": "argument clé de vente", "Arabic": "ميزة تنافسية فريدة", "Persian": "ویژگی منحصر به فرد فروش", "Spanish": "propuesta única de venta", "Ukrainian": "унікальна торгова пропозиція", "Russian": "уникальное торговое предложение", "Italian": "proposta unica di vendita", "Swahili": "sifa ya kipekee ya biashara" },
         "explanation": "das Alleinstellungsmerkmal, Plural: die Alleinstellungsmerkmale. The distinct feature making a product stand out.",
         "example_de": "Gute Qualität allein ist heute kein Alleinstellungsmerkmal mehr.",
         "example_translated": "Good quality alone is no longer a unique selling proposition today."
@@ -303,9 +302,7 @@ let W = {
       "notes": "Verb · §2",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "to negotiate", "French": "négocier", "Arabic": "تفاوض", "Persian": "مذاکره کردن", "Spanish": "negociar", "Ukrainian": "вести переговори", "Russian": "вести переговоры", "Italian": "negoziare / trattare", "Swahili": "kujadili"
-        },
+        "translations": { "English": "to negotiate", "French": "négocier", "Arabic": "تفاوض", "Persian": "مذاکره کردن", "Spanish": "negociar", "Ukrainian": "вести переговори", "Russian": "вести переговоры", "Italian": "negoziare / trattare", "Swahili": "kujadili" },
         "explanation": "verhandeln (weak verb, regular). Requires 'mit' + Dativ or 'über' + Akkusativ.",
         "example_de": "Die Gewerkschaft verhandelt mit den Arbeitgebern über höhere Löhne.",
         "example_translated": "The union is negotiating with employers for higher wages."
@@ -317,9 +314,7 @@ let W = {
       "notes": "Noun · §2",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "service", "French": "prestation de service", "Arabic": "خدمة", "Persian": "خدمات", "Spanish": "servicio", "Ukrainian": "послуга", "Russian": "услуга", "Italian": "servizio", "Swahili": "huduma"
-        },
+        "translations": { "English": "service", "French": "prestation de service", "Arabic": "خدمة", "Persian": "خدمات", "Spanish": "servicio", "Ukrainian": "послуга", "Russian": "услуга", "Italian": "servizio", "Swahili": "huduma" },
         "explanation": "die Dienstleistung, Plural: die Dienstleistungen. Refers to intangible economic activities offered to customers.",
         "example_de": "Unser Unternehmen bietet IT-Dienstleistungen für Kleinbetriebe an.",
         "example_translated": "Our company offers IT services for small businesses."
@@ -331,9 +326,7 @@ let W = {
       "notes": "Noun · §3",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "turnover / revenue", "French": "chiffre d'affaires", "Arabic": "حجم المبيعات", "Persian": "گردش مالی", "Spanish": "volumen de negocios", "Ukrainian": "оборот / дохід", "Russian": "оборот / выручка", "Italian": "fatturato", "Swahili": "mauzo ya jumla"
-        },
+        "translations": { "English": "turnover / revenue", "French": "chiffre d'affaires", "Arabic": "حجم المبيعات", "Persian": "گردش مالی", "Spanish": "volumen de negocios", "Ukrainian": "оборот / дохід", "Russian": "оборот / выручка", "Italian": "fatturato", "Swahili": "mauzo ya jumla" },
         "explanation": "der Umsatz, Plural: die Umsätze. Total volume of sales made by a business.",
         "example_de": "Der Umsatz stieg im vergangenen Quartal um zehn Prozent.",
         "example_translated": "Turnover increased by ten percent in the past quarter."
@@ -345,9 +338,7 @@ let W = {
       "notes": "Adjective · §3",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "competitive", "French": "compétitif", "Arabic": "تنافسي", "Persian": "رقابت‌پذیر", "Spanish": "competitivo", "Ukrainian": "конкурентоспроможний", "Russian": "конкурентоспособный", "Italian": "competitivo", "Swahili": "enye ushindani"
-        },
+        "translations": { "English": "competitive", "French": "compétitif", "Arabic": "تنافسي", "Persian": "رقابت‌پذیر", "Spanish": "competitivo", "Ukrainian": "конкурентоспроможний", "Russian": "конкурентоспособный", "Italian": "competitivo", "Swahili": "enye ushindani" },
         "explanation": "wettbewerbsfähig. Capable of competing successfully.",
         "example_de": "Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.",
         "example_translated": "To remain competitive, we must reduce costs."
@@ -359,9 +350,7 @@ let W = {
       "notes": "Noun · §4",
       "status": "done",
       "data": {
-        "translations": {
-          "English": "target group", "French": "groupe cible", "Arabic": "الفئة المستهدفة", "Persian": "مخاطبان هدف", "Spanish": "público objetivo", "Ukrainian": "цільова аудиторія", "Russian": "целевая аудитория", "Italian": "target", "Swahili": "walengwa"
-        },
+        "translations": { "English": "target group", "French": "groupe cible", "Arabic": "الفئة المستهدفة", "Persian": "مخاطبان هدف", "Spanish": "público objetivo", "Ukrainian": "цільова аудиторія", "Russian": "целевая аудитория", "Italian": "target", "Swahili": "walengwa" },
         "explanation": "die Zielgruppe, Plural: die Zielgruppen. Specific consumer profile aimed at.",
         "example_de": "Jugendliche zwischen 14 und 18 Jahren sind unsere primäre Zielgruppe.",
         "example_translated": "Youths between 14 and 18 years old are our primary target group."
@@ -414,12 +403,12 @@ function saveScore(entry) {
 const getScores = () => JSON.parse(localStorage.getItem('vok_scores')||'[]');
 
 const uid = () => Math.random().toString(36).slice(2,9);
-const getArticle = (word) => { const m = word.match(/^(die|der|das)\s+/i); return m ? m[1].toLowerCase() : null; };
-const getBase = (word) => word.replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim();
-const getChapter = (word) => { const m = (word.id||'').match(/^k(\d+)_/); return m ? m[1] : '?'; };
+const getArticle = (word) => { const m = String(word||'').match(/^(die|der|das)\s+/i); return m ? m[1].toLowerCase() : null; };
+const getBase = (word) => String(word||'').replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim();
+const getChapter = (word) => { const m = String((word&&word.id)||'').match(/^k(\d+)_/); return m ? m[1] : '?'; };
 
 function detectChapters(words) {
-  const chapters = new Set(words.map(getChapter));
+  const chapters = new Set((words||[]).map(getChapter));
   return Array.from(chapters).sort((a,b)=> a==='?'?1:b==='?'?-1:parseInt(a)-parseInt(b));
 }
 
@@ -500,7 +489,8 @@ async function generateAll() {
 }
 
 function buildMeaningOpts(entry, pool, lang) {
-  const correct = entry.data?.translations?.[lang] || '?';
+  if (!entry || !entry.data || !entry.data.translations) return [{txt:'—', isCorrect:true}, {txt:'—', isCorrect:false}, {txt:'—', isCorrect:false}, {txt:'—', isCorrect:false}];
+  const correct = entry.data.translations[lang] || '?';
   const others = pool.filter(w => w.id!==entry.id && w.data?.translations?.[lang]).sort(()=>Math.random()-.5).slice(0,3).map(w => ({txt: w.data.translations[lang], isCorrect: false}));
   while (others.length < 3) others.push({txt:'—', isCorrect:false});
   const opts = [{txt:correct, isCorrect:true}, ...others];
@@ -533,12 +523,16 @@ function reviewWrongWords() {
 function replaySession() { startSession(); }
 
 function loadWord() {
-  if (Q.idx >= Q.queue.length) { endSession(); return; }
-  const entry = W.words.find(w=>w.id===Q.queue[Q.idx]);
-  if (!entry) { Q.idx++; loadWord(); return; }
-  const opts = buildMeaningOpts(entry, Q.pool, USER.nativeLang);
-  Q.cur = { entry, options: opts, phase: 'q', showDet: false, selectedIndex: null };
-  renderQuiz();
+  try {
+    if (Q.idx >= Q.queue.length) { endSession(); return; }
+    const entry = W.words.find(w=>w.id===Q.queue[Q.idx]);
+    if (!entry) { Q.idx++; loadWord(); return; }
+    const opts = buildMeaningOpts(entry, Q.pool, USER.nativeLang);
+    Q.cur = { entry, options: opts, phase: 'q', showDet: false, selectedIndex: null };
+    renderQuiz();
+  } catch (err) {
+    document.getElementById('qcard').innerHTML = `<div style="text-align:center; padding: 20px; color: var(--err)"><strong>App Memory Error:</strong> ${err.message}<br><button class="btn btn-outline" style="margin-top:15px" onclick="backToMenu()">Return to Menu</button></div>`;
+  }
 }
 
 function selectOption(i) {
@@ -565,57 +559,64 @@ function endSession() {
 const confirmExit = () => { if (confirm('Exit to menu?')) backToMenu(); };
 function backToMenu() { Q.cur = null; Q.queue = []; showScreen('screen-onboard'); buildOnboarding(); }
 
+function h(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 function renderQuiz() {
   const card = document.getElementById('qcard');
   if (!Q.cur) return;
-  const { entry, options, phase, showDet, selectedIndex } = Q.cur;
+  
+  try {
+    const { entry, options, phase, showDet, selectedIndex } = Q.cur;
 
-  document.getElementById('qh-ok').textContent = `${Q.correct} ✓`;
-  document.getElementById('qh-err').textContent = `${Q.wrong} ✗`;
-  document.getElementById('qh-left').textContent = `${Math.max(0, Q.queue.length - Q.idx)} left`;
-  const sb = document.getElementById('streak-badge');
-  if (Q.streak >= 3) { sb.textContent = `🔥 ${Q.streak}`; sb.style.display=''; } else sb.style.display='none';
-  document.getElementById('prog-fill').style.width = `${Math.round(Q.idx / Q.queue.length * 100)}%`;
+    document.getElementById('qh-ok').textContent = `${Q.correct} ✓`;
+    document.getElementById('qh-err').textContent = `${Q.wrong} ✗`;
+    document.getElementById('qh-left').textContent = `${Math.max(0, Q.queue.length - Q.idx)} left`;
+    const sb = document.getElementById('streak-badge');
+    if (Q.streak >= 3) { sb.textContent = `🔥 ${Q.streak}`; sb.style.display=''; } else sb.style.display='none';
+    document.getElementById('prog-fill').style.width = `${Math.round(Q.idx / Q.queue.length * 100)}%`;
 
-  const keys = ['A','B','C','D'];
-  const optsHTML = options.map((opt, i) => {
-    let cls = 'opt';
-    if (phase !== 'q') {
-      if (opt.isCorrect) cls += ' correct';
-      else if (i === selectedIndex) cls += ' wrong';
+    const keys = ['A','B','C','D'];
+    const optsHTML = options.map((opt, i) => {
+      let cls = 'opt';
+      if (phase !== 'q') {
+        if (opt.isCorrect) cls += ' correct';
+        else if (i === selectedIndex) cls += ' wrong';
+      }
+      const art = getArticle(entry.word);
+      const artSpan = (opt.isCorrect && art && phase !== 'q') ? `<span class="opt-art">${h(art)}</span>` : '';
+      return `<button class="${cls}" onclick="selectOption(${i})" ${phase!=='q'?'disabled':''}>
+        <span class="opt-key">${keys[i]}</span>
+        ${artSpan}
+        <span class="opt-txt">${h(opt.txt)}</span>
+      </button>`;
+    }).join('');
+
+    let fbHTML = '';
+    if (phase === 'ok') fbHTML = `<p class="feedback fb-ok">✓ Richtig! Well done.</p>`;
+    if (phase === 'err') {
+      const correctOpt = options.find(o=>o.isCorrect);
+      const art = getArticle(entry.word);
+      const artStr = art ? `${art} · ` : '';
+      fbHTML = `<p class="feedback fb-err">✗ Not quite — the answer was: <strong>${artStr}${h(correctOpt.txt)}</strong></p>`;
     }
-    const art = getArticle(entry.word);
-    const artSpan = (opt.isCorrect && art && phase !== 'q') ? `<span class="opt-art">${h(art)}</span>` : '';
-    return `<button class="${cls}" onclick="selectOption(${i})" ${phase!=='q'?'disabled':''}>
-      <span class="opt-key">${keys[i]}</span>
-      ${artSpan}
-      <span class="opt-txt">${h(opt.txt)}</span>
-    </button>`;
-  }).join('');
 
-  let fbHTML = '';
-  if (phase === 'ok') fbHTML = `<p class="feedback fb-ok">✓ Richtig! Well done.</p>`;
-  if (phase === 'err') {
-    const correctOpt = options.find(o=>o.isCorrect);
-    const art = getArticle(entry.word);
-    const artStr = art ? `${art} · ` : '';
-    fbHTML = `<p class="feedback fb-err">✗ Not quite — the answer was: <strong>${artStr}${h(correctOpt.txt)}</strong></p>`;
+    const nextHTML = (phase !== 'q') ? `<button class="next-btn" onclick="nextWord()">Next word →</button>` : '';
+    const explHTML = (showDet && entry.data) ? buildExplPanel(entry) : '';
+
+    card.innerHTML = `
+      <div class="word-area">
+        <div class="word-main">${h(getBase(entry.word))}</div>
+        ${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}
+      </div>
+      <div class="opt-list">${optsHTML}</div>
+      ${fbHTML}
+      ${nextHTML}
+      <button class="expl-btn" onclick="toggleExpl()">📖 ${showDet?'Hide':'Explanation, grammar & links'}</button>
+      ${explHTML}
+    `;
+  } catch(err) {
+    card.innerHTML = `<div style="text-align:center; padding: 20px; color: var(--err)"><strong>Error rendering card:</strong> ${err.message}<br><button class="btn btn-outline" style="margin-top:15px" onclick="backToMenu()">Return to Menu</button></div>`;
   }
-
-  const nextHTML = (phase !== 'q') ? `<button class="next-btn" onclick="nextWord()">Next word →</button>` : '';
-  const explHTML = (showDet && entry.data) ? buildExplPanel(entry) : '';
-
-  card.innerHTML = `
-    <div class="word-area">
-      <div class="word-main">${h(getBase(entry.word))}</div>
-      ${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}
-    </div>
-    <div class="opt-list">${optsHTML}</div>
-    ${fbHTML}
-    ${nextHTML}
-    <button class="expl-btn" onclick="toggleExpl()">📖 ${showDet?'Hide':'Explanation, grammar & links'}</button>
-    ${explHTML}
-  `;
 }
 
 const toggleExpl = () => { Q.cur.showDet = !Q.cur.showDet; renderQuiz(); };
