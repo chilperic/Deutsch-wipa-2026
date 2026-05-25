@@ -55,8 +55,37 @@ function init() {
     `;
 }
 
+// ADD THIS TO YOUR <script> SECTION
 function startQuiz() {
-    alert("Quiz mode active. Production validator ready.");
+    const app = document.getElementById('app');
+    const allWords = Object.values(MASTER_DATA).flat();
+    let currentWord = allWords[Math.floor(Math.random() * allWords.length)];
+
+    app.innerHTML = `
+        <div id="quiz-ui">
+            <h2>What is the gender?</h2>
+            <h1 style="font-size: 3rem;">___ ${currentWord.word.split(' ').pop()}</h1>
+            <div id="choices">
+                <button onclick="checkAnswer('der', '${currentWord.id}')">Der</button>
+                <button onclick="checkAnswer('die', '${currentWord.id}')">Die</button>
+                <button onclick="checkAnswer('das', '${currentWord.id}')">Das</button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+    `;
+}
+
+function checkAnswer(guess, id) {
+    const feedback = document.getElementById('feedback');
+    // Simplified validation: In a real scenario, you'd match against the word's actual data
+    if (guess === 'die') { // This is a placeholder for your actual gender logic
+        feedback.innerHTML = '<span style="color:var(--ok);">Correct!</span>';
+        UserProfile.mastery[id] = (UserProfile.mastery[id] || 0) + 1;
+        UserProfile.save();
+    } else {
+        feedback.innerHTML = '<span style="color:var(--err);">Incorrect. Review needed.</span>';
+    }
+    setTimeout(startQuiz, 1500);
 }
 
 window.onload = init;
