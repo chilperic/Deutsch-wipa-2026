@@ -1,5 +1,12 @@
-:root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
-body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; display: flex; justify-content: center; padding: 20px; }
-.card { width: 100%; max-width: 600px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
-input { background: #1a1a1f; border: 1px solid var(--bdr); color: var(--text); padding: 10px; width: 100%; box-sizing: border-box; }
-button { background: var(--gold); color: #000; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; font-weight: bold; margin-top: 10px; }
+:root { 
+    --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; 
+}
+body { background: var(--bg); color: var(--text); font-family: 'Crimson Pro', serif; padding: 40px; display: flex; justify-content: center; }
+.vok-card { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 40px; border-radius: 8px; text-align: center; }
+h1 { color: var(--gold); letter-spacing: 2px; }
+.label { color: var(--gold); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 5px; display: block; text-align: left; }
+input, select { width: 100%; background: #121215; border: 1px solid var(--bdr); color: var(--text); padding: 12px; margin-bottom: 20px; box-sizing: border-box; }
+.btn-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 20px; }
+.btn-grid button { background: #1a1a1f; color: var(--text); border: 1px solid var(--bdr); padding: 10px; cursor: pointer; }
+.btn-grid button.active { background: var(--gold); color: #000; }
+#start-btn { width: 100%; background: var(--gold); border: none; padding: 15px; font-weight: bold; cursor: pointer; }
