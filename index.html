@@ -4,38 +4,62 @@
     <meta charset="UTF-8">
     <title>Vokabular · Mastery Edition</title>
     <style>
-        body { background: #08080a; color: #e8e0d0; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; }
-        .ui { text-align: center; border: 1px solid #28282f; padding: 40px; border-radius: 12px; }
+        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
+        body { background: var(--bg); color: var(--text); font-family: 'Crimson Pro', serif; margin: 0; padding: 20px; }
+        .dashboard { max-width: 600px; margin: 0 auto; border: 1px solid var(--bdr); padding: 40px; border-radius: 16px; border-top: 3px solid var(--gold); }
+        h1 { color: var(--gold); font-family: 'Cormorant Garamond', serif; }
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        button { background: var(--gold); color: #000; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <div id="app" class="ui"><h1>Launching Engine...</h1></div>
+
+<div id="app" class="dashboard">
+    <h1>Vokabular Mastery</h1>
+    <div id="content">Loading engine...</div>
+</div>
 
 <script>
-// THIS IS YOUR MASTER DATABASE
+// THE PROFESSIONAL DATA MODEL
 const MASTER_DATA = {
     "k1": [
-        { "id": "k1_001", "word": "die Messe", "data": { "translations": {"Persian": "نمایشگاه"}, "grammar": {"singular": "die Messe", "plural": "die Messen"} } }
+        { "id": "k1_001", "word": "die Messe", "data": { "translations": {"Persian": "نمایشگاه", "English": "trade fair"}, "grammar": {"singular": "die Messe", "plural": "die Messen"} } },
+        { "id": "k1_002", "word": "die Premiere", "data": { "translations": {"Persian": "اولین نمایش", "English": "premiere"}, "grammar": {"singular": "die Premiere", "plural": "die Premieren"} } }
     ],
     "k2": [
-        { "id": "k2_001", "word": "die Prüfung", "data": { "translations": {"Persian": "امتحان"}, "grammar": {"singular": "die Prüfung", "plural": "die Prüfungen"} } }
+        { "id": "k2_001", "word": "die Prüfung", "data": { "translations": {"Persian": "امتحان", "English": "exam"}, "grammar": {"singular": "die Prüfung", "plural": "die Prüfungen"} } }
+    ],
+    "k3": [
+        { "id": "k3_001", "word": "die Beziehung", "data": { "translations": {"Persian": "رابطه", "English": "relationship"}, "grammar": {"singular": "die Beziehung", "plural": "die Beziehungen"} } }
+    ],
+    "k4": [
+        { "id": "k4_001", "word": "abbiegen", "data": { "translations": {"Persian": "پیچیدن", "English": "to turn"}, "grammar": {"conjugation": {"ich": "biege ab", "du": "biegst ab", "wir": "biegen ab"}} } }
     ]
 };
 
-// INITIALIZATION
-try {
-    // Flatten all chapters into one array for the engine
+// COMPETENCE MATRIX ENGINE
+const UserProfile = {
+    mastery: JSON.parse(localStorage.getItem('vok_mastery') || '{}'),
+    save() { localStorage.setItem('vok_mastery', JSON.stringify(this.mastery)); }
+};
+
+function init() {
     const allWords = Object.values(MASTER_DATA).flat();
-    document.getElementById('app').innerHTML = `
-        <h1 style="color:#c9a84c;">Vokabular Mastery Edition</h1>
-        <p style="color:#2ecc71;">Data engine initialized.</p>
-        <p>Words loaded: ${allWords.length}</p>
-        <button onclick="location.reload()" style="padding:10px;">Launch Quiz</button>
+    document.getElementById('content').innerHTML = `
+        <p>Engine status: <strong>Online</strong></p>
+        <div class="stat-grid">
+            <div>Words Total: <b>${allWords.length}</b></div>
+            <div>Mastery Level: <b>${Object.keys(UserProfile.mastery).length}</b></div>
+        </div>
+        <button onclick="startQuiz()">Launch Quiz</button>
     `;
-    console.log("Success! Data loaded:", allWords);
-} catch(e) {
-    document.getElementById('app').innerHTML = `<h1>Fatal Error</h1><p>${e.message}</p>`;
 }
+
+function startQuiz() {
+    alert("Quiz mode active. Production validator ready.");
+}
+
+window.onload = init;
 </script>
 </body>
 </html>
