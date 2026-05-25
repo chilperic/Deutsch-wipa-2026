@@ -1,45 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="style.css"></head>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vokabular · German Learning System</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08080a;--s1:#111115;--s2:#17171c;--s3:#202027;--b:#2d2d36;--b2:#3a3a45;
+  --gold:#c9a84c;--gold2:#8a6f30;--text:#eee5d4;--dim:#8b8174;--muted:#58544c;
+  --ok:#2ecc71;--err:#e74c3c;--warn:#e67e22;--info:#3498db;
+  --serif:'Cormorant Garamond',Georgia,serif;--body:'Crimson Pro',Georgia,serif;--mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:radial-gradient(circle at top,#151515 0,#08080a 42%);color:var(--text);font-family:var(--body);font-size:18px}
+button,input,select,textarea{font:inherit}
+.screen{display:none;min-height:100vh;padding:20px;align-items:center;justify-content:center}.screen.on{display:flex}
+.shell{width:min(980px,100%)}
+.card{background:rgba(17,17,21,.96);border:1px solid var(--b);border-radius:18px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.topbar{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{font-family:var(--serif);font-size:40px;color:var(--gold);line-height:1}.tag{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stack{display:flex;flex-direction:column;gap:12px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.split{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.lbl{display:block;font-family:var(--mono);font-size:10px;color:var(--gold2);letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+input,select,textarea{width:100%;background:var(--s2);border:1px solid var(--b);color:var(--text);border-radius:10px;padding:11px 13px;outline:none}textarea{min-height:110px;resize:vertical;font-family:var(--mono);font-size:13px}input:focus,select:focus,textarea:focus{border-color:var(--gold2);box-shadow:0 0 0 2px rgba(201,168,76,.15)}
+.btn{border:0;border-radius:10px;padding:12px 16px;cursor:pointer;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:.15s}.btn:hover{transform:translateY(-1px)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#171100}.ghost{background:transparent;color:var(--dim);border:1px solid var(--b)}.ghost:hover{border-color:var(--gold2);color:var(--text)}.danger{background:rgba(231,76,60,.12);color:var(--err);border:1px solid rgba(231,76,60,.35)}
+.pill{font-family:var(--mono);font-size:12px;border:1px solid var(--b);border-radius:999px;padding:7px 13px;color:var(--dim);background:var(--s2);cursor:pointer}.pill.on{background:var(--gold);border-color:var(--gold);color:#171100}.pill.small{font-size:10px;padding:4px 8px}
+.stat{background:var(--s2);border:1px solid var(--b);border-radius:14px;padding:16px;text-align:center}.stat b{display:block;font-family:var(--serif);font-size:34px;color:var(--gold);line-height:1}.stat span{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;background:#222;z-index:10}.bar{height:100%;width:0;background:var(--gold);transition:.25s}
+.quiz-header{position:sticky;top:0;width:100%;z-index:5;background:rgba(8,8,10,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--b);padding:12px 18px}.quiz-header .shell{display:flex;align-items:center;justify-content:space-between}.badges{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.badge{font-family:var(--mono);font-size:12px;border:1px solid var(--b);border-radius:999px;padding:6px 10px;color:var(--dim)}.badge.ok{color:var(--ok);border-color:rgba(46,204,113,.35)}.badge.err{color:var(--err);border-color:rgba(231,76,60,.35)}.badge.info{color:var(--info);border-color:rgba(52,152,219,.35)}
+.quiz-body{min-height:calc(100vh - 70px);display:flex;align-items:center;justify-content:center;padding:24px}.qcard{width:min(700px,100%)}.word{text-align:center;margin-bottom:22px}.word-main{font-family:var(--serif);font-size:clamp(44px,9vw,82px);font-style:italic;line-height:.98}.word-sub{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:10px}.phase{font-family:var(--mono);font-size:12px;color:var(--gold2);letter-spacing:.16em;text-transform:uppercase;text-align:center;margin:0 0 14px}
+.options{display:grid;gap:10px}.options.cols{grid-template-columns:repeat(4,minmax(0,1fr))}.opt{background:var(--s2);border:1px solid var(--b);color:var(--text);border-radius:12px;padding:17px 18px;text-align:left;cursor:pointer}.opt.center{text-align:center;font-family:var(--mono);font-size:22px}.opt:hover:not(:disabled){border-color:var(--gold2);background:var(--s3)}.opt.correct{border-color:var(--ok);background:rgba(46,204,113,.1);color:var(--ok)}.opt.wrong{border-color:var(--err);background:rgba(231,76,60,.1);color:var(--err)}.opt:disabled{cursor:default}
+.input-answer{font-size:24px;text-align:center}.feedback{margin-top:16px;padding:14px 16px;border:1px solid var(--b);border-radius:12px;background:var(--s1);font-family:var(--mono);font-size:13px;color:var(--dim);line-height:1.6}.feedback.ok{color:var(--ok);border-color:rgba(46,204,113,.35)}.feedback.err{color:var(--err);border-color:rgba(231,76,60,.35)}
+.panel{margin-top:14px;border:1px solid var(--b);border-radius:14px;overflow:hidden;background:var(--s1)}.panel-sec{padding:17px;border-bottom:1px solid var(--b)}.panel-sec:last-child{border-bottom:0}.example-de{font-size:20px;font-style:italic}.example-tr{color:var(--dim);margin-top:4px}.grammar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;font-family:var(--mono);font-size:13px}.grammar div{border-bottom:1px solid var(--b);padding:6px 0;display:flex;justify-content:space-between;gap:12px}.grammar span:first-child{color:var(--dim)}
+.table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}.table th,.table td{border-bottom:1px solid var(--b);padding:9px;text-align:left}.table th{color:var(--gold2);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.table td{color:var(--dim)}
+.hidden{display:none!important}.note{color:var(--dim);font-size:15px;line-height:1.55}.warn{color:var(--warn)}.oktxt{color:var(--ok)}.errtxt{color:var(--err)}
+@media(max-width:760px){.grid,.grid3{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.options.cols{grid-template-columns:repeat(2,minmax(0,1fr))}.grammar{grid-template-columns:1fr}.quiz-header .shell{align-items:flex-start;flex-direction:column;gap:10px}}
+</style>
+</head>
 <body>
-<div class="vok-card">
-    <h1>Vokabular</h1>
-    <p style="font-size: 0.8rem; color: var(--gold);">DEUTSCH LERNEN · GERMAN VOCABULARY TRAINER</p>
+<div class="progress"><div class="bar" id="bar"></div></div>
 
-    <label class="label">Your Name</label>
-    <input id="userName" placeholder="foko">
-
-    <label class="label">I Speak / Quiz Language</label>
-    <select id="lang"><option>English</option><option>Persian</option></select>
-
-    <label class="label">Explanations In</label>
-    <select id="expl"><option>French</option><option>English</option></select>
-
-    <label class="label">Chapter</label>
-    <select id="chap"><option>Kapitel 1</option><option>Kapitel 2</option></select>
-
-    <label class="label">Words Per Session</label>
-    <div class="btn-grid" id="countGrid">
-        <button onclick="setCount(10)">10</button>
-        <button onclick="setCount(20)" class="active">20</button>
-        <button onclick="setCount(30)">30</button>
-        <button onclick="setCount(50)">50</button>
-        <button onclick="setCount('All')">All</button>
+<section class="screen on" id="menu">
+  <div class="shell">
+    <div class="card stack">
+      <div class="topbar">
+        <div><div class="brand">Vokabular</div><div class="tag">German vocabulary · active recall · grammar-aware review</div></div>
+        <div class="row"><button class="btn ghost" onclick="openImport()">Import JSON</button><button class="btn ghost" onclick="exportData()">Export</button><button class="btn danger" onclick="resetProgress()">Reset progress</button></div>
+      </div>
+      <div class="grid3">
+        <div class="stat"><b id="statWords">0</b><span>ready words</span></div>
+        <div class="stat"><b id="statDue">0</b><span>due today</span></div>
+        <div class="stat"><b id="statMastered">0</b><span>stable words</span></div>
+      </div>
+      <div class="grid">
+        <div><label class="lbl">Name</label><input id="name" placeholder="Your name" /></div>
+        <div><label class="lbl">Quiz language</label><select id="lang"></select></div>
+        <div><label class="lbl">Chapter</label><select id="chapter"></select></div>
+        <div><label class="lbl">Training mode</label><select id="mode"><option value="mixed">Mixed: article → meaning → production</option><option value="due">Due review only</option><option value="article">Article drill</option><option value="meaning">Meaning drill</option><option value="type">Typed active recall</option></select></div>
+      </div>
+      <div>
+        <label class="lbl">Words per session</label>
+        <div class="row" id="sizePills"><button class="pill" data-n="5">5</button><button class="pill on" data-n="10">10</button><button class="pill" data-n="20">20</button><button class="pill" data-n="all">All due</button></div>
+      </div>
+      <div class="note"><b class="warn">Design choice:</b> no browser-side API keys. Generate vocabulary data elsewhere, then import JSON. GitHub Pages is static; public client-side API keys are not a safe architecture.</div>
+      <div class="row"><button class="btn gold" id="startBtn" onclick="startSession()">Start session</button><button class="btn ghost" onclick="openEditor()">Word manager</button></div>
     </div>
+  </div>
+</section>
 
-    <button id="start-btn" onclick="startQuiz()">▶ START QUIZ</button>
+<section class="screen" id="quiz" style="padding:0;align-items:stretch;justify-content:flex-start">
+  <div class="quiz-header"><div class="shell"><div class="badges"><span class="badge ok" id="bOk">0 correct</span><span class="badge err" id="bErr">0 weak</span><span class="badge info" id="bPts">0 pts</span><span class="badge" id="bLeft">0 left</span></div><div class="row"><button class="btn ghost" onclick="speakCurrent()">Speak</button><button class="btn ghost" onclick="exitQuiz()">Exit</button></div></div></div>
+  <div class="quiz-body"><div class="qcard card" id="qcard"></div></div>
+</section>
+
+<section class="screen" id="summary">
+  <div class="shell"><div class="card stack">
+    <div class="word"><div class="word-main" id="sumPct">0%</div><div class="word-sub" id="sumSub">session complete</div></div>
+    <div class="grid3"><div class="stat"><b id="sumCorrect">0</b><span>strong</span></div><div class="stat"><b id="sumWeak">0</b><span>weak</span></div><div class="stat"><b id="sumPts">0</b><span>points</span></div></div>
+    <div id="weakBox" class="panel hidden"><div class="panel-sec"><span class="lbl">Weak words</span><table class="table"><tbody id="weakRows"></tbody></table></div></div>
+    <div class="row"><button class="btn gold" onclick="reviewWeak()">Review weak words</button><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Menu</button></div>
+  </div></div>
+</section>
+
+<div class="screen" id="editor">
+  <div class="shell"><div class="card stack">
+    <div class="split"><div><div class="brand" style="font-size:30px">Word manager</div><div class="tag">Import, inspect, or add vocabulary</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
+    <div class="grid"><div><label class="lbl">German word</label><input id="edWord" placeholder="die Prüfung" /></div><div><label class="lbl">Chapter / notes</label><input id="edNotes" placeholder="Kapitel 2" /></div></div>
+    <div class="grid"><div><label class="lbl">English/French/etc. translation</label><input id="edTr" placeholder="exam" /></div><div><label class="lbl">Plural or grammar note</label><input id="edGrammar" placeholder="die Prüfungen; sich vorbereiten auf + Akk." /></div></div>
+    <div><label class="lbl">Example sentence</label><input id="edExample" placeholder="Ich bereite mich auf die Prüfung vor." /></div>
+    <div class="row"><button class="btn gold" onclick="addManualWord()">Add word</button><button class="btn ghost" onclick="loadSeed()">Load seed set</button></div>
+    <div class="panel"><div class="panel-sec"><span class="lbl">Current words</span><table class="table"><thead><tr><th>German</th><th>Translation</th><th>Chapter</th><th>Box</th></tr></thead><tbody id="wordRows"></tbody></table></div></div>
+  </div></div>
+</div>
+
+<div class="screen" id="importer">
+  <div class="shell"><div class="card stack">
+    <div class="split"><div><div class="brand" style="font-size:30px">Import JSON</div><div class="tag">Compatible with {meta, words} vocabulary files</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
+    <textarea id="jsonBox" spellcheck="false" placeholder='Paste JSON here, then click Import'></textarea>
+    <input type="file" id="fileInput" accept=".json,application/json" />
+    <div class="row"><button class="btn gold" onclick="importFromTextarea()">Import pasted JSON</button><button class="btn ghost" onclick="document.getElementById('fileInput').click()">Choose file</button></div>
+    <div class="note">Expected minimum fields per word: <code>word</code> and <code>data.translations</code>. Grammar fields are optional but strongly recommended.</div>
+  </div></div>
 </div>
 
 <script>
-let state = { count: 20 };
-function setCount(n) {
-    state.count = n;
-    document.querySelectorAll('.btn-grid button').forEach(b => b.classList.toggle('active', b.innerText == n));
+const LANGS=['English','French','Spanish','Italian','Arabic','Persian','Russian','Ukrainian','Swahili','Portuguese','Dutch','Polish','Turkish'];
+const ARTICLE_OPTIONS=['der','die','das','—'];
+const DAY=86400000;
+const DEFAULT={
+  meta:{targetLanguages:['English','French'],explanationLanguage:'English'},
+  words:[
+    {id:'k2_01',word:'die Prüfung',notes:'Kapitel 2',status:'done',data:{translations:{English:'exam',French:'examen'},explanation:'A formal test. Important pattern: sich vorbereiten auf + Akkusativ.',example_de:'Ich bereite mich auf die Prüfung vor.',example_translated:'I am preparing for the exam.',grammar:{type:'noun',singular:'die Prüfung',plural:'die Prüfungen',pattern:'sich vorbereiten auf + Akkusativ'}}},
+    {id:'k2_05',word:'anerkennen',notes:'Kapitel 2',status:'done',data:{translations:{English:'to recognize / acknowledge',French:'reconnaître'},explanation:'Separable verb. Used for qualifications, degrees, rights, or effort.',example_de:'Mein Abschluss wird in Deutschland anerkannt.',example_translated:'My degree is recognized in Germany.',grammar:{type:'verb',partizip:'anerkannt',pattern:'etwas anerkennen'}}},
+    {id:'k2_06',word:'achten auf',notes:'Kapitel 2',status:'done',data:{translations:{English:'to pay attention to',French:'faire attention à'},explanation:'Prepositional verb requiring auf + Akkusativ.',example_de:'Du musst auf den Verkehr achten.',example_translated:'You must pay attention to the traffic.',grammar:{type:'verb',pattern:'achten auf + Akkusativ'}}},
+    {id:'k3_06',word:'das Stipendium',notes:'Kapitel 3',status:'done',data:{translations:{English:'scholarship',French:'bourse'},explanation:'A grant or financial support for study.',example_de:'Sie bewirbt sich um ein Stipendium.',example_translated:'She is applying for a scholarship.',grammar:{type:'noun',singular:'das Stipendium',plural:'die Stipendien',pattern:'sich bewerben um + Akkusativ'}}},
+    {id:'k4_05',word:'abbiegen',notes:'Kapitel 4',status:'done',data:{translations:{English:'to turn',French:'tourner'},explanation:'Separable motion verb.',example_de:'An der Ampel biegen Sie links ab.',example_translated:'At the traffic light, turn left.',grammar:{type:'verb',partizip:'abgebogen',pattern:'links/rechts abbiegen'}}}
+  ]
+};
+let W=load('vok_data_v1',DEFAULT), USER=load('vok_user_v1',{name:'',lang:'English',chapter:'all',mode:'mixed',size:'10'}), SRS=load('vok_srs_v1',{});
+let Q={queue:[],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null};
+function load(k,f){try{return JSON.parse(localStorage.getItem(k))||structuredClone(f)}catch{return structuredClone(f)}}
+function save(){localStorage.setItem('vok_data_v1',JSON.stringify(W));localStorage.setItem('vok_user_v1',JSON.stringify(USER));localStorage.setItem('vok_srs_v1',JSON.stringify(SRS))}
+function h(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function id(){return Math.random().toString(36).slice(2,10)}
+function article(w){const m=String(w).match(/^(der|die|das)\s+/i);return m?m[1].toLowerCase():null}
+function base(w){return String(w).replace(/^(der|die|das)\s+/i,'').trim()}
+function chapterOf(w){const m=(w.notes||w.id||'').match(/(?:Kapitel\s*)?(\d+)/i);return m?m[1]:'?'}
+function readyWords(){return W.words.filter(w=>w.status==='done'&&w.data&&w.data.translations)}
+function srs(id){return SRS[id]||(SRS[id]={box:0,correct:0,wrong:0,due:0,last:0})}
+function due(w){return srs(w.id).due<=Date.now()}
+function intervalDays(box){return [0,1,3,7,14,30,60][Math.min(box,6)]}
+function record(word,correct){const r=srs(word.id);r.last=Date.now(); if(correct){r.correct++;r.box=Math.min(6,r.box+1)}else{r.wrong++;r.box=0} r.due=Date.now()+intervalDays(r.box)*DAY; save()}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function translation(w){return w.data.translations[USER.lang]||w.data.translations.English||Object.values(w.data.translations)[0]||'—'}
+function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on')}
+function buildMenu(){
+  document.getElementById('name').value=USER.name; document.getElementById('lang').innerHTML=LANGS.map(l=>`<option ${l===USER.lang?'selected':''}>${l}</option>`).join('');
+  const ch=[...new Set(readyWords().map(chapterOf))].sort((a,b)=>a-b); document.getElementById('chapter').innerHTML=`<option value="all">All chapters</option>`+ch.map(c=>`<option value="${c}" ${USER.chapter===c?'selected':''}>Kapitel ${c}</option>`).join('');
+  document.getElementById('mode').value=USER.mode; document.querySelectorAll('#sizePills .pill').forEach(p=>p.classList.toggle('on',p.dataset.n===USER.size));
+  const rw=readyWords(); document.getElementById('statWords').textContent=rw.length; document.getElementById('statDue').textContent=rw.filter(due).length; document.getElementById('statMastered').textContent=rw.filter(w=>srs(w.id).box>=4).length; document.getElementById('startBtn').disabled=rw.length<4;
 }
-function startQuiz() {
-    alert("Mission: " + document.getElementById('chap').value + " | Words: " + state.count);
-    // Navigation to the quiz engine logic follows here
-}
+['name','lang','chapter','mode'].forEach(x=>document.addEventListener('change',e=>{if(e.target.id===x){USER[x==='lang'?'lang':x]=e.target.value;save();buildMenu()}}));
+document.getElementById('sizePills').onclick=e=>{const p=e.target.closest('.pill');if(!p)return;USER.size=p.dataset.n;save();buildMenu()};
+function candidatePool(){let p=readyWords(); if(USER.chapter!=='all')p=p.filter(w=>chapterOf(w)===USER.chapter); if(USER.mode==='due')p=p.filter(due); return p}
+function startSession(){USER.name=document.getElementById('name').value.trim()||'Learner';USER.lang=document.getElementById('lang').value;USER.chapter=document.getElementById('chapter').value;USER.mode=document.getElementById('mode').value;save();let p=candidatePool();if(p.length<1){alert('No words available for this selection.');return}const n=USER.size==='all'?p.length:Math.min(+USER.size,p.length);Q={queue:shuffle([...p]).slice(0,n),idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null};showScreen('quiz');next()}
+function next(){if(Q.idx>=Q.queue.length)return finish();Q.cur=Q.queue[Q.idx];const hasArt=!!article(Q.cur.word);if(USER.mode==='article'&&hasArt)Q.phase='article';else if(USER.mode==='meaning')Q.phase='meaning';else if(USER.mode==='type')Q.phase='type';else Q.phase=hasArt?'article':'meaning';render()}
+function render(){const w=Q.cur;document.getElementById('bar').style.width=`${Math.round(Q.idx/Q.queue.length*100)}%`;document.getElementById('bOk').textContent=`${Q.ok} correct`;document.getElementById('bErr').textContent=`${Q.weak} weak`;document.getElementById('bPts').textContent=`${Q.pts} pts`;document.getElementById('bLeft').textContent=`${Q.queue.length-Q.idx} left`;let html=`<div class="word"><div class="word-main">${h(base(w.word))}</div><div class="word-sub">${h(w.notes||'')}</div></div>`;if(Q.phase==='article')html+=articleView(w);if(Q.phase==='meaning')html+=meaningView(w);if(Q.phase==='type')html+=typeView(w);document.getElementById('qcard').innerHTML=html}
+function articleView(w){return `<div class="phase">Select the article</div><div class="options cols">${ARTICLE_OPTIONS.map(a=>`<button class="opt center" onclick="answerArticle('${a}')">${a}</button>`).join('')}</div>`}
+function answerArticle(a){const ok=(a===(article(Q.cur.word)||'—'));afterAnswer(ok,ok?1:0,`Correct article: ${article(Q.cur.word)||'—'}`,USER.mode==='article'?null:'meaning')}
+function meaningView(w){const opts=shuffle([translation(w),...shuffle(readyWords().filter(x=>x.id!==w.id)).slice(0,3).map(translation)]);return `<div class="phase">Choose the meaning</div><div class="options">${opts.map(o=>`<button class="opt" onclick="answerMeaning('${h(o).replace(/'/g,'&#39;')}')">${h(o)}</button>`).join('')}</div>`}
+function answerMeaning(choice){const ok=choice===translation(Q.cur);afterAnswer(ok,ok?2:0,`Correct meaning: ${translation(Q.cur)}`,USER.mode==='mixed'?'type':null)}
+function typeView(w){return `<div class="phase">Active recall: type the meaning</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Type: ${h(USER.lang)} meaning" onkeydown="if(event.key==='Enter')answerTyped()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerTyped()">Check</button><button class="btn ghost" onclick="showDetails(false)">Show grammar</button></div>`}
+function norm(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
+function answerTyped(){const v=document.getElementById('typed').value;const ok=norm(v)===norm(translation(Q.cur));afterAnswer(ok,ok?3:0,`Expected: ${translation(Q.cur)}`,null)}
+function afterAnswer(ok,pts,msg,nextPhase){Q.pts+=pts; if(nextPhase){Q.phase=nextPhase; render(); document.getElementById('qcard').insertAdjacentHTML('beforeend',`<div class="feedback ${ok?'ok':'err'}">${ok?'✓':'✗'} ${h(msg)}. Continue.</div>`);return} if(ok){Q.ok++;record(Q.cur,true)}else{Q.weak++;Q.weakItems.push(Q.cur);record(Q.cur,false)} document.getElementById('qcard').insertAdjacentHTML('beforeend',`<div class="feedback ${ok?'ok':'err'}">${ok?'✓':'✗'} ${h(msg)} · +${pts} pts</div>${detailPanel(Q.cur)}<div class="row" style="margin-top:14px"><button class="btn gold" onclick="Q.idx++;next()">Next</button></div>`)}
+function detailPanel(w){const g=w.data.grammar||{};const rows=Object.entries(g).map(([k,v])=>`<div><span>${h(k)}</span><b>${h(v)}</b></div>`).join('')||'<div><span>grammar</span><b>not provided</b></div>';return `<div class="panel"><div class="panel-sec"><span class="lbl">Explanation</span><p class="note">${h(w.data.explanation||'')}</p></div><div class="panel-sec"><span class="lbl">Example</span><p class="example-de">${h(w.data.example_de||'')}</p><p class="example-tr">${h(w.data.example_translated||'')}</p></div><div class="panel-sec"><span class="lbl">Grammar memory</span><div class="grammar">${rows}</div></div></div>`}
+function showDetails(){document.getElementById('qcard').insertAdjacentHTML('beforeend',detailPanel(Q.cur))}
+function speakCurrent(){if(!Q.cur||!('speechSynthesis'in window))return; speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(base(Q.cur.word));u.lang='de-DE';u.rate=.9;speechSynthesis.speak(u)}
+function finish(){const total=Q.ok+Q.weak;const pct=total?Math.round(Q.ok/total*100):0;document.getElementById('sumPct').textContent=pct+'%';document.getElementById('sumSub').textContent=`${USER.name} · ${Q.queue.length} words · ${USER.mode}`;document.getElementById('sumCorrect').textContent=Q.ok;document.getElementById('sumWeak').textContent=Q.weak;document.getElementById('sumPts').textContent=Q.pts;const wb=document.getElementById('weakBox');if(Q.weakItems.length){wb.classList.remove('hidden');document.getElementById('weakRows').innerHTML=Q.weakItems.map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(w.notes)}</td></tr>`).join('')}else wb.classList.add('hidden');showScreen('summary');buildMenu()}
+function reviewWeak(){if(!Q.weakItems.length){showScreen('menu');return}Q={queue:[...new Map(Q.weakItems.map(w=>[w.id,w])).values()],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null};showScreen('quiz');next()}
+function exitQuiz(){showScreen('menu');buildMenu()}
+function openEditor(){showScreen('editor');renderWords()}
+function openImport(){showScreen('importer')}
+function renderWords(){document.getElementById('wordRows').innerHTML=readyWords().map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(w.notes)}</td><td>${srs(w.id).box}</td></tr>`).join('')||'<tr><td colspan="4">No words yet.</td></tr>'}
+function addManualWord(){const word=edWord.value.trim(),tr=edTr.value.trim();if(!word||!tr)return alert('Word and translation are required.');W.words.push({id:id(),word,notes:edNotes.value.trim(),status:'done',data:{translations:{[USER.lang]:tr,English:tr},explanation:edGrammar.value.trim(),example_de:edExample.value.trim(),example_translated:'',grammar:{note:edGrammar.value.trim()}}});['edWord','edNotes','edTr','edGrammar','edExample'].forEach(x=>document.getElementById(x).value='');save();renderWords();buildMenu()}
+function importData(raw){const words=Array.isArray(raw)?raw:raw.words;if(!Array.isArray(words))throw Error('No words array found');W={meta:raw.meta||{},words:words.map(w=>({id:w.id||id(),word:w.word||'',notes:w.notes||'',status:w.status==='pending'?'pending':'done',data:w.data||{translations:{English:w.translation||''},explanation:'',example_de:'',example_translated:'',grammar:{}}})).filter(w=>w.word)};save();buildMenu();renderWords?.()}
+function importFromTextarea(){try{importData(JSON.parse(document.getElementById('jsonBox').value));alert('Imported.');showScreen('menu');buildMenu()}catch(e){alert('Import failed: '+e.message)}}
+document.getElementById('fileInput').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{importData(JSON.parse(r.result));showScreen('menu');buildMenu()}catch(err){alert('Import failed: '+err.message)}};r.readAsText(f)};
+function exportData(){const blob=new Blob([JSON.stringify(W,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='vocabular-data.json';a.click();URL.revokeObjectURL(a.href)}
+function resetProgress(){if(confirm('Delete all learning progress but keep vocabulary?')){SRS={};save();buildMenu()}}
+function loadSeed(){W=structuredClone(DEFAULT);save();renderWords();buildMenu()}
+buildMenu();
 </script>
 </body>
 </html>
