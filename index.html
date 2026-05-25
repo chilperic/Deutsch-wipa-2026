@@ -4,82 +4,63 @@
     <meta charset="UTF-8">
     <title>Vokabular · Mastery Edition</title>
     <style>
-        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; --ok: #2ecc71; --err: #e74c3c; }
-        body { background: var(--bg); color: var(--text); font-family: 'Crimson Pro', serif; margin: 0; padding: 20px; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        .dashboard { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 40px; border-radius: 16px; border-top: 3px solid var(--gold); text-align: center; }
-        h1 { color: var(--gold); }
-        button { background: var(--gold); color: #000; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-weight: bold; margin: 5px; }
-        .gender-btn { width: 80px; }
+        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; --gray: #7a7268; }
+        body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; padding: 20px; display: flex; justify-content: center; }
+        .card { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
+        h1 { color: var(--gold); border-bottom: 1px solid var(--bdr); padding-bottom: 10px; }
+        .section { margin-top: 25px; }
+        h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 8px; }
+        .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
+        button { background: var(--gold); color: #000; border: none; padding: 10px; margin-top: 20px; cursor: pointer; border-radius: 4px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<div id="app" class="dashboard">
-    <h1>Vokabular Mastery</h1>
-    <div id="content">Loading engine...</div>
+<div class="card" id="app">
+    <h1>Vokabular Engine</h1>
+    <div id="content">Loading complex data structures...</div>
 </div>
 
 <script>
-const MASTER_DATA = {
-    "k1": [
-        { "id": "k1_001", "word": "Messe", "gender": "die", "tr": "نمایشگاه" },
-        { "id": "k1_002", "word": "Premiere", "gender": "die", "tr": "اولین نمایش" }
-    ],
-    "k2": [
-        { "id": "k2_001", "word": "Prüfung", "gender": "die", "tr": "امتحان" }
-    ],
-    "k3": [
-        { "id": "k3_001", "word": "Beziehung", "gender": "die", "tr": "رابطه" }
-    ],
-    "k4": [
-        { "id": "k4_001", "word": "abbiegen", "gender": "verb", "tr": "پیچیدن" }
-    ]
-};
-
-const UserProfile = {
-    mastery: JSON.parse(localStorage.getItem('vok_mastery') || '{}'),
-    save() { localStorage.setItem('vok_mastery', JSON.stringify(this.mastery)); }
-};
-
-function init() {
-    const all = Object.values(MASTER_DATA).flat();
-    document.getElementById('content').innerHTML = `
-        <p>Engine status: <strong>Online</strong></p>
-        <p>Words mastered: <b>${Object.keys(UserProfile.mastery).length}</b></p>
-        <button onclick="startQuiz()">Launch Quiz</button>
-    `;
-}
-
-function startQuiz() {
-    const all = Object.values(MASTER_DATA).flat();
-    const word = all[Math.floor(Math.random() * all.length)];
-    const app = document.getElementById('content');
-
-    app.innerHTML = `
-        <h3>What is the gender?</h3>
-        <h1 style="font-size: 2.5rem;">___ ${word.word}</h1>
-        <div id="choices">
-            <button class="gender-btn" onclick="check('${word.id}', 'der', '${word.gender}')">Der</button>
-            <button class="gender-btn" onclick="check('${word.id}', 'die', '${word.gender}')">Die</button>
-            <button class="gender-btn" onclick="check('${word.id}', 'das', '${word.gender}')">Das</button>
-        </div>
-        <p id="feedback"></p>
-    `;
-}
-
-function check(id, guess, correct) {
-    const feedback = document.getElementById('feedback');
-    if(guess === correct) {
-        feedback.innerHTML = '<span style="color:var(--ok);">Correct!</span>';
-        UserProfile.mastery[id] = (UserProfile.mastery[id] || 0) + 1;
-        UserProfile.save();
-    } else {
-        feedback.innerHTML = `<span style="color:var(--err);">Incorrect. It was ${correct}.</span>`;
+// PRO-LEVEL DATA STRUCTURE
+const DB = [
+    {
+        "word": "wettbewerbsfähig",
+        "grammar": "Capable of competing successfully.",
+        "example_de": "„Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.“",
+        "example_en": "To remain competitive, we must reduce costs.",
+        "translations": {
+            "English": "competitive", "French": "compétitif", "Arabic": "تنافسي",
+            "Persian": "رقابت‌پذیر", "Spanish": "competitivo", "Ukrainian": "конкурентоспроможний",
+            "Russian": "конкурентоспособный", "Italian": "competitivo", "Swahili": "enye ushindani"
+        }
     }
-    setTimeout(startQuiz, 1500);
+];
+
+function render(word) {
+    const content = document.getElementById('content');
+    const translations = Object.entries(word.translations).map(([lang, val]) => 
+        `<div><b>${lang}:</b> ${val}</div>`).join('');
+
+    content.innerHTML = `
+        <h1 style="border:none;">${word.word}</h1>
+        <div class="section">
+            <h3>Grammar & Context</h3>
+            <p>${word.grammar}</p>
+        </div>
+        <div class="section">
+            <h3>Example Sentence</h3>
+            <p><em>${word.example_de}</em><br>${word.example_en}</p>
+        </div>
+        <div class="section">
+            <h3>All Translations</h3>
+            <div class="lang-grid">${translations}</div>
+        </div>
+        <button onclick="location.reload()">Next Word</button>
+    `;
 }
 
-window.onload = init;
+render(DB[0]);
 </script>
 </body>
 </html>
