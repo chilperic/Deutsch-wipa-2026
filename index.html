@@ -3,354 +3,466 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vokabular · German Vocabulary Trainer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Vokabular · German Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:    #080808;  --bg2:   #111111;  --bg3:   #1a1a1a;
-      --bdr:   #2a2a2a;  --gold:  #c9a84c;  --gold2: #8a6f30;
-      --text:  #e8e0d0;  --dim:   #7a7060;  --muted: #4a4540;
-      --dead:  #2a2520;  --red:   #c0392b;  --green: #27ae60;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --mono:  'JetBrains Mono', monospace;
+      --bg:     #0a0a0a;  --card:   #131313;  --card2:  #1a1a1a;
+      --bdr:    #252525;  --gold:   #c9a84c;  --gold2:  #8a6f30;
+      --text:   #e8e0d0;  --dim:    #7a7060;  --muted:  #4a4540;
+      --ok:     #27ae60;  --err:    #c0392b;
+      --ok-bg:  rgba(39,174,96,.1);  --err-bg: rgba(192,57,43,.1);
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --mono:   'JetBrains Mono', monospace;
     }
 
-    body { background:var(--bg); color:var(--text); font-family:var(--serif); font-size:17px; min-height:100vh; }
+    body { background:var(--bg); color:var(--text); font-family:var(--serif);
+           min-height:100vh; display:flex; flex-direction:column; }
 
-    /* ── Layout ─────────────────────────────────── */
-    #app   { display:flex; flex-direction:column; height:100vh; }
-    header { flex-shrink:0; display:flex; align-items:center; justify-content:space-between;
-             padding:15px 26px; border-bottom:1px solid var(--bdr); background:var(--bg); position:sticky; top:0; z-index:50; }
-    .title    { font-family:var(--serif); font-size:25px; color:var(--gold); font-weight:400; letter-spacing:.02em; }
-    .subtitle { color:var(--muted); font-style:italic; font-size:17px; }
+    /* ── Header ───────────────────────────────────────── */
+    header {
+      position:sticky; top:0; z-index:100;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 22px;
+      background:var(--bg); border-bottom:1px solid var(--bdr);
+    }
+    .hdr-title { font-family:var(--serif); font-size:20px; color:var(--gold);
+                 font-weight:400; letter-spacing:.02em; }
+    .hdr-score { font-family:var(--mono); font-size:12px; color:var(--dim);
+                 display:flex; gap:16px; }
+    .s-ok  { color:var(--ok); }
+    .s-err { color:var(--err); }
+    .icon-btn { background:none; border:1px solid var(--bdr); color:var(--dim);
+                width:34px; height:34px; border-radius:50%; cursor:pointer;
+                font-size:15px; transition:all .15s;
+                display:flex; align-items:center; justify-content:center; }
+    .icon-btn:hover { border-color:var(--gold2); color:var(--text); }
 
-    #stats-bar { flex-shrink:0; display:flex; gap:22px; padding:9px 26px;
-                 border-bottom:1px solid var(--bdr); background:var(--bg2);
-                 font-family:var(--mono); font-size:11px; color:var(--muted); }
-    .stat strong { color:var(--gold); margin-right:4px; }
+    /* ── Progress bar ─────────────────────────────────── */
+    #prog-wrap { height:3px; background:var(--bdr); flex-shrink:0; }
+    #prog-bar  { height:100%; background:var(--gold); transition:width .4s; width:0%; }
 
-    .layout { display:flex; flex:1; min-height:0; }
+    /* ── Quiz main ────────────────────────────────────── */
+    #quiz-main {
+      flex:1; display:flex; align-items:center; justify-content:center;
+      padding:20px 16px;
+    }
+    .quiz-card { width:100%; max-width:600px; display:flex; flex-direction:column; }
 
-    /* ── Sidebar ────────────────────────────────── */
-    #sidebar { width:260px; flex-shrink:0; background:var(--bg2);
-               border-right:1px solid var(--bdr); overflow-y:auto;
-               padding:18px 15px; display:flex; flex-direction:column; gap:20px; }
+    /* Word display */
+    .word-area { text-align:center; padding:28px 16px 24px; }
+    .word-main { font-family:var(--serif); font-style:italic;
+                 font-size:clamp(34px,6vw,56px); color:var(--text);
+                 line-height:1.15; letter-spacing:-.01em; }
+    .word-sub  { font-family:var(--mono); font-size:10px; color:var(--muted);
+                 margin-top:10px; letter-spacing:.1em; text-transform:uppercase; }
 
-    .s-label { font-family:var(--mono); font-size:10px; letter-spacing:.15em;
-               text-transform:uppercase; color:var(--gold); margin-bottom:7px; display:block; }
+    /* Options */
+    .options { display:flex; flex-direction:column; gap:8px; padding:0 2px; }
+    .opt {
+      display:flex; align-items:center; gap:14px;
+      padding:13px 16px;
+      background:var(--card2); border:1px solid var(--bdr); border-radius:6px;
+      cursor:pointer; transition:all .12s;
+      font-family:var(--serif); font-size:17px; color:var(--text);
+      text-align:left; width:100%;
+    }
+    .opt:hover:not(:disabled):not(.correct):not(.wrong) {
+      background:#1e1e1e; border-color:var(--gold2);
+    }
+    .opt:disabled { cursor:default; }
+    .opt-key  { font-family:var(--mono); font-size:11px; color:var(--muted);
+                min-width:16px; font-weight:500; }
+    .opt-art  { font-family:var(--mono); font-size:12px; color:var(--gold2);
+                min-width:26px; }
+    .opt-txt  { flex:1; line-height:1.4; }
+    .opt.correct { background:var(--ok-bg); border-color:var(--ok); }
+    .opt.correct .opt-key { color:var(--ok); }
+    .opt.wrong   { background:var(--err-bg); border-color:var(--err); }
+    .opt.wrong   .opt-key { color:var(--err); }
 
-    input[type="text"], input[type="password"] {
-      width:100%; background:var(--bg3); border:1px solid var(--bdr); color:var(--text);
-      padding:7px 10px; font-family:var(--serif); font-size:15px;
-      border-radius:3px; outline:none; transition:border-color .15s; }
+    /* Feedback */
+    .feedback { text-align:center; padding:14px 16px 4px;
+                font-family:var(--mono); font-size:12px; letter-spacing:.05em; }
+    .fb-ok  { color:var(--ok); }
+    .fb-err { color:var(--err); }
+
+    .next-btn {
+      display:block; width:100%; margin-top:12px; padding:13px;
+      background:var(--gold); color:#1a1200; border:none; border-radius:6px;
+      font-family:var(--mono); font-size:12px; letter-spacing:.1em;
+      text-transform:uppercase; cursor:pointer; transition:filter .15s;
+    }
+    .next-btn:hover { filter:brightness(1.1); }
+
+    /* Details toggle */
+    .det-toggle {
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      margin-top:16px; padding:9px; width:100%;
+      font-family:var(--mono); font-size:11px; color:var(--muted);
+      letter-spacing:.06em; cursor:pointer;
+      background:none; border:1px solid var(--bdr); border-radius:6px;
+      transition:all .15s;
+    }
+    .det-toggle:hover { color:var(--gold2); border-color:var(--gold2); }
+
+    /* Details panel */
+    .det-panel {
+      margin-top:8px;
+      background:var(--card); border:1px solid var(--bdr); border-radius:6px;
+      padding:20px; display:flex; flex-direction:column; gap:16px;
+    }
+    .dp-lbl { font-family:var(--mono); font-size:9px; letter-spacing:.15em;
+              text-transform:uppercase; color:var(--gold2); margin-bottom:5px; display:block; }
+    .dp-txt { font-size:15px; line-height:1.75; color:var(--dim); }
+    .dp-ex-de { font-style:italic; color:var(--dim); font-size:15px; }
+    .dp-ex-tr { color:var(--muted); font-size:14px; margin-top:3px; }
+    .dp-trans { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:5px; }
+    .dp-tr-row { display:flex; gap:8px; align-items:baseline; }
+    .dp-tr-lang { font-family:var(--mono); font-size:9px; color:var(--gold2);
+                  min-width:72px; text-transform:uppercase; letter-spacing:.08em; }
+    .dp-tr-val  { font-size:14px; color:var(--text); }
+    .rtl        { direction:rtl; text-align:right; }
+    .dp-links   { display:flex; flex-wrap:wrap; gap:8px; }
+    .dp-link {
+      font-family:var(--mono); font-size:10px; letter-spacing:.06em;
+      padding:5px 12px; border:1px solid var(--bdr); border-radius:20px;
+      color:var(--dim); text-decoration:none; transition:all .15s;
+    }
+    .dp-link:hover { border-color:var(--gold2); color:var(--gold); }
+
+    /* ── Setup screen ─────────────────────────────────── */
+    #setup-screen {
+      flex:1; display:none; align-items:center; justify-content:center; padding:24px;
+    }
+    #setup-screen.visible { display:flex; }
+    .setup-card {
+      width:100%; max-width:480px;
+      background:var(--card); border:1px solid var(--bdr);
+      border-top:3px solid var(--gold); border-radius:8px;
+      padding:30px; display:flex; flex-direction:column; gap:18px;
+    }
+    .setup-title { font-family:var(--serif); font-size:26px; color:var(--text); font-weight:400; }
+    .setup-body  { font-size:15px; line-height:1.7; color:var(--dim); }
+    .stat-row    { font-family:var(--mono); font-size:12px; color:var(--dim);
+                   padding:10px 14px; background:var(--card2); border-radius:4px; }
+    .stat-row strong { color:var(--gold); }
+
+    /* ── Settings modal ───────────────────────────────── */
+    #modal-bg {
+      display:none; position:fixed; inset:0; background:rgba(0,0,0,.75);
+      z-index:200; align-items:center; justify-content:center; padding:16px;
+    }
+    #modal-bg.open { display:flex; }
+    .modal {
+      background:var(--card); border:1px solid var(--bdr); border-radius:8px;
+      width:100%; max-width:500px; max-height:88vh; overflow-y:auto;
+      padding:26px; display:flex; flex-direction:column; gap:18px;
+    }
+    .modal-hdr { display:flex; align-items:center; justify-content:space-between; }
+    .modal-ttl { font-family:var(--serif); font-size:22px; font-weight:400; color:var(--text); }
+    .m-lbl { font-family:var(--mono); font-size:10px; letter-spacing:.15em;
+             text-transform:uppercase; color:var(--gold); margin-bottom:7px; display:block; }
+    input[type="password"], input[type="text"] {
+      width:100%; background:var(--card2); border:1px solid var(--bdr); color:var(--text);
+      padding:8px 10px; font-family:var(--serif); font-size:15px;
+      border-radius:3px; outline:none; transition:border-color .15s;
+    }
     input:focus { border-color:var(--gold2); }
-    input::placeholder { color:var(--dead); }
-
+    input::placeholder { color:var(--muted); }
+    select {
+      width:100%; background:var(--card2); border:1px solid var(--bdr); color:var(--text);
+      padding:8px 10px; font-family:var(--serif); font-size:15px;
+      border-radius:3px; outline:none;
+    }
+    .lang-grid { display:flex; flex-wrap:wrap; gap:5px; margin-top:2px; }
+    .lang-chip { font-family:var(--mono); font-size:10px; padding:3px 9px;
+                 border-radius:20px; border:1px solid var(--bdr); cursor:pointer;
+                 user-select:none; background:var(--card2); color:var(--dim); transition:all .15s; }
+    .lang-chip.on { background:var(--gold); color:#1a1200; border-color:var(--gold); }
     .btn { font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
-           border:none; cursor:pointer; border-radius:3px; padding:8px 14px; transition:all .15s; }
+           border:none; cursor:pointer; border-radius:3px; padding:9px 16px; transition:all .15s; }
     .btn-gold    { background:var(--gold); color:#1a1200; }
-    .btn-gold:hover { filter:brightness(1.1); }
-    .btn-gold:disabled { background:var(--gold2); cursor:not-allowed; opacity:.6; }
+    .btn-gold:hover    { filter:brightness(1.1); }
+    .btn-gold:disabled { background:var(--gold2); opacity:.6; cursor:not-allowed; }
     .btn-outline { background:transparent; color:var(--dim); border:1px solid var(--bdr); }
     .btn-outline:hover { border-color:var(--gold2); color:var(--text); }
     .btn-block   { display:block; width:100%; }
+    .btn-row     { display:flex; gap:8px; }
+    .gen-prog    { font-family:var(--mono); font-size:11px; color:var(--gold2); }
+    .tip         { font-size:12px; color:var(--muted); line-height:1.6; margin-top:5px; }
+    a.tip-link   { color:var(--gold2); }
+    #file-input  { display:none; }
+    .divider     { border:none; border-top:1px solid var(--bdr); }
 
-    .lang-grid  { display:flex; flex-wrap:wrap; gap:5px; }
-    .lang-chip  { font-family:var(--mono); font-size:10px; padding:3px 9px; border-radius:20px;
-                  border:1px solid var(--bdr); cursor:pointer; user-select:none;
-                  background:var(--bg3); color:var(--dim); transition:all .15s; }
-    .lang-chip.on { background:var(--gold); color:#1a1200; border-color:var(--gold); }
-
-    .radio-list label { display:flex; align-items:center; gap:8px; cursor:pointer; font-size:14px; margin-bottom:5px; }
-    .radio-list input { accent-color:var(--gold); cursor:pointer; }
-
-    /* ── Content ────────────────────────────────── */
-    #content { flex:1; overflow-y:auto; padding:26px; }
-
-    .mode-toggle { display:flex; border:1px solid var(--bdr); border-radius:3px; overflow:hidden; }
-    .mode-btn    { background:none; border:none; cursor:pointer; font-family:var(--mono); font-size:11px;
-                   letter-spacing:.1em; text-transform:uppercase; padding:7px 14px; color:var(--dim); transition:all .15s; }
-    .mode-btn.on { background:var(--gold); color:#1a1200; }
-
-    /* ── Flashcard ──────────────────────────────── */
-    .fc-nav   { display:flex; align-items:center; justify-content:center; gap:20px; margin-bottom:22px; }
-    .fc-arrow { background:none; border:1px solid var(--bdr); color:var(--dim); font-size:22px;
-                width:40px; height:40px; border-radius:50%; cursor:pointer; transition:all .15s;
-                display:flex; align-items:center; justify-content:center; }
-    .fc-arrow:hover { border-color:var(--gold); color:var(--gold); }
-    .fc-ctr   { font-family:var(--mono); font-size:12px; color:var(--muted); min-width:60px; text-align:center; }
-
-    .fc-scene { perspective:1200px; width:100%; max-width:540px; height:340px; margin:0 auto; cursor:pointer; }
-    .fc-card  { width:100%; height:100%; position:relative; transform-style:preserve-3d;
-                transition:transform .52s cubic-bezier(.4,0,.2,1); }
-    .fc-card.flipped { transform:rotateY(180deg); }
-    .fc-face  { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
-                background:var(--bg2); border:1px solid var(--bdr); border-radius:8px;
-                padding:28px 34px; display:flex; flex-direction:column; }
-    .fc-front { border-top:3px solid var(--gold); align-items:center; justify-content:center; gap:10px; }
-    .fc-back  { border-top:3px solid var(--gold2); transform:rotateY(180deg); gap:7px; overflow:hidden; }
-
-    .fc-badge { font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
-    .fc-word  { font-family:var(--serif); font-size:40px; color:var(--text); text-align:center; line-height:1.2; }
-    .fc-notes { font-size:13px; color:var(--dim); font-style:italic; }
-    .fc-hint  { font-family:var(--mono); font-size:10px; color:var(--dead); margin-top:8px; }
-
-    .trans-list { flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:5px; }
-    .trans-row  { display:flex; gap:12px; align-items:baseline; }
-    .trans-lang { font-family:var(--mono); font-size:10px; color:var(--gold2); min-width:82px;
-                  text-transform:uppercase; letter-spacing:.08em; flex-shrink:0; }
-    .trans-txt  { font-size:16px; color:var(--text); }
-    .rtl        { direction:rtl; text-align:right; }
-
-    .fc-ex    { border-top:1px solid var(--bdr); padding-top:9px; margin-top:4px; }
-    .fc-ex-de { font-style:italic; color:var(--dim); font-size:14px; }
-    .fc-ex-tr { color:var(--muted); font-size:13px; margin-top:2px; }
-
-    .dots     { display:flex; justify-content:center; flex-wrap:wrap; gap:5px; margin-top:16px; }
-    .dot      { width:8px; height:8px; border-radius:50%; background:var(--bdr); cursor:pointer; transition:all .15s; }
-    .dot.active  { background:var(--gold); transform:scale(1.4); }
-    .dot.done    { background:var(--green); }
-    .dot.loading { background:var(--gold2); }
-    .dot.error   { background:var(--red); }
-
-    /* ── Table ──────────────────────────────────── */
-    .vtable    { width:100%; border-collapse:collapse; font-size:15px; }
-    .vtable th { font-family:var(--mono); font-size:9px; letter-spacing:.15em; text-transform:uppercase;
-                 color:var(--gold); padding:9px 12px; border-bottom:1px solid var(--bdr); text-align:left; white-space:nowrap; }
-    .vtable td { padding:8px 12px; border-bottom:1px solid var(--bdr); vertical-align:middle; }
-    .vtable tr:hover td { background:var(--bg2); }
-    .td-word   { cursor:pointer; }
-    .w-main    { font-family:var(--serif); font-size:18px; color:var(--text); }
-    .w-note    { font-size:12px; color:var(--muted); font-style:italic; margin-left:6px; }
-    .td-tr     { color:var(--dim); }
-    .cell-load { color:var(--gold2); font-family:var(--mono); font-size:11px; }
-    .cell-err  { color:var(--red); }
-
-    .exrow td  { padding:0; }
-    .exbox     { padding:13px 18px; background:var(--bg3);
-                 border-bottom:1px solid var(--bdr); border-left:3px solid var(--gold2); }
-    .exbox-txt { font-size:15px; line-height:1.75; color:var(--dim); }
-    .exbox-ex  { margin-top:9px; font-size:14px; color:var(--muted); }
-    .ex-pre    { font-family:var(--mono); font-size:9px; color:var(--gold2); margin-right:8px;
-                 text-transform:uppercase; letter-spacing:.1em; }
-
-    /* ── Misc ───────────────────────────────────── */
-    .empty    { text-align:center; padding:80px 20px; color:var(--muted); }
-    .empty h3 { font-family:var(--serif); font-size:26px; color:var(--dim); margin-bottom:10px; font-weight:400; }
-    .tip      { font-size:11px; color:var(--dead); margin-top:7px; line-height:1.6; }
-    a         { color:var(--gold2); }
+    /* ── Session complete ─────────────────────────────── */
+    .done-card {
+      text-align:center; padding:40px 20px;
+      display:flex; flex-direction:column; align-items:center; gap:16px;
+    }
+    .done-card h2 { font-family:var(--serif); font-size:34px; color:var(--gold); font-weight:400; }
+    .done-card p  { font-size:16px; color:var(--dim); line-height:1.7; }
+    .done-stat    { font-family:var(--mono); font-size:28px; }
 
     @keyframes blink { 0%,100%{opacity:.2} 50%{opacity:1} }
     .blink span { animation:blink 1.2s infinite; }
     .blink span:nth-child(2){animation-delay:.2s}
     .blink span:nth-child(3){animation-delay:.4s}
 
-    #file-input { display:none; }
+    @keyframes fadein { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+    .fadein { animation:fadein .2s ease forwards; }
   </style>
 </head>
 <body>
-<div id="app">
 
-  <!-- ── Header ──────────────────────────────────────────── -->
-  <header>
-    <div>
-      <span class="title">Vokabular</span>
-      <span class="subtitle"> · German Vocabulary Trainer</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:center">
-      <div class="mode-toggle">
-        <button class="mode-btn on" id="btn-flash" onclick="setMode('flashcard')">Flashcards</button>
-        <button class="mode-btn"   id="btn-table" onclick="setMode('table')">Tabelle</button>
-      </div>
-      <button class="btn btn-outline" onclick="exportJSON()">↓ Export JSON</button>
-    </div>
-  </header>
-
-  <!-- ── Stats bar ───────────────────────────────────────── -->
-  <div id="stats-bar">
-    <span class="stat"><strong id="s-total">0</strong>words</span>
-    <span class="stat"><strong id="s-done">0</strong>translated</span>
-    <span class="stat"><strong id="s-pending">0</strong>pending</span>
-    <span class="stat"><strong id="s-langs">0</strong>languages</span>
+<!-- ── Header ─────────────────────────────────────────── -->
+<header>
+  <span class="hdr-title">Vokabular</span>
+  <div class="hdr-score">
+    <span class="s-ok"  id="score-ok">0 ✓</span>
+    <span class="s-err" id="score-err">0 ✗</span>
+    <span id="score-q" style="color:var(--muted)">0 left</span>
   </div>
+  <button class="icon-btn" onclick="openModal()" title="Settings">⚙</button>
+</header>
 
-  <div class="layout">
+<!-- ── Progress bar ───────────────────────────────────── -->
+<div id="prog-wrap"><div id="prog-bar"></div></div>
 
-    <!-- ── Sidebar ─────────────────────────────────────────── -->
-    <aside id="sidebar">
-
-      <!-- API key -->
-      <div>
-        <span class="s-label">Anthropic API Key</span>
-        <input type="password" id="api-key-input" placeholder="sk-ant-…" oninput="saveKey()">
-        <p class="tip">
-          Stored only in your browser — never in GitHub.<br>
-          Get a free key at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>
-        </p>
-      </div>
-
-      <!-- Add word -->
-      <div>
-        <span class="s-label">Add Word</span>
-        <div style="display:flex;flex-direction:column;gap:7px">
-          <input type="text" id="new-word"  placeholder="German word or phrase">
-          <input type="text" id="new-notes" placeholder="Notes — optional">
-          <button class="btn btn-gold btn-block" onclick="addWord()">+ Add</button>
-        </div>
-      </div>
-
-      <!-- Generate -->
-      <div>
-        <span class="s-label">Generate Translations</span>
-        <button class="btn btn-gold btn-block" id="btn-gen" onclick="generateAll()">Generate pending</button>
-        <p id="gen-prog" class="tip blink" style="display:none"></p>
-      </div>
-
-      <!-- Target languages -->
-      <div>
-        <span class="s-label">Target Languages</span>
-        <div class="lang-grid" id="lang-chips"></div>
-      </div>
-
-      <!-- Explanation language -->
-      <div>
-        <span class="s-label">Explanation In</span>
-        <div class="radio-list" id="expl-radios"></div>
-      </div>
-
-      <!-- Import/Export -->
-      <div>
-        <span class="s-label">Import</span>
-        <button class="btn btn-outline btn-block" onclick="document.getElementById('file-input').click()">↑ Import JSON</button>
-        <input type="file" id="file-input" accept=".json" onchange="importFile(event)">
-        <p class="tip">Import a JSON word list.<br>Previously exported files keep their translations.</p>
-      </div>
-
-    </aside>
-
-    <!-- ── Main content ───────────────────────────────────── -->
-    <main id="content"></main>
-
+<!-- ── Setup screen (shown when not enough translations) ── -->
+<div id="setup-screen">
+  <div class="setup-card">
+    <h2 class="setup-title">Ready to learn?</h2>
+    <p class="setup-body" id="setup-msg">Loading words…</p>
+    <div class="stat-row" id="setup-stats"></div>
+    <div>
+      <span class="m-lbl">Anthropic API Key</span>
+      <input type="password" id="api-key-input" placeholder="sk-ant-…" oninput="saveKey()">
+      <p class="tip">Stored only in your browser. Get one free at
+        <a class="tip-link" href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>
+      </p>
+    </div>
+    <button class="btn btn-gold btn-block" id="setup-gen-btn" onclick="generateAll()">🚀 Generate Translations</button>
+    <p class="gen-prog blink" id="setup-prog" style="display:none"></p>
+    <hr class="divider">
+    <div>
+      <p class="tip" style="margin-bottom:10px">Already have a translated vocab file?</p>
+      <button class="btn btn-outline btn-block" onclick="document.getElementById('file-input').click()">↑ Import JSON file</button>
+    </div>
   </div>
 </div>
 
+<!-- ── Quiz main ──────────────────────────────────────── -->
+<div id="quiz-main" style="display:none">
+  <div class="quiz-card" id="quiz-card"></div>
+</div>
+
+<!-- ── Settings modal ─────────────────────────────────── -->
+<div id="modal-bg" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-hdr">
+      <span class="modal-ttl">Settings</span>
+      <button class="icon-btn" onclick="closeModal()">✕</button>
+    </div>
+
+    <!-- API key -->
+    <div>
+      <span class="m-lbl">Anthropic API Key</span>
+      <input type="password" id="modal-api-key" placeholder="sk-ant-…" oninput="saveKeyFromModal()">
+      <p class="tip">Stored only in your browser — never sent to GitHub.</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Quiz language -->
+    <div>
+      <span class="m-lbl">Quiz — show translations in</span>
+      <select id="quiz-lang-sel" onchange="W.quizLang=this.value; persist()"></select>
+      <p class="tip">The language shown in the 4 answer choices.</p>
+    </div>
+
+    <!-- Target languages (for generation) -->
+    <div>
+      <span class="m-lbl">Generate translations for</span>
+      <div class="lang-grid" id="modal-lang-chips"></div>
+    </div>
+
+    <!-- Explanation language -->
+    <div>
+      <span class="m-lbl">Explanations in</span>
+      <select id="expl-lang-sel" onchange="W.explLang=this.value; persist()"></select>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Generate -->
+    <div>
+      <span class="m-lbl">Translations</span>
+      <div class="stat-row" id="modal-stats" style="margin-bottom:10px"></div>
+      <button class="btn btn-gold btn-block" id="modal-gen-btn" onclick="generateAll()">Generate pending words</button>
+      <p class="gen-prog blink" id="modal-prog" style="display:none;margin-top:8px"></p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Import / Export -->
+    <div>
+      <span class="m-lbl">Word List</span>
+      <div class="btn-row">
+        <button class="btn btn-outline" onclick="document.getElementById('file-input').click()" style="flex:1">↑ Import JSON</button>
+        <button class="btn btn-outline" onclick="exportJSON()" style="flex:1">↓ Export JSON</button>
+      </div>
+    </div>
+
+    <!-- Add single word -->
+    <div>
+      <span class="m-lbl">Add a Word</span>
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <input type="text" id="add-word"  placeholder="German word or phrase">
+        <input type="text" id="add-notes" placeholder="Notes — e.g. noun · §1">
+        <button class="btn btn-outline btn-block" onclick="addWord()">+ Add Word</button>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <!-- Restart quiz -->
+    <button class="btn btn-outline btn-block" onclick="restartQuiz();closeModal()">↺ Restart Quiz</button>
+  </div>
+</div>
+
+<input type="file" id="file-input" accept=".json" onchange="importFile(event)">
+
 <script>
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 //  CONSTANTS
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 
 const LANGUAGES = [
   'English','French','Arabic','Persian','Spanish',
   'Ukrainian','Russian','Italian','Swahili',
   'Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'
 ];
-// These scripts run right-to-left — we flip text alignment for them
 const RTL = new Set(['Arabic','Persian']);
+const ARTICLES = ['der','die','das'];
 
-// ════════════════════════════════════════════════════════════════
+// External dictionary links — always helpful
+function getLinks(word) {
+  const base = encodeURIComponent(
+    word.replace(/^(die|der|das)\s+/i,'')
+        .split(',')[0].split('(')[0].trim()
+  );
+  return [
+    { name:'Duden',      url:`https://www.duden.de/suchen/dudenonline/${base}` },
+    { name:'DWDS',       url:`https://www.dwds.de/?q=${base}` },
+    { name:'dict.cc',    url:`https://www.dict.cc/?s=${base}` },
+    { name:'Verbformen', url:`https://www.verbformen.de/?q=${base}` },
+    { name:'Wiktionary', url:`https://de.wiktionary.org/wiki/${base}` },
+  ];
+}
+
+// ════════════════════════════════════════════════════════
 //  STATE
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 
-let S = {
-  words: [],                     // [{id, word, notes, status, data}]
-  targetLanguages: [             // pre-selected target languages
-    'English','French','Arabic','Persian','Spanish',
-    'Ukrainian','Russian','Italian','Swahili'
-  ],
-  explanationLanguage: 'English',
-  mode: 'flashcard',
-  cardIndex: 0,
+// Persistent word + settings state
+let W = {
+  words:    [],
+  langs:    ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili'],
+  explLang: 'English',
+  quizLang: 'English',
 };
-let generating = false;
 
-// ════════════════════════════════════════════════════════════════
-//  PERSISTENCE  (localStorage — stays in the browser, not GitHub)
-// ════════════════════════════════════════════════════════════════
+// Quiz session state (not persisted)
+let Q = {
+  queue:       [],   // word IDs to quiz (shuffled done words)
+  qIndex:      0,
+  correct:     0,
+  wrong:       0,
+  current:     null, // { entry, options:[{art,txt,isCorrect}], phase:'q'|'ok'|'err', showDet }
+  generating:  false,
+};
+
+// ════════════════════════════════════════════════════════
+//  PERSISTENCE
+// ════════════════════════════════════════════════════════
 
 function persist() {
   try {
-    localStorage.setItem('vok_words', JSON.stringify(S.words));
-    localStorage.setItem('vok_cfg',   JSON.stringify({
-      targetLanguages:     S.targetLanguages,
-      explanationLanguage: S.explanationLanguage,
-    }));
-  } catch(e) { console.warn('Could not save to localStorage:', e); }
+    localStorage.setItem('vok_words', JSON.stringify(W.words));
+    localStorage.setItem('vok_cfg',   JSON.stringify({ langs:W.langs, explLang:W.explLang, quizLang:W.quizLang }));
+  } catch(e) {}
 }
 
 function loadStorage() {
   try {
     const w = localStorage.getItem('vok_words');
     const c = localStorage.getItem('vok_cfg');
-    if (w) S.words = JSON.parse(w);
+    if (w) W.words = JSON.parse(w);
     if (c) {
       const p = JSON.parse(c);
-      if (p.targetLanguages)     S.targetLanguages     = p.targetLanguages;
-      if (p.explanationLanguage) S.explanationLanguage = p.explanationLanguage;
+      if (p.langs)     W.langs    = p.langs;
+      if (p.explLang)  W.explLang = p.explLang;
+      if (p.quizLang)  W.quizLang = p.quizLang;
     }
     const k = localStorage.getItem('vok_key');
-    if (k) document.getElementById('api-key-input').value = k;
-  } catch(e) { console.warn('Could not read localStorage:', e); }
+    if (k) {
+      document.getElementById('api-key-input').value = k;
+      document.getElementById('modal-api-key').value = k;
+    }
+  } catch(e) {}
 }
 
-function saveKey() {
-  const k = document.getElementById('api-key-input').value.trim();
-  if (k) localStorage.setItem('vok_key', k);
+function saveKey()         { _saveKey(document.getElementById('api-key-input').value.trim()); }
+function saveKeyFromModal() { _saveKey(document.getElementById('modal-api-key').value.trim()); }
+function _saveKey(k) {
+  if (k) {
+    localStorage.setItem('vok_key', k);
+    document.getElementById('api-key-input').value = k;
+    document.getElementById('modal-api-key').value = k;
+  }
 }
-
 function getKey() {
   return document.getElementById('api-key-input').value.trim()
+      || document.getElementById('modal-api-key').value.trim()
       || localStorage.getItem('vok_key') || '';
 }
 
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 //  WORD MANAGEMENT
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 
 const uid = () => Math.random().toString(36).slice(2,9);
 
 function addWord() {
-  const wEl = document.getElementById('new-word');
-  const nEl = document.getElementById('new-notes');
+  const wEl = document.getElementById('add-word');
+  const nEl = document.getElementById('add-notes');
   const w   = wEl.value.trim();
   if (!w) return;
-  S.words.push({ id: uid(), word: w, notes: nEl.value.trim(), status: 'pending', data: null });
+  W.words.push({ id:uid(), word:w, notes:nEl.value.trim(), status:'pending', data:null });
   wEl.value = ''; nEl.value = '';
-  persist(); render();
+  persist(); updateModalStats(); screen();
 }
 
-function removeWord(id) {
-  S.words = S.words.filter(w => w.id !== id);
-  if (S.cardIndex >= S.words.length) S.cardIndex = Math.max(0, S.words.length - 1);
-  persist(); render();
-}
-
-// Enter key triggers addWord from either input
-document.addEventListener('DOMContentLoaded', () => {
-  ['new-word','new-notes'].forEach(id =>
-    document.getElementById(id).addEventListener('keydown', e => e.key==='Enter' && addWord())
-  );
-});
-
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 //  IMPORT / EXPORT
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 
 function importData(raw) {
-  // Accept: plain array  OR  full export { meta:{}, words:[] }
   const words = Array.isArray(raw) ? raw : (raw.words || []);
-  S.words = words.map(w => ({
+  W.words = words.map(w => ({
     id:     w.id     || uid(),
     word:   w.word   || '',
     notes:  w.notes  || '',
     status: w.status === 'done' ? 'done' : 'pending',
-    data:   w.status === 'done' ? (w.data || null) : null,
+    data:   w.status === 'done' ? (w.data||null) : null,
   }));
-  if (raw.meta?.targetLanguages)     S.targetLanguages     = raw.meta.targetLanguages;
-  if (raw.meta?.explanationLanguage) S.explanationLanguage = raw.meta.explanationLanguage;
-  S.cardIndex = 0;
-  persist(); buildSidebar(); render();
+  if (raw.meta?.langs)     W.langs    = raw.meta.langs;
+  if (raw.meta?.targetLanguages) W.langs = raw.meta.targetLanguages;  // backward compat
+  if (raw.meta?.explLang)  W.explLang = raw.meta.explLang;
+  if (raw.meta?.explanationLanguage) W.explLang = raw.meta.explanationLanguage;
+  persist(); buildModal(); screen();
 }
 
 function importFile(e) {
@@ -360,370 +472,447 @@ function importFile(e) {
     try   { importData(JSON.parse(ev.target.result)); }
     catch { alert('Could not read file — make sure it is valid JSON.'); }
   };
-  r.readAsText(file);
-  e.target.value = '';
+  r.readAsText(file); e.target.value='';
 }
 
 function exportJSON() {
   const payload = {
-    meta:  { targetLanguages: S.targetLanguages, explanationLanguage: S.explanationLanguage, exported: new Date().toISOString() },
-    words: S.words.map(({ id, word, notes, status, data }) => ({ id, word, notes, status, data })),
+    meta: { targetLanguages:W.langs, explanationLanguage:W.explLang, exported:new Date().toISOString() },
+    words: W.words.map(({id,word,notes,status,data})=>({id,word,notes,status,data})),
   };
-  const a  = document.createElement('a');
-  a.href   = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'}));
-  a.download = 'vocab.json';
-  a.click();
-  URL.revokeObjectURL(a.href);
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}));
+  a.download = 'vocab.json'; a.click(); URL.revokeObjectURL(a.href);
 }
 
-// ════════════════════════════════════════════════════════════════
-//  API  — one word at a time
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
+//  API
+// ════════════════════════════════════════════════════════
 
 async function fetchTranslation(word, langs, explLang, apiKey) {
-  const schema = langs.map(l => `"${l}": "translation here"`).join(', ');
-
+  const schema = langs.map(l=>`"${l}": "translation here"`).join(', ');
   const prompt =
 `You are an expert German language teacher and linguist.
 
 For the German word or phrase: "${word}"
 
-Provide ALL of the following:
+Provide:
 1. Translations into: ${langs.join(', ')}
-2. A clear explanation in ${explLang} — include etymology if interesting, register (formal/informal), grammatical notes, and usage context
+2. A clear explanation in ${explLang}: include etymology if interesting, register (formal/informal), grammatical notes (case government for verbs, plural forms for nouns), and usage context
 3. One natural example sentence in German
 4. Translation of that example in ${explLang}
 
-Respond ONLY with a valid JSON object. No markdown fences, no preamble:
-{
-  "translations": { ${schema} },
-  "explanation": "...",
-  "example_de": "...",
-  "example_translated": "..."
-}`;
+Respond ONLY with valid JSON — no markdown, no preamble:
+{ "translations": { ${schema} }, "explanation": "...", "example_de": "...", "example_translated": "..." }`;
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
-      'Content-Type':   'application/json',
-      'x-api-key':      apiKey,
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',  // required for browser calls
+      'anthropic-dangerous-direct-browser-access': 'true',
     },
-    body: JSON.stringify({
-      model:      'claude-sonnet-4-20250514',
-      max_tokens: 1200,
-      messages:   [{ role: 'user', content: prompt }],
-    }),
+    body: JSON.stringify({ model:'claude-sonnet-4-20250514', max_tokens:1200,
+                           messages:[{role:'user',content:prompt}] }),
   });
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`API ${res.status}: ${err}`);
-  }
-
+  if (!res.ok) throw new Error(`API ${res.status}`);
   const json  = await res.json();
-  const raw   = json.content.map(b => b.text||'').join('').trim();
+  const raw   = json.content.map(b=>b.text||'').join('').trim();
   const clean = raw.replace(/^```json\s*/i,'').replace(/```\s*$/i,'').trim();
   return JSON.parse(clean);
 }
 
-// ════════════════════════════════════════════════════════════════
-//  GENERATE ALL  — processes pending words one by one
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
+//  GENERATE ALL
+// ════════════════════════════════════════════════════════
 
 async function generateAll() {
   const apiKey = getKey();
-  if (!apiKey) {
-    alert('Please paste your Anthropic API key in the sidebar first.\n\nGet one free at: console.anthropic.com');
-    return;
-  }
-  if (generating) return;
+  if (!apiKey) { alert('Please paste your Anthropic API key first.\nGet one free at: console.anthropic.com'); return; }
+  if (Q.generating) return;
 
-  const pending = S.words.filter(w => w.status !== 'done');
-  if (pending.length === 0) return;
+  const pending = W.words.filter(w => w.status !== 'done');
+  if (!pending.length) return;
 
-  generating = true;
-  document.getElementById('btn-gen').disabled = true;
-  const prog = document.getElementById('gen-prog');
-  prog.style.display = 'block';
+  Q.generating = true;
+  document.getElementById('setup-gen-btn').disabled  = true;
+  document.getElementById('modal-gen-btn').disabled  = true;
 
-  for (let i = 0; i < pending.length; i++) {
-    const entry = pending[i];
-    prog.innerHTML = `translating ${i+1} / ${pending.length} <span>.</span><span>.</span><span>.</span>`;
+  for (let i=0; i<pending.length; i++) {
+    const msg = `Translating ${i+1} / ${pending.length} <span>.</span><span>.</span><span>.</span>`;
+    document.getElementById('setup-prog').innerHTML  = msg;
+    document.getElementById('modal-prog').innerHTML  = msg;
+    document.getElementById('setup-prog').style.display = 'block';
+    document.getElementById('modal-prog').style.display = 'block';
 
-    const idx = S.words.findIndex(w => w.id === entry.id);
-    if (idx < 0) continue;
-
-    S.words[idx].status = 'loading';
-    render();
+    const idx = W.words.findIndex(w => w.id === pending[i].id);
+    if (idx<0) continue;
+    W.words[idx].status = 'loading';
 
     try {
-      const data = await fetchTranslation(entry.word, S.targetLanguages, S.explanationLanguage, apiKey);
-      S.words[idx].status = 'done';
-      S.words[idx].data   = data;
-    } catch (err) {
-      console.error(`Failed for "${entry.word}":`, err);
-      S.words[idx].status = 'error';
+      const data = await fetchTranslation(pending[i].word, W.langs, W.explLang, apiKey);
+      W.words[idx].status = 'done';
+      W.words[idx].data   = data;
+    } catch(err) {
+      console.error(`Failed "${pending[i].word}":`, err);
+      W.words[idx].status = 'error';
     }
-
-    persist();
-    render();
+    persist(); updateModalStats();
   }
 
-  generating = false;
-  document.getElementById('btn-gen').disabled = false;
-  prog.style.display = 'none';
+  Q.generating = false;
+  document.getElementById('setup-gen-btn').disabled  = false;
+  document.getElementById('modal-gen-btn').disabled  = false;
+  document.getElementById('setup-prog').style.display = 'none';
+  document.getElementById('modal-prog').style.display = 'none';
+  screen();
 }
 
-// ════════════════════════════════════════════════════════════════
-//  FLASHCARD NAVIGATION
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
+//  QUIZ LOGIC
+// ════════════════════════════════════════════════════════
 
-function prevCard() { if (S.cardIndex > 0) { S.cardIndex--; renderFlashcard(); } }
-function nextCard() { if (S.cardIndex < S.words.length-1) { S.cardIndex++; renderFlashcard(); } }
-function goCard(i)  { S.cardIndex = i; renderFlashcard(); }
+// Extract article: "die Messe" → "die"
+function getArt(word) {
+  const m = word.match(/^(die|der|das)\s+/i);
+  return m ? m[1].toLowerCase() : null;
+}
+
+// Strip article + plural info: "die Messe, -n" → "Messe"
+function baseWord(word) {
+  return word.replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim();
+}
+
+// Build 4 quiz options for a word
+function buildOptions(entry) {
+  const lang    = W.quizLang;
+  const correct = entry.data?.translations?.[lang];
+  if (!correct) return null;
+
+  const art      = getArt(entry.word);
+  const isNoun   = !!art;
+
+  // Pool of other translated words with a translation in quizLang
+  const pool = W.words.filter(w =>
+    w.id !== entry.id &&
+    w.status === 'done' &&
+    w.data?.translations?.[lang]
+  );
+
+  // Shuffle helper
+  const shuffle = arr => arr.sort(()=>Math.random()-.5);
+
+  let options = [];
+
+  if (isNoun && pool.length >= 2) {
+    // Option 1 — correct article + correct translation  ← THE right answer
+    options.push({ art, txt: correct, isCorrect: true });
+
+    // Option 2 — wrong article + same translation  (tests article knowledge)
+    const wrongArt = shuffle(ARTICLES.filter(a=>a!==art))[0];
+    options.push({ art: wrongArt, txt: correct, isCorrect: false });
+
+    // Options 3–4 — two other words (article + their translation)
+    const others = shuffle(pool).slice(0,2);
+    others.forEach(w => {
+      const otherArt = getArt(w.word) || '';
+      options.push({ art: otherArt, txt: w.data.translations[lang], isCorrect: false });
+    });
+  } else {
+    // Non-noun (verbs, adjectives, phrases) — just 4 translations
+    options.push({ art:'', txt: correct, isCorrect: true });
+    const others = shuffle(pool).slice(0,3);
+    others.forEach(w => {
+      options.push({ art:'', txt: w.data.translations[lang], isCorrect: false });
+    });
+    // Pad if not enough words in pool
+    while (options.length < 4) {
+      options.push({ art:'', txt:'—', isCorrect: false });
+    }
+  }
+
+  return shuffle(options).slice(0,4);
+}
+
+function startQuiz() {
+  const done = W.words.filter(w => w.status==='done' && w.data?.translations?.[W.quizLang]);
+  if (done.length < 4) return; // need 4 for distractors
+  Q.queue  = done.sort(()=>Math.random()-.5).map(w=>w.id);
+  Q.qIndex = 0;
+  Q.correct = 0; Q.wrong = 0;
+  loadQuestion();
+}
+
+function restartQuiz() { startQuiz(); }
+
+function loadQuestion() {
+  if (Q.qIndex >= Q.queue.length) {
+    // Session complete
+    Q.current = null;
+    renderDone(); return;
+  }
+  const entry   = W.words.find(w=>w.id===Q.queue[Q.qIndex]);
+  const options = buildOptions(entry);
+  if (!options) { Q.qIndex++; loadQuestion(); return; }
+  Q.current = { entry, options, phase:'q', showDet: false };
+  renderQuiz();
+}
+
+function selectOption(i) {
+  if (!Q.current || Q.current.phase !== 'q') return;
+  const opt = Q.current.options[i];
+  Q.current.selectedIndex = i;
+  if (opt.isCorrect) {
+    Q.current.phase = 'ok'; Q.correct++;
+  } else {
+    Q.current.phase = 'err'; Q.wrong++;
+    // Re-add wrong word to end of queue
+    Q.queue.push(Q.queue[Q.qIndex]);
+  }
+  renderQuiz();
+}
+
+function nextWord() {
+  Q.qIndex++;
+  loadQuestion();
+}
+
+// ════════════════════════════════════════════════════════
+//  SCREEN ROUTER
+// ════════════════════════════════════════════════════════
+
+function screen() {
+  const done = W.words.filter(w => w.status==='done' && w.data?.translations?.[W.quizLang]);
+  const total = W.words.length;
+  const doneN = W.words.filter(w=>w.status==='done').length;
+
+  const setupEl = document.getElementById('setup-screen');
+  const quizEl  = document.getElementById('quiz-main');
+
+  if (done.length < 4) {
+    // Not enough translated words — show setup screen
+    setupEl.className = 'visible';
+    quizEl.style.display = 'none';
+    document.getElementById('setup-msg').textContent =
+      total === 0
+        ? 'No words loaded yet. Import a vocab JSON file below.'
+        : `${doneN} of ${total} words translated. Need at least 4 to start the quiz.`;
+    document.getElementById('setup-stats').innerHTML =
+      `<strong>${total}</strong> words loaded &nbsp;·&nbsp; <strong>${doneN}</strong> translated &nbsp;·&nbsp; <strong>${total-doneN}</strong> pending`;
+    document.getElementById('setup-gen-btn').disabled =
+      Q.generating || W.words.filter(w=>w.status!=='done').length===0;
+  } else {
+    setupEl.className = '';
+    quizEl.style.display = 'flex';
+    if (!Q.current && !Q.queue.length) startQuiz();
+    else renderQuiz();
+  }
+}
+
+// ════════════════════════════════════════════════════════
+//  RENDER — QUIZ
+// ════════════════════════════════════════════════════════
+
+function renderQuiz() {
+  const card = document.getElementById('quiz-card');
+  if (!Q.current) return;
+  const { entry, options, phase, showDet, selectedIndex } = Q.current;
+
+  // Progress
+  const total = Q.queue.length;
+  const pct   = total ? Math.round((Q.qIndex / total) * 100) : 0;
+  document.getElementById('prog-bar').style.width   = pct + '%';
+  document.getElementById('score-ok').textContent  = Q.correct + ' ✓';
+  document.getElementById('score-err').textContent = Q.wrong   + ' ✗';
+  document.getElementById('score-q').textContent   = Math.max(0, total - Q.qIndex) + ' left';
+
+  // Options HTML
+  const keys = ['A','B','C','D'];
+  const optsHTML = options.map((opt, i) => {
+    let cls = 'opt';
+    if (phase !== 'q') {
+      if (opt.isCorrect)      cls += ' correct';
+      else if (i===selectedIndex) cls += ' wrong';
+    }
+    const artSpan = opt.art
+      ? `<span class="opt-art">${h(opt.art)}</span>`
+      : '';
+    return `<button class="${cls}" onclick="selectOption(${i})"
+              ${phase!=='q'?'disabled':''}
+              style="animation-delay:${i*50}ms" class="fadein">
+      <span class="opt-key">${keys[i]}</span>
+      ${artSpan}
+      <span class="opt-txt">${h(opt.txt)}</span>
+    </button>`;
+  }).join('');
+
+  // Feedback
+  let fbHTML = '';
+  if (phase==='ok')  fbHTML = `<p class="feedback fb-ok">✓ Richtig! Well done.</p>`;
+  if (phase==='err') {
+    const correctOpt = options.find(o=>o.isCorrect);
+    const artStr = correctOpt.art ? `${correctOpt.art} · ` : '';
+    fbHTML = `<p class="feedback fb-err">✗ Not quite — the answer was: <strong>${artStr}${h(correctOpt.txt)}</strong></p>`;
+  }
+
+  // Next button
+  const nextHTML = (phase!=='q')
+    ? `<button class="next-btn" onclick="nextWord()">Next word →</button>`
+    : '';
+
+  // Details panel
+  const detBtnTxt = showDet ? '▲ Hide explanation' : '📖 Explanation, grammar & links';
+  const detHTML   = showDet ? buildDetails(entry) : '';
+
+  card.innerHTML = `
+    <div class="word-area fadein">
+      <div class="word-main">${h(baseWord(entry.word))}</div>
+      ${entry.notes ? `<div class="word-sub">${h(entry.notes)}</div>` : ''}
+    </div>
+    <div class="options">${optsHTML}</div>
+    ${fbHTML}
+    ${nextHTML}
+    <button class="det-toggle" onclick="toggleDetails()">
+      ${detBtnTxt}
+    </button>
+    ${detHTML}
+  `;
+}
+
+function toggleDetails() {
+  if (!Q.current) return;
+  Q.current.showDet = !Q.current.showDet;
+  renderQuiz();
+}
+
+function buildDetails(entry) {
+  const d = entry.data;
+  if (!d) return `<div class="det-panel"><p style="color:var(--muted);font-size:14px">No data yet — generate translations first.</p></div>`;
+
+  // All translations
+  const transHTML = W.langs.map(lang => {
+    const val = d.translations?.[lang];
+    if (!val) return '';
+    const dir = RTL.has(lang) ? ' rtl' : '';
+    return `<div class="dp-tr-row">
+      <span class="dp-tr-lang">${h(lang)}</span>
+      <span class="dp-tr-val${dir}">${h(val)}</span>
+    </div>`;
+  }).join('');
+
+  // External links
+  const linksHTML = getLinks(entry.word).map(l =>
+    `<a class="dp-link" href="${l.url}" target="_blank" rel="noopener">${l.name}</a>`
+  ).join('');
+
+  return `<div class="det-panel fadein">
+    ${d.explanation ? `<div>
+      <span class="dp-lbl">Explanation & Grammar</span>
+      <p class="dp-txt">${h(d.explanation)}</p>
+    </div>` : ''}
+    ${d.example_de ? `<div>
+      <span class="dp-lbl">Example</span>
+      <p class="dp-ex-de">„${h(d.example_de)}"</p>
+      <p class="dp-ex-tr">${h(d.example_translated||'')}</p>
+    </div>` : ''}
+    <div>
+      <span class="dp-lbl">All Translations</span>
+      <div class="dp-trans">${transHTML}</div>
+    </div>
+    <div>
+      <span class="dp-lbl">Further Reading</span>
+      <div class="dp-links">${linksHTML}</div>
+    </div>
+  </div>`;
+}
+
+function renderDone() {
+  document.getElementById('prog-bar').style.width = '100%';
+  document.getElementById('quiz-card').innerHTML = `
+    <div class="done-card fadein">
+      <h2>Session complete!</h2>
+      <div class="done-stat">
+        <span class="s-ok">${Q.correct} ✓</span>
+        &nbsp;
+        <span class="s-err">${Q.wrong} ✗</span>
+      </div>
+      <p>You went through all ${Q.queue.length} words.<br>
+         Accuracy: <strong>${Math.round(Q.correct/(Q.correct+Q.wrong||1)*100)}%</strong></p>
+      <button class="next-btn" style="margin-top:8px" onclick="restartQuiz()">↺ Start again with same words</button>
+    </div>
+  `;
+}
+
+// ════════════════════════════════════════════════════════
+//  MODAL
+// ════════════════════════════════════════════════════════
+
+function openModal()  {
+  updateModalStats();
+  document.getElementById('modal-bg').classList.add('open');
+}
+function closeModal() { document.getElementById('modal-bg').classList.remove('open'); }
+
+function buildModal() {
+  // Quiz language select
+  const ql = document.getElementById('quiz-lang-sel');
+  ql.innerHTML = LANGUAGES.map(l =>
+    `<option value="${l}" ${W.quizLang===l?'selected':''}>${l}</option>`
+  ).join('');
+
+  // Explanation language select
+  const el = document.getElementById('expl-lang-sel');
+  el.innerHTML = LANGUAGES.map(l =>
+    `<option value="${l}" ${W.explLang===l?'selected':''}>${l}</option>`
+  ).join('');
+
+  // Lang chips
+  const chips = document.getElementById('modal-lang-chips');
+  chips.innerHTML = '';
+  LANGUAGES.forEach(lang => {
+    const c = document.createElement('span');
+    c.className   = 'lang-chip' + (W.langs.includes(lang)?' on':'');
+    c.textContent = lang;
+    c.onclick = () => {
+      W.langs = W.langs.includes(lang) ? W.langs.filter(l=>l!==lang) : [...W.langs, lang];
+      c.classList.toggle('on');
+      persist();
+    };
+    chips.appendChild(c);
+  });
+
+  updateModalStats();
+}
+
+function updateModalStats() {
+  const total = W.words.length;
+  const done  = W.words.filter(w=>w.status==='done').length;
+  const pend  = total - done;
+  const stat  = `<strong>${done}</strong> translated &nbsp;·&nbsp; <strong>${pend}</strong> pending &nbsp;·&nbsp; <strong>${total}</strong> total`;
+  document.getElementById('modal-stats').innerHTML     = stat;
+  document.getElementById('setup-stats').innerHTML     = stat;
+  document.getElementById('modal-gen-btn').disabled    = Q.generating || pend===0;
+  document.getElementById('setup-gen-btn').disabled    = Q.generating || pend===0;
+}
+
+// ════════════════════════════════════════════════════════
+//  KEYBOARD SHORTCUTS  (A/B/C/D or 1/2/3/4)
+// ════════════════════════════════════════════════════════
 
 document.addEventListener('keydown', e => {
-  if (S.mode !== 'flashcard') return;
-  if (e.key === 'ArrowLeft')  prevCard();
-  if (e.key === 'ArrowRight') nextCard();
-  if (e.key === ' ') {
-    e.preventDefault();
-    document.querySelector('.fc-card')?.classList.toggle('flipped');
+  if (document.getElementById('modal-bg').classList.contains('open')) return;
+  const map = { a:0, b:1, c:2, d:3, '1':0, '2':1, '3':2, '4':3 };
+  const i   = map[e.key.toLowerCase()];
+  if (i !== undefined && Q.current?.phase === 'q') selectOption(i);
+  if ((e.key==='Enter' || e.key===' ') && Q.current?.phase !== 'q') {
+    e.preventDefault(); nextWord();
   }
 });
 
-// ════════════════════════════════════════════════════════════════
-//  SET MODE
-// ════════════════════════════════════════════════════════════════
-
-function setMode(m) {
-  S.mode = m;
-  document.getElementById('btn-flash').classList.toggle('on', m==='flashcard');
-  document.getElementById('btn-table').classList.toggle('on', m==='table');
-  render();
-}
-
-// ════════════════════════════════════════════════════════════════
-//  STATS BAR
-// ════════════════════════════════════════════════════════════════
-
-function updateStats() {
-  const total   = S.words.length;
-  const done    = S.words.filter(w => w.status==='done').length;
-  const pending = S.words.filter(w => w.status!=='done').length;
-  document.getElementById('s-total').textContent   = total;
-  document.getElementById('s-done').textContent    = done;
-  document.getElementById('s-pending').textContent = pending;
-  document.getElementById('s-langs').textContent   = S.targetLanguages.length;
-  const btn = document.getElementById('btn-gen');
-  btn.textContent = `Generate ${pending} pending`;
-  btn.disabled    = generating || pending===0;
-}
-
-// ════════════════════════════════════════════════════════════════
-//  BUILD SIDEBAR  (language chips + radios)
-// ════════════════════════════════════════════════════════════════
-
-function buildSidebar() {
-  // Language chips
-  const chips = document.getElementById('lang-chips');
-  chips.innerHTML = '';
-  LANGUAGES.forEach(lang => {
-    const el = document.createElement('span');
-    el.className = 'lang-chip' + (S.targetLanguages.includes(lang) ? ' on' : '');
-    el.textContent = lang;
-    el.onclick = () => {
-      if (S.targetLanguages.includes(lang))
-        S.targetLanguages = S.targetLanguages.filter(l => l!==lang);
-      else
-        S.targetLanguages = [...S.targetLanguages, lang];
-      el.classList.toggle('on');
-      persist(); updateStats();
-    };
-    chips.appendChild(el);
-  });
-
-  // Explanation language radios
-  const radios = document.getElementById('expl-radios');
-  radios.innerHTML = '';
-  LANGUAGES.forEach(lang => {
-    const lbl = document.createElement('label');
-    const inp = document.createElement('input');
-    inp.type    = 'radio';
-    inp.name    = 'expl';
-    inp.value   = lang;
-    inp.checked = (lang === S.explanationLanguage);
-    inp.onchange = () => { S.explanationLanguage = lang; persist(); };
-    lbl.appendChild(inp);
-    lbl.appendChild(document.createTextNode(' ' + lang));
-    radios.appendChild(lbl);
-  });
-}
-
-// ════════════════════════════════════════════════════════════════
-//  RENDER — FLASHCARD MODE
-// ════════════════════════════════════════════════════════════════
-
-function renderFlashcard() {
-  const content = document.getElementById('content');
-
-  if (S.words.length === 0) {
-    content.innerHTML = '<div class="empty"><h3>Keine Wörter vorhanden</h3><p>Add German words in the sidebar, or import a JSON file.</p></div>';
-    updateStats(); return;
-  }
-
-  S.cardIndex = Math.min(S.cardIndex, S.words.length - 1);
-  const e = S.words[S.cardIndex];
-  const ok = e.status === 'done';
-
-  // Translations on the back face
-  let transHTML = '';
-  if (ok && e.data?.translations) {
-    S.targetLanguages.forEach(lang => {
-      const txt = e.data.translations[lang] || '—';
-      const dir = RTL.has(lang) ? ' rtl' : '';
-      transHTML += `<div class="trans-row">
-        <span class="trans-lang">${h(lang)}</span>
-        <span class="trans-txt${dir}">${h(txt)}</span>
-      </div>`;
-    });
-  }
-
-  // Example sentence on the back face
-  const exHTML = (ok && e.data?.example_de)
-    ? `<div class="fc-ex">
-        <p class="fc-ex-de">„${h(e.data.example_de)}"</p>
-        <p class="fc-ex-tr">${h(e.data.example_translated||'')}</p>
-       </div>`
-    : '';
-
-  // Status indicator on the front face
-  const frontStatus =
-    e.status==='loading' ? `<p style="color:var(--gold2);font-family:var(--mono);font-size:11px" class="blink">translating<span>.</span><span>.</span><span>.</span></p>`
-  : e.status==='error'   ? `<p style="color:var(--red);font-size:13px">⚠ Translation failed — try Generate again</p>`
-  : e.status==='done'    ? `<p class="fc-hint">tap card · or press Space</p>`
-  :                        `<p class="fc-hint">not yet generated</p>`;
-
-  // Progress dots
-  const dots = S.words.map((w, i) =>
-    `<div class="dot ${w.status} ${i===S.cardIndex?'active':''}" onclick="goCard(${i})" title="${h(w.word)}"></div>`
-  ).join('');
-
-  content.innerHTML = `
-    <div class="fc-nav">
-      <button class="fc-arrow" onclick="prevCard()">‹</button>
-      <span class="fc-ctr">${S.cardIndex+1} / ${S.words.length}</span>
-      <button class="fc-arrow" onclick="nextCard()">›</button>
-    </div>
-
-    <div class="fc-scene" onclick="this.querySelector('.fc-card').classList.toggle('flipped')">
-      <div class="fc-card">
-        <div class="fc-face fc-front">
-          <span class="fc-badge">🇩🇪 Deutsches Wort</span>
-          <h2 class="fc-word">${h(e.word)}</h2>
-          ${e.notes ? `<p class="fc-notes">${h(e.notes)}</p>` : ''}
-          ${frontStatus}
-        </div>
-        <div class="fc-face fc-back">
-          <span class="fc-badge" style="color:var(--gold2)">translations</span>
-          <div class="trans-list">${transHTML}</div>
-          ${exHTML}
-        </div>
-      </div>
-    </div>
-
-    <div class="dots">${dots}</div>
-  `;
-
-  updateStats();
-}
-
-// ════════════════════════════════════════════════════════════════
-//  RENDER — TABLE MODE
-// ════════════════════════════════════════════════════════════════
-
-function renderTable() {
-  const content = document.getElementById('content');
-
-  if (S.words.length === 0) {
-    content.innerHTML = '<div class="empty"><h3>Keine Wörter vorhanden</h3><p>Add German words in the sidebar, or import a JSON file.</p></div>';
-    updateStats(); return;
-  }
-
-  const thCols = S.targetLanguages.map(l => `<th>${h(l)}</th>`).join('');
-
-  const rows = S.words.map(w => {
-    const transCells = S.targetLanguages.map(lang => {
-      if (w.status==='loading') return `<td class="cell-load">…</td>`;
-      if (w.status==='done')    {
-        const txt = w.data?.translations?.[lang] || '—';
-        const dir = RTL.has(lang) ? ' dir="rtl"' : '';
-        return `<td class="td-tr"${dir}>${h(txt)}</td>`;
-      }
-      if (w.status==='error') return `<td class="cell-err">⚠</td>`;
-      return `<td style="color:var(--dead)">–</td>`;
-    }).join('');
-
-    const exBox = (w.status==='done' && w.data)
-      ? `<div class="exbox">
-           <p class="exbox-txt">${h(w.data.explanation||'')}</p>
-           ${w.data.example_de
-             ? `<p class="exbox-ex"><span class="ex-pre">Bsp.</span><em>„${h(w.data.example_de)}"</em>
-                <span style="color:var(--bdr)"> — </span>${h(w.data.example_translated||'')}</p>`
-             : ''}
-         </div>`
-      : '';
-
-    return `
-      <tr>
-        <td class="td-word" onclick="toggleEx('ex-${w.id}')">
-          <span class="w-main">${h(w.word)}</span>
-          ${w.notes ? `<span class="w-note">${h(w.notes)}</span>` : ''}
-          ${w.status==='done' ? '<span style="font-size:10px;color:var(--gold2);margin-left:6px">▼</span>' : ''}
-        </td>
-        ${transCells}
-        <td>
-          <button onclick="removeWord('${w.id}')"
-            style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px;line-height:1">×</button>
-        </td>
-      </tr>
-      <tr id="ex-${w.id}" style="display:none">
-        <td colspan="${S.targetLanguages.length+2}" class="exrow">${exBox}</td>
-      </tr>
-    `;
-  }).join('');
-
-  content.innerHTML = `
-    <div style="overflow-x:auto">
-      <table class="vtable">
-        <thead><tr><th>Deutsches Wort</th>${thCols}<th></th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>
-  `;
-
-  updateStats();
-}
-
-function toggleEx(id) {
-  const el = document.getElementById(id);
-  if (el) el.style.display = el.style.display==='none' ? 'table-row' : 'none';
-}
-
-// ════════════════════════════════════════════════════════════════
-//  RENDER — dispatcher
-// ════════════════════════════════════════════════════════════════
-
-function render() {
-  if (S.mode==='flashcard') renderFlashcard();
-  else                      renderTable();
-}
-
-// ════════════════════════════════════════════════════════════════
-//  UTILITY  — escape HTML to prevent XSS
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
+//  UTILITY
+// ════════════════════════════════════════════════════════
 
 function h(s) {
   return String(s)
@@ -731,20 +920,19 @@ function h(s) {
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 //  BOOT
-// ════════════════════════════════════════════════════════════════
+// ════════════════════════════════════════════════════════
 
-loadStorage();   // restore words + settings from browser memory
-buildSidebar();  // build language chips and radios
-render();        // draw the UI
+loadStorage();
+buildModal();
+screen();
 
-// Try to auto-load vocab.json from the same folder (GitHub Pages).
-// Only imports if no words are stored yet — won't overwrite your work.
+// Auto-load vocab.json from same folder (GitHub Pages) if no words yet
 fetch('./vocab.json')
   .then(r => { if(!r.ok) throw 0; return r.json(); })
-  .then(data => { if(S.words.length===0) importData(data); })
-  .catch(() => {});  // silently ignore if file not present
+  .then(data => { if(W.words.length===0) importData(data); })
+  .catch(()=>{});
 
 </script>
 </body>
