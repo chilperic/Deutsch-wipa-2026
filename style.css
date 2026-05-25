@@ -1,0 +1,5 @@
+:root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
+body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; display: flex; justify-content: center; padding: 20px; }
+.card { width: 100%; max-width: 600px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
+input { background: #1a1a1f; border: 1px solid var(--bdr); color: var(--text); padding: 10px; width: 100%; box-sizing: border-box; }
+button { background: var(--gold); color: #000; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; font-weight: bold; margin-top: 10px; }
