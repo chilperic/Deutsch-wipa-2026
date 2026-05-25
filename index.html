@@ -3,256 +3,244 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vokabular · German Learning System</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Vokabular · Deutsch lernen</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#08080a;--s1:#111115;--s2:#17171c;--s3:#202027;--b:#2d2d36;--b2:#3a3a45;
-  --gold:#c9a84c;--gold2:#8a6f30;--text:#eee5d4;--dim:#8b8174;--muted:#58544c;
-  --ok:#2ecc71;--err:#e74c3c;--warn:#e67e22;--info:#3498db;
+  --bg:#07070a;--bg2:#0e0e13;--s1:#121218;--s2:#191920;--s3:#23232c;--s4:#2d2d38;
+  --b:#30303b;--b2:#454552;--gold:#c9a84c;--gold2:#8a6f30;--gold3:#f3d276;
+  --text:#efe7d7;--dim:#918779;--muted:#5f5a50;--ok:#2ecc71;--err:#e74c3c;--warn:#e67e22;--info:#3498db;
+  --okbg:rgba(46,204,113,.11);--errbg:rgba(231,76,60,.11);--warnbg:rgba(230,126,34,.10);--infobg:rgba(52,152,219,.10);
   --serif:'Cormorant Garamond',Georgia,serif;--body:'Crimson Pro',Georgia,serif;--mono:'JetBrains Mono',monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{min-height:100vh;background:radial-gradient(circle at top,#151515 0,#08080a 42%);color:var(--text);font-family:var(--body);font-size:18px}
-button,input,select,textarea{font:inherit}
-.screen{display:none;min-height:100vh;padding:20px;align-items:center;justify-content:center}.screen.on{display:flex}
-.shell{width:min(980px,100%)}
-.card{background:rgba(17,17,21,.96);border:1px solid var(--b);border-radius:18px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
-.topbar{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{font-family:var(--serif);font-size:40px;color:var(--gold);line-height:1}.tag{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:4px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stack{display:flex;flex-direction:column;gap:12px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.split{display:flex;justify-content:space-between;gap:12px;align-items:center}
-.lbl{display:block;font-family:var(--mono);font-size:10px;color:var(--gold2);letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
-input,select,textarea{width:100%;background:var(--s2);border:1px solid var(--b);color:var(--text);border-radius:10px;padding:11px 13px;outline:none}textarea{min-height:110px;resize:vertical;font-family:var(--mono);font-size:13px}input:focus,select:focus,textarea:focus{border-color:var(--gold2);box-shadow:0 0 0 2px rgba(201,168,76,.15)}
-.btn{border:0;border-radius:10px;padding:12px 16px;cursor:pointer;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:.15s}.btn:hover{transform:translateY(-1px)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#171100}.ghost{background:transparent;color:var(--dim);border:1px solid var(--b)}.ghost:hover{border-color:var(--gold2);color:var(--text)}.danger{background:rgba(231,76,60,.12);color:var(--err);border:1px solid rgba(231,76,60,.35)}
-.pill{font-family:var(--mono);font-size:12px;border:1px solid var(--b);border-radius:999px;padding:7px 13px;color:var(--dim);background:var(--s2);cursor:pointer}.pill.on{background:var(--gold);border-color:var(--gold);color:#171100}.pill.small{font-size:10px;padding:4px 8px}
-.stat{background:var(--s2);border:1px solid var(--b);border-radius:14px;padding:16px;text-align:center}.stat b{display:block;font-family:var(--serif);font-size:34px;color:var(--gold);line-height:1}.stat span{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
-.progress{position:fixed;top:0;left:0;right:0;height:4px;background:#222;z-index:10}.bar{height:100%;width:0;background:var(--gold);transition:.25s}
-.quiz-header{position:sticky;top:0;width:100%;z-index:5;background:rgba(8,8,10,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--b);padding:12px 18px}.quiz-header .shell{display:flex;align-items:center;justify-content:space-between}.badges{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.badge{font-family:var(--mono);font-size:12px;border:1px solid var(--b);border-radius:999px;padding:6px 10px;color:var(--dim)}.badge.ok{color:var(--ok);border-color:rgba(46,204,113,.35)}.badge.err{color:var(--err);border-color:rgba(231,76,60,.35)}.badge.info{color:var(--info);border-color:rgba(52,152,219,.35)}
-.quiz-body{min-height:calc(100vh - 70px);display:flex;align-items:center;justify-content:center;padding:24px}.qcard{width:min(700px,100%)}.word{text-align:center;margin-bottom:22px}.word-main{font-family:var(--serif);font-size:clamp(44px,9vw,82px);font-style:italic;line-height:.98}.word-sub{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:10px}.phase{font-family:var(--mono);font-size:12px;color:var(--gold2);letter-spacing:.16em;text-transform:uppercase;text-align:center;margin:0 0 14px}
-.options{display:grid;gap:10px}.options.cols{grid-template-columns:repeat(4,minmax(0,1fr))}.opt{background:var(--s2);border:1px solid var(--b);color:var(--text);border-radius:12px;padding:17px 18px;text-align:left;cursor:pointer}.opt.center{text-align:center;font-family:var(--mono);font-size:22px}.opt:hover:not(:disabled){border-color:var(--gold2);background:var(--s3)}.opt.correct{border-color:var(--ok);background:rgba(46,204,113,.1);color:var(--ok)}.opt.wrong{border-color:var(--err);background:rgba(231,76,60,.1);color:var(--err)}.opt:disabled{cursor:default}
-.input-answer{font-size:24px;text-align:center}.feedback{margin-top:16px;padding:14px 16px;border:1px solid var(--b);border-radius:12px;background:var(--s1);font-family:var(--mono);font-size:13px;color:var(--dim);line-height:1.6}.feedback.ok{color:var(--ok);border-color:rgba(46,204,113,.35)}.feedback.err{color:var(--err);border-color:rgba(231,76,60,.35)}
-.panel{margin-top:14px;border:1px solid var(--b);border-radius:14px;overflow:hidden;background:var(--s1)}.panel-sec{padding:17px;border-bottom:1px solid var(--b)}.panel-sec:last-child{border-bottom:0}.example-de{font-size:20px;font-style:italic}.example-tr{color:var(--dim);margin-top:4px}.grammar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;font-family:var(--mono);font-size:13px}.grammar div{border-bottom:1px solid var(--b);padding:6px 0;display:flex;justify-content:space-between;gap:12px}.grammar span:first-child{color:var(--dim)}
-.table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}.table th,.table td{border-bottom:1px solid var(--b);padding:9px;text-align:left}.table th{color:var(--gold2);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.table td{color:var(--dim)}
-.hidden{display:none!important}.note{color:var(--dim);font-size:15px;line-height:1.55}.warn{color:var(--warn)}.oktxt{color:var(--ok)}.errtxt{color:var(--err)}
-@media(max-width:760px){.grid,.grid3{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.options.cols{grid-template-columns:repeat(2,minmax(0,1fr))}.grammar{grid-template-columns:1fr}.quiz-header .shell{align-items:flex-start;flex-direction:column;gap:10px}}
+html{scroll-behavior:smooth}
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 15% 0%,rgba(201,168,76,.14),transparent 33%),
+    radial-gradient(circle at 90% 10%,rgba(52,152,219,.11),transparent 28%),
+    linear-gradient(180deg,var(--bg2),var(--bg));
+  color:var(--text);font-family:var(--body);font-size:18px;overflow-x:hidden;
+}
+button,input,select,textarea{font:inherit} button{user-select:none}.hidden{display:none!important}
+.screen{display:none;min-height:100vh;padding:22px;align-items:center;justify-content:center}.screen.on{display:flex}
+.shell{width:min(1140px,100%)}
+.card{background:linear-gradient(180deg,rgba(18,18,24,.97),rgba(13,13,18,.97));border:1px solid var(--b);border-radius:24px;padding:28px;box-shadow:0 24px 80px rgba(0,0,0,.48),inset 0 1px 0 rgba(255,255,255,.035)}
+.stack{display:flex;flex-direction:column;gap:14px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.split{display:flex;align-items:center;justify-content:space-between;gap:14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.brand{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:700;color:var(--gold);line-height:.95;letter-spacing:.01em;text-shadow:0 8px 38px rgba(201,168,76,.18)}
+.brand.small{font-size:34px}.tag{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:6px}.lead{color:var(--dim);line-height:1.55;max-width:820px}
+.lbl{display:block;font-family:var(--mono);font-size:10px;color:var(--gold2);letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+input,select,textarea{width:100%;background:var(--s2);border:1px solid var(--b);color:var(--text);border-radius:12px;padding:12px 14px;outline:none}
+textarea{min-height:150px;resize:vertical;font-family:var(--mono);font-size:13px;line-height:1.55}
+input:focus,select:focus,textarea:focus{border-color:var(--gold2);box-shadow:0 0 0 3px rgba(201,168,76,.14)}
+.btn{border:0;border-radius:12px;padding:12px 16px;cursor:pointer;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:transform .15s,border-color .15s,background .15s,filter .15s}
+.btn:hover{transform:translateY(-1px)}.btn:active{transform:translateY(0)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.gold{background:linear-gradient(135deg,var(--gold3),var(--gold),var(--gold2));color:#171100}.ghost{background:rgba(255,255,255,.02);color:var(--dim);border:1px solid var(--b)}.ghost:hover{border-color:var(--gold2);color:var(--text);background:rgba(201,168,76,.055)}.danger{background:var(--errbg);color:var(--err);border:1px solid rgba(231,76,60,.35)}.okbtn{background:var(--okbg);color:var(--ok);border:1px solid rgba(46,204,113,.35)}
+.pill{font-family:var(--mono);font-size:12px;border:1px solid var(--b);border-radius:999px;padding:8px 14px;color:var(--dim);background:var(--s2);cursor:pointer}.pill.on{background:linear-gradient(135deg,var(--gold3),var(--gold));border-color:var(--gold);color:#171100}
+.stat{background:linear-gradient(180deg,var(--s2),rgba(25,25,32,.62));border:1px solid var(--b);border-radius:18px;padding:18px;text-align:center;position:relative;overflow:hidden}.stat b{display:block;font-family:var(--serif);font-size:40px;color:var(--gold);line-height:1}.stat span{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}.stat.ok b{color:var(--ok)}.stat.err b{color:var(--err)}.stat.info b{color:var(--info)}
+.progress{position:fixed;top:0;left:0;right:0;height:5px;background:#202027;z-index:20}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold3));transition:.28s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 20px rgba(201,168,76,.45)}
+.quiz-header{position:sticky;top:0;width:100%;z-index:15;background:rgba(7,7,10,.90);backdrop-filter:blur(14px);border-bottom:1px solid var(--b);padding:13px 18px}.quiz-header .shell{display:flex;align-items:center;justify-content:space-between;gap:12px}.badges{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.badge{font-family:var(--mono);font-size:12px;border:1px solid var(--b);border-radius:999px;padding:7px 11px;color:var(--dim);background:rgba(255,255,255,.02)}.badge.ok{color:var(--ok);border-color:rgba(46,204,113,.35);background:var(--okbg)}.badge.err{color:var(--err);border-color:rgba(231,76,60,.35);background:var(--errbg)}.badge.info{color:var(--info);border-color:rgba(52,152,219,.35);background:var(--infobg)}.badge.warn{color:var(--warn);border-color:rgba(230,126,34,.35);background:var(--warnbg)}
+.quiz-body{min-height:calc(100vh - 72px);display:flex;align-items:center;justify-content:center;padding:26px}.qcard{width:min(800px,100%)}
+.word{text-align:center;margin-bottom:24px}.word-article{font-family:var(--mono);color:var(--gold);font-size:18px;min-height:26px}.word-main{font-family:var(--serif);font-size:clamp(48px,9vw,92px);font-style:italic;line-height:.96}.word-sub{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:12px}.phase{font-family:var(--mono);font-size:12px;color:var(--gold2);letter-spacing:.16em;text-transform:uppercase;text-align:center;margin:0 0 14px}.hint{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+.steps{display:flex;gap:8px;justify-content:center;margin:8px 0 22px}.step{font-family:var(--mono);font-size:10px;color:var(--muted);border:1px solid var(--b);border-radius:999px;padding:6px 9px}.step.on{color:#171100;background:var(--gold);border-color:var(--gold)}.step.done{color:var(--ok);border-color:rgba(46,204,113,.35);background:var(--okbg)}
+.options{display:grid;gap:11px}.options.cols{grid-template-columns:repeat(4,minmax(0,1fr))}.opt{background:linear-gradient(180deg,var(--s2),rgba(25,25,32,.78));border:1px solid var(--b);color:var(--text);border-radius:14px;padding:18px;text-align:left;cursor:pointer;transition:.15s}.opt.center{text-align:center;font-family:var(--mono);font-size:23px}.opt:hover:not(:disabled){border-color:var(--gold2);background:var(--s3);transform:translateY(-1px)}.opt.correct{border-color:var(--ok);background:var(--okbg);color:var(--ok)}.opt.wrong{border-color:var(--err);background:var(--errbg);color:var(--err)}
+.input-answer{font-size:25px;text-align:center}.feedback{margin-top:16px;padding:15px 16px;border:1px solid var(--b);border-radius:14px;background:rgba(18,18,24,.82);font-family:var(--mono);font-size:13px;color:var(--dim);line-height:1.6}.feedback.ok{color:var(--ok);border-color:rgba(46,204,113,.38);background:var(--okbg)}.feedback.err{color:var(--err);border-color:rgba(231,76,60,.38);background:var(--errbg)}
+.panel{margin-top:14px;border:1px solid var(--b);border-radius:16px;overflow:hidden;background:rgba(18,18,24,.92)}.panel-sec{padding:17px;border-bottom:1px solid var(--b)}.panel-sec:last-child{border-bottom:0}.example-de{font-size:21px;font-style:italic}.example-tr{color:var(--dim);margin-top:5px}.grammar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;font-family:var(--mono);font-size:13px}.grammar div{border-bottom:1px solid var(--b);padding:7px 0;display:flex;justify-content:space-between;gap:12px}.grammar span:first-child{color:var(--dim)}
+.links{display:flex;gap:8px;flex-wrap:wrap}.dlink{font-family:var(--mono);font-size:11px;color:var(--dim);border:1px solid var(--b);border-radius:999px;padding:7px 11px;text-decoration:none;background:var(--s2)}.dlink:hover{color:var(--gold);border-color:var(--gold2)}
+.table-wrap{max-height:360px;overflow:auto;border:1px solid var(--b);border-radius:14px}.table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}.table th,.table td{border-bottom:1px solid var(--b);padding:10px;text-align:left}.table th{position:sticky;top:0;background:var(--s2);color:var(--gold2);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.table td{color:var(--dim)}
+.note{color:var(--dim);font-size:15px;line-height:1.55}.warn{color:var(--warn)}.muted{color:var(--muted)}.small{font-size:13px;color:var(--muted)}.trend{height:120px;border:1px solid var(--b);border-radius:16px;background:linear-gradient(180deg,rgba(52,152,219,.06),rgba(201,168,76,.04));padding:10px;display:flex;align-items:flex-end;gap:6px}.barcol{flex:1;min-width:7px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,var(--gold3),var(--gold2));opacity:.85}.empty{padding:18px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:12px}
+@media(max-width:820px){.grid,.grid3,.grid4{grid-template-columns:1fr}.split,.quiz-header .shell{align-items:flex-start;flex-direction:column}.options.cols{grid-template-columns:repeat(2,minmax(0,1fr))}.grammar{grid-template-columns:1fr}.screen{padding:14px}.card{padding:20px}.quiz-body{padding:16px}}
 </style>
 </head>
 <body>
 <div class="progress"><div class="bar" id="bar"></div></div>
 
 <section class="screen on" id="menu">
-  <div class="shell">
-    <div class="card stack">
-      <div class="topbar">
-        <div><div class="brand">Vokabular</div><div class="tag">German vocabulary · active recall · grammar-aware review</div></div>
-        <div class="row"><button class="btn ghost" onclick="openImport()">Import JSON</button><button class="btn ghost" onclick="exportData()">Export</button><button class="btn danger" onclick="resetProgress()">Reset progress</button></div>
-      </div>
-      <div class="grid3">
-        <div class="stat"><b id="statWords">0</b><span>ready words</span></div>
-        <div class="stat"><b id="statDue">0</b><span>due today</span></div>
-        <div class="stat"><b id="statMastered">0</b><span>stable words</span></div>
-      </div>
-      <div class="grid">
-        <div><label class="lbl">Name</label><input id="name" placeholder="Your name" /></div>
-        <div><label class="lbl">Quiz language</label><select id="lang"></select></div>
-        <div><label class="lbl">Chapter</label><select id="chapter"></select></div>
-        <div><label class="lbl">Training mode</label><select id="mode"><option value="mixed">Mixed: article → meaning → production</option><option value="due">Due review only</option><option value="article">Article drill</option><option value="meaning">Meaning drill</option><option value="type">Typed active recall</option></select></div>
-      </div>
-      <div>
-        <label class="lbl">Words per session</label>
-        <div class="row" id="sizePills"><button class="pill" data-n="5">5</button><button class="pill on" data-n="10">10</button><button class="pill" data-n="20">20</button><button class="pill" data-n="all">All due</button></div>
-      </div>
-      <div class="note"><b class="warn">Design choice:</b> no browser-side API keys. Generate vocabulary data elsewhere, then import JSON. GitHub Pages is static; public client-side API keys are not a safe architecture.</div>
-      <div class="row"><button class="btn gold" id="startBtn" onclick="startSession()">Start session</button><button class="btn ghost" onclick="openEditor()">Word manager</button></div>
+  <div class="shell"><div class="card stack">
+    <div class="split">
+      <div><div class="brand">Vokabular</div><div class="tag">German vocabulary · article → meaning → active recall</div></div>
+      <div class="row"><button class="btn ghost" onclick="openImport()">Import JSON</button><button class="btn ghost" onclick="exportData()">Export</button><button class="btn danger" onclick="resetProgress()">Reset progress</button></div>
     </div>
-  </div>
+    <p class="lead">The app now loads the correct chapter files, filters the selected Kapitel, and forces a three-step learning cycle: article, meaning, then active production.</p>
+    <div class="grid4">
+      <div class="stat"><b id="statWords">0</b><span>ready words</span></div>
+      <div class="stat info"><b id="statDue">0</b><span>due today</span></div>
+      <div class="stat ok"><b id="statMastered">0</b><span>stable words</span></div>
+      <div class="stat"><b id="statAccuracy">0%</b><span>global accuracy</span></div>
+    </div>
+    <div class="grid">
+      <div><label class="lbl">Name</label><input id="name" placeholder="Your name" /></div>
+      <div><label class="lbl">Quiz language</label><select id="lang"></select></div>
+      <div><label class="lbl">Chapter</label><select id="chapter"></select></div>
+      <div><label class="lbl">Mode</label><select id="mode"><option value="full">Full cycle: article → meaning → active</option><option value="due">Due review only</option><option value="weak">Weak words only</option></select></div>
+    </div>
+    <div>
+      <label class="lbl">Words per session</label>
+      <div class="row" id="sizePills"><button class="pill" data-n="5">5</button><button class="pill on" data-n="10">10</button><button class="pill" data-n="20">20</button><button class="pill" data-n="all">All selected</button></div>
+    </div>
+    <div class="row"><button class="btn gold" id="startBtn" onclick="startSession()">Start session</button><button class="btn ghost" onclick="openTracker()">Tracker</button><button class="btn ghost" onclick="openEditor()">Word manager</button><button class="btn okbtn" onclick="reloadChapterFiles()">Reload chapter files</button></div>
+    <div class="note"><b class="warn">Data loading:</b> put your files in <code>data/kapitel1.json</code>, <code>data/kapitel2.json</code>, etc. The app tries Kapitel 1–20 automatically and then builds the chapter selector from the files it finds.</div>
+  </div></div>
 </section>
 
 <section class="screen" id="quiz" style="padding:0;align-items:stretch;justify-content:flex-start">
-  <div class="quiz-header"><div class="shell"><div class="badges"><span class="badge ok" id="bOk">0 correct</span><span class="badge err" id="bErr">0 weak</span><span class="badge info" id="bPts">0 pts</span><span class="badge" id="bLeft">0 left</span></div><div class="row"><button class="btn ghost" onclick="speakCurrent()">Speak</button><button class="btn ghost" onclick="exitQuiz()">Exit</button></div></div></div>
+  <div class="quiz-header"><div class="shell"><div class="badges"><span class="badge ok" id="bOk">0 correct</span><span class="badge err" id="bErr">0 weak</span><span class="badge info" id="bPts">0 pts</span><span class="badge warn" id="bStreak">0 streak</span><span class="badge" id="bLeft">0 left</span></div><div class="row"><button class="btn ghost" onclick="restartSession()">Restart</button><button class="btn ghost" onclick="speakCurrent()">Speak</button><button class="btn ghost" onclick="exitQuiz()">Exit</button></div></div></div>
   <div class="quiz-body"><div class="qcard card" id="qcard"></div></div>
 </section>
 
 <section class="screen" id="summary">
   <div class="shell"><div class="card stack">
     <div class="word"><div class="word-main" id="sumPct">0%</div><div class="word-sub" id="sumSub">session complete</div></div>
-    <div class="grid3"><div class="stat"><b id="sumCorrect">0</b><span>strong</span></div><div class="stat"><b id="sumWeak">0</b><span>weak</span></div><div class="stat"><b id="sumPts">0</b><span>points</span></div></div>
-    <div id="weakBox" class="panel hidden"><div class="panel-sec"><span class="lbl">Weak words</span><table class="table"><tbody id="weakRows"></tbody></table></div></div>
-    <div class="row"><button class="btn gold" onclick="reviewWeak()">Review weak words</button><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Menu</button></div>
+    <div class="grid4"><div class="stat ok"><b id="sumCorrect">0</b><span>strong</span></div><div class="stat err"><b id="sumWeak">0</b><span>weak</span></div><div class="stat info"><b id="sumPts">0</b><span>points</span></div><div class="stat"><b id="sumStreak">0</b><span>best streak</span></div></div>
+    <div id="weakBox" class="panel hidden"><div class="panel-sec"><span class="lbl">Weak words</span><div class="table-wrap"><table class="table"><thead><tr><th>German</th><th>Meaning</th><th>Chapter</th><th>Links</th></tr></thead><tbody id="weakRows"></tbody></table></div></div></div>
+    <div class="row"><button class="btn gold" onclick="reviewWeak()">Review weak words</button><button class="btn ghost" onclick="restartSession()">Restart same session</button><button class="btn ghost" onclick="openTracker()">Tracker</button><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Menu</button></div>
   </div></div>
 </section>
 
-<div class="screen" id="editor">
+<section class="screen" id="tracker">
   <div class="shell"><div class="card stack">
-    <div class="split"><div><div class="brand" style="font-size:30px">Word manager</div><div class="tag">Import, inspect, or add vocabulary</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
+    <div class="split"><div><div class="brand small">Learning tracker</div><div class="tag">accuracy, weak points, review boxes, and recent sessions</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
+    <div class="grid4"><div class="stat"><b id="trSessions">0</b><span>sessions</span></div><div class="stat ok"><b id="trAcc">0%</b><span>accuracy</span></div><div class="stat err"><b id="trWeak">0</b><span>weak attempts</span></div><div class="stat info"><b id="trBest">0</b><span>best streak</span></div></div>
+    <div class="panel"><div class="panel-sec"><span class="lbl">Recent accuracy trend</span><div class="trend" id="trend"></div></div></div>
+    <div class="grid">
+      <div class="panel"><div class="panel-sec"><span class="lbl">Weakest words</span><div class="table-wrap"><table class="table"><thead><tr><th>Word</th><th>Wrong</th><th>Correct</th><th>Box</th></tr></thead><tbody id="weakestRows"></tbody></table></div></div></div>
+      <div class="panel"><div class="panel-sec"><span class="lbl">Recent sessions</span><div class="table-wrap"><table class="table"><thead><tr><th>Date</th><th>Chapter</th><th>Score</th><th>Words</th></tr></thead><tbody id="sessionRows"></tbody></table></div></div></div>
+    </div>
+  </div></div>
+</section>
+
+<section class="screen" id="editor">
+  <div class="shell"><div class="card stack">
+    <div class="split"><div><div class="brand small">Word manager</div><div class="tag">inspect or add vocabulary manually</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
     <div class="grid"><div><label class="lbl">German word</label><input id="edWord" placeholder="die Prüfung" /></div><div><label class="lbl">Chapter / notes</label><input id="edNotes" placeholder="Kapitel 2" /></div></div>
-    <div class="grid"><div><label class="lbl">English/French/etc. translation</label><input id="edTr" placeholder="exam" /></div><div><label class="lbl">Plural or grammar note</label><input id="edGrammar" placeholder="die Prüfungen; sich vorbereiten auf + Akk." /></div></div>
+    <div class="grid"><div><label class="lbl">Translation</label><input id="edTr" placeholder="exam" /></div><div><label class="lbl">Grammar note</label><input id="edGrammar" placeholder="die Prüfungen; sich vorbereiten auf + Akk." /></div></div>
     <div><label class="lbl">Example sentence</label><input id="edExample" placeholder="Ich bereite mich auf die Prüfung vor." /></div>
     <div class="row"><button class="btn gold" onclick="addManualWord()">Add word</button><button class="btn ghost" onclick="loadSeed()">Load seed set</button></div>
-    <div class="panel"><div class="panel-sec"><span class="lbl">Current words</span><table class="table"><thead><tr><th>German</th><th>Translation</th><th>Chapter</th><th>Box</th></tr></thead><tbody id="wordRows"></tbody></table></div></div>
+    <div class="panel"><div class="panel-sec"><span class="lbl">Current words</span><div class="table-wrap"><table class="table"><thead><tr><th>German</th><th>Translation</th><th>Chapter</th><th>Box</th><th>Links</th></tr></thead><tbody id="wordRows"></tbody></table></div></div></div>
   </div></div>
-</div>
+</section>
 
-<div class="screen" id="importer">
+<section class="screen" id="importer">
   <div class="shell"><div class="card stack">
-    <div class="split"><div><div class="brand" style="font-size:30px">Import JSON</div><div class="tag">Compatible with {meta, words} vocabulary files</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
-    <textarea id="jsonBox" spellcheck="false" placeholder='Paste JSON here, then click Import'></textarea>
-    <input type="file" id="fileInput" accept=".json,application/json" />
+    <div class="split"><div><div class="brand small">Import JSON</div><div class="tag">compatible with chapter files or {meta, words}</div></div><button class="btn ghost" onclick="showScreen('menu');buildMenu()">Close</button></div>
+    <textarea id="jsonBox" spellcheck="false" placeholder="Paste JSON here, then click Import"></textarea>
+    <input class="hidden" type="file" id="fileInput" accept=".json,application/json" />
     <div class="row"><button class="btn gold" onclick="importFromTextarea()">Import pasted JSON</button><button class="btn ghost" onclick="document.getElementById('fileInput').click()">Choose file</button></div>
-    <div class="note">Expected minimum fields per word: <code>word</code> and <code>data.translations</code>. Grammar fields are optional but strongly recommended.</div>
+    <div class="note">Supported formats: full multilingual files with <code>translations</code>, <code>explanation</code>, <code>grammar_clarification</code>, <code>example_de</code>, and <code>example_translated</code>; also older Gemini-style files.</div>
   </div></div>
-</div>
+</section>
 
 <script>
-const LANGS=['English','French','Spanish','Italian','Arabic','Persian','Russian','Ukrainian','Swahili','Portuguese','Dutch','Polish','Turkish'];
-const ARTICLE_OPTIONS=['der','die','das','—'];
-const DAY=86400000;
-const DEFAULT={
-  meta:{targetLanguages:['English','French'],explanationLanguage:'English'},
-  words:[
-    {id:'k2_01',word:'die Prüfung',notes:'Kapitel 2',status:'done',data:{translations:{English:'exam',French:'examen'},explanation:'A formal test. Important pattern: sich vorbereiten auf + Akkusativ.',example_de:'Ich bereite mich auf die Prüfung vor.',example_translated:'I am preparing for the exam.',grammar:{type:'noun',singular:'die Prüfung',plural:'die Prüfungen',pattern:'sich vorbereiten auf + Akkusativ'}}},
-    {id:'k2_05',word:'anerkennen',notes:'Kapitel 2',status:'done',data:{translations:{English:'to recognize / acknowledge',French:'reconnaître'},explanation:'Separable verb. Used for qualifications, degrees, rights, or effort.',example_de:'Mein Abschluss wird in Deutschland anerkannt.',example_translated:'My degree is recognized in Germany.',grammar:{type:'verb',partizip:'anerkannt',pattern:'etwas anerkennen'}}},
-    {id:'k2_06',word:'achten auf',notes:'Kapitel 2',status:'done',data:{translations:{English:'to pay attention to',French:'faire attention à'},explanation:'Prepositional verb requiring auf + Akkusativ.',example_de:'Du musst auf den Verkehr achten.',example_translated:'You must pay attention to the traffic.',grammar:{type:'verb',pattern:'achten auf + Akkusativ'}}},
-    {id:'k3_06',word:'das Stipendium',notes:'Kapitel 3',status:'done',data:{translations:{English:'scholarship',French:'bourse'},explanation:'A grant or financial support for study.',example_de:'Sie bewirbt sich um ein Stipendium.',example_translated:'She is applying for a scholarship.',grammar:{type:'noun',singular:'das Stipendium',plural:'die Stipendien',pattern:'sich bewerben um + Akkusativ'}}},
-    {id:'k4_05',word:'abbiegen',notes:'Kapitel 4',status:'done',data:{translations:{English:'to turn',French:'tourner'},explanation:'Separable motion verb.',example_de:'An der Ampel biegen Sie links ab.',example_translated:'At the traffic light, turn left.',grammar:{type:'verb',partizip:'abgebogen',pattern:'links/rechts abbiegen'}}}
-  ]
-};
-let W=load('vok_data_v1',DEFAULT), USER=load('vok_user_v1',{name:'',lang:'English',chapter:'all',mode:'mixed',size:'10'}), SRS=load('vok_srs_v1',{});
-let Q={queue:[],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null};
-function load(k,f){try{return JSON.parse(localStorage.getItem(k))||structuredClone(f)}catch{return structuredClone(f)}}
-function save(){localStorage.setItem('vok_data_v1',JSON.stringify(W));localStorage.setItem('vok_user_v1',JSON.stringify(USER));localStorage.setItem('vok_srs_v1',JSON.stringify(SRS))}
-function h(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function id(){return Math.random().toString(36).slice(2,10)}
-function article(w){const m=String(w).match(/^(der|die|das)\s+/i);return m?m[1].toLowerCase():null}
-function base(w){return String(w).replace(/^(der|die|das)\s+/i,'').trim()}
-function chapterOf(w){const m=(w.notes||w.id||'').match(/(?:Kapitel\s*)?(\d+)/i);return m?m[1]:'?'}
-function readyWords(){return W.words.filter(w=>w.status==='done'&&w.data&&w.data.translations)}
-function srs(id){return SRS[id]||(SRS[id]={box:0,correct:0,wrong:0,due:0,last:0})}
-function due(w){return srs(w.id).due<=Date.now()}
-function intervalDays(box){return [0,1,3,7,14,30,60][Math.min(box,6)]}
-function record(word,correct){const r=srs(word.id);r.last=Date.now(); if(correct){r.correct++;r.box=Math.min(6,r.box+1)}else{r.wrong++;r.box=0} r.due=Date.now()+intervalDays(r.box)*DAY; save()}
+const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
+const RTL = new Set(['Arabic','Persian']);
+const ARTICLE_OPTIONS = ['der','die','das','—'];
+const DAY = 86400000;
+const CHAPTER_FILES = Array.from({length:20},(_,i)=>({id:`kapitel${i+1}`,title:`Kapitel ${i+1}`,file:`kapitel${i+1}.json`,number:String(i+1)}));
+
+const DEFAULT = {meta:{targetLanguages:LANGS},words:[
+{id:'k1_seed_001',word:'die Messe, -n',notes:'Kapitel 1 · seed',chapter_id:'kapitel1',status:'done',data:{translations:{English:'trade fair, exhibition',Spanish:'feria, exposición',French:'foire, salon',Japanese:'見本市、展示会',German:'die Messe, -n',Korean:'무역 박람회, 전시회',Italian:'fiera, esposizione',Chinese:'展会，展览',Portuguese:'feira, exposição',Persian:'نمایشگاه تجاری، نمایشگاه',Arabic:'معرض تجاري، معرض',Thai:'งานแสดงสินค้า, นิทรรศการ'},explanation:{English:'Kapitel 1 seed vocabulary item.',French:'Mot exemple du chapitre 1.',German:'Beispielwort aus Kapitel 1.'},grammar:{type:'noun',article:'die',base:'Messe',plural_hint:'-n'},grammar_clarification:{English:'Noun. Learn it with article and plural.',French:'Nom. Apprends-le avec article et pluriel.',German:'Nomen. Lerne Artikel und Plural.'},example_de:'Das Lernwort heute ist: die Messe.',example_translated:{English:'Today’s word is trade fair.',French:'Le mot du jour est foire.',German:'Das Lernwort heute ist die Messe.'}}},
+{id:'k2_seed_001',word:'die Prüfung, -en',notes:'Kapitel 2 · seed',chapter_id:'kapitel2',status:'done',data:{translations:{English:'exam',Spanish:'examen',French:'examen',Japanese:'試験',German:'die Prüfung, -en',Korean:'시험',Italian:'esame',Chinese:'考试',Portuguese:'exame',Persian:'امتحان',Arabic:'امتحان',Thai:'การสอบ'},explanation:{English:'A formal test or examination.',French:'Un examen ou test formel.',German:'Ein formeller Test oder eine Prüfung.'},grammar:{type:'noun',article:'die',base:'Prüfung',plural_hint:'-en'},grammar_clarification:{English:'Noun. Feminine article die. Plural: Prüfungen.',French:'Nom féminin avec die. Pluriel : Prüfungen.',German:'Nomen mit Artikel die. Plural: Prüfungen.'},example_de:'Ich bereite mich auf die Prüfung vor.',example_translated:{English:'I am preparing for the exam.',French:'Je me prépare à l’examen.',German:'Ich bereite mich auf die Prüfung vor.'}}}
+]};
+
+let W = load('vok_data_power_v1', DEFAULT);
+let USER = load('vok_user_power_v1', {name:'', lang:'English', chapter:'all', size:'10', mode:'full'});
+let SRS = load('vok_srs_power_v1', {});
+let HISTORY = load('vok_history_power_v1', []);
+let Q = {queue:[],originalQueue:[],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null};
+
+function load(k,f){try{return JSON.parse(localStorage.getItem(k)) || structuredClone(f)}catch{return structuredClone(f)}}
+function save(){localStorage.setItem('vok_data_power_v1',JSON.stringify(W));localStorage.setItem('vok_user_power_v1',JSON.stringify(USER));localStorage.setItem('vok_srs_power_v1',JSON.stringify(SRS));localStorage.setItem('vok_history_power_v1',JSON.stringify(HISTORY.slice(-100)))}
+function h(s){return String(s ?? '').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function uid(){return Math.random().toString(36).slice(2,10)}
+function norm(s){return String(s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0e00-\u0e7f]+/g,' ').trim()}
+function article(word){const m=String(word).match(/^(der|die|das)\s+/i);return m?m[1].toLowerCase():null}
+function base(word){return String(word).replace(/^(der|die|das)\s+/i,'').split(',')[0].split('(')[0].trim()}
+function chapterOf(w){const src = String(w.chapter_id || w.chapter || w.notes || w.id || ''); const m = src.match(/(?:kapitel|Kapitel|k)?\s*(\d+)/); return m ? m[1] : '?'}
+function chapterTitleOf(n){return n==='all' ? 'All chapters' : `Kapitel ${n}`}
+function readyWords(){return W.words.filter(w=>w.status==='done' && w.data && w.data.translations && Object.keys(w.data.translations).some(k=>String(w.data.translations[k]||'').trim()))}
+function srs(id){return SRS[id] || (SRS[id]={box:0,correct:0,wrong:0,due:0,last:0,seen:0,tracks:{article:{c:0,w:0},meaning:{c:0,w:0},active:{c:0,w:0}}})}
+function due(w){return srs(w.id).due <= Date.now()}
+function weak(w){const r=srs(w.id); return r.wrong>r.correct || (r.box===0 && r.seen>0)}
+function intervalDays(box){return [0,1,3,7,14,30,60,120][Math.min(box,7)]}
+function record(word, allCorrect, tracks){const r=srs(word.id); r.last=Date.now(); r.seen++; if(allCorrect){r.correct++; r.box=Math.min(7,r.box+1)} else {r.wrong++; r.box=0} ['article','meaning','active'].forEach(t=>{if(tracks[t]===true)r.tracks[t].c++; if(tracks[t]===false)r.tracks[t].w++}); r.due=Date.now()+intervalDays(r.box)*DAY; save()}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function translation(w){return w.data.translations[USER.lang]||w.data.translations.English||Object.values(w.data.translations)[0]||'—'}
-function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on')}
+function translation(w){const t=w.data?.translations||{}; return t[USER.lang] || t.English || t.en || Object.values(t).find(v=>String(v||'').trim()) || '—'}
+function selectedLangValue(obj, fallback=''){if(!obj)return fallback; const lang=USER.lang; const code={English:'en',Spanish:'es',French:'fr',Japanese:'ja',German:'de',Korean:'ko',Italian:'it',Chinese:'zh',Portuguese:'pt',Persian:'fa',Arabic:'ar',Thai:'th'}[lang]; if(typeof obj==='string') return obj; return obj[lang] || (code?obj[code]:'') || obj.English || obj.en || obj.German || fallback}
+function availableLanguages(){const words=readyWords(); const langs=LANGS.filter(lang=>words.some(w=>String(w.data?.translations?.[lang]||'').trim())); return langs.length?langs:['English']}
+function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on'); if(id==='tracker')renderTracker(); if(id==='editor')renderWords()}
+function wordUrlPart(w){return encodeURIComponent(base(w.word||''))}
+function linkHTML(w){const q=wordUrlPart(w); return `<div class="links"><a class="dlink" target="_blank" href="https://www.duden.de/suchen/dudenonline/${q}">Duden</a><a class="dlink" target="_blank" href="https://www.dwds.de/wb/${q}">DWDS</a><a class="dlink" target="_blank" href="https://www.verbformen.de/?w=${q}">Verbformen</a><a class="dlink" target="_blank" href="https://dict.leo.org/german-english/${q}">LEO</a><a class="dlink" target="_blank" href="https://de.wiktionary.org/wiki/${q}">Wiktionary</a><a class="dlink" target="_blank" href="https://www.linguee.de/deutsch-englisch/search?query=${q}">Linguee</a></div>`}
+function localLabel(label){const d={French:{Explanation:'Explication',Example:'Exemple','Grammar clarification':'Clarification grammaticale','Grammar memory':'Mémoire grammaticale'},Spanish:{Explanation:'Explicación',Example:'Ejemplo','Grammar clarification':'Aclaración gramatical','Grammar memory':'Memoria gramatical'},German:{Explanation:'Erklärung',Example:'Beispiel','Grammar clarification':'Grammatikerklärung','Grammar memory':'Grammatik'},Italian:{Explanation:'Spiegazione',Example:'Esempio','Grammar clarification':'Chiarimento grammaticale','Grammar memory':'Memoria grammaticale'},Portuguese:{Explanation:'Explicação',Example:'Exemplo','Grammar clarification':'Clarificação gramatical','Grammar memory':'Memória gramatical'}}; return d[USER.lang]?.[label] || label}
+
 function buildMenu(){
-  document.getElementById('name').value=USER.name; document.getElementById('lang').innerHTML=LANGS.map(l=>`<option ${l===USER.lang?'selected':''}>${l}</option>`).join('');
-  const ch=[...new Set(readyWords().map(chapterOf))].sort((a,b)=>a-b); document.getElementById('chapter').innerHTML=`<option value="all">All chapters</option>`+ch.map(c=>`<option value="${c}" ${USER.chapter===c?'selected':''}>Kapitel ${c}</option>`).join('');
-  document.getElementById('mode').value=USER.mode; document.querySelectorAll('#sizePills .pill').forEach(p=>p.classList.toggle('on',p.dataset.n===USER.size));
-  const rw=readyWords(); document.getElementById('statWords').textContent=rw.length; document.getElementById('statDue').textContent=rw.filter(due).length; document.getElementById('statMastered').textContent=rw.filter(w=>srs(w.id).box>=4).length; document.getElementById('startBtn').disabled=rw.length<4;
+  document.getElementById('name').value=USER.name;
+  const usable=availableLanguages(); if(!usable.includes(USER.lang)) USER.lang=usable[0];
+  document.getElementById('lang').innerHTML=usable.map(l=>`<option value="${h(l)}" ${l===USER.lang?'selected':''}>${h(l)}</option>`).join('');
+  const chapters=[...new Set(readyWords().map(chapterOf))].filter(x=>x!=='?').sort((a,b)=>Number(a)-Number(b));
+  document.getElementById('chapter').innerHTML=`<option value="all">All chapters (${readyWords().length})</option>`+chapters.map(c=>`<option value="${c}" ${USER.chapter===c?'selected':''}>Kapitel ${c} (${readyWords().filter(w=>chapterOf(w)===c).length})</option>`).join('');
+  document.getElementById('mode').value=USER.mode;
+  document.querySelectorAll('#sizePills .pill').forEach(p=>p.classList.toggle('on',p.dataset.n===USER.size));
+  const rw=readyWords(); const attempts=Object.values(SRS).reduce((a,r)=>a+r.correct+r.wrong,0); const correct=Object.values(SRS).reduce((a,r)=>a+r.correct,0);
+  document.getElementById('statWords').textContent=rw.length; document.getElementById('statDue').textContent=rw.filter(due).length; document.getElementById('statMastered').textContent=rw.filter(w=>srs(w.id).box>=4).length; document.getElementById('statAccuracy').textContent=(attempts?Math.round(correct/attempts*100):0)+'%'; document.getElementById('startBtn').disabled=rw.length<1;
 }
-['name','lang','chapter','mode'].forEach(x=>document.addEventListener('change',e=>{if(e.target.id===x){USER[x==='lang'?'lang':x]=e.target.value;save();buildMenu()}}));
-document.getElementById('sizePills').onclick=e=>{const p=e.target.closest('.pill');if(!p)return;USER.size=p.dataset.n;save();buildMenu()};
-function candidatePool(){let p=readyWords(); if(USER.chapter!=='all')p=p.filter(w=>chapterOf(w)===USER.chapter); if(USER.mode==='due')p=p.filter(due); return p}
-function startSession(){USER.name=document.getElementById('name').value.trim()||'Learner';USER.lang=document.getElementById('lang').value;USER.chapter=document.getElementById('chapter').value;USER.mode=document.getElementById('mode').value;save();let p=candidatePool();if(p.length<1){alert('No words available for this selection.');return}const n=USER.size==='all'?p.length:Math.min(+USER.size,p.length);Q={queue:shuffle([...p]).slice(0,n),idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null};showScreen('quiz');next()}
-function next(){if(Q.idx>=Q.queue.length)return finish();Q.cur=Q.queue[Q.idx];const hasArt=!!article(Q.cur.word);if(USER.mode==='article'&&hasArt)Q.phase='article';else if(USER.mode==='meaning')Q.phase='meaning';else if(USER.mode==='type')Q.phase='type';else Q.phase=hasArt?'article':'meaning';render()}
-function render(){const w=Q.cur;document.getElementById('bar').style.width=`${Math.round(Q.idx/Q.queue.length*100)}%`;document.getElementById('bOk').textContent=`${Q.ok} correct`;document.getElementById('bErr').textContent=`${Q.weak} weak`;document.getElementById('bPts').textContent=`${Q.pts} pts`;document.getElementById('bLeft').textContent=`${Q.queue.length-Q.idx} left`;let html=`<div class="word"><div class="word-main">${h(base(w.word))}</div><div class="word-sub">${h(w.notes||'')}</div></div>`;if(Q.phase==='article')html+=articleView(w);if(Q.phase==='meaning')html+=meaningView(w);if(Q.phase==='type')html+=typeView(w);document.getElementById('qcard').innerHTML=html}
-function articleView(w){return `<div class="phase">Select the article</div><div class="options cols">${ARTICLE_OPTIONS.map(a=>`<button class="opt center" onclick="answerArticle('${a}')">${a}</button>`).join('')}</div>`}
-function answerArticle(a){const ok=(a===(article(Q.cur.word)||'—'));afterAnswer(ok,ok?1:0,`Correct article: ${article(Q.cur.word)||'—'}`,USER.mode==='article'?null:'meaning')}
-function meaningView(w){const opts=shuffle([translation(w),...shuffle(readyWords().filter(x=>x.id!==w.id)).slice(0,3).map(translation)]);return `<div class="phase">Choose the meaning</div><div class="options">${opts.map(o=>`<button class="opt" onclick="answerMeaning('${h(o).replace(/'/g,'&#39;')}')">${h(o)}</button>`).join('')}</div>`}
-function answerMeaning(choice){const ok=choice===translation(Q.cur);afterAnswer(ok,ok?2:0,`Correct meaning: ${translation(Q.cur)}`,USER.mode==='mixed'?'type':null)}
-function typeView(w){
-  return `<div class="phase">Active recall: type the meaning</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Type: ${h(USER.lang)} meaning" onkeydown="if(event.key==='Enter')answerTyped()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerTyped()">Check</button><button class="btn ghost" id="grammarBtn" onclick="toggleDetails()">Show grammar</button></div>`;
+['name','lang','chapter','mode'].forEach(x=>document.addEventListener('change',e=>{if(e.target.id===x){USER[x]=e.target.value;save();buildMenu()}}));
+document.getElementById('sizePills').onclick=e=>{const p=e.target.closest('.pill'); if(!p)return; USER.size=p.dataset.n; save(); buildMenu()};
+
+function candidatePool(){let p=readyWords(); if(USER.chapter!=='all')p=p.filter(w=>chapterOf(w)===USER.chapter); if(USER.mode==='due')p=p.filter(due); if(USER.mode==='weak')p=p.filter(weak); return p}
+function startSession(){USER.name=document.getElementById('name').value.trim()||'Learner'; USER.lang=document.getElementById('lang').value; USER.chapter=document.getElementById('chapter').value; USER.mode=document.getElementById('mode').value; save(); let p=candidatePool(); if(!p.length){alert('No words available for this selection.');return} const n=USER.size==='all'?p.length:Math.min(+USER.size,p.length); const queue=shuffle([...p]).slice(0,n); Q={queue,originalQueue:[...queue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null}; showScreen('quiz'); next()}
+function restartSession(){if(!Q.originalQueue.length){startSession();return} Q={queue:[...Q.originalQueue],originalQueue:[...Q.originalQueue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null}; showScreen('quiz'); next()}
+function next(){if(Q.idx>=Q.queue.length)return finish(); Q.cur=Q.queue[Q.idx]; Q.phase='article'; Q.articleOk=null; Q.meaningOk=null; Q.activeOk=null; Q.options=[]; render()}
+function stepHTML(){return `<div class="steps"><span class="step ${Q.phase==='article'?'on':Q.articleOk!==null?'done':''}">1 Article</span><span class="step ${Q.phase==='meaning'?'on':Q.meaningOk!==null?'done':''}">2 Meaning</span><span class="step ${Q.phase==='active'?'on':Q.activeOk!==null?'done':''}">3 Active</span></div>`}
+function render(){
+  const w=Q.cur; document.getElementById('bar').style.width=`${Math.round(Q.idx/Q.queue.length*100)}%`;
+  document.getElementById('bOk').textContent=`${Q.ok} correct`; document.getElementById('bErr').textContent=`${Q.weak} weak`; document.getElementById('bPts').textContent=`${Q.pts} pts`; document.getElementById('bStreak').textContent=`${Q.streak} streak`; document.getElementById('bLeft').textContent=`${Q.queue.length-Q.idx} left`;
+  const artDisplay=Q.articleOk===null?'':(Q.articleOk?`✓ ${article(w.word)||'—'}`:`✗ article: ${article(w.word)||'—'}`);
+  let html=`<div class="word"><div class="word-article">${h(artDisplay)}</div><div class="word-main">${h(base(w.word))}</div><div class="word-sub">${h(w.notes||chapterTitleOf(chapterOf(w)))}</div></div>${stepHTML()}`;
+  if(Q.phase==='article')html+=articleView(w); if(Q.phase==='meaning')html+=meaningView(w); if(Q.phase==='active')html+=activeView(w); if(Q.phase==='done')html+=doneView(w);
+  document.getElementById('qcard').innerHTML=html;
 }
-
-function norm(s){
-  return String(s).toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g,' ').trim();
-}
-
-function answerTyped(){
-  const v = document.getElementById('typed').value;
-  const ok = norm(v) === norm(translation(Q.cur));
-  afterAnswer(ok, ok ? 3 : 0, `Expected: ${translation(Q.cur)}`, null);
-}
-
-function afterAnswer(ok, pts, msg, nextPhase){
-  Q.pts += pts;
-
-  if (nextPhase) {
-    Q.phase = nextPhase;
-    render();
-    showFeedback(ok, `${ok ? '✓' : '✗'} ${msg}. Continue.`);
-    return;
-  }
-
-  if (ok) {
-    Q.ok++;
-    record(Q.cur, true);
-  } else {
-    Q.weak++;
-    Q.weakItems.push(Q.cur);
-    record(Q.cur, false);
-  }
-
-  const qcard = document.getElementById('qcard');
-  qcard.querySelectorAll('.feedback,.panel,.answer-actions').forEach(el => el.remove());
-  qcard.insertAdjacentHTML('beforeend', `<div class="feedback ${ok?'ok':'err'}">${ok?'✓':'✗'} ${h(msg)} · +${pts} pts</div>${detailPanel(Q.cur)}<div class="row answer-actions" style="margin-top:14px"><button class="btn gold" onclick="Q.idx++;next()">Next</button></div>`);
-}
-
-function showFeedback(ok, text){
-  const qcard = document.getElementById('qcard');
-  qcard.querySelectorAll('.feedback').forEach(el => el.remove());
-  qcard.insertAdjacentHTML('beforeend', `<div class="feedback ${ok?'ok':'err'}">${h(text)}</div>`);
-}
-
-function localizedValue(obj, key, fallback=''){
-  if (!obj) return fallback;
-  const lang = USER.lang;
-  const short = {English:'en',French:'fr',Spanish:'es',Italian:'it',Arabic:'ar',Persian:'fa',Russian:'ru',Ukrainian:'uk',Swahili:'sw',Portuguese:'pt',Dutch:'nl',Polish:'pl',Turkish:'tr'}[lang];
-  if (obj[`${key}_${lang}`]) return obj[`${key}_${lang}`];
-  if (short && obj[`${key}_${short}`]) return obj[`${key}_${short}`];
-  if (obj[key] && typeof obj[key] === 'object') return obj[key][lang] || (short ? obj[key][short] : '') || obj[key].English || obj[key].en || fallback;
-  return obj[key] || fallback;
-}
-
-function localLabel(label){
-  const dict = {
-    French:{Explanation:'Explication',Example:'Exemple','Grammar memory':'Mémoire grammaticale',type:'type',singular:'singulier',plural:'pluriel',pattern:'construction',partizip:'participe'},
-    Spanish:{Explanation:'Explicación',Example:'Ejemplo','Grammar memory':'Memoria gramatical',type:'tipo',singular:'singular',plural:'plural',pattern:'patrón',partizip:'participio'},
-    Italian:{Explanation:'Spiegazione',Example:'Esempio','Grammar memory':'Memoria grammaticale',type:'tipo',singular:'singolare',plural:'plurale',pattern:'struttura',partizip:'participio'},
-    Portuguese:{Explanation:'Explicação',Example:'Exemplo','Grammar memory':'Memória gramatical',type:'tipo',singular:'singular',plural:'plural',pattern:'padrão',partizip:'particípio'}
-  };
-  return dict[USER.lang]?.[label] || label;
-}
-
+function articleView(w){return `<div class="phase">Choose the article</div><div class="options cols">${ARTICLE_OPTIONS.map(a=>`<button class="opt center" onclick="answerArticle('${a}')">${a}</button>`).join('')}</div><div class="hint">For verbs, adjectives, phrases, and expressions, choose —.</div>`}
+function answerArticle(a){const correct=article(Q.cur.word)||'—'; Q.articleOk=(a===correct); Q.pts+=Q.articleOk?1:0; Q.phase='meaning'; render(); showFeedback(Q.articleOk, `${Q.articleOk?'✓':'✗'} Correct article: ${correct}`)}
+function buildMeaningOptions(w){const correct=translation(w); const others=shuffle(readyWords().filter(x=>x.id!==w.id && translation(x)!==correct)).slice(0,3).map(translation); return shuffle([correct,...others])}
+function meaningView(w){Q.options = Q.options.length ? Q.options : buildMeaningOptions(w); return `<div class="phase">Choose the meaning in ${h(USER.lang)}</div><div class="options">${Q.options.map((o,i)=>`<button class="opt" onclick="answerMeaning(${i})"><span class="muted">${String.fromCharCode(65+i)}.</span> ${h(o)}</button>`).join('')}</div>`}
+function answerMeaning(i){const correct=translation(Q.cur); Q.meaningOk=(Q.options[i]===correct); Q.pts+=Q.meaningOk?2:0; Q.phase='active'; render(); showFeedback(Q.meaningOk, `${Q.meaningOk?'✓':'✗'} Correct meaning: ${correct}`)}
+function activePrompt(w){const g=w.data?.grammar||{}; if((g.type||'').includes('noun') && (g.plural_hint||g.plural)){return {kind:'plural', label:'Active recall: type the plural hint or plural form', expected:String(g.plural||g.plural_hint||'').trim()}} return {kind:'meaning', label:`Active recall: type the ${USER.lang} meaning`, expected:translation(w)}}
+function activeView(w){const p=activePrompt(w); return `<div class="phase">${h(p.label)}</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Type your answer" onkeydown="if(event.key==='Enter')answerActive()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerActive()">Check</button><button class="btn ghost" id="grammarBtn" onclick="toggleDetails()">Show explanation</button></div><div class="hint">This is the production step. It exposes whether you can recall, not only recognize.</div>`}
+function answerActive(){const p=activePrompt(Q.cur); const value=document.getElementById('typed').value; Q.activeOk=norm(value)===norm(p.expected); Q.pts+=Q.activeOk?3:0; const all=!!(Q.articleOk&&Q.meaningOk&&Q.activeOk); if(all){Q.ok++; Q.streak++; Q.bestStreak=Math.max(Q.bestStreak,Q.streak)} else {Q.weak++; Q.streak=0; Q.weakItems.push(Q.cur)} record(Q.cur,all,{article:Q.articleOk,meaning:Q.meaningOk,active:Q.activeOk}); Q.phase='done'; render()}
+function doneView(w){const p=activePrompt(w); const all=!!(Q.articleOk&&Q.meaningOk&&Q.activeOk); return `<div class="feedback ${all?'ok':'err'}">${all?'✓ Strong answer':'✗ Review needed'} · Article: ${Q.articleOk?'✓':'✗'} · Meaning: ${Q.meaningOk?'✓':'✗'} · Active: ${Q.activeOk?'✓':'✗'}<br>Expected active answer: ${h(p.expected)}</div>${detailPanel(w)}<div class="row" style="margin-top:14px"><button class="btn gold" onclick="Q.idx++;next()">Next</button><button class="btn ghost" onclick="speakCurrent()">Speak</button></div>`}
+function showFeedback(ok,text){const q=document.getElementById('qcard'); q.querySelectorAll('.feedback').forEach(el=>el.remove()); q.insertAdjacentHTML('beforeend',`<div class="feedback ${ok?'ok':'err'}">${h(text)}</div>`)}
 function detailPanel(w){
-  const g = w.data.grammar || {};
-  const rows = Object.entries(g).map(([k,v]) => `<div><span>${h(localLabel(k))}</span><b>${h(Array.isArray(v) ? v.join('; ') : v)}</b></div>`).join('') || '<div><span>grammar</span><b>not provided</b></div>';
-  const explanation = localizedValue(w.data, 'explanation', 'No explanation provided.');
-  const exampleTranslated = localizedValue(w.data, 'example_translated', '');
-  const fallbackNote = explanation === (w.data.explanation || '') && USER.lang !== 'English'
-    ? `<p class="note" style="margin-top:8px;color:var(--warn)">No ${h(USER.lang)} explanation was found in this word file, so the app is showing the default explanation.</p>`
-    : '';
-  return `<div class="panel" data-detail-panel="true"><div class="panel-sec"><span class="lbl">${h(localLabel('Explanation'))}</span><p class="note">${h(explanation)}</p>${fallbackNote}</div><div class="panel-sec"><span class="lbl">${h(localLabel('Example'))}</span><p class="example-de">${h(w.data.example_de||'')}</p><p class="example-tr">${h(exampleTranslated)}</p></div><div class="panel-sec"><span class="lbl">${h(localLabel('Grammar memory'))}</span><div class="grammar">${rows}</div></div></div>`;
+  const g=w.data?.grammar||{}; const rows=Object.entries(g).map(([k,v])=>`<div><span>${h(k)}</span><b>${h(Array.isArray(v)?v.join('; '):v)}</b></div>`).join('')||'<div><span>grammar</span><b>not provided</b></div>';
+  const explanation=selectedLangValue(w.data?.explanation,'No explanation provided.'); const clarification=selectedLangValue(w.data?.grammar_clarification,''); const exTr=selectedLangValue(w.data?.example_translated,'');
+  return `<div class="panel" data-detail-panel="true"><div class="panel-sec"><span class="lbl">${h(localLabel('Explanation'))}</span><p class="note">${h(explanation)}</p></div><div class="panel-sec"><span class="lbl">${h(localLabel('Grammar clarification'))}</span><p class="note">${h(clarification)}</p></div><div class="panel-sec"><span class="lbl">${h(localLabel('Example'))}</span><p class="example-de">${h(w.data?.example_de||'')}</p><p class="example-tr ${RTL.has(USER.lang)?'rtl':''}">${h(exTr)}</p></div><div class="panel-sec"><span class="lbl">${h(localLabel('Grammar memory'))}</span><div class="grammar">${rows}</div></div><div class="panel-sec"><span class="lbl">External links</span>${linkHTML(w)}</div></div>`
 }
+function toggleDetails(){const q=document.getElementById('qcard'); const existing=q.querySelector('[data-detail-panel="true"]'); const btn=document.getElementById('grammarBtn'); if(existing){existing.remove(); if(btn)btn.textContent='Show explanation'; return} q.insertAdjacentHTML('beforeend',detailPanel(Q.cur)); if(btn)btn.textContent='Hide explanation'}
+function speakCurrent(){if(!Q.cur||!('speechSynthesis'in window))return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(base(Q.cur.word)); u.lang='de-DE'; u.rate=.88; speechSynthesis.speak(u)}
 
-function toggleDetails(){
-  const qcard = document.getElementById('qcard');
-  const existing = qcard.querySelector('[data-detail-panel="true"]');
-  const btn = document.getElementById('grammarBtn');
-  if (existing) {
-    existing.remove();
-    if (btn) btn.textContent = 'Show grammar';
-    return;
-  }
-  qcard.insertAdjacentHTML('beforeend', detailPanel(Q.cur));
-  if (btn) btn.textContent = 'Hide grammar';
-}
-
-function showDetails(){ toggleDetails(); }
-function speakCurrent(){if(!Q.cur||!('speechSynthesis'in window))return; speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(base(Q.cur.word));u.lang='de-DE';u.rate=.9;speechSynthesis.speak(u)}
-function finish(){const total=Q.ok+Q.weak;const pct=total?Math.round(Q.ok/total*100):0;document.getElementById('sumPct').textContent=pct+'%';document.getElementById('sumSub').textContent=`${USER.name} · ${Q.queue.length} words · ${USER.mode}`;document.getElementById('sumCorrect').textContent=Q.ok;document.getElementById('sumWeak').textContent=Q.weak;document.getElementById('sumPts').textContent=Q.pts;const wb=document.getElementById('weakBox');if(Q.weakItems.length){wb.classList.remove('hidden');document.getElementById('weakRows').innerHTML=Q.weakItems.map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(w.notes)}</td></tr>`).join('')}else wb.classList.add('hidden');showScreen('summary');buildMenu()}
-function reviewWeak(){if(!Q.weakItems.length){showScreen('menu');return}Q={queue:[...new Map(Q.weakItems.map(w=>[w.id,w])).values()],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null};showScreen('quiz');next()}
+function finish(){const total=Q.ok+Q.weak,score=total?Math.round(Q.ok/total*100):0; HISTORY.push({date:new Date().toLocaleString(),chapter:USER.chapter,words:Q.queue.length,ok:Q.ok,weak:Q.weak,pts:Q.pts,streak:Q.bestStreak,score}); save(); document.getElementById('sumPct').textContent=score+'%'; document.getElementById('sumSub').textContent=`${USER.name} · ${chapterTitleOf(USER.chapter)} · ${Q.queue.length} words`; document.getElementById('sumCorrect').textContent=Q.ok; document.getElementById('sumWeak').textContent=Q.weak; document.getElementById('sumPts').textContent=Q.pts; document.getElementById('sumStreak').textContent=Q.bestStreak; const wb=document.getElementById('weakBox'); if(Q.weakItems.length){wb.classList.remove('hidden'); document.getElementById('weakRows').innerHTML=[...new Map(Q.weakItems.map(w=>[w.id,w])).values()].map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(w.notes)}</td><td>${linkHTML(w)}</td></tr>`).join('')} else wb.classList.add('hidden'); showScreen('summary'); buildMenu()}
+function reviewWeak(){const queue=[...new Map(Q.weakItems.map(w=>[w.id,w])).values()]; if(!queue.length){USER.mode='weak'; showScreen('menu'); buildMenu(); return} Q={queue,originalQueue:[...queue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null}; showScreen('quiz'); next()}
 function exitQuiz(){showScreen('menu');buildMenu()}
-function openEditor(){showScreen('editor');renderWords()}
+function openTracker(){showScreen('tracker')}
+function renderTracker(){const rows=Object.entries(SRS); const attempts=rows.reduce((a,[,r])=>a+r.correct+r.wrong,0),correct=rows.reduce((a,[,r])=>a+r.correct,0),wrong=rows.reduce((a,[,r])=>a+r.wrong,0),best=HISTORY.reduce((m,s)=>Math.max(m,s.streak||0),0); document.getElementById('trSessions').textContent=HISTORY.length; document.getElementById('trAcc').textContent=(attempts?Math.round(correct/attempts*100):0)+'%'; document.getElementById('trWeak').textContent=wrong; document.getElementById('trBest').textContent=best; const recent=HISTORY.slice(-14); document.getElementById('trend').innerHTML=recent.length?recent.map(s=>`<div class="barcol" title="${h(s.date)} · ${s.score}%" style="height:${Math.max(5,s.score)}%"></div>`).join(''):'<div class="empty">No sessions yet.</div>'; const wordMap=Object.fromEntries(readyWords().map(w=>[w.id,w])); const weakRows=rows.map(([id,r])=>({id,r,w:wordMap[id]})).filter(x=>x.w).sort((a,b)=>b.r.wrong-a.r.wrong).slice(0,14); document.getElementById('weakestRows').innerHTML=weakRows.length?weakRows.map(x=>`<tr><td>${h(x.w.word)}</td><td>${x.r.wrong}</td><td>${x.r.correct}</td><td>${x.r.box}</td></tr>`).join(''):'<tr><td colspan="4">No tracked words yet.</td></tr>'; document.getElementById('sessionRows').innerHTML=HISTORY.slice(-12).reverse().map(s=>`<tr><td>${h(s.date)}</td><td>${h(chapterTitleOf(s.chapter))}</td><td>${s.score}%</td><td>${s.words}</td></tr>`).join('')||'<tr><td colspan="4">No sessions yet.</td></tr>'}
+function openEditor(){showScreen('editor')}
 function openImport(){showScreen('importer')}
-function renderWords(){document.getElementById('wordRows').innerHTML=readyWords().map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(w.notes)}</td><td>${srs(w.id).box}</td></tr>`).join('')||'<tr><td colspan="4">No words yet.</td></tr>'}
-function addManualWord(){const word=edWord.value.trim(),tr=edTr.value.trim();if(!word||!tr)return alert('Word and translation are required.');W.words.push({id:id(),word,notes:edNotes.value.trim(),status:'done',data:{translations:{[USER.lang]:tr,English:tr},explanation:edGrammar.value.trim(),example_de:edExample.value.trim(),example_translated:'',grammar:{note:edGrammar.value.trim()}}});['edWord','edNotes','edTr','edGrammar','edExample'].forEach(x=>document.getElementById(x).value='');save();renderWords();buildMenu()}
-function importData(raw){const words=Array.isArray(raw)?raw:raw.words;if(!Array.isArray(words))throw Error('No words array found');W={meta:raw.meta||{},words:words.map(w=>({id:w.id||id(),word:w.word||'',notes:w.notes||'',status:w.status==='pending'?'pending':'done',data:w.data||{translations:{English:w.translation||''},explanation:'',example_de:'',example_translated:'',grammar:{}}})).filter(w=>w.word)};save();buildMenu();renderWords?.()}
-function importFromTextarea(){try{importData(JSON.parse(document.getElementById('jsonBox').value));alert('Imported.');showScreen('menu');buildMenu()}catch(e){alert('Import failed: '+e.message)}}
-document.getElementById('fileInput').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{importData(JSON.parse(r.result));showScreen('menu');buildMenu()}catch(err){alert('Import failed: '+err.message)}};r.readAsText(f)};
-function exportData(){const blob=new Blob([JSON.stringify(W,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='vocabular-data.json';a.click();URL.revokeObjectURL(a.href)}
-function resetProgress(){if(confirm('Delete all learning progress but keep vocabulary?')){SRS={};save();buildMenu()}}
+function renderWords(){document.getElementById('wordRows').innerHTML=readyWords().map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(chapterTitleOf(chapterOf(w)))}</td><td>${srs(w.id).box}</td><td>${linkHTML(w)}</td></tr>`).join('')||'<tr><td colspan="5">No words yet.</td></tr>'}
+function addManualWord(){const word=edWord.value.trim(),tr=edTr.value.trim(); if(!word||!tr)return alert('Word and translation are required.'); W.words.push({id:uid(),word,notes:edNotes.value.trim(),chapter_id:edNotes.value.trim(),status:'done',data:{translations:{[USER.lang]:tr,English:tr,German:word},explanation:{English:edGrammar.value.trim()},example_de:edExample.value.trim(),example_translated:{English:''},grammar:{note:edGrammar.value.trim()}}}); ['edWord','edNotes','edTr','edGrammar','edExample'].forEach(x=>document.getElementById(x).value=''); save(); renderWords(); buildMenu()}
+function normalizeWord(raw,chapterMeta={}){
+  const display=raw.word||raw.display||raw.german||raw.de||raw.lemma||''; const translations=raw.data?.translations||raw.translations||{};
+  if(raw.translation_en)translations.English=raw.translation_en; if(raw.translation_fr)translations.French=raw.translation_fr; if(raw.translation)translations.English=raw.translation;
+  const ex=(raw.examples&&raw.examples[0])||{}; return {id:raw.id||uid(),word:display,notes:raw.notes||raw.chapter_title||chapterMeta.title||'',chapter_id:raw.chapter_id||chapterMeta.id||raw.chapter||'',status:raw.status==='pending'?'pending':'done',data:{translations,explanation:raw.data?.explanation||raw.explanation||'',grammar_clarification:raw.data?.grammar_clarification||raw.grammar_clarification||'',example_de:raw.data?.example_de||raw.example_de||ex.de||'',example_translated:raw.data?.example_translated||raw.example_en||ex.en||'',grammar:raw.data?.grammar||raw.grammar||{type:raw.type||''}}}
+}
+function importData(raw,append=false,chapterMeta={}){const words=Array.isArray(raw)?raw:raw.words; if(!Array.isArray(words))throw Error('No words array found'); const converted=words.map(w=>normalizeWord(w,chapterMeta)).filter(w=>w.word&&Object.keys(w.data.translations||{}).length); W={meta:raw.meta||W.meta||{},words:append?[...W.words,...converted]:converted}; save(); buildMenu(); if(document.getElementById('wordRows'))renderWords()}
+function importFromTextarea(){try{importData(JSON.parse(document.getElementById('jsonBox').value)); alert('Imported.'); showScreen('menu'); buildMenu()}catch(e){alert('Import failed: '+e.message)}}
+document.getElementById('fileInput').onchange=e=>{const f=e.target.files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{try{importData(JSON.parse(r.result)); showScreen('menu'); buildMenu()}catch(err){alert('Import failed: '+err.message)}}; r.readAsText(f)};
+function exportData(){const blob=new Blob([JSON.stringify(W,null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='vokabular-data.json'; a.click(); URL.revokeObjectURL(a.href)}
+function resetProgress(){if(confirm('Delete all progress and session history but keep vocabulary?')){SRS={};HISTORY=[];save();buildMenu();renderTracker()}}
 function loadSeed(){W=structuredClone(DEFAULT);save();renderWords();buildMenu()}
-buildMenu();
+async function reloadChapterFiles(){const loaded=[]; for(const ch of CHAPTER_FILES){try{const r=await fetch(`data/${ch.file}`,{cache:'no-store'}); if(!r.ok)continue; const json=await r.json(); const words=(json.words||[]).map(w=>normalizeWord(w,ch)).filter(w=>w.word&&Object.keys(w.data.translations||{}).length); if(words.length)loaded.push(...words)}catch(e){}} if(loaded.length){W={meta:{source:'chapter files',loaded:new Date().toISOString()},words:loaded}; save(); alert(`Loaded ${loaded.length} words from chapter files.`)} else {alert('No chapter files found. Using current local data.')} buildMenu()}
+document.addEventListener('keydown',e=>{if(!Q.cur)return; if(Q.phase==='article'){const m={'1':'der','2':'die','3':'das','4':'—','q':'der','w':'die','e':'das','r':'—'}[e.key.toLowerCase()]; if(m)answerArticle(m)} if(Q.phase==='meaning'){const m={'1':0,'2':1,'3':2,'4':3,'a':0,'b':1,'c':2,'d':3}[e.key.toLowerCase()]; if(m!==undefined)answerMeaning(m)} if(Q.phase==='done'&&(e.key==='Enter'||e.key===' ')){e.preventDefault(); Q.idx++; next()}});
+(async function init(){buildMenu(); if(!localStorage.getItem('vok_data_power_v1')){await reloadChapterFiles().catch(()=>{}); buildMenu()}})();
 </script>
 </body>
 </html>
