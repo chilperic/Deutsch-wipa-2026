@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Vokabular · Mastery Edition</title>
     <style>
-        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
-        body { background: var(--bg); color: var(--text); font-family: 'Crimson Pro', serif; margin: 0; padding: 20px; }
-        .dashboard { max-width: 600px; margin: 0 auto; border: 1px solid var(--bdr); padding: 40px; border-radius: 16px; border-top: 3px solid var(--gold); }
-        h1 { color: var(--gold); font-family: 'Cormorant Garamond', serif; }
-        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
-        button { background: var(--gold); color: #000; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 20px; }
+        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; --ok: #2ecc71; --err: #e74c3c; }
+        body { background: var(--bg); color: var(--text); font-family: 'Crimson Pro', serif; margin: 0; padding: 20px; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        .dashboard { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 40px; border-radius: 16px; border-top: 3px solid var(--gold); text-align: center; }
+        h1 { color: var(--gold); }
+        button { background: var(--gold); color: #000; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-weight: bold; margin: 5px; }
+        .gender-btn { width: 80px; }
     </style>
 </head>
 <body>
@@ -20,70 +20,61 @@
 </div>
 
 <script>
-// THE PROFESSIONAL DATA MODEL
 const MASTER_DATA = {
     "k1": [
-        { "id": "k1_001", "word": "die Messe", "data": { "translations": {"Persian": "نمایشگاه", "English": "trade fair"}, "grammar": {"singular": "die Messe", "plural": "die Messen"} } },
-        { "id": "k1_002", "word": "die Premiere", "data": { "translations": {"Persian": "اولین نمایش", "English": "premiere"}, "grammar": {"singular": "die Premiere", "plural": "die Premieren"} } }
+        { "id": "k1_001", "word": "Messe", "gender": "die", "tr": "نمایشگاه" },
+        { "id": "k1_002", "word": "Premiere", "gender": "die", "tr": "اولین نمایش" }
     ],
     "k2": [
-        { "id": "k2_001", "word": "die Prüfung", "data": { "translations": {"Persian": "امتحان", "English": "exam"}, "grammar": {"singular": "die Prüfung", "plural": "die Prüfungen"} } }
+        { "id": "k2_001", "word": "Prüfung", "gender": "die", "tr": "امتحان" }
     ],
     "k3": [
-        { "id": "k3_001", "word": "die Beziehung", "data": { "translations": {"Persian": "رابطه", "English": "relationship"}, "grammar": {"singular": "die Beziehung", "plural": "die Beziehungen"} } }
+        { "id": "k3_001", "word": "Beziehung", "gender": "die", "tr": "رابطه" }
     ],
     "k4": [
-        { "id": "k4_001", "word": "abbiegen", "data": { "translations": {"Persian": "پیچیدن", "English": "to turn"}, "grammar": {"conjugation": {"ich": "biege ab", "du": "biegst ab", "wir": "biegen ab"}} } }
+        { "id": "k4_001", "word": "abbiegen", "gender": "verb", "tr": "پیچیدن" }
     ]
 };
 
-// COMPETENCE MATRIX ENGINE
 const UserProfile = {
     mastery: JSON.parse(localStorage.getItem('vok_mastery') || '{}'),
     save() { localStorage.setItem('vok_mastery', JSON.stringify(this.mastery)); }
 };
 
 function init() {
-    const allWords = Object.values(MASTER_DATA).flat();
+    const all = Object.values(MASTER_DATA).flat();
     document.getElementById('content').innerHTML = `
         <p>Engine status: <strong>Online</strong></p>
-        <div class="stat-grid">
-            <div>Words Total: <b>${allWords.length}</b></div>
-            <div>Mastery Level: <b>${Object.keys(UserProfile.mastery).length}</b></div>
-        </div>
+        <p>Words mastered: <b>${Object.keys(UserProfile.mastery).length}</b></p>
         <button onclick="startQuiz()">Launch Quiz</button>
     `;
 }
 
-// ADD THIS TO YOUR <script> SECTION
 function startQuiz() {
-    const app = document.getElementById('app');
-    const allWords = Object.values(MASTER_DATA).flat();
-    let currentWord = allWords[Math.floor(Math.random() * allWords.length)];
+    const all = Object.values(MASTER_DATA).flat();
+    const word = all[Math.floor(Math.random() * all.length)];
+    const app = document.getElementById('content');
 
     app.innerHTML = `
-        <div id="quiz-ui">
-            <h2>What is the gender?</h2>
-            <h1 style="font-size: 3rem;">___ ${currentWord.word.split(' ').pop()}</h1>
-            <div id="choices">
-                <button onclick="checkAnswer('der', '${currentWord.id}')">Der</button>
-                <button onclick="checkAnswer('die', '${currentWord.id}')">Die</button>
-                <button onclick="checkAnswer('das', '${currentWord.id}')">Das</button>
-            </div>
-            <p id="feedback"></p>
+        <h3>What is the gender?</h3>
+        <h1 style="font-size: 2.5rem;">___ ${word.word}</h1>
+        <div id="choices">
+            <button class="gender-btn" onclick="check('${word.id}', 'der', '${word.gender}')">Der</button>
+            <button class="gender-btn" onclick="check('${word.id}', 'die', '${word.gender}')">Die</button>
+            <button class="gender-btn" onclick="check('${word.id}', 'das', '${word.gender}')">Das</button>
         </div>
+        <p id="feedback"></p>
     `;
 }
 
-function checkAnswer(guess, id) {
+function check(id, guess, correct) {
     const feedback = document.getElementById('feedback');
-    // Simplified validation: In a real scenario, you'd match against the word's actual data
-    if (guess === 'die') { // This is a placeholder for your actual gender logic
+    if(guess === correct) {
         feedback.innerHTML = '<span style="color:var(--ok);">Correct!</span>';
         UserProfile.mastery[id] = (UserProfile.mastery[id] || 0) + 1;
         UserProfile.save();
     } else {
-        feedback.innerHTML = '<span style="color:var(--err);">Incorrect. Review needed.</span>';
+        feedback.innerHTML = `<span style="color:var(--err);">Incorrect. It was ${correct}.</span>`;
     }
     setTimeout(startQuiz, 1500);
 }
