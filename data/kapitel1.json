@@ -6,9 +6,9 @@
     "status": "done", 
     "data": { 
       "translations": { "Persian": "نمایشگاه", "English": "trade fair" }, 
-      "explanation": "A large exhibition for industry or trade.", 
+      "explanation": "A large exhibition.", 
       "example_de": "Wir besuchen die Buchmesse.", 
-      "example_translated": "We are visiting the book fair.", 
+      "example_translated": "We are visiting the fair.", 
       "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } 
     } 
   }
