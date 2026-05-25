@@ -2,32 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vokabular · Mastery Edition</title>
+    <title>Vokabular Mastery</title>
     <style>
-        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; --gray: #7a7268; }
+        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
         body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; padding: 20px; display: flex; justify-content: center; }
         .card { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
         h1 { color: var(--gold); border-bottom: 1px solid var(--bdr); padding-bottom: 10px; }
         .section { margin-top: 25px; }
-        h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 8px; }
+        h3 { font-size: 0.8rem; text-transform: uppercase; color: var(--gold); }
         .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
-        button { background: var(--gold); color: #000; border: none; padding: 10px; margin-top: 20px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        .dict-btn { background: #1a1a1f; color: var(--text); border: 1px solid var(--bdr); padding: 8px; margin: 5px; cursor: pointer; border-radius: 4px; }
     </style>
 </head>
 <body>
 
 <div class="card" id="app">
     <h1>Vokabular Engine</h1>
-    <div id="content">Loading complex data structures...</div>
+    <div id="content">Initializing...</div>
 </div>
 
 <script>
-// PRO-LEVEL DATA STRUCTURE
+// THE DATABASE
 const DB = [
     {
         "word": "wettbewerbsfähig",
         "grammar": "Capable of competing successfully.",
-        "example_de": "„Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.“",
+        "example_de": "Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.",
         "example_en": "To remain competitive, we must reduce costs.",
         "translations": {
             "English": "competitive", "French": "compétitif", "Arabic": "تنافسي",
@@ -37,30 +37,24 @@ const DB = [
     }
 ];
 
-function render(word) {
-    const content = document.getElementById('content');
-    const translations = Object.entries(word.translations).map(([lang, val]) => 
-        `<div><b>${lang}:</b> ${val}</div>`).join('');
-
-    content.innerHTML = `
-        <h1 style="border:none;">${word.word}</h1>
+function render(idx) {
+    const w = DB[idx];
+    const trans = Object.entries(w.translations).map(([l, v]) => `<div><b>${l}:</b> ${v}</div>`).join('');
+    
+    document.getElementById('content').innerHTML = `
+        <h1 style="border:none;">${w.word}</h1>
+        <div class="section"><h3>Grammar & Context</h3><p>${w.grammar}</p></div>
+        <div class="section"><h3>Example</h3><p><em>${w.example_de}</em><br>${w.example_en}</p></div>
+        <div class="section"><h3>Translations</h3><div class="lang-grid">${trans}</div></div>
         <div class="section">
-            <h3>Grammar & Context</h3>
-            <p>${word.grammar}</p>
+            <h3>Dictionaries</h3>
+            <button class="dict-btn" onclick="window.open('https://www.duden.de/suchen/dudenonline/${w.word}')">Duden</button>
+            <button class="dict-btn" onclick="window.open('https://dict.cc/?s=${w.word}')">dict.cc</button>
         </div>
-        <div class="section">
-            <h3>Example Sentence</h3>
-            <p><em>${word.example_de}</em><br>${word.example_en}</p>
-        </div>
-        <div class="section">
-            <h3>All Translations</h3>
-            <div class="lang-grid">${translations}</div>
-        </div>
-        <button onclick="location.reload()">Next Word</button>
     `;
 }
 
-render(DB[0]);
+render(0);
 </script>
 </body>
 </html>
