@@ -50,9 +50,11 @@ input:focus,select:focus{border-color:var(--gold2); box-shadow: 0 0 0 2px rgba(2
 .icon-btn{background:var(--s2);border:1px solid var(--bdr);color:var(--dim);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center; transition: all 0.2s;}
 .icon-btn:hover{background: var(--s3); color: var(--gold); transform: scale(1.05);}
 #quiz-body{flex:1;display:flex;align-items:center;justify-content:center;padding:16px;width:100%}
-.qcard{width:100%;max-width:600px;display:flex;flex-direction:column;gap:0}
-.word-area{text-align:center;padding:30px 12px 24px}
-.word-main{font-family:var(--serif);font-style:italic;font-size:clamp(42px,8vw,72px);color:var(--text);line-height:1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.5);}
+.qcard{width:100%;max-width:600px;display:flex;flex-direction:column;gap:0; position:relative;}
+.word-area{text-align:center;padding:30px 12px 24px; position:relative;}
+.word-main{font-family:var(--serif);font-style:italic;font-size:clamp(42px,8vw,72px);color:var(--text);line-height:1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.5); display:inline-block;}
+.speech-btn{background:none; border:none; color:var(--gold2); font-size:24px; cursor:pointer; vertical-align:middle; margin-left:10px; transition:all 0.2s;}
+.speech-btn:hover{color:var(--gold); transform:scale(1.2);}
 .word-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:12px;letter-spacing:.15em;text-transform:uppercase}
 .phase-lbl{font-family:var(--mono);font-size:12px;color:var(--gold2);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;text-align:center; opacity: 0.9; font-weight:bold;}
 .art-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;padding:0 4px; margin-bottom: 20px;}
@@ -94,10 +96,14 @@ input:focus,select:focus{border-color:var(--gold2); box-shadow: 0 0 0 2px rgba(2
 .wrong-item{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:var(--s2);border-radius:8px;font-size:16px; border-left: 4px solid var(--err);}
 .wrong-de{color:var(--text);font-family:var(--serif);font-style:italic; font-size: 20px;}.wrong-tr{color:var(--dim);font-size:15px}
 #modal-bg, #lb-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:300;align-items:center;justify-content:center;padding:16px; backdrop-filter: blur(6px);}
-#modal-bg.on{display:flex}
+#modal-bg.on, #lb-modal.on{display:flex}
 .modal{background:var(--s1);border:1px solid var(--bdr);border-radius:16px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;padding:36px;display:flex;flex-direction:column;gap:20px; box-shadow: 0 20px 60px rgba(0,0,0,0.6);}
 .modal-hdr{display:flex;align-items:center;justify-content:space-between;}
 .modal-ttl{font-family:var(--serif);font-size:28px;color:var(--gold);}
+.lb-row{display:flex;align-items:center;gap:12px;padding:12px;border-bottom:1px solid var(--bdr); background:var(--s2); border-radius:8px; margin-bottom:8px;}
+.lb-rank{font-family:var(--mono);font-size:14px;color:var(--dim); font-weight:bold; width:24px; text-align:center;}
+.lb-name{flex:1;font-size:18px; font-family:var(--serif); color:var(--text);}
+.lb-xp{font-family:var(--mono);font-size:14px;color:var(--info); font-weight:bold;}
 hr{border:none;border-top:1px solid var(--bdr)}
 .gap{display:flex;flex-direction:column;gap:16px}
 .tip{font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px}
@@ -164,6 +170,8 @@ hr{border:none;border-top:1px solid var(--bdr)}
       </div>
     </div>
     <button class="btn btn-gold btn-block" id="btn-start" onclick="startSession()" style="padding:18px;font-size:15px;margin-top:10px; letter-spacing:0.15em;">▶ Launch Mission</button>
+    <hr style="margin: 5px 0;">
+    <button class="btn btn-outline btn-block" onclick="showLeaderboard()">🏆 Hall of Fame</button>
   </div>
 </div>
 </div>
@@ -205,8 +213,18 @@ hr{border:none;border-top:1px solid var(--bdr)}
 </div>
 </div>
 
+<div id="lb-modal" onclick="if(event.target===this)this.classList.remove('on')">
+<div class="modal anim-slide">
+  <div class="modal-hdr">
+    <span class="modal-ttl">🏆 Hall of Fame</span>
+    <button class="icon-btn" onclick="document.getElementById('lb-modal').classList.remove('on')">✕</button>
+  </div>
+  <div id="lb-content"></div>
+</div>
+</div>
+
 <script>
-// --- CORE DATA & AUDIO ---
+// --- CORE DATA, AUDIO & SPEECH ---
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 let soundEnabled = true;
 
@@ -248,6 +266,15 @@ function toggleSound() {
   persist();
 }
 
+function speakWord(text) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel(); // clear queue
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'de-DE';
+  utterance.rate = 0.9;
+  window.speechSynthesis.speak(utterance);
+}
+
 const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili'];
 const ARTICLES = ['der','die','das','—'];
 
@@ -266,7 +293,7 @@ function extLinks(word, nativeLang) {
   ];
 }
 
-// BAKE PRE-TRANSLATED VOCABULARY DATA EXTRACTED FROM KAPITEL 1-4
+// BAKE PRE-TRANSLATED VOCABULARY DATA
 let W = {
   meta: { "targetLanguages": LANGS, "explanationLanguage": "English" },
   words: [
@@ -281,21 +308,27 @@ let W = {
 };
 
 let USER = { name: '', nativeLang: 'English', chapter: 'all', sessionSize: 10, xp: 0, bestScore: 0, sound: true };
+let LEADERBOARD = [];
 let Q = { pool: [], queue: [], idx: 0, correct: 0, wrong: 0, streak: 0, maxStreak: 0, sessionXP: 0, wrongItems: [], cur: null };
 
 function persist() {
-  try { localStorage.setItem('vok_u_m', JSON.stringify(USER)); } catch(e){}
+  try { 
+    localStorage.setItem('vok_u_m2', JSON.stringify(USER)); 
+    localStorage.setItem('vok_lb', JSON.stringify(LEADERBOARD));
+  } catch(e){}
 }
 
 function loadStorage() {
   try {
-    const u = localStorage.getItem('vok_u_m');
+    const u = localStorage.getItem('vok_u_m2');
+    const lb = localStorage.getItem('vok_lb');
     if (u) {
       Object.assign(USER, JSON.parse(u));
       soundEnabled = USER.sound;
       const btn = document.getElementById('sound-btn');
       if(!soundEnabled) { btn.textContent = '🔇'; btn.style.color = 'var(--dim)'; btn.style.borderColor = 'var(--bdr)'; }
     }
+    if (lb) LEADERBOARD = JSON.parse(lb);
   } catch(e){}
 }
 
@@ -333,7 +366,7 @@ function getLevel(xp) { return Math.floor(Math.sqrt(xp / 50)) + 1; }
 
 function startSession() {
   if(audioCtx.state === 'suspended') audioCtx.resume();
-  USER.name = document.getElementById('inp-name').value.trim() || 'Player 1';
+  USER.name = document.getElementById('inp-name').value.trim() || 'Player ' + Math.floor(Math.random()*1000);
   USER.nativeLang = document.getElementById('sel-native').value;
   USER.chapter = document.getElementById('sel-chapter').value;
   USER.sessionSize = document.getElementById('pill-size').querySelector('.on')?.dataset.n || '10';
@@ -369,6 +402,9 @@ function loadWord() {
     phase: !!trueArticle ? 'article' : 'meaning', 
     options: opts, artSelected: null, meanSelected: null, showDet: false, wordFailed: false
   };
+  
+  // Auto-pronounce if sound is on
+  if (soundEnabled) speakWord(getBase(entry.word));
   renderQuiz();
 }
 
@@ -438,6 +474,12 @@ function endSession() {
     isNewBest = true;
     playSound('lvlup');
   }
+  
+  // Log to Global Leaderboard
+  LEADERBOARD.push({ name: USER.name, xp: Q.sessionXP, pct: pct, date: new Date().toLocaleDateString() });
+  LEADERBOARD.sort((a,b) => b.xp - a.xp);
+  LEADERBOARD = LEADERBOARD.slice(0, 10); // Keep Top 10
+  
   persist();
   renderSummary(pct, isNewBest); showScreen('screen-summary');
 }
@@ -494,11 +536,12 @@ function renderQuiz() {
 
   const explHTML = (showDet && entry.data) ? buildExplPanel(entry) : '';
   const explBtnHTML = (phase === 'done') ? `<button class="expl-btn anim-slide" onclick="toggleExpl()">📖 ${showDet?'Hide Database':'Access Database'}</button>` : '';
+  const wordBase = getBase(entry.word);
 
   card.innerHTML = `
     <div class="word-area anim-slide">
       ${artHTML && phase !== 'article' ? artHTML : ''}
-      <div class="word-main">${h(getBase(entry.word))}</div>
+      <div class="word-main">${h(wordBase)}<button class="speech-btn" onclick="speakWord('${h(wordBase)}')">🔊</button></div>
       ${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}
     </div>
     ${phase === 'article' ? artHTML : ''}
@@ -527,7 +570,7 @@ function buildExplPanel(entry) {
     }
   }
 
-  return `<div class="expl-panel anim-slide"><div class="expl-section" style="text-align:center; padding-bottom:10px;"><span class="lbl">Translation (${userLang})</span><div style="font-family:var(--serif); font-size:24px; color:var(--gold);">${h(userTranslation)}</div></div><div class="expl-section"><span class="lbl">Structure</span>${grammarHTML}<p class="expl-txt" style="margin-top:10px;">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}"</p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">External Dictionaries</span><div class="link-row">${extLinks(entry.word, userLang).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
+  return `<div class="expl-panel anim-slide"><div class="expl-section" style="text-align:center; padding-bottom:10px;"><span class="lbl">Translation (${userLang})</span><div style="font-family:var(--serif); font-size:24px; color:var(--gold);">${h(userTranslation)}</div></div><div class="expl-section"><span class="lbl">Structure</span>${grammarHTML}<p class="expl-txt" style="margin-top:10px;">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}" <button style="background:none;border:none;color:var(--info);cursor:pointer;" onclick="speakWord('${h(d.example_de)}')">🔊</button></p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">External Dictionaries</span><div class="link-row">${extLinks(entry.word, userLang).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
 }
 
 function renderSummary(pct, isNewBest) {
@@ -546,6 +589,23 @@ function renderSummary(pct, isNewBest) {
     btnReview.style.display = 'none';
     document.getElementById('sum-wrong-section').style.display = 'none';
   }
+}
+
+function showLeaderboard() {
+  const lb = document.getElementById('lb-content');
+  if (LEADERBOARD.length === 0) {
+    lb.innerHTML = '<p style="color:var(--dim); text-align:center;">No records yet. Be the first to launch a mission!</p>';
+  } else {
+    const medals = ['🥇', '🥈', '🥉'];
+    lb.innerHTML = LEADERBOARD.map((s, i) => `
+      <div class="lb-row anim-slide" style="animation-delay:${i*0.05}s">
+        <span class="lb-rank">${medals[i] || (i+1)}</span>
+        <span class="lb-name">${h(s.name)} <span style="font-size:12px; color:var(--dim); font-family:var(--mono);">(${s.pct}%)</span></span>
+        <span class="lb-xp">${s.xp} XP</span>
+      </div>
+    `).join('');
+  }
+  document.getElementById('lb-modal').classList.add('on');
 }
 
 function buildDashboard() {
