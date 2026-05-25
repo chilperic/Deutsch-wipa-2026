@@ -1,1 +1,3692 @@
-[]
+{
+  "chapter": "kapitel3",
+  "title": "Kapitel 3",
+  "level": "B1/B2",
+  "domain": "Beruf, Arbeit, Alltag",
+  "words": [
+    {
+      "id": "k3_001",
+      "word": "der Außendienst",
+      "notes": "Kapitel 3 · Alte Freunde",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "field service / outside sales",
+          "Spanish": "borrador: field service / outside sales",
+          "French": "service externe",
+          "Japanese": "下訳: field service / outside sales",
+          "German": "der Außendienst",
+          "Korean": "초안: field service / outside sales",
+          "Italian": "bozza: field service / outside sales",
+          "Chinese": "草稿: field service / outside sales",
+          "Portuguese": "rascunho: field service / outside sales",
+          "Persian": "پیش‌نویس: field service / outside sales",
+          "Arabic": "مسودة: field service / outside sales",
+          "Thai": "ฉบับร่าง: field service / outside sales"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Außendienst.",
+          "German": "Lernwort: der Außendienst.",
+          "Italian": "Voce di vocabolario tedesco: der Außendienst.",
+          "Portuguese": "Item de vocabulário alemão: der Außendienst."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Außendienst"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_002",
+      "word": "Kontakt aufnehmen (zu + D. / mit + D.)",
+      "notes": "Kapitel 3 · Alte Freunde",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to make contact",
+          "Spanish": "borrador: to make contact",
+          "French": "prendre contact",
+          "Japanese": "下訳: to make contact",
+          "German": "Kontakt aufnehmen (zu + D. / mit + D.)",
+          "Korean": "초안: to make contact",
+          "Italian": "bozza: to make contact",
+          "Chinese": "草稿: to make contact",
+          "Portuguese": "rascunho: to make contact",
+          "Persian": "پیش‌نویس: to make contact",
+          "Arabic": "مسودة: to make contact",
+          "Thai": "ฉบับร่าง: to make contact"
+        },
+        "explanation": {
+          "English": "zu/mit + Dativ.",
+          "French": "zu/mit + Dativ.",
+          "Spanish": "Elemento de vocabulario alemán: Kontakt aufnehmen (zu + D. / mit + D.).",
+          "German": "Lernwort: Kontakt aufnehmen (zu + D. / mit + D.).",
+          "Italian": "Voce di vocabolario tedesco: Kontakt aufnehmen (zu + D. / mit + D.).",
+          "Portuguese": "Item de vocabulário alemão: Kontakt aufnehmen (zu + D. / mit + D.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "phrase / pattern"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_003",
+      "word": "den Überblick behalten / verlieren (über + A.)",
+      "notes": "Kapitel 3 · Alte Freunde",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to keep / lose overview",
+          "Spanish": "borrador: to keep / lose overview",
+          "French": "garder / perdre la vue d'ensemble",
+          "Japanese": "下訳: to keep / lose overview",
+          "German": "den Überblick behalten / verlieren (über + A.)",
+          "Korean": "초안: to keep / lose overview",
+          "Italian": "bozza: to keep / lose overview",
+          "Chinese": "草稿: to keep / lose overview",
+          "Portuguese": "rascunho: to keep / lose overview",
+          "Persian": "پیش‌نویس: to keep / lose overview",
+          "Arabic": "مسودة: to keep / lose overview",
+          "Thai": "ฉบับร่าง: to keep / lose overview"
+        },
+        "explanation": {
+          "English": "über + Akkusativ.",
+          "French": "über + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: den Überblick behalten / verlieren (über + A.).",
+          "German": "Lernwort: den Überblick behalten / verlieren (über + A.).",
+          "Italian": "Voce di vocabolario tedesco: den Überblick behalten / verlieren (über + A.).",
+          "Portuguese": "Item de vocabulário alemão: den Überblick behalten / verlieren (über + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "phrase / pattern"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_004",
+      "word": "die Kundenbetreuung",
+      "notes": "Kapitel 3 · Alte Freunde",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "customer service",
+          "Spanish": "borrador: customer service",
+          "French": "service client",
+          "Japanese": "下訳: customer service",
+          "German": "die Kundenbetreuung",
+          "Korean": "초안: customer service",
+          "Italian": "bozza: customer service",
+          "Chinese": "草稿: customer service",
+          "Portuguese": "rascunho: customer service",
+          "Persian": "پیش‌نویس: customer service",
+          "Arabic": "مسودة: customer service",
+          "Thai": "ฉบับร่าง: customer service"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Kundenbetreuung.",
+          "German": "Lernwort: die Kundenbetreuung.",
+          "Italian": "Voce di vocabolario tedesco: die Kundenbetreuung.",
+          "Portuguese": "Item de vocabulário alemão: die Kundenbetreuung."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Kundenbetreuung"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_005",
+      "word": "das Marketing",
+      "notes": "Kapitel 3 · Alte Freunde",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "marketing",
+          "Spanish": "borrador: marketing",
+          "French": "marketing",
+          "Japanese": "下訳: marketing",
+          "German": "das Marketing",
+          "Korean": "초안: marketing",
+          "Italian": "bozza: marketing",
+          "Chinese": "草稿: marketing",
+          "Portuguese": "rascunho: marketing",
+          "Persian": "پیش‌نویس: marketing",
+          "Arabic": "مسودة: marketing",
+          "Thai": "ฉบับร่าง: marketing"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Marketing.",
+          "German": "Lernwort: das Marketing.",
+          "Italian": "Voce di vocabolario tedesco: das Marketing.",
+          "Portuguese": "Item de vocabulário alemão: das Marketing."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Marketing"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_006",
+      "word": "die Beziehung, -en",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "relationship",
+          "Spanish": "relación",
+          "French": "relation",
+          "Japanese": "関係",
+          "German": "die Beziehung, -en",
+          "Korean": "관계",
+          "Italian": "relazione",
+          "Chinese": "关系",
+          "Portuguese": "relação",
+          "Persian": "رابطه",
+          "Arabic": "علاقة",
+          "Thai": "ความสัมพันธ์"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Beziehung, -en.",
+          "German": "Lernwort: die Beziehung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Beziehung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Beziehung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Beziehung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_007",
+      "word": "das Stipendium, die Stipendien",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "scholarship",
+          "Spanish": "beca",
+          "French": "bourse",
+          "Japanese": "奨学金",
+          "German": "das Stipendium, die Stipendien",
+          "Korean": "장학금",
+          "Italian": "borsa di studio",
+          "Chinese": "奖学金",
+          "Portuguese": "bolsa de estudo",
+          "Persian": "بورسیه",
+          "Arabic": "منحة دراسية",
+          "Thai": "ทุนการศึกษา"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Stipendium, die Stipendien.",
+          "German": "Lernwort: das Stipendium, die Stipendien.",
+          "Italian": "Voce di vocabolario tedesco: das Stipendium, die Stipendien.",
+          "Portuguese": "Item de vocabulário alemão: das Stipendium, die Stipendien."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Stipendium",
+          "plural_hint": "die Stipendien"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_008",
+      "word": "finanzieren",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to finance",
+          "Spanish": "financiar",
+          "French": "financer",
+          "Japanese": "資金を出す",
+          "German": "finanzieren",
+          "Korean": "자금을 조달하다",
+          "Italian": "finanziare",
+          "Chinese": "资助 / 融资",
+          "Portuguese": "financiar",
+          "Persian": "تأمین مالی کردن",
+          "Arabic": "يموّل",
+          "Thai": "จัดหาเงินทุน"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: finanzieren.",
+          "German": "Lernwort: finanzieren.",
+          "Italian": "Voce di vocabolario tedesco: finanzieren.",
+          "Portuguese": "Item de vocabulário alemão: finanzieren."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_009",
+      "word": "einsam",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "lonely",
+          "Spanish": "solo / solitario",
+          "French": "seul / solitaire",
+          "Japanese": "孤独な",
+          "German": "einsam",
+          "Korean": "외로운",
+          "Italian": "solo / solitario",
+          "Chinese": "孤独的",
+          "Portuguese": "solitário",
+          "Persian": "تنها",
+          "Arabic": "وحيد",
+          "Thai": "เหงา"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: einsam.",
+          "German": "Lernwort: einsam.",
+          "Italian": "Voce di vocabolario tedesco: einsam.",
+          "Portuguese": "Item de vocabulário alemão: einsam."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_010",
+      "word": "etwas läuft gut/super",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "something is going well",
+          "Spanish": "borrador: something is going well",
+          "French": "quelque chose se passe bien",
+          "Japanese": "下訳: something is going well",
+          "German": "etwas läuft gut/super",
+          "Korean": "초안: something is going well",
+          "Italian": "bozza: something is going well",
+          "Chinese": "草稿: something is going well",
+          "Portuguese": "rascunho: something is going well",
+          "Persian": "پیش‌نویس: something is going well",
+          "Arabic": "مسودة: something is going well",
+          "Thai": "ฉบับร่าง: something is going well"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: etwas läuft gut/super.",
+          "German": "Lernwort: etwas läuft gut/super.",
+          "Italian": "Voce di vocabolario tedesco: etwas läuft gut/super.",
+          "Portuguese": "Item de vocabulário alemão: etwas läuft gut/super."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_011",
+      "word": "das Heimweh",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "homesickness",
+          "Spanish": "nostalgia del hogar",
+          "French": "mal du pays",
+          "Japanese": "ホームシック",
+          "German": "das Heimweh",
+          "Korean": "향수병",
+          "Italian": "nostalgia di casa",
+          "Chinese": "思乡",
+          "Portuguese": "saudade de casa",
+          "Persian": "دلتنگی برای خانه",
+          "Arabic": "الحنين إلى الوطن",
+          "Thai": "คิดถึงบ้าน"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Heimweh.",
+          "German": "Lernwort: das Heimweh.",
+          "Italian": "Voce di vocabolario tedesco: das Heimweh.",
+          "Portuguese": "Item de vocabulário alemão: das Heimweh."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Heimweh"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_012",
+      "word": "die Filiale, -n",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "branch",
+          "Spanish": "sucursal",
+          "French": "succursale",
+          "Japanese": "支店",
+          "German": "die Filiale, -n",
+          "Korean": "지점",
+          "Italian": "filiale",
+          "Chinese": "分店 / 分支机构",
+          "Portuguese": "filial",
+          "Persian": "شعبه",
+          "Arabic": "فرع",
+          "Thai": "สาขา"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Filiale, -n.",
+          "German": "Lernwort: die Filiale, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Filiale, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Filiale, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Filiale",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_013",
+      "word": "Liebe auf den ersten Blick",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "love at first sight",
+          "Spanish": "borrador: love at first sight",
+          "French": "coup de foudre",
+          "Japanese": "下訳: love at first sight",
+          "German": "Liebe auf den ersten Blick",
+          "Korean": "초안: love at first sight",
+          "Italian": "bozza: love at first sight",
+          "Chinese": "草稿: love at first sight",
+          "Portuguese": "rascunho: love at first sight",
+          "Persian": "پیش‌نویس: love at first sight",
+          "Arabic": "مسودة: love at first sight",
+          "Thai": "ฉบับร่าง: love at first sight"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: Liebe auf den ersten Blick.",
+          "German": "Lernwort: Liebe auf den ersten Blick.",
+          "Italian": "Voce di vocabolario tedesco: Liebe auf den ersten Blick.",
+          "Portuguese": "Item de vocabulário alemão: Liebe auf den ersten Blick."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_014",
+      "word": "ziemlich",
+      "notes": "Kapitel 3 · Das Treffen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "quite / rather",
+          "Spanish": "borrador: quite / rather",
+          "French": "assez",
+          "Japanese": "下訳: quite / rather",
+          "German": "ziemlich",
+          "Korean": "초안: quite / rather",
+          "Italian": "bozza: quite / rather",
+          "Chinese": "草稿: quite / rather",
+          "Portuguese": "rascunho: quite / rather",
+          "Persian": "پیش‌نویس: quite / rather",
+          "Arabic": "مسودة: quite / rather",
+          "Thai": "ฉบับร่าง: quite / rather"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: ziemlich.",
+          "German": "Lernwort: ziemlich.",
+          "Italian": "Voce di vocabolario tedesco: ziemlich.",
+          "Portuguese": "Item de vocabulário alemão: ziemlich."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_015",
+      "word": "der Stand, -e",
+      "notes": "Kapitel 3 · Ahmeds E-Mail",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "booth / status / position",
+          "Spanish": "borrador: booth / status / position",
+          "French": "stand / état",
+          "Japanese": "下訳: booth / status / position",
+          "German": "der Stand, -e",
+          "Korean": "초안: booth / status / position",
+          "Italian": "bozza: booth / status / position",
+          "Chinese": "草稿: booth / status / position",
+          "Portuguese": "rascunho: booth / status / position",
+          "Persian": "پیش‌نویس: booth / status / position",
+          "Arabic": "مسودة: booth / status / position",
+          "Thai": "ฉบับร่าง: booth / status / position"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Stand, -e.",
+          "German": "Lernwort: der Stand, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Stand, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Stand, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Stand",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_016",
+      "word": "jemanden auf den neuesten Stand bringen",
+      "notes": "Kapitel 3 · Ahmeds E-Mail",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to bring someone up to date",
+          "Spanish": "borrador: to bring someone up to date",
+          "French": "mettre quelqu'un au courant",
+          "Japanese": "下訳: to bring someone up to date",
+          "German": "jemanden auf den neuesten Stand bringen",
+          "Korean": "초안: to bring someone up to date",
+          "Italian": "bozza: to bring someone up to date",
+          "Chinese": "草稿: to bring someone up to date",
+          "Portuguese": "rascunho: to bring someone up to date",
+          "Persian": "پیش‌نویس: to bring someone up to date",
+          "Arabic": "مسودة: to bring someone up to date",
+          "Thai": "ฉบับร่าง: to bring someone up to date"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: jemanden auf den neuesten Stand bringen.",
+          "German": "Lernwort: jemanden auf den neuesten Stand bringen.",
+          "Italian": "Voce di vocabolario tedesco: jemanden auf den neuesten Stand bringen.",
+          "Portuguese": "Item de vocabulário alemão: jemanden auf den neuesten Stand bringen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_017",
+      "word": "die Neuigkeit, -en",
+      "notes": "Kapitel 3 · Ahmeds E-Mail",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "news",
+          "Spanish": "borrador: news",
+          "French": "nouvelle",
+          "Japanese": "下訳: news",
+          "German": "die Neuigkeit, -en",
+          "Korean": "초안: news",
+          "Italian": "bozza: news",
+          "Chinese": "草稿: news",
+          "Portuguese": "rascunho: news",
+          "Persian": "پیش‌نویس: news",
+          "Arabic": "مسودة: news",
+          "Thai": "ฉบับร่าง: news"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Neuigkeit, -en.",
+          "German": "Lernwort: die Neuigkeit, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Neuigkeit, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Neuigkeit, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Neuigkeit",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_018",
+      "word": "das Wiedersehen",
+      "notes": "Kapitel 3 · Ahmeds E-Mail",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "reunion / seeing again",
+          "Spanish": "borrador: reunion / seeing again",
+          "French": "retrouvailles",
+          "Japanese": "下訳: reunion / seeing again",
+          "German": "das Wiedersehen",
+          "Korean": "초안: reunion / seeing again",
+          "Italian": "bozza: reunion / seeing again",
+          "Chinese": "草稿: reunion / seeing again",
+          "Portuguese": "rascunho: reunion / seeing again",
+          "Persian": "پیش‌نویس: reunion / seeing again",
+          "Arabic": "مسودة: reunion / seeing again",
+          "Thai": "ฉบับร่าง: reunion / seeing again"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Wiedersehen.",
+          "German": "Lernwort: das Wiedersehen.",
+          "Italian": "Voce di vocabolario tedesco: das Wiedersehen.",
+          "Portuguese": "Item de vocabulário alemão: das Wiedersehen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Wiedersehen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_019",
+      "word": "es geht darum",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "it is about",
+          "Spanish": "borrador: it is about",
+          "French": "il s'agit de",
+          "Japanese": "下訳: it is about",
+          "German": "es geht darum",
+          "Korean": "초안: it is about",
+          "Italian": "bozza: it is about",
+          "Chinese": "草稿: it is about",
+          "Portuguese": "rascunho: it is about",
+          "Persian": "پیش‌نویس: it is about",
+          "Arabic": "مسودة: it is about",
+          "Thai": "ฉบับร่าง: it is about"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: es geht darum.",
+          "German": "Lernwort: es geht darum.",
+          "Italian": "Voce di vocabolario tedesco: es geht darum.",
+          "Portuguese": "Item de vocabulário alemão: es geht darum."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_020",
+      "word": "einen Job aufgeben/annehmen",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to quit/take a job",
+          "Spanish": "borrador: to quit/take a job",
+          "French": "quitter/accepter un emploi",
+          "Japanese": "下訳: to quit/take a job",
+          "German": "einen Job aufgeben/annehmen",
+          "Korean": "초안: to quit/take a job",
+          "Italian": "bozza: to quit/take a job",
+          "Chinese": "草稿: to quit/take a job",
+          "Portuguese": "rascunho: to quit/take a job",
+          "Persian": "پیش‌نویس: to quit/take a job",
+          "Arabic": "مسودة: to quit/take a job",
+          "Thai": "ฉบับร่าง: to quit/take a job"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: einen Job aufgeben/annehmen.",
+          "German": "Lernwort: einen Job aufgeben/annehmen.",
+          "Italian": "Voce di vocabolario tedesco: einen Job aufgeben/annehmen.",
+          "Portuguese": "Item de vocabulário alemão: einen Job aufgeben/annehmen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_021",
+      "word": "der Nebenjob, -s",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "side job",
+          "Spanish": "borrador: side job",
+          "French": "petit boulot / emploi secondaire",
+          "Japanese": "下訳: side job",
+          "German": "der Nebenjob, -s",
+          "Korean": "초안: side job",
+          "Italian": "bozza: side job",
+          "Chinese": "草稿: side job",
+          "Portuguese": "rascunho: side job",
+          "Persian": "پیش‌نویس: side job",
+          "Arabic": "مسودة: side job",
+          "Thai": "ฉบับร่าง: side job"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Nebenjob, -s.",
+          "German": "Lernwort: der Nebenjob, -s.",
+          "Italian": "Voce di vocabolario tedesco: der Nebenjob, -s.",
+          "Portuguese": "Item de vocabulário alemão: der Nebenjob, -s."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Nebenjob",
+          "plural_hint": "-s"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_022",
+      "word": "zurücklassen",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to leave behind",
+          "Spanish": "borrador: to leave behind",
+          "French": "laisser derrière",
+          "Japanese": "下訳: to leave behind",
+          "German": "zurücklassen",
+          "Korean": "초안: to leave behind",
+          "Italian": "bozza: to leave behind",
+          "Chinese": "草稿: to leave behind",
+          "Portuguese": "rascunho: to leave behind",
+          "Persian": "پیش‌نویس: to leave behind",
+          "Arabic": "مسودة: to leave behind",
+          "Thai": "ฉบับร่าง: to leave behind"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: zurücklassen.",
+          "German": "Lernwort: zurücklassen.",
+          "Italian": "Voce di vocabolario tedesco: zurücklassen.",
+          "Portuguese": "Item de vocabulário alemão: zurücklassen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_023",
+      "word": "die Schwierigkeit, -en",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "difficulty",
+          "Spanish": "borrador: difficulty",
+          "French": "difficulté",
+          "Japanese": "下訳: difficulty",
+          "German": "die Schwierigkeit, -en",
+          "Korean": "초안: difficulty",
+          "Italian": "bozza: difficulty",
+          "Chinese": "草稿: difficulty",
+          "Portuguese": "rascunho: difficulty",
+          "Persian": "پیش‌نویس: difficulty",
+          "Arabic": "مسودة: difficulty",
+          "Thai": "ฉบับร่าง: difficulty"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Schwierigkeit, -en.",
+          "German": "Lernwort: die Schwierigkeit, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Schwierigkeit, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Schwierigkeit, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Schwierigkeit",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_024",
+      "word": "die Zulassung, -en",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "admission / approval",
+          "Spanish": "borrador: admission / approval",
+          "French": "admission / autorisation",
+          "Japanese": "下訳: admission / approval",
+          "German": "die Zulassung, -en",
+          "Korean": "초안: admission / approval",
+          "Italian": "bozza: admission / approval",
+          "Chinese": "草稿: admission / approval",
+          "Portuguese": "rascunho: admission / approval",
+          "Persian": "پیش‌نویس: admission / approval",
+          "Arabic": "مسودة: admission / approval",
+          "Thai": "ฉบับร่าง: admission / approval"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Zulassung, -en.",
+          "German": "Lernwort: die Zulassung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Zulassung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Zulassung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Zulassung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_025",
+      "word": "die Sicherheit",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "security / safety",
+          "Spanish": "borrador: security / safety",
+          "French": "sécurité",
+          "Japanese": "下訳: security / safety",
+          "German": "die Sicherheit",
+          "Korean": "초안: security / safety",
+          "Italian": "bozza: security / safety",
+          "Chinese": "草稿: security / safety",
+          "Portuguese": "rascunho: security / safety",
+          "Persian": "پیش‌نویس: security / safety",
+          "Arabic": "مسودة: security / safety",
+          "Thai": "ฉบับร่าง: security / safety"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Sicherheit.",
+          "German": "Lernwort: die Sicherheit.",
+          "Italian": "Voce di vocabolario tedesco: die Sicherheit.",
+          "Portuguese": "Item de vocabulário alemão: die Sicherheit."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Sicherheit"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_026",
+      "word": "das Vermögen",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "wealth / assets",
+          "Spanish": "borrador: wealth / assets",
+          "French": "fortune / patrimoine",
+          "Japanese": "下訳: wealth / assets",
+          "German": "das Vermögen",
+          "Korean": "초안: wealth / assets",
+          "Italian": "bozza: wealth / assets",
+          "Chinese": "草稿: wealth / assets",
+          "Portuguese": "rascunho: wealth / assets",
+          "Persian": "پیش‌نویس: wealth / assets",
+          "Arabic": "مسودة: wealth / assets",
+          "Thai": "ฉบับร่าง: wealth / assets"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Vermögen.",
+          "German": "Lernwort: das Vermögen.",
+          "Italian": "Voce di vocabolario tedesco: das Vermögen.",
+          "Portuguese": "Item de vocabulário alemão: das Vermögen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Vermögen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_027",
+      "word": "der Mitmensch, -en",
+      "notes": "Kapitel 3 · Und was sind deine Pläne?",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "fellow human being",
+          "Spanish": "borrador: fellow human being",
+          "French": "semblable / prochain",
+          "Japanese": "下訳: fellow human being",
+          "German": "der Mitmensch, -en",
+          "Korean": "초안: fellow human being",
+          "Italian": "bozza: fellow human being",
+          "Chinese": "草稿: fellow human being",
+          "Portuguese": "rascunho: fellow human being",
+          "Persian": "پیش‌نویس: fellow human being",
+          "Arabic": "مسودة: fellow human being",
+          "Thai": "ฉบับร่าง: fellow human being"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Mitmensch, -en.",
+          "German": "Lernwort: der Mitmensch, -en.",
+          "Italian": "Voce di vocabolario tedesco: der Mitmensch, -en.",
+          "Portuguese": "Item de vocabulário alemão: der Mitmensch, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Mitmensch",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_028",
+      "word": "der Export",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "export",
+          "Spanish": "borrador: export",
+          "French": "exportation",
+          "Japanese": "下訳: export",
+          "German": "der Export",
+          "Korean": "초안: export",
+          "Italian": "bozza: export",
+          "Chinese": "草稿: export",
+          "Portuguese": "rascunho: export",
+          "Persian": "پیش‌نویس: export",
+          "Arabic": "مسودة: export",
+          "Thai": "ฉบับร่าง: export"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Export.",
+          "German": "Lernwort: der Export.",
+          "Italian": "Voce di vocabolario tedesco: der Export.",
+          "Portuguese": "Item de vocabulário alemão: der Export."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Export"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_029",
+      "word": "der Altenpfleger, -",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "geriatric nurse / elderly care worker",
+          "Spanish": "borrador: geriatric nurse / elderly care worker",
+          "French": "aide-soignant en gériatrie",
+          "Japanese": "下訳: geriatric nurse / elderly care worker",
+          "German": "der Altenpfleger, -",
+          "Korean": "초안: geriatric nurse / elderly care worker",
+          "Italian": "bozza: geriatric nurse / elderly care worker",
+          "Chinese": "草稿: geriatric nurse / elderly care worker",
+          "Portuguese": "rascunho: geriatric nurse / elderly care worker",
+          "Persian": "پیش‌نویس: geriatric nurse / elderly care worker",
+          "Arabic": "مسودة: geriatric nurse / elderly care worker",
+          "Thai": "ฉบับร่าง: geriatric nurse / elderly care worker"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Altenpfleger, -.",
+          "German": "Lernwort: der Altenpfleger, -.",
+          "Italian": "Voce di vocabolario tedesco: der Altenpfleger, -.",
+          "Portuguese": "Item de vocabulário alemão: der Altenpfleger, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Altenpfleger",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_030",
+      "word": "die Altenpflegerin, -nen",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female elderly care worker",
+          "Spanish": "borrador: female elderly care worker",
+          "French": "aide-soignante en gériatrie",
+          "Japanese": "下訳: female elderly care worker",
+          "German": "die Altenpflegerin, -nen",
+          "Korean": "초안: female elderly care worker",
+          "Italian": "bozza: female elderly care worker",
+          "Chinese": "草稿: female elderly care worker",
+          "Portuguese": "rascunho: female elderly care worker",
+          "Persian": "پیش‌نویس: female elderly care worker",
+          "Arabic": "مسودة: female elderly care worker",
+          "Thai": "ฉบับร่าง: female elderly care worker"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Altenpflegerin, -nen.",
+          "German": "Lernwort: die Altenpflegerin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Altenpflegerin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Altenpflegerin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Altenpflegerin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_031",
+      "word": "der Kinderarzt, -e",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "pediatrician",
+          "Spanish": "borrador: pediatrician",
+          "French": "pédiatre",
+          "Japanese": "下訳: pediatrician",
+          "German": "der Kinderarzt, -e",
+          "Korean": "초안: pediatrician",
+          "Italian": "bozza: pediatrician",
+          "Chinese": "草稿: pediatrician",
+          "Portuguese": "rascunho: pediatrician",
+          "Persian": "پیش‌نویس: pediatrician",
+          "Arabic": "مسودة: pediatrician",
+          "Thai": "ฉบับร่าง: pediatrician"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Kinderarzt, -e.",
+          "German": "Lernwort: der Kinderarzt, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Kinderarzt, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Kinderarzt, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Kinderarzt",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_032",
+      "word": "die Kinderärztin, -nen",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female pediatrician",
+          "Spanish": "borrador: female pediatrician",
+          "French": "pédiatre",
+          "Japanese": "下訳: female pediatrician",
+          "German": "die Kinderärztin, -nen",
+          "Korean": "초안: female pediatrician",
+          "Italian": "bozza: female pediatrician",
+          "Chinese": "草稿: female pediatrician",
+          "Portuguese": "rascunho: female pediatrician",
+          "Persian": "پیش‌نویس: female pediatrician",
+          "Arabic": "مسودة: female pediatrician",
+          "Thai": "ฉบับร่าง: female pediatrician"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Kinderärztin, -nen.",
+          "German": "Lernwort: die Kinderärztin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Kinderärztin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Kinderärztin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Kinderärztin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_033",
+      "word": "die Zusatzausbildung, -en",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "additional training",
+          "Spanish": "borrador: additional training",
+          "French": "formation complémentaire",
+          "Japanese": "下訳: additional training",
+          "German": "die Zusatzausbildung, -en",
+          "Korean": "초안: additional training",
+          "Italian": "bozza: additional training",
+          "Chinese": "草稿: additional training",
+          "Portuguese": "rascunho: additional training",
+          "Persian": "پیش‌نویس: additional training",
+          "Arabic": "مسودة: additional training",
+          "Thai": "ฉบับร่าง: additional training"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Zusatzausbildung, -en.",
+          "German": "Lernwort: die Zusatzausbildung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Zusatzausbildung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Zusatzausbildung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Zusatzausbildung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_034",
+      "word": "die Praxis, Praxen",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "practice / doctor's office",
+          "Spanish": "borrador: practice / doctor's office",
+          "French": "cabinet / pratique",
+          "Japanese": "下訳: practice / doctor's office",
+          "German": "die Praxis, Praxen",
+          "Korean": "초안: practice / doctor's office",
+          "Italian": "bozza: practice / doctor's office",
+          "Chinese": "草稿: practice / doctor's office",
+          "Portuguese": "rascunho: practice / doctor's office",
+          "Persian": "پیش‌نویس: practice / doctor's office",
+          "Arabic": "مسودة: practice / doctor's office",
+          "Thai": "ฉบับร่าง: practice / doctor's office"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Praxis, Praxen.",
+          "German": "Lernwort: die Praxis, Praxen.",
+          "Italian": "Voce di vocabolario tedesco: die Praxis, Praxen.",
+          "Portuguese": "Item de vocabulário alemão: die Praxis, Praxen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Praxis",
+          "plural_hint": "Praxen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_035",
+      "word": "die Pflege",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "care / nursing",
+          "Spanish": "borrador: care / nursing",
+          "French": "soins",
+          "Japanese": "下訳: care / nursing",
+          "German": "die Pflege",
+          "Korean": "초안: care / nursing",
+          "Italian": "bozza: care / nursing",
+          "Chinese": "草稿: care / nursing",
+          "Portuguese": "rascunho: care / nursing",
+          "Persian": "پیش‌نویس: care / nursing",
+          "Arabic": "مسودة: care / nursing",
+          "Thai": "ฉบับร่าง: care / nursing"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Pflege.",
+          "German": "Lernwort: die Pflege.",
+          "Italian": "Voce di vocabolario tedesco: die Pflege.",
+          "Portuguese": "Item de vocabulário alemão: die Pflege."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Pflege"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_036",
+      "word": "der Florist, -en",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "florist",
+          "Spanish": "borrador: florist",
+          "French": "fleuriste",
+          "Japanese": "下訳: florist",
+          "German": "der Florist, -en",
+          "Korean": "초안: florist",
+          "Italian": "bozza: florist",
+          "Chinese": "草稿: florist",
+          "Portuguese": "rascunho: florist",
+          "Persian": "پیش‌نویس: florist",
+          "Arabic": "مسودة: florist",
+          "Thai": "ฉบับร่าง: florist"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Florist, -en.",
+          "German": "Lernwort: der Florist, -en.",
+          "Italian": "Voce di vocabolario tedesco: der Florist, -en.",
+          "Portuguese": "Item de vocabulário alemão: der Florist, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Florist",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_037",
+      "word": "die Floristin, -nen",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female florist",
+          "Spanish": "borrador: female florist",
+          "French": "fleuriste",
+          "Japanese": "下訳: female florist",
+          "German": "die Floristin, -nen",
+          "Korean": "초안: female florist",
+          "Italian": "bozza: female florist",
+          "Chinese": "草稿: female florist",
+          "Portuguese": "rascunho: female florist",
+          "Persian": "پیش‌نویس: female florist",
+          "Arabic": "مسودة: female florist",
+          "Thai": "ฉบับร่าง: female florist"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Floristin, -nen.",
+          "German": "Lernwort: die Floristin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Floristin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Floristin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Floristin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_038",
+      "word": "die Chemie",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "chemistry",
+          "Spanish": "borrador: chemistry",
+          "French": "chimie",
+          "Japanese": "下訳: chemistry",
+          "German": "die Chemie",
+          "Korean": "초안: chemistry",
+          "Italian": "bozza: chemistry",
+          "Chinese": "草稿: chemistry",
+          "Portuguese": "rascunho: chemistry",
+          "Persian": "پیش‌نویس: chemistry",
+          "Arabic": "مسودة: chemistry",
+          "Thai": "ฉบับร่าง: chemistry"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Chemie.",
+          "German": "Lernwort: die Chemie.",
+          "Italian": "Voce di vocabolario tedesco: die Chemie.",
+          "Portuguese": "Item de vocabulário alemão: die Chemie."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Chemie"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_039",
+      "word": "die Pharmazie",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "pharmacy",
+          "Spanish": "borrador: pharmacy",
+          "French": "pharmacie",
+          "Japanese": "下訳: pharmacy",
+          "German": "die Pharmazie",
+          "Korean": "초안: pharmacy",
+          "Italian": "bozza: pharmacy",
+          "Chinese": "草稿: pharmacy",
+          "Portuguese": "rascunho: pharmacy",
+          "Persian": "پیش‌نویس: pharmacy",
+          "Arabic": "مسودة: pharmacy",
+          "Thai": "ฉบับร่าง: pharmacy"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Pharmazie.",
+          "German": "Lernwort: die Pharmazie.",
+          "Italian": "Voce di vocabolario tedesco: die Pharmazie.",
+          "Portuguese": "Item de vocabulário alemão: die Pharmazie."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Pharmazie"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_040",
+      "word": "der Gemüseladen, -",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "vegetable shop",
+          "Spanish": "borrador: vegetable shop",
+          "French": "magasin de légumes",
+          "Japanese": "下訳: vegetable shop",
+          "German": "der Gemüseladen, -",
+          "Korean": "초안: vegetable shop",
+          "Italian": "bozza: vegetable shop",
+          "Chinese": "草稿: vegetable shop",
+          "Portuguese": "rascunho: vegetable shop",
+          "Persian": "پیش‌نویس: vegetable shop",
+          "Arabic": "مسودة: vegetable shop",
+          "Thai": "ฉบับร่าง: vegetable shop"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Gemüseladen, -.",
+          "German": "Lernwort: der Gemüseladen, -.",
+          "Italian": "Voce di vocabolario tedesco: der Gemüseladen, -.",
+          "Portuguese": "Item de vocabulário alemão: der Gemüseladen, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Gemüseladen",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_041",
+      "word": "der Arzthelfer, -",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "medical assistant",
+          "Spanish": "borrador: medical assistant",
+          "French": "assistant médical",
+          "Japanese": "下訳: medical assistant",
+          "German": "der Arzthelfer, -",
+          "Korean": "초안: medical assistant",
+          "Italian": "bozza: medical assistant",
+          "Chinese": "草稿: medical assistant",
+          "Portuguese": "rascunho: medical assistant",
+          "Persian": "پیش‌نویس: medical assistant",
+          "Arabic": "مسودة: medical assistant",
+          "Thai": "ฉบับร่าง: medical assistant"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Arzthelfer, -.",
+          "German": "Lernwort: der Arzthelfer, -.",
+          "Italian": "Voce di vocabolario tedesco: der Arzthelfer, -.",
+          "Portuguese": "Item de vocabulário alemão: der Arzthelfer, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Arzthelfer",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_042",
+      "word": "die Arzthelferin, -nen",
+      "notes": "Kapitel 3 · Berufliche Wünsche und Träume",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female medical assistant",
+          "Spanish": "borrador: female medical assistant",
+          "French": "assistante médicale",
+          "Japanese": "下訳: female medical assistant",
+          "German": "die Arzthelferin, -nen",
+          "Korean": "초안: female medical assistant",
+          "Italian": "bozza: female medical assistant",
+          "Chinese": "草稿: female medical assistant",
+          "Portuguese": "rascunho: female medical assistant",
+          "Persian": "پیش‌نویس: female medical assistant",
+          "Arabic": "مسودة: female medical assistant",
+          "Thai": "ฉบับร่าง: female medical assistant"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Arzthelferin, -nen.",
+          "German": "Lernwort: die Arzthelferin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Arzthelferin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Arzthelferin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Arzthelferin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_043",
+      "word": "die Veränderung, -en",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "change",
+          "Spanish": "borrador: change",
+          "French": "changement",
+          "Japanese": "下訳: change",
+          "German": "die Veränderung, -en",
+          "Korean": "초안: change",
+          "Italian": "bozza: change",
+          "Chinese": "草稿: change",
+          "Portuguese": "rascunho: change",
+          "Persian": "پیش‌نویس: change",
+          "Arabic": "مسودة: change",
+          "Thai": "ฉบับร่าง: change"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Veränderung, -en.",
+          "German": "Lernwort: die Veränderung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Veränderung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Veränderung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Veränderung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_044",
+      "word": "mechanisch",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "mechanical",
+          "Spanish": "borrador: mechanical",
+          "French": "mécanique",
+          "Japanese": "下訳: mechanical",
+          "German": "mechanisch",
+          "Korean": "초안: mechanical",
+          "Italian": "bozza: mechanical",
+          "Chinese": "草稿: mechanical",
+          "Portuguese": "rascunho: mechanical",
+          "Persian": "پیش‌نویس: mechanical",
+          "Arabic": "مسودة: mechanical",
+          "Thai": "ฉบับร่าง: mechanical"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: mechanisch.",
+          "German": "Lernwort: mechanisch.",
+          "Italian": "Voce di vocabolario tedesco: mechanisch.",
+          "Portuguese": "Item de vocabulário alemão: mechanisch."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_045",
+      "word": "die Ladenkasse, -n",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "cash register",
+          "Spanish": "borrador: cash register",
+          "French": "caisse",
+          "Japanese": "下訳: cash register",
+          "German": "die Ladenkasse, -n",
+          "Korean": "초안: cash register",
+          "Italian": "bozza: cash register",
+          "Chinese": "草稿: cash register",
+          "Portuguese": "rascunho: cash register",
+          "Persian": "پیش‌نویس: cash register",
+          "Arabic": "مسودة: cash register",
+          "Thai": "ฉบับร่าง: cash register"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Ladenkasse, -n.",
+          "German": "Lernwort: die Ladenkasse, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Ladenkasse, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Ladenkasse, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Ladenkasse",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_046",
+      "word": "der Patient, -en",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "patient",
+          "Spanish": "paciente",
+          "French": "patient",
+          "Japanese": "患者",
+          "German": "der Patient, -en",
+          "Korean": "환자",
+          "Italian": "paziente",
+          "Chinese": "患者",
+          "Portuguese": "paciente",
+          "Persian": "بیمار",
+          "Arabic": "مريض",
+          "Thai": "ผู้ป่วย"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Patient, -en.",
+          "German": "Lernwort: der Patient, -en.",
+          "Italian": "Voce di vocabolario tedesco: der Patient, -en.",
+          "Portuguese": "Item de vocabulário alemão: der Patient, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Patient",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_047",
+      "word": "die Patientin, -nen",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female patient",
+          "Spanish": "borrador: female patient",
+          "French": "patiente",
+          "Japanese": "下訳: female patient",
+          "German": "die Patientin, -nen",
+          "Korean": "초안: female patient",
+          "Italian": "bozza: female patient",
+          "Chinese": "草稿: female patient",
+          "Portuguese": "rascunho: female patient",
+          "Persian": "پیش‌نویس: female patient",
+          "Arabic": "مسودة: female patient",
+          "Thai": "ฉบับร่าง: female patient"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Patientin, -nen.",
+          "German": "Lernwort: die Patientin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Patientin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Patientin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Patientin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_048",
+      "word": "der Roboter, -",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "robot",
+          "Spanish": "robot",
+          "French": "robot",
+          "Japanese": "ロボット",
+          "German": "der Roboter, -",
+          "Korean": "로봇",
+          "Italian": "robot",
+          "Chinese": "机器人",
+          "Portuguese": "robô",
+          "Persian": "ربات",
+          "Arabic": "روبوت",
+          "Thai": "หุ่นยนต์"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Roboter, -.",
+          "German": "Lernwort: der Roboter, -.",
+          "Italian": "Voce di vocabolario tedesco: der Roboter, -.",
+          "Portuguese": "Item de vocabulário alemão: der Roboter, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Roboter",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_049",
+      "word": "die Arbeitswelt",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "world of work",
+          "Spanish": "borrador: world of work",
+          "French": "monde du travail",
+          "Japanese": "下訳: world of work",
+          "German": "die Arbeitswelt",
+          "Korean": "초안: world of work",
+          "Italian": "bozza: world of work",
+          "Chinese": "草稿: world of work",
+          "Portuguese": "rascunho: world of work",
+          "Persian": "پیش‌نویس: world of work",
+          "Arabic": "مسودة: world of work",
+          "Thai": "ฉบับร่าง: world of work"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Arbeitswelt.",
+          "German": "Lernwort: die Arbeitswelt.",
+          "Italian": "Voce di vocabolario tedesco: die Arbeitswelt.",
+          "Portuguese": "Item de vocabulário alemão: die Arbeitswelt."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Arbeitswelt"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_050",
+      "word": "die Industrie, -n",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "industry",
+          "Spanish": "borrador: industry",
+          "French": "industrie",
+          "Japanese": "下訳: industry",
+          "German": "die Industrie, -n",
+          "Korean": "초안: industry",
+          "Italian": "bozza: industry",
+          "Chinese": "草稿: industry",
+          "Portuguese": "rascunho: industry",
+          "Persian": "پیش‌نویس: industry",
+          "Arabic": "مسودة: industry",
+          "Thai": "ฉบับร่าง: industry"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Industrie, -n.",
+          "German": "Lernwort: die Industrie, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Industrie, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Industrie, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Industrie",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_051",
+      "word": "der Großhandelskaufmann, -er",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "wholesale merchant",
+          "Spanish": "borrador: wholesale merchant",
+          "French": "commerçant de gros",
+          "Japanese": "下訳: wholesale merchant",
+          "German": "der Großhandelskaufmann, -er",
+          "Korean": "초안: wholesale merchant",
+          "Italian": "bozza: wholesale merchant",
+          "Chinese": "草稿: wholesale merchant",
+          "Portuguese": "rascunho: wholesale merchant",
+          "Persian": "پیش‌نویس: wholesale merchant",
+          "Arabic": "مسودة: wholesale merchant",
+          "Thai": "ฉบับร่าง: wholesale merchant"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Großhandelskaufmann, -er.",
+          "German": "Lernwort: der Großhandelskaufmann, -er.",
+          "Italian": "Voce di vocabolario tedesco: der Großhandelskaufmann, -er.",
+          "Portuguese": "Item de vocabulário alemão: der Großhandelskaufmann, -er."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Großhandelskaufmann",
+          "plural_hint": "-er"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_052",
+      "word": "die Großhandelskauffrau, -en",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female wholesale merchant",
+          "Spanish": "borrador: female wholesale merchant",
+          "French": "commerçante de gros",
+          "Japanese": "下訳: female wholesale merchant",
+          "German": "die Großhandelskauffrau, -en",
+          "Korean": "초안: female wholesale merchant",
+          "Italian": "bozza: female wholesale merchant",
+          "Chinese": "草稿: female wholesale merchant",
+          "Portuguese": "rascunho: female wholesale merchant",
+          "Persian": "پیش‌نویس: female wholesale merchant",
+          "Arabic": "مسودة: female wholesale merchant",
+          "Thai": "ฉบับร่าง: female wholesale merchant"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Großhandelskauffrau, -en.",
+          "German": "Lernwort: die Großhandelskauffrau, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Großhandelskauffrau, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Großhandelskauffrau, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Großhandelskauffrau",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_053",
+      "word": "das Berufsfeld, -er",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "occupational field",
+          "Spanish": "borrador: occupational field",
+          "French": "domaine professionnel",
+          "Japanese": "下訳: occupational field",
+          "German": "das Berufsfeld, -er",
+          "Korean": "초안: occupational field",
+          "Italian": "bozza: occupational field",
+          "Chinese": "草稿: occupational field",
+          "Portuguese": "rascunho: occupational field",
+          "Persian": "پیش‌نویس: occupational field",
+          "Arabic": "مسودة: occupational field",
+          "Thai": "ฉบับร่าง: occupational field"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Berufsfeld, -er.",
+          "German": "Lernwort: das Berufsfeld, -er.",
+          "Italian": "Voce di vocabolario tedesco: das Berufsfeld, -er.",
+          "Portuguese": "Item de vocabulário alemão: das Berufsfeld, -er."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Berufsfeld",
+          "plural_hint": "-er"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_054",
+      "word": "der Umsatz, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "turnover / revenue",
+          "Spanish": "borrador: turnover / revenue",
+          "French": "chiffre d'affaires",
+          "Japanese": "下訳: turnover / revenue",
+          "German": "der Umsatz, -e",
+          "Korean": "초안: turnover / revenue",
+          "Italian": "bozza: turnover / revenue",
+          "Chinese": "草稿: turnover / revenue",
+          "Portuguese": "rascunho: turnover / revenue",
+          "Persian": "پیش‌نویس: turnover / revenue",
+          "Arabic": "مسودة: turnover / revenue",
+          "Thai": "ฉบับร่าง: turnover / revenue"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Umsatz, -e.",
+          "German": "Lernwort: der Umsatz, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Umsatz, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Umsatz, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Umsatz",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_055",
+      "word": "der Discounter, -",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "discount store",
+          "Spanish": "borrador: discount store",
+          "French": "magasin discount",
+          "Japanese": "下訳: discount store",
+          "German": "der Discounter, -",
+          "Korean": "초안: discount store",
+          "Italian": "bozza: discount store",
+          "Chinese": "草稿: discount store",
+          "Portuguese": "rascunho: discount store",
+          "Persian": "پیش‌نویس: discount store",
+          "Arabic": "مسودة: discount store",
+          "Thai": "ฉบับร่าง: discount store"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Discounter, -.",
+          "German": "Lernwort: der Discounter, -.",
+          "Italian": "Voce di vocabolario tedesco: der Discounter, -.",
+          "Portuguese": "Item de vocabulário alemão: der Discounter, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Discounter",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_056",
+      "word": "erwirtschaften",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to generate / earn",
+          "Spanish": "borrador: to generate / earn",
+          "French": "générer / réaliser",
+          "Japanese": "下訳: to generate / earn",
+          "German": "erwirtschaften",
+          "Korean": "초안: to generate / earn",
+          "Italian": "bozza: to generate / earn",
+          "Chinese": "草稿: to generate / earn",
+          "Portuguese": "rascunho: to generate / earn",
+          "Persian": "پیش‌نویس: to generate / earn",
+          "Arabic": "مسودة: to generate / earn",
+          "Thai": "ฉบับร่าง: to generate / earn"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: erwirtschaften.",
+          "German": "Lernwort: erwirtschaften.",
+          "Italian": "Voce di vocabolario tedesco: erwirtschaften.",
+          "Portuguese": "Item de vocabulário alemão: erwirtschaften."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_057",
+      "word": "die Automatisierung, -en",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "automation",
+          "Spanish": "automatización",
+          "French": "automatisation",
+          "Japanese": "自動化",
+          "German": "die Automatisierung, -en",
+          "Korean": "자동화",
+          "Italian": "automazione",
+          "Chinese": "自动化",
+          "Portuguese": "automação",
+          "Persian": "خودکارسازی",
+          "Arabic": "الأتمتة",
+          "Thai": "ระบบอัตโนมัติ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Automatisierung, -en.",
+          "German": "Lernwort: die Automatisierung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Automatisierung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Automatisierung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Automatisierung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_058",
+      "word": "die Scannerkasse, -n",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "scanner checkout",
+          "Spanish": "borrador: scanner checkout",
+          "French": "caisse à scanner",
+          "Japanese": "下訳: scanner checkout",
+          "German": "die Scannerkasse, -n",
+          "Korean": "초안: scanner checkout",
+          "Italian": "bozza: scanner checkout",
+          "Chinese": "草稿: scanner checkout",
+          "Portuguese": "rascunho: scanner checkout",
+          "Persian": "پیش‌نویس: scanner checkout",
+          "Arabic": "مسودة: scanner checkout",
+          "Thai": "ฉบับร่าง: scanner checkout"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Scannerkasse, -n.",
+          "German": "Lernwort: die Scannerkasse, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Scannerkasse, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Scannerkasse, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Scannerkasse",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_059",
+      "word": "der Einkaufswagen, -",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "shopping cart",
+          "Spanish": "borrador: shopping cart",
+          "French": "caddie",
+          "Japanese": "下訳: shopping cart",
+          "German": "der Einkaufswagen, -",
+          "Korean": "초안: shopping cart",
+          "Italian": "bozza: shopping cart",
+          "Chinese": "草稿: shopping cart",
+          "Portuguese": "rascunho: shopping cart",
+          "Persian": "پیش‌نویس: shopping cart",
+          "Arabic": "مسودة: shopping cart",
+          "Thai": "ฉบับร่าง: shopping cart"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Einkaufswagen, -.",
+          "German": "Lernwort: der Einkaufswagen, -.",
+          "Italian": "Voce di vocabolario tedesco: der Einkaufswagen, -.",
+          "Portuguese": "Item de vocabulário alemão: der Einkaufswagen, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Einkaufswagen",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_060",
+      "word": "der Scanner, -",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "scanner",
+          "Spanish": "escáner",
+          "French": "scanner",
+          "Japanese": "スキャナー",
+          "German": "der Scanner, -",
+          "Korean": "스캐너",
+          "Italian": "scanner",
+          "Chinese": "扫描仪",
+          "Portuguese": "scanner",
+          "Persian": "اسکنر",
+          "Arabic": "ماسح ضوئي",
+          "Thai": "เครื่องสแกน"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Scanner, -.",
+          "German": "Lernwort: der Scanner, -.",
+          "Italian": "Voce di vocabolario tedesco: der Scanner, -.",
+          "Portuguese": "Item de vocabulário alemão: der Scanner, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Scanner",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_061",
+      "word": "erfassen",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to record / capture",
+          "Spanish": "borrador: to record / capture",
+          "French": "saisir / enregistrer",
+          "Japanese": "下訳: to record / capture",
+          "German": "erfassen",
+          "Korean": "초안: to record / capture",
+          "Italian": "bozza: to record / capture",
+          "Chinese": "草稿: to record / capture",
+          "Portuguese": "rascunho: to record / capture",
+          "Persian": "پیش‌نویس: to record / capture",
+          "Arabic": "مسودة: to record / capture",
+          "Thai": "ฉบับร่าง: to record / capture"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: erfassen.",
+          "German": "Lernwort: erfassen.",
+          "Italian": "Voce di vocabolario tedesco: erfassen.",
+          "Portuguese": "Item de vocabulário alemão: erfassen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_062",
+      "word": "abrechnen",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to bill / settle accounts",
+          "Spanish": "borrador: to bill / settle accounts",
+          "French": "facturer / régler",
+          "Japanese": "下訳: to bill / settle accounts",
+          "German": "abrechnen",
+          "Korean": "초안: to bill / settle accounts",
+          "Italian": "bozza: to bill / settle accounts",
+          "Chinese": "草稿: to bill / settle accounts",
+          "Portuguese": "rascunho: to bill / settle accounts",
+          "Persian": "پیش‌نویس: to bill / settle accounts",
+          "Arabic": "مسودة: to bill / settle accounts",
+          "Thai": "ฉบับร่าง: to bill / settle accounts"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: abrechnen.",
+          "German": "Lernwort: abrechnen.",
+          "Italian": "Voce di vocabolario tedesco: abrechnen.",
+          "Portuguese": "Item de vocabulário alemão: abrechnen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_063",
+      "word": "das Lager, -",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "warehouse / storage",
+          "Spanish": "almacén",
+          "French": "entrepôt",
+          "Japanese": "倉庫",
+          "German": "das Lager, -",
+          "Korean": "창고",
+          "Italian": "magazzino",
+          "Chinese": "仓库",
+          "Portuguese": "armazém",
+          "Persian": "انبار",
+          "Arabic": "مستودع",
+          "Thai": "คลังสินค้า"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Lager, -.",
+          "German": "Lernwort: das Lager, -.",
+          "Italian": "Voce di vocabolario tedesco: das Lager, -.",
+          "Portuguese": "Item de vocabulário alemão: das Lager, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Lager",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_064",
+      "word": "der Hausarzt, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "general practitioner",
+          "Spanish": "borrador: general practitioner",
+          "French": "médecin généraliste",
+          "Japanese": "下訳: general practitioner",
+          "German": "der Hausarzt, -e",
+          "Korean": "초안: general practitioner",
+          "Italian": "bozza: general practitioner",
+          "Chinese": "草稿: general practitioner",
+          "Portuguese": "rascunho: general practitioner",
+          "Persian": "پیش‌نویس: general practitioner",
+          "Arabic": "مسودة: general practitioner",
+          "Thai": "ฉบับร่าง: general practitioner"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Hausarzt, -e.",
+          "German": "Lernwort: der Hausarzt, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Hausarzt, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Hausarzt, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Hausarzt",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_065",
+      "word": "die Hausärztin, -nen",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female general practitioner",
+          "Spanish": "borrador: female general practitioner",
+          "French": "médecin généraliste",
+          "Japanese": "下訳: female general practitioner",
+          "German": "die Hausärztin, -nen",
+          "Korean": "초안: female general practitioner",
+          "Italian": "bozza: female general practitioner",
+          "Chinese": "草稿: female general practitioner",
+          "Portuguese": "rascunho: female general practitioner",
+          "Persian": "پیش‌نویس: female general practitioner",
+          "Arabic": "مسودة: female general practitioner",
+          "Thai": "ฉบับร่าง: female general practitioner"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Hausärztin, -nen.",
+          "German": "Lernwort: die Hausärztin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Hausärztin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Hausärztin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Hausärztin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_066",
+      "word": "der Hausbesuch, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "home visit",
+          "Spanish": "borrador: home visit",
+          "French": "visite à domicile",
+          "Japanese": "下訳: home visit",
+          "German": "der Hausbesuch, -e",
+          "Korean": "초안: home visit",
+          "Italian": "bozza: home visit",
+          "Chinese": "草稿: home visit",
+          "Portuguese": "rascunho: home visit",
+          "Persian": "پیش‌نویس: home visit",
+          "Arabic": "مسودة: home visit",
+          "Thai": "ฉบับร่าง: home visit"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Hausbesuch, -e.",
+          "German": "Lernwort: der Hausbesuch, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Hausbesuch, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Hausbesuch, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Hausbesuch",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_067",
+      "word": "das Patientengespräch, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "patient consultation",
+          "Spanish": "borrador: patient consultation",
+          "French": "entretien avec le patient",
+          "Japanese": "下訳: patient consultation",
+          "German": "das Patientengespräch, -e",
+          "Korean": "초안: patient consultation",
+          "Italian": "bozza: patient consultation",
+          "Chinese": "草稿: patient consultation",
+          "Portuguese": "rascunho: patient consultation",
+          "Persian": "پیش‌نویس: patient consultation",
+          "Arabic": "مسودة: patient consultation",
+          "Thai": "ฉบับร่าง: patient consultation"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Patientengespräch, -e.",
+          "German": "Lernwort: das Patientengespräch, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Patientengespräch, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Patientengespräch, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Patientengespräch",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_068",
+      "word": "der Spezialist, -en",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "specialist",
+          "Spanish": "borrador: specialist",
+          "French": "spécialiste",
+          "Japanese": "下訳: specialist",
+          "German": "der Spezialist, -en",
+          "Korean": "초안: specialist",
+          "Italian": "bozza: specialist",
+          "Chinese": "草稿: specialist",
+          "Portuguese": "rascunho: specialist",
+          "Persian": "پیش‌نویس: specialist",
+          "Arabic": "مسودة: specialist",
+          "Thai": "ฉบับร่าง: specialist"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Spezialist, -en.",
+          "German": "Lernwort: der Spezialist, -en.",
+          "Italian": "Voce di vocabolario tedesco: der Spezialist, -en.",
+          "Portuguese": "Item de vocabulário alemão: der Spezialist, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Spezialist",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_069",
+      "word": "die Spezialistin, -nen",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female specialist",
+          "Spanish": "borrador: female specialist",
+          "French": "spécialiste",
+          "Japanese": "下訳: female specialist",
+          "German": "die Spezialistin, -nen",
+          "Korean": "초안: female specialist",
+          "Italian": "bozza: female specialist",
+          "Chinese": "草稿: female specialist",
+          "Portuguese": "rascunho: female specialist",
+          "Persian": "پیش‌نویس: female specialist",
+          "Arabic": "مسودة: female specialist",
+          "Thai": "ฉบับร่าง: female specialist"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Spezialistin, -nen.",
+          "German": "Lernwort: die Spezialistin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Spezialistin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Spezialistin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Spezialistin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_070",
+      "word": "das Blutdruckmessgerät, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "blood pressure monitor",
+          "Spanish": "borrador: blood pressure monitor",
+          "French": "tensiomètre",
+          "Japanese": "下訳: blood pressure monitor",
+          "German": "das Blutdruckmessgerät, -e",
+          "Korean": "초안: blood pressure monitor",
+          "Italian": "bozza: blood pressure monitor",
+          "Chinese": "草稿: blood pressure monitor",
+          "Portuguese": "rascunho: blood pressure monitor",
+          "Persian": "پیش‌نویس: blood pressure monitor",
+          "Arabic": "مسودة: blood pressure monitor",
+          "Thai": "ฉบับร่าง: blood pressure monitor"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Blutdruckmessgerät, -e.",
+          "German": "Lernwort: das Blutdruckmessgerät, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Blutdruckmessgerät, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Blutdruckmessgerät, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Blutdruckmessgerät",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_071",
+      "word": "der Einkaufskorb, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "shopping basket",
+          "Spanish": "borrador: shopping basket",
+          "French": "panier",
+          "Japanese": "下訳: shopping basket",
+          "German": "der Einkaufskorb, -e",
+          "Korean": "초안: shopping basket",
+          "Italian": "bozza: shopping basket",
+          "Chinese": "草稿: shopping basket",
+          "Portuguese": "rascunho: shopping basket",
+          "Persian": "پیش‌نویس: shopping basket",
+          "Arabic": "مسودة: shopping basket",
+          "Thai": "ฉบับร่าง: shopping basket"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Einkaufskorb, -e.",
+          "German": "Lernwort: der Einkaufskorb, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Einkaufskorb, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Einkaufskorb, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Einkaufskorb",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_072",
+      "word": "das Fieberthermometer, -",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "thermometer",
+          "Spanish": "borrador: thermometer",
+          "French": "thermomètre",
+          "Japanese": "下訳: thermometer",
+          "German": "das Fieberthermometer, -",
+          "Korean": "초안: thermometer",
+          "Italian": "bozza: thermometer",
+          "Chinese": "草稿: thermometer",
+          "Portuguese": "rascunho: thermometer",
+          "Persian": "پیش‌نویس: thermometer",
+          "Arabic": "مسودة: thermometer",
+          "Thai": "ฉบับร่าง: thermometer"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Fieberthermometer, -.",
+          "German": "Lernwort: das Fieberthermometer, -.",
+          "Italian": "Voce di vocabolario tedesco: das Fieberthermometer, -.",
+          "Portuguese": "Item de vocabulário alemão: das Fieberthermometer, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Fieberthermometer",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_073",
+      "word": "das Kühlregal, -e",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "refrigerated shelf",
+          "Spanish": "borrador: refrigerated shelf",
+          "French": "rayon réfrigéré",
+          "Japanese": "下訳: refrigerated shelf",
+          "German": "das Kühlregal, -e",
+          "Korean": "초안: refrigerated shelf",
+          "Italian": "bozza: refrigerated shelf",
+          "Chinese": "草稿: refrigerated shelf",
+          "Portuguese": "rascunho: refrigerated shelf",
+          "Persian": "پیش‌نویس: refrigerated shelf",
+          "Arabic": "مسودة: refrigerated shelf",
+          "Thai": "ฉบับร่าง: refrigerated shelf"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: das Kühlregal, -e.",
+          "German": "Lernwort: das Kühlregal, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Kühlregal, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Kühlregal, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Kühlregal",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_074",
+      "word": "der Pfandautomat, -en",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "deposit return machine",
+          "Spanish": "borrador: deposit return machine",
+          "French": "automate de consigne",
+          "Japanese": "下訳: deposit return machine",
+          "German": "der Pfandautomat, -en",
+          "Korean": "초안: deposit return machine",
+          "Italian": "bozza: deposit return machine",
+          "Chinese": "草稿: deposit return machine",
+          "Portuguese": "rascunho: deposit return machine",
+          "Persian": "پیش‌نویس: deposit return machine",
+          "Arabic": "مسودة: deposit return machine",
+          "Thai": "ฉบับร่าง: deposit return machine"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: der Pfandautomat, -en.",
+          "German": "Lernwort: der Pfandautomat, -en.",
+          "Italian": "Voce di vocabolario tedesco: der Pfandautomat, -en.",
+          "Portuguese": "Item de vocabulário alemão: der Pfandautomat, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Pfandautomat",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_075",
+      "word": "die Spritze, -n",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "injection / syringe",
+          "Spanish": "borrador: injection / syringe",
+          "French": "seringue / injection",
+          "Japanese": "下訳: injection / syringe",
+          "German": "die Spritze, -n",
+          "Korean": "초안: injection / syringe",
+          "Italian": "bozza: injection / syringe",
+          "Chinese": "草稿: injection / syringe",
+          "Portuguese": "rascunho: injection / syringe",
+          "Persian": "پیش‌نویس: injection / syringe",
+          "Arabic": "مسودة: injection / syringe",
+          "Thai": "ฉบับร่าง: injection / syringe"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Spritze, -n.",
+          "German": "Lernwort: die Spritze, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Spritze, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Spritze, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Spritze",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k3_076",
+      "word": "die Waage, -n",
+      "notes": "Kapitel 3 · Berufe im Wandel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "scale",
+          "Spanish": "borrador: scale",
+          "French": "balance",
+          "Japanese": "下訳: scale",
+          "German": "die Waage, -n",
+          "Korean": "초안: scale",
+          "Italian": "bozza: scale",
+          "Chinese": "草稿: scale",
+          "Portuguese": "rascunho: scale",
+          "Persian": "پیش‌نویس: scale",
+          "Arabic": "مسودة: scale",
+          "Thai": "ฉบับร่าง: scale"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 3.",
+          "French": "Vocabulary item from Kapitel 3.",
+          "Spanish": "Elemento de vocabulario alemán: die Waage, -n.",
+          "German": "Lernwort: die Waage, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Waage, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Waage, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Waage",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    }
+  ],
+  "meta": {
+    "targetLanguages": [
+      "English",
+      "Spanish",
+      "French",
+      "Japanese",
+      "German",
+      "Korean",
+      "Italian",
+      "Chinese",
+      "Portuguese",
+      "Persian",
+      "Arabic",
+      "Thai"
+    ],
+    "translation_status": "Clean non-empty multilingual draft. English/French were curated earlier; other languages are draft-filled and require native-speaker review."
+  }
+}
