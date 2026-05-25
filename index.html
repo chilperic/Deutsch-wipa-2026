@@ -6,24 +6,36 @@
 <title>Vokabular · Mastery Edition</title>
 </head>
 <body>
+
+<div id="app-root">
+    </div>
+
 <script>
 // --- PROFESSIONAL DATA ENGINE ---
 let W = { words: [] };
 
-async function loadVocabulary() {
+async function loadChapter(chapterName) {
     try {
-        // Change this path if your files are in a /data folder
-        const response = await fetch('./kapitel1.json'); 
+        // This looks inside the 'data' folder for your specific chapter file
+        const response = await fetch(`./data/${chapterName}.json`);
+        if (!response.ok) throw new Error("Chapter file not found");
         const data = await response.json();
-        W.words = data;
+        W.words = data; // Set the current words to this chapter's data
         buildDashboard();
     } catch(err) {
-        document.getElementById('app-root').innerHTML = "<h1>Database Error</h1><p>Check kapitel1.json path.</p>";
+        alert("Error loading chapter: " + err.message);
     }
 }
 
-// ... rest of the quiz logic, SRS engine, and speech synthesis ...
-window.onload = loadVocabulary;
+// Update the select dropdown in your Dashboard to trigger this
+document.getElementById('sel-chapter').onchange = (e) => {
+    loadChapter(e.target.value);
+};
+
+// --- INITIALIZATION ---
+window.onload = () => {
+    loadChapter('kapitel1'); // Load chapter 1 by default
+};
 </script>
 </body>
 </html>
