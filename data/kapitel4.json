@@ -1,1 +1,3222 @@
-[]
+{
+  "chapter": "kapitel4",
+  "title": "Kapitel 4",
+  "level": "B1/B2",
+  "domain": "Beruf, Arbeit, Alltag",
+  "words": [
+    {
+      "id": "k4_001",
+      "word": "der Berufsfahrer, -",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "professional driver",
+          "Spanish": "conductor profesional",
+          "French": "chauffeur professionnel",
+          "Japanese": "プロ運転手",
+          "German": "der Berufsfahrer, -",
+          "Korean": "전문 운전기사",
+          "Italian": "autista professionista",
+          "Chinese": "职业司机",
+          "Portuguese": "motorista profissional",
+          "Persian": "راننده حرفه‌ای",
+          "Arabic": "سائق محترف",
+          "Thai": "คนขับรถมืออาชีพ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Berufsfahrer, -.",
+          "German": "Lernwort: der Berufsfahrer, -.",
+          "Italian": "Voce di vocabolario tedesco: der Berufsfahrer, -.",
+          "Portuguese": "Item de vocabulário alemão: der Berufsfahrer, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Berufsfahrer",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_002",
+      "word": "die Berufsfahrerin, -nen",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female professional driver",
+          "Spanish": "borrador: female professional driver",
+          "French": "chauffeuse professionnelle",
+          "Japanese": "下訳: female professional driver",
+          "German": "die Berufsfahrerin, -nen",
+          "Korean": "초안: female professional driver",
+          "Italian": "bozza: female professional driver",
+          "Chinese": "草稿: female professional driver",
+          "Portuguese": "rascunho: female professional driver",
+          "Persian": "پیش‌نویس: female professional driver",
+          "Arabic": "مسودة: female professional driver",
+          "Thai": "ฉบับร่าง: female professional driver"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Berufsfahrerin, -nen.",
+          "German": "Lernwort: die Berufsfahrerin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Berufsfahrerin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Berufsfahrerin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Berufsfahrerin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_003",
+      "word": "der Gabelstapler, -",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "forklift",
+          "Spanish": "carretilla elevadora",
+          "French": "chariot élévateur",
+          "Japanese": "フォークリフト",
+          "German": "der Gabelstapler, -",
+          "Korean": "지게차",
+          "Italian": "carrello elevatore",
+          "Chinese": "叉车",
+          "Portuguese": "empilhadeira",
+          "Persian": "لیفتراک",
+          "Arabic": "رافعة شوكية",
+          "Thai": "รถยก"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Gabelstapler, -.",
+          "German": "Lernwort: der Gabelstapler, -.",
+          "Italian": "Voce di vocabolario tedesco: der Gabelstapler, -.",
+          "Portuguese": "Item de vocabulário alemão: der Gabelstapler, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Gabelstapler",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_004",
+      "word": "der Bote, -n",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "messenger / courier",
+          "Spanish": "borrador: messenger / courier",
+          "French": "coursier / messager",
+          "Japanese": "下訳: messenger / courier",
+          "German": "der Bote, -n",
+          "Korean": "초안: messenger / courier",
+          "Italian": "bozza: messenger / courier",
+          "Chinese": "草稿: messenger / courier",
+          "Portuguese": "rascunho: messenger / courier",
+          "Persian": "پیش‌نویس: messenger / courier",
+          "Arabic": "مسودة: messenger / courier",
+          "Thai": "ฉบับร่าง: messenger / courier"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Bote, -n.",
+          "German": "Lernwort: der Bote, -n.",
+          "Italian": "Voce di vocabolario tedesco: der Bote, -n.",
+          "Portuguese": "Item de vocabulário alemão: der Bote, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Bote",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_005",
+      "word": "die Botin, -nen",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female messenger",
+          "Spanish": "borrador: female messenger",
+          "French": "coursière / messagère",
+          "Japanese": "下訳: female messenger",
+          "German": "die Botin, -nen",
+          "Korean": "초안: female messenger",
+          "Italian": "bozza: female messenger",
+          "Chinese": "草稿: female messenger",
+          "Portuguese": "rascunho: female messenger",
+          "Persian": "پیش‌نویس: female messenger",
+          "Arabic": "مسودة: female messenger",
+          "Thai": "ฉบับร่าง: female messenger"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Botin, -nen.",
+          "German": "Lernwort: die Botin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Botin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Botin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Botin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_006",
+      "word": "das Fahrzeug, -e",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "vehicle",
+          "Spanish": "vehículo",
+          "French": "véhicule",
+          "Japanese": "車両",
+          "German": "das Fahrzeug, -e",
+          "Korean": "차량",
+          "Italian": "veicolo",
+          "Chinese": "车辆",
+          "Portuguese": "veículo",
+          "Persian": "وسیله نقلیه",
+          "Arabic": "مركبة",
+          "Thai": "ยานพาหนะ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: das Fahrzeug, -e.",
+          "German": "Lernwort: das Fahrzeug, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Fahrzeug, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Fahrzeug, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Fahrzeug",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_007",
+      "word": "der Linienverkehr",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "scheduled service / public route service",
+          "Spanish": "borrador: scheduled service / public route service",
+          "French": "service régulier",
+          "Japanese": "下訳: scheduled service / public route service",
+          "German": "der Linienverkehr",
+          "Korean": "초안: scheduled service / public route service",
+          "Italian": "bozza: scheduled service / public route service",
+          "Chinese": "草稿: scheduled service / public route service",
+          "Portuguese": "rascunho: scheduled service / public route service",
+          "Persian": "پیش‌نویس: scheduled service / public route service",
+          "Arabic": "مسودة: scheduled service / public route service",
+          "Thai": "ฉบับร่าง: scheduled service / public route service"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Linienverkehr.",
+          "German": "Lernwort: der Linienverkehr.",
+          "Italian": "Voce di vocabolario tedesco: der Linienverkehr.",
+          "Portuguese": "Item de vocabulário alemão: der Linienverkehr."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Linienverkehr"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_008",
+      "word": "färben",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to dye / color",
+          "Spanish": "borrador: to dye / color",
+          "French": "teindre / colorer",
+          "Japanese": "下訳: to dye / color",
+          "German": "färben",
+          "Korean": "초안: to dye / color",
+          "Italian": "bozza: to dye / color",
+          "Chinese": "草稿: to dye / color",
+          "Portuguese": "rascunho: to dye / color",
+          "Persian": "پیش‌نویس: to dye / color",
+          "Arabic": "مسودة: to dye / color",
+          "Thai": "ฉบับร่าง: to dye / color"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: färben.",
+          "German": "Lernwort: färben.",
+          "Italian": "Voce di vocabolario tedesco: färben.",
+          "Portuguese": "Item de vocabulário alemão: färben."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_009",
+      "word": "frisieren",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to style hair",
+          "Spanish": "borrador: to style hair",
+          "French": "coiffer",
+          "Japanese": "下訳: to style hair",
+          "German": "frisieren",
+          "Korean": "초안: to style hair",
+          "Italian": "bozza: to style hair",
+          "Chinese": "草稿: to style hair",
+          "Portuguese": "rascunho: to style hair",
+          "Persian": "پیش‌نویس: to style hair",
+          "Arabic": "مسودة: to style hair",
+          "Thai": "ฉบับร่าง: to style hair"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: frisieren.",
+          "German": "Lernwort: frisieren.",
+          "Italian": "Voce di vocabolario tedesco: frisieren.",
+          "Portuguese": "Item de vocabulário alemão: frisieren."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_010",
+      "word": "die Haarpflege",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "hair care",
+          "Spanish": "borrador: hair care",
+          "French": "soins capillaires",
+          "Japanese": "下訳: hair care",
+          "German": "die Haarpflege",
+          "Korean": "초안: hair care",
+          "Italian": "bozza: hair care",
+          "Chinese": "草稿: hair care",
+          "Portuguese": "rascunho: hair care",
+          "Persian": "پیش‌نویس: hair care",
+          "Arabic": "مسودة: hair care",
+          "Thai": "ฉบับร่าง: hair care"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Haarpflege.",
+          "German": "Lernwort: die Haarpflege.",
+          "Italian": "Voce di vocabolario tedesco: die Haarpflege.",
+          "Portuguese": "Item de vocabulário alemão: die Haarpflege."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Haarpflege"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_011",
+      "word": "der Fingernagel, -",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "fingernail",
+          "Spanish": "borrador: fingernail",
+          "French": "ongle",
+          "Japanese": "下訳: fingernail",
+          "German": "der Fingernagel, -",
+          "Korean": "초안: fingernail",
+          "Italian": "bozza: fingernail",
+          "Chinese": "草稿: fingernail",
+          "Portuguese": "rascunho: fingernail",
+          "Persian": "پیش‌نویس: fingernail",
+          "Arabic": "مسودة: fingernail",
+          "Thai": "ฉบับร่าง: fingernail"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Fingernagel, -.",
+          "German": "Lernwort: der Fingernagel, -.",
+          "Italian": "Voce di vocabolario tedesco: der Fingernagel, -.",
+          "Portuguese": "Item de vocabulário alemão: der Fingernagel, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Fingernagel",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_012",
+      "word": "hilfsbedürftig",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "in need of help",
+          "Spanish": "borrador: in need of help",
+          "French": "ayant besoin d'aide",
+          "Japanese": "下訳: in need of help",
+          "German": "hilfsbedürftig",
+          "Korean": "초안: in need of help",
+          "Italian": "bozza: in need of help",
+          "Chinese": "草稿: in need of help",
+          "Portuguese": "rascunho: in need of help",
+          "Persian": "پیش‌نویس: in need of help",
+          "Arabic": "مسودة: in need of help",
+          "Thai": "ฉบับร่าง: in need of help"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: hilfsbedürftig.",
+          "German": "Lernwort: hilfsbedürftig.",
+          "Italian": "Voce di vocabolario tedesco: hilfsbedürftig.",
+          "Portuguese": "Item de vocabulário alemão: hilfsbedürftig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_013",
+      "word": "die Nahrungsaufnahme",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "food intake",
+          "Spanish": "borrador: food intake",
+          "French": "prise alimentaire",
+          "Japanese": "下訳: food intake",
+          "German": "die Nahrungsaufnahme",
+          "Korean": "초안: food intake",
+          "Italian": "bozza: food intake",
+          "Chinese": "草稿: food intake",
+          "Portuguese": "rascunho: food intake",
+          "Persian": "پیش‌نویس: food intake",
+          "Arabic": "مسودة: food intake",
+          "Thai": "ฉบับร่าง: food intake"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Nahrungsaufnahme.",
+          "German": "Lernwort: die Nahrungsaufnahme.",
+          "Italian": "Voce di vocabolario tedesco: die Nahrungsaufnahme.",
+          "Portuguese": "Item de vocabulário alemão: die Nahrungsaufnahme."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Nahrungsaufnahme"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_014",
+      "word": "die Körperpflege",
+      "notes": "Kapitel 4 · Unsere Jobs",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "personal hygiene / body care",
+          "Spanish": "borrador: personal hygiene / body care",
+          "French": "hygiène corporelle",
+          "Japanese": "下訳: personal hygiene / body care",
+          "German": "die Körperpflege",
+          "Korean": "초안: personal hygiene / body care",
+          "Italian": "bozza: personal hygiene / body care",
+          "Chinese": "草稿: personal hygiene / body care",
+          "Portuguese": "rascunho: personal hygiene / body care",
+          "Persian": "پیش‌نویس: personal hygiene / body care",
+          "Arabic": "مسودة: personal hygiene / body care",
+          "Thai": "ฉบับร่าง: personal hygiene / body care"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Körperpflege.",
+          "German": "Lernwort: die Körperpflege.",
+          "Italian": "Voce di vocabolario tedesco: die Körperpflege.",
+          "Portuguese": "Item de vocabulário alemão: die Körperpflege."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Körperpflege"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_015",
+      "word": "der Lkw, -",
+      "notes": "Kapitel 4 · Rosa lässt im Lager den Lkw beladen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "truck / lorry",
+          "Spanish": "borrador: truck / lorry",
+          "French": "camion",
+          "Japanese": "下訳: truck / lorry",
+          "German": "der Lkw, -",
+          "Korean": "초안: truck / lorry",
+          "Italian": "bozza: truck / lorry",
+          "Chinese": "草稿: truck / lorry",
+          "Portuguese": "rascunho: truck / lorry",
+          "Persian": "پیش‌نویس: truck / lorry",
+          "Arabic": "مسودة: truck / lorry",
+          "Thai": "ฉบับร่าง: truck / lorry"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Lkw, -.",
+          "German": "Lernwort: der Lkw, -.",
+          "Italian": "Voce di vocabolario tedesco: der Lkw, -.",
+          "Portuguese": "Item de vocabulário alemão: der Lkw, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Lkw",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_016",
+      "word": "der Aktenschrank, -e",
+      "notes": "Kapitel 4 · Rosa lässt im Lager den Lkw beladen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "filing cabinet",
+          "Spanish": "borrador: filing cabinet",
+          "French": "armoire à dossiers",
+          "Japanese": "下訳: filing cabinet",
+          "German": "der Aktenschrank, -e",
+          "Korean": "초안: filing cabinet",
+          "Italian": "bozza: filing cabinet",
+          "Chinese": "草稿: filing cabinet",
+          "Portuguese": "rascunho: filing cabinet",
+          "Persian": "پیش‌نویس: filing cabinet",
+          "Arabic": "مسودة: filing cabinet",
+          "Thai": "ฉบับร่าง: filing cabinet"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Aktenschrank, -e.",
+          "German": "Lernwort: der Aktenschrank, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Aktenschrank, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Aktenschrank, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Aktenschrank",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_017",
+      "word": "die Schreibtischplatte, -n",
+      "notes": "Kapitel 4 · Rosa lässt im Lager den Lkw beladen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "desktop / desk top",
+          "Spanish": "borrador: desktop / desk top",
+          "French": "plateau de bureau",
+          "Japanese": "下訳: desktop / desk top",
+          "German": "die Schreibtischplatte, -n",
+          "Korean": "초안: desktop / desk top",
+          "Italian": "bozza: desktop / desk top",
+          "Chinese": "草稿: desktop / desk top",
+          "Portuguese": "rascunho: desktop / desk top",
+          "Persian": "پیش‌نویس: desktop / desk top",
+          "Arabic": "مسودة: desktop / desk top",
+          "Thai": "ฉบับร่าง: desktop / desk top"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Schreibtischplatte, -n.",
+          "German": "Lernwort: die Schreibtischplatte, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Schreibtischplatte, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Schreibtischplatte, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Schreibtischplatte",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_018",
+      "word": "abbiegen",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to turn",
+          "Spanish": "borrador: to turn",
+          "French": "tourner",
+          "Japanese": "下訳: to turn",
+          "German": "abbiegen",
+          "Korean": "초안: to turn",
+          "Italian": "bozza: to turn",
+          "Chinese": "草稿: to turn",
+          "Portuguese": "rascunho: to turn",
+          "Persian": "پیش‌نویس: to turn",
+          "Arabic": "مسودة: to turn",
+          "Thai": "ฉบับร่าง: to turn"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: abbiegen.",
+          "German": "Lernwort: abbiegen.",
+          "Italian": "Voce di vocabolario tedesco: abbiegen.",
+          "Portuguese": "Item de vocabulário alemão: abbiegen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_019",
+      "word": "die Abzweigung, -en",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "junction / turn-off",
+          "Spanish": "borrador: junction / turn-off",
+          "French": "embranchement",
+          "Japanese": "下訳: junction / turn-off",
+          "German": "die Abzweigung, -en",
+          "Korean": "초안: junction / turn-off",
+          "Italian": "bozza: junction / turn-off",
+          "Chinese": "草稿: junction / turn-off",
+          "Portuguese": "rascunho: junction / turn-off",
+          "Persian": "پیش‌نویس: junction / turn-off",
+          "Arabic": "مسودة: junction / turn-off",
+          "Thai": "ฉบับร่าง: junction / turn-off"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Abzweigung, -en.",
+          "German": "Lernwort: die Abzweigung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Abzweigung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Abzweigung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Abzweigung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_020",
+      "word": "die Ampel, -n",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "traffic light",
+          "Spanish": "borrador: traffic light",
+          "French": "feu de circulation",
+          "Japanese": "下訳: traffic light",
+          "German": "die Ampel, -n",
+          "Korean": "초안: traffic light",
+          "Italian": "bozza: traffic light",
+          "Chinese": "草稿: traffic light",
+          "Portuguese": "rascunho: traffic light",
+          "Persian": "پیش‌نویس: traffic light",
+          "Arabic": "مسودة: traffic light",
+          "Thai": "ฉบับร่าง: traffic light"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Ampel, -n.",
+          "German": "Lernwort: die Ampel, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Ampel, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Ampel, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Ampel",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_021",
+      "word": "die Route, -n",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "route",
+          "Spanish": "borrador: route",
+          "French": "itinéraire",
+          "Japanese": "下訳: route",
+          "German": "die Route, -n",
+          "Korean": "초안: route",
+          "Italian": "bozza: route",
+          "Chinese": "草稿: route",
+          "Portuguese": "rascunho: route",
+          "Persian": "پیش‌نویس: route",
+          "Arabic": "مسودة: route",
+          "Thai": "ฉบับร่าง: route"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Route, -n.",
+          "German": "Lernwort: die Route, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Route, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Route, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Route",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_022",
+      "word": "umsteigen",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to change / transfer",
+          "Spanish": "borrador: to change / transfer",
+          "French": "changer de correspondance",
+          "Japanese": "下訳: to change / transfer",
+          "German": "umsteigen",
+          "Korean": "초안: to change / transfer",
+          "Italian": "bozza: to change / transfer",
+          "Chinese": "草稿: to change / transfer",
+          "Portuguese": "rascunho: to change / transfer",
+          "Persian": "پیش‌نویس: to change / transfer",
+          "Arabic": "مسودة: to change / transfer",
+          "Thai": "ฉบับร่าง: to change / transfer"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: umsteigen.",
+          "German": "Lernwort: umsteigen.",
+          "Italian": "Voce di vocabolario tedesco: umsteigen.",
+          "Portuguese": "Item de vocabulário alemão: umsteigen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_023",
+      "word": "einsteigen",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to get in / board",
+          "Spanish": "borrador: to get in / board",
+          "French": "monter",
+          "Japanese": "下訳: to get in / board",
+          "German": "einsteigen",
+          "Korean": "초안: to get in / board",
+          "Italian": "bozza: to get in / board",
+          "Chinese": "草稿: to get in / board",
+          "Portuguese": "rascunho: to get in / board",
+          "Persian": "پیش‌نویس: to get in / board",
+          "Arabic": "مسودة: to get in / board",
+          "Thai": "ฉบับร่าง: to get in / board"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: einsteigen.",
+          "German": "Lernwort: einsteigen.",
+          "Italian": "Voce di vocabolario tedesco: einsteigen.",
+          "Portuguese": "Item de vocabulário alemão: einsteigen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_024",
+      "word": "aussteigen",
+      "notes": "Kapitel 4 · Rosa fährt zur Kundin",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to get out / alight",
+          "Spanish": "borrador: to get out / alight",
+          "French": "descendre",
+          "Japanese": "下訳: to get out / alight",
+          "German": "aussteigen",
+          "Korean": "초안: to get out / alight",
+          "Italian": "bozza: to get out / alight",
+          "Chinese": "草稿: to get out / alight",
+          "Portuguese": "rascunho: to get out / alight",
+          "Persian": "پیش‌نویس: to get out / alight",
+          "Arabic": "مسودة: to get out / alight",
+          "Thai": "ฉบับร่าง: to get out / alight"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: aussteigen.",
+          "German": "Lernwort: aussteigen.",
+          "Italian": "Voce di vocabolario tedesco: aussteigen.",
+          "Portuguese": "Item de vocabulário alemão: aussteigen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_025",
+      "word": "der Rückspiegel, -",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "rear-view mirror",
+          "Spanish": "borrador: rear-view mirror",
+          "French": "rétroviseur",
+          "Japanese": "下訳: rear-view mirror",
+          "German": "der Rückspiegel, -",
+          "Korean": "초안: rear-view mirror",
+          "Italian": "bozza: rear-view mirror",
+          "Chinese": "草稿: rear-view mirror",
+          "Portuguese": "rascunho: rear-view mirror",
+          "Persian": "پیش‌نویس: rear-view mirror",
+          "Arabic": "مسودة: rear-view mirror",
+          "Thai": "ฉบับร่าง: rear-view mirror"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Rückspiegel, -.",
+          "German": "Lernwort: der Rückspiegel, -.",
+          "Italian": "Voce di vocabolario tedesco: der Rückspiegel, -.",
+          "Portuguese": "Item de vocabulário alemão: der Rückspiegel, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Rückspiegel",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_026",
+      "word": "rechts vor links",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "right before left",
+          "Spanish": "borrador: right before left",
+          "French": "priorité à droite",
+          "Japanese": "下訳: right before left",
+          "German": "rechts vor links",
+          "Korean": "초안: right before left",
+          "Italian": "bozza: right before left",
+          "Chinese": "草稿: right before left",
+          "Portuguese": "rascunho: right before left",
+          "Persian": "پیش‌نویس: right before left",
+          "Arabic": "مسودة: right before left",
+          "Thai": "ฉบับร่าง: right before left"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: rechts vor links.",
+          "German": "Lernwort: rechts vor links.",
+          "Italian": "Voce di vocabolario tedesco: rechts vor links.",
+          "Portuguese": "Item de vocabulário alemão: rechts vor links."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_027",
+      "word": "übersehen",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to overlook / fail to see",
+          "Spanish": "borrador: to overlook / fail to see",
+          "French": "ne pas voir / négliger",
+          "Japanese": "下訳: to overlook / fail to see",
+          "German": "übersehen",
+          "Korean": "초안: to overlook / fail to see",
+          "Italian": "bozza: to overlook / fail to see",
+          "Chinese": "草稿: to overlook / fail to see",
+          "Portuguese": "rascunho: to overlook / fail to see",
+          "Persian": "پیش‌نویس: to overlook / fail to see",
+          "Arabic": "مسودة: to overlook / fail to see",
+          "Thai": "ฉบับร่าง: to overlook / fail to see"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: übersehen.",
+          "German": "Lernwort: übersehen.",
+          "Italian": "Voce di vocabolario tedesco: übersehen.",
+          "Portuguese": "Item de vocabulário alemão: übersehen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_028",
+      "word": "das Signal, -e",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "signal",
+          "Spanish": "borrador: signal",
+          "French": "signal",
+          "Japanese": "下訳: signal",
+          "German": "das Signal, -e",
+          "Korean": "초안: signal",
+          "Italian": "bozza: signal",
+          "Chinese": "草稿: signal",
+          "Portuguese": "rascunho: signal",
+          "Persian": "پیش‌نویس: signal",
+          "Arabic": "مسودة: signal",
+          "Thai": "ฉบับร่าง: signal"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: das Signal, -e.",
+          "German": "Lernwort: das Signal, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Signal, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Signal, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Signal",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_029",
+      "word": "sich umschauen",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to look around",
+          "Spanish": "borrador: to look around",
+          "French": "regarder autour de soi",
+          "Japanese": "下訳: to look around",
+          "German": "sich umschauen",
+          "Korean": "초안: to look around",
+          "Italian": "bozza: to look around",
+          "Chinese": "草稿: to look around",
+          "Portuguese": "rascunho: to look around",
+          "Persian": "پیش‌نویس: to look around",
+          "Arabic": "مسودة: to look around",
+          "Thai": "ฉบับร่าง: to look around"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: sich umschauen.",
+          "German": "Lernwort: sich umschauen.",
+          "Italian": "Voce di vocabolario tedesco: sich umschauen.",
+          "Portuguese": "Item de vocabulário alemão: sich umschauen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_030",
+      "word": "sich vorbeiquetschen",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to squeeze past",
+          "Spanish": "borrador: to squeeze past",
+          "French": "se faufiler / se glisser",
+          "Japanese": "下訳: to squeeze past",
+          "German": "sich vorbeiquetschen",
+          "Korean": "초안: to squeeze past",
+          "Italian": "bozza: to squeeze past",
+          "Chinese": "草稿: to squeeze past",
+          "Portuguese": "rascunho: to squeeze past",
+          "Persian": "پیش‌نویس: to squeeze past",
+          "Arabic": "مسودة: to squeeze past",
+          "Thai": "ฉบับร่าง: to squeeze past"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: sich vorbeiquetschen.",
+          "German": "Lernwort: sich vorbeiquetschen.",
+          "Italian": "Voce di vocabolario tedesco: sich vorbeiquetschen.",
+          "Portuguese": "Item de vocabulário alemão: sich vorbeiquetschen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_031",
+      "word": "blinken",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to indicate / blink",
+          "Spanish": "borrador: to indicate / blink",
+          "French": "clignoter",
+          "Japanese": "下訳: to indicate / blink",
+          "German": "blinken",
+          "Korean": "초안: to indicate / blink",
+          "Italian": "bozza: to indicate / blink",
+          "Chinese": "草稿: to indicate / blink",
+          "Portuguese": "rascunho: to indicate / blink",
+          "Persian": "پیش‌نویس: to indicate / blink",
+          "Arabic": "مسودة: to indicate / blink",
+          "Thai": "ฉบับร่าง: to indicate / blink"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: blinken.",
+          "German": "Lernwort: blinken.",
+          "Italian": "Voce di vocabolario tedesco: blinken.",
+          "Portuguese": "Item de vocabulário alemão: blinken."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_032",
+      "word": "die Warnblinkanlage, -n",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "hazard warning lights",
+          "Spanish": "borrador: hazard warning lights",
+          "French": "feux de détresse",
+          "Japanese": "下訳: hazard warning lights",
+          "German": "die Warnblinkanlage, -n",
+          "Korean": "초안: hazard warning lights",
+          "Italian": "bozza: hazard warning lights",
+          "Chinese": "草稿: hazard warning lights",
+          "Portuguese": "rascunho: hazard warning lights",
+          "Persian": "پیش‌نویس: hazard warning lights",
+          "Arabic": "مسودة: hazard warning lights",
+          "Thai": "ฉบับร่าง: hazard warning lights"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Warnblinkanlage, -n.",
+          "German": "Lernwort: die Warnblinkanlage, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Warnblinkanlage, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Warnblinkanlage, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Warnblinkanlage",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_033",
+      "word": "die Warnweste, -n",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "safety vest",
+          "Spanish": "borrador: safety vest",
+          "French": "gilet de sécurité",
+          "Japanese": "下訳: safety vest",
+          "German": "die Warnweste, -n",
+          "Korean": "초안: safety vest",
+          "Italian": "bozza: safety vest",
+          "Chinese": "草稿: safety vest",
+          "Portuguese": "rascunho: safety vest",
+          "Persian": "پیش‌نویس: safety vest",
+          "Arabic": "مسودة: safety vest",
+          "Thai": "ฉบับร่าง: safety vest"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Warnweste, -n.",
+          "German": "Lernwort: die Warnweste, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Warnweste, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Warnweste, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Warnweste",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_034",
+      "word": "die Fahrzeugbeleuchtung, -en",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "vehicle lighting",
+          "Spanish": "borrador: vehicle lighting",
+          "French": "éclairage du véhicule",
+          "Japanese": "下訳: vehicle lighting",
+          "German": "die Fahrzeugbeleuchtung, -en",
+          "Korean": "초안: vehicle lighting",
+          "Italian": "bozza: vehicle lighting",
+          "Chinese": "草稿: vehicle lighting",
+          "Portuguese": "rascunho: vehicle lighting",
+          "Persian": "پیش‌نویس: vehicle lighting",
+          "Arabic": "مسودة: vehicle lighting",
+          "Thai": "ฉบับร่าง: vehicle lighting"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Fahrzeugbeleuchtung, -en.",
+          "German": "Lernwort: die Fahrzeugbeleuchtung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Fahrzeugbeleuchtung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Fahrzeugbeleuchtung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Fahrzeugbeleuchtung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_035",
+      "word": "das Warndreieck, -e",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "warning triangle",
+          "Spanish": "borrador: warning triangle",
+          "French": "triangle de présignalisation",
+          "Japanese": "下訳: warning triangle",
+          "German": "das Warndreieck, -e",
+          "Korean": "초안: warning triangle",
+          "Italian": "bozza: warning triangle",
+          "Chinese": "草稿: warning triangle",
+          "Portuguese": "rascunho: warning triangle",
+          "Persian": "پیش‌نویس: warning triangle",
+          "Arabic": "مسودة: warning triangle",
+          "Thai": "ฉบับร่าง: warning triangle"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: das Warndreieck, -e.",
+          "German": "Lernwort: das Warndreieck, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Warndreieck, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Warndreieck, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Warndreieck",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_036",
+      "word": "der Rettungsdienst",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "rescue service",
+          "Spanish": "borrador: rescue service",
+          "French": "service de secours",
+          "Japanese": "下訳: rescue service",
+          "German": "der Rettungsdienst",
+          "Korean": "초안: rescue service",
+          "Italian": "bozza: rescue service",
+          "Chinese": "草稿: rescue service",
+          "Portuguese": "rascunho: rescue service",
+          "Persian": "پیش‌نویس: rescue service",
+          "Arabic": "مسودة: rescue service",
+          "Thai": "ฉบับร่าง: rescue service"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Rettungsdienst.",
+          "German": "Lernwort: der Rettungsdienst.",
+          "Italian": "Voce di vocabolario tedesco: der Rettungsdienst.",
+          "Portuguese": "Item de vocabulário alemão: der Rettungsdienst."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Rettungsdienst"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_037",
+      "word": "das Autokennzeichen, -",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "license plate",
+          "Spanish": "borrador: license plate",
+          "French": "plaque d'immatriculation",
+          "Japanese": "下訳: license plate",
+          "German": "das Autokennzeichen, -",
+          "Korean": "초안: license plate",
+          "Italian": "bozza: license plate",
+          "Chinese": "草稿: license plate",
+          "Portuguese": "rascunho: license plate",
+          "Persian": "پیش‌نویس: license plate",
+          "Arabic": "مسودة: license plate",
+          "Thai": "ฉบับร่าง: license plate"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: das Autokennzeichen, -.",
+          "German": "Lernwort: das Autokennzeichen, -.",
+          "Italian": "Voce di vocabolario tedesco: das Autokennzeichen, -.",
+          "Portuguese": "Item de vocabulário alemão: das Autokennzeichen, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Autokennzeichen",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_038",
+      "word": "beteiligt sein",
+      "notes": "Kapitel 4 · Der Unfall",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be involved",
+          "Spanish": "borrador: to be involved",
+          "French": "être impliqué",
+          "Japanese": "下訳: to be involved",
+          "German": "beteiligt sein",
+          "Korean": "초안: to be involved",
+          "Italian": "bozza: to be involved",
+          "Chinese": "草稿: to be involved",
+          "Portuguese": "rascunho: to be involved",
+          "Persian": "پیش‌نویس: to be involved",
+          "Arabic": "مسودة: to be involved",
+          "Thai": "ฉบับร่าง: to be involved"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: beteiligt sein.",
+          "German": "Lernwort: beteiligt sein.",
+          "Italian": "Voce di vocabolario tedesco: beteiligt sein.",
+          "Portuguese": "Item de vocabulário alemão: beteiligt sein."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_039",
+      "word": "der Verkehrsunfall, -e",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "traffic accident",
+          "Spanish": "accidente de tráfico",
+          "French": "accident de la route",
+          "Japanese": "交通事故",
+          "German": "der Verkehrsunfall, -e",
+          "Korean": "교통사고",
+          "Italian": "incidente stradale",
+          "Chinese": "交通事故",
+          "Portuguese": "acidente de trânsito",
+          "Persian": "تصادف رانندگی",
+          "Arabic": "حادث مروري",
+          "Thai": "อุบัติเหตุจราจร"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Verkehrsunfall, -e.",
+          "German": "Lernwort: der Verkehrsunfall, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Verkehrsunfall, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Verkehrsunfall, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Verkehrsunfall",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_040",
+      "word": "aufgeregt sein",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be agitated / excited",
+          "Spanish": "borrador: to be agitated / excited",
+          "French": "être agité / inquiet",
+          "Japanese": "下訳: to be agitated / excited",
+          "German": "aufgeregt sein",
+          "Korean": "초안: to be agitated / excited",
+          "Italian": "bozza: to be agitated / excited",
+          "Chinese": "草稿: to be agitated / excited",
+          "Portuguese": "rascunho: to be agitated / excited",
+          "Persian": "پیش‌نویس: to be agitated / excited",
+          "Arabic": "مسودة: to be agitated / excited",
+          "Thai": "ฉบับร่าง: to be agitated / excited"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: aufgeregt sein.",
+          "German": "Lernwort: aufgeregt sein.",
+          "Italian": "Voce di vocabolario tedesco: aufgeregt sein.",
+          "Portuguese": "Item de vocabulário alemão: aufgeregt sein."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_041",
+      "word": "die Unfallmeldung, -en",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "accident report",
+          "Spanish": "borrador: accident report",
+          "French": "déclaration d'accident",
+          "Japanese": "下訳: accident report",
+          "German": "die Unfallmeldung, -en",
+          "Korean": "초안: accident report",
+          "Italian": "bozza: accident report",
+          "Chinese": "草稿: accident report",
+          "Portuguese": "rascunho: accident report",
+          "Persian": "پیش‌نویس: accident report",
+          "Arabic": "مسودة: accident report",
+          "Thai": "ฉบับร่าง: accident report"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Unfallmeldung, -en.",
+          "German": "Lernwort: die Unfallmeldung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Unfallmeldung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Unfallmeldung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Unfallmeldung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_042",
+      "word": "ohnmächtig sein",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be unconscious",
+          "Spanish": "borrador: to be unconscious",
+          "French": "être inconscient",
+          "Japanese": "下訳: to be unconscious",
+          "German": "ohnmächtig sein",
+          "Korean": "초안: to be unconscious",
+          "Italian": "bozza: to be unconscious",
+          "Chinese": "草稿: to be unconscious",
+          "Portuguese": "rascunho: to be unconscious",
+          "Persian": "پیش‌نویس: to be unconscious",
+          "Arabic": "مسودة: to be unconscious",
+          "Thai": "ฉบับร่าง: to be unconscious"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: ohnmächtig sein.",
+          "German": "Lernwort: ohnmächtig sein.",
+          "Italian": "Voce di vocabolario tedesco: ohnmächtig sein.",
+          "Portuguese": "Item de vocabulário alemão: ohnmächtig sein."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_043",
+      "word": "atmen",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to breathe",
+          "Spanish": "borrador: to breathe",
+          "French": "respirer",
+          "Japanese": "下訳: to breathe",
+          "German": "atmen",
+          "Korean": "초안: to breathe",
+          "Italian": "bozza: to breathe",
+          "Chinese": "草稿: to breathe",
+          "Portuguese": "rascunho: to breathe",
+          "Persian": "پیش‌نویس: to breathe",
+          "Arabic": "مسودة: to breathe",
+          "Thai": "ฉบับร่าง: to breathe"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: atmen.",
+          "German": "Lernwort: atmen.",
+          "Italian": "Voce di vocabolario tedesco: atmen.",
+          "Portuguese": "Item de vocabulário alemão: atmen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_044",
+      "word": "die Feuerwehr, -en",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "fire department",
+          "Spanish": "bomberos",
+          "French": "pompiers",
+          "Japanese": "消防署 / 消防隊",
+          "German": "die Feuerwehr, -en",
+          "Korean": "소방서 / 소방대",
+          "Italian": "vigili del fuoco",
+          "Chinese": "消防队",
+          "Portuguese": "corpo de bombeiros",
+          "Persian": "آتش‌نشانی",
+          "Arabic": "الدفاع المدني / الإطفاء",
+          "Thai": "หน่วยดับเพลิง"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Feuerwehr, -en.",
+          "German": "Lernwort: die Feuerwehr, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Feuerwehr, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Feuerwehr, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Feuerwehr",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_045",
+      "word": "drücken",
+      "notes": "Kapitel 4 · Unfälle melden und Hilfe holen",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to press",
+          "Spanish": "borrador: to press",
+          "French": "appuyer",
+          "Japanese": "下訳: to press",
+          "German": "drücken",
+          "Korean": "초안: to press",
+          "Italian": "bozza: to press",
+          "Chinese": "草稿: to press",
+          "Portuguese": "rascunho: to press",
+          "Persian": "پیش‌نویس: to press",
+          "Arabic": "مسودة: to press",
+          "Thai": "ฉบับร่าง: to press"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: drücken.",
+          "German": "Lernwort: drücken.",
+          "Italian": "Voce di vocabolario tedesco: drücken.",
+          "Portuguese": "Item de vocabulário alemão: drücken."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_046",
+      "word": "der Realschulabschluss, -e",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "secondary school certificate",
+          "Spanish": "borrador: secondary school certificate",
+          "French": "diplôme de Realschule",
+          "Japanese": "下訳: secondary school certificate",
+          "German": "der Realschulabschluss, -e",
+          "Korean": "초안: secondary school certificate",
+          "Italian": "bozza: secondary school certificate",
+          "Chinese": "草稿: secondary school certificate",
+          "Portuguese": "rascunho: secondary school certificate",
+          "Persian": "پیش‌نویس: secondary school certificate",
+          "Arabic": "مسودة: secondary school certificate",
+          "Thai": "ฉบับร่าง: secondary school certificate"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Realschulabschluss, -e.",
+          "German": "Lernwort: der Realschulabschluss, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Realschulabschluss, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Realschulabschluss, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Realschulabschluss",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_047",
+      "word": "kreuz und quer",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "all over the place / criss-cross",
+          "Spanish": "borrador: all over the place / criss-cross",
+          "French": "dans tous les sens",
+          "Japanese": "下訳: all over the place / criss-cross",
+          "German": "kreuz und quer",
+          "Korean": "초안: all over the place / criss-cross",
+          "Italian": "bozza: all over the place / criss-cross",
+          "Chinese": "草稿: all over the place / criss-cross",
+          "Portuguese": "rascunho: all over the place / criss-cross",
+          "Persian": "پیش‌نویس: all over the place / criss-cross",
+          "Arabic": "مسودة: all over the place / criss-cross",
+          "Thai": "ฉบับร่าง: all over the place / criss-cross"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: kreuz und quer.",
+          "German": "Lernwort: kreuz und quer.",
+          "Italian": "Voce di vocabolario tedesco: kreuz und quer.",
+          "Portuguese": "Item de vocabulário alemão: kreuz und quer."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_048",
+      "word": "zusammenstoßen (mit + D.)",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to collide with",
+          "Spanish": "borrador: to collide with",
+          "French": "entrer en collision avec",
+          "Japanese": "下訳: to collide with",
+          "German": "zusammenstoßen (mit + D.)",
+          "Korean": "초안: to collide with",
+          "Italian": "bozza: to collide with",
+          "Chinese": "草稿: to collide with",
+          "Portuguese": "rascunho: to collide with",
+          "Persian": "پیش‌نویس: to collide with",
+          "Arabic": "مسودة: to collide with",
+          "Thai": "ฉบับร่าง: to collide with"
+        },
+        "explanation": {
+          "English": "mit + Dativ.",
+          "French": "mit + Dativ.",
+          "Spanish": "Elemento de vocabulario alemán: zusammenstoßen (mit + D.).",
+          "German": "Lernwort: zusammenstoßen (mit + D.).",
+          "Italian": "Voce di vocabolario tedesco: zusammenstoßen (mit + D.).",
+          "Portuguese": "Item de vocabulário alemão: zusammenstoßen (mit + D.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "phrase / pattern"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_049",
+      "word": "aussagen",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to state / testify",
+          "Spanish": "borrador: to state / testify",
+          "French": "déclarer / témoigner",
+          "Japanese": "下訳: to state / testify",
+          "German": "aussagen",
+          "Korean": "초안: to state / testify",
+          "Italian": "bozza: to state / testify",
+          "Chinese": "草稿: to state / testify",
+          "Portuguese": "rascunho: to state / testify",
+          "Persian": "پیش‌نویس: to state / testify",
+          "Arabic": "مسودة: to state / testify",
+          "Thai": "ฉบับร่าง: to state / testify"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: aussagen.",
+          "German": "Lernwort: aussagen.",
+          "Italian": "Voce di vocabolario tedesco: aussagen.",
+          "Portuguese": "Item de vocabulário alemão: aussagen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_050",
+      "word": "der Berufsverkehr",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "rush-hour traffic",
+          "Spanish": "borrador: rush-hour traffic",
+          "French": "trafic aux heures de pointe",
+          "Japanese": "下訳: rush-hour traffic",
+          "German": "der Berufsverkehr",
+          "Korean": "초안: rush-hour traffic",
+          "Italian": "bozza: rush-hour traffic",
+          "Chinese": "草稿: rush-hour traffic",
+          "Portuguese": "rascunho: rush-hour traffic",
+          "Persian": "پیش‌نویس: rush-hour traffic",
+          "Arabic": "مسودة: rush-hour traffic",
+          "Thai": "ฉบับร่าง: rush-hour traffic"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Berufsverkehr.",
+          "German": "Lernwort: der Berufsverkehr.",
+          "Italian": "Voce di vocabolario tedesco: der Berufsverkehr.",
+          "Portuguese": "Item de vocabulário alemão: der Berufsverkehr."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Berufsverkehr"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_051",
+      "word": "aufpassen (auf + A.)",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to watch out for",
+          "Spanish": "borrador: to watch out for",
+          "French": "faire attention à",
+          "Japanese": "下訳: to watch out for",
+          "German": "aufpassen (auf + A.)",
+          "Korean": "초안: to watch out for",
+          "Italian": "bozza: to watch out for",
+          "Chinese": "草稿: to watch out for",
+          "Portuguese": "rascunho: to watch out for",
+          "Persian": "پیش‌نویس: to watch out for",
+          "Arabic": "مسودة: to watch out for",
+          "Thai": "ฉบับร่าง: to watch out for"
+        },
+        "explanation": {
+          "English": "auf + Akkusativ.",
+          "French": "auf + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: aufpassen (auf + A.).",
+          "German": "Lernwort: aufpassen (auf + A.).",
+          "Italian": "Voce di vocabolario tedesco: aufpassen (auf + A.).",
+          "Portuguese": "Item de vocabulário alemão: aufpassen (auf + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "phrase / pattern"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_052",
+      "word": "der Fernfahrer, -",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "long-distance driver",
+          "Spanish": "borrador: long-distance driver",
+          "French": "chauffeur longue distance",
+          "Japanese": "下訳: long-distance driver",
+          "German": "der Fernfahrer, -",
+          "Korean": "초안: long-distance driver",
+          "Italian": "bozza: long-distance driver",
+          "Chinese": "草稿: long-distance driver",
+          "Portuguese": "rascunho: long-distance driver",
+          "Persian": "پیش‌نویس: long-distance driver",
+          "Arabic": "مسودة: long-distance driver",
+          "Thai": "ฉบับร่าง: long-distance driver"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Fernfahrer, -.",
+          "German": "Lernwort: der Fernfahrer, -.",
+          "Italian": "Voce di vocabolario tedesco: der Fernfahrer, -.",
+          "Portuguese": "Item de vocabulário alemão: der Fernfahrer, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Fernfahrer",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_053",
+      "word": "die Fernfahrerin, -nen",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female long-distance driver",
+          "Spanish": "borrador: female long-distance driver",
+          "French": "chauffeuse longue distance",
+          "Japanese": "下訳: female long-distance driver",
+          "German": "die Fernfahrerin, -nen",
+          "Korean": "초안: female long-distance driver",
+          "Italian": "bozza: female long-distance driver",
+          "Chinese": "草稿: female long-distance driver",
+          "Portuguese": "rascunho: female long-distance driver",
+          "Persian": "پیش‌نویس: female long-distance driver",
+          "Arabic": "مسودة: female long-distance driver",
+          "Thai": "ฉบับร่าง: female long-distance driver"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Fernfahrerin, -nen.",
+          "German": "Lernwort: die Fernfahrerin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Fernfahrerin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Fernfahrerin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Fernfahrerin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_054",
+      "word": "der ÖPNV",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "public transport",
+          "Spanish": "borrador: public transport",
+          "French": "transport public",
+          "Japanese": "下訳: public transport",
+          "German": "der ÖPNV",
+          "Korean": "초안: public transport",
+          "Italian": "bozza: public transport",
+          "Chinese": "草稿: public transport",
+          "Portuguese": "rascunho: public transport",
+          "Persian": "پیش‌نویس: public transport",
+          "Arabic": "مسودة: public transport",
+          "Thai": "ฉบับร่าง: public transport"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der ÖPNV.",
+          "German": "Lernwort: der ÖPNV.",
+          "Italian": "Voce di vocabolario tedesco: der ÖPNV.",
+          "Portuguese": "Item de vocabulário alemão: der ÖPNV."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "ÖPNV"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_055",
+      "word": "der öffentliche Dienst",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "public service",
+          "Spanish": "borrador: public service",
+          "French": "fonction publique",
+          "Japanese": "下訳: public service",
+          "German": "der öffentliche Dienst",
+          "Korean": "초안: public service",
+          "Italian": "bozza: public service",
+          "Chinese": "草稿: public service",
+          "Portuguese": "rascunho: public service",
+          "Persian": "پیش‌نویس: public service",
+          "Arabic": "مسودة: public service",
+          "Thai": "ฉบับร่าง: public service"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der öffentliche Dienst.",
+          "German": "Lernwort: der öffentliche Dienst.",
+          "Italian": "Voce di vocabolario tedesco: der öffentliche Dienst.",
+          "Portuguese": "Item de vocabulário alemão: der öffentliche Dienst."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "öffentliche Dienst"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_056",
+      "word": "etwas berücksichtigen",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to take something into account",
+          "Spanish": "borrador: to take something into account",
+          "French": "prendre quelque chose en compte",
+          "Japanese": "下訳: to take something into account",
+          "German": "etwas berücksichtigen",
+          "Korean": "초안: to take something into account",
+          "Italian": "bozza: to take something into account",
+          "Chinese": "草稿: to take something into account",
+          "Portuguese": "rascunho: to take something into account",
+          "Persian": "پیش‌نویس: to take something into account",
+          "Arabic": "مسودة: to take something into account",
+          "Thai": "ฉบับร่าง: to take something into account"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: etwas berücksichtigen.",
+          "German": "Lernwort: etwas berücksichtigen.",
+          "Italian": "Voce di vocabolario tedesco: etwas berücksichtigen.",
+          "Portuguese": "Item de vocabulário alemão: etwas berücksichtigen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_057",
+      "word": "die Rufbereitschaft, -en",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "on-call duty",
+          "Spanish": "borrador: on-call duty",
+          "French": "astreinte",
+          "Japanese": "下訳: on-call duty",
+          "German": "die Rufbereitschaft, -en",
+          "Korean": "초안: on-call duty",
+          "Italian": "bozza: on-call duty",
+          "Chinese": "草稿: on-call duty",
+          "Portuguese": "rascunho: on-call duty",
+          "Persian": "پیش‌نویس: on-call duty",
+          "Arabic": "مسودة: on-call duty",
+          "Thai": "ฉบับร่าง: on-call duty"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Rufbereitschaft, -en.",
+          "German": "Lernwort: die Rufbereitschaft, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Rufbereitschaft, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Rufbereitschaft, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Rufbereitschaft",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_058",
+      "word": "erreichbar sein",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be reachable",
+          "Spanish": "borrador: to be reachable",
+          "French": "être joignable",
+          "Japanese": "下訳: to be reachable",
+          "German": "erreichbar sein",
+          "Korean": "초안: to be reachable",
+          "Italian": "bozza: to be reachable",
+          "Chinese": "草稿: to be reachable",
+          "Portuguese": "rascunho: to be reachable",
+          "Persian": "پیش‌نویس: to be reachable",
+          "Arabic": "مسودة: to be reachable",
+          "Thai": "ฉบับร่าง: to be reachable"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: erreichbar sein.",
+          "German": "Lernwort: erreichbar sein.",
+          "Italian": "Voce di vocabolario tedesco: erreichbar sein.",
+          "Portuguese": "Item de vocabulário alemão: erreichbar sein."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_059",
+      "word": "aufbrechen",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to set off / leave",
+          "Spanish": "borrador: to set off / leave",
+          "French": "partir",
+          "Japanese": "下訳: to set off / leave",
+          "German": "aufbrechen",
+          "Korean": "초안: to set off / leave",
+          "Italian": "bozza: to set off / leave",
+          "Chinese": "草稿: to set off / leave",
+          "Portuguese": "rascunho: to set off / leave",
+          "Persian": "پیش‌نویس: to set off / leave",
+          "Arabic": "مسودة: to set off / leave",
+          "Thai": "ฉบับร่าง: to set off / leave"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: aufbrechen.",
+          "German": "Lernwort: aufbrechen.",
+          "Italian": "Voce di vocabolario tedesco: aufbrechen.",
+          "Portuguese": "Item de vocabulário alemão: aufbrechen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_060",
+      "word": "die Frühschicht, -en",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "early shift",
+          "Spanish": "borrador: early shift",
+          "French": "poste du matin",
+          "Japanese": "下訳: early shift",
+          "German": "die Frühschicht, -en",
+          "Korean": "초안: early shift",
+          "Italian": "bozza: early shift",
+          "Chinese": "草稿: early shift",
+          "Portuguese": "rascunho: early shift",
+          "Persian": "پیش‌نویس: early shift",
+          "Arabic": "مسودة: early shift",
+          "Thai": "ฉบับร่าง: early shift"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Frühschicht, -en.",
+          "German": "Lernwort: die Frühschicht, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Frühschicht, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Frühschicht, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Frühschicht",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_061",
+      "word": "fit sein",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be fit",
+          "Spanish": "borrador: to be fit",
+          "French": "être en forme",
+          "Japanese": "下訳: to be fit",
+          "German": "fit sein",
+          "Korean": "초안: to be fit",
+          "Italian": "bozza: to be fit",
+          "Chinese": "草稿: to be fit",
+          "Portuguese": "rascunho: to be fit",
+          "Persian": "پیش‌نویس: to be fit",
+          "Arabic": "مسودة: to be fit",
+          "Thai": "ฉบับร่าง: to be fit"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: fit sein.",
+          "German": "Lernwort: fit sein.",
+          "Italian": "Voce di vocabolario tedesco: fit sein.",
+          "Portuguese": "Item de vocabulário alemão: fit sein."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_062",
+      "word": "sich einloggen",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to log in",
+          "Spanish": "borrador: to log in",
+          "French": "se connecter",
+          "Japanese": "下訳: to log in",
+          "German": "sich einloggen",
+          "Korean": "초안: to log in",
+          "Italian": "bozza: to log in",
+          "Chinese": "草稿: to log in",
+          "Portuguese": "rascunho: to log in",
+          "Persian": "پیش‌نویس: to log in",
+          "Arabic": "مسودة: to log in",
+          "Thai": "ฉบับร่าง: to log in"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: sich einloggen.",
+          "German": "Lernwort: sich einloggen.",
+          "Italian": "Voce di vocabolario tedesco: sich einloggen.",
+          "Portuguese": "Item de vocabulário alemão: sich einloggen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_063",
+      "word": "das Honorar, -e",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "fee / honorarium",
+          "Spanish": "borrador: fee / honorarium",
+          "French": "honoraires",
+          "Japanese": "下訳: fee / honorarium",
+          "German": "das Honorar, -e",
+          "Korean": "초안: fee / honorarium",
+          "Italian": "bozza: fee / honorarium",
+          "Chinese": "草稿: fee / honorarium",
+          "Portuguese": "rascunho: fee / honorarium",
+          "Persian": "پیش‌نویس: fee / honorarium",
+          "Arabic": "مسودة: fee / honorarium",
+          "Thai": "ฉบับร่าง: fee / honorarium"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: das Honorar, -e.",
+          "German": "Lernwort: das Honorar, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Honorar, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Honorar, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Honorar",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_064",
+      "word": "die Krankenversicherung, -en",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "health insurance",
+          "Spanish": "seguro médico",
+          "French": "assurance maladie",
+          "Japanese": "健康保険",
+          "German": "die Krankenversicherung, -en",
+          "Korean": "건강보험",
+          "Italian": "assicurazione sanitaria",
+          "Chinese": "健康保险",
+          "Portuguese": "seguro de saúde",
+          "Persian": "بیمه درمانی",
+          "Arabic": "تأمين صحي",
+          "Thai": "ประกันสุขภาพ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Krankenversicherung, -en.",
+          "German": "Lernwort: die Krankenversicherung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Krankenversicherung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Krankenversicherung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Krankenversicherung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_065",
+      "word": "das Talent, -e",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "talent",
+          "Spanish": "borrador: talent",
+          "French": "talent",
+          "Japanese": "下訳: talent",
+          "German": "das Talent, -e",
+          "Korean": "초안: talent",
+          "Italian": "bozza: talent",
+          "Chinese": "草稿: talent",
+          "Portuguese": "rascunho: talent",
+          "Persian": "پیش‌نویس: talent",
+          "Arabic": "مسودة: talent",
+          "Thai": "ฉบับร่าง: talent"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: das Talent, -e.",
+          "German": "Lernwort: das Talent, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Talent, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Talent, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Talent",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_066",
+      "word": "der Sanitäter, -",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "paramedic",
+          "Spanish": "paramédico",
+          "French": "secouriste / ambulancier",
+          "Japanese": "救急救命士",
+          "German": "der Sanitäter, -",
+          "Korean": "구급대원",
+          "Italian": "paramedico",
+          "Chinese": "急救员",
+          "Portuguese": "paramédico",
+          "Persian": "امدادگر پزشکی",
+          "Arabic": "مسعف",
+          "Thai": "เจ้าหน้าที่กู้ชีพ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: der Sanitäter, -.",
+          "German": "Lernwort: der Sanitäter, -.",
+          "Italian": "Voce di vocabolario tedesco: der Sanitäter, -.",
+          "Portuguese": "Item de vocabulário alemão: der Sanitäter, -."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Sanitäter",
+          "plural_hint": "-"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k4_067",
+      "word": "die Sanitäterin, -nen",
+      "notes": "Kapitel 4 · Berufsfahrer/innen stellen sich vor",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "female paramedic",
+          "Spanish": "borrador: female paramedic",
+          "French": "secouriste / ambulancière",
+          "Japanese": "下訳: female paramedic",
+          "German": "die Sanitäterin, -nen",
+          "Korean": "초안: female paramedic",
+          "Italian": "bozza: female paramedic",
+          "Chinese": "草稿: female paramedic",
+          "Portuguese": "rascunho: female paramedic",
+          "Persian": "پیش‌نویس: female paramedic",
+          "Arabic": "مسودة: female paramedic",
+          "Thai": "ฉบับร่าง: female paramedic"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 4.",
+          "French": "Vocabulary item from Kapitel 4.",
+          "Spanish": "Elemento de vocabulario alemán: die Sanitäterin, -nen.",
+          "German": "Lernwort: die Sanitäterin, -nen.",
+          "Italian": "Voce di vocabolario tedesco: die Sanitäterin, -nen.",
+          "Portuguese": "Item de vocabulário alemão: die Sanitäterin, -nen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Sanitäterin",
+          "plural_hint": "-nen"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    }
+  ],
+  "meta": {
+    "targetLanguages": [
+      "English",
+      "Spanish",
+      "French",
+      "Japanese",
+      "German",
+      "Korean",
+      "Italian",
+      "Chinese",
+      "Portuguese",
+      "Persian",
+      "Arabic",
+      "Thai"
+    ],
+    "translation_status": "Clean non-empty multilingual draft. English/French were curated earlier; other languages are draft-filled and require native-speaker review."
+  }
+}
