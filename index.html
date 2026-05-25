@@ -46,26 +46,19 @@ input:focus,select:focus{border-color:var(--gold2)}
 #quiz-body{flex:1;display:flex;align-items:center;justify-content:center;padding:16px;width:100%}
 .qcard{width:100%;max-width:600px;display:flex;flex-direction:column;gap:0}
 .word-area{text-align:center;padding:24px 12px 20px}
-.word-article{font-family:var(--mono);font-size:20px;color:var(--gold);font-weight:500;min-height:28px}
-.word-base{font-family:var(--serif);font-style:italic;font-size:clamp(38px,7vw,62px);color:var(--text);line-height:1.1}
+.word-main{font-family:var(--serif);font-style:italic;font-size:clamp(38px,7vw,62px);color:var(--text);line-height:1.1}
 .word-note{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;letter-spacing:.1em;text-transform:uppercase}
 .phase-lbl{font-family:var(--mono);font-size:10px;color:var(--gold2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;text-align:center}
-.art-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;padding:0 4px}
-.art-btn{padding:16px 8px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:18px;color:var(--text);text-align:center}
-.art-btn.correct{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
-.art-btn.wrong{background:var(--err-bg);border-color:var(--err);color:var(--err)}
 .opt-list{display:flex;flex-direction:column;gap:8px;padding:0 4px}
 .opt{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;text-align:left;width:100%;font-family:var(--body);font-size:17px;color:var(--text)}
+.opt:hover:not(:disabled):not(.correct):not(.wrong){background:var(--s3);border-color:var(--gold2)}
 .opt.correct{background:var(--ok-bg);border-color:var(--ok)}.opt.wrong{background:var(--err-bg);border-color:var(--err)}
 .opt-key{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:16px}
+.opt-art{font-family:var(--mono);font-size:12px;color:var(--gold2);min-width:26px;}
 .feedback{text-align:center;padding:12px 16px 4px;font-family:var(--mono);font-size:12px;min-height:36px}
 .fb-ok{color:var(--ok)} .fb-err{color:var(--err)}
-.pts-badge{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:20px;margin-left:8px}
-.pts-ok{background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok2)}
-.pts-part{background:rgba(230,126,34,.1);color:var(--warn);border:1px solid var(--warn)}
-.act-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.next-btn{flex:1;padding:13px;background:var(--gold);color:#1a1200;border:none;border-radius:var(--r);font-family:var(--mono);font-size:12px;text-transform:uppercase;cursor:pointer}
-.expl-btn{padding:13px 18px;background:transparent;border:1px solid var(--bdr);color:var(--dim);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase}
+.next-btn{display:block;width:100%;margin-top:12px;padding:13px;background:var(--gold);color:#1a1200;border:none;border-radius:var(--r);font-family:var(--mono);font-size:12px;text-transform:uppercase;cursor:pointer}
+.expl-btn{padding:13px 18px;background:transparent;border:1px solid var(--bdr);color:var(--dim);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase;width:100%;margin-top:10px;}
 .expl-panel{margin-top:10px;background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
 .expl-section{padding:16px 18px;border-bottom:1px solid var(--bdr)}
 .expl-txt{font-size:15px;line-height:1.75;color:var(--dim)}
@@ -85,20 +78,21 @@ input:focus,select:focus{border-color:var(--gold2)}
 .wrong-list{display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto}
 .wrong-item{display:flex;justify-content:space-between;align-items:baseline;padding:7px 12px;background:var(--s2);border-radius:4px;font-size:15px}
 .wrong-de{color:var(--text);font-family:var(--serif);font-style:italic}.wrong-tr{color:var(--dim);font-size:14px}
-.lb-row{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid var(--bdr)}
-.lb-rank{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:24px}.lb-name{flex:1;font-size:16px}.lb-pct{font-family:var(--mono);font-size:12px;color:var(--gold)}.lb-meta{font-family:var(--mono);font-size:10px;color:var(--muted)}
 #modal-bg, #lb-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:300;align-items:center;justify-content:center;padding:16px}
 #modal-bg.on{display:flex}
 .modal{background:var(--s1);border:1px solid var(--bdr);border-radius:10px;width:100%;max-width:500px;max-height:88vh;overflow-y:auto;padding:26px;display:flex;flex-direction:column;gap:16px}
-.modal-hdr{display:flex;align-items:center;justify-content:space-between}.modal-ttl{font-family:var(--serif);font-size:22px}
+.modal-hdr{display:flex;align-items:center;justify-content:space-between;}
+.modal-ttl{font-family:var(--serif);font-size:22px;color:var(--text);}
 .gen-prog{font-family:var(--mono);font-size:11px;color:var(--gold2);margin-top:7px}
 hr{border:none;border-top:1px solid var(--bdr)}
 .gap{display:flex;flex-direction:column;gap:10px}
 .tip{font-size:12px;color:var(--muted);line-height:1.6;margin-top:5px}
 .tip a{color:var(--gold2)}
-.mastered-badge{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:10px;background:rgba(46,204,113,.1);color:var(--ok);border:1px solid var(--ok2);margin-left:8px}
 #file-input{display:none}
-@keyframes blink{0%,100%{opacity:.2}50%{opacity:1}}.blink span{animation:blink 1.2s infinite}.blink span:nth-child(2){animation-delay:.2s}.blink span:nth-child(3){animation-delay:.4s}
+@keyframes blink { 0%,100%{opacity:.2} 50%{opacity:1} }
+.blink span { animation:blink 1.2s infinite; }
+.blink span:nth-child(2){animation-delay:.2s}
+.blink span:nth-child(3){animation-delay:.4s}
 </style>
 </head>
 <body>
@@ -233,7 +227,8 @@ hr{border:none;border-top:1px solid var(--bdr)}
 <div class="modal">
   <div class="modal-hdr">
     <span class="modal-ttl">🏆 Leaderboard</span>
-    <button class="icon-btn" onclick="document.getElementById('lb-modal').style.display='none'">✕</button>  </div>
+    <button class="icon-btn" onclick="document.getElementById('lb-modal').style.display='none'">✕</button>
+  </div>
   <div id="lb-content"></div>
 </div>
 </div>
@@ -243,7 +238,7 @@ hr{border:none;border-top:1px solid var(--bdr)}
 <script>
 const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili','Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'];
 const RTL = new Set(['Arabic','Persian']);
-const ARTS = ['der','die','das'];
+const ARTICLES = ['der','die','das'];
 
 function extLinks(word) {
   const base = encodeURIComponent(word.replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim());
@@ -311,13 +306,6 @@ function detectChapters(words) {
 function wordsForChapter(chapter) {
   if (chapter==='all') return W.words.filter(w=>w.status==='done');
   return W.words.filter(w=>w.status==='done' && getChapter(w)===chapter);
-}
-
-const isMastered = (id) => (MASTERY[id]?.correct||0) >= 3;
-function recordAttempt(id, correct) {
-  if (!MASTERY[id]) MASTERY[id] = {correct:0, incorrect:0};
-  if (correct) MASTERY[id].correct++; else MASTERY[id].incorrect++;
-  persist();
 }
 
 function importData(raw) {
@@ -428,29 +416,22 @@ function loadWord() {
   if (Q.idx >= Q.queue.length) { endSession(); return; }
   const entry = W.words.find(w=>w.id===Q.queue[Q.idx]);
   if (!entry) { Q.idx++; loadWord(); return; }
-  const art = getArticle(entry.word); const hasArt = !!art;
+  const art = getArticle(entry.word);
   const opts = buildMeaningOpts(entry, Q.pool, USER.nativeLang);
-  Q.cur = { entry, hasArt, correctArt: art||'—', opts, phase: hasArt ? 'art' : 'mean', artPicked: null, artCorrect: null, meanPicked: null, meanCorrect: null, showExpl: false, artPts: 0, meanPts: 0 };
+  Q.cur = { entry, options: opts, phase: 'q', showDet: false, selectedIndex: null };
   renderQuiz();
 }
 
-function pickArticle(picked) {
-  if (!Q.cur || Q.cur.phase!=='art') return;
-  const correct = Q.cur.correctArt; const ok = picked === correct;
-  Q.cur.artPicked = picked; Q.cur.artCorrect = ok; Q.cur.artPts = ok ? 1 : 0; Q.cur.phase = 'mean';
-  renderQuiz();
-}
-
-function pickMeaning(i) {
-  if (!Q.cur || Q.cur.phase!=='mean') return;
-  const opt = Q.cur.opts[i]; const ok = opt.isCorrect;
-  Q.cur.meanPicked = i; Q.cur.meanCorrect = ok; Q.cur.meanPts = ok ? 2 : 0; Q.cur.phase = 'done';
-  const wordPts = Q.cur.artPts + Q.cur.meanPts; const wordOk = (Q.cur.hasArt ? Q.cur.artCorrect : true) && ok;
-  Q.totalPts += wordPts;
-  if (wordOk) { Q.correct++; Q.streak++; Q.maxStreak = Math.max(Q.maxStreak, Q.streak); recordAttempt(Q.cur.entry.id, true); }
-  else {
-    Q.wrong++; Q.streak = 0; recordAttempt(Q.cur.entry.id, false);
-    Q.wrongItems.push({ id: Q.cur.entry.id, word: Q.cur.entry.word, correctArt: Q.cur.correctArt, correctMeaning: Q.cur.opts.find(o=>o.isCorrect)?.txt || '—' });
+function selectOption(i) {
+  if (!Q.cur || Q.cur.phase !== 'q') return;
+  const opt = Q.cur.options[i];
+  Q.cur.selectedIndex = i;
+  if (opt.isCorrect) {
+    Q.cur.phase = 'ok'; Q.correct++; Q.streak++; Q.maxStreak = Math.max(Q.maxStreak, Q.streak);
+  } else {
+    Q.cur.phase = 'err'; Q.wrong++; Q.streak = 0;
+    Q.wrongItems.push({ id: Q.cur.entry.id, word: Q.cur.entry.word, correctMeaning: Q.cur.options.find(o=>o.isCorrect)?.txt || '—' });
+    Q.queue.push(Q.queue[Q.idx]);
   }
   renderQuiz();
 }
@@ -458,48 +439,79 @@ function pickMeaning(i) {
 const nextWord = () => { Q.idx++; loadWord(); };
 
 function endSession() {
-  const pct = Q.maxPts ? Math.round(Q.totalPts / Q.maxPts * 100) : 0;
-  saveScore({ name: USER.name, score: Q.totalPts, maxPts: Q.maxPts, pct, correct: Q.correct, wrong: Q.wrong, streak: Q.maxStreak, chapter: USER.chapter==='all'?'All chapters':`Kapitel ${USER.chapter}`, n: Q.queue.length, date: new Date().toLocaleDateString() });
+  const pct = (Q.correct + Q.wrong) ? Math.round(Q.correct / (Q.correct + Q.wrong) * 100) : 0;
+  saveScore({ name: USER.name, score: Q.correct, maxPts: Q.queue.length, pct, correct: Q.correct, wrong: Q.wrong, streak: Q.maxStreak, chapter: USER.chapter==='all'?'All chapters':`Kapitel ${USER.chapter}`, n: Q.queue.length, date: new Date().toLocaleDateString() });
   renderSummary(pct); showScreen('screen-summary');
 }
 const confirmExit = () => { if (confirm('Exit to menu?')) backToMenu(); };
 function backToMenu() { Q.cur = null; Q.queue = []; showScreen('screen-onboard'); buildOnboarding(); }
 
 function renderQuiz() {
-  const { entry, hasArt, correctArt, opts, phase, artPicked, artCorrect, meanPicked, showExpl, artPts, meanPts } = Q.cur;
+  const card = document.getElementById('qcard');
+  if (!Q.cur) return;
+  const { entry, options, phase, showDet, selectedIndex } = Q.cur;
+
   document.getElementById('qh-ok').textContent = `${Q.correct} ✓`;
   document.getElementById('qh-err').textContent = `${Q.wrong} ✗`;
-  document.getElementById('qh-left').textContent = `${Q.queue.length - Q.idx} left`;
+  document.getElementById('qh-left').textContent = `${Math.max(0, Q.queue.length - Q.idx)} left`;
   const sb = document.getElementById('streak-badge');
   if (Q.streak >= 3) { sb.textContent = `🔥 ${Q.streak}`; sb.style.display=''; } else sb.style.display='none';
   document.getElementById('prog-fill').style.width = `${Math.round(Q.idx / Q.queue.length * 100)}%`;
 
-  const artDisplay = phase==='art' ? '' : (artPicked===null ? '' : (artCorrect ? `<span style="color:var(--ok)">✓ ${h(correctArt)}</span>` : `<span style="color:var(--err)">✗ ${h(artPicked)}</span> <span style="color:var(--dim);font-size:13px">(${h(correctArt)})</span>`));
-  const artHTML = (phase==='mean' || phase==='done') ? '' : `<p class="phase-lbl">Select the article (or — if none)</p><div class="art-grid">${ARTS.concat(['—']).map(a=>`<button class="art-btn" onclick="pickArticle('${a}')">${a}</button>`).join('')}</div>`;
-  
-  const KEYS = ['A','B','C','D'];
-  const meaningHTML = phase==='art' ? '' : `<p class="phase-lbl" style="margin-top:16px">${phase==='mean' ? 'What does it mean?' : 'Meaning'}</p><div class="opt-list">${opts.map((opt,i)=>{ let cls = 'opt'; if (phase==='done') { if (opt.isCorrect) cls+=' correct'; else if (i===meanPicked) cls+=' wrong'; } return `<button class="${cls}" onclick="pickMeaning(${i})" ${phase==='done'?'disabled':''}><span>${KEYS[i]}</span><span>${h(opt.txt)}</span></button>`; }).join('')}</div>`;
+  const keys = ['A','B','C','D'];
+  const optsHTML = options.map((opt, i) => {
+    let cls = 'opt';
+    if (phase !== 'q') {
+      if (opt.isCorrect) cls += ' correct';
+      else if (i === selectedIndex) cls += ' wrong';
+    }
+    const art = getArticle(entry.word);
+    const artSpan = (opt.isCorrect && art && phase !== 'q') ? `<span class="opt-art">${h(art)}</span>` : '';
+    return `<button class="${cls}" onclick="selectOption(${i})" ${phase!=='q'?'disabled':''}>
+      <span class="opt-key">${keys[i]}</span>
+      ${artSpan}
+      <span class="opt-txt">${h(opt.txt)}</span>
+    </button>`;
+  }).join('');
 
-  const feedHTML = phase !== 'done' ? '' : `<div class="feedback">${(hasArt ? artCorrect : true) && (phase==='done' && opts[meanPicked]?.isCorrect) ? `<span class="fb-ok">✓ Correct! <span class="pts-badge pts-ok">+${artPts+meanPts} pts</span></span>` : `<span class="fb-err">✗ Wrong <span class="pts-badge" style="color:var(--err)">+${artPts+meanPts} pts</span></span>`}</div>`;
-  const actionHTML = phase!=='done' ? '' : `<div class="act-row"><button class="expl-btn" onclick="toggleExpl()">📖 ${showExpl?'Hide':'Explanation'}</button><button class="next-btn" onclick="nextWord()">Next word →</button></div>`;
-  const explHTML = (showExpl && entry.data) ? buildExplPanel(entry) : '';
+  let fbHTML = '';
+  if (phase === 'ok') fbHTML = `<p class="feedback fb-ok">✓ Richtig! Well done.</p>`;
+  if (phase === 'err') {
+    const correctOpt = options.find(o=>o.isCorrect);
+    const art = getArticle(entry.word);
+    const artStr = art ? `${art} · ` : '';
+    fbHTML = `<p class="feedback fb-err">✗ Not quite — the answer was: <strong>${artStr}${h(correctOpt.txt)}</strong></p>`;
+  }
 
-  document.getElementById('qcard').innerHTML = `<div class="word-area"><div>${artDisplay}</div><div class="word-base">${h(getBase(entry.word))}</div>${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}</div>${artHTML}${meaningHTML}${feedHTML}${actionHTML}${explHTML}`;
+  const nextHTML = (phase !== 'q') ? `<button class="next-btn" onclick="nextWord()">Next word →</button>` : '';
+  const explHTML = (showDet && entry.data) ? buildExplPanel(entry) : '';
+
+  card.innerHTML = `
+    <div class="word-area">
+      <div class="word-main">${h(getBase(entry.word))}</div>
+      ${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}
+    </div>
+    <div class="opt-list">${optsHTML}</div>
+    ${fbHTML}
+    ${nextHTML}
+    <button class="expl-btn" onclick="toggleExpl()">📖 ${showDet?'Hide':'Explanation, grammar & links'}</button>
+    ${explHTML}
+  `;
 }
 
-const toggleExpl = () => { Q.cur.showExpl = !Q.cur.showExpl; renderQuiz(); };
+const toggleExpl = () => { Q.cur.showDet = !Q.cur.showDet; renderQuiz(); };
 
 function buildExplPanel(entry) {
   const d = entry.data; if (!d) return '';
   const transHTML = W.genLangs.map(lang=>{ const val = d.translations?.[lang]; return val ? `<div class="tr-row"><span class="tr-lang">${h(lang)}</span><span class="tr-val ${RTL.has(lang)?'rtl':''}">${h(val)}</span></div>` : ''; }).join('');
-  return `<div class="expl-panel"><div class="expl-section"><span class="lbl">Grammar & Context (${USER.explLang})</span><p class="expl-txt">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}"</p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">Multilingual</span><div class="trans-grid">${transHTML}</div></div><div class="expl-section"><span class="lbl">Dictionairies</span><div class="link-row">${extLinks(entry.word).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
+  return `<div class="expl-panel"><div class="expl-section"><span class="lbl">Grammar & Context</span><p class="expl-txt">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}"</p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">All Translations</span><div class="trans-grid">${transHTML}</div></div><div class="expl-section"><span class="lbl">Dictionaries</span><div class="link-row">${extLinks(entry.word).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
 }
 
 function renderSummary(pct) {
   document.getElementById('sum-name').textContent = USER.name;
-  document.getElementById('sum-score').textContent = Q.totalPts;
-  document.getElementById('sum-pct').textContent = `${pct}% accuracy · ${Q.totalPts}/${Q.maxPts} total pool points`;
-  document.getElementById('sum-chips').innerHTML = [['✓ Answers', Q.correct],['✗ Mistakes', Q.wrong],['🔥 Max Streak', Q.maxStreak],['📚 Pool', USER.chapter==='all'?'All Chapters':`Kapitel ${USER.chapter}`]].map(([k,v])=>`<span class="stat-chip"><span>${v}</span>${k}</span>`).join('');
+  document.getElementById('sum-score').textContent = Q.correct;
+  document.getElementById('sum-pct').textContent = `${pct}% accuracy · ${Q.correct}/${Q.queue.length} words`;
+  document.getElementById('sum-chips').innerHTML = [['✓ Correct', Q.correct],['✗ Mistakes', Q.wrong],['🔥 Max Streak', Q.maxStreak],['📚 Chapter', USER.chapter==='all'?'All':`Kapitel ${USER.chapter}`]].map(([k,v])=>`<span class="stat-chip"><span>${v}</span>${k}</span>`).join('');
   
   const btnReview = document.getElementById('btn-review-wrong');
   if(Q.wrongItems.length > 0) {
@@ -525,7 +537,7 @@ function buildOnboarding() {
   const chapters = detectChapters(W.words);
   document.getElementById('sel-chapter').innerHTML = `<option value="all">All Chapters (${W.words.filter(w=>w.status==='done').length} loaded)</option>` + chapters.map(c=>`<option value="${c}" ${USER.chapter===c?'selected':''}>Kapitel ${c} (${W.words.filter(w=>w.status==='done'&&getChapter(w)===c).length} ready)</option>`).join('');
   const done = W.words.filter(w=>w.status==='done').length;
-  document.getElementById('ob-info').innerHTML = W.words.length===0 ? '<span style="color:var(--err)">No vocabulary file detected. Use configurations below.</span>' : (done<4 ? '<span style="color:var(--warn)">Translation indexing required. Open word management pipeline.</span>' : `<span style="color:var(--ok)">✓ ${done} words localized and prepared</span>`);
+  document.getElementById('ob-info').innerHTML = W.words.length===0 ? '<span style="color:var(--err)">No vocabulary file detected.</span>' : (done<4 ? '<span style="color:var(--warn)">Translation indexing required. Open word management pipeline.</span>' : `<span style="color:var(--ok)">✓ ${done} words localized and prepared</span>`);
   document.getElementById('btn-start').disabled = done < 4;
 }
 
@@ -537,7 +549,7 @@ function buildModal() {
     chips.appendChild(c);
   });
   const done = W.words.filter(w=>w.status==='done').length;
-  document.getElementById('m-stats').innerHTML = `${done} compiled / ${W.words.length - done} localized variables pending`;
+  document.getElementById('m-stats').innerHTML = `${done} compiled / ${W.words.length - done} variables pending`;
   document.getElementById('m-gen-btn').disabled = Q.generating || (W.words.length - done)===0;
 }
 
@@ -551,7 +563,15 @@ document.getElementById('pill-size').addEventListener('click', e=>{
   USER.sessionSize = p.dataset.n; persist();
 });
 
-function h(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+document.addEventListener('keydown', e => {
+  if (document.getElementById('modal-bg').classList.contains('on')) return;
+  const map = { a:0, b:1, c:2, d:3, '1':0, '2':1, '3':2, '4':3 };
+  const i   = map[e.key.toLowerCase()];
+  if (i !== undefined && Q.cur?.phase === 'q') selectOption(i);
+  if ((e.key==='Enter' || e.key===' ') && Q.cur?.phase !== 'q') {
+    e.preventDefault(); nextWord();
+  }
+});
 
 loadStorage(); buildOnboarding();
 fetch('./vocab.json').then(r=>r.json()).then(data=>{ if(W.words.length===0) importData(data); }).catch(()=>{});
