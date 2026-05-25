@@ -18,80 +18,90 @@
   --serif:'Cormorant Garamond',Georgia,serif;  
   --body:'Crimson Pro',Georgia,serif;  
   --mono:'JetBrains Mono',monospace;  
-  --r:6px;
+  --r:8px;
 }
 html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px}
 .screen{display:none;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px}
 .screen.on{display:flex}
-.logo{font-family:var(--serif);font-size:32px;color:var(--gold);font-weight:400;letter-spacing:.02em; text-align: center;}
+.logo{font-family:var(--serif);font-size:36px;color:var(--gold);font-weight:400;letter-spacing:.02em; text-align: center;}
 .tagline{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.2em;text-transform:uppercase;margin-top:4px; text-align: center;}
 .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px;display:block}
-.card{background:var(--s1);border:1px solid var(--bdr);border-radius:10px;padding:28px;width:100%;max-width:480px}
+.card{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:32px;width:100%;max-width:480px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);}
 .card-gold{border-top:3px solid var(--gold)}
 input[type=text],input[type=password],select{  
   width:100%;background:var(--s2);border:1px solid var(--bdr);color:var(--text);  
-  padding:9px 12px;font-family:var(--body);font-size:16px;border-radius:var(--r); outline:none;
+  padding:10px 14px;font-family:var(--body);font-size:16px;border-radius:var(--r); outline:none; transition: all 0.2s;
 }
-input:focus,select:focus{border-color:var(--gold2)}
-.btn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;border-radius:var(--r);padding:10px 18px;transition:all .15s}
-.btn-gold{background:var(--gold);color:#1a1200}.btn-gold:hover{filter:brightness(1.1)}.btn-gold:disabled{background:var(--gold2);opacity:.5;cursor:not-allowed}
+input:focus,select:focus{border-color:var(--gold2); box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.2);}
+.btn{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;border-radius:var(--r);padding:12px 20px;transition:all .2s font-weight:500;}
+.btn-gold{background:var(--gold);color:#1a1200}.btn-gold:hover{filter:brightness(1.15); transform: translateY(-1px);}.btn-gold:disabled{background:var(--gold2);opacity:.5;cursor:not-allowed; transform: none;}
 .btn-outline{background:transparent;color:var(--dim);border:1px solid var(--bdr)}.btn-outline:hover{border-color:var(--gold2);color:var(--text)}
 .btn-block{display:block;width:100%}.btn-row{display:flex;gap:8px}
-.pill-grp{display:flex;gap:6px;flex-wrap:wrap}.pill{font-family:var(--mono);font-size:11px;padding:6px 14px;border-radius:20px;border:1px solid var(--bdr);cursor:pointer;color:var(--dim);background:var(--s2)}.pill.on{background:var(--gold);color:#1a1200;border-color:var(--gold)}
-#prog-track{position:fixed;top:0;left:0;right:0;height:3px;background:var(--bdr);z-index:200}#prog-fill{height:100%;background:var(--gold);transition:width .4s ease;width:0}
-#quiz-header{position:sticky;top:0;z-index:100;width:100%;display:flex;align-items:center;justify-content:space-between;padding:11px 20px;background:var(--bg);border-bottom:1px solid var(--bdr)}
-.qh-score{display:flex;gap:14px;font-family:var(--mono);font-size:12px}.qh-right{display:flex;gap:8px;align-items:center}
-.streak-badge{font-family:var(--mono);font-size:12px;color:var(--warn);padding:3px 9px;border:1px solid rgba(230,126,34,.3);border-radius:20px}
-.icon-btn{background:none;border:1px solid var(--bdr);color:var(--dim);width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pill-grp{display:flex;gap:6px;flex-wrap:wrap}.pill{font-family:var(--mono);font-size:12px;padding:8px 16px;border-radius:20px;border:1px solid var(--bdr);cursor:pointer;color:var(--dim);background:var(--s2); transition: all 0.2s;}.pill.on{background:var(--gold);color:#1a1200;border-color:var(--gold)}
+#prog-track{position:fixed;top:0;left:0;right:0;height:4px;background:var(--bdr);z-index:200}#prog-fill{height:100%;background:var(--gold);transition:width .4s ease;width:0}
+#quiz-header{position:sticky;top:0;z-index:100;width:100%;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:rgba(8, 8, 10, 0.9); backdrop-filter: blur(8px); border-bottom:1px solid var(--bdr)}
+.qh-score{display:flex;gap:16px;font-family:var(--mono);font-size:13px}.qh-right{display:flex;gap:12px;align-items:center}
+.streak-badge{font-family:var(--mono);font-size:12px;color:var(--warn);padding:4px 12px;background: rgba(230,126,34,.1); border:1px solid rgba(230,126,34,.3);border-radius:20px}
+.icon-btn{background:var(--s2);border:1px solid var(--bdr);color:var(--dim);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center; transition: all 0.2s;}
+.icon-btn:hover{background: var(--s3); color: var(--gold);}
 #quiz-body{flex:1;display:flex;align-items:center;justify-content:center;padding:16px;width:100%}
 .qcard{width:100%;max-width:600px;display:flex;flex-direction:column;gap:0}
-.word-area{text-align:center;padding:24px 12px 20px}
-.word-main{font-family:var(--serif);font-style:italic;font-size:clamp(38px,7vw,62px);color:var(--text);line-height:1.1}
-.word-note{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;letter-spacing:.1em;text-transform:uppercase}
-.opt-list{display:flex;flex-direction:column;gap:8px;padding:0 4px}
-.opt{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;text-align:left;width:100%;font-family:var(--body);font-size:17px;color:var(--text)}
-.opt:hover:not(:disabled):not(.correct):not(.wrong){background:var(--s3);border-color:var(--gold2)}
+.word-area{text-align:center;padding:30px 12px 24px}
+.word-main{font-family:var(--serif);font-style:italic;font-size:clamp(42px,8vw,72px);color:var(--text);line-height:1.1}
+.word-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:12px;letter-spacing:.15em;text-transform:uppercase}
+.phase-lbl{font-family:var(--mono);font-size:11px;color:var(--gold2);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;text-align:center; opacity: 0.8;}
+.art-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;padding:0 4px; margin-bottom: 20px;}
+.art-btn{padding:18px 8px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:20px;color:var(--text);text-align:center; transition: all 0.2s; font-weight: 500;}
+.art-btn:hover:not(:disabled){background:var(--s3); border-color:var(--gold2); transform: translateY(-2px);}
+.art-btn:disabled{cursor:default;}
+.art-btn.correct{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.art-btn.wrong{background:var(--err-bg);border-color:var(--err);color:var(--err)}
+.opt-list{display:flex;flex-direction:column;gap:10px;padding:0 4px}
+.opt{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;text-align:left;width:100%;font-family:var(--body);font-size:18px;color:var(--text); transition: all 0.2s;}
+.opt:hover:not(:disabled):not(.correct):not(.wrong){background:var(--s3);border-color:var(--gold2); transform: translateX(4px);}
 .opt.correct{background:var(--ok-bg);border-color:var(--ok)}.opt.wrong{background:var(--err-bg);border-color:var(--err)}
-.opt-key{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:16px}
-.opt-art{font-family:var(--mono);font-size:12px;color:var(--gold2);min-width:26px;}
-.feedback{text-align:center;padding:12px 16px 4px;font-family:var(--mono);font-size:12px;min-height:36px}
+.opt-key{font-family:var(--mono);font-size:12px;color:var(--muted);min-width:20px; font-weight: bold;}
+.feedback{text-align:center;padding:16px 16px 8px;font-family:var(--mono);font-size:14px;min-height:44px}
 .fb-ok{color:var(--ok)} .fb-err{color:var(--err)}
-.next-btn{display:block;width:100%;margin-top:12px;padding:13px;background:var(--gold);color:#1a1200;border:none;border-radius:var(--r);font-family:var(--mono);font-size:12px;text-transform:uppercase;cursor:pointer}
-.expl-btn{padding:13px 18px;background:transparent;border:1px solid var(--bdr);color:var(--dim);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase;width:100%;margin-top:10px;}
-.expl-panel{margin-top:10px;background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
-.expl-section{padding:16px 18px;border-bottom:1px solid var(--bdr)}
-.expl-txt{font-size:15px;line-height:1.75;color:var(--dim)}
-.expl-ex-de{font-style:italic;color:var(--dim);font-size:15px}
-.expl-ex-tr{color:var(--muted);font-size:14px;margin-top:3px}
-.trans-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:5px}
-.tr-row{display:flex;gap:8px;align-items:baseline}
-.tr-lang{font-family:var(--mono);font-size:9px;color:var(--gold2);min-width:74px;text-transform:uppercase}
-.tr-val{font-size:14px;color:var(--text)}.rtl{direction:rtl;text-align:right}
-.link-row{display:flex;flex-wrap:wrap;gap:7px}
-.dlink{font-family:var(--mono);font-size:10px;padding:5px 12px;border:1px solid var(--bdr);border-radius:20px;color:var(--dim);text-decoration:none}
-.dlink:hover{border-color:var(--gold2);color:var(--gold)}
-.sum-hero{text-align:center;padding:24px 0 16px}.sum-score{font-family:var(--serif);font-size:72px;color:var(--gold);font-weight:300;line-height:1}.sum-pct{font-family:var(--mono);font-size:14px;color:var(--dim);margin-top:6px}.sum-name{font-family:var(--serif);font-size:22px;color:var(--text);margin-bottom:4px}
-.stat-chips{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:12px 0}
-.stat-chip{font-family:var(--mono);font-size:11px;padding:6px 14px;border-radius:20px;border:1px solid var(--bdr);color:var(--dim)}
-.stat-chip span{color:var(--gold);margin-right:4px}
-.wrong-list{display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto}
-.wrong-item{display:flex;justify-content:space-between;align-items:baseline;padding:7px 12px;background:var(--s2);border-radius:4px;font-size:15px}
-.wrong-de{color:var(--text);font-family:var(--serif);font-style:italic}.wrong-tr{color:var(--dim);font-size:14px}
-#modal-bg, #lb-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:300;align-items:center;justify-content:center;padding:16px}
+.next-btn{display:block;width:100%;margin-top:16px;padding:16px;background:var(--gold);color:#1a1200;border:none;border-radius:var(--r);font-family:var(--mono);font-size:13px;text-transform:uppercase;cursor:pointer; font-weight: bold;}
+.expl-btn{padding:16px 20px;background:var(--s2);border:1px solid var(--bdr);color:var(--dim);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:12px;text-transform:uppercase;width:100%;margin-top:12px; transition: all 0.2s;}
+.expl-btn:hover{background: var(--s3); color: var(--gold);}
+.expl-panel{margin-top:12px;background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);}
+.expl-section{padding:20px;border-bottom:1px solid var(--bdr)}
+.expl-txt{font-size:16px;line-height:1.75;color:var(--dim)}
+.expl-ex-de{font-style:italic;color:var(--text);font-size:16px}
+.expl-ex-tr{color:var(--dim);font-size:14px;margin-top:6px}
+.grammar-box{background:var(--s2);border:1px solid var(--bdr);border-radius:6px;padding:12px;margin-top:10px;}
+.grammar-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-family:var(--mono);font-size:13px;color:var(--text);}
+.grammar-grid div{display:flex; justify-content:space-between; border-bottom:1px solid var(--bdr); padding-bottom:4px;}
+.grammar-grid span:first-child{color:var(--dim);}
+.link-row{display:flex;flex-wrap:wrap;gap:8px}
+.dlink{font-family:var(--mono);font-size:11px;padding:6px 14px;background: var(--s2); border:1px solid var(--bdr);border-radius:20px;color:var(--dim);text-decoration:none; transition: all 0.2s;}
+.dlink:hover{border-color:var(--gold2);color:var(--gold); background: var(--s3);}
+.sum-hero{text-align:center;padding:30px 0 20px}.sum-score{font-family:var(--serif);font-size:84px;color:var(--gold);font-weight:300;line-height:1}.sum-pct{font-family:var(--mono);font-size:15px;color:var(--dim);margin-top:8px}.sum-name{font-family:var(--serif);font-size:26px;color:var(--text);margin-bottom:4px}
+.stat-chips{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:16px 0}
+.stat-chip{font-family:var(--mono);font-size:12px;padding:8px 16px;background: var(--s2); border-radius:20px;border:1px solid var(--bdr);color:var(--dim)}
+.stat-chip span{color:var(--gold);margin-right:6px; font-weight: bold;}
+.wrong-list{display:flex;flex-direction:column;gap:8px;max-height:240px;overflow-y:auto; padding-right: 5px;}
+.wrong-item{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--s2);border-radius:var(--r);font-size:16px; border-left: 3px solid var(--err);}
+.wrong-de{color:var(--text);font-family:var(--serif);font-style:italic; font-size: 18px;}.wrong-tr{color:var(--dim);font-size:15px}
+#modal-bg, #lb-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:300;align-items:center;justify-content:center;padding:16px; backdrop-filter: blur(4px);}
 #modal-bg.on{display:flex}
-.modal{background:var(--s1);border:1px solid var(--bdr);border-radius:10px;width:100%;max-width:500px;max-height:88vh;overflow-y:auto;padding:26px;display:flex;flex-direction:column;gap:16px}
+.modal{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;padding:32px;display:flex;flex-direction:column;gap:20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);}
 .modal-hdr{display:flex;align-items:center;justify-content:space-between;}
-.modal-ttl{font-family:var(--serif);font-size:22px;color:var(--text);}
-.gen-prog{font-family:var(--mono);font-size:11px;color:var(--gold2);margin-top:7px}
+.modal-ttl{font-family:var(--serif);font-size:26px;color:var(--gold);}
+.gen-prog{font-family:var(--mono);font-size:12px;color:var(--gold2);margin-top:8px}
 hr{border:none;border-top:1px solid var(--bdr)}
-.gap{display:flex;flex-direction:column;gap:10px}
-.tip{font-size:12px;color:var(--muted);line-height:1.6;margin-top:5px}
+.gap{display:flex;flex-direction:column;gap:12px}
+.tip{font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px}
 .tip a{color:var(--gold2)}
 #file-input{display:none}
 @keyframes blink { 0%,100%{opacity:.2} 50%{opacity:1} }
 .blink span { animation:blink 1.2s infinite; }
 .blink span:nth-child(2){animation-delay:.2s}
 .blink span:nth-child(3){animation-delay:.4s}
+@keyframes slideUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+.anim-slide { animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 </style>
 </head>
 <body>
@@ -99,10 +109,10 @@ hr{border:none;border-top:1px solid var(--bdr)}
 <div id="prog-track"><div id="prog-fill"></div></div>
 
 <div class="screen on" id="screen-onboard">
-<div class="card card-gold">
-  <div style="margin-bottom:24px">
+<div class="card card-gold anim-slide">
+  <div style="margin-bottom:30px">
     <div class="logo">Vokabular</div>
-    <div class="tagline">Deutsch lernen · Vocabulary Game</div>
+    <div class="tagline">Deutsch lernen · Smart Quiz</div>
   </div>
   <div class="gap">
     <div>
@@ -131,12 +141,11 @@ hr{border:none;border-top:1px solid var(--bdr)}
         <span class="pill" data-n="all">All</span>
       </div>
     </div>
-    <p class="tip" id="ob-info" style="text-align:center"></p>
-    <button class="btn btn-gold btn-block" id="btn-start" onclick="startSession()" style="padding:14px;font-size:12px;margin-top:6px">▶ Start Quiz</button>
-    <hr>
+    <p class="tip" id="ob-info" style="text-align:center; padding: 10px 0;"></p>
+    <button class="btn btn-gold btn-block" id="btn-start" onclick="startSession()" style="padding:16px;font-size:14px;margin-top:6px">▶ Start Game</button>
+    <hr style="margin: 10px 0;">
     <div class="btn-row">
-      <button class="btn btn-outline" style="flex:1" onclick="openSettings()">⚙ Manage words</button>
-      <button class="btn btn-outline" style="flex:1" onclick="showLeaderboard()">🏆 Leaderboard</button>
+      <button class="btn btn-outline" style="flex:1" onclick="openSettings()">⚙ Manage Dictionary</button>
     </div>
   </div>
 </div>
@@ -147,7 +156,7 @@ hr{border:none;border-top:1px solid var(--bdr)}
     <div class="qh-score">
       <span style="color:var(--ok)" id="qh-ok">0 ✓</span>
       <span style="color:var(--err)" id="qh-err">0 ✗</span>
-      <span style="color:var(--muted)" id="qh-left"></span>
+      <span style="color:var(--dim)" id="qh-left"></span>
     </div>
     <div class="qh-right">
       <span class="streak-badge" id="streak-badge" style="display:none"></span>
@@ -161,35 +170,34 @@ hr{border:none;border-top:1px solid var(--bdr)}
 </div>
 
 <div class="screen" id="screen-summary">
-<div class="card card-gold" style="max-width:560px;width:100%">
+<div class="card card-gold anim-slide" style="max-width:560px;width:100%">
   <div class="sum-hero">
     <div class="sum-name" id="sum-name"></div>
     <div class="sum-score" id="sum-score"></div>
     <div class="sum-pct" id="sum-pct"></div>
   </div>
   <div class="stat-chips" id="sum-chips"></div>
-  <div id="sum-wrong-section" style="margin-top:8px">
+  <div id="sum-wrong-section" style="margin-top:16px">
     <span class="lbl">Words to review</span>
     <div class="wrong-list" id="sum-wrong-list"></div>
   </div>
-  <div class="btn-row" style="margin-top:18px">
-    <button class="btn btn-gold" style="flex:1" id="btn-review-wrong" onclick="reviewWrongWords()">↺ Review wrong words</button>
-    <button class="btn btn-outline" style="flex:1" onclick="backToMenu()">← Menu</button>
+  <div class="btn-row" style="margin-top:24px">
+    <button class="btn btn-gold" style="flex:1" id="btn-review-wrong" onclick="reviewWrongWords()">↺ Review Mistakes</button>
+    <button class="btn btn-outline" style="flex:1" onclick="backToMenu()">← Main Menu</button>
   </div>
-  <button class="btn btn-outline btn-block" style="margin-top:8px" onclick="replaySession()">▶ Play same session again</button>
 </div>
 </div>
 
 <div id="modal-bg" onclick="if(event.target===this)closeModal()">
-<div class="modal">
+<div class="modal anim-slide">
   <div class="modal-hdr">
-    <span class="modal-ttl">Settings</span>
+    <span class="modal-ttl">Dictionary Engine</span>
     <button class="icon-btn" onclick="closeModal()">✕</button>
   </div>
   <div>
     <span class="lbl">Anthropic API Key</span>
     <input type="password" id="m-apikey" placeholder="sk-ant-…" oninput="saveKey()">
-    <p class="tip">Stored only locally. Get a key at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></p>
+    <p class="tip">Stored strictly locally in browser memory.</p>
   </div>
   <hr>
   <div>
@@ -198,162 +206,97 @@ hr{border:none;border-top:1px solid var(--bdr)}
   </div>
   <hr>
   <div>
-    <span class="lbl">Translation status</span>
-    <p style="font-family:var(--mono);font-size:12px;color:var(--dim);margin-bottom:10px" id="m-stats"></p>
-    <button class="btn btn-gold btn-block" id="m-gen-btn" onclick="generateAll()">Generate pending translations</button>
-    <p class="gen-prog blink" id="m-prog" style="display:none;margin-top:8px"></p>
+    <span class="lbl">Translation Status</span>
+    <p style="font-family:var(--mono);font-size:13px;color:var(--dim);margin-bottom:12px" id="m-stats"></p>
+    <button class="btn btn-gold btn-block" id="m-gen-btn" onclick="generateAll()">Generate Missing Translations</button>
+    <p class="gen-prog blink" id="m-prog" style="display:none;margin-top:10px"></p>
   </div>
   <hr>
   <div>
-    <span class="lbl">Word list</span>
+    <span class="lbl">Data Management</span>
     <div class="btn-row">
-      <button class="btn btn-outline" style="flex:1" onclick="document.getElementById('file-input').click()">↑ Import JSON</button>
-      <button class="btn btn-outline" style="flex:1" onclick="exportJSON()">↓ Export JSON</button>
+      <button class="btn btn-outline" style="flex:1" onclick="document.getElementById('file-input').click()">↑ Import File</button>
+      <button class="btn btn-outline" style="flex:1" onclick="exportJSON()">↓ Export File</button>
     </div>
   </div>
-  <div>
-    <span class="lbl">Add a word manually</span>
-    <div class="gap">
-      <input type="text" id="m-word" placeholder="German word or phrase">
-      <input type="text" id="m-notes" placeholder="Notes — e.g. noun · §1">
-      <button class="btn btn-outline btn-block" onclick="addWord()">+ Add word</button>
-    </div>
-  </div>
-</div>
-</div>
-
-<div id="lb-modal" onclick="if(event.target===this)this.style.display='none'">
-<div class="modal">
-  <div class="modal-hdr">
-    <span class="modal-ttl">🏆 Leaderboard</span>
-    <button class="icon-btn" onclick="document.getElementById('lb-modal').style.display='none'">✕</button>
-  </div>
-  <div id="lb-content"></div>
 </div>
 </div>
 
 <input type="file" id="file-input" accept=".json" onchange="importFile(event)">
 
 <script>
-// FORCE CACHE RESET to clear corrupted states from old app structures
-if (localStorage.getItem('vok_v4') !== 'true') {
+if (localStorage.getItem('vok_v6') !== 'true') {
   localStorage.clear();
-  localStorage.setItem('vok_v4', 'true');
+  localStorage.setItem('vok_v6', 'true');
 }
 
 const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili','Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'];
 const RTL = new Set(['Arabic','Persian']);
-const ARTICLES = ['der','die','das'];
+const ARTICLES = ['der','die','das','—'];
 
-function extLinks(word) {
+function getLeoLang(nativeLang) {
+  const map = { 'English':'ende', 'French':'frde', 'Spanish':'esde', 'Italian':'itde', 'Russian':'rude', 'Polish':'plde', 'Portuguese':'ptde', 'Chinese':'chde' };
+  return map[nativeLang] || 'ende';
+}
+
+function extLinks(word, nativeLang) {
   const base = encodeURIComponent(String(word||'').replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim());
+  const leo = getLeoLang(nativeLang);
   return [
     {n:'Duden', u:`https://www.duden.de/suchen/dudenonline/${base}`},
+    {n:'Leo', u:`https://dict.leo.org/${leo}/search?query=${base}`},
     {n:'DWDS', u:`https://www.dwds.de/?q=${base}`},
-    {n:'dict.cc', u:`https://www.dict.cc/?s=${base}`},
-    {n:'Verbformen', u:`https://www.verbformen.de/?q=${base}`},
-    {n:'Wiktionary', u:`https://de.wiktionary.org/wiki/${base}`}
+    {n:'Verbformen', u:`https://www.verbformen.de/?q=${base}`}
   ];
 }
 
-// BAKE PRE-TRANSLATED VOCABULARY DATA
+// BAKE PRE-TRANSLATED VOCABULARY DATA (WITH DEEP GRAMMAR!)
 let W = {
   meta: { "targetLanguages": ["English","French","Arabic","Persian","Spanish","Ukrainian","Russian","Italian","Swahili"], "explanationLanguage": "English" },
   words: [
     {
-      "id": "k1_001",
-      "word": "die Messe",
-      "notes": "Noun · §1",
-      "status": "done",
+      "id": "k1_001", "word": "das Essen", "notes": "Noun", "status": "done",
       "data": {
-        "translations": { "English": "trade fair / exhibition", "French": "foire / salon de commerce", "Arabic": "معرض تجاري", "Persian": "نمایشگاه بازرگانی", "Spanish": "feria comercial", "Ukrainian": "торгова виставка", "Russian": "торговая выставка", "Italian": "fiera commerciale", "Swahili": "maonyesho ya biashara" },
-        "explanation": "die Messe, Plural: die Messen. A large exhibition, particularly for industry, trade, or business.",
-        "example_de": "Wir besuchen nächste Woche die Frankfurter Buchmesse.",
-        "example_translated": "We are visiting the Frankfurt Book Fair next week."
+        "translations": { "English": "food / meal", "French": "nourriture / repas", "Arabic": "طعام", "Persian": "غذا", "Spanish": "comida", "Ukrainian": "їжа", "Russian": "еда", "Italian": "cibo", "Swahili": "chakula" }, 
+        "explanation": "Refers to the act of eating or the meal itself. It is a nominalized verb (capitalized infinitive).", 
+        "example_de": "Das Essen schmeckt hervorragend.", "example_translated": "The food tastes excellent.",
+        "grammar": { "type": "noun", "singular": "das Essen", "plural": "die Essen", "related": "essen (verb)" }
       }
     },
     {
-      "id": "k1_002",
-      "word": "der Durchbruch",
-      "notes": "Noun · §1",
-      "status": "done",
-      "data": {
-        "translations": { "English": "breakthrough", "French": "percée / avancée", "Arabic": "انطلاقة / نجاح باهر", "Persian": "پیشرفت غیرمنتظره", "Spanish": "gran avance / logro", "Ukrainian": "прорив", "Russian": "прорыв / крупное достижение", "Italian": "svolta / passo avanti", "Swahili": "hatua kubwa ya mafanikio" },
-        "explanation": "der Durchbruch, Plural: die Durchbrüche. Means a sudden, major advance or success.",
-        "example_de": "Dem Forschungsteam gelang ein medizinischer Durchbruch.",
-        "example_translated": "The research team achieved a medical breakthrough."
+      "id": "k1_002", "word": "sich bewerben", "notes": "Verb · §1", "status": "done",
+      "data": { 
+        "translations": { "English": "to apply (for a job)", "French": "postuler", "Arabic": "يتقدم لوظيفة", "Persian": "درخواست کار دادن", "Spanish": "solicitar un empleo", "Ukrainian": "подавати заяву", "Russian": "подавать заявление", "Italian": "candidarsi", "Swahili": "kutuma maombi" }, 
+        "explanation": "Reflexive verb. Requires 'um' + Akkusativ for the position, or 'bei' + Dativ for the company. Irregular (strong) verb.", 
+        "example_de": "Sie bewirbt sich bei einer großen Agentur um eine Stelle.", "example_translated": "She is applying for a job at a large agency.",
+        "grammar": { "type": "verb", "conjugation": { "ich": "bewerbe mich", "du": "bewirbst dich", "er/sie/es": "bewirbt sich", "wir": "bewerben uns", "ihr": "bewerbt euch", "sie/Sie": "bewerben sich" }, "related": "die Bewerbung (noun)" }
       }
     },
     {
-      "id": "k1_003",
-      "word": "das Alleinstellungsmerkmal",
-      "notes": "Noun · §1",
-      "status": "done",
-      "data": {
-        "translations": { "English": "unique selling proposition (USP)", "French": "argument clé de vente", "Arabic": "ميزة تنافسية فريدة", "Persian": "ویژگی منحصر به فرد فروش", "Spanish": "propuesta única de venta", "Ukrainian": "унікальна торгова пропозиція", "Russian": "уникальное торговое предложение", "Italian": "proposta unica di vendita", "Swahili": "sifa ya kipekee ya biashara" },
-        "explanation": "das Alleinstellungsmerkmal, Plural: die Alleinstellungsmerkmale. The distinct feature making a product stand out.",
-        "example_de": "Gute Qualität allein ist heute kein Alleinstellungsmerkmal mehr.",
-        "example_translated": "Good quality alone is no longer a unique selling proposition today."
+      "id": "k1_003", "word": "die Einarbeitung", "notes": "Noun · §3", "status": "done",
+      "data": { 
+        "translations": { "English": "onboarding / orientation", "French": "intégration / formation initiale", "Arabic": "توجيه / تدريب أولي", "Persian": "آشناسازی شغلی", "Spanish": "formación inicial", "Ukrainian": "введення в посаду", "Russian": "вводный инструктаж", "Italian": "inserimento", "Swahili": "mafunzo ya awali" }, 
+        "explanation": "The process of getting familiar with a new job or task. From 'sich einarbeiten' (to learn the ropes).", 
+        "example_de": "Die Einarbeitung neuer Mitarbeiter dauert meistens vier Wochen.", "example_translated": "The onboarding of new employees usually takes four weeks.",
+        "grammar": { "type": "noun", "singular": "die Einarbeitung", "plural": "die Einarbeitungen", "related": "sich einarbeiten (verb)" }
       }
     },
     {
-      "id": "k1_004",
-      "word": "verhandeln",
-      "notes": "Verb · §2",
-      "status": "done",
-      "data": {
-        "translations": { "English": "to negotiate", "French": "négocier", "Arabic": "تفاوض", "Persian": "مذاکره کردن", "Spanish": "negociar", "Ukrainian": "вести переговори", "Russian": "вести переговоры", "Italian": "negoziare / trattare", "Swahili": "kujadili" },
-        "explanation": "verhandeln (weak verb, regular). Requires 'mit' + Dativ or 'über' + Akkusativ.",
-        "example_de": "Die Gewerkschaft verhandelt mit den Arbeitgebern über höhere Löhne.",
-        "example_translated": "The union is negotiating with employers for higher wages."
+      "id": "k2_001", "word": "geschickt sein", "notes": "Adjective phrase · §1", "status": "done",
+      "data": { 
+        "translations": { "English": "to be skillful / adroit", "French": "être habile", "Arabic": "يكون ماهراً", "Persian": "ماهر بودن", "Spanish": "ser hábil", "Ukrainian": "бути вправним", "Russian": "быть ловким", "Italian": "essere abile", "Swahili": "kuwa hodari" }, 
+        "explanation": "Used often as 'handwerklich geschickt sein' meaning to be good with one's hands (craftsmanship).", 
+        "example_de": "Für diesen Beruf muss man handwerklich geschickt sein.", "example_translated": "For this profession, one must be manually skilled.",
+        "grammar": { "type": "adjective", "related": "das Geschick (noun)" }
       }
     },
     {
-      "id": "k1_005",
-      "word": "die Dienstleistung",
-      "notes": "Noun · §2",
-      "status": "done",
-      "data": {
-        "translations": { "English": "service", "French": "prestation de service", "Arabic": "خدمة", "Persian": "خدمات", "Spanish": "servicio", "Ukrainian": "послуга", "Russian": "услуга", "Italian": "servizio", "Swahili": "huduma" },
-        "explanation": "die Dienstleistung, Plural: die Dienstleistungen. Refers to intangible economic activities offered to customers.",
-        "example_de": "Unser Unternehmen bietet IT-Dienstleistungen für Kleinbetriebe an.",
-        "example_translated": "Our company offers IT services for small businesses."
-      }
-    },
-    {
-      "id": "k1_006",
-      "word": "der Umsatz",
-      "notes": "Noun · §3",
-      "status": "done",
-      "data": {
-        "translations": { "English": "turnover / revenue", "French": "chiffre d'affaires", "Arabic": "حجم المبيعات", "Persian": "گردش مالی", "Spanish": "volumen de negocios", "Ukrainian": "оборот / дохід", "Russian": "оборот / выручка", "Italian": "fatturato", "Swahili": "mauzo ya jumla" },
-        "explanation": "der Umsatz, Plural: die Umsätze. Total volume of sales made by a business.",
-        "example_de": "Der Umsatz stieg im vergangenen Quartal um zehn Prozent.",
-        "example_translated": "Turnover increased by ten percent in the past quarter."
-      }
-    },
-    {
-      "id": "k1_007",
-      "word": "wettbewerbsfähig",
-      "notes": "Adjective · §3",
-      "status": "done",
-      "data": {
-        "translations": { "English": "competitive", "French": "compétitif", "Arabic": "تنافسي", "Persian": "رقابت‌پذیر", "Spanish": "competitivo", "Ukrainian": "конкурентоспроможний", "Russian": "конкурентоспособный", "Italian": "competitivo", "Swahili": "enye ushindani" },
-        "explanation": "wettbewerbsfähig. Capable of competing successfully.",
-        "example_de": "Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.",
-        "example_translated": "To remain competitive, we must reduce costs."
-      }
-    },
-    {
-      "id": "k1_008",
-      "word": "die Zielgruppe",
-      "notes": "Noun · §4",
-      "status": "done",
-      "data": {
-        "translations": { "English": "target group", "French": "groupe cible", "Arabic": "الفئة المستهدفة", "Persian": "مخاطبان هدف", "Spanish": "público objetivo", "Ukrainian": "цільова аудиторія", "Russian": "целевая аудитория", "Italian": "target", "Swahili": "walengwa" },
-        "explanation": "die Zielgruppe, Plural: die Zielgruppen. Specific consumer profile aimed at.",
-        "example_de": "Jugendliche zwischen 14 und 18 Jahren sind unsere primäre Zielgruppe.",
-        "example_translated": "Youths between 14 and 18 years old are our primary target group."
+      "id": "k4_001", "word": "die Schichtarbeit", "notes": "Noun · §2", "status": "done",
+      "data": { 
+        "translations": { "English": "shift work", "French": "travail posté / travail en horaires décalés", "Arabic": "عمل بنظام الورديات", "Persian": "کار شیفتی", "Spanish": "trabajo por turnos", "Ukrainian": "позмінна робота", "Russian": "сменная работа", "Italian": "lavoro a turni", "Swahili": "kazi ya zamu" }, 
+        "explanation": "Work scheduled outside standard daytime hours. Typically used in singular only (Sg.).", 
+        "example_de": "In der Industrie ist Schichtarbeit sehr verbreitet.", "example_translated": "In industry, shift work is very common.",
+        "grammar": { "type": "noun", "singular": "die Schichtarbeit", "plural": "— (Singular only)", "related": "die Schicht (noun)" }
       }
     }
   ],
@@ -362,14 +305,12 @@ let W = {
 };
 
 let USER = { name: '', nativeLang: 'English', explLang: 'English', chapter: 'all', sessionSize: 20 };
-let MASTERY = {};
-let Q = { pool: [], queue: [], idx: 0, correct: 0, wrong: 0, streak: 0, maxStreak: 0, totalPts: 0, maxPts: 0, wrongItems: [], reviewMode: false, cur: null, generating: false };
+let Q = { pool: [], queue: [], idx: 0, correct: 0, wrong: 0, streak: 0, maxStreak: 0, wrongItems: [], cur: null };
 
 function persist() {
   try {
     localStorage.setItem('vok_w', JSON.stringify({words: W.words, genLangs: W.genLangs, explLang: W.explLang}));
     localStorage.setItem('vok_u', JSON.stringify(USER));
-    localStorage.setItem('vok_m', JSON.stringify(MASTERY));
   } catch(e){}
 }
 
@@ -377,10 +318,8 @@ function loadStorage() {
   try {
     const w = localStorage.getItem('vok_w');
     const u = localStorage.getItem('vok_u');
-    const m = localStorage.getItem('vok_m');
     if (w) { const parsed = JSON.parse(w); W.words = parsed.words || W.words; }
     if (u) Object.assign(USER, JSON.parse(u));
-    if (m) MASTERY = JSON.parse(m);
     const k = localStorage.getItem('vok_key');
     if (k) document.getElementById('m-apikey').value = k;
   } catch(e){}
@@ -390,17 +329,6 @@ function saveKey() {
   const k = document.getElementById('m-apikey').value.trim();
   if (k) localStorage.setItem('vok_key', k);
 }
-const getKey = () => document.getElementById('m-apikey').value.trim() || localStorage.getItem('vok_key') || '';
-
-function saveScore(entry) {
-  try {
-    const scores = JSON.parse(localStorage.getItem('vok_scores')||'[]');
-    scores.push(entry);
-    scores.sort((a,b)=>b.pct-a.pct);
-    localStorage.setItem('vok_scores', JSON.stringify(scores.slice(0,50)));
-  } catch(e){}
-}
-const getScores = () => JSON.parse(localStorage.getItem('vok_scores')||'[]');
 
 const uid = () => Math.random().toString(36).slice(2,9);
 const getArticle = (word) => { const m = String(word||'').match(/^(die|der|das)\s+/i); return m ? m[1].toLowerCase() : null; };
@@ -446,20 +374,28 @@ function exportJSON() {
   a.download='vocab.json'; a.click(); URL.revokeObjectURL(a.href);
 }
 
-function addWord() {
-  const wEl=document.getElementById('m-word'), nEl=document.getElementById('m-notes');
-  const w=wEl.value.trim(); if(!w) return;
-  W.words.push({id:uid(),word:w,notes:nEl.value.trim(),status:'pending',data:null});
-  wEl.value=''; nEl.value=''; persist(); buildModal();
-}
-
+// THE NEW CLAUDE API PROMPT - INCLUDES DEEP GRAMMAR
 async function fetchTranslation(word, langs, explLang, key) {
   const schema = langs.map(l=>`"${l}": "translation here"`).join(', ');
-  const prompt = `You are an expert German language teacher. For the German word: "${word}"\nProvide:\n1. Translations into: ${langs.join(', ')}\n2. A clear explanation in ${explLang}\n3. One natural example sentence in German\n4. Translation of that example in ${explLang}\nRespond ONLY with valid JSON:\n{"translations":{${schema}},"explanation":"...","example_de":"...","example_translated":"..."}`;
+  const prompt = `You are an expert German language teacher. For the German word/phrase: "${word}"
+Provide ONLY valid JSON containing:
+1. "translations": into ${langs.join(', ')}
+2. "explanation": A clear explanation in ${explLang} (usage, context).
+3. "example_de": One natural example sentence in German.
+4. "example_translated": Translation of the example in ${explLang}.
+5. "grammar": An object with:
+   - "type": "noun", "verb", or "adjective"
+   - If noun: "singular" (e.g. das Essen) and "plural" (e.g. die Essen, or "—" if none)
+   - If verb: "conjugation" object mapping "ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"
+   - "related": a string mentioning a related word family member (e.g. "essen (verb)") if applicable.
+
+Example output structure:
+{"translations":{${schema}},"explanation":"...","example_de":"...","example_translated":"...","grammar":{"type":"verb","conjugation":{"ich":"...","du":"...","er/sie/es":"...","wir":"...","ihr":"...","sie/Sie":"..."},"related":"..."}}`;
+
   const res = await fetch('https://api.anthropic.com/v1/messages',{
     method:'POST',
     headers:{ 'Content-Type':'application/json', 'x-api-key':key, 'anthropic-version':'2023-06-01', 'anthropic-dangerous-direct-browser-access':'true' },
-    body:JSON.stringify({model:'claude-3-5-sonnet-20241022',max_tokens:1200, messages:[{role:'user',content:prompt}]}),
+    body:JSON.stringify({model:'claude-3-5-sonnet-20241022',max_tokens:1500, messages:[{role:'user',content:prompt}]}),
   });
   if (!res.ok) throw new Error(`API ${res.status}`);
   const json = await res.json();
@@ -505,46 +441,77 @@ function startSession() {
   USER.sessionSize = document.getElementById('pill-size').querySelector('.on')?.dataset.n || '20';
   persist();
   const pool = wordsForChapter(USER.chapter);
-  if (pool.length < 4) { alert(`Need at least 4 translated words to play. Current: ${pool.length}`); return; }
+  if (pool.length < 4) { alert(`Need at least 4 translated words to play.`); return; }
   Q.pool = pool;
   const n = USER.sessionSize==='all' ? pool.length : Math.min(parseInt(USER.sessionSize)||20, pool.length);
   Q.queue = pool.sort(()=>Math.random()-.5).slice(0,n).map(w=>w.id);
-  Q.idx = 0; Q.correct = 0; Q.wrong = 0; Q.streak = 0; Q.maxStreak = 0; Q.totalPts = 0; Q.maxPts = Q.queue.length * 3; Q.wrongItems = []; Q.reviewMode = false; Q.cur = null;
-  showScreen('screen-quiz'); loadWord();
-}
-
-function reviewWrongWords() {
-  if (!Q.wrongItems.length) { backToMenu(); return; }
-  const ids = [...new Set(Q.wrongItems.map(w=>w.id))];
-  Q.queue = ids; Q.idx = 0; Q.correct = 0; Q.wrong = 0; Q.streak = 0; Q.maxStreak = 0; Q.totalPts = 0; Q.maxPts = ids.length * 3; Q.wrongItems = []; Q.reviewMode = true;
+  Q.idx = 0; Q.correct = 0; Q.wrong = 0; Q.streak = 0; Q.maxStreak = 0; Q.wrongItems = []; Q.cur = null;
   showScreen('screen-quiz'); loadWord();
 }
 
 function replaySession() { startSession(); }
+
+function reviewWrongWords() {
+  if (!Q.wrongItems.length) { backToMenu(); return; }
+  const ids = [...new Set(Q.wrongItems.map(w=>w.id))];
+  Q.queue = ids; Q.idx = 0; Q.correct = 0; Q.wrong = 0; Q.streak = 0; Q.maxStreak = 0; Q.wrongItems = [];
+  showScreen('screen-quiz'); loadWord();
+}
 
 function loadWord() {
   try {
     if (Q.idx >= Q.queue.length) { endSession(); return; }
     const entry = W.words.find(w=>w.id===Q.queue[Q.idx]);
     if (!entry) { Q.idx++; loadWord(); return; }
+    
+    const trueArticle = getArticle(entry.word);
     const opts = buildMeaningOpts(entry, Q.pool, USER.nativeLang);
-    Q.cur = { entry, options: opts, phase: 'q', showDet: false, selectedIndex: null };
+    
+    Q.cur = { 
+      entry, 
+      trueArticle, 
+      hasArticle: !!trueArticle,
+      phase: !!trueArticle ? 'article' : 'meaning', 
+      options: opts, 
+      artSelected: null,
+      meanSelected: null,
+      showDet: false,
+      wordFailed: false
+    };
     renderQuiz();
   } catch (err) {
-    document.getElementById('qcard').innerHTML = `<div style="text-align:center; padding: 20px; color: var(--err)"><strong>App Memory Error:</strong> ${err.message}<br><button class="btn btn-outline" style="margin-top:15px" onclick="backToMenu()">Return to Menu</button></div>`;
+    document.getElementById('qcard').innerHTML = `<div style="text-align:center; padding: 20px; color: var(--err)"><strong>App Error:</strong> ${err.message}<br><button class="btn btn-outline" style="margin-top:15px" onclick="backToMenu()">Return to Menu</button></div>`;
   }
 }
 
-function selectOption(i) {
-  if (!Q.cur || Q.cur.phase !== 'q') return;
-  const opt = Q.cur.options[i];
-  Q.cur.selectedIndex = i;
-  if (opt.isCorrect) {
-    Q.cur.phase = 'ok'; Q.correct++; Q.streak++; Q.maxStreak = Math.max(Q.maxStreak, Q.streak);
+function selectArticle(guess) {
+  if (!Q.cur || Q.cur.phase !== 'article') return;
+  Q.cur.artSelected = guess;
+  
+  if (guess === Q.cur.trueArticle) {
+    Q.cur.phase = 'meaning';
   } else {
-    Q.cur.phase = 'err'; Q.wrong++; Q.streak = 0;
+    Q.cur.wordFailed = true;
+    Q.streak = 0;
+    Q.cur.phase = 'meaning';
+  }
+  renderQuiz();
+}
+
+function selectMeaning(i) {
+  if (!Q.cur || (Q.cur.phase !== 'meaning')) return;
+  const opt = Q.cur.options[i];
+  Q.cur.meanSelected = i;
+  Q.cur.phase = 'done';
+  
+  if (!opt.isCorrect) Q.cur.wordFailed = true;
+
+  if (Q.cur.wordFailed) {
+    Q.wrong++; Q.streak = 0;
     Q.wrongItems.push({ id: Q.cur.entry.id, word: Q.cur.entry.word, correctMeaning: Q.cur.options.find(o=>o.isCorrect)?.txt || '—' });
-    Q.queue.push(Q.queue[Q.idx]);
+    Q.queue.push(Q.queue[Q.idx]); // Re-add to queue
+  } else {
+    Q.correct++; Q.streak++; Q.maxStreak = Math.max(Q.maxStreak, Q.streak);
   }
   renderQuiz();
 }
@@ -553,7 +520,6 @@ const nextWord = () => { Q.idx++; loadWord(); };
 
 function endSession() {
   const pct = (Q.correct + Q.wrong) ? Math.round(Q.correct / (Q.correct + Q.wrong) * 100) : 0;
-  saveScore({ name: USER.name, score: Q.correct, maxPts: Q.queue.length, pct, correct: Q.correct, wrong: Q.wrong, streak: Q.maxStreak, chapter: USER.chapter==='all'?'All chapters':`Kapitel ${USER.chapter}`, n: Q.queue.length, date: new Date().toLocaleDateString() });
   renderSummary(pct); showScreen('screen-summary');
 }
 const confirmExit = () => { if (confirm('Exit to menu?')) backToMenu(); };
@@ -566,7 +532,7 @@ function renderQuiz() {
   if (!Q.cur) return;
   
   try {
-    const { entry, options, phase, showDet, selectedIndex } = Q.cur;
+    const { entry, phase, options, showDet, trueArticle, artSelected, meanSelected } = Q.cur;
 
     document.getElementById('qh-ok').textContent = `${Q.correct} ✓`;
     document.getElementById('qh-err').textContent = `${Q.wrong} ✗`;
@@ -575,43 +541,66 @@ function renderQuiz() {
     if (Q.streak >= 3) { sb.textContent = `🔥 ${Q.streak}`; sb.style.display=''; } else sb.style.display='none';
     document.getElementById('prog-fill').style.width = `${Math.round(Q.idx / Q.queue.length * 100)}%`;
 
-    const keys = ['A','B','C','D'];
-    const optsHTML = options.map((opt, i) => {
-      let cls = 'opt';
-      if (phase !== 'q') {
-        if (opt.isCorrect) cls += ' correct';
-        else if (i === selectedIndex) cls += ' wrong';
+    let artHTML = '';
+    if (Q.cur.hasArticle) {
+      if (phase === 'article') {
+        artHTML = `
+          <p class="phase-lbl anim-slide">Select the correct article</p>
+          <div class="art-grid anim-slide">
+            ${ARTICLES.map(a => `<button class="art-btn" onclick="selectArticle('${a}')">${a}</button>`).join('')}
+          </div>`;
+      } else {
+        const color = (artSelected === trueArticle) ? 'var(--ok)' : 'var(--err)';
+        artHTML = `<div style="text-align:center; font-family:var(--mono); font-size:22px; color:${color}; font-weight:bold; margin-bottom:15px;" class="anim-slide">${trueArticle}</div>`;
       }
-      const art = getArticle(entry.word);
-      const artSpan = (opt.isCorrect && art && phase !== 'q') ? `<span class="opt-art">${h(art)}</span>` : '';
-      return `<button class="${cls}" onclick="selectOption(${i})" ${phase!=='q'?'disabled':''}>
-        <span class="opt-key">${keys[i]}</span>
-        ${artSpan}
-        <span class="opt-txt">${h(opt.txt)}</span>
-      </button>`;
-    }).join('');
-
-    let fbHTML = '';
-    if (phase === 'ok') fbHTML = `<p class="feedback fb-ok">✓ Richtig! Well done.</p>`;
-    if (phase === 'err') {
-      const correctOpt = options.find(o=>o.isCorrect);
-      const art = getArticle(entry.word);
-      const artStr = art ? `${art} · ` : '';
-      fbHTML = `<p class="feedback fb-err">✗ Not quite — the answer was: <strong>${artStr}${h(correctOpt.txt)}</strong></p>`;
     }
 
-    const nextHTML = (phase !== 'q') ? `<button class="next-btn" onclick="nextWord()">Next word →</button>` : '';
+    let meanHTML = '';
+    if (phase === 'meaning' || phase === 'done') {
+      const keys = ['A','B','C','D'];
+      const optsHTML = options.map((opt, i) => {
+        let cls = 'opt';
+        if (phase === 'done') {
+          if (opt.isCorrect) cls += ' correct';
+          else if (i === meanSelected) cls += ' wrong';
+        }
+        return `<button class="${cls} anim-slide" style="animation-delay: ${i*0.1}s" onclick="selectMeaning(${i})" ${phase==='done'?'disabled':''}>
+          <span class="opt-key">${keys[i]}</span>
+          <span class="opt-txt">${h(opt.txt)}</span>
+        </button>`;
+      }).join('');
+      
+      meanHTML = `
+        <p class="phase-lbl anim-slide" style="margin-top:20px;">What does it mean?</p>
+        <div class="opt-list">${optsHTML}</div>
+      `;
+    }
+
+    let fbHTML = '';
+    let nextHTML = '';
+    if (phase === 'done') {
+      if (Q.cur.wordFailed) {
+        fbHTML = `<p class="feedback fb-err anim-slide">✗ Das war nicht ganz richtig.</p>`;
+      } else {
+        fbHTML = `<p class="feedback fb-ok anim-slide">✓ Richtig!</p>`;
+      }
+      nextHTML = `<button class="next-btn anim-slide" onclick="nextWord()">Next word →</button>`;
+    }
+
     const explHTML = (showDet && entry.data) ? buildExplPanel(entry) : '';
+    const explBtnHTML = (phase === 'done') ? `<button class="expl-btn anim-slide" onclick="toggleExpl()">📖 ${showDet?'Hide Grammar & Context':'View Grammar & Context'}</button>` : '';
 
     card.innerHTML = `
-      <div class="word-area">
+      <div class="word-area anim-slide">
+        ${artHTML && phase !== 'article' ? artHTML : ''}
         <div class="word-main">${h(getBase(entry.word))}</div>
         ${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}
       </div>
-      <div class="opt-list">${optsHTML}</div>
+      ${phase === 'article' ? artHTML : ''}
+      ${meanHTML}
       ${fbHTML}
       ${nextHTML}
-      <button class="expl-btn" onclick="toggleExpl()">📖 ${showDet?'Hide':'Explanation, grammar & links'}</button>
+      ${explBtnHTML}
       ${explHTML}
     `;
   } catch(err) {
@@ -623,8 +612,62 @@ const toggleExpl = () => { Q.cur.showDet = !Q.cur.showDet; renderQuiz(); };
 
 function buildExplPanel(entry) {
   const d = entry.data; if (!d) return '';
-  const transHTML = W.genLangs.map(lang=>{ const val = d.translations?.[lang]; return val ? `<div class="tr-row"><span class="tr-lang">${h(lang)}</span><span class="tr-val ${RTL.has(lang)?'rtl':''}">${h(val)}</span></div>` : ''; }).join('');
-  return `<div class="expl-panel"><div class="expl-section"><span class="lbl">Grammar & Context</span><p class="expl-txt">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}"</p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">All Translations</span><div class="trans-grid">${transHTML}</div></div><div class="expl-section"><span class="lbl">Dictionaries</span><div class="link-row">${extLinks(entry.word).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
+  const g = d.grammar;
+  
+  // 1. Single Translation Display (Focused on User's Language)
+  const userLang = USER.nativeLang;
+  const userTranslation = d.translations?.[userLang] || 'Translation not available';
+  
+  // 2. Build Grammar Block dynamically based on Noun / Verb
+  let grammarHTML = '';
+  if (g) {
+    if (g.type === 'noun') {
+      grammarHTML = `
+        <div class="grammar-box">
+          <div class="grammar-grid">
+            <div><span>Singular</span><span>${h(g.singular||'')}</span></div>
+            <div><span>Plural</span><span>${h(g.plural||'')}</span></div>
+          </div>
+          ${g.related ? `<div style="margin-top:8px; font-size:12px; color:var(--dim)">Related: ${h(g.related)}</div>` : ''}
+        </div>`;
+    } else if (g.type === 'verb' && g.conjugation) {
+      grammarHTML = `
+        <div class="grammar-box">
+          <div class="grammar-grid">
+            <div><span>ich</span><span>${h(g.conjugation.ich||'')}</span></div>
+            <div><span>wir</span><span>${h(g.conjugation.wir||'')}</span></div>
+            <div><span>du</span><span>${h(g.conjugation.du||'')}</span></div>
+            <div><span>ihr</span><span>${h(g.conjugation.ihr||'')}</span></div>
+            <div><span>er/sie/es</span><span>${h(g.conjugation['er/sie/es']||'')}</span></div>
+            <div><span>sie/Sie</span><span>${h(g.conjugation['sie/Sie']||'')}</span></div>
+          </div>
+          ${g.related ? `<div style="margin-top:8px; font-size:12px; color:var(--dim)">Related: ${h(g.related)}</div>` : ''}
+        </div>`;
+    } else if (g.related) {
+      grammarHTML = `<div class="grammar-box" style="font-size:13px; color:var(--text);">Related: ${h(g.related)}</div>`;
+    }
+  }
+
+  return `<div class="expl-panel anim-slide">
+    <div class="expl-section" style="text-align:center; padding-bottom:10px;">
+      <span class="lbl">Translation (${userLang})</span>
+      <div style="font-family:var(--serif); font-size:22px; color:var(--gold);">${h(userTranslation)}</div>
+    </div>
+    <div class="expl-section">
+      <span class="lbl">Grammar & Structure</span>
+      ${grammarHTML}
+      <p class="expl-txt" style="margin-top:10px;">${h(d.explanation)}</p>
+    </div>
+    <div class="expl-section">
+      <span class="lbl">Example Sentence</span>
+      <p class="expl-ex-de">„${h(d.example_de)}"</p>
+      <p class="expl-ex-tr">${h(d.example_translated||'')}</p>
+    </div>
+    <div class="expl-section">
+      <span class="lbl">External Dictionaries</span>
+      <div class="link-row">${extLinks(entry.word, userLang).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div>
+    </div>
+  </div>`;
 }
 
 function renderSummary(pct) {
@@ -644,12 +687,6 @@ function renderSummary(pct) {
   }
 }
 
-function showLeaderboard() {
-  const scores = getScores().slice(0,10); const lb = document.getElementById('lb-content');
-  lb.innerHTML = scores.length ? scores.map((s,i)=>`<div class="lb-row"><span class="lb-rank">#${i+1}</span><span class="lb-name">${h(s.name)}</span><span class="lb-pct">${s.pct}%</span><span class="lb-meta">${s.chapter} · ${s.n} words</span></div>`).join('') : '<p style="color:var(--dim);text-align:center;padding:16px">No highscores recorded yet!</p>';
-  document.getElementById('lb-modal').style.display='flex';
-}
-
 function buildOnboarding() {
   ['sel-native','sel-expl'].forEach((id,k)=>{
     document.getElementById(id).innerHTML = LANGS.map(l=>`<option value="${l}" ${l===(k===0?USER.nativeLang:USER.explLang)?'selected':''}>${l}</option>`).join('');
@@ -657,7 +694,7 @@ function buildOnboarding() {
   const chapters = detectChapters(W.words);
   document.getElementById('sel-chapter').innerHTML = `<option value="all">All Chapters (${W.words.filter(w=>w.status==='done').length} loaded)</option>` + chapters.map(c=>`<option value="${c}" ${USER.chapter===c?'selected':''}>Kapitel ${c} (${W.words.filter(w=>w.status==='done'&&getChapter(w)===c).length} ready)</option>`).join('');
   const done = W.words.filter(w=>w.status==='done').length;
-  document.getElementById('ob-info').innerHTML = W.words.length===0 ? '<span style="color:var(--err)">No vocabulary file detected.</span>' : (done<4 ? '<span style="color:var(--warn)">Translation indexing required. Open word management pipeline.</span>' : `<span style="color:var(--ok)">✓ ${done} words localized and prepared</span>`);
+  document.getElementById('ob-info').innerHTML = W.words.length===0 ? '<span style="color:var(--err)">No vocabulary file detected.</span>' : (done<4 ? '<span style="color:var(--warn)">Translation indexing required. Open dictionary.</span>' : `<span style="color:var(--ok)">✓ ${done} words processed</span>`);
   document.getElementById('btn-start').disabled = done < 4;
 }
 
@@ -669,8 +706,7 @@ function buildModal() {
     chips.appendChild(c);
   });
   const done = W.words.filter(w=>w.status==='done').length;
-  document.getElementById('m-stats').innerHTML = `${done} compiled / ${W.words.length - done} variables pending`;
-  document.getElementById('m-gen-btn').disabled = Q.generating || (W.words.length - done)===0;
+  document.getElementById('m-stats').innerHTML = `${done} ready / ${W.words.length - done} pending`;
 }
 
 function openSettings() { buildModal(); document.getElementById('modal-bg').classList.add('on'); }
@@ -683,18 +719,8 @@ document.getElementById('pill-size').addEventListener('click', e=>{
   USER.sessionSize = p.dataset.n; persist();
 });
 
-document.addEventListener('keydown', e => {
-  if (document.getElementById('modal-bg').classList.contains('on')) return;
-  const map = { a:0, b:1, c:2, d:3, '1':0, '2':1, '3':2, '4':3 };
-  const i   = map[e.key.toLowerCase()];
-  if (i !== undefined && Q.cur?.phase === 'q') selectOption(i);
-  if ((e.key==='Enter' || e.key===' ') && Q.cur?.phase !== 'q') {
-    e.preventDefault(); nextWord();
-  }
-});
-
 loadStorage(); buildOnboarding();
-fetch('./vocab.json').then(r=>r.json()).then(data=>{ if(W.words.length===0) importData(data); }).catch(()=>{});
+fetch('./vocab.json').then(r=>r.json()).then(data=>{ if(W.words.length<=5) importData(data); }).catch(()=>{});
 </script>
 </body>
 </html>
