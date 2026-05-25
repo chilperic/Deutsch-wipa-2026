@@ -1,751 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vokabular · German Vocabulary Trainer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:    #080808;  --bg2:   #111111;  --bg3:   #1a1a1a;
-      --bdr:   #2a2a2a;  --gold:  #c9a84c;  --gold2: #8a6f30;
-      --text:  #e8e0d0;  --dim:   #7a7060;  --muted: #4a4540;
-      --dead:  #2a2520;  --red:   #c0392b;  --green: #27ae60;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --mono:  'JetBrains Mono', monospace;
-    }
-
-    body { background:var(--bg); color:var(--text); font-family:var(--serif); font-size:17px; min-height:100vh; }
-
-    /* ── Layout ─────────────────────────────────── */
-    #app   { display:flex; flex-direction:column; height:100vh; }
-    header { flex-shrink:0; display:flex; align-items:center; justify-content:space-between;
-             padding:15px 26px; border-bottom:1px solid var(--bdr); background:var(--bg); position:sticky; top:0; z-index:50; }
-    .title    { font-family:var(--serif); font-size:25px; color:var(--gold); font-weight:400; letter-spacing:.02em; }
-    .subtitle { color:var(--muted); font-style:italic; font-size:17px; }
-
-    #stats-bar { flex-shrink:0; display:flex; gap:22px; padding:9px 26px;
-                 border-bottom:1px solid var(--bdr); background:var(--bg2);
-                 font-family:var(--mono); font-size:11px; color:var(--muted); }
-    .stat strong { color:var(--gold); margin-right:4px; }
-
-    .layout { display:flex; flex:1; min-height:0; }
-
-    /* ── Sidebar ────────────────────────────────── */
-    #sidebar { width:260px; flex-shrink:0; background:var(--bg2);
-               border-right:1px solid var(--bdr); overflow-y:auto;
-               padding:18px 15px; display:flex; flex-direction:column; gap:20px; }
-
-    .s-label { font-family:var(--mono); font-size:10px; letter-spacing:.15em;
-               text-transform:uppercase; color:var(--gold); margin-bottom:7px; display:block; }
-
-    input[type="text"], input[type="password"] {
-      width:100%; background:var(--bg3); border:1px solid var(--bdr); color:var(--text);
-      padding:7px 10px; font-family:var(--serif); font-size:15px;
-      border-radius:3px; outline:none; transition:border-color .15s; }
-    input:focus { border-color:var(--gold2); }
-    input::placeholder { color:var(--dead); }
-
-    .btn { font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
-           border:none; cursor:pointer; border-radius:3px; padding:8px 14px; transition:all .15s; }
-    .btn-gold    { background:var(--gold); color:#1a1200; }
-    .btn-gold:hover { filter:brightness(1.1); }
-    .btn-gold:disabled { background:var(--gold2); cursor:not-allowed; opacity:.6; }
-    .btn-outline { background:transparent; color:var(--dim); border:1px solid var(--bdr); }
-    .btn-outline:hover { border-color:var(--gold2); color:var(--text); }
-    .btn-block   { display:block; width:100%; }
-
-    .lang-grid  { display:flex; flex-wrap:wrap; gap:5px; }
-    .lang-chip  { font-family:var(--mono); font-size:10px; padding:3px 9px; border-radius:20px;
-                  border:1px solid var(--bdr); cursor:pointer; user-select:none;
-                  background:var(--bg3); color:var(--dim); transition:all .15s; }
-    .lang-chip.on { background:var(--gold); color:#1a1200; border-color:var(--gold); }
-
-    .radio-list label { display:flex; align-items:center; gap:8px; cursor:pointer; font-size:14px; margin-bottom:5px; }
-    .radio-list input { accent-color:var(--gold); cursor:pointer; }
-
-    /* ── Content ────────────────────────────────── */
-    #content { flex:1; overflow-y:auto; padding:26px; }
-
-    .mode-toggle { display:flex; border:1px solid var(--bdr); border-radius:3px; overflow:hidden; }
-    .mode-btn    { background:none; border:none; cursor:pointer; font-family:var(--mono); font-size:11px;
-                   letter-spacing:.1em; text-transform:uppercase; padding:7px 14px; color:var(--dim); transition:all .15s; }
-    .mode-btn.on { background:var(--gold); color:#1a1200; }
-
-    /* ── Flashcard ──────────────────────────────── */
-    .fc-nav   { display:flex; align-items:center; justify-content:center; gap:20px; margin-bottom:22px; }
-    .fc-arrow { background:none; border:1px solid var(--bdr); color:var(--dim); font-size:22px;
-                width:40px; height:40px; border-radius:50%; cursor:pointer; transition:all .15s;
-                display:flex; align-items:center; justify-content:center; }
-    .fc-arrow:hover { border-color:var(--gold); color:var(--gold); }
-    .fc-ctr   { font-family:var(--mono); font-size:12px; color:var(--muted); min-width:60px; text-align:center; }
-
-    .fc-scene { perspective:1200px; width:100%; max-width:540px; height:340px; margin:0 auto; cursor:pointer; }
-    .fc-card  { width:100%; height:100%; position:relative; transform-style:preserve-3d;
-                transition:transform .52s cubic-bezier(.4,0,.2,1); }
-    .fc-card.flipped { transform:rotateY(180deg); }
-    .fc-face  { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
-                background:var(--bg2); border:1px solid var(--bdr); border-radius:8px;
-                padding:28px 34px; display:flex; flex-direction:column; }
-    .fc-front { border-top:3px solid var(--gold); align-items:center; justify-content:center; gap:10px; }
-    .fc-back  { border-top:3px solid var(--gold2); transform:rotateY(180deg); gap:7px; overflow:hidden; }
-
-    .fc-badge { font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
-    .fc-word  { font-family:var(--serif); font-size:40px; color:var(--text); text-align:center; line-height:1.2; }
-    .fc-notes { font-size:13px; color:var(--dim); font-style:italic; }
-    .fc-hint  { font-family:var(--mono); font-size:10px; color:var(--dead); margin-top:8px; }
-
-    .trans-list { flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:5px; }
-    .trans-row  { display:flex; gap:12px; align-items:baseline; }
-    .trans-lang { font-family:var(--mono); font-size:10px; color:var(--gold2); min-width:82px;
-                  text-transform:uppercase; letter-spacing:.08em; flex-shrink:0; }
-    .trans-txt  { font-size:16px; color:var(--text); }
-    .rtl        { direction:rtl; text-align:right; }
-
-    .fc-ex    { border-top:1px solid var(--bdr); padding-top:9px; margin-top:4px; }
-    .fc-ex-de { font-style:italic; color:var(--dim); font-size:14px; }
-    .fc-ex-tr { color:var(--muted); font-size:13px; margin-top:2px; }
-
-    .dots     { display:flex; justify-content:center; flex-wrap:wrap; gap:5px; margin-top:16px; }
-    .dot      { width:8px; height:8px; border-radius:50%; background:var(--bdr); cursor:pointer; transition:all .15s; }
-    .dot.active  { background:var(--gold); transform:scale(1.4); }
-    .dot.done    { background:var(--green); }
-    .dot.loading { background:var(--gold2); }
-    .dot.error   { background:var(--red); }
-
-    /* ── Table ──────────────────────────────────── */
-    .vtable    { width:100%; border-collapse:collapse; font-size:15px; }
-    .vtable th { font-family:var(--mono); font-size:9px; letter-spacing:.15em; text-transform:uppercase;
-                 color:var(--gold); padding:9px 12px; border-bottom:1px solid var(--bdr); text-align:left; white-space:nowrap; }
-    .vtable td { padding:8px 12px; border-bottom:1px solid var(--bdr); vertical-align:middle; }
-    .vtable tr:hover td { background:var(--bg2); }
-    .td-word   { cursor:pointer; }
-    .w-main    { font-family:var(--serif); font-size:18px; color:var(--text); }
-    .w-note    { font-size:12px; color:var(--muted); font-style:italic; margin-left:6px; }
-    .td-tr     { color:var(--dim); }
-    .cell-load { color:var(--gold2); font-family:var(--mono); font-size:11px; }
-    .cell-err  { color:var(--red); }
-
-    .exrow td  { padding:0; }
-    .exbox     { padding:13px 18px; background:var(--bg3);
-                 border-bottom:1px solid var(--bdr); border-left:3px solid var(--gold2); }
-    .exbox-txt { font-size:15px; line-height:1.75; color:var(--dim); }
-    .exbox-ex  { margin-top:9px; font-size:14px; color:var(--muted); }
-    .ex-pre    { font-family:var(--mono); font-size:9px; color:var(--gold2); margin-right:8px;
-                 text-transform:uppercase; letter-spacing:.1em; }
-
-    /* ── Misc ───────────────────────────────────── */
-    .empty    { text-align:center; padding:80px 20px; color:var(--muted); }
-    .empty h3 { font-family:var(--serif); font-size:26px; color:var(--dim); margin-bottom:10px; font-weight:400; }
-    .tip      { font-size:11px; color:var(--dead); margin-top:7px; line-height:1.6; }
-    a         { color:var(--gold2); }
-
-    @keyframes blink { 0%,100%{opacity:.2} 50%{opacity:1} }
-    .blink span { animation:blink 1.2s infinite; }
-    .blink span:nth-child(2){animation-delay:.2s}
-    .blink span:nth-child(3){animation-delay:.4s}
-
-    #file-input { display:none; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vokabular · Deutsch lernen</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{  
+  --bg:#08080a; --s1:#111115; --s2:#17171c; --s3:#1e1e25;  
+  --bdr:#28282f; --bdr2:#333340;  
+  --gold:#c9a84c; --gold2:#8a6f30; --gold3:#f0c96a;  
+  --text:#e8e0d0; --dim:#7a7268; --muted:#4a4840; --dead:#2a2820;  
+  --ok:#2ecc71; --ok2:#1a8a4a; --ok-bg:rgba(46,204,113,.1);  
+  --err:#e74c3c; --err2:#a33; --err-bg:rgba(231,76,60,.1);  
+  --warn:#e67e22; --info:#3498db;  
+  --serif:'Cormorant Garamond',Georgia,serif;  
+  --body:'Crimson Pro',Georgia,serif;  
+  --mono:'JetBrains Mono',monospace;  
+  --r:6px;
+}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px}
+.screen{display:none;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px}
+.screen.on{display:flex}
+.logo{font-family:var(--serif);font-size:32px;color:var(--gold);font-weight:400;letter-spacing:.02em; text-align: center;}
+.tagline{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.2em;text-transform:uppercase;margin-top:4px; text-align: center;}
+.lbl{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px;display:block}
+.card{background:var(--s1);border:1px solid var(--bdr);border-radius:10px;padding:28px;width:100%;max-width:480px}
+.card-gold{border-top:3px solid var(--gold)}
+input[type=text],input[type=password],select{  
+  width:100%;background:var(--s2);border:1px solid var(--bdr);color:var(--text);  
+  padding:9px 12px;font-family:var(--body);font-size:16px;border-radius:var(--r); outline:none;
+}
+input:focus,select:focus{border-color:var(--gold2)}
+.btn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;border-radius:var(--r);padding:10px 18px;transition:all .15s}
+.btn-gold{background:var(--gold);color:#1a1200}.btn-gold:hover{filter:brightness(1.1)}.btn-gold:disabled{background:var(--gold2);opacity:.5;cursor:not-allowed}
+.btn-outline{background:transparent;color:var(--dim);border:1px solid var(--bdr)}.btn-outline:hover{border-color:var(--gold2);color:var(--text)}
+.btn-block{display:block;width:100%}.btn-row{display:flex;gap:8px}
+.pill-grp{display:flex;gap:6px;flex-wrap:wrap}.pill{font-family:var(--mono);font-size:11px;padding:6px 14px;border-radius:20px;border:1px solid var(--bdr);cursor:pointer;color:var(--dim);background:var(--s2)}.pill.on{background:var(--gold);color:#1a1200;border-color:var(--gold)}
+#prog-track{position:fixed;top:0;left:0;right:0;height:3px;background:var(--bdr);z-index:200}#prog-fill{height:100%;background:var(--gold);transition:width .4s ease;width:0}
+#quiz-header{position:sticky;top:0;z-index:100;width:100%;display:flex;align-items:center;justify-content:space-between;padding:11px 20px;background:var(--bg);border-bottom:1px solid var(--bdr)}
+.qh-score{display:flex;gap:14px;font-family:var(--mono);font-size:12px}.qh-right{display:flex;gap:8px;align-items:center}
+.streak-badge{font-family:var(--mono);font-size:12px;color:var(--warn);padding:3px 9px;border:1px solid rgba(230,126,34,.3);border-radius:20px}
+.icon-btn{background:none;border:1px solid var(--bdr);color:var(--dim);width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#quiz-body{flex:1;display:flex;align-items:center;justify-content:center;padding:16px;width:100%}
+.qcard{width:100%;max-width:600px;display:flex;flex-direction:column;gap:0}
+.word-area{text-align:center;padding:24px 12px 20px}
+.word-article{font-family:var(--mono);font-size:20px;color:var(--gold);font-weight:500;min-height:28px}
+.word-base{font-family:var(--serif);font-style:italic;font-size:clamp(38px,7vw,62px);color:var(--text);line-height:1.1}
+.word-note{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;letter-spacing:.1em;text-transform:uppercase}
+.phase-lbl{font-family:var(--mono);font-size:10px;color:var(--gold2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;text-align:center}
+.art-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;padding:0 4px}
+.art-btn{padding:16px 8px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:18px;color:var(--text);text-align:center}
+.art-btn.correct{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.art-btn.wrong{background:var(--err-bg);border-color:var(--err);color:var(--err)}
+.opt-list{display:flex;flex-direction:column;gap:8px;padding:0 4px}
+.opt{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--s2);border:1px solid var(--bdr);border-radius:var(--r);cursor:pointer;text-align:left;width:100%;font-family:var(--body);font-size:17px;color:var(--text)}
+.opt.correct{background:var(--ok-bg);border-color:var(--ok)}.opt.wrong{background:var(--err-bg);border-color:var(--err)}
+.opt-key{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:16px}
+.feedback{text-align:center;padding:12px 16px 4px;font-family:var(--mono);font-size:12px;min-height:36px}
+.fb-ok{color:var(--ok)} .fb-err{color:var(--err)}
+.pts-badge{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:20px;margin-left:8px}
+.pts-ok{background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok2)}
+.pts-part{background:rgba(230,126,34,.1);color:var(--warn);border:1px solid var(--warn)}
+.act-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.next-btn{flex:1;padding:13px;background:var(--gold);color:#1a1200;border:none;border-radius:var(--r);font-family:var(--mono);font-size:12px;text-transform:uppercase;cursor:pointer}
+.expl-btn{padding:13px 18px;background:transparent;border:1px solid var(--bdr);color:var(--dim);border-radius:var(--r);cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase}
+.expl-panel{margin-top:10px;background:var(--s1);border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden}
+.expl-section{padding:16px 18px;border-bottom:1px solid var(--bdr)}
+.expl-txt{font-size:15px;line-height:1.75;color:var(--dim)}
+.expl-ex-de{font-style:italic;color:var(--dim);font-size:15px}
+.expl-ex-tr{color:var(--muted);font-size:14px;margin-top:3px}
+.trans-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:5px}
+.tr-row{display:flex;gap:8px;align-items:baseline}
+.tr-lang{font-family:var(--mono);font-size:9px;color:var(--gold2);min-width:74px;text-transform:uppercase}
+.tr-val{font-size:14px;color:var(--text)}.rtl{direction:rtl;text-align:right}
+.link-row{display:flex;flex-wrap:wrap;gap:7px}
+.dlink{font-family:var(--mono);font-size:10px;padding:5px 12px;border:1px solid var(--bdr);border-radius:20px;color:var(--dim);text-decoration:none}
+.dlink:hover{border-color:var(--gold2);color:var(--gold)}
+.sum-hero{text-align:center;padding:24px 0 16px}.sum-score{font-family:var(--serif);font-size:72px;color:var(--gold);font-weight:300;line-height:1}.sum-pct{font-family:var(--mono);font-size:14px;color:var(--dim);margin-top:6px}.sum-name{font-family:var(--serif);font-size:22px;color:var(--text);margin-bottom:4px}
+.stat-chips{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:12px 0}
+.stat-chip{font-family:var(--mono);font-size:11px;padding:6px 14px;border-radius:20px;border:1px solid var(--bdr);color:var(--dim)}
+.stat-chip span{color:var(--gold);margin-right:4px}
+.wrong-list{display:flex;flex-direction:column;gap:6px;max-height:220px;overflow-y:auto}
+.wrong-item{display:flex;justify-content:space-between;align-items:baseline;padding:7px 12px;background:var(--s2);border-radius:4px;font-size:15px}
+.wrong-de{color:var(--text);font-family:var(--serif);font-style:italic}.wrong-tr{color:var(--dim);font-size:14px}
+.lb-row{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid var(--bdr)}
+.lb-rank{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:24px}.lb-name{flex:1;font-size:16px}.lb-pct{font-family:var(--mono);font-size:12px;color:var(--gold)}.lb-meta{font-family:var(--mono);font-size:10px;color:var(--muted)}
+#modal-bg, #lb-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:300;align-items:center;justify-content:center;padding:16px}
+#modal-bg.on{display:flex}
+.modal{background:var(--s1);border:1px solid var(--bdr);border-radius:10px;width:100%;max-width:500px;max-height:88vh;overflow-y:auto;padding:26px;display:flex;flex-direction:column;gap:16px}
+.modal-hdr{display:flex;align-items:center;justify-content:space-between}.modal-ttl{font-family:var(--serif);font-size:22px}
+.gen-prog{font-family:var(--mono);font-size:11px;color:var(--gold2);margin-top:7px}
+hr{border:none;border-top:1px solid var(--bdr)}
+.gap{display:flex;flex-direction:column;gap:10px}
+.tip{font-size:12px;color:var(--muted);line-height:1.6;margin-top:5px}
+.tip a{color:var(--gold2)}
+.mastered-badge{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:10px;background:rgba(46,204,113,.1);color:var(--ok);border:1px solid var(--ok2);margin-left:8px}
+#file-input{display:none}
+@keyframes blink{0%,100%{opacity:.2}50%{opacity:1}}.blink span{animation:blink 1.2s infinite}.blink span:nth-child(2){animation-delay:.2s}.blink span:nth-child(3){animation-delay:.4s}
+</style>
 </head>
 <body>
-<div id="app">
 
-  <!-- ── Header ──────────────────────────────────────────── -->
-  <header>
-    <div>
-      <span class="title">Vokabular</span>
-      <span class="subtitle"> · German Vocabulary Trainer</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:center">
-      <div class="mode-toggle">
-        <button class="mode-btn on" id="btn-flash" onclick="setMode('flashcard')">Flashcards</button>
-        <button class="mode-btn"   id="btn-table" onclick="setMode('table')">Tabelle</button>
-      </div>
-      <button class="btn btn-outline" onclick="exportJSON()">↓ Export JSON</button>
-    </div>
-  </header>
+<div id="prog-track"><div id="prog-fill"></div></div>
 
-  <!-- ── Stats bar ───────────────────────────────────────── -->
-  <div id="stats-bar">
-    <span class="stat"><strong id="s-total">0</strong>words</span>
-    <span class="stat"><strong id="s-done">0</strong>translated</span>
-    <span class="stat"><strong id="s-pending">0</strong>pending</span>
-    <span class="stat"><strong id="s-langs">0</strong>languages</span>
+<div class="screen on" id="screen-onboard">
+<div class="card card-gold">
+  <div style="margin-bottom:24px">
+    <div class="logo">Vokabular</div>
+    <div class="tagline">Deutsch lernen · Vocabulary Game</div>
   </div>
-
-  <div class="layout">
-
-    <!-- ── Sidebar ─────────────────────────────────────────── -->
-    <aside id="sidebar">
-
-      <!-- API key -->
-      <div>
-        <span class="s-label">Anthropic API Key</span>
-        <input type="password" id="api-key-input" placeholder="sk-ant-…" oninput="saveKey()">
-        <p class="tip">
-          Stored only in your browser — never in GitHub.<br>
-          Get a free key at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>
-        </p>
+  <div class="gap">
+    <div>
+      <span class="lbl">Your name</span>
+      <input type="text" id="inp-name" placeholder="Enter your name" maxlength="30">
+    </div>
+    <div>
+      <span class="lbl">I speak / Quiz language</span>
+      <select id="sel-native"></select>
+    </div>
+    <div>
+      <span class="lbl">Explanations in</span>
+      <select id="sel-expl"></select>
+    </div>
+    <div>
+      <span class="lbl">Chapter</span>
+      <select id="sel-chapter"></select>
+    </div>
+    <div>
+      <span class="lbl">Words per session</span>
+      <div class="pill-grp" id="pill-size">
+        <span class="pill" data-n="10">10</span>
+        <span class="pill on" data-n="20">20</span>
+        <span class="pill" data-n="30">30</span>
+        <span class="pill" data-n="50">50</span>
+        <span class="pill" data-n="all">All</span>
       </div>
+    </div>
+    <p class="tip" id="ob-info" style="text-align:center"></p>
+    <button class="btn btn-gold btn-block" id="btn-start" onclick="startSession()" style="padding:14px;font-size:12px;margin-top:6px">▶ Start Quiz</button>
+    <hr>
+    <div class="btn-row">
+      <button class="btn btn-outline" style="flex:1" onclick="openSettings()">⚙ Manage words</button>
+      <button class="btn btn-outline" style="flex:1" onclick="showLeaderboard()">🏆 Leaderboard</button>
+    </div>
+  </div>
+</div>
+</div>
 
-      <!-- Add word -->
-      <div>
-        <span class="s-label">Add Word</span>
-        <div style="display:flex;flex-direction:column;gap:7px">
-          <input type="text" id="new-word"  placeholder="German word or phrase">
-          <input type="text" id="new-notes" placeholder="Notes — optional">
-          <button class="btn btn-gold btn-block" onclick="addWord()">+ Add</button>
-        </div>
-      </div>
-
-      <!-- Generate -->
-      <div>
-        <span class="s-label">Generate Translations</span>
-        <button class="btn btn-gold btn-block" id="btn-gen" onclick="generateAll()">Generate pending</button>
-        <p id="gen-prog" class="tip blink" style="display:none"></p>
-      </div>
-
-      <!-- Target languages -->
-      <div>
-        <span class="s-label">Target Languages</span>
-        <div class="lang-grid" id="lang-chips"></div>
-      </div>
-
-      <!-- Explanation language -->
-      <div>
-        <span class="s-label">Explanation In</span>
-        <div class="radio-list" id="expl-radios"></div>
-      </div>
-
-      <!-- Import/Export -->
-      <div>
-        <span class="s-label">Import</span>
-        <button class="btn btn-outline btn-block" onclick="document.getElementById('file-input').click()">↑ Import JSON</button>
-        <input type="file" id="file-input" accept=".json" onchange="importFile(event)">
-        <p class="tip">Import a JSON word list.<br>Previously exported files keep their translations.</p>
-      </div>
-
-    </aside>
-
-    <!-- ── Main content ───────────────────────────────────── -->
-    <main id="content"></main>
-
+<div class="screen" id="screen-quiz" style="padding:0;justify-content:flex-start">
+  <div id="quiz-header">
+    <div class="qh-score">
+      <span style="color:var(--ok)" id="qh-ok">0 ✓</span>
+      <span style="color:var(--err)" id="qh-err">0 ✗</span>
+      <span style="color:var(--muted)" id="qh-left"></span>
+    </div>
+    <div class="qh-right">
+      <span class="streak-badge" id="streak-badge" style="display:none"></span>
+      <button class="icon-btn" onclick="openSettings()">⚙</button>
+      <button class="icon-btn" onclick="confirmExit()">✕</button>
+    </div>
+  </div>
+  <div id="quiz-body">
+    <div class="qcard" id="qcard"></div>
   </div>
 </div>
 
+<div class="screen" id="screen-summary">
+<div class="card card-gold" style="max-width:560px;width:100%">
+  <div class="sum-hero">
+    <div class="sum-name" id="sum-name"></div>
+    <div class="sum-score" id="sum-score"></div>
+    <div class="sum-pct" id="sum-pct"></div>
+  </div>
+  <div class="stat-chips" id="sum-chips"></div>
+  <div id="sum-wrong-section" style="margin-top:8px">
+    <span class="lbl">Words to review</span>
+    <div class="wrong-list" id="sum-wrong-list"></div>
+  </div>
+  <div class="btn-row" style="margin-top:18px">
+    <button class="btn btn-gold" style="flex:1" id="btn-review-wrong" onclick="reviewWrongWords()">↺ Review wrong words</button>
+    <button class="btn btn-outline" style="flex:1" onclick="backToMenu()">← Menu</button>
+  </div>
+  <button class="btn btn-outline btn-block" style="margin-top:8px" onclick="replaySession()">▶ Play same session again</button>
+</div>
+</div>
+
+<div id="modal-bg" onclick="if(event.target===this)closeModal()">
+<div class="modal">
+  <div class="modal-hdr">
+    <span class="modal-ttl">Settings</span>
+    <button class="icon-btn" onclick="closeModal()">✕</button>
+  </div>
+  <div>
+    <span class="lbl">Anthropic API Key</span>
+    <input type="password" id="m-apikey" placeholder="sk-ant-…" oninput="saveKey()">
+    <p class="tip">Stored only locally. Get a key at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></p>
+  </div>
+  <hr>
+  <div>
+    <span class="lbl">Generate translations for</span>
+    <div class="pill-grp" id="m-lang-chips"></div>
+  </div>
+  <hr>
+  <div>
+    <span class="lbl">Translation status</span>
+    <p style="font-family:var(--mono);font-size:12px;color:var(--dim);margin-bottom:10px" id="m-stats"></p>
+    <button class="btn btn-gold btn-block" id="m-gen-btn" onclick="generateAll()">Generate pending translations</button>
+    <p class="gen-prog blink" id="m-prog" style="display:none;margin-top:8px"></p>
+  </div>
+  <hr>
+  <div>
+    <span class="lbl">Word list</span>
+    <div class="btn-row">
+      <button class="btn btn-outline" style="flex:1" onclick="document.getElementById('file-input').click()">↑ Import JSON</button>
+      <button class="btn btn-outline" style="flex:1" onclick="exportJSON()">↓ Export JSON</button>
+    </div>
+  </div>
+  <div>
+    <span class="lbl">Add a word manually</span>
+    <div class="gap">
+      <input type="text" id="m-word" placeholder="German word or phrase">
+      <input type="text" id="m-notes" placeholder="Notes — e.g. noun · §1">
+      <button class="btn btn-outline btn-block" onclick="addWord()">+ Add word</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="lb-modal" onclick="if(event.target===this)this.style.display='none'">
+<div class="modal">
+  <div class="modal-hdr">
+    <span class="modal-ttl">🏆 Leaderboard</span>
+    <button class="icon-btn" onclick="document.getElementById('lb-modal').style.display='none'">✕</button>  </div>
+  <div id="lb-content"></div>
+</div>
+</div>
+
+<input type="file" id="file-input" accept=".json" onchange="importFile(event)">
+
 <script>
-// ════════════════════════════════════════════════════════════════
-//  CONSTANTS
-// ════════════════════════════════════════════════════════════════
-
-const LANGUAGES = [
-  'English','French','Arabic','Persian','Spanish',
-  'Ukrainian','Russian','Italian','Swahili',
-  'Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'
-];
-// These scripts run right-to-left — we flip text alignment for them
+const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili','Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'];
 const RTL = new Set(['Arabic','Persian']);
+const ARTS = ['der','die','das'];
 
-// ════════════════════════════════════════════════════════════════
-//  STATE
-// ════════════════════════════════════════════════════════════════
+function extLinks(word) {
+  const base = encodeURIComponent(word.replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim());
+  return [
+    {n:'Duden', u:`https://www.duden.de/suchen/dudenonline/${base}`},
+    {n:'DWDS', u:`https://www.dwds.de/?q=${base}`},
+    {n:'dict.cc', u:`https://www.dict.cc/?s=${base}`},
+    {n:'Verbformen', u:`https://www.verbformen.de/?q=${base}`},
+    {n:'Wiktionary', u:`https://de.wiktionary.org/wiki/${base}`}
+  ];
+}
 
-let S = {
-  words: [],                     // [{id, word, notes, status, data}]
-  targetLanguages: [             // pre-selected target languages
-    'English','French','Arabic','Persian','Spanish',
-    'Ukrainian','Russian','Italian','Swahili'
-  ],
-  explanationLanguage: 'English',
-  mode: 'flashcard',
-  cardIndex: 0,
-};
-let generating = false;
-
-// ════════════════════════════════════════════════════════════════
-//  PERSISTENCE  (localStorage — stays in the browser, not GitHub)
-// ════════════════════════════════════════════════════════════════
+let W = { words: [], genLangs: ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili'], explLang: 'English' };
+let USER = { name: '', nativeLang: 'English', explLang: 'English', chapter: 'all', sessionSize: 20 };
+let MASTERY = {};
+let Q = { pool: [], queue: [], idx: 0, correct: 0, wrong: 0, streak: 0, maxStreak: 0, totalPts: 0, maxPts: 0, wrongItems: [], reviewMode: false, cur: null, generating: false };
 
 function persist() {
   try {
-    localStorage.setItem('vok_words', JSON.stringify(S.words));
-    localStorage.setItem('vok_cfg',   JSON.stringify({
-      targetLanguages:     S.targetLanguages,
-      explanationLanguage: S.explanationLanguage,
-    }));
-  } catch(e) { console.warn('Could not save to localStorage:', e); }
+    localStorage.setItem('vok_w', JSON.stringify(W));
+    localStorage.setItem('vok_u', JSON.stringify(USER));
+    localStorage.setItem('vok_m', JSON.stringify(MASTERY));
+  } catch(e){}
 }
 
 function loadStorage() {
   try {
-    const w = localStorage.getItem('vok_words');
-    const c = localStorage.getItem('vok_cfg');
-    if (w) S.words = JSON.parse(w);
-    if (c) {
-      const p = JSON.parse(c);
-      if (p.targetLanguages)     S.targetLanguages     = p.targetLanguages;
-      if (p.explanationLanguage) S.explanationLanguage = p.explanationLanguage;
-    }
+    const w = localStorage.getItem('vok_w');
+    const u = localStorage.getItem('vok_u');
+    const m = localStorage.getItem('vok_m');
+    if (w) Object.assign(W, JSON.parse(w));
+    if (u) Object.assign(USER, JSON.parse(u));
+    if (m) MASTERY = JSON.parse(m);
     const k = localStorage.getItem('vok_key');
-    if (k) document.getElementById('api-key-input').value = k;
-  } catch(e) { console.warn('Could not read localStorage:', e); }
+    if (k) document.getElementById('m-apikey').value = k;
+  } catch(e){}
 }
 
 function saveKey() {
-  const k = document.getElementById('api-key-input').value.trim();
+  const k = document.getElementById('m-apikey').value.trim();
   if (k) localStorage.setItem('vok_key', k);
 }
+const getKey = () => document.getElementById('m-apikey').value.trim() || localStorage.getItem('vok_key') || '';
 
-function getKey() {
-  return document.getElementById('api-key-input').value.trim()
-      || localStorage.getItem('vok_key') || '';
+function saveScore(entry) {
+  try {
+    const scores = JSON.parse(localStorage.getItem('vok_scores')||'[]');
+    scores.push(entry);
+    scores.sort((a,b)=>b.pct-a.pct);
+    localStorage.setItem('vok_scores', JSON.stringify(scores.slice(0,50)));
+  } catch(e){}
 }
-
-// ════════════════════════════════════════════════════════════════
-//  WORD MANAGEMENT
-// ════════════════════════════════════════════════════════════════
+const getScores = () => JSON.parse(localStorage.getItem('vok_scores')||'[]');
 
 const uid = () => Math.random().toString(36).slice(2,9);
+const getArticle = (word) => { const m = word.match(/^(die|der|das)\s+/i); return m ? m[1].toLowerCase() : null; };
+const getBase = (word) => word.replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim();
+const getChapter = (word) => { const m = (word.id||'').match(/^k(\d+)_/); return m ? m[1] : '?'; };
 
-function addWord() {
-  const wEl = document.getElementById('new-word');
-  const nEl = document.getElementById('new-notes');
-  const w   = wEl.value.trim();
-  if (!w) return;
-  S.words.push({ id: uid(), word: w, notes: nEl.value.trim(), status: 'pending', data: null });
-  wEl.value = ''; nEl.value = '';
-  persist(); render();
+function detectChapters(words) {
+  const chapters = new Set(words.map(getChapter));
+  return Array.from(chapters).sort((a,b)=> a==='?'?1:b==='?'?-1:parseInt(a)-parseInt(b));
 }
 
-function removeWord(id) {
-  S.words = S.words.filter(w => w.id !== id);
-  if (S.cardIndex >= S.words.length) S.cardIndex = Math.max(0, S.words.length - 1);
-  persist(); render();
+function wordsForChapter(chapter) {
+  if (chapter==='all') return W.words.filter(w=>w.status==='done');
+  return W.words.filter(w=>w.status==='done' && getChapter(w)===chapter);
 }
 
-// Enter key triggers addWord from either input
-document.addEventListener('DOMContentLoaded', () => {
-  ['new-word','new-notes'].forEach(id =>
-    document.getElementById(id).addEventListener('keydown', e => e.key==='Enter' && addWord())
-  );
-});
-
-// ════════════════════════════════════════════════════════════════
-//  IMPORT / EXPORT
-// ════════════════════════════════════════════════════════════════
+const isMastered = (id) => (MASTERY[id]?.correct||0) >= 3;
+function recordAttempt(id, correct) {
+  if (!MASTERY[id]) MASTERY[id] = {correct:0, incorrect:0};
+  if (correct) MASTERY[id].correct++; else MASTERY[id].incorrect++;
+  persist();
+}
 
 function importData(raw) {
-  // Accept: plain array  OR  full export { meta:{}, words:[] }
   const words = Array.isArray(raw) ? raw : (raw.words || []);
-  S.words = words.map(w => ({
-    id:     w.id     || uid(),
-    word:   w.word   || '',
-    notes:  w.notes  || '',
-    status: w.status === 'done' ? 'done' : 'pending',
-    data:   w.status === 'done' ? (w.data || null) : null,
+  W.words = words.map(w => ({
+    id: w.id||uid(), word:w.word||'', notes:w.notes||'',
+    status: w.status==='done'?'done':'pending',
+    data: w.status==='done'?(w.data||null):null,
   }));
-  if (raw.meta?.targetLanguages)     S.targetLanguages     = raw.meta.targetLanguages;
-  if (raw.meta?.explanationLanguage) S.explanationLanguage = raw.meta.explanationLanguage;
-  S.cardIndex = 0;
-  persist(); buildSidebar(); render();
+  if (raw.meta?.targetLanguages) W.genLangs = raw.meta.targetLanguages;
+  if (raw.meta?.explanationLanguage) W.explLang = raw.meta.explanationLanguage;
+  persist(); buildOnboarding(); buildModal();
 }
 
 function importFile(e) {
   const file = e.target.files[0]; if (!file) return;
   const r = new FileReader();
-  r.onload = ev => {
-    try   { importData(JSON.parse(ev.target.result)); }
-    catch { alert('Could not read file — make sure it is valid JSON.'); }
-  };
-  r.readAsText(file);
-  e.target.value = '';
+  r.onload = ev => { try { importData(JSON.parse(ev.target.result)); } catch { alert('Invalid JSON file.'); } };
+  r.readAsText(file); e.target.value='';
 }
 
 function exportJSON() {
-  const payload = {
-    meta:  { targetLanguages: S.targetLanguages, explanationLanguage: S.explanationLanguage, exported: new Date().toISOString() },
-    words: S.words.map(({ id, word, notes, status, data }) => ({ id, word, notes, status, data })),
+  const p = {
+    meta: {targetLanguages:W.genLangs,explanationLanguage:W.explLang,exported:new Date().toISOString()},
+    words: W.words.map(({id,word,notes,status,data})=>({id,word,notes,status,data})),
   };
-  const a  = document.createElement('a');
-  a.href   = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'}));
-  a.download = 'vocab.json';
-  a.click();
-  URL.revokeObjectURL(a.href);
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(p,null,2)],{type:'application/json'}));
+  a.download='vocab.json'; a.click(); URL.revokeObjectURL(a.href);
 }
 
-// ════════════════════════════════════════════════════════════════
-//  API  — one word at a time
-// ════════════════════════════════════════════════════════════════
+function addWord() {
+  const wEl=document.getElementById('m-word'), nEl=document.getElementById('m-notes');
+  const w=wEl.value.trim(); if(!w) return;
+  W.words.push({id:uid(),word:w,notes:nEl.value.trim(),status:'pending',data:null});
+  wEl.value=''; nEl.value=''; persist(); buildModal();
+}
 
-async function fetchTranslation(word, langs, explLang, apiKey) {
-  const schema = langs.map(l => `"${l}": "translation here"`).join(', ');
-
-  const prompt =
-`You are an expert German language teacher and linguist.
-
-For the German word or phrase: "${word}"
-
-Provide ALL of the following:
-1. Translations into: ${langs.join(', ')}
-2. A clear explanation in ${explLang} — include etymology if interesting, register (formal/informal), grammatical notes, and usage context
-3. One natural example sentence in German
-4. Translation of that example in ${explLang}
-
-Respond ONLY with a valid JSON object. No markdown fences, no preamble:
-{
-  "translations": { ${schema} },
-  "explanation": "...",
-  "example_de": "...",
-  "example_translated": "..."
-}`;
-
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type':   'application/json',
-      'x-api-key':      apiKey,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',  // required for browser calls
-    },
-    body: JSON.stringify({
-      model:      'claude-sonnet-4-20250514',
-      max_tokens: 1200,
-      messages:   [{ role: 'user', content: prompt }],
-    }),
+async function fetchTranslation(word, langs, explLang, key) {
+  const schema = langs.map(l=>`"${l}": "translation here"`).join(', ');
+  const prompt = `You are an expert German language teacher. For the German word: "${word}"\nProvide:\n1. Translations into: ${langs.join(', ')}\n2. A clear explanation in ${explLang}\n3. One natural example sentence in German\n4. Translation of that example in ${explLang}\nRespond ONLY with valid JSON:\n{"translations":{${schema}},"explanation":"...","example_de":"...","example_translated":"..."}`;
+  const res = await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{ 'Content-Type':'application/json', 'x-api-key':key, 'anthropic-version':'2023-06-01', 'anthropic-dangerous-direct-browser-access':'true' },
+    body:JSON.stringify({model:'claude-3-5-sonnet-20241022',max_tokens:1200, messages:[{role:'user',content:prompt}]}),
   });
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`API ${res.status}: ${err}`);
-  }
-
-  const json  = await res.json();
-  const raw   = json.content.map(b => b.text||'').join('').trim();
+  if (!res.ok) throw new Error(`API ${res.status}`);
+  const json = await res.json();
+  const raw = json.content.map(b=>b.text||'').join('').trim();
   const clean = raw.replace(/^```json\s*/i,'').replace(/```\s*$/i,'').trim();
   return JSON.parse(clean);
 }
 
-// ════════════════════════════════════════════════════════════════
-//  GENERATE ALL  — processes pending words one by one
-// ════════════════════════════════════════════════════════════════
-
 async function generateAll() {
-  const apiKey = getKey();
-  if (!apiKey) {
-    alert('Please paste your Anthropic API key in the sidebar first.\n\nGet one free at: console.anthropic.com');
-    return;
-  }
-  if (generating) return;
-
-  const pending = S.words.filter(w => w.status !== 'done');
-  if (pending.length === 0) return;
-
-  generating = true;
-  document.getElementById('btn-gen').disabled = true;
-  const prog = document.getElementById('gen-prog');
-  prog.style.display = 'block';
-
-  for (let i = 0; i < pending.length; i++) {
-    const entry = pending[i];
-    prog.innerHTML = `translating ${i+1} / ${pending.length} <span>.</span><span>.</span><span>.</span>`;
-
-    const idx = S.words.findIndex(w => w.id === entry.id);
-    if (idx < 0) continue;
-
-    S.words[idx].status = 'loading';
-    render();
-
+  const key = getKey(); if (!key) { alert('Please enter your Anthropic API key.'); return; }
+  if (Q.generating) return;
+  const pending = W.words.filter(w=>w.status!=='done'); if (!pending.length) return;
+  Q.generating = true;
+  const btn = document.getElementById('m-gen-btn'); const prog = document.getElementById('m-prog');
+  btn.disabled = true; prog.style.display='block';
+  for (let i=0;i<pending.length;i++) {
+    prog.innerHTML = `Translating ${i+1} / ${pending.length} <span>.</span><span>.</span><span>.</span>`;
+    const idx = W.words.findIndex(w=>w.id===pending[i].id); if (idx<0) continue;
+    W.words[idx].status = 'loading';
     try {
-      const data = await fetchTranslation(entry.word, S.targetLanguages, S.explanationLanguage, apiKey);
-      S.words[idx].status = 'done';
-      S.words[idx].data   = data;
-    } catch (err) {
-      console.error(`Failed for "${entry.word}":`, err);
-      S.words[idx].status = 'error';
-    }
-
-    persist();
-    render();
+      W.words[idx].data = await fetchTranslation(pending[i].word, W.genLangs, W.explLang, key);
+      W.words[idx].status = 'done';
+    } catch(e) { W.words[idx].status = 'error'; }
+    persist(); buildModal();
   }
-
-  generating = false;
-  document.getElementById('btn-gen').disabled = false;
-  prog.style.display = 'none';
+  Q.generating = false; btn.disabled = false; prog.style.display='none'; buildOnboarding();
 }
 
-// ════════════════════════════════════════════════════════════════
-//  FLASHCARD NAVIGATION
-// ════════════════════════════════════════════════════════════════
+function buildMeaningOpts(entry, pool, lang) {
+  const correct = entry.data?.translations?.[lang] || '?';
+  const others = pool.filter(w => w.id!==entry.id && w.data?.translations?.[lang]).sort(()=>Math.random()-.5).slice(0,3).map(w => ({txt: w.data.translations[lang], isCorrect: false}));
+  while (others.length < 3) others.push({txt:'—', isCorrect:false});
+  const opts = [{txt:correct, isCorrect:true}, ...others];
+  return opts.sort(()=>Math.random()-.5);
+}
 
-function prevCard() { if (S.cardIndex > 0) { S.cardIndex--; renderFlashcard(); } }
-function nextCard() { if (S.cardIndex < S.words.length-1) { S.cardIndex++; renderFlashcard(); } }
-function goCard(i)  { S.cardIndex = i; renderFlashcard(); }
+function startSession() {
+  USER.name = document.getElementById('inp-name').value.trim() || 'Lerner';
+  USER.nativeLang = document.getElementById('sel-native').value;
+  USER.explLang = document.getElementById('sel-expl').value;
+  USER.chapter = document.getElementById('sel-chapter').value;
+  USER.sessionSize = document.getElementById('pill-size').querySelector('.on')?.dataset.n || '20';
+  persist();
+  const pool = wordsForChapter(USER.chapter);
+  if (pool.length < 4) { alert(`Need at least 4 translated words to play. Current: ${pool.length}`); return; }
+  Q.pool = pool;
+  const n = USER.sessionSize==='all' ? pool.length : Math.min(parseInt(USER.sessionSize)||20, pool.length);
+  Q.queue = pool.sort(()=>Math.random()-.5).slice(0,n).map(w=>w.id);
+  Q.idx = 0; Q.correct = 0; Q.wrong = 0; Q.streak = 0; Q.maxStreak = 0; Q.totalPts = 0; Q.maxPts = Q.queue.length * 3; Q.wrongItems = []; Q.reviewMode = false; Q.cur = null;
+  showScreen('screen-quiz'); loadWord();
+}
 
-document.addEventListener('keydown', e => {
-  if (S.mode !== 'flashcard') return;
-  if (e.key === 'ArrowLeft')  prevCard();
-  if (e.key === 'ArrowRight') nextCard();
-  if (e.key === ' ') {
-    e.preventDefault();
-    document.querySelector('.fc-card')?.classList.toggle('flipped');
+function reviewWrongWords() {
+  if (!Q.wrongItems.length) { backToMenu(); return; }
+  const ids = [...new Set(Q.wrongItems.map(w=>w.id))];
+  Q.queue = ids; Q.idx = 0; Q.correct = 0; Q.wrong = 0; Q.streak = 0; Q.maxStreak = 0; Q.totalPts = 0; Q.maxPts = ids.length * 3; Q.wrongItems = []; Q.reviewMode = true;
+  showScreen('screen-quiz'); loadWord();
+}
+
+function replaySession() { startSession(); }
+
+function loadWord() {
+  if (Q.idx >= Q.queue.length) { endSession(); return; }
+  const entry = W.words.find(w=>w.id===Q.queue[Q.idx]);
+  if (!entry) { Q.idx++; loadWord(); return; }
+  const art = getArticle(entry.word); const hasArt = !!art;
+  const opts = buildMeaningOpts(entry, Q.pool, USER.nativeLang);
+  Q.cur = { entry, hasArt, correctArt: art||'—', opts, phase: hasArt ? 'art' : 'mean', artPicked: null, artCorrect: null, meanPicked: null, meanCorrect: null, showExpl: false, artPts: 0, meanPts: 0 };
+  renderQuiz();
+}
+
+function pickArticle(picked) {
+  if (!Q.cur || Q.cur.phase!=='art') return;
+  const correct = Q.cur.correctArt; const ok = picked === correct;
+  Q.cur.artPicked = picked; Q.cur.artCorrect = ok; Q.cur.artPts = ok ? 1 : 0; Q.cur.phase = 'mean';
+  renderQuiz();
+}
+
+function pickMeaning(i) {
+  if (!Q.cur || Q.cur.phase!=='mean') return;
+  const opt = Q.cur.opts[i]; const ok = opt.isCorrect;
+  Q.cur.meanPicked = i; Q.cur.meanCorrect = ok; Q.cur.meanPts = ok ? 2 : 0; Q.cur.phase = 'done';
+  const wordPts = Q.cur.artPts + Q.cur.meanPts; const wordOk = (Q.cur.hasArt ? Q.cur.artCorrect : true) && ok;
+  Q.totalPts += wordPts;
+  if (wordOk) { Q.correct++; Q.streak++; Q.maxStreak = Math.max(Q.maxStreak, Q.streak); recordAttempt(Q.cur.entry.id, true); }
+  else {
+    Q.wrong++; Q.streak = 0; recordAttempt(Q.cur.entry.id, false);
+    Q.wrongItems.push({ id: Q.cur.entry.id, word: Q.cur.entry.word, correctArt: Q.cur.correctArt, correctMeaning: Q.cur.opts.find(o=>o.isCorrect)?.txt || '—' });
   }
+  renderQuiz();
+}
+
+const nextWord = () => { Q.idx++; loadWord(); };
+
+function endSession() {
+  const pct = Q.maxPts ? Math.round(Q.totalPts / Q.maxPts * 100) : 0;
+  saveScore({ name: USER.name, score: Q.totalPts, maxPts: Q.maxPts, pct, correct: Q.correct, wrong: Q.wrong, streak: Q.maxStreak, chapter: USER.chapter==='all'?'All chapters':`Kapitel ${USER.chapter}`, n: Q.queue.length, date: new Date().toLocaleDateString() });
+  renderSummary(pct); showScreen('screen-summary');
+}
+const confirmExit = () => { if (confirm('Exit to menu?')) backToMenu(); };
+function backToMenu() { Q.cur = null; Q.queue = []; showScreen('screen-onboard'); buildOnboarding(); }
+
+function renderQuiz() {
+  const { entry, hasArt, correctArt, opts, phase, artPicked, artCorrect, meanPicked, showExpl, artPts, meanPts } = Q.cur;
+  document.getElementById('qh-ok').textContent = `${Q.correct} ✓`;
+  document.getElementById('qh-err').textContent = `${Q.wrong} ✗`;
+  document.getElementById('qh-left').textContent = `${Q.queue.length - Q.idx} left`;
+  const sb = document.getElementById('streak-badge');
+  if (Q.streak >= 3) { sb.textContent = `🔥 ${Q.streak}`; sb.style.display=''; } else sb.style.display='none';
+  document.getElementById('prog-fill').style.width = `${Math.round(Q.idx / Q.queue.length * 100)}%`;
+
+  const artDisplay = phase==='art' ? '' : (artPicked===null ? '' : (artCorrect ? `<span style="color:var(--ok)">✓ ${h(correctArt)}</span>` : `<span style="color:var(--err)">✗ ${h(artPicked)}</span> <span style="color:var(--dim);font-size:13px">(${h(correctArt)})</span>`));
+  const artHTML = (phase==='mean' || phase==='done') ? '' : `<p class="phase-lbl">Select the article (or — if none)</p><div class="art-grid">${ARTS.concat(['—']).map(a=>`<button class="art-btn" onclick="pickArticle('${a}')">${a}</button>`).join('')}</div>`;
+  
+  const KEYS = ['A','B','C','D'];
+  const meaningHTML = phase==='art' ? '' : `<p class="phase-lbl" style="margin-top:16px">${phase==='mean' ? 'What does it mean?' : 'Meaning'}</p><div class="opt-list">${opts.map((opt,i)=>{ let cls = 'opt'; if (phase==='done') { if (opt.isCorrect) cls+=' correct'; else if (i===meanPicked) cls+=' wrong'; } return `<button class="${cls}" onclick="pickMeaning(${i})" ${phase==='done'?'disabled':''}><span>${KEYS[i]}</span><span>${h(opt.txt)}</span></button>`; }).join('')}</div>`;
+
+  const feedHTML = phase !== 'done' ? '' : `<div class="feedback">${(hasArt ? artCorrect : true) && (phase==='done' && opts[meanPicked]?.isCorrect) ? `<span class="fb-ok">✓ Correct! <span class="pts-badge pts-ok">+${artPts+meanPts} pts</span></span>` : `<span class="fb-err">✗ Wrong <span class="pts-badge" style="color:var(--err)">+${artPts+meanPts} pts</span></span>`}</div>`;
+  const actionHTML = phase!=='done' ? '' : `<div class="act-row"><button class="expl-btn" onclick="toggleExpl()">📖 ${showExpl?'Hide':'Explanation'}</button><button class="next-btn" onclick="nextWord()">Next word →</button></div>`;
+  const explHTML = (showExpl && entry.data) ? buildExplPanel(entry) : '';
+
+  document.getElementById('qcard').innerHTML = `<div class="word-area"><div>${artDisplay}</div><div class="word-base">${h(getBase(entry.word))}</div>${entry.notes ? `<div class="word-note">${h(entry.notes)}</div>` : ''}</div>${artHTML}${meaningHTML}${feedHTML}${actionHTML}${explHTML}`;
+}
+
+const toggleExpl = () => { Q.cur.showExpl = !Q.cur.showExpl; renderQuiz(); };
+
+function buildExplPanel(entry) {
+  const d = entry.data; if (!d) return '';
+  const transHTML = W.genLangs.map(lang=>{ const val = d.translations?.[lang]; return val ? `<div class="tr-row"><span class="tr-lang">${h(lang)}</span><span class="tr-val ${RTL.has(lang)?'rtl':''}">${h(val)}</span></div>` : ''; }).join('');
+  return `<div class="expl-panel"><div class="expl-section"><span class="lbl">Grammar & Context (${USER.explLang})</span><p class="expl-txt">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}"</p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">Multilingual</span><div class="trans-grid">${transHTML}</div></div><div class="expl-section"><span class="lbl">Dictionairies</span><div class="link-row">${extLinks(entry.word).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
+}
+
+function renderSummary(pct) {
+  document.getElementById('sum-name').textContent = USER.name;
+  document.getElementById('sum-score').textContent = Q.totalPts;
+  document.getElementById('sum-pct').textContent = `${pct}% accuracy · ${Q.totalPts}/${Q.maxPts} total pool points`;
+  document.getElementById('sum-chips').innerHTML = [['✓ Answers', Q.correct],['✗ Mistakes', Q.wrong],['🔥 Max Streak', Q.maxStreak],['📚 Pool', USER.chapter==='all'?'All Chapters':`Kapitel ${USER.chapter}`]].map(([k,v])=>`<span class="stat-chip"><span>${v}</span>${k}</span>`).join('');
+  
+  const btnReview = document.getElementById('btn-review-wrong');
+  if(Q.wrongItems.length > 0) {
+    btnReview.style.display = 'inline-block';
+    document.getElementById('sum-wrong-section').style.display = 'block';
+    document.getElementById('sum-wrong-list').innerHTML = Q.wrongItems.map(w=>`<div class="wrong-item"><span class="wrong-de">${h(w.word)}</span><span class="wrong-tr">${h(w.correctMeaning)}</span></div>`).join('');
+  } else {
+    btnReview.style.display = 'none';
+    document.getElementById('sum-wrong-section').style.display = 'none';
+  }
+}
+
+function showLeaderboard() {
+  const scores = getScores().slice(0,10); const lb = document.getElementById('lb-content');
+  lb.innerHTML = scores.length ? scores.map((s,i)=>`<div class="lb-row"><span class="lb-rank">#${i+1}</span><span class="lb-name">${h(s.name)}</span><span class="lb-pct">${s.pct}%</span><span class="lb-meta">${s.chapter} · ${s.n} words</span></div>`).join('') : '<p style="color:var(--dim);text-align:center;padding:16px">No highscores recorded yet!</p>';
+  document.getElementById('lb-modal').style.display='flex';
+}
+
+function buildOnboarding() {
+  ['sel-native','sel-expl'].forEach((id,k)=>{
+    document.getElementById(id).innerHTML = LANGS.map(l=>`<option value="${l}" ${l===(k===0?USER.nativeLang:USER.explLang)?'selected':''}>${l}</option>`).join('');
+  });
+  const chapters = detectChapters(W.words);
+  document.getElementById('sel-chapter').innerHTML = `<option value="all">All Chapters (${W.words.filter(w=>w.status==='done').length} loaded)</option>` + chapters.map(c=>`<option value="${c}" ${USER.chapter===c?'selected':''}>Kapitel ${c} (${W.words.filter(w=>w.status==='done'&&getChapter(w)===c).length} ready)</option>`).join('');
+  const done = W.words.filter(w=>w.status==='done').length;
+  document.getElementById('ob-info').innerHTML = W.words.length===0 ? '<span style="color:var(--err)">No vocabulary file detected. Use configurations below.</span>' : (done<4 ? '<span style="color:var(--warn)">Translation indexing required. Open word management pipeline.</span>' : `<span style="color:var(--ok)">✓ ${done} words localized and prepared</span>`);
+  document.getElementById('btn-start').disabled = done < 4;
+}
+
+function buildModal() {
+  const chips = document.getElementById('m-lang-chips'); chips.innerHTML='';
+  LANGS.forEach(lang=>{
+    const c = document.createElement('span'); c.className = 'pill'+(W.genLangs.includes(lang)?' on':''); c.textContent = lang;
+    c.onclick = ()=>{ W.genLangs = W.genLangs.includes(lang) ? W.genLangs.filter(l=>l!==lang) : [...W.genLangs, lang]; c.classList.toggle('on'); persist(); };
+    chips.appendChild(c);
+  });
+  const done = W.words.filter(w=>w.status==='done').length;
+  document.getElementById('m-stats').innerHTML = `${done} compiled / ${W.words.length - done} localized variables pending`;
+  document.getElementById('m-gen-btn').disabled = Q.generating || (W.words.length - done)===0;
+}
+
+function openSettings() { buildModal(); document.getElementById('modal-bg').classList.add('on'); }
+function closeModal() { document.getElementById('modal-bg').classList.remove('on'); buildOnboarding(); }
+function showScreen(id) { document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on')); document.getElementById(id).classList.add('on'); }
+
+document.getElementById('pill-size').addEventListener('click', e=>{
+  const p = e.target.closest('.pill'); if(!p) return;
+  document.querySelectorAll('#pill-size .pill').forEach(x=>x.classList.remove('on')); p.classList.add('on');
+  USER.sessionSize = p.dataset.n; persist();
 });
 
-// ════════════════════════════════════════════════════════════════
-//  SET MODE
-// ════════════════════════════════════════════════════════════════
+function h(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-function setMode(m) {
-  S.mode = m;
-  document.getElementById('btn-flash').classList.toggle('on', m==='flashcard');
-  document.getElementById('btn-table').classList.toggle('on', m==='table');
-  render();
-}
-
-// ════════════════════════════════════════════════════════════════
-//  STATS BAR
-// ════════════════════════════════════════════════════════════════
-
-function updateStats() {
-  const total   = S.words.length;
-  const done    = S.words.filter(w => w.status==='done').length;
-  const pending = S.words.filter(w => w.status!=='done').length;
-  document.getElementById('s-total').textContent   = total;
-  document.getElementById('s-done').textContent    = done;
-  document.getElementById('s-pending').textContent = pending;
-  document.getElementById('s-langs').textContent   = S.targetLanguages.length;
-  const btn = document.getElementById('btn-gen');
-  btn.textContent = `Generate ${pending} pending`;
-  btn.disabled    = generating || pending===0;
-}
-
-// ════════════════════════════════════════════════════════════════
-//  BUILD SIDEBAR  (language chips + radios)
-// ════════════════════════════════════════════════════════════════
-
-function buildSidebar() {
-  // Language chips
-  const chips = document.getElementById('lang-chips');
-  chips.innerHTML = '';
-  LANGUAGES.forEach(lang => {
-    const el = document.createElement('span');
-    el.className = 'lang-chip' + (S.targetLanguages.includes(lang) ? ' on' : '');
-    el.textContent = lang;
-    el.onclick = () => {
-      if (S.targetLanguages.includes(lang))
-        S.targetLanguages = S.targetLanguages.filter(l => l!==lang);
-      else
-        S.targetLanguages = [...S.targetLanguages, lang];
-      el.classList.toggle('on');
-      persist(); updateStats();
-    };
-    chips.appendChild(el);
-  });
-
-  // Explanation language radios
-  const radios = document.getElementById('expl-radios');
-  radios.innerHTML = '';
-  LANGUAGES.forEach(lang => {
-    const lbl = document.createElement('label');
-    const inp = document.createElement('input');
-    inp.type    = 'radio';
-    inp.name    = 'expl';
-    inp.value   = lang;
-    inp.checked = (lang === S.explanationLanguage);
-    inp.onchange = () => { S.explanationLanguage = lang; persist(); };
-    lbl.appendChild(inp);
-    lbl.appendChild(document.createTextNode(' ' + lang));
-    radios.appendChild(lbl);
-  });
-}
-
-// ════════════════════════════════════════════════════════════════
-//  RENDER — FLASHCARD MODE
-// ════════════════════════════════════════════════════════════════
-
-function renderFlashcard() {
-  const content = document.getElementById('content');
-
-  if (S.words.length === 0) {
-    content.innerHTML = '<div class="empty"><h3>Keine Wörter vorhanden</h3><p>Add German words in the sidebar, or import a JSON file.</p></div>';
-    updateStats(); return;
-  }
-
-  S.cardIndex = Math.min(S.cardIndex, S.words.length - 1);
-  const e = S.words[S.cardIndex];
-  const ok = e.status === 'done';
-
-  // Translations on the back face
-  let transHTML = '';
-  if (ok && e.data?.translations) {
-    S.targetLanguages.forEach(lang => {
-      const txt = e.data.translations[lang] || '—';
-      const dir = RTL.has(lang) ? ' rtl' : '';
-      transHTML += `<div class="trans-row">
-        <span class="trans-lang">${h(lang)}</span>
-        <span class="trans-txt${dir}">${h(txt)}</span>
-      </div>`;
-    });
-  }
-
-  // Example sentence on the back face
-  const exHTML = (ok && e.data?.example_de)
-    ? `<div class="fc-ex">
-        <p class="fc-ex-de">„${h(e.data.example_de)}"</p>
-        <p class="fc-ex-tr">${h(e.data.example_translated||'')}</p>
-       </div>`
-    : '';
-
-  // Status indicator on the front face
-  const frontStatus =
-    e.status==='loading' ? `<p style="color:var(--gold2);font-family:var(--mono);font-size:11px" class="blink">translating<span>.</span><span>.</span><span>.</span></p>`
-  : e.status==='error'   ? `<p style="color:var(--red);font-size:13px">⚠ Translation failed — try Generate again</p>`
-  : e.status==='done'    ? `<p class="fc-hint">tap card · or press Space</p>`
-  :                        `<p class="fc-hint">not yet generated</p>`;
-
-  // Progress dots
-  const dots = S.words.map((w, i) =>
-    `<div class="dot ${w.status} ${i===S.cardIndex?'active':''}" onclick="goCard(${i})" title="${h(w.word)}"></div>`
-  ).join('');
-
-  content.innerHTML = `
-    <div class="fc-nav">
-      <button class="fc-arrow" onclick="prevCard()">‹</button>
-      <span class="fc-ctr">${S.cardIndex+1} / ${S.words.length}</span>
-      <button class="fc-arrow" onclick="nextCard()">›</button>
-    </div>
-
-    <div class="fc-scene" onclick="this.querySelector('.fc-card').classList.toggle('flipped')">
-      <div class="fc-card">
-        <div class="fc-face fc-front">
-          <span class="fc-badge">🇩🇪 Deutsches Wort</span>
-          <h2 class="fc-word">${h(e.word)}</h2>
-          ${e.notes ? `<p class="fc-notes">${h(e.notes)}</p>` : ''}
-          ${frontStatus}
-        </div>
-        <div class="fc-face fc-back">
-          <span class="fc-badge" style="color:var(--gold2)">translations</span>
-          <div class="trans-list">${transHTML}</div>
-          ${exHTML}
-        </div>
-      </div>
-    </div>
-
-    <div class="dots">${dots}</div>
-  `;
-
-  updateStats();
-}
-
-// ════════════════════════════════════════════════════════════════
-//  RENDER — TABLE MODE
-// ════════════════════════════════════════════════════════════════
-
-function renderTable() {
-  const content = document.getElementById('content');
-
-  if (S.words.length === 0) {
-    content.innerHTML = '<div class="empty"><h3>Keine Wörter vorhanden</h3><p>Add German words in the sidebar, or import a JSON file.</p></div>';
-    updateStats(); return;
-  }
-
-  const thCols = S.targetLanguages.map(l => `<th>${h(l)}</th>`).join('');
-
-  const rows = S.words.map(w => {
-    const transCells = S.targetLanguages.map(lang => {
-      if (w.status==='loading') return `<td class="cell-load">…</td>`;
-      if (w.status==='done')    {
-        const txt = w.data?.translations?.[lang] || '—';
-        const dir = RTL.has(lang) ? ' dir="rtl"' : '';
-        return `<td class="td-tr"${dir}>${h(txt)}</td>`;
-      }
-      if (w.status==='error') return `<td class="cell-err">⚠</td>`;
-      return `<td style="color:var(--dead)">–</td>`;
-    }).join('');
-
-    const exBox = (w.status==='done' && w.data)
-      ? `<div class="exbox">
-           <p class="exbox-txt">${h(w.data.explanation||'')}</p>
-           ${w.data.example_de
-             ? `<p class="exbox-ex"><span class="ex-pre">Bsp.</span><em>„${h(w.data.example_de)}"</em>
-                <span style="color:var(--bdr)"> — </span>${h(w.data.example_translated||'')}</p>`
-             : ''}
-         </div>`
-      : '';
-
-    return `
-      <tr>
-        <td class="td-word" onclick="toggleEx('ex-${w.id}')">
-          <span class="w-main">${h(w.word)}</span>
-          ${w.notes ? `<span class="w-note">${h(w.notes)}</span>` : ''}
-          ${w.status==='done' ? '<span style="font-size:10px;color:var(--gold2);margin-left:6px">▼</span>' : ''}
-        </td>
-        ${transCells}
-        <td>
-          <button onclick="removeWord('${w.id}')"
-            style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px;line-height:1">×</button>
-        </td>
-      </tr>
-      <tr id="ex-${w.id}" style="display:none">
-        <td colspan="${S.targetLanguages.length+2}" class="exrow">${exBox}</td>
-      </tr>
-    `;
-  }).join('');
-
-  content.innerHTML = `
-    <div style="overflow-x:auto">
-      <table class="vtable">
-        <thead><tr><th>Deutsches Wort</th>${thCols}<th></th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>
-  `;
-
-  updateStats();
-}
-
-function toggleEx(id) {
-  const el = document.getElementById(id);
-  if (el) el.style.display = el.style.display==='none' ? 'table-row' : 'none';
-}
-
-// ════════════════════════════════════════════════════════════════
-//  RENDER — dispatcher
-// ════════════════════════════════════════════════════════════════
-
-function render() {
-  if (S.mode==='flashcard') renderFlashcard();
-  else                      renderTable();
-}
-
-// ════════════════════════════════════════════════════════════════
-//  UTILITY  — escape HTML to prevent XSS
-// ════════════════════════════════════════════════════════════════
-
-function h(s) {
-  return String(s)
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-// ════════════════════════════════════════════════════════════════
-//  BOOT
-// ════════════════════════════════════════════════════════════════
-
-loadStorage();   // restore words + settings from browser memory
-buildSidebar();  // build language chips and radios
-render();        // draw the UI
-
-// Try to auto-load vocab.json from the same folder (GitHub Pages).
-// Only imports if no words are stored yet — won't overwrite your work.
-fetch('./vocab.json')
-  .then(r => { if(!r.ok) throw 0; return r.json(); })
-  .then(data => { if(S.words.length===0) importData(data); })
-  .catch(() => {});  // silently ignore if file not present
-
+loadStorage(); buildOnboarding();
+fetch('./vocab.json').then(r=>r.json()).then(data=>{ if(W.words.length===0) importData(data); }).catch(()=>{});
 </script>
 </body>
 </html>
