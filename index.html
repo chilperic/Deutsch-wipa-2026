@@ -5,43 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vokabular · Mastery Edition</title>
 <style>
-    body { background: #08080a; color: #e8e0d0; font-family: sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; }
-    #render-error { color: #e74c3c; padding: 20px; border: 1px solid #e74c3c; border-radius: 8px; }
+  body { background:#08080a; color:#e8e0d0; font-family:sans-serif; margin:0; display:flex; align-items:center; justify-content:center; min-height:100vh; }
+  .engine-ui { text-align:center; padding:30px; border:1px solid #28282f; border-radius:12px; }
 </style>
 </head>
 <body>
-
-<div id="app-root">
-    </div>
-<div id="render-error" style="display:none;"></div>
+<div id="app-root" class="engine-ui">
+  <h1>Loading Mastery Edition...</h1>
+</div>
 
 <script>
-    // 1. Force Reset Storage if version mismatch
-    if (localStorage.getItem('vok_v9') !== 'true') {
-        localStorage.clear();
-        localStorage.setItem('vok_v9', 'true');
-    }
+// --- MASTER VOCABULARY DATABASE ---
+const W = {
+  words: [
+    { "id": "k1_01", "word": "die Messe", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "Persian": "نمایشگاه", "English": "trade fair" }, "explanation": "A large exhibition for industry or trade.", "example_de": "Wir besuchen die Buchmesse.", "example_translated": "We are visiting the book fair.", "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } } },
+    { "id": "k1_02", "word": "die Premiere", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "Persian": "اولین نمایش", "English": "premiere" }, "explanation": "The first public performance.", "example_de": "Die Premiere war ein Erfolg.", "example_translated": "The premiere was a success.", "grammar": { "type": "noun", "singular": "die Premiere", "plural": "die Premieren" } } },
+    { "id": "k2_01", "word": "die Prüfung", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "Persian": "امتحان", "English": "exam" }, "explanation": "A formal test.", "example_de": "Die Prüfung findet im Mai statt.", "example_translated": "The exam takes place in May.", "grammar": { "type": "noun", "singular": "die Prüfung", "plural": "die Prüfungen" } } },
+    { "id": "k3_01", "word": "die Beziehung", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "Persian": "رابطه", "English": "relationship" }, "explanation": "Connection between people.", "example_de": "Wir haben eine gute Beziehung.", "example_translated": "We have a good relationship.", "grammar": { "type": "noun", "singular": "die Beziehung", "plural": "die Beziehungen" } } },
+    { "id": "k4_01", "word": "abbiegen", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "Persian": "پیچیدن", "English": "to turn" }, "explanation": "Changing direction.", "example_de": "Sie müssen links abbiegen.", "example_translated": "You must turn left.", "grammar": { "type": "verb", "conjugation": { "ich": "biege ab", "du": "biegst ab", "er/sie/es": "biegt ab", "wir": "biegen ab", "ihr": "biegt ab", "sie/Sie": "biegen ab" } } } }
+  ]
+};
 
-    // 2. Minimal Data Structure (Essential for rendering)
-    const W = { words: [
-        { id: "k1_001", word: "die Messe", notes: "Kapitel 1", status: "done", data: { translations: { English: "trade fair" }, explanation: "A large exhibition.", example_de: "Wir besuchen die Buchmesse.", example_translated: "We are visiting the fair.", grammar: { type: "noun", singular: "die Messe", plural: "die Messen" } } }
-    ]};
-
-    // 3. Simple Render Test
-    try {
-        const root = document.getElementById('app-root');
-        root.innerHTML = `
-            <div style="text-align:center;">
-                <h1 style="color:#c9a84c;">Vokabular Engine</h1>
-                <p>System is online. Words detected: ${W.words.length}</p>
-                <button onclick="location.reload()" style="padding:10px; margin-top:20px; cursor:pointer;">Reload App</button>
-            </div>
-        `;
-    } catch(e) {
-        const err = document.getElementById('render-error');
-        err.style.display = 'block';
-        err.textContent = "Critical Render Error: " + e.message;
-    }
+// --- RENDER ENGINE ---
+const root = document.getElementById('app-root');
+root.innerHTML = `
+  <h1 style="color:#c9a84c;">Vokabular Engine</h1>
+  <p>System Online: ${W.words.length} words mastered.</p>
+  <button onclick="location.reload()" style="padding:10px 20px; margin-top:20px; cursor:pointer;">Launch Quiz</button>
+`;
 </script>
 </body>
 </html>
