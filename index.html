@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
+        body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; padding: 20px; display: flex; justify-content: center; }
+        .card { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
+        h1 { color: var(--gold); border-bottom: 1px solid var(--bdr); }
+        .section { margin-top: 25px; border-top: 1px solid var(--bdr); padding-top: 15px; }
+        h3 { font-size: 0.7rem; text-transform: uppercase; color: var(--gold); margin: 0; }
+        .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
+        button { background: var(--gold); color: #000; border: none; padding: 10px; cursor: pointer; border-radius: 4px; width: 100%; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin: 5px 0; background: #1a1a1f; color: var(--text); border: 1px solid var(--bdr); }
+    </style>
 </head>
 <body>
+
 <div class="card" id="app">
     <h1>Vokabular Mastery</h1>
-    <div id="content">Loading Data...</div>
+    <div id="setup">
+        <input id="userName" placeholder="Enter Name">
+        <select id="lang"><option value="Persian">Persian</option><option value="English">English</option></select>
+        <select id="chap"><option value="1">Kapitel 1</option><option value="2">Kapitel 2</option></select>
+        <input id="wordCount" type="number" placeholder="Number of words">
+        <button onclick="startMission()">Start Mission</button>
+    </div>
 </div>
-<script src="js/storage.js"></script>
-<script src="js/quiz.js"></script>
+
 <script>
-    let db = [];
-    async function init() {
-        // Load all 4 chapters
-        for(let i=1; i<=4; i++) {
-            const res = await fetch(`./data/kapitel${i}.json`);
-            const data = await res.json();
-            db.push(...data);
-        }
-        renderQuiz();
-    }
+let session = { user: "", lang: "", db: [], currentWord: null };
 
-    function renderQuiz() {
-        const w = db[Math.floor(Math.random() * db.length)];
-        document.getElementById('content').innerHTML = `
-            <h3>${w.word}</h3>
-            <input id="gender" placeholder="Gender (der/die/das)">
-            <input id="plural" placeholder="Plural">
-            <input id="tr" placeholder="Translation (${w.data.translations.Persian})">
-            <button onclick="check('${w.id}', '${w.gender}', '${w.plural}', '${w.data.translations.Persian}')">Submit</button>
-        `;
-    }
+async function startMission() {
+    session.user = document.getElementById('userName').value;
+    session.lang = document.getElementById('lang').value;
+    const ch = document.getElementById('chap').value;
+    const count = document.getElementById('wordCount').value;
 
-    function check(id, g, p, tr) {
-        const guessG = document.getElementById('gender').value;
-        const guessP = document.getElementById('plural').value;
-        const guessT = document.getElementById('tr').value;
-        
-        const isCorrect = Quiz.validate(guessG, g) && Quiz.validate(guessP, p) && Quiz.validate(guessT, tr);
-        Storage.save(id, isCorrect);
-        alert(isCorrect ? "Mastered!" : "Review needed.");
-        renderQuiz();
-    }
-    init();
+    const res = await fetch(`./data/kapitel${ch}.json`);
+    session.db = (await res.json()).sort(() => 0.5 - Math.random()).slice(0, count);
+    showWord();
+}
+
+function showWord() {
+    const w = session.db.pop();
+    if (!w) return alert("Mission Complete!");
+
+    document.getElementById('app').innerHTML = `
+        <h1>${w.word}</h1>
+        <div class="section"><h3>Grammar & Context</h3><p>${w.grammar}</p></div>
+        <div class="section"><h3>Example Sentence</h3><p><em>${w.example_de}</em><br>${w.example_en}</p></div>
+        <div class="section"><h3>All Translations</h3>
+            <div class="lang-grid"><div><b>${session.lang}:</b> ${w.translations[session.lang]}</div></div>
+        </div>
+        <button onclick="showWord()">Next</button>
+    `;
+}
 </script>
 </body>
 </html>
