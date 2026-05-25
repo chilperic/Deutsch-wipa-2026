@@ -62,18 +62,19 @@ input:focus,select:focus,textarea:focus{border-color:var(--gold2);box-shadow:0 0
       <div><div class="brand">Vokabular</div><div class="tag">German vocabulary · article → meaning → active recall</div></div>
       <div class="row"><button class="btn ghost" onclick="openImport()">Import JSON</button><button class="btn ghost" onclick="exportData()">Export</button><button class="btn danger" onclick="resetProgress()">Reset progress</button></div>
     </div>
-    <p class="lead">The app now loads the correct chapter files, filters the selected Kapitel, and forces a three-step learning cycle: article, meaning, then active production.</p>
+    <p class="lead">The app now loads the correct chapter files, filters the selected Kapitel, and uses a diagnostic learning cycle: article, meaning, plural when relevant, grammar pattern when relevant, then active production.</p>
     <div class="grid4">
       <div class="stat"><b id="statWords">0</b><span>ready words</span></div>
       <div class="stat info"><b id="statDue">0</b><span>due today</span></div>
       <div class="stat ok"><b id="statMastered">0</b><span>stable words</span></div>
       <div class="stat"><b id="statAccuracy">0%</b><span>global accuracy</span></div>
     </div>
+    <div class="panel"><div class="panel-sec"><span class="lbl">Recommended daily review</span><p class="note" id="dailyPlan">Loading recommendation...</p></div></div>
     <div class="grid">
       <div><label class="lbl">Name</label><input id="name" placeholder="Your name" /></div>
       <div><label class="lbl">Quiz language</label><select id="lang"></select></div>
       <div><label class="lbl">Chapter</label><select id="chapter"></select></div>
-      <div><label class="lbl">Mode</label><select id="mode"><option value="full">Full cycle: article → meaning → active</option><option value="due">Due review only</option><option value="weak">Weak words only</option></select></div>
+      <div><label class="lbl">Mode</label><select id="mode"><option value="full">Full cycle: article → meaning → active</option><option value="learning">Learning mode: explain after every word</option><option value="exam">Exam mode: no explanation until summary</option><option value="due">Due review only</option><option value="weak">Weak words only</option></select></div>
     </div>
     <div>
       <label class="lbl">Words per session</label>
@@ -147,23 +148,45 @@ let W = load('vok_data_power_v1', DEFAULT);
 let USER = load('vok_user_power_v1', {name:'', lang:'English', chapter:'all', size:'10', mode:'full'});
 let SRS = load('vok_srs_power_v1', {});
 let HISTORY = load('vok_history_power_v1', []);
-let Q = {queue:[],originalQueue:[],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null};
+let Q = {queue:[],originalQueue:[],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,pluralOk:null,patternOk:null,activeOk:null};
 
 function load(k,f){try{return JSON.parse(localStorage.getItem(k)) || structuredClone(f)}catch{return structuredClone(f)}}
 function save(){localStorage.setItem('vok_data_power_v1',JSON.stringify(W));localStorage.setItem('vok_user_power_v1',JSON.stringify(USER));localStorage.setItem('vok_srs_power_v1',JSON.stringify(SRS));localStorage.setItem('vok_history_power_v1',JSON.stringify(HISTORY.slice(-100)))}
 function h(s){return String(s ?? '').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function uid(){return Math.random().toString(36).slice(2,10)}
-function norm(s){return String(s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0e00-\u0e7f]+/g,' ').trim()}
+function norm(s){
+  return String(s ?? '')
+    .toLowerCase()
+    .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/\b(der|die|das)\b/g,' ')
+    .replace(/[^a-z0-9\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0e00-\u0e7f]+/g,' ')
+    .trim();
+}
 function article(word){const m=String(word).match(/^(der|die|das)\s+/i);return m?m[1].toLowerCase():null}
 function base(word){return String(word).replace(/^(der|die|das)\s+/i,'').split(',')[0].split('(')[0].trim()}
 function chapterOf(w){const src = String(w.chapter_id || w.chapter || w.notes || w.id || ''); const m = src.match(/(?:kapitel|Kapitel|k)?\s*(\d+)/); return m ? m[1] : '?'}
 function chapterTitleOf(n){return n==='all' ? 'All chapters' : `Kapitel ${n}`}
 function readyWords(){return W.words.filter(w=>w.status==='done' && w.data && w.data.translations && Object.keys(w.data.translations).some(k=>String(w.data.translations[k]||'').trim()))}
-function srs(id){return SRS[id] || (SRS[id]={box:0,correct:0,wrong:0,due:0,last:0,seen:0,tracks:{article:{c:0,w:0},meaning:{c:0,w:0},active:{c:0,w:0}}})}
+function srs(id){
+  const r = SRS[id] || (SRS[id]={box:0,correct:0,wrong:0,due:0,last:0,seen:0,tracks:{}});
+  ['article','meaning','plural','pattern','active'].forEach(t=>{ if(!r.tracks[t]) r.tracks[t]={c:0,w:0}; });
+  return r;
+}
 function due(w){return srs(w.id).due <= Date.now()}
 function weak(w){const r=srs(w.id); return r.wrong>r.correct || (r.box===0 && r.seen>0)}
 function intervalDays(box){return [0,1,3,7,14,30,60,120][Math.min(box,7)]}
-function record(word, allCorrect, tracks){const r=srs(word.id); r.last=Date.now(); r.seen++; if(allCorrect){r.correct++; r.box=Math.min(7,r.box+1)} else {r.wrong++; r.box=0} ['article','meaning','active'].forEach(t=>{if(tracks[t]===true)r.tracks[t].c++; if(tracks[t]===false)r.tracks[t].w++}); r.due=Date.now()+intervalDays(r.box)*DAY; save()}
+function record(word, allCorrect, tracks){
+  const r=srs(word.id);
+  r.last=Date.now(); r.seen++;
+  if(allCorrect){r.correct++; r.box=Math.min(7,r.box+1)} else {r.wrong++; r.box=0}
+  ['article','meaning','plural','pattern','active'].forEach(t=>{
+    if(tracks[t]===true) r.tracks[t].c++;
+    if(tracks[t]===false) r.tracks[t].w++;
+  });
+  r.due=Date.now()+intervalDays(r.box)*DAY;
+  save();
+}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function translation(w){const t=w.data?.translations||{}; return t[USER.lang] || t.English || t.en || Object.values(t).find(v=>String(v||'').trim()) || '—'}
 function selectedLangValue(obj, fallback=''){if(!obj)return fallback; const lang=USER.lang; const code={English:'en',Spanish:'es',French:'fr',Japanese:'ja',German:'de',Korean:'ko',Italian:'it',Chinese:'zh',Portuguese:'pt',Persian:'fa',Arabic:'ar',Thai:'th'}[lang]; if(typeof obj==='string') return obj; return obj[lang] || (code?obj[code]:'') || obj.English || obj.en || obj.German || fallback}
@@ -182,33 +205,159 @@ function buildMenu(){
   document.getElementById('mode').value=USER.mode;
   document.querySelectorAll('#sizePills .pill').forEach(p=>p.classList.toggle('on',p.dataset.n===USER.size));
   const rw=readyWords(); const attempts=Object.values(SRS).reduce((a,r)=>a+r.correct+r.wrong,0); const correct=Object.values(SRS).reduce((a,r)=>a+r.correct,0);
-  document.getElementById('statWords').textContent=rw.length; document.getElementById('statDue').textContent=rw.filter(due).length; document.getElementById('statMastered').textContent=rw.filter(w=>srs(w.id).box>=4).length; document.getElementById('statAccuracy').textContent=(attempts?Math.round(correct/attempts*100):0)+'%'; document.getElementById('startBtn').disabled=rw.length<1;
+  document.getElementById('statWords').textContent=rw.length; document.getElementById('statDue').textContent=rw.filter(due).length; document.getElementById('statMastered').textContent=rw.filter(w=>srs(w.id).box>=4).length; document.getElementById('statAccuracy').textContent=(attempts?Math.round(correct/attempts*100):0)+'%'; document.getElementById('startBtn').disabled=rw.length<1; renderDailyPlan();
 }
+
+function renderDailyPlan(){
+  const el=document.getElementById('dailyPlan'); if(!el)return;
+  const rw=readyWords();
+  const dueN=rw.filter(due).length;
+  const weakN=rw.filter(weak).length;
+  const articleWeak=rw.filter(w=>{const t=srs(w.id).tracks.article;return t.w>t.c}).length;
+  const pluralWeak=rw.filter(w=>{const t=srs(w.id).tracks.plural;return t.w>t.c}).length;
+  const patternWeak=rw.filter(w=>{const t=srs(w.id).tracks.pattern;return t.w>t.c}).length;
+  el.innerHTML = `Do <b>${Math.min(10,weakN||dueN||rw.length)}</b> weak/due words today. Weak articles: <b>${articleWeak}</b>. Weak plurals: <b>${pluralWeak}</b>. Weak grammar patterns: <b>${patternWeak}</b>. Due: <b>${dueN}</b>.`;
+}
+
 ['name','lang','chapter','mode'].forEach(x=>document.addEventListener('change',e=>{if(e.target.id===x){USER[x]=e.target.value;save();buildMenu()}}));
 document.getElementById('sizePills').onclick=e=>{const p=e.target.closest('.pill'); if(!p)return; USER.size=p.dataset.n; save(); buildMenu()};
 
 function candidatePool(){let p=readyWords(); if(USER.chapter!=='all')p=p.filter(w=>chapterOf(w)===USER.chapter); if(USER.mode==='due')p=p.filter(due); if(USER.mode==='weak')p=p.filter(weak); return p}
-function startSession(){USER.name=document.getElementById('name').value.trim()||'Learner'; USER.lang=document.getElementById('lang').value; USER.chapter=document.getElementById('chapter').value; USER.mode=document.getElementById('mode').value; save(); let p=candidatePool(); if(!p.length){alert('No words available for this selection.');return} const n=USER.size==='all'?p.length:Math.min(+USER.size,p.length); const queue=shuffle([...p]).slice(0,n); Q={queue,originalQueue:[...queue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null}; showScreen('quiz'); next()}
-function restartSession(){if(!Q.originalQueue.length){startSession();return} Q={queue:[...Q.originalQueue],originalQueue:[...Q.originalQueue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null}; showScreen('quiz'); next()}
-function next(){if(Q.idx>=Q.queue.length)return finish(); Q.cur=Q.queue[Q.idx]; Q.phase='article'; Q.articleOk=null; Q.meaningOk=null; Q.activeOk=null; Q.options=[]; render()}
-function stepHTML(){return `<div class="steps"><span class="step ${Q.phase==='article'?'on':Q.articleOk!==null?'done':''}">1 Article</span><span class="step ${Q.phase==='meaning'?'on':Q.meaningOk!==null?'done':''}">2 Meaning</span><span class="step ${Q.phase==='active'?'on':Q.activeOk!==null?'done':''}">3 Active</span></div>`}
+function startSession(){USER.name=document.getElementById('name').value.trim()||'Learner'; USER.lang=document.getElementById('lang').value; USER.chapter=document.getElementById('chapter').value; USER.mode=document.getElementById('mode').value; save(); let p=candidatePool(); if(!p.length){alert('No words available for this selection.');return} const n=USER.size==='all'?p.length:Math.min(+USER.size,p.length); const queue=shuffle([...p]).slice(0,n); Q={queue,originalQueue:[...queue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,pluralOk:null,patternOk:null,activeOk:null}; showScreen('quiz'); next()}
+function restartSession(){if(!Q.originalQueue.length){startSession();return} Q={queue:[...Q.originalQueue],originalQueue:[...Q.originalQueue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,pluralOk:null,patternOk:null,activeOk:null}; showScreen('quiz'); next()}
+function next(){
+  if(Q.idx>=Q.queue.length)return finish();
+  Q.cur=Q.queue[Q.idx];
+  Q.phase='article';
+  Q.articleOk=null; Q.meaningOk=null; Q.pluralOk=null; Q.patternOk=null; Q.activeOk=null;
+  Q.options=[];
+  render();
+}
+function hasPluralTask(w){const g=w.data?.grammar||{}; return !!(g.plural || g.plural_hint) && String(g.type||'').toLowerCase().includes('noun')}
+function pluralExpected(w){const g=w.data?.grammar||{}; return String(g.plural || g.plural_hint || '').trim()}
+function patternExpected(w){
+  const g=w.data?.grammar||{};
+  if(g.pattern) return String(g.pattern).trim();
+  const m=String(w.word||'').match(/\(([^)]*\+[^\)]*)\)/);
+  return m?m[1].trim():'';
+}
+function hasPatternTask(w){return !!patternExpected(w)}
+function nextLearningPhase(){
+  if(hasPluralTask(Q.cur)) return 'plural';
+  if(hasPatternTask(Q.cur)) return 'pattern';
+  return 'active';
+}
+function stepHTML(){
+  const steps=[
+    ['article','1 Article',Q.articleOk],
+    ['meaning','2 Meaning',Q.meaningOk],
+  ];
+  if(hasPluralTask(Q.cur)) steps.push(['plural','3 Plural',Q.pluralOk]);
+  if(hasPatternTask(Q.cur)) steps.push(['pattern',`${steps.length+1} Pattern`,Q.patternOk]);
+  steps.push(['active',`${steps.length+1} Active`,Q.activeOk]);
+  return `<div class="steps">${steps.map(([id,label,val])=>`<span class="step ${Q.phase===id?'on':val!==null?'done':''}">${label}</span>`).join('')}</div>`;
+}
+function masteryMini(w){
+  const r=srs(w.id), ts=r.tracks;
+  function chip(k,label){const t=ts[k]||{c:0,w:0}; const n=t.c+t.w; const p=n?Math.round(t.c/n*100):0; return `<span class="badge ${p>=70?'ok':p>0?'warn':'err'}">${label}: ${p}%</span>`}
+  return `<div class="badges" style="justify-content:center;margin-top:12px">${chip('article','Article')}${chip('meaning','Meaning')}${chip('plural','Plural')}${chip('pattern','Pattern')}${chip('active','Active')}</div>`;
+}
 function render(){
   const w=Q.cur; document.getElementById('bar').style.width=`${Math.round(Q.idx/Q.queue.length*100)}%`;
   document.getElementById('bOk').textContent=`${Q.ok} correct`; document.getElementById('bErr').textContent=`${Q.weak} weak`; document.getElementById('bPts').textContent=`${Q.pts} pts`; document.getElementById('bStreak').textContent=`${Q.streak} streak`; document.getElementById('bLeft').textContent=`${Q.queue.length-Q.idx} left`;
   const artDisplay=Q.articleOk===null?'':(Q.articleOk?`✓ ${article(w.word)||'—'}`:`✗ article: ${article(w.word)||'—'}`);
-  let html=`<div class="word"><div class="word-article">${h(artDisplay)}</div><div class="word-main">${h(base(w.word))}</div><div class="word-sub">${h(w.notes||chapterTitleOf(chapterOf(w)))}</div></div>${stepHTML()}`;
-  if(Q.phase==='article')html+=articleView(w); if(Q.phase==='meaning')html+=meaningView(w); if(Q.phase==='active')html+=activeView(w); if(Q.phase==='done')html+=doneView(w);
+  let html=`<div class="word"><div class="word-article">${h(artDisplay)}</div><div class="word-main">${h(base(w.word))}</div><div class="word-sub">${h(w.notes||chapterTitleOf(chapterOf(w)))}</div>${masteryMini(w)}</div>${stepHTML()}`;
+  if(Q.phase==='article')html+=articleView(w);
+  if(Q.phase==='meaning')html+=meaningView(w);
+  if(Q.phase==='plural')html+=pluralView(w);
+  if(Q.phase==='pattern')html+=patternView(w);
+  if(Q.phase==='active')html+=activeView(w);
+  if(Q.phase==='done')html+=doneView(w);
   document.getElementById('qcard').innerHTML=html;
 }
 function articleView(w){return `<div class="phase">Choose the article</div><div class="options cols">${ARTICLE_OPTIONS.map(a=>`<button class="opt center" onclick="answerArticle('${a}')">${a}</button>`).join('')}</div><div class="hint">For verbs, adjectives, phrases, and expressions, choose —.</div>`}
-function answerArticle(a){const correct=article(Q.cur.word)||'—'; Q.articleOk=(a===correct); Q.pts+=Q.articleOk?1:0; Q.phase='meaning'; render(); showFeedback(Q.articleOk, `${Q.articleOk?'✓':'✗'} Correct article: ${correct}`)}
-function buildMeaningOptions(w){const correct=translation(w); const others=shuffle(readyWords().filter(x=>x.id!==w.id && translation(x)!==correct)).slice(0,3).map(translation); return shuffle([correct,...others])}
-function meaningView(w){Q.options = Q.options.length ? Q.options : buildMeaningOptions(w); return `<div class="phase">Choose the meaning in ${h(USER.lang)}</div><div class="options">${Q.options.map((o,i)=>`<button class="opt" onclick="answerMeaning(${i})"><span class="muted">${String.fromCharCode(65+i)}.</span> ${h(o)}</button>`).join('')}</div>`}
-function answerMeaning(i){const correct=translation(Q.cur); Q.meaningOk=(Q.options[i]===correct); Q.pts+=Q.meaningOk?2:0; Q.phase='active'; render(); showFeedback(Q.meaningOk, `${Q.meaningOk?'✓':'✗'} Correct meaning: ${correct}`)}
-function activePrompt(w){const g=w.data?.grammar||{}; if((g.type||'').includes('noun') && (g.plural_hint||g.plural)){return {kind:'plural', label:'Active recall: type the plural hint or plural form', expected:String(g.plural||g.plural_hint||'').trim()}} return {kind:'meaning', label:`Active recall: type the ${USER.lang} meaning`, expected:translation(w)}}
-function activeView(w){const p=activePrompt(w); return `<div class="phase">${h(p.label)}</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Type your answer" onkeydown="if(event.key==='Enter')answerActive()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerActive()">Check</button><button class="btn ghost" id="grammarBtn" onclick="toggleDetails()">Show explanation</button></div><div class="hint">This is the production step. It exposes whether you can recall, not only recognize.</div>`}
-function answerActive(){const p=activePrompt(Q.cur); const value=document.getElementById('typed').value; Q.activeOk=norm(value)===norm(p.expected); Q.pts+=Q.activeOk?3:0; const all=!!(Q.articleOk&&Q.meaningOk&&Q.activeOk); if(all){Q.ok++; Q.streak++; Q.bestStreak=Math.max(Q.bestStreak,Q.streak)} else {Q.weak++; Q.streak=0; Q.weakItems.push(Q.cur)} record(Q.cur,all,{article:Q.articleOk,meaning:Q.meaningOk,active:Q.activeOk}); Q.phase='done'; render()}
-function doneView(w){const p=activePrompt(w); const all=!!(Q.articleOk&&Q.meaningOk&&Q.activeOk); return `<div class="feedback ${all?'ok':'err'}">${all?'✓ Strong answer':'✗ Review needed'} · Article: ${Q.articleOk?'✓':'✗'} · Meaning: ${Q.meaningOk?'✓':'✗'} · Active: ${Q.activeOk?'✓':'✗'}<br>Expected active answer: ${h(p.expected)}</div>${detailPanel(w)}<div class="row" style="margin-top:14px"><button class="btn gold" onclick="Q.idx++;next()">Next</button><button class="btn ghost" onclick="speakCurrent()">Speak</button></div>`}
+function answerArticle(a){
+  const correct=article(Q.cur.word)||'—';
+  Q.articleOk=(a===correct);
+  Q.pts+=Q.articleOk?1:0;
+  Q.phase='meaning';
+  render();
+  showFeedback(Q.articleOk, `${Q.articleOk?'✓':'✗'} Correct article: ${correct}`);
+}
+function buildMeaningOptions(w){
+  const correct=translation(w);
+  const others=shuffle(readyWords().filter(x=>x.id!==w.id && translation(x)!==correct)).slice(0,3).map(translation);
+  while(others.length<3) others.push('—');
+  return shuffle([correct,...others]);
+}
+function meaningView(w){
+  Q.options = Q.options.length ? Q.options : buildMeaningOptions(w);
+  return `<div class="phase">Choose the meaning in ${h(USER.lang)}</div><div class="options">${Q.options.map((o,i)=>`<button class="opt" onclick="answerMeaning(${i})"><span class="muted">${String.fromCharCode(65+i)}.</span> ${h(o)}</button>`).join('')}</div>`;
+}
+function answerMeaning(i){
+  const correct=translation(Q.cur);
+  Q.meaningOk=(Q.options[i]===correct);
+  Q.pts+=Q.meaningOk?2:0;
+  Q.phase=nextLearningPhase();
+  render();
+  showFeedback(Q.meaningOk, `${Q.meaningOk?'✓':'✗'} Correct meaning: ${correct}`);
+}
+function pluralView(w){
+  const expected=pluralExpected(w);
+  return `<div class="phase">Plural recall</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Type plural hint or plural form" onkeydown="if(event.key==='Enter')answerPlural()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerPlural()">Check plural</button><button class="btn ghost" onclick="toggleDetails()">Show explanation</button></div><div class="hint">German nouns are not learned until article and plural are recoverable.</div>`;
+}
+function answerPlural(){
+  const expected=pluralExpected(Q.cur);
+  const value=document.getElementById('typed').value;
+  Q.pluralOk = norm(value)===norm(expected) || norm(value)===norm(`${base(Q.cur.word)}${expected.replace(/^-/,'')}`);
+  Q.pts+=Q.pluralOk?2:0;
+  Q.phase=hasPatternTask(Q.cur)?'pattern':'active';
+  render();
+  showFeedback(Q.pluralOk, `${Q.pluralOk?'✓':'✗'} Expected plural/hint: ${expected}`);
+}
+function patternView(w){
+  const expected=patternExpected(w);
+  return `<div class="phase">Grammar pattern recall</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Example: um + A. / bei + D." onkeydown="if(event.key==='Enter')answerPattern()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerPattern()">Check pattern</button><button class="btn ghost" onclick="toggleDetails()">Show explanation</button></div><div class="hint">Type the case/preposition pattern. This is where B1/B2 grammar becomes visible.</div>`;
+}
+function answerPattern(){
+  const expected=patternExpected(Q.cur);
+  const value=document.getElementById('typed').value;
+  Q.patternOk = norm(value)===norm(expected);
+  Q.pts+=Q.patternOk?2:0;
+  Q.phase='active';
+  render();
+  showFeedback(Q.patternOk, `${Q.patternOk?'✓':'✗'} Expected pattern: ${expected}`);
+}
+function activePrompt(w){
+  return {kind:'german', label:'Active production: type the German base word/phrase', expected:base(w.word), alternatives:[base(w.word), w.word]};
+}
+function activeView(w){
+  const p=activePrompt(w);
+  return `<div class="phase">${h(p.label)}</div><input class="input-answer" id="typed" autocomplete="off" placeholder="Type the German word" onkeydown="if(event.key==='Enter')answerActive()" autofocus><div class="row" style="margin-top:12px"><button class="btn gold" onclick="answerActive()">Check active recall</button><button class="btn ghost" id="grammarBtn" onclick="toggleDetails()">Show explanation</button></div><div class="hint">You saw the meaning. Now produce the German form from memory.</div>`;
+}
+function answerActive(){
+  const p=activePrompt(Q.cur);
+  const value=document.getElementById('typed').value;
+  Q.activeOk=p.alternatives.some(x=>norm(value)===norm(x));
+  Q.pts+=Q.activeOk?3:0;
+  const pluralRequired=hasPluralTask(Q.cur), patternRequired=hasPatternTask(Q.cur);
+  const all=!!(Q.articleOk && Q.meaningOk && (!pluralRequired || Q.pluralOk) && (!patternRequired || Q.patternOk) && Q.activeOk);
+  if(all){Q.ok++; Q.streak++; Q.bestStreak=Math.max(Q.bestStreak,Q.streak)} else {Q.weak++; Q.streak=0; Q.weakItems.push(Q.cur)}
+  record(Q.cur, all, {article:Q.articleOk, meaning:Q.meaningOk, plural:pluralRequired?Q.pluralOk:null, pattern:patternRequired?Q.patternOk:null, active:Q.activeOk});
+  Q.phase='done';
+  render();
+}
+function doneView(w){
+  const p=activePrompt(w);
+  const pluralRequired=hasPluralTask(w), patternRequired=hasPatternTask(w);
+  const all=!!(Q.articleOk && Q.meaningOk && (!pluralRequired || Q.pluralOk) && (!patternRequired || Q.patternOk) && Q.activeOk);
+  const pieces=[`Article: ${Q.articleOk?'✓':'✗'}`,`Meaning: ${Q.meaningOk?'✓':'✗'}`];
+  if(pluralRequired) pieces.push(`Plural: ${Q.pluralOk?'✓':'✗'} (${h(pluralExpected(w))})`);
+  if(patternRequired) pieces.push(`Pattern: ${Q.patternOk?'✓':'✗'} (${h(patternExpected(w))})`);
+  pieces.push(`Active: ${Q.activeOk?'✓':'✗'}`);
+  const expl = USER.mode==='exam' ? '' : detailPanel(w);
+  return `<div class="feedback ${all?'ok':'err'}">${all?'✓ Strong answer':'✗ Review needed'} · ${pieces.join(' · ')}<br>Expected active answer: ${h(p.expected)}</div>${expl}<div class="row" style="margin-top:14px"><button class="btn gold" onclick="Q.idx++;next()">Next</button><button class="btn ghost" onclick="speakCurrent()">Speak</button>${USER.mode==='exam'?'<button class="btn ghost" onclick="toggleDetails()">Show explanation</button>':''}</div>`;
+}
 function showFeedback(ok,text){const q=document.getElementById('qcard'); q.querySelectorAll('.feedback').forEach(el=>el.remove()); q.insertAdjacentHTML('beforeend',`<div class="feedback ${ok?'ok':'err'}">${h(text)}</div>`)}
 function detailPanel(w){
   const g=w.data?.grammar||{}; const rows=Object.entries(g).map(([k,v])=>`<div><span>${h(k)}</span><b>${h(Array.isArray(v)?v.join('; '):v)}</b></div>`).join('')||'<div><span>grammar</span><b>not provided</b></div>';
@@ -219,7 +368,7 @@ function toggleDetails(){const q=document.getElementById('qcard'); const existin
 function speakCurrent(){if(!Q.cur||!('speechSynthesis'in window))return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(base(Q.cur.word)); u.lang='de-DE'; u.rate=.88; speechSynthesis.speak(u)}
 
 function finish(){const total=Q.ok+Q.weak,score=total?Math.round(Q.ok/total*100):0; HISTORY.push({date:new Date().toLocaleString(),chapter:USER.chapter,words:Q.queue.length,ok:Q.ok,weak:Q.weak,pts:Q.pts,streak:Q.bestStreak,score}); save(); document.getElementById('sumPct').textContent=score+'%'; document.getElementById('sumSub').textContent=`${USER.name} · ${chapterTitleOf(USER.chapter)} · ${Q.queue.length} words`; document.getElementById('sumCorrect').textContent=Q.ok; document.getElementById('sumWeak').textContent=Q.weak; document.getElementById('sumPts').textContent=Q.pts; document.getElementById('sumStreak').textContent=Q.bestStreak; const wb=document.getElementById('weakBox'); if(Q.weakItems.length){wb.classList.remove('hidden'); document.getElementById('weakRows').innerHTML=[...new Map(Q.weakItems.map(w=>[w.id,w])).values()].map(w=>`<tr><td>${h(w.word)}</td><td>${h(translation(w))}</td><td>${h(w.notes)}</td><td>${linkHTML(w)}</td></tr>`).join('')} else wb.classList.add('hidden'); showScreen('summary'); buildMenu()}
-function reviewWeak(){const queue=[...new Map(Q.weakItems.map(w=>[w.id,w])).values()]; if(!queue.length){USER.mode='weak'; showScreen('menu'); buildMenu(); return} Q={queue,originalQueue:[...queue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,activeOk:null}; showScreen('quiz'); next()}
+function reviewWeak(){const queue=[...new Map(Q.weakItems.map(w=>[w.id,w])).values()]; if(!queue.length){USER.mode='weak'; showScreen('menu'); buildMenu(); return} Q={queue,originalQueue:[...queue],idx:0,ok:0,weak:0,pts:0,weakItems:[],cur:null,phase:null,streak:0,bestStreak:0,options:[],articleOk:null,meaningOk:null,pluralOk:null,patternOk:null,activeOk:null}; showScreen('quiz'); next()}
 function exitQuiz(){showScreen('menu');buildMenu()}
 function openTracker(){showScreen('tracker')}
 function renderTracker(){const rows=Object.entries(SRS); const attempts=rows.reduce((a,[,r])=>a+r.correct+r.wrong,0),correct=rows.reduce((a,[,r])=>a+r.correct,0),wrong=rows.reduce((a,[,r])=>a+r.wrong,0),best=HISTORY.reduce((m,s)=>Math.max(m,s.streak||0),0); document.getElementById('trSessions').textContent=HISTORY.length; document.getElementById('trAcc').textContent=(attempts?Math.round(correct/attempts*100):0)+'%'; document.getElementById('trWeak').textContent=wrong; document.getElementById('trBest').textContent=best; const recent=HISTORY.slice(-14); document.getElementById('trend').innerHTML=recent.length?recent.map(s=>`<div class="barcol" title="${h(s.date)} · ${s.score}%" style="height:${Math.max(5,s.score)}%"></div>`).join(''):'<div class="empty">No sessions yet.</div>'; const wordMap=Object.fromEntries(readyWords().map(w=>[w.id,w])); const weakRows=rows.map(([id,r])=>({id,r,w:wordMap[id]})).filter(x=>x.w).sort((a,b)=>b.r.wrong-a.r.wrong).slice(0,14); document.getElementById('weakestRows').innerHTML=weakRows.length?weakRows.map(x=>`<tr><td>${h(x.w.word)}</td><td>${x.r.wrong}</td><td>${x.r.correct}</td><td>${x.r.box}</td></tr>`).join(''):'<tr><td colspan="4">No tracked words yet.</td></tr>'; document.getElementById('sessionRows').innerHTML=HISTORY.slice(-12).reverse().map(s=>`<tr><td>${h(s.date)}</td><td>${h(chapterTitleOf(s.chapter))}</td><td>${s.score}%</td><td>${s.words}</td></tr>`).join('')||'<tr><td colspan="4">No sessions yet.</td></tr>'}
