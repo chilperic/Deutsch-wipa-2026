@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vokabular · Mastery Edition</title>
+    <meta charset="UTF-8">
+    <title>Vokabular · Mastery Edition</title>
 </head>
 <body>
-
-<div id="app-root">
-    </div>
+    <div id="app-root"><h1>Initializing Engine...</h1></div>
 
 <script>
-// --- PROFESSIONAL DATA ENGINE ---
-let W = { words: [] };
-
-async function loadChapter(chapterName) {
+async function init() {
     try {
-        // This looks inside the 'data' folder for your specific chapter file
-        const response = await fetch(`./data/${chapterName}.json`);
-        if (!response.ok) throw new Error("Chapter file not found");
+        // Change './kapitel1.json' to './data/kapitel1.json' ONLY if you put them in a folder
+        const response = await fetch('./kapitel1.json'); 
+        if (!response.ok) throw new Error("Could not find kapitel1.json in the repository root.");
+        
         const data = await response.json();
-        W.words = data; // Set the current words to this chapter's data
-        buildDashboard();
+        
+        // Success!
+        document.getElementById('app-root').innerHTML = `
+            <h1 style="color:#c9a84c;">Vokabular Engine</h1>
+            <p style="color:green;">Success! Loaded ${data.length} words from Kapitel 1.</p>
+        `;
     } catch(err) {
-        alert("Error loading chapter: " + err.message);
+        document.getElementById('app-root').innerHTML = `
+            <h1 style="color:red;">Fatal Error</h1>
+            <p>${err.message}</p>
+            <p>Make sure 'kapitel1.json' is in the same folder as 'index.html'.</p>
+        `;
     }
 }
-
-// Update the select dropdown in your Dashboard to trigger this
-document.getElementById('sel-chapter').onchange = (e) => {
-    loadChapter(e.target.value);
-};
-
-// --- INITIALIZATION ---
-window.onload = () => {
-    loadChapter('kapitel1'); // Load chapter 1 by default
-};
+init();
 </script>
 </body>
 </html>
