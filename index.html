@@ -95,7 +95,6 @@ hr{border:none;border-top:1px solid var(--bdr)}
 .gap{display:flex;flex-direction:column;gap:12px}
 .tip{font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px}
 .tip a{color:var(--gold2)}
-#file-input{display:none}
 @keyframes blink { 0%,100%{opacity:.2} 50%{opacity:1} }
 .blink span { animation:blink 1.2s infinite; }
 .blink span:nth-child(2){animation-delay:.2s}
@@ -145,7 +144,7 @@ hr{border:none;border-top:1px solid var(--bdr)}
     <button class="btn btn-gold btn-block" id="btn-start" onclick="startSession()" style="padding:16px;font-size:14px;margin-top:6px">▶ Start Game</button>
     <hr style="margin: 10px 0;">
     <div class="btn-row">
-      <button class="btn btn-outline" style="flex:1" onclick="openSettings()">⚙ Manage Dictionary</button>
+      <button class="btn btn-outline" style="flex:1" onclick="openSettings()">⚙ App Settings</button>
     </div>
   </div>
 </div>
@@ -160,7 +159,6 @@ hr{border:none;border-top:1px solid var(--bdr)}
     </div>
     <div class="qh-right">
       <span class="streak-badge" id="streak-badge" style="display:none"></span>
-      <button class="icon-btn" onclick="openSettings()">⚙</button>
       <button class="icon-btn" onclick="confirmExit()">✕</button>
     </div>
   </div>
@@ -191,43 +189,28 @@ hr{border:none;border-top:1px solid var(--bdr)}
 <div id="modal-bg" onclick="if(event.target===this)closeModal()">
 <div class="modal anim-slide">
   <div class="modal-hdr">
-    <span class="modal-ttl">Dictionary Engine</span>
+    <span class="modal-ttl">App Settings</span>
     <button class="icon-btn" onclick="closeModal()">✕</button>
   </div>
   <div>
-    <span class="lbl">Anthropic API Key</span>
+    <span class="lbl">Anthropic API Key (Optional)</span>
     <input type="password" id="m-apikey" placeholder="sk-ant-…" oninput="saveKey()">
-    <p class="tip">Stored strictly locally in browser memory.</p>
-  </div>
-  <hr>
-  <div>
-    <span class="lbl">Generate translations for</span>
-    <div class="pill-grp" id="m-lang-chips"></div>
+    <p class="tip">Stored strictly locally in browser memory. Only needed if expanding the dictionary.</p>
   </div>
   <hr>
   <div>
     <span class="lbl">Translation Status</span>
     <p style="font-family:var(--mono);font-size:13px;color:var(--dim);margin-bottom:12px" id="m-stats"></p>
-    <button class="btn btn-gold btn-block" id="m-gen-btn" onclick="generateAll()">Generate Missing Translations</button>
+    <button class="btn btn-gold btn-block" id="m-gen-btn" onclick="generateAll()">Compile Missing Translations</button>
     <p class="gen-prog blink" id="m-prog" style="display:none;margin-top:10px"></p>
   </div>
-  <hr>
-  <div>
-    <span class="lbl">Data Management</span>
-    <div class="btn-row">
-      <button class="btn btn-outline" style="flex:1" onclick="document.getElementById('file-input').click()">↑ Import File</button>
-      <button class="btn btn-outline" style="flex:1" onclick="exportJSON()">↓ Export File</button>
-    </div>
-  </div>
 </div>
 </div>
-
-<input type="file" id="file-input" accept=".json" onchange="importFile(event)">
 
 <script>
-if (localStorage.getItem('vok_v6') !== 'true') {
+if (localStorage.getItem('vok_v7') !== 'true') {
   localStorage.clear();
-  localStorage.setItem('vok_v6', 'true');
+  localStorage.setItem('vok_v7', 'true');
 }
 
 const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili','Portuguese','Dutch','Chinese','Japanese','Polish','Turkish'];
@@ -250,54 +233,84 @@ function extLinks(word, nativeLang) {
   ];
 }
 
-// BAKE PRE-TRANSLATED VOCABULARY DATA (WITH DEEP GRAMMAR!)
+// BAKE PRE-TRANSLATED VOCABULARY DATA EXTRACTED FROM KAPITEL 1-4 IMAGES
 let W = {
   meta: { "targetLanguages": ["English","French","Arabic","Persian","Spanish","Ukrainian","Russian","Italian","Swahili"], "explanationLanguage": "English" },
   words: [
+    // KAPITEL 1
     {
-      "id": "k1_001", "word": "das Essen", "notes": "Noun", "status": "done",
-      "data": {
-        "translations": { "English": "food / meal", "French": "nourriture / repas", "Arabic": "طعام", "Persian": "غذا", "Spanish": "comida", "Ukrainian": "їжа", "Russian": "еда", "Italian": "cibo", "Swahili": "chakula" }, 
-        "explanation": "Refers to the act of eating or the meal itself. It is a nominalized verb (capitalized infinitive).", 
-        "example_de": "Das Essen schmeckt hervorragend.", "example_translated": "The food tastes excellent.",
-        "grammar": { "type": "noun", "singular": "das Essen", "plural": "die Essen", "related": "essen (verb)" }
-      }
+      "id": "k1_001", "word": "die Messe", "notes": "Kapitel 1", "status": "done",
+      "data": { "translations": { "English": "trade fair / exhibition", "French": "foire / salon", "Arabic": "معرض تجاري", "Persian": "نمایشگاه بازرگانی", "Spanish": "feria", "Ukrainian": "торгова виставка", "Russian": "ярмарка", "Italian": "fiera", "Swahili": "maonyesho ya biashara" }, "explanation": "A large exhibition for industry or trade.", "example_de": "Wir besuchen nächste Woche die Buchmesse.", "example_translated": "We are visiting the book fair next week.", "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } }
     },
     {
-      "id": "k1_002", "word": "sich bewerben", "notes": "Verb · §1", "status": "done",
-      "data": { 
-        "translations": { "English": "to apply (for a job)", "French": "postuler", "Arabic": "يتقدم لوظيفة", "Persian": "درخواست کار دادن", "Spanish": "solicitar un empleo", "Ukrainian": "подавати заяву", "Russian": "подавать заявление", "Italian": "candidarsi", "Swahili": "kutuma maombi" }, 
-        "explanation": "Reflexive verb. Requires 'um' + Akkusativ for the position, or 'bei' + Dativ for the company. Irregular (strong) verb.", 
-        "example_de": "Sie bewirbt sich bei einer großen Agentur um eine Stelle.", "example_translated": "She is applying for a job at a large agency.",
-        "grammar": { "type": "verb", "conjugation": { "ich": "bewerbe mich", "du": "bewirbst dich", "er/sie/es": "bewirbt sich", "wir": "bewerben uns", "ihr": "bewerbt euch", "sie/Sie": "bewerben sich" }, "related": "die Bewerbung (noun)" }
-      }
+      "id": "k1_002", "word": "die Premiere", "notes": "Kapitel 1", "status": "done",
+      "data": { "translations": { "English": "premiere", "French": "première", "Arabic": "العرض الأول", "Persian": "اولین نمایش", "Spanish": "estreno", "Ukrainian": "прем'єра", "Russian": "премьера", "Italian": "prima", "Swahili": "onyesho la kwanza" }, "explanation": "The first public performance of a play or movie.", "example_de": "Die Premiere des Films war ein großer Erfolg.", "example_translated": "The film's premiere was a huge success.", "grammar": { "type": "noun", "singular": "die Premiere", "plural": "die Premieren" } }
     },
     {
-      "id": "k1_003", "word": "die Einarbeitung", "notes": "Noun · §3", "status": "done",
-      "data": { 
-        "translations": { "English": "onboarding / orientation", "French": "intégration / formation initiale", "Arabic": "توجيه / تدريب أولي", "Persian": "آشناسازی شغلی", "Spanish": "formación inicial", "Ukrainian": "введення в посаду", "Russian": "вводный инструктаж", "Italian": "inserimento", "Swahili": "mafunzo ya awali" }, 
-        "explanation": "The process of getting familiar with a new job or task. From 'sich einarbeiten' (to learn the ropes).", 
-        "example_de": "Die Einarbeitung neuer Mitarbeiter dauert meistens vier Wochen.", "example_translated": "The onboarding of new employees usually takes four weeks.",
-        "grammar": { "type": "noun", "singular": "die Einarbeitung", "plural": "die Einarbeitungen", "related": "sich einarbeiten (verb)" }
-      }
+      "id": "k1_003", "word": "sich beschweren", "notes": "Kapitel 1", "status": "done",
+      "data": { "translations": { "English": "to complain", "French": "se plaindre", "Arabic": "يشتكي", "Persian": "شکایت کردن", "Spanish": "quejarse", "Ukrainian": "скаржитися", "Russian": "жаловаться", "Italian": "lamentarsi", "Swahili": "kulalamika" }, "explanation": "Reflexive verb used with 'bei' (Dativ) for the person, and 'über' (Akkusativ) for the issue.", "example_de": "Er beschwert sich beim Chef über das Essen.", "example_translated": "He complains to the boss about the food.", "grammar": { "type": "verb", "conjugation": { "ich": "beschwere mich", "du": "beschwerst dich", "er/sie/es": "beschwert sich", "wir": "beschweren uns", "ihr": "beschwert euch", "sie/Sie": "beschweren sich" }, "related": "die Beschwerde" } }
     },
     {
-      "id": "k2_001", "word": "geschickt sein", "notes": "Adjective phrase · §1", "status": "done",
-      "data": { 
-        "translations": { "English": "to be skillful / adroit", "French": "être habile", "Arabic": "يكون ماهراً", "Persian": "ماهر بودن", "Spanish": "ser hábil", "Ukrainian": "бути вправним", "Russian": "быть ловким", "Italian": "essere abile", "Swahili": "kuwa hodari" }, 
-        "explanation": "Used often as 'handwerklich geschickt sein' meaning to be good with one's hands (craftsmanship).", 
-        "example_de": "Für diesen Beruf muss man handwerklich geschickt sein.", "example_translated": "For this profession, one must be manually skilled.",
-        "grammar": { "type": "adjective", "related": "das Geschick (noun)" }
-      }
+      "id": "k1_004", "word": "das Profil", "notes": "Kapitel 1", "status": "done",
+      "data": { "translations": { "English": "profile", "French": "profil", "Arabic": "ملف شخصي", "Persian": "نمایه", "Spanish": "perfil", "Ukrainian": "профіль", "Russian": "профиль", "Italian": "profilo", "Swahili": "wasifu" }, "explanation": "A description of a person or a cross-section.", "example_de": "Sie hat ihr Profil im Netzwerk aktualisiert.", "example_translated": "She updated her profile on the network.", "grammar": { "type": "noun", "singular": "das Profil", "plural": "die Profile" } }
     },
     {
-      "id": "k4_001", "word": "die Schichtarbeit", "notes": "Noun · §2", "status": "done",
-      "data": { 
-        "translations": { "English": "shift work", "French": "travail posté / travail en horaires décalés", "Arabic": "عمل بنظام الورديات", "Persian": "کار شیفتی", "Spanish": "trabajo por turnos", "Ukrainian": "позмінна робота", "Russian": "сменная работа", "Italian": "lavoro a turni", "Swahili": "kazi ya zamu" }, 
-        "explanation": "Work scheduled outside standard daytime hours. Typically used in singular only (Sg.).", 
-        "example_de": "In der Industrie ist Schichtarbeit sehr verbreitet.", "example_translated": "In industry, shift work is very common.",
-        "grammar": { "type": "noun", "singular": "die Schichtarbeit", "plural": "— (Singular only)", "related": "die Schicht (noun)" }
-      }
+      "id": "k1_005", "word": "der Steckbrief", "notes": "Kapitel 1", "status": "done",
+      "data": { "translations": { "English": "wanted poster / profile", "French": "avis de recherche / fiche signalétique", "Arabic": "ملصق مطلوبين", "Persian": "پوستر تحت تعقیب", "Spanish": "cartel de busca y captura / ficha", "Ukrainian": "орієнтування", "Russian": "ориентировка / краткая биография", "Italian": "identikit", "Swahili": "bango la kutafutwa" }, "explanation": "Historically a wanted poster, modernly used as a brief personal profile or fact sheet.", "example_de": "Jeder Schüler hat einen kurzen Steckbrief geschrieben.", "example_translated": "Every student wrote a short profile.", "grammar": { "type": "noun", "singular": "der Steckbrief", "plural": "die Steckbriefe" } }
+    },
+    
+    // KAPITEL 2
+    {
+      "id": "k2_001", "word": "die Prüfung", "notes": "Kapitel 2", "status": "done",
+      "data": { "translations": { "English": "exam / test", "French": "examen", "Arabic": "امتحان", "Persian": "امتحان", "Spanish": "examen", "Ukrainian": "іспит", "Russian": "экзамен", "Italian": "esame", "Swahili": "mtihani" }, "explanation": "A formal test of knowledge or proficiency.", "example_de": "Die Abschlussprüfung findet im Mai statt.", "example_translated": "The final exam takes place in May.", "grammar": { "type": "noun", "singular": "die Prüfung", "plural": "die Prüfungen", "related": "prüfen (verb)" } }
+    },
+    {
+      "id": "k2_002", "word": "nähen", "notes": "Kapitel 2", "status": "done",
+      "data": { "translations": { "English": "to sew", "French": "coudre", "Arabic": "يخيط", "Persian": "دوختن", "Spanish": "coser", "Ukrainian": "шити", "Russian": "шить", "Italian": "cucire", "Swahili": "kushona" }, "explanation": "To join or attach by stitches.", "example_de": "Sie näht ihr eigenes Kleid.", "example_translated": "She sews her own dress.", "grammar": { "type": "verb", "conjugation": { "ich": "nähe", "du": "nähst", "er/sie/es": "näht", "wir": "nähen", "ihr": "näht", "sie/Sie": "nähen" }, "related": "der Schneider (tailor)" } }
+    },
+    {
+      "id": "k2_003", "word": "das Anschreiben", "notes": "Kapitel 2", "status": "done",
+      "data": { "translations": { "English": "cover letter", "French": "lettre de motivation", "Arabic": "رسالة تغطية", "Persian": "نامه پوششی", "Spanish": "carta de presentación", "Ukrainian": "супровідний лист", "Russian": "сопроводительное письмо", "Italian": "lettera di presentazione", "Swahili": "barua ya maombi" }, "explanation": "A document sent with your resume to provide additional information on your skills and experience.", "example_de": "Das Anschreiben sollte nicht länger als eine Seite sein.", "example_translated": "The cover letter should not be longer than one page.", "grammar": { "type": "noun", "singular": "das Anschreiben", "plural": "die Anschreiben", "related": "anschreiben (verb)" } }
+    },
+    {
+      "id": "k2_004", "word": "das Zeugnis", "notes": "Kapitel 2", "status": "done",
+      "data": { "translations": { "English": "report card / certificate", "French": "bulletin / certificat", "Arabic": "شهادة", "Persian": "کارنامه / گواهینامه", "Spanish": "certificado / boletín", "Ukrainian": "свідоцтво / табель", "Russian": "свидетельство / аттестат", "Italian": "pagella / certificato", "Swahili": "cheti" }, "explanation": "A formal document serving as evidence of qualifications.", "example_de": "Er hat ein sehr gutes Zeugnis bekommen.", "example_translated": "He received a very good report card.", "grammar": { "type": "noun", "singular": "das Zeugnis", "plural": "die Zeugnisse" } }
+    },
+
+    // KAPITEL 3
+    {
+      "id": "k3_001", "word": "der Außendienst", "notes": "Kapitel 3", "status": "done",
+      "data": { "translations": { "English": "field work / sales force", "French": "service externe", "Arabic": "العمل الميداني", "Persian": "کار میدانی", "Spanish": "trabajo de campo / ventas", "Ukrainian": "виїзна робота", "Russian": "выездная работа / отдел продаж", "Italian": "servizio esterno", "Swahili": "kazi ya uwanjani" }, "explanation": "Work done outside the central office, often referring to sales representatives.", "example_de": "Er arbeitet im Außendienst und reist viel.", "example_translated": "He works in field sales and travels a lot.", "grammar": { "type": "noun", "singular": "der Außendienst", "plural": "— (Singular only)" } }
+    },
+    {
+      "id": "k3_002", "word": "die Beziehung", "notes": "Kapitel 3", "status": "done",
+      "data": { "translations": { "English": "relationship", "French": "relation", "Arabic": "علاقة", "Persian": "رابطه", "Spanish": "relación", "Ukrainian": "відносини", "Russian": "отношения", "Italian": "relazione", "Swahili": "uhusiano" }, "explanation": "The way in which two or more concepts, objects, or people are connected.", "example_de": "Wir haben eine gute geschäftliche Beziehung.", "example_translated": "We have a good business relationship.", "grammar": { "type": "noun", "singular": "die Beziehung", "plural": "die Beziehungen" } }
+    },
+    {
+      "id": "k3_003", "word": "das Stipendium", "notes": "Kapitel 3", "status": "done",
+      "data": { "translations": { "English": "scholarship", "French": "bourse", "Arabic": "منحة دراسية", "Persian": "بورس تحصیلی", "Spanish": "beca", "Ukrainian": "стипендія", "Russian": "стипендия", "Italian": "borsa di studio", "Swahili": "ufadhili wa masomo" }, "explanation": "A grant or payment made to support a student's education.", "example_de": "Sie hat ein Stipendium für ihr Studium in Berlin erhalten.", "example_translated": "She received a scholarship for her studies in Berlin.", "grammar": { "type": "noun", "singular": "das Stipendium", "plural": "die Stipendien" } }
+    },
+    {
+      "id": "k3_004", "word": "finanzieren", "notes": "Kapitel 3", "status": "done",
+      "data": { "translations": { "English": "to finance / fund", "French": "financer", "Arabic": "يمول", "Persian": "تأمین مالی کردن", "Spanish": "financiar", "Ukrainian": "фінансувати", "Russian": "финансировать", "Italian": "finanziare", "Swahili": "kufadhili" }, "explanation": "To provide funding for a person or enterprise.", "example_de": "Wie finanzieren Sie Ihr Projekt?", "example_translated": "How are you financing your project?", "grammar": { "type": "verb", "conjugation": { "ich": "finanziere", "du": "finanzierst", "er/sie/es": "finanziert", "wir": "finanzieren", "ihr": "finanziert", "sie/Sie": "finanzieren" }, "related": "die Finanzen" } }
+    },
+
+    // KAPITEL 4
+    {
+      "id": "k4_001", "word": "der Gabelstapler", "notes": "Kapitel 4", "status": "done",
+      "data": { "translations": { "English": "forklift", "French": "chariot élévateur", "Arabic": "رافعة شوكية", "Persian": "لیفتراک", "Spanish": "carretilla elevadora / montacargas", "Ukrainian": "навантажувач", "Russian": "вилочный погрузчик", "Italian": "carrello elevatore", "Swahili": "mashine ya kuinua mizigo" }, "explanation": "A vehicle with a pronged device in front for lifting and carrying heavy loads.", "example_de": "Um im Lager zu arbeiten, braucht man einen Gabelstapler-Führerschein.", "example_translated": "To work in the warehouse, you need a forklift license.", "grammar": { "type": "noun", "singular": "der Gabelstapler", "plural": "die Gabelstapler" } }
+    },
+    {
+      "id": "k4_002", "word": "das Fahrzeug", "notes": "Kapitel 4", "status": "done",
+      "data": { "translations": { "English": "vehicle", "French": "véhicule", "Arabic": "مركبة", "Persian": "وسیله نقلیه", "Spanish": "vehículo", "Ukrainian": "транспортний засіб", "Russian": "транспортное средство", "Italian": "veicolo", "Swahili": "gari" }, "explanation": "A thing used for transporting people or goods, especially on land.", "example_de": "Bitte parken Sie das Fahrzeug auf dem Hof.", "example_translated": "Please park the vehicle in the yard.", "grammar": { "type": "noun", "singular": "das Fahrzeug", "plural": "die Fahrzeuge" } }
+    },
+    {
+      "id": "k4_003", "word": "abbiegen", "notes": "Kapitel 4", "status": "done",
+      "data": { "translations": { "English": "to turn (driving)", "French": "tourner", "Arabic": "ينعطف", "Persian": "پیچیدن", "Spanish": "girar / doblar", "Ukrainian": "повертати", "Russian": "поворачивать", "Italian": "svoltare", "Swahili": "kukunja / kugeuka" }, "explanation": "A separable, strong verb used primarily for changing direction while walking or driving.", "example_de": "An der nächsten Kreuzung müssen Sie links abbiegen.", "example_translated": "At the next intersection, you must turn left.", "grammar": { "type": "verb", "conjugation": { "ich": "biege ab", "du": "biegst ab", "er/sie/es": "biegt ab", "wir": "biegen ab", "ihr": "biegt ab", "sie/Sie": "biegen ab" } } }
+    },
+    {
+      "id": "k4_004", "word": "die Ampel", "notes": "Kapitel 4", "status": "done",
+      "data": { "translations": { "English": "traffic light", "French": "feu de circulation", "Arabic": "إشارة مرور", "Persian": "چراغ راهنمایی", "Spanish": "semáforo", "Ukrainian": "світлофор", "Russian": "светофор", "Italian": "semaforo", "Swahili": "taa za barabarani" }, "explanation": "A set of automatically operated colored lights for controlling traffic.", "example_de": "Die Ampel ist rot, du musst anhalten.", "example_translated": "The traffic light is red, you have to stop.", "grammar": { "type": "noun", "singular": "die Ampel", "plural": "die Ampeln" } }
     }
   ],
   genLangs: ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili'],
@@ -330,7 +343,6 @@ function saveKey() {
   if (k) localStorage.setItem('vok_key', k);
 }
 
-const uid = () => Math.random().toString(36).slice(2,9);
 const getArticle = (word) => { const m = String(word||'').match(/^(die|der|das)\s+/i); return m ? m[1].toLowerCase() : null; };
 const getBase = (word) => String(word||'').replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim();
 const getChapter = (word) => { const m = String((word&&word.id)||'').match(/^k(\d+)_/); return m ? m[1] : '?'; };
@@ -345,36 +357,6 @@ function wordsForChapter(chapter) {
   return W.words.filter(w=>w.status==='done' && getChapter(w)===chapter);
 }
 
-function importData(raw) {
-  const words = Array.isArray(raw) ? raw : (raw.words || []);
-  W.words = words.map(w => ({
-    id: w.id||uid(), word:w.word||'', notes:w.notes||'',
-    status: w.status==='done'?'done':'pending',
-    data: w.status==='done'?(w.data||null):null,
-  }));
-  if (raw.meta?.targetLanguages) W.genLangs = raw.meta.targetLanguages;
-  if (raw.meta?.explanationLanguage) W.explLang = raw.meta.explanationLanguage;
-  persist(); buildOnboarding(); buildModal();
-}
-
-function importFile(e) {
-  const file = e.target.files[0]; if (!file) return;
-  const r = new FileReader();
-  r.onload = ev => { try { importData(JSON.parse(ev.target.result)); } catch { alert('Invalid JSON file.'); } };
-  r.readAsText(file); e.target.value='';
-}
-
-function exportJSON() {
-  const p = {
-    meta: {targetLanguages:W.genLangs,explanationLanguage:W.explLang,exported:new Date().toISOString()},
-    words: W.words.map(({id,word,notes,status,data})=>({id,word,notes,status,data})),
-  };
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([JSON.stringify(p,null,2)],{type:'application/json'}));
-  a.download='vocab.json'; a.click(); URL.revokeObjectURL(a.href);
-}
-
-// THE NEW CLAUDE API PROMPT - INCLUDES DEEP GRAMMAR
 async function fetchTranslation(word, langs, explLang, key) {
   const schema = langs.map(l=>`"${l}": "translation here"`).join(', ');
   const prompt = `You are an expert German language teacher. For the German word/phrase: "${word}"
@@ -441,7 +423,7 @@ function startSession() {
   USER.sessionSize = document.getElementById('pill-size').querySelector('.on')?.dataset.n || '20';
   persist();
   const pool = wordsForChapter(USER.chapter);
-  if (pool.length < 4) { alert(`Need at least 4 translated words to play.`); return; }
+  if (pool.length < 4) { alert(`Need at least 4 translated words to play in this Chapter.`); return; }
   Q.pool = pool;
   const n = USER.sessionSize==='all' ? pool.length : Math.min(parseInt(USER.sessionSize)||20, pool.length);
   Q.queue = pool.sort(()=>Math.random()-.5).slice(0,n).map(w=>w.id);
@@ -614,11 +596,9 @@ function buildExplPanel(entry) {
   const d = entry.data; if (!d) return '';
   const g = d.grammar;
   
-  // 1. Single Translation Display (Focused on User's Language)
   const userLang = USER.nativeLang;
   const userTranslation = d.translations?.[userLang] || 'Translation not available';
   
-  // 2. Build Grammar Block dynamically based on Noun / Verb
   let grammarHTML = '';
   if (g) {
     if (g.type === 'noun') {
@@ -699,12 +679,6 @@ function buildOnboarding() {
 }
 
 function buildModal() {
-  const chips = document.getElementById('m-lang-chips'); chips.innerHTML='';
-  LANGS.forEach(lang=>{
-    const c = document.createElement('span'); c.className = 'pill'+(W.genLangs.includes(lang)?' on':''); c.textContent = lang;
-    c.onclick = ()=>{ W.genLangs = W.genLangs.includes(lang) ? W.genLangs.filter(l=>l!==lang) : [...W.genLangs, lang]; c.classList.toggle('on'); persist(); };
-    chips.appendChild(c);
-  });
   const done = W.words.filter(w=>w.status==='done').length;
   document.getElementById('m-stats').innerHTML = `${done} ready / ${W.words.length - done} pending`;
 }
@@ -720,7 +694,6 @@ document.getElementById('pill-size').addEventListener('click', e=>{
 });
 
 loadStorage(); buildOnboarding();
-fetch('./vocab.json').then(r=>r.json()).then(data=>{ if(W.words.length<=5) importData(data); }).catch(()=>{});
 </script>
 </body>
 </html>
