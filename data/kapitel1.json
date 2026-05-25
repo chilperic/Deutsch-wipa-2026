@@ -1,15 +1,3909 @@
-[
-  { 
-    "id": "k1_001", 
-    "word": "die Messe", 
-    "notes": "Kapitel 1", 
-    "status": "done", 
-    "data": { 
-      "translations": { "Persian": "نمایشگاه", "English": "trade fair" }, 
-      "explanation": "A large exhibition.", 
-      "example_de": "Wir besuchen die Buchmesse.", 
-      "example_translated": "We are visiting the fair.", 
-      "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } 
-    } 
+{
+  "chapter": "kapitel1",
+  "title": "Kapitel 1",
+  "level": "B1/B2",
+  "domain": "Beruf, Arbeit, Alltag",
+  "words": [
+    {
+      "id": "k1_001",
+      "word": "die Messe, -n",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "trade fair / exhibition",
+          "Spanish": "feria / exposición",
+          "French": "salon / foire",
+          "Japanese": "見本市 / 展示会",
+          "German": "die Messe, -n",
+          "Korean": "박람회 / 전시회",
+          "Italian": "fiera / esposizione",
+          "Chinese": "展会 / 展览",
+          "Portuguese": "feira / exposição",
+          "Persian": "نمایشگاه",
+          "Arabic": "معرض تجاري / معرض",
+          "Thai": "งานแสดงสินค้า / นิทรรศการ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Messe, -n.",
+          "German": "Lernwort: die Messe, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Messe, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Messe, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Messe",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_002",
+      "word": "die Premiere, -n",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "premiere",
+          "Spanish": "estreno",
+          "French": "première",
+          "Japanese": "初演 / 初公開",
+          "German": "die Premiere, -n",
+          "Korean": "초연 / 첫 공개",
+          "Italian": "prima",
+          "Chinese": "首映 / 首演",
+          "Portuguese": "estreia",
+          "Persian": "اولین نمایش",
+          "Arabic": "العرض الأول",
+          "Thai": "รอบปฐมทัศน์"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Premiere, -n.",
+          "German": "Lernwort: die Premiere, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Premiere, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Premiere, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Premiere",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_003",
+      "word": "sich beschweren (bei + D. / über + A.)",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to complain",
+          "Spanish": "quejarse",
+          "French": "se plaindre",
+          "Japanese": "苦情を言う",
+          "German": "sich beschweren (bei + D. / über + A.)",
+          "Korean": "불평하다",
+          "Italian": "lamentarsi",
+          "Chinese": "投诉 / 抱怨",
+          "Portuguese": "reclamar",
+          "Persian": "شکایت کردن",
+          "Arabic": "يشتكي",
+          "Thai": "ร้องเรียน"
+        },
+        "explanation": {
+          "English": "Reflexive verb. bei + Dativ for the person/institution; über + Akkusativ for the topic.",
+          "French": "Reflexive verb. bei + Dativ for the person/institution; über + Akkusativ for the topic.",
+          "Spanish": "Elemento de vocabulario alemán: sich beschweren (bei + D. / über + A.).",
+          "German": "Lernwort: sich beschweren (bei + D. / über + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich beschweren (bei + D. / über + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich beschweren (bei + D. / über + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_004",
+      "word": "die Spezialität, -en",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "specialty",
+          "Spanish": "especialidad",
+          "French": "spécialité",
+          "Japanese": "専門 / 名物",
+          "German": "die Spezialität, -en",
+          "Korean": "전문 분야 / 특산품",
+          "Italian": "specialità",
+          "Chinese": "专长 / 特色",
+          "Portuguese": "especialidade",
+          "Persian": "تخصص / ویژگی خاص",
+          "Arabic": "تخصص / ميزة خاصة",
+          "Thai": "ความเชี่ยวชาญ / ของขึ้นชื่อ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Spezialität, -en.",
+          "German": "Lernwort: die Spezialität, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Spezialität, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Spezialität, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Spezialität",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_005",
+      "word": "das Profil, -e",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "profile",
+          "Spanish": "perfil",
+          "French": "profil",
+          "Japanese": "プロフィール",
+          "German": "das Profil, -e",
+          "Korean": "프로필",
+          "Italian": "profilo",
+          "Chinese": "个人资料",
+          "Portuguese": "perfil",
+          "Persian": "پروفایل",
+          "Arabic": "ملف شخصي",
+          "Thai": "โปรไฟล์"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Profil, -e.",
+          "German": "Lernwort: das Profil, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Profil, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Profil, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Profil",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_006",
+      "word": "der Steckbrief, -e",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "short profile / fact sheet",
+          "Spanish": "borrador: short profile / fact sheet",
+          "French": "fiche signalétique / profil",
+          "Japanese": "下訳: short profile / fact sheet",
+          "German": "der Steckbrief, -e",
+          "Korean": "초안: short profile / fact sheet",
+          "Italian": "bozza: short profile / fact sheet",
+          "Chinese": "草稿: short profile / fact sheet",
+          "Portuguese": "rascunho: short profile / fact sheet",
+          "Persian": "پیش‌نویس: short profile / fact sheet",
+          "Arabic": "مسودة: short profile / fact sheet",
+          "Thai": "ฉบับร่าง: short profile / fact sheet"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Steckbrief, -e.",
+          "German": "Lernwort: der Steckbrief, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Steckbrief, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Steckbrief, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Steckbrief",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_007",
+      "word": "wirken",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to seem / to have an effect",
+          "Spanish": "borrador: to seem / to have an effect",
+          "French": "sembler / agir",
+          "Japanese": "下訳: to seem / to have an effect",
+          "German": "wirken",
+          "Korean": "초안: to seem / to have an effect",
+          "Italian": "bozza: to seem / to have an effect",
+          "Chinese": "草稿: to seem / to have an effect",
+          "Portuguese": "rascunho: to seem / to have an effect",
+          "Persian": "پیش‌نویس: to seem / to have an effect",
+          "Arabic": "مسودة: to seem / to have an effect",
+          "Thai": "ฉบับร่าง: to seem / to have an effect"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: wirken.",
+          "German": "Lernwort: wirken.",
+          "Italian": "Voce di vocabolario tedesco: wirken.",
+          "Portuguese": "Item de vocabulário alemão: wirken."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_008",
+      "word": "verpassen",
+      "notes": "Kapitel 1 · Gabriels Seite",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to miss",
+          "Spanish": "borrador: to miss",
+          "French": "rater / manquer",
+          "Japanese": "下訳: to miss",
+          "German": "verpassen",
+          "Korean": "초안: to miss",
+          "Italian": "bozza: to miss",
+          "Chinese": "草稿: to miss",
+          "Portuguese": "rascunho: to miss",
+          "Persian": "پیش‌نویس: to miss",
+          "Arabic": "مسودة: to miss",
+          "Thai": "ฉบับร่าง: to miss"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: verpassen.",
+          "German": "Lernwort: verpassen.",
+          "Italian": "Voce di vocabolario tedesco: verpassen.",
+          "Portuguese": "Item de vocabulário alemão: verpassen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_009",
+      "word": "die Nachricht, -en",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "message / news",
+          "Spanish": "mensaje / noticia",
+          "French": "message / nouvelle",
+          "Japanese": "メッセージ / ニュース",
+          "German": "die Nachricht, -en",
+          "Korean": "메시지 / 소식",
+          "Italian": "messaggio / notizia",
+          "Chinese": "消息 / 新闻",
+          "Portuguese": "mensagem / notícia",
+          "Persian": "پیام / خبر",
+          "Arabic": "رسالة / خبر",
+          "Thai": "ข้อความ / ข่าว"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Nachricht, -en.",
+          "German": "Lernwort: die Nachricht, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Nachricht, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Nachricht, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Nachricht",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_010",
+      "word": "sich wohlfühlen",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to feel comfortable",
+          "Spanish": "sentirse cómodo",
+          "French": "se sentir bien",
+          "Japanese": "心地よく感じる",
+          "German": "sich wohlfühlen",
+          "Korean": "편안하게 느끼다",
+          "Italian": "sentirsi a proprio agio",
+          "Chinese": "感到舒服",
+          "Portuguese": "sentir-se confortável",
+          "Persian": "احساس راحتی کردن",
+          "Arabic": "يشعر بالراحة",
+          "Thai": "รู้สึกสบายใจ"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: sich wohlfühlen.",
+          "German": "Lernwort: sich wohlfühlen.",
+          "Italian": "Voce di vocabolario tedesco: sich wohlfühlen.",
+          "Portuguese": "Item de vocabulário alemão: sich wohlfühlen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_011",
+      "word": "sehenswert",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "worth seeing",
+          "Spanish": "digno de ver",
+          "French": "à voir / qui vaut le détour",
+          "Japanese": "見る価値がある",
+          "German": "sehenswert",
+          "Korean": "볼 만한",
+          "Italian": "da vedere",
+          "Chinese": "值得一看",
+          "Portuguese": "vale a pena ver",
+          "Persian": "دیدنی",
+          "Arabic": "يستحق المشاهدة",
+          "Thai": "น่าชม"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: sehenswert.",
+          "German": "Lernwort: sehenswert.",
+          "Italian": "Voce di vocabolario tedesco: sehenswert.",
+          "Portuguese": "Item de vocabulário alemão: sehenswert."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_012",
+      "word": "unternehmungslustig",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "enterprising / adventurous",
+          "Spanish": "borrador: enterprising / adventurous",
+          "French": "entreprenant / aventureux",
+          "Japanese": "下訳: enterprising / adventurous",
+          "German": "unternehmungslustig",
+          "Korean": "초안: enterprising / adventurous",
+          "Italian": "bozza: enterprising / adventurous",
+          "Chinese": "草稿: enterprising / adventurous",
+          "Portuguese": "rascunho: enterprising / adventurous",
+          "Persian": "پیش‌نویس: enterprising / adventurous",
+          "Arabic": "مسودة: enterprising / adventurous",
+          "Thai": "ฉบับร่าง: enterprising / adventurous"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: unternehmungslustig.",
+          "German": "Lernwort: unternehmungslustig.",
+          "Italian": "Voce di vocabolario tedesco: unternehmungslustig.",
+          "Portuguese": "Item de vocabulário alemão: unternehmungslustig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_013",
+      "word": "sich bewerben (um + A., bei + D.)",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to apply",
+          "Spanish": "borrador: to apply",
+          "French": "postuler",
+          "Japanese": "下訳: to apply",
+          "German": "sich bewerben (um + A., bei + D.)",
+          "Korean": "초안: to apply",
+          "Italian": "bozza: to apply",
+          "Chinese": "草稿: to apply",
+          "Portuguese": "rascunho: to apply",
+          "Persian": "پیش‌نویس: to apply",
+          "Arabic": "مسودة: to apply",
+          "Thai": "ฉบับร่าง: to apply"
+        },
+        "explanation": {
+          "English": "Reflexive verb. um + Akkusativ for the job; bei + Dativ for the employer.",
+          "French": "Reflexive verb. um + Akkusativ for the job; bei + Dativ for the employer.",
+          "Spanish": "Elemento de vocabulario alemán: sich bewerben (um + A., bei + D.).",
+          "German": "Lernwort: sich bewerben (um + A., bei + D.).",
+          "Italian": "Voce di vocabolario tedesco: sich bewerben (um + A., bei + D.).",
+          "Portuguese": "Item de vocabulário alemão: sich bewerben (um + A., bei + D.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_014",
+      "word": "unkonzentriert",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "unfocused",
+          "Spanish": "borrador: unfocused",
+          "French": "déconcentré",
+          "Japanese": "下訳: unfocused",
+          "German": "unkonzentriert",
+          "Korean": "초안: unfocused",
+          "Italian": "bozza: unfocused",
+          "Chinese": "草稿: unfocused",
+          "Portuguese": "rascunho: unfocused",
+          "Persian": "پیش‌نویس: unfocused",
+          "Arabic": "مسودة: unfocused",
+          "Thai": "ฉบับร่าง: unfocused"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: unkonzentriert.",
+          "German": "Lernwort: unkonzentriert.",
+          "Italian": "Voce di vocabolario tedesco: unkonzentriert.",
+          "Portuguese": "Item de vocabulário alemão: unkonzentriert."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_015",
+      "word": "zurückhaltend",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "reserved",
+          "Spanish": "borrador: reserved",
+          "French": "réservé",
+          "Japanese": "下訳: reserved",
+          "German": "zurückhaltend",
+          "Korean": "초안: reserved",
+          "Italian": "bozza: reserved",
+          "Chinese": "草稿: reserved",
+          "Portuguese": "rascunho: reserved",
+          "Persian": "پیش‌نویس: reserved",
+          "Arabic": "مسودة: reserved",
+          "Thai": "ฉบับร่าง: reserved"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: zurückhaltend.",
+          "German": "Lernwort: zurückhaltend.",
+          "Italian": "Voce di vocabolario tedesco: zurückhaltend.",
+          "Portuguese": "Item de vocabulário alemão: zurückhaltend."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_016",
+      "word": "die Charaktereigenschaft, -en",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "character trait",
+          "Spanish": "borrador: character trait",
+          "French": "trait de caractère",
+          "Japanese": "下訳: character trait",
+          "German": "die Charaktereigenschaft, -en",
+          "Korean": "초안: character trait",
+          "Italian": "bozza: character trait",
+          "Chinese": "草稿: character trait",
+          "Portuguese": "rascunho: character trait",
+          "Persian": "پیش‌نویس: character trait",
+          "Arabic": "مسودة: character trait",
+          "Thai": "ฉบับร่าง: character trait"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Charaktereigenschaft, -en.",
+          "German": "Lernwort: die Charaktereigenschaft, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Charaktereigenschaft, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Charaktereigenschaft, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Charaktereigenschaft",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_017",
+      "word": "gegenseitig",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "mutual / reciprocal",
+          "Spanish": "borrador: mutual / reciprocal",
+          "French": "réciproque",
+          "Japanese": "下訳: mutual / reciprocal",
+          "German": "gegenseitig",
+          "Korean": "초안: mutual / reciprocal",
+          "Italian": "bozza: mutual / reciprocal",
+          "Chinese": "草稿: mutual / reciprocal",
+          "Portuguese": "rascunho: mutual / reciprocal",
+          "Persian": "پیش‌نویس: mutual / reciprocal",
+          "Arabic": "مسودة: mutual / reciprocal",
+          "Thai": "ฉบับร่าง: mutual / reciprocal"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: gegenseitig.",
+          "German": "Lernwort: gegenseitig.",
+          "Italian": "Voce di vocabolario tedesco: gegenseitig.",
+          "Portuguese": "Item de vocabulário alemão: gegenseitig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_018",
+      "word": "berufstätig",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "employed / working",
+          "Spanish": "borrador: employed / working",
+          "French": "actif professionnellement",
+          "Japanese": "下訳: employed / working",
+          "German": "berufstätig",
+          "Korean": "초안: employed / working",
+          "Italian": "bozza: employed / working",
+          "Chinese": "草稿: employed / working",
+          "Portuguese": "rascunho: employed / working",
+          "Persian": "پیش‌نویس: employed / working",
+          "Arabic": "مسودة: employed / working",
+          "Thai": "ฉบับร่าง: employed / working"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: berufstätig.",
+          "German": "Lernwort: berufstätig.",
+          "Italian": "Voce di vocabolario tedesco: berufstätig.",
+          "Portuguese": "Item de vocabulário alemão: berufstätig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_019",
+      "word": "ehrlich",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "honest",
+          "Spanish": "borrador: honest",
+          "French": "honnête",
+          "Japanese": "下訳: honest",
+          "German": "ehrlich",
+          "Korean": "초안: honest",
+          "Italian": "bozza: honest",
+          "Chinese": "草稿: honest",
+          "Portuguese": "rascunho: honest",
+          "Persian": "پیش‌نویس: honest",
+          "Arabic": "مسودة: honest",
+          "Thai": "ฉบับร่าง: honest"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: ehrlich.",
+          "German": "Lernwort: ehrlich.",
+          "Italian": "Voce di vocabolario tedesco: ehrlich.",
+          "Portuguese": "Item de vocabulário alemão: ehrlich."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_020",
+      "word": "fleißig",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "hard-working",
+          "Spanish": "borrador: hard-working",
+          "French": "travailleur",
+          "Japanese": "下訳: hard-working",
+          "German": "fleißig",
+          "Korean": "초안: hard-working",
+          "Italian": "bozza: hard-working",
+          "Chinese": "草稿: hard-working",
+          "Portuguese": "rascunho: hard-working",
+          "Persian": "پیش‌نویس: hard-working",
+          "Arabic": "مسودة: hard-working",
+          "Thai": "ฉบับร่าง: hard-working"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: fleißig.",
+          "German": "Lernwort: fleißig.",
+          "Italian": "Voce di vocabolario tedesco: fleißig.",
+          "Portuguese": "Item de vocabulário alemão: fleißig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_021",
+      "word": "pünktlich",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "punctual",
+          "Spanish": "borrador: punctual",
+          "French": "ponctuel",
+          "Japanese": "下訳: punctual",
+          "German": "pünktlich",
+          "Korean": "초안: punctual",
+          "Italian": "bozza: punctual",
+          "Chinese": "草稿: punctual",
+          "Portuguese": "rascunho: punctual",
+          "Persian": "پیش‌نویس: punctual",
+          "Arabic": "مسودة: punctual",
+          "Thai": "ฉบับร่าง: punctual"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: pünktlich.",
+          "German": "Lernwort: pünktlich.",
+          "Italian": "Voce di vocabolario tedesco: pünktlich.",
+          "Portuguese": "Item de vocabulário alemão: pünktlich."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_022",
+      "word": "mutig",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "brave",
+          "Spanish": "borrador: brave",
+          "French": "courageux",
+          "Japanese": "下訳: brave",
+          "German": "mutig",
+          "Korean": "초안: brave",
+          "Italian": "bozza: brave",
+          "Chinese": "草稿: brave",
+          "Portuguese": "rascunho: brave",
+          "Persian": "پیش‌نویس: brave",
+          "Arabic": "مسودة: brave",
+          "Thai": "ฉบับร่าง: brave"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: mutig.",
+          "German": "Lernwort: mutig.",
+          "Italian": "Voce di vocabolario tedesco: mutig.",
+          "Portuguese": "Item de vocabulário alemão: mutig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_023",
+      "word": "ängstlich",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "anxious / fearful",
+          "Spanish": "borrador: anxious / fearful",
+          "French": "anxieux / peureux",
+          "Japanese": "下訳: anxious / fearful",
+          "German": "ängstlich",
+          "Korean": "초안: anxious / fearful",
+          "Italian": "bozza: anxious / fearful",
+          "Chinese": "草稿: anxious / fearful",
+          "Portuguese": "rascunho: anxious / fearful",
+          "Persian": "پیش‌نویس: anxious / fearful",
+          "Arabic": "مسودة: anxious / fearful",
+          "Thai": "ฉบับร่าง: anxious / fearful"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: ängstlich.",
+          "German": "Lernwort: ängstlich.",
+          "Italian": "Voce di vocabolario tedesco: ängstlich.",
+          "Portuguese": "Item de vocabulário alemão: ängstlich."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_024",
+      "word": "großzügig",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "generous",
+          "Spanish": "borrador: generous",
+          "French": "généreux",
+          "Japanese": "下訳: generous",
+          "German": "großzügig",
+          "Korean": "초안: generous",
+          "Italian": "bozza: generous",
+          "Chinese": "草稿: generous",
+          "Portuguese": "rascunho: generous",
+          "Persian": "پیش‌نویس: generous",
+          "Arabic": "مسودة: generous",
+          "Thai": "ฉบับร่าง: generous"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: großzügig.",
+          "German": "Lernwort: großzügig.",
+          "Italian": "Voce di vocabolario tedesco: großzügig.",
+          "Portuguese": "Item de vocabulário alemão: großzügig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_025",
+      "word": "sparsam",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "thrifty / economical",
+          "Spanish": "borrador: thrifty / economical",
+          "French": "économe",
+          "Japanese": "下訳: thrifty / economical",
+          "German": "sparsam",
+          "Korean": "초안: thrifty / economical",
+          "Italian": "bozza: thrifty / economical",
+          "Chinese": "草稿: thrifty / economical",
+          "Portuguese": "rascunho: thrifty / economical",
+          "Persian": "پیش‌نویس: thrifty / economical",
+          "Arabic": "مسودة: thrifty / economical",
+          "Thai": "ฉบับร่าง: thrifty / economical"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: sparsam.",
+          "German": "Lernwort: sparsam.",
+          "Italian": "Voce di vocabolario tedesco: sparsam.",
+          "Portuguese": "Item de vocabulário alemão: sparsam."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_026",
+      "word": "organisiert",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "organized",
+          "Spanish": "borrador: organized",
+          "French": "organisé",
+          "Japanese": "下訳: organized",
+          "German": "organisiert",
+          "Korean": "초안: organized",
+          "Italian": "bozza: organized",
+          "Chinese": "草稿: organized",
+          "Portuguese": "rascunho: organized",
+          "Persian": "پیش‌نویس: organized",
+          "Arabic": "مسودة: organized",
+          "Thai": "ฉบับร่าง: organized"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: organisiert.",
+          "German": "Lernwort: organisiert.",
+          "Italian": "Voce di vocabolario tedesco: organisiert.",
+          "Portuguese": "Item de vocabulário alemão: organisiert."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_027",
+      "word": "die Ausbildung, -en",
+      "notes": "Kapitel 1 · Das ist Gabriel",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "training / vocational training",
+          "Spanish": "borrador: training / vocational training",
+          "French": "formation",
+          "Japanese": "下訳: training / vocational training",
+          "German": "die Ausbildung, -en",
+          "Korean": "초안: training / vocational training",
+          "Italian": "bozza: training / vocational training",
+          "Chinese": "草稿: training / vocational training",
+          "Portuguese": "rascunho: training / vocational training",
+          "Persian": "پیش‌نویس: training / vocational training",
+          "Arabic": "مسودة: training / vocational training",
+          "Thai": "ฉบับร่าง: training / vocational training"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Ausbildung, -en.",
+          "German": "Lernwort: die Ausbildung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Ausbildung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Ausbildung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Ausbildung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_028",
+      "word": "die Veränderung, -en",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "change",
+          "Spanish": "borrador: change",
+          "French": "changement",
+          "Japanese": "下訳: change",
+          "German": "die Veränderung, -en",
+          "Korean": "초안: change",
+          "Italian": "bozza: change",
+          "Chinese": "草稿: change",
+          "Portuguese": "rascunho: change",
+          "Persian": "پیش‌نویس: change",
+          "Arabic": "مسودة: change",
+          "Thai": "ฉบับร่าง: change"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Veränderung, -en.",
+          "German": "Lernwort: die Veränderung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Veränderung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Veränderung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Veränderung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_029",
+      "word": "die Agentur, -en",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "agency",
+          "Spanish": "borrador: agency",
+          "French": "agence",
+          "Japanese": "下訳: agency",
+          "German": "die Agentur, -en",
+          "Korean": "초안: agency",
+          "Italian": "bozza: agency",
+          "Chinese": "草稿: agency",
+          "Portuguese": "rascunho: agency",
+          "Persian": "پیش‌نویس: agency",
+          "Arabic": "مسودة: agency",
+          "Thai": "ฉบับร่าง: agency"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Agentur, -en.",
+          "German": "Lernwort: die Agentur, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Agentur, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Agentur, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Agentur",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_030",
+      "word": "sich gewöhnen (an + A.)",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to get used to",
+          "Spanish": "borrador: to get used to",
+          "French": "s'habituer à",
+          "Japanese": "下訳: to get used to",
+          "German": "sich gewöhnen (an + A.)",
+          "Korean": "초안: to get used to",
+          "Italian": "bozza: to get used to",
+          "Chinese": "草稿: to get used to",
+          "Portuguese": "rascunho: to get used to",
+          "Persian": "پیش‌نویس: to get used to",
+          "Arabic": "مسودة: to get used to",
+          "Thai": "ฉบับร่าง: to get used to"
+        },
+        "explanation": {
+          "English": "Reflexive verb. an + Akkusativ.",
+          "French": "Reflexive verb. an + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich gewöhnen (an + A.).",
+          "German": "Lernwort: sich gewöhnen (an + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich gewöhnen (an + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich gewöhnen (an + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_031",
+      "word": "die Einarbeitung",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "onboarding / induction",
+          "Spanish": "borrador: onboarding / induction",
+          "French": "formation initiale / intégration",
+          "Japanese": "下訳: onboarding / induction",
+          "German": "die Einarbeitung",
+          "Korean": "초안: onboarding / induction",
+          "Italian": "bozza: onboarding / induction",
+          "Chinese": "草稿: onboarding / induction",
+          "Portuguese": "rascunho: onboarding / induction",
+          "Persian": "پیش‌نویس: onboarding / induction",
+          "Arabic": "مسودة: onboarding / induction",
+          "Thai": "ฉบับร่าง: onboarding / induction"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Einarbeitung.",
+          "German": "Lernwort: die Einarbeitung.",
+          "Italian": "Voce di vocabolario tedesco: die Einarbeitung.",
+          "Portuguese": "Item de vocabulário alemão: die Einarbeitung."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Einarbeitung"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_032",
+      "word": "das Aufgabengebiet, -e",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "area of responsibility",
+          "Spanish": "borrador: area of responsibility",
+          "French": "domaine de tâches",
+          "Japanese": "下訳: area of responsibility",
+          "German": "das Aufgabengebiet, -e",
+          "Korean": "초안: area of responsibility",
+          "Italian": "bozza: area of responsibility",
+          "Chinese": "草稿: area of responsibility",
+          "Portuguese": "rascunho: area of responsibility",
+          "Persian": "پیش‌نویس: area of responsibility",
+          "Arabic": "مسودة: area of responsibility",
+          "Thai": "ฉบับร่าง: area of responsibility"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Aufgabengebiet, -e.",
+          "German": "Lernwort: das Aufgabengebiet, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Aufgabengebiet, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Aufgabengebiet, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Aufgabengebiet",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_033",
+      "word": "merken",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to notice / remember",
+          "Spanish": "borrador: to notice / remember",
+          "French": "remarquer / retenir",
+          "Japanese": "下訳: to notice / remember",
+          "German": "merken",
+          "Korean": "초안: to notice / remember",
+          "Italian": "bozza: to notice / remember",
+          "Chinese": "草稿: to notice / remember",
+          "Portuguese": "rascunho: to notice / remember",
+          "Persian": "پیش‌نویس: to notice / remember",
+          "Arabic": "مسودة: to notice / remember",
+          "Thai": "ฉบับร่าง: to notice / remember"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: merken.",
+          "German": "Lernwort: merken.",
+          "Italian": "Voce di vocabolario tedesco: merken.",
+          "Portuguese": "Item de vocabulário alemão: merken."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_034",
+      "word": "erledigt sein",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be done",
+          "Spanish": "borrador: to be done",
+          "French": "être terminé",
+          "Japanese": "下訳: to be done",
+          "German": "erledigt sein",
+          "Korean": "초안: to be done",
+          "Italian": "bozza: to be done",
+          "Chinese": "草稿: to be done",
+          "Portuguese": "rascunho: to be done",
+          "Persian": "پیش‌نویس: to be done",
+          "Arabic": "مسودة: to be done",
+          "Thai": "ฉบับร่าง: to be done"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: erledigt sein.",
+          "German": "Lernwort: erledigt sein.",
+          "Italian": "Voce di vocabolario tedesco: erledigt sein.",
+          "Portuguese": "Item de vocabulário alemão: erledigt sein."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_035",
+      "word": "sich kümmern (um + A.)",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to take care of",
+          "Spanish": "borrador: to take care of",
+          "French": "s'occuper de",
+          "Japanese": "下訳: to take care of",
+          "German": "sich kümmern (um + A.)",
+          "Korean": "초안: to take care of",
+          "Italian": "bozza: to take care of",
+          "Chinese": "草稿: to take care of",
+          "Portuguese": "rascunho: to take care of",
+          "Persian": "پیش‌نویس: to take care of",
+          "Arabic": "مسودة: to take care of",
+          "Thai": "ฉบับร่าง: to take care of"
+        },
+        "explanation": {
+          "English": "Reflexive verb. um + Akkusativ.",
+          "French": "Reflexive verb. um + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich kümmern (um + A.).",
+          "German": "Lernwort: sich kümmern (um + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich kümmern (um + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich kümmern (um + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_036",
+      "word": "seitdem",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "since then",
+          "Spanish": "borrador: since then",
+          "French": "depuis lors",
+          "Japanese": "下訳: since then",
+          "German": "seitdem",
+          "Korean": "초안: since then",
+          "Italian": "bozza: since then",
+          "Chinese": "草稿: since then",
+          "Portuguese": "rascunho: since then",
+          "Persian": "پیش‌نویس: since then",
+          "Arabic": "مسودة: since then",
+          "Thai": "ฉบับร่าง: since then"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: seitdem.",
+          "German": "Lernwort: seitdem.",
+          "Italian": "Voce di vocabolario tedesco: seitdem.",
+          "Portuguese": "Item de vocabulário alemão: seitdem."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_037",
+      "word": "die Stelle, -n",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "position / job",
+          "Spanish": "borrador: position / job",
+          "French": "poste",
+          "Japanese": "下訳: position / job",
+          "German": "die Stelle, -n",
+          "Korean": "초안: position / job",
+          "Italian": "bozza: position / job",
+          "Chinese": "草稿: position / job",
+          "Portuguese": "rascunho: position / job",
+          "Persian": "پیش‌نویس: position / job",
+          "Arabic": "مسودة: position / job",
+          "Thai": "ฉบับร่าง: position / job"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Stelle, -n.",
+          "German": "Lernwort: die Stelle, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Stelle, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Stelle, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Stelle",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_038",
+      "word": "die Zusage, -n",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "acceptance / confirmation",
+          "Spanish": "borrador: acceptance / confirmation",
+          "French": "réponse positive / accord",
+          "Japanese": "下訳: acceptance / confirmation",
+          "German": "die Zusage, -n",
+          "Korean": "초안: acceptance / confirmation",
+          "Italian": "bozza: acceptance / confirmation",
+          "Chinese": "草稿: acceptance / confirmation",
+          "Portuguese": "rascunho: acceptance / confirmation",
+          "Persian": "پیش‌نویس: acceptance / confirmation",
+          "Arabic": "مسودة: acceptance / confirmation",
+          "Thai": "ฉบับร่าง: acceptance / confirmation"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Zusage, -n.",
+          "German": "Lernwort: die Zusage, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Zusage, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Zusage, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Zusage",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_039",
+      "word": "unbefristet",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "permanent / unlimited",
+          "Spanish": "borrador: permanent / unlimited",
+          "French": "à durée indéterminée",
+          "Japanese": "下訳: permanent / unlimited",
+          "German": "unbefristet",
+          "Korean": "초안: permanent / unlimited",
+          "Italian": "bozza: permanent / unlimited",
+          "Chinese": "草稿: permanent / unlimited",
+          "Portuguese": "rascunho: permanent / unlimited",
+          "Persian": "پیش‌نویس: permanent / unlimited",
+          "Arabic": "مسودة: permanent / unlimited",
+          "Thai": "ฉบับร่าง: permanent / unlimited"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: unbefristet.",
+          "German": "Lernwort: unbefristet.",
+          "Italian": "Voce di vocabolario tedesco: unbefristet.",
+          "Portuguese": "Item de vocabulário alemão: unbefristet."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_040",
+      "word": "der Vertrag, -e",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "contract",
+          "Spanish": "borrador: contract",
+          "French": "contrat",
+          "Japanese": "下訳: contract",
+          "German": "der Vertrag, -e",
+          "Korean": "초안: contract",
+          "Italian": "bozza: contract",
+          "Chinese": "草稿: contract",
+          "Portuguese": "rascunho: contract",
+          "Persian": "پیش‌نویس: contract",
+          "Arabic": "مسودة: contract",
+          "Thai": "ฉบับร่าง: contract"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Vertrag, -e.",
+          "German": "Lernwort: der Vertrag, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Vertrag, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Vertrag, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Vertrag",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_041",
+      "word": "der Antrag, -e",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "application / request",
+          "Spanish": "borrador: application / request",
+          "French": "demande",
+          "Japanese": "下訳: application / request",
+          "German": "der Antrag, -e",
+          "Korean": "초안: application / request",
+          "Italian": "bozza: application / request",
+          "Chinese": "草稿: application / request",
+          "Portuguese": "rascunho: application / request",
+          "Persian": "پیش‌نویس: application / request",
+          "Arabic": "مسودة: application / request",
+          "Thai": "ฉบับร่าง: application / request"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Antrag, -e.",
+          "German": "Lernwort: der Antrag, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Antrag, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Antrag, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Antrag",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_042",
+      "word": "die Überstunde, -n",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "overtime hour",
+          "Spanish": "borrador: overtime hour",
+          "French": "heure supplémentaire",
+          "Japanese": "下訳: overtime hour",
+          "German": "die Überstunde, -n",
+          "Korean": "초안: overtime hour",
+          "Italian": "bozza: overtime hour",
+          "Chinese": "草稿: overtime hour",
+          "Portuguese": "rascunho: overtime hour",
+          "Persian": "پیش‌نویس: overtime hour",
+          "Arabic": "مسودة: overtime hour",
+          "Thai": "ฉบับร่าง: overtime hour"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Überstunde, -n.",
+          "German": "Lernwort: die Überstunde, -n.",
+          "Italian": "Voce di vocabolario tedesco: die Überstunde, -n.",
+          "Portuguese": "Item de vocabulário alemão: die Überstunde, -n."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Überstunde",
+          "plural_hint": "-n"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_043",
+      "word": "der Abschluss, -e",
+      "notes": "Kapitel 1 · Ein neuer Arbeitsplatz",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "degree / completion",
+          "Spanish": "borrador: degree / completion",
+          "French": "diplôme / clôture",
+          "Japanese": "下訳: degree / completion",
+          "German": "der Abschluss, -e",
+          "Korean": "초안: degree / completion",
+          "Italian": "bozza: degree / completion",
+          "Chinese": "草稿: degree / completion",
+          "Portuguese": "rascunho: degree / completion",
+          "Persian": "پیش‌نویس: degree / completion",
+          "Arabic": "مسودة: degree / completion",
+          "Thai": "ฉบับร่าง: degree / completion"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Abschluss, -e.",
+          "German": "Lernwort: der Abschluss, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Abschluss, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Abschluss, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Abschluss",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_044",
+      "word": "die Herausforderung, -en",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "challenge",
+          "Spanish": "borrador: challenge",
+          "French": "défi",
+          "Japanese": "下訳: challenge",
+          "German": "die Herausforderung, -en",
+          "Korean": "초안: challenge",
+          "Italian": "bozza: challenge",
+          "Chinese": "草稿: challenge",
+          "Portuguese": "rascunho: challenge",
+          "Persian": "پیش‌نویس: challenge",
+          "Arabic": "مسودة: challenge",
+          "Thai": "ฉบับร่าง: challenge"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Herausforderung, -en.",
+          "German": "Lernwort: die Herausforderung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Herausforderung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Herausforderung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Herausforderung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_045",
+      "word": "die Erfahrung, -en",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "experience",
+          "Spanish": "borrador: experience",
+          "French": "expérience",
+          "Japanese": "下訳: experience",
+          "German": "die Erfahrung, -en",
+          "Korean": "초안: experience",
+          "Italian": "bozza: experience",
+          "Chinese": "草稿: experience",
+          "Portuguese": "rascunho: experience",
+          "Persian": "پیش‌نویس: experience",
+          "Arabic": "مسودة: experience",
+          "Thai": "ฉบับร่าง: experience"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Erfahrung, -en.",
+          "German": "Lernwort: die Erfahrung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Erfahrung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Erfahrung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Erfahrung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_046",
+      "word": "der Rucksack, -e",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "backpack",
+          "Spanish": "borrador: backpack",
+          "French": "sac à dos",
+          "Japanese": "下訳: backpack",
+          "German": "der Rucksack, -e",
+          "Korean": "초안: backpack",
+          "Italian": "bozza: backpack",
+          "Chinese": "草稿: backpack",
+          "Portuguese": "rascunho: backpack",
+          "Persian": "پیش‌نویس: backpack",
+          "Arabic": "مسودة: backpack",
+          "Thai": "ฉบับร่าง: backpack"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Rucksack, -e.",
+          "German": "Lernwort: der Rucksack, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Rucksack, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Rucksack, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Rucksack",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_047",
+      "word": "die Entspannung",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "relaxation",
+          "Spanish": "borrador: relaxation",
+          "French": "détente",
+          "Japanese": "下訳: relaxation",
+          "German": "die Entspannung",
+          "Korean": "초안: relaxation",
+          "Italian": "bozza: relaxation",
+          "Chinese": "草稿: relaxation",
+          "Portuguese": "rascunho: relaxation",
+          "Persian": "پیش‌نویس: relaxation",
+          "Arabic": "مسودة: relaxation",
+          "Thai": "ฉบับร่าง: relaxation"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Entspannung.",
+          "German": "Lernwort: die Entspannung.",
+          "Italian": "Voce di vocabolario tedesco: die Entspannung.",
+          "Portuguese": "Item de vocabulário alemão: die Entspannung."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Entspannung"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_048",
+      "word": "die Bewegung, -en",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "movement / exercise",
+          "Spanish": "borrador: movement / exercise",
+          "French": "mouvement / activité physique",
+          "Japanese": "下訳: movement / exercise",
+          "German": "die Bewegung, -en",
+          "Korean": "초안: movement / exercise",
+          "Italian": "bozza: movement / exercise",
+          "Chinese": "草稿: movement / exercise",
+          "Portuguese": "rascunho: movement / exercise",
+          "Persian": "پیش‌نویس: movement / exercise",
+          "Arabic": "مسودة: movement / exercise",
+          "Thai": "ฉบับร่าง: movement / exercise"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Bewegung, -en.",
+          "German": "Lernwort: die Bewegung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Bewegung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Bewegung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Bewegung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_049",
+      "word": "die Leidenschaft, -en",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "passion",
+          "Spanish": "borrador: passion",
+          "French": "passion",
+          "Japanese": "下訳: passion",
+          "German": "die Leidenschaft, -en",
+          "Korean": "초안: passion",
+          "Italian": "bozza: passion",
+          "Chinese": "草稿: passion",
+          "Portuguese": "rascunho: passion",
+          "Persian": "پیش‌نویس: passion",
+          "Arabic": "مسودة: passion",
+          "Thai": "ฉบับร่าง: passion"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Leidenschaft, -en.",
+          "German": "Lernwort: die Leidenschaft, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Leidenschaft, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Leidenschaft, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Leidenschaft",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_050",
+      "word": "inzwischen",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "meanwhile / by now",
+          "Spanish": "borrador: meanwhile / by now",
+          "French": "entre-temps",
+          "Japanese": "下訳: meanwhile / by now",
+          "German": "inzwischen",
+          "Korean": "초안: meanwhile / by now",
+          "Italian": "bozza: meanwhile / by now",
+          "Chinese": "草稿: meanwhile / by now",
+          "Portuguese": "rascunho: meanwhile / by now",
+          "Persian": "پیش‌نویس: meanwhile / by now",
+          "Arabic": "مسودة: meanwhile / by now",
+          "Thai": "ฉบับร่าง: meanwhile / by now"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: inzwischen.",
+          "German": "Lernwort: inzwischen.",
+          "Italian": "Voce di vocabolario tedesco: inzwischen.",
+          "Portuguese": "Item de vocabulário alemão: inzwischen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_051",
+      "word": "verlosen",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to raffle",
+          "Spanish": "borrador: to raffle",
+          "French": "tirer au sort",
+          "Japanese": "下訳: to raffle",
+          "German": "verlosen",
+          "Korean": "초안: to raffle",
+          "Italian": "bozza: to raffle",
+          "Chinese": "草稿: to raffle",
+          "Portuguese": "rascunho: to raffle",
+          "Persian": "پیش‌نویس: to raffle",
+          "Arabic": "مسودة: to raffle",
+          "Thai": "ฉบับร่าง: to raffle"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: verlosen.",
+          "German": "Lernwort: verlosen.",
+          "Italian": "Voce di vocabolario tedesco: verlosen.",
+          "Portuguese": "Item de vocabulário alemão: verlosen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_052",
+      "word": "beobachten",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to observe",
+          "Spanish": "borrador: to observe",
+          "French": "observer",
+          "Japanese": "下訳: to observe",
+          "German": "beobachten",
+          "Korean": "초안: to observe",
+          "Italian": "bozza: to observe",
+          "Chinese": "草稿: to observe",
+          "Portuguese": "rascunho: to observe",
+          "Persian": "پیش‌نویس: to observe",
+          "Arabic": "مسودة: to observe",
+          "Thai": "ฉบับร่าง: to observe"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: beobachten.",
+          "German": "Lernwort: beobachten.",
+          "Italian": "Voce di vocabolario tedesco: beobachten.",
+          "Portuguese": "Item de vocabulário alemão: beobachten."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_053",
+      "word": "etwas abheben",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to withdraw something",
+          "Spanish": "borrador: to withdraw something",
+          "French": "retirer quelque chose",
+          "Japanese": "下訳: to withdraw something",
+          "German": "etwas abheben",
+          "Korean": "초안: to withdraw something",
+          "Italian": "bozza: to withdraw something",
+          "Chinese": "草稿: to withdraw something",
+          "Portuguese": "rascunho: to withdraw something",
+          "Persian": "پیش‌نویس: to withdraw something",
+          "Arabic": "مسودة: to withdraw something",
+          "Thai": "ฉบับร่าง: to withdraw something"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: etwas abheben.",
+          "German": "Lernwort: etwas abheben.",
+          "Italian": "Voce di vocabolario tedesco: etwas abheben.",
+          "Portuguese": "Item de vocabulário alemão: etwas abheben."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_054",
+      "word": "etwas von jemandem übernehmen",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to take something over from someone",
+          "Spanish": "borrador: to take something over from someone",
+          "French": "reprendre quelque chose de quelqu'un",
+          "Japanese": "下訳: to take something over from someone",
+          "German": "etwas von jemandem übernehmen",
+          "Korean": "초안: to take something over from someone",
+          "Italian": "bozza: to take something over from someone",
+          "Chinese": "草稿: to take something over from someone",
+          "Portuguese": "rascunho: to take something over from someone",
+          "Persian": "پیش‌نویس: to take something over from someone",
+          "Arabic": "مسودة: to take something over from someone",
+          "Thai": "ฉบับร่าง: to take something over from someone"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: etwas von jemandem übernehmen.",
+          "German": "Lernwort: etwas von jemandem übernehmen.",
+          "Italian": "Voce di vocabolario tedesco: etwas von jemandem übernehmen.",
+          "Portuguese": "Item de vocabulário alemão: etwas von jemandem übernehmen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_055",
+      "word": "sich begeistern (für + A.)",
+      "notes": "Kapitel 1 · Gabriels Hobbys",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be enthusiastic about",
+          "Spanish": "borrador: to be enthusiastic about",
+          "French": "s'enthousiasmer pour",
+          "Japanese": "下訳: to be enthusiastic about",
+          "German": "sich begeistern (für + A.)",
+          "Korean": "초안: to be enthusiastic about",
+          "Italian": "bozza: to be enthusiastic about",
+          "Chinese": "草稿: to be enthusiastic about",
+          "Portuguese": "rascunho: to be enthusiastic about",
+          "Persian": "پیش‌نویس: to be enthusiastic about",
+          "Arabic": "مسودة: to be enthusiastic about",
+          "Thai": "ฉบับร่าง: to be enthusiastic about"
+        },
+        "explanation": {
+          "English": "Reflexive verb. für + Akkusativ.",
+          "French": "Reflexive verb. für + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich begeistern (für + A.).",
+          "German": "Lernwort: sich begeistern (für + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich begeistern (für + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich begeistern (für + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_056",
+      "word": "auf etwas kommen",
+      "notes": "Kapitel 1 · Ich fotografiere die Natur",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to come up with something",
+          "Spanish": "borrador: to come up with something",
+          "French": "trouver / avoir l'idée de",
+          "Japanese": "下訳: to come up with something",
+          "German": "auf etwas kommen",
+          "Korean": "초안: to come up with something",
+          "Italian": "bozza: to come up with something",
+          "Chinese": "草稿: to come up with something",
+          "Portuguese": "rascunho: to come up with something",
+          "Persian": "پیش‌نویس: to come up with something",
+          "Arabic": "مسودة: to come up with something",
+          "Thai": "ฉบับร่าง: to come up with something"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: auf etwas kommen.",
+          "German": "Lernwort: auf etwas kommen.",
+          "Italian": "Voce di vocabolario tedesco: auf etwas kommen.",
+          "Portuguese": "Item de vocabulário alemão: auf etwas kommen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_057",
+      "word": "geeignet sein (für + A.)",
+      "notes": "Kapitel 1 · Ich fotografiere die Natur",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to be suitable for",
+          "Spanish": "borrador: to be suitable for",
+          "French": "être adapté à",
+          "Japanese": "下訳: to be suitable for",
+          "German": "geeignet sein (für + A.)",
+          "Korean": "초안: to be suitable for",
+          "Italian": "bozza: to be suitable for",
+          "Chinese": "草稿: to be suitable for",
+          "Portuguese": "rascunho: to be suitable for",
+          "Persian": "پیش‌نویس: to be suitable for",
+          "Arabic": "مسودة: to be suitable for",
+          "Thai": "ฉบับร่าง: to be suitable for"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: geeignet sein (für + A.).",
+          "German": "Lernwort: geeignet sein (für + A.).",
+          "Italian": "Voce di vocabolario tedesco: geeignet sein (für + A.).",
+          "Portuguese": "Item de vocabulário alemão: geeignet sein (für + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "phrase / pattern"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_058",
+      "word": "der Wettbewerb, -e",
+      "notes": "Kapitel 1 · Ich fotografiere die Natur",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "competition",
+          "Spanish": "borrador: competition",
+          "French": "concours",
+          "Japanese": "下訳: competition",
+          "German": "der Wettbewerb, -e",
+          "Korean": "초안: competition",
+          "Italian": "bozza: competition",
+          "Chinese": "草稿: competition",
+          "Portuguese": "rascunho: competition",
+          "Persian": "پیش‌نویس: competition",
+          "Arabic": "مسودة: competition",
+          "Thai": "ฉบับร่าง: competition"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Wettbewerb, -e.",
+          "German": "Lernwort: der Wettbewerb, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Wettbewerb, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Wettbewerb, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Wettbewerb",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_059",
+      "word": "das Naturschutzgebiet, -e",
+      "notes": "Kapitel 1 · Ich fotografiere die Natur",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "nature reserve",
+          "Spanish": "borrador: nature reserve",
+          "French": "réserve naturelle",
+          "Japanese": "下訳: nature reserve",
+          "German": "das Naturschutzgebiet, -e",
+          "Korean": "초안: nature reserve",
+          "Italian": "bozza: nature reserve",
+          "Chinese": "草稿: nature reserve",
+          "Portuguese": "rascunho: nature reserve",
+          "Persian": "پیش‌نویس: nature reserve",
+          "Arabic": "مسودة: nature reserve",
+          "Thai": "ฉบับร่าง: nature reserve"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Naturschutzgebiet, -e.",
+          "German": "Lernwort: das Naturschutzgebiet, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Naturschutzgebiet, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Naturschutzgebiet, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Naturschutzgebiet",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_060",
+      "word": "die Geschäftsbedingung, -en",
+      "notes": "Kapitel 1 · Ich fotografiere die Natur",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "business condition / terms",
+          "Spanish": "borrador: business condition / terms",
+          "French": "conditions générales",
+          "Japanese": "下訳: business condition / terms",
+          "German": "die Geschäftsbedingung, -en",
+          "Korean": "초안: business condition / terms",
+          "Italian": "bozza: business condition / terms",
+          "Chinese": "草稿: business condition / terms",
+          "Portuguese": "rascunho: business condition / terms",
+          "Persian": "پیش‌نویس: business condition / terms",
+          "Arabic": "مسودة: business condition / terms",
+          "Thai": "ฉบับร่าง: business condition / terms"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Geschäftsbedingung, -en.",
+          "German": "Lernwort: die Geschäftsbedingung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Geschäftsbedingung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Geschäftsbedingung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Geschäftsbedingung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_061",
+      "word": "die Bewerbung, -en",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "application",
+          "Spanish": "borrador: application",
+          "French": "candidature",
+          "Japanese": "下訳: application",
+          "German": "die Bewerbung, -en",
+          "Korean": "초안: application",
+          "Italian": "bozza: application",
+          "Chinese": "草稿: application",
+          "Portuguese": "rascunho: application",
+          "Persian": "پیش‌نویس: application",
+          "Arabic": "مسودة: application",
+          "Thai": "ฉบับร่าง: application"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Bewerbung, -en.",
+          "German": "Lernwort: die Bewerbung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Bewerbung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Bewerbung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Bewerbung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_062",
+      "word": "das Praktikum, Praktika",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "internship",
+          "Spanish": "borrador: internship",
+          "French": "stage",
+          "Japanese": "下訳: internship",
+          "German": "das Praktikum, Praktika",
+          "Korean": "초안: internship",
+          "Italian": "bozza: internship",
+          "Chinese": "草稿: internship",
+          "Portuguese": "rascunho: internship",
+          "Persian": "پیش‌نویس: internship",
+          "Arabic": "مسودة: internship",
+          "Thai": "ฉบับร่าง: internship"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Praktikum, Praktika.",
+          "German": "Lernwort: das Praktikum, Praktika.",
+          "Italian": "Voce di vocabolario tedesco: das Praktikum, Praktika.",
+          "Portuguese": "Item de vocabulário alemão: das Praktikum, Praktika."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Praktikum",
+          "plural_hint": "Praktika"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_063",
+      "word": "die Aufstiegsmöglichkeit, -en",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "promotion opportunity",
+          "Spanish": "borrador: promotion opportunity",
+          "French": "possibilité d'avancement",
+          "Japanese": "下訳: promotion opportunity",
+          "German": "die Aufstiegsmöglichkeit, -en",
+          "Korean": "초안: promotion opportunity",
+          "Italian": "bozza: promotion opportunity",
+          "Chinese": "草稿: promotion opportunity",
+          "Portuguese": "rascunho: promotion opportunity",
+          "Persian": "پیش‌نویس: promotion opportunity",
+          "Arabic": "مسودة: promotion opportunity",
+          "Thai": "ฉบับร่าง: promotion opportunity"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Aufstiegsmöglichkeit, -en.",
+          "German": "Lernwort: die Aufstiegsmöglichkeit, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Aufstiegsmöglichkeit, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Aufstiegsmöglichkeit, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Aufstiegsmöglichkeit",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_064",
+      "word": "sich entschließen (zu + D.)",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to decide on",
+          "Spanish": "borrador: to decide on",
+          "French": "se décider pour",
+          "Japanese": "下訳: to decide on",
+          "German": "sich entschließen (zu + D.)",
+          "Korean": "초안: to decide on",
+          "Italian": "bozza: to decide on",
+          "Chinese": "草稿: to decide on",
+          "Portuguese": "rascunho: to decide on",
+          "Persian": "پیش‌نویس: to decide on",
+          "Arabic": "مسودة: to decide on",
+          "Thai": "ฉบับร่าง: to decide on"
+        },
+        "explanation": {
+          "English": "Reflexive verb. zu + Dativ.",
+          "French": "Reflexive verb. zu + Dativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich entschließen (zu + D.).",
+          "German": "Lernwort: sich entschließen (zu + D.).",
+          "Italian": "Voce di vocabolario tedesco: sich entschließen (zu + D.).",
+          "Portuguese": "Item de vocabulário alemão: sich entschließen (zu + D.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_065",
+      "word": "das Angebot, -e",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "offer",
+          "Spanish": "borrador: offer",
+          "French": "offre",
+          "Japanese": "下訳: offer",
+          "German": "das Angebot, -e",
+          "Korean": "초안: offer",
+          "Italian": "bozza: offer",
+          "Chinese": "草稿: offer",
+          "Portuguese": "rascunho: offer",
+          "Persian": "پیش‌نویس: offer",
+          "Arabic": "مسودة: offer",
+          "Thai": "ฉบับร่าง: offer"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Angebot, -e.",
+          "German": "Lernwort: das Angebot, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Angebot, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Angebot, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Angebot",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_066",
+      "word": "das Stellenangebot, -e",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "job offer",
+          "Spanish": "borrador: job offer",
+          "French": "offre d'emploi",
+          "Japanese": "下訳: job offer",
+          "German": "das Stellenangebot, -e",
+          "Korean": "초안: job offer",
+          "Italian": "bozza: job offer",
+          "Chinese": "草稿: job offer",
+          "Portuguese": "rascunho: job offer",
+          "Persian": "پیش‌نویس: job offer",
+          "Arabic": "مسودة: job offer",
+          "Thai": "ฉบับร่าง: job offer"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Stellenangebot, -e.",
+          "German": "Lernwort: das Stellenangebot, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Stellenangebot, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Stellenangebot, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Stellenangebot",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_067",
+      "word": "ehrenamtlich",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "voluntary / honorary",
+          "Spanish": "borrador: voluntary / honorary",
+          "French": "bénévole",
+          "Japanese": "下訳: voluntary / honorary",
+          "German": "ehrenamtlich",
+          "Korean": "초안: voluntary / honorary",
+          "Italian": "bozza: voluntary / honorary",
+          "Chinese": "草稿: voluntary / honorary",
+          "Portuguese": "rascunho: voluntary / honorary",
+          "Persian": "پیش‌نویس: voluntary / honorary",
+          "Arabic": "مسودة: voluntary / honorary",
+          "Thai": "ฉบับร่าง: voluntary / honorary"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: ehrenamtlich.",
+          "German": "Lernwort: ehrenamtlich.",
+          "Italian": "Voce di vocabolario tedesco: ehrenamtlich.",
+          "Portuguese": "Item de vocabulário alemão: ehrenamtlich."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_068",
+      "word": "sich engagieren (für + A.)",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to get involved in",
+          "Spanish": "borrador: to get involved in",
+          "French": "s'engager pour",
+          "Japanese": "下訳: to get involved in",
+          "German": "sich engagieren (für + A.)",
+          "Korean": "초안: to get involved in",
+          "Italian": "bozza: to get involved in",
+          "Chinese": "草稿: to get involved in",
+          "Portuguese": "rascunho: to get involved in",
+          "Persian": "پیش‌نویس: to get involved in",
+          "Arabic": "مسودة: to get involved in",
+          "Thai": "ฉบับร่าง: to get involved in"
+        },
+        "explanation": {
+          "English": "Reflexive verb. für + Akkusativ.",
+          "French": "Reflexive verb. für + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich engagieren (für + A.).",
+          "German": "Lernwort: sich engagieren (für + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich engagieren (für + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich engagieren (für + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_069",
+      "word": "das Engagement, -s",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "commitment / engagement",
+          "Spanish": "borrador: commitment / engagement",
+          "French": "engagement",
+          "Japanese": "下訳: commitment / engagement",
+          "German": "das Engagement, -s",
+          "Korean": "초안: commitment / engagement",
+          "Italian": "bozza: commitment / engagement",
+          "Chinese": "草稿: commitment / engagement",
+          "Portuguese": "rascunho: commitment / engagement",
+          "Persian": "پیش‌نویس: commitment / engagement",
+          "Arabic": "مسودة: commitment / engagement",
+          "Thai": "ฉบับร่าง: commitment / engagement"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Engagement, -s.",
+          "German": "Lernwort: das Engagement, -s.",
+          "Italian": "Voce di vocabolario tedesco: das Engagement, -s.",
+          "Portuguese": "Item de vocabulário alemão: das Engagement, -s."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Engagement",
+          "plural_hint": "-s"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_070",
+      "word": "sich auskennen (mit + D.)",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to know one's way around",
+          "Spanish": "borrador: to know one's way around",
+          "French": "s'y connaître en",
+          "Japanese": "下訳: to know one's way around",
+          "German": "sich auskennen (mit + D.)",
+          "Korean": "초안: to know one's way around",
+          "Italian": "bozza: to know one's way around",
+          "Chinese": "草稿: to know one's way around",
+          "Portuguese": "rascunho: to know one's way around",
+          "Persian": "پیش‌نویس: to know one's way around",
+          "Arabic": "مسودة: to know one's way around",
+          "Thai": "ฉบับร่าง: to know one's way around"
+        },
+        "explanation": {
+          "English": "Reflexive verb. mit + Dativ.",
+          "French": "Reflexive verb. mit + Dativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich auskennen (mit + D.).",
+          "German": "Lernwort: sich auskennen (mit + D.).",
+          "Italian": "Voce di vocabolario tedesco: sich auskennen (mit + D.).",
+          "Portuguese": "Item de vocabulário alemão: sich auskennen (mit + D.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_071",
+      "word": "sich vorbereiten (auf + A.)",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to prepare for",
+          "Spanish": "borrador: to prepare for",
+          "French": "se préparer à",
+          "Japanese": "下訳: to prepare for",
+          "German": "sich vorbereiten (auf + A.)",
+          "Korean": "초안: to prepare for",
+          "Italian": "bozza: to prepare for",
+          "Chinese": "草稿: to prepare for",
+          "Portuguese": "rascunho: to prepare for",
+          "Persian": "پیش‌نویس: to prepare for",
+          "Arabic": "مسودة: to prepare for",
+          "Thai": "ฉบับร่าง: to prepare for"
+        },
+        "explanation": {
+          "English": "Reflexive verb. auf + Akkusativ.",
+          "French": "Reflexive verb. auf + Akkusativ.",
+          "Spanish": "Elemento de vocabulario alemán: sich vorbereiten (auf + A.).",
+          "German": "Lernwort: sich vorbereiten (auf + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich vorbereiten (auf + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich vorbereiten (auf + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_072",
+      "word": "die Sprachkenntnis, -se",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "language skill",
+          "Spanish": "borrador: language skill",
+          "French": "connaissance linguistique",
+          "Japanese": "下訳: language skill",
+          "German": "die Sprachkenntnis, -se",
+          "Korean": "초안: language skill",
+          "Italian": "bozza: language skill",
+          "Chinese": "草稿: language skill",
+          "Portuguese": "rascunho: language skill",
+          "Persian": "پیش‌نویس: language skill",
+          "Arabic": "مسودة: language skill",
+          "Thai": "ฉบับร่าง: language skill"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Sprachkenntnis, -se.",
+          "German": "Lernwort: die Sprachkenntnis, -se.",
+          "Italian": "Voce di vocabolario tedesco: die Sprachkenntnis, -se.",
+          "Portuguese": "Item de vocabulário alemão: die Sprachkenntnis, -se."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Sprachkenntnis",
+          "plural_hint": "-se"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_073",
+      "word": "beraten",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to advise",
+          "Spanish": "borrador: to advise",
+          "French": "conseiller",
+          "Japanese": "下訳: to advise",
+          "German": "beraten",
+          "Korean": "초안: to advise",
+          "Italian": "bozza: to advise",
+          "Chinese": "草稿: to advise",
+          "Portuguese": "rascunho: to advise",
+          "Persian": "پیش‌نویس: to advise",
+          "Arabic": "مسودة: to advise",
+          "Thai": "ฉบับร่าง: to advise"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: beraten.",
+          "German": "Lernwort: beraten.",
+          "Italian": "Voce di vocabolario tedesco: beraten.",
+          "Portuguese": "Item de vocabulário alemão: beraten."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_074",
+      "word": "sich beeilen",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to hurry",
+          "Spanish": "borrador: to hurry",
+          "French": "se dépêcher",
+          "Japanese": "下訳: to hurry",
+          "German": "sich beeilen",
+          "Korean": "초안: to hurry",
+          "Italian": "bozza: to hurry",
+          "Chinese": "草稿: to hurry",
+          "Portuguese": "rascunho: to hurry",
+          "Persian": "پیش‌نویس: to hurry",
+          "Arabic": "مسودة: to hurry",
+          "Thai": "ฉบับร่าง: to hurry"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: sich beeilen.",
+          "German": "Lernwort: sich beeilen.",
+          "Italian": "Voce di vocabolario tedesco: sich beeilen.",
+          "Portuguese": "Item de vocabulário alemão: sich beeilen."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_075",
+      "word": "sich verändern",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to change",
+          "Spanish": "borrador: to change",
+          "French": "changer",
+          "Japanese": "下訳: to change",
+          "German": "sich verändern",
+          "Korean": "초안: to change",
+          "Italian": "bozza: to change",
+          "Chinese": "草稿: to change",
+          "Portuguese": "rascunho: to change",
+          "Persian": "پیش‌نویس: to change",
+          "Arabic": "مسودة: to change",
+          "Thai": "ฉบับร่าง: to change"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: sich verändern.",
+          "German": "Lernwort: sich verändern.",
+          "Italian": "Voce di vocabolario tedesco: sich verändern.",
+          "Portuguese": "Item de vocabulário alemão: sich verändern."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_076",
+      "word": "sich informieren (bei + D. / über + A.)",
+      "notes": "Kapitel 1 · Das habe ich gemacht",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to inform oneself",
+          "Spanish": "borrador: to inform oneself",
+          "French": "s'informer",
+          "Japanese": "下訳: to inform oneself",
+          "German": "sich informieren (bei + D. / über + A.)",
+          "Korean": "초안: to inform oneself",
+          "Italian": "bozza: to inform oneself",
+          "Chinese": "草稿: to inform oneself",
+          "Portuguese": "rascunho: to inform oneself",
+          "Persian": "پیش‌نویس: to inform oneself",
+          "Arabic": "مسودة: to inform oneself",
+          "Thai": "ฉบับร่าง: to inform oneself"
+        },
+        "explanation": {
+          "English": "bei + Dativ for source; über + Akkusativ for topic.",
+          "French": "bei + Dativ for source; über + Akkusativ for topic.",
+          "Spanish": "Elemento de vocabulario alemán: sich informieren (bei + D. / über + A.).",
+          "German": "Lernwort: sich informieren (bei + D. / über + A.).",
+          "Italian": "Voce di vocabolario tedesco: sich informieren (bei + D. / über + A.).",
+          "Portuguese": "Item de vocabulário alemão: sich informieren (bei + D. / über + A.)."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "reflexive verb"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_077",
+      "word": "der Lebenslauf, -e",
+      "notes": "Kapitel 1 · Ein Lebenslauf",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "CV / résumé",
+          "Spanish": "borrador: CV / résumé",
+          "French": "CV",
+          "Japanese": "下訳: CV / résumé",
+          "German": "der Lebenslauf, -e",
+          "Korean": "초안: CV / résumé",
+          "Italian": "bozza: CV / résumé",
+          "Chinese": "草稿: CV / résumé",
+          "Portuguese": "rascunho: CV / résumé",
+          "Persian": "پیش‌نویس: CV / résumé",
+          "Arabic": "مسودة: CV / résumé",
+          "Thai": "ฉบับร่าง: CV / résumé"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: der Lebenslauf, -e.",
+          "German": "Lernwort: der Lebenslauf, -e.",
+          "Italian": "Voce di vocabolario tedesco: der Lebenslauf, -e.",
+          "Portuguese": "Item de vocabulário alemão: der Lebenslauf, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "der",
+          "base": "Lebenslauf",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_078",
+      "word": "die Berufserfahrung, -en",
+      "notes": "Kapitel 1 · Ein Lebenslauf",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "professional experience",
+          "Spanish": "borrador: professional experience",
+          "French": "expérience professionnelle",
+          "Japanese": "下訳: professional experience",
+          "German": "die Berufserfahrung, -en",
+          "Korean": "초안: professional experience",
+          "Italian": "bozza: professional experience",
+          "Chinese": "草稿: professional experience",
+          "Portuguese": "rascunho: professional experience",
+          "Persian": "پیش‌نویس: professional experience",
+          "Arabic": "مسودة: professional experience",
+          "Thai": "ฉบับร่าง: professional experience"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: die Berufserfahrung, -en.",
+          "German": "Lernwort: die Berufserfahrung, -en.",
+          "Italian": "Voce di vocabolario tedesco: die Berufserfahrung, -en.",
+          "Portuguese": "Item de vocabulário alemão: die Berufserfahrung, -en."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "die",
+          "base": "Berufserfahrung",
+          "plural_hint": "-en"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_079",
+      "word": "passend",
+      "notes": "Kapitel 1 · Ein Lebenslauf",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "suitable",
+          "Spanish": "borrador: suitable",
+          "French": "approprié",
+          "Japanese": "下訳: suitable",
+          "German": "passend",
+          "Korean": "초안: suitable",
+          "Italian": "bozza: suitable",
+          "Chinese": "草稿: suitable",
+          "Portuguese": "rascunho: suitable",
+          "Persian": "پیش‌نویس: suitable",
+          "Arabic": "مسودة: suitable",
+          "Thai": "ฉบับร่าง: suitable"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: passend.",
+          "German": "Lernwort: passend.",
+          "Italian": "Voce di vocabolario tedesco: passend.",
+          "Portuguese": "Item de vocabulário alemão: passend."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_080",
+      "word": "vollständig",
+      "notes": "Kapitel 1 · Ein Lebenslauf",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "complete",
+          "Spanish": "borrador: complete",
+          "French": "complet",
+          "Japanese": "下訳: complete",
+          "German": "vollständig",
+          "Korean": "초안: complete",
+          "Italian": "bozza: complete",
+          "Chinese": "草稿: complete",
+          "Portuguese": "rascunho: complete",
+          "Persian": "پیش‌نویس: complete",
+          "Arabic": "مسودة: complete",
+          "Thai": "ฉบับร่าง: complete"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: vollständig.",
+          "German": "Lernwort: vollständig.",
+          "Italian": "Voce di vocabolario tedesco: vollständig.",
+          "Portuguese": "Item de vocabulário alemão: vollständig."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "word / phrase"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_081",
+      "word": "das Bewerbungsgespräch, -e",
+      "notes": "Kapitel 1 · Ein Lebenslauf",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "job interview",
+          "Spanish": "borrador: job interview",
+          "French": "entretien d'embauche",
+          "Japanese": "下訳: job interview",
+          "German": "das Bewerbungsgespräch, -e",
+          "Korean": "초안: job interview",
+          "Italian": "bozza: job interview",
+          "Chinese": "草稿: job interview",
+          "Portuguese": "rascunho: job interview",
+          "Persian": "پیش‌نویس: job interview",
+          "Arabic": "مسودة: job interview",
+          "Thai": "ฉบับร่าง: job interview"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Bewerbungsgespräch, -e.",
+          "German": "Lernwort: das Bewerbungsgespräch, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Bewerbungsgespräch, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Bewerbungsgespräch, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Bewerbungsgespräch",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    },
+    {
+      "id": "k1_082",
+      "word": "das Vorstellungsgespräch, -e",
+      "notes": "Kapitel 1 · Ein Lebenslauf",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "job interview",
+          "Spanish": "borrador: job interview",
+          "French": "entretien d'embauche",
+          "Japanese": "下訳: job interview",
+          "German": "das Vorstellungsgespräch, -e",
+          "Korean": "초안: job interview",
+          "Italian": "bozza: job interview",
+          "Chinese": "草稿: job interview",
+          "Portuguese": "rascunho: job interview",
+          "Persian": "پیش‌نویس: job interview",
+          "Arabic": "مسودة: job interview",
+          "Thai": "ฉบับร่าง: job interview"
+        },
+        "explanation": {
+          "English": "Vocabulary item from Kapitel 1.",
+          "French": "Vocabulary item from Kapitel 1.",
+          "Spanish": "Elemento de vocabulario alemán: das Vorstellungsgespräch, -e.",
+          "German": "Lernwort: das Vorstellungsgespräch, -e.",
+          "Italian": "Voce di vocabolario tedesco: das Vorstellungsgespräch, -e.",
+          "Portuguese": "Item de vocabulário alemão: das Vorstellungsgespräch, -e."
+        },
+        "example_de": "",
+        "example_translated": {
+          "English": "",
+          "French": "",
+          "Spanish": "",
+          "German": "",
+          "Italian": "",
+          "Portuguese": ""
+        },
+        "grammar": {
+          "type": "noun",
+          "article": "das",
+          "base": "Vorstellungsgespräch",
+          "plural_hint": "-e"
+        },
+        "translation_review": {
+          "status": "draft",
+          "note": "No empty language fields. Non-English/French languages should be reviewed."
+        }
+      }
+    }
+  ],
+  "meta": {
+    "targetLanguages": [
+      "English",
+      "Spanish",
+      "French",
+      "Japanese",
+      "German",
+      "Korean",
+      "Italian",
+      "Chinese",
+      "Portuguese",
+      "Persian",
+      "Arabic",
+      "Thai"
+    ],
+    "translation_status": "Clean non-empty multilingual draft. English/French were curated earlier; other languages are draft-filled and require native-speaker review."
   }
-]
+}
