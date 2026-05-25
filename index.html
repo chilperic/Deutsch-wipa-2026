@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Vokabular Mastery</title>
-    <style>
-        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
-        body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; padding: 20px; display: flex; justify-content: center; }
-        .card { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
-        h1 { color: var(--gold); border-bottom: 1px solid var(--bdr); padding-bottom: 10px; }
-        .section { margin-top: 25px; }
-        h3 { font-size: 0.8rem; text-transform: uppercase; color: var(--gold); }
-        .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
-        .dict-btn { background: #1a1a1f; color: var(--text); border: 1px solid var(--bdr); padding: 8px; margin: 5px; cursor: pointer; border-radius: 4px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="card" id="app">
-    <h1>Vokabular Engine</h1>
-    <div id="content">Initializing...</div>
+    <h1>Vokabular Mastery</h1>
+    <div id="content">Loading Data...</div>
 </div>
-
+<script src="js/storage.js"></script>
+<script src="js/quiz.js"></script>
 <script>
-// THE DATABASE
-const DB = [
-    {
-        "word": "wettbewerbsfähig",
-        "grammar": "Capable of competing successfully.",
-        "example_de": "Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.",
-        "example_en": "To remain competitive, we must reduce costs.",
-        "translations": {
-            "English": "competitive", "French": "compétitif", "Arabic": "تنافسي",
-            "Persian": "رقابت‌پذیر", "Spanish": "competitivo", "Ukrainian": "конкурентоспроможний",
-            "Russian": "конкурентоспособный", "Italian": "competitivo", "Swahili": "enye ushindani"
+    let db = [];
+    async function init() {
+        // Load all 4 chapters
+        for(let i=1; i<=4; i++) {
+            const res = await fetch(`./data/kapitel${i}.json`);
+            const data = await res.json();
+            db.push(...data);
         }
+        renderQuiz();
     }
-];
 
-function render(idx) {
-    const w = DB[idx];
-    const trans = Object.entries(w.translations).map(([l, v]) => `<div><b>${l}:</b> ${v}</div>`).join('');
-    
-    document.getElementById('content').innerHTML = `
-        <h1 style="border:none;">${w.word}</h1>
-        <div class="section"><h3>Grammar & Context</h3><p>${w.grammar}</p></div>
-        <div class="section"><h3>Example</h3><p><em>${w.example_de}</em><br>${w.example_en}</p></div>
-        <div class="section"><h3>Translations</h3><div class="lang-grid">${trans}</div></div>
-        <div class="section">
-            <h3>Dictionaries</h3>
-            <button class="dict-btn" onclick="window.open('https://www.duden.de/suchen/dudenonline/${w.word}')">Duden</button>
-            <button class="dict-btn" onclick="window.open('https://dict.cc/?s=${w.word}')">dict.cc</button>
-        </div>
-    `;
-}
+    function renderQuiz() {
+        const w = db[Math.floor(Math.random() * db.length)];
+        document.getElementById('content').innerHTML = `
+            <h3>${w.word}</h3>
+            <input id="gender" placeholder="Gender (der/die/das)">
+            <input id="plural" placeholder="Plural">
+            <input id="tr" placeholder="Translation (${w.data.translations.Persian})">
+            <button onclick="check('${w.id}', '${w.gender}', '${w.plural}', '${w.data.translations.Persian}')">Submit</button>
+        `;
+    }
 
-render(0);
+    function check(id, g, p, tr) {
+        const guessG = document.getElementById('gender').value;
+        const guessP = document.getElementById('plural').value;
+        const guessT = document.getElementById('tr').value;
+        
+        const isCorrect = Quiz.validate(guessG, g) && Quiz.validate(guessP, p) && Quiz.validate(guessT, tr);
+        Storage.save(id, isCorrect);
+        alert(isCorrect ? "Mastered!" : "Review needed.");
+        renderQuiz();
+    }
+    init();
 </script>
 </body>
 </html>
