@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Vokabular · Mastery Edition</title>
+    <style>
+        body { background: #08080a; color: #e8e0d0; font-family: sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .ui-box { text-align: center; border: 1px solid #28282f; padding: 40px; border-radius: 12px; }
+    </style>
 </head>
 <body>
-    <div id="app-root"><h1>Initializing Engine...</h1></div>
+
+<div id="app-root" class="ui-box">
+    <h1>Vokabular Mastery Engine</h1>
+    <p id="status">Loading data from /data/ folder...</p>
+</div>
 
 <script>
-async function init() {
+// State Management
+let W = { words: [] };
+
+async function bootstrap() {
+    const status = document.getElementById('status');
+    const chapters = ['kapitel1', 'kapitel2', 'kapitel3', 'kapitel4'];
+    
     try {
-        // Change './kapitel1.json' to './data/kapitel1.json' ONLY if you put them in a folder
-        const response = await fetch('./kapitel1.json'); 
-        if (!response.ok) throw new Error("Could not find kapitel1.json in the repository root.");
+        let allWords = [];
+        for (let ch of chapters) {
+            // Attempting to load from your data folder
+            const resp = await fetch(`./data/${ch}.json`);
+            if (!resp.ok) throw new Error(`Could not load ${ch}.json`);
+            const data = await resp.json();
+            allWords.push(...data);
+        }
         
-        const data = await response.json();
+        W.words = allWords;
+        status.innerHTML = `<h2 style="color:#2ecc71;">System Online</h2>
+                            <p>Loaded ${W.words.length} words total.</p>
+                            <button onclick="location.reload()" style="padding:10px;">Refresh App</button>`;
         
-        // Success!
-        document.getElementById('app-root').innerHTML = `
-            <h1 style="color:#c9a84c;">Vokabular Engine</h1>
-            <p style="color:green;">Success! Loaded ${data.length} words from Kapitel 1.</p>
-        `;
-    } catch(err) {
-        document.getElementById('app-root').innerHTML = `
-            <h1 style="color:red;">Fatal Error</h1>
-            <p>${err.message}</p>
-            <p>Make sure 'kapitel1.json' is in the same folder as 'index.html'.</p>
-        `;
+    } catch (err) {
+        status.innerHTML = `<h2 style="color:#e74c3c;">Engine Failure</h2>
+                            <p>${err.message}</p>
+                            <p style="font-size:12px; color:#555;">Check: Is the folder name exactly 'data'? Are the files named correctly?</p>`;
+        console.error("DEBUG:", err);
     }
 }
-init();
+
+bootstrap();
 </script>
 </body>
 </html>
