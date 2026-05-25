@@ -4,41 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vokabular · Mastery Edition</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
 <style>
-/* CSS Reset and Variables - Same High-End Aesthetic */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#08080a; --s1:#111115; --s2:#17171c; --gold:#c9a84c; --gold2:#8a6f30; --text:#e8e0d0; --dim:#7a7268; --ok:#2ecc71; --err:#e74c3c; --info:#3498db; --r:8px;}
-body{background:var(--bg);color:var(--text);font-family:'Crimson Pro',serif;font-size:17px;}
-.screen{display:none;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:20px}
-.screen.on{display:flex}
-.card{background:var(--s1);border:1px solid #28282f;border-radius:16px;padding:32px;width:100%;max-width:500px; border-top:3px solid var(--gold);}
-.btn{font-family:var(--mono);font-size:12px;text-transform:uppercase;border:none;cursor:pointer;border-radius:8px;padding:14px 20px;transition:all .2s; font-weight:700;}
-.btn-gold{background:linear-gradient(135deg, var(--gold), var(--gold2));color:#1a1200;}
-.btn-outline{background:transparent;color:var(--dim);border:1px solid #28282f;}
-.btn-block{display:block;width:100%;}
-.phase-lbl{font-family:var(--mono);font-size:11px;color:var(--gold2);letter-spacing:.2em;text-transform:uppercase;margin-bottom:15px;text-align:center;}
-/* Basic UI styles added for completeness, same as previous reliable build */
+    body { background: #08080a; color: #e8e0d0; font-family: sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; }
+    #render-error { color: #e74c3c; padding: 20px; border: 1px solid #e74c3c; border-radius: 8px; }
 </style>
 </head>
 <body>
-<script>
-// --- KAPITEL-BASED DATABASE ---
-// This structure is designed to be easily expanded: add a new object to 'words' and it appears in the dropdown.
-let W = {
-  words: [
-    // KAPITEL 1
-    { "id": "k1_001", "word": "die Messe", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "trade fair" }, "explanation": "A large exhibition.", "example_de": "Wir besuchen die Buchmesse.", "example_translated": "We are visiting the fair.", "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } } },
-    // KAPITEL 2
-    { "id": "k2_001", "word": "die Prüfung", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "exam" }, "explanation": "A formal test.", "example_de": "Die Prüfung ist schwer.", "example_translated": "The exam is hard.", "grammar": { "type": "noun", "singular": "die Prüfung", "plural": "die Prüfungen" } } },
-    // KAPITEL 3
-    { "id": "k3_001", "word": "die Beziehung", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "relationship" }, "explanation": "Connection between people.", "example_de": "Wir haben eine gute Beziehung.", "example_translated": "We have a good relationship.", "grammar": { "type": "noun", "singular": "die Beziehung", "plural": "die Beziehungen" } } },
-    // KAPITEL 4
-    { "id": "k4_001", "word": "abbiegen", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "to turn" }, "explanation": "Changing direction while driving.", "example_de": "Sie müssen links abbiegen.", "example_translated": "You must turn left.", "grammar": { "type": "verb", "conjugation": { "ich": "biege ab", "du": "biegst ab", "er/sie/es": "biegt ab", "wir": "biegen ab", "ihr": "biegt ab", "sie/Sie": "biegen ab" } } } }
-  ]
-};
 
-// ... (Rest of logic follows the same validated engine as previously finalized)
+<div id="app-root">
+    </div>
+<div id="render-error" style="display:none;"></div>
+
+<script>
+    // 1. Force Reset Storage if version mismatch
+    if (localStorage.getItem('vok_v9') !== 'true') {
+        localStorage.clear();
+        localStorage.setItem('vok_v9', 'true');
+    }
+
+    // 2. Minimal Data Structure (Essential for rendering)
+    const W = { words: [
+        { id: "k1_001", word: "die Messe", notes: "Kapitel 1", status: "done", data: { translations: { English: "trade fair" }, explanation: "A large exhibition.", example_de: "Wir besuchen die Buchmesse.", example_translated: "We are visiting the fair.", grammar: { type: "noun", singular: "die Messe", plural: "die Messen" } } }
+    ]};
+
+    // 3. Simple Render Test
+    try {
+        const root = document.getElementById('app-root');
+        root.innerHTML = `
+            <div style="text-align:center;">
+                <h1 style="color:#c9a84c;">Vokabular Engine</h1>
+                <p>System is online. Words detected: ${W.words.length}</p>
+                <button onclick="location.reload()" style="padding:10px; margin-top:20px; cursor:pointer;">Reload App</button>
+            </div>
+        `;
+    } catch(e) {
+        const err = document.getElementById('render-error');
+        err.style.display = 'block';
+        err.textContent = "Critical Render Error: " + e.message;
+    }
 </script>
 </body>
 </html>
