@@ -1,1 +1,15 @@
-
+[
+  { 
+    "id": "k1_001", 
+    "word": "die Messe", 
+    "notes": "Kapitel 1", 
+    "status": "done", 
+    "data": { 
+      "translations": { "Persian": "نمایشگاه", "English": "trade fair" }, 
+      "explanation": "A large exhibition for industry or trade.", 
+      "example_de": "Wir besuchen die Buchmesse.", 
+      "example_translated": "We are visiting the book fair.", 
+      "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } 
+    } 
+  }
+]
