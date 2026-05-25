@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style>
-        :root { --bg: #08080a; --gold: #c9a84c; --text: #e8e0d0; --bdr: #28282f; }
-        body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; padding: 20px; display: flex; justify-content: center; }
-        .card { width: 100%; max-width: 500px; border: 1px solid var(--bdr); padding: 30px; border-radius: 12px; }
-        h1 { color: var(--gold); border-bottom: 1px solid var(--bdr); }
-        .section { margin-top: 25px; border-top: 1px solid var(--bdr); padding-top: 15px; }
-        h3 { font-size: 0.7rem; text-transform: uppercase; color: var(--gold); margin: 0; }
-        .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
-        button { background: var(--gold); color: #000; border: none; padding: 10px; cursor: pointer; border-radius: 4px; width: 100%; margin-top: 10px; }
-        input, select { width: 100%; padding: 8px; margin: 5px 0; background: #1a1a1f; color: var(--text); border: 1px solid var(--bdr); }
-    </style>
-</head>
+<head><link rel="stylesheet" href="style.css"></head>
 <body>
+<div class="vok-card">
+    <h1>Vokabular</h1>
+    <p style="font-size: 0.8rem; color: var(--gold);">DEUTSCH LERNEN · GERMAN VOCABULARY TRAINER</p>
 
-<div class="card" id="app">
-    <h1>Vokabular Mastery</h1>
-    <div id="setup">
-        <input id="userName" placeholder="Enter Name">
-        <select id="lang"><option value="Persian">Persian</option><option value="English">English</option></select>
-        <select id="chap"><option value="1">Kapitel 1</option><option value="2">Kapitel 2</option></select>
-        <input id="wordCount" type="number" placeholder="Number of words">
-        <button onclick="startMission()">Start Mission</button>
+    <label class="label">Your Name</label>
+    <input id="userName" placeholder="foko">
+
+    <label class="label">I Speak / Quiz Language</label>
+    <select id="lang"><option>English</option><option>Persian</option></select>
+
+    <label class="label">Explanations In</label>
+    <select id="expl"><option>French</option><option>English</option></select>
+
+    <label class="label">Chapter</label>
+    <select id="chap"><option>Kapitel 1</option><option>Kapitel 2</option></select>
+
+    <label class="label">Words Per Session</label>
+    <div class="btn-grid" id="countGrid">
+        <button onclick="setCount(10)">10</button>
+        <button onclick="setCount(20)" class="active">20</button>
+        <button onclick="setCount(30)">30</button>
+        <button onclick="setCount(50)">50</button>
+        <button onclick="setCount('All')">All</button>
     </div>
+
+    <button id="start-btn" onclick="startQuiz()">▶ START QUIZ</button>
 </div>
 
 <script>
-let session = { user: "", lang: "", db: [], currentWord: null };
-
-async function startMission() {
-    session.user = document.getElementById('userName').value;
-    session.lang = document.getElementById('lang').value;
-    const ch = document.getElementById('chap').value;
-    const count = document.getElementById('wordCount').value;
-
-    const res = await fetch(`./data/kapitel${ch}.json`);
-    session.db = (await res.json()).sort(() => 0.5 - Math.random()).slice(0, count);
-    showWord();
+let state = { count: 20 };
+function setCount(n) {
+    state.count = n;
+    document.querySelectorAll('.btn-grid button').forEach(b => b.classList.toggle('active', b.innerText == n));
 }
-
-function showWord() {
-    const w = session.db.pop();
-    if (!w) return alert("Mission Complete!");
-
-    document.getElementById('app').innerHTML = `
-        <h1>${w.word}</h1>
-        <div class="section"><h3>Grammar & Context</h3><p>${w.grammar}</p></div>
-        <div class="section"><h3>Example Sentence</h3><p><em>${w.example_de}</em><br>${w.example_en}</p></div>
-        <div class="section"><h3>All Translations</h3>
-            <div class="lang-grid"><div><b>${session.lang}:</b> ${w.translations[session.lang]}</div></div>
-        </div>
-        <button onclick="showWord()">Next</button>
-    `;
+function startQuiz() {
+    alert("Mission: " + document.getElementById('chap').value + " | Words: " + state.count);
+    // Navigation to the quiz engine logic follows here
 }
 </script>
 </body>
