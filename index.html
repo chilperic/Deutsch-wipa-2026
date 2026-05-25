@@ -251,14 +251,134 @@ function extLinks(word) {
   ];
 }
 
-let W = { words: [], genLangs: ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili'], explLang: 'English' };
+// BAKE PRE-TRANSLATED VOCABULARY DATA DIRECTLY HERE TO RUN INSTANTLY WITHOUT API KEYS
+let W = {
+  meta: { "targetLanguages": ["English","French","Arabic","Persian","Spanish","Ukrainian","Russian","Italian","Swahili"], "explanationLanguage": "English" },
+  words: [
+    {
+      "id": "k1_001",
+      "word": "die Messe",
+      "notes": "Noun · §1",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "trade fair / exhibition", "French": "foire / salon de commerce", "Arabic": "معرض تجاري", "Persian": "نمایشگاه بازرگانی", "Spanish": "feria comercial", "Ukrainian": "торгова виставка", "Russian": "торговая выставка", "Italian": "fiera commerciale", "Swahili": "maonyesho ya biashara"
+        },
+        "explanation": "die Messe, Plural: die Messen. A large exhibition, particularly for industry, trade, or business.",
+        "example_de": "Wir besuchen nächste Woche die Frankfurter Buchmesse.",
+        "example_translated": "We are visiting the Frankfurt Book Fair next week."
+      }
+    },
+    {
+      "id": "k1_002",
+      "word": "der Durchbruch",
+      "notes": "Noun · §1",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "breakthrough", "French": "percée / avancée", "Arabic": "انطلاقة / نجاح باهر", "Persian": "پیشرفت غیرمنتظره", "Spanish": "gran avance / logro", "Ukrainian": "прорив", "Russian": "прорыв / крупное достижение", "Italian": "svolta / passo avanti", "Swahili": "hatua kubwa ya mafanikio"
+        },
+        "explanation": "der Durchbruch, Plural: die Durchbrüche. Means a sudden, major advance or success.",
+        "example_de": "Dem Forschungsteam gelang ein medizinischer Durchbruch.",
+        "example_translated": "The research team achieved a medical breakthrough."
+      }
+    },
+    {
+      "id": "k1_003",
+      "word": "das Alleinstellungsmerkmal",
+      "notes": "Noun · §1",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "unique selling proposition (USP)", "French": "argument clé de vente", "Arabic": "ميزة تنافسية فريدة", "Persian": "ویژگی منحصر به فرد فروش", "Spanish": "propuesta única de venta", "Ukrainian": "унікальна торгова пропозиція", "Russian": "уникальное торговое предложение", "Italian": "proposta unica di vendita", "Swahili": "sifa ya kipekee ya biashara"
+        },
+        "explanation": "das Alleinstellungsmerkmal, Plural: die Alleinstellungsmerkmale. The distinct feature making a product stand out.",
+        "example_de": "Gute Qualität allein ist heute kein Alleinstellungsmerkmal mehr.",
+        "example_translated": "Good quality alone is no longer a unique selling proposition today."
+      }
+    },
+    {
+      "id": "k1_004",
+      "word": "verhandeln",
+      "notes": "Verb · §2",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "to negotiate", "French": "négocier", "Arabic": "تفاوض", "Persian": "مذاکره کردن", "Spanish": "negociar", "Ukrainian": "вести переговори", "Russian": "вести переговоры", "Italian": "negoziare / trattare", "Swahili": "kujadili"
+        },
+        "explanation": "verhandeln (weak verb, regular). Requires 'mit' + Dativ or 'über' + Akkusativ.",
+        "example_de": "Die Gewerkschaft verhandelt mit den Arbeitgebern über höhere Löhne.",
+        "example_translated": "The union is negotiating with employers for higher wages."
+      }
+    },
+    {
+      "id": "k1_005",
+      "word": "die Dienstleistung",
+      "notes": "Noun · §2",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "service", "French": "prestation de service", "Arabic": "خدمة", "Persian": "خدمات", "Spanish": "servicio", "Ukrainian": "послуга", "Russian": "услуга", "Italian": "servizio", "Swahili": "huduma"
+        },
+        "explanation": "die Dienstleistung, Plural: die Dienstleistungen. Refers to intangible economic activities offered to customers.",
+        "example_de": "Unser Unternehmen bietet IT-Dienstleistungen für Kleinbetriebe an.",
+        "example_translated": "Our company offers IT services for small businesses."
+      }
+    },
+    {
+      "id": "k1_006",
+      "word": "der Umsatz",
+      "notes": "Noun · §3",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "turnover / revenue", "French": "chiffre d'affaires", "Arabic": "حجم المبيعات", "Persian": "گردش مالی", "Spanish": "volumen de negocios", "Ukrainian": "оборот / дохід", "Russian": "оборот / выручка", "Italian": "fatturato", "Swahili": "mauzo ya jumla"
+        },
+        "explanation": "der Umsatz, Plural: die Umsätze. Total volume of sales made by a business.",
+        "example_de": "Der Umsatz stieg im vergangenen Quartal um zehn Prozent.",
+        "example_translated": "Turnover increased by ten percent in the past quarter."
+      }
+    },
+    {
+      "id": "k1_007",
+      "word": "wettbewerbsfähig",
+      "notes": "Adjective · §3",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "competitive", "French": "compétitif", "Arabic": "تنافسي", "Persian": "رقابت‌پذیر", "Spanish": "competitivo", "Ukrainian": "конкурентоспроможний", "Russian": "конкурентоспособный", "Italian": "competitivo", "Swahili": "enye ushindani"
+        },
+        "explanation": "wettbewerbsfähig. Capable of competing successfully.",
+        "example_de": "Um wettbewerbsfähig zu bleiben, müssen wir die Kosten senken.",
+        "example_translated": "To remain competitive, we must reduce costs."
+      }
+    },
+    {
+      "id": "k1_008",
+      "word": "die Zielgruppe",
+      "notes": "Noun · §4",
+      "status": "done",
+      "data": {
+        "translations": {
+          "English": "target group", "French": "groupe cible", "Arabic": "الفئة المستهدفة", "Persian": "مخاطبان هدف", "Spanish": "público objetivo", "Ukrainian": "цільова аудиторія", "Russian": "целевая аудитория", "Italian": "target", "Swahili": "walengwa"
+        },
+        "explanation": "die Zielgruppe, Plural: die Zielgruppen. Specific consumer profile aimed at.",
+        "example_de": "Jugendliche zwischen 14 und 18 Jahren sind unsere primäre Zielgruppe.",
+        "example_translated": "Youths between 14 and 18 years old are our primary target group."
+      }
+    }
+  ],
+  genLangs: ['English','French','Arabic','Persian','Spanish','Ukrainian','Russian','Italian','Swahili'],
+  explLang: 'English'
+};
+
 let USER = { name: '', nativeLang: 'English', explLang: 'English', chapter: 'all', sessionSize: 20 };
 let MASTERY = {};
 let Q = { pool: [], queue: [], idx: 0, correct: 0, wrong: 0, streak: 0, maxStreak: 0, totalPts: 0, maxPts: 0, wrongItems: [], reviewMode: false, cur: null, generating: false };
 
 function persist() {
   try {
-    localStorage.setItem('vok_w', JSON.stringify(W));
+    localStorage.setItem('vok_w', JSON.stringify({words: W.words, genLangs: W.genLangs, explLang: W.explLang}));
     localStorage.setItem('vok_u', JSON.stringify(USER));
     localStorage.setItem('vok_m', JSON.stringify(MASTERY));
   } catch(e){}
@@ -269,7 +389,7 @@ function loadStorage() {
     const w = localStorage.getItem('vok_w');
     const u = localStorage.getItem('vok_u');
     const m = localStorage.getItem('vok_m');
-    if (w) Object.assign(W, JSON.parse(w));
+    if (w) { const parsed = JSON.parse(w); W.words = parsed.words || W.words; }
     if (u) Object.assign(USER, JSON.parse(u));
     if (m) MASTERY = JSON.parse(m);
     const k = localStorage.getItem('vok_key');
@@ -416,7 +536,6 @@ function loadWord() {
   if (Q.idx >= Q.queue.length) { endSession(); return; }
   const entry = W.words.find(w=>w.id===Q.queue[Q.idx]);
   if (!entry) { Q.idx++; loadWord(); return; }
-  const art = getArticle(entry.word);
   const opts = buildMeaningOpts(entry, Q.pool, USER.nativeLang);
   Q.cur = { entry, options: opts, phase: 'q', showDet: false, selectedIndex: null };
   renderQuiz();
