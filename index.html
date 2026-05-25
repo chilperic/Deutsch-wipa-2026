@@ -223,7 +223,33 @@ hr{border:none;border-top:1px solid var(--bdr)}
 </div>
 </div>
 
+<div id="modal-bg" onclick="if(event.target===this)closeModal()">
+<div class="modal anim-slide">
+  <div class="modal-hdr">
+    <span class="modal-ttl">Dictionary Engine</span>
+    <button class="icon-btn" onclick="closeModal()">✕</button>
+  </div>
+  <div>
+    <span class="lbl">Anthropic API Key</span>
+    <input type="password" id="m-apikey" placeholder="sk-ant-…" oninput="saveKey()">
+    <p class="tip">Stored strictly locally in browser memory.</p>
+  </div>
+  <hr>
+  <div>
+    <span class="lbl">Translation Status</span>
+    <p style="font-family:var(--mono);font-size:13px;color:var(--dim);margin-bottom:12px" id="m-stats"></p>
+    <button class="btn btn-gold btn-block" id="m-gen-btn" onclick="generateAll()">Compile Missing Translations</button>
+    <p class="gen-prog blink" id="m-prog" style="display:none;margin-top:10px"></p>
+  </div>
+</div>
+</div>
+
 <script>
+if (localStorage.getItem('vok_v8') !== 'true') {
+  localStorage.clear();
+  localStorage.setItem('vok_v8', 'true');
+}
+
 // --- CORE DATA, AUDIO & SPEECH ---
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 let soundEnabled = true;
@@ -268,7 +294,7 @@ function toggleSound() {
 
 function speakWord(text) {
   if (!('speechSynthesis' in window)) return;
-  window.speechSynthesis.cancel(); // clear queue
+  window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'de-DE';
   utterance.rate = 0.9;
@@ -279,31 +305,73 @@ const LANGS = ['English','French','Arabic','Persian','Spanish','Ukrainian','Russ
 const ARTICLES = ['der','die','das','—'];
 
 function getLeoLang(nativeLang) {
-  const map = { 'English':'ende', 'French':'frde', 'Spanish':'esde', 'Italian':'itde', 'Russian':'rude' };
-  return map[nativeLang] || 'ende';
+  const map = { 'English':'ende', 'French':'frde', 'Spanish':'esde', 'Italian':'itde', 'Russian':'rude', 'Polish':'plde', 'Portuguese':'ptde', 'Chinese':'chde' };
+  return map[nativeLang];
 }
 
 function extLinks(word, nativeLang) {
-  const base = encodeURIComponent(String(word||'').replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim());
-  return [
-    {n:'Duden', u:`https://www.duden.de/suchen/dudenonline/${base}`},
-    {n:'Leo', u:`https://dict.leo.org/${getLeoLang(nativeLang)}/search?query=${base}`},
-    {n:'DWDS', u:`https://www.dwds.de/?q=${base}`},
-    {n:'Verbformen', u:`https://www.verbformen.de/?q=${base}`}
+  const base = encodeURIComponent(String(word||'').replace(/^(die|der|das|sich)\s+/i,'').split(',')[0].split('(')[0].trim());
+  const leoLang = getLeoLang(nativeLang);
+  let links = [
+    {n:'Duden', c:'#f0c96a', u:`https://www.duden.de/suchen/dudenonline/${base}`},
+    {n:'DWDS', c:'#3498db', u:`https://www.dwds.de/wb/${base}`},
+    {n:'Verbformen', c:'#e74c3c', u:`https://www.verbformen.de/?w=${base}`}
   ];
+  if(leoLang) links.push({n:'Leo', c:'#2ecc71', u:`https://dict.leo.org/${leoLang}/search?query=${base}`});
+  return links;
 }
 
-// BAKE PRE-TRANSLATED VOCABULARY DATA
+// MASSIVE 40-WORD BASE DATABASE FROM KAPITEL 1 TO 4
 let W = {
   meta: { "targetLanguages": LANGS, "explanationLanguage": "English" },
   words: [
-    { "id": "k1_001", "word": "die Messe", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "trade fair", "French": "foire", "Arabic": "معرض تجاري", "Persian": "نمایشگاه", "Spanish": "feria", "Ukrainian": "виставка", "Russian": "ярмарка", "Italian": "fiera", "Swahili": "maonyesho" }, "explanation": "A large exhibition for industry or trade.", "example_de": "Wir besuchen nächste Woche die Buchmesse.", "example_translated": "We are visiting the book fair next week.", "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } } },
-    { "id": "k1_002", "word": "die Premiere", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "premiere", "French": "première", "Arabic": "العرض الأول", "Persian": "اولین نمایش", "Spanish": "estreno", "Ukrainian": "прем'єра", "Russian": "премьера", "Italian": "prima", "Swahili": "onyesho la kwanza" }, "explanation": "The first public performance.", "example_de": "Die Premiere war ein Erfolg.", "example_translated": "The premiere was a success.", "grammar": { "type": "noun", "singular": "die Premiere", "plural": "die Premieren" } } },
-    { "id": "k1_003", "word": "sich beschweren", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "to complain", "French": "se plaindre", "Arabic": "يشتكي", "Persian": "شکایت کردن", "Spanish": "quejarse", "Ukrainian": "скаржитися", "Russian": "жаловаться", "Italian": "lamentarsi", "Swahili": "kulalamika" }, "explanation": "Reflexive verb used with 'bei' (Dat) / 'über' (Akk).", "example_de": "Er beschwert sich beim Chef.", "example_translated": "He complains to the boss.", "grammar": { "type": "verb", "conjugation": { "ich": "beschwere mich", "du": "beschwerst dich", "er/sie/es": "beschwert sich", "wir": "beschweren uns", "ihr": "beschwert euch", "sie/Sie": "beschweren sich" } } } },
-    { "id": "k2_001", "word": "die Prüfung", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "exam", "French": "examen", "Arabic": "امتحان", "Persian": "امتحان", "Spanish": "examen", "Ukrainian": "іспит", "Russian": "экзамен", "Italian": "esame", "Swahili": "mtihani" }, "explanation": "A formal test.", "example_de": "Die Prüfung findet im Mai statt.", "example_translated": "The exam takes place in May.", "grammar": { "type": "noun", "singular": "die Prüfung", "plural": "die Prüfungen" } } },
-    { "id": "k2_002", "word": "nähen", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "to sew", "French": "coudre", "Arabic": "يخيط", "Persian": "دوختن", "Spanish": "coser", "Ukrainian": "шити", "Russian": "шить", "Italian": "cucire", "Swahili": "kushona" }, "explanation": "To attach by stitches.", "example_de": "Sie näht ein Kleid.", "example_translated": "She sews a dress.", "grammar": { "type": "verb", "conjugation": { "ich": "nähe", "du": "nähst", "er/sie/es": "näht", "wir": "nähen", "ihr": "näht", "sie/Sie": "nähen" } } } },
-    { "id": "k3_001", "word": "die Beziehung", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "relationship", "French": "relation", "Arabic": "علاقة", "Persian": "رابطه", "Spanish": "relación", "Ukrainian": "відносини", "Russian": "отношения", "Italian": "relazione", "Swahili": "uhusiano" }, "explanation": "Connection between people.", "example_de": "Wir haben eine gute Beziehung.", "example_translated": "We have a good relationship.", "grammar": { "type": "noun", "singular": "die Beziehung", "plural": "die Beziehungen" } } },
-    { "id": "k4_001", "word": "abbiegen", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "to turn", "French": "tourner", "Arabic": "ينعطف", "Persian": "پیچیدن", "Spanish": "girar", "Ukrainian": "повертати", "Russian": "поворачивать", "Italian": "svoltare", "Swahili": "kukunja" }, "explanation": "Separable verb for changing direction.", "example_de": "Sie müssen links abbiegen.", "example_translated": "You must turn left.", "grammar": { "type": "verb", "conjugation": { "ich": "biege ab", "du": "biegst ab", "er/sie/es": "biegt ab", "wir": "biegen ab", "ihr": "biegt ab", "sie/Sie": "biegen ab" } } } }
+    // KAPITEL 1
+    { "id": "k1_01", "word": "die Messe", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "trade fair", "French": "foire", "Arabic": "معرض تجاري", "Persian": "نمایشگاه", "Spanish": "feria", "Ukrainian": "виставка", "Russian": "ярмарка", "Italian": "fiera", "Swahili": "maonyesho" }, "explanation": "A large exhibition for industry or trade.", "example_de": "Wir besuchen nächste Woche die Buchmesse.", "example_translated": "We are visiting the book fair next week.", "grammar": { "type": "noun", "singular": "die Messe", "plural": "die Messen" } } },
+    { "id": "k1_02", "word": "die Premiere", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "premiere", "French": "première", "Arabic": "العرض الأول", "Persian": "اولین نمایش", "Spanish": "estreno", "Ukrainian": "прем'єра", "Russian": "премьера", "Italian": "prima", "Swahili": "onyesho" }, "explanation": "The first public performance.", "example_de": "Die Premiere war ein Erfolg.", "example_translated": "The premiere was a success.", "grammar": { "type": "noun", "singular": "die Premiere", "plural": "die Premieren" } } },
+    { "id": "k1_03", "word": "sich beschweren", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "to complain", "French": "se plaindre", "Arabic": "يشتكي", "Persian": "شکایت کردن", "Spanish": "quejarse", "Ukrainian": "скаржитися", "Russian": "жаловаться", "Italian": "lamentarsi", "Swahili": "kulalamika" }, "explanation": "Reflexive verb used with 'bei' (Dat) / 'über' (Akk).", "example_de": "Er beschwert sich beim Chef.", "example_translated": "He complains to the boss.", "grammar": { "type": "verb", "conjugation": { "ich": "beschwere mich", "du": "beschwerst dich", "er/sie/es": "beschwert sich", "wir": "beschweren uns", "ihr": "beschwert euch", "sie/Sie": "beschweren sich" } } } },
+    { "id": "k1_04", "word": "das Profil", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "profile", "French": "profil", "Arabic": "ملف شخصي", "Persian": "نمایه", "Spanish": "perfil", "Ukrainian": "профіль", "Russian": "профиль", "Italian": "profilo", "Swahili": "wasifu" }, "explanation": "A description of a person.", "example_de": "Sie hat ihr Profil aktualisiert.", "example_translated": "She updated her profile.", "grammar": { "type": "noun", "singular": "das Profil", "plural": "die Profile" } } },
+    { "id": "k1_05", "word": "der Steckbrief", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "wanted poster / profile", "French": "fiche signalétique", "Arabic": "ملصق مطلوبين", "Persian": "پوستر تحت تعقیب", "Spanish": "ficha", "Ukrainian": "орієнтування", "Russian": "ориентировка", "Italian": "identikit", "Swahili": "bango la kutafutwa" }, "explanation": "A brief personal profile.", "example_de": "Jeder Schüler hat einen Steckbrief geschrieben.", "example_translated": "Every student wrote a short profile.", "grammar": { "type": "noun", "singular": "der Steckbrief", "plural": "die Steckbriefe" } } },
+    { "id": "k1_06", "word": "wirken", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "to appear / seem", "French": "sembler / agir", "Arabic": "يبدو", "Persian": "به نظر رسیدن", "Spanish": "parecer", "Ukrainian": "здаватися", "Russian": "казаться", "Italian": "sembrare", "Swahili": "kuonekana" }, "explanation": "To have an effect or to give a certain impression.", "example_de": "Sie wirkt sehr müde.", "example_translated": "She seems very tired.", "grammar": { "type": "verb", "conjugation": { "ich": "wirke", "du": "wirkst", "er/sie/es": "wirkt", "wir": "wirken", "ihr": "wirkt", "sie/Sie": "wirken" } } } },
+    { "id": "k1_07", "word": "verpassen", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "to miss", "French": "rater", "Arabic": "يفوت", "Persian": "از دست دادن", "Spanish": "perder (un evento)", "Ukrainian": "пропустити", "Russian": "пропустить", "Italian": "perdere (treno/evento)", "Swahili": "kukosa" }, "explanation": "To fail to catch or see.", "example_de": "Ich habe den Zug verpasst.", "example_translated": "I missed the train.", "grammar": { "type": "verb", "conjugation": { "ich": "verpasse", "du": "verpasst", "er/sie/es": "verpasst", "wir": "verpassen", "ihr": "verpasst", "sie/Sie": "verpassen" } } } },
+    { "id": "k1_08", "word": "die Nachricht", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "message / news", "French": "message / nouvelle", "Arabic": "رسالة / خبر", "Persian": "پیام / خبر", "Spanish": "mensaje", "Ukrainian": "повідомлення", "Russian": "сообщение", "Italian": "messaggio", "Swahili": "ujumbe" }, "explanation": "A piece of information or a text message.", "example_de": "Hast du meine Nachricht bekommen?", "example_translated": "Did you get my message?", "grammar": { "type": "noun", "singular": "die Nachricht", "plural": "die Nachrichten" } } },
+    { "id": "k1_09", "word": "sich wohlfühlen", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "to feel comfortable", "French": "se sentir bien", "Arabic": "يشعر بالراحة", "Persian": "احساس راحتی کردن", "Spanish": "sentirse bien", "Ukrainian": "почуватися добре", "Russian": "чувствовать себя хорошо", "Italian": "sentirsi a proprio agio", "Swahili": "kujisikia vizuri" }, "explanation": "A separable, reflexive verb.", "example_de": "Ich fühle mich hier sehr wohl.", "example_translated": "I feel very comfortable here.", "grammar": { "type": "verb", "conjugation": { "ich": "fühle mich wohl", "du": "fühlst dich wohl", "er/sie/es": "fühlt sich wohl", "wir": "fühlen uns wohl", "ihr": "fühlt euch wohl", "sie/Sie": "fühlen sich wohl" } } } },
+    { "id": "k1_10", "word": "sehenswert", "notes": "Kapitel 1", "status": "done", "data": { "translations": { "English": "worth seeing", "French": "vaut le détour", "Arabic": "يستحق المشاهدة", "Persian": "دیدنی", "Spanish": "digno de ver", "Ukrainian": "вартий уваги", "Russian": "достопримечательный", "Italian": "da vedere", "Swahili": "inastahili kuonekana" }, "explanation": "Adjective indicating something is visually rewarding.", "example_de": "Die alte Burg ist sehr sehenswert.", "example_translated": "The old castle is very worth seeing.", "grammar": { "type": "adjective" } } },
+
+    // KAPITEL 2
+    { "id": "k2_01", "word": "die Prüfung", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "exam", "French": "examen", "Arabic": "امتحان", "Persian": "امتحان", "Spanish": "examen", "Ukrainian": "іспит", "Russian": "экзамен", "Italian": "esame", "Swahili": "mtihani" }, "explanation": "A formal test.", "example_de": "Die Prüfung findet im Mai statt.", "example_translated": "The exam takes place in May.", "grammar": { "type": "noun", "singular": "die Prüfung", "plural": "die Prüfungen" } } },
+    { "id": "k2_02", "word": "nähen", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "to sew", "French": "coudre", "Arabic": "يخيط", "Persian": "دوختن", "Spanish": "coser", "Ukrainian": "шити", "Russian": "шить", "Italian": "cucire", "Swahili": "kushona" }, "explanation": "To attach by stitches.", "example_de": "Sie näht ein Kleid.", "example_translated": "She sews a dress.", "grammar": { "type": "verb", "conjugation": { "ich": "nähe", "du": "nähst", "er/sie/es": "näht", "wir": "nähen", "ihr": "näht", "sie/Sie": "nähen" } } } },
+    { "id": "k2_03", "word": "handwerklich", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "manual / craft", "French": "manuel / artisanal", "Arabic": "يدوي / حرفي", "Persian": "دستی / مهارتی", "Spanish": "manual / artesanal", "Ukrainian": "ремісничий", "Russian": "ремесленный", "Italian": "manuale / artigianale", "Swahili": "kwa mikono" }, "explanation": "Relating to manual skills or craftsmanship.", "example_de": "Er hat viel handwerkliches Geschick.", "example_translated": "He has a lot of manual skill.", "grammar": { "type": "adjective" } } },
+    { "id": "k2_04", "word": "geschickt sein", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "to be skillful", "French": "être adroit", "Arabic": "يكون ماهراً", "Persian": "ماهر بودن", "Spanish": "ser hábil", "Ukrainian": "бути вправним", "Russian": "быть ловким", "Italian": "essere abile", "Swahili": "kuwa hodari" }, "explanation": "To have dexterity.", "example_de": "Sie ist sehr geschickt mit den Händen.", "example_translated": "She is very skillful with her hands.", "grammar": { "type": "verb phrase" } } },
+    { "id": "k2_05", "word": "anerkennen", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "to recognize / acknowledge", "French": "reconnaître", "Arabic": "يعترف بـ", "Persian": "به رسمیت شناختن", "Spanish": "reconocer", "Ukrainian": "визнавати", "Russian": "признавать", "Italian": "riconoscere", "Swahili": "kutambua" }, "explanation": "Separable verb. To accept or validate.", "example_de": "Sein Abschluss wird hier nicht anerkannt.", "example_translated": "His degree is not recognized here.", "grammar": { "type": "verb", "conjugation": { "ich": "erkenne an", "du": "erkennst an", "er/sie/es": "erkennt an", "wir": "erkennen an", "ihr": "erkennt an", "sie/Sie": "erkennen an" } } } },
+    { "id": "k2_06", "word": "achten (auf)", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "to pay attention (to)", "French": "faire attention (à)", "Arabic": "ينتبه لـ", "Persian": "توجه کردن (به)", "Spanish": "prestar atención (a)", "Ukrainian": "звертати увагу (на)", "Russian": "обращать внимание (на)", "Italian": "fare attenzione (a)", "Swahili": "kuzingatia" }, "explanation": "Requires 'auf' + Akkusativ.", "example_de": "Du musst auf den Verkehr achten.", "example_translated": "You must pay attention to the traffic.", "grammar": { "type": "verb", "conjugation": { "ich": "achte", "du": "achtest", "er/sie/es": "achtet", "wir": "achten", "ihr": "achtet", "sie/Sie": "achten" } } } },
+    { "id": "k2_07", "word": "das Anschreiben", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "cover letter", "French": "lettre de motivation", "Arabic": "رسالة تغطية", "Persian": "نامه پوششی", "Spanish": "carta de presentación", "Ukrainian": "супровідний лист", "Russian": "сопроводительное письмо", "Italian": "lettera di presentazione", "Swahili": "barua ya maombi" }, "explanation": "A document sent with your resume.", "example_de": "Das Anschreiben sollte fehlerfrei sein.", "example_translated": "The cover letter should be error-free.", "grammar": { "type": "noun", "singular": "das Anschreiben", "plural": "die Anschreiben" } } },
+    { "id": "k2_08", "word": "das Zeugnis", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "report card", "French": "bulletin", "Arabic": "شهادة", "Persian": "کارنامه", "Spanish": "boletín", "Ukrainian": "табель", "Russian": "свидетельство", "Italian": "pagella", "Swahili": "cheti" }, "explanation": "A formal document of qualifications or grades.", "example_de": "Er hat ein gutes Zeugnis bekommen.", "example_translated": "He got a good report card.", "grammar": { "type": "noun", "singular": "das Zeugnis", "plural": "die Zeugnisse" } } },
+    { "id": "k2_09", "word": "der Experte", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "expert", "French": "expert", "Arabic": "خبير", "Persian": "کارشناس", "Spanish": "experto", "Ukrainian": "експерт", "Russian": "эксперт", "Italian": "esperto", "Swahili": "mtaalamu" }, "explanation": "A person with special knowledge (N-declension).", "example_de": "Er ist ein Experte für Computer.", "example_translated": "He is an expert in computers.", "grammar": { "type": "noun", "singular": "der Experte", "plural": "die Experten" } } },
+    { "id": "k2_10", "word": "kreativ", "notes": "Kapitel 2", "status": "done", "data": { "translations": { "English": "creative", "French": "créatif", "Arabic": "مبدع", "Persian": "خلاق", "Spanish": "creativo", "Ukrainian": "творчий", "Russian": "творческий", "Italian": "creativo", "Swahili": "bunifu" }, "explanation": "Involving the imagination or original ideas.", "example_de": "Sie hat viele kreative Ideen.", "example_translated": "She has many creative ideas.", "grammar": { "type": "adjective" } } },
+
+    // KAPITEL 3
+    { "id": "k3_01", "word": "der Außendienst", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "field work", "French": "service externe", "Arabic": "العمل الميداني", "Persian": "کار میدانی", "Spanish": "trabajo de campo", "Ukrainian": "виїзна робота", "Russian": "выездная работа", "Italian": "servizio esterno", "Swahili": "kazi ya uwanjani" }, "explanation": "Work done outside the central office.", "example_de": "Er arbeitet im Außendienst.", "example_translated": "He works in field sales.", "grammar": { "type": "noun", "singular": "der Außendienst", "plural": "— (Singular only)" } } },
+    { "id": "k3_02", "word": "die Beziehung", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "relationship", "French": "relation", "Arabic": "علاقة", "Persian": "رابطه", "Spanish": "relación", "Ukrainian": "відносини", "Russian": "отношения", "Italian": "relazione", "Swahili": "uhusiano" }, "explanation": "Connection between people.", "example_de": "Wir haben eine gute Beziehung.", "example_translated": "We have a good relationship.", "grammar": { "type": "noun", "singular": "die Beziehung", "plural": "die Beziehungen" } } },
+    { "id": "k3_03", "word": "Kontakt aufnehmen", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "to make contact", "French": "prendre contact", "Arabic": "يتواصل", "Persian": "تماس گرفتن", "Spanish": "establecer contacto", "Ukrainian": "налагодити контакт", "Russian": "установить контакт", "Italian": "prendere contatto", "Swahili": "kuwasiliana" }, "explanation": "Used with 'zu' + Dat or 'mit' + Dat.", "example_de": "Wir müssen Kontakt zum Kunden aufnehmen.", "example_translated": "We need to make contact with the customer.", "grammar": { "type": "verb phrase" } } },
+    { "id": "k3_04", "word": "die Kundenbetreuung", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "customer service", "French": "service client", "Arabic": "خدمة العملاء", "Persian": "پشتیبانی مشتری", "Spanish": "atención al cliente", "Ukrainian": "обслуговування клієнтів", "Russian": "обслуживание клиентов", "Italian": "servizio clienti", "Swahili": "huduma kwa wateja" }, "explanation": "The assistance provided by a company to its customers.", "example_de": "Die Kundenbetreuung hat mir sofort geholfen.", "example_translated": "Customer service helped me immediately.", "grammar": { "type": "noun", "singular": "die Kundenbetreuung", "plural": "die Kundenbetreuungen" } } },
+    { "id": "k3_05", "word": "das Marketing", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "marketing", "French": "marketing", "Arabic": "تسويق", "Persian": "بازاریابی", "Spanish": "marketing", "Ukrainian": "маркетинг", "Russian": "маркетинг", "Italian": "marketing", "Swahili": "masoko" }, "explanation": "The action of promoting and selling products. (Singular only).", "example_de": "Sie arbeitet im Marketing.", "example_translated": "She works in marketing.", "grammar": { "type": "noun", "singular": "das Marketing", "plural": "— (Singular only)" } } },
+    { "id": "k3_06", "word": "das Stipendium", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "scholarship", "French": "bourse", "Arabic": "منحة دراسية", "Persian": "بورس تحصیلی", "Spanish": "beca", "Ukrainian": "стипендія", "Russian": "стипендия", "Italian": "borsa di studio", "Swahili": "ufadhili wa masomo" }, "explanation": "A grant for education.", "example_de": "Sie hat ein Stipendium bekommen.", "example_translated": "She got a scholarship.", "grammar": { "type": "noun", "singular": "das Stipendium", "plural": "die Stipendien" } } },
+    { "id": "k3_07", "word": "finanzieren", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "to finance", "French": "financer", "Arabic": "يمول", "Persian": "تأمین مالی کردن", "Spanish": "financiar", "Ukrainian": "фінансувати", "Russian": "финансировать", "Italian": "finanziare", "Swahili": "kufadhili" }, "explanation": "To provide funding.", "example_de": "Wie finanzieren Sie das Auto?", "example_translated": "How are you financing the car?", "grammar": { "type": "verb", "conjugation": { "ich": "finanziere", "du": "finanzierst", "er/sie/es": "finanziert", "wir": "finanzieren", "ihr": "finanziert", "sie/Sie": "finanzieren" } } } },
+    { "id": "k3_08", "word": "einsam", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "lonely", "French": "seul / solitaire", "Arabic": "وحيد", "Persian": "تنها", "Spanish": "solo / solitario", "Ukrainian": "самотній", "Russian": "одинокий", "Italian": "solo / solitario", "Swahili": "peke yako" }, "explanation": "Sad because one has no friends or company.", "example_de": "Am Anfang fühlte er sich sehr einsam.", "example_translated": "At first, he felt very lonely.", "grammar": { "type": "adjective" } } },
+    { "id": "k3_09", "word": "das Heimweh", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "homesickness", "French": "mal du pays", "Arabic": "الحنين للوطن", "Persian": "دلتنگی", "Spanish": "morriña / nostalgia", "Ukrainian": "туга за домом", "Russian": "тоска по родине", "Italian": "nostalgia di casa", "Swahili": "kumbukumbu ya nyumbani" }, "explanation": "Longing for home. (Singular only).", "example_de": "Nach drei Monaten bekam sie Heimweh.", "example_translated": "After three months, she got homesick.", "grammar": { "type": "noun", "singular": "das Heimweh", "plural": "— (Singular only)" } } },
+    { "id": "k3_10", "word": "die Filiale", "notes": "Kapitel 3", "status": "done", "data": { "translations": { "English": "branch", "French": "succursale", "Arabic": "فرع", "Persian": "شعبه", "Spanish": "sucursal", "Ukrainian": "філія", "Russian": "филиал", "Italian": "filiale", "Swahili": "tawi" }, "explanation": "A local division of a large organization.", "example_de": "Die Bank hat eine neue Filiale eröffnet.", "example_translated": "The bank opened a new branch.", "grammar": { "type": "noun", "singular": "die Filiale", "plural": "die Filialen" } } },
+
+    // KAPITEL 4
+    { "id": "k4_01", "word": "der Berufsfahrer", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "professional driver", "French": "chauffeur professionnel", "Arabic": "سائق محترف", "Persian": "راننده حرفه ای", "Spanish": "conductor profesional", "Ukrainian": "професійний водій", "Russian": "профессиональный водитель", "Italian": "autista professionista", "Swahili": "dereva wa kitaalamu" }, "explanation": "Someone who drives for a living.", "example_de": "Mein Vater ist Berufsfahrer.", "example_translated": "My father is a professional driver.", "grammar": { "type": "noun", "singular": "der Berufsfahrer", "plural": "die Berufsfahrer" } } },
+    { "id": "k4_02", "word": "der Gabelstapler", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "forklift", "French": "chariot élévateur", "Arabic": "رافعة شوكية", "Persian": "لیفتراک", "Spanish": "montacargas", "Ukrainian": "навантажувач", "Russian": "вилочный погрузчик", "Italian": "carrello elevatore", "Swahili": "mashine ya kuinua mizigo" }, "explanation": "A vehicle with a pronged device in front.", "example_de": "Er fährt den Gabelstapler im Lager.", "example_translated": "He drives the forklift in the warehouse.", "grammar": { "type": "noun", "singular": "der Gabelstapler", "plural": "die Gabelstapler" } } },
+    { "id": "k4_03", "word": "der Bote", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "messenger / courier", "French": "messager / coursier", "Arabic": "رسول / مندوب", "Persian": "پیک", "Spanish": "mensajero", "Ukrainian": "кур'єр", "Russian": "курьер", "Italian": "corriere", "Swahili": "mjumbe" }, "explanation": "A person who carries messages or packages (N-declension).", "example_de": "Der Bote hat ein Paket gebracht.", "example_translated": "The messenger brought a package.", "grammar": { "type": "noun", "singular": "der Bote", "plural": "die Boten" } } },
+    { "id": "k4_04", "word": "das Fahrzeug", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "vehicle", "French": "véhicule", "Arabic": "مركبة", "Persian": "وسیله نقلیه", "Spanish": "vehículo", "Ukrainian": "транспортний засіб", "Russian": "транспортное средство", "Italian": "veicolo", "Swahili": "gari" }, "explanation": "A thing used for transporting people or goods.", "example_de": "Parken Sie das Fahrzeug auf dem Hof.", "example_translated": "Park the vehicle in the yard.", "grammar": { "type": "noun", "singular": "das Fahrzeug", "plural": "die Fahrzeuge" } } },
+    { "id": "k4_05", "word": "abbiegen", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "to turn", "French": "tourner", "Arabic": "ينعطف", "Persian": "پیچیدن", "Spanish": "girar", "Ukrainian": "повертати", "Russian": "поворачивать", "Italian": "svoltare", "Swahili": "kukunja" }, "explanation": "Separable verb for changing direction.", "example_de": "Sie müssen links abbiegen.", "example_translated": "You must turn left.", "grammar": { "type": "verb", "conjugation": { "ich": "biege ab", "du": "biegst ab", "er/sie/es": "biegt ab", "wir": "biegen ab", "ihr": "biegt ab", "sie/Sie": "biegen ab" } } } },
+    { "id": "k4_06", "word": "der Linienverkehr", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "regular service / scheduled traffic", "French": "service régulier", "Arabic": "خدمة نقل منتظمة", "Persian": "ترافیک خطوط منظم", "Spanish": "servicio regular", "Ukrainian": "регулярне сполучення", "Russian": "регулярное сообщение", "Italian": "servizio di linea", "Swahili": "huduma ya kawaida" }, "explanation": "Transport running on a regular schedule.", "example_de": "Der Bus fährt im Linienverkehr.", "example_translated": "The bus operates on a regular schedule.", "grammar": { "type": "noun", "singular": "der Linienverkehr", "plural": "— (Singular only)" } } },
+    { "id": "k4_07", "word": "färben", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "to dye / color", "French": "colorer / teindre", "Arabic": "يصبغ", "Persian": "رنگ کردن", "Spanish": "teñir", "Ukrainian": "фарбувати", "Russian": "красить", "Italian": "tingere", "Swahili": "kupaka rangi" }, "explanation": "To change the color of something (especially hair or clothes).", "example_de": "Sie möchte sich die Haare färben.", "example_translated": "She wants to dye her hair.", "grammar": { "type": "verb", "conjugation": { "ich": "färbe", "du": "färbst", "er/sie/es": "färbt", "wir": "färben", "ihr": "färbt", "sie/Sie": "färben" } } } },
+    { "id": "k4_08", "word": "frisieren", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "to do hair / style", "French": "coiffer", "Arabic": "يصفف الشعر", "Persian": "مدل مو درست کردن", "Spanish": "peinar", "Ukrainian": "робити зачіску", "Russian": "делать прическу", "Italian": "pettinare", "Swahili": "kutengeneza nywele" }, "explanation": "To arrange or style hair.", "example_de": "Der Friseur frisiert die Kundin.", "example_translated": "The hairdresser is styling the client.", "grammar": { "type": "verb", "conjugation": { "ich": "frisiere", "du": "frisierst", "er/sie/es": "frisiert", "wir": "frisieren", "ihr": "frisiert", "sie/Sie": "frisieren" } } } },
+    { "id": "k4_09", "word": "die Haarpflege", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "hair care", "French": "soins des cheveux", "Arabic": "العناية بالشعر", "Persian": "مراقبت از مو", "Spanish": "cuidado del cabello", "Ukrainian": "догляд за волоссям", "Russian": "уход за волосами", "Italian": "cura dei capelli", "Swahili": "huduma ya nywele" }, "explanation": "Maintenance and hygiene of hair.", "example_de": "Gute Haarpflege ist ihr wichtig.", "example_translated": "Good hair care is important to her.", "grammar": { "type": "noun", "singular": "die Haarpflege", "plural": "— (Singular only)" } } },
+    { "id": "k4_10", "word": "der Fingernagel", "notes": "Kapitel 4", "status": "done", "data": { "translations": { "English": "fingernail", "French": "ongle", "Arabic": "ظفر الإصبع", "Persian": "ناخن", "Spanish": "uña", "Ukrainian": "ніготь", "Russian": "ноготь", "Italian": "unghia", "Swahili": "kucha" }, "explanation": "The horny covering on the upper surface of the tip of the finger.", "example_de": "Sie lackiert sich die Fingernägel.", "example_translated": "She is painting her fingernails.", "grammar": { "type": "noun", "singular": "der Fingernagel", "plural": "die Fingernägel" } } }
   ]
 };
 
@@ -333,10 +401,6 @@ function loadStorage() {
 }
 
 function saveName() { USER.name = document.getElementById('inp-name').value.trim(); persist(); }
-
-const getArticle = (word) => { const m = String(word||'').match(/^(die|der|das)\s+/i); return m ? m[1].toLowerCase() : null; };
-const getBase = (word) => String(word||'').replace(/^(die|der|das)\s+/i,'').split(',')[0].split('(')[0].trim();
-const getChapter = (word) => { const m = String((word&&word.notes)||'').match(/Kapitel (\d+)/); return m ? m[1] : '?'; };
 
 // Fisher-Yates True Shuffle
 function shuffle(array) {
@@ -403,7 +467,6 @@ function loadWord() {
     options: opts, artSelected: null, meanSelected: null, showDet: false, wordFailed: false
   };
   
-  // Auto-pronounce if sound is on
   if (soundEnabled) speakWord(getBase(entry.word));
   renderQuiz();
 }
@@ -449,12 +512,11 @@ function selectMeaning(i) {
     setTimeout(()=>document.getElementById('qcard').classList.remove('shake'), 300);
     Q.wrong++; Q.streak = 0;
     Q.wrongItems.push({ id: Q.cur.entry.id, word: Q.cur.entry.word, correctMeaning: Q.cur.options.find(o=>o.isCorrect)?.txt || '—' });
-    Q.queue.push(Q.queue[Q.idx]); // Re-add to queue
+    Q.queue.push(Q.queue[Q.idx]); // Spaced Repetition Logic
   } else {
     playSound('ok');
     Q.correct++; Q.streak++; Q.maxStreak = Math.max(Q.maxStreak, Q.streak);
     
-    // XP Logic
     let pts = 10 + (Q.streak * 2);
     Q.sessionXP += pts;
     USER.xp += pts;
@@ -475,10 +537,9 @@ function endSession() {
     playSound('lvlup');
   }
   
-  // Log to Global Leaderboard
   LEADERBOARD.push({ name: USER.name, xp: Q.sessionXP, pct: pct, date: new Date().toLocaleDateString() });
   LEADERBOARD.sort((a,b) => b.xp - a.xp);
-  LEADERBOARD = LEADERBOARD.slice(0, 10); // Keep Top 10
+  LEADERBOARD = LEADERBOARD.slice(0, 10);
   
   persist();
   renderSummary(pct, isNewBest); showScreen('screen-summary');
@@ -486,8 +547,6 @@ function endSession() {
 
 const confirmExit = () => { if (confirm('Abort mission? Progress will be lost.')) backToMenu(); };
 function backToMenu() { Q.cur = null; Q.queue = []; showScreen('screen-onboard'); buildDashboard(); }
-
-function h(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 function renderQuiz() {
   const card = document.getElementById('qcard');
@@ -529,7 +588,7 @@ function renderQuiz() {
   let fbHTML = ''; let nextHTML = '';
   if (phase === 'done') {
     fbHTML = Q.cur.wordFailed 
-      ? `<p class="feedback fb-err anim-slide">✗ Need more practice on this one.</p>` 
+      ? `<p class="feedback fb-err anim-slide">✗ Review queue updated.</p>` 
       : `<p class="feedback fb-ok anim-slide">✓ Excellent work!</p>`;
     nextHTML = `<button class="next-btn btn-gold anim-slide" onclick="nextWord()">Continue →</button>`;
   }
@@ -570,7 +629,10 @@ function buildExplPanel(entry) {
     }
   }
 
-  return `<div class="expl-panel anim-slide"><div class="expl-section" style="text-align:center; padding-bottom:10px;"><span class="lbl">Translation (${userLang})</span><div style="font-family:var(--serif); font-size:24px; color:var(--gold);">${h(userTranslation)}</div></div><div class="expl-section"><span class="lbl">Structure</span>${grammarHTML}<p class="expl-txt" style="margin-top:10px;">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}" <button style="background:none;border:none;color:var(--info);cursor:pointer;" onclick="speakWord('${h(d.example_de)}')">🔊</button></p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">External Dictionaries</span><div class="link-row">${extLinks(entry.word, userLang).map(l=>`<a class="dlink" href="${l.u}" target="_blank">${l.n}</a>`).join('')}</div></div></div>`;
+  let externalLinks = extLinks(entry.word, userLang);
+  let linkRow = externalLinks.map(l=>`<a class="dlink" href="${l.u}" target="_blank" style="border-color:${l.c}; color:${l.c}">${l.n}</a>`).join('');
+
+  return `<div class="expl-panel anim-slide"><div class="expl-section" style="text-align:center; padding-bottom:10px;"><span class="lbl">Translation (${userLang})</span><div style="font-family:var(--serif); font-size:24px; color:var(--gold);">${h(userTranslation)}</div></div><div class="expl-section"><span class="lbl">Structure</span>${grammarHTML}<p class="expl-txt" style="margin-top:10px;">${h(d.explanation)}</p></div><div class="expl-section"><span class="lbl">Example Sentence</span><p class="expl-ex-de">„${h(d.example_de)}" <button style="background:none;border:none;color:var(--info);cursor:pointer;" onclick="speakWord('${h(d.example_de)}')">🔊</button></p><p class="expl-ex-tr">${h(d.example_translated||'')}</p></div><div class="expl-section"><span class="lbl">Dictionaries</span><div class="link-row">${linkRow}</div></div></div>`;
 }
 
 function renderSummary(pct, isNewBest) {
@@ -626,6 +688,8 @@ function buildDashboard() {
   });
 }
 
+function openSettings() { document.getElementById('modal-bg').classList.add('on'); }
+function closeModal() { document.getElementById('modal-bg').classList.remove('on'); buildDashboard(); }
 function showScreen(id) { document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on')); document.getElementById(id).classList.add('on'); }
 
 document.getElementById('pill-size').addEventListener('click', e=>{
