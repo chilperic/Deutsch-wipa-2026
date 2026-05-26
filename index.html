@@ -405,6 +405,102 @@ tr:hover td { background: var(--s2); }
 /* ═══════════════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════════════ */
+
+/* Advanced tools are hidden for learners by default */
+.advanced-card { display: none; }
+.advanced-card.on { display: flex; }
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; }
+.resource-card {
+  border: 1px solid var(--b1); border-radius: var(--r);
+  padding: 10px 12px; background: var(--s2);
+  font-family: var(--mono); font-size: 11px; line-height: 1.45;
+}
+.resource-card b { display:block; color:var(--gold); margin-bottom:3px; font-size:12px; }
+.resource-card span { color: var(--dim); display:block; margin-bottom:6px; font-family:var(--body); font-size:14px; }
+.resource-card a { font-family:var(--mono); font-size:10px; }
+
+
+/* ═══════════════════════════════════════════════════════
+   APPEARANCE THEMES
+═══════════════════════════════════════════════════════ */
+body.theme-light {
+  --bg:    #f7f3ea;  --s1:#fffaf0;  --s2:#f0eadf;  --s3:#e7dfd1;  --s4:#ddd2c0;
+  --b0:    #e1d8c9;  --b1:#d1c5b2;  --b2:#b9a98f;
+  --gold:  #9a7625;  --gold2:#7c5d19;  --gold3:#c99b32;  --glow:rgba(154,118,37,.18);
+  --text:  #242018;  --dim:#5f5649;  --muted:#827766;  --dead:#b5a994;
+  --der:   #2169b3;  --die:#b43131;  --das:#177a4d;  --noart:#756c60;
+  --ok:  #137a45;  --ok2:#0e5e35;  --okbg:rgba(19,122,69,.10);
+  --err: #b53232;  --err2:#7a2222; --errbg:rgba(181,50,50,.10);
+  --warn:#a76212;  --warnbg:rgba(167,98,18,.10);
+  --info:#2169b3;  --infobg:rgba(33,105,179,.10);
+}
+
+body.theme-light .card,
+body.theme-light .modal {
+  box-shadow: 0 18px 50px rgba(50,35,15,.15), inset 0 1px 0 rgba(255,255,255,.65);
+}
+
+body.theme-light #quiz-header {
+  background: rgba(247,243,234,.92);
+}
+
+body.theme-light .btn-gold {
+  color: #fffaf0;
+}
+
+body.theme-light code {
+  color: #3a2d16;
+}
+
+body.theme-light .drop-zone:hover,
+body.theme-light .drop-zone.drag-over {
+  background: rgba(154,118,37,.08);
+}
+
+body.theme-light .w-main,
+body.theme-light .expl-de,
+body.theme-light .tr-val,
+body.theme-light .grow b {
+  color: var(--text);
+}
+
+.theme-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--b1);
+  background: rgba(255,255,255,.025);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.theme-choice button {
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-choice button.on {
+  color: #181000;
+  background: linear-gradient(135deg, var(--gold3), var(--gold));
+}
+
+.theme-choice button:not(.on):hover {
+  color: var(--text);
+  background: rgba(255,255,255,.04);
+}
+
+body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .art-btn {
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
 @media(max-width:700px) {
   .grid2, .grid3, .grid4 { grid-template-columns: 1fr; }
   .art-grid { grid-template-columns: 1fr 1fr; }
@@ -433,9 +529,15 @@ tr:hover td { background: var(--s2); }
         <div class="tagline">article · meaning · active recall · spaced repetition</div>
       </div>
       <div class="row g8">
+        <div class="theme-choice" aria-label="Appearance">
+          <button type="button" data-theme="dark" onclick="setTheme('dark')">Dark</button>
+          <button type="button" data-theme="light" onclick="setTheme('light')">Light</button>
+          <button type="button" data-theme="system" onclick="setTheme('system')">System</button>
+        </div>
         <button class="btn btn-ghost" onclick="openModal('keys-modal')">? Keys</button>
         <button class="btn btn-ghost" onclick="showTab('tracker')">📊 Tracker</button>
         <button class="btn btn-ghost" onclick="showTab('library')">📚 Library</button>
+        <button class="btn btn-ghost" onclick="toggleAdvanced()">⚙ Advanced</button>
       </div>
     </div>
 
@@ -495,17 +597,17 @@ tr:hover td { background: var(--s2); }
   </div>
 
   <!-- Import card — prominent when no words -->
-  <div class="card col g16 fadein" id="import-card">
+  <div class="card col g16 fadein advanced-card" id="import-card">
     <div class="split">
       <div>
         <span class="lbl">Word List</span>
         <p class="note">
-        Your chapter files in <code>data/kapitel1.json</code> … <code>kapitel4.json</code> load automatically on first visit.
-        Use ↻ Reload chapters to refresh after uploading new files to GitHub.
-        You can also drop any JSON file here to merge it in.
+        Advanced data tools. Use this only to refresh vocabulary files, import/export JSON, or maintain the app.
       </p>
       </div>
       <div class="row g8">
+        <button class="btn btn-info" onclick="loadChapterFiles(true)">↻ Reload chapters</button>
+        <button class="btn btn-err" onclick="replaceFromChapterFiles()">Replace from files</button>
         <button class="btn btn-ghost" onclick="exportData()">↓ Export</button>
         <button class="btn btn-ghost" onclick="document.getElementById('file-input').click()">↑ Import file</button>
       </div>
@@ -746,10 +848,109 @@ tr:hover td { background: var(--s2); }
 </div>
 </div>
 
+
+<!-- ════════════════════════════════════════════════════
+     GRAMMAR & DICTIONARY HUB MODAL
+════════════════════════════════════════════════════ -->
+<div class="modal-bg" id="grammar-modal" onclick="if(event.target===this)closeModal('grammar-modal')">
+<div class="modal" style="width:min(760px,100%)">
+  <div class="modal-hdr">
+    <span class="modal-title">Grammatik & Wörterbücher</span>
+    <button class="btn btn-ghost" style="padding:6px 10px" onclick="closeModal('grammar-modal')">✕</button>
+  </div>
+
+  <p class="note">
+    Use these links when you need a deeper explanation than the short app feedback. They open in a new tab.
+  </p>
+
+  <div>
+    <p class="lbl">For the current word</p>
+    <div class="link-row" id="current-word-links"></div>
+  </div>
+
+  <div>
+    <p class="lbl">German dictionaries</p>
+    <div class="resource-grid">
+      <div class="resource-card"><b>Duden</b><span>Spelling, gender, plural, usage.</span><a target="_blank" href="https://www.duden.de/">Open Duden</a></div>
+      <div class="resource-card"><b>DWDS</b><span>Meaning, corpus examples, word history.</span><a target="_blank" href="https://www.dwds.de/">Open DWDS</a></div>
+      <div class="resource-card"><b>LEO</b><span>Bilingual dictionary and forums.</span><a target="_blank" href="https://dict.leo.org/german-english/">Open LEO</a></div>
+      <div class="resource-card"><b>Linguee</b><span>Context examples from translated texts.</span><a target="_blank" href="https://www.linguee.de/">Open Linguee</a></div>
+      <div class="resource-card"><b>Wiktionary</b><span>Declension, etymology, multilingual notes.</span><a target="_blank" href="https://de.wiktionary.org/">Open Wiktionary</a></div>
+      <div class="resource-card"><b>Verbformen</b><span>Verb conjugation, noun declension, examples.</span><a target="_blank" href="https://www.verbformen.de/">Open Verbformen</a></div>
+    </div>
+  </div>
+
+  <div>
+    <p class="lbl">Grammar explanations</p>
+    <div class="resource-grid">
+      <div class="resource-card"><b>Mein Deutschbuch</b><span>Clear grammar pages: cases, prepositions, Nebensätze.</span><a target="_blank" href="https://mein-deutschbuch.de/grammatik.html">Open grammar</a></div>
+      <div class="resource-card"><b>Deutschplus</b><span>Structured grammar explanations and exercises.</span><a target="_blank" href="https://www.deutschplus.net/">Open Deutschplus</a></div>
+      <div class="resource-card"><b>Schubert Verlag</b><span>Free online grammar and vocabulary exercises.</span><a target="_blank" href="https://www.schubert-verlag.de/aufgaben/">Open exercises</a></div>
+      <div class="resource-card"><b>Deutsche Welle</b><span>Nicos Weg and grammar-focused practice.</span><a target="_blank" href="https://learngerman.dw.com/">Open DW Learn German</a></div>
+      <div class="resource-card"><b>Grammis</b><span>Reference grammar from IDS Mannheim.</span><a target="_blank" href="https://grammis.ids-mannheim.de/">Open Grammis</a></div>
+      <div class="resource-card"><b>EasyDeutsch</b><span>Grammar tables and learner-friendly explanations.</span><a target="_blank" href="https://easy-deutsch.de/">Open EasyDeutsch</a></div>
+    </div>
+  </div>
+
+  <div>
+    <p class="lbl">Apps / extra practice</p>
+    <div class="resource-grid">
+      <div class="resource-card"><b>Anki</b><span>Best for serious spaced repetition.</span><a target="_blank" href="https://apps.ankiweb.net/">Open Anki</a></div>
+      <div class="resource-card"><b>DW Nicos Weg</b><span>Free structured A1–B1 course.</span><a target="_blank" href="https://learngerman.dw.com/de/nicos-weg/c-36519789">Open Nicos Weg</a></div>
+      <div class="resource-card"><b>Goethe Institut</b><span>Exam and practice materials.</span><a target="_blank" href="https://www.goethe.de/de/spr/ueb.html">Open Goethe practice</a></div>
+      <div class="resource-card"><b>VHS Lernportal</b><span>Free German learning portal.</span><a target="_blank" href="https://www.vhs-lernportal.de/">Open VHS Lernportal</a></div>
+    </div>
+  </div>
+</div>
+</div>
+
 <input type="file" id="file-input" accept=".json" onchange="importFile(event)">
 
 <script>
 'use strict';
+
+// ════════════════════════════════════════════════════════
+//  APPEARANCE THEME
+// ════════════════════════════════════════════════════════
+function getStoredTheme() {
+  try { return localStorage.getItem('vok_theme') || 'dark'; }
+  catch { return 'dark'; }
+}
+
+function systemPrefersLight() {
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+}
+
+function effectiveTheme(theme) {
+  return theme === 'system' ? (systemPrefersLight() ? 'light' : 'dark') : theme;
+}
+
+function applyTheme(theme) {
+  const chosen = theme || getStoredTheme();
+  const effective = effectiveTheme(chosen);
+
+  document.body.classList.remove('theme-dark', 'theme-light');
+  document.body.classList.add(effective === 'light' ? 'theme-light' : 'theme-dark');
+  document.documentElement.setAttribute('data-theme', effective);
+  document.documentElement.setAttribute('data-theme-choice', chosen);
+
+  document.querySelectorAll('[data-theme]').forEach(btn => {
+    btn.classList.toggle('on', btn.dataset.theme === chosen);
+  });
+}
+
+function setTheme(theme) {
+  if (!['dark','light','system'].includes(theme)) theme = 'dark';
+  localStorage.setItem('vok_theme', theme);
+  applyTheme(theme);
+}
+
+if (window.matchMedia) {
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener?.('change', () => {
+    if (getStoredTheme() === 'system') applyTheme('system');
+  });
+}
+
 // ════════════════════════════════════════════════════════
 //  CONSTANTS
 // ════════════════════════════════════════════════════════
@@ -1787,6 +1988,56 @@ showScreen('menu-screen');
 // mergeWords() is safe: existing SRS progress is never touched,
 // words already in DB by ID are simply overwritten with the latest version.
 loadChapterFiles(false);
+
+// ─── UX patch: learner-safe Advanced panel and Grammar Hub ───
+function toggleAdvanced() {
+  const el = document.getElementById('import-card');
+  if (!el) return;
+  el.classList.toggle('on');
+}
+
+function openGrammarHub() {
+  renderCurrentWordLinks();
+  openModal('grammar-modal');
+}
+
+function renderCurrentWordLinks() {
+  const box = document.getElementById('current-word-links');
+  if (!box) return;
+
+  const word = (typeof Q !== 'undefined' && Q && Q.cur) ? baseOf(Q.cur.word) : '';
+  if (!word) {
+    box.innerHTML = '<span class="tiny">Start a quiz or open a word first to see word-specific links.</span>';
+    return;
+  }
+
+  const q = encodeURIComponent(word);
+  box.innerHTML = `
+    <a class="dlink" target="_blank" href="https://www.duden.de/suchen/dudenonline/${q}">Duden: ${h(word)}</a>
+    <a class="dlink" target="_blank" href="https://www.dwds.de/wb/${q}">DWDS</a>
+    <a class="dlink" target="_blank" href="https://www.verbformen.de/?w=${q}">Verbformen</a>
+    <a class="dlink" target="_blank" href="https://dict.leo.org/german-english/${q}">LEO</a>
+    <a class="dlink" target="_blank" href="https://www.linguee.de/deutsch-englisch/search?query=${q}">Linguee</a>
+    <a class="dlink" target="_blank" href="https://de.wiktionary.org/wiki/${q}">Wiktionary</a>
+  `;
+}
+
+async function replaceFromChapterFiles() {
+  if (!confirm('Replace the local vocabulary library with files from data/kapitel*.json? Progress/SRS will stay, but local manual words may disappear.')) return;
+  DB.words = [];
+  save();
+  await loadChapterFiles(true);
+}
+
+if (typeof openModal !== 'function') {
+  window.openModal = function(id){ const el=document.getElementById(id); if(el) el.classList.add('on'); };
+}
+if (typeof closeModal !== 'function') {
+  window.closeModal = function(id){ const el=document.getElementById(id); if(el) el.classList.remove('on'); };
+}
+
+
+applyTheme(getStoredTheme());
 </script>
 </body>
 </html>
