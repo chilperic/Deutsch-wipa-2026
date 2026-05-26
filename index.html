@@ -614,6 +614,40 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
   color:#181000;
 }
 
+
+/* ═══════════════════════════════════════════════════════
+   PLURAL FEEDBACK PATCH
+═══════════════════════════════════════════════════════ */
+.plural-correction {
+  border:1px solid rgba(240,160,48,.38);
+  background:var(--warnbg);
+  border-radius:var(--r2);
+  padding:14px 16px;
+  margin-top:12px;
+  color:var(--warn);
+}
+.plural-correction b {
+  color:var(--gold);
+  font-family:var(--mono);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.plural-correction .plural-main {
+  display:block;
+  color:var(--text);
+  font-family:var(--serif);
+  font-size:26px;
+  margin-top:6px;
+}
+.plural-correction .plural-hint {
+  display:block;
+  color:var(--dim);
+  font-family:var(--mono);
+  font-size:12px;
+  margin-top:5px;
+}
+
 @media(max-width:700px) {
   .grid2, .grid3, .grid4 { grid-template-columns: 1fr; }
   .art-grid { grid-template-columns: 1fr 1fr; }
@@ -1775,7 +1809,7 @@ function render() {
     const parts  = [
       hasArt ? `Art ${Q.artOk?'✓':'✗'}` : null,
       `Meaning ${Q.meanOk?'✓':'✗'}`,
-      hasPlu ? `Plural ${Q.pluralOk?'✓':'✗'} (${h(pluralHint(w))})` : null,
+      hasPlu ? `Plural ${Q.pluralOk?'✓':'✗'} (${h(pluralDisplay(w))})` : null,
       hasPat ? `Pattern ${Q.patternOk?'✓':'✗'} (${h(patternHint(w))})` : null,
       `Active ${Q.activeOk?'✓':'✗'} → ${h(preferredActiveAnswer(w))}`,
     ].filter(Boolean);
@@ -2604,6 +2638,100 @@ setTimeout(() => {
   fillOnboardingSelectors();
   renderDataQualityDashboard();
 }, 0);
+
+
+// ════════════════════════════════════════════════════════
+// PLURAL FEEDBACK PATCH
+// ════════════════════════════════════════════════════════
+window.VOKABULAR_BUILD = 'plural-feedback-patch-2026-05-26';
+
+function stripPluralArticle(s) {
+  return String(s || '').replace(/^\s*(die|der|das)\s+/i,'').trim();
+}
+
+function pluralDisplay(w) {
+  const g = w?.data?.grammar || {};
+  const base = g.base || baseOf(w.word);
+  const hint = pluralHint(w);
+  if (g.plural && String(g.plural).trim()) return String(g.plural).trim();
+
+  // Some chapter entries store the complete plural in plural_hint, e.g. "die Stipendien".
+  if (/^(die|der|das)\s+/i.test(hint)) return hint;
+
+  const generated = pluralFromHint(base, hint);
+  if (generated) return `die ${generated}`;
+
+  return hint || 'plural not provided';
+}
+
+function pluralAcceptedAnswers(w) {
+  const g = w?.data?.grammar || {};
+  const base = g.base || baseOf(w.word);
+  const hint = pluralHint(w);
+  const generated = pluralFromHint(base, hint);
+  const display = pluralDisplay(w);
+
+  const vals = [
+    g.plural,
+    display,
+    stripPluralArticle(display),
+    hint,
+    generated,
+    generated ? `die ${generated}` : ''
+  ].filter(Boolean).map(String);
+
+  // Accept singular only if the plural is genuinely unchanged, e.g. der Fahrer, -
+  if ((hint === '-' || hint === '—') && generated === base) vals.push(base);
+
+  return [...new Set(vals)];
+}
+
+// Replace old pluralAnswers. Important: do not accept singular base by default.
+pluralAnswers = pluralAcceptedAnswers;
+
+function showPluralCorrection(w, userInput) {
+  const q = document.getElementById('qcard');
+  if (!q) return;
+  q.querySelectorAll('[data-plural-correction]').forEach(e => e.remove());
+
+  const display = pluralDisplay(w);
+  const hint = pluralHint(w);
+  const accepted = pluralAcceptedAnswers(w).filter(x => x !== display).slice(0,4).join(' · ');
+  const nextPhase = hasPattern(w) ? 'pattern' : 'active';
+
+  q.insertAdjacentHTML('beforeend', `
+    <div class="plural-correction" data-plural-correction>
+      <b>Plural correction</b>
+      <span class="plural-main">${h(w.word)} → ${h(display)}</span>
+      <span class="plural-hint">Hint in file: ${h(hint || 'not provided')} ${accepted ? ' · also accepted: ' + h(accepted) : ''}</span>
+      <span class="plural-hint">Your answer: ${h(userInput || '—')}. Umlaut keyboard forms such as ae/oe/ue are accepted.</span>
+    </div>
+    <div class="row g8" style="justify-content:center;margin-top:10px" data-plural-correction>
+      <button class="btn btn-gold" onclick="Q.phase='${nextPhase}';render()">Continue</button>
+      <button class="btn btn-ghost" onclick="Q.showExpl=true;render()">Show explanation</button>
+    </div>
+  `);
+}
+
+answerPlural = function() {
+  const input = document.getElementById('typed')?.value || '';
+  const answers = pluralAcceptedAnswers(Q.cur);
+  const expected = pluralDisplay(Q.cur);
+  Q.pluralOk = answers.some(a => fuzzyMatch(input, a));
+  Q.pts += Q.pluralOk ? 2 : 0;
+
+  if (Q.pluralOk) {
+    Q.phase = hasPattern(Q.cur) ? 'pattern' : 'active';
+    render();
+    flashMsg(true, `✓ Correct plural: ${expected}`);
+    return;
+  }
+
+  const typed = document.getElementById('typed');
+  if (typed) typed.classList.add('err');
+  flashMsg(false, `✗ Plural: ${expected}`);
+  showPluralCorrection(Q.cur, input);
+};
 
 applyTheme(getStoredTheme());
 applyI18n();
