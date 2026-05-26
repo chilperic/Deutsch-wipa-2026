@@ -28,7 +28,12 @@
       "example_de",
       "example_translated",
       "usage_note"
-    ]
+    ],
+    "plural_status": "explicit full plurals added to grammar.plural for nouns when derivable from source hints",
+    "plural_model": {
+      "plural_hint": "source/textbook hint such as -n, -en, -¨e, Praktika",
+      "plural": "full plural form with article, e.g. die Messen, die Verträge"
+    }
   },
   "words": [
     {
@@ -84,21 +89,22 @@
           "type": "noun",
           "article": "die",
           "base": "Messe",
-          "plural_hint": "-n"
+          "plural_hint": "-n",
+          "plural": "die Messen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Messe. Plural hint: -n.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Messe. Indicación del plural: -n.",
-          "French": "Nom. Apprends-le avec son article : die Messe. Indication du pluriel : -n.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Messe。複数形の手がかり：-n。",
-          "German": "Nomen. Lerne es mit Artikel: die Messe. Pluralhinweis: -n.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Messe. 복수형 힌트: -n.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Messe. Indicazione del plurale: -n.",
-          "Chinese": "名词。请连同冠词一起记：die Messe。复数提示：-n。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Messe. Indicação do plural: -n.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Messe. راهنمای جمع: -n.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Messe. إشارة الجمع: -n.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Messe. คำใบ้รูปพหูพจน์: -n."
+          "English": "Noun. Learn it with article and plural: die Messe → die Messen. Source plural hint: -n.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Messe → die Messen. Pista de plural de la fuente: -n.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Messe → die Messen. Indication du pluriel dans la source : -n.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Messe → die Messen。資料の複数形ヒント：-n。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Messe → die Messen. Pluralhinweis der Quelle: -n.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Messe → die Messen. 자료의 복수형 힌트: -n.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Messe → die Messen. Indicazione del plurale dalla fonte: -n.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Messe → die Messen。来源中的复数提示：-n。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Messe → die Messen. Indicação de plural da fonte: -n.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Messe → die Messen. راهنمای جمع در منبع: -n.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Messe → die Messen. إشارة الجمع في المصدر: -n.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Messe → die Messen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -n."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -169,21 +175,22 @@
           "type": "noun",
           "article": "die",
           "base": "Premiere",
-          "plural_hint": "-n"
+          "plural_hint": "-n",
+          "plural": "die Premieren"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Premiere. Plural hint: -n.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Premiere. Indicación del plural: -n.",
-          "French": "Nom. Apprends-le avec son article : die Premiere. Indication du pluriel : -n.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Premiere。複数形の手がかり：-n。",
-          "German": "Nomen. Lerne es mit Artikel: die Premiere. Pluralhinweis: -n.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Premiere. 복수형 힌트: -n.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Premiere. Indicazione del plurale: -n.",
-          "Chinese": "名词。请连同冠词一起记：die Premiere。复数提示：-n。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Premiere. Indicação do plural: -n.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Premiere. راهنمای جمع: -n.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Premiere. إشارة الجمع: -n.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Premiere. คำใบ้รูปพหูพจน์: -n."
+          "English": "Noun. Learn it with article and plural: die Premiere → die Premieren. Source plural hint: -n.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Premiere → die Premieren. Pista de plural de la fuente: -n.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Premiere → die Premieren. Indication du pluriel dans la source : -n.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Premiere → die Premieren。資料の複数形ヒント：-n。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Premiere → die Premieren. Pluralhinweis der Quelle: -n.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Premiere → die Premieren. 자료의 복수형 힌트: -n.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Premiere → die Premieren. Indicazione del plurale dalla fonte: -n.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Premiere → die Premieren。来源中的复数提示：-n。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Premiere → die Premieren. Indicação de plural da fonte: -n.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Premiere → die Premieren. راهنمای جمع در منبع: -n.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Premiere → die Premieren. إشارة الجمع في المصدر: -n.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Premiere → die Premieren. คำใบ้พหูพจน์จากแหล่งข้อมูล: -n."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -337,21 +344,22 @@
           "type": "noun",
           "article": "die",
           "base": "Spezialität",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Spezialitäten"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Spezialität. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Spezialität. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Spezialität. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Spezialität。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Spezialität. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Spezialität. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Spezialität. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Spezialität。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Spezialität. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Spezialität. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Spezialität. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Spezialität. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Spezialität → die Spezialitäten. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Spezialität → die Spezialitäten. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Spezialität → die Spezialitäten. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Spezialität → die Spezialitäten。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Spezialität → die Spezialitäten. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Spezialität → die Spezialitäten. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Spezialität → die Spezialitäten. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Spezialität → die Spezialitäten。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Spezialität → die Spezialitäten. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Spezialität → die Spezialitäten. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Spezialität → die Spezialitäten. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Spezialität → die Spezialitäten. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -422,21 +430,22 @@
           "type": "noun",
           "article": "das",
           "base": "Profil",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Profile"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Profil. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Profil. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Profil. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Profil。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Profil. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Profil. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Profil. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Profil。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Profil. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Profil. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Profil. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Profil. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Profil → die Profile. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Profil → die Profile. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Profil → die Profile. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Profil → die Profile。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Profil → die Profile. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Profil → die Profile. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Profil → die Profile. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Profil → die Profile。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Profil → die Profile. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Profil → die Profile. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Profil → die Profile. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Profil → die Profile. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -507,21 +516,22 @@
           "type": "noun",
           "article": "der",
           "base": "Steckbrief",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Steckbriefe"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: der Steckbrief. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: der Steckbrief. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : der Steckbrief. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：der Steckbrief。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: der Steckbrief. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: der Steckbrief. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: der Steckbrief. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：der Steckbrief。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: der Steckbrief. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: der Steckbrief. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: der Steckbrief. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: der Steckbrief. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: der Steckbrief → die Steckbriefe. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Steckbrief → die Steckbriefe. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Steckbrief → die Steckbriefe. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Steckbrief → die Steckbriefe。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Steckbrief → die Steckbriefe. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Steckbrief → die Steckbriefe. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Steckbrief → die Steckbriefe. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Steckbrief → die Steckbriefe。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Steckbrief → die Steckbriefe. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Steckbrief → die Steckbriefe. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Steckbrief → die Steckbriefe. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Steckbrief → die Steckbriefe. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -756,21 +766,22 @@
           "type": "noun",
           "article": "die",
           "base": "Herausforderung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Herausforderungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Herausforderung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Herausforderung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Herausforderung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Herausforderung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Herausforderung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Herausforderung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Herausforderung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Herausforderung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Herausforderung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Herausforderung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Herausforderung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Herausforderung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Herausforderung → die Herausforderungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Herausforderung → die Herausforderungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Herausforderung → die Herausforderungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Herausforderung → die Herausforderungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Herausforderung → die Herausforderungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Herausforderung → die Herausforderungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Herausforderung → die Herausforderungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Herausforderung → die Herausforderungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Herausforderung → die Herausforderungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Herausforderung → die Herausforderungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Herausforderung → die Herausforderungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Herausforderung → die Herausforderungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -841,21 +852,22 @@
           "type": "noun",
           "article": "die",
           "base": "Erfahrung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Erfahrungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Erfahrung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Erfahrung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Erfahrung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Erfahrung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Erfahrung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Erfahrung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Erfahrung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Erfahrung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Erfahrung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Erfahrung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Erfahrung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Erfahrung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Erfahrung → die Erfahrungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Erfahrung → die Erfahrungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Erfahrung → die Erfahrungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Erfahrung → die Erfahrungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Erfahrung → die Erfahrungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Erfahrung → die Erfahrungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Erfahrung → die Erfahrungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Erfahrung → die Erfahrungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Erfahrung → die Erfahrungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Erfahrung → die Erfahrungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Erfahrung → die Erfahrungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Erfahrung → die Erfahrungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -926,21 +938,22 @@
           "type": "noun",
           "article": "die",
           "base": "Nachricht",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Nachrichten"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Nachricht. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Nachricht. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Nachricht. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Nachricht。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Nachricht. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Nachricht. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Nachricht. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Nachricht。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Nachricht. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Nachricht. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Nachricht. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Nachricht. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Nachricht → die Nachrichten. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Nachricht → die Nachrichten. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Nachricht → die Nachrichten. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Nachricht → die Nachrichten。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Nachricht → die Nachrichten. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Nachricht → die Nachrichten. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Nachricht → die Nachrichten. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Nachricht → die Nachrichten。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Nachricht → die Nachrichten. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Nachricht → die Nachrichten. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Nachricht → die Nachrichten. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Nachricht → die Nachrichten. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -1504,21 +1517,22 @@
           "type": "noun",
           "article": "die",
           "base": "Charaktereigenschaft",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Charaktereigenschaften"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Charaktereigenschaft. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Charaktereigenschaft. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Charaktereigenschaft. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Charaktereigenschaft。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Charaktereigenschaft. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Charaktereigenschaft. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Charaktereigenschaft. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Charaktereigenschaft。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Charaktereigenschaft. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Charaktereigenschaft. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Charaktereigenschaft. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Charaktereigenschaft. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Charaktereigenschaft → die Charaktereigenschaften. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Charaktereigenschaft → die Charaktereigenschaften. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Charaktereigenschaft → die Charaktereigenschaften. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Charaktereigenschaft → die Charaktereigenschaften。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Charaktereigenschaft → die Charaktereigenschaften. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Charaktereigenschaft → die Charaktereigenschaften. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Charaktereigenschaft → die Charaktereigenschaften. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Charaktereigenschaft → die Charaktereigenschaften。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Charaktereigenschaft → die Charaktereigenschaften. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Charaktereigenschaft → die Charaktereigenschaften. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Charaktereigenschaft → die Charaktereigenschaften. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Charaktereigenschaft → die Charaktereigenschaften. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -2409,21 +2423,22 @@
           "type": "noun",
           "article": "die",
           "base": "Ausbildung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Ausbildungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Ausbildung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Ausbildung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Ausbildung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Ausbildung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Ausbildung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Ausbildung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Ausbildung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Ausbildung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Ausbildung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Ausbildung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Ausbildung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Ausbildung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Ausbildung → die Ausbildungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Ausbildung → die Ausbildungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Ausbildung → die Ausbildungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Ausbildung → die Ausbildungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Ausbildung → die Ausbildungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Ausbildung → die Ausbildungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Ausbildung → die Ausbildungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Ausbildung → die Ausbildungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Ausbildung → die Ausbildungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Ausbildung → die Ausbildungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Ausbildung → die Ausbildungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Ausbildung → die Ausbildungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -2494,21 +2509,22 @@
           "type": "noun",
           "article": "die",
           "base": "Veränderung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Veränderungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Veränderung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Veränderung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Veränderung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Veränderung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Veränderung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Veränderung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Veränderung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Veränderung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Veränderung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Veränderung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Veränderung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Veränderung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Veränderung → die Veränderungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Veränderung → die Veränderungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Veränderung → die Veränderungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Veränderung → die Veränderungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Veränderung → die Veränderungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Veränderung → die Veränderungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Veränderung → die Veränderungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Veränderung → die Veränderungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Veränderung → die Veränderungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Veränderung → die Veränderungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Veränderung → die Veränderungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Veränderung → die Veränderungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -2579,21 +2595,22 @@
           "type": "noun",
           "article": "die",
           "base": "Agentur",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Agenturen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Agentur. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Agentur. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Agentur. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Agentur。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Agentur. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Agentur. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Agentur. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Agentur。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Agentur. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Agentur. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Agentur. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Agentur. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Agentur → die Agenturen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Agentur → die Agenturen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Agentur → die Agenturen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Agentur → die Agenturen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Agentur → die Agenturen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Agentur → die Agenturen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Agentur → die Agenturen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Agentur → die Agenturen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Agentur → die Agenturen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Agentur → die Agenturen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Agentur → die Agenturen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Agentur → die Agenturen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -2747,7 +2764,8 @@
           "type": "noun",
           "article": "die",
           "base": "Einarbeitung",
-          "plural_hint": ""
+          "plural_hint": "",
+          "plural_review": "missing plural; needs manual review"
         },
         "grammar_clarification": {
           "English": "Noun. Learn it with its article: die Einarbeitung. Plural hint: not specified in the source.",
@@ -2832,21 +2850,22 @@
           "type": "noun",
           "article": "das",
           "base": "Aufgabengebiet",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Aufgabengebiete"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Aufgabengebiet. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Aufgabengebiet. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Aufgabengebiet. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Aufgabengebiet。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Aufgabengebiet. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Aufgabengebiet. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Aufgabengebiet. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Aufgabengebiet。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Aufgabengebiet. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Aufgabengebiet. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Aufgabengebiet. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Aufgabengebiet. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Aufgabengebiet → die Aufgabengebiete. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Aufgabengebiet → die Aufgabengebiete. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Aufgabengebiet → die Aufgabengebiete. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Aufgabengebiet → die Aufgabengebiete。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Aufgabengebiet → die Aufgabengebiete. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Aufgabengebiet → die Aufgabengebiete. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Aufgabengebiet → die Aufgabengebiete. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Aufgabengebiet → die Aufgabengebiete。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Aufgabengebiet → die Aufgabengebiete. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Aufgabengebiet → die Aufgabengebiete. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Aufgabengebiet → die Aufgabengebiete. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Aufgabengebiet → die Aufgabengebiete. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3246,21 +3265,22 @@
           "type": "noun",
           "article": "die",
           "base": "Stelle",
-          "plural_hint": "-n"
+          "plural_hint": "-n",
+          "plural": "die Stellen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Stelle. Plural hint: -n.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Stelle. Indicación del plural: -n.",
-          "French": "Nom. Apprends-le avec son article : die Stelle. Indication du pluriel : -n.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Stelle。複数形の手がかり：-n。",
-          "German": "Nomen. Lerne es mit Artikel: die Stelle. Pluralhinweis: -n.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Stelle. 복수형 힌트: -n.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Stelle. Indicazione del plurale: -n.",
-          "Chinese": "名词。请连同冠词一起记：die Stelle。复数提示：-n。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Stelle. Indicação do plural: -n.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Stelle. راهنمای جمع: -n.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Stelle. إشارة الجمع: -n.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Stelle. คำใบ้รูปพหูพจน์: -n."
+          "English": "Noun. Learn it with article and plural: die Stelle → die Stellen. Source plural hint: -n.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Stelle → die Stellen. Pista de plural de la fuente: -n.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Stelle → die Stellen. Indication du pluriel dans la source : -n.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Stelle → die Stellen。資料の複数形ヒント：-n。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Stelle → die Stellen. Pluralhinweis der Quelle: -n.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Stelle → die Stellen. 자료의 복수형 힌트: -n.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Stelle → die Stellen. Indicazione del plurale dalla fonte: -n.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Stelle → die Stellen。来源中的复数提示：-n。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Stelle → die Stellen. Indicação de plural da fonte: -n.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Stelle → die Stellen. راهنمای جمع در منبع: -n.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Stelle → die Stellen. إشارة الجمع في المصدر: -n.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Stelle → die Stellen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -n."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3331,21 +3351,22 @@
           "type": "noun",
           "article": "die",
           "base": "Zusage",
-          "plural_hint": "-n"
+          "plural_hint": "-n",
+          "plural": "die Zusagen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Zusage. Plural hint: -n.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Zusage. Indicación del plural: -n.",
-          "French": "Nom. Apprends-le avec son article : die Zusage. Indication du pluriel : -n.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Zusage。複数形の手がかり：-n。",
-          "German": "Nomen. Lerne es mit Artikel: die Zusage. Pluralhinweis: -n.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Zusage. 복수형 힌트: -n.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Zusage. Indicazione del plurale: -n.",
-          "Chinese": "名词。请连同冠词一起记：die Zusage。复数提示：-n。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Zusage. Indicação do plural: -n.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Zusage. راهنمای جمع: -n.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Zusage. إشارة الجمع: -n.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Zusage. คำใบ้รูปพหูพจน์: -n."
+          "English": "Noun. Learn it with article and plural: die Zusage → die Zusagen. Source plural hint: -n.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Zusage → die Zusagen. Pista de plural de la fuente: -n.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Zusage → die Zusagen. Indication du pluriel dans la source : -n.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Zusage → die Zusagen。資料の複数形ヒント：-n。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Zusage → die Zusagen. Pluralhinweis der Quelle: -n.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Zusage → die Zusagen. 자료의 복수형 힌트: -n.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Zusage → die Zusagen. Indicazione del plurale dalla fonte: -n.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Zusage → die Zusagen。来源中的复数提示：-n。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Zusage → die Zusagen. Indicação de plural da fonte: -n.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Zusage → die Zusagen. راهنمای جمع در منبع: -n.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Zusage → die Zusagen. إشارة الجمع في المصدر: -n.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Zusage → die Zusagen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -n."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3498,21 +3519,22 @@
           "type": "noun",
           "article": "der",
           "base": "Vertrag",
-          "plural_hint": "-¨e"
+          "plural_hint": "-¨e",
+          "plural": "die Verträge"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: der Vertrag. Plural hint: -¨e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: der Vertrag. Indicación del plural: -¨e.",
-          "French": "Nom. Apprends-le avec son article : der Vertrag. Indication du pluriel : -¨e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：der Vertrag。複数形の手がかり：-¨e。",
-          "German": "Nomen. Lerne es mit Artikel: der Vertrag. Pluralhinweis: -¨e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: der Vertrag. 복수형 힌트: -¨e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: der Vertrag. Indicazione del plurale: -¨e.",
-          "Chinese": "名词。请连同冠词一起记：der Vertrag。复数提示：-¨e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: der Vertrag. Indicação do plural: -¨e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: der Vertrag. راهنمای جمع: -¨e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: der Vertrag. إشارة الجمع: -¨e.",
-          "Thai": "คำนาม ควรจำพร้อม article: der Vertrag. คำใบ้รูปพหูพจน์: -¨e."
+          "English": "Noun. Learn it with article and plural: der Vertrag → die Verträge. Source plural hint: -¨e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Vertrag → die Verträge. Pista de plural de la fuente: -¨e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Vertrag → die Verträge. Indication du pluriel dans la source : -¨e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Vertrag → die Verträge。資料の複数形ヒント：-¨e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Vertrag → die Verträge. Pluralhinweis der Quelle: -¨e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Vertrag → die Verträge. 자료의 복수형 힌트: -¨e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Vertrag → die Verträge. Indicazione del plurale dalla fonte: -¨e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Vertrag → die Verträge。来源中的复数提示：-¨e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Vertrag → die Verträge. Indicação de plural da fonte: -¨e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Vertrag → die Verträge. راهنمای جمع در منبع: -¨e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Vertrag → die Verträge. إشارة الجمع في المصدر: -¨e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Vertrag → die Verträge. คำใบ้พหูพจน์จากแหล่งข้อมูล: -¨e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3583,21 +3605,22 @@
           "type": "noun",
           "article": "die",
           "base": "Anfrage",
-          "plural_hint": "-n"
+          "plural_hint": "-n",
+          "plural": "die Anfragen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Anfrage. Plural hint: -n.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Anfrage. Indicación del plural: -n.",
-          "French": "Nom. Apprends-le avec son article : die Anfrage. Indication du pluriel : -n.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Anfrage。複数形の手がかり：-n。",
-          "German": "Nomen. Lerne es mit Artikel: die Anfrage. Pluralhinweis: -n.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Anfrage. 복수형 힌트: -n.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Anfrage. Indicazione del plurale: -n.",
-          "Chinese": "名词。请连同冠词一起记：die Anfrage。复数提示：-n。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Anfrage. Indicação do plural: -n.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Anfrage. راهنمای جمع: -n.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Anfrage. إشارة الجمع: -n.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Anfrage. คำใบ้รูปพหูพจน์: -n."
+          "English": "Noun. Learn it with article and plural: die Anfrage → die Anfragen. Source plural hint: -n.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Anfrage → die Anfragen. Pista de plural de la fuente: -n.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Anfrage → die Anfragen. Indication du pluriel dans la source : -n.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Anfrage → die Anfragen。資料の複数形ヒント：-n。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Anfrage → die Anfragen. Pluralhinweis der Quelle: -n.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Anfrage → die Anfragen. 자료의 복수형 힌트: -n.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Anfrage → die Anfragen. Indicazione del plurale dalla fonte: -n.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Anfrage → die Anfragen。来源中的复数提示：-n。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Anfrage → die Anfragen. Indicação de plural da fonte: -n.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Anfrage → die Anfragen. راهنمای جمع در منبع: -n.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Anfrage → die Anfragen. إشارة الجمع في المصدر: -n.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Anfrage → die Anfragen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -n."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3668,21 +3691,22 @@
           "type": "noun",
           "article": "die",
           "base": "Überstunde",
-          "plural_hint": "-n"
+          "plural_hint": "-n",
+          "plural": "die Überstunden"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Überstunde. Plural hint: -n.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Überstunde. Indicación del plural: -n.",
-          "French": "Nom. Apprends-le avec son article : die Überstunde. Indication du pluriel : -n.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Überstunde。複数形の手がかり：-n。",
-          "German": "Nomen. Lerne es mit Artikel: die Überstunde. Pluralhinweis: -n.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Überstunde. 복수형 힌트: -n.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Überstunde. Indicazione del plurale: -n.",
-          "Chinese": "名词。请连同冠词一起记：die Überstunde。复数提示：-n。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Überstunde. Indicação do plural: -n.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Überstunde. راهنمای جمع: -n.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Überstunde. إشارة الجمع: -n.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Überstunde. คำใบ้รูปพหูพจน์: -n."
+          "English": "Noun. Learn it with article and plural: die Überstunde → die Überstunden. Source plural hint: -n.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Überstunde → die Überstunden. Pista de plural de la fuente: -n.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Überstunde → die Überstunden. Indication du pluriel dans la source : -n.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Überstunde → die Überstunden。資料の複数形ヒント：-n。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Überstunde → die Überstunden. Pluralhinweis der Quelle: -n.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Überstunde → die Überstunden. 자료의 복수형 힌트: -n.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Überstunde → die Überstunden. Indicazione del plurale dalla fonte: -n.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Überstunde → die Überstunden。来源中的复数提示：-n。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Überstunde → die Überstunden. Indicação de plural da fonte: -n.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Überstunde → die Überstunden. راهنمای جمع در منبع: -n.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Überstunde → die Überstunden. إشارة الجمع في المصدر: -n.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Überstunde → die Überstunden. คำใบ้พหูพจน์จากแหล่งข้อมูล: -n."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3753,21 +3777,22 @@
           "type": "noun",
           "article": "der",
           "base": "Rucksack",
-          "plural_hint": "-¨e"
+          "plural_hint": "-¨e",
+          "plural": "die Rucksäcke"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: der Rucksack. Plural hint: -¨e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: der Rucksack. Indicación del plural: -¨e.",
-          "French": "Nom. Apprends-le avec son article : der Rucksack. Indication du pluriel : -¨e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：der Rucksack。複数形の手がかり：-¨e。",
-          "German": "Nomen. Lerne es mit Artikel: der Rucksack. Pluralhinweis: -¨e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: der Rucksack. 복수형 힌트: -¨e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: der Rucksack. Indicazione del plurale: -¨e.",
-          "Chinese": "名词。请连同冠词一起记：der Rucksack。复数提示：-¨e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: der Rucksack. Indicação do plural: -¨e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: der Rucksack. راهنمای جمع: -¨e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: der Rucksack. إشارة الجمع: -¨e.",
-          "Thai": "คำนาม ควรจำพร้อม article: der Rucksack. คำใบ้รูปพหูพจน์: -¨e."
+          "English": "Noun. Learn it with article and plural: der Rucksack → die Rucksäcke. Source plural hint: -¨e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Rucksack → die Rucksäcke. Pista de plural de la fuente: -¨e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Rucksack → die Rucksäcke. Indication du pluriel dans la source : -¨e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Rucksack → die Rucksäcke。資料の複数形ヒント：-¨e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Rucksack → die Rucksäcke. Pluralhinweis der Quelle: -¨e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Rucksack → die Rucksäcke. 자료의 복수형 힌트: -¨e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Rucksack → die Rucksäcke. Indicazione del plurale dalla fonte: -¨e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Rucksack → die Rucksäcke。来源中的复数提示：-¨e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Rucksack → die Rucksäcke. Indicação de plural da fonte: -¨e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Rucksack → die Rucksäcke. راهنمای جمع در منبع: -¨e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Rucksack → die Rucksäcke. إشارة الجمع في المصدر: -¨e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Rucksack → die Rucksäcke. คำใบ้พหูพจน์จากแหล่งข้อมูล: -¨e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3838,21 +3863,22 @@
           "type": "noun",
           "article": "die",
           "base": "Entspannung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Entspannungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Entspannung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Entspannung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Entspannung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Entspannung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Entspannung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Entspannung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Entspannung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Entspannung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Entspannung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Entspannung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Entspannung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Entspannung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Entspannung → die Entspannungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Entspannung → die Entspannungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Entspannung → die Entspannungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Entspannung → die Entspannungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Entspannung → die Entspannungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Entspannung → die Entspannungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Entspannung → die Entspannungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Entspannung → die Entspannungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Entspannung → die Entspannungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Entspannung → die Entspannungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Entspannung → die Entspannungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Entspannung → die Entspannungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3923,21 +3949,22 @@
           "type": "noun",
           "article": "die",
           "base": "Bewegung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Bewegungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Bewegung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Bewegung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Bewegung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Bewegung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Bewegung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Bewegung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Bewegung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Bewegung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Bewegung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Bewegung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Bewegung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Bewegung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Bewegung → die Bewegungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Bewegung → die Bewegungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Bewegung → die Bewegungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Bewegung → die Bewegungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Bewegung → die Bewegungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Bewegung → die Bewegungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Bewegung → die Bewegungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Bewegung → die Bewegungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Bewegung → die Bewegungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Bewegung → die Bewegungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Bewegung → die Bewegungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Bewegung → die Bewegungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -4008,21 +4035,22 @@
           "type": "noun",
           "article": "die",
           "base": "Leidenschaft",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Leidenschaften"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Leidenschaft. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Leidenschaft. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Leidenschaft. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Leidenschaft。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Leidenschaft. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Leidenschaft. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Leidenschaft. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Leidenschaft。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Leidenschaft. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Leidenschaft. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Leidenschaft. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Leidenschaft. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Leidenschaft → die Leidenschaften. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Leidenschaft → die Leidenschaften. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Leidenschaft → die Leidenschaften. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Leidenschaft → die Leidenschaften。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Leidenschaft → die Leidenschaften. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Leidenschaft → die Leidenschaften. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Leidenschaft → die Leidenschaften. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Leidenschaft → die Leidenschaften。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Leidenschaft → die Leidenschaften. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Leidenschaft → die Leidenschaften. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Leidenschaft → die Leidenschaften. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Leidenschaft → die Leidenschaften. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -4751,21 +4779,22 @@
           "type": "noun",
           "article": "der",
           "base": "Wettbewerb",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Wettbewerbe"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: der Wettbewerb. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: der Wettbewerb. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : der Wettbewerb. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：der Wettbewerb。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: der Wettbewerb. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: der Wettbewerb. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: der Wettbewerb. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：der Wettbewerb。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: der Wettbewerb. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: der Wettbewerb. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: der Wettbewerb. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: der Wettbewerb. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: der Wettbewerb → die Wettbewerbe. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Wettbewerb → die Wettbewerbe. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Wettbewerb → die Wettbewerbe. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Wettbewerb → die Wettbewerbe。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Wettbewerb → die Wettbewerbe. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Wettbewerb → die Wettbewerbe. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Wettbewerb → die Wettbewerbe. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Wettbewerb → die Wettbewerbe。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Wettbewerb → die Wettbewerbe. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Wettbewerb → die Wettbewerbe. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Wettbewerb → die Wettbewerbe. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Wettbewerb → die Wettbewerbe. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -4836,21 +4865,22 @@
           "type": "noun",
           "article": "das",
           "base": "Naturschutzgebiet",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Naturschutzgebiete"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Naturschutzgebiet. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Naturschutzgebiet. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Naturschutzgebiet. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Naturschutzgebiet。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Naturschutzgebiet. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Naturschutzgebiet. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Naturschutzgebiet. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Naturschutzgebiet。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Naturschutzgebiet. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Naturschutzgebiet. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Naturschutzgebiet. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Naturschutzgebiet. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Naturschutzgebiet → die Naturschutzgebiete. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Naturschutzgebiet → die Naturschutzgebiete. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Naturschutzgebiet → die Naturschutzgebiete. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Naturschutzgebiet → die Naturschutzgebiete。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Naturschutzgebiet → die Naturschutzgebiete. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Naturschutzgebiet → die Naturschutzgebiete. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Naturschutzgebiet → die Naturschutzgebiete. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Naturschutzgebiet → die Naturschutzgebiete。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Naturschutzgebiet → die Naturschutzgebiete. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Naturschutzgebiet → die Naturschutzgebiete. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Naturschutzgebiet → die Naturschutzgebiete. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Naturschutzgebiet → die Naturschutzgebiete. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -4921,21 +4951,22 @@
           "type": "noun",
           "article": "die",
           "base": "Geschäftsbedingungen (Pl.)",
-          "plural_hint": ""
+          "plural_hint": "",
+          "plural": "die Geschäftsbedingungen (Pl.)"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Geschäftsbedingungen (Pl.). Plural hint: not specified in the source.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Geschäftsbedingungen (Pl.). Indicación del plural: no indicada en la fuente.",
-          "French": "Nom. Apprends-le avec son article : die Geschäftsbedingungen (Pl.). Indication du pluriel : non indiquée dans la source.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Geschäftsbedingungen (Pl.)。複数形の手がかり：資料に記載なし。",
-          "German": "Nomen. Lerne es mit Artikel: die Geschäftsbedingungen (Pl.). Pluralhinweis: in der Quelle nicht angegeben.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Geschäftsbedingungen (Pl.). 복수형 힌트: 자료에 없음.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Geschäftsbedingungen (Pl.). Indicazione del plurale: non indicata nella fonte.",
-          "Chinese": "名词。请连同冠词一起记：die Geschäftsbedingungen (Pl.)。复数提示：原资料未注明。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Geschäftsbedingungen (Pl.). Indicação do plural: não indicada na fonte.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Geschäftsbedingungen (Pl.). راهنمای جمع: در منبع نیامده است.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Geschäftsbedingungen (Pl.). إشارة الجمع: غير مذكورة في المصدر.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Geschäftsbedingungen (Pl.). คำใบ้รูปพหูพจน์: ไม่มีในแหล่งข้อมูล."
+          "English": "Noun. Learn it with article and plural: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). Source plural hint: —.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). Pista de plural de la fuente: —.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). Indication du pluriel dans la source : —.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.)。資料の複数形ヒント：—。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). Pluralhinweis der Quelle: —.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). 자료의 복수형 힌트: —.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). Indicazione del plurale dalla fonte: —.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.)。来源中的复数提示：—。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). Indicação de plural da fonte: —.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). راهنمای جمع در منبع: —.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). إشارة الجمع في المصدر: —.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Geschäftsbedingungen (Pl.) → die Geschäftsbedingungen (Pl.). คำใบ้พหูพจน์จากแหล่งข้อมูล: —."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5006,21 +5037,22 @@
           "type": "noun",
           "article": "die",
           "base": "Bewerbung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Bewerbungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Bewerbung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Bewerbung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Bewerbung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Bewerbung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Bewerbung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Bewerbung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Bewerbung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Bewerbung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Bewerbung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Bewerbung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Bewerbung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Bewerbung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Bewerbung → die Bewerbungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Bewerbung → die Bewerbungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Bewerbung → die Bewerbungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Bewerbung → die Bewerbungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Bewerbung → die Bewerbungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Bewerbung → die Bewerbungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Bewerbung → die Bewerbungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Bewerbung → die Bewerbungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Bewerbung → die Bewerbungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Bewerbung → die Bewerbungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Bewerbung → die Bewerbungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Bewerbung → die Bewerbungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5091,21 +5123,22 @@
           "type": "noun",
           "article": "das",
           "base": "Praktikum",
-          "plural_hint": "Praktika"
+          "plural_hint": "Praktika",
+          "plural": "die Praktika"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Praktikum. Plural hint: Praktika.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Praktikum. Indicación del plural: Praktika.",
-          "French": "Nom. Apprends-le avec son article : das Praktikum. Indication du pluriel : Praktika.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Praktikum。複数形の手がかり：Praktika。",
-          "German": "Nomen. Lerne es mit Artikel: das Praktikum. Pluralhinweis: Praktika.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Praktikum. 복수형 힌트: Praktika.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Praktikum. Indicazione del plurale: Praktika.",
-          "Chinese": "名词。请连同冠词一起记：das Praktikum。复数提示：Praktika。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Praktikum. Indicação do plural: Praktika.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Praktikum. راهنمای جمع: Praktika.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Praktikum. إشارة الجمع: Praktika.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Praktikum. คำใบ้รูปพหูพจน์: Praktika."
+          "English": "Noun. Learn it with article and plural: das Praktikum → die Praktika. Source plural hint: Praktika.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Praktikum → die Praktika. Pista de plural de la fuente: Praktika.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Praktikum → die Praktika. Indication du pluriel dans la source : Praktika.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Praktikum → die Praktika。資料の複数形ヒント：Praktika。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Praktikum → die Praktika. Pluralhinweis der Quelle: Praktika.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Praktikum → die Praktika. 자료의 복수형 힌트: Praktika.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Praktikum → die Praktika. Indicazione del plurale dalla fonte: Praktika.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Praktikum → die Praktika。来源中的复数提示：Praktika。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Praktikum → die Praktika. Indicação de plural da fonte: Praktika.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Praktikum → die Praktika. راهنمای جمع در منبع: Praktika.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Praktikum → die Praktika. إشارة الجمع في المصدر: Praktika.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Praktikum → die Praktika. คำใบ้พหูพจน์จากแหล่งข้อมูล: Praktika."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5176,21 +5209,22 @@
           "type": "noun",
           "article": "die",
           "base": "Aufstiegsmöglichkeit",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Aufstiegsmöglichkeiten"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Aufstiegsmöglichkeit. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Aufstiegsmöglichkeit. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Aufstiegsmöglichkeit. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Aufstiegsmöglichkeit。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Aufstiegsmöglichkeit. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Aufstiegsmöglichkeit. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Aufstiegsmöglichkeit. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Aufstiegsmöglichkeit。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Aufstiegsmöglichkeit. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Aufstiegsmöglichkeit. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Aufstiegsmöglichkeit. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Aufstiegsmöglichkeit. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Aufstiegsmöglichkeit → die Aufstiegsmöglichkeiten. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5344,21 +5378,22 @@
           "type": "noun",
           "article": "das",
           "base": "Angebot",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Angebote"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Angebot. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Angebot. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Angebot. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Angebot。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Angebot. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Angebot. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Angebot. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Angebot。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Angebot. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Angebot. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Angebot. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Angebot. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Angebot → die Angebote. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Angebot → die Angebote. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Angebot → die Angebote. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Angebot → die Angebote。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Angebot → die Angebote. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Angebot → die Angebote. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Angebot → die Angebote. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Angebot → die Angebote。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Angebot → die Angebote. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Angebot → die Angebote. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Angebot → die Angebote. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Angebot → die Angebote. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5429,21 +5464,22 @@
           "type": "noun",
           "article": "das",
           "base": "Stellenangebot",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Stellenangebote"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Stellenangebot. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Stellenangebot. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Stellenangebot. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Stellenangebot。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Stellenangebot. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Stellenangebot. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Stellenangebot. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Stellenangebot。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Stellenangebot. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Stellenangebot. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Stellenangebot. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Stellenangebot. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Stellenangebot → die Stellenangebote. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Stellenangebot → die Stellenangebote. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Stellenangebot → die Stellenangebote. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Stellenangebot → die Stellenangebote。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Stellenangebot → die Stellenangebote. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Stellenangebot → die Stellenangebote. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Stellenangebot → die Stellenangebote. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Stellenangebot → die Stellenangebote。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Stellenangebot → die Stellenangebote. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Stellenangebot → die Stellenangebote. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Stellenangebot → die Stellenangebote. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Stellenangebot → die Stellenangebote. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5679,21 +5715,22 @@
           "type": "noun",
           "article": "das",
           "base": "Engagement",
-          "plural_hint": "-s"
+          "plural_hint": "-s",
+          "plural": "die Engagements"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Engagement. Plural hint: -s.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Engagement. Indicación del plural: -s.",
-          "French": "Nom. Apprends-le avec son article : das Engagement. Indication du pluriel : -s.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Engagement。複数形の手がかり：-s。",
-          "German": "Nomen. Lerne es mit Artikel: das Engagement. Pluralhinweis: -s.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Engagement. 복수형 힌트: -s.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Engagement. Indicazione del plurale: -s.",
-          "Chinese": "名词。请连同冠词一起记：das Engagement。复数提示：-s。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Engagement. Indicação do plural: -s.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Engagement. راهنمای جمع: -s.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Engagement. إشارة الجمع: -s.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Engagement. คำใบ้รูปพหูพจน์: -s."
+          "English": "Noun. Learn it with article and plural: das Engagement → die Engagements. Source plural hint: -s.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Engagement → die Engagements. Pista de plural de la fuente: -s.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Engagement → die Engagements. Indication du pluriel dans la source : -s.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Engagement → die Engagements。資料の複数形ヒント：-s。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Engagement → die Engagements. Pluralhinweis der Quelle: -s.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Engagement → die Engagements. 자료의 복수형 힌트: -s.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Engagement → die Engagements. Indicazione del plurale dalla fonte: -s.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Engagement → die Engagements。来源中的复数提示：-s。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Engagement → die Engagements. Indicação de plural da fonte: -s.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Engagement → die Engagements. راهنمای جمع در منبع: -s.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Engagement → die Engagements. إشارة الجمع في المصدر: -s.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Engagement → die Engagements. คำใบ้พหูพจน์จากแหล่งข้อมูล: -s."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -5930,21 +5967,22 @@
           "type": "noun",
           "article": "die",
           "base": "Sprachkenntnis",
-          "plural_hint": "-se"
+          "plural_hint": "-se",
+          "plural": "die Sprachkenntnisse"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Sprachkenntnis. Plural hint: -se.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Sprachkenntnis. Indicación del plural: -se.",
-          "French": "Nom. Apprends-le avec son article : die Sprachkenntnis. Indication du pluriel : -se.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Sprachkenntnis。複数形の手がかり：-se。",
-          "German": "Nomen. Lerne es mit Artikel: die Sprachkenntnis. Pluralhinweis: -se.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Sprachkenntnis. 복수형 힌트: -se.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Sprachkenntnis. Indicazione del plurale: -se.",
-          "Chinese": "名词。请连同冠词一起记：die Sprachkenntnis。复数提示：-se。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Sprachkenntnis. Indicação do plural: -se.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Sprachkenntnis. راهنمای جمع: -se.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Sprachkenntnis. إشارة الجمع: -se.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Sprachkenntnis. คำใบ้รูปพหูพจน์: -se."
+          "English": "Noun. Learn it with article and plural: die Sprachkenntnis → die Sprachkenntnisse. Source plural hint: -se.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Sprachkenntnis → die Sprachkenntnisse. Pista de plural de la fuente: -se.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Sprachkenntnis → die Sprachkenntnisse. Indication du pluriel dans la source : -se.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Sprachkenntnis → die Sprachkenntnisse。資料の複数形ヒント：-se。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Sprachkenntnis → die Sprachkenntnisse. Pluralhinweis der Quelle: -se.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Sprachkenntnis → die Sprachkenntnisse. 자료의 복수형 힌트: -se.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Sprachkenntnis → die Sprachkenntnisse. Indicazione del plurale dalla fonte: -se.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Sprachkenntnis → die Sprachkenntnisse。来源中的复数提示：-se。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Sprachkenntnis → die Sprachkenntnisse. Indicação de plural da fonte: -se.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Sprachkenntnis → die Sprachkenntnisse. راهنمای جمع در منبع: -se.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Sprachkenntnis → die Sprachkenntnisse. إشارة الجمع في المصدر: -se.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Sprachkenntnis → die Sprachkenntnisse. คำใบ้พหูพจน์จากแหล่งข้อมูล: -se."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -6344,21 +6382,22 @@
           "type": "noun",
           "article": "der",
           "base": "Lebenslauf",
-          "plural_hint": "-¨e"
+          "plural_hint": "-¨e",
+          "plural": "die Lebenslaüfe"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: der Lebenslauf. Plural hint: -¨e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: der Lebenslauf. Indicación del plural: -¨e.",
-          "French": "Nom. Apprends-le avec son article : der Lebenslauf. Indication du pluriel : -¨e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：der Lebenslauf。複数形の手がかり：-¨e。",
-          "German": "Nomen. Lerne es mit Artikel: der Lebenslauf. Pluralhinweis: -¨e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: der Lebenslauf. 복수형 힌트: -¨e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: der Lebenslauf. Indicazione del plurale: -¨e.",
-          "Chinese": "名词。请连同冠词一起记：der Lebenslauf。复数提示：-¨e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: der Lebenslauf. Indicação do plural: -¨e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: der Lebenslauf. راهنمای جمع: -¨e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: der Lebenslauf. إشارة الجمع: -¨e.",
-          "Thai": "คำนาม ควรจำพร้อม article: der Lebenslauf. คำใบ้รูปพหูพจน์: -¨e."
+          "English": "Noun. Learn it with article and plural: der Lebenslauf → die Lebenslaüfe. Source plural hint: -¨e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Lebenslauf → die Lebenslaüfe. Pista de plural de la fuente: -¨e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Lebenslauf → die Lebenslaüfe. Indication du pluriel dans la source : -¨e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Lebenslauf → die Lebenslaüfe。資料の複数形ヒント：-¨e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Lebenslauf → die Lebenslaüfe. Pluralhinweis der Quelle: -¨e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Lebenslauf → die Lebenslaüfe. 자료의 복수형 힌트: -¨e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Lebenslauf → die Lebenslaüfe. Indicazione del plurale dalla fonte: -¨e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Lebenslauf → die Lebenslaüfe。来源中的复数提示：-¨e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Lebenslauf → die Lebenslaüfe. Indicação de plural da fonte: -¨e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Lebenslauf → die Lebenslaüfe. راهنمای جمع در منبع: -¨e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Lebenslauf → die Lebenslaüfe. إشارة الجمع في المصدر: -¨e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Lebenslauf → die Lebenslaüfe. คำใบ้พหูพจน์จากแหล่งข้อมูล: -¨e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -6429,21 +6468,22 @@
           "type": "noun",
           "article": "die",
           "base": "Berufserfahrung",
-          "plural_hint": "-en"
+          "plural_hint": "-en",
+          "plural": "die Berufserfahrungen"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: die Berufserfahrung. Plural hint: -en.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: die Berufserfahrung. Indicación del plural: -en.",
-          "French": "Nom. Apprends-le avec son article : die Berufserfahrung. Indication du pluriel : -en.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：die Berufserfahrung。複数形の手がかり：-en。",
-          "German": "Nomen. Lerne es mit Artikel: die Berufserfahrung. Pluralhinweis: -en.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: die Berufserfahrung. 복수형 힌트: -en.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: die Berufserfahrung. Indicazione del plurale: -en.",
-          "Chinese": "名词。请连同冠词一起记：die Berufserfahrung。复数提示：-en。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: die Berufserfahrung. Indicação do plural: -en.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: die Berufserfahrung. راهنمای جمع: -en.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: die Berufserfahrung. إشارة الجمع: -en.",
-          "Thai": "คำนาม ควรจำพร้อม article: die Berufserfahrung. คำใบ้รูปพหูพจน์: -en."
+          "English": "Noun. Learn it with article and plural: die Berufserfahrung → die Berufserfahrungen. Source plural hint: -en.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: die Berufserfahrung → die Berufserfahrungen. Pista de plural de la fuente: -en.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : die Berufserfahrung → die Berufserfahrungen. Indication du pluriel dans la source : -en.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：die Berufserfahrung → die Berufserfahrungen。資料の複数形ヒント：-en。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: die Berufserfahrung → die Berufserfahrungen. Pluralhinweis der Quelle: -en.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: die Berufserfahrung → die Berufserfahrungen. 자료의 복수형 힌트: -en.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: die Berufserfahrung → die Berufserfahrungen. Indicazione del plurale dalla fonte: -en.",
+          "Chinese": "名词。请连同冠词和复数一起记：die Berufserfahrung → die Berufserfahrungen。来源中的复数提示：-en。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: die Berufserfahrung → die Berufserfahrungen. Indicação de plural da fonte: -en.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: die Berufserfahrung → die Berufserfahrungen. راهنمای جمع در منبع: -en.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: die Berufserfahrung → die Berufserfahrungen. إشارة الجمع في المصدر: -en.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: die Berufserfahrung → die Berufserfahrungen. คำใบ้พหูพจน์จากแหล่งข้อมูล: -en."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -6678,21 +6718,22 @@
           "type": "noun",
           "article": "das",
           "base": "Bewerbungsgespräch",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Bewerbungsgespräche"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Bewerbungsgespräch. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Bewerbungsgespräch. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Bewerbungsgespräch. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Bewerbungsgespräch。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Bewerbungsgespräch. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Bewerbungsgespräch. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Bewerbungsgespräch. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Bewerbungsgespräch。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Bewerbungsgespräch. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Bewerbungsgespräch. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Bewerbungsgespräch. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Bewerbungsgespräch. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Bewerbungsgespräch → die Bewerbungsgespräche. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Bewerbungsgespräch → die Bewerbungsgespräche. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Bewerbungsgespräch → die Bewerbungsgespräche. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Bewerbungsgespräch → die Bewerbungsgespräche。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Bewerbungsgespräch → die Bewerbungsgespräche. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Bewerbungsgespräch → die Bewerbungsgespräche. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Bewerbungsgespräch → die Bewerbungsgespräche. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Bewerbungsgespräch → die Bewerbungsgespräche。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Bewerbungsgespräch → die Bewerbungsgespräche. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Bewerbungsgespräch → die Bewerbungsgespräche. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Bewerbungsgespräch → die Bewerbungsgespräche. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Bewerbungsgespräch → die Bewerbungsgespräche. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -6763,21 +6804,22 @@
           "type": "noun",
           "article": "das",
           "base": "Vorstellungsgespräch",
-          "plural_hint": "-e"
+          "plural_hint": "-e",
+          "plural": "die Vorstellungsgespräche"
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with its article: das Vorstellungsgespräch. Plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con su artículo: das Vorstellungsgespräch. Indicación del plural: -e.",
-          "French": "Nom. Apprends-le avec son article : das Vorstellungsgespräch. Indication du pluriel : -e.",
-          "Japanese": "名詞です。冠詞と一緒に覚える：das Vorstellungsgespräch。複数形の手がかり：-e。",
-          "German": "Nomen. Lerne es mit Artikel: das Vorstellungsgespräch. Pluralhinweis: -e.",
-          "Korean": "명사입니다. 관사와 함께 외우세요: das Vorstellungsgespräch. 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con l’articolo: das Vorstellungsgespräch. Indicazione del plurale: -e.",
-          "Chinese": "名词。请连同冠词一起记：das Vorstellungsgespräch。复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com o artigo: das Vorstellungsgespräch. Indicação do plural: -e.",
-          "Persian": "اسم است. آن را همراه با آرتیکل یاد بگیر: das Vorstellungsgespräch. راهنمای جمع: -e.",
-          "Arabic": "اسم. احفظه مع أداة التعريف: das Vorstellungsgespräch. إشارة الجمع: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article: das Vorstellungsgespräch. คำใบ้รูปพหูพจน์: -e."
+          "English": "Noun. Learn it with article and plural: das Vorstellungsgespräch → die Vorstellungsgespräche. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: das Vorstellungsgespräch → die Vorstellungsgespräche. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : das Vorstellungsgespräch → die Vorstellungsgespräche. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：das Vorstellungsgespräch → die Vorstellungsgespräche。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: das Vorstellungsgespräch → die Vorstellungsgespräche. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: das Vorstellungsgespräch → die Vorstellungsgespräche. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: das Vorstellungsgespräch → die Vorstellungsgespräche. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：das Vorstellungsgespräch → die Vorstellungsgespräche。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: das Vorstellungsgespräch → die Vorstellungsgespräche. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: das Vorstellungsgespräch → die Vorstellungsgespräche. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: das Vorstellungsgespräch → die Vorstellungsgespräche. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: das Vorstellungsgespräch → die Vorstellungsgespräche. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
