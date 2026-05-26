@@ -1,38 +1,36 @@
 # Deutsch WIPA 2026 · Lernwortschatz App
 
-A browser-based German vocabulary app for practising the **Lernwortschatz** from the course.
+I built this small browser-based app to help practise the **Lernwortschatz** from our German course.
 
-The app helps learners practise vocabulary by chapter through:
+The goal is simple: make vocabulary practice more active and useful than just reading a word list. The app helps with:
 
-- article recognition
-- meaning recognition
-- plural recall
-- grammar-pattern recall
+- German articles
+- meanings
+- plural forms
+- grammar patterns
 - sentence-gap practice
 - active recall
-- spaced repetition
 - weak-word review
+- spaced repetition
 - progress tracking
 
-The app runs completely in the browser. No account, backend, database, API key, or installation is required.
+The app runs directly in the browser. No account, backend, database, API key, or installation is required.
 
 ---
 
 ## Live app
 
-If deployed with GitHub Pages, the app will be available at a URL like:
+When deployed with GitHub Pages, the app should be available here:
 
 ```text
-https://YOUR-USERNAME.github.io/Deutsch-wipa-2026/
+https://chilperic.github.io/Deutsch-wipa-2026/
 ```
-
-Replace `YOUR-USERNAME` with the GitHub account name.
 
 ---
 
 ## Project structure
 
-The clean deployment structure is:
+The clean project structure is:
 
 ```text
 Deutsch-wipa-2026/
@@ -55,7 +53,7 @@ Deutsch-wipa-2026/
     └── script_check.js
 ```
 
-Only `index.html` and the `data/` folder are required for the app to run.
+Only `index.html` and the `data/` folder are required for the app to work.
 
 ---
 
@@ -63,21 +61,15 @@ Only `index.html` and the `data/` folder are required for the app to run.
 
 ### `index.html`
 
-The full app is contained in one file:
-
-```text
-index.html
-```
-
-It includes:
+This file contains the whole app:
 
 - HTML structure
 - CSS styling
-- JavaScript app logic
+- JavaScript logic
 - chapter loading
 - quiz engine
-- spaced repetition logic
-- tracker
+- spaced repetition
+- progress tracker
 - interface language selector
 - dark/light/system theme
 - grammar and dictionary resource links
@@ -87,7 +79,7 @@ It includes:
 
 Each chapter file stores the vocabulary data.
 
-Expected naming pattern:
+The app expects this naming pattern:
 
 ```text
 data/kapitel1.json
@@ -97,7 +89,7 @@ data/kapitel4.json
 ...
 ```
 
-The app automatically looks for:
+The app automatically tries to load:
 
 ```text
 data/kapitel1.json
@@ -116,7 +108,7 @@ kapitel2.json
 kapitel3.json
 ```
 
-Do not use:
+Do not use names like:
 
 ```text
 Kapitel 1.json
@@ -128,9 +120,9 @@ kapitel_1.json
 
 ## Vocabulary data format
 
-Each chapter file should contain a `words` array.
+Each chapter file contains a `words` array.
 
-Example word entry:
+Example entry:
 
 ```json
 {
@@ -187,7 +179,7 @@ Example word entry:
 
 ## Supported vocabulary languages
 
-The vocabulary data supports these languages:
+The vocabulary data supports:
 
 ```text
 English
@@ -204,7 +196,7 @@ Arabic
 Thai
 ```
 
-The **quiz language** controls which translation language is used for answers.
+The **quiz language** controls the language used for the meaning/translation answers.
 
 The **interface language** controls the app buttons, labels, and dashboard text.
 
@@ -214,11 +206,11 @@ The **interface language** controls the app buttons, labels, and dashboard text.
 
 ### Chapter-based practice
 
-Learners can select a specific Kapitel or practise all loaded chapters.
+I can practise one Kapitel at a time or all loaded chapters together.
 
 ### Multi-step quiz flow
 
-The app tests German vocabulary through several stages:
+The app does not only ask for translations. It trains several parts of German vocabulary:
 
 ```text
 1. Article
@@ -228,7 +220,7 @@ The app tests German vocabulary through several stages:
 5. Active recall
 ```
 
-For example:
+Example:
 
 ```text
 Messe → die
@@ -249,7 +241,7 @@ This is useful for German prepositions and case patterns.
 
 ### Mistake diagnosis
 
-When the learner makes a mistake, the app gives a short explanation, for example:
+When I make a mistake, the app gives a short explanation, for example:
 
 ```text
 Article mistake: you need the gender with the noun.
@@ -259,7 +251,7 @@ Grammar-pattern mistake: memorize the preposition/case with the expression.
 
 ### Spaced repetition
 
-Progress is stored in the browser using `localStorage`.
+Progress is stored locally in the browser using `localStorage`.
 
 The app tracks:
 
@@ -281,7 +273,7 @@ Light
 System
 ```
 
-`System` follows the browser or operating system theme.
+`System` follows the browser or operating-system theme.
 
 ### Student/Admin mode
 
@@ -299,7 +291,7 @@ Admin mode shows maintenance tools such as:
 
 ## Grammar and dictionary resources
 
-The app includes links to German learning resources:
+The app includes external links to German learning resources:
 
 - Duden
 - DWDS
@@ -317,13 +309,13 @@ The app includes links to German learning resources:
 - Goethe practice
 - VHS Lernportal
 
-These links are optional. The app works without them, but they help learners check grammar, plural forms, and usage.
+These links are optional. The app works without them, but they are useful for checking grammar, plural forms, and usage.
 
 ---
 
 ## Running locally
 
-Opening `index.html` directly by double-clicking may block chapter loading in some browsers because of local file security rules.
+Opening `index.html` directly by double-clicking can block chapter loading in some browsers because of local file security rules.
 
 Recommended local test:
 
@@ -355,10 +347,10 @@ Folder: /root
 
 5. Save.
 
-The app will be available at:
+The app should then be available at:
 
 ```text
-https://YOUR-USERNAME.github.io/Deutsch-wipa-2026/
+https://chilperic.github.io/Deutsch-wipa-2026/
 ```
 
 ---
@@ -375,7 +367,8 @@ data/kapitel5.json
 
 2. Commit and push the file.
 3. Open the app.
-4. In Admin mode, click:
+4. Switch to Admin mode.
+5. Click:
 
 ```text
 Reload chapters
@@ -387,7 +380,7 @@ or:
 Replace from files
 ```
 
-Use **Replace from files** when you want the browser to discard old cached vocabulary and reload the current files from GitHub.
+Use **Replace from files** when I want the browser to discard old cached vocabulary and reload the current files from GitHub.
 
 ---
 
@@ -421,7 +414,7 @@ It can be checked with:
 node --check dev/script_check.js
 ```
 
-Do not worry if this file is absent from the public app. It is not required.
+The public app does not need this file.
 
 ---
 
@@ -474,7 +467,7 @@ This reloads the chapter files and avoids stale local browser data.
 
 ### Plural answers are not accepted
 
-The app accepts umlaut keyboard alternatives:
+The app accepts common keyboard alternatives for German umlauts:
 
 ```text
 ä = ae
@@ -491,7 +484,7 @@ Rucksäcke = Rucksaecke
 Mütter = Muetter
 ```
 
-For best results, every noun should contain:
+For best results, every noun should contain a full plural field:
 
 ```json
 "plural": "die Verträge"
@@ -520,7 +513,7 @@ More chapters can be added by placing new files in the `data/` folder.
 
 This app is a learning aid. It does not replace grammar study.
 
-For German, always learn nouns with:
+For German, I recommend learning nouns with:
 
 ```text
 article + singular + plural
@@ -543,4 +536,4 @@ sich kümmern um + Akkusativ
 sich auskennen mit + Dativ
 ```
 
-Recognition is not enough. Use active recall.
+Recognition is not enough. Active recall is the main goal.
