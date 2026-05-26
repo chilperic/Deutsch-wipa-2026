@@ -211,7 +211,7 @@ textarea { min-height: 130px; resize: vertical; font-family: var(--mono); font-s
 .w-sub    { font-family: var(--mono); font-size: 11px; color: var(--muted);
             letter-spacing: .14em; text-transform: uppercase; margin-top: 10px; }
 
-/* Active recall prompt */
+/* ${ui('activePhase')} prompt */
 .recall-box {
   background: linear-gradient(135deg, rgba(91,160,245,.07), rgba(201,168,76,.06));
   border: 1px solid rgba(91,160,245,.2); border-radius: var(--r2);
@@ -497,6 +497,24 @@ body.theme-light .grow b {
   background: rgba(255,255,255,.04);
 }
 
+
+body[dir="rtl"] .row,
+body[dir="rtl"] .split,
+body[dir="rtl"] .badges,
+body[dir="rtl"] .link-row {
+  direction: rtl;
+}
+body[dir="rtl"] input,
+body[dir="rtl"] textarea,
+body[dir="rtl"] select {
+  text-align: right;
+}
+body[dir="rtl"] .w-main,
+body[dir="rtl"] .word-area,
+body[dir="rtl"] .phase-lbl {
+  direction: ltr;
+}
+
 body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .art-btn {
   transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
@@ -530,14 +548,14 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
       </div>
       <div class="row g8">
         <div class="theme-choice" aria-label="Appearance">
-          <button type="button" data-theme="dark" onclick="setTheme('dark')">Dark</button>
-          <button type="button" data-theme="light" onclick="setTheme('light')">Light</button>
-          <button type="button" data-theme="system" onclick="setTheme('system')">System</button>
+          <button type="button" data-theme="dark" onclick="setTheme('dark')" data-i18n="themeDark">Dark</button>
+          <button type="button" data-theme="light" onclick="setTheme('light')" data-i18n="themeLight">Light</button>
+          <button type="button" data-theme="system" onclick="setTheme('system')" data-i18n="themeSystem">System</button>
         </div>
         <button class="btn btn-ghost" onclick="openModal('keys-modal')">? Keys</button>
-        <button class="btn btn-ghost" onclick="showTab('tracker')">📊 Tracker</button>
-        <button class="btn btn-ghost" onclick="showTab('library')">📚 Library</button>
-        <button class="btn btn-ghost" onclick="toggleAdvanced()">⚙ Advanced</button>
+        <button class="btn btn-ghost" onclick="showTab('tracker')" data-i18n="tracker">📊 Tracker</button>
+        <button class="btn btn-ghost" onclick="showTab('library')" data-i18n="library">📚 Library</button>
+        <button class="btn btn-ghost" onclick="toggleAdvanced()" data-i18n="advanced">⚙ Advanced</button>
       </div>
     </div>
 
@@ -551,13 +569,15 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
 
     <!-- Session config -->
     <div class="grid2">
-      <div><label class="lbl">Your name</label>
+      <div><label class="lbl" data-i18n="yourName">Your name</label>
            <input id="inp-name" placeholder="Enter your name"></div>
-      <div><label class="lbl">Quiz language</label>
+      <div><label class="lbl" data-i18n="quizLanguage">Quiz language</label>
            <select id="sel-lang"></select></div>
-      <div><label class="lbl">Chapter</label>
+      <div><label class="lbl" data-i18n="interfaceLanguage">Interface language</label>
+           <select id="sel-ui-lang"></select></div>
+      <div><label class="lbl" data-i18n="chapter">Chapter</label>
            <select id="sel-chapter"></select></div>
-      <div><label class="lbl">Mode</label>
+      <div><label class="lbl" data-i18n="mode">Mode</label>
            <select id="sel-mode">
              <option value="full">Full cycle — article → meaning → active</option>
              <option value="learn">Learning — show explanation every word</option>
@@ -568,7 +588,7 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
     </div>
 
     <div>
-      <label class="lbl">Words per session</label>
+      <label class="lbl" data-i18n="wordsPerSession">Words per session</label>
       <div class="row g8" id="size-pills">
         <span class="pill" data-n="5">5</span>
         <span class="pill on" data-n="10">10</span>
@@ -581,15 +601,15 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
     <!-- Daily recommendation -->
     <div class="expl">
       <div class="expl-sec">
-        <span class="lbl">Today's recommendation</span>
+        <span class="lbl" data-i18n="todaysRecommendation">Today's recommendation</span>
         <p class="note" id="daily-rec">Load your word list to begin.</p>
       </div>
     </div>
 
     <div class="row g12">
-      <button class="btn btn-gold" id="start-btn" onclick="startSession()" style="padding:13px 30px">▶ Start session</button>
-      <button class="btn btn-ghost" onclick="reviewWeak()">↺ Weak words</button>
-      <button class="btn btn-info"  id="reload-btn" onclick="loadChapterFiles(true)">↻ Reload chapters</button>
+      <button class="btn btn-gold" id="start-btn" onclick="startSession()" style="padding:13px 30px" data-i18n="startSession">▶ Start session</button>
+      <button class="btn btn-ghost" onclick="reviewWeak()" data-i18n="weakWordsButton">↺ Weak words</button>
+      <button class="btn btn-info"  id="reload-btn" onclick="loadChapterFiles(true)" data-i18n="reloadChapters">↻ Reload chapters</button>
         <button class="btn btn-ghost" onclick="replaceFromChapterFiles()">⟲ Replace from files</button>
     </div>
     <p class="tiny" id="load-status" style="text-align:center"></p>
@@ -600,16 +620,16 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
   <div class="card col g16 fadein advanced-card" id="import-card">
     <div class="split">
       <div>
-        <span class="lbl">Word List</span>
+        <span class="lbl" data-i18n="wordList">Word List</span>
         <p class="note">
         Advanced data tools. Use this only to refresh vocabulary files, import/export JSON, or maintain the app.
       </p>
       </div>
       <div class="row g8">
-        <button class="btn btn-info" onclick="loadChapterFiles(true)">↻ Reload chapters</button>
-        <button class="btn btn-err" onclick="replaceFromChapterFiles()">Replace from files</button>
-        <button class="btn btn-ghost" onclick="exportData()">↓ Export</button>
-        <button class="btn btn-ghost" onclick="document.getElementById('file-input').click()">↑ Import file</button>
+        <button class="btn btn-info" onclick="loadChapterFiles(true)" data-i18n="reloadChapters">↻ Reload chapters</button>
+        <button class="btn btn-err" onclick="replaceFromChapterFiles()" data-i18n="replaceFromFiles">Replace from files</button>
+        <button class="btn btn-ghost" onclick="exportData()" data-i18n="export">↓ Export</button>
+        <button class="btn btn-ghost" onclick="document.getElementById('file-input').click()" data-i18n="importFile">↑ Import file</button>
       </div>
     </div>
 
@@ -621,10 +641,10 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
 
     <!-- Paste JSON -->
     <details>
-      <summary style="cursor:pointer;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Paste JSON directly</summary>
+      <summary style="cursor:pointer;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase" data-i18n="pasteJsonDirectly">Paste JSON directly</summary>
       <div class="col g8" style="margin-top:10px">
         <textarea id="paste-box" placeholder="Paste your vocab JSON here…"></textarea>
-        <button class="btn btn-ghost" onclick="importFromPaste()">Import pasted JSON</button>
+        <button class="btn btn-ghost" onclick="importFromPaste()" data-i18n="importPastedJson">Import pasted JSON</button>
       </div>
     </details>
   </div>
@@ -648,8 +668,8 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
       </div>
       <div class="row g8">
         <button class="btn btn-ghost" onclick="speakCurrent()" style="padding:6px 10px" title="Speak (S)">🔊</button>
-        <button class="btn btn-ghost" onclick="skipWord()"     style="padding:6px 10px" title="Skip (Tab)">Skip</button>
-        <button class="btn btn-ghost" onclick="exitQuiz()"     style="padding:6px 10px">✕ Exit</button>
+        <button class="btn btn-ghost" onclick="skipWord()"     style="padding:6px 10px" title="Skip (Tab)" data-i18n="skip">Skip</button>
+        <button class="btn btn-ghost" onclick="exitQuiz()"     style="padding:6px 10px" data-i18n="exit">✕ Exit</button>
       </div>
     </div>
   </div>
@@ -691,7 +711,7 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
   <div class="row g12">
     <button class="btn btn-gold"  onclick="doReviewWeak()">↺ Review weak words</button>
     <button class="btn btn-ghost" onclick="restartSession()">▶ Same session again</button>
-    <button class="btn btn-ghost" onclick="showScreen('menu-screen');buildMenu()">← Menu</button>
+    <button class="btn btn-ghost" onclick="showScreen('menu-screen');buildMenu()" data-i18n="menu">← Menu</button>
   </div>
 
 </div>
@@ -707,7 +727,7 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
 
   <div class="split">
     <div><div class="logo logo-sm">Tracker</div><div class="tagline">SRS · history · weak points</div></div>
-    <button class="btn btn-ghost" onclick="showScreen('menu-screen')">← Back</button>
+    <button class="btn btn-ghost" onclick="showScreen('menu-screen')" data-i18n="back">← Back</button>
   </div>
 
   <div class="grid4">
@@ -718,20 +738,20 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
   </div>
 
   <div>
-    <span class="lbl">Accuracy — last 14 sessions</span>
+    <span class="lbl" data-i18n="accuracyLastSessions">Accuracy — last 14 sessions</span>
     <div class="trend" id="trend-chart"></div>
   </div>
 
   <div class="grid2">
     <div>
-      <span class="lbl">Weakest words</span>
+      <span class="lbl" data-i18n="weakestWords">Weakest words</span>
       <div class="tbl-wrap"><table>
         <thead><tr><th>Word</th><th>Wrong</th><th>Correct</th><th>Box</th></tr></thead>
         <tbody id="tr-weak-rows"></tbody>
       </table></div>
     </div>
     <div>
-      <span class="lbl">Recent sessions</span>
+      <span class="lbl" data-i18n="recentSessions">Recent sessions</span>
       <div class="tbl-wrap"><table>
         <thead><tr><th>Date</th><th>Chapter</th><th>Score</th><th>Words</th></tr></thead>
         <tbody id="tr-session-rows"></tbody>
@@ -758,8 +778,8 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
     <div><div class="logo logo-sm">Library</div><div class="tagline">all words · search · manage</div></div>
     <div class="row g8">
       <button class="btn btn-ghost" onclick="document.getElementById('file-input').click()">↑ Import</button>
-      <button class="btn btn-ghost" onclick="exportData()">↓ Export</button>
-      <button class="btn btn-ghost" onclick="showScreen('menu-screen')">← Back</button>
+      <button class="btn btn-ghost" onclick="exportData()" data-i18n="export">↓ Export</button>
+      <button class="btn btn-ghost" onclick="showScreen('menu-screen')" data-i18n="back">← Back</button>
     </div>
   </div>
 
@@ -855,7 +875,7 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
 <div class="modal-bg" id="grammar-modal" onclick="if(event.target===this)closeModal('grammar-modal')">
 <div class="modal" style="width:min(760px,100%)">
   <div class="modal-hdr">
-    <span class="modal-title">Grammatik & Wörterbücher</span>
+    <span class="modal-title" data-i18n="grammarDictionaries">Grammatik & Wörterbücher</span>
     <button class="btn btn-ghost" style="padding:6px 10px" onclick="closeModal('grammar-modal')">✕</button>
   </div>
 
@@ -951,6 +971,119 @@ if (window.matchMedia) {
   });
 }
 
+
+// ════════════════════════════════════════════════════════
+//  UI LOCALIZATION
+// ════════════════════════════════════════════════════════
+const UI_LANGS = ['English','German','French','Spanish','Italian','Portuguese','Arabic','Persian','Chinese','Japanese','Korean','Thai'];
+
+const UI = {
+  English: {
+    startSession:'▶ Start session', weakWordsButton:'↺ Weak words', grammarDictionaries:'Grammatik & Wörterbücher',
+    tracker:'📊 Tracker', library:'📚 Library', advanced:'⚙ Advanced', export:'↓ Export', importFile:'↑ Import file',
+    reloadChapters:'↻ Reload chapters', replaceFromFiles:'Replace from files', pasteJsonDirectly:'Paste JSON directly',
+    importPastedJson:'Import pasted JSON', back:'← Back', menu:'← Menu', skip:'Skip', exit:'✕ Exit',
+    themeDark:'Dark', themeLight:'Light', themeSystem:'System',
+    quizLanguage:'Quiz language', interfaceLanguage:'Interface language', chapter:'Chapter', yourName:'Your name',
+    mode:'Mode', wordsPerSession:'Words per session', todaysRecommendation:"Today's recommendation",
+    wordList:'Word List', accuracyLastSessions:'Accuracy — last 14 sessions', weakestWords:'Weakest words',
+    recentSessions:'Recent sessions', dueToday:'due today', mastered:'mastered', accuracy:'accuracy',
+    readyWords:'ready words', noWeakWords:'No weak words right now. Keep studying!',
+    notEnoughWords:'Not enough words ready. Make sure your chapter files are loaded.',
+    articlePhase:'${ui('articlePhase')}', meaningPhase:'${ui('meaningPhase')}', pluralPhase:'${ui('pluralPhase')}',
+    patternPhase:'${ui('patternPhase')}', activePhase:'${ui('activePhase')}', explanation:'Explanation',
+    grammarClarification:'Grammar clarification', example:'Example', grammarMemory:'Grammar memory',
+    externalLinks:'External links', moreGrammar:'More grammar explanation', showExplanation:'Show explanation',
+    hideExplanation:'Hide explanation', next:'Next', correct:'Correct', expected:'Expected', reviewNeeded:'Review needed',
+    strongAnswer:'Strong answer'
+  },
+  German: {
+    startSession:'▶ Sitzung starten', weakWordsButton:'↺ Schwache Wörter', grammarDictionaries:'Grammatik & Wörterbücher',
+    tracker:'📊 Fortschritt', library:'📚 Bibliothek', advanced:'⚙ Erweitert', export:'↓ Exportieren', importFile:'↑ Datei importieren',
+    reloadChapters:'↻ Kapitel neu laden', replaceFromFiles:'Aus Dateien ersetzen', pasteJsonDirectly:'JSON direkt einfügen',
+    importPastedJson:'Eingefügtes JSON importieren', back:'← Zurück', menu:'← Menü', skip:'Überspringen', exit:'✕ Beenden',
+    themeDark:'Dunkel', themeLight:'Hell', themeSystem:'System',
+    quizLanguage:'Quizsprache', interfaceLanguage:'Sprache der Oberfläche', chapter:'Kapitel', yourName:'Dein Name',
+    mode:'Modus', wordsPerSession:'Wörter pro Sitzung', todaysRecommendation:'Empfehlung für heute',
+    wordList:'Wortliste', accuracyLastSessions:'Trefferquote — letzte 14 Sitzungen', weakestWords:'Schwächste Wörter',
+    recentSessions:'Letzte Sitzungen', dueToday:'heute fällig', mastered:'stabil', accuracy:'Trefferquote',
+    readyWords:'bereite Wörter', noWeakWords:'Im Moment keine schwachen Wörter. Weiter so.',
+    notEnoughWords:'Nicht genug Wörter bereit. Prüfe, ob die Kapiteldateien geladen sind.',
+    articlePhase:'Wähle den Artikel', meaningPhase:'Wähle die Bedeutung', pluralPhase:'Tippe den Plural oder Pluralhinweis',
+    patternPhase:'Tippe das Grammatikmuster', activePhase:'Aktive Erinnerung', explanation:'Erklärung',
+    grammarClarification:'Grammatikerklärung', example:'Beispiel', grammarMemory:'Grammatik',
+    externalLinks:'Externe Links', moreGrammar:'Mehr Grammatik', showExplanation:'Erklärung zeigen',
+    hideExplanation:'Erklärung ausblenden', next:'Weiter', correct:'Richtig', expected:'Erwartet', reviewNeeded:'Wiederholen',
+    strongAnswer:'Starke Antwort'
+  },
+  French: {
+    startSession:'▶ Commencer', weakWordsButton:'↺ Mots faibles', grammarDictionaries:'Grammaire & dictionnaires',
+    tracker:'📊 Suivi', library:'📚 Bibliothèque', advanced:'⚙ Avancé', export:'↓ Exporter', importFile:'↑ Importer un fichier',
+    reloadChapters:'↻ Recharger les chapitres', replaceFromFiles:'Remplacer par les fichiers', pasteJsonDirectly:'Coller JSON directement',
+    importPastedJson:'Importer le JSON collé', back:'← Retour', menu:'← Menu', skip:'Passer', exit:'✕ Quitter',
+    themeDark:'Sombre', themeLight:'Clair', themeSystem:'Système',
+    quizLanguage:'Langue du quiz', interfaceLanguage:'Langue de l’interface', chapter:'Chapitre', yourName:'Ton nom',
+    mode:'Mode', wordsPerSession:'Mots par session', todaysRecommendation:'Recommandation du jour',
+    wordList:'Liste de mots', accuracyLastSessions:'Précision — 14 dernières sessions', weakestWords:'Mots les plus faibles',
+    recentSessions:'Sessions récentes', dueToday:'à réviser aujourd’hui', mastered:'stables', accuracy:'précision',
+    readyWords:'mots prêts', noWeakWords:'Aucun mot faible pour le moment. Continue.',
+    notEnoughWords:'Pas assez de mots prêts. Vérifie que les fichiers de chapitre sont chargés.',
+    articlePhase:'Choisis l’article', meaningPhase:'Choisis le sens', pluralPhase:'Tape le pluriel ou l’indication du pluriel',
+    patternPhase:'Tape le modèle grammatical', activePhase:'Rappel actif', explanation:'Explication',
+    grammarClarification:'Clarification grammaticale', example:'Exemple', grammarMemory:'Grammaire',
+    externalLinks:'Liens externes', moreGrammar:'Plus de grammaire', showExplanation:'Afficher l’explication',
+    hideExplanation:'Masquer l’explication', next:'Suivant', correct:'Correct', expected:'Attendu', reviewNeeded:'À revoir',
+    strongAnswer:'Réponse solide'
+  },
+  Spanish: {
+    startSession:'▶ Empezar', weakWordsButton:'↺ Palabras débiles', grammarDictionaries:'Gramática y diccionarios',
+    tracker:'📊 Progreso', library:'📚 Biblioteca', advanced:'⚙ Avanzado', export:'↓ Exportar', importFile:'↑ Importar archivo',
+    reloadChapters:'↻ Recargar capítulos', replaceFromFiles:'Reemplazar desde archivos', pasteJsonDirectly:'Pegar JSON directamente',
+    importPastedJson:'Importar JSON pegado', back:'← Atrás', menu:'← Menú', skip:'Saltar', exit:'✕ Salir',
+    themeDark:'Oscuro', themeLight:'Claro', themeSystem:'Sistema',
+    quizLanguage:'Idioma del quiz', interfaceLanguage:'Idioma de la interfaz', chapter:'Capítulo', yourName:'Tu nombre',
+    mode:'Modo', wordsPerSession:'Palabras por sesión', todaysRecommendation:'Recomendación de hoy',
+    wordList:'Lista de palabras', accuracyLastSessions:'Precisión — últimas 14 sesiones', weakestWords:'Palabras más débiles',
+    recentSessions:'Sesiones recientes', dueToday:'para repasar hoy', mastered:'estables', accuracy:'precisión',
+    readyWords:'palabras listas', noWeakWords:'No hay palabras débiles ahora. Sigue estudiando.',
+    notEnoughWords:'No hay suficientes palabras listas. Verifica que los archivos estén cargados.',
+    articlePhase:'Elige el artículo', meaningPhase:'Elige el significado', pluralPhase:'Escribe el plural o la pista del plural',
+    patternPhase:'Escribe el patrón gramatical', activePhase:'Recuerdo activo', explanation:'Explicación',
+    grammarClarification:'Aclaración gramatical', example:'Ejemplo', grammarMemory:'Gramática',
+    externalLinks:'Enlaces externos', moreGrammar:'Más gramática', showExplanation:'Mostrar explicación',
+    hideExplanation:'Ocultar explicación', next:'Siguiente', correct:'Correcto', expected:'Esperado', reviewNeeded:'Revisar',
+    strongAnswer:'Respuesta fuerte'
+  }
+};
+
+['Italian','Portuguese','Arabic','Persian','Chinese','Japanese','Korean','Thai'].forEach(lang => {
+  if (!UI[lang]) UI[lang] = UI.English;
+});
+
+function ui(key) {
+  const lang = USER.uiLang || 'English';
+  return UI[lang]?.[key] || UI.English[key] || key;
+}
+
+function fillUiLanguageSelector() {
+  const sel = document.getElementById('sel-ui-lang');
+  if (!sel) return;
+  if (!USER.uiLang) USER.uiLang = 'English';
+  sel.innerHTML = UI_LANGS.map(l => `<option value="${h(l)}" ${l===USER.uiLang?'selected':''}>${h(l)}</option>`).join('');
+}
+
+function applyI18n() {
+  fillUiLanguageSelector();
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (!key) return;
+    el.textContent = ui(key);
+  });
+  document.documentElement.lang = (USER.uiLang || 'English').toLowerCase().slice(0,2);
+  document.body.dir = ['Arabic','Persian'].includes(USER.uiLang) ? 'rtl' : 'ltr';
+}
+
+
 // ════════════════════════════════════════════════════════
 //  CONSTANTS
 // ════════════════════════════════════════════════════════
@@ -964,7 +1097,7 @@ const DAY   = 86400000;
 //  STATE — persistent
 // ════════════════════════════════════════════════════════
 let DB   = load('vok_db3',   { words: [] });
-let USER = load('vok_u3',    { name:'', lang:'English', chapter:'all', mode:'full', size:'10', autoSpeak:'off' });
+let USER = load('vok_u3', { name:'', lang:'English', chapter:'all', mode:'full', size:'10', autoSpeak:'off', uiLang:'English'});
 let SRS  = load('vok_srs3',  {});
 let HIST = load('vok_h3',    []);
 
@@ -1285,6 +1418,7 @@ function availableLangs() {
 }
 
 function buildMenu() {
+  fillUiLanguageSelector();
   const rw = readyWords();
   const att = Object.values(SRS).reduce((a,r)=>a+r.correct+r.wrong,0);
   const cor = Object.values(SRS).reduce((a,r)=>a+r.correct,0);
@@ -1331,6 +1465,18 @@ function buildMenu() {
   // Size pills
   document.querySelectorAll('#size-pills .pill').forEach(p =>
     p.classList.toggle('on', p.dataset.n === USER.size));
+  applyI18n();
+}
+
+
+const uiLangSelector = document.getElementById('sel-ui-lang');
+if (uiLangSelector) {
+  uiLangSelector.addEventListener('change', e => {
+    USER.uiLang = e.target.value;
+    save();
+    applyI18n();
+    buildMenu();
+  });
 }
 
 // ════════════════════════════════════════════════════════
@@ -1538,7 +1684,7 @@ function render() {
 
   if (Q.phase === 'art') {
     phaseHTML = `
-      <p class="phase-lbl">Choose the article — blue=der · red=die · green=das</p>
+      <p class="phase-lbl">${ui('articlePhase')} — blue=der · red=die · green=das</p>
       <div class="art-grid">
         ${ART.map(a => {
           const cls = a==='—' ? 'noart' : a;
@@ -1553,7 +1699,7 @@ function render() {
     if (!Q.opts.length) Q.opts = buildOpts(w);
     const keys = ['A','B','C','D'];
     phaseHTML = `
-      <p class="phase-lbl">Choose the meaning in ${h(USER.lang)}</p>
+      <p class="phase-lbl">${ui('meaningPhase')} in ${h(USER.lang)}</p>
       <div class="opts">
         ${Q.opts.map((o,i) => `
           <button class="opt" onclick="answerMean(${i})">
@@ -2038,6 +2184,7 @@ if (typeof closeModal !== 'function') {
 
 
 applyTheme(getStoredTheme());
+applyI18n();
 </script>
 </body>
 </html>
