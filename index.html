@@ -519,6 +519,101 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
   transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
 
+
+/* ═══════════════════════════════════════════════════════
+   LEARNING QUALITY PATCH
+═══════════════════════════════════════════════════════ */
+.onboarding-card {
+  border: 1px solid var(--gold2);
+  background: linear-gradient(175deg, rgba(201,168,76,.08), rgba(20,20,28,.96));
+}
+.student-mode .advanced-card,
+.student-mode .admin-only,
+.student-mode #reload-btn,
+.student-mode #import-card {
+  display: none !important;
+}
+.student-mode .delete-word,
+.student-mode .admin-danger {
+  display: none !important;
+}
+.quality-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap:10px;
+}
+.quality-item {
+  border:1px solid var(--b1);
+  border-radius:var(--r);
+  padding:12px;
+  background:var(--s2);
+}
+.quality-item b {
+  display:block;
+  font-family:var(--serif);
+  font-size:30px;
+  color:var(--gold);
+  line-height:1;
+}
+.quality-item span {
+  font-family:var(--mono);
+  font-size:10px;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+.diagnosis {
+  border:1px solid rgba(240,160,48,.35);
+  background:var(--warnbg);
+  color:var(--warn);
+  border-radius:var(--r2);
+  padding:12px 14px;
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.55;
+  margin-top:10px;
+}
+.gap-sentence {
+  font-family:var(--serif);
+  font-size:26px;
+  line-height:1.35;
+  text-align:center;
+  padding:18px;
+  border:1px solid var(--b1);
+  border-radius:var(--r2);
+  background:linear-gradient(175deg, var(--s2), rgba(20,20,28,.7));
+  margin-bottom:12px;
+}
+.gap-blank {
+  display:inline-block;
+  min-width:80px;
+  border-bottom:2px solid var(--gold);
+  color:var(--gold);
+  font-family:var(--mono);
+}
+.mode-toggle {
+  display:inline-flex;
+  gap:4px;
+  border:1px solid var(--b1);
+  border-radius:999px;
+  padding:4px;
+  background:rgba(255,255,255,.025);
+}
+.mode-toggle button {
+  border:0;
+  border-radius:999px;
+  padding:6px 10px;
+  background:transparent;
+  color:var(--muted);
+  font-family:var(--mono);
+  font-size:10px;
+  text-transform:uppercase;
+}
+.mode-toggle button.on {
+  background:linear-gradient(135deg,var(--gold3),var(--gold));
+  color:#181000;
+}
+
 @media(max-width:700px) {
   .grid2, .grid3, .grid4 { grid-template-columns: 1fr; }
   .art-grid { grid-template-columns: 1fr 1fr; }
@@ -555,7 +650,11 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
         <button class="btn btn-ghost" onclick="openModal('keys-modal')">? Keys</button>
         <button class="btn btn-ghost" onclick="showTab('tracker')" data-i18n="tracker">📊 Tracker</button>
         <button class="btn btn-ghost" onclick="showTab('library')" data-i18n="library">📚 Library</button>
-        <button class="btn btn-ghost" onclick="toggleAdvanced()" data-i18n="advanced">⚙ Advanced</button>
+        <span class="mode-toggle" aria-label="Audience mode">
+          <button type="button" id="aud-student" onclick="setAppAudience('student')">Student</button>
+          <button type="button" id="aud-admin" onclick="setAppAudience('admin')">Admin</button>
+        </span>
+        <button class="btn btn-ghost admin-only" onclick="toggleAdvanced()" data-i18n="advanced">⚙ Advanced</button>
       </div>
     </div>
 
@@ -584,6 +683,7 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
              <option value="exam">Exam — no hints until summary</option>
              <option value="due">Due for review only</option>
              <option value="weak">Weak words only</option>
+             <option value="sentence">Sentence gaps — grammar in context</option>
            </select></div>
     </div>
 
@@ -792,6 +892,16 @@ body, .card, .modal, input, select, textarea, .btn, .pill, .stat, .expl, .opt, .
     <table><thead><tr><th>Word</th><th>Translation</th><th>Chapter</th><th>Box</th><th>Mastery</th><th></th></tr></thead>
     <tbody id="lib-rows"></tbody></table>
   </div>
+
+  
+  <div class="expl admin-only" id="quality-panel">
+    <div class="expl-sec">
+      <span class="lbl">Data quality dashboard</span>
+      <div class="quality-grid" id="quality-grid"></div>
+      <p class="tiny" style="margin-top:10px">This checks schema quality, not translation correctness. Generic examples should gradually be replaced by natural examples.</p>
+    </div>
+  </div>
+
 
   <!-- Manual add -->
   <details>
@@ -2234,6 +2344,266 @@ function installDynamicI18nHooks() {
 
 setTimeout(installDynamicI18nHooks, 0);
 setInterval(relabelDynamicInterface, 1200);
+
+
+
+if (typeof UI !== 'undefined') {
+  ['English','Italian','Portuguese','Arabic','Persian','Chinese','Japanese','Korean','Thai'].forEach(l => { UI[l] = UI[l] || UI.English; UI[l].sentenceMode = 'Sentence gaps — grammar in context'; });
+  if (UI.German) UI.German.sentenceMode = 'Lückensätze — Grammatik im Kontext';
+  if (UI.French) UI.French.sentenceMode = 'Phrases à trous — grammaire en contexte';
+  if (UI.Spanish) UI.Spanish.sentenceMode = 'Frases con huecos — gramática en contexto';
+}
+
+// ════════════════════════════════════════════════════════
+// LEARNING QUALITY PATCH: onboarding, student mode, sentence gaps, diagnosis, data quality
+// ════════════════════════════════════════════════════════
+window.VOKABULAR_BUILD = 'learning-quality-patch-2026-05-26';
+
+function getAudience() {
+  return localStorage.getItem('vok_audience') || 'student';
+}
+
+function setAppAudience(mode) {
+  if (!['student','admin'].includes(mode)) mode = 'student';
+  localStorage.setItem('vok_audience', mode);
+  document.body.classList.toggle('student-mode', mode === 'student');
+  const s = document.getElementById('aud-student');
+  const a = document.getElementById('aud-admin');
+  if (s) s.classList.toggle('on', mode === 'student');
+  if (a) a.classList.toggle('on', mode === 'admin');
+  if (typeof renderDataQualityDashboard === 'function') renderDataQualityDashboard();
+}
+
+function shouldShowOnboarding() {
+  return localStorage.getItem('vok_onboarding_done') !== '1';
+}
+
+function completeOnboarding() {
+  localStorage.setItem('vok_onboarding_done','1');
+  const c = document.getElementById('onboarding-card');
+  if (c) c.style.display = 'none';
+}
+
+function fillOnboardingSelectors() {
+  const card = document.getElementById('onboarding-card');
+  if (!card) return;
+  card.style.display = shouldShowOnboarding() ? 'flex' : 'none';
+
+  const uiSel = document.getElementById('on-ui-lang');
+  const qSel = document.getElementById('on-quiz-lang');
+  const chSel = document.getElementById('on-chapter');
+  if (uiSel && typeof UI_LANGS !== 'undefined') {
+    uiSel.innerHTML = UI_LANGS.map(l => `<option value="${h(l)}" ${l === USER.uiLang ? 'selected':''}>${h(l)}</option>`).join('');
+  }
+  if (qSel && typeof LANGS !== 'undefined') {
+    qSel.innerHTML = LANGS.map(l => `<option value="${h(l)}" ${l === USER.lang ? 'selected':''}>${h(l)}</option>`).join('');
+  }
+  if (chSel) {
+    const chapters = [...new Set(readyWords().map(chapOf))].filter(x => x !== '?').sort((a,b)=>Number(a)-Number(b));
+    chSel.innerHTML = chapters.map(c => `<option value="${h(c)}">${h((typeof uix==='function'?uix('chapterLabel'):'Kapitel') + ' ' + c)}</option>`).join('');
+  }
+}
+
+function finishOnboardingAndStart() {
+  const uiSel = document.getElementById('on-ui-lang');
+  const qSel = document.getElementById('on-quiz-lang');
+  const chSel = document.getElementById('on-chapter');
+  if (uiSel) USER.uiLang = uiSel.value;
+  if (qSel) USER.lang = qSel.value;
+  if (chSel && chSel.value) USER.chapter = chSel.value;
+  USER.size = '10';
+  save();
+  completeOnboarding();
+  if (typeof applyI18n === 'function') applyI18n();
+  if (typeof buildMenu === 'function') buildMenu();
+  startSession();
+}
+
+function isGenericExample(w) {
+  const ex = String(w?.data?.example_de || '');
+  return /^Das Lernwort heute ist:/i.test(ex.trim()) || ex.trim().length < 12;
+}
+
+function hasNaturalExamples(w) {
+  const arr = w?.data?.examples;
+  if (Array.isArray(arr) && arr.some(x => x && String(x.de || '').trim())) return true;
+  return !!(w?.data?.example_de && !isGenericExample(w));
+}
+
+function hasPlural(w) {
+  const g = w?.data?.grammar || {};
+  return !!(g.plural || g.plural_hint || /^(der|die|das)\s+.+,\s*.+/.test(String(w.word || '')));
+}
+
+function hasPattern(w) {
+  const g = w?.data?.grammar || {};
+  return !!(g.pattern || /\([^)]*\+\s*[ADG]\.?/.test(String(w.word || '')) || /\b(auf|um|bei|über|mit|an|für|zu)\s*\+/.test(String(w.word || '')));
+}
+
+function renderDataQualityDashboard() {
+  const grid = document.getElementById('quality-grid');
+  if (!grid) return;
+  const words = readyWords();
+  const total = words.length;
+  const missingExamples = words.filter(w => !hasNaturalExamples(w)).length;
+  const genericExamples = words.filter(isGenericExample).length;
+  const missingPlural = words.filter(w => artOf(w.word) && !hasPlural(w)).length;
+  const withPatterns = words.filter(hasPattern).length;
+  const missingExplanation = words.filter(w => !w.data?.explanation || !Object.keys(w.data.explanation || {}).length).length;
+  const chapters = new Set(words.map(chapOf)).size;
+
+  const items = [
+    ['Total words', total],
+    ['Chapters', chapters],
+    ['Generic examples', genericExamples],
+    ['Missing natural examples', missingExamples],
+    ['Nouns missing plural', missingPlural],
+    ['Pattern words', withPatterns],
+    ['Missing explanations', missingExplanation]
+  ];
+
+  grid.innerHTML = items.map(([label,val]) => `<div class="quality-item"><b>${val}</b><span>${h(label)}</span></div>`).join('');
+}
+
+function getSentenceGapPrompt(w) {
+  const word = String(w.word || '');
+  const g = w.data?.grammar || {};
+  const pattern = String(g.pattern || word.match(/\((.*?)\)/)?.[1] || '');
+
+  const examples = [
+    {rx:/sich bewerben/i, sentence:'Ich bewerbe mich ___ eine Stelle.', answer:'um'},
+    {rx:/sich beschweren/i, sentence:'Ich beschwere mich ___ den Service.', answer:'über'},
+    {rx:/sich vorbereiten/i, sentence:'Ich bereite mich ___ die Prüfung vor.', answer:'auf'},
+    {rx:/sich kümmern/i, sentence:'Ich kümmere mich ___ den Auftrag.', answer:'um'},
+    {rx:/sich gewöhnen/i, sentence:'Ich gewöhne mich ___ die neue Arbeit.', answer:'an'},
+    {rx:/sich auskennen/i, sentence:'Ich kenne mich ___ diesem Thema aus.', answer:'mit'},
+    {rx:/sich begeistern/i, sentence:'Ich begeistere mich ___ Fotografie.', answer:'für'},
+    {rx:/achten/i, sentence:'Ich achte ___ die Verkehrsregeln.', answer:'auf'},
+    {rx:/ankommen/i, sentence:'Es kommt ___ die Situation an.', answer:'auf'},
+    {rx:/reagieren/i, sentence:'Ich reagiere ___ die Beschwerde.', answer:'auf'},
+    {rx:/zusammenstoßen/i, sentence:'Das Auto ist ___ dem Lkw zusammengestoßen.', answer:'mit'},
+    {rx:/aufpassen/i, sentence:'Ich passe ___ den Verkehr auf.', answer:'auf'}
+  ];
+
+  const hit = examples.find(e => e.rx.test(word));
+  if (hit) return hit;
+
+  if (/um\s*\+\s*A/i.test(pattern)) return {sentence:`Ich verwende „${baseOf(word)}” ___ eine Sache.`, answer:'um'};
+  if (/auf\s*\+\s*A/i.test(pattern)) return {sentence:`Ich achte ___ diese Struktur.`, answer:'auf'};
+  if (/mit\s*\+\s*D/i.test(pattern)) return {sentence:`Ich arbeite ___ dieser Struktur.`, answer:'mit'};
+  if (/bei\s*\+\s*D/i.test(pattern)) return {sentence:`Ich frage ___ der Firma nach.`, answer:'bei'};
+  if (/über\s*\+\s*A/i.test(pattern)) return {sentence:`Ich spreche ___ dieses Thema.`, answer:'über'};
+  if (/an\s*\+\s*A/i.test(pattern)) return {sentence:`Ich gewöhne mich ___ die Situation.`, answer:'an'};
+  if (/für\s*\+\s*A/i.test(pattern)) return {sentence:`Ich interessiere mich ___ dieses Thema.`, answer:'für'};
+  if (/zu\s*\+\s*D/i.test(pattern)) return {sentence:`Ich entschließe mich ___ diesem Schritt.`, answer:'zu'};
+
+  return null;
+}
+
+function diagnoseMistake(kind, w, expected, got) {
+  const word = h(w.word || '');
+  if (kind === 'article') return `Article mistake: you need the gender with the noun. Correct article for ${word}: ${expected}.`;
+  if (kind === 'plural') return `Plural mistake: learn the noun with article and plural. Expected: ${expected}. Umlaut alternatives like ae/oe/ue are accepted.`;
+  if (kind === 'pattern') return `Grammar-pattern mistake: memorize the preposition/case with the expression. Expected pattern: ${expected}.`;
+  if (kind === 'sentence') return `Sentence-gap mistake: this expression needs “${expected}” in this context. Your answer: ${got || '—'}.`;
+  if (kind === 'active') return `Active-recall mistake: recognition is not enough. Re-type the word actively. Preferred answer: ${expected}.`;
+  return `Review needed. Expected: ${expected}.`;
+}
+
+function showDiagnosis(kind, w, expected, got) {
+  const q = document.getElementById('qcard');
+  if (!q) return;
+  const old = q.querySelector('.diagnosis');
+  if (old) old.remove();
+  q.insertAdjacentHTML('beforeend', `<div class="diagnosis">${diagnoseMistake(kind,w,expected,got)}</div>`);
+}
+
+function sentenceGapView(w) {
+  const prompt = getSentenceGapPrompt(w);
+  if (!prompt) {
+    Q.phase = 'article';
+    render();
+    return '';
+  }
+  Q.gapPrompt = prompt;
+  return `<div class="phase-lbl">Sentence gap</div>
+    <div class="gap-sentence">${h(prompt.sentence).replace('___','<span class="gap-blank">___</span>')}</div>
+    <input class="type-input" id="type-inp" autocomplete="off" placeholder="Type the missing word" onkeydown="if(event.key==='Enter')answerSentenceGap()" autofocus>
+    <div class="row g8" style="margin-top:10px;justify-content:center">
+      <button class="btn btn-gold" onclick="answerSentenceGap()">Check</button>
+      <button class="btn btn-ghost" onclick="skipWord()">Skip</button>
+    </div>`;
+}
+
+function answerSentenceGap() {
+  const inp = document.getElementById('type-inp');
+  const got = inp ? inp.value : '';
+  const expected = Q.gapPrompt?.answer || '';
+  const ok = norm(got) === norm(expected);
+  if (inp) inp.classList.add(ok ? 'ok' : 'err');
+  Q.tracks = Q.tracks || {};
+  Q.tracks.pattern = ok;
+  if (ok) { Q.pts += 3; Q.ok++; Q.streak++; Q.bestStreak = Math.max(Q.bestStreak,Q.streak); }
+  else { Q.weak++; Q.streak = 0; Q.weakItems.push(Q.cur); showDiagnosis('sentence', Q.cur, expected, got); }
+  record(Q.cur, ok, {article:null,meaning:null,plural:null,pattern:ok,active:null});
+  setTimeout(() => { Q.idx++; next(); }, ok ? 450 : 1500);
+}
+
+// Wrap render to support sentence-gap mode as an independent practice mode.
+if (typeof render === 'function' && !render.__sentenceWrapped) {
+  const oldRender = render;
+  render = function() {
+    if (USER.mode === 'sentence' && Q.cur) {
+      document.getElementById('prog-bar').style.width = `${Math.round((Q.idx / Q.queue.length) * 100)}%`;
+      document.getElementById('b-ok').textContent = `${Q.ok} ✓`;
+      document.getElementById('b-err').textContent = `${Q.weak} ✗`;
+      document.getElementById('b-pts').textContent = `${Q.pts} pts`;
+      document.getElementById('b-left').textContent = `${Q.queue.length-Q.idx} left`;
+      const card = document.getElementById('qcard');
+      card.innerHTML = `<div class="word-area"><div class="w-main">${h(baseOf(Q.cur.word))}</div><div class="w-sub">${h(Q.cur.notes||'')}</div></div>` + sentenceGapView(Q.cur);
+      const input = document.getElementById('type-inp');
+      if (input) setTimeout(()=>input.focus(),0);
+      return;
+    }
+    return oldRender();
+  };
+  render.__sentenceWrapped = true;
+}
+
+// Improve existing wrong-answer feedback where possible by observing feedback insertion.
+document.addEventListener('click', e => {
+  setTimeout(() => {
+    const fb = document.querySelector('#qcard .feedback.err');
+    if (!fb || document.querySelector('#qcard .diagnosis') || !Q.cur) return;
+    const txt = fb.textContent || '';
+    if (/article/i.test(txt)) showDiagnosis('article', Q.cur, artOf(Q.cur.word) || '—', '');
+    else if (/plural/i.test(txt)) showDiagnosis('plural', Q.cur, pluralAnswers(Q.cur)[0] || 'plural', '');
+    else if (/pattern/i.test(txt)) showDiagnosis('pattern', Q.cur, patternAnswers(Q.cur)[0] || 'pattern', '');
+    else showDiagnosis('active', Q.cur, preferredActiveAnswer(Q.cur), '');
+  }, 80);
+});
+
+const _oldBuildMenuLearningQuality = buildMenu;
+buildMenu = function(...args) {
+  const out = _oldBuildMenuLearningQuality.apply(this,args);
+  fillOnboardingSelectors();
+  setAppAudience(getAudience());
+  renderDataQualityDashboard();
+  return out;
+};
+
+const _oldRenderLibraryLearningQuality = renderLibrary;
+renderLibrary = function(...args) {
+  const out = _oldRenderLibraryLearningQuality.apply(this,args);
+  renderDataQualityDashboard();
+  return out;
+};
+
+setTimeout(() => {
+  setAppAudience(getAudience());
+  fillOnboardingSelectors();
+  renderDataQualityDashboard();
+}, 0);
 
 applyTheme(getStoredTheme());
 applyI18n();
