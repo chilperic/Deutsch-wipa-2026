@@ -486,8 +486,10 @@ tr:hover td { background: var(--s2); }
 
     <div class="row g12">
       <button class="btn btn-gold" id="start-btn" onclick="startSession()" style="padding:13px 30px">▶ Start session</button>
-      <button class="btn btn-ghost" onclick="reviewWeak()">↺ Review weak words</button>
+      <button class="btn btn-ghost" onclick="reviewWeak()">↺ Weak words</button>
+      <button class="btn btn-info"  id="reload-btn" onclick="loadChapterFiles(true)">↻ Reload chapters</button>
     </div>
+    <p class="tiny" id="load-status" style="text-align:center"></p>
 
   </div>
 
@@ -496,7 +498,11 @@ tr:hover td { background: var(--s2); }
     <div class="split">
       <div>
         <span class="lbl">Word List</span>
-        <p class="note">Import your <code>vocab.json</code> file from this chat, or drag it below.</p>
+        <p class="note">
+        Your chapter files in <code>data/kapitel1.json</code> … <code>kapitel4.json</code> load automatically on first visit.
+        Use ↻ Reload chapters to refresh after uploading new files to GitHub.
+        You can also drop any JSON file here to merge it in.
+      </p>
       </div>
       <div class="row g8">
         <button class="btn btn-ghost" onclick="exportData()">↓ Export</button>
@@ -506,7 +512,7 @@ tr:hover td { background: var(--s2); }
 
     <div class="drop-zone" id="drop-zone">
       <div class="drop-icon">📂</div>
-      <div class="drop-txt">Drop vocab.json here, or click to browse</div>
+      <div class="drop-txt">Drop any kapitelN.json here to import / merge</div>
       <div class="tiny" style="margin-top:8px">Supports all formats from this app's export</div>
     </div>
 
@@ -1071,7 +1077,7 @@ function buildMenu() {
   const artW = rw.filter(w=>{const t=srsOf(w.id).tracks.art;return t.w>t.c}).length;
   if (rw.length === 0) {
     document.getElementById('daily-rec').innerHTML =
-      'Import your <code>vocab.json</code> file below to start learning.';
+      'Loading chapter files from <code>data/</code>… If nothing appears, click ↻ Reload chapters.';
   } else {
     const n = Math.min(10, weakN || dueN || rw.length);
     document.getElementById('daily-rec').innerHTML =
@@ -1083,14 +1089,6 @@ function buildMenu() {
   // Size pills
   document.querySelectorAll('#size-pills .pill').forEach(p =>
     p.classList.toggle('on', p.dataset.n === USER.size));
-
-  // Auto-load vocab.json if no words yet
-  if (DB.words.length === 0) {
-    fetch('./vocab.json', {cache:'no-store'})
-      .then(r => r.ok ? r.json() : null)
-      .then(d => { if (d) { importData(d); } })
-      .catch(() => {});
-  }
 }
 
 // ════════════════════════════════════════════════════════
@@ -1105,7 +1103,7 @@ function startSession() {
 
   const pool = poolFor(USER.chapter, USER.mode);
   if (pool.length < 2) {
-    alert(`Not enough words ready (${pool.length}). Import your vocab.json file.`);
+    alert(`Not enough words ready (${pool.length}). Make sure your data/kapitelN.json files are in the repo and click ↻ Reload chapters.`);
     return;
   }
 
@@ -1658,10 +1656,72 @@ document.getElementById('size-pills').addEventListener('click', e => {
 });
 
 // ════════════════════════════════════════════════════════
+//  CHAPTER FILE LOADER
+//  Reads  data/kapitel1.json … data/kapitel20.json
+//  Each file: { meta:{}, words:[{id, word, notes, status, data}] }
+//  Only re-imports if the word ID is not yet in DB (safe to call repeatedly).
+// ════════════════════════════════════════════════════════
+
+async function loadChapterFiles(manual = false) {
+  const btn    = document.getElementById('reload-btn');
+  const status = document.getElementById('load-status');
+  if (btn) btn.disabled = true;
+  if (status) status.textContent = 'Loading chapter files…';
+
+  let loaded = 0;
+  let found  = 0;
+
+  for (let i = 1; i <= 20; i++) {
+    const url = `./data/kapitel${i}.json`;
+    try {
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) continue;               // file doesn't exist — skip silently
+      const json  = await res.json();
+      const chapMeta = { id: `kapitel${i}`, title: `Kapitel ${i}` };
+      const words = (json.words || [])
+        .map(w => normalizeEntry(w, chapMeta))
+        .filter(w => w.word);
+
+      if (words.length) {
+        DB.words = mergeWords(DB.words, words);
+        loaded += words.length;
+        found++;
+      }
+    } catch {
+      // network error or parse failure — skip
+    }
+  }
+
+  save();
+  buildMenu();
+  renderLibraryChapters();
+
+  if (btn)    btn.disabled = false;
+  if (status) {
+    if (found > 0) {
+      status.textContent = `✓ Loaded ${loaded} words from ${found} chapter file${found>1?'s':''}.`;
+      setTimeout(() => { if (status) status.textContent = ''; }, 4000);
+    } else if (manual) {
+      status.textContent = 'No chapter files found in data/. Check the folder on GitHub.';
+    } else {
+      status.textContent = '';
+    }
+  }
+}
+
+// ════════════════════════════════════════════════════════
 //  BOOT
+//  1. Render menu with whatever is in localStorage
+//  2. Auto-load chapter files if DB is empty (first visit)
+//     or always refresh from files in background
 // ════════════════════════════════════════════════════════
 buildMenu();
 showScreen('menu-screen');
+
+// Always reload from data/ on boot — files on GitHub are the source of truth.
+// mergeWords() is safe: existing SRS progress is never touched,
+// words already in DB by ID are simply overwritten with the latest version.
+loadChapterFiles(false);
 </script>
 </body>
 </html>
