@@ -211,7 +211,7 @@ textarea { min-height: 130px; resize: vertical; font-family: var(--mono); font-s
 .w-sub    { font-family: var(--mono); font-size: 11px; color: var(--muted);
             letter-spacing: .14em; text-transform: uppercase; margin-top: 10px; }
 
-/* Active recall prompt */
+/* ${ui('activePhase')} prompt */
 .recall-box {
   background: linear-gradient(135deg, rgba(91,160,245,.07), rgba(201,168,76,.06));
   border: 1px solid rgba(91,160,245,.2); border-radius: var(--r2);
@@ -990,8 +990,8 @@ const UI = {
     recentSessions:'Recent sessions', dueToday:'due today', mastered:'mastered', accuracy:'accuracy',
     readyWords:'ready words', noWeakWords:'No weak words right now. Keep studying!',
     notEnoughWords:'Not enough words ready. Make sure your chapter files are loaded.',
-    articlePhase:'Choose the article', meaningPhase:'Choose the meaning', pluralPhase:'Type the plural or plural hint',
-    patternPhase:'Type the grammar pattern', activePhase:'Active recall', explanation:'Explanation',
+    articlePhase:'${ui('articlePhase')}', meaningPhase:'${ui('meaningPhase')}', pluralPhase:'${ui('pluralPhase')}',
+    patternPhase:'${ui('patternPhase')}', activePhase:'${ui('activePhase')}', explanation:'Explanation',
     grammarClarification:'Grammar clarification', example:'Example', grammarMemory:'Grammar memory',
     externalLinks:'External links', moreGrammar:'More grammar explanation', showExplanation:'Show explanation',
     hideExplanation:'Hide explanation', next:'Next', correct:'Correct', expected:'Expected', reviewNeeded:'Review needed',
