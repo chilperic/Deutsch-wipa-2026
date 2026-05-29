@@ -1,7 +1,67 @@
 {
   "module": "konnektoren_nebensaetze",
-  "title": "Connectors and subordinate clauses",
-  "status": "planned",
-  "description": "Connectors and subordinate clauses: weil, obwohl, wenn, als, bevor, nachdem, etc.",
-  "items": []
+  "title": "Konnektoren / Nebensätze",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "kon_weil",
+      "type": "connector",
+      "display": "weil + Nebensatz",
+      "meaning": {
+        "English": "because",
+        "German": "weil"
+      },
+      "prompt": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "answer": "weil",
+      "case": "Nebensatz",
+      "example": {
+        "de": "Ich bleibe zu Hause, weil ich krank bin."
+      }
+    },
+    {
+      "id": "kon_obwohl",
+      "type": "connector",
+      "display": "obwohl + Nebensatz",
+      "meaning": {
+        "English": "although",
+        "German": "obwohl"
+      },
+      "prompt": "Ich gehe spazieren, ___ es regnet.",
+      "answer": "obwohl",
+      "case": "Nebensatz",
+      "example": {
+        "de": "Ich gehe spazieren, obwohl es regnet."
+      }
+    },
+    {
+      "id": "kon_deshalb",
+      "type": "connector",
+      "display": "deshalb + Verbposition 2",
+      "meaning": {
+        "English": "therefore",
+        "German": "deshalb"
+      },
+      "prompt": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "answer": "deshalb",
+      "case": "Hauptsatzverb Position 2",
+      "example": {
+        "de": "Ich bin krank. Deshalb bleibe ich zu Hause."
+      }
+    },
+    {
+      "id": "kon_als",
+      "type": "connector",
+      "display": "als + Vergangenheit",
+      "meaning": {
+        "English": "when in the past",
+        "German": "als"
+      },
+      "prompt": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "answer": "als",
+      "case": "Temporal",
+      "example": {
+        "de": "Als ich ein Kind war, wohnte ich in Kamerun."
+      }
+    }
+  ]
 }

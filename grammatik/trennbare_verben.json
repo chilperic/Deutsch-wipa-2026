@@ -1,7 +1,67 @@
 {
   "module": "trennbare_verben",
-  "title": "Separable verbs",
-  "status": "planned",
-  "description": "Separable verbs: prefix, conjugation, Perfekt, sentence position.",
-  "items": []
+  "title": "Trennbare Verben",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "tv_anfangen",
+      "type": "separable_verb",
+      "display": "anfangen",
+      "meaning": {
+        "English": "to begin",
+        "German": "anfangen"
+      },
+      "prompt": "Ich ___ um 8 Uhr ___.",
+      "answer": "fange an",
+      "case": "trennbar",
+      "example": {
+        "de": "Ich fange um 8 Uhr an."
+      }
+    },
+    {
+      "id": "tv_aufstehen",
+      "type": "separable_verb",
+      "display": "aufstehen",
+      "meaning": {
+        "English": "to get up",
+        "German": "aufstehen"
+      },
+      "prompt": "Ich ___ jeden Morgen früh ___.",
+      "answer": "stehe auf",
+      "case": "trennbar",
+      "example": {
+        "de": "Ich stehe jeden Morgen früh auf."
+      }
+    },
+    {
+      "id": "tv_einkaufen",
+      "type": "separable_verb",
+      "display": "einkaufen",
+      "meaning": {
+        "English": "to shop",
+        "German": "einkaufen"
+      },
+      "prompt": "Wir ___ heute im Supermarkt ___.",
+      "answer": "kaufen ein",
+      "case": "trennbar",
+      "example": {
+        "de": "Wir kaufen heute im Supermarkt ein."
+      }
+    },
+    {
+      "id": "tv_mitbringen",
+      "type": "separable_verb",
+      "display": "mitbringen",
+      "meaning": {
+        "English": "to bring along",
+        "German": "mitbringen"
+      },
+      "prompt": "Ich ___ einen Kuchen ___.",
+      "answer": "bringe mit",
+      "case": "trennbar",
+      "example": {
+        "de": "Ich bringe einen Kuchen mit."
+      }
+    }
+  ]
 }

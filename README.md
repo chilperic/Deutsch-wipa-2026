@@ -190,3 +190,37 @@ Build marker:
 ```text
 dashboard-interface-structured-2026-05-29
 ```
+
+
+## All modules active
+
+This build makes every planned module selectable with starter practice data.
+
+Active modules:
+
+```text
+Kapitel vocabulary
+Präpositionalverben
+Kasusergänzungen
+Starke Verben
+Trennbare Verben
+Präpositionen
+Nomen · Artikel · Plural
+Adjektivdeklination
+Pronomen
+Konnektoren / Nebensätze
+```
+
+Non-vocabulary modules use a generic grammar cycle:
+
+```text
+1. Learn the pattern
+2. Meaning
+3. Prompt practice
+```
+
+Build marker:
+
+```text
+all-modules-active-dashboard-2026-05-29
+```

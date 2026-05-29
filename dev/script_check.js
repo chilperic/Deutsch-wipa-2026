@@ -1,5 +1,5 @@
 'use strict';
-window.VOKABULAR_BUILD = 'dashboard-interface-structured-2026-05-29';
+window.VOKABULAR_BUILD = 'all-modules-active-dashboard-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
@@ -33,8 +33,8 @@ const MODULES = {
     icon:'▤',
     status:'planned',
     countLabel:'planned',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   starke_verben: {
     id:'starke_verben',
@@ -44,8 +44,8 @@ const MODULES = {
     icon:'ϟ',
     status:'planned',
     countLabel:'planned',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   trennbare_verben: {
     id:'trennbare_verben',
@@ -55,8 +55,8 @@ const MODULES = {
     icon:'⇄',
     status:'planned',
     countLabel:'coming soon',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   praepositionen: {
     id:'praepositionen',
@@ -66,8 +66,8 @@ const MODULES = {
     icon:'⌖',
     status:'planned',
     countLabel:'coming soon',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   nomen_artikel_plural: {
     id:'nomen_artikel_plural',
@@ -77,8 +77,8 @@ const MODULES = {
     icon:'A',
     status:'planned',
     countLabel:'coming soon',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   adjektivdeklination: {
     id:'adjektivdeklination',
@@ -88,8 +88,8 @@ const MODULES = {
     icon:'Aa',
     status:'planned',
     countLabel:'coming soon',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   pronomen: {
     id:'pronomen',
@@ -99,8 +99,8 @@ const MODULES = {
     icon:'○',
     status:'planned',
     countLabel:'coming soon',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   },
   konnektoren_nebensaetze: {
     id:'konnektoren_nebensaetze',
@@ -110,14 +110,14 @@ const MODULES = {
     icon:'∞',
     status:'planned',
     countLabel:'coming soon',
-    engines:[],
-    defaultMode:''
+    engines:['grammar_full','grammar_prompt','grammar_meaning'],
+    defaultMode:'grammar_full'
   }
 };
-const ACTIVE_MODULE_IDS = ['vocab','prepverbs'];
+const ACTIVE_MODULE_IDS = ['vocab','prepverbs','kasusergaenzungen','starke_verben','trennbare_verben','praepositionen','nomen_artikel_plural','adjektivdeklination','pronomen','konnektoren_nebensaetze'];
 const MODE_LABELS = {
   full:'Full cycle', article:'Article only', meaning:'Meaning only', plural:'Plural only', active:'Active recall', sentence:'Sentence gaps',
-  prep_full:'Full grammar cycle', prep_gap:'Preposition gaps', prep_case:'Case recall', prep_meaning:'Meaning only'
+  prep_full:'Full grammar cycle', prep_gap:'Preposition gaps', prep_case:'Case recall', prep_meaning:'Meaning only', grammar_full:'Full module cycle', grammar_prompt:'Practice prompt', grammar_meaning:'Meaning only'
 };
 const DEFAULT_DB = {modules:{vocab:{items:[],sets:[]},prepverbs:{items:[],sets:['all']}}};
 const DEFAULT_USER = {module:'vocab',set:'all',mode:'full',lang:'English',size:'10',audience:'student'};
@@ -148,6 +148,9 @@ function ensureShape(){
   DB.modules = DB.modules || {};
   DB.modules.vocab = DB.modules.vocab || {items:[],sets:[]};
   DB.modules.prepverbs = DB.modules.prepverbs || {items:[],sets:['all']};
+  ['kasusergaenzungen','starke_verben','trennbare_verben','praepositionen','nomen_artikel_plural','adjektivdeklination','pronomen','konnektoren_nebensaetze'].forEach(id=>{
+    DB.modules[id] = DB.modules[id] || {items:[],sets:['all']};
+  });
   P.progress = P.progress || {};
   P.history = P.history || [];
   if(!ACTIVE_MODULE_IDS.includes(USER.module)) USER.module='vocab';
@@ -173,6 +176,7 @@ async function reloadAll(){
   $('load-status').textContent='Loading learning files…';
   await loadVocabFiles();
   await loadPrepVerbFile();
+  await loadGenericGrammarModules();
   save();
   renderMenu();
   const total = Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
@@ -201,6 +205,48 @@ async function loadPrepVerbFile(){
     DB.modules.prepverbs={items:(j.items||[]).map(normalizePrepVerb),sets:['all']};
   } catch(e){ console.warn('Could not load',url,e); DB.modules.prepverbs={items:[],sets:['all']}; }
 }
+
+async function loadGenericGrammarModules(){
+  const files = {
+    kasusergaenzungen:'kasusergaenzungen.json',
+    starke_verben:'starke_verben.json',
+    trennbare_verben:'trennbare_verben.json',
+    praepositionen:'praepositionen.json',
+    nomen_artikel_plural:'nomen_artikel_plural.json',
+    adjektivdeklination:'adjektivdeklination.json',
+    pronomen:'pronomen.json',
+    konnektoren_nebensaetze:'konnektoren_nebensaetze.json'
+  };
+  for(const [id, file] of Object.entries(files)){
+    const url = `grammatik/${file}`;
+    try{
+      const r = await fetch(url,{cache:'no-store'});
+      if(!r.ok){ DB.modules[id] = {items:[],sets:['all']}; continue; }
+      const j = await r.json();
+      DB.modules[id] = {items:(j.items||[]).map(x=>normalizeGenericGrammar(x,id)),sets:['all']};
+    } catch(e){
+      console.warn('Could not load',url,e);
+      DB.modules[id] = {items:[],sets:['all']};
+    }
+  }
+}
+function normalizeGenericGrammar(x,moduleId){
+  return {
+    ...x,
+    module: moduleId,
+    set: 'all',
+    id: x.id || `${moduleId}_${Math.random().toString(36).slice(2)}`,
+    word: x.display || x.prompt || x.answer,
+    data: {
+      translations: x.meaning || {},
+      grammar: {type:x.type || 'grammar_item', case:x.case || '', answer:x.answer || ''},
+      example_de: x.example?.de || '',
+      example_translated: x.example || {},
+      grammar_clarification: {English:`${x.display || x.prompt}: ${x.case || 'grammar pattern'}`, German:`${x.display || x.prompt}: ${x.case || 'Grammatikmuster'}`}
+    }
+  };
+}
+
 function normalizeVocab(w,chapter){ return {...w,module:'vocab',set:String(chapter),chapter:String(chapter),id:w.id || `k${chapter}_${Math.random().toString(36).slice(2)}`}; }
 function normalizePrepVerb(x){
   return {
@@ -227,11 +273,11 @@ function renderMenu(){
   $('module-cards').innerHTML=Object.values(MODULES).map(m=>{
     const active = ACTIVE_MODULE_IDS.includes(m.id);
     const count=(DB.modules[m.id]?.items||[]).length;
-    const countText = active ? (count ? count + ' items' : 'not loaded yet') : (m.countLabel || 'coming soon');
+    const countText = active ? (count ? count + ' items' : 'not loaded yet') : (count ? count + ' items' : 'not loaded yet');
     return `<div class="module-card ${USER.module===m.id?'on':''} ${active?'is-active':'is-planned'}" data-module="${active?m.id:''}" ${active?'':'aria-disabled="true"'}>
       <div class="mod-top">
         <span class="mod-number">${m.n}</span>
-        <span class="mod-status ${active?'active':'planned'}">${active?'Active':'Planned'}</span>
+        <span class="mod-status ${active?'active':'planned'}">${active?'Active':'Active'}</span>
       </div>
       <div class="mod-icon">${h(m.icon)}</div>
       <b>${h(m.title)}</b>
@@ -315,12 +361,19 @@ function buildSessionQueue(items){
       {item,qType:'prep_case'}
     ]);
   }
+  if(USER.module!=='vocab' && USER.module!=='prepverbs' && USER.mode==='grammar_full'){
+    return items.flatMap(item=>[
+      {item,qType:'grammar_learn'},
+      {item,qType:'meaning'},
+      {item,qType:'grammar_prompt'}
+    ]);
+  }
   return items.map(item=>({item,qType:null}));
 }
 function restartSession(){ if(Q?.originalItems) startSession(Q.originalItems); }
 function startWeakReview(){ const arr=weakItems(); if(!arr.length){alert('No weak items yet.'); return;} startSession(arr); }
 function nextQuestion(){ if(Q.i>=Q.queue.length) return finishSession(); const entry=Q.queue[Q.i]; Q.cur=entry.item||entry; Q.question=makeQuestion(Q.cur, entry.qType); renderQuestion(); }
-function makeQuestion(item, forcedType=null){ if(forcedType) return {type:forcedType}; return USER.module==='prepverbs' ? prepEngine(item) : vocabEngine(item); }
+function makeQuestion(item, forcedType=null){ if(forcedType) return {type:forcedType}; if(USER.module==='prepverbs') return prepEngine(item); if(USER.module!=='vocab') return genericGrammarEngine(item); return vocabEngine(item); }
 function vocabEngine(item){
   const mode=USER.mode, c=[];
   if((mode==='full'||mode==='article') && artOf(item)) c.push({type:'article'});
@@ -337,6 +390,13 @@ function prepEngine(item){
   if(USER.mode==='prep_meaning') return {type:'meaning'};
   return {type:'prep_learn'};
 }
+
+function genericGrammarEngine(item){
+  if(USER.mode==='grammar_prompt'||USER.mode==='grammar_full') return {type:'grammar_prompt'};
+  if(USER.mode==='grammar_meaning') return {type:'meaning'};
+  return {type:'grammar_prompt'};
+}
+
 function renderQuestion(){
   const it=Q.cur, q=Q.question;
   $('b-module').textContent=MODULES[USER.module].title;
@@ -350,8 +410,10 @@ function renderQuestion(){
   if(q.type==='active') out+=typeView('Active recall', 'Type the German word/expression');
   if(q.type==='sentence') out+=sentenceView(it);
   if(q.type==='prep_learn') out+=prepLearnView(it);
+  if(q.type==='grammar_learn') out+=genericLearnView(it);
   if(q.type==='prep_gap') out+=prepGapView(it);
   if(q.type==='prep_case') out+=typeView('Case recall', `${h(it.lemma || baseOf(it))} ${h(it.preposition)} + ?`);
+  if(q.type==='grammar_prompt') out+=genericPromptView(it);
   $('qcard').innerHTML=out;
   const inp=$('answer-input'); if(inp) setTimeout(()=>inp.focus(),0);
 }
@@ -362,6 +424,7 @@ function displayMainForQuestion(it,q){
     if(q.type==='meaning') return it.display || it.lemma || baseOf(it);
     if(q.type==='prep_learn') return it.lemma || baseOf(it);
   }
+  if(it.module && it.module!=='vocab') return it.display || baseOf(it);
   return baseOf(it);
 }
 function displaySubForQuestion(it,q){
@@ -371,6 +434,7 @@ function displaySubForQuestion(it,q){
     if(q.type==='prep_learn') return 'learn the pattern first';
     return 'prepositional verb';
   }
+  if(it.module && it.module!=='vocab') return it.case || it.type || 'grammar practice';
   return it.notes || it.display || '';
 }
 function articleView(){ return `<div class="phase">Choose the article</div><div class="artgrid">${['der','die','das','—'].map(a=>`<button class="artbtn ${a}" data-answer="${h(a)}">${h(a)}</button>`).join('')}</div>`; }
@@ -402,6 +466,29 @@ function prepLearnView(it){
     </div>`;
 }
 
+
+function genericLearnView(it){
+  const ex = it.example?.de || it.data?.example_de || '';
+  const meaning = trOf(it);
+  return `<div class="phase">Learn the item</div>
+    <div class="learn-card">
+      <div class="learn-pattern">${h(it.display || baseOf(it))}</div>
+      <div class="learn-meta">Meaning: ${h(meaning)}${it.case ? `<br>Focus: <b>${h(it.case)}</b>` : ''}</div>
+      ${ex ? `<div class="learn-example">${h(ex)}</div>` : ''}
+    </div>
+    <div class="row g8" style="justify-content:center;margin-top:14px">
+      <button class="btn btn-gold" id="btn-learn-continue" type="button">Continue to practice</button>
+    </div>`;
+}
+function genericPromptView(it){
+  return `<div class="phase">Grammar practice</div>
+    <div class="gap-sentence">${h(it.prompt || it.display || '').replace('___','<span class="gap-blank">___</span>')}</div>
+    <input class="type-input" id="answer-input" placeholder="type your answer">
+    <div class="row g8" style="justify-content:center;margin-top:10px">
+      <button class="btn btn-gold" id="btn-check" type="button">Check</button>
+    </div>`;
+}
+
 function pluralAnswers(it){ const g=it.data?.grammar||{}; return [g.plural,g.plural_hint,derivePlural(it)].filter(Boolean); }
 function derivePlural(it){
   const g=it.data?.grammar||{}, b=g.base||baseOf(it), ph=String(g.plural_hint||'');
@@ -418,6 +505,8 @@ function expectedAnswers(){
   if(t==='active') return activeAnswers(it);
   if(t==='sentence') return [Q.sentenceAnswer];
   if(t==='prep_learn') return ['continue'];
+  if(t==='grammar_learn') return ['continue'];
+  if(t==='grammar_prompt') return [it.answer];
   if(t==='prep_gap') return [it.preposition];
   if(t==='prep_case') return [it.case, it.case==='Akkusativ'?'Akk':'Dat'];
   return [];
@@ -442,6 +531,7 @@ function diagnose(type,it,exp,got){
   if(type==='plural') return `Plural: learn the full form with article. ${h(it.word||baseOf(it))} → ${h(exp)}.`;
   if(type==='prep_gap') return `${h(it.display)} requires “${h(it.preposition)} + ${h(it.case)}”.`;
   if(type==='prep_case') return `Case recall: ${h(it.display)} uses ${h(it.case)}.`;
+  if(type==='grammar_prompt') return `Pattern practice: expected “${h(exp)}”. ${it.case ? 'Focus: '+h(it.case)+'.' : ''}`;
   if(type==='article') return `Article mistake: German nouns need gender. Correct: ${h(exp)}.`;
   return `Active recall needs production. Your answer: ${h(got||'—')}.`;
 }

@@ -1,7 +1,67 @@
 {
   "module": "adjektivdeklination",
-  "title": "Adjective declension",
-  "status": "planned",
-  "description": "Adjective declension: definite, indefinite and zero article patterns.",
-  "items": []
+  "title": "Adjektivdeklination",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "adj_der_gute_mann",
+      "type": "adjective_declension",
+      "display": "der gute Mann",
+      "meaning": {
+        "English": "the good man",
+        "German": "der gute Mann"
+      },
+      "prompt": "der ___ Mann · gut",
+      "answer": "gute",
+      "case": "Nominativ maskulin bestimmt",
+      "example": {
+        "de": "Der gute Mann hilft."
+      }
+    },
+    {
+      "id": "adj_ein_guter_mann",
+      "type": "adjective_declension",
+      "display": "ein guter Mann",
+      "meaning": {
+        "English": "a good man",
+        "German": "ein guter Mann"
+      },
+      "prompt": "ein ___ Mann · gut",
+      "answer": "guter",
+      "case": "Nominativ maskulin unbestimmt",
+      "example": {
+        "de": "Ein guter Mann hilft."
+      }
+    },
+    {
+      "id": "adj_mit_dem_guten_mann",
+      "type": "adjective_declension",
+      "display": "mit dem guten Mann",
+      "meaning": {
+        "English": "with the good man",
+        "German": "mit dem guten Mann"
+      },
+      "prompt": "mit dem ___ Mann · gut",
+      "answer": "guten",
+      "case": "Dativ maskulin bestimmt",
+      "example": {
+        "de": "Ich spreche mit dem guten Mann."
+      }
+    },
+    {
+      "id": "adj_gute_freunde",
+      "type": "adjective_declension",
+      "display": "gute Freunde",
+      "meaning": {
+        "English": "good friends",
+        "German": "gute Freunde"
+      },
+      "prompt": "___ Freunde · gut",
+      "answer": "gute",
+      "case": "Plural ohne Artikel",
+      "example": {
+        "de": "Gute Freunde helfen."
+      }
+    }
+  ]
 }

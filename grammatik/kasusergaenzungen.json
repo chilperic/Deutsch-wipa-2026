@@ -1,7 +1,67 @@
 {
   "module": "kasusergaenzungen",
-  "title": "Verb complements",
-  "status": "planned",
-  "description": "Verb complements: Nominativ, Akkusativ, Dativ, Dativ+Akkusativ, Direktiv/Situativ.",
-  "items": []
+  "title": "Kasusergänzungen",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "kg_helfen_dat",
+      "type": "case_complement",
+      "display": "helfen + Dativ",
+      "meaning": {
+        "English": "to help someone",
+        "German": "jemandem helfen"
+      },
+      "prompt": "Ich helfe ___ Mann.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich helfe dem Mann."
+      }
+    },
+    {
+      "id": "kg_fragen_akk",
+      "type": "case_complement",
+      "display": "fragen + Akkusativ",
+      "meaning": {
+        "English": "to ask someone",
+        "German": "jemanden fragen"
+      },
+      "prompt": "Ich frage ___ Lehrer.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich frage den Lehrer."
+      }
+    },
+    {
+      "id": "kg_gehoeren_dat",
+      "type": "case_complement",
+      "display": "gehören + Dativ",
+      "meaning": {
+        "English": "to belong to someone",
+        "German": "jemandem gehören"
+      },
+      "prompt": "Das Buch gehört ___ Frau.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Das Buch gehört der Frau."
+      }
+    },
+    {
+      "id": "kg_geben_dat_akk",
+      "type": "case_complement",
+      "display": "geben + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to give someone something",
+        "German": "jemandem etwas geben"
+      },
+      "prompt": "Ich gebe ___ Kind ein Buch.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Ich gebe dem Kind ein Buch."
+      }
+    }
+  ]
 }

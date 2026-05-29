@@ -1,11 +1,17 @@
 {
   "project": "Deutsch-wipa-2026",
   "final_package": true,
-  "build": "dashboard-interface-structured-2026-05-29",
+  "build": "all-modules-active-dashboard-2026-05-29",
   "structure": "Deutsch-wipa-2026_structured",
   "active_modules": [
-    "vokabular",
-    "praepositionalverben"
+    "kasusergaenzungen.json",
+    "starke_verben.json",
+    "trennbare_verben.json",
+    "praepositionen.json",
+    "nomen_artikel_plural.json",
+    "adjektivdeklination.json",
+    "pronomen.json",
+    "konnektoren_nebensaetze.json"
   ],
   "planned_grammar_modules": [
     "kasusergaenzungen",
@@ -64,5 +70,6 @@
       "pronomen",
       "konnektoren_nebensaetze"
     ]
-  }
+  },
+  "note": "All grammar modules have starter datasets and are selectable through the generic grammar engine."
 }

@@ -1,7 +1,67 @@
 {
   "module": "pronomen",
-  "title": "Personal, reflexive, possessive, relative and demonstrative pronouns.",
-  "status": "planned",
-  "description": "Personal, reflexive, possessive, relative and demonstrative pronouns.",
-  "items": []
+  "title": "Pronomen",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "pro_ich_dat",
+      "type": "pronoun",
+      "display": "ich → mir",
+      "meaning": {
+        "English": "I → to me",
+        "German": "ich → mir"
+      },
+      "prompt": "Dativ von ich?",
+      "answer": "mir",
+      "case": "Dativ",
+      "example": {
+        "de": "Das gehört mir."
+      }
+    },
+    {
+      "id": "pro_du_akk",
+      "type": "pronoun",
+      "display": "du → dich",
+      "meaning": {
+        "English": "you → you",
+        "German": "du → dich"
+      },
+      "prompt": "Akkusativ von du?",
+      "answer": "dich",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich sehe dich."
+      }
+    },
+    {
+      "id": "pro_er_dat",
+      "type": "pronoun",
+      "display": "er → ihm",
+      "meaning": {
+        "English": "he → to him",
+        "German": "er → ihm"
+      },
+      "prompt": "Dativ von er?",
+      "answer": "ihm",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich helfe ihm."
+      }
+    },
+    {
+      "id": "pro_reflexiv_ich",
+      "type": "pronoun",
+      "display": "ich → mich",
+      "meaning": {
+        "English": "myself",
+        "German": "mich"
+      },
+      "prompt": "Ich wasche ___.",
+      "answer": "mich",
+      "case": "Reflexivpronomen",
+      "example": {
+        "de": "Ich wasche mich."
+      }
+    }
+  ]
 }

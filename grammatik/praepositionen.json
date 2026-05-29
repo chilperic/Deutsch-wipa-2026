@@ -1,7 +1,67 @@
 {
   "module": "praepositionen",
-  "title": "Prepositions by case",
-  "status": "planned",
-  "description": "Prepositions by case: Akkusativ, Dativ, Genitiv, Wechselpräpositionen.",
-  "items": []
+  "title": "Präpositionen",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "pr_mit_dat",
+      "type": "preposition",
+      "display": "mit + Dativ",
+      "meaning": {
+        "English": "with",
+        "German": "mit"
+      },
+      "prompt": "Ich fahre ___ dem Bus.",
+      "answer": "mit",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich fahre mit dem Bus."
+      }
+    },
+    {
+      "id": "pr_fuer_akk",
+      "type": "preposition",
+      "display": "für + Akkusativ",
+      "meaning": {
+        "English": "for",
+        "German": "für"
+      },
+      "prompt": "Das Geschenk ist ___ dich.",
+      "answer": "für",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Das Geschenk ist für dich."
+      }
+    },
+    {
+      "id": "pr_wegen_gen",
+      "type": "preposition",
+      "display": "wegen + Genitiv",
+      "meaning": {
+        "English": "because of",
+        "German": "wegen"
+      },
+      "prompt": "___ des Regens bleiben wir zu Hause.",
+      "answer": "wegen",
+      "case": "Genitiv",
+      "example": {
+        "de": "Wegen des Regens bleiben wir zu Hause."
+      }
+    },
+    {
+      "id": "pr_in_wechsel",
+      "type": "preposition",
+      "display": "in + Akkusativ/Dativ",
+      "meaning": {
+        "English": "in / into",
+        "German": "in"
+      },
+      "prompt": "Ich gehe ___ die Schule.",
+      "answer": "in",
+      "case": "Wechselpräposition",
+      "example": {
+        "de": "Ich gehe in die Schule."
+      }
+    }
+  ]
 }

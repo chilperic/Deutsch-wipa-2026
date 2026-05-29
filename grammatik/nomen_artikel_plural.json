@@ -1,7 +1,67 @@
 {
   "module": "nomen_artikel_plural",
-  "title": "Nouns, gender, plural, n-declension and article practice.",
-  "status": "planned",
-  "description": "Nouns, gender, plural, n-declension and article practice.",
-  "items": []
+  "title": "Nomen · Artikel · Plural",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "nap_vertrag",
+      "type": "noun_pattern",
+      "display": "der Vertrag → die Verträge",
+      "meaning": {
+        "English": "contract",
+        "German": "der Vertrag"
+      },
+      "prompt": "Plural von der Vertrag?",
+      "answer": "die Verträge",
+      "case": "Plural",
+      "example": {
+        "de": "Ich unterschreibe den Vertrag."
+      }
+    },
+    {
+      "id": "nap_pruefung",
+      "type": "noun_pattern",
+      "display": "die Prüfung → die Prüfungen",
+      "meaning": {
+        "English": "exam",
+        "German": "die Prüfung"
+      },
+      "prompt": "Plural von die Prüfung?",
+      "answer": "die Prüfungen",
+      "case": "Plural",
+      "example": {
+        "de": "Die Prüfung ist schwer."
+      }
+    },
+    {
+      "id": "nap_praktikum",
+      "type": "noun_pattern",
+      "display": "das Praktikum → die Praktika",
+      "meaning": {
+        "English": "internship",
+        "German": "das Praktikum"
+      },
+      "prompt": "Plural von das Praktikum?",
+      "answer": "die Praktika",
+      "case": "Plural",
+      "example": {
+        "de": "Das Praktikum dauert drei Monate."
+      }
+    },
+    {
+      "id": "nap_patient",
+      "type": "noun_pattern",
+      "display": "der Patient → den Patienten",
+      "meaning": {
+        "English": "patient",
+        "German": "der Patient"
+      },
+      "prompt": "Akkusativ von der Patient?",
+      "answer": "den Patienten",
+      "case": "n-Deklination",
+      "example": {
+        "de": "Der Arzt untersucht den Patienten."
+      }
+    }
+  ]
 }

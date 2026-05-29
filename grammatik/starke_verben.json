@@ -1,7 +1,67 @@
 {
   "module": "starke_verben",
-  "title": "Strong/irregular verbs",
-  "status": "planned",
-  "description": "Strong/irregular verbs: infinitive, Präsens, Präteritum, Perfekt, Partizip II.",
-  "items": []
+  "title": "Starke Verben",
+  "status": "active-starter",
+  "items": [
+    {
+      "id": "sv_gehen",
+      "type": "strong_verb",
+      "display": "gehen → ging → ist gegangen",
+      "meaning": {
+        "English": "to go",
+        "German": "gehen"
+      },
+      "prompt": "gehen · Präteritum?",
+      "answer": "ging",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern ging ich nach Hause."
+      }
+    },
+    {
+      "id": "sv_schreiben",
+      "type": "strong_verb",
+      "display": "schreiben → schrieb → geschrieben",
+      "meaning": {
+        "English": "to write",
+        "German": "schreiben"
+      },
+      "prompt": "schreiben · Partizip II?",
+      "answer": "geschrieben",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe eine E-Mail geschrieben."
+      }
+    },
+    {
+      "id": "sv_nehmen",
+      "type": "strong_verb",
+      "display": "nehmen → nahm → genommen",
+      "meaning": {
+        "English": "to take",
+        "German": "nehmen"
+      },
+      "prompt": "nehmen · Präteritum?",
+      "answer": "nahm",
+      "case": "Präteritum",
+      "example": {
+        "de": "Er nahm den Bus."
+      }
+    },
+    {
+      "id": "sv_finden",
+      "type": "strong_verb",
+      "display": "finden → fand → gefunden",
+      "meaning": {
+        "English": "to find",
+        "German": "finden"
+      },
+      "prompt": "finden · Partizip II?",
+      "answer": "gefunden",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe den Schlüssel gefunden."
+      }
+    }
+  ]
 }
