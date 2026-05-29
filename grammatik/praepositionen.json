@@ -1,10 +1,10 @@
 {
   "module": "praepositionen",
   "title": "Präpositionen",
-  "status": "active-starter",
+  "status": "active-expanded",
   "items": [
     {
-      "id": "pr_mit_dat",
+      "id": "pr_mit_Dativ_0",
       "type": "preposition",
       "display": "mit + Dativ",
       "meaning": {
@@ -19,48 +19,888 @@
       }
     },
     {
-      "id": "pr_fuer_akk",
+      "id": "pr_nach_Dativ_1",
+      "type": "preposition",
+      "display": "nach + Dativ",
+      "meaning": {
+        "English": "to/after",
+        "German": "nach"
+      },
+      "prompt": "Ich fahre ___ Deutschland.",
+      "answer": "nach",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich fahre nach Deutschland."
+      }
+    },
+    {
+      "id": "pr_aus_Dativ_2",
+      "type": "preposition",
+      "display": "aus + Dativ",
+      "meaning": {
+        "English": "from",
+        "German": "aus"
+      },
+      "prompt": "Er kommt ___ Kamerun.",
+      "answer": "aus",
+      "case": "Dativ",
+      "example": {
+        "de": "Er kommt aus Kamerun."
+      }
+    },
+    {
+      "id": "pr_bei_Dativ_3",
+      "type": "preposition",
+      "display": "bei + Dativ",
+      "meaning": {
+        "English": "at/with",
+        "German": "bei"
+      },
+      "prompt": "Ich wohne ___ meiner Schwester.",
+      "answer": "bei",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich wohne bei meiner Schwester."
+      }
+    },
+    {
+      "id": "pr_von_Dativ_4",
+      "type": "preposition",
+      "display": "von + Dativ",
+      "meaning": {
+        "English": "from/of",
+        "German": "von"
+      },
+      "prompt": "Das Geschenk ist ___ meinem Freund.",
+      "answer": "von",
+      "case": "Dativ",
+      "example": {
+        "de": "Das Geschenk ist von meinem Freund."
+      }
+    },
+    {
+      "id": "pr_zu_Dativ_5",
+      "type": "preposition",
+      "display": "zu + Dativ",
+      "meaning": {
+        "English": "to",
+        "German": "zu"
+      },
+      "prompt": "Ich gehe ___ der Ärztin.",
+      "answer": "zu",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich gehe zu der Ärztin."
+      }
+    },
+    {
+      "id": "pr_seit_Dativ_6",
+      "type": "preposition",
+      "display": "seit + Dativ",
+      "meaning": {
+        "English": "since/for",
+        "German": "seit"
+      },
+      "prompt": "Ich lerne Deutsch ___ einem Jahr.",
+      "answer": "seit",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich lerne Deutsch seit einem Jahr."
+      }
+    },
+    {
+      "id": "pr_gegenüber_Dativ_7",
+      "type": "preposition",
+      "display": "gegenüber + Dativ",
+      "meaning": {
+        "English": "opposite",
+        "German": "gegenüber"
+      },
+      "prompt": "Die Bank liegt ___ dem Bahnhof.",
+      "answer": "gegenüber",
+      "case": "Dativ",
+      "example": {
+        "de": "Die Bank liegt gegenüber dem Bahnhof."
+      }
+    },
+    {
+      "id": "pr_für_Akkusativ_8",
       "type": "preposition",
       "display": "für + Akkusativ",
       "meaning": {
         "English": "for",
         "German": "für"
       },
-      "prompt": "Das Geschenk ist ___ dich.",
+      "prompt": "Das ist ___ dich.",
       "answer": "für",
       "case": "Akkusativ",
       "example": {
-        "de": "Das Geschenk ist für dich."
+        "de": "Das ist für dich."
       }
     },
     {
-      "id": "pr_wegen_gen",
+      "id": "pr_durch_Akkusativ_9",
+      "type": "preposition",
+      "display": "durch + Akkusativ",
+      "meaning": {
+        "English": "through",
+        "German": "durch"
+      },
+      "prompt": "Wir gehen ___ den Park.",
+      "answer": "durch",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir gehen durch den Park."
+      }
+    },
+    {
+      "id": "pr_ohne_Akkusativ_10",
+      "type": "preposition",
+      "display": "ohne + Akkusativ",
+      "meaning": {
+        "English": "without",
+        "German": "ohne"
+      },
+      "prompt": "Ich komme ___ meinen Bruder.",
+      "answer": "ohne",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich komme ohne meinen Bruder."
+      }
+    },
+    {
+      "id": "pr_um_Akkusativ_11",
+      "type": "preposition",
+      "display": "um + Akkusativ",
+      "meaning": {
+        "English": "around/at",
+        "German": "um"
+      },
+      "prompt": "Wir sitzen ___ den Tisch.",
+      "answer": "um",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir sitzen um den Tisch."
+      }
+    },
+    {
+      "id": "pr_gegen_Akkusativ_12",
+      "type": "preposition",
+      "display": "gegen + Akkusativ",
+      "meaning": {
+        "English": "against",
+        "German": "gegen"
+      },
+      "prompt": "Das Auto fährt ___ die Wand.",
+      "answer": "gegen",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Das Auto fährt gegen die Wand."
+      }
+    },
+    {
+      "id": "pr_bis_Akkusativ_13",
+      "type": "preposition",
+      "display": "bis + Akkusativ",
+      "meaning": {
+        "English": "until",
+        "German": "bis"
+      },
+      "prompt": "Ich bleibe ___ nächsten Montag.",
+      "answer": "bis",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich bleibe bis nächsten Montag."
+      }
+    },
+    {
+      "id": "pr_entlang_Akkusativ_14",
+      "type": "preposition",
+      "display": "entlang + Akkusativ",
+      "meaning": {
+        "English": "along",
+        "German": "entlang"
+      },
+      "prompt": "Wir gehen die Straße ___.",
+      "answer": "entlang",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir gehen die Straße entlang."
+      }
+    },
+    {
+      "id": "pr_wegen_Genitiv_15",
       "type": "preposition",
       "display": "wegen + Genitiv",
       "meaning": {
         "English": "because of",
         "German": "wegen"
       },
-      "prompt": "___ des Regens bleiben wir zu Hause.",
+      "prompt": "___ des Wetters bleiben wir zu Hause.",
       "answer": "wegen",
       "case": "Genitiv",
       "example": {
-        "de": "Wegen des Regens bleiben wir zu Hause."
+        "de": "wegen des Wetters bleiben wir zu Hause."
       }
     },
     {
-      "id": "pr_in_wechsel",
+      "id": "pr_trotz_Genitiv_16",
       "type": "preposition",
-      "display": "in + Akkusativ/Dativ",
+      "display": "trotz + Genitiv",
       "meaning": {
-        "English": "in / into",
+        "English": "despite",
+        "German": "trotz"
+      },
+      "prompt": "___ des Regens gehen wir spazieren.",
+      "answer": "trotz",
+      "case": "Genitiv",
+      "example": {
+        "de": "trotz des Regens gehen wir spazieren."
+      }
+    },
+    {
+      "id": "pr_während_Genitiv_17",
+      "type": "preposition",
+      "display": "während + Genitiv",
+      "meaning": {
+        "English": "during",
+        "German": "während"
+      },
+      "prompt": "___ des Kurses sprechen wir Deutsch.",
+      "answer": "während",
+      "case": "Genitiv",
+      "example": {
+        "de": "während des Kurses sprechen wir Deutsch."
+      }
+    },
+    {
+      "id": "pr_statt_Genitiv_18",
+      "type": "preposition",
+      "display": "statt + Genitiv",
+      "meaning": {
+        "English": "instead of",
+        "German": "statt"
+      },
+      "prompt": "___ eines Kaffees trinke ich Tee.",
+      "answer": "statt",
+      "case": "Genitiv",
+      "example": {
+        "de": "statt eines Kaffees trinke ich Tee."
+      }
+    },
+    {
+      "id": "pr_in_Wechsel_19",
+      "type": "preposition",
+      "display": "in + Wechsel",
+      "meaning": {
+        "English": "in/into",
         "German": "in"
       },
       "prompt": "Ich gehe ___ die Schule.",
       "answer": "in",
-      "case": "Wechselpräposition",
+      "case": "Wechsel",
       "example": {
         "de": "Ich gehe in die Schule."
+      }
+    },
+    {
+      "id": "pr_an_Wechsel_20",
+      "type": "preposition",
+      "display": "an + Wechsel",
+      "meaning": {
+        "English": "on/at",
+        "German": "an"
+      },
+      "prompt": "Ich hänge das Bild ___ die Wand.",
+      "answer": "an",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich hänge das Bild an die Wand."
+      }
+    },
+    {
+      "id": "pr_auf_Wechsel_21",
+      "type": "preposition",
+      "display": "auf + Wechsel",
+      "meaning": {
+        "English": "on",
+        "German": "auf"
+      },
+      "prompt": "Ich lege das Buch ___ den Tisch.",
+      "answer": "auf",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich lege das Buch auf den Tisch."
+      }
+    },
+    {
+      "id": "pr_unter_Wechsel_22",
+      "type": "preposition",
+      "display": "unter + Wechsel",
+      "meaning": {
+        "English": "under",
+        "German": "unter"
+      },
+      "prompt": "Die Tasche liegt ___ dem Tisch.",
+      "answer": "unter",
+      "case": "Wechsel",
+      "example": {
+        "de": "Die Tasche liegt unter dem Tisch."
+      }
+    },
+    {
+      "id": "pr_über_Wechsel_23",
+      "type": "preposition",
+      "display": "über + Wechsel",
+      "meaning": {
+        "English": "above",
+        "German": "über"
+      },
+      "prompt": "Die Lampe hängt ___ dem Tisch.",
+      "answer": "über",
+      "case": "Wechsel",
+      "example": {
+        "de": "Die Lampe hängt über dem Tisch."
+      }
+    },
+    {
+      "id": "pr_vor_Wechsel_24",
+      "type": "preposition",
+      "display": "vor + Wechsel",
+      "meaning": {
+        "English": "in front of",
+        "German": "vor"
+      },
+      "prompt": "Ich stelle mich ___ die Tür.",
+      "answer": "vor",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich stelle mich vor die Tür."
+      }
+    },
+    {
+      "id": "pr_hinter_Wechsel_25",
+      "type": "preposition",
+      "display": "hinter + Wechsel",
+      "meaning": {
+        "English": "behind",
+        "German": "hinter"
+      },
+      "prompt": "Das Auto steht ___ dem Haus.",
+      "answer": "hinter",
+      "case": "Wechsel",
+      "example": {
+        "de": "Das Auto steht hinter dem Haus."
+      }
+    },
+    {
+      "id": "pr_neben_Wechsel_26",
+      "type": "preposition",
+      "display": "neben + Wechsel",
+      "meaning": {
+        "English": "next to",
+        "German": "neben"
+      },
+      "prompt": "Ich setze mich ___ dich.",
+      "answer": "neben",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich setze mich neben dich."
+      }
+    },
+    {
+      "id": "pr_zwischen_Wechsel_27",
+      "type": "preposition",
+      "display": "zwischen + Wechsel",
+      "meaning": {
+        "English": "between",
+        "German": "zwischen"
+      },
+      "prompt": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "answer": "zwischen",
+      "case": "Wechsel",
+      "example": {
+        "de": "Der Stuhl steht zwischen dem Tisch und dem Bett."
+      }
+    },
+    {
+      "id": "pr_mit_Dativ_28",
+      "type": "preposition",
+      "display": "mit + Dativ",
+      "meaning": {
+        "English": "with",
+        "German": "mit"
+      },
+      "prompt": "Ich fahre ___ dem Bus.",
+      "answer": "mit",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich fahre mit dem Bus."
+      }
+    },
+    {
+      "id": "pr_nach_Dativ_29",
+      "type": "preposition",
+      "display": "nach + Dativ",
+      "meaning": {
+        "English": "to/after",
+        "German": "nach"
+      },
+      "prompt": "Ich fahre ___ Deutschland.",
+      "answer": "nach",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich fahre nach Deutschland."
+      }
+    },
+    {
+      "id": "pr_aus_Dativ_30",
+      "type": "preposition",
+      "display": "aus + Dativ",
+      "meaning": {
+        "English": "from",
+        "German": "aus"
+      },
+      "prompt": "Er kommt ___ Kamerun.",
+      "answer": "aus",
+      "case": "Dativ",
+      "example": {
+        "de": "Er kommt aus Kamerun."
+      }
+    },
+    {
+      "id": "pr_bei_Dativ_31",
+      "type": "preposition",
+      "display": "bei + Dativ",
+      "meaning": {
+        "English": "at/with",
+        "German": "bei"
+      },
+      "prompt": "Ich wohne ___ meiner Schwester.",
+      "answer": "bei",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich wohne bei meiner Schwester."
+      }
+    },
+    {
+      "id": "pr_von_Dativ_32",
+      "type": "preposition",
+      "display": "von + Dativ",
+      "meaning": {
+        "English": "from/of",
+        "German": "von"
+      },
+      "prompt": "Das Geschenk ist ___ meinem Freund.",
+      "answer": "von",
+      "case": "Dativ",
+      "example": {
+        "de": "Das Geschenk ist von meinem Freund."
+      }
+    },
+    {
+      "id": "pr_zu_Dativ_33",
+      "type": "preposition",
+      "display": "zu + Dativ",
+      "meaning": {
+        "English": "to",
+        "German": "zu"
+      },
+      "prompt": "Ich gehe ___ der Ärztin.",
+      "answer": "zu",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich gehe zu der Ärztin."
+      }
+    },
+    {
+      "id": "pr_seit_Dativ_34",
+      "type": "preposition",
+      "display": "seit + Dativ",
+      "meaning": {
+        "English": "since/for",
+        "German": "seit"
+      },
+      "prompt": "Ich lerne Deutsch ___ einem Jahr.",
+      "answer": "seit",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich lerne Deutsch seit einem Jahr."
+      }
+    },
+    {
+      "id": "pr_gegenüber_Dativ_35",
+      "type": "preposition",
+      "display": "gegenüber + Dativ",
+      "meaning": {
+        "English": "opposite",
+        "German": "gegenüber"
+      },
+      "prompt": "Die Bank liegt ___ dem Bahnhof.",
+      "answer": "gegenüber",
+      "case": "Dativ",
+      "example": {
+        "de": "Die Bank liegt gegenüber dem Bahnhof."
+      }
+    },
+    {
+      "id": "pr_für_Akkusativ_36",
+      "type": "preposition",
+      "display": "für + Akkusativ",
+      "meaning": {
+        "English": "for",
+        "German": "für"
+      },
+      "prompt": "Das ist ___ dich.",
+      "answer": "für",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Das ist für dich."
+      }
+    },
+    {
+      "id": "pr_durch_Akkusativ_37",
+      "type": "preposition",
+      "display": "durch + Akkusativ",
+      "meaning": {
+        "English": "through",
+        "German": "durch"
+      },
+      "prompt": "Wir gehen ___ den Park.",
+      "answer": "durch",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir gehen durch den Park."
+      }
+    },
+    {
+      "id": "pr_ohne_Akkusativ_38",
+      "type": "preposition",
+      "display": "ohne + Akkusativ",
+      "meaning": {
+        "English": "without",
+        "German": "ohne"
+      },
+      "prompt": "Ich komme ___ meinen Bruder.",
+      "answer": "ohne",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich komme ohne meinen Bruder."
+      }
+    },
+    {
+      "id": "pr_um_Akkusativ_39",
+      "type": "preposition",
+      "display": "um + Akkusativ",
+      "meaning": {
+        "English": "around/at",
+        "German": "um"
+      },
+      "prompt": "Wir sitzen ___ den Tisch.",
+      "answer": "um",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir sitzen um den Tisch."
+      }
+    },
+    {
+      "id": "pr_gegen_Akkusativ_40",
+      "type": "preposition",
+      "display": "gegen + Akkusativ",
+      "meaning": {
+        "English": "against",
+        "German": "gegen"
+      },
+      "prompt": "Das Auto fährt ___ die Wand.",
+      "answer": "gegen",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Das Auto fährt gegen die Wand."
+      }
+    },
+    {
+      "id": "pr_bis_Akkusativ_41",
+      "type": "preposition",
+      "display": "bis + Akkusativ",
+      "meaning": {
+        "English": "until",
+        "German": "bis"
+      },
+      "prompt": "Ich bleibe ___ nächsten Montag.",
+      "answer": "bis",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich bleibe bis nächsten Montag."
+      }
+    },
+    {
+      "id": "pr_entlang_Akkusativ_42",
+      "type": "preposition",
+      "display": "entlang + Akkusativ",
+      "meaning": {
+        "English": "along",
+        "German": "entlang"
+      },
+      "prompt": "Wir gehen die Straße ___.",
+      "answer": "entlang",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir gehen die Straße entlang."
+      }
+    },
+    {
+      "id": "pr_wegen_Genitiv_43",
+      "type": "preposition",
+      "display": "wegen + Genitiv",
+      "meaning": {
+        "English": "because of",
+        "German": "wegen"
+      },
+      "prompt": "___ des Wetters bleiben wir zu Hause.",
+      "answer": "wegen",
+      "case": "Genitiv",
+      "example": {
+        "de": "wegen des Wetters bleiben wir zu Hause."
+      }
+    },
+    {
+      "id": "pr_trotz_Genitiv_44",
+      "type": "preposition",
+      "display": "trotz + Genitiv",
+      "meaning": {
+        "English": "despite",
+        "German": "trotz"
+      },
+      "prompt": "___ des Regens gehen wir spazieren.",
+      "answer": "trotz",
+      "case": "Genitiv",
+      "example": {
+        "de": "trotz des Regens gehen wir spazieren."
+      }
+    },
+    {
+      "id": "pr_während_Genitiv_45",
+      "type": "preposition",
+      "display": "während + Genitiv",
+      "meaning": {
+        "English": "during",
+        "German": "während"
+      },
+      "prompt": "___ des Kurses sprechen wir Deutsch.",
+      "answer": "während",
+      "case": "Genitiv",
+      "example": {
+        "de": "während des Kurses sprechen wir Deutsch."
+      }
+    },
+    {
+      "id": "pr_statt_Genitiv_46",
+      "type": "preposition",
+      "display": "statt + Genitiv",
+      "meaning": {
+        "English": "instead of",
+        "German": "statt"
+      },
+      "prompt": "___ eines Kaffees trinke ich Tee.",
+      "answer": "statt",
+      "case": "Genitiv",
+      "example": {
+        "de": "statt eines Kaffees trinke ich Tee."
+      }
+    },
+    {
+      "id": "pr_in_Wechsel_47",
+      "type": "preposition",
+      "display": "in + Wechsel",
+      "meaning": {
+        "English": "in/into",
+        "German": "in"
+      },
+      "prompt": "Ich gehe ___ die Schule.",
+      "answer": "in",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich gehe in die Schule."
+      }
+    },
+    {
+      "id": "pr_an_Wechsel_48",
+      "type": "preposition",
+      "display": "an + Wechsel",
+      "meaning": {
+        "English": "on/at",
+        "German": "an"
+      },
+      "prompt": "Ich hänge das Bild ___ die Wand.",
+      "answer": "an",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich hänge das Bild an die Wand."
+      }
+    },
+    {
+      "id": "pr_auf_Wechsel_49",
+      "type": "preposition",
+      "display": "auf + Wechsel",
+      "meaning": {
+        "English": "on",
+        "German": "auf"
+      },
+      "prompt": "Ich lege das Buch ___ den Tisch.",
+      "answer": "auf",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich lege das Buch auf den Tisch."
+      }
+    },
+    {
+      "id": "pr_unter_Wechsel_50",
+      "type": "preposition",
+      "display": "unter + Wechsel",
+      "meaning": {
+        "English": "under",
+        "German": "unter"
+      },
+      "prompt": "Die Tasche liegt ___ dem Tisch.",
+      "answer": "unter",
+      "case": "Wechsel",
+      "example": {
+        "de": "Die Tasche liegt unter dem Tisch."
+      }
+    },
+    {
+      "id": "pr_über_Wechsel_51",
+      "type": "preposition",
+      "display": "über + Wechsel",
+      "meaning": {
+        "English": "above",
+        "German": "über"
+      },
+      "prompt": "Die Lampe hängt ___ dem Tisch.",
+      "answer": "über",
+      "case": "Wechsel",
+      "example": {
+        "de": "Die Lampe hängt über dem Tisch."
+      }
+    },
+    {
+      "id": "pr_vor_Wechsel_52",
+      "type": "preposition",
+      "display": "vor + Wechsel",
+      "meaning": {
+        "English": "in front of",
+        "German": "vor"
+      },
+      "prompt": "Ich stelle mich ___ die Tür.",
+      "answer": "vor",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich stelle mich vor die Tür."
+      }
+    },
+    {
+      "id": "pr_hinter_Wechsel_53",
+      "type": "preposition",
+      "display": "hinter + Wechsel",
+      "meaning": {
+        "English": "behind",
+        "German": "hinter"
+      },
+      "prompt": "Das Auto steht ___ dem Haus.",
+      "answer": "hinter",
+      "case": "Wechsel",
+      "example": {
+        "de": "Das Auto steht hinter dem Haus."
+      }
+    },
+    {
+      "id": "pr_neben_Wechsel_54",
+      "type": "preposition",
+      "display": "neben + Wechsel",
+      "meaning": {
+        "English": "next to",
+        "German": "neben"
+      },
+      "prompt": "Ich setze mich ___ dich.",
+      "answer": "neben",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich setze mich neben dich."
+      }
+    },
+    {
+      "id": "pr_zwischen_Wechsel_55",
+      "type": "preposition",
+      "display": "zwischen + Wechsel",
+      "meaning": {
+        "English": "between",
+        "German": "zwischen"
+      },
+      "prompt": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "answer": "zwischen",
+      "case": "Wechsel",
+      "example": {
+        "de": "Der Stuhl steht zwischen dem Tisch und dem Bett."
+      }
+    },
+    {
+      "id": "pr_mit_Dativ_56",
+      "type": "preposition",
+      "display": "mit + Dativ",
+      "meaning": {
+        "English": "with",
+        "German": "mit"
+      },
+      "prompt": "Ich fahre ___ dem Bus.",
+      "answer": "mit",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich fahre mit dem Bus."
+      }
+    },
+    {
+      "id": "pr_nach_Dativ_57",
+      "type": "preposition",
+      "display": "nach + Dativ",
+      "meaning": {
+        "English": "to/after",
+        "German": "nach"
+      },
+      "prompt": "Ich fahre ___ Deutschland.",
+      "answer": "nach",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich fahre nach Deutschland."
+      }
+    },
+    {
+      "id": "pr_aus_Dativ_58",
+      "type": "preposition",
+      "display": "aus + Dativ",
+      "meaning": {
+        "English": "from",
+        "German": "aus"
+      },
+      "prompt": "Er kommt ___ Kamerun.",
+      "answer": "aus",
+      "case": "Dativ",
+      "example": {
+        "de": "Er kommt aus Kamerun."
+      }
+    },
+    {
+      "id": "pr_bei_Dativ_59",
+      "type": "preposition",
+      "display": "bei + Dativ",
+      "meaning": {
+        "English": "at/with",
+        "German": "bei"
+      },
+      "prompt": "Ich wohne ___ meiner Schwester.",
+      "answer": "bei",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich wohne bei meiner Schwester."
       }
     }
   ]

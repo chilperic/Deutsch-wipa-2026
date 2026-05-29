@@ -1,10 +1,10 @@
 {
   "module": "nomen_artikel_plural",
   "title": "Nomen · Artikel · Plural",
-  "status": "active-starter",
+  "status": "active-expanded",
   "items": [
     {
-      "id": "nap_vertrag",
+      "id": "nap_pl_0",
       "type": "noun_pattern",
       "display": "der Vertrag → die Verträge",
       "meaning": {
@@ -15,11 +15,26 @@
       "answer": "die Verträge",
       "case": "Plural",
       "example": {
-        "de": "Ich unterschreibe den Vertrag."
+        "de": "Der vertrag ist wichtig."
       }
     },
     {
-      "id": "nap_pruefung",
+      "id": "nap_art_0",
+      "type": "noun_pattern",
+      "display": "der Vertrag",
+      "meaning": {
+        "English": "contract",
+        "German": "der Vertrag"
+      },
+      "prompt": "Artikel von Vertrag?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der vertrag ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_1",
       "type": "noun_pattern",
       "display": "die Prüfung → die Prüfungen",
       "meaning": {
@@ -30,11 +45,26 @@
       "answer": "die Prüfungen",
       "case": "Plural",
       "example": {
-        "de": "Die Prüfung ist schwer."
+        "de": "Die prüfung ist wichtig."
       }
     },
     {
-      "id": "nap_praktikum",
+      "id": "nap_art_1",
+      "type": "noun_pattern",
+      "display": "die Prüfung",
+      "meaning": {
+        "English": "exam",
+        "German": "die Prüfung"
+      },
+      "prompt": "Artikel von Prüfung?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die prüfung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_2",
       "type": "noun_pattern",
       "display": "das Praktikum → die Praktika",
       "meaning": {
@@ -45,22 +75,832 @@
       "answer": "die Praktika",
       "case": "Plural",
       "example": {
-        "de": "Das Praktikum dauert drei Monate."
+        "de": "Das praktikum ist wichtig."
       }
     },
     {
-      "id": "nap_patient",
+      "id": "nap_art_2",
       "type": "noun_pattern",
-      "display": "der Patient → den Patienten",
+      "display": "das Praktikum",
+      "meaning": {
+        "English": "internship",
+        "German": "das Praktikum"
+      },
+      "prompt": "Artikel von Praktikum?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das praktikum ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_3",
+      "type": "noun_pattern",
+      "display": "der Patient → die Patienten",
       "meaning": {
         "English": "patient",
         "German": "der Patient"
       },
-      "prompt": "Akkusativ von der Patient?",
-      "answer": "den Patienten",
-      "case": "n-Deklination",
+      "prompt": "Plural von der Patient?",
+      "answer": "die Patienten",
+      "case": "Plural",
       "example": {
-        "de": "Der Arzt untersucht den Patienten."
+        "de": "Der patient ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_3",
+      "type": "noun_pattern",
+      "display": "der Patient",
+      "meaning": {
+        "English": "patient",
+        "German": "der Patient"
+      },
+      "prompt": "Artikel von Patient?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der patient ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_4",
+      "type": "noun_pattern",
+      "display": "der Kollege → die Kollegen",
+      "meaning": {
+        "English": "colleague",
+        "German": "der Kollege"
+      },
+      "prompt": "Plural von der Kollege?",
+      "answer": "die Kollegen",
+      "case": "Plural",
+      "example": {
+        "de": "Der kollege ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_4",
+      "type": "noun_pattern",
+      "display": "der Kollege",
+      "meaning": {
+        "English": "colleague",
+        "German": "der Kollege"
+      },
+      "prompt": "Artikel von Kollege?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der kollege ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_5",
+      "type": "noun_pattern",
+      "display": "die Kollegin → die Kolleginnen",
+      "meaning": {
+        "English": "female colleague",
+        "German": "die Kollegin"
+      },
+      "prompt": "Plural von die Kollegin?",
+      "answer": "die Kolleginnen",
+      "case": "Plural",
+      "example": {
+        "de": "Die kollegin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_5",
+      "type": "noun_pattern",
+      "display": "die Kollegin",
+      "meaning": {
+        "English": "female colleague",
+        "German": "die Kollegin"
+      },
+      "prompt": "Artikel von Kollegin?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die kollegin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_6",
+      "type": "noun_pattern",
+      "display": "das Dokument → die Dokumente",
+      "meaning": {
+        "English": "document",
+        "German": "das Dokument"
+      },
+      "prompt": "Plural von das Dokument?",
+      "answer": "die Dokumente",
+      "case": "Plural",
+      "example": {
+        "de": "Das dokument ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_6",
+      "type": "noun_pattern",
+      "display": "das Dokument",
+      "meaning": {
+        "English": "document",
+        "German": "das Dokument"
+      },
+      "prompt": "Artikel von Dokument?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das dokument ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_7",
+      "type": "noun_pattern",
+      "display": "der Termin → die Termine",
+      "meaning": {
+        "English": "appointment",
+        "German": "der Termin"
+      },
+      "prompt": "Plural von der Termin?",
+      "answer": "die Termine",
+      "case": "Plural",
+      "example": {
+        "de": "Der termin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_7",
+      "type": "noun_pattern",
+      "display": "der Termin",
+      "meaning": {
+        "English": "appointment",
+        "German": "der Termin"
+      },
+      "prompt": "Artikel von Termin?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der termin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_8",
+      "type": "noun_pattern",
+      "display": "die Bewerbung → die Bewerbungen",
+      "meaning": {
+        "English": "application",
+        "German": "die Bewerbung"
+      },
+      "prompt": "Plural von die Bewerbung?",
+      "answer": "die Bewerbungen",
+      "case": "Plural",
+      "example": {
+        "de": "Die bewerbung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_8",
+      "type": "noun_pattern",
+      "display": "die Bewerbung",
+      "meaning": {
+        "English": "application",
+        "German": "die Bewerbung"
+      },
+      "prompt": "Artikel von Bewerbung?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die bewerbung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_9",
+      "type": "noun_pattern",
+      "display": "das Zeugnis → die Zeugnisse",
+      "meaning": {
+        "English": "certificate",
+        "German": "das Zeugnis"
+      },
+      "prompt": "Plural von das Zeugnis?",
+      "answer": "die Zeugnisse",
+      "case": "Plural",
+      "example": {
+        "de": "Das zeugnis ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_9",
+      "type": "noun_pattern",
+      "display": "das Zeugnis",
+      "meaning": {
+        "English": "certificate",
+        "German": "das Zeugnis"
+      },
+      "prompt": "Artikel von Zeugnis?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das zeugnis ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_10",
+      "type": "noun_pattern",
+      "display": "der Beruf → die Berufe",
+      "meaning": {
+        "English": "profession",
+        "German": "der Beruf"
+      },
+      "prompt": "Plural von der Beruf?",
+      "answer": "die Berufe",
+      "case": "Plural",
+      "example": {
+        "de": "Der beruf ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_10",
+      "type": "noun_pattern",
+      "display": "der Beruf",
+      "meaning": {
+        "English": "profession",
+        "German": "der Beruf"
+      },
+      "prompt": "Artikel von Beruf?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der beruf ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_11",
+      "type": "noun_pattern",
+      "display": "die Stelle → die Stellen",
+      "meaning": {
+        "English": "position",
+        "German": "die Stelle"
+      },
+      "prompt": "Plural von die Stelle?",
+      "answer": "die Stellen",
+      "case": "Plural",
+      "example": {
+        "de": "Die stelle ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_11",
+      "type": "noun_pattern",
+      "display": "die Stelle",
+      "meaning": {
+        "English": "position",
+        "German": "die Stelle"
+      },
+      "prompt": "Artikel von Stelle?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die stelle ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_12",
+      "type": "noun_pattern",
+      "display": "der Auftrag → die Aufträge",
+      "meaning": {
+        "English": "order/task",
+        "German": "der Auftrag"
+      },
+      "prompt": "Plural von der Auftrag?",
+      "answer": "die Aufträge",
+      "case": "Plural",
+      "example": {
+        "de": "Der auftrag ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_12",
+      "type": "noun_pattern",
+      "display": "der Auftrag",
+      "meaning": {
+        "English": "order/task",
+        "German": "der Auftrag"
+      },
+      "prompt": "Artikel von Auftrag?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der auftrag ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_13",
+      "type": "noun_pattern",
+      "display": "die Ware → die Waren",
+      "meaning": {
+        "English": "goods",
+        "German": "die Ware"
+      },
+      "prompt": "Plural von die Ware?",
+      "answer": "die Waren",
+      "case": "Plural",
+      "example": {
+        "de": "Die ware ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_13",
+      "type": "noun_pattern",
+      "display": "die Ware",
+      "meaning": {
+        "English": "goods",
+        "German": "die Ware"
+      },
+      "prompt": "Artikel von Ware?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die ware ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_14",
+      "type": "noun_pattern",
+      "display": "das Lager → die Lager",
+      "meaning": {
+        "English": "warehouse",
+        "German": "das Lager"
+      },
+      "prompt": "Plural von das Lager?",
+      "answer": "die Lager",
+      "case": "Plural",
+      "example": {
+        "de": "Das lager ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_14",
+      "type": "noun_pattern",
+      "display": "das Lager",
+      "meaning": {
+        "English": "warehouse",
+        "German": "das Lager"
+      },
+      "prompt": "Artikel von Lager?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das lager ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_15",
+      "type": "noun_pattern",
+      "display": "der Unfall → die Unfälle",
+      "meaning": {
+        "English": "accident",
+        "German": "der Unfall"
+      },
+      "prompt": "Plural von der Unfall?",
+      "answer": "die Unfälle",
+      "case": "Plural",
+      "example": {
+        "de": "Der unfall ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_15",
+      "type": "noun_pattern",
+      "display": "der Unfall",
+      "meaning": {
+        "English": "accident",
+        "German": "der Unfall"
+      },
+      "prompt": "Artikel von Unfall?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der unfall ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_16",
+      "type": "noun_pattern",
+      "display": "die Nachricht → die Nachrichten",
+      "meaning": {
+        "English": "message",
+        "German": "die Nachricht"
+      },
+      "prompt": "Plural von die Nachricht?",
+      "answer": "die Nachrichten",
+      "case": "Plural",
+      "example": {
+        "de": "Die nachricht ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_16",
+      "type": "noun_pattern",
+      "display": "die Nachricht",
+      "meaning": {
+        "English": "message",
+        "German": "die Nachricht"
+      },
+      "prompt": "Artikel von Nachricht?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die nachricht ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_17",
+      "type": "noun_pattern",
+      "display": "der Lebenslauf → die Lebensläufe",
+      "meaning": {
+        "English": "CV",
+        "German": "der Lebenslauf"
+      },
+      "prompt": "Plural von der Lebenslauf?",
+      "answer": "die Lebensläufe",
+      "case": "Plural",
+      "example": {
+        "de": "Der lebenslauf ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_17",
+      "type": "noun_pattern",
+      "display": "der Lebenslauf",
+      "meaning": {
+        "English": "CV",
+        "German": "der Lebenslauf"
+      },
+      "prompt": "Artikel von Lebenslauf?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der lebenslauf ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_18",
+      "type": "noun_pattern",
+      "display": "das Gespräch → die Gespräche",
+      "meaning": {
+        "English": "conversation",
+        "German": "das Gespräch"
+      },
+      "prompt": "Plural von das Gespräch?",
+      "answer": "die Gespräche",
+      "case": "Plural",
+      "example": {
+        "de": "Das gespräch ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_18",
+      "type": "noun_pattern",
+      "display": "das Gespräch",
+      "meaning": {
+        "English": "conversation",
+        "German": "das Gespräch"
+      },
+      "prompt": "Artikel von Gespräch?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das gespräch ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_19",
+      "type": "noun_pattern",
+      "display": "der Kurs → die Kurse",
+      "meaning": {
+        "English": "course",
+        "German": "der Kurs"
+      },
+      "prompt": "Plural von der Kurs?",
+      "answer": "die Kurse",
+      "case": "Plural",
+      "example": {
+        "de": "Der kurs ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_19",
+      "type": "noun_pattern",
+      "display": "der Kurs",
+      "meaning": {
+        "English": "course",
+        "German": "der Kurs"
+      },
+      "prompt": "Artikel von Kurs?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der kurs ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_20",
+      "type": "noun_pattern",
+      "display": "die Sprache → die Sprachen",
+      "meaning": {
+        "English": "language",
+        "German": "die Sprache"
+      },
+      "prompt": "Plural von die Sprache?",
+      "answer": "die Sprachen",
+      "case": "Plural",
+      "example": {
+        "de": "Die sprache ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_20",
+      "type": "noun_pattern",
+      "display": "die Sprache",
+      "meaning": {
+        "English": "language",
+        "German": "die Sprache"
+      },
+      "prompt": "Artikel von Sprache?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die sprache ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_21",
+      "type": "noun_pattern",
+      "display": "das Angebot → die Angebote",
+      "meaning": {
+        "English": "offer",
+        "German": "das Angebot"
+      },
+      "prompt": "Plural von das Angebot?",
+      "answer": "die Angebote",
+      "case": "Plural",
+      "example": {
+        "de": "Das angebot ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_21",
+      "type": "noun_pattern",
+      "display": "das Angebot",
+      "meaning": {
+        "English": "offer",
+        "German": "das Angebot"
+      },
+      "prompt": "Artikel von Angebot?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das angebot ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_22",
+      "type": "noun_pattern",
+      "display": "der Schlüssel → die Schlüssel",
+      "meaning": {
+        "English": "key",
+        "German": "der Schlüssel"
+      },
+      "prompt": "Plural von der Schlüssel?",
+      "answer": "die Schlüssel",
+      "case": "Plural",
+      "example": {
+        "de": "Der schlüssel ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_22",
+      "type": "noun_pattern",
+      "display": "der Schlüssel",
+      "meaning": {
+        "English": "key",
+        "German": "der Schlüssel"
+      },
+      "prompt": "Artikel von Schlüssel?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der schlüssel ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_23",
+      "type": "noun_pattern",
+      "display": "die Erfahrung → die Erfahrungen",
+      "meaning": {
+        "English": "experience",
+        "German": "die Erfahrung"
+      },
+      "prompt": "Plural von die Erfahrung?",
+      "answer": "die Erfahrungen",
+      "case": "Plural",
+      "example": {
+        "de": "Die erfahrung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_23",
+      "type": "noun_pattern",
+      "display": "die Erfahrung",
+      "meaning": {
+        "English": "experience",
+        "German": "die Erfahrung"
+      },
+      "prompt": "Artikel von Erfahrung?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die erfahrung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_24",
+      "type": "noun_pattern",
+      "display": "das Unternehmen → die Unternehmen",
+      "meaning": {
+        "English": "company",
+        "German": "das Unternehmen"
+      },
+      "prompt": "Plural von das Unternehmen?",
+      "answer": "die Unternehmen",
+      "case": "Plural",
+      "example": {
+        "de": "Das unternehmen ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_24",
+      "type": "noun_pattern",
+      "display": "das Unternehmen",
+      "meaning": {
+        "English": "company",
+        "German": "das Unternehmen"
+      },
+      "prompt": "Artikel von Unternehmen?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das unternehmen ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_25",
+      "type": "noun_pattern",
+      "display": "der Bewerber → die Bewerber",
+      "meaning": {
+        "English": "applicant",
+        "German": "der Bewerber"
+      },
+      "prompt": "Plural von der Bewerber?",
+      "answer": "die Bewerber",
+      "case": "Plural",
+      "example": {
+        "de": "Der bewerber ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_25",
+      "type": "noun_pattern",
+      "display": "der Bewerber",
+      "meaning": {
+        "English": "applicant",
+        "German": "der Bewerber"
+      },
+      "prompt": "Artikel von Bewerber?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der bewerber ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_26",
+      "type": "noun_pattern",
+      "display": "die Bewerberin → die Bewerberinnen",
+      "meaning": {
+        "English": "female applicant",
+        "German": "die Bewerberin"
+      },
+      "prompt": "Plural von die Bewerberin?",
+      "answer": "die Bewerberinnen",
+      "case": "Plural",
+      "example": {
+        "de": "Die bewerberin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_26",
+      "type": "noun_pattern",
+      "display": "die Bewerberin",
+      "meaning": {
+        "English": "female applicant",
+        "German": "die Bewerberin"
+      },
+      "prompt": "Artikel von Bewerberin?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die bewerberin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_27",
+      "type": "noun_pattern",
+      "display": "der Kunde → die Kunden",
+      "meaning": {
+        "English": "customer",
+        "German": "der Kunde"
+      },
+      "prompt": "Plural von der Kunde?",
+      "answer": "die Kunden",
+      "case": "Plural",
+      "example": {
+        "de": "Der kunde ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_27",
+      "type": "noun_pattern",
+      "display": "der Kunde",
+      "meaning": {
+        "English": "customer",
+        "German": "der Kunde"
+      },
+      "prompt": "Artikel von Kunde?",
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der kunde ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_28",
+      "type": "noun_pattern",
+      "display": "die Kundin → die Kundinnen",
+      "meaning": {
+        "English": "female customer",
+        "German": "die Kundin"
+      },
+      "prompt": "Plural von die Kundin?",
+      "answer": "die Kundinnen",
+      "case": "Plural",
+      "example": {
+        "de": "Die kundin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_28",
+      "type": "noun_pattern",
+      "display": "die Kundin",
+      "meaning": {
+        "English": "female customer",
+        "German": "die Kundin"
+      },
+      "prompt": "Artikel von Kundin?",
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die kundin ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_29",
+      "type": "noun_pattern",
+      "display": "das Gerät → die Geräte",
+      "meaning": {
+        "English": "device",
+        "German": "das Gerät"
+      },
+      "prompt": "Plural von das Gerät?",
+      "answer": "die Geräte",
+      "case": "Plural",
+      "example": {
+        "de": "Das gerät ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_29",
+      "type": "noun_pattern",
+      "display": "das Gerät",
+      "meaning": {
+        "English": "device",
+        "German": "das Gerät"
+      },
+      "prompt": "Artikel von Gerät?",
+      "answer": "das",
+      "case": "Artikel",
+      "example": {
+        "de": "Das gerät ist wichtig."
       }
     }
   ]

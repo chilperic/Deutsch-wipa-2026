@@ -1,10 +1,10 @@
 {
   "module": "starke_verben",
   "title": "Starke Verben",
-  "status": "active-starter",
+  "status": "active-expanded",
   "items": [
     {
-      "id": "sv_gehen",
+      "id": "sv_gehen_praet",
       "type": "strong_verb",
       "display": "gehen → ging → ist gegangen",
       "meaning": {
@@ -15,26 +15,56 @@
       "answer": "ging",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern ging ich nach Hause."
+        "de": "Gestern ging ich."
       }
     },
     {
-      "id": "sv_schreiben",
+      "id": "sv_gehen_part",
       "type": "strong_verb",
-      "display": "schreiben → schrieb → geschrieben",
+      "display": "gehen → ging → ist gegangen",
       "meaning": {
-        "English": "to write",
-        "German": "schreiben"
+        "English": "to go",
+        "German": "gehen"
       },
-      "prompt": "schreiben · Partizip II?",
-      "answer": "geschrieben",
+      "prompt": "gehen · Partizip II?",
+      "answer": "ist gegangen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe eine E-Mail geschrieben."
+        "de": "Ich habe/bin ist gegangen."
       }
     },
     {
-      "id": "sv_nehmen",
+      "id": "sv_kommen_praet",
+      "type": "strong_verb",
+      "display": "kommen → kam → ist gekommen",
+      "meaning": {
+        "English": "to come",
+        "German": "kommen"
+      },
+      "prompt": "kommen · Präteritum?",
+      "answer": "kam",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern kam ich."
+      }
+    },
+    {
+      "id": "sv_kommen_part",
+      "type": "strong_verb",
+      "display": "kommen → kam → ist gekommen",
+      "meaning": {
+        "English": "to come",
+        "German": "kommen"
+      },
+      "prompt": "kommen · Partizip II?",
+      "answer": "ist gekommen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin ist gekommen."
+      }
+    },
+    {
+      "id": "sv_nehmen_praet",
       "type": "strong_verb",
       "display": "nehmen → nahm → genommen",
       "meaning": {
@@ -45,11 +75,191 @@
       "answer": "nahm",
       "case": "Präteritum",
       "example": {
-        "de": "Er nahm den Bus."
+        "de": "Gestern nahm ich."
       }
     },
     {
-      "id": "sv_finden",
+      "id": "sv_nehmen_part",
+      "type": "strong_verb",
+      "display": "nehmen → nahm → genommen",
+      "meaning": {
+        "English": "to take",
+        "German": "nehmen"
+      },
+      "prompt": "nehmen · Partizip II?",
+      "answer": "genommen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin genommen."
+      }
+    },
+    {
+      "id": "sv_geben_praet",
+      "type": "strong_verb",
+      "display": "geben → gab → gegeben",
+      "meaning": {
+        "English": "to give",
+        "German": "geben"
+      },
+      "prompt": "geben · Präteritum?",
+      "answer": "gab",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern gab ich."
+      }
+    },
+    {
+      "id": "sv_geben_part",
+      "type": "strong_verb",
+      "display": "geben → gab → gegeben",
+      "meaning": {
+        "English": "to give",
+        "German": "geben"
+      },
+      "prompt": "geben · Partizip II?",
+      "answer": "gegeben",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gegeben."
+      }
+    },
+    {
+      "id": "sv_sehen_praet",
+      "type": "strong_verb",
+      "display": "sehen → sah → gesehen",
+      "meaning": {
+        "English": "to see",
+        "German": "sehen"
+      },
+      "prompt": "sehen · Präteritum?",
+      "answer": "sah",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern sah ich."
+      }
+    },
+    {
+      "id": "sv_sehen_part",
+      "type": "strong_verb",
+      "display": "sehen → sah → gesehen",
+      "meaning": {
+        "English": "to see",
+        "German": "sehen"
+      },
+      "prompt": "sehen · Partizip II?",
+      "answer": "gesehen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gesehen."
+      }
+    },
+    {
+      "id": "sv_sprechen_praet",
+      "type": "strong_verb",
+      "display": "sprechen → sprach → gesprochen",
+      "meaning": {
+        "English": "to speak",
+        "German": "sprechen"
+      },
+      "prompt": "sprechen · Präteritum?",
+      "answer": "sprach",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern sprach ich."
+      }
+    },
+    {
+      "id": "sv_sprechen_part",
+      "type": "strong_verb",
+      "display": "sprechen → sprach → gesprochen",
+      "meaning": {
+        "English": "to speak",
+        "German": "sprechen"
+      },
+      "prompt": "sprechen · Partizip II?",
+      "answer": "gesprochen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gesprochen."
+      }
+    },
+    {
+      "id": "sv_lesen_praet",
+      "type": "strong_verb",
+      "display": "lesen → las → gelesen",
+      "meaning": {
+        "English": "to read",
+        "German": "lesen"
+      },
+      "prompt": "lesen · Präteritum?",
+      "answer": "las",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern las ich."
+      }
+    },
+    {
+      "id": "sv_lesen_part",
+      "type": "strong_verb",
+      "display": "lesen → las → gelesen",
+      "meaning": {
+        "English": "to read",
+        "German": "lesen"
+      },
+      "prompt": "lesen · Partizip II?",
+      "answer": "gelesen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gelesen."
+      }
+    },
+    {
+      "id": "sv_schreiben_praet",
+      "type": "strong_verb",
+      "display": "schreiben → schrieb → geschrieben",
+      "meaning": {
+        "English": "to write",
+        "German": "schreiben"
+      },
+      "prompt": "schreiben · Präteritum?",
+      "answer": "schrieb",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern schrieb ich."
+      }
+    },
+    {
+      "id": "sv_schreiben_part",
+      "type": "strong_verb",
+      "display": "schreiben → schrieb → geschrieben",
+      "meaning": {
+        "English": "to write",
+        "German": "schreiben"
+      },
+      "prompt": "schreiben · Partizip II?",
+      "answer": "geschrieben",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin geschrieben."
+      }
+    },
+    {
+      "id": "sv_finden_praet",
+      "type": "strong_verb",
+      "display": "finden → fand → gefunden",
+      "meaning": {
+        "English": "to find",
+        "German": "finden"
+      },
+      "prompt": "finden · Präteritum?",
+      "answer": "fand",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern fand ich."
+      }
+    },
+    {
+      "id": "sv_finden_part",
       "type": "strong_verb",
       "display": "finden → fand → gefunden",
       "meaning": {
@@ -60,7 +270,637 @@
       "answer": "gefunden",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe den Schlüssel gefunden."
+        "de": "Ich habe/bin gefunden."
+      }
+    },
+    {
+      "id": "sv_trinken_praet",
+      "type": "strong_verb",
+      "display": "trinken → trank → getrunken",
+      "meaning": {
+        "English": "to drink",
+        "German": "trinken"
+      },
+      "prompt": "trinken · Präteritum?",
+      "answer": "trank",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern trank ich."
+      }
+    },
+    {
+      "id": "sv_trinken_part",
+      "type": "strong_verb",
+      "display": "trinken → trank → getrunken",
+      "meaning": {
+        "English": "to drink",
+        "German": "trinken"
+      },
+      "prompt": "trinken · Partizip II?",
+      "answer": "getrunken",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin getrunken."
+      }
+    },
+    {
+      "id": "sv_essen_praet",
+      "type": "strong_verb",
+      "display": "essen → aß → gegessen",
+      "meaning": {
+        "English": "to eat",
+        "German": "essen"
+      },
+      "prompt": "essen · Präteritum?",
+      "answer": "aß",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern aß ich."
+      }
+    },
+    {
+      "id": "sv_essen_part",
+      "type": "strong_verb",
+      "display": "essen → aß → gegessen",
+      "meaning": {
+        "English": "to eat",
+        "German": "essen"
+      },
+      "prompt": "essen · Partizip II?",
+      "answer": "gegessen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gegessen."
+      }
+    },
+    {
+      "id": "sv_fahren_praet",
+      "type": "strong_verb",
+      "display": "fahren → fuhr → ist gefahren",
+      "meaning": {
+        "English": "to drive/go",
+        "German": "fahren"
+      },
+      "prompt": "fahren · Präteritum?",
+      "answer": "fuhr",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern fuhr ich."
+      }
+    },
+    {
+      "id": "sv_fahren_part",
+      "type": "strong_verb",
+      "display": "fahren → fuhr → ist gefahren",
+      "meaning": {
+        "English": "to drive/go",
+        "German": "fahren"
+      },
+      "prompt": "fahren · Partizip II?",
+      "answer": "ist gefahren",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin ist gefahren."
+      }
+    },
+    {
+      "id": "sv_laufen_praet",
+      "type": "strong_verb",
+      "display": "laufen → lief → ist gelaufen",
+      "meaning": {
+        "English": "to run",
+        "German": "laufen"
+      },
+      "prompt": "laufen · Präteritum?",
+      "answer": "lief",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern lief ich."
+      }
+    },
+    {
+      "id": "sv_laufen_part",
+      "type": "strong_verb",
+      "display": "laufen → lief → ist gelaufen",
+      "meaning": {
+        "English": "to run",
+        "German": "laufen"
+      },
+      "prompt": "laufen · Partizip II?",
+      "answer": "ist gelaufen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin ist gelaufen."
+      }
+    },
+    {
+      "id": "sv_schlafen_praet",
+      "type": "strong_verb",
+      "display": "schlafen → schlief → geschlafen",
+      "meaning": {
+        "English": "to sleep",
+        "German": "schlafen"
+      },
+      "prompt": "schlafen · Präteritum?",
+      "answer": "schlief",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern schlief ich."
+      }
+    },
+    {
+      "id": "sv_schlafen_part",
+      "type": "strong_verb",
+      "display": "schlafen → schlief → geschlafen",
+      "meaning": {
+        "English": "to sleep",
+        "German": "schlafen"
+      },
+      "prompt": "schlafen · Partizip II?",
+      "answer": "geschlafen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin geschlafen."
+      }
+    },
+    {
+      "id": "sv_helfen_praet",
+      "type": "strong_verb",
+      "display": "helfen → half → geholfen",
+      "meaning": {
+        "English": "to help",
+        "German": "helfen"
+      },
+      "prompt": "helfen · Präteritum?",
+      "answer": "half",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern half ich."
+      }
+    },
+    {
+      "id": "sv_helfen_part",
+      "type": "strong_verb",
+      "display": "helfen → half → geholfen",
+      "meaning": {
+        "English": "to help",
+        "German": "helfen"
+      },
+      "prompt": "helfen · Partizip II?",
+      "answer": "geholfen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin geholfen."
+      }
+    },
+    {
+      "id": "sv_treffen_praet",
+      "type": "strong_verb",
+      "display": "treffen → traf → getroffen",
+      "meaning": {
+        "English": "to meet",
+        "German": "treffen"
+      },
+      "prompt": "treffen · Präteritum?",
+      "answer": "traf",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern traf ich."
+      }
+    },
+    {
+      "id": "sv_treffen_part",
+      "type": "strong_verb",
+      "display": "treffen → traf → getroffen",
+      "meaning": {
+        "English": "to meet",
+        "German": "treffen"
+      },
+      "prompt": "treffen · Partizip II?",
+      "answer": "getroffen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin getroffen."
+      }
+    },
+    {
+      "id": "sv_bleiben_praet",
+      "type": "strong_verb",
+      "display": "bleiben → blieb → ist geblieben",
+      "meaning": {
+        "English": "to stay",
+        "German": "bleiben"
+      },
+      "prompt": "bleiben · Präteritum?",
+      "answer": "blieb",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern blieb ich."
+      }
+    },
+    {
+      "id": "sv_bleiben_part",
+      "type": "strong_verb",
+      "display": "bleiben → blieb → ist geblieben",
+      "meaning": {
+        "English": "to stay",
+        "German": "bleiben"
+      },
+      "prompt": "bleiben · Partizip II?",
+      "answer": "ist geblieben",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin ist geblieben."
+      }
+    },
+    {
+      "id": "sv_stehen_praet",
+      "type": "strong_verb",
+      "display": "stehen → stand → gestanden",
+      "meaning": {
+        "English": "to stand",
+        "German": "stehen"
+      },
+      "prompt": "stehen · Präteritum?",
+      "answer": "stand",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern stand ich."
+      }
+    },
+    {
+      "id": "sv_stehen_part",
+      "type": "strong_verb",
+      "display": "stehen → stand → gestanden",
+      "meaning": {
+        "English": "to stand",
+        "German": "stehen"
+      },
+      "prompt": "stehen · Partizip II?",
+      "answer": "gestanden",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gestanden."
+      }
+    },
+    {
+      "id": "sv_liegen_praet",
+      "type": "strong_verb",
+      "display": "liegen → lag → gelegen",
+      "meaning": {
+        "English": "to lie",
+        "German": "liegen"
+      },
+      "prompt": "liegen · Präteritum?",
+      "answer": "lag",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern lag ich."
+      }
+    },
+    {
+      "id": "sv_liegen_part",
+      "type": "strong_verb",
+      "display": "liegen → lag → gelegen",
+      "meaning": {
+        "English": "to lie",
+        "German": "liegen"
+      },
+      "prompt": "liegen · Partizip II?",
+      "answer": "gelegen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gelegen."
+      }
+    },
+    {
+      "id": "sv_sitzen_praet",
+      "type": "strong_verb",
+      "display": "sitzen → saß → gesessen",
+      "meaning": {
+        "English": "to sit",
+        "German": "sitzen"
+      },
+      "prompt": "sitzen · Präteritum?",
+      "answer": "saß",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern saß ich."
+      }
+    },
+    {
+      "id": "sv_sitzen_part",
+      "type": "strong_verb",
+      "display": "sitzen → saß → gesessen",
+      "meaning": {
+        "English": "to sit",
+        "German": "sitzen"
+      },
+      "prompt": "sitzen · Partizip II?",
+      "answer": "gesessen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gesessen."
+      }
+    },
+    {
+      "id": "sv_tragen_praet",
+      "type": "strong_verb",
+      "display": "tragen → trug → getragen",
+      "meaning": {
+        "English": "to carry/wear",
+        "German": "tragen"
+      },
+      "prompt": "tragen · Präteritum?",
+      "answer": "trug",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern trug ich."
+      }
+    },
+    {
+      "id": "sv_tragen_part",
+      "type": "strong_verb",
+      "display": "tragen → trug → getragen",
+      "meaning": {
+        "English": "to carry/wear",
+        "German": "tragen"
+      },
+      "prompt": "tragen · Partizip II?",
+      "answer": "getragen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin getragen."
+      }
+    },
+    {
+      "id": "sv_waschen_praet",
+      "type": "strong_verb",
+      "display": "waschen → wusch → gewaschen",
+      "meaning": {
+        "English": "to wash",
+        "German": "waschen"
+      },
+      "prompt": "waschen · Präteritum?",
+      "answer": "wusch",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern wusch ich."
+      }
+    },
+    {
+      "id": "sv_waschen_part",
+      "type": "strong_verb",
+      "display": "waschen → wusch → gewaschen",
+      "meaning": {
+        "English": "to wash",
+        "German": "waschen"
+      },
+      "prompt": "waschen · Partizip II?",
+      "answer": "gewaschen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gewaschen."
+      }
+    },
+    {
+      "id": "sv_beginnen_praet",
+      "type": "strong_verb",
+      "display": "beginnen → begann → begonnen",
+      "meaning": {
+        "English": "to begin",
+        "German": "beginnen"
+      },
+      "prompt": "beginnen · Präteritum?",
+      "answer": "begann",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern begann ich."
+      }
+    },
+    {
+      "id": "sv_beginnen_part",
+      "type": "strong_verb",
+      "display": "beginnen → begann → begonnen",
+      "meaning": {
+        "English": "to begin",
+        "German": "beginnen"
+      },
+      "prompt": "beginnen · Partizip II?",
+      "answer": "begonnen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin begonnen."
+      }
+    },
+    {
+      "id": "sv_gewinnen_praet",
+      "type": "strong_verb",
+      "display": "gewinnen → gewann → gewonnen",
+      "meaning": {
+        "English": "to win",
+        "German": "gewinnen"
+      },
+      "prompt": "gewinnen · Präteritum?",
+      "answer": "gewann",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern gewann ich."
+      }
+    },
+    {
+      "id": "sv_gewinnen_part",
+      "type": "strong_verb",
+      "display": "gewinnen → gewann → gewonnen",
+      "meaning": {
+        "English": "to win",
+        "German": "gewinnen"
+      },
+      "prompt": "gewinnen · Partizip II?",
+      "answer": "gewonnen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gewonnen."
+      }
+    },
+    {
+      "id": "sv_verlieren_praet",
+      "type": "strong_verb",
+      "display": "verlieren → verlor → verloren",
+      "meaning": {
+        "English": "to lose",
+        "German": "verlieren"
+      },
+      "prompt": "verlieren · Präteritum?",
+      "answer": "verlor",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern verlor ich."
+      }
+    },
+    {
+      "id": "sv_verlieren_part",
+      "type": "strong_verb",
+      "display": "verlieren → verlor → verloren",
+      "meaning": {
+        "English": "to lose",
+        "German": "verlieren"
+      },
+      "prompt": "verlieren · Partizip II?",
+      "answer": "verloren",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin verloren."
+      }
+    },
+    {
+      "id": "sv_vergessen_praet",
+      "type": "strong_verb",
+      "display": "vergessen → vergaß → vergessen",
+      "meaning": {
+        "English": "to forget",
+        "German": "vergessen"
+      },
+      "prompt": "vergessen · Präteritum?",
+      "answer": "vergaß",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern vergaß ich."
+      }
+    },
+    {
+      "id": "sv_vergessen_part",
+      "type": "strong_verb",
+      "display": "vergessen → vergaß → vergessen",
+      "meaning": {
+        "English": "to forget",
+        "German": "vergessen"
+      },
+      "prompt": "vergessen · Partizip II?",
+      "answer": "vergessen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin vergessen."
+      }
+    },
+    {
+      "id": "sv_bekommen_praet",
+      "type": "strong_verb",
+      "display": "bekommen → bekam → bekommen",
+      "meaning": {
+        "English": "to receive",
+        "German": "bekommen"
+      },
+      "prompt": "bekommen · Präteritum?",
+      "answer": "bekam",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern bekam ich."
+      }
+    },
+    {
+      "id": "sv_bekommen_part",
+      "type": "strong_verb",
+      "display": "bekommen → bekam → bekommen",
+      "meaning": {
+        "English": "to receive",
+        "German": "bekommen"
+      },
+      "prompt": "bekommen · Partizip II?",
+      "answer": "bekommen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin bekommen."
+      }
+    },
+    {
+      "id": "sv_rufen_praet",
+      "type": "strong_verb",
+      "display": "rufen → rief → gerufen",
+      "meaning": {
+        "English": "to call",
+        "German": "rufen"
+      },
+      "prompt": "rufen · Präteritum?",
+      "answer": "rief",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern rief ich."
+      }
+    },
+    {
+      "id": "sv_rufen_part",
+      "type": "strong_verb",
+      "display": "rufen → rief → gerufen",
+      "meaning": {
+        "English": "to call",
+        "German": "rufen"
+      },
+      "prompt": "rufen · Partizip II?",
+      "answer": "gerufen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gerufen."
+      }
+    },
+    {
+      "id": "sv_halten_praet",
+      "type": "strong_verb",
+      "display": "halten → hielt → gehalten",
+      "meaning": {
+        "English": "to hold/stop",
+        "German": "halten"
+      },
+      "prompt": "halten · Präteritum?",
+      "answer": "hielt",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern hielt ich."
+      }
+    },
+    {
+      "id": "sv_halten_part",
+      "type": "strong_verb",
+      "display": "halten → hielt → gehalten",
+      "meaning": {
+        "English": "to hold/stop",
+        "German": "halten"
+      },
+      "prompt": "halten · Partizip II?",
+      "answer": "gehalten",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gehalten."
+      }
+    },
+    {
+      "id": "sv_lassen_praet",
+      "type": "strong_verb",
+      "display": "lassen → ließ → gelassen",
+      "meaning": {
+        "English": "to let/leave",
+        "German": "lassen"
+      },
+      "prompt": "lassen · Präteritum?",
+      "answer": "ließ",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern ließ ich."
+      }
+    },
+    {
+      "id": "sv_lassen_part",
+      "type": "strong_verb",
+      "display": "lassen → ließ → gelassen",
+      "meaning": {
+        "English": "to let/leave",
+        "German": "lassen"
+      },
+      "prompt": "lassen · Partizip II?",
+      "answer": "gelassen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin gelassen."
       }
     }
   ]

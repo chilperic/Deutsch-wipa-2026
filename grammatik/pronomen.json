@@ -1,29 +1,29 @@
 {
   "module": "pronomen",
   "title": "Pronomen",
-  "status": "active-starter",
+  "status": "active-expanded",
   "items": [
     {
-      "id": "pro_ich_dat",
+      "id": "pro_ich_Akkusativ_0",
       "type": "pronoun",
-      "display": "ich → mir",
+      "display": "ich → mich",
       "meaning": {
-        "English": "I → to me",
-        "German": "ich → mir"
+        "English": "me",
+        "German": "ich → mich"
       },
-      "prompt": "Dativ von ich?",
-      "answer": "mir",
-      "case": "Dativ",
+      "prompt": "Akkusativ von ich?",
+      "answer": "mich",
+      "case": "Akkusativ",
       "example": {
-        "de": "Das gehört mir."
+        "de": "Ich sehe mich."
       }
     },
     {
-      "id": "pro_du_akk",
+      "id": "pro_du_Akkusativ_1",
       "type": "pronoun",
       "display": "du → dich",
       "meaning": {
-        "English": "you → you",
+        "English": "you",
         "German": "du → dich"
       },
       "prompt": "Akkusativ von du?",
@@ -34,11 +34,131 @@
       }
     },
     {
-      "id": "pro_er_dat",
+      "id": "pro_er_Akkusativ_2",
+      "type": "pronoun",
+      "display": "er → ihn",
+      "meaning": {
+        "English": "him",
+        "German": "er → ihn"
+      },
+      "prompt": "Akkusativ von er?",
+      "answer": "ihn",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich sehe ihn."
+      }
+    },
+    {
+      "id": "pro_sie_Akkusativ_3",
+      "type": "pronoun",
+      "display": "sie → sie",
+      "meaning": {
+        "English": "her",
+        "German": "sie → sie"
+      },
+      "prompt": "Akkusativ von sie?",
+      "answer": "sie",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich sehe sie."
+      }
+    },
+    {
+      "id": "pro_es_Akkusativ_4",
+      "type": "pronoun",
+      "display": "es → es",
+      "meaning": {
+        "English": "it",
+        "German": "es → es"
+      },
+      "prompt": "Akkusativ von es?",
+      "answer": "es",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich sehe es."
+      }
+    },
+    {
+      "id": "pro_wir_Akkusativ_5",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "us",
+        "German": "wir → uns"
+      },
+      "prompt": "Akkusativ von wir?",
+      "answer": "uns",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Er sieht uns."
+      }
+    },
+    {
+      "id": "pro_ihr_Akkusativ_6",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "you plural",
+        "German": "ihr → euch"
+      },
+      "prompt": "Akkusativ von ihr?",
+      "answer": "euch",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Er sieht euch."
+      }
+    },
+    {
+      "id": "pro_sie_Akkusativ_7",
+      "type": "pronoun",
+      "display": "sie → sie",
+      "meaning": {
+        "English": "them",
+        "German": "sie → sie"
+      },
+      "prompt": "Akkusativ von sie?",
+      "answer": "sie",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Er sieht sie."
+      }
+    },
+    {
+      "id": "pro_ich_Dativ_8",
+      "type": "pronoun",
+      "display": "ich → mir",
+      "meaning": {
+        "English": "to me",
+        "German": "ich → mir"
+      },
+      "prompt": "Dativ von ich?",
+      "answer": "mir",
+      "case": "Dativ",
+      "example": {
+        "de": "Das gehört mir."
+      }
+    },
+    {
+      "id": "pro_du_Dativ_9",
+      "type": "pronoun",
+      "display": "du → dir",
+      "meaning": {
+        "English": "to you",
+        "German": "du → dir"
+      },
+      "prompt": "Dativ von du?",
+      "answer": "dir",
+      "case": "Dativ",
+      "example": {
+        "de": "Das gehört dir."
+      }
+    },
+    {
+      "id": "pro_er_Dativ_10",
       "type": "pronoun",
       "display": "er → ihm",
       "meaning": {
-        "English": "he → to him",
+        "English": "to him",
         "German": "er → ihm"
       },
       "prompt": "Dativ von er?",
@@ -49,18 +169,738 @@
       }
     },
     {
-      "id": "pro_reflexiv_ich",
+      "id": "pro_sie_Dativ_11",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "to her",
+        "German": "sie → ihr"
+      },
+      "prompt": "Dativ von sie?",
+      "answer": "ihr",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich helfe ihr."
+      }
+    },
+    {
+      "id": "pro_es_Dativ_12",
+      "type": "pronoun",
+      "display": "es → ihm",
+      "meaning": {
+        "English": "to it",
+        "German": "es → ihm"
+      },
+      "prompt": "Dativ von es?",
+      "answer": "ihm",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich helfe ihm."
+      }
+    },
+    {
+      "id": "pro_wir_Dativ_13",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "to us",
+        "German": "wir → uns"
+      },
+      "prompt": "Dativ von wir?",
+      "answer": "uns",
+      "case": "Dativ",
+      "example": {
+        "de": "Er hilft uns."
+      }
+    },
+    {
+      "id": "pro_ihr_Dativ_14",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "to you plural",
+        "German": "ihr → euch"
+      },
+      "prompt": "Dativ von ihr?",
+      "answer": "euch",
+      "case": "Dativ",
+      "example": {
+        "de": "Er hilft euch."
+      }
+    },
+    {
+      "id": "pro_sie_Dativ_15",
+      "type": "pronoun",
+      "display": "sie → ihnen",
+      "meaning": {
+        "English": "to them",
+        "German": "sie → ihnen"
+      },
+      "prompt": "Dativ von sie?",
+      "answer": "ihnen",
+      "case": "Dativ",
+      "example": {
+        "de": "Er hilft ihnen."
+      }
+    },
+    {
+      "id": "pro_ref_0",
       "type": "pronoun",
       "display": "ich → mich",
       "meaning": {
-        "English": "myself",
-        "German": "mich"
+        "English": "reflexive pronoun",
+        "German": "ich → mich"
       },
-      "prompt": "Ich wasche ___.",
+      "prompt": "ich wäscht ___?",
       "answer": "mich",
-      "case": "Reflexivpronomen",
+      "case": "Reflexiv",
       "example": {
-        "de": "Ich wasche mich."
+        "de": "Ich wäscht mich."
+      }
+    },
+    {
+      "id": "pro_ref_1",
+      "type": "pronoun",
+      "display": "du → dich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "du → dich"
+      },
+      "prompt": "du wäscht ___?",
+      "answer": "dich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Du wäscht dich."
+      }
+    },
+    {
+      "id": "pro_ref_2",
+      "type": "pronoun",
+      "display": "er → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "er → sich"
+      },
+      "prompt": "er wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Er wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_3",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_4",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "wir → uns"
+      },
+      "prompt": "wir wäscht ___?",
+      "answer": "uns",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Wir wäscht uns."
+      }
+    },
+    {
+      "id": "pro_ref_5",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ihr → euch"
+      },
+      "prompt": "ihr wäscht ___?",
+      "answer": "euch",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ihr wäscht euch."
+      }
+    },
+    {
+      "id": "pro_ref_6",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_7",
+      "type": "pronoun",
+      "display": "ich → mich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ich → mich"
+      },
+      "prompt": "ich wäscht ___?",
+      "answer": "mich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ich wäscht mich."
+      }
+    },
+    {
+      "id": "pro_ref_8",
+      "type": "pronoun",
+      "display": "du → dich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "du → dich"
+      },
+      "prompt": "du wäscht ___?",
+      "answer": "dich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Du wäscht dich."
+      }
+    },
+    {
+      "id": "pro_ref_9",
+      "type": "pronoun",
+      "display": "er → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "er → sich"
+      },
+      "prompt": "er wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Er wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_10",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_11",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "wir → uns"
+      },
+      "prompt": "wir wäscht ___?",
+      "answer": "uns",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Wir wäscht uns."
+      }
+    },
+    {
+      "id": "pro_ref_12",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ihr → euch"
+      },
+      "prompt": "ihr wäscht ___?",
+      "answer": "euch",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ihr wäscht euch."
+      }
+    },
+    {
+      "id": "pro_ref_13",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_14",
+      "type": "pronoun",
+      "display": "ich → mich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ich → mich"
+      },
+      "prompt": "ich wäscht ___?",
+      "answer": "mich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ich wäscht mich."
+      }
+    },
+    {
+      "id": "pro_ref_15",
+      "type": "pronoun",
+      "display": "du → dich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "du → dich"
+      },
+      "prompt": "du wäscht ___?",
+      "answer": "dich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Du wäscht dich."
+      }
+    },
+    {
+      "id": "pro_ref_16",
+      "type": "pronoun",
+      "display": "er → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "er → sich"
+      },
+      "prompt": "er wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Er wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_17",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_18",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "wir → uns"
+      },
+      "prompt": "wir wäscht ___?",
+      "answer": "uns",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Wir wäscht uns."
+      }
+    },
+    {
+      "id": "pro_ref_19",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ihr → euch"
+      },
+      "prompt": "ihr wäscht ___?",
+      "answer": "euch",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ihr wäscht euch."
+      }
+    },
+    {
+      "id": "pro_ref_20",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_21",
+      "type": "pronoun",
+      "display": "ich → mich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ich → mich"
+      },
+      "prompt": "ich wäscht ___?",
+      "answer": "mich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ich wäscht mich."
+      }
+    },
+    {
+      "id": "pro_ref_22",
+      "type": "pronoun",
+      "display": "du → dich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "du → dich"
+      },
+      "prompt": "du wäscht ___?",
+      "answer": "dich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Du wäscht dich."
+      }
+    },
+    {
+      "id": "pro_ref_23",
+      "type": "pronoun",
+      "display": "er → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "er → sich"
+      },
+      "prompt": "er wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Er wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_24",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_25",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "wir → uns"
+      },
+      "prompt": "wir wäscht ___?",
+      "answer": "uns",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Wir wäscht uns."
+      }
+    },
+    {
+      "id": "pro_ref_26",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ihr → euch"
+      },
+      "prompt": "ihr wäscht ___?",
+      "answer": "euch",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ihr wäscht euch."
+      }
+    },
+    {
+      "id": "pro_ref_27",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_poss_0",
+      "type": "pronoun",
+      "display": "ich → mein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "ich → mein"
+      },
+      "prompt": "Possessivartikel von ich?",
+      "answer": "mein",
+      "case": "Possiv",
+      "example": {
+        "de": "Mein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_1",
+      "type": "pronoun",
+      "display": "du → dein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "du → dein"
+      },
+      "prompt": "Possessivartikel von du?",
+      "answer": "dein",
+      "case": "Possiv",
+      "example": {
+        "de": "Dein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_2",
+      "type": "pronoun",
+      "display": "er → sein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "er → sein"
+      },
+      "prompt": "Possessivartikel von er?",
+      "answer": "sein",
+      "case": "Possiv",
+      "example": {
+        "de": "Sein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_3",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "answer": "ihr",
+      "case": "Possiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_4",
+      "type": "pronoun",
+      "display": "wir → unser",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "wir → unser"
+      },
+      "prompt": "Possessivartikel von wir?",
+      "answer": "unser",
+      "case": "Possiv",
+      "example": {
+        "de": "Unser Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_5",
+      "type": "pronoun",
+      "display": "ihr → euer",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "ihr → euer"
+      },
+      "prompt": "Possessivartikel von ihr?",
+      "answer": "euer",
+      "case": "Possiv",
+      "example": {
+        "de": "Euer Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_6",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "answer": "ihr",
+      "case": "Possiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_7",
+      "type": "pronoun",
+      "display": "ich → mein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "ich → mein"
+      },
+      "prompt": "Possessivartikel von ich?",
+      "answer": "mein",
+      "case": "Possiv",
+      "example": {
+        "de": "Mein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_8",
+      "type": "pronoun",
+      "display": "du → dein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "du → dein"
+      },
+      "prompt": "Possessivartikel von du?",
+      "answer": "dein",
+      "case": "Possiv",
+      "example": {
+        "de": "Dein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_9",
+      "type": "pronoun",
+      "display": "er → sein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "er → sein"
+      },
+      "prompt": "Possessivartikel von er?",
+      "answer": "sein",
+      "case": "Possiv",
+      "example": {
+        "de": "Sein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_10",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "answer": "ihr",
+      "case": "Possiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_11",
+      "type": "pronoun",
+      "display": "wir → unser",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "wir → unser"
+      },
+      "prompt": "Possessivartikel von wir?",
+      "answer": "unser",
+      "case": "Possiv",
+      "example": {
+        "de": "Unser Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_12",
+      "type": "pronoun",
+      "display": "ihr → euer",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "ihr → euer"
+      },
+      "prompt": "Possessivartikel von ihr?",
+      "answer": "euer",
+      "case": "Possiv",
+      "example": {
+        "de": "Euer Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_13",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "answer": "ihr",
+      "case": "Possiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_14",
+      "type": "pronoun",
+      "display": "ich → mein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "ich → mein"
+      },
+      "prompt": "Possessivartikel von ich?",
+      "answer": "mein",
+      "case": "Possiv",
+      "example": {
+        "de": "Mein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_15",
+      "type": "pronoun",
+      "display": "du → dein",
+      "meaning": {
+        "English": "possessive pronoun",
+        "German": "du → dein"
+      },
+      "prompt": "Possessivartikel von du?",
+      "answer": "dein",
+      "case": "Possiv",
+      "example": {
+        "de": "Dein Buch ist hier."
       }
     }
   ]

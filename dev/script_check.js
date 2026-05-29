@@ -1,7 +1,59 @@
 'use strict';
-window.VOKABULAR_BUILD = 'all-modules-active-dashboard-2026-05-29';
+window.VOKABULAR_BUILD = 'expanded-nonleaky-modules-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
+
+const UI_TEXT = {
+  English: {
+    subtitle:'Vocabulary · Grammar · Active Recall', nav_dashboard:'Dashboard', nav_modules:'Modules', nav_progress:'Progress', nav_stats:'Statistics', nav_weak:'Weak points', nav_review:'Review', nav_notes:'Notes', nav_settings:'Settings',
+    streak:'days in a row', feature_modules:'10+ learning modules', feature_modules_sub:'Grammar and vocabulary training', feature_recall:'Active Recall', feature_recall_sub:'Spaced repetition for retention', feature_tracking:'Progress tracking', feature_tracking_sub:'Accuracy and mastery over time', feature_adaptive:'Adaptive training', feature_adaptive_sub:'Focus sessions for weak points',
+    available_modules:'Available modules', quiz_language:'Quiz language', chapter_set:'Chapter / Set', practice_mode:'Practice mode', items_per_session:'Items per session', tracker:'Tracker', start:'Start practising', weak_review:'Weak review',
+    all_items:'All items', all_chapters:'All chapters', all:'All', active:'Active', planned:'Planned', not_loaded:'not loaded yet', items:'items', coming_soon:'coming soon',
+    progress_details:'Progress details', items_loaded:'items loaded', average_accuracy:'average accuracy', weak_items:'weak items', due_today:'due today', loaded:'loaded', weak:'weak', accuracy:'accuracy',
+    admin_tools:'Admin tools', loaded_modules:'Loaded modules', data_quality:'Data quality', resources:'Grammar & dictionaries', close:'Close', back:'Back', skip:'Skip', exit:'Exit', correct:'Correct', wrong:'Wrong', expected:'Expected', continue:'Continue', check:'Check',
+    learn_pattern:'Learn the pattern', learn_item:'Learn the item', grammar_practice:'Grammar practice', choose_article:'Choose the article', choose_meaning:'Choose the meaning', plural:'Plural', active_recall:'Active recall', sentence_gap:'Sentence gap', preposition_gap:'Preposition gap', case_recall:'Case recall',
+    full_cycle:'Full cycle', article_only:'Article only', meaning_only:'Meaning only', plural_only:'Plural only', sentence_gaps:'Sentence gaps', full_grammar_cycle:'Full grammar cycle', preposition_gaps:'Preposition gaps', full_module_cycle:'Full module cycle', practice_prompt:'Practice prompt',
+    no_files:'No learning files are loaded yet.', expected_files:'Expected', same_session:'Same session', review_weak:'Review weak', correct_sum:'correct', points:'points', best_streak:'best streak'
+  },
+  German: {
+    subtitle:'Vokabular · Grammatik · Active Recall', nav_dashboard:'Dashboard', nav_modules:'Module', nav_progress:'Fortschritt', nav_stats:'Statistiken', nav_weak:'Schwächen', nav_review:'Wiederholung', nav_notes:'Notizen', nav_settings:'Einstellungen',
+    streak:'Tage in Folge', feature_modules:'10+ Lernmodule', feature_modules_sub:'Grammatik und Wortschatz', feature_recall:'Active Recall', feature_recall_sub:'Wiederholung für langfristiges Behalten', feature_tracking:'Fortschritts-Tracking', feature_tracking_sub:'Genauigkeit und Meisterung im Blick', feature_adaptive:'Adaptives Training', feature_adaptive_sub:'Training für deine Schwächen',
+    available_modules:'Verfügbare Module', quiz_language:'Quizsprache', chapter_set:'Kapitel / Set', practice_mode:'Übungsmodus', items_per_session:'Items pro Sitzung', tracker:'Tracker', start:'Übung starten', weak_review:'Schwächen üben',
+    all_items:'Alle Items', all_chapters:'Alle Kapitel', all:'Alle', active:'Aktiv', planned:'Geplant', not_loaded:'noch nicht geladen', items:'Items', coming_soon:'kommt bald',
+    progress_details:'Fortschrittsdetails', items_loaded:'Items geladen', average_accuracy:'durchschnittliche Genauigkeit', weak_items:'schwache Items', due_today:'heute fällig', loaded:'geladen', weak:'schwach', accuracy:'Genauigkeit',
+    admin_tools:'Admin-Werkzeuge', loaded_modules:'Geladene Module', data_quality:'Datenqualität', resources:'Grammatik & Wörterbücher', close:'Schließen', back:'Zurück', skip:'Überspringen', exit:'Beenden', correct:'Richtig', wrong:'Falsch', expected:'Erwartet', continue:'Weiter', check:'Prüfen',
+    learn_pattern:'Muster lernen', learn_item:'Item lernen', grammar_practice:'Grammatikübung', choose_article:'Artikel wählen', choose_meaning:'Bedeutung wählen', plural:'Plural', active_recall:'Aktive Erinnerung', sentence_gap:'Satzlücke', preposition_gap:'Präpositionslücke', case_recall:'Kasus erinnern',
+    full_cycle:'Vollständiger Zyklus', article_only:'Nur Artikel', meaning_only:'Nur Bedeutung', plural_only:'Nur Plural', sentence_gaps:'Satzlücken', full_grammar_cycle:'Vollständiger Grammatikzyklus', preposition_gaps:'Präpositionslücken', full_module_cycle:'Vollständiger Modulzyklus', practice_prompt:'Prompt üben',
+    no_files:'Noch keine Lern-Dateien geladen.', expected_files:'Erwartet', same_session:'Gleiche Sitzung', review_weak:'Schwächen wiederholen', correct_sum:'richtig', points:'Punkte', best_streak:'beste Serie'
+  },
+  French: {subtitle:'Vocabulaire · Grammaire · Rappel actif', available_modules:'Modules disponibles', quiz_language:'Langue du quiz', chapter_set:'Chapitre / série', practice_mode:'Mode d’entraînement', items_per_session:'Items par session', tracker:'Suivi', start:'Commencer', weak_review:'Réviser les faiblesses', all_items:'Tous les items', all_chapters:'Tous les chapitres', active:'Actif', planned:'Prévu', not_loaded:'pas encore chargé', items:'items', progress_details:'Détails du progrès', items_loaded:'items chargés', average_accuracy:'précision moyenne', weak_items:'items faibles', due_today:'à revoir aujourd’hui', resources:'Grammaire & dictionnaires', correct:'Correct', wrong:'Faux', expected:'Attendu', continue:'Continuer', check:'Vérifier', full_grammar_cycle:'Cycle grammatical complet', full_module_cycle:'Cycle complet du module', practice_prompt:'Exercice ciblé', meaning_only:'Sens seul'},
+  Spanish: {subtitle:'Vocabulario · Gramática · Recuerdo activo', available_modules:'Módulos disponibles', quiz_language:'Idioma del quiz', chapter_set:'Capítulo / conjunto', practice_mode:'Modo de práctica', items_per_session:'Items por sesión', tracker:'Seguimiento', start:'Empezar', weak_review:'Repasar débiles', all_items:'Todos los items', all_chapters:'Todos los capítulos', active:'Activo', planned:'Planeado', not_loaded:'no cargado', items:'items', progress_details:'Detalles del progreso', items_loaded:'items cargados', average_accuracy:'precisión media', weak_items:'items débiles', due_today:'para hoy', resources:'Gramática & diccionarios', correct:'Correcto', wrong:'Incorrecto', expected:'Esperado', continue:'Continuar', check:'Comprobar', full_grammar_cycle:'Ciclo gramatical completo', full_module_cycle:'Ciclo completo del módulo', practice_prompt:'Práctica dirigida', meaning_only:'Solo significado'},
+  Italian: {subtitle:'Vocabolario · Grammatica · Richiamo attivo', available_modules:'Moduli disponibili', quiz_language:'Lingua del quiz', chapter_set:'Capitolo / set', practice_mode:'Modalità pratica', items_per_session:'Elementi per sessione', tracker:'Tracker', start:'Inizia pratica', weak_review:'Ripasso errori', active:'Attivo', planned:'Pianificato', not_loaded:'non caricato', items:'elementi'},
+  Portuguese: {subtitle:'Vocabulário · Gramática · Recordação ativa', available_modules:'Módulos disponíveis', quiz_language:'Idioma do quiz', chapter_set:'Capítulo / conjunto', practice_mode:'Modo de prática', items_per_session:'Itens por sessão', tracker:'Progresso', start:'Começar prática', weak_review:'Rever fracos', active:'Ativo', planned:'Planejado', not_loaded:'não carregado', items:'itens'},
+  Chinese: {subtitle:'词汇 · 语法 · 主动回忆', available_modules:'可用模块', quiz_language:'测验语言', chapter_set:'章节 / 集合', practice_mode:'练习模式', items_per_session:'每次项目数', tracker:'进度', start:'开始练习', weak_review:'复习薄弱项', active:'可用', planned:'计划中', not_loaded:'未加载', items:'项'},
+  Japanese: {subtitle:'語彙 · 文法 · アクティブリコール', available_modules:'利用可能なモジュール', quiz_language:'クイズ言語', chapter_set:'章 / セット', practice_mode:'練習モード', items_per_session:'1回の項目数', tracker:'進捗', start:'練習開始', weak_review:'弱点復習', active:'有効', planned:'予定', not_loaded:'未読込', items:'項目'},
+  Korean: {subtitle:'어휘 · 문법 · 능동 회상', available_modules:'사용 가능한 모듈', quiz_language:'퀴즈 언어', chapter_set:'장 / 세트', practice_mode:'연습 모드', items_per_session:'세션당 항목', tracker:'진도', start:'연습 시작', weak_review:'약점 복습', active:'활성', planned:'예정', not_loaded:'로드 안 됨', items:'항목'},
+  Arabic: {subtitle:'مفردات · قواعد · استرجاع نشط', available_modules:'الوحدات المتاحة', quiz_language:'لغة الاختبار', chapter_set:'الفصل / المجموعة', practice_mode:'نمط التدريب', items_per_session:'عناصر في الجلسة', tracker:'المتابعة', start:'ابدأ التدريب', weak_review:'مراجعة الضعف', active:'نشط', planned:'مخطط', not_loaded:'غير محمل', items:'عناصر'},
+  Persian: {subtitle:'واژگان · دستور · یادآوری فعال', available_modules:'ماژول‌های موجود', quiz_language:'زبان آزمون', chapter_set:'فصل / مجموعه', practice_mode:'حالت تمرین', items_per_session:'آیتم در هر جلسه', tracker:'پیگیری', start:'شروع تمرین', weak_review:'مرور ضعف‌ها', active:'فعال', planned:'برنامه‌ریزی‌شده', not_loaded:'بارگذاری نشده', items:'آیتم'},
+  Thai: {subtitle:'คำศัพท์ · ไวยากรณ์ · Active Recall', available_modules:'โมดูลที่ใช้ได้', quiz_language:'ภาษาแบบทดสอบ', chapter_set:'บท / ชุด', practice_mode:'โหมดฝึก', items_per_session:'จำนวนต่อรอบ', tracker:'ติดตามผล', start:'เริ่มฝึก', weak_review:'ทบทวนจุดอ่อน', active:'ใช้งานได้', planned:'วางแผน', not_loaded:'ยังไม่โหลด', items:'รายการ'}
+};
+function ui(key){
+  const lang = USER.lang || 'English';
+  return (UI_TEXT[lang] && UI_TEXT[lang][key]) || UI_TEXT.English[key] || key;
+}
+function uiModeLabel(mode){
+  const map = {full:'full_cycle', article:'article_only', meaning:'meaning_only', plural:'plural_only', active:'active_recall', sentence:'sentence_gaps', prep_full:'full_grammar_cycle', prep_gap:'preposition_gaps', prep_case:'case_recall', prep_meaning:'meaning_only', grammar_full:'full_module_cycle', grammar_prompt:'practice_prompt', grammar_meaning:'meaning_only'};
+  return ui(map[mode]) || MODE_LABELS[mode] || mode;
+}
+function applyI18n(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    el.textContent = ui(key);
+  });
+  document.documentElement.lang = ({German:'de',French:'fr',Spanish:'es',Italian:'it',Portuguese:'pt',Chinese:'zh',Japanese:'ja',Korean:'ko',Arabic:'ar',Persian:'fa',Thai:'th'}[USER.lang] || 'en');
+  document.documentElement.dir = (USER.lang === 'Arabic' || USER.lang === 'Persian') ? 'rtl' : 'ltr';
+}
+
 const MODULES = {
   vocab: {
     id:'vocab',
@@ -277,7 +329,7 @@ function renderMenu(){
     return `<div class="module-card ${USER.module===m.id?'on':''} ${active?'is-active':'is-planned'}" data-module="${active?m.id:''}" ${active?'':'aria-disabled="true"'}>
       <div class="mod-top">
         <span class="mod-number">${m.n}</span>
-        <span class="mod-status ${active?'active':'planned'}">${active?'Active':'Active'}</span>
+        <span class="mod-status ${active?'active':'planned'}">${ui('active')}</span>
       </div>
       <div class="mod-icon">${h(m.icon)}</div>
       <b>${h(m.title)}</b>
@@ -293,24 +345,25 @@ function renderMenu(){
   renderStats();
   renderAdmin();
   renderEmptyState();
+  applyI18n();
 }
 function renderSetSelect(){
   const sel=$('set-select');
   if(USER.module==='vocab'){
     sel.disabled=false;
     const sets=DB.modules.vocab.sets||[];
-    sel.innerHTML = `<option value="all">All chapters</option>` + sets.map(s=>`<option value="${h(s)}" ${USER.set===s?'selected':''}>Kapitel ${h(s)}</option>`).join('');
+    sel.innerHTML = `<option value="all">${ui('all_chapters')}</option>` + sets.map(s=>`<option value="${h(s)}" ${USER.set===s?'selected':''}>Kapitel ${h(s)}</option>`).join('');
     if(!sets.includes(USER.set) && USER.set!=='all') USER.set='all';
   } else {
     sel.disabled=true;
-    sel.innerHTML = `<option value="all">All items</option>`;
+    sel.innerHTML = `<option value="all">${ui('all_items')}</option>`;
     USER.set='all';
   }
 }
 function renderModeSelect(){
   const modes=MODULES[USER.module]?.engines || [];
   if(!modes.includes(USER.mode)) USER.mode=MODULES[USER.module].defaultMode;
-  $('mode-select').innerHTML = modes.map(m=>`<option value="${h(m)}" ${USER.mode===m?'selected':''}>${h(MODE_LABELS[m]||m)}</option>`).join('');
+  $('mode-select').innerHTML = modes.map(m=>`<option value="${h(m)}" ${USER.mode===m?'selected':''}>${h(uiModeLabel(m))}</option>`).join('');
 }
 function renderSizePills(){ document.querySelectorAll('#size-pills .pill').forEach(p=>p.classList.toggle('on',p.dataset.n===USER.size)); }
 function renderStats(){
@@ -406,26 +459,34 @@ function renderQuestion(){
   let out=`<div class="word"><div class="word-art ${artOf(it)||'none'}">${artOf(it)||''}</div><div class="word-main">${h(safeMain)}</div><div class="word-sub">${h(safeSub)}</div></div>`;
   if(q.type==='article') out+=articleView();
   if(q.type==='meaning') out+=meaningView(it);
-  if(q.type==='plural') out+=typeView('Plural', 'Type the full plural or source hint');
-  if(q.type==='active') out+=typeView('Active recall', 'Type the German word/expression');
+  if(q.type==='plural') out+=typeView(ui('plural'), 'Type the full plural or source hint');
+  if(q.type==='active') out+=typeView(ui('active_recall'), 'Type the German word/expression');
   if(q.type==='sentence') out+=sentenceView(it);
   if(q.type==='prep_learn') out+=prepLearnView(it);
   if(q.type==='grammar_learn') out+=genericLearnView(it);
   if(q.type==='prep_gap') out+=prepGapView(it);
-  if(q.type==='prep_case') out+=typeView('Case recall', `${h(it.lemma || baseOf(it))} ${h(it.preposition)} + ?`);
+  if(q.type==='prep_case') out+=typeView(ui('case_recall'), `${h(it.lemma || baseOf(it))} ${h(it.preposition)} + ?`);
   if(q.type==='grammar_prompt') out+=genericPromptView(it);
   $('qcard').innerHTML=out;
   const inp=$('answer-input'); if(inp) setTimeout(()=>inp.focus(),0);
 }
 function displayMainForQuestion(it,q){
   if(it.module==='prepverbs'){
-    if(q.type==='prep_gap') return it.lemma || baseOf(it);
-    if(q.type==='prep_case') return it.lemma || baseOf(it);
+    if(q.type==='prep_gap') return it.lemma || 'Präpositionalverb';
+    if(q.type==='prep_case') return it.lemma || 'Präpositionalverb';
     if(q.type==='meaning') return it.display || it.lemma || baseOf(it);
     if(q.type==='prep_learn') return it.lemma || baseOf(it);
   }
-  if(it.module && it.module!=='vocab') return it.display || baseOf(it);
+  if(it.module && it.module!=='vocab'){
+    if(q.type==='grammar_prompt') return modulePublicTitle(it.module);
+    if(q.type==='grammar_learn') return modulePublicTitle(it.module);
+    if(q.type==='meaning') return it.display || modulePublicTitle(it.module);
+    return modulePublicTitle(it.module);
+  }
   return baseOf(it);
+}
+function modulePublicTitle(id){
+  return (MODULES[id] && MODULES[id].title) || 'Grammar module';
 }
 function displaySubForQuestion(it,q){
   if(it.module==='prepverbs'){
@@ -434,35 +495,39 @@ function displaySubForQuestion(it,q){
     if(q.type==='prep_learn') return 'learn the pattern first';
     return 'prepositional verb';
   }
-  if(it.module && it.module!=='vocab') return it.case || it.type || 'grammar practice';
+  if(it.module && it.module!=='vocab'){
+    if(q.type==='grammar_prompt') return it.case || 'answer without seeing the pattern';
+    if(q.type==='grammar_learn') return 'learn first, then practise';
+    return it.case || it.type || 'grammar practice';
+  }
   return it.notes || it.display || '';
 }
-function articleView(){ return `<div class="phase">Choose the article</div><div class="artgrid">${['der','die','das','—'].map(a=>`<button class="artbtn ${a}" data-answer="${h(a)}">${h(a)}</button>`).join('')}</div>`; }
+function articleView(){ return `<div class="phase">${h(ui('choose_article'))}</div><div class="artgrid">${['der','die','das','—'].map(a=>`<button class="artbtn ${a}" data-answer="${h(a)}">${h(a)}</button>`).join('')}</div>`; }
 function meaningView(it){
   const correct=trOf(it);
   const others=shuffle(moduleItems().filter(x=>x.id!==it.id).map(trOf).filter(x=>x && x!==correct)).slice(0,3);
-  return `<div class="phase">Choose the meaning</div><div class="opts">${shuffle([correct,...others]).map((o,i)=>`<button class="opt" data-answer="${h(o)}"><span>${String.fromCharCode(65+i)}</span><b>${h(o)}</b></button>`).join('')}</div>`;
+  return `<div class="phase">${h(ui('choose_meaning'))}</div><div class="opts">${shuffle([correct,...others]).map((o,i)=>`<button class="opt" data-answer="${h(o)}"><span>${String.fromCharCode(65+i)}</span><b>${h(o)}</b></button>`).join('')}</div>`;
 }
-function typeView(title,hint){ return `<div class="phase">${h(title)}</div><p class="note" style="text-align:center;margin-bottom:10px">${h(hint)}</p><input class="type-input" id="answer-input"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">Check</button></div>`; }
+function typeView(title,hint){ return `<div class="phase">${h(title)}</div><p class="note" style="text-align:center;margin-bottom:10px">${h(hint)}</p><input class="type-input" id="answer-input"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">${h(ui('check'))}</button></div>`; }
 function sentenceView(it){
   const ex=it.data?.example_de || `Das Lernwort ist ${baseOf(it)}.`;
   const answer=baseOf(it);
   Q.sentenceAnswer=answer;
   const sentence=ex.includes(answer) ? ex.replace(answer,'___') : ex + ' ___';
-  return `<div class="phase">Sentence gap</div><div class="gap-sentence">${h(sentence).replace('___','<span class="gap-blank">___</span>')}</div><input class="type-input" id="answer-input"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">Check</button></div>`;
+  return `<div class="phase">${h(ui('sentence_gap'))}</div><div class="gap-sentence">${h(sentence).replace('___','<span class="gap-blank">___</span>')}</div><input class="type-input" id="answer-input"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">${h(ui('check'))}</button></div>`;
 }
-function prepGapView(it){ return `<div class="phase">Preposition gap</div><div class="gap-sentence">${h(it.gap?.sentence||'').replace('___','<span class="gap-blank">___</span>')}</div><input class="type-input" id="answer-input" placeholder="preposition"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">Check</button></div>`; }
+function prepGapView(it){ return `<div class="phase">${h(ui('preposition_gap'))}</div><div class="gap-sentence">${h(it.gap?.sentence||'').replace('___','<span class="gap-blank">___</span>')}</div><input class="type-input" id="answer-input" placeholder="preposition"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">${h(ui('check'))}</button></div>`; }
 function prepLearnView(it){
   const ex = it.example?.de || it.data?.example_de || '';
   const meaning = trOf(it);
-  return `<div class="phase">Learn the pattern</div>
+  return `<div class="phase">${h(ui('learn_pattern'))}</div>
     <div class="learn-card">
       <div class="learn-pattern">${h(it.display || ((it.lemma||baseOf(it)) + ' ' + it.preposition + ' + ' + it.case))}</div>
       <div class="learn-meta">Meaning: ${h(meaning)}<br>Preposition: <b>${h(it.preposition)}</b> · Case: <b>${h(it.case)}</b></div>
       ${ex ? `<div class="learn-example">${h(ex)}</div>` : ''}
     </div>
     <div class="row g8" style="justify-content:center;margin-top:14px">
-      <button class="btn btn-gold" id="btn-learn-continue" type="button">Continue to practice</button>
+      <button class="btn btn-gold" id="btn-learn-continue" type="button">${h(ui('continue'))}</button>
     </div>`;
 }
 
@@ -470,22 +535,22 @@ function prepLearnView(it){
 function genericLearnView(it){
   const ex = it.example?.de || it.data?.example_de || '';
   const meaning = trOf(it);
-  return `<div class="phase">Learn the item</div>
+  return `<div class="phase">${h(ui('learn_item'))}</div>
     <div class="learn-card">
       <div class="learn-pattern">${h(it.display || baseOf(it))}</div>
       <div class="learn-meta">Meaning: ${h(meaning)}${it.case ? `<br>Focus: <b>${h(it.case)}</b>` : ''}</div>
       ${ex ? `<div class="learn-example">${h(ex)}</div>` : ''}
     </div>
     <div class="row g8" style="justify-content:center;margin-top:14px">
-      <button class="btn btn-gold" id="btn-learn-continue" type="button">Continue to practice</button>
+      <button class="btn btn-gold" id="btn-learn-continue" type="button">${h(ui('continue'))}</button>
     </div>`;
 }
 function genericPromptView(it){
-  return `<div class="phase">Grammar practice</div>
+  return `<div class="phase">${h(ui('grammar_practice'))}</div>
     <div class="gap-sentence">${h(it.prompt || it.display || '').replace('___','<span class="gap-blank">___</span>')}</div>
     <input class="type-input" id="answer-input" placeholder="type your answer">
     <div class="row g8" style="justify-content:center;margin-top:10px">
-      <button class="btn btn-gold" id="btn-check" type="button">Check</button>
+      <button class="btn btn-gold" id="btn-check" type="button">${h(ui('check'))}</button>
     </div>`;
 }
 

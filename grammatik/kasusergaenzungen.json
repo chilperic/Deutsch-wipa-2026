@@ -1,10 +1,10 @@
 {
   "module": "kasusergaenzungen",
   "title": "Kasusergänzungen",
-  "status": "active-starter",
+  "status": "active-expanded",
   "items": [
     {
-      "id": "kg_helfen_dat",
+      "id": "kg_helfen_dativ_0",
       "type": "case_complement",
       "display": "helfen + Dativ",
       "meaning": {
@@ -19,22 +19,37 @@
       }
     },
     {
-      "id": "kg_fragen_akk",
+      "id": "kg_danken_dativ_1",
       "type": "case_complement",
-      "display": "fragen + Akkusativ",
+      "display": "danken + Dativ",
       "meaning": {
-        "English": "to ask someone",
-        "German": "jemanden fragen"
+        "English": "to thank someone",
+        "German": "jemandem danken"
       },
-      "prompt": "Ich frage ___ Lehrer.",
-      "answer": "den",
-      "case": "Akkusativ",
+      "prompt": "Wir danken ___ Lehrerin.",
+      "answer": "der",
+      "case": "Dativ",
       "example": {
-        "de": "Ich frage den Lehrer."
+        "de": "Wir danken der Lehrerin."
       }
     },
     {
-      "id": "kg_gehoeren_dat",
+      "id": "kg_antworten_dativ_2",
+      "type": "case_complement",
+      "display": "antworten + Dativ",
+      "meaning": {
+        "English": "to answer someone",
+        "German": "jemandem antworten"
+      },
+      "prompt": "Er antwortet ___ Kind.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Er antwortet dem Kind."
+      }
+    },
+    {
+      "id": "kg_gehören_dativ_3",
       "type": "case_complement",
       "display": "gehören + Dativ",
       "meaning": {
@@ -49,7 +64,247 @@
       }
     },
     {
-      "id": "kg_geben_dat_akk",
+      "id": "kg_folgen_dativ_4",
+      "type": "case_complement",
+      "display": "folgen + Dativ",
+      "meaning": {
+        "English": "to follow someone",
+        "German": "jemandem folgen"
+      },
+      "prompt": "Der Hund folgt ___ Mann.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Der Hund folgt dem Mann."
+      }
+    },
+    {
+      "id": "kg_gratulieren_dativ_5",
+      "type": "case_complement",
+      "display": "gratulieren + Dativ",
+      "meaning": {
+        "English": "to congratulate someone",
+        "German": "jemandem gratulieren"
+      },
+      "prompt": "Ich gratuliere ___ Kollegin.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich gratuliere der Kollegin."
+      }
+    },
+    {
+      "id": "kg_glauben_dativ_6",
+      "type": "case_complement",
+      "display": "glauben + Dativ",
+      "meaning": {
+        "English": "to believe someone",
+        "German": "jemandem glauben"
+      },
+      "prompt": "Sie glaubt ___ Arzt.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Sie glaubt dem Arzt."
+      }
+    },
+    {
+      "id": "kg_vertrauen_dativ_7",
+      "type": "case_complement",
+      "display": "vertrauen + Dativ",
+      "meaning": {
+        "English": "to trust someone",
+        "German": "jemandem vertrauen"
+      },
+      "prompt": "Wir vertrauen ___ Expertin.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Wir vertrauen der Expertin."
+      }
+    },
+    {
+      "id": "kg_zuhören_dativ_8",
+      "type": "case_complement",
+      "display": "zuhören + Dativ",
+      "meaning": {
+        "English": "to listen to someone",
+        "German": "jemandem zuhören"
+      },
+      "prompt": "Die Kinder hören ___ Lehrer zu.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Die Kinder hören dem Lehrer zu."
+      }
+    },
+    {
+      "id": "kg_widersprechen_dativ_9",
+      "type": "case_complement",
+      "display": "widersprechen + Dativ",
+      "meaning": {
+        "English": "to contradict someone",
+        "German": "jemandem widersprechen"
+      },
+      "prompt": "Ich widerspreche ___ Chef.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich widerspreche dem Chef."
+      }
+    },
+    {
+      "id": "kg_fragen_akkusativ_0",
+      "type": "case_complement",
+      "display": "fragen + Akkusativ",
+      "meaning": {
+        "English": "to ask someone",
+        "German": "jemanden fragen"
+      },
+      "prompt": "Ich frage ___ Lehrer.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich frage den Lehrer."
+      }
+    },
+    {
+      "id": "kg_sehen_akkusativ_1",
+      "type": "case_complement",
+      "display": "sehen + Akkusativ",
+      "meaning": {
+        "English": "to see someone/something",
+        "German": "jemanden/etwas sehen"
+      },
+      "prompt": "Sie sieht ___ Hund.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Sie sieht den Hund."
+      }
+    },
+    {
+      "id": "kg_brauchen_akkusativ_2",
+      "type": "case_complement",
+      "display": "brauchen + Akkusativ",
+      "meaning": {
+        "English": "to need something",
+        "German": "etwas brauchen"
+      },
+      "prompt": "Wir brauchen ___ Computer.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir brauchen den Computer."
+      }
+    },
+    {
+      "id": "kg_finden_akkusativ_3",
+      "type": "case_complement",
+      "display": "finden + Akkusativ",
+      "meaning": {
+        "English": "to find something",
+        "German": "etwas finden"
+      },
+      "prompt": "Er findet ___ Schlüssel.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Er findet den Schlüssel."
+      }
+    },
+    {
+      "id": "kg_besuchen_akkusativ_4",
+      "type": "case_complement",
+      "display": "besuchen + Akkusativ",
+      "meaning": {
+        "English": "to visit someone",
+        "German": "jemanden besuchen"
+      },
+      "prompt": "Ich besuche ___ Freund.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich besuche den Freund."
+      }
+    },
+    {
+      "id": "kg_anrufen_akkusativ_5",
+      "type": "case_complement",
+      "display": "anrufen + Akkusativ",
+      "meaning": {
+        "English": "to call someone",
+        "German": "jemanden anrufen"
+      },
+      "prompt": "Sie ruft ___ Arzt an.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Sie ruft den Arzt an."
+      }
+    },
+    {
+      "id": "kg_kennen_akkusativ_6",
+      "type": "case_complement",
+      "display": "kennen + Akkusativ",
+      "meaning": {
+        "English": "to know someone",
+        "German": "jemanden kennen"
+      },
+      "prompt": "Wir kennen ___ Nachbarn.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir kennen den Nachbarn."
+      }
+    },
+    {
+      "id": "kg_treffen_akkusativ_7",
+      "type": "case_complement",
+      "display": "treffen + Akkusativ",
+      "meaning": {
+        "English": "to meet someone",
+        "German": "jemanden treffen"
+      },
+      "prompt": "Ich treffe ___ Kollegen.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich treffe den Kollegen."
+      }
+    },
+    {
+      "id": "kg_erklären_akkusativ_8",
+      "type": "case_complement",
+      "display": "erklären + Akkusativ",
+      "meaning": {
+        "English": "to explain something",
+        "German": "etwas erklären"
+      },
+      "prompt": "Der Lehrer erklärt ___ Satz.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Der Lehrer erklärt den Satz."
+      }
+    },
+    {
+      "id": "kg_vergessen_akkusativ_9",
+      "type": "case_complement",
+      "display": "vergessen + Akkusativ",
+      "meaning": {
+        "English": "to forget something",
+        "German": "etwas vergessen"
+      },
+      "prompt": "Ich vergesse ___ Termin.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich vergesse den Termin."
+      }
+    },
+    {
+      "id": "kg_geben_dativ_akkusativ_0",
       "type": "case_complement",
       "display": "geben + Dativ + Akkusativ",
       "meaning": {
@@ -61,6 +316,591 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Ich gebe dem Kind ein Buch."
+      }
+    },
+    {
+      "id": "kg_schenken_dativ_akkusativ_1",
+      "type": "case_complement",
+      "display": "schenken + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to give someone a gift",
+        "German": "jemandem etwas schenken"
+      },
+      "prompt": "Sie schenkt ___ Freundin Blumen.",
+      "answer": "der",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Sie schenkt der Freundin Blumen."
+      }
+    },
+    {
+      "id": "kg_schicken_dativ_akkusativ_2",
+      "type": "case_complement",
+      "display": "schicken + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to send someone something",
+        "German": "jemandem etwas schicken"
+      },
+      "prompt": "Wir schicken ___ Firma die Unterlagen.",
+      "answer": "der",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Wir schicken der Firma die Unterlagen."
+      }
+    },
+    {
+      "id": "kg_bringen_dativ_akkusativ_3",
+      "type": "case_complement",
+      "display": "bringen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to bring someone something",
+        "German": "jemandem etwas bringen"
+      },
+      "prompt": "Er bringt ___ Nachbarn die Zeitung.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Er bringt dem Nachbarn die Zeitung."
+      }
+    },
+    {
+      "id": "kg_zeigen_dativ_akkusativ_4",
+      "type": "case_complement",
+      "display": "zeigen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to show someone something",
+        "German": "jemandem etwas zeigen"
+      },
+      "prompt": "Ich zeige ___ Kollegin das Dokument.",
+      "answer": "der",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Ich zeige der Kollegin das Dokument."
+      }
+    },
+    {
+      "id": "kg_erklären_dativ_akkusativ_5",
+      "type": "case_complement",
+      "display": "erklären + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to explain something to someone",
+        "German": "jemandem etwas erklären"
+      },
+      "prompt": "Der Lehrer erklärt ___ Schüler die Grammatik.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Der Lehrer erklärt dem Schüler die Grammatik."
+      }
+    },
+    {
+      "id": "kg_erzählen_dativ_akkusativ_6",
+      "type": "case_complement",
+      "display": "erzählen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to tell someone something",
+        "German": "jemandem etwas erzählen"
+      },
+      "prompt": "Oma erzählt ___ Kind eine Geschichte.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Oma erzählt dem Kind eine Geschichte."
+      }
+    },
+    {
+      "id": "kg_empfehlen_dativ_akkusativ_7",
+      "type": "case_complement",
+      "display": "empfehlen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to recommend something to someone",
+        "German": "jemandem etwas empfehlen"
+      },
+      "prompt": "Ich empfehle ___ Freund diesen Kurs.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Ich empfehle dem Freund diesen Kurs."
+      }
+    },
+    {
+      "id": "kg_leihen_dativ_akkusativ_8",
+      "type": "case_complement",
+      "display": "leihen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to lend someone something",
+        "German": "jemandem etwas leihen"
+      },
+      "prompt": "Sie leiht ___ Bruder das Auto.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Sie leiht dem Bruder das Auto."
+      }
+    },
+    {
+      "id": "kg_verkaufen_dativ_akkusativ_9",
+      "type": "case_complement",
+      "display": "verkaufen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to sell someone something",
+        "German": "jemandem etwas verkaufen"
+      },
+      "prompt": "Wir verkaufen ___ Kunden den Wagen.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Wir verkaufen dem Kunden den Wagen."
+      }
+    },
+    {
+      "id": "kg_helfen_dativ_0_var0",
+      "type": "case_complement",
+      "display": "helfen + Dativ",
+      "meaning": {
+        "English": "to help someone",
+        "German": "jemandem helfen"
+      },
+      "prompt": "Heute ich helfe ___ Mann.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Heute ich helfe dem Mann."
+      }
+    },
+    {
+      "id": "kg_danken_dativ_1_var1",
+      "type": "case_complement",
+      "display": "danken + Dativ",
+      "meaning": {
+        "English": "to thank someone",
+        "German": "jemandem danken"
+      },
+      "prompt": "Oft wir danken ___ Lehrerin.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Oft wir danken der Lehrerin."
+      }
+    },
+    {
+      "id": "kg_antworten_dativ_2_var2",
+      "type": "case_complement",
+      "display": "antworten + Dativ",
+      "meaning": {
+        "English": "to answer someone",
+        "German": "jemandem antworten"
+      },
+      "prompt": "Morgen er antwortet ___ Kind.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Morgen er antwortet dem Kind."
+      }
+    },
+    {
+      "id": "kg_gehören_dativ_3_var3",
+      "type": "case_complement",
+      "display": "gehören + Dativ",
+      "meaning": {
+        "English": "to belong to someone",
+        "German": "jemandem gehören"
+      },
+      "prompt": "Im Kurs das Buch gehört ___ Frau.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Im Kurs das Buch gehört der Frau."
+      }
+    },
+    {
+      "id": "kg_folgen_dativ_4_var4",
+      "type": "case_complement",
+      "display": "folgen + Dativ",
+      "meaning": {
+        "English": "to follow someone",
+        "German": "jemandem folgen"
+      },
+      "prompt": "Bei der Arbeit der Hund folgt ___ Mann.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Bei der Arbeit der Hund folgt dem Mann."
+      }
+    },
+    {
+      "id": "kg_gratulieren_dativ_5_var5",
+      "type": "case_complement",
+      "display": "gratulieren + Dativ",
+      "meaning": {
+        "English": "to congratulate someone",
+        "German": "jemandem gratulieren"
+      },
+      "prompt": "Nach dem Kurs ich gratuliere ___ Kollegin.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Nach dem Kurs ich gratuliere der Kollegin."
+      }
+    },
+    {
+      "id": "kg_glauben_dativ_6_var6",
+      "type": "case_complement",
+      "display": "glauben + Dativ",
+      "meaning": {
+        "English": "to believe someone",
+        "German": "jemandem glauben"
+      },
+      "prompt": "Heute sie glaubt ___ Arzt.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Heute sie glaubt dem Arzt."
+      }
+    },
+    {
+      "id": "kg_vertrauen_dativ_7_var7",
+      "type": "case_complement",
+      "display": "vertrauen + Dativ",
+      "meaning": {
+        "English": "to trust someone",
+        "German": "jemandem vertrauen"
+      },
+      "prompt": "Oft wir vertrauen ___ Expertin.",
+      "answer": "der",
+      "case": "Dativ",
+      "example": {
+        "de": "Oft wir vertrauen der Expertin."
+      }
+    },
+    {
+      "id": "kg_zuhören_dativ_8_var8",
+      "type": "case_complement",
+      "display": "zuhören + Dativ",
+      "meaning": {
+        "English": "to listen to someone",
+        "German": "jemandem zuhören"
+      },
+      "prompt": "Morgen die Kinder hören ___ Lehrer zu.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Morgen die Kinder hören dem Lehrer zu."
+      }
+    },
+    {
+      "id": "kg_widersprechen_dativ_9_var9",
+      "type": "case_complement",
+      "display": "widersprechen + Dativ",
+      "meaning": {
+        "English": "to contradict someone",
+        "German": "jemandem widersprechen"
+      },
+      "prompt": "Im Kurs ich widerspreche ___ Chef.",
+      "answer": "dem",
+      "case": "Dativ",
+      "example": {
+        "de": "Im Kurs ich widerspreche dem Chef."
+      }
+    },
+    {
+      "id": "kg_fragen_akkusativ_0_var10",
+      "type": "case_complement",
+      "display": "fragen + Akkusativ",
+      "meaning": {
+        "English": "to ask someone",
+        "German": "jemanden fragen"
+      },
+      "prompt": "Bei der Arbeit ich frage ___ Lehrer.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Bei der Arbeit ich frage den Lehrer."
+      }
+    },
+    {
+      "id": "kg_sehen_akkusativ_1_var11",
+      "type": "case_complement",
+      "display": "sehen + Akkusativ",
+      "meaning": {
+        "English": "to see someone/something",
+        "German": "jemanden/etwas sehen"
+      },
+      "prompt": "Nach dem Kurs sie sieht ___ Hund.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Nach dem Kurs sie sieht den Hund."
+      }
+    },
+    {
+      "id": "kg_brauchen_akkusativ_2_var12",
+      "type": "case_complement",
+      "display": "brauchen + Akkusativ",
+      "meaning": {
+        "English": "to need something",
+        "German": "etwas brauchen"
+      },
+      "prompt": "Heute wir brauchen ___ Computer.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Heute wir brauchen den Computer."
+      }
+    },
+    {
+      "id": "kg_finden_akkusativ_3_var13",
+      "type": "case_complement",
+      "display": "finden + Akkusativ",
+      "meaning": {
+        "English": "to find something",
+        "German": "etwas finden"
+      },
+      "prompt": "Oft er findet ___ Schlüssel.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Oft er findet den Schlüssel."
+      }
+    },
+    {
+      "id": "kg_besuchen_akkusativ_4_var14",
+      "type": "case_complement",
+      "display": "besuchen + Akkusativ",
+      "meaning": {
+        "English": "to visit someone",
+        "German": "jemanden besuchen"
+      },
+      "prompt": "Morgen ich besuche ___ Freund.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Morgen ich besuche den Freund."
+      }
+    },
+    {
+      "id": "kg_anrufen_akkusativ_5_var15",
+      "type": "case_complement",
+      "display": "anrufen + Akkusativ",
+      "meaning": {
+        "English": "to call someone",
+        "German": "jemanden anrufen"
+      },
+      "prompt": "Im Kurs sie ruft ___ Arzt an.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Im Kurs sie ruft den Arzt an."
+      }
+    },
+    {
+      "id": "kg_kennen_akkusativ_6_var16",
+      "type": "case_complement",
+      "display": "kennen + Akkusativ",
+      "meaning": {
+        "English": "to know someone",
+        "German": "jemanden kennen"
+      },
+      "prompt": "Bei der Arbeit wir kennen ___ Nachbarn.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Bei der Arbeit wir kennen den Nachbarn."
+      }
+    },
+    {
+      "id": "kg_treffen_akkusativ_7_var17",
+      "type": "case_complement",
+      "display": "treffen + Akkusativ",
+      "meaning": {
+        "English": "to meet someone",
+        "German": "jemanden treffen"
+      },
+      "prompt": "Nach dem Kurs ich treffe ___ Kollegen.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Nach dem Kurs ich treffe den Kollegen."
+      }
+    },
+    {
+      "id": "kg_erklären_akkusativ_8_var18",
+      "type": "case_complement",
+      "display": "erklären + Akkusativ",
+      "meaning": {
+        "English": "to explain something",
+        "German": "etwas erklären"
+      },
+      "prompt": "Heute der Lehrer erklärt ___ Satz.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Heute der Lehrer erklärt den Satz."
+      }
+    },
+    {
+      "id": "kg_vergessen_akkusativ_9_var19",
+      "type": "case_complement",
+      "display": "vergessen + Akkusativ",
+      "meaning": {
+        "English": "to forget something",
+        "German": "etwas vergessen"
+      },
+      "prompt": "Oft ich vergesse ___ Termin.",
+      "answer": "den",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Oft ich vergesse den Termin."
+      }
+    },
+    {
+      "id": "kg_geben_dativ_akkusativ_0_var20",
+      "type": "case_complement",
+      "display": "geben + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to give someone something",
+        "German": "jemandem etwas geben"
+      },
+      "prompt": "Morgen ich gebe ___ Kind ein Buch.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Morgen ich gebe dem Kind ein Buch."
+      }
+    },
+    {
+      "id": "kg_schenken_dativ_akkusativ_1_var21",
+      "type": "case_complement",
+      "display": "schenken + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to give someone a gift",
+        "German": "jemandem etwas schenken"
+      },
+      "prompt": "Im Kurs sie schenkt ___ Freundin Blumen.",
+      "answer": "der",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Im Kurs sie schenkt der Freundin Blumen."
+      }
+    },
+    {
+      "id": "kg_schicken_dativ_akkusativ_2_var22",
+      "type": "case_complement",
+      "display": "schicken + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to send someone something",
+        "German": "jemandem etwas schicken"
+      },
+      "prompt": "Bei der Arbeit wir schicken ___ Firma die Unterlagen.",
+      "answer": "der",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Bei der Arbeit wir schicken der Firma die Unterlagen."
+      }
+    },
+    {
+      "id": "kg_bringen_dativ_akkusativ_3_var23",
+      "type": "case_complement",
+      "display": "bringen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to bring someone something",
+        "German": "jemandem etwas bringen"
+      },
+      "prompt": "Nach dem Kurs er bringt ___ Nachbarn die Zeitung.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Nach dem Kurs er bringt dem Nachbarn die Zeitung."
+      }
+    },
+    {
+      "id": "kg_zeigen_dativ_akkusativ_4_var24",
+      "type": "case_complement",
+      "display": "zeigen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to show someone something",
+        "German": "jemandem etwas zeigen"
+      },
+      "prompt": "Heute ich zeige ___ Kollegin das Dokument.",
+      "answer": "der",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Heute ich zeige der Kollegin das Dokument."
+      }
+    },
+    {
+      "id": "kg_erklären_dativ_akkusativ_5_var25",
+      "type": "case_complement",
+      "display": "erklären + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to explain something to someone",
+        "German": "jemandem etwas erklären"
+      },
+      "prompt": "Oft der Lehrer erklärt ___ Schüler die Grammatik.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Oft der Lehrer erklärt dem Schüler die Grammatik."
+      }
+    },
+    {
+      "id": "kg_erzählen_dativ_akkusativ_6_var26",
+      "type": "case_complement",
+      "display": "erzählen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to tell someone something",
+        "German": "jemandem etwas erzählen"
+      },
+      "prompt": "Morgen oma erzählt ___ Kind eine Geschichte.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Morgen oma erzählt dem Kind eine Geschichte."
+      }
+    },
+    {
+      "id": "kg_empfehlen_dativ_akkusativ_7_var27",
+      "type": "case_complement",
+      "display": "empfehlen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to recommend something to someone",
+        "German": "jemandem etwas empfehlen"
+      },
+      "prompt": "Im Kurs ich empfehle ___ Freund diesen Kurs.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Im Kurs ich empfehle dem Freund diesen Kurs."
+      }
+    },
+    {
+      "id": "kg_leihen_dativ_akkusativ_8_var28",
+      "type": "case_complement",
+      "display": "leihen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to lend someone something",
+        "German": "jemandem etwas leihen"
+      },
+      "prompt": "Bei der Arbeit sie leiht ___ Bruder das Auto.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Bei der Arbeit sie leiht dem Bruder das Auto."
+      }
+    },
+    {
+      "id": "kg_verkaufen_dativ_akkusativ_9_var29",
+      "type": "case_complement",
+      "display": "verkaufen + Dativ + Akkusativ",
+      "meaning": {
+        "English": "to sell someone something",
+        "German": "jemandem etwas verkaufen"
+      },
+      "prompt": "Nach dem Kurs wir verkaufen ___ Kunden den Wagen.",
+      "answer": "dem",
+      "case": "Dativ + Akkusativ",
+      "example": {
+        "de": "Nach dem Kurs wir verkaufen dem Kunden den Wagen."
       }
     }
   ]

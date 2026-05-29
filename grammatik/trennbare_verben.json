@@ -1,66 +1,906 @@
 {
   "module": "trennbare_verben",
   "title": "Trennbare Verben",
-  "status": "active-starter",
+  "status": "active-expanded",
   "items": [
     {
-      "id": "tv_anfangen",
+      "id": "tv_anfangen_pres",
       "type": "separable_verb",
       "display": "anfangen",
       "meaning": {
         "English": "to begin",
         "German": "anfangen"
       },
-      "prompt": "Ich ___ um 8 Uhr ___.",
+      "prompt": "Ich ___ heute ___. (anfangen)",
       "answer": "fange an",
-      "case": "trennbar",
+      "case": "Präsens · trennbar",
       "example": {
-        "de": "Ich fange um 8 Uhr an."
+        "de": "Ich fange an heute."
       }
     },
     {
-      "id": "tv_aufstehen",
+      "id": "tv_anfangen_perf",
+      "type": "separable_verb",
+      "display": "anfangen",
+      "meaning": {
+        "English": "to begin",
+        "German": "anfangen"
+      },
+      "prompt": "anfangen · Partizip II?",
+      "answer": "angefangen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin angefangen."
+      }
+    },
+    {
+      "id": "tv_anfangen_meaning",
+      "type": "separable_verb",
+      "display": "anfangen",
+      "meaning": {
+        "English": "to begin",
+        "German": "anfangen"
+      },
+      "prompt": "Was bedeutet anfangen?",
+      "answer": "to begin",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: anfangen."
+      }
+    },
+    {
+      "id": "tv_aufstehen_pres",
       "type": "separable_verb",
       "display": "aufstehen",
       "meaning": {
         "English": "to get up",
         "German": "aufstehen"
       },
-      "prompt": "Ich ___ jeden Morgen früh ___.",
+      "prompt": "Ich ___ heute ___. (aufstehen)",
       "answer": "stehe auf",
-      "case": "trennbar",
+      "case": "Präsens · trennbar",
       "example": {
-        "de": "Ich stehe jeden Morgen früh auf."
+        "de": "Ich stehe auf heute."
       }
     },
     {
-      "id": "tv_einkaufen",
+      "id": "tv_aufstehen_perf",
+      "type": "separable_verb",
+      "display": "aufstehen",
+      "meaning": {
+        "English": "to get up",
+        "German": "aufstehen"
+      },
+      "prompt": "aufstehen · Partizip II?",
+      "answer": "aufgestanden",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin aufgestanden."
+      }
+    },
+    {
+      "id": "tv_aufstehen_meaning",
+      "type": "separable_verb",
+      "display": "aufstehen",
+      "meaning": {
+        "English": "to get up",
+        "German": "aufstehen"
+      },
+      "prompt": "Was bedeutet aufstehen?",
+      "answer": "to get up",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: aufstehen."
+      }
+    },
+    {
+      "id": "tv_einkaufen_pres",
       "type": "separable_verb",
       "display": "einkaufen",
       "meaning": {
         "English": "to shop",
         "German": "einkaufen"
       },
-      "prompt": "Wir ___ heute im Supermarkt ___.",
-      "answer": "kaufen ein",
-      "case": "trennbar",
+      "prompt": "Ich ___ heute ___. (einkaufen)",
+      "answer": "kaufe ein",
+      "case": "Präsens · trennbar",
       "example": {
-        "de": "Wir kaufen heute im Supermarkt ein."
+        "de": "Ich kaufe ein heute."
       }
     },
     {
-      "id": "tv_mitbringen",
+      "id": "tv_einkaufen_perf",
+      "type": "separable_verb",
+      "display": "einkaufen",
+      "meaning": {
+        "English": "to shop",
+        "German": "einkaufen"
+      },
+      "prompt": "einkaufen · Partizip II?",
+      "answer": "eingekauft",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin eingekauft."
+      }
+    },
+    {
+      "id": "tv_einkaufen_meaning",
+      "type": "separable_verb",
+      "display": "einkaufen",
+      "meaning": {
+        "English": "to shop",
+        "German": "einkaufen"
+      },
+      "prompt": "Was bedeutet einkaufen?",
+      "answer": "to shop",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: einkaufen."
+      }
+    },
+    {
+      "id": "tv_mitbringen_pres",
       "type": "separable_verb",
       "display": "mitbringen",
       "meaning": {
         "English": "to bring along",
         "German": "mitbringen"
       },
-      "prompt": "Ich ___ einen Kuchen ___.",
+      "prompt": "Ich ___ heute ___. (mitbringen)",
       "answer": "bringe mit",
-      "case": "trennbar",
+      "case": "Präsens · trennbar",
       "example": {
-        "de": "Ich bringe einen Kuchen mit."
+        "de": "Ich bringe mit heute."
+      }
+    },
+    {
+      "id": "tv_mitbringen_perf",
+      "type": "separable_verb",
+      "display": "mitbringen",
+      "meaning": {
+        "English": "to bring along",
+        "German": "mitbringen"
+      },
+      "prompt": "mitbringen · Partizip II?",
+      "answer": "mitgebracht",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin mitgebracht."
+      }
+    },
+    {
+      "id": "tv_mitbringen_meaning",
+      "type": "separable_verb",
+      "display": "mitbringen",
+      "meaning": {
+        "English": "to bring along",
+        "German": "mitbringen"
+      },
+      "prompt": "Was bedeutet mitbringen?",
+      "answer": "to bring along",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: mitbringen."
+      }
+    },
+    {
+      "id": "tv_anrufen_pres",
+      "type": "separable_verb",
+      "display": "anrufen",
+      "meaning": {
+        "English": "to call",
+        "German": "anrufen"
+      },
+      "prompt": "Ich ___ heute ___. (anrufen)",
+      "answer": "rufe an",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich rufe an heute."
+      }
+    },
+    {
+      "id": "tv_anrufen_perf",
+      "type": "separable_verb",
+      "display": "anrufen",
+      "meaning": {
+        "English": "to call",
+        "German": "anrufen"
+      },
+      "prompt": "anrufen · Partizip II?",
+      "answer": "angerufen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin angerufen."
+      }
+    },
+    {
+      "id": "tv_anrufen_meaning",
+      "type": "separable_verb",
+      "display": "anrufen",
+      "meaning": {
+        "English": "to call",
+        "German": "anrufen"
+      },
+      "prompt": "Was bedeutet anrufen?",
+      "answer": "to call",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: anrufen."
+      }
+    },
+    {
+      "id": "tv_ausfüllen_pres",
+      "type": "separable_verb",
+      "display": "ausfüllen",
+      "meaning": {
+        "English": "to fill out",
+        "German": "ausfüllen"
+      },
+      "prompt": "Ich ___ heute ___. (ausfüllen)",
+      "answer": "fülle aus",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich fülle aus heute."
+      }
+    },
+    {
+      "id": "tv_ausfüllen_perf",
+      "type": "separable_verb",
+      "display": "ausfüllen",
+      "meaning": {
+        "English": "to fill out",
+        "German": "ausfüllen"
+      },
+      "prompt": "ausfüllen · Partizip II?",
+      "answer": "ausgefüllt",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin ausgefüllt."
+      }
+    },
+    {
+      "id": "tv_ausfüllen_meaning",
+      "type": "separable_verb",
+      "display": "ausfüllen",
+      "meaning": {
+        "English": "to fill out",
+        "German": "ausfüllen"
+      },
+      "prompt": "Was bedeutet ausfüllen?",
+      "answer": "to fill out",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: ausfüllen."
+      }
+    },
+    {
+      "id": "tv_einsteigen_pres",
+      "type": "separable_verb",
+      "display": "einsteigen",
+      "meaning": {
+        "English": "to get in",
+        "German": "einsteigen"
+      },
+      "prompt": "Ich ___ heute ___. (einsteigen)",
+      "answer": "steige ein",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich steige ein heute."
+      }
+    },
+    {
+      "id": "tv_einsteigen_perf",
+      "type": "separable_verb",
+      "display": "einsteigen",
+      "meaning": {
+        "English": "to get in",
+        "German": "einsteigen"
+      },
+      "prompt": "einsteigen · Partizip II?",
+      "answer": "eingestiegen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin eingestiegen."
+      }
+    },
+    {
+      "id": "tv_einsteigen_meaning",
+      "type": "separable_verb",
+      "display": "einsteigen",
+      "meaning": {
+        "English": "to get in",
+        "German": "einsteigen"
+      },
+      "prompt": "Was bedeutet einsteigen?",
+      "answer": "to get in",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: einsteigen."
+      }
+    },
+    {
+      "id": "tv_aussteigen_pres",
+      "type": "separable_verb",
+      "display": "aussteigen",
+      "meaning": {
+        "English": "to get out",
+        "German": "aussteigen"
+      },
+      "prompt": "Ich ___ heute ___. (aussteigen)",
+      "answer": "steige aus",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich steige aus heute."
+      }
+    },
+    {
+      "id": "tv_aussteigen_perf",
+      "type": "separable_verb",
+      "display": "aussteigen",
+      "meaning": {
+        "English": "to get out",
+        "German": "aussteigen"
+      },
+      "prompt": "aussteigen · Partizip II?",
+      "answer": "ausgestiegen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin ausgestiegen."
+      }
+    },
+    {
+      "id": "tv_aussteigen_meaning",
+      "type": "separable_verb",
+      "display": "aussteigen",
+      "meaning": {
+        "English": "to get out",
+        "German": "aussteigen"
+      },
+      "prompt": "Was bedeutet aussteigen?",
+      "answer": "to get out",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: aussteigen."
+      }
+    },
+    {
+      "id": "tv_umsteigen_pres",
+      "type": "separable_verb",
+      "display": "umsteigen",
+      "meaning": {
+        "English": "to transfer",
+        "German": "umsteigen"
+      },
+      "prompt": "Ich ___ heute ___. (umsteigen)",
+      "answer": "steige um",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich steige um heute."
+      }
+    },
+    {
+      "id": "tv_umsteigen_perf",
+      "type": "separable_verb",
+      "display": "umsteigen",
+      "meaning": {
+        "English": "to transfer",
+        "German": "umsteigen"
+      },
+      "prompt": "umsteigen · Partizip II?",
+      "answer": "umgestiegen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin umgestiegen."
+      }
+    },
+    {
+      "id": "tv_umsteigen_meaning",
+      "type": "separable_verb",
+      "display": "umsteigen",
+      "meaning": {
+        "English": "to transfer",
+        "German": "umsteigen"
+      },
+      "prompt": "Was bedeutet umsteigen?",
+      "answer": "to transfer",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: umsteigen."
+      }
+    },
+    {
+      "id": "tv_vorbereiten_pres",
+      "type": "separable_verb",
+      "display": "vorbereiten",
+      "meaning": {
+        "English": "to prepare",
+        "German": "vorbereiten"
+      },
+      "prompt": "Ich ___ heute ___. (vorbereiten)",
+      "answer": "bereite vor",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich bereite vor heute."
+      }
+    },
+    {
+      "id": "tv_vorbereiten_perf",
+      "type": "separable_verb",
+      "display": "vorbereiten",
+      "meaning": {
+        "English": "to prepare",
+        "German": "vorbereiten"
+      },
+      "prompt": "vorbereiten · Partizip II?",
+      "answer": "vorbereitet",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin vorbereitet."
+      }
+    },
+    {
+      "id": "tv_vorbereiten_meaning",
+      "type": "separable_verb",
+      "display": "vorbereiten",
+      "meaning": {
+        "English": "to prepare",
+        "German": "vorbereiten"
+      },
+      "prompt": "Was bedeutet vorbereiten?",
+      "answer": "to prepare",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: vorbereiten."
+      }
+    },
+    {
+      "id": "tv_teilnehmen_pres",
+      "type": "separable_verb",
+      "display": "teilnehmen",
+      "meaning": {
+        "English": "to participate",
+        "German": "teilnehmen"
+      },
+      "prompt": "Ich ___ heute ___. (teilnehmen)",
+      "answer": "nehme teil",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich nehme teil heute."
+      }
+    },
+    {
+      "id": "tv_teilnehmen_perf",
+      "type": "separable_verb",
+      "display": "teilnehmen",
+      "meaning": {
+        "English": "to participate",
+        "German": "teilnehmen"
+      },
+      "prompt": "teilnehmen · Partizip II?",
+      "answer": "teilgenommen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin teilgenommen."
+      }
+    },
+    {
+      "id": "tv_teilnehmen_meaning",
+      "type": "separable_verb",
+      "display": "teilnehmen",
+      "meaning": {
+        "English": "to participate",
+        "German": "teilnehmen"
+      },
+      "prompt": "Was bedeutet teilnehmen?",
+      "answer": "to participate",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: teilnehmen."
+      }
+    },
+    {
+      "id": "tv_aufräumen_pres",
+      "type": "separable_verb",
+      "display": "aufräumen",
+      "meaning": {
+        "English": "to tidy up",
+        "German": "aufräumen"
+      },
+      "prompt": "Ich ___ heute ___. (aufräumen)",
+      "answer": "räume auf",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich räume auf heute."
+      }
+    },
+    {
+      "id": "tv_aufräumen_perf",
+      "type": "separable_verb",
+      "display": "aufräumen",
+      "meaning": {
+        "English": "to tidy up",
+        "German": "aufräumen"
+      },
+      "prompt": "aufräumen · Partizip II?",
+      "answer": "aufgeräumt",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin aufgeräumt."
+      }
+    },
+    {
+      "id": "tv_aufräumen_meaning",
+      "type": "separable_verb",
+      "display": "aufräumen",
+      "meaning": {
+        "English": "to tidy up",
+        "German": "aufräumen"
+      },
+      "prompt": "Was bedeutet aufräumen?",
+      "answer": "to tidy up",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: aufräumen."
+      }
+    },
+    {
+      "id": "tv_zumachen_pres",
+      "type": "separable_verb",
+      "display": "zumachen",
+      "meaning": {
+        "English": "to close",
+        "German": "zumachen"
+      },
+      "prompt": "Ich ___ heute ___. (zumachen)",
+      "answer": "mache zu",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich mache zu heute."
+      }
+    },
+    {
+      "id": "tv_zumachen_perf",
+      "type": "separable_verb",
+      "display": "zumachen",
+      "meaning": {
+        "English": "to close",
+        "German": "zumachen"
+      },
+      "prompt": "zumachen · Partizip II?",
+      "answer": "zugemacht",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin zugemacht."
+      }
+    },
+    {
+      "id": "tv_zumachen_meaning",
+      "type": "separable_verb",
+      "display": "zumachen",
+      "meaning": {
+        "English": "to close",
+        "German": "zumachen"
+      },
+      "prompt": "Was bedeutet zumachen?",
+      "answer": "to close",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: zumachen."
+      }
+    },
+    {
+      "id": "tv_aufmachen_pres",
+      "type": "separable_verb",
+      "display": "aufmachen",
+      "meaning": {
+        "English": "to open",
+        "German": "aufmachen"
+      },
+      "prompt": "Ich ___ heute ___. (aufmachen)",
+      "answer": "mache auf",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich mache auf heute."
+      }
+    },
+    {
+      "id": "tv_aufmachen_perf",
+      "type": "separable_verb",
+      "display": "aufmachen",
+      "meaning": {
+        "English": "to open",
+        "German": "aufmachen"
+      },
+      "prompt": "aufmachen · Partizip II?",
+      "answer": "aufgemacht",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin aufgemacht."
+      }
+    },
+    {
+      "id": "tv_aufmachen_meaning",
+      "type": "separable_verb",
+      "display": "aufmachen",
+      "meaning": {
+        "English": "to open",
+        "German": "aufmachen"
+      },
+      "prompt": "Was bedeutet aufmachen?",
+      "answer": "to open",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: aufmachen."
+      }
+    },
+    {
+      "id": "tv_zurückrufen_pres",
+      "type": "separable_verb",
+      "display": "zurückrufen",
+      "meaning": {
+        "English": "to call back",
+        "German": "zurückrufen"
+      },
+      "prompt": "Ich ___ heute ___. (zurückrufen)",
+      "answer": "rufe zurück",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich rufe zurück heute."
+      }
+    },
+    {
+      "id": "tv_zurückrufen_perf",
+      "type": "separable_verb",
+      "display": "zurückrufen",
+      "meaning": {
+        "English": "to call back",
+        "German": "zurückrufen"
+      },
+      "prompt": "zurückrufen · Partizip II?",
+      "answer": "zurückgerufen",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin zurückgerufen."
+      }
+    },
+    {
+      "id": "tv_zurückrufen_meaning",
+      "type": "separable_verb",
+      "display": "zurückrufen",
+      "meaning": {
+        "English": "to call back",
+        "German": "zurückrufen"
+      },
+      "prompt": "Was bedeutet zurückrufen?",
+      "answer": "to call back",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: zurückrufen."
+      }
+    },
+    {
+      "id": "tv_kennenlernen_pres",
+      "type": "separable_verb",
+      "display": "kennenlernen",
+      "meaning": {
+        "English": "to get to know",
+        "German": "kennenlernen"
+      },
+      "prompt": "Ich ___ heute ___. (kennenlernen)",
+      "answer": "lerne kennen",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich lerne kennen heute."
+      }
+    },
+    {
+      "id": "tv_kennenlernen_perf",
+      "type": "separable_verb",
+      "display": "kennenlernen",
+      "meaning": {
+        "English": "to get to know",
+        "German": "kennenlernen"
+      },
+      "prompt": "kennenlernen · Partizip II?",
+      "answer": "kennengelernt",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin kennengelernt."
+      }
+    },
+    {
+      "id": "tv_kennenlernen_meaning",
+      "type": "separable_verb",
+      "display": "kennenlernen",
+      "meaning": {
+        "English": "to get to know",
+        "German": "kennenlernen"
+      },
+      "prompt": "Was bedeutet kennenlernen?",
+      "answer": "to get to know",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: kennenlernen."
+      }
+    },
+    {
+      "id": "tv_weiterarbeiten_pres",
+      "type": "separable_verb",
+      "display": "weiterarbeiten",
+      "meaning": {
+        "English": "to continue working",
+        "German": "weiterarbeiten"
+      },
+      "prompt": "Ich ___ heute ___. (weiterarbeiten)",
+      "answer": "arbeite weiter",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich arbeite weiter heute."
+      }
+    },
+    {
+      "id": "tv_weiterarbeiten_perf",
+      "type": "separable_verb",
+      "display": "weiterarbeiten",
+      "meaning": {
+        "English": "to continue working",
+        "German": "weiterarbeiten"
+      },
+      "prompt": "weiterarbeiten · Partizip II?",
+      "answer": "weitergearbeitet",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin weitergearbeitet."
+      }
+    },
+    {
+      "id": "tv_weiterarbeiten_meaning",
+      "type": "separable_verb",
+      "display": "weiterarbeiten",
+      "meaning": {
+        "English": "to continue working",
+        "German": "weiterarbeiten"
+      },
+      "prompt": "Was bedeutet weiterarbeiten?",
+      "answer": "to continue working",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: weiterarbeiten."
+      }
+    },
+    {
+      "id": "tv_feststellen_pres",
+      "type": "separable_verb",
+      "display": "feststellen",
+      "meaning": {
+        "English": "to determine",
+        "German": "feststellen"
+      },
+      "prompt": "Ich ___ heute ___. (feststellen)",
+      "answer": "stelle fest",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich stelle fest heute."
+      }
+    },
+    {
+      "id": "tv_feststellen_perf",
+      "type": "separable_verb",
+      "display": "feststellen",
+      "meaning": {
+        "English": "to determine",
+        "German": "feststellen"
+      },
+      "prompt": "feststellen · Partizip II?",
+      "answer": "festgestellt",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin festgestellt."
+      }
+    },
+    {
+      "id": "tv_feststellen_meaning",
+      "type": "separable_verb",
+      "display": "feststellen",
+      "meaning": {
+        "English": "to determine",
+        "German": "feststellen"
+      },
+      "prompt": "Was bedeutet feststellen?",
+      "answer": "to determine",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: feststellen."
+      }
+    },
+    {
+      "id": "tv_absagen_pres",
+      "type": "separable_verb",
+      "display": "absagen",
+      "meaning": {
+        "English": "to cancel",
+        "German": "absagen"
+      },
+      "prompt": "Ich ___ heute ___. (absagen)",
+      "answer": "sage ab",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich sage ab heute."
+      }
+    },
+    {
+      "id": "tv_absagen_perf",
+      "type": "separable_verb",
+      "display": "absagen",
+      "meaning": {
+        "English": "to cancel",
+        "German": "absagen"
+      },
+      "prompt": "absagen · Partizip II?",
+      "answer": "abgesagt",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin abgesagt."
+      }
+    },
+    {
+      "id": "tv_absagen_meaning",
+      "type": "separable_verb",
+      "display": "absagen",
+      "meaning": {
+        "English": "to cancel",
+        "German": "absagen"
+      },
+      "prompt": "Was bedeutet absagen?",
+      "answer": "to cancel",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: absagen."
+      }
+    },
+    {
+      "id": "tv_zusagen_pres",
+      "type": "separable_verb",
+      "display": "zusagen",
+      "meaning": {
+        "English": "to accept/confirm",
+        "German": "zusagen"
+      },
+      "prompt": "Ich ___ heute ___. (zusagen)",
+      "answer": "sage zu",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich sage zu heute."
+      }
+    },
+    {
+      "id": "tv_zusagen_perf",
+      "type": "separable_verb",
+      "display": "zusagen",
+      "meaning": {
+        "English": "to accept/confirm",
+        "German": "zusagen"
+      },
+      "prompt": "zusagen · Partizip II?",
+      "answer": "zugesagt",
+      "case": "Perfekt",
+      "example": {
+        "de": "Ich habe/bin zugesagt."
+      }
+    },
+    {
+      "id": "tv_zusagen_meaning",
+      "type": "separable_verb",
+      "display": "zusagen",
+      "meaning": {
+        "English": "to accept/confirm",
+        "German": "zusagen"
+      },
+      "prompt": "Was bedeutet zusagen?",
+      "answer": "to accept/confirm",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: zusagen."
       }
     }
   ]

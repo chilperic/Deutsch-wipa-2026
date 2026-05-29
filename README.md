@@ -224,3 +224,36 @@ Build marker:
 ```text
 all-modules-active-dashboard-2026-05-29
 ```
+
+
+## Interface language
+
+The quiz language selector now also changes the interface language. Some specialized labels fall back to English when a translation is not defined.
+
+
+## Expanded non-leaky modules
+
+The non-vocabulary grammar modules now contain at least 60 starter items each.
+
+The practice flow was corrected so the answer is not visible during prompt practice.
+
+For grammar modules:
+
+```text
+1. Learn the item
+2. Meaning
+3. Prompt practice without showing the answer in the header
+```
+
+Expanded modules:
+
+```text
+Kasusergänzungen: 60 items
+Starke Verben: 60 items
+Trennbare Verben: 60 items
+Präpositionen: 60 items
+Nomen · Artikel · Plural: 60 items
+Adjektivdeklination: 60 items
+Pronomen: 60 items
+Konnektoren / Nebensätze: 60 items
+```
