@@ -1,8 +1,8 @@
-# Grammatik modules
+# Grammatik
 
-This folder contains grammar-focused practice modules.
+Grammar-focused modules.
 
-Current starter module:
+Current active module:
 
 ```text
 praepositionalverben.json
@@ -20,5 +20,3 @@ adjektivdeklination.json
 pronomen.json
 konnektoren_nebensaetze.json
 ```
-
-These files are separated from `vokabular/` because they train grammar patterns rather than normal chapter vocabulary.

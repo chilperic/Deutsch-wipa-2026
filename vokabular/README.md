@@ -1,14 +1,12 @@
 # Vokabular
 
-This folder contains course vocabulary by chapter.
+Course vocabulary by chapter.
 
-Required naming pattern:
+Expected files:
 
 ```text
 kapitel1.json
 kapitel2.json
 kapitel3.json
-...
+kapitel4.json
 ```
-
-The app loads chapter files from this folder.

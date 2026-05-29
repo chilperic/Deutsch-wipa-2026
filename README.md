@@ -36,3 +36,44 @@ Expected:
 ```text
 complete-module-architecture-2026-05-29
 ```
+
+
+## Beautiful UI build
+
+This version keeps the complete module architecture and redesigns only the interface layer.
+
+Build marker:
+
+```js
+window.VOKABULAR_BUILD
+```
+
+Expected:
+
+```text
+complete-architecture-beautiful-ui-2026-05-29
+```
+
+## Verb module learning flow
+
+The prepositional verb module no longer shows the full pattern during the gap question.
+
+Full grammar cycle:
+
+```text
+1. Learn the pattern
+2. Meaning
+3. Preposition gap
+4. Case recall
+```
+
+Example:
+
+```text
+Learn:
+sich bewerben um + Akkusativ
+
+Then practise:
+Ich bewerbe mich ___ eine Stelle.
+Answer: um
+```

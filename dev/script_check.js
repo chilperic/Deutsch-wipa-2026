@@ -1,5 +1,5 @@
 'use strict';
-window.VOKABULAR_BUILD = 'complete-module-architecture-2026-05-29';
+window.VOKABULAR_BUILD = 'verb-flow-structured-architecture-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
@@ -191,15 +191,27 @@ function startSession(items=null){
   if(USER.mode==='weak') pool=weakItems();
   if(!pool.length){ alert('No items loaded for this module. Check the folder structure or use Admin → Reload files.'); renderEmptyState(); return; }
   const n=USER.size==='all'?pool.length:Math.min(Number(USER.size||10),pool.length);
-  const queue=shuffle(pool).slice(0,n);
-  Q={queue,original:[...queue],i:0,ok:0,err:0,pts:0,weak:[],streak:0,best:0,cur:null,question:null};
+  const selected=shuffle(pool).slice(0,n);
+  const queue=buildSessionQueue(selected);
+  Q={queue,originalItems:[...selected],i:0,ok:0,err:0,pts:0,weak:[],streak:0,best:0,cur:null,question:null};
   showScreen('quiz');
   nextQuestion();
 }
-function restartSession(){ if(Q?.original) startSession(Q.original); }
+function buildSessionQueue(items){
+  if(USER.module==='prepverbs' && USER.mode==='prep_full'){
+    return items.flatMap(item=>[
+      {item,qType:'prep_learn'},
+      {item,qType:'meaning'},
+      {item,qType:'prep_gap'},
+      {item,qType:'prep_case'}
+    ]);
+  }
+  return items.map(item=>({item,qType:null}));
+}
+function restartSession(){ if(Q?.originalItems) startSession(Q.originalItems); }
 function startWeakReview(){ const arr=weakItems(); if(!arr.length){alert('No weak items yet.'); return;} startSession(arr); }
-function nextQuestion(){ if(Q.i>=Q.queue.length) return finishSession(); Q.cur=Q.queue[Q.i]; Q.question=makeQuestion(Q.cur); renderQuestion(); }
-function makeQuestion(item){ return USER.module==='prepverbs' ? prepEngine(item) : vocabEngine(item); }
+function nextQuestion(){ if(Q.i>=Q.queue.length) return finishSession(); const entry=Q.queue[Q.i]; Q.cur=entry.item||entry; Q.question=makeQuestion(Q.cur, entry.qType); renderQuestion(); }
+function makeQuestion(item, forcedType=null){ if(forcedType) return {type:forcedType}; return USER.module==='prepverbs' ? prepEngine(item) : vocabEngine(item); }
 function vocabEngine(item){
   const mode=USER.mode, c=[];
   if((mode==='full'||mode==='article') && artOf(item)) c.push({type:'article'});
@@ -210,25 +222,47 @@ function vocabEngine(item){
   return c[0] || {type:'meaning'};
 }
 function prepEngine(item){
-  if(USER.mode==='prep_gap'||USER.mode==='prep_full') return {type:'prep_gap'};
+  if(USER.mode==='prep_full') return {type:'prep_learn'};
+  if(USER.mode==='prep_gap') return {type:'prep_gap'};
   if(USER.mode==='prep_case') return {type:'prep_case'};
   if(USER.mode==='prep_meaning') return {type:'meaning'};
-  return {type:'prep_gap'};
+  return {type:'prep_learn'};
 }
 function renderQuestion(){
   const it=Q.cur, q=Q.question;
   $('b-module').textContent=MODULES[USER.module].title;
   $('b-ok').textContent=`${Q.ok} ✓`; $('b-err').textContent=`${Q.err} ✗`; $('b-pts').textContent=`${Q.pts} pts`; $('b-left').textContent=`${Q.queue.length-Q.i} left`;
-  let out=`<div class="word"><div class="word-art ${artOf(it)||'none'}">${artOf(it)||''}</div><div class="word-main">${h(baseOf(it))}</div><div class="word-sub">${h(it.notes||it.display||'')}</div></div>`;
+  const safeMain = displayMainForQuestion(it,q);
+  const safeSub = displaySubForQuestion(it,q);
+  let out=`<div class="word"><div class="word-art ${artOf(it)||'none'}">${artOf(it)||''}</div><div class="word-main">${h(safeMain)}</div><div class="word-sub">${h(safeSub)}</div></div>`;
   if(q.type==='article') out+=articleView();
   if(q.type==='meaning') out+=meaningView(it);
   if(q.type==='plural') out+=typeView('Plural', 'Type the full plural or source hint');
   if(q.type==='active') out+=typeView('Active recall', 'Type the German word/expression');
   if(q.type==='sentence') out+=sentenceView(it);
+  if(q.type==='prep_learn') out+=prepLearnView(it);
   if(q.type==='prep_gap') out+=prepGapView(it);
-  if(q.type==='prep_case') out+=typeView('Case recall', `${h(it.display)} + ?`);
+  if(q.type==='prep_case') out+=typeView('Case recall', `${h(it.lemma || baseOf(it))} ${h(it.preposition)} + ?`);
   $('qcard').innerHTML=out;
   const inp=$('answer-input'); if(inp) setTimeout(()=>inp.focus(),0);
+}
+function displayMainForQuestion(it,q){
+  if(it.module==='prepverbs'){
+    if(q.type==='prep_gap') return it.lemma || baseOf(it);
+    if(q.type==='prep_case') return it.lemma || baseOf(it);
+    if(q.type==='meaning') return it.display || it.lemma || baseOf(it);
+    if(q.type==='prep_learn') return it.lemma || baseOf(it);
+  }
+  return baseOf(it);
+}
+function displaySubForQuestion(it,q){
+  if(it.module==='prepverbs'){
+    if(q.type==='prep_gap') return 'fill the missing preposition';
+    if(q.type==='prep_case') return 'recall the grammatical case';
+    if(q.type==='prep_learn') return 'learn the pattern first';
+    return 'prepositional verb';
+  }
+  return it.notes || it.display || '';
 }
 function articleView(){ return `<div class="phase">Choose the article</div><div class="artgrid">${['der','die','das','—'].map(a=>`<button class="artbtn ${a}" data-answer="${h(a)}">${h(a)}</button>`).join('')}</div>`; }
 function meaningView(it){
@@ -245,6 +279,19 @@ function sentenceView(it){
   return `<div class="phase">Sentence gap</div><div class="gap-sentence">${h(sentence).replace('___','<span class="gap-blank">___</span>')}</div><input class="type-input" id="answer-input"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">Check</button></div>`;
 }
 function prepGapView(it){ return `<div class="phase">Preposition gap</div><div class="gap-sentence">${h(it.gap?.sentence||'').replace('___','<span class="gap-blank">___</span>')}</div><input class="type-input" id="answer-input" placeholder="preposition"><div class="row g8" style="justify-content:center;margin-top:10px"><button class="btn btn-gold" id="btn-check" type="button">Check</button></div>`; }
+function prepLearnView(it){
+  const ex = it.example?.de || it.data?.example_de || '';
+  const meaning = trOf(it);
+  return `<div class="phase">Learn the pattern</div>
+    <div class="learn-card">
+      <div class="learn-pattern">${h(it.display || ((it.lemma||baseOf(it)) + ' ' + it.preposition + ' + ' + it.case))}</div>
+      <div class="learn-meta">Meaning: ${h(meaning)}<br>Preposition: <b>${h(it.preposition)}</b> · Case: <b>${h(it.case)}</b></div>
+      ${ex ? `<div class="learn-example">${h(ex)}</div>` : ''}
+    </div>
+    <div class="row g8" style="justify-content:center;margin-top:14px">
+      <button class="btn btn-gold" id="btn-learn-continue" type="button">Continue to practice</button>
+    </div>`;
+}
 
 function pluralAnswers(it){ const g=it.data?.grammar||{}; return [g.plural,g.plural_hint,derivePlural(it)].filter(Boolean); }
 function derivePlural(it){
@@ -261,6 +308,7 @@ function expectedAnswers(){
   if(t==='plural') return pluralAnswers(it);
   if(t==='active') return activeAnswers(it);
   if(t==='sentence') return [Q.sentenceAnswer];
+  if(t==='prep_learn') return ['continue'];
   if(t==='prep_gap') return [it.preposition];
   if(t==='prep_case') return [it.case, it.case==='Akkusativ'?'Akk':'Dat'];
   return [];
@@ -340,6 +388,7 @@ function bindEvents(){
     if(a) answer(a.dataset.answer);
     if(e.target.id==='btn-check') answer($('answer-input')?.value||'');
     if(e.target.id==='btn-continue') continueAfterWrong();
+    if(e.target.id==='btn-learn-continue') continueAfterWrong();
   });
   document.addEventListener('keydown',e=>{
     if(e.key==='Enter' && $('answer-input')) answer($('answer-input').value);
