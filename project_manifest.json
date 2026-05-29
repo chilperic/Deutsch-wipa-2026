@@ -1,5 +1,5 @@
 {
-  "build": "new-module-architecture-2026-05-29",
+  "build": "new-architecture-ux-fix-2026-05-29",
   "architecture": {
     "modules": [
       "vocab",
@@ -14,5 +14,10 @@
   "syntax_check": {
     "returncode": 0,
     "stderr": ""
+  },
+  "ux_fix": {
+    "central_stats_removed": true,
+    "empty_state_added": true,
+    "learner_first_menu": true
   }
 }

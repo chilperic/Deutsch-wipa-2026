@@ -1,5 +1,5 @@
 'use strict';
-window.VOKABULAR_BUILD = 'new-module-architecture-2026-05-29';
+window.VOKABULAR_BUILD = 'new-architecture-ux-fix-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
@@ -50,9 +50,14 @@ function dueItems(){return filteredItems().filter(x=>srs(x).due<=Date.now())}
 function weakItems(){return filteredItems().filter(x=>srs(x).wrong>srs(x).correct)}
 
 async function reloadAll(){
-  const status = document.getElementById('load-status'); status.textContent='Loading files…';
+  const status = document.getElementById('load-status');
+  status.textContent='Loading learning files…';
   await loadVocabFiles(); await loadPrepVerbFile();
-  save(); renderMenu(); status.textContent=`Loaded ${moduleItems().length} items for current module.`;
+  save(); renderMenu();
+  const total = Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
+  status.textContent = total
+    ? `Loaded ${total} learning items. Current module: ${moduleItems().length} items.`
+    : 'No files loaded. Check that vokabular/ and grammatik/ folders are uploaded at the repository root.';
 }
 async function loadVocabFiles(){
   const items=[], sets=[], failed=[];
@@ -73,14 +78,29 @@ function normalizePrepVerb(x){return {...x,module:'prepverbs',set:'all',word:x.d
 
 function renderMenu(){
   applyTheme(); setAudience(USER.audience);
-  document.getElementById('module-cards').innerHTML=Object.values(MODULES).map(m=>`<div class="module-card ${USER.module===m.id?'on':''}" onclick="setModule('${m.id}')"><b>${h(m.title)}</b><p class="tiny">${h(m.subtitle)}</p><p class="tiny">${(DB.modules[m.id]?.items||[]).length} items</p></div>`).join('');
+  document.getElementById('module-cards').innerHTML=Object.values(MODULES).map(m=>{
+    const count = (DB.modules[m.id]?.items||[]).length;
+    const disabled = count === 0 ? 'style="opacity:.55"' : '';
+    return `<div class="module-card ${USER.module===m.id?'on':''}" ${disabled} onclick="setModule('${m.id}')">
+      <b>${h(m.title)}</b>
+      <p class="tiny">${h(m.subtitle)}</p>
+      <p class="tiny count">${count ? count + ' items ready' : 'not loaded yet'}</p>
+    </div>`;
+  }).join('');
   document.getElementById('quiz-lang').innerHTML=LANGS.map(l=>`<option ${USER.lang===l?'selected':''}>${l}</option>`).join('');
-  renderSetSelect(); renderModeSelect(); renderStats(); renderAdmin();
+  renderSetSelect(); renderModeSelect(); renderStats(); renderAdmin(); renderEmptyState();
 }
 function setModule(id){USER.module=id;USER.mode=MODULES[id].defaultMode;USER.set='all';save();renderMenu()}
 function renderSetSelect(){const sel=document.getElementById('set-select');if(USER.module==='vocab'){sel.disabled=false;sel.innerHTML=`<option value="all">All chapters</option>`+(DB.modules.vocab.sets||[]).map(s=>`<option value="${s}" ${USER.set===s?'selected':''}>Kapitel ${s}</option>`).join('')}else{sel.disabled=true;sel.innerHTML=`<option value="all">All items</option>`}}
 function renderModeSelect(){const sel=document.getElementById('mode-select');sel.innerHTML=MODULES[USER.module].engines.map(m=>`<option value="${m}" ${USER.mode===m?'selected':''}>${MODE_LABELS[m]}</option>`).join('')}
 function renderStats(){const arr=filteredItems();const prog=arr.map(srs);const attempts=prog.reduce((a,r)=>a+r.correct+r.wrong,0),correct=prog.reduce((a,r)=>a+r.correct,0);document.getElementById('st-items').textContent=arr.length;document.getElementById('st-due').textContent=dueItems().length;document.getElementById('st-weak').textContent=weakItems().length;document.getElementById('st-acc').textContent=attempts?Math.round(correct/attempts*100)+'%':'—'}
+function renderEmptyState(){
+  const el = document.getElementById('empty-state');
+  if (!el) return;
+  const total = Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
+  el.classList.toggle('on', total === 0);
+}
+
 function renderAdmin(){document.getElementById('admin-modules').innerHTML=Object.values(MODULES).map(m=>`${m.title}: ${(DB.modules[m.id]?.items||[]).length} items`).join('<br>'); const v=DB.modules.vocab.items; const nouns=v.filter(artOf); const missingPlural=nouns.filter(x=>!x.data?.grammar?.plural).length; document.getElementById('admin-quality').innerHTML=`Vocabulary items: ${v.length}<br>Nouns: ${nouns.length}<br>Nouns missing full plural: ${missingPlural}<br>Prep verbs: ${DB.modules.prepverbs.items.length}`}
 document.getElementById('quiz-lang').onchange=e=>{USER.lang=e.target.value;save();renderMenu()}
 document.getElementById('set-select').onchange=e=>{USER.set=e.target.value;save();renderMenu()}
@@ -88,7 +108,7 @@ document.getElementById('mode-select').onchange=e=>{USER.mode=e.target.value;sav
 document.getElementById('size-pills').onclick=e=>{const p=e.target.closest('.pill');if(!p)return;USER.size=p.dataset.n;document.querySelectorAll('.pill').forEach(x=>x.classList.toggle('on',x===p));save()}
 
 function startSession(items=null){
-  let pool=items||filteredItems(); if(!pool.length){alert('No items loaded. In Admin mode, click Reload files.');return}
+  let pool=items||filteredItems(); if(!pool.length){alert('No items loaded for this module. Check the folder structure or switch to Admin mode and click Reload files.');renderEmptyState();return}
   if(USER.mode==='due') pool=dueItems(); if(USER.mode==='weak')pool=weakItems();
   if(!pool.length){alert('No items for this mode.');return}
   const n=USER.size==='all'?pool.length:Math.min(Number(USER.size||10),pool.length);

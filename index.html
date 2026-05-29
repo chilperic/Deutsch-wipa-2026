@@ -57,12 +57,33 @@ input,select,textarea{width:100%;background:var(--s2);border:1px solid var(--b1)
 table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}th,td{border-bottom:1px solid var(--b1);padding:9px;text-align:left}th{color:var(--gold2);text-transform:uppercase;font-size:10px}.tbl-wrap{max-height:320px;overflow:auto;border:1px solid var(--b1);border-radius:var(--r)}
 .admin-only{display:none}.admin .admin-only{display:block}.admin .admin-inline{display:inline-flex}.student .admin-only,.student .admin-inline{display:none!important}
 @media(max-width:760px){.grid2,.grid3,.grid4{grid-template-columns:1fr}.artgrid{grid-template-columns:1fr 1fr}.split{align-items:flex-start;flex-direction:column}.card{padding:18px}}
+
+/* ═══════════════════════════════════════════════════════
+   UX FIX: learner-first dashboard
+═══════════════════════════════════════════════════════ */
+.hero-card { border-top: 3px solid var(--gold); }
+.hero-actions { display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:center; }
+.main-start { font-size:13px; padding:15px 26px; }
+.soft-panel { border:1px solid var(--b1); background:rgba(255,255,255,.025); border-radius:var(--r2); padding:14px; }
+.stats-compact { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+.stats-compact .stat { padding:10px 8px; opacity:.82; }
+.stats-compact .stat b { font-size:24px; }
+.stats-compact .stat span { font-size:8px; }
+.empty-state { display:none; border:1px solid rgba(240,160,48,.35); background:var(--warnbg); color:var(--warn); border-radius:var(--r2); padding:16px; }
+.empty-state.on { display:block; }
+.empty-state code { color:var(--text); }
+.module-card b { display:block; color:var(--text); font-family:var(--serif); font-size:22px; margin-bottom:4px; }
+.module-card .count { margin-top:10px; color:var(--gold); }
+.config-strip { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+.secondary-row { justify-content:center; opacity:.88; }
+@media(max-width:760px){ .stats-compact{grid-template-columns:repeat(2,1fr)} .config-strip{grid-template-columns:1fr} }
+
 </style>
 </head>
 <body class="student">
 <section class="screen center on" id="menu">
   <div class="shell col g20">
-    <div class="card col g20">
+    <div class="card hero-card col g20">
       <div class="split">
         <div><div class="logo">Deutsch Trainer</div><div class="tag">vokabular · grammatik · active recall</div></div>
         <div class="row g8">
@@ -75,37 +96,54 @@ table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px
         </div>
       </div>
 
-      <div class="grid4">
-        <div class="stat"><b id="st-items">0</b><span>items loaded</span></div>
-        <div class="stat"><b id="st-due">0</b><span>due today</span></div>
-        <div class="stat"><b id="st-weak">0</b><span>weak items</span></div>
-        <div class="stat"><b id="st-acc">—</b><span>accuracy</span></div>
-      </div>
-
-      <div>
-        <label class="lbl">Study module</label>
+      <div class="soft-panel">
+        <label class="lbl">Choose what you want to practise</label>
         <div class="grid2" id="module-cards"></div>
       </div>
 
-      <div class="grid3">
+      <div class="config-strip">
         <div><label class="lbl">Quiz language</label><select id="quiz-lang"></select></div>
         <div><label class="lbl">Chapter / Set</label><select id="set-select"></select></div>
         <div><label class="lbl">Practice mode</label><select id="mode-select"></select></div>
       </div>
 
-      <div>
-        <label class="lbl">Items per session</label>
-        <div class="row g8" id="size-pills">
-          <span class="pill" data-n="5">5</span><span class="pill on" data-n="10">10</span><span class="pill" data-n="20">20</span><span class="pill" data-n="all">All</span>
+      <div class="split">
+        <div>
+          <label class="lbl">Items per session</label>
+          <div class="row g8" id="size-pills">
+            <span class="pill" data-n="5">5</span><span class="pill on" data-n="10">10</span><span class="pill" data-n="20">20</span><span class="pill" data-n="all">All</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-gold main-start" onclick="startSession()">▶ Start practising</button>
+          <button class="btn" onclick="startWeakReview()">↺ Weak review</button>
         </div>
       </div>
 
-      <div class="row g12">
-        <button class="btn btn-gold" onclick="startSession()">▶ Start session</button>
-        <button class="btn" onclick="startWeakReview()">↺ Weak review</button>
+      <div class="empty-state" id="empty-state">
+        <b>No learning files are loaded yet.</b><br>
+        The app expects this structure:
+        <br><code>vokabular/kapitel1.json</code>, <code>vokabular/kapitel2.json</code>, ...
+        <br><code>grammatik/praepositionalverben.json</code>
+        <br><br>
+        If you just uploaded files to GitHub, wait a moment and reload. In Admin mode, click <b>Reload files</b>.
+      </div>
+
+      <div class="row g8 secondary-row">
         <button class="btn" onclick="showScreen('tracker')">📊 Tracker</button>
         <button class="btn admin-inline" onclick="reloadAll()">↻ Reload files</button>
       </div>
+
+      <details class="soft-panel">
+        <summary class="tiny" style="cursor:pointer">Progress details</summary>
+        <div class="stats-compact" style="margin-top:12px">
+          <div class="stat"><b id="st-items">0</b><span>items loaded</span></div>
+          <div class="stat"><b id="st-due">0</b><span>due today</span></div>
+          <div class="stat"><b id="st-weak">0</b><span>weak items</span></div>
+          <div class="stat"><b id="st-acc">—</b><span>accuracy</span></div>
+        </div>
+      </details>
+
       <p class="tiny" id="load-status"></p>
     </div>
 
@@ -162,7 +200,7 @@ table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px
 
 <script>
 'use strict';
-window.VOKABULAR_BUILD = 'new-module-architecture-2026-05-29';
+window.VOKABULAR_BUILD = 'new-architecture-ux-fix-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
@@ -213,9 +251,14 @@ function dueItems(){return filteredItems().filter(x=>srs(x).due<=Date.now())}
 function weakItems(){return filteredItems().filter(x=>srs(x).wrong>srs(x).correct)}
 
 async function reloadAll(){
-  const status = document.getElementById('load-status'); status.textContent='Loading files…';
+  const status = document.getElementById('load-status');
+  status.textContent='Loading learning files…';
   await loadVocabFiles(); await loadPrepVerbFile();
-  save(); renderMenu(); status.textContent=`Loaded ${moduleItems().length} items for current module.`;
+  save(); renderMenu();
+  const total = Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
+  status.textContent = total
+    ? `Loaded ${total} learning items. Current module: ${moduleItems().length} items.`
+    : 'No files loaded. Check that vokabular/ and grammatik/ folders are uploaded at the repository root.';
 }
 async function loadVocabFiles(){
   const items=[], sets=[], failed=[];
@@ -236,14 +279,29 @@ function normalizePrepVerb(x){return {...x,module:'prepverbs',set:'all',word:x.d
 
 function renderMenu(){
   applyTheme(); setAudience(USER.audience);
-  document.getElementById('module-cards').innerHTML=Object.values(MODULES).map(m=>`<div class="module-card ${USER.module===m.id?'on':''}" onclick="setModule('${m.id}')"><b>${h(m.title)}</b><p class="tiny">${h(m.subtitle)}</p><p class="tiny">${(DB.modules[m.id]?.items||[]).length} items</p></div>`).join('');
+  document.getElementById('module-cards').innerHTML=Object.values(MODULES).map(m=>{
+    const count = (DB.modules[m.id]?.items||[]).length;
+    const disabled = count === 0 ? 'style="opacity:.55"' : '';
+    return `<div class="module-card ${USER.module===m.id?'on':''}" ${disabled} onclick="setModule('${m.id}')">
+      <b>${h(m.title)}</b>
+      <p class="tiny">${h(m.subtitle)}</p>
+      <p class="tiny count">${count ? count + ' items ready' : 'not loaded yet'}</p>
+    </div>`;
+  }).join('');
   document.getElementById('quiz-lang').innerHTML=LANGS.map(l=>`<option ${USER.lang===l?'selected':''}>${l}</option>`).join('');
-  renderSetSelect(); renderModeSelect(); renderStats(); renderAdmin();
+  renderSetSelect(); renderModeSelect(); renderStats(); renderAdmin(); renderEmptyState();
 }
 function setModule(id){USER.module=id;USER.mode=MODULES[id].defaultMode;USER.set='all';save();renderMenu()}
 function renderSetSelect(){const sel=document.getElementById('set-select');if(USER.module==='vocab'){sel.disabled=false;sel.innerHTML=`<option value="all">All chapters</option>`+(DB.modules.vocab.sets||[]).map(s=>`<option value="${s}" ${USER.set===s?'selected':''}>Kapitel ${s}</option>`).join('')}else{sel.disabled=true;sel.innerHTML=`<option value="all">All items</option>`}}
 function renderModeSelect(){const sel=document.getElementById('mode-select');sel.innerHTML=MODULES[USER.module].engines.map(m=>`<option value="${m}" ${USER.mode===m?'selected':''}>${MODE_LABELS[m]}</option>`).join('')}
 function renderStats(){const arr=filteredItems();const prog=arr.map(srs);const attempts=prog.reduce((a,r)=>a+r.correct+r.wrong,0),correct=prog.reduce((a,r)=>a+r.correct,0);document.getElementById('st-items').textContent=arr.length;document.getElementById('st-due').textContent=dueItems().length;document.getElementById('st-weak').textContent=weakItems().length;document.getElementById('st-acc').textContent=attempts?Math.round(correct/attempts*100)+'%':'—'}
+function renderEmptyState(){
+  const el = document.getElementById('empty-state');
+  if (!el) return;
+  const total = Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
+  el.classList.toggle('on', total === 0);
+}
+
 function renderAdmin(){document.getElementById('admin-modules').innerHTML=Object.values(MODULES).map(m=>`${m.title}: ${(DB.modules[m.id]?.items||[]).length} items`).join('<br>'); const v=DB.modules.vocab.items; const nouns=v.filter(artOf); const missingPlural=nouns.filter(x=>!x.data?.grammar?.plural).length; document.getElementById('admin-quality').innerHTML=`Vocabulary items: ${v.length}<br>Nouns: ${nouns.length}<br>Nouns missing full plural: ${missingPlural}<br>Prep verbs: ${DB.modules.prepverbs.items.length}`}
 document.getElementById('quiz-lang').onchange=e=>{USER.lang=e.target.value;save();renderMenu()}
 document.getElementById('set-select').onchange=e=>{USER.set=e.target.value;save();renderMenu()}
@@ -251,7 +309,7 @@ document.getElementById('mode-select').onchange=e=>{USER.mode=e.target.value;sav
 document.getElementById('size-pills').onclick=e=>{const p=e.target.closest('.pill');if(!p)return;USER.size=p.dataset.n;document.querySelectorAll('.pill').forEach(x=>x.classList.toggle('on',x===p));save()}
 
 function startSession(items=null){
-  let pool=items||filteredItems(); if(!pool.length){alert('No items loaded. In Admin mode, click Reload files.');return}
+  let pool=items||filteredItems(); if(!pool.length){alert('No items loaded for this module. Check the folder structure or switch to Admin mode and click Reload files.');renderEmptyState();return}
   if(USER.mode==='due') pool=dueItems(); if(USER.mode==='weak')pool=weakItems();
   if(!pool.length){alert('No items for this mode.');return}
   const n=USER.size==='all'?pool.length:Math.min(Number(USER.size||10),pool.length);

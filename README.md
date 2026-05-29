@@ -586,3 +586,16 @@ sich auskennen mit + Dativ
 ```
 
 Recognition is not enough. Active recall is the main goal.
+
+
+## UX note
+
+The central screen is learner-first:
+
+```text
+1. Choose what to practise
+2. Choose language/chapter/mode
+3. Start practising
+```
+
+Progress details such as loaded items, due items, weak items, and accuracy are available under **Progress details**, but they are not the main focus of the interface.
