@@ -1,7 +1,7 @@
 {
   "project": "Deutsch-wipa-2026",
   "final_package": true,
-  "build": "final-clean-module-overview-2026-05-29",
+  "build": "dashboard-interface-structured-2026-05-29",
   "structure": "Deutsch-wipa-2026_structured",
   "active_modules": [
     "vokabular",
@@ -44,6 +44,25 @@
       "Adjektivdeklination",
       "Pronomen",
       "Konnektoren"
+    ]
+  },
+  "interface": {
+    "dashboard_grid": true,
+    "sidebar": true,
+    "ten_modules_visible": true,
+    "active_modules": [
+      "vocab",
+      "prepverbs"
+    ],
+    "planned_modules_visible": [
+      "kasusergaenzungen",
+      "starke_verben",
+      "trennbare_verben",
+      "praepositionen",
+      "nomen_artikel_plural",
+      "adjektivdeklination",
+      "pronomen",
+      "konnektoren_nebensaetze"
     ]
   }
 }

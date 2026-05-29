@@ -170,3 +170,23 @@ Adjektivdeklination
 Pronomen
 Konnektoren
 ```
+
+
+## Dashboard interface
+
+This build implements the dashboard-style interface:
+
+```text
+- Sidebar navigation
+- Feature row
+- 10 visible learning modules
+- Active/planned module badges
+- Central practice controls
+- Stats strip
+```
+
+Build marker:
+
+```text
+dashboard-interface-structured-2026-05-29
+```

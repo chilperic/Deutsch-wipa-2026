@@ -1,23 +1,120 @@
 'use strict';
-window.VOKABULAR_BUILD = 'final-clean-module-overview-2026-05-29';
+window.VOKABULAR_BUILD = 'dashboard-interface-structured-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
   vocab: {
     id:'vocab',
+    n:1,
     title:'Kapitel vocabulary',
     subtitle:'articles · meanings · plurals · active recall',
+    icon:'📖',
+    status:'active',
+    countLabel:null,
     engines:['full','article','meaning','plural','active','sentence'],
     defaultMode:'full'
   },
   prepverbs: {
     id:'prepverbs',
+    n:2,
     title:'Präpositionalverben',
     subtitle:'preposition · case · gap sentence · active pattern',
+    icon:'↻',
+    status:'active',
+    countLabel:null,
     engines:['prep_full','prep_gap','prep_case','prep_meaning'],
     defaultMode:'prep_full'
+  },
+  kasusergaenzungen: {
+    id:'kasusergaenzungen',
+    n:3,
+    title:'Kasusergänzungen',
+    subtitle:'verb · case · preposition complements',
+    icon:'▤',
+    status:'planned',
+    countLabel:'planned',
+    engines:[],
+    defaultMode:''
+  },
+  starke_verben: {
+    id:'starke_verben',
+    n:4,
+    title:'Starke Verben',
+    subtitle:'irregular · forms · meaning · conjugation',
+    icon:'ϟ',
+    status:'planned',
+    countLabel:'planned',
+    engines:[],
+    defaultMode:''
+  },
+  trennbare_verben: {
+    id:'trennbare_verben',
+    n:5,
+    title:'Trennbare Verben',
+    subtitle:'separable · prefixes · meaning in context',
+    icon:'⇄',
+    status:'planned',
+    countLabel:'coming soon',
+    engines:[],
+    defaultMode:''
+  },
+  praepositionen: {
+    id:'praepositionen',
+    n:6,
+    title:'Präpositionen',
+    subtitle:'prepositions · cases · usage examples',
+    icon:'⌖',
+    status:'planned',
+    countLabel:'coming soon',
+    engines:[],
+    defaultMode:''
+  },
+  nomen_artikel_plural: {
+    id:'nomen_artikel_plural',
+    n:7,
+    title:'Nomen · Artikel · Plural',
+    subtitle:'gender · articles · plurals · endings',
+    icon:'A',
+    status:'planned',
+    countLabel:'coming soon',
+    engines:[],
+    defaultMode:''
+  },
+  adjektivdeklination: {
+    id:'adjektivdeklination',
+    n:8,
+    title:'Adjektivdeklination',
+    subtitle:'declension · strong · weak · mixed',
+    icon:'Aa',
+    status:'planned',
+    countLabel:'coming soon',
+    engines:[],
+    defaultMode:''
+  },
+  pronomen: {
+    id:'pronomen',
+    n:9,
+    title:'Pronomen',
+    subtitle:'personal · reflexive · possessive · demonstrative',
+    icon:'○',
+    status:'planned',
+    countLabel:'coming soon',
+    engines:[],
+    defaultMode:''
+  },
+  konnektoren_nebensaetze: {
+    id:'konnektoren_nebensaetze',
+    n:10,
+    title:'Konnektoren / Nebensätze',
+    subtitle:'subordinating · conjunctions · clause patterns',
+    icon:'∞',
+    status:'planned',
+    countLabel:'coming soon',
+    engines:[],
+    defaultMode:''
   }
 };
+const ACTIVE_MODULE_IDS = ['vocab','prepverbs'];
 const MODE_LABELS = {
   full:'Full cycle', article:'Article only', meaning:'Meaning only', plural:'Plural only', active:'Active recall', sentence:'Sentence gaps',
   prep_full:'Full grammar cycle', prep_gap:'Preposition gaps', prep_case:'Case recall', prep_meaning:'Meaning only'
@@ -53,7 +150,7 @@ function ensureShape(){
   DB.modules.prepverbs = DB.modules.prepverbs || {items:[],sets:['all']};
   P.progress = P.progress || {};
   P.history = P.history || [];
-  if(!MODULES[USER.module]) USER.module='vocab';
+  if(!ACTIVE_MODULE_IDS.includes(USER.module)) USER.module='vocab';
   if(!MODULES[USER.module].engines.includes(USER.mode)) USER.mode=MODULES[USER.module].defaultMode;
   if(!LANGS.includes(USER.lang)) USER.lang='English';
   if(!USER.size) USER.size='10';
@@ -128,9 +225,18 @@ function renderMenu(){
   applyAudience();
 
   $('module-cards').innerHTML=Object.values(MODULES).map(m=>{
+    const active = ACTIVE_MODULE_IDS.includes(m.id);
     const count=(DB.modules[m.id]?.items||[]).length;
-    return `<div class="module-card ${USER.module===m.id?'on':''}" data-module="${m.id}" ${count===0?'style="opacity:.58"':''}>
-      <b>${h(m.title)}</b><p class="tiny">${h(m.subtitle)}</p><p class="tiny count">${count?count+' items ready':'not loaded yet'}</p>
+    const countText = active ? (count ? count + ' items' : 'not loaded yet') : (m.countLabel || 'coming soon');
+    return `<div class="module-card ${USER.module===m.id?'on':''} ${active?'is-active':'is-planned'}" data-module="${active?m.id:''}" ${active?'':'aria-disabled="true"'}>
+      <div class="mod-top">
+        <span class="mod-number">${m.n}</span>
+        <span class="mod-status ${active?'active':'planned'}">${active?'Active':'Planned'}</span>
+      </div>
+      <div class="mod-icon">${h(m.icon)}</div>
+      <b>${h(m.title)}</b>
+      <p class="tiny">${h(m.subtitle)}</p>
+      <p class="tiny count">${h(countText)}</p>
     </div>`;
   }).join('');
 
@@ -170,6 +276,9 @@ function renderStats(){
   $('st-due').textContent=dueItems().length;
   $('st-weak').textContent=weakItems().length;
   $('st-acc').textContent=attempts?Math.round(correct/attempts*100)+'%':'—';
+  if($('st-items-duplicate')) $('st-items-duplicate').textContent=arr.length;
+  if($('st-weak-duplicate')) $('st-weak-duplicate').textContent=weakItems().length;
+  if($('st-acc-duplicate')) $('st-acc-duplicate').textContent=attempts?Math.round(correct/attempts*100)+'%':'—';
 }
 function renderEmptyState(){
   const total=Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
@@ -177,14 +286,14 @@ function renderEmptyState(){
   if(total===0) $('load-status').textContent='No learning files loaded yet. Check folder names or use Admin → Reload files.';
 }
 function renderAdmin(){
-  $('admin-modules').innerHTML=Object.values(MODULES).map(m=>`${h(m.title)}: ${(DB.modules[m.id]?.items||[]).length} items`).join('<br>');
+  $('admin-modules').innerHTML=Object.values(MODULES).map(m=>`${h(m.title)}: ${ACTIVE_MODULE_IDS.includes(m.id) ? ((DB.modules[m.id]?.items||[]).length + ' items') : 'planned'}`).join('<br>');
   const v=DB.modules.vocab.items||[];
   const nouns=v.filter(artOf);
   const missingPlural=nouns.filter(x=>!x.data?.grammar?.plural).length;
   $('admin-quality').innerHTML=`Vocabulary items: ${v.length}<br>Nouns: ${nouns.length}<br>Nouns missing full plural: ${missingPlural}<br>Prep verbs: ${DB.modules.prepverbs.items.length}`;
 }
 
-function setModule(id){ USER.module=id; USER.mode=MODULES[id].defaultMode; USER.set='all'; save(); renderMenu(); }
+function setModule(id){ if(!ACTIVE_MODULE_IDS.includes(id)) return; USER.module=id; USER.mode=MODULES[id].defaultMode; USER.set='all'; save(); renderMenu(); }
 function startSession(items=null){
   let pool=items || filteredItems();
   if(USER.mode==='due') pool=dueItems();
@@ -369,6 +478,10 @@ function bindEvents(){
   $('btn-start').addEventListener('click',()=>startSession());
   $('btn-weak').addEventListener('click',startWeakReview);
   $('btn-tracker').addEventListener('click',()=>showScreen('tracker'));
+  const sideTracker=$('side-tracker'); if(sideTracker) sideTracker.addEventListener('click',()=>showScreen('tracker'));
+  const sideDashboard=$('side-dashboard'); if(sideDashboard) sideDashboard.addEventListener('click',()=>showScreen('menu'));
+  const sideModules=$('side-modules'); if(sideModules) sideModules.addEventListener('click',()=>showScreen('menu'));
+  const sideSettings=$('side-settings'); if(sideSettings) sideSettings.addEventListener('click',()=>setAudience(USER.audience==='admin'?'student':'admin'));
   $('btn-reload').addEventListener('click',reloadAll);
   $('btn-speak').addEventListener('click',speakCurrent);
   $('btn-skip').addEventListener('click',skipQuestion);
