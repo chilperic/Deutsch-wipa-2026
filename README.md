@@ -284,3 +284,19 @@ A QA report is stored here:
 ```text
 docs/answer_leak_QA_report.json
 ```
+
+
+## Präpositionalverben expanded
+
+The prepositional verb module now contains 141 items.
+
+The practice flow remains non-leaky:
+
+```text
+1. Learn pattern
+2. Meaning
+3. Preposition gap
+4. Case recall
+```
+
+During the preposition-gap question, the full pattern is not displayed.

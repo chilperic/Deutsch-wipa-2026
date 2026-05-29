@@ -1,7 +1,7 @@
 {
   "project": "Deutsch-wipa-2026",
   "final_package": true,
-  "build": "answer-leak-audited-2026-05-29",
+  "build": "prepverbs-120-expanded-2026-05-29",
   "structure": "Deutsch-wipa-2026_structured",
   "active_modules": [
     "kasusergaenzungen.json",
@@ -109,5 +109,7 @@
       "returncode": 0,
       "stderr": ""
     }
-  }
+  },
+  "praepositionalverben_count": 141,
+  "praepositionalverben_note": "Expanded to 120+ items."
 }
