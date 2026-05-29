@@ -1,62 +1,73 @@
-# Deutsch WIPA 2026 · Complete Module Architecture
+# Deutsch WIPA 2026 · Lerntrainer
 
-This build uses a clean module architecture.
+This is my browser-based German learning app for practising course vocabulary and grammar.
 
-Required folders:
-
-```text
-index.html
-vokabular/
-  kapitel1.json
-  kapitel2.json
-  kapitel3.json
-  kapitel4.json
-grammatik/
-  praepositionalverben.json
-```
-
-The main screen is learner-first:
+Live GitHub Pages URL, once deployed:
 
 ```text
-1. Choose what you want to practise
-2. Choose language / chapter / mode
-3. Start practising
+https://chilperic.github.io/Deutsch-wipa-2026/
 ```
 
-Progress details are hidden under the collapsible **Progress details** section.
-
-Build marker:
-
-```js
-window.VOKABULAR_BUILD
-```
-
-Expected:
+## Structure
 
 ```text
-complete-module-architecture-2026-05-29
+Deutsch-wipa-2026_structured/
+├── index.html
+├── README.md
+├── project_manifest.json
+├── vokabular/
+│   ├── README.md
+│   ├── kapitel1.json
+│   ├── kapitel2.json
+│   ├── kapitel3.json
+│   └── kapitel4.json
+├── grammatik/
+│   ├── README.md
+│   ├── praepositionalverben.json
+│   ├── kasusergaenzungen.json
+│   ├── starke_verben.json
+│   ├── trennbare_verben.json
+│   ├── praepositionen.json
+│   ├── nomen_artikel_plural.json
+│   ├── adjektivdeklination.json
+│   ├── pronomen.json
+│   └── konnektoren_nebensaetze.json
+├── docs/
+│   └── plural_QA_report.json
+└── dev/
+    └── script_check.js
 ```
 
+## Active modules
 
-## Beautiful UI build
+### Kapitel vocabulary
 
-This version keeps the complete module architecture and redesigns only the interface layer.
-
-Build marker:
-
-```js
-window.VOKABULAR_BUILD
-```
-
-Expected:
+Loaded from:
 
 ```text
-complete-architecture-beautiful-ui-2026-05-29
+vokabular/kapitel1.json
+vokabular/kapitel2.json
+vokabular/kapitel3.json
+vokabular/kapitel4.json
 ```
 
-## Verb module learning flow
+Practice types include:
 
-The prepositional verb module no longer shows the full pattern during the gap question.
+```text
+article
+meaning
+plural
+active recall
+sentence gaps
+```
+
+### Präpositionalverben
+
+Loaded from:
+
+```text
+grammatik/praepositionalverben.json
+```
 
 Full grammar cycle:
 
@@ -76,4 +87,61 @@ sich bewerben um + Akkusativ
 Then practise:
 Ich bewerbe mich ___ eine Stelle.
 Answer: um
+```
+
+The gap question does not show the full pattern before the learner answers.
+
+## Running locally
+
+```bash
+cd Deutsch-wipa-2026_structured
+python3 -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+## GitHub Pages
+
+Upload the contents of `Deutsch-wipa-2026_structured/` to the root of the GitHub repository.
+
+The repository root should contain:
+
+```text
+index.html
+README.md
+vokabular/
+grammatik/
+docs/
+dev/
+project_manifest.json
+```
+
+Then enable GitHub Pages:
+
+```text
+Settings → Pages → Deploy from branch → main → /root
+```
+
+## Build check
+
+In the browser console:
+
+```js
+window.VOKABULAR_BUILD
+```
+
+Expected:
+
+```text
+verb-flow-structured-architecture-2026-05-29
+```
+
+For JavaScript syntax:
+
+```bash
+node --check dev/script_check.js
 ```

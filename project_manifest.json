@@ -1,65 +1,31 @@
 {
+  "project": "Deutsch-wipa-2026",
+  "final_package": true,
   "build": "verb-flow-structured-architecture-2026-05-29",
-  "architecture": {
-    "modules": [
-      "vocab",
-      "prepverbs"
-    ],
-    "paths": [
-      "vokabular/kapitelN.json",
-      "grammatik/praepositionalverben.json"
-    ],
-    "dropdowns_populated_before_fetch": true,
-    "no_inline_onclick_dependency": true,
-    "learner_first_ux": true,
-    "progress_namespaced_by_module": true
-  },
+  "structure": "Deutsch-wipa-2026_structured",
+  "active_modules": [
+    "vokabular",
+    "praepositionalverben"
+  ],
+  "planned_grammar_modules": [
+    "kasusergaenzungen",
+    "starke_verben",
+    "trennbare_verben",
+    "praepositionen",
+    "nomen_artikel_plural",
+    "adjektivdeklination",
+    "pronomen",
+    "konnektoren_nebensaetze"
+  ],
   "syntax_check": {
     "returncode": 0,
     "stderr": ""
   },
-  "ui_redesign": {
-    "visual_layer_only": true,
-    "architecture_preserved": true,
-    "dropdown_logic_untouched": true,
-    "learner_first": true
-  },
-  "structure_expected": {
-    "vokabular": [
-      "README.md",
-      "kapitel1.json",
-      "kapitel2.json",
-      "kapitel3.json",
-      "kapitel4.json"
-    ],
-    "grammatik": [
-      "README.md",
-      "praepositionalverben.json",
-      "kasusergaenzungen.json",
-      "starke_verben.json",
-      "trennbare_verben.json",
-      "praepositionen.json",
-      "nomen_artikel_plural.json",
-      "adjektivdeklination.json",
-      "pronomen.json",
-      "konnektoren_nebensaetze.json"
-    ],
-    "docs": [
-      "plural_QA_report.json"
-    ],
-    "dev": [
-      "script_check.js"
-    ]
-  },
-  "verb_flow_fix": {
-    "prep_full_sequence": [
-      "learn pattern",
-      "meaning",
-      "preposition gap",
-      "case recall"
-    ],
-    "gap_does_not_show_full_pattern": true,
-    "case_does_not_show_full_pattern": false,
-    "learn_before_test": true
-  }
+  "missing_expected_files": [],
+  "notes": [
+    "The prepositional verb full cycle uses: learn pattern → meaning → preposition gap → case recall.",
+    "The gap question does not display the full pattern before the learner answers.",
+    "Vocabulary files load from vokabular/kapitelN.json.",
+    "Grammar modules load from grammatik/."
+  ]
 }
