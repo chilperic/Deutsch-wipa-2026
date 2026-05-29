@@ -1,0 +1,287 @@
+{
+  "module": "praepositionalverben",
+  "title": "Präpositionalverben",
+  "status": "starter-module",
+  "source_note": "Pattern selection inspired by the uploaded Mein Deutschbuch worksheet on Präpositional-Ergänzungen. Examples are newly written for this app.",
+  "items": [
+    {
+      "id": "pv_achten_auf_akk",
+      "type": "prepositional_verb",
+      "display": "achten auf + Akkusativ",
+      "lemma": "achten",
+      "preposition": "auf",
+      "case": "Akkusativ",
+      "meaning": {
+        "English": "to pay attention to",
+        "German": "auf etwas achten"
+      },
+      "example": {
+        "de": "Achte bitte auf den Straßenverkehr.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Achte bitte ___ den Straßenverkehr.",
+        "answer": "auf"
+      },
+      "questions": {
+        "pattern_prompt": "achten ___ + Akkusativ",
+        "pattern_answer": "auf",
+        "case_prompt": "achten auf + ?",
+        "case_answer": "Akkusativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "auf",
+        "Akkusativ"
+      ]
+    },
+    {
+      "id": "pv_sich_bewerben_um_akk",
+      "type": "prepositional_verb",
+      "display": "sich bewerben um + Akkusativ",
+      "lemma": "sich bewerben",
+      "preposition": "um",
+      "case": "Akkusativ",
+      "meaning": {
+        "English": "to apply for",
+        "German": "sich um etwas bewerben"
+      },
+      "example": {
+        "de": "Ich bewerbe mich um eine Stelle.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Ich bewerbe mich ___ eine Stelle.",
+        "answer": "um"
+      },
+      "questions": {
+        "pattern_prompt": "sich bewerben ___ + Akkusativ",
+        "pattern_answer": "um",
+        "case_prompt": "sich bewerben um + ?",
+        "case_answer": "Akkusativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "um",
+        "Akkusativ"
+      ]
+    },
+    {
+      "id": "pv_sich_beschweren_bei_dat",
+      "type": "prepositional_verb",
+      "display": "sich beschweren bei + Dativ",
+      "lemma": "sich beschweren",
+      "preposition": "bei",
+      "case": "Dativ",
+      "meaning": {
+        "English": "to complain to someone",
+        "German": "sich bei jemandem beschweren"
+      },
+      "example": {
+        "de": "Der Kunde beschwert sich bei der Firma.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Der Kunde beschwert sich ___ der Firma.",
+        "answer": "bei"
+      },
+      "questions": {
+        "pattern_prompt": "sich beschweren ___ + Dativ",
+        "pattern_answer": "bei",
+        "case_prompt": "sich beschweren bei + ?",
+        "case_answer": "Dativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "bei",
+        "Dativ"
+      ]
+    },
+    {
+      "id": "pv_sich_beschweren_ueber_akk",
+      "type": "prepositional_verb",
+      "display": "sich beschweren über + Akkusativ",
+      "lemma": "sich beschweren",
+      "preposition": "über",
+      "case": "Akkusativ",
+      "meaning": {
+        "English": "to complain about something",
+        "German": "sich über etwas beschweren"
+      },
+      "example": {
+        "de": "Der Kunde beschwert sich über den Service.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Der Kunde beschwert sich ___ den Service.",
+        "answer": "über"
+      },
+      "questions": {
+        "pattern_prompt": "sich beschweren ___ + Akkusativ",
+        "pattern_answer": "über",
+        "case_prompt": "sich beschweren über + ?",
+        "case_answer": "Akkusativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "über",
+        "Akkusativ"
+      ]
+    },
+    {
+      "id": "pv_sich_vorbereiten_auf_akk",
+      "type": "prepositional_verb",
+      "display": "sich vorbereiten auf + Akkusativ",
+      "lemma": "sich vorbereiten",
+      "preposition": "auf",
+      "case": "Akkusativ",
+      "meaning": {
+        "English": "to prepare for",
+        "German": "sich auf etwas vorbereiten"
+      },
+      "example": {
+        "de": "Ich bereite mich auf die Prüfung vor.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Ich bereite mich ___ die Prüfung vor.",
+        "answer": "auf"
+      },
+      "questions": {
+        "pattern_prompt": "sich vorbereiten ___ + Akkusativ",
+        "pattern_answer": "auf",
+        "case_prompt": "sich vorbereiten auf + ?",
+        "case_answer": "Akkusativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "auf",
+        "Akkusativ"
+      ]
+    },
+    {
+      "id": "pv_warten_auf_akk",
+      "type": "prepositional_verb",
+      "display": "warten auf + Akkusativ",
+      "lemma": "warten",
+      "preposition": "auf",
+      "case": "Akkusativ",
+      "meaning": {
+        "English": "to wait for",
+        "German": "auf etwas/jemanden warten"
+      },
+      "example": {
+        "de": "Ich warte auf den Bus.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Ich warte ___ den Bus.",
+        "answer": "auf"
+      },
+      "questions": {
+        "pattern_prompt": "warten ___ + Akkusativ",
+        "pattern_answer": "auf",
+        "case_prompt": "warten auf + ?",
+        "case_answer": "Akkusativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "auf",
+        "Akkusativ"
+      ]
+    },
+    {
+      "id": "pv_teilnehmen_an_dat",
+      "type": "prepositional_verb",
+      "display": "teilnehmen an + Dativ",
+      "lemma": "teilnehmen",
+      "preposition": "an",
+      "case": "Dativ",
+      "meaning": {
+        "English": "to take part in",
+        "German": "an etwas teilnehmen"
+      },
+      "example": {
+        "de": "Ich nehme an dem Kurs teil.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Ich nehme ___ dem Kurs teil.",
+        "answer": "an"
+      },
+      "questions": {
+        "pattern_prompt": "teilnehmen ___ + Dativ",
+        "pattern_answer": "an",
+        "case_prompt": "teilnehmen an + ?",
+        "case_answer": "Dativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "an",
+        "Dativ"
+      ]
+    },
+    {
+      "id": "pv_traeumen_von_dat",
+      "type": "prepositional_verb",
+      "display": "träumen von + Dativ",
+      "lemma": "träumen",
+      "preposition": "von",
+      "case": "Dativ",
+      "meaning": {
+        "English": "to dream of/about",
+        "German": "von etwas träumen"
+      },
+      "example": {
+        "de": "Ich träume von einem eigenen Haus.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Ich träume ___ einem eigenen Haus.",
+        "answer": "von"
+      },
+      "questions": {
+        "pattern_prompt": "träumen ___ + Dativ",
+        "pattern_answer": "von",
+        "case_prompt": "träumen von + ?",
+        "case_answer": "Dativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "von",
+        "Dativ"
+      ]
+    },
+    {
+      "id": "pv_zweifeln_an_dat",
+      "type": "prepositional_verb",
+      "display": "zweifeln an + Dativ",
+      "lemma": "zweifeln",
+      "preposition": "an",
+      "case": "Dativ",
+      "meaning": {
+        "English": "to doubt",
+        "German": "an etwas zweifeln"
+      },
+      "example": {
+        "de": "Niemand zweifelt an der Demokratie.",
+        "English": ""
+      },
+      "gap": {
+        "sentence": "Niemand zweifelt ___ der Demokratie.",
+        "answer": "an"
+      },
+      "questions": {
+        "pattern_prompt": "zweifeln ___ + Dativ",
+        "pattern_answer": "an",
+        "case_prompt": "zweifeln an + ?",
+        "case_answer": "Dativ"
+      },
+      "tags": [
+        "prepositional verb",
+        "an",
+        "Dativ"
+      ]
+    }
+  ]
+}

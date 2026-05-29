@@ -36,7 +36,7 @@ The clean project structure is:
 Deutsch-wipa-2026/
 ├── index.html
 ├── README.md
-└── data/
+└── vokabular/
     ├── kapitel1.json
     ├── kapitel2.json
     ├── kapitel3.json
@@ -53,7 +53,7 @@ Deutsch-wipa-2026/
     └── script_check.js
 ```
 
-Only `index.html` and the `data/` folder are required for the app to work.
+Only `index.html` and the `vokabular/` folder are required for the app to work.
 
 ---
 
@@ -75,27 +75,27 @@ This file contains the whole app:
 - grammar and dictionary resource links
 - local browser progress storage
 
-### `data/kapitelN.json`
+### `vokabular/kapitelN.json`
 
 Each chapter file stores the vocabulary data.
 
 The app expects this naming pattern:
 
 ```text
-data/kapitel1.json
-data/kapitel2.json
-data/kapitel3.json
-data/kapitel4.json
+vokabular/kapitel1.json
+vokabular/kapitel2.json
+vokabular/kapitel3.json
+vokabular/kapitel4.json
 ...
 ```
 
 The app automatically tries to load:
 
 ```text
-data/kapitel1.json
-data/kapitel2.json
+vokabular/kapitel1.json
+vokabular/kapitel2.json
 ...
-data/kapitel20.json
+vokabular/kapitel20.json
 ```
 
 Missing files are ignored.
@@ -311,6 +311,55 @@ The app includes external links to German learning resources:
 
 These links are optional. The app works without them, but they are useful for checking grammar, plural forms, and usage.
 
+
+---
+
+## Grammar modules
+
+I keep grammar-focused datasets separate from chapter vocabulary.
+
+Recommended structure:
+
+```text
+Deutsch-wipa-2026/
+├── vokabular/
+│   ├── kapitel1.json
+│   ├── kapitel2.json
+│   ├── kapitel3.json
+│   └── kapitel4.json
+└── grammatik/
+    ├── praepositionalverben.json
+    ├── kasusergaenzungen.json
+    ├── starke_verben.json
+    ├── trennbare_verben.json
+    ├── praepositionen.json
+    ├── nomen_artikel_plural.json
+    ├── adjektivdeklination.json
+    ├── pronomen.json
+    └── konnektoren_nebensaetze.json
+```
+
+The first grammar module is:
+
+```text
+grammatik/praepositionalverben.json
+```
+
+It contains patterns such as:
+
+```text
+sich bewerben um + Akkusativ
+sich beschweren bei + Dativ
+sich beschweren über + Akkusativ
+sich vorbereiten auf + Akkusativ
+warten auf + Akkusativ
+teilnehmen an + Dativ
+träumen von + Dativ
+zweifeln an + Dativ
+```
+
+The grammar examples are newly written for this app. The module is inspired by the uploaded worksheet on prepositional verb complements.
+
 ---
 
 ## Running locally
@@ -362,7 +411,7 @@ To update or add a chapter:
 1. Create or edit a JSON file:
 
 ```text
-data/kapitel5.json
+vokabular/kapitel5.json
 ```
 
 2. Commit and push the file.
@@ -443,8 +492,8 @@ or clear site data in the browser developer tools.
 Check the file path and name:
 
 ```text
-data/kapitel1.json
-data/kapitel2.json
+vokabular/kapitel1.json
+vokabular/kapitel2.json
 ```
 
 The app will not automatically load incorrectly named files like:
@@ -505,7 +554,7 @@ Kapitel 3
 Kapitel 4
 ```
 
-More chapters can be added by placing new files in the `data/` folder.
+More chapters can be added by placing new files in the `vokabular/` folder.
 
 ---
 

@@ -1,0 +1,18 @@
+{
+  "build": "new-module-architecture-2026-05-29",
+  "architecture": {
+    "modules": [
+      "vocab",
+      "prepverbs"
+    ],
+    "data_paths": [
+      "vokabular/kapitelN.json",
+      "grammatik/praepositionalverben.json"
+    ],
+    "progress": "namespaced by module:item id"
+  },
+  "syntax_check": {
+    "returncode": 0,
+    "stderr": ""
+  }
+}
