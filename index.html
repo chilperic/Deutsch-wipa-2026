@@ -200,7 +200,7 @@ table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px
 
 <script>
 'use strict';
-window.VOKABULAR_BUILD = 'new-architecture-ux-fix-2026-05-29';
+window.VOKABULAR_BUILD = 'new-architecture-runtime-fix-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
@@ -236,7 +236,17 @@ function norm(s){return String(s??'').toLowerCase().normalize('NFD').replace(/[\
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function showScreen(id){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('on'));document.getElementById(id).classList.add('on'); if(id==='tracker')renderTracker()}
 function setTheme(t){localStorage.setItem('dwipa_theme',t);applyTheme()}function applyTheme(){let t=localStorage.getItem('dwipa_theme')||'dark';if(t==='system')t=matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';document.body.classList.toggle('theme-light',t==='light')}
-function setAudience(a){USER.audience=a;document.body.classList.toggle('admin',a==='admin');document.body.classList.toggle('student',a!=='admin');save();renderMenu()}
+function applyAudience(a){
+  USER.audience = a || USER.audience || 'student';
+  document.body.classList.toggle('admin', USER.audience === 'admin');
+  document.body.classList.toggle('student', USER.audience !== 'admin');
+}
+function setAudience(a){
+  USER.audience = a || 'student';
+  applyAudience(USER.audience);
+  save();
+  renderMenu();
+}
 function artOf(w){return String(w.word||w.display||'').match(/^(der|die|das)\s+/i)?.[1]?.toLowerCase()||null}
 function baseOf(w){return String(w.word||w.display||w.lemma||'').replace(/^(der|die|das)\s+/i,'').split(',')[0].trim()}
 function chapOf(w){return String(w.chapter||w.chapter_id||w.set||w.notes||'').match(/kapitel\s*(\d+)|kapitel(\d+)|^(\d+)$/i)?.slice(1).find(Boolean)||'?'}
@@ -278,7 +288,7 @@ function normalizeVocab(w,chapter){w.module='vocab';w.set=String(chapter);w.chap
 function normalizePrepVerb(x){return {...x,module:'prepverbs',set:'all',word:x.display||x.lemma,id:x.id||crypto.randomUUID(),data:{translations:x.meaning||{},grammar:{type:'prepositional_verb',pattern:`${x.preposition} + ${x.case}`,preposition:x.preposition,case:x.case},example_de:x.example?.de||x.gap?.sentence?.replace('___',x.preposition)||'',example_translated:x.example||{},grammar_clarification:{English:`${x.display}: use ${x.preposition} + ${x.case}.`,German:`${x.display}: mit ${x.preposition} + ${x.case}.`}}}}
 
 function renderMenu(){
-  applyTheme(); setAudience(USER.audience);
+  applyTheme(); applyAudience(USER.audience);
   document.getElementById('module-cards').innerHTML=Object.values(MODULES).map(m=>{
     const count = (DB.modules[m.id]?.items||[]).length;
     const disabled = count === 0 ? 'style="opacity:.55"' : '';
@@ -288,8 +298,9 @@ function renderMenu(){
       <p class="tiny count">${count ? count + ' items ready' : 'not loaded yet'}</p>
     </div>`;
   }).join('');
-  document.getElementById('quiz-lang').innerHTML=LANGS.map(l=>`<option ${USER.lang===l?'selected':''}>${l}</option>`).join('');
-  renderSetSelect(); renderModeSelect(); renderStats(); renderAdmin(); renderEmptyState();
+  const langSel = document.getElementById('quiz-lang');
+  if (langSel) langSel.innerHTML=LANGS.map(l=>`<option value="${l}" ${USER.lang===l?'selected':''}>${l}</option>`).join('');
+  renderSetSelect(); renderModeSelect(); renderSizePills(); renderStats(); renderAdmin(); renderEmptyState();
 }
 function setModule(id){USER.module=id;USER.mode=MODULES[id].defaultMode;USER.set='all';save();renderMenu()}
 function renderSetSelect(){const sel=document.getElementById('set-select');if(USER.module==='vocab'){sel.disabled=false;sel.innerHTML=`<option value="all">All chapters</option>`+(DB.modules.vocab.sets||[]).map(s=>`<option value="${s}" ${USER.set===s?'selected':''}>Kapitel ${s}</option>`).join('')}else{sel.disabled=true;sel.innerHTML=`<option value="all">All items</option>`}}
@@ -300,8 +311,13 @@ function renderEmptyState(){
   if (!el) return;
   const total = Object.values(DB.modules).reduce((a,m)=>a+(m.items||[]).length,0);
   el.classList.toggle('on', total === 0);
+  const status = document.getElementById('load-status');
+  if (status && total === 0) status.textContent = 'No learning files loaded yet. Check folder names or use Admin → Reload files.';
 }
 
+function renderSizePills(){
+  document.querySelectorAll('#size-pills .pill').forEach(p => p.classList.toggle('on', p.dataset.n === USER.size));
+}
 function renderAdmin(){document.getElementById('admin-modules').innerHTML=Object.values(MODULES).map(m=>`${m.title}: ${(DB.modules[m.id]?.items||[]).length} items`).join('<br>'); const v=DB.modules.vocab.items; const nouns=v.filter(artOf); const missingPlural=nouns.filter(x=>!x.data?.grammar?.plural).length; document.getElementById('admin-quality').innerHTML=`Vocabulary items: ${v.length}<br>Nouns: ${nouns.length}<br>Nouns missing full plural: ${missingPlural}<br>Prep verbs: ${DB.modules.prepverbs.items.length}`}
 document.getElementById('quiz-lang').onchange=e=>{USER.lang=e.target.value;save();renderMenu()}
 document.getElementById('set-select').onchange=e=>{USER.set=e.target.value;save();renderMenu()}
@@ -378,7 +394,20 @@ function renderTracker(){const rows=Object.entries(P.progress).map(([k,r])=>({k,
 function openResources(){renderResources();showScreen('resources')}
 function renderResources(){const resources=[['Duden','https://www.duden.de/'],['DWDS','https://www.dwds.de/'],['Verbformen','https://www.verbformen.de/'],['Mein Deutschbuch','https://mein-deutschbuch.de/grammatik.html'],['Schubert Verlag','https://www.schubert-verlag.de/aufgaben/'],['DW Learn German','https://learngerman.dw.com/']];document.getElementById('resource-grid').innerHTML=resources.map(([n,u])=>`<div class="module-card"><b>${n}</b><p class="tiny"><a target="_blank" href="${u}">${u}</a></p></div>`).join('')}
 
-(async function init(){applyTheme(); setAudience(USER.audience); await loadVocabFiles(); await loadPrepVerbFile(); save(); renderMenu();})();
+(async function init(){
+  try {
+    applyTheme();
+    applyAudience(USER.audience);
+    await loadVocabFiles();
+    await loadPrepVerbFile();
+    save();
+    renderMenu();
+  } catch (err) {
+    console.error('App initialization failed:', err);
+    const status = document.getElementById('load-status');
+    if (status) status.textContent = 'Initialization error: ' + (err && err.message ? err.message : err);
+  }
+})();
 </script>
 </body>
 </html>

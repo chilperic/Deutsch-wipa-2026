@@ -1,5 +1,5 @@
 {
-  "build": "new-architecture-ux-fix-2026-05-29",
+  "build": "new-architecture-runtime-fix-2026-05-29",
   "architecture": {
     "modules": [
       "vocab",
@@ -19,5 +19,10 @@
     "central_stats_removed": true,
     "empty_state_added": true,
     "learner_first_menu": true
+  },
+  "runtime_fix": {
+    "fixed_renderMenu_setAudience_recursion": true,
+    "selectors_should_populate": true,
+    "init_try_catch": true
   }
 }
