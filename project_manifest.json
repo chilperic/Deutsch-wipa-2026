@@ -1,7 +1,7 @@
 {
   "project": "Deutsch-wipa-2026",
   "final_package": true,
-  "build": "verb-flow-structured-architecture-2026-05-29",
+  "build": "final-clean-module-overview-2026-05-29",
   "structure": "Deutsch-wipa-2026_structured",
   "active_modules": [
     "vokabular",
@@ -27,5 +27,23 @@
     "The gap question does not display the full pattern before the learner answers.",
     "Vocabulary files load from vokabular/kapitelN.json.",
     "Grammar modules load from grammatik/."
-  ]
+  ],
+  "ui_update": {
+    "removed_intro_paragraph": true,
+    "added_compact_module_overview": true,
+    "active_modules": [
+      "Kapitel",
+      "Präpositionalverben"
+    ],
+    "planned_modules_visible": [
+      "Kasusergänzungen",
+      "Starke Verben",
+      "Trennbare Verben",
+      "Präpositionen",
+      "Artikel & Plural",
+      "Adjektivdeklination",
+      "Pronomen",
+      "Konnektoren"
+    ]
+  }
 }

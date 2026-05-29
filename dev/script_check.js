@@ -1,5 +1,5 @@
 'use strict';
-window.VOKABULAR_BUILD = 'verb-flow-structured-architecture-2026-05-29';
+window.VOKABULAR_BUILD = 'final-clean-module-overview-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {

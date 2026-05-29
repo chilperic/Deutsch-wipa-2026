@@ -137,11 +137,36 @@ window.VOKABULAR_BUILD
 Expected:
 
 ```text
-verb-flow-structured-architecture-2026-05-29
+final-clean-module-overview-2026-05-29
 ```
 
 For JavaScript syntax:
 
 ```bash
 node --check dev/script_check.js
+```
+
+
+## Interface note
+
+The top screen now shows compact module chips instead of explanatory filler text.
+
+Active:
+
+```text
+Kapitel
+Präpositionalverben
+```
+
+Planned:
+
+```text
+Kasusergänzungen
+Starke Verben
+Trennbare Verben
+Präpositionen
+Artikel & Plural
+Adjektivdeklination
+Pronomen
+Konnektoren
 ```

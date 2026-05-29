@@ -221,6 +221,34 @@ th{color:var(--gold2);text-transform:uppercase;font-size:10px;letter-spacing:.1e
   line-height:1.6;
 }
 
+
+.module-strip {
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:14px;
+  max-width:760px;
+}
+.module-chip {
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  border:1px solid var(--b1);
+  border-radius:999px;
+  padding:6px 10px;
+  color:var(--dim);
+  background:rgba(255,255,255,.035);
+}
+.module-chip.active {
+  color:#1a1100;
+  border-color:transparent;
+  background:linear-gradient(135deg,var(--gold3),var(--gold));
+}
+.module-chip.planned {
+  opacity:.78;
+}
+
 </style>
 </head>
 <body class="student">
@@ -231,9 +259,18 @@ th{color:var(--gold2);text-transform:uppercase;font-size:10px;letter-spacing:.1e
         <div>
           <div class="logo">Deutsch Trainer</div>
           <div class="tag">vokabular · grammatik · active recall</div>
-          <p class="note" style="margin-top:14px;max-width:640px">
-            Choose a module, select a practice mode, and train with active recall. The interface stays simple; progress is available only when you need it.
-          </p>
+          <div class="module-strip" aria-label="Available and planned modules">
+            <span class="module-chip active">Kapitel</span>
+            <span class="module-chip active">Präpositionalverben</span>
+            <span class="module-chip planned">Kasusergänzungen</span>
+            <span class="module-chip planned">Starke Verben</span>
+            <span class="module-chip planned">Trennbare Verben</span>
+            <span class="module-chip planned">Präpositionen</span>
+            <span class="module-chip planned">Artikel & Plural</span>
+            <span class="module-chip planned">Adjektivdeklination</span>
+            <span class="module-chip planned">Pronomen</span>
+            <span class="module-chip planned">Konnektoren</span>
+          </div>
         </div>
         <div class="row g8">
           <button class="btn" id="btn-dark" type="button">Dark</button>
@@ -349,7 +386,7 @@ th{color:var(--gold2);text-transform:uppercase;font-size:10px;letter-spacing:.1e
 
 <script>
 'use strict';
-window.VOKABULAR_BUILD = 'verb-flow-structured-architecture-2026-05-29';
+window.VOKABULAR_BUILD = 'final-clean-module-overview-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 const MODULES = {
