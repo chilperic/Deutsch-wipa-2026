@@ -257,3 +257,30 @@ Adjektivdeklination: 60 items
 Pronomen: 60 items
 Konnektoren / Nebensätze: 60 items
 ```
+
+
+## Answer-leak audit
+
+This build fixes a serious quiz-design bug: answer information must not be visible during recall.
+
+Fixed examples:
+
+```text
+Article question:
+Before: die Nachricht → choose der/die/das
+After: ? Nachricht → choose der/die/das
+
+Active recall:
+Before: German target visible in the card title
+After: target hidden; learner must recall it
+
+Grammar prompt:
+Before: pattern or answer could appear above the prompt
+After: only module/focus is shown; answer is hidden
+```
+
+A QA report is stored here:
+
+```text
+docs/answer_leak_QA_report.json
+```

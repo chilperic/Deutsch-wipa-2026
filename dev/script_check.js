@@ -1,5 +1,5 @@
 'use strict';
-window.VOKABULAR_BUILD = 'expanded-nonleaky-modules-2026-05-29';
+window.VOKABULAR_BUILD = 'answer-leak-audited-2026-05-29';
 
 const LANGS = ['English','Spanish','French','Japanese','German','Korean','Italian','Chinese','Portuguese','Persian','Arabic','Thai'];
 
@@ -384,12 +384,46 @@ function renderEmptyState(){
   $('empty-state').classList.toggle('on', total===0);
   if(total===0) $('load-status').textContent='No learning files loaded yet. Check folder names or use Admin → Reload files.';
 }
+
+function auditQuestionLeak(item, qType){
+  const fakeQ = {type:qType};
+  const expected = qType === 'article' ? [artOf(item)||''] :
+                   qType === 'plural' ? pluralAnswers(item) :
+                   qType === 'prep_gap' ? [item.preposition||''] :
+                   qType === 'prep_case' ? [item.case||''] :
+                   qType === 'grammar_prompt' ? [item.answer||''] : [];
+  const visible = [
+    displayArticleForQuestion(item,fakeQ).text,
+    displayMainForQuestion(item,fakeQ),
+    displaySubForQuestion(item,fakeQ)
+  ].join(' | ');
+  return expected.filter(Boolean).some(ans => norm(ans) && norm(visible).includes(norm(ans)));
+}
+function runLeakAudit(){
+  const leaks = [];
+  (DB.modules.vocab?.items||[]).forEach(it=>{
+    if(artOf(it) && auditQuestionLeak(it,'article')) leaks.push({module:'vocab',id:it.id,type:'article'});
+    if((it.data?.grammar?.plural || it.data?.grammar?.plural_hint) && auditQuestionLeak(it,'plural')) leaks.push({module:'vocab',id:it.id,type:'plural'});
+  });
+  (DB.modules.prepverbs?.items||[]).forEach(it=>{
+    if(auditQuestionLeak(it,'prep_gap')) leaks.push({module:'prepverbs',id:it.id,type:'prep_gap'});
+  });
+  Object.entries(DB.modules||{}).forEach(([mid,mod])=>{
+    if(mid==='vocab'||mid==='prepverbs') return;
+    (mod.items||[]).forEach(it=>{
+      if(auditQuestionLeak(it,'grammar_prompt')) leaks.push({module:mid,id:it.id,type:'grammar_prompt'});
+    });
+  });
+  return leaks;
+}
+
 function renderAdmin(){
   $('admin-modules').innerHTML=Object.values(MODULES).map(m=>`${h(m.title)}: ${ACTIVE_MODULE_IDS.includes(m.id) ? ((DB.modules[m.id]?.items||[]).length + ' items') : 'planned'}`).join('<br>');
   const v=DB.modules.vocab.items||[];
   const nouns=v.filter(artOf);
   const missingPlural=nouns.filter(x=>!x.data?.grammar?.plural).length;
-  $('admin-quality').innerHTML=`Vocabulary items: ${v.length}<br>Nouns: ${nouns.length}<br>Nouns missing full plural: ${missingPlural}<br>Prep verbs: ${DB.modules.prepverbs.items.length}`;
+  const leaks = runLeakAudit();
+  $('admin-quality').innerHTML=`Vocabulary items: ${v.length}<br>Nouns: ${nouns.length}<br>Nouns missing full plural: ${missingPlural}<br>Prep verbs: ${DB.modules.prepverbs.items.length}<br>Answer-leak audit: ${leaks.length} issue(s)`;
 }
 
 function setModule(id){ if(!ACTIVE_MODULE_IDS.includes(id)) return; USER.module=id; USER.mode=MODULES[id].defaultMode; USER.set='all'; save(); renderMenu(); }
@@ -456,7 +490,8 @@ function renderQuestion(){
   $('b-ok').textContent=`${Q.ok} ✓`; $('b-err').textContent=`${Q.err} ✗`; $('b-pts').textContent=`${Q.pts} pts`; $('b-left').textContent=`${Q.queue.length-Q.i} left`;
   const safeMain = displayMainForQuestion(it,q);
   const safeSub = displaySubForQuestion(it,q);
-  let out=`<div class="word"><div class="word-art ${artOf(it)||'none'}">${artOf(it)||''}</div><div class="word-main">${h(safeMain)}</div><div class="word-sub">${h(safeSub)}</div></div>`;
+  const art = displayArticleForQuestion(it,q);
+  let out=`<div class="word"><div class="word-art ${art.css}">${h(art.text)}</div><div class="word-main">${h(safeMain)}</div><div class="word-sub">${h(safeSub)}</div></div>`;
   if(q.type==='article') out+=articleView();
   if(q.type==='meaning') out+=meaningView(it);
   if(q.type==='plural') out+=typeView(ui('plural'), 'Type the full plural or source hint');
@@ -469,6 +504,12 @@ function renderQuestion(){
   if(q.type==='grammar_prompt') out+=genericPromptView(it);
   $('qcard').innerHTML=out;
   const inp=$('answer-input'); if(inp) setTimeout(()=>inp.focus(),0);
+}
+function displayArticleForQuestion(it,q){
+  if(q.type==='article') return {text:'?', css:'none'};
+  if(q.type==='plural') return {text:'', css:'none'};
+  const a = artOf(it);
+  return {text:a || '', css:a || 'none'};
 }
 function displayMainForQuestion(it,q){
   if(it.module==='prepverbs'){
@@ -483,7 +524,15 @@ function displayMainForQuestion(it,q){
     if(q.type==='meaning') return it.display || modulePublicTitle(it.module);
     return modulePublicTitle(it.module);
   }
+  if(q.type==='article') return baseOf(it);
+  if(q.type==='plural') return singularWithoutArticle(it);
+  if(q.type==='active') return trOf(it);
+  if(q.type==='sentence') return modulePublicTitle('vocab');
   return baseOf(it);
+}
+function singularWithoutArticle(it){
+  const g = it.data?.grammar || {};
+  return g.base || baseOf(it);
 }
 function modulePublicTitle(id){
   return (MODULES[id] && MODULES[id].title) || 'Grammar module';

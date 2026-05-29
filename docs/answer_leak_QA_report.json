@@ -1,0 +1,19 @@
+{
+  "build": "answer-leak-audited-2026-05-29",
+  "fixed": [
+    "Article question no longer displays der/die/das above the noun.",
+    "Plural question no longer displays the article field above the noun.",
+    "Active recall no longer displays the German target as the card title.",
+    "Vocabulary sentence gap no longer displays the German target as the card title.",
+    "Prepositional verb gap keeps hiding the full pattern.",
+    "Generic grammar prompt keeps hiding the display/answer in the card header."
+  ],
+  "remaining_design_note": [
+    "Learn stages intentionally show the pattern before testing.",
+    "Meaning questions may show the German item because the task is to choose the translation."
+  ],
+  "syntax_check": {
+    "returncode": 0,
+    "stderr": ""
+  }
+}
