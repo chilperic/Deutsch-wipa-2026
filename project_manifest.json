@@ -1,28 +1,21 @@
 {
-  "build": "new-architecture-runtime-fix-2026-05-29",
+  "build": "complete-module-architecture-2026-05-29",
   "architecture": {
     "modules": [
       "vocab",
       "prepverbs"
     ],
-    "data_paths": [
+    "paths": [
       "vokabular/kapitelN.json",
       "grammatik/praepositionalverben.json"
     ],
-    "progress": "namespaced by module:item id"
+    "dropdowns_populated_before_fetch": true,
+    "no_inline_onclick_dependency": true,
+    "learner_first_ux": true,
+    "progress_namespaced_by_module": true
   },
   "syntax_check": {
     "returncode": 0,
     "stderr": ""
-  },
-  "ux_fix": {
-    "central_stats_removed": true,
-    "empty_state_added": true,
-    "learner_first_menu": true
-  },
-  "runtime_fix": {
-    "fixed_renderMenu_setAudience_recursion": true,
-    "selectors_should_populate": true,
-    "init_try_catch": true
   }
 }
