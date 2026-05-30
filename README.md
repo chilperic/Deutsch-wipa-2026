@@ -101,3 +101,21 @@ Build marker:
 ```text
 instant-embedded-stable-2026-05-30
 ```
+
+
+## Runtime fallback fixed
+
+Root cause fixed:
+
+```text
+The previous build called useEmbeddedFallback(), but the function declaration was missing.
+That caused a runtime ReferenceError and stopped initialization before data could load.
+```
+
+This build restores the function and adds a QA check for the actual declaration.
+
+Build marker:
+
+```text
+runtime-fallback-fixed-2026-05-30
+```
