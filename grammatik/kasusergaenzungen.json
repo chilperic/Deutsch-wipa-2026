@@ -21,12 +21,6 @@
       "case": "Dativ",
       "example": {
         "de": "Ich helfe dem Mann."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -46,12 +40,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute helfe ich dem Mann."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -71,12 +59,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs helfe ich dem Mann."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -96,12 +78,6 @@
       "case": "Dativ",
       "example": {
         "de": "Wir danken der Lehrerin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -121,12 +97,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute danken wir der Lehrerin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -146,12 +116,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs danken wir der Lehrerin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -171,12 +135,6 @@
       "case": "Dativ",
       "example": {
         "de": "Er antwortet dem Kind."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -196,12 +154,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute antwortet er dem Kind."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -221,12 +173,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs antwortet er dem Kind."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -246,12 +192,6 @@
       "case": "Dativ",
       "example": {
         "de": "Das Buch gehört der Frau."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -271,12 +211,6 @@
       "case": "Dativ",
       "example": {
         "de": "Das Buch gehört der Frau."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -296,12 +230,6 @@
       "case": "Dativ",
       "example": {
         "de": "Das Buch gehört der Frau."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -321,12 +249,6 @@
       "case": "Dativ",
       "example": {
         "de": "Der Hund folgt dem Mann."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -346,12 +268,6 @@
       "case": "Dativ",
       "example": {
         "de": "Der Hund folgt dem Mann."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -371,12 +287,6 @@
       "case": "Dativ",
       "example": {
         "de": "Der Hund folgt dem Mann."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -396,12 +306,6 @@
       "case": "Dativ",
       "example": {
         "de": "Ich gratuliere der Kollegin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -421,12 +325,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute gratuliere ich der Kollegin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -446,12 +344,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs gratuliere ich der Kollegin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -471,12 +363,6 @@
       "case": "Dativ",
       "example": {
         "de": "Sie glaubt dem Arzt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -496,12 +382,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute glaubt sie dem Arzt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -521,12 +401,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs glaubt sie dem Arzt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -546,12 +420,6 @@
       "case": "Dativ",
       "example": {
         "de": "Wir vertrauen der Expertin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -571,12 +439,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute vertrauen wir der Expertin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -596,12 +458,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs vertrauen wir der Expertin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -621,12 +477,6 @@
       "case": "Dativ",
       "example": {
         "de": "Die Kinder hören dem Lehrer zu."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -646,12 +496,6 @@
       "case": "Dativ",
       "example": {
         "de": "Die Kinder hören dem Lehrer zu."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -671,12 +515,6 @@
       "case": "Dativ",
       "example": {
         "de": "Die Kinder hören dem Lehrer zu."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -696,12 +534,6 @@
       "case": "Dativ",
       "example": {
         "de": "Ich widerspreche dem Chef."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -721,12 +553,6 @@
       "case": "Dativ",
       "example": {
         "de": "Heute widerspreche ich dem Chef."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -746,12 +572,6 @@
       "case": "Dativ",
       "example": {
         "de": "Im Kurs widerspreche ich dem Chef."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -771,12 +591,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich frage den Lehrer."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -796,12 +610,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute frage ich den Lehrer."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -821,12 +629,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs frage ich den Lehrer."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -846,12 +648,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Sie sieht den Hund."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -871,12 +667,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute sieht sie den Hund."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -896,12 +686,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs sieht sie den Hund."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -921,12 +705,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Wir brauchen den Computer."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -946,12 +724,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute brauchen wir den Computer."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -971,12 +743,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs brauchen wir den Computer."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -996,12 +762,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Er findet den Schlüssel."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1021,12 +781,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute findet er den Schlüssel."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1046,12 +800,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs findet er den Schlüssel."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1071,12 +819,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich besuche den Freund."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1096,12 +838,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute besuche ich den Freund."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1121,12 +857,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs besuche ich den Freund."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1146,12 +876,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Sie ruft den Arzt an."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1171,12 +895,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute ruft sie den Arzt an."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1196,12 +914,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs ruft sie den Arzt an."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1221,12 +933,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Wir kennen den Nachbarn."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1246,12 +952,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute kennen wir den Nachbarn."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1271,12 +971,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs kennen wir den Nachbarn."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1296,12 +990,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich treffe den Kollegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1321,12 +1009,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute treffe ich den Kollegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1346,12 +1028,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs treffe ich den Kollegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1371,12 +1047,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Der Lehrer erklärt den Satz."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1396,12 +1066,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Der Lehrer erklärt den Satz."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1421,12 +1085,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Der Lehrer erklärt den Satz."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1446,12 +1104,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich vergesse den Termin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1471,12 +1123,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Heute vergesse ich den Termin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1496,12 +1142,6 @@
       "case": "Akkusativ",
       "example": {
         "de": "Im Kurs vergesse ich den Termin."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1521,12 +1161,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Ich gebe dem Kind ein Buch."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1546,12 +1180,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute gebe ich dem Kind ein Buch."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1571,12 +1199,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs gebe ich dem Kind ein Buch."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1596,12 +1218,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Sie schenkt der Freundin Blumen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1621,12 +1237,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute schenkt sie der Freundin Blumen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1646,12 +1256,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs schenkt sie der Freundin Blumen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1671,12 +1275,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Wir schicken der Firma die Unterlagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1696,12 +1294,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute schicken wir der Firma die Unterlagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1721,12 +1313,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs schicken wir der Firma die Unterlagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1746,12 +1332,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Er bringt dem Nachbarn die Zeitung."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1771,12 +1351,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute bringt er dem Nachbarn die Zeitung."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1796,12 +1370,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs bringt er dem Nachbarn die Zeitung."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1821,12 +1389,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Ich zeige der Kollegin das Dokument."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1846,12 +1408,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute zeige ich der Kollegin das Dokument."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1871,12 +1427,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs zeige ich der Kollegin das Dokument."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1896,12 +1446,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Oma erzählt dem Kind eine Geschichte."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1921,12 +1465,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Oma erzählt dem Kind eine Geschichte."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1946,12 +1484,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Oma erzählt dem Kind eine Geschichte."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1971,12 +1503,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Ich empfehle dem Freund diesen Kurs."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1996,12 +1522,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute empfehle ich dem Freund diesen Kurs."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2021,12 +1541,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs empfehle ich dem Freund diesen Kurs."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2046,12 +1560,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Sie leiht dem Bruder das Auto."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2071,12 +1579,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute leiht sie dem Bruder das Auto."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2096,12 +1598,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs leiht sie dem Bruder das Auto."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2121,12 +1617,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Wir verkaufen dem Kunden den Wagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2146,12 +1636,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Heute verkaufen wir dem Kunden den Wagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2171,12 +1655,6 @@
       "case": "Dativ + Akkusativ",
       "example": {
         "de": "Im Kurs verkaufen wir dem Kunden den Wagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2196,12 +1674,6 @@
       "case": "Dativ",
       "example": {
         "de": "Rauchen schadet der Gesundheit."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2221,12 +1693,6 @@
       "case": "Dativ",
       "example": {
         "de": "Rauchen schadet der Gesundheit."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2246,12 +1712,6 @@
       "case": "Dativ",
       "example": {
         "de": "Rauchen schadet der Gesundheit."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     }
   ]

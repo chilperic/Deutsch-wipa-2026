@@ -21,12 +21,6 @@
       "case": "Plural",
       "example": {
         "de": "Der vertrag ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -46,12 +40,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der vertrag ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -71,12 +59,6 @@
       "case": "Plural",
       "example": {
         "de": "Die prüfung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -96,12 +78,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die prüfung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -121,12 +97,6 @@
       "case": "Plural",
       "example": {
         "de": "Das praktikum ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -146,12 +116,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das praktikum ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -171,12 +135,6 @@
       "case": "Plural",
       "example": {
         "de": "Der patient ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -196,12 +154,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der patient ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -221,12 +173,6 @@
       "case": "Plural",
       "example": {
         "de": "Der kollege ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -246,12 +192,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der kollege ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -271,12 +211,6 @@
       "case": "Plural",
       "example": {
         "de": "Die kollegin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -296,12 +230,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die kollegin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -321,12 +249,6 @@
       "case": "Plural",
       "example": {
         "de": "Das dokument ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -346,12 +268,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das dokument ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -371,12 +287,6 @@
       "case": "Plural",
       "example": {
         "de": "Der termin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -396,12 +306,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der termin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -421,12 +325,6 @@
       "case": "Plural",
       "example": {
         "de": "Die bewerbung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -446,12 +344,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die bewerbung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -471,12 +363,6 @@
       "case": "Plural",
       "example": {
         "de": "Das zeugnis ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -496,12 +382,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das zeugnis ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -521,12 +401,6 @@
       "case": "Plural",
       "example": {
         "de": "Der beruf ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -546,12 +420,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der beruf ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -571,12 +439,6 @@
       "case": "Plural",
       "example": {
         "de": "Die stelle ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -596,12 +458,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die stelle ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -621,12 +477,6 @@
       "case": "Plural",
       "example": {
         "de": "Der auftrag ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -646,12 +496,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der auftrag ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -671,12 +515,6 @@
       "case": "Plural",
       "example": {
         "de": "Die ware ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -696,12 +534,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die ware ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -721,12 +553,6 @@
       "case": "Plural",
       "example": {
         "de": "Das lager ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -746,12 +572,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das lager ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -771,12 +591,6 @@
       "case": "Plural",
       "example": {
         "de": "Der unfall ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -796,12 +610,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der unfall ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -821,12 +629,6 @@
       "case": "Plural",
       "example": {
         "de": "Die nachricht ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -846,12 +648,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die nachricht ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -871,12 +667,6 @@
       "case": "Plural",
       "example": {
         "de": "Der lebenslauf ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -896,12 +686,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der lebenslauf ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -921,12 +705,6 @@
       "case": "Plural",
       "example": {
         "de": "Das gespräch ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -946,12 +724,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das gespräch ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -971,12 +743,6 @@
       "case": "Plural",
       "example": {
         "de": "Der kurs ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -996,12 +762,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der kurs ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1021,12 +781,6 @@
       "case": "Plural",
       "example": {
         "de": "Die sprache ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1046,12 +800,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die sprache ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1071,12 +819,6 @@
       "case": "Plural",
       "example": {
         "de": "Das angebot ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1096,12 +838,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das angebot ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1121,12 +857,6 @@
       "case": "Plural",
       "example": {
         "de": "Der schlüssel ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1146,12 +876,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der schlüssel ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1171,12 +895,6 @@
       "case": "Plural",
       "example": {
         "de": "Die erfahrung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1196,12 +914,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die erfahrung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1221,12 +933,6 @@
       "case": "Plural",
       "example": {
         "de": "Das unternehmen ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1246,12 +952,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das unternehmen ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1271,12 +971,6 @@
       "case": "Plural",
       "example": {
         "de": "Der bewerber ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1296,12 +990,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der bewerber ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1321,12 +1009,6 @@
       "case": "Plural",
       "example": {
         "de": "Die bewerberin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1346,12 +1028,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die bewerberin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1371,12 +1047,6 @@
       "case": "Plural",
       "example": {
         "de": "Der kunde ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1396,12 +1066,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der kunde ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1421,12 +1085,6 @@
       "case": "Plural",
       "example": {
         "de": "Die kundin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1446,12 +1104,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die kundin ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1471,12 +1123,6 @@
       "case": "Plural",
       "example": {
         "de": "Das gerät ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1496,12 +1142,6 @@
       "case": "Artikel",
       "example": {
         "de": "Das gerät ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1521,12 +1161,6 @@
       "case": "Plural",
       "example": {
         "de": "Die voraussetzung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1546,12 +1180,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die voraussetzung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1571,12 +1199,6 @@
       "case": "Plural",
       "example": {
         "de": "Die verantwortung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1596,12 +1218,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die verantwortung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1621,12 +1237,6 @@
       "case": "Plural",
       "example": {
         "de": "Die qualifikation ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1646,12 +1256,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die qualifikation ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1671,12 +1275,6 @@
       "case": "Plural",
       "example": {
         "de": "Der arbeitsplatz ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1696,12 +1294,6 @@
       "case": "Artikel",
       "example": {
         "de": "Der arbeitsplatz ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1721,12 +1313,6 @@
       "case": "Plural",
       "example": {
         "de": "Die branche ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1746,12 +1332,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die branche ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1771,12 +1351,6 @@
       "case": "Plural",
       "example": {
         "de": "Die dienstleistung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1796,12 +1370,6 @@
       "case": "Artikel",
       "example": {
         "de": "Die dienstleistung ist wichtig."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     }
   ]

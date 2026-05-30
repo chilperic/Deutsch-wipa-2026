@@ -33,13 +33,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_ankommen_auf_akkusativ_001",
@@ -70,13 +64,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_antworten_auf_akkusativ_002",
@@ -107,13 +95,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_arbeiten_an_dativ_003",
@@ -144,13 +126,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_aufhoeren_mit_dativ_004",
@@ -181,13 +157,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_beginnen_mit_dativ_005",
@@ -218,13 +188,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_bedanken_bei_dativ_006",
@@ -255,13 +219,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_bedanken_fuer_akkusativ_007",
@@ -292,13 +250,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_berichten_ueber_akkusativ_008",
@@ -329,13 +281,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_beschaeftigen_mit_dativ_009",
@@ -366,13 +312,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_beschweren_bei_dativ_010",
@@ -403,13 +343,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_beschweren_ueber_akkusativ_011",
@@ -440,13 +374,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_bestehen_aus_dativ_012",
@@ -477,13 +405,7 @@
         "prepositional verb",
         "aus",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_bestehen_auf_dativ_013",
@@ -514,13 +436,7 @@
         "prepositional verb",
         "auf",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_beteiligen_an_dativ_014",
@@ -551,13 +467,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_bewerben_bei_dativ_015",
@@ -588,13 +498,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_bewerben_um_akkusativ_016",
@@ -625,13 +529,7 @@
         "prepositional verb",
         "um",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_beziehen_auf_akkusativ_017",
@@ -662,13 +560,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_bitten_um_akkusativ_018",
@@ -699,13 +591,7 @@
         "prepositional verb",
         "um",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_danken_fuer_akkusativ_019",
@@ -736,13 +622,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_denken_an_akkusativ_020",
@@ -773,13 +653,7 @@
         "prepositional verb",
         "an",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_diskutieren_mit_dativ_021",
@@ -810,13 +684,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_diskutieren_ueber_akkusativ_022",
@@ -847,13 +715,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_eignen_fuer_akkusativ_023",
@@ -884,13 +746,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_einigen_auf_akkusativ_024",
@@ -921,13 +777,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_einladen_zu_dativ_025",
@@ -958,13 +808,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_entscheiden_fuer_akkusativ_026",
@@ -995,13 +839,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_entschuldigen_bei_dativ_027",
@@ -1032,13 +870,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_entschuldigen_fuer_akkusativ_028",
@@ -1069,13 +901,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_erinnern_an_akkusativ_029",
@@ -1106,13 +932,7 @@
         "prepositional verb",
         "an",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_erkennen_an_dativ_030",
@@ -1143,13 +963,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_erkundigen_bei_dativ_031",
@@ -1180,13 +994,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_erkundigen_nach_dativ_032",
@@ -1217,13 +1025,7 @@
         "prepositional verb",
         "nach",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_erzaehlen_von_dativ_033",
@@ -1254,13 +1056,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_fragen_nach_dativ_034",
@@ -1291,13 +1087,7 @@
         "prepositional verb",
         "nach",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_freuen_auf_akkusativ_035",
@@ -1328,13 +1118,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_freuen_ueber_akkusativ_036",
@@ -1365,13 +1149,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_fuehren_zu_dativ_037",
@@ -1402,13 +1180,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_gehoeren_zu_dativ_038",
@@ -1439,13 +1211,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_gewoehnen_an_akkusativ_039",
@@ -1476,13 +1242,7 @@
         "prepositional verb",
         "an",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_glauben_an_akkusativ_040",
@@ -1513,13 +1273,7 @@
         "prepositional verb",
         "an",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_gratulieren_zu_dativ_041",
@@ -1550,13 +1304,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_halten_fuer_akkusativ_042",
@@ -1587,13 +1335,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_handeln_von_dativ_043",
@@ -1624,13 +1366,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_helfen_bei_dativ_044",
@@ -1661,13 +1397,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_hinweisen_auf_akkusativ_045",
@@ -1698,13 +1428,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_hoffen_auf_akkusativ_046",
@@ -1735,13 +1459,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_hoeren_von_dativ_047",
@@ -1772,13 +1490,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_informieren_bei_dativ_048",
@@ -1809,13 +1521,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_informieren_ueber_akkusativ_049",
@@ -1846,13 +1552,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_interessieren_fuer_akkusativ_050",
@@ -1883,13 +1583,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_kaempfen_fuer_akkusativ_051",
@@ -1920,13 +1614,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_kaempfen_gegen_akkusativ_052",
@@ -1957,13 +1645,7 @@
         "prepositional verb",
         "gegen",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_klagen_ueber_akkusativ_053",
@@ -1994,13 +1676,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_kommen_aus_dativ_054",
@@ -2031,13 +1707,7 @@
         "prepositional verb",
         "aus",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_konzentrieren_auf_akkusativ_055",
@@ -2068,13 +1738,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_kuemmern_um_akkusativ_056",
@@ -2105,13 +1769,7 @@
         "prepositional verb",
         "um",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_lachen_ueber_akkusativ_057",
@@ -2142,13 +1800,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_leiden_an_dativ_058",
@@ -2179,13 +1831,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_leiden_unter_dativ_059",
@@ -2216,13 +1862,7 @@
         "prepositional verb",
         "unter",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_nachdenken_ueber_akkusativ_060",
@@ -2253,13 +1893,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_passen_zu_dativ_061",
@@ -2290,13 +1924,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_protestieren_gegen_akkusativ_062",
@@ -2327,13 +1955,7 @@
         "prepositional verb",
         "gegen",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_reagieren_auf_akkusativ_063",
@@ -2364,13 +1986,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_rechnen_mit_dativ_064",
@@ -2401,13 +2017,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_reden_mit_dativ_065",
@@ -2438,13 +2048,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_reden_ueber_akkusativ_066",
@@ -2475,13 +2079,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_riechen_nach_dativ_067",
@@ -2512,13 +2110,7 @@
         "prepositional verb",
         "nach",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sagen_zu_dativ_068",
@@ -2549,13 +2141,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_schmecken_nach_dativ_069",
@@ -2586,13 +2172,7 @@
         "prepositional verb",
         "nach",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_schreiben_an_akkusativ_070",
@@ -2623,13 +2203,7 @@
         "prepositional verb",
         "an",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_schreiben_ueber_akkusativ_071",
@@ -2660,13 +2234,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_schuetzen_vor_dativ_072",
@@ -2697,13 +2265,7 @@
         "prepositional verb",
         "vor",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sorgen_fuer_akkusativ_073",
@@ -2734,13 +2296,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sprechen_mit_dativ_074",
@@ -2771,13 +2327,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sprechen_ueber_akkusativ_075",
@@ -2808,13 +2358,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_staunen_ueber_akkusativ_076",
@@ -2845,13 +2389,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sterben_an_dativ_077",
@@ -2882,13 +2420,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_stimmen_fuer_akkusativ_078",
@@ -2919,13 +2451,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_stimmen_gegen_akkusativ_079",
@@ -2956,13 +2482,7 @@
         "prepositional verb",
         "gegen",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_suchen_nach_dativ_080",
@@ -2993,13 +2513,7 @@
         "prepositional verb",
         "nach",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_teilnehmen_an_dativ_081",
@@ -3030,13 +2544,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_telefonieren_mit_dativ_082",
@@ -3067,13 +2575,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_traeumen_von_dativ_083",
@@ -3104,13 +2606,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_treffen_mit_dativ_084",
@@ -3141,13 +2637,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_ueberreden_zu_dativ_085",
@@ -3178,13 +2668,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_unterhalten_mit_dativ_086",
@@ -3215,13 +2699,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_unterhalten_ueber_akkusativ_087",
@@ -3252,13 +2730,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_unterscheiden_von_dativ_088",
@@ -3289,13 +2761,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_verlieben_in_akkusativ_089",
@@ -3326,13 +2792,7 @@
         "prepositional verb",
         "in",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_verlassen_auf_akkusativ_090",
@@ -3363,13 +2823,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_verzichten_auf_akkusativ_091",
@@ -3400,13 +2854,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_vorbereiten_auf_akkusativ_092",
@@ -3437,13 +2885,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_warnen_vor_dativ_093",
@@ -3474,13 +2916,7 @@
         "prepositional verb",
         "vor",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_warten_auf_akkusativ_094",
@@ -3511,13 +2947,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_wenden_an_akkusativ_095",
@@ -3548,13 +2978,7 @@
         "prepositional verb",
         "an",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_wissen_von_dativ_096",
@@ -3585,13 +3009,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_wundern_ueber_akkusativ_097",
@@ -3622,13 +3040,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_zweifeln_an_dativ_098",
@@ -3659,13 +3071,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_abhaengen_von_dativ_099",
@@ -3696,13 +3102,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_abstimmen_ueber_akkusativ_100",
@@ -3733,13 +3133,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_abmelden_bei_dativ_101",
@@ -3770,13 +3164,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_anmelden_bei_dativ_102",
@@ -3807,13 +3195,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_anmelden_fuer_akkusativ_103",
@@ -3844,13 +3226,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_anrufen_bei_dativ_104",
@@ -3881,13 +3257,7 @@
         "prepositional verb",
         "bei",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_aergern_ueber_akkusativ_105",
@@ -3918,13 +3288,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_aufpassen_auf_akkusativ_106",
@@ -3955,13 +3319,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_aufregen_ueber_akkusativ_107",
@@ -3992,13 +3350,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_ausgeben_fuer_akkusativ_108",
@@ -4029,13 +3381,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_austauschen_mit_dativ_109",
@@ -4066,13 +3412,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_bemuehen_um_akkusativ_110",
@@ -4103,13 +3443,7 @@
         "prepositional verb",
         "um",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_beneiden_um_akkusativ_111",
@@ -4140,13 +3474,7 @@
         "prepositional verb",
         "um",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_beitragen_zu_dativ_112",
@@ -4177,13 +3505,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_beraten_mit_dativ_113",
@@ -4214,13 +3536,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_berufen_auf_akkusativ_114",
@@ -4251,13 +3567,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_distanzieren_von_dativ_115",
@@ -4288,13 +3598,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_eignen_zu_dativ_116",
@@ -4325,13 +3629,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_einsteigen_in_akkusativ_117",
@@ -4362,13 +3660,7 @@
         "prepositional verb",
         "in",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_einsetzen_fuer_akkusativ_118",
@@ -4399,13 +3691,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_erholen_von_dativ_119",
@@ -4436,13 +3722,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_fliehen_vor_dativ_120",
@@ -4473,13 +3753,7 @@
         "prepositional verb",
         "vor",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_fuerchten_vor_dativ_121",
@@ -4510,13 +3784,7 @@
         "prepositional verb",
         "vor",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_gelten_als_nominativ_122",
@@ -4547,13 +3815,7 @@
         "prepositional verb",
         "als",
         "Nominativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_geraten_in_akkusativ_123",
@@ -4584,13 +3846,7 @@
         "prepositional verb",
         "in",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_leiten_zu_dativ_124",
@@ -4621,13 +3877,7 @@
         "prepositional verb",
         "zu",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_profitieren_von_dativ_125",
@@ -4658,13 +3908,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_raechen_an_dativ_126",
@@ -4695,13 +3939,7 @@
         "prepositional verb",
         "an",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_schliessen_aus_dativ_127",
@@ -4732,13 +3970,7 @@
         "prepositional verb",
         "aus",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_sehnen_nach_dativ_128",
@@ -4769,13 +4001,7 @@
         "prepositional verb",
         "nach",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_spezialisieren_auf_akkusativ_129",
@@ -4806,13 +4032,7 @@
         "prepositional verb",
         "auf",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_streiten_mit_dativ_130",
@@ -4843,13 +4063,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_streiten_ueber_akkusativ_131",
@@ -4880,13 +4094,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_taeuschen_in_dativ_132",
@@ -4917,13 +4125,7 @@
         "prepositional verb",
         "in",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_trennen_von_dativ_133",
@@ -4954,13 +4156,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_urteilen_ueber_akkusativ_134",
@@ -4991,13 +4187,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_vergleichen_mit_dativ_135",
@@ -5028,13 +4218,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_verabschieden_von_dativ_136",
@@ -5065,13 +4249,7 @@
         "prepositional verb",
         "von",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_verfuegen_ueber_akkusativ_137",
@@ -5102,13 +4280,7 @@
         "prepositional verb",
         "über",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_verhandeln_mit_dativ_138",
@@ -5139,13 +4311,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_verstehen_mit_dativ_139",
@@ -5176,13 +4342,7 @@
         "prepositional verb",
         "mit",
         "Dativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     },
     {
       "id": "pv_sich_vorbereiten_fuer_akkusativ_140",
@@ -5213,13 +4373,7 @@
         "prepositional verb",
         "für",
         "Akkusativ"
-      ],
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
-      }
+      ]
     }
   ]
 }

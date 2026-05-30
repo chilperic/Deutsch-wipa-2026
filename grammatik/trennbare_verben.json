@@ -21,12 +21,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich fange an heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -46,12 +40,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin angefangen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -72,12 +60,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: anfangen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -97,12 +79,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich stehe auf heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -122,12 +98,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgestanden."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -148,12 +118,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: aufstehen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -173,12 +137,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich kaufe ein heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -198,12 +156,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin eingekauft."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -224,12 +176,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: einkaufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -249,12 +195,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich bringe mit heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -274,12 +214,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin mitgebracht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -300,12 +234,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: mitbringen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -325,12 +253,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich rufe an heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -350,12 +272,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin angerufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -376,12 +292,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: anrufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -401,12 +311,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich fülle aus heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -426,12 +330,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin ausgefüllt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -452,12 +350,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: ausfüllen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -477,12 +369,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich steige ein heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -502,12 +388,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin eingestiegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -528,12 +408,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: einsteigen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -553,12 +427,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich steige aus heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -578,12 +446,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin ausgestiegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -604,12 +466,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: aussteigen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -629,12 +485,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich steige um heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -654,12 +504,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin umgestiegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -680,12 +524,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: umsteigen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -705,12 +543,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich bereite vor heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -730,12 +562,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin vorbereitet."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -756,12 +582,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: vorbereiten."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -781,12 +601,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich nehme teil heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -806,12 +620,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin teilgenommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -832,12 +640,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: teilnehmen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -857,12 +659,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich räume auf heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -882,12 +678,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgeräumt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -908,12 +698,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: aufräumen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -933,12 +717,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich mache zu heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -958,12 +736,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin zugemacht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -984,12 +756,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: zumachen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1009,12 +775,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich mache auf heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1034,12 +794,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgemacht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1060,12 +814,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: aufmachen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1085,12 +833,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich rufe zurück heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1110,12 +852,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin zurückgerufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1136,12 +872,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: zurückrufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1161,12 +891,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich lerne kennen heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1186,12 +910,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin kennengelernt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1212,12 +930,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: kennenlernen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1237,12 +949,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich arbeite weiter heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1262,12 +968,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin weitergearbeitet."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1288,12 +988,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: weiterarbeiten."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1313,12 +1007,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich stelle fest heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1338,12 +1026,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin festgestellt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1364,12 +1046,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: feststellen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1389,12 +1065,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich sage ab heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1414,12 +1084,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin abgesagt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1440,12 +1104,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: absagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1465,12 +1123,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich sage zu heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1490,12 +1142,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin zugesagt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1516,12 +1162,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: zusagen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1541,12 +1181,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich gehe weiter heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1566,12 +1200,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin weitergegangen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1592,12 +1220,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: weitergehen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1617,12 +1239,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich fahre los heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1642,12 +1258,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin losgefahren."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1668,12 +1278,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: losfahren."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1693,12 +1297,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich komme mit heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1718,12 +1316,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin mitgekommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1744,12 +1336,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: mitkommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1769,12 +1355,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich hole ab heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1794,12 +1374,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin abgeholt."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1820,12 +1394,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: abholen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1845,12 +1413,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich gebe ab heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1870,12 +1432,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin abgegeben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1896,12 +1452,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: abgeben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1921,12 +1471,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich komme an heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1946,12 +1490,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin angekommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1972,12 +1510,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: ankommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1997,12 +1529,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich passe auf heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2022,12 +1548,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgepasst."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2048,12 +1568,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: aufpassen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2073,12 +1587,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich schlafe ein heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2098,12 +1606,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin eingeschlafen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2124,12 +1626,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: einschlafen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2149,12 +1645,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich sehe fern heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2174,12 +1664,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin ferngesehen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2200,12 +1684,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: fernsehen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2225,12 +1703,6 @@
       "case": "Präsens · trennbar",
       "example": {
         "de": "Ich lese vor heute."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2250,12 +1722,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin vorgelesen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2276,12 +1742,6 @@
       "case": "Bedeutung",
       "example": {
         "de": "Verb: vorlesen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     }
   ]

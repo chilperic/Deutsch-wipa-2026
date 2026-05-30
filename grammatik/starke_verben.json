@@ -21,12 +21,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern ging ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -46,12 +40,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gegangen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -71,12 +59,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: sein + gegangen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -96,12 +78,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern kam ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -121,12 +97,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gekommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -146,12 +116,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: sein + gekommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -171,12 +135,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern nahm ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -196,12 +154,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe genommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -221,12 +173,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + genommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -246,12 +192,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern gab ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -271,12 +211,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gegeben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -296,12 +230,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gegeben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -321,12 +249,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern sah ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -346,12 +268,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gesehen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -371,12 +287,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gesehen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -396,12 +306,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern sprach ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -421,12 +325,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gesprochen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -446,12 +344,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gesprochen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -471,12 +363,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern las ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -496,12 +382,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gelesen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -521,12 +401,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gelesen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -546,12 +420,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern schrieb ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -571,12 +439,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe geschrieben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -596,12 +458,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + geschrieben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -621,12 +477,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern fand ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -646,12 +496,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gefunden."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -671,12 +515,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gefunden."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -696,12 +534,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern trank ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -721,12 +553,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe getrunken."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -746,12 +572,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + getrunken."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -771,12 +591,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern aß ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -796,12 +610,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gegessen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -821,12 +629,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gegessen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -846,12 +648,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern fuhr ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -871,12 +667,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gefahren."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -896,12 +686,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: sein + gefahren."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -921,12 +705,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern lief ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -946,12 +724,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gelaufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -971,12 +743,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: sein + gelaufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -996,12 +762,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern schlief ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1021,12 +781,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe geschlafen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1046,12 +800,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + geschlafen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1071,12 +819,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern half ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1096,12 +838,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe geholfen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1121,12 +857,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + geholfen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1146,12 +876,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern traf ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1171,12 +895,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe getroffen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1196,12 +914,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + getroffen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1221,12 +933,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern blieb ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1246,12 +952,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe geblieben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1271,12 +971,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: sein + geblieben."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1296,12 +990,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern stand ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1321,12 +1009,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gestanden."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1346,12 +1028,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gestanden."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1371,12 +1047,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern lag ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1396,12 +1066,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gelegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1421,12 +1085,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gelegen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1446,12 +1104,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern saß ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1471,12 +1123,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gesessen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1496,12 +1142,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gesessen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1521,12 +1161,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern trug ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1546,12 +1180,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe getragen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1571,12 +1199,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + getragen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1596,12 +1218,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern wusch ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1621,12 +1237,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gewaschen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1646,12 +1256,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gewaschen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1671,12 +1275,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern begann ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1696,12 +1294,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe begonnen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1721,12 +1313,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + begonnen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1746,12 +1332,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern gewann ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1771,12 +1351,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gewonnen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1796,12 +1370,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gewonnen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1821,12 +1389,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern verlor ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1846,12 +1408,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe verloren."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1871,12 +1427,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + verloren."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1896,12 +1446,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern vergaß ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1921,12 +1465,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe vergessen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1946,12 +1484,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + vergessen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1971,12 +1503,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern bekam ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -1996,12 +1522,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe bekommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2021,12 +1541,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + bekommen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2046,12 +1560,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern rief ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2071,12 +1579,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gerufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2096,12 +1598,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gerufen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2121,12 +1617,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern hielt ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2146,12 +1636,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gehalten."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2171,12 +1655,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gehalten."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2196,12 +1674,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern ließ ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2221,12 +1693,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gelassen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2246,12 +1712,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gelassen."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2271,12 +1731,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern brachte ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2296,12 +1750,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gebracht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2321,12 +1769,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gebracht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2346,12 +1788,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern dachte ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2371,12 +1807,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gedacht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2396,12 +1826,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gedacht."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2421,12 +1845,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern wusste ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2446,12 +1864,6 @@
       "case": "Partizip II",
       "example": {
         "de": "Ich bin/habe gewusst."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2471,12 +1883,6 @@
       "case": "Perfekt auxiliary",
       "example": {
         "de": "Perfekt: haben + gewusst."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     },
     {
@@ -2496,12 +1902,6 @@
       "case": "Präteritum",
       "example": {
         "de": "Gestern kannte ich früh auf."
-      },
-      "translation_review": {
-        "machine_assisted": true,
-        "needs_human_review": false,
-        "placeholder_equal_to_english": [],
-        "status": "usable"
       }
     }
   ]
