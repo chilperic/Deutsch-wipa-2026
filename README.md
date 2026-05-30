@@ -83,3 +83,23 @@ Build marker:
 ```text
 responsive-embedded-review-2026-05-30
 ```
+
+
+## Fixed counts and choice flow
+
+This build fixes two user-facing problems:
+
+```text
+1. Stale localStorage or failed JSON fetch could leave module cards showing 0 items.
+   Embedded fallback now replaces stale/smaller module data.
+
+2. Correct multiple-choice answers felt like a dead end.
+   Correct article/meaning choices now show feedback and auto-advance after a short delay.
+   Wrong or typed answers still require Continue.
+```
+
+Build marker:
+
+```text
+fixed-counts-and-choice-flow-2026-05-30
+```

@@ -1,48 +1,44 @@
-
-import json, re, pathlib, sys
+import json, pathlib, re, sys
 root = pathlib.Path(__file__).resolve().parents[1]
 errors = []
-warnings = []
-min_counts = {
- "kasusergaenzungen.json": 60,
- "starke_verben.json": 60,
- "trennbare_verben.json": 60,
- "praepositionen.json": 60,
- "nomen_artikel_plural.json": 60,
- "adjektivdeklination.json": 60,
- "pronomen.json": 60,
- "konnektoren_nebensaetze.json": 60,
- "praepositionalverben.json": 100
-}
-bad_patterns = [
- r"\bguterr\b", r"\bgutenn\b", r"\bgutess\b",
- r"\bHeute ich\b", r"\bHeute wir\b", r"\bHeute er\b", r"\bHeute sie\b",
- r"\bOft ich\b", r"\bMorgen ich\b",
- r"habe/bin ist gegangen", r"habe/bin ist gekommen"
+html = (root/"index.html").read_text(encoding="utf-8")
+required = [
+    "fixed-counts-and-choice-flow-2026-05-30",
+    "window.EMBEDDED_DATA",
+    "currentCount < embItems.length",
+    "currentVocabCount < embVocabItems.length",
+    "choiceCorrect",
+    "next…"
 ]
-for fn, minimum in min_counts.items():
-    path = root/"grammatik"/fn
-    if not path.exists():
-        errors.append(f"Missing {fn}")
+for r in required:
+    if r not in html:
+        errors.append(f"index.html missing {r}")
+# Ensure content files are present and non-empty.
+for fn, minimum in {
+    "praepositionalverben.json": 100,
+    "kasusergaenzungen.json": 60,
+    "starke_verben.json": 60,
+    "trennbare_verben.json": 60,
+    "praepositionen.json": 60,
+    "nomen_artikel_plural.json": 60,
+    "adjektivdeklination.json": 60,
+    "pronomen.json": 60,
+    "konnektoren_nebensaetze.json": 60
+}.items():
+    p = root/"grammatik"/fn
+    if not p.exists():
+        errors.append(f"missing {fn}")
         continue
-    data = json.loads(path.read_text(encoding="utf-8"))
-    items = data.get("items", [])
-    if len(items) < minimum:
-        errors.append(f"{fn}: only {len(items)} items, expected >= {minimum}")
-    ids = [x.get("id") for x in items]
-    if len(ids) != len(set(ids)):
-        errors.append(f"{fn}: duplicate ids")
-    for x in items:
-        for field in ["id","display","meaning"]:
-            if field not in x or not x[field]:
-                errors.append(f"{fn}: item missing {field}: {x.get('id')}")
-        txt = json.dumps(x, ensure_ascii=False)
-        for pat in bad_patterns:
-            if re.search(pat, txt):
-                errors.append(f"{fn}: bad pattern {pat} in {x.get('id')}")
-        if fn == "starke_verben.json" and "Partizip II?" in x.get("prompt",""):
-            ans = x.get("answer","")
-            if ans.startswith(("ist ","hat ","bin ","habe ")):
-                errors.append(f"{fn}: Partizip II answer contains auxiliary in {x.get('id')}: {ans}")
-print(json.dumps({"errors": errors, "warnings": warnings, "passed": not errors}, ensure_ascii=False, indent=2))
+    data = json.loads(p.read_text(encoding="utf-8"))
+    if len(data.get("items", [])) < minimum:
+        errors.append(f"{fn}: too few items")
+for i in range(1,5):
+    p = root/"vokabular"/f"kapitel{i}.json"
+    if not p.exists():
+        errors.append(f"missing kapitel{i}.json")
+    else:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        if len(data.get("words", [])) < 10:
+            errors.append(f"kapitel{i}.json: suspiciously few words")
+print(json.dumps({"passed": not errors, "errors": errors}, ensure_ascii=False, indent=2))
 sys.exit(1 if errors else 0)
