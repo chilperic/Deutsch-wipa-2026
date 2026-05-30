@@ -34,3 +34,58 @@ Build marker:
 ```text
 stable-boot-profile-themes-2026-05-30
 ```
+
+
+## Grammar flow improvement
+
+Grammar modules now use a clearer cycle:
+
+```text
+Study card → Focus recall → Prompt practice
+```
+
+Example:
+
+```text
+Study:
+gratulieren + Dativ
+
+Focus recall:
+gratulieren + ?
+
+Prompt practice:
+Im Kurs gratuliere ich ___ Kollegin.
+```
+
+Build marker:
+
+```text
+stable-grammar-flow-improved-2026-05-30
+```
+
+
+## Learning-loop UX repair
+
+Implemented after review:
+
+```text
+- Mobile bottom buttons now work via event delegation.
+- Profile/progress card is rendered on page load.
+- Phone / Computer / Auto selector is implemented.
+- Quick-start choices added:
+  Continue review
+  Learn new items
+  Grammar training
+  Vocabulary
+- Tracker now uses readable labels instead of internal IDs.
+- Wrong-answer feedback gives teaching explanation.
+- Module cards distinguish selected module.
+- Fake placeholder vocabulary examples replaced where detected.
+- “habe/bin ...” examples repaired where detected.
+```
+
+Build marker:
+
+```text
+learning-loop-ux-repair-2026-05-30
+```
