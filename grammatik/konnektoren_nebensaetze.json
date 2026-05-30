@@ -1,7 +1,8 @@
 {
   "module": "konnektoren_nebensaetze",
   "title": "Konnektoren / Nebensätze",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "kon_weil_0",
@@ -12,6 +13,10 @@
         "German": "weil"
       },
       "prompt": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "answers": [
+        "weil"
+      ],
       "answer": "weil",
       "case": "Nebensatz",
       "example": {
@@ -27,6 +32,10 @@
         "German": "obwohl"
       },
       "prompt": "Ich gehe spazieren, ___ es regnet.",
+      "prompt_clean": "Ich gehe spazieren, ___ es regnet.",
+      "answers": [
+        "obwohl"
+      ],
       "answer": "obwohl",
       "case": "Nebensatz",
       "example": {
@@ -42,6 +51,10 @@
         "German": "wenn"
       },
       "prompt": "___ ich Zeit habe, lerne ich Deutsch.",
+      "prompt_clean": "___ ich Zeit habe, lerne ich Deutsch.",
+      "answers": [
+        "wenn"
+      ],
       "answer": "wenn",
       "case": "Bedingung",
       "example": {
@@ -57,6 +70,10 @@
         "German": "als"
       },
       "prompt": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "prompt_clean": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "answers": [
+        "als"
+      ],
       "answer": "als",
       "case": "Vergangenheit",
       "example": {
@@ -72,6 +89,10 @@
         "German": "bevor"
       },
       "prompt": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "prompt_clean": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "answers": [
+        "bevor"
+      ],
       "answer": "bevor",
       "case": "Temporal",
       "example": {
@@ -87,6 +108,10 @@
         "German": "nachdem"
       },
       "prompt": "___ ich gegessen habe, lerne ich.",
+      "prompt_clean": "___ ich gegessen habe, lerne ich.",
+      "answers": [
+        "nachdem"
+      ],
       "answer": "nachdem",
       "case": "Temporal",
       "example": {
@@ -102,6 +127,10 @@
         "German": "während"
       },
       "prompt": "Ich höre Musik, ___ ich koche.",
+      "prompt_clean": "Ich höre Musik, ___ ich koche.",
+      "answers": [
+        "während"
+      ],
       "answer": "während",
       "case": "Temporal",
       "example": {
@@ -117,6 +146,10 @@
         "German": "seitdem"
       },
       "prompt": "Ich lerne viel, ___ ich im Kurs bin.",
+      "prompt_clean": "Ich lerne viel, ___ ich im Kurs bin.",
+      "answers": [
+        "seitdem"
+      ],
       "answer": "seitdem",
       "case": "Temporal",
       "example": {
@@ -132,6 +165,10 @@
         "German": "bis"
       },
       "prompt": "Ich warte, ___ der Bus kommt.",
+      "prompt_clean": "Ich warte, ___ der Bus kommt.",
+      "answers": [
+        "bis"
+      ],
       "answer": "bis",
       "case": "Temporal",
       "example": {
@@ -147,6 +184,10 @@
         "German": "damit"
       },
       "prompt": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "prompt_clean": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "answers": [
+        "damit"
+      ],
       "answer": "damit",
       "case": "Final",
       "example": {
@@ -162,6 +203,10 @@
         "German": "deshalb"
       },
       "prompt": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "prompt_clean": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "answers": [
+        "deshalb"
+      ],
       "answer": "deshalb",
       "case": "Hauptsatz",
       "example": {
@@ -177,6 +222,10 @@
         "German": "trotzdem"
       },
       "prompt": "Es regnet. ___ gehe ich spazieren.",
+      "prompt_clean": "Es regnet. ___ gehe ich spazieren.",
+      "answers": [
+        "trotzdem"
+      ],
       "answer": "trotzdem",
       "case": "Hauptsatz",
       "example": {
@@ -192,6 +241,10 @@
         "German": "denn"
       },
       "prompt": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "answers": [
+        "denn"
+      ],
       "answer": "denn",
       "case": "Hauptsatz",
       "example": {
@@ -207,6 +260,10 @@
         "German": "aber"
       },
       "prompt": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "prompt_clean": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "answers": [
+        "aber"
+      ],
       "answer": "aber",
       "case": "Hauptsatz",
       "example": {
@@ -222,6 +279,10 @@
         "German": "oder"
       },
       "prompt": "Möchtest du Tee ___ Kaffee?",
+      "prompt_clean": "Möchtest du Tee ___ Kaffee?",
+      "answers": [
+        "oder"
+      ],
       "answer": "oder",
       "case": "Koordination",
       "example": {
@@ -237,6 +298,10 @@
         "German": "und"
       },
       "prompt": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "prompt_clean": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "answers": [
+        "und"
+      ],
       "answer": "und",
       "case": "Koordination",
       "example": {
@@ -252,6 +317,10 @@
         "German": "sondern"
       },
       "prompt": "Ich trinke keinen Kaffee, ___ Tee.",
+      "prompt_clean": "Ich trinke keinen Kaffee, ___ Tee.",
+      "answers": [
+        "sondern"
+      ],
       "answer": "sondern",
       "case": "Koordination",
       "example": {
@@ -267,6 +336,10 @@
         "German": "falls"
       },
       "prompt": "___ du Zeit hast, ruf mich an.",
+      "prompt_clean": "___ du Zeit hast, ruf mich an.",
+      "answers": [
+        "falls"
+      ],
       "answer": "falls",
       "case": "Bedingung",
       "example": {
@@ -282,6 +355,10 @@
         "German": "sobald"
       },
       "prompt": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "prompt_clean": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "answers": [
+        "sobald"
+      ],
       "answer": "sobald",
       "case": "Temporal",
       "example": {
@@ -297,6 +374,10 @@
         "German": "solange"
       },
       "prompt": "Du kannst bleiben, ___ du ruhig bist.",
+      "prompt_clean": "Du kannst bleiben, ___ du ruhig bist.",
+      "answers": [
+        "solange"
+      ],
       "answer": "solange",
       "case": "Temporal",
       "example": {
@@ -312,6 +393,10 @@
         "German": "weil"
       },
       "prompt": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "answers": [
+        "weil"
+      ],
       "answer": "weil",
       "case": "Nebensatz",
       "example": {
@@ -327,6 +412,10 @@
         "German": "obwohl"
       },
       "prompt": "Ich gehe spazieren, ___ es regnet.",
+      "prompt_clean": "Ich gehe spazieren, ___ es regnet.",
+      "answers": [
+        "obwohl"
+      ],
       "answer": "obwohl",
       "case": "Nebensatz",
       "example": {
@@ -342,6 +431,10 @@
         "German": "wenn"
       },
       "prompt": "___ ich Zeit habe, lerne ich Deutsch.",
+      "prompt_clean": "___ ich Zeit habe, lerne ich Deutsch.",
+      "answers": [
+        "wenn"
+      ],
       "answer": "wenn",
       "case": "Bedingung",
       "example": {
@@ -357,6 +450,10 @@
         "German": "als"
       },
       "prompt": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "prompt_clean": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "answers": [
+        "als"
+      ],
       "answer": "als",
       "case": "Vergangenheit",
       "example": {
@@ -372,6 +469,10 @@
         "German": "bevor"
       },
       "prompt": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "prompt_clean": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "answers": [
+        "bevor"
+      ],
       "answer": "bevor",
       "case": "Temporal",
       "example": {
@@ -387,6 +488,10 @@
         "German": "nachdem"
       },
       "prompt": "___ ich gegessen habe, lerne ich.",
+      "prompt_clean": "___ ich gegessen habe, lerne ich.",
+      "answers": [
+        "nachdem"
+      ],
       "answer": "nachdem",
       "case": "Temporal",
       "example": {
@@ -402,6 +507,10 @@
         "German": "während"
       },
       "prompt": "Ich höre Musik, ___ ich koche.",
+      "prompt_clean": "Ich höre Musik, ___ ich koche.",
+      "answers": [
+        "während"
+      ],
       "answer": "während",
       "case": "Temporal",
       "example": {
@@ -417,6 +526,10 @@
         "German": "seitdem"
       },
       "prompt": "Ich lerne viel, ___ ich im Kurs bin.",
+      "prompt_clean": "Ich lerne viel, ___ ich im Kurs bin.",
+      "answers": [
+        "seitdem"
+      ],
       "answer": "seitdem",
       "case": "Temporal",
       "example": {
@@ -432,6 +545,10 @@
         "German": "bis"
       },
       "prompt": "Ich warte, ___ der Bus kommt.",
+      "prompt_clean": "Ich warte, ___ der Bus kommt.",
+      "answers": [
+        "bis"
+      ],
       "answer": "bis",
       "case": "Temporal",
       "example": {
@@ -447,6 +564,10 @@
         "German": "damit"
       },
       "prompt": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "prompt_clean": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "answers": [
+        "damit"
+      ],
       "answer": "damit",
       "case": "Final",
       "example": {
@@ -462,6 +583,10 @@
         "German": "deshalb"
       },
       "prompt": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "prompt_clean": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "answers": [
+        "deshalb"
+      ],
       "answer": "deshalb",
       "case": "Hauptsatz",
       "example": {
@@ -477,6 +602,10 @@
         "German": "trotzdem"
       },
       "prompt": "Es regnet. ___ gehe ich spazieren.",
+      "prompt_clean": "Es regnet. ___ gehe ich spazieren.",
+      "answers": [
+        "trotzdem"
+      ],
       "answer": "trotzdem",
       "case": "Hauptsatz",
       "example": {
@@ -492,6 +621,10 @@
         "German": "denn"
       },
       "prompt": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "answers": [
+        "denn"
+      ],
       "answer": "denn",
       "case": "Hauptsatz",
       "example": {
@@ -507,6 +640,10 @@
         "German": "aber"
       },
       "prompt": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "prompt_clean": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "answers": [
+        "aber"
+      ],
       "answer": "aber",
       "case": "Hauptsatz",
       "example": {
@@ -522,6 +659,10 @@
         "German": "oder"
       },
       "prompt": "Möchtest du Tee ___ Kaffee?",
+      "prompt_clean": "Möchtest du Tee ___ Kaffee?",
+      "answers": [
+        "oder"
+      ],
       "answer": "oder",
       "case": "Koordination",
       "example": {
@@ -537,6 +678,10 @@
         "German": "und"
       },
       "prompt": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "prompt_clean": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "answers": [
+        "und"
+      ],
       "answer": "und",
       "case": "Koordination",
       "example": {
@@ -552,6 +697,10 @@
         "German": "sondern"
       },
       "prompt": "Ich trinke keinen Kaffee, ___ Tee.",
+      "prompt_clean": "Ich trinke keinen Kaffee, ___ Tee.",
+      "answers": [
+        "sondern"
+      ],
       "answer": "sondern",
       "case": "Koordination",
       "example": {
@@ -567,6 +716,10 @@
         "German": "falls"
       },
       "prompt": "___ du Zeit hast, ruf mich an.",
+      "prompt_clean": "___ du Zeit hast, ruf mich an.",
+      "answers": [
+        "falls"
+      ],
       "answer": "falls",
       "case": "Bedingung",
       "example": {
@@ -582,6 +735,10 @@
         "German": "sobald"
       },
       "prompt": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "prompt_clean": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "answers": [
+        "sobald"
+      ],
       "answer": "sobald",
       "case": "Temporal",
       "example": {
@@ -597,6 +754,10 @@
         "German": "solange"
       },
       "prompt": "Du kannst bleiben, ___ du ruhig bist.",
+      "prompt_clean": "Du kannst bleiben, ___ du ruhig bist.",
+      "answers": [
+        "solange"
+      ],
       "answer": "solange",
       "case": "Temporal",
       "example": {
@@ -612,6 +773,10 @@
         "German": "weil"
       },
       "prompt": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "answers": [
+        "weil"
+      ],
       "answer": "weil",
       "case": "Nebensatz",
       "example": {
@@ -627,6 +792,10 @@
         "German": "obwohl"
       },
       "prompt": "Ich gehe spazieren, ___ es regnet.",
+      "prompt_clean": "Ich gehe spazieren, ___ es regnet.",
+      "answers": [
+        "obwohl"
+      ],
       "answer": "obwohl",
       "case": "Nebensatz",
       "example": {
@@ -642,6 +811,10 @@
         "German": "wenn"
       },
       "prompt": "___ ich Zeit habe, lerne ich Deutsch.",
+      "prompt_clean": "___ ich Zeit habe, lerne ich Deutsch.",
+      "answers": [
+        "wenn"
+      ],
       "answer": "wenn",
       "case": "Bedingung",
       "example": {
@@ -657,6 +830,10 @@
         "German": "als"
       },
       "prompt": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "prompt_clean": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "answers": [
+        "als"
+      ],
       "answer": "als",
       "case": "Vergangenheit",
       "example": {
@@ -672,6 +849,10 @@
         "German": "bevor"
       },
       "prompt": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "prompt_clean": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "answers": [
+        "bevor"
+      ],
       "answer": "bevor",
       "case": "Temporal",
       "example": {
@@ -687,6 +868,10 @@
         "German": "nachdem"
       },
       "prompt": "___ ich gegessen habe, lerne ich.",
+      "prompt_clean": "___ ich gegessen habe, lerne ich.",
+      "answers": [
+        "nachdem"
+      ],
       "answer": "nachdem",
       "case": "Temporal",
       "example": {
@@ -702,6 +887,10 @@
         "German": "während"
       },
       "prompt": "Ich höre Musik, ___ ich koche.",
+      "prompt_clean": "Ich höre Musik, ___ ich koche.",
+      "answers": [
+        "während"
+      ],
       "answer": "während",
       "case": "Temporal",
       "example": {
@@ -717,6 +906,10 @@
         "German": "seitdem"
       },
       "prompt": "Ich lerne viel, ___ ich im Kurs bin.",
+      "prompt_clean": "Ich lerne viel, ___ ich im Kurs bin.",
+      "answers": [
+        "seitdem"
+      ],
       "answer": "seitdem",
       "case": "Temporal",
       "example": {
@@ -732,6 +925,10 @@
         "German": "bis"
       },
       "prompt": "Ich warte, ___ der Bus kommt.",
+      "prompt_clean": "Ich warte, ___ der Bus kommt.",
+      "answers": [
+        "bis"
+      ],
       "answer": "bis",
       "case": "Temporal",
       "example": {
@@ -747,6 +944,10 @@
         "German": "damit"
       },
       "prompt": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "prompt_clean": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "answers": [
+        "damit"
+      ],
       "answer": "damit",
       "case": "Final",
       "example": {
@@ -762,6 +963,10 @@
         "German": "deshalb"
       },
       "prompt": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "prompt_clean": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "answers": [
+        "deshalb"
+      ],
       "answer": "deshalb",
       "case": "Hauptsatz",
       "example": {
@@ -777,6 +982,10 @@
         "German": "trotzdem"
       },
       "prompt": "Es regnet. ___ gehe ich spazieren.",
+      "prompt_clean": "Es regnet. ___ gehe ich spazieren.",
+      "answers": [
+        "trotzdem"
+      ],
       "answer": "trotzdem",
       "case": "Hauptsatz",
       "example": {
@@ -792,6 +1001,10 @@
         "German": "denn"
       },
       "prompt": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "answers": [
+        "denn"
+      ],
       "answer": "denn",
       "case": "Hauptsatz",
       "example": {
@@ -807,6 +1020,10 @@
         "German": "aber"
       },
       "prompt": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "prompt_clean": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "answers": [
+        "aber"
+      ],
       "answer": "aber",
       "case": "Hauptsatz",
       "example": {
@@ -822,6 +1039,10 @@
         "German": "oder"
       },
       "prompt": "Möchtest du Tee ___ Kaffee?",
+      "prompt_clean": "Möchtest du Tee ___ Kaffee?",
+      "answers": [
+        "oder"
+      ],
       "answer": "oder",
       "case": "Koordination",
       "example": {
@@ -837,6 +1058,10 @@
         "German": "und"
       },
       "prompt": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "prompt_clean": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "answers": [
+        "und"
+      ],
       "answer": "und",
       "case": "Koordination",
       "example": {
@@ -852,6 +1077,10 @@
         "German": "sondern"
       },
       "prompt": "Ich trinke keinen Kaffee, ___ Tee.",
+      "prompt_clean": "Ich trinke keinen Kaffee, ___ Tee.",
+      "answers": [
+        "sondern"
+      ],
       "answer": "sondern",
       "case": "Koordination",
       "example": {
@@ -867,6 +1096,10 @@
         "German": "falls"
       },
       "prompt": "___ du Zeit hast, ruf mich an.",
+      "prompt_clean": "___ du Zeit hast, ruf mich an.",
+      "answers": [
+        "falls"
+      ],
       "answer": "falls",
       "case": "Bedingung",
       "example": {
@@ -882,6 +1115,10 @@
         "German": "sobald"
       },
       "prompt": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "prompt_clean": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "answers": [
+        "sobald"
+      ],
       "answer": "sobald",
       "case": "Temporal",
       "example": {
@@ -897,10 +1134,584 @@
         "German": "solange"
       },
       "prompt": "Du kannst bleiben, ___ du ruhig bist.",
+      "prompt_clean": "Du kannst bleiben, ___ du ruhig bist.",
+      "answers": [
+        "solange"
+      ],
       "answer": "solange",
       "case": "Temporal",
       "example": {
         "de": "Du kannst bleiben, solange du ruhig bist."
+      }
+    },
+    {
+      "id": "kon_weil_60",
+      "type": "connector",
+      "display": "weil · Nebensatz",
+      "meaning": {
+        "English": "because",
+        "German": "weil"
+      },
+      "prompt": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "answers": [
+        "weil"
+      ],
+      "answer": "weil",
+      "case": "Nebensatz",
+      "example": {
+        "de": "Ich bleibe zu Hause, weil ich krank bin."
+      }
+    },
+    {
+      "id": "kon_obwohl_61",
+      "type": "connector",
+      "display": "obwohl · Nebensatz",
+      "meaning": {
+        "English": "although",
+        "German": "obwohl"
+      },
+      "prompt": "Ich gehe spazieren, ___ es regnet.",
+      "prompt_clean": "Ich gehe spazieren, ___ es regnet.",
+      "answers": [
+        "obwohl"
+      ],
+      "answer": "obwohl",
+      "case": "Nebensatz",
+      "example": {
+        "de": "Ich gehe spazieren, obwohl es regnet."
+      }
+    },
+    {
+      "id": "kon_wenn_62",
+      "type": "connector",
+      "display": "wenn · Bedingung",
+      "meaning": {
+        "English": "if/when",
+        "German": "wenn"
+      },
+      "prompt": "___ ich Zeit habe, lerne ich Deutsch.",
+      "prompt_clean": "___ ich Zeit habe, lerne ich Deutsch.",
+      "answers": [
+        "wenn"
+      ],
+      "answer": "wenn",
+      "case": "Bedingung",
+      "example": {
+        "de": "wenn ich Zeit habe, lerne ich Deutsch."
+      }
+    },
+    {
+      "id": "kon_als_63",
+      "type": "connector",
+      "display": "als · Vergangenheit",
+      "meaning": {
+        "English": "when in the past",
+        "German": "als"
+      },
+      "prompt": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "prompt_clean": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "answers": [
+        "als"
+      ],
+      "answer": "als",
+      "case": "Vergangenheit",
+      "example": {
+        "de": "als ich ein Kind war, wohnte ich in Kamerun."
+      }
+    },
+    {
+      "id": "kon_bevor_64",
+      "type": "connector",
+      "display": "bevor · Temporal",
+      "meaning": {
+        "English": "before",
+        "German": "bevor"
+      },
+      "prompt": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "prompt_clean": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "answers": [
+        "bevor"
+      ],
+      "answer": "bevor",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich frühstücke, bevor ich zur Arbeit gehe."
+      }
+    },
+    {
+      "id": "kon_nachdem_65",
+      "type": "connector",
+      "display": "nachdem · Temporal",
+      "meaning": {
+        "English": "after",
+        "German": "nachdem"
+      },
+      "prompt": "___ ich gegessen habe, lerne ich.",
+      "prompt_clean": "___ ich gegessen habe, lerne ich.",
+      "answers": [
+        "nachdem"
+      ],
+      "answer": "nachdem",
+      "case": "Temporal",
+      "example": {
+        "de": "nachdem ich gegessen habe, lerne ich."
+      }
+    },
+    {
+      "id": "kon_während_66",
+      "type": "connector",
+      "display": "während · Temporal",
+      "meaning": {
+        "English": "while",
+        "German": "während"
+      },
+      "prompt": "Ich höre Musik, ___ ich koche.",
+      "prompt_clean": "Ich höre Musik, ___ ich koche.",
+      "answers": [
+        "während"
+      ],
+      "answer": "während",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich höre Musik, während ich koche."
+      }
+    },
+    {
+      "id": "kon_seitdem_67",
+      "type": "connector",
+      "display": "seitdem · Temporal",
+      "meaning": {
+        "English": "since",
+        "German": "seitdem"
+      },
+      "prompt": "Ich lerne viel, ___ ich im Kurs bin.",
+      "prompt_clean": "Ich lerne viel, ___ ich im Kurs bin.",
+      "answers": [
+        "seitdem"
+      ],
+      "answer": "seitdem",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich lerne viel, seitdem ich im Kurs bin."
+      }
+    },
+    {
+      "id": "kon_bis_68",
+      "type": "connector",
+      "display": "bis · Temporal",
+      "meaning": {
+        "English": "until",
+        "German": "bis"
+      },
+      "prompt": "Ich warte, ___ der Bus kommt.",
+      "prompt_clean": "Ich warte, ___ der Bus kommt.",
+      "answers": [
+        "bis"
+      ],
+      "answer": "bis",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich warte, bis der Bus kommt."
+      }
+    },
+    {
+      "id": "kon_damit_69",
+      "type": "connector",
+      "display": "damit · Final",
+      "meaning": {
+        "English": "so that",
+        "German": "damit"
+      },
+      "prompt": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "prompt_clean": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "answers": [
+        "damit"
+      ],
+      "answer": "damit",
+      "case": "Final",
+      "example": {
+        "de": "Ich lerne Deutsch, damit ich besser arbeiten kann."
+      }
+    },
+    {
+      "id": "kon_deshalb_70",
+      "type": "connector",
+      "display": "deshalb · Hauptsatz",
+      "meaning": {
+        "English": "therefore",
+        "German": "deshalb"
+      },
+      "prompt": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "prompt_clean": "Ich bin krank. ___ bleibe ich zu Hause.",
+      "answers": [
+        "deshalb"
+      ],
+      "answer": "deshalb",
+      "case": "Hauptsatz",
+      "example": {
+        "de": "Ich bin krank. deshalb bleibe ich zu Hause."
+      }
+    },
+    {
+      "id": "kon_trotzdem_71",
+      "type": "connector",
+      "display": "trotzdem · Hauptsatz",
+      "meaning": {
+        "English": "nevertheless",
+        "German": "trotzdem"
+      },
+      "prompt": "Es regnet. ___ gehe ich spazieren.",
+      "prompt_clean": "Es regnet. ___ gehe ich spazieren.",
+      "answers": [
+        "trotzdem"
+      ],
+      "answer": "trotzdem",
+      "case": "Hauptsatz",
+      "example": {
+        "de": "Es regnet. trotzdem gehe ich spazieren."
+      }
+    },
+    {
+      "id": "kon_denn_72",
+      "type": "connector",
+      "display": "denn · Hauptsatz",
+      "meaning": {
+        "English": "because",
+        "German": "denn"
+      },
+      "prompt": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich bin krank.",
+      "answers": [
+        "denn"
+      ],
+      "answer": "denn",
+      "case": "Hauptsatz",
+      "example": {
+        "de": "Ich bleibe zu Hause, denn ich bin krank."
+      }
+    },
+    {
+      "id": "kon_aber_73",
+      "type": "connector",
+      "display": "aber · Hauptsatz",
+      "meaning": {
+        "English": "but",
+        "German": "aber"
+      },
+      "prompt": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "prompt_clean": "Ich möchte kommen, ___ ich habe keine Zeit.",
+      "answers": [
+        "aber"
+      ],
+      "answer": "aber",
+      "case": "Hauptsatz",
+      "example": {
+        "de": "Ich möchte kommen, aber ich habe keine Zeit."
+      }
+    },
+    {
+      "id": "kon_oder_74",
+      "type": "connector",
+      "display": "oder · Koordination",
+      "meaning": {
+        "English": "or",
+        "German": "oder"
+      },
+      "prompt": "Möchtest du Tee ___ Kaffee?",
+      "prompt_clean": "Möchtest du Tee ___ Kaffee?",
+      "answers": [
+        "oder"
+      ],
+      "answer": "oder",
+      "case": "Koordination",
+      "example": {
+        "de": "Möchtest du Tee oder Kaffee?"
+      }
+    },
+    {
+      "id": "kon_und_75",
+      "type": "connector",
+      "display": "und · Koordination",
+      "meaning": {
+        "English": "and",
+        "German": "und"
+      },
+      "prompt": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "prompt_clean": "Ich lerne Deutsch ___ ich arbeite viel.",
+      "answers": [
+        "und"
+      ],
+      "answer": "und",
+      "case": "Koordination",
+      "example": {
+        "de": "Ich lerne Deutsch und ich arbeite viel."
+      }
+    },
+    {
+      "id": "kon_sondern_76",
+      "type": "connector",
+      "display": "sondern · Koordination",
+      "meaning": {
+        "English": "but rather",
+        "German": "sondern"
+      },
+      "prompt": "Ich trinke keinen Kaffee, ___ Tee.",
+      "prompt_clean": "Ich trinke keinen Kaffee, ___ Tee.",
+      "answers": [
+        "sondern"
+      ],
+      "answer": "sondern",
+      "case": "Koordination",
+      "example": {
+        "de": "Ich trinke keinen Kaffee, sondern Tee."
+      }
+    },
+    {
+      "id": "kon_falls_77",
+      "type": "connector",
+      "display": "falls · Bedingung",
+      "meaning": {
+        "English": "in case/if",
+        "German": "falls"
+      },
+      "prompt": "___ du Zeit hast, ruf mich an.",
+      "prompt_clean": "___ du Zeit hast, ruf mich an.",
+      "answers": [
+        "falls"
+      ],
+      "answer": "falls",
+      "case": "Bedingung",
+      "example": {
+        "de": "falls du Zeit hast, ruf mich an."
+      }
+    },
+    {
+      "id": "kon_sobald_78",
+      "type": "connector",
+      "display": "sobald · Temporal",
+      "meaning": {
+        "English": "as soon as",
+        "German": "sobald"
+      },
+      "prompt": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "prompt_clean": "Ich rufe dich an, ___ ich zu Hause bin.",
+      "answers": [
+        "sobald"
+      ],
+      "answer": "sobald",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich rufe dich an, sobald ich zu Hause bin."
+      }
+    },
+    {
+      "id": "kon_solange_79",
+      "type": "connector",
+      "display": "solange · Temporal",
+      "meaning": {
+        "English": "as long as",
+        "German": "solange"
+      },
+      "prompt": "Du kannst bleiben, ___ du ruhig bist.",
+      "prompt_clean": "Du kannst bleiben, ___ du ruhig bist.",
+      "answers": [
+        "solange"
+      ],
+      "answer": "solange",
+      "case": "Temporal",
+      "example": {
+        "de": "Du kannst bleiben, solange du ruhig bist."
+      }
+    },
+    {
+      "id": "kon_weil_80",
+      "type": "connector",
+      "display": "weil · Nebensatz",
+      "meaning": {
+        "English": "because",
+        "German": "weil"
+      },
+      "prompt": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "prompt_clean": "Ich bleibe zu Hause, ___ ich krank bin.",
+      "answers": [
+        "weil"
+      ],
+      "answer": "weil",
+      "case": "Nebensatz",
+      "example": {
+        "de": "Ich bleibe zu Hause, weil ich krank bin."
+      }
+    },
+    {
+      "id": "kon_obwohl_81",
+      "type": "connector",
+      "display": "obwohl · Nebensatz",
+      "meaning": {
+        "English": "although",
+        "German": "obwohl"
+      },
+      "prompt": "Ich gehe spazieren, ___ es regnet.",
+      "prompt_clean": "Ich gehe spazieren, ___ es regnet.",
+      "answers": [
+        "obwohl"
+      ],
+      "answer": "obwohl",
+      "case": "Nebensatz",
+      "example": {
+        "de": "Ich gehe spazieren, obwohl es regnet."
+      }
+    },
+    {
+      "id": "kon_wenn_82",
+      "type": "connector",
+      "display": "wenn · Bedingung",
+      "meaning": {
+        "English": "if/when",
+        "German": "wenn"
+      },
+      "prompt": "___ ich Zeit habe, lerne ich Deutsch.",
+      "prompt_clean": "___ ich Zeit habe, lerne ich Deutsch.",
+      "answers": [
+        "wenn"
+      ],
+      "answer": "wenn",
+      "case": "Bedingung",
+      "example": {
+        "de": "wenn ich Zeit habe, lerne ich Deutsch."
+      }
+    },
+    {
+      "id": "kon_als_83",
+      "type": "connector",
+      "display": "als · Vergangenheit",
+      "meaning": {
+        "English": "when in the past",
+        "German": "als"
+      },
+      "prompt": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "prompt_clean": "___ ich ein Kind war, wohnte ich in Kamerun.",
+      "answers": [
+        "als"
+      ],
+      "answer": "als",
+      "case": "Vergangenheit",
+      "example": {
+        "de": "als ich ein Kind war, wohnte ich in Kamerun."
+      }
+    },
+    {
+      "id": "kon_bevor_84",
+      "type": "connector",
+      "display": "bevor · Temporal",
+      "meaning": {
+        "English": "before",
+        "German": "bevor"
+      },
+      "prompt": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "prompt_clean": "Ich frühstücke, ___ ich zur Arbeit gehe.",
+      "answers": [
+        "bevor"
+      ],
+      "answer": "bevor",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich frühstücke, bevor ich zur Arbeit gehe."
+      }
+    },
+    {
+      "id": "kon_nachdem_85",
+      "type": "connector",
+      "display": "nachdem · Temporal",
+      "meaning": {
+        "English": "after",
+        "German": "nachdem"
+      },
+      "prompt": "___ ich gegessen habe, lerne ich.",
+      "prompt_clean": "___ ich gegessen habe, lerne ich.",
+      "answers": [
+        "nachdem"
+      ],
+      "answer": "nachdem",
+      "case": "Temporal",
+      "example": {
+        "de": "nachdem ich gegessen habe, lerne ich."
+      }
+    },
+    {
+      "id": "kon_während_86",
+      "type": "connector",
+      "display": "während · Temporal",
+      "meaning": {
+        "English": "while",
+        "German": "während"
+      },
+      "prompt": "Ich höre Musik, ___ ich koche.",
+      "prompt_clean": "Ich höre Musik, ___ ich koche.",
+      "answers": [
+        "während"
+      ],
+      "answer": "während",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich höre Musik, während ich koche."
+      }
+    },
+    {
+      "id": "kon_seitdem_87",
+      "type": "connector",
+      "display": "seitdem · Temporal",
+      "meaning": {
+        "English": "since",
+        "German": "seitdem"
+      },
+      "prompt": "Ich lerne viel, ___ ich im Kurs bin.",
+      "prompt_clean": "Ich lerne viel, ___ ich im Kurs bin.",
+      "answers": [
+        "seitdem"
+      ],
+      "answer": "seitdem",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich lerne viel, seitdem ich im Kurs bin."
+      }
+    },
+    {
+      "id": "kon_bis_88",
+      "type": "connector",
+      "display": "bis · Temporal",
+      "meaning": {
+        "English": "until",
+        "German": "bis"
+      },
+      "prompt": "Ich warte, ___ der Bus kommt.",
+      "prompt_clean": "Ich warte, ___ der Bus kommt.",
+      "answers": [
+        "bis"
+      ],
+      "answer": "bis",
+      "case": "Temporal",
+      "example": {
+        "de": "Ich warte, bis der Bus kommt."
+      }
+    },
+    {
+      "id": "kon_damit_89",
+      "type": "connector",
+      "display": "damit · Final",
+      "meaning": {
+        "English": "so that",
+        "German": "damit"
+      },
+      "prompt": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "prompt_clean": "Ich lerne Deutsch, ___ ich besser arbeiten kann.",
+      "answers": [
+        "damit"
+      ],
+      "answer": "damit",
+      "case": "Final",
+      "example": {
+        "de": "Ich lerne Deutsch, damit ich besser arbeiten kann."
       }
     }
   ]

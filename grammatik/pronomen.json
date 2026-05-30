@@ -1,7 +1,8 @@
 {
   "module": "pronomen",
   "title": "Pronomen",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "pro_ich_Akkusativ_0",
@@ -12,6 +13,10 @@
         "German": "ich → mich"
       },
       "prompt": "Akkusativ von ich?",
+      "prompt_clean": "Akkusativ von ich?",
+      "answers": [
+        "mich"
+      ],
       "answer": "mich",
       "case": "Akkusativ",
       "example": {
@@ -27,6 +32,10 @@
         "German": "du → dich"
       },
       "prompt": "Akkusativ von du?",
+      "prompt_clean": "Akkusativ von du?",
+      "answers": [
+        "dich"
+      ],
       "answer": "dich",
       "case": "Akkusativ",
       "example": {
@@ -42,6 +51,10 @@
         "German": "er → ihn"
       },
       "prompt": "Akkusativ von er?",
+      "prompt_clean": "Akkusativ von er?",
+      "answers": [
+        "ihn"
+      ],
       "answer": "ihn",
       "case": "Akkusativ",
       "example": {
@@ -57,6 +70,10 @@
         "German": "sie → sie"
       },
       "prompt": "Akkusativ von sie?",
+      "prompt_clean": "Akkusativ von sie?",
+      "answers": [
+        "sie"
+      ],
       "answer": "sie",
       "case": "Akkusativ",
       "example": {
@@ -72,6 +89,10 @@
         "German": "es → es"
       },
       "prompt": "Akkusativ von es?",
+      "prompt_clean": "Akkusativ von es?",
+      "answers": [
+        "es"
+      ],
       "answer": "es",
       "case": "Akkusativ",
       "example": {
@@ -87,6 +108,10 @@
         "German": "wir → uns"
       },
       "prompt": "Akkusativ von wir?",
+      "prompt_clean": "Akkusativ von wir?",
+      "answers": [
+        "uns"
+      ],
       "answer": "uns",
       "case": "Akkusativ",
       "example": {
@@ -102,6 +127,10 @@
         "German": "ihr → euch"
       },
       "prompt": "Akkusativ von ihr?",
+      "prompt_clean": "Akkusativ von ihr?",
+      "answers": [
+        "euch"
+      ],
       "answer": "euch",
       "case": "Akkusativ",
       "example": {
@@ -117,6 +146,10 @@
         "German": "sie → sie"
       },
       "prompt": "Akkusativ von sie?",
+      "prompt_clean": "Akkusativ von sie?",
+      "answers": [
+        "sie"
+      ],
       "answer": "sie",
       "case": "Akkusativ",
       "example": {
@@ -132,6 +165,10 @@
         "German": "ich → mir"
       },
       "prompt": "Dativ von ich?",
+      "prompt_clean": "Dativ von ich?",
+      "answers": [
+        "mir"
+      ],
       "answer": "mir",
       "case": "Dativ",
       "example": {
@@ -147,6 +184,10 @@
         "German": "du → dir"
       },
       "prompt": "Dativ von du?",
+      "prompt_clean": "Dativ von du?",
+      "answers": [
+        "dir"
+      ],
       "answer": "dir",
       "case": "Dativ",
       "example": {
@@ -162,6 +203,10 @@
         "German": "er → ihm"
       },
       "prompt": "Dativ von er?",
+      "prompt_clean": "Dativ von er?",
+      "answers": [
+        "ihm"
+      ],
       "answer": "ihm",
       "case": "Dativ",
       "example": {
@@ -177,6 +222,10 @@
         "German": "sie → ihr"
       },
       "prompt": "Dativ von sie?",
+      "prompt_clean": "Dativ von sie?",
+      "answers": [
+        "ihr"
+      ],
       "answer": "ihr",
       "case": "Dativ",
       "example": {
@@ -192,6 +241,10 @@
         "German": "es → ihm"
       },
       "prompt": "Dativ von es?",
+      "prompt_clean": "Dativ von es?",
+      "answers": [
+        "ihm"
+      ],
       "answer": "ihm",
       "case": "Dativ",
       "example": {
@@ -207,6 +260,10 @@
         "German": "wir → uns"
       },
       "prompt": "Dativ von wir?",
+      "prompt_clean": "Dativ von wir?",
+      "answers": [
+        "uns"
+      ],
       "answer": "uns",
       "case": "Dativ",
       "example": {
@@ -222,6 +279,10 @@
         "German": "ihr → euch"
       },
       "prompt": "Dativ von ihr?",
+      "prompt_clean": "Dativ von ihr?",
+      "answers": [
+        "euch"
+      ],
       "answer": "euch",
       "case": "Dativ",
       "example": {
@@ -237,6 +298,10 @@
         "German": "sie → ihnen"
       },
       "prompt": "Dativ von sie?",
+      "prompt_clean": "Dativ von sie?",
+      "answers": [
+        "ihnen"
+      ],
       "answer": "ihnen",
       "case": "Dativ",
       "example": {
@@ -252,6 +317,10 @@
         "German": "ich → mich"
       },
       "prompt": "ich wäscht ___?",
+      "prompt_clean": "ich wäscht ___?",
+      "answers": [
+        "mich"
+      ],
       "answer": "mich",
       "case": "Reflexiv",
       "example": {
@@ -267,6 +336,10 @@
         "German": "du → dich"
       },
       "prompt": "du wäscht ___?",
+      "prompt_clean": "du wäscht ___?",
+      "answers": [
+        "dich"
+      ],
       "answer": "dich",
       "case": "Reflexiv",
       "example": {
@@ -282,6 +355,10 @@
         "German": "er → sich"
       },
       "prompt": "er wäscht ___?",
+      "prompt_clean": "er wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -297,6 +374,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -312,6 +393,10 @@
         "German": "wir → uns"
       },
       "prompt": "wir wäscht ___?",
+      "prompt_clean": "wir wäscht ___?",
+      "answers": [
+        "uns"
+      ],
       "answer": "uns",
       "case": "Reflexiv",
       "example": {
@@ -327,6 +412,10 @@
         "German": "ihr → euch"
       },
       "prompt": "ihr wäscht ___?",
+      "prompt_clean": "ihr wäscht ___?",
+      "answers": [
+        "euch"
+      ],
       "answer": "euch",
       "case": "Reflexiv",
       "example": {
@@ -342,6 +431,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -357,6 +450,10 @@
         "German": "ich → mich"
       },
       "prompt": "ich wäscht ___?",
+      "prompt_clean": "ich wäscht ___?",
+      "answers": [
+        "mich"
+      ],
       "answer": "mich",
       "case": "Reflexiv",
       "example": {
@@ -372,6 +469,10 @@
         "German": "du → dich"
       },
       "prompt": "du wäscht ___?",
+      "prompt_clean": "du wäscht ___?",
+      "answers": [
+        "dich"
+      ],
       "answer": "dich",
       "case": "Reflexiv",
       "example": {
@@ -387,6 +488,10 @@
         "German": "er → sich"
       },
       "prompt": "er wäscht ___?",
+      "prompt_clean": "er wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -402,6 +507,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -417,6 +526,10 @@
         "German": "wir → uns"
       },
       "prompt": "wir wäscht ___?",
+      "prompt_clean": "wir wäscht ___?",
+      "answers": [
+        "uns"
+      ],
       "answer": "uns",
       "case": "Reflexiv",
       "example": {
@@ -432,6 +545,10 @@
         "German": "ihr → euch"
       },
       "prompt": "ihr wäscht ___?",
+      "prompt_clean": "ihr wäscht ___?",
+      "answers": [
+        "euch"
+      ],
       "answer": "euch",
       "case": "Reflexiv",
       "example": {
@@ -447,6 +564,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -462,6 +583,10 @@
         "German": "ich → mich"
       },
       "prompt": "ich wäscht ___?",
+      "prompt_clean": "ich wäscht ___?",
+      "answers": [
+        "mich"
+      ],
       "answer": "mich",
       "case": "Reflexiv",
       "example": {
@@ -477,6 +602,10 @@
         "German": "du → dich"
       },
       "prompt": "du wäscht ___?",
+      "prompt_clean": "du wäscht ___?",
+      "answers": [
+        "dich"
+      ],
       "answer": "dich",
       "case": "Reflexiv",
       "example": {
@@ -492,6 +621,10 @@
         "German": "er → sich"
       },
       "prompt": "er wäscht ___?",
+      "prompt_clean": "er wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -507,6 +640,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -522,6 +659,10 @@
         "German": "wir → uns"
       },
       "prompt": "wir wäscht ___?",
+      "prompt_clean": "wir wäscht ___?",
+      "answers": [
+        "uns"
+      ],
       "answer": "uns",
       "case": "Reflexiv",
       "example": {
@@ -537,6 +678,10 @@
         "German": "ihr → euch"
       },
       "prompt": "ihr wäscht ___?",
+      "prompt_clean": "ihr wäscht ___?",
+      "answers": [
+        "euch"
+      ],
       "answer": "euch",
       "case": "Reflexiv",
       "example": {
@@ -552,6 +697,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -567,6 +716,10 @@
         "German": "ich → mich"
       },
       "prompt": "ich wäscht ___?",
+      "prompt_clean": "ich wäscht ___?",
+      "answers": [
+        "mich"
+      ],
       "answer": "mich",
       "case": "Reflexiv",
       "example": {
@@ -582,6 +735,10 @@
         "German": "du → dich"
       },
       "prompt": "du wäscht ___?",
+      "prompt_clean": "du wäscht ___?",
+      "answers": [
+        "dich"
+      ],
       "answer": "dich",
       "case": "Reflexiv",
       "example": {
@@ -597,6 +754,10 @@
         "German": "er → sich"
       },
       "prompt": "er wäscht ___?",
+      "prompt_clean": "er wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -612,6 +773,10 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -627,6 +792,10 @@
         "German": "wir → uns"
       },
       "prompt": "wir wäscht ___?",
+      "prompt_clean": "wir wäscht ___?",
+      "answers": [
+        "uns"
+      ],
       "answer": "uns",
       "case": "Reflexiv",
       "example": {
@@ -642,6 +811,10 @@
         "German": "ihr → euch"
       },
       "prompt": "ihr wäscht ___?",
+      "prompt_clean": "ihr wäscht ___?",
+      "answers": [
+        "euch"
+      ],
       "answer": "euch",
       "case": "Reflexiv",
       "example": {
@@ -657,6 +830,143 @@
         "German": "sie → sich"
       },
       "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_28",
+      "type": "pronoun",
+      "display": "ich → mich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ich → mich"
+      },
+      "prompt": "ich wäscht ___?",
+      "prompt_clean": "ich wäscht ___?",
+      "answers": [
+        "mich"
+      ],
+      "answer": "mich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ich wäscht mich."
+      }
+    },
+    {
+      "id": "pro_ref_29",
+      "type": "pronoun",
+      "display": "du → dich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "du → dich"
+      },
+      "prompt": "du wäscht ___?",
+      "prompt_clean": "du wäscht ___?",
+      "answers": [
+        "dich"
+      ],
+      "answer": "dich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Du wäscht dich."
+      }
+    },
+    {
+      "id": "pro_ref_30",
+      "type": "pronoun",
+      "display": "er → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "er → sich"
+      },
+      "prompt": "er wäscht ___?",
+      "prompt_clean": "er wäscht ___?",
+      "answers": [
+        "sich"
+      ],
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Er wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_31",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
+      "answer": "sich",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Sie wäscht sich."
+      }
+    },
+    {
+      "id": "pro_ref_32",
+      "type": "pronoun",
+      "display": "wir → uns",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "wir → uns"
+      },
+      "prompt": "wir wäscht ___?",
+      "prompt_clean": "wir wäscht ___?",
+      "answers": [
+        "uns"
+      ],
+      "answer": "uns",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Wir wäscht uns."
+      }
+    },
+    {
+      "id": "pro_ref_33",
+      "type": "pronoun",
+      "display": "ihr → euch",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "ihr → euch"
+      },
+      "prompt": "ihr wäscht ___?",
+      "prompt_clean": "ihr wäscht ___?",
+      "answers": [
+        "euch"
+      ],
+      "answer": "euch",
+      "case": "Reflexiv",
+      "example": {
+        "de": "Ihr wäscht euch."
+      }
+    },
+    {
+      "id": "pro_ref_34",
+      "type": "pronoun",
+      "display": "sie → sich",
+      "meaning": {
+        "English": "reflexive pronoun",
+        "German": "sie → sich"
+      },
+      "prompt": "sie wäscht ___?",
+      "prompt_clean": "sie wäscht ___?",
+      "answers": [
+        "sich"
+      ],
       "answer": "sich",
       "case": "Reflexiv",
       "example": {
@@ -668,12 +978,16 @@
       "type": "pronoun",
       "display": "ich → mein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "ich → mein"
       },
       "prompt": "Possessivartikel von ich?",
+      "prompt_clean": "Possessivartikel von ich?",
+      "answers": [
+        "mein"
+      ],
       "answer": "mein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
       }
@@ -683,12 +997,16 @@
       "type": "pronoun",
       "display": "du → dein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "du → dein"
       },
       "prompt": "Possessivartikel von du?",
+      "prompt_clean": "Possessivartikel von du?",
+      "answers": [
+        "dein"
+      ],
       "answer": "dein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
       }
@@ -698,12 +1016,16 @@
       "type": "pronoun",
       "display": "er → sein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "er → sein"
       },
       "prompt": "Possessivartikel von er?",
+      "prompt_clean": "Possessivartikel von er?",
+      "answers": [
+        "sein"
+      ],
       "answer": "sein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
       }
@@ -713,12 +1035,16 @@
       "type": "pronoun",
       "display": "sie → ihr",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "sie → ihr"
       },
       "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
       "answer": "ihr",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
       }
@@ -728,12 +1054,16 @@
       "type": "pronoun",
       "display": "wir → unser",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "wir → unser"
       },
       "prompt": "Possessivartikel von wir?",
+      "prompt_clean": "Possessivartikel von wir?",
+      "answers": [
+        "unser"
+      ],
       "answer": "unser",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
       }
@@ -743,12 +1073,16 @@
       "type": "pronoun",
       "display": "ihr → euer",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "ihr → euer"
       },
       "prompt": "Possessivartikel von ihr?",
+      "prompt_clean": "Possessivartikel von ihr?",
+      "answers": [
+        "euer"
+      ],
       "answer": "euer",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
       }
@@ -758,12 +1092,16 @@
       "type": "pronoun",
       "display": "sie → ihr",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "sie → ihr"
       },
       "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
       "answer": "ihr",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
       }
@@ -773,12 +1111,16 @@
       "type": "pronoun",
       "display": "ich → mein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "ich → mein"
       },
       "prompt": "Possessivartikel von ich?",
+      "prompt_clean": "Possessivartikel von ich?",
+      "answers": [
+        "mein"
+      ],
       "answer": "mein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
       }
@@ -788,12 +1130,16 @@
       "type": "pronoun",
       "display": "du → dein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "du → dein"
       },
       "prompt": "Possessivartikel von du?",
+      "prompt_clean": "Possessivartikel von du?",
+      "answers": [
+        "dein"
+      ],
       "answer": "dein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
       }
@@ -803,12 +1149,16 @@
       "type": "pronoun",
       "display": "er → sein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "er → sein"
       },
       "prompt": "Possessivartikel von er?",
+      "prompt_clean": "Possessivartikel von er?",
+      "answers": [
+        "sein"
+      ],
       "answer": "sein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
       }
@@ -818,12 +1168,16 @@
       "type": "pronoun",
       "display": "sie → ihr",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "sie → ihr"
       },
       "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
       "answer": "ihr",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
       }
@@ -833,12 +1187,16 @@
       "type": "pronoun",
       "display": "wir → unser",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "wir → unser"
       },
       "prompt": "Possessivartikel von wir?",
+      "prompt_clean": "Possessivartikel von wir?",
+      "answers": [
+        "unser"
+      ],
       "answer": "unser",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
       }
@@ -848,12 +1206,16 @@
       "type": "pronoun",
       "display": "ihr → euer",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "ihr → euer"
       },
       "prompt": "Possessivartikel von ihr?",
+      "prompt_clean": "Possessivartikel von ihr?",
+      "answers": [
+        "euer"
+      ],
       "answer": "euer",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
       }
@@ -863,12 +1225,16 @@
       "type": "pronoun",
       "display": "sie → ihr",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "sie → ihr"
       },
       "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
       "answer": "ihr",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
       }
@@ -878,12 +1244,16 @@
       "type": "pronoun",
       "display": "ich → mein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "ich → mein"
       },
       "prompt": "Possessivartikel von ich?",
+      "prompt_clean": "Possessivartikel von ich?",
+      "answers": [
+        "mein"
+      ],
       "answer": "mein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
       }
@@ -893,14 +1263,379 @@
       "type": "pronoun",
       "display": "du → dein",
       "meaning": {
-        "English": "possessive pronoun",
+        "English": "possessive article",
         "German": "du → dein"
       },
       "prompt": "Possessivartikel von du?",
+      "prompt_clean": "Possessivartikel von du?",
+      "answers": [
+        "dein"
+      ],
       "answer": "dein",
-      "case": "Possiv",
+      "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_16",
+      "type": "pronoun",
+      "display": "er → sein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "er → sein"
+      },
+      "prompt": "Possessivartikel von er?",
+      "prompt_clean": "Possessivartikel von er?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Sein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_17",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive article",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
+      "answer": "ihr",
+      "case": "Possessiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_18",
+      "type": "pronoun",
+      "display": "wir → unser",
+      "meaning": {
+        "English": "possessive article",
+        "German": "wir → unser"
+      },
+      "prompt": "Possessivartikel von wir?",
+      "prompt_clean": "Possessivartikel von wir?",
+      "answers": [
+        "unser"
+      ],
+      "answer": "unser",
+      "case": "Possessiv",
+      "example": {
+        "de": "Unser Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_19",
+      "type": "pronoun",
+      "display": "ihr → euer",
+      "meaning": {
+        "English": "possessive article",
+        "German": "ihr → euer"
+      },
+      "prompt": "Possessivartikel von ihr?",
+      "prompt_clean": "Possessivartikel von ihr?",
+      "answers": [
+        "euer"
+      ],
+      "answer": "euer",
+      "case": "Possessiv",
+      "example": {
+        "de": "Euer Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_20",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive article",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
+      "answer": "ihr",
+      "case": "Possessiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_21",
+      "type": "pronoun",
+      "display": "ich → mein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "ich → mein"
+      },
+      "prompt": "Possessivartikel von ich?",
+      "prompt_clean": "Possessivartikel von ich?",
+      "answers": [
+        "mein"
+      ],
+      "answer": "mein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Mein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_22",
+      "type": "pronoun",
+      "display": "du → dein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "du → dein"
+      },
+      "prompt": "Possessivartikel von du?",
+      "prompt_clean": "Possessivartikel von du?",
+      "answers": [
+        "dein"
+      ],
+      "answer": "dein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Dein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_23",
+      "type": "pronoun",
+      "display": "er → sein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "er → sein"
+      },
+      "prompt": "Possessivartikel von er?",
+      "prompt_clean": "Possessivartikel von er?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Sein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_24",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive article",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
+      "answer": "ihr",
+      "case": "Possessiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_25",
+      "type": "pronoun",
+      "display": "wir → unser",
+      "meaning": {
+        "English": "possessive article",
+        "German": "wir → unser"
+      },
+      "prompt": "Possessivartikel von wir?",
+      "prompt_clean": "Possessivartikel von wir?",
+      "answers": [
+        "unser"
+      ],
+      "answer": "unser",
+      "case": "Possessiv",
+      "example": {
+        "de": "Unser Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_26",
+      "type": "pronoun",
+      "display": "ihr → euer",
+      "meaning": {
+        "English": "possessive article",
+        "German": "ihr → euer"
+      },
+      "prompt": "Possessivartikel von ihr?",
+      "prompt_clean": "Possessivartikel von ihr?",
+      "answers": [
+        "euer"
+      ],
+      "answer": "euer",
+      "case": "Possessiv",
+      "example": {
+        "de": "Euer Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_27",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive article",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
+      "answer": "ihr",
+      "case": "Possessiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_28",
+      "type": "pronoun",
+      "display": "ich → mein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "ich → mein"
+      },
+      "prompt": "Possessivartikel von ich?",
+      "prompt_clean": "Possessivartikel von ich?",
+      "answers": [
+        "mein"
+      ],
+      "answer": "mein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Mein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_29",
+      "type": "pronoun",
+      "display": "du → dein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "du → dein"
+      },
+      "prompt": "Possessivartikel von du?",
+      "prompt_clean": "Possessivartikel von du?",
+      "answers": [
+        "dein"
+      ],
+      "answer": "dein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Dein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_30",
+      "type": "pronoun",
+      "display": "er → sein",
+      "meaning": {
+        "English": "possessive article",
+        "German": "er → sein"
+      },
+      "prompt": "Possessivartikel von er?",
+      "prompt_clean": "Possessivartikel von er?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Possessiv",
+      "example": {
+        "de": "Sein Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_31",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive article",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
+      "answer": "ihr",
+      "case": "Possessiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_32",
+      "type": "pronoun",
+      "display": "wir → unser",
+      "meaning": {
+        "English": "possessive article",
+        "German": "wir → unser"
+      },
+      "prompt": "Possessivartikel von wir?",
+      "prompt_clean": "Possessivartikel von wir?",
+      "answers": [
+        "unser"
+      ],
+      "answer": "unser",
+      "case": "Possessiv",
+      "example": {
+        "de": "Unser Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_33",
+      "type": "pronoun",
+      "display": "ihr → euer",
+      "meaning": {
+        "English": "possessive article",
+        "German": "ihr → euer"
+      },
+      "prompt": "Possessivartikel von ihr?",
+      "prompt_clean": "Possessivartikel von ihr?",
+      "answers": [
+        "euer"
+      ],
+      "answer": "euer",
+      "case": "Possessiv",
+      "example": {
+        "de": "Euer Buch ist hier."
+      }
+    },
+    {
+      "id": "pro_poss_34",
+      "type": "pronoun",
+      "display": "sie → ihr",
+      "meaning": {
+        "English": "possessive article",
+        "German": "sie → ihr"
+      },
+      "prompt": "Possessivartikel von sie?",
+      "prompt_clean": "Possessivartikel von sie?",
+      "answers": [
+        "ihr"
+      ],
+      "answer": "ihr",
+      "case": "Possessiv",
+      "example": {
+        "de": "Ihr Buch ist hier."
       }
     }
   ]

@@ -1,302 +1,62 @@
-# Deutsch WIPA 2026 · Lerntrainer
+# Deutsch WIPA 2026 · Quality Redesign Build
 
-This is my browser-based German learning app for practising course vocabulary and grammar.
+This build is a learner-only German training app with corrected grammar data and a redesigned interface.
 
-Live GitHub Pages URL, once deployed:
-
-```text
-https://chilperic.github.io/Deutsch-wipa-2026/
-```
-
-## Structure
+## Main corrections
 
 ```text
-Deutsch-wipa-2026_structured/
-├── index.html
-├── README.md
-├── project_manifest.json
-├── vokabular/
-│   ├── README.md
-│   ├── kapitel1.json
-│   ├── kapitel2.json
-│   ├── kapitel3.json
-│   └── kapitel4.json
-├── grammatik/
-│   ├── README.md
-│   ├── praepositionalverben.json
-│   ├── kasusergaenzungen.json
-│   ├── starke_verben.json
-│   ├── trennbare_verben.json
-│   ├── praepositionen.json
-│   ├── nomen_artikel_plural.json
-│   ├── adjektivdeklination.json
-│   ├── pronomen.json
-│   └── konnektoren_nebensaetze.json
-├── docs/
-│   └── plural_QA_report.json
-└── dev/
-    └── script_check.js
+- Admin/developer UI removed.
+- New color system and layout.
+- Answer leakage reduced: recall screens hide the target answer.
+- Corrected adjective declension examples.
+- Corrected strong-verb Partizip II answers.
+- Corrected V2 word order in generated Kasusergänzungen examples.
+- Added skill-level progress keys.
+- Added dev/quality_check.py for quality control.
 ```
 
-## Active modules
+## Module counts
 
-### Kapitel vocabulary
-
-Loaded from:
-
-```text
-vokabular/kapitel1.json
-vokabular/kapitel2.json
-vokabular/kapitel3.json
-vokabular/kapitel4.json
+```json
+{
+  "praepositionalverben.json": 141,
+  "kasusergaenzungen.json": 90,
+  "starke_verben.json": 100,
+  "trennbare_verben.json": 90,
+  "praepositionen.json": 84,
+  "nomen_artikel_plural.json": 72,
+  "adjektivdeklination.json": 90,
+  "pronomen.json": 86,
+  "konnektoren_nebensaetze.json": 90
+}
 ```
 
-Practice types include:
-
-```text
-article
-meaning
-plural
-active recall
-sentence gaps
-```
-
-### Präpositionalverben
-
-Loaded from:
-
-```text
-grammatik/praepositionalverben.json
-```
-
-Full grammar cycle:
-
-```text
-1. Learn the pattern
-2. Meaning
-3. Preposition gap
-4. Case recall
-```
-
-Example:
-
-```text
-Learn:
-sich bewerben um + Akkusativ
-
-Then practise:
-Ich bewerbe mich ___ eine Stelle.
-Answer: um
-```
-
-The gap question does not show the full pattern before the learner answers.
-
-## Running locally
+## Run locally
 
 ```bash
 cd Deutsch-wipa-2026_structured
 python3 -m http.server 8000
 ```
 
-Then open:
+Open:
 
 ```text
 http://localhost:8000
 ```
 
-## GitHub Pages
+## Checks
 
-Upload the contents of `Deutsch-wipa-2026_structured/` to the root of the GitHub repository.
-
-The repository root should contain:
-
-```text
-index.html
-README.md
-vokabular/
-grammatik/
-docs/
-dev/
-project_manifest.json
+```bash
+node --check dev/script_check.js
+python3 dev/quality_check.py
 ```
 
-Then enable GitHub Pages:
-
-```text
-Settings → Pages → Deploy from branch → main → /root
-```
-
-## Build check
-
-In the browser console:
+Expected build marker:
 
 ```js
 window.VOKABULAR_BUILD
 ```
 
-Expected:
-
 ```text
-final-clean-module-overview-2026-05-29
+quality-redesign-reviewed-2026-05-29
 ```
-
-For JavaScript syntax:
-
-```bash
-node --check dev/script_check.js
-```
-
-
-## Interface note
-
-The top screen now shows compact module chips instead of explanatory filler text.
-
-Active:
-
-```text
-Kapitel
-Präpositionalverben
-```
-
-Planned:
-
-```text
-Kasusergänzungen
-Starke Verben
-Trennbare Verben
-Präpositionen
-Artikel & Plural
-Adjektivdeklination
-Pronomen
-Konnektoren
-```
-
-
-## Dashboard interface
-
-This build implements the dashboard-style interface:
-
-```text
-- Sidebar navigation
-- Feature row
-- 10 visible learning modules
-- Active/planned module badges
-- Central practice controls
-- Stats strip
-```
-
-Build marker:
-
-```text
-dashboard-interface-structured-2026-05-29
-```
-
-
-## All modules active
-
-This build makes every planned module selectable with starter practice data.
-
-Active modules:
-
-```text
-Kapitel vocabulary
-Präpositionalverben
-Kasusergänzungen
-Starke Verben
-Trennbare Verben
-Präpositionen
-Nomen · Artikel · Plural
-Adjektivdeklination
-Pronomen
-Konnektoren / Nebensätze
-```
-
-Non-vocabulary modules use a generic grammar cycle:
-
-```text
-1. Learn the pattern
-2. Meaning
-3. Prompt practice
-```
-
-Build marker:
-
-```text
-all-modules-active-dashboard-2026-05-29
-```
-
-
-## Interface language
-
-The quiz language selector now also changes the interface language. Some specialized labels fall back to English when a translation is not defined.
-
-
-## Expanded non-leaky modules
-
-The non-vocabulary grammar modules now contain at least 60 starter items each.
-
-The practice flow was corrected so the answer is not visible during prompt practice.
-
-For grammar modules:
-
-```text
-1. Learn the item
-2. Meaning
-3. Prompt practice without showing the answer in the header
-```
-
-Expanded modules:
-
-```text
-Kasusergänzungen: 60 items
-Starke Verben: 60 items
-Trennbare Verben: 60 items
-Präpositionen: 60 items
-Nomen · Artikel · Plural: 60 items
-Adjektivdeklination: 60 items
-Pronomen: 60 items
-Konnektoren / Nebensätze: 60 items
-```
-
-
-## Answer-leak audit
-
-This build fixes a serious quiz-design bug: answer information must not be visible during recall.
-
-Fixed examples:
-
-```text
-Article question:
-Before: die Nachricht → choose der/die/das
-After: ? Nachricht → choose der/die/das
-
-Active recall:
-Before: German target visible in the card title
-After: target hidden; learner must recall it
-
-Grammar prompt:
-Before: pattern or answer could appear above the prompt
-After: only module/focus is shown; answer is hidden
-```
-
-A QA report is stored here:
-
-```text
-docs/answer_leak_QA_report.json
-```
-
-
-## Präpositionalverben expanded
-
-The prepositional verb module now contains 141 items.
-
-The practice flow remains non-leaky:
-
-```text
-1. Learn pattern
-2. Meaning
-3. Preposition gap
-4. Case recall
-```
-
-During the preposition-gap question, the full pattern is not displayed.

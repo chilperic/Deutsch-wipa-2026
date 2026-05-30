@@ -1,7 +1,8 @@
 {
   "module": "nomen_artikel_plural",
   "title": "Nomen · Artikel · Plural",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "nap_pl_0",
@@ -12,6 +13,10 @@
         "German": "der Vertrag"
       },
       "prompt": "Plural von der Vertrag?",
+      "prompt_clean": "Plural von der Vertrag?",
+      "answers": [
+        "die Verträge"
+      ],
       "answer": "die Verträge",
       "case": "Plural",
       "example": {
@@ -27,6 +32,10 @@
         "German": "der Vertrag"
       },
       "prompt": "Artikel von Vertrag?",
+      "prompt_clean": "Artikel von Vertrag?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -42,6 +51,10 @@
         "German": "die Prüfung"
       },
       "prompt": "Plural von die Prüfung?",
+      "prompt_clean": "Plural von die Prüfung?",
+      "answers": [
+        "die Prüfungen"
+      ],
       "answer": "die Prüfungen",
       "case": "Plural",
       "example": {
@@ -57,6 +70,10 @@
         "German": "die Prüfung"
       },
       "prompt": "Artikel von Prüfung?",
+      "prompt_clean": "Artikel von Prüfung?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -72,6 +89,10 @@
         "German": "das Praktikum"
       },
       "prompt": "Plural von das Praktikum?",
+      "prompt_clean": "Plural von das Praktikum?",
+      "answers": [
+        "die Praktika"
+      ],
       "answer": "die Praktika",
       "case": "Plural",
       "example": {
@@ -87,6 +108,10 @@
         "German": "das Praktikum"
       },
       "prompt": "Artikel von Praktikum?",
+      "prompt_clean": "Artikel von Praktikum?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -102,6 +127,10 @@
         "German": "der Patient"
       },
       "prompt": "Plural von der Patient?",
+      "prompt_clean": "Plural von der Patient?",
+      "answers": [
+        "die Patienten"
+      ],
       "answer": "die Patienten",
       "case": "Plural",
       "example": {
@@ -117,6 +146,10 @@
         "German": "der Patient"
       },
       "prompt": "Artikel von Patient?",
+      "prompt_clean": "Artikel von Patient?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -132,6 +165,10 @@
         "German": "der Kollege"
       },
       "prompt": "Plural von der Kollege?",
+      "prompt_clean": "Plural von der Kollege?",
+      "answers": [
+        "die Kollegen"
+      ],
       "answer": "die Kollegen",
       "case": "Plural",
       "example": {
@@ -147,6 +184,10 @@
         "German": "der Kollege"
       },
       "prompt": "Artikel von Kollege?",
+      "prompt_clean": "Artikel von Kollege?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -162,6 +203,10 @@
         "German": "die Kollegin"
       },
       "prompt": "Plural von die Kollegin?",
+      "prompt_clean": "Plural von die Kollegin?",
+      "answers": [
+        "die Kolleginnen"
+      ],
       "answer": "die Kolleginnen",
       "case": "Plural",
       "example": {
@@ -177,6 +222,10 @@
         "German": "die Kollegin"
       },
       "prompt": "Artikel von Kollegin?",
+      "prompt_clean": "Artikel von Kollegin?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -192,6 +241,10 @@
         "German": "das Dokument"
       },
       "prompt": "Plural von das Dokument?",
+      "prompt_clean": "Plural von das Dokument?",
+      "answers": [
+        "die Dokumente"
+      ],
       "answer": "die Dokumente",
       "case": "Plural",
       "example": {
@@ -207,6 +260,10 @@
         "German": "das Dokument"
       },
       "prompt": "Artikel von Dokument?",
+      "prompt_clean": "Artikel von Dokument?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -222,6 +279,10 @@
         "German": "der Termin"
       },
       "prompt": "Plural von der Termin?",
+      "prompt_clean": "Plural von der Termin?",
+      "answers": [
+        "die Termine"
+      ],
       "answer": "die Termine",
       "case": "Plural",
       "example": {
@@ -237,6 +298,10 @@
         "German": "der Termin"
       },
       "prompt": "Artikel von Termin?",
+      "prompt_clean": "Artikel von Termin?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -252,6 +317,10 @@
         "German": "die Bewerbung"
       },
       "prompt": "Plural von die Bewerbung?",
+      "prompt_clean": "Plural von die Bewerbung?",
+      "answers": [
+        "die Bewerbungen"
+      ],
       "answer": "die Bewerbungen",
       "case": "Plural",
       "example": {
@@ -267,6 +336,10 @@
         "German": "die Bewerbung"
       },
       "prompt": "Artikel von Bewerbung?",
+      "prompt_clean": "Artikel von Bewerbung?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -282,6 +355,10 @@
         "German": "das Zeugnis"
       },
       "prompt": "Plural von das Zeugnis?",
+      "prompt_clean": "Plural von das Zeugnis?",
+      "answers": [
+        "die Zeugnisse"
+      ],
       "answer": "die Zeugnisse",
       "case": "Plural",
       "example": {
@@ -297,6 +374,10 @@
         "German": "das Zeugnis"
       },
       "prompt": "Artikel von Zeugnis?",
+      "prompt_clean": "Artikel von Zeugnis?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -312,6 +393,10 @@
         "German": "der Beruf"
       },
       "prompt": "Plural von der Beruf?",
+      "prompt_clean": "Plural von der Beruf?",
+      "answers": [
+        "die Berufe"
+      ],
       "answer": "die Berufe",
       "case": "Plural",
       "example": {
@@ -327,6 +412,10 @@
         "German": "der Beruf"
       },
       "prompt": "Artikel von Beruf?",
+      "prompt_clean": "Artikel von Beruf?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -342,6 +431,10 @@
         "German": "die Stelle"
       },
       "prompt": "Plural von die Stelle?",
+      "prompt_clean": "Plural von die Stelle?",
+      "answers": [
+        "die Stellen"
+      ],
       "answer": "die Stellen",
       "case": "Plural",
       "example": {
@@ -357,6 +450,10 @@
         "German": "die Stelle"
       },
       "prompt": "Artikel von Stelle?",
+      "prompt_clean": "Artikel von Stelle?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -372,6 +469,10 @@
         "German": "der Auftrag"
       },
       "prompt": "Plural von der Auftrag?",
+      "prompt_clean": "Plural von der Auftrag?",
+      "answers": [
+        "die Aufträge"
+      ],
       "answer": "die Aufträge",
       "case": "Plural",
       "example": {
@@ -387,6 +488,10 @@
         "German": "der Auftrag"
       },
       "prompt": "Artikel von Auftrag?",
+      "prompt_clean": "Artikel von Auftrag?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -402,6 +507,10 @@
         "German": "die Ware"
       },
       "prompt": "Plural von die Ware?",
+      "prompt_clean": "Plural von die Ware?",
+      "answers": [
+        "die Waren"
+      ],
       "answer": "die Waren",
       "case": "Plural",
       "example": {
@@ -417,6 +526,10 @@
         "German": "die Ware"
       },
       "prompt": "Artikel von Ware?",
+      "prompt_clean": "Artikel von Ware?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -432,6 +545,10 @@
         "German": "das Lager"
       },
       "prompt": "Plural von das Lager?",
+      "prompt_clean": "Plural von das Lager?",
+      "answers": [
+        "die Lager"
+      ],
       "answer": "die Lager",
       "case": "Plural",
       "example": {
@@ -447,6 +564,10 @@
         "German": "das Lager"
       },
       "prompt": "Artikel von Lager?",
+      "prompt_clean": "Artikel von Lager?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -462,6 +583,10 @@
         "German": "der Unfall"
       },
       "prompt": "Plural von der Unfall?",
+      "prompt_clean": "Plural von der Unfall?",
+      "answers": [
+        "die Unfälle"
+      ],
       "answer": "die Unfälle",
       "case": "Plural",
       "example": {
@@ -477,6 +602,10 @@
         "German": "der Unfall"
       },
       "prompt": "Artikel von Unfall?",
+      "prompt_clean": "Artikel von Unfall?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -492,6 +621,10 @@
         "German": "die Nachricht"
       },
       "prompt": "Plural von die Nachricht?",
+      "prompt_clean": "Plural von die Nachricht?",
+      "answers": [
+        "die Nachrichten"
+      ],
       "answer": "die Nachrichten",
       "case": "Plural",
       "example": {
@@ -507,6 +640,10 @@
         "German": "die Nachricht"
       },
       "prompt": "Artikel von Nachricht?",
+      "prompt_clean": "Artikel von Nachricht?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -522,6 +659,10 @@
         "German": "der Lebenslauf"
       },
       "prompt": "Plural von der Lebenslauf?",
+      "prompt_clean": "Plural von der Lebenslauf?",
+      "answers": [
+        "die Lebensläufe"
+      ],
       "answer": "die Lebensläufe",
       "case": "Plural",
       "example": {
@@ -537,6 +678,10 @@
         "German": "der Lebenslauf"
       },
       "prompt": "Artikel von Lebenslauf?",
+      "prompt_clean": "Artikel von Lebenslauf?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -552,6 +697,10 @@
         "German": "das Gespräch"
       },
       "prompt": "Plural von das Gespräch?",
+      "prompt_clean": "Plural von das Gespräch?",
+      "answers": [
+        "die Gespräche"
+      ],
       "answer": "die Gespräche",
       "case": "Plural",
       "example": {
@@ -567,6 +716,10 @@
         "German": "das Gespräch"
       },
       "prompt": "Artikel von Gespräch?",
+      "prompt_clean": "Artikel von Gespräch?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -582,6 +735,10 @@
         "German": "der Kurs"
       },
       "prompt": "Plural von der Kurs?",
+      "prompt_clean": "Plural von der Kurs?",
+      "answers": [
+        "die Kurse"
+      ],
       "answer": "die Kurse",
       "case": "Plural",
       "example": {
@@ -597,6 +754,10 @@
         "German": "der Kurs"
       },
       "prompt": "Artikel von Kurs?",
+      "prompt_clean": "Artikel von Kurs?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -612,6 +773,10 @@
         "German": "die Sprache"
       },
       "prompt": "Plural von die Sprache?",
+      "prompt_clean": "Plural von die Sprache?",
+      "answers": [
+        "die Sprachen"
+      ],
       "answer": "die Sprachen",
       "case": "Plural",
       "example": {
@@ -627,6 +792,10 @@
         "German": "die Sprache"
       },
       "prompt": "Artikel von Sprache?",
+      "prompt_clean": "Artikel von Sprache?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -642,6 +811,10 @@
         "German": "das Angebot"
       },
       "prompt": "Plural von das Angebot?",
+      "prompt_clean": "Plural von das Angebot?",
+      "answers": [
+        "die Angebote"
+      ],
       "answer": "die Angebote",
       "case": "Plural",
       "example": {
@@ -657,6 +830,10 @@
         "German": "das Angebot"
       },
       "prompt": "Artikel von Angebot?",
+      "prompt_clean": "Artikel von Angebot?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -672,6 +849,10 @@
         "German": "der Schlüssel"
       },
       "prompt": "Plural von der Schlüssel?",
+      "prompt_clean": "Plural von der Schlüssel?",
+      "answers": [
+        "die Schlüssel"
+      ],
       "answer": "die Schlüssel",
       "case": "Plural",
       "example": {
@@ -687,6 +868,10 @@
         "German": "der Schlüssel"
       },
       "prompt": "Artikel von Schlüssel?",
+      "prompt_clean": "Artikel von Schlüssel?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -702,6 +887,10 @@
         "German": "die Erfahrung"
       },
       "prompt": "Plural von die Erfahrung?",
+      "prompt_clean": "Plural von die Erfahrung?",
+      "answers": [
+        "die Erfahrungen"
+      ],
       "answer": "die Erfahrungen",
       "case": "Plural",
       "example": {
@@ -717,6 +906,10 @@
         "German": "die Erfahrung"
       },
       "prompt": "Artikel von Erfahrung?",
+      "prompt_clean": "Artikel von Erfahrung?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -732,6 +925,10 @@
         "German": "das Unternehmen"
       },
       "prompt": "Plural von das Unternehmen?",
+      "prompt_clean": "Plural von das Unternehmen?",
+      "answers": [
+        "die Unternehmen"
+      ],
       "answer": "die Unternehmen",
       "case": "Plural",
       "example": {
@@ -747,6 +944,10 @@
         "German": "das Unternehmen"
       },
       "prompt": "Artikel von Unternehmen?",
+      "prompt_clean": "Artikel von Unternehmen?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
@@ -762,6 +963,10 @@
         "German": "der Bewerber"
       },
       "prompt": "Plural von der Bewerber?",
+      "prompt_clean": "Plural von der Bewerber?",
+      "answers": [
+        "die Bewerber"
+      ],
       "answer": "die Bewerber",
       "case": "Plural",
       "example": {
@@ -777,6 +982,10 @@
         "German": "der Bewerber"
       },
       "prompt": "Artikel von Bewerber?",
+      "prompt_clean": "Artikel von Bewerber?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -792,6 +1001,10 @@
         "German": "die Bewerberin"
       },
       "prompt": "Plural von die Bewerberin?",
+      "prompt_clean": "Plural von die Bewerberin?",
+      "answers": [
+        "die Bewerberinnen"
+      ],
       "answer": "die Bewerberinnen",
       "case": "Plural",
       "example": {
@@ -807,6 +1020,10 @@
         "German": "die Bewerberin"
       },
       "prompt": "Artikel von Bewerberin?",
+      "prompt_clean": "Artikel von Bewerberin?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -822,6 +1039,10 @@
         "German": "der Kunde"
       },
       "prompt": "Plural von der Kunde?",
+      "prompt_clean": "Plural von der Kunde?",
+      "answers": [
+        "die Kunden"
+      ],
       "answer": "die Kunden",
       "case": "Plural",
       "example": {
@@ -837,6 +1058,10 @@
         "German": "der Kunde"
       },
       "prompt": "Artikel von Kunde?",
+      "prompt_clean": "Artikel von Kunde?",
+      "answers": [
+        "der"
+      ],
       "answer": "der",
       "case": "Artikel",
       "example": {
@@ -852,6 +1077,10 @@
         "German": "die Kundin"
       },
       "prompt": "Plural von die Kundin?",
+      "prompt_clean": "Plural von die Kundin?",
+      "answers": [
+        "die Kundinnen"
+      ],
       "answer": "die Kundinnen",
       "case": "Plural",
       "example": {
@@ -867,6 +1096,10 @@
         "German": "die Kundin"
       },
       "prompt": "Artikel von Kundin?",
+      "prompt_clean": "Artikel von Kundin?",
+      "answers": [
+        "die"
+      ],
       "answer": "die",
       "case": "Artikel",
       "example": {
@@ -882,6 +1115,10 @@
         "German": "das Gerät"
       },
       "prompt": "Plural von das Gerät?",
+      "prompt_clean": "Plural von das Gerät?",
+      "answers": [
+        "die Geräte"
+      ],
       "answer": "die Geräte",
       "case": "Plural",
       "example": {
@@ -897,10 +1134,242 @@
         "German": "das Gerät"
       },
       "prompt": "Artikel von Gerät?",
+      "prompt_clean": "Artikel von Gerät?",
+      "answers": [
+        "das"
+      ],
       "answer": "das",
       "case": "Artikel",
       "example": {
         "de": "Das gerät ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_30",
+      "type": "noun_pattern",
+      "display": "die Voraussetzung → die Voraussetzungen",
+      "meaning": {
+        "English": "requirement",
+        "German": "die Voraussetzung"
+      },
+      "prompt": "Plural von die Voraussetzung?",
+      "prompt_clean": "Plural von die Voraussetzung?",
+      "answers": [
+        "die Voraussetzungen"
+      ],
+      "answer": "die Voraussetzungen",
+      "case": "Plural",
+      "example": {
+        "de": "Die voraussetzung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_30",
+      "type": "noun_pattern",
+      "display": "die Voraussetzung",
+      "meaning": {
+        "English": "requirement",
+        "German": "die Voraussetzung"
+      },
+      "prompt": "Artikel von Voraussetzung?",
+      "prompt_clean": "Artikel von Voraussetzung?",
+      "answers": [
+        "die"
+      ],
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die voraussetzung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_31",
+      "type": "noun_pattern",
+      "display": "die Verantwortung → die Verantwortungen",
+      "meaning": {
+        "English": "responsibility",
+        "German": "die Verantwortung"
+      },
+      "prompt": "Plural von die Verantwortung?",
+      "prompt_clean": "Plural von die Verantwortung?",
+      "answers": [
+        "die Verantwortungen"
+      ],
+      "answer": "die Verantwortungen",
+      "case": "Plural",
+      "example": {
+        "de": "Die verantwortung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_31",
+      "type": "noun_pattern",
+      "display": "die Verantwortung",
+      "meaning": {
+        "English": "responsibility",
+        "German": "die Verantwortung"
+      },
+      "prompt": "Artikel von Verantwortung?",
+      "prompt_clean": "Artikel von Verantwortung?",
+      "answers": [
+        "die"
+      ],
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die verantwortung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_32",
+      "type": "noun_pattern",
+      "display": "die Qualifikation → die Qualifikationen",
+      "meaning": {
+        "English": "qualification",
+        "German": "die Qualifikation"
+      },
+      "prompt": "Plural von die Qualifikation?",
+      "prompt_clean": "Plural von die Qualifikation?",
+      "answers": [
+        "die Qualifikationen"
+      ],
+      "answer": "die Qualifikationen",
+      "case": "Plural",
+      "example": {
+        "de": "Die qualifikation ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_32",
+      "type": "noun_pattern",
+      "display": "die Qualifikation",
+      "meaning": {
+        "English": "qualification",
+        "German": "die Qualifikation"
+      },
+      "prompt": "Artikel von Qualifikation?",
+      "prompt_clean": "Artikel von Qualifikation?",
+      "answers": [
+        "die"
+      ],
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die qualifikation ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_33",
+      "type": "noun_pattern",
+      "display": "der Arbeitsplatz → die Arbeitsplätze",
+      "meaning": {
+        "English": "workplace",
+        "German": "der Arbeitsplatz"
+      },
+      "prompt": "Plural von der Arbeitsplatz?",
+      "prompt_clean": "Plural von der Arbeitsplatz?",
+      "answers": [
+        "die Arbeitsplätze"
+      ],
+      "answer": "die Arbeitsplätze",
+      "case": "Plural",
+      "example": {
+        "de": "Der arbeitsplatz ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_33",
+      "type": "noun_pattern",
+      "display": "der Arbeitsplatz",
+      "meaning": {
+        "English": "workplace",
+        "German": "der Arbeitsplatz"
+      },
+      "prompt": "Artikel von Arbeitsplatz?",
+      "prompt_clean": "Artikel von Arbeitsplatz?",
+      "answers": [
+        "der"
+      ],
+      "answer": "der",
+      "case": "Artikel",
+      "example": {
+        "de": "Der arbeitsplatz ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_34",
+      "type": "noun_pattern",
+      "display": "die Branche → die Branchen",
+      "meaning": {
+        "English": "sector",
+        "German": "die Branche"
+      },
+      "prompt": "Plural von die Branche?",
+      "prompt_clean": "Plural von die Branche?",
+      "answers": [
+        "die Branchen"
+      ],
+      "answer": "die Branchen",
+      "case": "Plural",
+      "example": {
+        "de": "Die branche ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_34",
+      "type": "noun_pattern",
+      "display": "die Branche",
+      "meaning": {
+        "English": "sector",
+        "German": "die Branche"
+      },
+      "prompt": "Artikel von Branche?",
+      "prompt_clean": "Artikel von Branche?",
+      "answers": [
+        "die"
+      ],
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die branche ist wichtig."
+      }
+    },
+    {
+      "id": "nap_pl_35",
+      "type": "noun_pattern",
+      "display": "die Dienstleistung → die Dienstleistungen",
+      "meaning": {
+        "English": "service",
+        "German": "die Dienstleistung"
+      },
+      "prompt": "Plural von die Dienstleistung?",
+      "prompt_clean": "Plural von die Dienstleistung?",
+      "answers": [
+        "die Dienstleistungen"
+      ],
+      "answer": "die Dienstleistungen",
+      "case": "Plural",
+      "example": {
+        "de": "Die dienstleistung ist wichtig."
+      }
+    },
+    {
+      "id": "nap_art_35",
+      "type": "noun_pattern",
+      "display": "die Dienstleistung",
+      "meaning": {
+        "English": "service",
+        "German": "die Dienstleistung"
+      },
+      "prompt": "Artikel von Dienstleistung?",
+      "prompt_clean": "Artikel von Dienstleistung?",
+      "answers": [
+        "die"
+      ],
+      "answer": "die",
+      "case": "Artikel",
+      "example": {
+        "de": "Die dienstleistung ist wichtig."
       }
     }
   ]

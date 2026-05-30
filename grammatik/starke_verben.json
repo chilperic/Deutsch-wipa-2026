@@ -1,906 +1,1907 @@
 {
   "module": "starke_verben",
   "title": "Starke Verben",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "sv_gehen_praet",
       "type": "strong_verb",
-      "display": "gehen → ging → ist gegangen",
+      "display": "gehen · Präteritum",
       "meaning": {
         "English": "to go",
         "German": "gehen"
       },
       "prompt": "gehen · Präteritum?",
+      "prompt_clean": "gehen · Präteritum?",
+      "answers": [
+        "ging"
+      ],
       "answer": "ging",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern ging ich."
+        "de": "Gestern ging ich früh auf."
       }
     },
     {
       "id": "sv_gehen_part",
       "type": "strong_verb",
-      "display": "gehen → ging → ist gegangen",
+      "display": "gehen · Partizip II",
       "meaning": {
         "English": "to go",
         "German": "gehen"
       },
       "prompt": "gehen · Partizip II?",
-      "answer": "ist gegangen",
+      "prompt_clean": "gehen · Partizip II?",
+      "answers": [
+        "gegangen"
+      ],
+      "answer": "gegangen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin ist gegangen."
+        "de": "Ich bin/habe gegangen."
+      }
+    },
+    {
+      "id": "sv_gehen_perfaux",
+      "type": "strong_verb",
+      "display": "gehen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to go",
+        "German": "gehen"
+      },
+      "prompt": "gehen · Hilfsverb im Perfekt?",
+      "prompt_clean": "gehen · Hilfsverb im Perfekt?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: sein + gegangen."
       }
     },
     {
       "id": "sv_kommen_praet",
       "type": "strong_verb",
-      "display": "kommen → kam → ist gekommen",
+      "display": "kommen · Präteritum",
       "meaning": {
         "English": "to come",
         "German": "kommen"
       },
       "prompt": "kommen · Präteritum?",
+      "prompt_clean": "kommen · Präteritum?",
+      "answers": [
+        "kam"
+      ],
       "answer": "kam",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern kam ich."
+        "de": "Gestern kam ich früh auf."
       }
     },
     {
       "id": "sv_kommen_part",
       "type": "strong_verb",
-      "display": "kommen → kam → ist gekommen",
+      "display": "kommen · Partizip II",
       "meaning": {
         "English": "to come",
         "German": "kommen"
       },
       "prompt": "kommen · Partizip II?",
-      "answer": "ist gekommen",
+      "prompt_clean": "kommen · Partizip II?",
+      "answers": [
+        "gekommen"
+      ],
+      "answer": "gekommen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin ist gekommen."
+        "de": "Ich bin/habe gekommen."
+      }
+    },
+    {
+      "id": "sv_kommen_perfaux",
+      "type": "strong_verb",
+      "display": "kommen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to come",
+        "German": "kommen"
+      },
+      "prompt": "kommen · Hilfsverb im Perfekt?",
+      "prompt_clean": "kommen · Hilfsverb im Perfekt?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: sein + gekommen."
       }
     },
     {
       "id": "sv_nehmen_praet",
       "type": "strong_verb",
-      "display": "nehmen → nahm → genommen",
+      "display": "nehmen · Präteritum",
       "meaning": {
         "English": "to take",
         "German": "nehmen"
       },
       "prompt": "nehmen · Präteritum?",
+      "prompt_clean": "nehmen · Präteritum?",
+      "answers": [
+        "nahm"
+      ],
       "answer": "nahm",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern nahm ich."
+        "de": "Gestern nahm ich früh auf."
       }
     },
     {
       "id": "sv_nehmen_part",
       "type": "strong_verb",
-      "display": "nehmen → nahm → genommen",
+      "display": "nehmen · Partizip II",
       "meaning": {
         "English": "to take",
         "German": "nehmen"
       },
       "prompt": "nehmen · Partizip II?",
+      "prompt_clean": "nehmen · Partizip II?",
+      "answers": [
+        "genommen"
+      ],
       "answer": "genommen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin genommen."
+        "de": "Ich bin/habe genommen."
+      }
+    },
+    {
+      "id": "sv_nehmen_perfaux",
+      "type": "strong_verb",
+      "display": "nehmen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to take",
+        "German": "nehmen"
+      },
+      "prompt": "nehmen · Hilfsverb im Perfekt?",
+      "prompt_clean": "nehmen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + genommen."
       }
     },
     {
       "id": "sv_geben_praet",
       "type": "strong_verb",
-      "display": "geben → gab → gegeben",
+      "display": "geben · Präteritum",
       "meaning": {
         "English": "to give",
         "German": "geben"
       },
       "prompt": "geben · Präteritum?",
+      "prompt_clean": "geben · Präteritum?",
+      "answers": [
+        "gab"
+      ],
       "answer": "gab",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern gab ich."
+        "de": "Gestern gab ich früh auf."
       }
     },
     {
       "id": "sv_geben_part",
       "type": "strong_verb",
-      "display": "geben → gab → gegeben",
+      "display": "geben · Partizip II",
       "meaning": {
         "English": "to give",
         "German": "geben"
       },
       "prompt": "geben · Partizip II?",
+      "prompt_clean": "geben · Partizip II?",
+      "answers": [
+        "gegeben"
+      ],
       "answer": "gegeben",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gegeben."
+        "de": "Ich bin/habe gegeben."
+      }
+    },
+    {
+      "id": "sv_geben_perfaux",
+      "type": "strong_verb",
+      "display": "geben · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to give",
+        "German": "geben"
+      },
+      "prompt": "geben · Hilfsverb im Perfekt?",
+      "prompt_clean": "geben · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gegeben."
       }
     },
     {
       "id": "sv_sehen_praet",
       "type": "strong_verb",
-      "display": "sehen → sah → gesehen",
+      "display": "sehen · Präteritum",
       "meaning": {
         "English": "to see",
         "German": "sehen"
       },
       "prompt": "sehen · Präteritum?",
+      "prompt_clean": "sehen · Präteritum?",
+      "answers": [
+        "sah"
+      ],
       "answer": "sah",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern sah ich."
+        "de": "Gestern sah ich früh auf."
       }
     },
     {
       "id": "sv_sehen_part",
       "type": "strong_verb",
-      "display": "sehen → sah → gesehen",
+      "display": "sehen · Partizip II",
       "meaning": {
         "English": "to see",
         "German": "sehen"
       },
       "prompt": "sehen · Partizip II?",
+      "prompt_clean": "sehen · Partizip II?",
+      "answers": [
+        "gesehen"
+      ],
       "answer": "gesehen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gesehen."
+        "de": "Ich bin/habe gesehen."
+      }
+    },
+    {
+      "id": "sv_sehen_perfaux",
+      "type": "strong_verb",
+      "display": "sehen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to see",
+        "German": "sehen"
+      },
+      "prompt": "sehen · Hilfsverb im Perfekt?",
+      "prompt_clean": "sehen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gesehen."
       }
     },
     {
       "id": "sv_sprechen_praet",
       "type": "strong_verb",
-      "display": "sprechen → sprach → gesprochen",
+      "display": "sprechen · Präteritum",
       "meaning": {
         "English": "to speak",
         "German": "sprechen"
       },
       "prompt": "sprechen · Präteritum?",
+      "prompt_clean": "sprechen · Präteritum?",
+      "answers": [
+        "sprach"
+      ],
       "answer": "sprach",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern sprach ich."
+        "de": "Gestern sprach ich früh auf."
       }
     },
     {
       "id": "sv_sprechen_part",
       "type": "strong_verb",
-      "display": "sprechen → sprach → gesprochen",
+      "display": "sprechen · Partizip II",
       "meaning": {
         "English": "to speak",
         "German": "sprechen"
       },
       "prompt": "sprechen · Partizip II?",
+      "prompt_clean": "sprechen · Partizip II?",
+      "answers": [
+        "gesprochen"
+      ],
       "answer": "gesprochen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gesprochen."
+        "de": "Ich bin/habe gesprochen."
+      }
+    },
+    {
+      "id": "sv_sprechen_perfaux",
+      "type": "strong_verb",
+      "display": "sprechen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to speak",
+        "German": "sprechen"
+      },
+      "prompt": "sprechen · Hilfsverb im Perfekt?",
+      "prompt_clean": "sprechen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gesprochen."
       }
     },
     {
       "id": "sv_lesen_praet",
       "type": "strong_verb",
-      "display": "lesen → las → gelesen",
+      "display": "lesen · Präteritum",
       "meaning": {
         "English": "to read",
         "German": "lesen"
       },
       "prompt": "lesen · Präteritum?",
+      "prompt_clean": "lesen · Präteritum?",
+      "answers": [
+        "las"
+      ],
       "answer": "las",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern las ich."
+        "de": "Gestern las ich früh auf."
       }
     },
     {
       "id": "sv_lesen_part",
       "type": "strong_verb",
-      "display": "lesen → las → gelesen",
+      "display": "lesen · Partizip II",
       "meaning": {
         "English": "to read",
         "German": "lesen"
       },
       "prompt": "lesen · Partizip II?",
+      "prompt_clean": "lesen · Partizip II?",
+      "answers": [
+        "gelesen"
+      ],
       "answer": "gelesen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gelesen."
+        "de": "Ich bin/habe gelesen."
+      }
+    },
+    {
+      "id": "sv_lesen_perfaux",
+      "type": "strong_verb",
+      "display": "lesen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to read",
+        "German": "lesen"
+      },
+      "prompt": "lesen · Hilfsverb im Perfekt?",
+      "prompt_clean": "lesen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gelesen."
       }
     },
     {
       "id": "sv_schreiben_praet",
       "type": "strong_verb",
-      "display": "schreiben → schrieb → geschrieben",
+      "display": "schreiben · Präteritum",
       "meaning": {
         "English": "to write",
         "German": "schreiben"
       },
       "prompt": "schreiben · Präteritum?",
+      "prompt_clean": "schreiben · Präteritum?",
+      "answers": [
+        "schrieb"
+      ],
       "answer": "schrieb",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern schrieb ich."
+        "de": "Gestern schrieb ich früh auf."
       }
     },
     {
       "id": "sv_schreiben_part",
       "type": "strong_verb",
-      "display": "schreiben → schrieb → geschrieben",
+      "display": "schreiben · Partizip II",
       "meaning": {
         "English": "to write",
         "German": "schreiben"
       },
       "prompt": "schreiben · Partizip II?",
+      "prompt_clean": "schreiben · Partizip II?",
+      "answers": [
+        "geschrieben"
+      ],
       "answer": "geschrieben",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin geschrieben."
+        "de": "Ich bin/habe geschrieben."
+      }
+    },
+    {
+      "id": "sv_schreiben_perfaux",
+      "type": "strong_verb",
+      "display": "schreiben · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to write",
+        "German": "schreiben"
+      },
+      "prompt": "schreiben · Hilfsverb im Perfekt?",
+      "prompt_clean": "schreiben · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + geschrieben."
       }
     },
     {
       "id": "sv_finden_praet",
       "type": "strong_verb",
-      "display": "finden → fand → gefunden",
+      "display": "finden · Präteritum",
       "meaning": {
         "English": "to find",
         "German": "finden"
       },
       "prompt": "finden · Präteritum?",
+      "prompt_clean": "finden · Präteritum?",
+      "answers": [
+        "fand"
+      ],
       "answer": "fand",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern fand ich."
+        "de": "Gestern fand ich früh auf."
       }
     },
     {
       "id": "sv_finden_part",
       "type": "strong_verb",
-      "display": "finden → fand → gefunden",
+      "display": "finden · Partizip II",
       "meaning": {
         "English": "to find",
         "German": "finden"
       },
       "prompt": "finden · Partizip II?",
+      "prompt_clean": "finden · Partizip II?",
+      "answers": [
+        "gefunden"
+      ],
       "answer": "gefunden",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gefunden."
+        "de": "Ich bin/habe gefunden."
+      }
+    },
+    {
+      "id": "sv_finden_perfaux",
+      "type": "strong_verb",
+      "display": "finden · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to find",
+        "German": "finden"
+      },
+      "prompt": "finden · Hilfsverb im Perfekt?",
+      "prompt_clean": "finden · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gefunden."
       }
     },
     {
       "id": "sv_trinken_praet",
       "type": "strong_verb",
-      "display": "trinken → trank → getrunken",
+      "display": "trinken · Präteritum",
       "meaning": {
         "English": "to drink",
         "German": "trinken"
       },
       "prompt": "trinken · Präteritum?",
+      "prompt_clean": "trinken · Präteritum?",
+      "answers": [
+        "trank"
+      ],
       "answer": "trank",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern trank ich."
+        "de": "Gestern trank ich früh auf."
       }
     },
     {
       "id": "sv_trinken_part",
       "type": "strong_verb",
-      "display": "trinken → trank → getrunken",
+      "display": "trinken · Partizip II",
       "meaning": {
         "English": "to drink",
         "German": "trinken"
       },
       "prompt": "trinken · Partizip II?",
+      "prompt_clean": "trinken · Partizip II?",
+      "answers": [
+        "getrunken"
+      ],
       "answer": "getrunken",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin getrunken."
+        "de": "Ich bin/habe getrunken."
+      }
+    },
+    {
+      "id": "sv_trinken_perfaux",
+      "type": "strong_verb",
+      "display": "trinken · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to drink",
+        "German": "trinken"
+      },
+      "prompt": "trinken · Hilfsverb im Perfekt?",
+      "prompt_clean": "trinken · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + getrunken."
       }
     },
     {
       "id": "sv_essen_praet",
       "type": "strong_verb",
-      "display": "essen → aß → gegessen",
+      "display": "essen · Präteritum",
       "meaning": {
         "English": "to eat",
         "German": "essen"
       },
       "prompt": "essen · Präteritum?",
+      "prompt_clean": "essen · Präteritum?",
+      "answers": [
+        "aß"
+      ],
       "answer": "aß",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern aß ich."
+        "de": "Gestern aß ich früh auf."
       }
     },
     {
       "id": "sv_essen_part",
       "type": "strong_verb",
-      "display": "essen → aß → gegessen",
+      "display": "essen · Partizip II",
       "meaning": {
         "English": "to eat",
         "German": "essen"
       },
       "prompt": "essen · Partizip II?",
+      "prompt_clean": "essen · Partizip II?",
+      "answers": [
+        "gegessen"
+      ],
       "answer": "gegessen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gegessen."
+        "de": "Ich bin/habe gegessen."
+      }
+    },
+    {
+      "id": "sv_essen_perfaux",
+      "type": "strong_verb",
+      "display": "essen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to eat",
+        "German": "essen"
+      },
+      "prompt": "essen · Hilfsverb im Perfekt?",
+      "prompt_clean": "essen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gegessen."
       }
     },
     {
       "id": "sv_fahren_praet",
       "type": "strong_verb",
-      "display": "fahren → fuhr → ist gefahren",
+      "display": "fahren · Präteritum",
       "meaning": {
         "English": "to drive/go",
         "German": "fahren"
       },
       "prompt": "fahren · Präteritum?",
+      "prompt_clean": "fahren · Präteritum?",
+      "answers": [
+        "fuhr"
+      ],
       "answer": "fuhr",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern fuhr ich."
+        "de": "Gestern fuhr ich früh auf."
       }
     },
     {
       "id": "sv_fahren_part",
       "type": "strong_verb",
-      "display": "fahren → fuhr → ist gefahren",
+      "display": "fahren · Partizip II",
       "meaning": {
         "English": "to drive/go",
         "German": "fahren"
       },
       "prompt": "fahren · Partizip II?",
-      "answer": "ist gefahren",
+      "prompt_clean": "fahren · Partizip II?",
+      "answers": [
+        "gefahren"
+      ],
+      "answer": "gefahren",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin ist gefahren."
+        "de": "Ich bin/habe gefahren."
+      }
+    },
+    {
+      "id": "sv_fahren_perfaux",
+      "type": "strong_verb",
+      "display": "fahren · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to drive/go",
+        "German": "fahren"
+      },
+      "prompt": "fahren · Hilfsverb im Perfekt?",
+      "prompt_clean": "fahren · Hilfsverb im Perfekt?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: sein + gefahren."
       }
     },
     {
       "id": "sv_laufen_praet",
       "type": "strong_verb",
-      "display": "laufen → lief → ist gelaufen",
+      "display": "laufen · Präteritum",
       "meaning": {
         "English": "to run",
         "German": "laufen"
       },
       "prompt": "laufen · Präteritum?",
+      "prompt_clean": "laufen · Präteritum?",
+      "answers": [
+        "lief"
+      ],
       "answer": "lief",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern lief ich."
+        "de": "Gestern lief ich früh auf."
       }
     },
     {
       "id": "sv_laufen_part",
       "type": "strong_verb",
-      "display": "laufen → lief → ist gelaufen",
+      "display": "laufen · Partizip II",
       "meaning": {
         "English": "to run",
         "German": "laufen"
       },
       "prompt": "laufen · Partizip II?",
-      "answer": "ist gelaufen",
+      "prompt_clean": "laufen · Partizip II?",
+      "answers": [
+        "gelaufen"
+      ],
+      "answer": "gelaufen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin ist gelaufen."
+        "de": "Ich bin/habe gelaufen."
+      }
+    },
+    {
+      "id": "sv_laufen_perfaux",
+      "type": "strong_verb",
+      "display": "laufen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to run",
+        "German": "laufen"
+      },
+      "prompt": "laufen · Hilfsverb im Perfekt?",
+      "prompt_clean": "laufen · Hilfsverb im Perfekt?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: sein + gelaufen."
       }
     },
     {
       "id": "sv_schlafen_praet",
       "type": "strong_verb",
-      "display": "schlafen → schlief → geschlafen",
+      "display": "schlafen · Präteritum",
       "meaning": {
         "English": "to sleep",
         "German": "schlafen"
       },
       "prompt": "schlafen · Präteritum?",
+      "prompt_clean": "schlafen · Präteritum?",
+      "answers": [
+        "schlief"
+      ],
       "answer": "schlief",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern schlief ich."
+        "de": "Gestern schlief ich früh auf."
       }
     },
     {
       "id": "sv_schlafen_part",
       "type": "strong_verb",
-      "display": "schlafen → schlief → geschlafen",
+      "display": "schlafen · Partizip II",
       "meaning": {
         "English": "to sleep",
         "German": "schlafen"
       },
       "prompt": "schlafen · Partizip II?",
+      "prompt_clean": "schlafen · Partizip II?",
+      "answers": [
+        "geschlafen"
+      ],
       "answer": "geschlafen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin geschlafen."
+        "de": "Ich bin/habe geschlafen."
+      }
+    },
+    {
+      "id": "sv_schlafen_perfaux",
+      "type": "strong_verb",
+      "display": "schlafen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to sleep",
+        "German": "schlafen"
+      },
+      "prompt": "schlafen · Hilfsverb im Perfekt?",
+      "prompt_clean": "schlafen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + geschlafen."
       }
     },
     {
       "id": "sv_helfen_praet",
       "type": "strong_verb",
-      "display": "helfen → half → geholfen",
+      "display": "helfen · Präteritum",
       "meaning": {
         "English": "to help",
         "German": "helfen"
       },
       "prompt": "helfen · Präteritum?",
+      "prompt_clean": "helfen · Präteritum?",
+      "answers": [
+        "half"
+      ],
       "answer": "half",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern half ich."
+        "de": "Gestern half ich früh auf."
       }
     },
     {
       "id": "sv_helfen_part",
       "type": "strong_verb",
-      "display": "helfen → half → geholfen",
+      "display": "helfen · Partizip II",
       "meaning": {
         "English": "to help",
         "German": "helfen"
       },
       "prompt": "helfen · Partizip II?",
+      "prompt_clean": "helfen · Partizip II?",
+      "answers": [
+        "geholfen"
+      ],
       "answer": "geholfen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin geholfen."
+        "de": "Ich bin/habe geholfen."
+      }
+    },
+    {
+      "id": "sv_helfen_perfaux",
+      "type": "strong_verb",
+      "display": "helfen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to help",
+        "German": "helfen"
+      },
+      "prompt": "helfen · Hilfsverb im Perfekt?",
+      "prompt_clean": "helfen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + geholfen."
       }
     },
     {
       "id": "sv_treffen_praet",
       "type": "strong_verb",
-      "display": "treffen → traf → getroffen",
+      "display": "treffen · Präteritum",
       "meaning": {
         "English": "to meet",
         "German": "treffen"
       },
       "prompt": "treffen · Präteritum?",
+      "prompt_clean": "treffen · Präteritum?",
+      "answers": [
+        "traf"
+      ],
       "answer": "traf",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern traf ich."
+        "de": "Gestern traf ich früh auf."
       }
     },
     {
       "id": "sv_treffen_part",
       "type": "strong_verb",
-      "display": "treffen → traf → getroffen",
+      "display": "treffen · Partizip II",
       "meaning": {
         "English": "to meet",
         "German": "treffen"
       },
       "prompt": "treffen · Partizip II?",
+      "prompt_clean": "treffen · Partizip II?",
+      "answers": [
+        "getroffen"
+      ],
       "answer": "getroffen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin getroffen."
+        "de": "Ich bin/habe getroffen."
+      }
+    },
+    {
+      "id": "sv_treffen_perfaux",
+      "type": "strong_verb",
+      "display": "treffen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to meet",
+        "German": "treffen"
+      },
+      "prompt": "treffen · Hilfsverb im Perfekt?",
+      "prompt_clean": "treffen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + getroffen."
       }
     },
     {
       "id": "sv_bleiben_praet",
       "type": "strong_verb",
-      "display": "bleiben → blieb → ist geblieben",
+      "display": "bleiben · Präteritum",
       "meaning": {
         "English": "to stay",
         "German": "bleiben"
       },
       "prompt": "bleiben · Präteritum?",
+      "prompt_clean": "bleiben · Präteritum?",
+      "answers": [
+        "blieb"
+      ],
       "answer": "blieb",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern blieb ich."
+        "de": "Gestern blieb ich früh auf."
       }
     },
     {
       "id": "sv_bleiben_part",
       "type": "strong_verb",
-      "display": "bleiben → blieb → ist geblieben",
+      "display": "bleiben · Partizip II",
       "meaning": {
         "English": "to stay",
         "German": "bleiben"
       },
       "prompt": "bleiben · Partizip II?",
-      "answer": "ist geblieben",
+      "prompt_clean": "bleiben · Partizip II?",
+      "answers": [
+        "geblieben"
+      ],
+      "answer": "geblieben",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin ist geblieben."
+        "de": "Ich bin/habe geblieben."
+      }
+    },
+    {
+      "id": "sv_bleiben_perfaux",
+      "type": "strong_verb",
+      "display": "bleiben · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to stay",
+        "German": "bleiben"
+      },
+      "prompt": "bleiben · Hilfsverb im Perfekt?",
+      "prompt_clean": "bleiben · Hilfsverb im Perfekt?",
+      "answers": [
+        "sein"
+      ],
+      "answer": "sein",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: sein + geblieben."
       }
     },
     {
       "id": "sv_stehen_praet",
       "type": "strong_verb",
-      "display": "stehen → stand → gestanden",
+      "display": "stehen · Präteritum",
       "meaning": {
         "English": "to stand",
         "German": "stehen"
       },
       "prompt": "stehen · Präteritum?",
+      "prompt_clean": "stehen · Präteritum?",
+      "answers": [
+        "stand"
+      ],
       "answer": "stand",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern stand ich."
+        "de": "Gestern stand ich früh auf."
       }
     },
     {
       "id": "sv_stehen_part",
       "type": "strong_verb",
-      "display": "stehen → stand → gestanden",
+      "display": "stehen · Partizip II",
       "meaning": {
         "English": "to stand",
         "German": "stehen"
       },
       "prompt": "stehen · Partizip II?",
+      "prompt_clean": "stehen · Partizip II?",
+      "answers": [
+        "gestanden"
+      ],
       "answer": "gestanden",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gestanden."
+        "de": "Ich bin/habe gestanden."
+      }
+    },
+    {
+      "id": "sv_stehen_perfaux",
+      "type": "strong_verb",
+      "display": "stehen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to stand",
+        "German": "stehen"
+      },
+      "prompt": "stehen · Hilfsverb im Perfekt?",
+      "prompt_clean": "stehen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gestanden."
       }
     },
     {
       "id": "sv_liegen_praet",
       "type": "strong_verb",
-      "display": "liegen → lag → gelegen",
+      "display": "liegen · Präteritum",
       "meaning": {
         "English": "to lie",
         "German": "liegen"
       },
       "prompt": "liegen · Präteritum?",
+      "prompt_clean": "liegen · Präteritum?",
+      "answers": [
+        "lag"
+      ],
       "answer": "lag",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern lag ich."
+        "de": "Gestern lag ich früh auf."
       }
     },
     {
       "id": "sv_liegen_part",
       "type": "strong_verb",
-      "display": "liegen → lag → gelegen",
+      "display": "liegen · Partizip II",
       "meaning": {
         "English": "to lie",
         "German": "liegen"
       },
       "prompt": "liegen · Partizip II?",
+      "prompt_clean": "liegen · Partizip II?",
+      "answers": [
+        "gelegen"
+      ],
       "answer": "gelegen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gelegen."
+        "de": "Ich bin/habe gelegen."
+      }
+    },
+    {
+      "id": "sv_liegen_perfaux",
+      "type": "strong_verb",
+      "display": "liegen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to lie",
+        "German": "liegen"
+      },
+      "prompt": "liegen · Hilfsverb im Perfekt?",
+      "prompt_clean": "liegen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gelegen."
       }
     },
     {
       "id": "sv_sitzen_praet",
       "type": "strong_verb",
-      "display": "sitzen → saß → gesessen",
+      "display": "sitzen · Präteritum",
       "meaning": {
         "English": "to sit",
         "German": "sitzen"
       },
       "prompt": "sitzen · Präteritum?",
+      "prompt_clean": "sitzen · Präteritum?",
+      "answers": [
+        "saß"
+      ],
       "answer": "saß",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern saß ich."
+        "de": "Gestern saß ich früh auf."
       }
     },
     {
       "id": "sv_sitzen_part",
       "type": "strong_verb",
-      "display": "sitzen → saß → gesessen",
+      "display": "sitzen · Partizip II",
       "meaning": {
         "English": "to sit",
         "German": "sitzen"
       },
       "prompt": "sitzen · Partizip II?",
+      "prompt_clean": "sitzen · Partizip II?",
+      "answers": [
+        "gesessen"
+      ],
       "answer": "gesessen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gesessen."
+        "de": "Ich bin/habe gesessen."
+      }
+    },
+    {
+      "id": "sv_sitzen_perfaux",
+      "type": "strong_verb",
+      "display": "sitzen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to sit",
+        "German": "sitzen"
+      },
+      "prompt": "sitzen · Hilfsverb im Perfekt?",
+      "prompt_clean": "sitzen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gesessen."
       }
     },
     {
       "id": "sv_tragen_praet",
       "type": "strong_verb",
-      "display": "tragen → trug → getragen",
+      "display": "tragen · Präteritum",
       "meaning": {
         "English": "to carry/wear",
         "German": "tragen"
       },
       "prompt": "tragen · Präteritum?",
+      "prompt_clean": "tragen · Präteritum?",
+      "answers": [
+        "trug"
+      ],
       "answer": "trug",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern trug ich."
+        "de": "Gestern trug ich früh auf."
       }
     },
     {
       "id": "sv_tragen_part",
       "type": "strong_verb",
-      "display": "tragen → trug → getragen",
+      "display": "tragen · Partizip II",
       "meaning": {
         "English": "to carry/wear",
         "German": "tragen"
       },
       "prompt": "tragen · Partizip II?",
+      "prompt_clean": "tragen · Partizip II?",
+      "answers": [
+        "getragen"
+      ],
       "answer": "getragen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin getragen."
+        "de": "Ich bin/habe getragen."
+      }
+    },
+    {
+      "id": "sv_tragen_perfaux",
+      "type": "strong_verb",
+      "display": "tragen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to carry/wear",
+        "German": "tragen"
+      },
+      "prompt": "tragen · Hilfsverb im Perfekt?",
+      "prompt_clean": "tragen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + getragen."
       }
     },
     {
       "id": "sv_waschen_praet",
       "type": "strong_verb",
-      "display": "waschen → wusch → gewaschen",
+      "display": "waschen · Präteritum",
       "meaning": {
         "English": "to wash",
         "German": "waschen"
       },
       "prompt": "waschen · Präteritum?",
+      "prompt_clean": "waschen · Präteritum?",
+      "answers": [
+        "wusch"
+      ],
       "answer": "wusch",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern wusch ich."
+        "de": "Gestern wusch ich früh auf."
       }
     },
     {
       "id": "sv_waschen_part",
       "type": "strong_verb",
-      "display": "waschen → wusch → gewaschen",
+      "display": "waschen · Partizip II",
       "meaning": {
         "English": "to wash",
         "German": "waschen"
       },
       "prompt": "waschen · Partizip II?",
+      "prompt_clean": "waschen · Partizip II?",
+      "answers": [
+        "gewaschen"
+      ],
       "answer": "gewaschen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gewaschen."
+        "de": "Ich bin/habe gewaschen."
+      }
+    },
+    {
+      "id": "sv_waschen_perfaux",
+      "type": "strong_verb",
+      "display": "waschen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to wash",
+        "German": "waschen"
+      },
+      "prompt": "waschen · Hilfsverb im Perfekt?",
+      "prompt_clean": "waschen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gewaschen."
       }
     },
     {
       "id": "sv_beginnen_praet",
       "type": "strong_verb",
-      "display": "beginnen → begann → begonnen",
+      "display": "beginnen · Präteritum",
       "meaning": {
         "English": "to begin",
         "German": "beginnen"
       },
       "prompt": "beginnen · Präteritum?",
+      "prompt_clean": "beginnen · Präteritum?",
+      "answers": [
+        "begann"
+      ],
       "answer": "begann",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern begann ich."
+        "de": "Gestern begann ich früh auf."
       }
     },
     {
       "id": "sv_beginnen_part",
       "type": "strong_verb",
-      "display": "beginnen → begann → begonnen",
+      "display": "beginnen · Partizip II",
       "meaning": {
         "English": "to begin",
         "German": "beginnen"
       },
       "prompt": "beginnen · Partizip II?",
+      "prompt_clean": "beginnen · Partizip II?",
+      "answers": [
+        "begonnen"
+      ],
       "answer": "begonnen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin begonnen."
+        "de": "Ich bin/habe begonnen."
+      }
+    },
+    {
+      "id": "sv_beginnen_perfaux",
+      "type": "strong_verb",
+      "display": "beginnen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to begin",
+        "German": "beginnen"
+      },
+      "prompt": "beginnen · Hilfsverb im Perfekt?",
+      "prompt_clean": "beginnen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + begonnen."
       }
     },
     {
       "id": "sv_gewinnen_praet",
       "type": "strong_verb",
-      "display": "gewinnen → gewann → gewonnen",
+      "display": "gewinnen · Präteritum",
       "meaning": {
         "English": "to win",
         "German": "gewinnen"
       },
       "prompt": "gewinnen · Präteritum?",
+      "prompt_clean": "gewinnen · Präteritum?",
+      "answers": [
+        "gewann"
+      ],
       "answer": "gewann",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern gewann ich."
+        "de": "Gestern gewann ich früh auf."
       }
     },
     {
       "id": "sv_gewinnen_part",
       "type": "strong_verb",
-      "display": "gewinnen → gewann → gewonnen",
+      "display": "gewinnen · Partizip II",
       "meaning": {
         "English": "to win",
         "German": "gewinnen"
       },
       "prompt": "gewinnen · Partizip II?",
+      "prompt_clean": "gewinnen · Partizip II?",
+      "answers": [
+        "gewonnen"
+      ],
       "answer": "gewonnen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gewonnen."
+        "de": "Ich bin/habe gewonnen."
+      }
+    },
+    {
+      "id": "sv_gewinnen_perfaux",
+      "type": "strong_verb",
+      "display": "gewinnen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to win",
+        "German": "gewinnen"
+      },
+      "prompt": "gewinnen · Hilfsverb im Perfekt?",
+      "prompt_clean": "gewinnen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gewonnen."
       }
     },
     {
       "id": "sv_verlieren_praet",
       "type": "strong_verb",
-      "display": "verlieren → verlor → verloren",
+      "display": "verlieren · Präteritum",
       "meaning": {
         "English": "to lose",
         "German": "verlieren"
       },
       "prompt": "verlieren · Präteritum?",
+      "prompt_clean": "verlieren · Präteritum?",
+      "answers": [
+        "verlor"
+      ],
       "answer": "verlor",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern verlor ich."
+        "de": "Gestern verlor ich früh auf."
       }
     },
     {
       "id": "sv_verlieren_part",
       "type": "strong_verb",
-      "display": "verlieren → verlor → verloren",
+      "display": "verlieren · Partizip II",
       "meaning": {
         "English": "to lose",
         "German": "verlieren"
       },
       "prompt": "verlieren · Partizip II?",
+      "prompt_clean": "verlieren · Partizip II?",
+      "answers": [
+        "verloren"
+      ],
       "answer": "verloren",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin verloren."
+        "de": "Ich bin/habe verloren."
+      }
+    },
+    {
+      "id": "sv_verlieren_perfaux",
+      "type": "strong_verb",
+      "display": "verlieren · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to lose",
+        "German": "verlieren"
+      },
+      "prompt": "verlieren · Hilfsverb im Perfekt?",
+      "prompt_clean": "verlieren · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + verloren."
       }
     },
     {
       "id": "sv_vergessen_praet",
       "type": "strong_verb",
-      "display": "vergessen → vergaß → vergessen",
+      "display": "vergessen · Präteritum",
       "meaning": {
         "English": "to forget",
         "German": "vergessen"
       },
       "prompt": "vergessen · Präteritum?",
+      "prompt_clean": "vergessen · Präteritum?",
+      "answers": [
+        "vergaß"
+      ],
       "answer": "vergaß",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern vergaß ich."
+        "de": "Gestern vergaß ich früh auf."
       }
     },
     {
       "id": "sv_vergessen_part",
       "type": "strong_verb",
-      "display": "vergessen → vergaß → vergessen",
+      "display": "vergessen · Partizip II",
       "meaning": {
         "English": "to forget",
         "German": "vergessen"
       },
       "prompt": "vergessen · Partizip II?",
+      "prompt_clean": "vergessen · Partizip II?",
+      "answers": [
+        "vergessen"
+      ],
       "answer": "vergessen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin vergessen."
+        "de": "Ich bin/habe vergessen."
+      }
+    },
+    {
+      "id": "sv_vergessen_perfaux",
+      "type": "strong_verb",
+      "display": "vergessen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to forget",
+        "German": "vergessen"
+      },
+      "prompt": "vergessen · Hilfsverb im Perfekt?",
+      "prompt_clean": "vergessen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + vergessen."
       }
     },
     {
       "id": "sv_bekommen_praet",
       "type": "strong_verb",
-      "display": "bekommen → bekam → bekommen",
+      "display": "bekommen · Präteritum",
       "meaning": {
         "English": "to receive",
         "German": "bekommen"
       },
       "prompt": "bekommen · Präteritum?",
+      "prompt_clean": "bekommen · Präteritum?",
+      "answers": [
+        "bekam"
+      ],
       "answer": "bekam",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern bekam ich."
+        "de": "Gestern bekam ich früh auf."
       }
     },
     {
       "id": "sv_bekommen_part",
       "type": "strong_verb",
-      "display": "bekommen → bekam → bekommen",
+      "display": "bekommen · Partizip II",
       "meaning": {
         "English": "to receive",
         "German": "bekommen"
       },
       "prompt": "bekommen · Partizip II?",
+      "prompt_clean": "bekommen · Partizip II?",
+      "answers": [
+        "bekommen"
+      ],
       "answer": "bekommen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin bekommen."
+        "de": "Ich bin/habe bekommen."
+      }
+    },
+    {
+      "id": "sv_bekommen_perfaux",
+      "type": "strong_verb",
+      "display": "bekommen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to receive",
+        "German": "bekommen"
+      },
+      "prompt": "bekommen · Hilfsverb im Perfekt?",
+      "prompt_clean": "bekommen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + bekommen."
       }
     },
     {
       "id": "sv_rufen_praet",
       "type": "strong_verb",
-      "display": "rufen → rief → gerufen",
+      "display": "rufen · Präteritum",
       "meaning": {
         "English": "to call",
         "German": "rufen"
       },
       "prompt": "rufen · Präteritum?",
+      "prompt_clean": "rufen · Präteritum?",
+      "answers": [
+        "rief"
+      ],
       "answer": "rief",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern rief ich."
+        "de": "Gestern rief ich früh auf."
       }
     },
     {
       "id": "sv_rufen_part",
       "type": "strong_verb",
-      "display": "rufen → rief → gerufen",
+      "display": "rufen · Partizip II",
       "meaning": {
         "English": "to call",
         "German": "rufen"
       },
       "prompt": "rufen · Partizip II?",
+      "prompt_clean": "rufen · Partizip II?",
+      "answers": [
+        "gerufen"
+      ],
       "answer": "gerufen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gerufen."
+        "de": "Ich bin/habe gerufen."
+      }
+    },
+    {
+      "id": "sv_rufen_perfaux",
+      "type": "strong_verb",
+      "display": "rufen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to call",
+        "German": "rufen"
+      },
+      "prompt": "rufen · Hilfsverb im Perfekt?",
+      "prompt_clean": "rufen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gerufen."
       }
     },
     {
       "id": "sv_halten_praet",
       "type": "strong_verb",
-      "display": "halten → hielt → gehalten",
+      "display": "halten · Präteritum",
       "meaning": {
         "English": "to hold/stop",
         "German": "halten"
       },
       "prompt": "halten · Präteritum?",
+      "prompt_clean": "halten · Präteritum?",
+      "answers": [
+        "hielt"
+      ],
       "answer": "hielt",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern hielt ich."
+        "de": "Gestern hielt ich früh auf."
       }
     },
     {
       "id": "sv_halten_part",
       "type": "strong_verb",
-      "display": "halten → hielt → gehalten",
+      "display": "halten · Partizip II",
       "meaning": {
         "English": "to hold/stop",
         "German": "halten"
       },
       "prompt": "halten · Partizip II?",
+      "prompt_clean": "halten · Partizip II?",
+      "answers": [
+        "gehalten"
+      ],
       "answer": "gehalten",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gehalten."
+        "de": "Ich bin/habe gehalten."
+      }
+    },
+    {
+      "id": "sv_halten_perfaux",
+      "type": "strong_verb",
+      "display": "halten · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to hold/stop",
+        "German": "halten"
+      },
+      "prompt": "halten · Hilfsverb im Perfekt?",
+      "prompt_clean": "halten · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gehalten."
       }
     },
     {
       "id": "sv_lassen_praet",
       "type": "strong_verb",
-      "display": "lassen → ließ → gelassen",
+      "display": "lassen · Präteritum",
       "meaning": {
         "English": "to let/leave",
         "German": "lassen"
       },
       "prompt": "lassen · Präteritum?",
+      "prompt_clean": "lassen · Präteritum?",
+      "answers": [
+        "ließ"
+      ],
       "answer": "ließ",
       "case": "Präteritum",
       "example": {
-        "de": "Gestern ließ ich."
+        "de": "Gestern ließ ich früh auf."
       }
     },
     {
       "id": "sv_lassen_part",
       "type": "strong_verb",
-      "display": "lassen → ließ → gelassen",
+      "display": "lassen · Partizip II",
       "meaning": {
         "English": "to let/leave",
         "German": "lassen"
       },
       "prompt": "lassen · Partizip II?",
+      "prompt_clean": "lassen · Partizip II?",
+      "answers": [
+        "gelassen"
+      ],
       "answer": "gelassen",
       "case": "Partizip II",
       "example": {
-        "de": "Ich habe/bin gelassen."
+        "de": "Ich bin/habe gelassen."
+      }
+    },
+    {
+      "id": "sv_lassen_perfaux",
+      "type": "strong_verb",
+      "display": "lassen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to let/leave",
+        "German": "lassen"
+      },
+      "prompt": "lassen · Hilfsverb im Perfekt?",
+      "prompt_clean": "lassen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gelassen."
+      }
+    },
+    {
+      "id": "sv_bringen_praet",
+      "type": "strong_verb",
+      "display": "bringen · Präteritum",
+      "meaning": {
+        "English": "to bring",
+        "German": "bringen"
+      },
+      "prompt": "bringen · Präteritum?",
+      "prompt_clean": "bringen · Präteritum?",
+      "answers": [
+        "brachte"
+      ],
+      "answer": "brachte",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern brachte ich früh auf."
+      }
+    },
+    {
+      "id": "sv_bringen_part",
+      "type": "strong_verb",
+      "display": "bringen · Partizip II",
+      "meaning": {
+        "English": "to bring",
+        "German": "bringen"
+      },
+      "prompt": "bringen · Partizip II?",
+      "prompt_clean": "bringen · Partizip II?",
+      "answers": [
+        "gebracht"
+      ],
+      "answer": "gebracht",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich bin/habe gebracht."
+      }
+    },
+    {
+      "id": "sv_bringen_perfaux",
+      "type": "strong_verb",
+      "display": "bringen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to bring",
+        "German": "bringen"
+      },
+      "prompt": "bringen · Hilfsverb im Perfekt?",
+      "prompt_clean": "bringen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gebracht."
+      }
+    },
+    {
+      "id": "sv_denken_praet",
+      "type": "strong_verb",
+      "display": "denken · Präteritum",
+      "meaning": {
+        "English": "to think",
+        "German": "denken"
+      },
+      "prompt": "denken · Präteritum?",
+      "prompt_clean": "denken · Präteritum?",
+      "answers": [
+        "dachte"
+      ],
+      "answer": "dachte",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern dachte ich früh auf."
+      }
+    },
+    {
+      "id": "sv_denken_part",
+      "type": "strong_verb",
+      "display": "denken · Partizip II",
+      "meaning": {
+        "English": "to think",
+        "German": "denken"
+      },
+      "prompt": "denken · Partizip II?",
+      "prompt_clean": "denken · Partizip II?",
+      "answers": [
+        "gedacht"
+      ],
+      "answer": "gedacht",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich bin/habe gedacht."
+      }
+    },
+    {
+      "id": "sv_denken_perfaux",
+      "type": "strong_verb",
+      "display": "denken · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to think",
+        "German": "denken"
+      },
+      "prompt": "denken · Hilfsverb im Perfekt?",
+      "prompt_clean": "denken · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gedacht."
+      }
+    },
+    {
+      "id": "sv_wissen_praet",
+      "type": "strong_verb",
+      "display": "wissen · Präteritum",
+      "meaning": {
+        "English": "to know",
+        "German": "wissen"
+      },
+      "prompt": "wissen · Präteritum?",
+      "prompt_clean": "wissen · Präteritum?",
+      "answers": [
+        "wusste"
+      ],
+      "answer": "wusste",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern wusste ich früh auf."
+      }
+    },
+    {
+      "id": "sv_wissen_part",
+      "type": "strong_verb",
+      "display": "wissen · Partizip II",
+      "meaning": {
+        "English": "to know",
+        "German": "wissen"
+      },
+      "prompt": "wissen · Partizip II?",
+      "prompt_clean": "wissen · Partizip II?",
+      "answers": [
+        "gewusst"
+      ],
+      "answer": "gewusst",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich bin/habe gewusst."
+      }
+    },
+    {
+      "id": "sv_wissen_perfaux",
+      "type": "strong_verb",
+      "display": "wissen · Perfekt-Hilfsverb",
+      "meaning": {
+        "English": "to know",
+        "German": "wissen"
+      },
+      "prompt": "wissen · Hilfsverb im Perfekt?",
+      "prompt_clean": "wissen · Hilfsverb im Perfekt?",
+      "answers": [
+        "haben"
+      ],
+      "answer": "haben",
+      "case": "Perfekt auxiliary",
+      "example": {
+        "de": "Perfekt: haben + gewusst."
+      }
+    },
+    {
+      "id": "sv_kennen_praet",
+      "type": "strong_verb",
+      "display": "kennen · Präteritum",
+      "meaning": {
+        "English": "to know",
+        "German": "kennen"
+      },
+      "prompt": "kennen · Präteritum?",
+      "prompt_clean": "kennen · Präteritum?",
+      "answers": [
+        "kannte"
+      ],
+      "answer": "kannte",
+      "case": "Präteritum",
+      "example": {
+        "de": "Gestern kannte ich früh auf."
       }
     }
   ]

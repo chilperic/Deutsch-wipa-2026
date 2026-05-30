@@ -1,7 +1,8 @@
 {
   "module": "trennbare_verben",
   "title": "Trennbare Verben",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "tv_anfangen_pres",
@@ -12,6 +13,10 @@
         "German": "anfangen"
       },
       "prompt": "Ich ___ heute ___. (anfangen)",
+      "prompt_clean": "Ich ___ heute ___. (anfangen)",
+      "answers": [
+        "fange an"
+      ],
       "answer": "fange an",
       "case": "Präsens · trennbar",
       "example": {
@@ -19,7 +24,7 @@
       }
     },
     {
-      "id": "tv_anfangen_perf",
+      "id": "tv_anfangen_part",
       "type": "separable_verb",
       "display": "anfangen",
       "meaning": {
@@ -27,8 +32,12 @@
         "German": "anfangen"
       },
       "prompt": "anfangen · Partizip II?",
+      "prompt_clean": "anfangen · Partizip II?",
+      "answers": [
+        "angefangen"
+      ],
       "answer": "angefangen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin angefangen."
       }
@@ -42,6 +51,11 @@
         "German": "anfangen"
       },
       "prompt": "Was bedeutet anfangen?",
+      "prompt_clean": "Was bedeutet anfangen?",
+      "answers": [
+        "to begin",
+        "anfangen"
+      ],
       "answer": "to begin",
       "case": "Bedeutung",
       "example": {
@@ -57,6 +71,10 @@
         "German": "aufstehen"
       },
       "prompt": "Ich ___ heute ___. (aufstehen)",
+      "prompt_clean": "Ich ___ heute ___. (aufstehen)",
+      "answers": [
+        "stehe auf"
+      ],
       "answer": "stehe auf",
       "case": "Präsens · trennbar",
       "example": {
@@ -64,7 +82,7 @@
       }
     },
     {
-      "id": "tv_aufstehen_perf",
+      "id": "tv_aufstehen_part",
       "type": "separable_verb",
       "display": "aufstehen",
       "meaning": {
@@ -72,8 +90,12 @@
         "German": "aufstehen"
       },
       "prompt": "aufstehen · Partizip II?",
+      "prompt_clean": "aufstehen · Partizip II?",
+      "answers": [
+        "aufgestanden"
+      ],
       "answer": "aufgestanden",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgestanden."
       }
@@ -87,6 +109,11 @@
         "German": "aufstehen"
       },
       "prompt": "Was bedeutet aufstehen?",
+      "prompt_clean": "Was bedeutet aufstehen?",
+      "answers": [
+        "to get up",
+        "aufstehen"
+      ],
       "answer": "to get up",
       "case": "Bedeutung",
       "example": {
@@ -102,6 +129,10 @@
         "German": "einkaufen"
       },
       "prompt": "Ich ___ heute ___. (einkaufen)",
+      "prompt_clean": "Ich ___ heute ___. (einkaufen)",
+      "answers": [
+        "kaufe ein"
+      ],
       "answer": "kaufe ein",
       "case": "Präsens · trennbar",
       "example": {
@@ -109,7 +140,7 @@
       }
     },
     {
-      "id": "tv_einkaufen_perf",
+      "id": "tv_einkaufen_part",
       "type": "separable_verb",
       "display": "einkaufen",
       "meaning": {
@@ -117,8 +148,12 @@
         "German": "einkaufen"
       },
       "prompt": "einkaufen · Partizip II?",
+      "prompt_clean": "einkaufen · Partizip II?",
+      "answers": [
+        "eingekauft"
+      ],
       "answer": "eingekauft",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin eingekauft."
       }
@@ -132,6 +167,11 @@
         "German": "einkaufen"
       },
       "prompt": "Was bedeutet einkaufen?",
+      "prompt_clean": "Was bedeutet einkaufen?",
+      "answers": [
+        "to shop",
+        "einkaufen"
+      ],
       "answer": "to shop",
       "case": "Bedeutung",
       "example": {
@@ -147,6 +187,10 @@
         "German": "mitbringen"
       },
       "prompt": "Ich ___ heute ___. (mitbringen)",
+      "prompt_clean": "Ich ___ heute ___. (mitbringen)",
+      "answers": [
+        "bringe mit"
+      ],
       "answer": "bringe mit",
       "case": "Präsens · trennbar",
       "example": {
@@ -154,7 +198,7 @@
       }
     },
     {
-      "id": "tv_mitbringen_perf",
+      "id": "tv_mitbringen_part",
       "type": "separable_verb",
       "display": "mitbringen",
       "meaning": {
@@ -162,8 +206,12 @@
         "German": "mitbringen"
       },
       "prompt": "mitbringen · Partizip II?",
+      "prompt_clean": "mitbringen · Partizip II?",
+      "answers": [
+        "mitgebracht"
+      ],
       "answer": "mitgebracht",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin mitgebracht."
       }
@@ -177,6 +225,11 @@
         "German": "mitbringen"
       },
       "prompt": "Was bedeutet mitbringen?",
+      "prompt_clean": "Was bedeutet mitbringen?",
+      "answers": [
+        "to bring along",
+        "mitbringen"
+      ],
       "answer": "to bring along",
       "case": "Bedeutung",
       "example": {
@@ -192,6 +245,10 @@
         "German": "anrufen"
       },
       "prompt": "Ich ___ heute ___. (anrufen)",
+      "prompt_clean": "Ich ___ heute ___. (anrufen)",
+      "answers": [
+        "rufe an"
+      ],
       "answer": "rufe an",
       "case": "Präsens · trennbar",
       "example": {
@@ -199,7 +256,7 @@
       }
     },
     {
-      "id": "tv_anrufen_perf",
+      "id": "tv_anrufen_part",
       "type": "separable_verb",
       "display": "anrufen",
       "meaning": {
@@ -207,8 +264,12 @@
         "German": "anrufen"
       },
       "prompt": "anrufen · Partizip II?",
+      "prompt_clean": "anrufen · Partizip II?",
+      "answers": [
+        "angerufen"
+      ],
       "answer": "angerufen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin angerufen."
       }
@@ -222,6 +283,11 @@
         "German": "anrufen"
       },
       "prompt": "Was bedeutet anrufen?",
+      "prompt_clean": "Was bedeutet anrufen?",
+      "answers": [
+        "to call",
+        "anrufen"
+      ],
       "answer": "to call",
       "case": "Bedeutung",
       "example": {
@@ -237,6 +303,10 @@
         "German": "ausfüllen"
       },
       "prompt": "Ich ___ heute ___. (ausfüllen)",
+      "prompt_clean": "Ich ___ heute ___. (ausfüllen)",
+      "answers": [
+        "fülle aus"
+      ],
       "answer": "fülle aus",
       "case": "Präsens · trennbar",
       "example": {
@@ -244,7 +314,7 @@
       }
     },
     {
-      "id": "tv_ausfüllen_perf",
+      "id": "tv_ausfüllen_part",
       "type": "separable_verb",
       "display": "ausfüllen",
       "meaning": {
@@ -252,8 +322,12 @@
         "German": "ausfüllen"
       },
       "prompt": "ausfüllen · Partizip II?",
+      "prompt_clean": "ausfüllen · Partizip II?",
+      "answers": [
+        "ausgefüllt"
+      ],
       "answer": "ausgefüllt",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin ausgefüllt."
       }
@@ -267,6 +341,11 @@
         "German": "ausfüllen"
       },
       "prompt": "Was bedeutet ausfüllen?",
+      "prompt_clean": "Was bedeutet ausfüllen?",
+      "answers": [
+        "to fill out",
+        "ausfüllen"
+      ],
       "answer": "to fill out",
       "case": "Bedeutung",
       "example": {
@@ -282,6 +361,10 @@
         "German": "einsteigen"
       },
       "prompt": "Ich ___ heute ___. (einsteigen)",
+      "prompt_clean": "Ich ___ heute ___. (einsteigen)",
+      "answers": [
+        "steige ein"
+      ],
       "answer": "steige ein",
       "case": "Präsens · trennbar",
       "example": {
@@ -289,7 +372,7 @@
       }
     },
     {
-      "id": "tv_einsteigen_perf",
+      "id": "tv_einsteigen_part",
       "type": "separable_verb",
       "display": "einsteigen",
       "meaning": {
@@ -297,8 +380,12 @@
         "German": "einsteigen"
       },
       "prompt": "einsteigen · Partizip II?",
+      "prompt_clean": "einsteigen · Partizip II?",
+      "answers": [
+        "eingestiegen"
+      ],
       "answer": "eingestiegen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin eingestiegen."
       }
@@ -312,6 +399,11 @@
         "German": "einsteigen"
       },
       "prompt": "Was bedeutet einsteigen?",
+      "prompt_clean": "Was bedeutet einsteigen?",
+      "answers": [
+        "to get in",
+        "einsteigen"
+      ],
       "answer": "to get in",
       "case": "Bedeutung",
       "example": {
@@ -327,6 +419,10 @@
         "German": "aussteigen"
       },
       "prompt": "Ich ___ heute ___. (aussteigen)",
+      "prompt_clean": "Ich ___ heute ___. (aussteigen)",
+      "answers": [
+        "steige aus"
+      ],
       "answer": "steige aus",
       "case": "Präsens · trennbar",
       "example": {
@@ -334,7 +430,7 @@
       }
     },
     {
-      "id": "tv_aussteigen_perf",
+      "id": "tv_aussteigen_part",
       "type": "separable_verb",
       "display": "aussteigen",
       "meaning": {
@@ -342,8 +438,12 @@
         "German": "aussteigen"
       },
       "prompt": "aussteigen · Partizip II?",
+      "prompt_clean": "aussteigen · Partizip II?",
+      "answers": [
+        "ausgestiegen"
+      ],
       "answer": "ausgestiegen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin ausgestiegen."
       }
@@ -357,6 +457,11 @@
         "German": "aussteigen"
       },
       "prompt": "Was bedeutet aussteigen?",
+      "prompt_clean": "Was bedeutet aussteigen?",
+      "answers": [
+        "to get out",
+        "aussteigen"
+      ],
       "answer": "to get out",
       "case": "Bedeutung",
       "example": {
@@ -372,6 +477,10 @@
         "German": "umsteigen"
       },
       "prompt": "Ich ___ heute ___. (umsteigen)",
+      "prompt_clean": "Ich ___ heute ___. (umsteigen)",
+      "answers": [
+        "steige um"
+      ],
       "answer": "steige um",
       "case": "Präsens · trennbar",
       "example": {
@@ -379,7 +488,7 @@
       }
     },
     {
-      "id": "tv_umsteigen_perf",
+      "id": "tv_umsteigen_part",
       "type": "separable_verb",
       "display": "umsteigen",
       "meaning": {
@@ -387,8 +496,12 @@
         "German": "umsteigen"
       },
       "prompt": "umsteigen · Partizip II?",
+      "prompt_clean": "umsteigen · Partizip II?",
+      "answers": [
+        "umgestiegen"
+      ],
       "answer": "umgestiegen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin umgestiegen."
       }
@@ -402,6 +515,11 @@
         "German": "umsteigen"
       },
       "prompt": "Was bedeutet umsteigen?",
+      "prompt_clean": "Was bedeutet umsteigen?",
+      "answers": [
+        "to transfer",
+        "umsteigen"
+      ],
       "answer": "to transfer",
       "case": "Bedeutung",
       "example": {
@@ -417,6 +535,10 @@
         "German": "vorbereiten"
       },
       "prompt": "Ich ___ heute ___. (vorbereiten)",
+      "prompt_clean": "Ich ___ heute ___. (vorbereiten)",
+      "answers": [
+        "bereite vor"
+      ],
       "answer": "bereite vor",
       "case": "Präsens · trennbar",
       "example": {
@@ -424,7 +546,7 @@
       }
     },
     {
-      "id": "tv_vorbereiten_perf",
+      "id": "tv_vorbereiten_part",
       "type": "separable_verb",
       "display": "vorbereiten",
       "meaning": {
@@ -432,8 +554,12 @@
         "German": "vorbereiten"
       },
       "prompt": "vorbereiten · Partizip II?",
+      "prompt_clean": "vorbereiten · Partizip II?",
+      "answers": [
+        "vorbereitet"
+      ],
       "answer": "vorbereitet",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin vorbereitet."
       }
@@ -447,6 +573,11 @@
         "German": "vorbereiten"
       },
       "prompt": "Was bedeutet vorbereiten?",
+      "prompt_clean": "Was bedeutet vorbereiten?",
+      "answers": [
+        "to prepare",
+        "vorbereiten"
+      ],
       "answer": "to prepare",
       "case": "Bedeutung",
       "example": {
@@ -462,6 +593,10 @@
         "German": "teilnehmen"
       },
       "prompt": "Ich ___ heute ___. (teilnehmen)",
+      "prompt_clean": "Ich ___ heute ___. (teilnehmen)",
+      "answers": [
+        "nehme teil"
+      ],
       "answer": "nehme teil",
       "case": "Präsens · trennbar",
       "example": {
@@ -469,7 +604,7 @@
       }
     },
     {
-      "id": "tv_teilnehmen_perf",
+      "id": "tv_teilnehmen_part",
       "type": "separable_verb",
       "display": "teilnehmen",
       "meaning": {
@@ -477,8 +612,12 @@
         "German": "teilnehmen"
       },
       "prompt": "teilnehmen · Partizip II?",
+      "prompt_clean": "teilnehmen · Partizip II?",
+      "answers": [
+        "teilgenommen"
+      ],
       "answer": "teilgenommen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin teilgenommen."
       }
@@ -492,6 +631,11 @@
         "German": "teilnehmen"
       },
       "prompt": "Was bedeutet teilnehmen?",
+      "prompt_clean": "Was bedeutet teilnehmen?",
+      "answers": [
+        "to participate",
+        "teilnehmen"
+      ],
       "answer": "to participate",
       "case": "Bedeutung",
       "example": {
@@ -507,6 +651,10 @@
         "German": "aufräumen"
       },
       "prompt": "Ich ___ heute ___. (aufräumen)",
+      "prompt_clean": "Ich ___ heute ___. (aufräumen)",
+      "answers": [
+        "räume auf"
+      ],
       "answer": "räume auf",
       "case": "Präsens · trennbar",
       "example": {
@@ -514,7 +662,7 @@
       }
     },
     {
-      "id": "tv_aufräumen_perf",
+      "id": "tv_aufräumen_part",
       "type": "separable_verb",
       "display": "aufräumen",
       "meaning": {
@@ -522,8 +670,12 @@
         "German": "aufräumen"
       },
       "prompt": "aufräumen · Partizip II?",
+      "prompt_clean": "aufräumen · Partizip II?",
+      "answers": [
+        "aufgeräumt"
+      ],
       "answer": "aufgeräumt",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgeräumt."
       }
@@ -537,6 +689,11 @@
         "German": "aufräumen"
       },
       "prompt": "Was bedeutet aufräumen?",
+      "prompt_clean": "Was bedeutet aufräumen?",
+      "answers": [
+        "to tidy up",
+        "aufräumen"
+      ],
       "answer": "to tidy up",
       "case": "Bedeutung",
       "example": {
@@ -552,6 +709,10 @@
         "German": "zumachen"
       },
       "prompt": "Ich ___ heute ___. (zumachen)",
+      "prompt_clean": "Ich ___ heute ___. (zumachen)",
+      "answers": [
+        "mache zu"
+      ],
       "answer": "mache zu",
       "case": "Präsens · trennbar",
       "example": {
@@ -559,7 +720,7 @@
       }
     },
     {
-      "id": "tv_zumachen_perf",
+      "id": "tv_zumachen_part",
       "type": "separable_verb",
       "display": "zumachen",
       "meaning": {
@@ -567,8 +728,12 @@
         "German": "zumachen"
       },
       "prompt": "zumachen · Partizip II?",
+      "prompt_clean": "zumachen · Partizip II?",
+      "answers": [
+        "zugemacht"
+      ],
       "answer": "zugemacht",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin zugemacht."
       }
@@ -582,6 +747,11 @@
         "German": "zumachen"
       },
       "prompt": "Was bedeutet zumachen?",
+      "prompt_clean": "Was bedeutet zumachen?",
+      "answers": [
+        "to close",
+        "zumachen"
+      ],
       "answer": "to close",
       "case": "Bedeutung",
       "example": {
@@ -597,6 +767,10 @@
         "German": "aufmachen"
       },
       "prompt": "Ich ___ heute ___. (aufmachen)",
+      "prompt_clean": "Ich ___ heute ___. (aufmachen)",
+      "answers": [
+        "mache auf"
+      ],
       "answer": "mache auf",
       "case": "Präsens · trennbar",
       "example": {
@@ -604,7 +778,7 @@
       }
     },
     {
-      "id": "tv_aufmachen_perf",
+      "id": "tv_aufmachen_part",
       "type": "separable_verb",
       "display": "aufmachen",
       "meaning": {
@@ -612,8 +786,12 @@
         "German": "aufmachen"
       },
       "prompt": "aufmachen · Partizip II?",
+      "prompt_clean": "aufmachen · Partizip II?",
+      "answers": [
+        "aufgemacht"
+      ],
       "answer": "aufgemacht",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin aufgemacht."
       }
@@ -627,6 +805,11 @@
         "German": "aufmachen"
       },
       "prompt": "Was bedeutet aufmachen?",
+      "prompt_clean": "Was bedeutet aufmachen?",
+      "answers": [
+        "to open",
+        "aufmachen"
+      ],
       "answer": "to open",
       "case": "Bedeutung",
       "example": {
@@ -642,6 +825,10 @@
         "German": "zurückrufen"
       },
       "prompt": "Ich ___ heute ___. (zurückrufen)",
+      "prompt_clean": "Ich ___ heute ___. (zurückrufen)",
+      "answers": [
+        "rufe zurück"
+      ],
       "answer": "rufe zurück",
       "case": "Präsens · trennbar",
       "example": {
@@ -649,7 +836,7 @@
       }
     },
     {
-      "id": "tv_zurückrufen_perf",
+      "id": "tv_zurückrufen_part",
       "type": "separable_verb",
       "display": "zurückrufen",
       "meaning": {
@@ -657,8 +844,12 @@
         "German": "zurückrufen"
       },
       "prompt": "zurückrufen · Partizip II?",
+      "prompt_clean": "zurückrufen · Partizip II?",
+      "answers": [
+        "zurückgerufen"
+      ],
       "answer": "zurückgerufen",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin zurückgerufen."
       }
@@ -672,6 +863,11 @@
         "German": "zurückrufen"
       },
       "prompt": "Was bedeutet zurückrufen?",
+      "prompt_clean": "Was bedeutet zurückrufen?",
+      "answers": [
+        "to call back",
+        "zurückrufen"
+      ],
       "answer": "to call back",
       "case": "Bedeutung",
       "example": {
@@ -687,6 +883,10 @@
         "German": "kennenlernen"
       },
       "prompt": "Ich ___ heute ___. (kennenlernen)",
+      "prompt_clean": "Ich ___ heute ___. (kennenlernen)",
+      "answers": [
+        "lerne kennen"
+      ],
       "answer": "lerne kennen",
       "case": "Präsens · trennbar",
       "example": {
@@ -694,7 +894,7 @@
       }
     },
     {
-      "id": "tv_kennenlernen_perf",
+      "id": "tv_kennenlernen_part",
       "type": "separable_verb",
       "display": "kennenlernen",
       "meaning": {
@@ -702,8 +902,12 @@
         "German": "kennenlernen"
       },
       "prompt": "kennenlernen · Partizip II?",
+      "prompt_clean": "kennenlernen · Partizip II?",
+      "answers": [
+        "kennengelernt"
+      ],
       "answer": "kennengelernt",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin kennengelernt."
       }
@@ -717,6 +921,11 @@
         "German": "kennenlernen"
       },
       "prompt": "Was bedeutet kennenlernen?",
+      "prompt_clean": "Was bedeutet kennenlernen?",
+      "answers": [
+        "to get to know",
+        "kennenlernen"
+      ],
       "answer": "to get to know",
       "case": "Bedeutung",
       "example": {
@@ -732,6 +941,10 @@
         "German": "weiterarbeiten"
       },
       "prompt": "Ich ___ heute ___. (weiterarbeiten)",
+      "prompt_clean": "Ich ___ heute ___. (weiterarbeiten)",
+      "answers": [
+        "arbeite weiter"
+      ],
       "answer": "arbeite weiter",
       "case": "Präsens · trennbar",
       "example": {
@@ -739,7 +952,7 @@
       }
     },
     {
-      "id": "tv_weiterarbeiten_perf",
+      "id": "tv_weiterarbeiten_part",
       "type": "separable_verb",
       "display": "weiterarbeiten",
       "meaning": {
@@ -747,8 +960,12 @@
         "German": "weiterarbeiten"
       },
       "prompt": "weiterarbeiten · Partizip II?",
+      "prompt_clean": "weiterarbeiten · Partizip II?",
+      "answers": [
+        "weitergearbeitet"
+      ],
       "answer": "weitergearbeitet",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin weitergearbeitet."
       }
@@ -762,6 +979,11 @@
         "German": "weiterarbeiten"
       },
       "prompt": "Was bedeutet weiterarbeiten?",
+      "prompt_clean": "Was bedeutet weiterarbeiten?",
+      "answers": [
+        "to continue working",
+        "weiterarbeiten"
+      ],
       "answer": "to continue working",
       "case": "Bedeutung",
       "example": {
@@ -777,6 +999,10 @@
         "German": "feststellen"
       },
       "prompt": "Ich ___ heute ___. (feststellen)",
+      "prompt_clean": "Ich ___ heute ___. (feststellen)",
+      "answers": [
+        "stelle fest"
+      ],
       "answer": "stelle fest",
       "case": "Präsens · trennbar",
       "example": {
@@ -784,7 +1010,7 @@
       }
     },
     {
-      "id": "tv_feststellen_perf",
+      "id": "tv_feststellen_part",
       "type": "separable_verb",
       "display": "feststellen",
       "meaning": {
@@ -792,8 +1018,12 @@
         "German": "feststellen"
       },
       "prompt": "feststellen · Partizip II?",
+      "prompt_clean": "feststellen · Partizip II?",
+      "answers": [
+        "festgestellt"
+      ],
       "answer": "festgestellt",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin festgestellt."
       }
@@ -807,6 +1037,11 @@
         "German": "feststellen"
       },
       "prompt": "Was bedeutet feststellen?",
+      "prompt_clean": "Was bedeutet feststellen?",
+      "answers": [
+        "to determine",
+        "feststellen"
+      ],
       "answer": "to determine",
       "case": "Bedeutung",
       "example": {
@@ -822,6 +1057,10 @@
         "German": "absagen"
       },
       "prompt": "Ich ___ heute ___. (absagen)",
+      "prompt_clean": "Ich ___ heute ___. (absagen)",
+      "answers": [
+        "sage ab"
+      ],
       "answer": "sage ab",
       "case": "Präsens · trennbar",
       "example": {
@@ -829,7 +1068,7 @@
       }
     },
     {
-      "id": "tv_absagen_perf",
+      "id": "tv_absagen_part",
       "type": "separable_verb",
       "display": "absagen",
       "meaning": {
@@ -837,8 +1076,12 @@
         "German": "absagen"
       },
       "prompt": "absagen · Partizip II?",
+      "prompt_clean": "absagen · Partizip II?",
+      "answers": [
+        "abgesagt"
+      ],
       "answer": "abgesagt",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin abgesagt."
       }
@@ -852,6 +1095,11 @@
         "German": "absagen"
       },
       "prompt": "Was bedeutet absagen?",
+      "prompt_clean": "Was bedeutet absagen?",
+      "answers": [
+        "to cancel",
+        "absagen"
+      ],
       "answer": "to cancel",
       "case": "Bedeutung",
       "example": {
@@ -867,6 +1115,10 @@
         "German": "zusagen"
       },
       "prompt": "Ich ___ heute ___. (zusagen)",
+      "prompt_clean": "Ich ___ heute ___. (zusagen)",
+      "answers": [
+        "sage zu"
+      ],
       "answer": "sage zu",
       "case": "Präsens · trennbar",
       "example": {
@@ -874,7 +1126,7 @@
       }
     },
     {
-      "id": "tv_zusagen_perf",
+      "id": "tv_zusagen_part",
       "type": "separable_verb",
       "display": "zusagen",
       "meaning": {
@@ -882,8 +1134,12 @@
         "German": "zusagen"
       },
       "prompt": "zusagen · Partizip II?",
+      "prompt_clean": "zusagen · Partizip II?",
+      "answers": [
+        "zugesagt"
+      ],
       "answer": "zugesagt",
-      "case": "Perfekt",
+      "case": "Partizip II",
       "example": {
         "de": "Ich habe/bin zugesagt."
       }
@@ -897,10 +1153,595 @@
         "German": "zusagen"
       },
       "prompt": "Was bedeutet zusagen?",
+      "prompt_clean": "Was bedeutet zusagen?",
+      "answers": [
+        "to accept/confirm",
+        "zusagen"
+      ],
       "answer": "to accept/confirm",
       "case": "Bedeutung",
       "example": {
         "de": "Verb: zusagen."
+      }
+    },
+    {
+      "id": "tv_weitergehen_pres",
+      "type": "separable_verb",
+      "display": "weitergehen",
+      "meaning": {
+        "English": "to continue going",
+        "German": "weitergehen"
+      },
+      "prompt": "Ich ___ heute ___. (weitergehen)",
+      "prompt_clean": "Ich ___ heute ___. (weitergehen)",
+      "answers": [
+        "gehe weiter"
+      ],
+      "answer": "gehe weiter",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich gehe weiter heute."
+      }
+    },
+    {
+      "id": "tv_weitergehen_part",
+      "type": "separable_verb",
+      "display": "weitergehen",
+      "meaning": {
+        "English": "to continue going",
+        "German": "weitergehen"
+      },
+      "prompt": "weitergehen · Partizip II?",
+      "prompt_clean": "weitergehen · Partizip II?",
+      "answers": [
+        "weitergegangen"
+      ],
+      "answer": "weitergegangen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin weitergegangen."
+      }
+    },
+    {
+      "id": "tv_weitergehen_meaning",
+      "type": "separable_verb",
+      "display": "weitergehen",
+      "meaning": {
+        "English": "to continue going",
+        "German": "weitergehen"
+      },
+      "prompt": "Was bedeutet weitergehen?",
+      "prompt_clean": "Was bedeutet weitergehen?",
+      "answers": [
+        "to continue going",
+        "weitergehen"
+      ],
+      "answer": "to continue going",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: weitergehen."
+      }
+    },
+    {
+      "id": "tv_losfahren_pres",
+      "type": "separable_verb",
+      "display": "losfahren",
+      "meaning": {
+        "English": "to leave/start driving",
+        "German": "losfahren"
+      },
+      "prompt": "Ich ___ heute ___. (losfahren)",
+      "prompt_clean": "Ich ___ heute ___. (losfahren)",
+      "answers": [
+        "fahre los"
+      ],
+      "answer": "fahre los",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich fahre los heute."
+      }
+    },
+    {
+      "id": "tv_losfahren_part",
+      "type": "separable_verb",
+      "display": "losfahren",
+      "meaning": {
+        "English": "to leave/start driving",
+        "German": "losfahren"
+      },
+      "prompt": "losfahren · Partizip II?",
+      "prompt_clean": "losfahren · Partizip II?",
+      "answers": [
+        "losgefahren"
+      ],
+      "answer": "losgefahren",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin losgefahren."
+      }
+    },
+    {
+      "id": "tv_losfahren_meaning",
+      "type": "separable_verb",
+      "display": "losfahren",
+      "meaning": {
+        "English": "to leave/start driving",
+        "German": "losfahren"
+      },
+      "prompt": "Was bedeutet losfahren?",
+      "prompt_clean": "Was bedeutet losfahren?",
+      "answers": [
+        "to leave/start driving",
+        "losfahren"
+      ],
+      "answer": "to leave/start driving",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: losfahren."
+      }
+    },
+    {
+      "id": "tv_mitkommen_pres",
+      "type": "separable_verb",
+      "display": "mitkommen",
+      "meaning": {
+        "English": "to come along",
+        "German": "mitkommen"
+      },
+      "prompt": "Ich ___ heute ___. (mitkommen)",
+      "prompt_clean": "Ich ___ heute ___. (mitkommen)",
+      "answers": [
+        "komme mit"
+      ],
+      "answer": "komme mit",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich komme mit heute."
+      }
+    },
+    {
+      "id": "tv_mitkommen_part",
+      "type": "separable_verb",
+      "display": "mitkommen",
+      "meaning": {
+        "English": "to come along",
+        "German": "mitkommen"
+      },
+      "prompt": "mitkommen · Partizip II?",
+      "prompt_clean": "mitkommen · Partizip II?",
+      "answers": [
+        "mitgekommen"
+      ],
+      "answer": "mitgekommen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin mitgekommen."
+      }
+    },
+    {
+      "id": "tv_mitkommen_meaning",
+      "type": "separable_verb",
+      "display": "mitkommen",
+      "meaning": {
+        "English": "to come along",
+        "German": "mitkommen"
+      },
+      "prompt": "Was bedeutet mitkommen?",
+      "prompt_clean": "Was bedeutet mitkommen?",
+      "answers": [
+        "to come along",
+        "mitkommen"
+      ],
+      "answer": "to come along",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: mitkommen."
+      }
+    },
+    {
+      "id": "tv_abholen_pres",
+      "type": "separable_verb",
+      "display": "abholen",
+      "meaning": {
+        "English": "to pick up",
+        "German": "abholen"
+      },
+      "prompt": "Ich ___ heute ___. (abholen)",
+      "prompt_clean": "Ich ___ heute ___. (abholen)",
+      "answers": [
+        "hole ab"
+      ],
+      "answer": "hole ab",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich hole ab heute."
+      }
+    },
+    {
+      "id": "tv_abholen_part",
+      "type": "separable_verb",
+      "display": "abholen",
+      "meaning": {
+        "English": "to pick up",
+        "German": "abholen"
+      },
+      "prompt": "abholen · Partizip II?",
+      "prompt_clean": "abholen · Partizip II?",
+      "answers": [
+        "abgeholt"
+      ],
+      "answer": "abgeholt",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin abgeholt."
+      }
+    },
+    {
+      "id": "tv_abholen_meaning",
+      "type": "separable_verb",
+      "display": "abholen",
+      "meaning": {
+        "English": "to pick up",
+        "German": "abholen"
+      },
+      "prompt": "Was bedeutet abholen?",
+      "prompt_clean": "Was bedeutet abholen?",
+      "answers": [
+        "to pick up",
+        "abholen"
+      ],
+      "answer": "to pick up",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: abholen."
+      }
+    },
+    {
+      "id": "tv_abgeben_pres",
+      "type": "separable_verb",
+      "display": "abgeben",
+      "meaning": {
+        "English": "to hand in",
+        "German": "abgeben"
+      },
+      "prompt": "Ich ___ heute ___. (abgeben)",
+      "prompt_clean": "Ich ___ heute ___. (abgeben)",
+      "answers": [
+        "gebe ab"
+      ],
+      "answer": "gebe ab",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich gebe ab heute."
+      }
+    },
+    {
+      "id": "tv_abgeben_part",
+      "type": "separable_verb",
+      "display": "abgeben",
+      "meaning": {
+        "English": "to hand in",
+        "German": "abgeben"
+      },
+      "prompt": "abgeben · Partizip II?",
+      "prompt_clean": "abgeben · Partizip II?",
+      "answers": [
+        "abgegeben"
+      ],
+      "answer": "abgegeben",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin abgegeben."
+      }
+    },
+    {
+      "id": "tv_abgeben_meaning",
+      "type": "separable_verb",
+      "display": "abgeben",
+      "meaning": {
+        "English": "to hand in",
+        "German": "abgeben"
+      },
+      "prompt": "Was bedeutet abgeben?",
+      "prompt_clean": "Was bedeutet abgeben?",
+      "answers": [
+        "to hand in",
+        "abgeben"
+      ],
+      "answer": "to hand in",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: abgeben."
+      }
+    },
+    {
+      "id": "tv_ankommen_pres",
+      "type": "separable_verb",
+      "display": "ankommen",
+      "meaning": {
+        "English": "to arrive",
+        "German": "ankommen"
+      },
+      "prompt": "Ich ___ heute ___. (ankommen)",
+      "prompt_clean": "Ich ___ heute ___. (ankommen)",
+      "answers": [
+        "komme an"
+      ],
+      "answer": "komme an",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich komme an heute."
+      }
+    },
+    {
+      "id": "tv_ankommen_part",
+      "type": "separable_verb",
+      "display": "ankommen",
+      "meaning": {
+        "English": "to arrive",
+        "German": "ankommen"
+      },
+      "prompt": "ankommen · Partizip II?",
+      "prompt_clean": "ankommen · Partizip II?",
+      "answers": [
+        "angekommen"
+      ],
+      "answer": "angekommen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin angekommen."
+      }
+    },
+    {
+      "id": "tv_ankommen_meaning",
+      "type": "separable_verb",
+      "display": "ankommen",
+      "meaning": {
+        "English": "to arrive",
+        "German": "ankommen"
+      },
+      "prompt": "Was bedeutet ankommen?",
+      "prompt_clean": "Was bedeutet ankommen?",
+      "answers": [
+        "to arrive",
+        "ankommen"
+      ],
+      "answer": "to arrive",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: ankommen."
+      }
+    },
+    {
+      "id": "tv_aufpassen_pres",
+      "type": "separable_verb",
+      "display": "aufpassen",
+      "meaning": {
+        "English": "to pay attention",
+        "German": "aufpassen"
+      },
+      "prompt": "Ich ___ heute ___. (aufpassen)",
+      "prompt_clean": "Ich ___ heute ___. (aufpassen)",
+      "answers": [
+        "passe auf"
+      ],
+      "answer": "passe auf",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich passe auf heute."
+      }
+    },
+    {
+      "id": "tv_aufpassen_part",
+      "type": "separable_verb",
+      "display": "aufpassen",
+      "meaning": {
+        "English": "to pay attention",
+        "German": "aufpassen"
+      },
+      "prompt": "aufpassen · Partizip II?",
+      "prompt_clean": "aufpassen · Partizip II?",
+      "answers": [
+        "aufgepasst"
+      ],
+      "answer": "aufgepasst",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin aufgepasst."
+      }
+    },
+    {
+      "id": "tv_aufpassen_meaning",
+      "type": "separable_verb",
+      "display": "aufpassen",
+      "meaning": {
+        "English": "to pay attention",
+        "German": "aufpassen"
+      },
+      "prompt": "Was bedeutet aufpassen?",
+      "prompt_clean": "Was bedeutet aufpassen?",
+      "answers": [
+        "to pay attention",
+        "aufpassen"
+      ],
+      "answer": "to pay attention",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: aufpassen."
+      }
+    },
+    {
+      "id": "tv_einschlafen_pres",
+      "type": "separable_verb",
+      "display": "einschlafen",
+      "meaning": {
+        "English": "to fall asleep",
+        "German": "einschlafen"
+      },
+      "prompt": "Ich ___ heute ___. (einschlafen)",
+      "prompt_clean": "Ich ___ heute ___. (einschlafen)",
+      "answers": [
+        "schlafe ein"
+      ],
+      "answer": "schlafe ein",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich schlafe ein heute."
+      }
+    },
+    {
+      "id": "tv_einschlafen_part",
+      "type": "separable_verb",
+      "display": "einschlafen",
+      "meaning": {
+        "English": "to fall asleep",
+        "German": "einschlafen"
+      },
+      "prompt": "einschlafen · Partizip II?",
+      "prompt_clean": "einschlafen · Partizip II?",
+      "answers": [
+        "eingeschlafen"
+      ],
+      "answer": "eingeschlafen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin eingeschlafen."
+      }
+    },
+    {
+      "id": "tv_einschlafen_meaning",
+      "type": "separable_verb",
+      "display": "einschlafen",
+      "meaning": {
+        "English": "to fall asleep",
+        "German": "einschlafen"
+      },
+      "prompt": "Was bedeutet einschlafen?",
+      "prompt_clean": "Was bedeutet einschlafen?",
+      "answers": [
+        "to fall asleep",
+        "einschlafen"
+      ],
+      "answer": "to fall asleep",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: einschlafen."
+      }
+    },
+    {
+      "id": "tv_fernsehen_pres",
+      "type": "separable_verb",
+      "display": "fernsehen",
+      "meaning": {
+        "English": "to watch TV",
+        "German": "fernsehen"
+      },
+      "prompt": "Ich ___ heute ___. (fernsehen)",
+      "prompt_clean": "Ich ___ heute ___. (fernsehen)",
+      "answers": [
+        "sehe fern"
+      ],
+      "answer": "sehe fern",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich sehe fern heute."
+      }
+    },
+    {
+      "id": "tv_fernsehen_part",
+      "type": "separable_verb",
+      "display": "fernsehen",
+      "meaning": {
+        "English": "to watch TV",
+        "German": "fernsehen"
+      },
+      "prompt": "fernsehen · Partizip II?",
+      "prompt_clean": "fernsehen · Partizip II?",
+      "answers": [
+        "ferngesehen"
+      ],
+      "answer": "ferngesehen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin ferngesehen."
+      }
+    },
+    {
+      "id": "tv_fernsehen_meaning",
+      "type": "separable_verb",
+      "display": "fernsehen",
+      "meaning": {
+        "English": "to watch TV",
+        "German": "fernsehen"
+      },
+      "prompt": "Was bedeutet fernsehen?",
+      "prompt_clean": "Was bedeutet fernsehen?",
+      "answers": [
+        "to watch TV",
+        "fernsehen"
+      ],
+      "answer": "to watch TV",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: fernsehen."
+      }
+    },
+    {
+      "id": "tv_vorlesen_pres",
+      "type": "separable_verb",
+      "display": "vorlesen",
+      "meaning": {
+        "English": "to read aloud",
+        "German": "vorlesen"
+      },
+      "prompt": "Ich ___ heute ___. (vorlesen)",
+      "prompt_clean": "Ich ___ heute ___. (vorlesen)",
+      "answers": [
+        "lese vor"
+      ],
+      "answer": "lese vor",
+      "case": "Präsens · trennbar",
+      "example": {
+        "de": "Ich lese vor heute."
+      }
+    },
+    {
+      "id": "tv_vorlesen_part",
+      "type": "separable_verb",
+      "display": "vorlesen",
+      "meaning": {
+        "English": "to read aloud",
+        "German": "vorlesen"
+      },
+      "prompt": "vorlesen · Partizip II?",
+      "prompt_clean": "vorlesen · Partizip II?",
+      "answers": [
+        "vorgelesen"
+      ],
+      "answer": "vorgelesen",
+      "case": "Partizip II",
+      "example": {
+        "de": "Ich habe/bin vorgelesen."
+      }
+    },
+    {
+      "id": "tv_vorlesen_meaning",
+      "type": "separable_verb",
+      "display": "vorlesen",
+      "meaning": {
+        "English": "to read aloud",
+        "German": "vorlesen"
+      },
+      "prompt": "Was bedeutet vorlesen?",
+      "prompt_clean": "Was bedeutet vorlesen?",
+      "answers": [
+        "to read aloud",
+        "vorlesen"
+      ],
+      "answer": "to read aloud",
+      "case": "Bedeutung",
+      "example": {
+        "de": "Verb: vorlesen."
       }
     }
   ]

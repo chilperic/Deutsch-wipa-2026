@@ -1,7 +1,8 @@
 {
   "module": "adjektivdeklination",
   "title": "Adjektivdeklination",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "adj_gut_0",
@@ -12,6 +13,10 @@
         "German": "gut"
       },
       "prompt": "der ___ Mann · gut",
+      "prompt_clean": "der ___ Mann · gut",
+      "answers": [
+        "gute"
+      ],
       "answer": "gute",
       "case": "Nominativ maskulin bestimmt",
       "example": {
@@ -27,10 +32,14 @@
         "German": "gut"
       },
       "prompt": "ein ___ Mann · gut",
+      "prompt_clean": "ein ___ Mann · gut",
+      "answers": [
+        "guter"
+      ],
       "answer": "guter",
       "case": "Nominativ maskulin unbestimmt",
       "example": {
-        "de": "Ein guterr Mann hilft."
+        "de": "Ein guter Mann hilft."
       }
     },
     {
@@ -42,10 +51,14 @@
         "German": "gut"
       },
       "prompt": "den ___ Mann · gut",
+      "prompt_clean": "den ___ Mann · gut",
+      "answers": [
+        "guten"
+      ],
       "answer": "guten",
       "case": "Akkusativ maskulin bestimmt",
       "example": {
-        "de": "Ich sehe den gutenn Mann."
+        "de": "Ich sehe den guten Mann."
       }
     },
     {
@@ -57,10 +70,14 @@
         "German": "gut"
       },
       "prompt": "mit dem ___ Mann · gut",
+      "prompt_clean": "mit dem ___ Mann · gut",
+      "answers": [
+        "guten"
+      ],
       "answer": "guten",
       "case": "Dativ maskulin bestimmt",
       "example": {
-        "de": "Ich spreche mit dem gutenn Mann."
+        "de": "Ich spreche mit dem guten Mann."
       }
     },
     {
@@ -72,6 +89,10 @@
         "German": "gut"
       },
       "prompt": "die ___ Frau · gut",
+      "prompt_clean": "die ___ Frau · gut",
+      "answers": [
+        "gute"
+      ],
       "answer": "gute",
       "case": "Nominativ feminin bestimmt",
       "example": {
@@ -87,6 +108,10 @@
         "German": "gut"
       },
       "prompt": "eine ___ Frau · gut",
+      "prompt_clean": "eine ___ Frau · gut",
+      "answers": [
+        "gute"
+      ],
       "answer": "gute",
       "case": "Nominativ feminin unbestimmt",
       "example": {
@@ -102,6 +127,10 @@
         "German": "gut"
       },
       "prompt": "das ___ Kind · gut",
+      "prompt_clean": "das ___ Kind · gut",
+      "answers": [
+        "gute"
+      ],
       "answer": "gute",
       "case": "Nominativ neutral bestimmt",
       "example": {
@@ -117,10 +146,14 @@
         "German": "gut"
       },
       "prompt": "ein ___ Kind · gut",
+      "prompt_clean": "ein ___ Kind · gut",
+      "answers": [
+        "gutes"
+      ],
       "answer": "gutes",
       "case": "Nominativ neutral unbestimmt",
       "example": {
-        "de": "Ein gutess Kind spielt."
+        "de": "Ein gutes Kind spielt."
       }
     },
     {
@@ -132,6 +165,10 @@
         "German": "gut"
       },
       "prompt": "___ Freunde · gut",
+      "prompt_clean": "___ Freunde · gut",
+      "answers": [
+        "gute"
+      ],
       "answer": "gute",
       "case": "Plural ohne Artikel",
       "example": {
@@ -147,10 +184,52 @@
         "German": "gut"
       },
       "prompt": "die ___ Freunde · gut",
+      "prompt_clean": "die ___ Freunde · gut",
+      "answers": [
+        "guten"
+      ],
       "answer": "guten",
       "case": "Plural bestimmt",
       "example": {
-        "de": "Die gutenn Freunde helfen."
+        "de": "Die guten Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_gut_10",
+      "type": "adjective_declension",
+      "display": "mit einer guten Frau",
+      "meaning": {
+        "English": "good",
+        "German": "gut"
+      },
+      "prompt": "mit einer ___ Frau · gut",
+      "prompt_clean": "mit einer ___ Frau · gut",
+      "answers": [
+        "guten"
+      ],
+      "answer": "guten",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer guten Frau."
+      }
+    },
+    {
+      "id": "adj_gut_11",
+      "type": "adjective_declension",
+      "display": "ohne einen guten Mann",
+      "meaning": {
+        "English": "good",
+        "German": "gut"
+      },
+      "prompt": "ohne einen ___ Mann · gut",
+      "prompt_clean": "ohne einen ___ Mann · gut",
+      "answers": [
+        "guten"
+      ],
+      "answer": "guten",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen guten Mann."
       }
     },
     {
@@ -162,6 +241,10 @@
         "German": "neu"
       },
       "prompt": "der ___ Mann · neu",
+      "prompt_clean": "der ___ Mann · neu",
+      "answers": [
+        "neue"
+      ],
       "answer": "neue",
       "case": "Nominativ maskulin bestimmt",
       "example": {
@@ -177,6 +260,10 @@
         "German": "neu"
       },
       "prompt": "ein ___ Mann · neu",
+      "prompt_clean": "ein ___ Mann · neu",
+      "answers": [
+        "neuer"
+      ],
       "answer": "neuer",
       "case": "Nominativ maskulin unbestimmt",
       "example": {
@@ -192,6 +279,10 @@
         "German": "neu"
       },
       "prompt": "den ___ Mann · neu",
+      "prompt_clean": "den ___ Mann · neu",
+      "answers": [
+        "neuen"
+      ],
       "answer": "neuen",
       "case": "Akkusativ maskulin bestimmt",
       "example": {
@@ -207,6 +298,10 @@
         "German": "neu"
       },
       "prompt": "mit dem ___ Mann · neu",
+      "prompt_clean": "mit dem ___ Mann · neu",
+      "answers": [
+        "neuen"
+      ],
       "answer": "neuen",
       "case": "Dativ maskulin bestimmt",
       "example": {
@@ -222,6 +317,10 @@
         "German": "neu"
       },
       "prompt": "die ___ Frau · neu",
+      "prompt_clean": "die ___ Frau · neu",
+      "answers": [
+        "neue"
+      ],
       "answer": "neue",
       "case": "Nominativ feminin bestimmt",
       "example": {
@@ -237,6 +336,10 @@
         "German": "neu"
       },
       "prompt": "eine ___ Frau · neu",
+      "prompt_clean": "eine ___ Frau · neu",
+      "answers": [
+        "neue"
+      ],
       "answer": "neue",
       "case": "Nominativ feminin unbestimmt",
       "example": {
@@ -252,6 +355,10 @@
         "German": "neu"
       },
       "prompt": "das ___ Kind · neu",
+      "prompt_clean": "das ___ Kind · neu",
+      "answers": [
+        "neue"
+      ],
       "answer": "neue",
       "case": "Nominativ neutral bestimmt",
       "example": {
@@ -267,6 +374,10 @@
         "German": "neu"
       },
       "prompt": "ein ___ Kind · neu",
+      "prompt_clean": "ein ___ Kind · neu",
+      "answers": [
+        "neues"
+      ],
       "answer": "neues",
       "case": "Nominativ neutral unbestimmt",
       "example": {
@@ -282,10 +393,14 @@
         "German": "neu"
       },
       "prompt": "___ Freunde · neu",
+      "prompt_clean": "___ Freunde · neu",
+      "answers": [
+        "neue"
+      ],
       "answer": "neue",
       "case": "Plural ohne Artikel",
       "example": {
-        "de": "Gute Freunde helfen."
+        "de": "Neue Freunde helfen."
       }
     },
     {
@@ -297,10 +412,52 @@
         "German": "neu"
       },
       "prompt": "die ___ Freunde · neu",
+      "prompt_clean": "die ___ Freunde · neu",
+      "answers": [
+        "neuen"
+      ],
       "answer": "neuen",
       "case": "Plural bestimmt",
       "example": {
         "de": "Die neuen Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_neu_10",
+      "type": "adjective_declension",
+      "display": "mit einer neuen Frau",
+      "meaning": {
+        "English": "new",
+        "German": "neu"
+      },
+      "prompt": "mit einer ___ Frau · neu",
+      "prompt_clean": "mit einer ___ Frau · neu",
+      "answers": [
+        "neuen"
+      ],
+      "answer": "neuen",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer neuen Frau."
+      }
+    },
+    {
+      "id": "adj_neu_11",
+      "type": "adjective_declension",
+      "display": "ohne einen neuen Mann",
+      "meaning": {
+        "English": "new",
+        "German": "neu"
+      },
+      "prompt": "ohne einen ___ Mann · neu",
+      "prompt_clean": "ohne einen ___ Mann · neu",
+      "answers": [
+        "neuen"
+      ],
+      "answer": "neuen",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen neuen Mann."
       }
     },
     {
@@ -312,6 +469,10 @@
         "German": "alt"
       },
       "prompt": "der ___ Mann · alt",
+      "prompt_clean": "der ___ Mann · alt",
+      "answers": [
+        "alte"
+      ],
       "answer": "alte",
       "case": "Nominativ maskulin bestimmt",
       "example": {
@@ -327,6 +488,10 @@
         "German": "alt"
       },
       "prompt": "ein ___ Mann · alt",
+      "prompt_clean": "ein ___ Mann · alt",
+      "answers": [
+        "alter"
+      ],
       "answer": "alter",
       "case": "Nominativ maskulin unbestimmt",
       "example": {
@@ -342,6 +507,10 @@
         "German": "alt"
       },
       "prompt": "den ___ Mann · alt",
+      "prompt_clean": "den ___ Mann · alt",
+      "answers": [
+        "alten"
+      ],
       "answer": "alten",
       "case": "Akkusativ maskulin bestimmt",
       "example": {
@@ -357,6 +526,10 @@
         "German": "alt"
       },
       "prompt": "mit dem ___ Mann · alt",
+      "prompt_clean": "mit dem ___ Mann · alt",
+      "answers": [
+        "alten"
+      ],
       "answer": "alten",
       "case": "Dativ maskulin bestimmt",
       "example": {
@@ -372,6 +545,10 @@
         "German": "alt"
       },
       "prompt": "die ___ Frau · alt",
+      "prompt_clean": "die ___ Frau · alt",
+      "answers": [
+        "alte"
+      ],
       "answer": "alte",
       "case": "Nominativ feminin bestimmt",
       "example": {
@@ -387,6 +564,10 @@
         "German": "alt"
       },
       "prompt": "eine ___ Frau · alt",
+      "prompt_clean": "eine ___ Frau · alt",
+      "answers": [
+        "alte"
+      ],
       "answer": "alte",
       "case": "Nominativ feminin unbestimmt",
       "example": {
@@ -402,6 +583,10 @@
         "German": "alt"
       },
       "prompt": "das ___ Kind · alt",
+      "prompt_clean": "das ___ Kind · alt",
+      "answers": [
+        "alte"
+      ],
       "answer": "alte",
       "case": "Nominativ neutral bestimmt",
       "example": {
@@ -417,6 +602,10 @@
         "German": "alt"
       },
       "prompt": "ein ___ Kind · alt",
+      "prompt_clean": "ein ___ Kind · alt",
+      "answers": [
+        "altes"
+      ],
       "answer": "altes",
       "case": "Nominativ neutral unbestimmt",
       "example": {
@@ -432,10 +621,14 @@
         "German": "alt"
       },
       "prompt": "___ Freunde · alt",
+      "prompt_clean": "___ Freunde · alt",
+      "answers": [
+        "alte"
+      ],
       "answer": "alte",
       "case": "Plural ohne Artikel",
       "example": {
-        "de": "Gute Freunde helfen."
+        "de": "Alte Freunde helfen."
       }
     },
     {
@@ -447,10 +640,52 @@
         "German": "alt"
       },
       "prompt": "die ___ Freunde · alt",
+      "prompt_clean": "die ___ Freunde · alt",
+      "answers": [
+        "alten"
+      ],
       "answer": "alten",
       "case": "Plural bestimmt",
       "example": {
         "de": "Die alten Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_alt_10",
+      "type": "adjective_declension",
+      "display": "mit einer alten Frau",
+      "meaning": {
+        "English": "old",
+        "German": "alt"
+      },
+      "prompt": "mit einer ___ Frau · alt",
+      "prompt_clean": "mit einer ___ Frau · alt",
+      "answers": [
+        "alten"
+      ],
+      "answer": "alten",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer alten Frau."
+      }
+    },
+    {
+      "id": "adj_alt_11",
+      "type": "adjective_declension",
+      "display": "ohne einen alten Mann",
+      "meaning": {
+        "English": "old",
+        "German": "alt"
+      },
+      "prompt": "ohne einen ___ Mann · alt",
+      "prompt_clean": "ohne einen ___ Mann · alt",
+      "answers": [
+        "alten"
+      ],
+      "answer": "alten",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen alten Mann."
       }
     },
     {
@@ -462,6 +697,10 @@
         "German": "wichtig"
       },
       "prompt": "der ___ Mann · wichtig",
+      "prompt_clean": "der ___ Mann · wichtig",
+      "answers": [
+        "wichtige"
+      ],
       "answer": "wichtige",
       "case": "Nominativ maskulin bestimmt",
       "example": {
@@ -477,6 +716,10 @@
         "German": "wichtig"
       },
       "prompt": "ein ___ Mann · wichtig",
+      "prompt_clean": "ein ___ Mann · wichtig",
+      "answers": [
+        "wichtiger"
+      ],
       "answer": "wichtiger",
       "case": "Nominativ maskulin unbestimmt",
       "example": {
@@ -492,6 +735,10 @@
         "German": "wichtig"
       },
       "prompt": "den ___ Mann · wichtig",
+      "prompt_clean": "den ___ Mann · wichtig",
+      "answers": [
+        "wichtigen"
+      ],
       "answer": "wichtigen",
       "case": "Akkusativ maskulin bestimmt",
       "example": {
@@ -507,6 +754,10 @@
         "German": "wichtig"
       },
       "prompt": "mit dem ___ Mann · wichtig",
+      "prompt_clean": "mit dem ___ Mann · wichtig",
+      "answers": [
+        "wichtigen"
+      ],
       "answer": "wichtigen",
       "case": "Dativ maskulin bestimmt",
       "example": {
@@ -522,6 +773,10 @@
         "German": "wichtig"
       },
       "prompt": "die ___ Frau · wichtig",
+      "prompt_clean": "die ___ Frau · wichtig",
+      "answers": [
+        "wichtige"
+      ],
       "answer": "wichtige",
       "case": "Nominativ feminin bestimmt",
       "example": {
@@ -537,6 +792,10 @@
         "German": "wichtig"
       },
       "prompt": "eine ___ Frau · wichtig",
+      "prompt_clean": "eine ___ Frau · wichtig",
+      "answers": [
+        "wichtige"
+      ],
       "answer": "wichtige",
       "case": "Nominativ feminin unbestimmt",
       "example": {
@@ -552,6 +811,10 @@
         "German": "wichtig"
       },
       "prompt": "das ___ Kind · wichtig",
+      "prompt_clean": "das ___ Kind · wichtig",
+      "answers": [
+        "wichtige"
+      ],
       "answer": "wichtige",
       "case": "Nominativ neutral bestimmt",
       "example": {
@@ -567,6 +830,10 @@
         "German": "wichtig"
       },
       "prompt": "ein ___ Kind · wichtig",
+      "prompt_clean": "ein ___ Kind · wichtig",
+      "answers": [
+        "wichtiges"
+      ],
       "answer": "wichtiges",
       "case": "Nominativ neutral unbestimmt",
       "example": {
@@ -582,10 +849,14 @@
         "German": "wichtig"
       },
       "prompt": "___ Freunde · wichtig",
+      "prompt_clean": "___ Freunde · wichtig",
+      "answers": [
+        "wichtige"
+      ],
       "answer": "wichtige",
       "case": "Plural ohne Artikel",
       "example": {
-        "de": "Gute Freunde helfen."
+        "de": "Wichtige Freunde helfen."
       }
     },
     {
@@ -597,10 +868,52 @@
         "German": "wichtig"
       },
       "prompt": "die ___ Freunde · wichtig",
+      "prompt_clean": "die ___ Freunde · wichtig",
+      "answers": [
+        "wichtigen"
+      ],
       "answer": "wichtigen",
       "case": "Plural bestimmt",
       "example": {
         "de": "Die wichtigen Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_wichtig_10",
+      "type": "adjective_declension",
+      "display": "mit einer wichtigen Frau",
+      "meaning": {
+        "English": "important",
+        "German": "wichtig"
+      },
+      "prompt": "mit einer ___ Frau · wichtig",
+      "prompt_clean": "mit einer ___ Frau · wichtig",
+      "answers": [
+        "wichtigen"
+      ],
+      "answer": "wichtigen",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer wichtigen Frau."
+      }
+    },
+    {
+      "id": "adj_wichtig_11",
+      "type": "adjective_declension",
+      "display": "ohne einen wichtigen Mann",
+      "meaning": {
+        "English": "important",
+        "German": "wichtig"
+      },
+      "prompt": "ohne einen ___ Mann · wichtig",
+      "prompt_clean": "ohne einen ___ Mann · wichtig",
+      "answers": [
+        "wichtigen"
+      ],
+      "answer": "wichtigen",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen wichtigen Mann."
       }
     },
     {
@@ -612,6 +925,10 @@
         "German": "interessant"
       },
       "prompt": "der ___ Mann · interessant",
+      "prompt_clean": "der ___ Mann · interessant",
+      "answers": [
+        "interessante"
+      ],
       "answer": "interessante",
       "case": "Nominativ maskulin bestimmt",
       "example": {
@@ -627,6 +944,10 @@
         "German": "interessant"
       },
       "prompt": "ein ___ Mann · interessant",
+      "prompt_clean": "ein ___ Mann · interessant",
+      "answers": [
+        "interessanter"
+      ],
       "answer": "interessanter",
       "case": "Nominativ maskulin unbestimmt",
       "example": {
@@ -642,6 +963,10 @@
         "German": "interessant"
       },
       "prompt": "den ___ Mann · interessant",
+      "prompt_clean": "den ___ Mann · interessant",
+      "answers": [
+        "interessanten"
+      ],
       "answer": "interessanten",
       "case": "Akkusativ maskulin bestimmt",
       "example": {
@@ -657,6 +982,10 @@
         "German": "interessant"
       },
       "prompt": "mit dem ___ Mann · interessant",
+      "prompt_clean": "mit dem ___ Mann · interessant",
+      "answers": [
+        "interessanten"
+      ],
       "answer": "interessanten",
       "case": "Dativ maskulin bestimmt",
       "example": {
@@ -672,6 +1001,10 @@
         "German": "interessant"
       },
       "prompt": "die ___ Frau · interessant",
+      "prompt_clean": "die ___ Frau · interessant",
+      "answers": [
+        "interessante"
+      ],
       "answer": "interessante",
       "case": "Nominativ feminin bestimmt",
       "example": {
@@ -687,6 +1020,10 @@
         "German": "interessant"
       },
       "prompt": "eine ___ Frau · interessant",
+      "prompt_clean": "eine ___ Frau · interessant",
+      "answers": [
+        "interessante"
+      ],
       "answer": "interessante",
       "case": "Nominativ feminin unbestimmt",
       "example": {
@@ -702,6 +1039,10 @@
         "German": "interessant"
       },
       "prompt": "das ___ Kind · interessant",
+      "prompt_clean": "das ___ Kind · interessant",
+      "answers": [
+        "interessante"
+      ],
       "answer": "interessante",
       "case": "Nominativ neutral bestimmt",
       "example": {
@@ -717,6 +1058,10 @@
         "German": "interessant"
       },
       "prompt": "ein ___ Kind · interessant",
+      "prompt_clean": "ein ___ Kind · interessant",
+      "answers": [
+        "interessantes"
+      ],
       "answer": "interessantes",
       "case": "Nominativ neutral unbestimmt",
       "example": {
@@ -732,10 +1077,14 @@
         "German": "interessant"
       },
       "prompt": "___ Freunde · interessant",
+      "prompt_clean": "___ Freunde · interessant",
+      "answers": [
+        "interessante"
+      ],
       "answer": "interessante",
       "case": "Plural ohne Artikel",
       "example": {
-        "de": "Gute Freunde helfen."
+        "de": "Interessante Freunde helfen."
       }
     },
     {
@@ -747,10 +1096,52 @@
         "German": "interessant"
       },
       "prompt": "die ___ Freunde · interessant",
+      "prompt_clean": "die ___ Freunde · interessant",
+      "answers": [
+        "interessanten"
+      ],
       "answer": "interessanten",
       "case": "Plural bestimmt",
       "example": {
         "de": "Die interessanten Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_interessant_10",
+      "type": "adjective_declension",
+      "display": "mit einer interessanten Frau",
+      "meaning": {
+        "English": "interesting",
+        "German": "interessant"
+      },
+      "prompt": "mit einer ___ Frau · interessant",
+      "prompt_clean": "mit einer ___ Frau · interessant",
+      "answers": [
+        "interessanten"
+      ],
+      "answer": "interessanten",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer interessanten Frau."
+      }
+    },
+    {
+      "id": "adj_interessant_11",
+      "type": "adjective_declension",
+      "display": "ohne einen interessanten Mann",
+      "meaning": {
+        "English": "interesting",
+        "German": "interessant"
+      },
+      "prompt": "ohne einen ___ Mann · interessant",
+      "prompt_clean": "ohne einen ___ Mann · interessant",
+      "answers": [
+        "interessanten"
+      ],
+      "answer": "interessanten",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen interessanten Mann."
       }
     },
     {
@@ -762,6 +1153,10 @@
         "German": "schwierig"
       },
       "prompt": "der ___ Mann · schwierig",
+      "prompt_clean": "der ___ Mann · schwierig",
+      "answers": [
+        "schwierige"
+      ],
       "answer": "schwierige",
       "case": "Nominativ maskulin bestimmt",
       "example": {
@@ -777,6 +1172,10 @@
         "German": "schwierig"
       },
       "prompt": "ein ___ Mann · schwierig",
+      "prompt_clean": "ein ___ Mann · schwierig",
+      "answers": [
+        "schwieriger"
+      ],
       "answer": "schwieriger",
       "case": "Nominativ maskulin unbestimmt",
       "example": {
@@ -792,6 +1191,10 @@
         "German": "schwierig"
       },
       "prompt": "den ___ Mann · schwierig",
+      "prompt_clean": "den ___ Mann · schwierig",
+      "answers": [
+        "schwierigen"
+      ],
       "answer": "schwierigen",
       "case": "Akkusativ maskulin bestimmt",
       "example": {
@@ -807,6 +1210,10 @@
         "German": "schwierig"
       },
       "prompt": "mit dem ___ Mann · schwierig",
+      "prompt_clean": "mit dem ___ Mann · schwierig",
+      "answers": [
+        "schwierigen"
+      ],
       "answer": "schwierigen",
       "case": "Dativ maskulin bestimmt",
       "example": {
@@ -822,6 +1229,10 @@
         "German": "schwierig"
       },
       "prompt": "die ___ Frau · schwierig",
+      "prompt_clean": "die ___ Frau · schwierig",
+      "answers": [
+        "schwierige"
+      ],
       "answer": "schwierige",
       "case": "Nominativ feminin bestimmt",
       "example": {
@@ -837,6 +1248,10 @@
         "German": "schwierig"
       },
       "prompt": "eine ___ Frau · schwierig",
+      "prompt_clean": "eine ___ Frau · schwierig",
+      "answers": [
+        "schwierige"
+      ],
       "answer": "schwierige",
       "case": "Nominativ feminin unbestimmt",
       "example": {
@@ -852,6 +1267,10 @@
         "German": "schwierig"
       },
       "prompt": "das ___ Kind · schwierig",
+      "prompt_clean": "das ___ Kind · schwierig",
+      "answers": [
+        "schwierige"
+      ],
       "answer": "schwierige",
       "case": "Nominativ neutral bestimmt",
       "example": {
@@ -867,6 +1286,10 @@
         "German": "schwierig"
       },
       "prompt": "ein ___ Kind · schwierig",
+      "prompt_clean": "ein ___ Kind · schwierig",
+      "answers": [
+        "schwieriges"
+      ],
       "answer": "schwieriges",
       "case": "Nominativ neutral unbestimmt",
       "example": {
@@ -882,10 +1305,14 @@
         "German": "schwierig"
       },
       "prompt": "___ Freunde · schwierig",
+      "prompt_clean": "___ Freunde · schwierig",
+      "answers": [
+        "schwierige"
+      ],
       "answer": "schwierige",
       "case": "Plural ohne Artikel",
       "example": {
-        "de": "Gute Freunde helfen."
+        "de": "Schwierige Freunde helfen."
       }
     },
     {
@@ -897,10 +1324,394 @@
         "German": "schwierig"
       },
       "prompt": "die ___ Freunde · schwierig",
+      "prompt_clean": "die ___ Freunde · schwierig",
+      "answers": [
+        "schwierigen"
+      ],
       "answer": "schwierigen",
       "case": "Plural bestimmt",
       "example": {
         "de": "Die schwierigen Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_schwierig_10",
+      "type": "adjective_declension",
+      "display": "mit einer schwierigen Frau",
+      "meaning": {
+        "English": "difficult",
+        "German": "schwierig"
+      },
+      "prompt": "mit einer ___ Frau · schwierig",
+      "prompt_clean": "mit einer ___ Frau · schwierig",
+      "answers": [
+        "schwierigen"
+      ],
+      "answer": "schwierigen",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer schwierigen Frau."
+      }
+    },
+    {
+      "id": "adj_schwierig_11",
+      "type": "adjective_declension",
+      "display": "ohne einen schwierigen Mann",
+      "meaning": {
+        "English": "difficult",
+        "German": "schwierig"
+      },
+      "prompt": "ohne einen ___ Mann · schwierig",
+      "prompt_clean": "ohne einen ___ Mann · schwierig",
+      "answers": [
+        "schwierigen"
+      ],
+      "answer": "schwierigen",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen schwierigen Mann."
+      }
+    },
+    {
+      "id": "adj_freundlich_0",
+      "type": "adjective_declension",
+      "display": "der freundliche Mann",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "der ___ Mann · freundlich",
+      "prompt_clean": "der ___ Mann · freundlich",
+      "answers": [
+        "freundliche"
+      ],
+      "answer": "freundliche",
+      "case": "Nominativ maskulin bestimmt",
+      "example": {
+        "de": "Der freundliche Mann hilft."
+      }
+    },
+    {
+      "id": "adj_freundlich_1",
+      "type": "adjective_declension",
+      "display": "ein freundlicher Mann",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "ein ___ Mann · freundlich",
+      "prompt_clean": "ein ___ Mann · freundlich",
+      "answers": [
+        "freundlicher"
+      ],
+      "answer": "freundlicher",
+      "case": "Nominativ maskulin unbestimmt",
+      "example": {
+        "de": "Ein freundlicher Mann hilft."
+      }
+    },
+    {
+      "id": "adj_freundlich_2",
+      "type": "adjective_declension",
+      "display": "den freundlichen Mann",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "den ___ Mann · freundlich",
+      "prompt_clean": "den ___ Mann · freundlich",
+      "answers": [
+        "freundlichen"
+      ],
+      "answer": "freundlichen",
+      "case": "Akkusativ maskulin bestimmt",
+      "example": {
+        "de": "Ich sehe den freundlichen Mann."
+      }
+    },
+    {
+      "id": "adj_freundlich_3",
+      "type": "adjective_declension",
+      "display": "mit dem freundlichen Mann",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "mit dem ___ Mann · freundlich",
+      "prompt_clean": "mit dem ___ Mann · freundlich",
+      "answers": [
+        "freundlichen"
+      ],
+      "answer": "freundlichen",
+      "case": "Dativ maskulin bestimmt",
+      "example": {
+        "de": "Ich spreche mit dem freundlichen Mann."
+      }
+    },
+    {
+      "id": "adj_freundlich_4",
+      "type": "adjective_declension",
+      "display": "die freundliche Frau",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "die ___ Frau · freundlich",
+      "prompt_clean": "die ___ Frau · freundlich",
+      "answers": [
+        "freundliche"
+      ],
+      "answer": "freundliche",
+      "case": "Nominativ feminin bestimmt",
+      "example": {
+        "de": "Die freundliche Frau hilft."
+      }
+    },
+    {
+      "id": "adj_freundlich_5",
+      "type": "adjective_declension",
+      "display": "eine freundliche Frau",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "eine ___ Frau · freundlich",
+      "prompt_clean": "eine ___ Frau · freundlich",
+      "answers": [
+        "freundliche"
+      ],
+      "answer": "freundliche",
+      "case": "Nominativ feminin unbestimmt",
+      "example": {
+        "de": "Eine freundliche Frau hilft."
+      }
+    },
+    {
+      "id": "adj_freundlich_6",
+      "type": "adjective_declension",
+      "display": "das freundliche Kind",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "das ___ Kind · freundlich",
+      "prompt_clean": "das ___ Kind · freundlich",
+      "answers": [
+        "freundliche"
+      ],
+      "answer": "freundliche",
+      "case": "Nominativ neutral bestimmt",
+      "example": {
+        "de": "Das freundliche Kind spielt."
+      }
+    },
+    {
+      "id": "adj_freundlich_7",
+      "type": "adjective_declension",
+      "display": "ein freundliches Kind",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "ein ___ Kind · freundlich",
+      "prompt_clean": "ein ___ Kind · freundlich",
+      "answers": [
+        "freundliches"
+      ],
+      "answer": "freundliches",
+      "case": "Nominativ neutral unbestimmt",
+      "example": {
+        "de": "Ein freundliches Kind spielt."
+      }
+    },
+    {
+      "id": "adj_freundlich_8",
+      "type": "adjective_declension",
+      "display": "freundliche Freunde",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "___ Freunde · freundlich",
+      "prompt_clean": "___ Freunde · freundlich",
+      "answers": [
+        "freundliche"
+      ],
+      "answer": "freundliche",
+      "case": "Plural ohne Artikel",
+      "example": {
+        "de": "Freundliche Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_freundlich_9",
+      "type": "adjective_declension",
+      "display": "die freundlichen Freunde",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "die ___ Freunde · freundlich",
+      "prompt_clean": "die ___ Freunde · freundlich",
+      "answers": [
+        "freundlichen"
+      ],
+      "answer": "freundlichen",
+      "case": "Plural bestimmt",
+      "example": {
+        "de": "Die freundlichen Freunde helfen."
+      }
+    },
+    {
+      "id": "adj_freundlich_10",
+      "type": "adjective_declension",
+      "display": "mit einer freundlichen Frau",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "mit einer ___ Frau · freundlich",
+      "prompt_clean": "mit einer ___ Frau · freundlich",
+      "answers": [
+        "freundlichen"
+      ],
+      "answer": "freundlichen",
+      "case": "Dativ feminin unbestimmt",
+      "example": {
+        "de": "Ich spreche mit einer freundlichen Frau."
+      }
+    },
+    {
+      "id": "adj_freundlich_11",
+      "type": "adjective_declension",
+      "display": "ohne einen freundlichen Mann",
+      "meaning": {
+        "English": "friendly",
+        "German": "freundlich"
+      },
+      "prompt": "ohne einen ___ Mann · freundlich",
+      "prompt_clean": "ohne einen ___ Mann · freundlich",
+      "answers": [
+        "freundlichen"
+      ],
+      "answer": "freundlichen",
+      "case": "Akkusativ maskulin unbestimmt",
+      "example": {
+        "de": "Ich komme ohne einen freundlichen Mann."
+      }
+    },
+    {
+      "id": "adj_pünktlich_0",
+      "type": "adjective_declension",
+      "display": "der pünktliche Mann",
+      "meaning": {
+        "English": "punctual",
+        "German": "pünktlich"
+      },
+      "prompt": "der ___ Mann · pünktlich",
+      "prompt_clean": "der ___ Mann · pünktlich",
+      "answers": [
+        "pünktliche"
+      ],
+      "answer": "pünktliche",
+      "case": "Nominativ maskulin bestimmt",
+      "example": {
+        "de": "Der pünktliche Mann hilft."
+      }
+    },
+    {
+      "id": "adj_pünktlich_1",
+      "type": "adjective_declension",
+      "display": "ein pünktlicher Mann",
+      "meaning": {
+        "English": "punctual",
+        "German": "pünktlich"
+      },
+      "prompt": "ein ___ Mann · pünktlich",
+      "prompt_clean": "ein ___ Mann · pünktlich",
+      "answers": [
+        "pünktlicher"
+      ],
+      "answer": "pünktlicher",
+      "case": "Nominativ maskulin unbestimmt",
+      "example": {
+        "de": "Ein pünktlicher Mann hilft."
+      }
+    },
+    {
+      "id": "adj_pünktlich_2",
+      "type": "adjective_declension",
+      "display": "den pünktlichen Mann",
+      "meaning": {
+        "English": "punctual",
+        "German": "pünktlich"
+      },
+      "prompt": "den ___ Mann · pünktlich",
+      "prompt_clean": "den ___ Mann · pünktlich",
+      "answers": [
+        "pünktlichen"
+      ],
+      "answer": "pünktlichen",
+      "case": "Akkusativ maskulin bestimmt",
+      "example": {
+        "de": "Ich sehe den pünktlichen Mann."
+      }
+    },
+    {
+      "id": "adj_pünktlich_3",
+      "type": "adjective_declension",
+      "display": "mit dem pünktlichen Mann",
+      "meaning": {
+        "English": "punctual",
+        "German": "pünktlich"
+      },
+      "prompt": "mit dem ___ Mann · pünktlich",
+      "prompt_clean": "mit dem ___ Mann · pünktlich",
+      "answers": [
+        "pünktlichen"
+      ],
+      "answer": "pünktlichen",
+      "case": "Dativ maskulin bestimmt",
+      "example": {
+        "de": "Ich spreche mit dem pünktlichen Mann."
+      }
+    },
+    {
+      "id": "adj_pünktlich_4",
+      "type": "adjective_declension",
+      "display": "die pünktliche Frau",
+      "meaning": {
+        "English": "punctual",
+        "German": "pünktlich"
+      },
+      "prompt": "die ___ Frau · pünktlich",
+      "prompt_clean": "die ___ Frau · pünktlich",
+      "answers": [
+        "pünktliche"
+      ],
+      "answer": "pünktliche",
+      "case": "Nominativ feminin bestimmt",
+      "example": {
+        "de": "Die pünktliche Frau hilft."
+      }
+    },
+    {
+      "id": "adj_pünktlich_5",
+      "type": "adjective_declension",
+      "display": "eine pünktliche Frau",
+      "meaning": {
+        "English": "punctual",
+        "German": "pünktlich"
+      },
+      "prompt": "eine ___ Frau · pünktlich",
+      "prompt_clean": "eine ___ Frau · pünktlich",
+      "answers": [
+        "pünktliche"
+      ],
+      "answer": "pünktliche",
+      "case": "Nominativ feminin unbestimmt",
+      "example": {
+        "de": "Eine pünktliche Frau hilft."
       }
     }
   ]

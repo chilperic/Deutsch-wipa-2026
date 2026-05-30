@@ -1,7 +1,8 @@
 {
   "module": "praepositionen",
   "title": "Präpositionen",
-  "status": "active-expanded",
+  "status": "active-reviewed",
+  "quality_note": "Reviewed and regenerated to avoid known malformed examples and answer leakage.",
   "items": [
     {
       "id": "pr_mit_Dativ_0",
@@ -12,6 +13,10 @@
         "German": "mit"
       },
       "prompt": "Ich fahre ___ dem Bus.",
+      "prompt_clean": "Ich fahre ___ dem Bus.",
+      "answers": [
+        "mit"
+      ],
       "answer": "mit",
       "case": "Dativ",
       "example": {
@@ -27,6 +32,10 @@
         "German": "nach"
       },
       "prompt": "Ich fahre ___ Deutschland.",
+      "prompt_clean": "Ich fahre ___ Deutschland.",
+      "answers": [
+        "nach"
+      ],
       "answer": "nach",
       "case": "Dativ",
       "example": {
@@ -42,6 +51,10 @@
         "German": "aus"
       },
       "prompt": "Er kommt ___ Kamerun.",
+      "prompt_clean": "Er kommt ___ Kamerun.",
+      "answers": [
+        "aus"
+      ],
       "answer": "aus",
       "case": "Dativ",
       "example": {
@@ -57,6 +70,10 @@
         "German": "bei"
       },
       "prompt": "Ich wohne ___ meiner Schwester.",
+      "prompt_clean": "Ich wohne ___ meiner Schwester.",
+      "answers": [
+        "bei"
+      ],
       "answer": "bei",
       "case": "Dativ",
       "example": {
@@ -72,6 +89,10 @@
         "German": "von"
       },
       "prompt": "Das Geschenk ist ___ meinem Freund.",
+      "prompt_clean": "Das Geschenk ist ___ meinem Freund.",
+      "answers": [
+        "von"
+      ],
       "answer": "von",
       "case": "Dativ",
       "example": {
@@ -87,6 +108,10 @@
         "German": "zu"
       },
       "prompt": "Ich gehe ___ der Ärztin.",
+      "prompt_clean": "Ich gehe ___ der Ärztin.",
+      "answers": [
+        "zu"
+      ],
       "answer": "zu",
       "case": "Dativ",
       "example": {
@@ -102,6 +127,10 @@
         "German": "seit"
       },
       "prompt": "Ich lerne Deutsch ___ einem Jahr.",
+      "prompt_clean": "Ich lerne Deutsch ___ einem Jahr.",
+      "answers": [
+        "seit"
+      ],
       "answer": "seit",
       "case": "Dativ",
       "example": {
@@ -117,6 +146,10 @@
         "German": "gegenüber"
       },
       "prompt": "Die Bank liegt ___ dem Bahnhof.",
+      "prompt_clean": "Die Bank liegt ___ dem Bahnhof.",
+      "answers": [
+        "gegenüber"
+      ],
       "answer": "gegenüber",
       "case": "Dativ",
       "example": {
@@ -132,6 +165,10 @@
         "German": "für"
       },
       "prompt": "Das ist ___ dich.",
+      "prompt_clean": "Das ist ___ dich.",
+      "answers": [
+        "für"
+      ],
       "answer": "für",
       "case": "Akkusativ",
       "example": {
@@ -147,6 +184,10 @@
         "German": "durch"
       },
       "prompt": "Wir gehen ___ den Park.",
+      "prompt_clean": "Wir gehen ___ den Park.",
+      "answers": [
+        "durch"
+      ],
       "answer": "durch",
       "case": "Akkusativ",
       "example": {
@@ -162,6 +203,10 @@
         "German": "ohne"
       },
       "prompt": "Ich komme ___ meinen Bruder.",
+      "prompt_clean": "Ich komme ___ meinen Bruder.",
+      "answers": [
+        "ohne"
+      ],
       "answer": "ohne",
       "case": "Akkusativ",
       "example": {
@@ -177,6 +222,10 @@
         "German": "um"
       },
       "prompt": "Wir sitzen ___ den Tisch.",
+      "prompt_clean": "Wir sitzen ___ den Tisch.",
+      "answers": [
+        "um"
+      ],
       "answer": "um",
       "case": "Akkusativ",
       "example": {
@@ -192,6 +241,10 @@
         "German": "gegen"
       },
       "prompt": "Das Auto fährt ___ die Wand.",
+      "prompt_clean": "Das Auto fährt ___ die Wand.",
+      "answers": [
+        "gegen"
+      ],
       "answer": "gegen",
       "case": "Akkusativ",
       "example": {
@@ -207,6 +260,10 @@
         "German": "bis"
       },
       "prompt": "Ich bleibe ___ nächsten Montag.",
+      "prompt_clean": "Ich bleibe ___ nächsten Montag.",
+      "answers": [
+        "bis"
+      ],
       "answer": "bis",
       "case": "Akkusativ",
       "example": {
@@ -222,6 +279,10 @@
         "German": "entlang"
       },
       "prompt": "Wir gehen die Straße ___.",
+      "prompt_clean": "Wir gehen die Straße ___.",
+      "answers": [
+        "entlang"
+      ],
       "answer": "entlang",
       "case": "Akkusativ",
       "example": {
@@ -237,6 +298,10 @@
         "German": "wegen"
       },
       "prompt": "___ des Wetters bleiben wir zu Hause.",
+      "prompt_clean": "___ des Wetters bleiben wir zu Hause.",
+      "answers": [
+        "wegen"
+      ],
       "answer": "wegen",
       "case": "Genitiv",
       "example": {
@@ -252,6 +317,10 @@
         "German": "trotz"
       },
       "prompt": "___ des Regens gehen wir spazieren.",
+      "prompt_clean": "___ des Regens gehen wir spazieren.",
+      "answers": [
+        "trotz"
+      ],
       "answer": "trotz",
       "case": "Genitiv",
       "example": {
@@ -267,6 +336,10 @@
         "German": "während"
       },
       "prompt": "___ des Kurses sprechen wir Deutsch.",
+      "prompt_clean": "___ des Kurses sprechen wir Deutsch.",
+      "answers": [
+        "während"
+      ],
       "answer": "während",
       "case": "Genitiv",
       "example": {
@@ -282,6 +355,10 @@
         "German": "statt"
       },
       "prompt": "___ eines Kaffees trinke ich Tee.",
+      "prompt_clean": "___ eines Kaffees trinke ich Tee.",
+      "answers": [
+        "statt"
+      ],
       "answer": "statt",
       "case": "Genitiv",
       "example": {
@@ -297,6 +374,10 @@
         "German": "in"
       },
       "prompt": "Ich gehe ___ die Schule.",
+      "prompt_clean": "Ich gehe ___ die Schule.",
+      "answers": [
+        "in"
+      ],
       "answer": "in",
       "case": "Wechsel",
       "example": {
@@ -312,6 +393,10 @@
         "German": "an"
       },
       "prompt": "Ich hänge das Bild ___ die Wand.",
+      "prompt_clean": "Ich hänge das Bild ___ die Wand.",
+      "answers": [
+        "an"
+      ],
       "answer": "an",
       "case": "Wechsel",
       "example": {
@@ -327,6 +412,10 @@
         "German": "auf"
       },
       "prompt": "Ich lege das Buch ___ den Tisch.",
+      "prompt_clean": "Ich lege das Buch ___ den Tisch.",
+      "answers": [
+        "auf"
+      ],
       "answer": "auf",
       "case": "Wechsel",
       "example": {
@@ -342,6 +431,10 @@
         "German": "unter"
       },
       "prompt": "Die Tasche liegt ___ dem Tisch.",
+      "prompt_clean": "Die Tasche liegt ___ dem Tisch.",
+      "answers": [
+        "unter"
+      ],
       "answer": "unter",
       "case": "Wechsel",
       "example": {
@@ -357,6 +450,10 @@
         "German": "über"
       },
       "prompt": "Die Lampe hängt ___ dem Tisch.",
+      "prompt_clean": "Die Lampe hängt ___ dem Tisch.",
+      "answers": [
+        "über"
+      ],
       "answer": "über",
       "case": "Wechsel",
       "example": {
@@ -372,6 +469,10 @@
         "German": "vor"
       },
       "prompt": "Ich stelle mich ___ die Tür.",
+      "prompt_clean": "Ich stelle mich ___ die Tür.",
+      "answers": [
+        "vor"
+      ],
       "answer": "vor",
       "case": "Wechsel",
       "example": {
@@ -387,6 +488,10 @@
         "German": "hinter"
       },
       "prompt": "Das Auto steht ___ dem Haus.",
+      "prompt_clean": "Das Auto steht ___ dem Haus.",
+      "answers": [
+        "hinter"
+      ],
       "answer": "hinter",
       "case": "Wechsel",
       "example": {
@@ -402,6 +507,10 @@
         "German": "neben"
       },
       "prompt": "Ich setze mich ___ dich.",
+      "prompt_clean": "Ich setze mich ___ dich.",
+      "answers": [
+        "neben"
+      ],
       "answer": "neben",
       "case": "Wechsel",
       "example": {
@@ -417,6 +526,10 @@
         "German": "zwischen"
       },
       "prompt": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "prompt_clean": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "answers": [
+        "zwischen"
+      ],
       "answer": "zwischen",
       "case": "Wechsel",
       "example": {
@@ -432,6 +545,10 @@
         "German": "mit"
       },
       "prompt": "Ich fahre ___ dem Bus.",
+      "prompt_clean": "Ich fahre ___ dem Bus.",
+      "answers": [
+        "mit"
+      ],
       "answer": "mit",
       "case": "Dativ",
       "example": {
@@ -447,6 +564,10 @@
         "German": "nach"
       },
       "prompt": "Ich fahre ___ Deutschland.",
+      "prompt_clean": "Ich fahre ___ Deutschland.",
+      "answers": [
+        "nach"
+      ],
       "answer": "nach",
       "case": "Dativ",
       "example": {
@@ -462,6 +583,10 @@
         "German": "aus"
       },
       "prompt": "Er kommt ___ Kamerun.",
+      "prompt_clean": "Er kommt ___ Kamerun.",
+      "answers": [
+        "aus"
+      ],
       "answer": "aus",
       "case": "Dativ",
       "example": {
@@ -477,6 +602,10 @@
         "German": "bei"
       },
       "prompt": "Ich wohne ___ meiner Schwester.",
+      "prompt_clean": "Ich wohne ___ meiner Schwester.",
+      "answers": [
+        "bei"
+      ],
       "answer": "bei",
       "case": "Dativ",
       "example": {
@@ -492,6 +621,10 @@
         "German": "von"
       },
       "prompt": "Das Geschenk ist ___ meinem Freund.",
+      "prompt_clean": "Das Geschenk ist ___ meinem Freund.",
+      "answers": [
+        "von"
+      ],
       "answer": "von",
       "case": "Dativ",
       "example": {
@@ -507,6 +640,10 @@
         "German": "zu"
       },
       "prompt": "Ich gehe ___ der Ärztin.",
+      "prompt_clean": "Ich gehe ___ der Ärztin.",
+      "answers": [
+        "zu"
+      ],
       "answer": "zu",
       "case": "Dativ",
       "example": {
@@ -522,6 +659,10 @@
         "German": "seit"
       },
       "prompt": "Ich lerne Deutsch ___ einem Jahr.",
+      "prompt_clean": "Ich lerne Deutsch ___ einem Jahr.",
+      "answers": [
+        "seit"
+      ],
       "answer": "seit",
       "case": "Dativ",
       "example": {
@@ -537,6 +678,10 @@
         "German": "gegenüber"
       },
       "prompt": "Die Bank liegt ___ dem Bahnhof.",
+      "prompt_clean": "Die Bank liegt ___ dem Bahnhof.",
+      "answers": [
+        "gegenüber"
+      ],
       "answer": "gegenüber",
       "case": "Dativ",
       "example": {
@@ -552,6 +697,10 @@
         "German": "für"
       },
       "prompt": "Das ist ___ dich.",
+      "prompt_clean": "Das ist ___ dich.",
+      "answers": [
+        "für"
+      ],
       "answer": "für",
       "case": "Akkusativ",
       "example": {
@@ -567,6 +716,10 @@
         "German": "durch"
       },
       "prompt": "Wir gehen ___ den Park.",
+      "prompt_clean": "Wir gehen ___ den Park.",
+      "answers": [
+        "durch"
+      ],
       "answer": "durch",
       "case": "Akkusativ",
       "example": {
@@ -582,6 +735,10 @@
         "German": "ohne"
       },
       "prompt": "Ich komme ___ meinen Bruder.",
+      "prompt_clean": "Ich komme ___ meinen Bruder.",
+      "answers": [
+        "ohne"
+      ],
       "answer": "ohne",
       "case": "Akkusativ",
       "example": {
@@ -597,6 +754,10 @@
         "German": "um"
       },
       "prompt": "Wir sitzen ___ den Tisch.",
+      "prompt_clean": "Wir sitzen ___ den Tisch.",
+      "answers": [
+        "um"
+      ],
       "answer": "um",
       "case": "Akkusativ",
       "example": {
@@ -612,6 +773,10 @@
         "German": "gegen"
       },
       "prompt": "Das Auto fährt ___ die Wand.",
+      "prompt_clean": "Das Auto fährt ___ die Wand.",
+      "answers": [
+        "gegen"
+      ],
       "answer": "gegen",
       "case": "Akkusativ",
       "example": {
@@ -627,6 +792,10 @@
         "German": "bis"
       },
       "prompt": "Ich bleibe ___ nächsten Montag.",
+      "prompt_clean": "Ich bleibe ___ nächsten Montag.",
+      "answers": [
+        "bis"
+      ],
       "answer": "bis",
       "case": "Akkusativ",
       "example": {
@@ -642,6 +811,10 @@
         "German": "entlang"
       },
       "prompt": "Wir gehen die Straße ___.",
+      "prompt_clean": "Wir gehen die Straße ___.",
+      "answers": [
+        "entlang"
+      ],
       "answer": "entlang",
       "case": "Akkusativ",
       "example": {
@@ -657,6 +830,10 @@
         "German": "wegen"
       },
       "prompt": "___ des Wetters bleiben wir zu Hause.",
+      "prompt_clean": "___ des Wetters bleiben wir zu Hause.",
+      "answers": [
+        "wegen"
+      ],
       "answer": "wegen",
       "case": "Genitiv",
       "example": {
@@ -672,6 +849,10 @@
         "German": "trotz"
       },
       "prompt": "___ des Regens gehen wir spazieren.",
+      "prompt_clean": "___ des Regens gehen wir spazieren.",
+      "answers": [
+        "trotz"
+      ],
       "answer": "trotz",
       "case": "Genitiv",
       "example": {
@@ -687,6 +868,10 @@
         "German": "während"
       },
       "prompt": "___ des Kurses sprechen wir Deutsch.",
+      "prompt_clean": "___ des Kurses sprechen wir Deutsch.",
+      "answers": [
+        "während"
+      ],
       "answer": "während",
       "case": "Genitiv",
       "example": {
@@ -702,6 +887,10 @@
         "German": "statt"
       },
       "prompt": "___ eines Kaffees trinke ich Tee.",
+      "prompt_clean": "___ eines Kaffees trinke ich Tee.",
+      "answers": [
+        "statt"
+      ],
       "answer": "statt",
       "case": "Genitiv",
       "example": {
@@ -717,6 +906,10 @@
         "German": "in"
       },
       "prompt": "Ich gehe ___ die Schule.",
+      "prompt_clean": "Ich gehe ___ die Schule.",
+      "answers": [
+        "in"
+      ],
       "answer": "in",
       "case": "Wechsel",
       "example": {
@@ -732,6 +925,10 @@
         "German": "an"
       },
       "prompt": "Ich hänge das Bild ___ die Wand.",
+      "prompt_clean": "Ich hänge das Bild ___ die Wand.",
+      "answers": [
+        "an"
+      ],
       "answer": "an",
       "case": "Wechsel",
       "example": {
@@ -747,6 +944,10 @@
         "German": "auf"
       },
       "prompt": "Ich lege das Buch ___ den Tisch.",
+      "prompt_clean": "Ich lege das Buch ___ den Tisch.",
+      "answers": [
+        "auf"
+      ],
       "answer": "auf",
       "case": "Wechsel",
       "example": {
@@ -762,6 +963,10 @@
         "German": "unter"
       },
       "prompt": "Die Tasche liegt ___ dem Tisch.",
+      "prompt_clean": "Die Tasche liegt ___ dem Tisch.",
+      "answers": [
+        "unter"
+      ],
       "answer": "unter",
       "case": "Wechsel",
       "example": {
@@ -777,6 +982,10 @@
         "German": "über"
       },
       "prompt": "Die Lampe hängt ___ dem Tisch.",
+      "prompt_clean": "Die Lampe hängt ___ dem Tisch.",
+      "answers": [
+        "über"
+      ],
       "answer": "über",
       "case": "Wechsel",
       "example": {
@@ -792,6 +1001,10 @@
         "German": "vor"
       },
       "prompt": "Ich stelle mich ___ die Tür.",
+      "prompt_clean": "Ich stelle mich ___ die Tür.",
+      "answers": [
+        "vor"
+      ],
       "answer": "vor",
       "case": "Wechsel",
       "example": {
@@ -807,6 +1020,10 @@
         "German": "hinter"
       },
       "prompt": "Das Auto steht ___ dem Haus.",
+      "prompt_clean": "Das Auto steht ___ dem Haus.",
+      "answers": [
+        "hinter"
+      ],
       "answer": "hinter",
       "case": "Wechsel",
       "example": {
@@ -822,6 +1039,10 @@
         "German": "neben"
       },
       "prompt": "Ich setze mich ___ dich.",
+      "prompt_clean": "Ich setze mich ___ dich.",
+      "answers": [
+        "neben"
+      ],
       "answer": "neben",
       "case": "Wechsel",
       "example": {
@@ -837,6 +1058,10 @@
         "German": "zwischen"
       },
       "prompt": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "prompt_clean": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "answers": [
+        "zwischen"
+      ],
       "answer": "zwischen",
       "case": "Wechsel",
       "example": {
@@ -852,6 +1077,10 @@
         "German": "mit"
       },
       "prompt": "Ich fahre ___ dem Bus.",
+      "prompt_clean": "Ich fahre ___ dem Bus.",
+      "answers": [
+        "mit"
+      ],
       "answer": "mit",
       "case": "Dativ",
       "example": {
@@ -867,6 +1096,10 @@
         "German": "nach"
       },
       "prompt": "Ich fahre ___ Deutschland.",
+      "prompt_clean": "Ich fahre ___ Deutschland.",
+      "answers": [
+        "nach"
+      ],
       "answer": "nach",
       "case": "Dativ",
       "example": {
@@ -882,6 +1115,10 @@
         "German": "aus"
       },
       "prompt": "Er kommt ___ Kamerun.",
+      "prompt_clean": "Er kommt ___ Kamerun.",
+      "answers": [
+        "aus"
+      ],
       "answer": "aus",
       "case": "Dativ",
       "example": {
@@ -897,10 +1134,470 @@
         "German": "bei"
       },
       "prompt": "Ich wohne ___ meiner Schwester.",
+      "prompt_clean": "Ich wohne ___ meiner Schwester.",
+      "answers": [
+        "bei"
+      ],
       "answer": "bei",
       "case": "Dativ",
       "example": {
         "de": "Ich wohne bei meiner Schwester."
+      }
+    },
+    {
+      "id": "pr_von_Dativ_60",
+      "type": "preposition",
+      "display": "von + Dativ",
+      "meaning": {
+        "English": "from/of",
+        "German": "von"
+      },
+      "prompt": "Das Geschenk ist ___ meinem Freund.",
+      "prompt_clean": "Das Geschenk ist ___ meinem Freund.",
+      "answers": [
+        "von"
+      ],
+      "answer": "von",
+      "case": "Dativ",
+      "example": {
+        "de": "Das Geschenk ist von meinem Freund."
+      }
+    },
+    {
+      "id": "pr_zu_Dativ_61",
+      "type": "preposition",
+      "display": "zu + Dativ",
+      "meaning": {
+        "English": "to",
+        "German": "zu"
+      },
+      "prompt": "Ich gehe ___ der Ärztin.",
+      "prompt_clean": "Ich gehe ___ der Ärztin.",
+      "answers": [
+        "zu"
+      ],
+      "answer": "zu",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich gehe zu der Ärztin."
+      }
+    },
+    {
+      "id": "pr_seit_Dativ_62",
+      "type": "preposition",
+      "display": "seit + Dativ",
+      "meaning": {
+        "English": "since/for",
+        "German": "seit"
+      },
+      "prompt": "Ich lerne Deutsch ___ einem Jahr.",
+      "prompt_clean": "Ich lerne Deutsch ___ einem Jahr.",
+      "answers": [
+        "seit"
+      ],
+      "answer": "seit",
+      "case": "Dativ",
+      "example": {
+        "de": "Ich lerne Deutsch seit einem Jahr."
+      }
+    },
+    {
+      "id": "pr_gegenüber_Dativ_63",
+      "type": "preposition",
+      "display": "gegenüber + Dativ",
+      "meaning": {
+        "English": "opposite",
+        "German": "gegenüber"
+      },
+      "prompt": "Die Bank liegt ___ dem Bahnhof.",
+      "prompt_clean": "Die Bank liegt ___ dem Bahnhof.",
+      "answers": [
+        "gegenüber"
+      ],
+      "answer": "gegenüber",
+      "case": "Dativ",
+      "example": {
+        "de": "Die Bank liegt gegenüber dem Bahnhof."
+      }
+    },
+    {
+      "id": "pr_für_Akkusativ_64",
+      "type": "preposition",
+      "display": "für + Akkusativ",
+      "meaning": {
+        "English": "for",
+        "German": "für"
+      },
+      "prompt": "Das ist ___ dich.",
+      "prompt_clean": "Das ist ___ dich.",
+      "answers": [
+        "für"
+      ],
+      "answer": "für",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Das ist für dich."
+      }
+    },
+    {
+      "id": "pr_durch_Akkusativ_65",
+      "type": "preposition",
+      "display": "durch + Akkusativ",
+      "meaning": {
+        "English": "through",
+        "German": "durch"
+      },
+      "prompt": "Wir gehen ___ den Park.",
+      "prompt_clean": "Wir gehen ___ den Park.",
+      "answers": [
+        "durch"
+      ],
+      "answer": "durch",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir gehen durch den Park."
+      }
+    },
+    {
+      "id": "pr_ohne_Akkusativ_66",
+      "type": "preposition",
+      "display": "ohne + Akkusativ",
+      "meaning": {
+        "English": "without",
+        "German": "ohne"
+      },
+      "prompt": "Ich komme ___ meinen Bruder.",
+      "prompt_clean": "Ich komme ___ meinen Bruder.",
+      "answers": [
+        "ohne"
+      ],
+      "answer": "ohne",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich komme ohne meinen Bruder."
+      }
+    },
+    {
+      "id": "pr_um_Akkusativ_67",
+      "type": "preposition",
+      "display": "um + Akkusativ",
+      "meaning": {
+        "English": "around/at",
+        "German": "um"
+      },
+      "prompt": "Wir sitzen ___ den Tisch.",
+      "prompt_clean": "Wir sitzen ___ den Tisch.",
+      "answers": [
+        "um"
+      ],
+      "answer": "um",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir sitzen um den Tisch."
+      }
+    },
+    {
+      "id": "pr_gegen_Akkusativ_68",
+      "type": "preposition",
+      "display": "gegen + Akkusativ",
+      "meaning": {
+        "English": "against",
+        "German": "gegen"
+      },
+      "prompt": "Das Auto fährt ___ die Wand.",
+      "prompt_clean": "Das Auto fährt ___ die Wand.",
+      "answers": [
+        "gegen"
+      ],
+      "answer": "gegen",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Das Auto fährt gegen die Wand."
+      }
+    },
+    {
+      "id": "pr_bis_Akkusativ_69",
+      "type": "preposition",
+      "display": "bis + Akkusativ",
+      "meaning": {
+        "English": "until",
+        "German": "bis"
+      },
+      "prompt": "Ich bleibe ___ nächsten Montag.",
+      "prompt_clean": "Ich bleibe ___ nächsten Montag.",
+      "answers": [
+        "bis"
+      ],
+      "answer": "bis",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Ich bleibe bis nächsten Montag."
+      }
+    },
+    {
+      "id": "pr_entlang_Akkusativ_70",
+      "type": "preposition",
+      "display": "entlang + Akkusativ",
+      "meaning": {
+        "English": "along",
+        "German": "entlang"
+      },
+      "prompt": "Wir gehen die Straße ___.",
+      "prompt_clean": "Wir gehen die Straße ___.",
+      "answers": [
+        "entlang"
+      ],
+      "answer": "entlang",
+      "case": "Akkusativ",
+      "example": {
+        "de": "Wir gehen die Straße entlang."
+      }
+    },
+    {
+      "id": "pr_wegen_Genitiv_71",
+      "type": "preposition",
+      "display": "wegen + Genitiv",
+      "meaning": {
+        "English": "because of",
+        "German": "wegen"
+      },
+      "prompt": "___ des Wetters bleiben wir zu Hause.",
+      "prompt_clean": "___ des Wetters bleiben wir zu Hause.",
+      "answers": [
+        "wegen"
+      ],
+      "answer": "wegen",
+      "case": "Genitiv",
+      "example": {
+        "de": "wegen des Wetters bleiben wir zu Hause."
+      }
+    },
+    {
+      "id": "pr_trotz_Genitiv_72",
+      "type": "preposition",
+      "display": "trotz + Genitiv",
+      "meaning": {
+        "English": "despite",
+        "German": "trotz"
+      },
+      "prompt": "___ des Regens gehen wir spazieren.",
+      "prompt_clean": "___ des Regens gehen wir spazieren.",
+      "answers": [
+        "trotz"
+      ],
+      "answer": "trotz",
+      "case": "Genitiv",
+      "example": {
+        "de": "trotz des Regens gehen wir spazieren."
+      }
+    },
+    {
+      "id": "pr_während_Genitiv_73",
+      "type": "preposition",
+      "display": "während + Genitiv",
+      "meaning": {
+        "English": "during",
+        "German": "während"
+      },
+      "prompt": "___ des Kurses sprechen wir Deutsch.",
+      "prompt_clean": "___ des Kurses sprechen wir Deutsch.",
+      "answers": [
+        "während"
+      ],
+      "answer": "während",
+      "case": "Genitiv",
+      "example": {
+        "de": "während des Kurses sprechen wir Deutsch."
+      }
+    },
+    {
+      "id": "pr_statt_Genitiv_74",
+      "type": "preposition",
+      "display": "statt + Genitiv",
+      "meaning": {
+        "English": "instead of",
+        "German": "statt"
+      },
+      "prompt": "___ eines Kaffees trinke ich Tee.",
+      "prompt_clean": "___ eines Kaffees trinke ich Tee.",
+      "answers": [
+        "statt"
+      ],
+      "answer": "statt",
+      "case": "Genitiv",
+      "example": {
+        "de": "statt eines Kaffees trinke ich Tee."
+      }
+    },
+    {
+      "id": "pr_in_Wechsel_75",
+      "type": "preposition",
+      "display": "in + Wechsel",
+      "meaning": {
+        "English": "in/into",
+        "German": "in"
+      },
+      "prompt": "Ich gehe ___ die Schule.",
+      "prompt_clean": "Ich gehe ___ die Schule.",
+      "answers": [
+        "in"
+      ],
+      "answer": "in",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich gehe in die Schule."
+      }
+    },
+    {
+      "id": "pr_an_Wechsel_76",
+      "type": "preposition",
+      "display": "an + Wechsel",
+      "meaning": {
+        "English": "on/at",
+        "German": "an"
+      },
+      "prompt": "Ich hänge das Bild ___ die Wand.",
+      "prompt_clean": "Ich hänge das Bild ___ die Wand.",
+      "answers": [
+        "an"
+      ],
+      "answer": "an",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich hänge das Bild an die Wand."
+      }
+    },
+    {
+      "id": "pr_auf_Wechsel_77",
+      "type": "preposition",
+      "display": "auf + Wechsel",
+      "meaning": {
+        "English": "on",
+        "German": "auf"
+      },
+      "prompt": "Ich lege das Buch ___ den Tisch.",
+      "prompt_clean": "Ich lege das Buch ___ den Tisch.",
+      "answers": [
+        "auf"
+      ],
+      "answer": "auf",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich lege das Buch auf den Tisch."
+      }
+    },
+    {
+      "id": "pr_unter_Wechsel_78",
+      "type": "preposition",
+      "display": "unter + Wechsel",
+      "meaning": {
+        "English": "under",
+        "German": "unter"
+      },
+      "prompt": "Die Tasche liegt ___ dem Tisch.",
+      "prompt_clean": "Die Tasche liegt ___ dem Tisch.",
+      "answers": [
+        "unter"
+      ],
+      "answer": "unter",
+      "case": "Wechsel",
+      "example": {
+        "de": "Die Tasche liegt unter dem Tisch."
+      }
+    },
+    {
+      "id": "pr_über_Wechsel_79",
+      "type": "preposition",
+      "display": "über + Wechsel",
+      "meaning": {
+        "English": "above",
+        "German": "über"
+      },
+      "prompt": "Die Lampe hängt ___ dem Tisch.",
+      "prompt_clean": "Die Lampe hängt ___ dem Tisch.",
+      "answers": [
+        "über"
+      ],
+      "answer": "über",
+      "case": "Wechsel",
+      "example": {
+        "de": "Die Lampe hängt über dem Tisch."
+      }
+    },
+    {
+      "id": "pr_vor_Wechsel_80",
+      "type": "preposition",
+      "display": "vor + Wechsel",
+      "meaning": {
+        "English": "in front of",
+        "German": "vor"
+      },
+      "prompt": "Ich stelle mich ___ die Tür.",
+      "prompt_clean": "Ich stelle mich ___ die Tür.",
+      "answers": [
+        "vor"
+      ],
+      "answer": "vor",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich stelle mich vor die Tür."
+      }
+    },
+    {
+      "id": "pr_hinter_Wechsel_81",
+      "type": "preposition",
+      "display": "hinter + Wechsel",
+      "meaning": {
+        "English": "behind",
+        "German": "hinter"
+      },
+      "prompt": "Das Auto steht ___ dem Haus.",
+      "prompt_clean": "Das Auto steht ___ dem Haus.",
+      "answers": [
+        "hinter"
+      ],
+      "answer": "hinter",
+      "case": "Wechsel",
+      "example": {
+        "de": "Das Auto steht hinter dem Haus."
+      }
+    },
+    {
+      "id": "pr_neben_Wechsel_82",
+      "type": "preposition",
+      "display": "neben + Wechsel",
+      "meaning": {
+        "English": "next to",
+        "German": "neben"
+      },
+      "prompt": "Ich setze mich ___ dich.",
+      "prompt_clean": "Ich setze mich ___ dich.",
+      "answers": [
+        "neben"
+      ],
+      "answer": "neben",
+      "case": "Wechsel",
+      "example": {
+        "de": "Ich setze mich neben dich."
+      }
+    },
+    {
+      "id": "pr_zwischen_Wechsel_83",
+      "type": "preposition",
+      "display": "zwischen + Wechsel",
+      "meaning": {
+        "English": "between",
+        "German": "zwischen"
+      },
+      "prompt": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "prompt_clean": "Der Stuhl steht ___ dem Tisch und dem Bett.",
+      "answers": [
+        "zwischen"
+      ],
+      "answer": "zwischen",
+      "case": "Wechsel",
+      "example": {
+        "de": "Der Stuhl steht zwischen dem Tisch und dem Bett."
       }
     }
   ]
