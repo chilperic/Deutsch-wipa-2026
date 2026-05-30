@@ -85,21 +85,19 @@ responsive-embedded-review-2026-05-30
 ```
 
 
-## Fixed counts and choice flow
+## Instant embedded stable build
 
-This build fixes two user-facing problems:
+This build fixes the empty dashboard/loading issue.
 
 ```text
-1. Stale localStorage or failed JSON fetch could leave module cards showing 0 items.
-   Embedded fallback now replaces stale/smaller module data.
-
-2. Correct multiple-choice answers felt like a dead end.
-   Correct article/meaning choices now show feedback and auto-advance after a short delay.
-   Wrong or typed answers still require Continue.
+- Embedded data is applied before the first render.
+- Network fetch runs in the background and cannot block the app.
+- Empty JSON fetch results no longer overwrite embedded data.
+- Correct multiple-choice answers auto-advance after feedback.
 ```
 
 Build marker:
 
 ```text
-fixed-counts-and-choice-flow-2026-05-30
+instant-embedded-stable-2026-05-30
 ```

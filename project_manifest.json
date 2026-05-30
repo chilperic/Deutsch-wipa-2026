@@ -1,13 +1,13 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "fixed-counts-and-choice-flow-2026-05-30",
+  "build": "instant-embedded-stable-2026-05-30",
   "fixes": [
-    "Embedded fallback now replaces stale localStorage modules when embedded data has more items.",
-    "Initial render is delayed until loadAll finishes, preventing transient 0-item dashboard display.",
-    "Correct multiple-choice answers now show feedback and auto-advance after a short delay.",
-    "Selected choices are visually marked as correct/wrong.",
-    "Wrong answers and typed answers still use explicit Continue.",
-    "Quiz header score remains session score; module item counts are shown on dashboard cards."
+    "App now initializes from embedded data before rendering the dashboard.",
+    "Network fetch no longer blocks the interface.",
+    "JSON refresh runs in the background only.",
+    "loadVocab no longer overwrites embedded data with an empty result.",
+    "Correct multiple-choice answers show feedback and auto-advance.",
+    "Selected multiple-choice answers are visibly marked."
   ],
   "counts": {
     "kapitel1.json": 81,
