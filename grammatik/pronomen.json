@@ -21,6 +21,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich sehe mich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -40,6 +46,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich sehe dich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -59,6 +71,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich sehe ihn."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -78,6 +96,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich sehe sie."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -97,6 +121,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Ich sehe es."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -116,6 +146,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Er sieht uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -135,6 +171,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Er sieht euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -154,6 +196,12 @@
       "case": "Akkusativ",
       "example": {
         "de": "Er sieht sie."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -173,6 +221,12 @@
       "case": "Dativ",
       "example": {
         "de": "Das gehört mir."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -192,6 +246,12 @@
       "case": "Dativ",
       "example": {
         "de": "Das gehört dir."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -211,6 +271,12 @@
       "case": "Dativ",
       "example": {
         "de": "Ich helfe ihm."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -230,6 +296,12 @@
       "case": "Dativ",
       "example": {
         "de": "Ich helfe ihr."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -249,6 +321,12 @@
       "case": "Dativ",
       "example": {
         "de": "Ich helfe ihm."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -268,6 +346,12 @@
       "case": "Dativ",
       "example": {
         "de": "Er hilft uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -287,6 +371,12 @@
       "case": "Dativ",
       "example": {
         "de": "Er hilft euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -306,6 +396,12 @@
       "case": "Dativ",
       "example": {
         "de": "Er hilft ihnen."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -325,6 +421,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ich wäscht mich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -344,6 +446,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Du wäscht dich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -363,6 +471,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Er wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -382,6 +496,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -401,6 +521,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Wir wäscht uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -420,6 +546,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ihr wäscht euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -439,6 +571,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -458,6 +596,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ich wäscht mich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -477,6 +621,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Du wäscht dich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -496,6 +646,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Er wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -515,6 +671,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -534,6 +696,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Wir wäscht uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -553,6 +721,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ihr wäscht euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -572,6 +746,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -591,6 +771,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ich wäscht mich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -610,6 +796,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Du wäscht dich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -629,6 +821,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Er wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -648,6 +846,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -667,6 +871,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Wir wäscht uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -686,6 +896,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ihr wäscht euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -705,6 +921,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -724,6 +946,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ich wäscht mich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -743,6 +971,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Du wäscht dich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -762,6 +996,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Er wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -781,6 +1021,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -800,6 +1046,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Wir wäscht uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -819,6 +1071,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ihr wäscht euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -838,6 +1096,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -857,6 +1121,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ich wäscht mich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -876,6 +1146,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Du wäscht dich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -895,6 +1171,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Er wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -914,6 +1196,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -933,6 +1221,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Wir wäscht uns."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -952,6 +1246,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Ihr wäscht euch."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -971,6 +1271,12 @@
       "case": "Reflexiv",
       "example": {
         "de": "Sie wäscht sich."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -990,6 +1296,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1009,6 +1321,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1028,6 +1346,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1047,6 +1371,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1066,6 +1396,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1085,6 +1421,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1104,6 +1446,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1123,6 +1471,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1142,6 +1496,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1161,6 +1521,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1180,6 +1546,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1199,6 +1571,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1218,6 +1596,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1237,6 +1621,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1256,6 +1646,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1275,6 +1671,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1294,6 +1696,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1313,6 +1721,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1332,6 +1746,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1351,6 +1771,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1370,6 +1796,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1389,6 +1821,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1408,6 +1846,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1427,6 +1871,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1446,6 +1896,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1465,6 +1921,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1484,6 +1946,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1503,6 +1971,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1522,6 +1996,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Mein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1541,6 +2021,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Dein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1560,6 +2046,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Sein Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1579,6 +2071,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1598,6 +2096,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Unser Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1617,6 +2121,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Euer Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1636,6 +2146,12 @@
       "case": "Possessiv",
       "example": {
         "de": "Ihr Buch ist hier."
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     }
   ]

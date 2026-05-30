@@ -38,7 +38,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Prüfung, -en.",
+        "example_de": "Die Prüfung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: exam.",
           "Spanish": "La palabra de vocabulario de hoy es: examen.",
@@ -92,6 +92,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -128,7 +134,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: nähen.",
+        "example_de": "Ich kann „nähen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to sew.",
           "Spanish": "La palabra de vocabulario de hoy es: coser.",
@@ -178,6 +184,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -214,7 +226,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: handwerklich.",
+        "example_de": "Ich kann „handwerklich“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: manual / craft-related.",
           "Spanish": "La palabra de vocabulario de hoy es: manual / craft-related.",
@@ -264,6 +276,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -300,7 +328,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: geschickt sein.",
+        "example_de": "Ich kann „geschickt sein“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to be skillful.",
           "Spanish": "La palabra de vocabulario de hoy es: to be skillful.",
@@ -350,6 +378,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -386,7 +430,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: anerkennen.",
+        "example_de": "Ich kann „anerkennen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to recognize / acknowledge.",
           "Spanish": "La palabra de vocabulario de hoy es: reconocer.",
@@ -436,6 +480,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -472,7 +522,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: achten (auf + A.).",
+        "example_de": "Ich kann „achten (auf + A.)“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to pay attention to.",
           "Spanish": "La palabra de vocabulario de hoy es: prestar atención a.",
@@ -523,6 +573,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -559,7 +615,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: eröffnen.",
+        "example_de": "Ich kann „eröffnen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to open.",
           "Spanish": "La palabra de vocabulario de hoy es: to open.",
@@ -609,6 +665,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -645,7 +717,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Anschreiben, -.",
+        "example_de": "Das Anschreiben gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: cover letter.",
           "Spanish": "La palabra de vocabulario de hoy es: carta de presentación.",
@@ -699,6 +771,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -735,7 +813,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Zeugnis, -se.",
+        "example_de": "Das Zeugnis gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: certificate / report card.",
           "Spanish": "La palabra de vocabulario de hoy es: certificado / boletín.",
@@ -789,6 +867,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -825,7 +909,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Experte, -n.",
+        "example_de": "Ich benutze den Begriff „Experte“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: expert.",
           "Spanish": "La palabra de vocabulario de hoy es: experto.",
@@ -879,6 +963,14 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "French"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -915,7 +1007,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Davi und Olga suchen Arbeit». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Davi und Olga suchen Arbeit” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Expertin, -nen.",
+        "example_de": "Die Expertin ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: female expert.",
           "Spanish": "La palabra de vocabulario de hoy es: experta.",
@@ -969,6 +1061,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1005,7 +1103,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Dachdecker, -.",
+        "example_de": "Ich benutze den Begriff „Dachdecker“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: roofer.",
           "Spanish": "La palabra de vocabulario de hoy es: roofer.",
@@ -1059,6 +1157,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1095,7 +1209,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Dachdeckerin, -nen.",
+        "example_de": "Die Dachdeckerin ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: female roofer.",
           "Spanish": "La palabra de vocabulario de hoy es: female roofer.",
@@ -1149,6 +1263,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1185,7 +1315,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Schulabschluss, -e.",
+        "example_de": "Ich benutze den Begriff „Schulabschluss“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: school-leaving qualification.",
           "Spanish": "La palabra de vocabulario de hoy es: school-leaving qualification.",
@@ -1239,6 +1369,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1275,7 +1421,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Schneider, -.",
+        "example_de": "Ich benutze den Begriff „Schneider“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: tailor.",
           "Spanish": "La palabra de vocabulario de hoy es: tailor.",
@@ -1329,6 +1475,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1365,7 +1527,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Schneiderin, -nen.",
+        "example_de": "Die Schneiderin ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: female tailor.",
           "Spanish": "La palabra de vocabulario de hoy es: female tailor.",
@@ -1419,6 +1581,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1455,7 +1633,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: kreativ.",
+        "example_de": "Ich kann „kreativ“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: creative.",
           "Spanish": "La palabra de vocabulario de hoy es: creativo.",
@@ -1505,6 +1683,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1541,7 +1725,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: erfolgreich.",
+        "example_de": "Ich kann „erfolgreich“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: successful.",
           "Spanish": "La palabra de vocabulario de hoy es: exitoso.",
@@ -1591,6 +1775,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1627,7 +1817,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: reichen.",
+        "example_de": "Ich kann „reichen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to be enough / suffice.",
           "Spanish": "La palabra de vocabulario de hoy es: to be enough / suffice.",
@@ -1677,6 +1867,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1713,7 +1919,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Voraussetzung, -en.",
+        "example_de": "Die Voraussetzung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: requirement / prerequisite.",
           "Spanish": "La palabra de vocabulario de hoy es: requirement / prerequisite.",
@@ -1767,6 +1973,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1803,7 +2025,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: mindestens.",
+        "example_de": "Ich kann „mindestens“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: at least.",
           "Spanish": "La palabra de vocabulario de hoy es: at least.",
@@ -1853,6 +2075,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -1889,7 +2127,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Verantwortung.",
+        "example_de": "Die Verantwortung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: responsibility.",
           "Spanish": "La palabra de vocabulario de hoy es: responsabilidad.",
@@ -1942,6 +2180,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -1978,7 +2222,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: abwechslungsreich.",
+        "example_de": "Ich kann „abwechslungsreich“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: varied.",
           "Spanish": "La palabra de vocabulario de hoy es: varied.",
@@ -2028,6 +2272,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2064,7 +2324,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Fremdwort, -er.",
+        "example_de": "Das Fremdwort gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: foreign word / technical term.",
           "Spanish": "La palabra de vocabulario de hoy es: foreign word / technical term.",
@@ -2118,6 +2378,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2154,7 +2430,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Qualifikation, -en.",
+        "example_de": "Die Qualifikation ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: qualification.",
           "Spanish": "La palabra de vocabulario de hoy es: cualificación.",
@@ -2208,6 +2484,14 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "French"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2244,7 +2528,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Schichtarbeit.",
+        "example_de": "Die Schichtarbeit ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: shift work.",
           "Spanish": "La palabra de vocabulario de hoy es: trabajo por turnos.",
@@ -2297,6 +2581,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -2333,7 +2623,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Passt dieser Beruf zu mir?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Passt dieser Beruf zu mir?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: in Teilzeit arbeiten.",
+        "example_de": "Ich kann „in Teilzeit arbeiten“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to work part-time.",
           "Spanish": "La palabra de vocabulario de hoy es: to work part-time.",
@@ -2383,6 +2673,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2419,7 +2725,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Branche, -n.",
+        "example_de": "Die Branche ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: sector / industry.",
           "Spanish": "La palabra de vocabulario de hoy es: sector / industria.",
@@ -2473,6 +2779,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -2509,7 +2821,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Handel.",
+        "example_de": "Ich benutze den Begriff „Handel“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: trade / commerce.",
           "Spanish": "La palabra de vocabulario de hoy es: trade / commerce.",
@@ -2562,6 +2874,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2598,7 +2926,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Dienstleistung, -en.",
+        "example_de": "Die Dienstleistung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: service.",
           "Spanish": "La palabra de vocabulario de hoy es: servicio.",
@@ -2652,6 +2980,14 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "French"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2688,7 +3024,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Arbeitsplatz, -e.",
+        "example_de": "Ich benutze den Begriff „Arbeitsplatz“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: workplace / job.",
           "Spanish": "La palabra de vocabulario de hoy es: lugar de trabajo / empleo.",
@@ -2708,25 +3044,25 @@
           "article": "der",
           "base": "Arbeitsplatz",
           "plural_hint": "-e",
-          "plural": "die Arbeitsplatze"
+          "plural": "die Arbeitsplätze"
         },
         "translation_review": {
           "status": "complete-schema-draft",
           "note": "All required fields populated. Review machine-assisted translations and generic examples."
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with article and plural: der Arbeitsplatz → die Arbeitsplatze. Source plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Arbeitsplatz → die Arbeitsplatze. Pista de plural de la fuente: -e.",
-          "French": "Nom. Apprends-le avec l’article et le pluriel : der Arbeitsplatz → die Arbeitsplatze. Indication du pluriel dans la source : -e.",
-          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Arbeitsplatz → die Arbeitsplatze。資料の複数形ヒント：-e。",
-          "German": "Nomen. Lerne es mit Artikel und Plural: der Arbeitsplatz → die Arbeitsplatze. Pluralhinweis der Quelle: -e.",
-          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Arbeitsplatz → die Arbeitsplatze. 자료의 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Arbeitsplatz → die Arbeitsplatze. Indicazione del plurale dalla fonte: -e.",
-          "Chinese": "名词。请连同冠词和复数一起记：der Arbeitsplatz → die Arbeitsplatze。来源中的复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Arbeitsplatz → die Arbeitsplatze. Indicação de plural da fonte: -e.",
-          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Arbeitsplatz → die Arbeitsplatze. راهنمای جمع در منبع: -e.",
-          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Arbeitsplatz → die Arbeitsplatze. إشارة الجمع في المصدر: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Arbeitsplatz → die Arbeitsplatze. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
+          "English": "Noun. Learn it with article and plural: der Arbeitsplatz → die Arbeitsplätze. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Arbeitsplatz → die Arbeitsplätze. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Arbeitsplatz → die Arbeitsplätze. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Arbeitsplatz → die Arbeitsplätze。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Arbeitsplatz → die Arbeitsplätze. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Arbeitsplatz → die Arbeitsplätze. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Arbeitsplatz → die Arbeitsplätze. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Arbeitsplatz → die Arbeitsplätze。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Arbeitsplatz → die Arbeitsplätze. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Arbeitsplatz → die Arbeitsplätze. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Arbeitsplatz → die Arbeitsplätze. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Arbeitsplatz → die Arbeitsplätze. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -2742,6 +3078,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -2778,7 +3120,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: anspruchsvoll.",
+        "example_de": "Ich kann „anspruchsvoll“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: demanding.",
           "Spanish": "La palabra de vocabulario de hoy es: demanding.",
@@ -2828,6 +3170,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2864,7 +3222,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: selbstständig.",
+        "example_de": "Ich kann „selbstständig“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: self-employed / independent.",
           "Spanish": "La palabra de vocabulario de hoy es: self-employed / independent.",
@@ -2914,6 +3272,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -2950,7 +3324,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Karrierechance, -n.",
+        "example_de": "Die Karrierechance ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: career opportunity.",
           "Spanish": "La palabra de vocabulario de hoy es: career opportunity.",
@@ -3004,6 +3378,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3040,7 +3430,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Nachfrage, -n.",
+        "example_de": "Die Nachfrage ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: demand.",
           "Spanish": "La palabra de vocabulario de hoy es: demand.",
@@ -3094,6 +3484,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3130,7 +3536,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: sich fortbilden.",
+        "example_de": "Ich kann „sich fortbilden“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to continue training.",
           "Spanish": "La palabra de vocabulario de hoy es: to continue training.",
@@ -3180,6 +3586,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3216,7 +3638,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: unterstützen.",
+        "example_de": "Ich kann „unterstützen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to support.",
           "Spanish": "La palabra de vocabulario de hoy es: to support.",
@@ -3266,6 +3688,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3302,7 +3740,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Eine Ausbildung ist eine Herausforderung». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Eine Ausbildung ist eine Herausforderung” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: riskant.",
+        "example_de": "Ich kann „riskant“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: risky.",
           "Spanish": "La palabra de vocabulario de hoy es: risky.",
@@ -3352,6 +3790,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3388,7 +3842,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So arbeiten wir hier». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So arbeiten wir hier” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Ablauf, -e.",
+        "example_de": "Ich benutze den Begriff „Ablauf“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: process / sequence.",
           "Spanish": "La palabra de vocabulario de hoy es: process / sequence.",
@@ -3442,6 +3896,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3478,7 +3948,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So arbeiten wir hier». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So arbeiten wir hier” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Auftrag, -e.",
+        "example_de": "Ich benutze den Begriff „Auftrag“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: order / assignment.",
           "Spanish": "La palabra de vocabulario de hoy es: pedido / encargo.",
@@ -3498,25 +3968,25 @@
           "article": "der",
           "base": "Auftrag",
           "plural_hint": "-e",
-          "plural": "die Auftrage"
+          "plural": "die Aufträge"
         },
         "translation_review": {
           "status": "complete-schema-draft",
           "note": "All required fields populated. Review machine-assisted translations and generic examples."
         },
         "grammar_clarification": {
-          "English": "Noun. Learn it with article and plural: der Auftrag → die Auftrage. Source plural hint: -e.",
-          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Auftrag → die Auftrage. Pista de plural de la fuente: -e.",
-          "French": "Nom. Apprends-le avec l’article et le pluriel : der Auftrag → die Auftrage. Indication du pluriel dans la source : -e.",
-          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Auftrag → die Auftrage。資料の複数形ヒント：-e。",
-          "German": "Nomen. Lerne es mit Artikel und Plural: der Auftrag → die Auftrage. Pluralhinweis der Quelle: -e.",
-          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Auftrag → die Auftrage. 자료의 복수형 힌트: -e.",
-          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Auftrag → die Auftrage. Indicazione del plurale dalla fonte: -e.",
-          "Chinese": "名词。请连同冠词和复数一起记：der Auftrag → die Auftrage。来源中的复数提示：-e。",
-          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Auftrag → die Auftrage. Indicação de plural da fonte: -e.",
-          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Auftrag → die Auftrage. راهنمای جمع در منبع: -e.",
-          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Auftrag → die Auftrage. إشارة الجمع في المصدر: -e.",
-          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Auftrag → die Auftrage. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
+          "English": "Noun. Learn it with article and plural: der Auftrag → die Aufträge. Source plural hint: -e.",
+          "Spanish": "Sustantivo. Apréndelo con artículo y plural: der Auftrag → die Aufträge. Pista de plural de la fuente: -e.",
+          "French": "Nom. Apprends-le avec l’article et le pluriel : der Auftrag → die Aufträge. Indication du pluriel dans la source : -e.",
+          "Japanese": "名詞です。冠詞と複数形を一緒に覚える：der Auftrag → die Aufträge。資料の複数形ヒント：-e。",
+          "German": "Nomen. Lerne es mit Artikel und Plural: der Auftrag → die Aufträge. Pluralhinweis der Quelle: -e.",
+          "Korean": "명사입니다. 관사와 복수형을 함께 외우세요: der Auftrag → die Aufträge. 자료의 복수형 힌트: -e.",
+          "Italian": "Sostantivo. Imparalo con articolo e plurale: der Auftrag → die Aufträge. Indicazione del plurale dalla fonte: -e.",
+          "Chinese": "名词。请连同冠词和复数一起记：der Auftrag → die Aufträge。来源中的复数提示：-e。",
+          "Portuguese": "Substantivo. Aprenda com artigo e plural: der Auftrag → die Aufträge. Indicação de plural da fonte: -e.",
+          "Persian": "اسم است. آن را با آرتیکل و جمع یاد بگیر: der Auftrag → die Aufträge. راهنمای جمع در منبع: -e.",
+          "Arabic": "اسم. احفظه مع الأداة وصيغة الجمع: der Auftrag → die Aufträge. إشارة الجمع في المصدر: -e.",
+          "Thai": "คำนาม ควรจำพร้อม article และรูปพหูพจน์: der Auftrag → die Aufträge. คำใบ้พหูพจน์จากแหล่งข้อมูล: -e."
         },
         "usage_note": {
           "English": "Use this item in short oral and written recall exercises.",
@@ -3532,6 +4002,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -3568,7 +4044,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So arbeiten wir hier». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So arbeiten wir hier” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Auftragsbuch, -er.",
+        "example_de": "Das Auftragsbuch gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: order book.",
           "Spanish": "La palabra de vocabulario de hoy es: order book.",
@@ -3622,6 +4098,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3658,7 +4150,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So arbeiten wir hier». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So arbeiten wir hier” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Ware, -n.",
+        "example_de": "Die Ware ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: goods.",
           "Spanish": "La palabra de vocabulario de hoy es: mercancía.",
@@ -3712,6 +4204,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -3748,7 +4246,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So arbeiten wir hier». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So arbeiten wir hier” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: ausfüllen.",
+        "example_de": "Ich kann „ausfüllen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to fill in.",
           "Spanish": "La palabra de vocabulario de hoy es: to fill in.",
@@ -3798,6 +4296,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3834,7 +4348,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: kürzen.",
+        "example_de": "Ich kann „kürzen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to shorten.",
           "Spanish": "La palabra de vocabulario de hoy es: to shorten.",
@@ -3884,6 +4398,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -3920,7 +4450,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: verlängern.",
+        "example_de": "Ich kann „verlängern“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to extend.",
           "Spanish": "La palabra de vocabulario de hoy es: to extend.",
@@ -3970,6 +4500,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4006,7 +4552,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Vereinbarung, -en.",
+        "example_de": "Die Vereinbarung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: agreement.",
           "Spanish": "La palabra de vocabulario de hoy es: acuerdo.",
@@ -4060,6 +4606,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -4096,7 +4648,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: erledigen.",
+        "example_de": "Ich kann „erledigen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to complete / deal with.",
           "Spanish": "La palabra de vocabulario de hoy es: to complete / deal with.",
@@ -4146,6 +4698,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4182,7 +4750,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Reklamation, -en.",
+        "example_de": "Die Reklamation ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: complaint.",
           "Spanish": "La palabra de vocabulario de hoy es: reclamación / queja.",
@@ -4236,6 +4804,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -4272,7 +4846,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: vorbeikommen.",
+        "example_de": "Ich kann „vorbeikommen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to come by.",
           "Spanish": "La palabra de vocabulario de hoy es: to come by.",
@@ -4322,6 +4896,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4358,7 +4948,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Neue Aufträge». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Neue Aufträge” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: verschieben.",
+        "example_de": "Ich kann „verschieben“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to postpone / move.",
           "Spanish": "La palabra de vocabulario de hoy es: to postpone / move.",
@@ -4408,6 +4998,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4444,7 +5050,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Reihenfolge, -n.",
+        "example_de": "Die Reihenfolge ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: order / sequence.",
           "Spanish": "La palabra de vocabulario de hoy es: order / sequence.",
@@ -4498,6 +5104,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4534,7 +5156,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: erneuern.",
+        "example_de": "Ich kann „erneuern“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to renew.",
           "Spanish": "La palabra de vocabulario de hoy es: to renew.",
@@ -4584,6 +5206,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4620,7 +5258,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Knopf, -e.",
+        "example_de": "Ich benutze den Begriff „Knopf“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: button.",
           "Spanish": "La palabra de vocabulario de hoy es: button.",
@@ -4674,6 +5312,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4710,7 +5364,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: auswechseln.",
+        "example_de": "Ich kann „auswechseln“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to replace.",
           "Spanish": "La palabra de vocabulario de hoy es: to replace.",
@@ -4760,6 +5414,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4796,7 +5466,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: dringend.",
+        "example_de": "Ich kann „dringend“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: urgent.",
           "Spanish": "La palabra de vocabulario de hoy es: urgente.",
@@ -4846,6 +5516,14 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "French"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4882,7 +5560,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Arbeitsauftrag, -e.",
+        "example_de": "Ich benutze den Begriff „Arbeitsauftrag“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: work order.",
           "Spanish": "La palabra de vocabulario de hoy es: work order.",
@@ -4936,6 +5614,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -4972,7 +5666,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: annehmen.",
+        "example_de": "Ich kann „annehmen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to accept.",
           "Spanish": "La palabra de vocabulario de hoy es: to accept.",
@@ -5022,6 +5716,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5058,7 +5768,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: ablehnen.",
+        "example_de": "Ich kann „ablehnen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to reject.",
           "Spanish": "La palabra de vocabulario de hoy es: to reject.",
@@ -5108,6 +5818,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5144,7 +5870,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Priorität, -en.",
+        "example_de": "Die Priorität ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: priority.",
           "Spanish": "La palabra de vocabulario de hoy es: prioridad.",
@@ -5198,6 +5924,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -5234,7 +5966,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: überprüfen.",
+        "example_de": "Ich kann „überprüfen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to check / verify.",
           "Spanish": "La palabra de vocabulario de hoy es: to check / verify.",
@@ -5284,6 +6016,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5320,7 +6068,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Nachbestellung, -en.",
+        "example_de": "Die Nachbestellung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: repeat order / reorder.",
           "Spanish": "La palabra de vocabulario de hoy es: repeat order / reorder.",
@@ -5374,6 +6122,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5410,7 +6174,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: nachbestellen.",
+        "example_de": "Ich kann „nachbestellen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to reorder.",
           "Spanish": "La palabra de vocabulario de hoy es: to reorder.",
@@ -5460,6 +6224,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5496,7 +6276,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: eine Anfrage beantworten.",
+        "example_de": "Ich kann „eine Anfrage beantworten“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to answer an inquiry.",
           "Spanish": "La palabra de vocabulario de hoy es: to answer an inquiry.",
@@ -5546,6 +6326,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5582,7 +6378,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Was ist am dringendsten?». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Was ist am dringendsten?” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: benachrichtigen.",
+        "example_de": "Ich kann „benachrichtigen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to notify.",
           "Spanish": "La palabra de vocabulario de hoy es: to notify.",
@@ -5632,6 +6428,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5668,7 +6480,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Stoff, -e.",
+        "example_de": "Ich benutze den Begriff „Stoff“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: fabric / material.",
           "Spanish": "La palabra de vocabulario de hoy es: fabric / material.",
@@ -5722,6 +6534,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5758,7 +6586,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Missverständnis, -se.",
+        "example_de": "Das Missverständnis gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: misunderstanding.",
           "Spanish": "La palabra de vocabulario de hoy es: misunderstanding.",
@@ -5812,6 +6640,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -5848,7 +6692,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Beschwerde, -n.",
+        "example_de": "Die Beschwerde ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: complaint.",
           "Spanish": "La palabra de vocabulario de hoy es: reclamación / queja.",
@@ -5902,6 +6746,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -5938,7 +6788,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: reagieren (auf + A.).",
+        "example_de": "Ich kann „reagieren (auf + A.)“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to react to.",
           "Spanish": "La palabra de vocabulario de hoy es: to react to.",
@@ -5989,6 +6839,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6025,7 +6891,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: eine Arbeit ausführen.",
+        "example_de": "Ich kann „eine Arbeit ausführen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to carry out a job.",
           "Spanish": "La palabra de vocabulario de hoy es: to carry out a job.",
@@ -6075,6 +6941,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6111,7 +6993,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: fortsetzen.",
+        "example_de": "Ich kann „fortsetzen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to continue.",
           "Spanish": "La palabra de vocabulario de hoy es: to continue.",
@@ -6161,6 +7043,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6197,7 +7095,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «So habe ich mir das nicht vorgestellt». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “So habe ich mir das nicht vorgestellt” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Ersatz.",
+        "example_de": "Ich benutze den Begriff „Ersatz“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: replacement / substitute.",
           "Spanish": "La palabra de vocabulario de hoy es: replacement / substitute.",
@@ -6250,6 +7148,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6286,7 +7200,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Unternehmen, -.",
+        "example_de": "Das Unternehmen gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: company.",
           "Spanish": "La palabra de vocabulario de hoy es: empresa.",
@@ -6340,6 +7254,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -6376,7 +7296,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: innovativ.",
+        "example_de": "Ich kann „innovativ“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: innovative.",
           "Spanish": "La palabra de vocabulario de hoy es: innovative.",
@@ -6426,6 +7346,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6462,7 +7398,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: der Bewerber, -.",
+        "example_de": "Ich benutze den Begriff „Bewerber“ in einem Satz.",
         "example_translated": {
           "English": "Today's vocabulary item is: applicant.",
           "Spanish": "La palabra de vocabulario de hoy es: solicitante / candidato.",
@@ -6516,6 +7452,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -6552,7 +7494,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Bewerberin, -nen.",
+        "example_de": "Die Bewerberin ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: female applicant.",
           "Spanish": "La palabra de vocabulario de hoy es: candidata.",
@@ -6606,6 +7548,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     },
     {
@@ -6642,7 +7590,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: betreuen.",
+        "example_de": "Ich kann „betreuen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to support / look after.",
           "Spanish": "La palabra de vocabulario de hoy es: to support / look after.",
@@ -6692,6 +7640,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6728,7 +7692,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Gemeinsamkeit, -en.",
+        "example_de": "Die Gemeinsamkeit ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: commonality.",
           "Spanish": "La palabra de vocabulario de hoy es: commonality.",
@@ -6782,6 +7746,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6818,7 +7798,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Station, -en.",
+        "example_de": "Die Station ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: station / stage.",
           "Spanish": "La palabra de vocabulario de hoy es: station / stage.",
@@ -6872,6 +7852,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6908,7 +7904,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: ankommen (auf + A.).",
+        "example_de": "Ich kann „ankommen (auf + A.)“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to depend on.",
           "Spanish": "La palabra de vocabulario de hoy es: to depend on.",
@@ -6959,6 +7955,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -6995,7 +8007,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Zusage, -n.",
+        "example_de": "Die Zusage ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: acceptance / confirmation.",
           "Spanish": "La palabra de vocabulario de hoy es: acceptance / confirmation.",
@@ -7049,6 +8061,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7085,7 +8113,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Haltestelle A». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Haltestelle A” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: verpflichtet sein (zu + D.).",
+        "example_de": "Ich kann „verpflichtet sein (zu + D.)“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to be obliged to.",
           "Spanish": "La palabra de vocabulario de hoy es: to be obliged to.",
@@ -7136,6 +8164,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7172,7 +8216,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: chronologisch.",
+        "example_de": "Ich kann „chronologisch“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: chronological.",
           "Spanish": "La palabra de vocabulario de hoy es: chronological.",
@@ -7222,6 +8266,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7258,7 +8318,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: dokumentieren.",
+        "example_de": "Ich kann „dokumentieren“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to document.",
           "Spanish": "La palabra de vocabulario de hoy es: to document.",
@@ -7308,6 +8368,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7344,7 +8420,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Zusatzqualifikation, -en.",
+        "example_de": "Die Zusatzqualifikation ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: additional qualification.",
           "Spanish": "La palabra de vocabulario de hoy es: additional qualification.",
@@ -7398,6 +8474,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7434,7 +8526,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Diskriminierung, -en.",
+        "example_de": "Die Diskriminierung ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: discrimination.",
           "Spanish": "La palabra de vocabulario de hoy es: discrimination.",
@@ -7488,6 +8580,23 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "French",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7524,7 +8633,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: angeben.",
+        "example_de": "Ich kann „angeben“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to state / indicate.",
           "Spanish": "La palabra de vocabulario de hoy es: to state / indicate.",
@@ -7574,6 +8683,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7610,7 +8735,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Pflicht, -en.",
+        "example_de": "Die Pflicht ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: duty / obligation.",
           "Spanish": "La palabra de vocabulario de hoy es: duty / obligation.",
@@ -7664,6 +8789,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7700,7 +8841,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: einführen.",
+        "example_de": "Ich kann „einführen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to introduce.",
           "Spanish": "La palabra de vocabulario de hoy es: to introduce.",
@@ -7750,6 +8891,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7786,7 +8943,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Dokument, -e.",
+        "example_de": "Das Dokument gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: document.",
           "Spanish": "La palabra de vocabulario de hoy es: documento.",
@@ -7840,6 +8997,14 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "French"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7876,7 +9041,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: verweisen.",
+        "example_de": "Ich kann „verweisen“ in einem eigenen Satz verwenden.",
         "example_translated": {
           "English": "Today's vocabulary item is: to refer.",
           "Spanish": "La palabra de vocabulario de hoy es: to refer.",
@@ -7926,6 +9091,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -7962,7 +9143,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Lücke, -n.",
+        "example_de": "Die Lücke ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: gap.",
           "Spanish": "La palabra de vocabulario de hoy es: gap.",
@@ -8016,6 +9197,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -8052,7 +9249,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: das Stichwort, -er.",
+        "example_de": "Das Stichwort gehört zu diesem Thema.",
         "example_translated": {
           "English": "Today's vocabulary item is: keyword / cue word.",
           "Spanish": "La palabra de vocabulario de hoy es: keyword / cue word.",
@@ -8106,6 +9303,22 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": true,
+        "placeholder_equal_to_english": [
+          "Spanish",
+          "Japanese",
+          "Korean",
+          "Italian",
+          "Chinese",
+          "Portuguese",
+          "Persian",
+          "Arabic",
+          "Thai"
+        ],
+        "status": "needs-human-review"
       }
     },
     {
@@ -8142,7 +9355,7 @@
           "Arabic": "تنتمي هذه المفردة إلى الفصل الثاني، قسم «Kapitel 2 continuation». ركّز على المعنى والسلوك النحوي والإنتاج النشط.",
           "Thai": "คำนี้อยู่ในบทที่ 2 หัวข้อ “Kapitel 2 continuation” ให้เน้นความหมาย พฤติกรรมทางไวยากรณ์ และการผลิตภาษาแบบ active."
         },
-        "example_de": "Das Lernwort heute ist: die Vorlage, -n.",
+        "example_de": "Die Vorlage ist in dieser Situation wichtig.",
         "example_translated": {
           "English": "Today's vocabulary item is: template.",
           "Spanish": "La palabra de vocabulario de hoy es: plantilla.",
@@ -8196,6 +9409,12 @@
           "Arabic": "استخدم هذه المفردة في تمارين قصيرة شفهية وكتابية للاسترجاع.",
           "Thai": "ใช้คำนี้ในแบบฝึกหัดสั้น ๆ ทั้งพูดและเขียน."
         }
+      },
+      "translation_review": {
+        "machine_assisted": true,
+        "needs_human_review": false,
+        "placeholder_equal_to_english": [],
+        "status": "usable"
       }
     }
   ],

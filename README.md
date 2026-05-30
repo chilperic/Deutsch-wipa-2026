@@ -1,47 +1,22 @@
-# Deutsch WIPA 2026 · Quality Redesign Build
+# Deutsch WIPA 2026 · UX and Content Repair Build
 
-This build is a learner-only German training app with corrected grammar data and a redesigned interface.
+This build implements the critique-driven corrections.
 
-## Main corrections
-
-```text
-- Admin/developer UI removed.
-- New color system and layout.
-- Answer leakage reduced: recall screens hide the target answer.
-- Corrected adjective declension examples.
-- Corrected strong-verb Partizip II answers.
-- Corrected V2 word order in generated Kasusergänzungen examples.
-- Added skill-level progress keys.
-- Added dev/quality_check.py for quality control.
-```
-
-## Module counts
-
-```json
-{
-  "praepositionalverben.json": 141,
-  "kasusergaenzungen.json": 90,
-  "starke_verben.json": 100,
-  "trennbare_verben.json": 90,
-  "praepositionen.json": 84,
-  "nomen_artikel_plural.json": 72,
-  "adjektivdeklination.json": 90,
-  "pronomen.json": 86,
-  "konnektoren_nebensaetze.json": 90
-}
-```
-
-## Run locally
-
-```bash
-cd Deutsch-wipa-2026_structured
-python3 -m http.server 8000
-```
-
-Open:
+## Main fixes
 
 ```text
-http://localhost:8000
+- Removed the Phone/Computer debug toggle from production UI.
+- Kept automatic responsive phone layout via CSS.
+- Added four color themes: Midnight, Paper, Forest, Berry.
+- Improved dropdown contrast and touch targets.
+- Added SRS progress export/import.
+- Added embedded fallback data so modules should not show 0 items.
+- Added translation coverage warnings.
+- Flagged placeholder translations where non-English values equal English.
+- Fixed obvious umlaut plural errors.
+- Replaced detectable placeholder example sentences.
+- Added ARIA labels and ✓/✗ feedback signs.
+- Added a 3-column grid breakpoint for mid-width laptops.
 ```
 
 ## Checks
@@ -51,35 +26,32 @@ node --check dev/script_check.js
 python3 dev/quality_check.py
 ```
 
-Expected build marker:
-
-```js
-window.VOKABULAR_BUILD
-```
+## Build marker
 
 ```text
-quality-redesign-reviewed-2026-05-29
+ux-content-repair-final-2026-05-30
 ```
 
+## Counts
 
-## Responsive embedded review build
-
-This build addresses the deployed screenshot issue where modules displayed `0 items`.
-
-Changes:
-
-```text
-- Phone / Computer view selector
-- Four themes: Midnight, Paper, Forest, Berry
-- Improved dropdown contrast and touch size
-- Mobile bottom action bar
-- Embedded data fallback inside index.html
+```json
+{
+  "kapitel1.json": 81,
+  "kapitel2.json": 93,
+  "kapitel3.json": 76,
+  "kapitel4.json": 67,
+  "adjektivdeklination.json": 90,
+  "kasusergaenzungen.json": 90,
+  "konnektoren_nebensaetze.json": 90,
+  "nomen_artikel_plural.json": 72,
+  "praepositionalverben.json": 141,
+  "praepositionen.json": 84,
+  "pronomen.json": 86,
+  "starke_verben.json": 100,
+  "trennbare_verben.json": 90
+}
 ```
 
-The embedded fallback means the app can still show learning items even if GitHub Pages fails to fetch the JSON files from `vokabular/` or `grammatik/`.
+## Known limitation
 
-Build marker:
-
-```text
-responsive-embedded-review-2026-05-30
-```
+The app now flags weak translation coverage, but flagged entries still need proper human translation. A validator can catch placeholders; it cannot produce guaranteed high-quality Korean, Thai, Arabic, Persian, Chinese, etc. translations automatically.
