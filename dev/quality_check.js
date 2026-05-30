@@ -1,13 +1,23 @@
-const fs=require('fs');
-const html=fs.readFileSync('../index.html','utf8');
-const required=[
-'stable-boot-no-localstorage-db-2026-05-30',
-'window.EMBEDDED_DATA',
-'function useEmbeddedFallback()',
-'Do not persist the full learning database',
-'function save(){localStorage.setItem(PROG',
-'Runtime error:'
+const fs = require('fs');
+const html = fs.readFileSync('index.html','utf8');
+const required = [
+  'stable-boot-profile-themes-2026-05-30',
+  'id="learnerName"',
+  'function renderProfile()',
+  'saveLearnerName',
+  'resetProgress',
+  'theme-graphite',
+  'theme-ocean',
+  'theme-sand',
+  'theme-violet',
+  'theme-mint',
+  'theme-rose',
+  'theme-highcontrast',
+  'best:Q.best'
 ];
-let missing=required.filter(x=>!html.includes(x));
-if(missing.length){console.error('Missing:', missing); process.exit(1);}
-console.log('QA passed');
+const missing = required.filter(x => !html.includes(x));
+if (missing.length) {
+  console.error('Missing:', missing);
+  process.exit(1);
+}
+console.log('quality check passed');

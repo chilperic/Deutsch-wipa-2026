@@ -13,3 +13,24 @@ Build marker:
 ```text
 stable-boot-no-localstorage-db-2026-05-30
 ```
+
+
+## Profile and theme update
+
+Added:
+
+```text
+- Learner name field
+- Personalized greeting
+- Local progress summary
+- Sessions / correct / wrong / best streak
+- Reset progress button
+- More themes:
+  Midnight, Paper, Forest, Berry, Graphite, Ocean, Sand, Violet, Mint, Rose, High Contrast
+```
+
+Build marker:
+
+```text
+stable-boot-profile-themes-2026-05-30
+```
