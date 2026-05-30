@@ -60,3 +60,26 @@ window.VOKABULAR_BUILD
 ```text
 quality-redesign-reviewed-2026-05-29
 ```
+
+
+## Responsive embedded review build
+
+This build addresses the deployed screenshot issue where modules displayed `0 items`.
+
+Changes:
+
+```text
+- Phone / Computer view selector
+- Four themes: Midnight, Paper, Forest, Berry
+- Improved dropdown contrast and touch size
+- Mobile bottom action bar
+- Embedded data fallback inside index.html
+```
+
+The embedded fallback means the app can still show learning items even if GitHub Pages fails to fetch the JSON files from `vokabular/` or `grammatik/`.
+
+Build marker:
+
+```text
+responsive-embedded-review-2026-05-30
+```

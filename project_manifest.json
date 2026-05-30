@@ -1,6 +1,6 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "quality-redesign-reviewed-2026-05-29",
+  "build": "responsive-embedded-review-2026-05-30",
   "major_changes": [
     "Complete UI redesign with new color system and learner-only interface.",
     "Removed admin/developer interface.",
@@ -30,5 +30,28 @@
       "warnings": [],
       "passed": true
     }
+  },
+  "responsive_embedded_review": {
+    "build": "responsive-embedded-review-2026-05-30",
+    "changes": [
+      "Added phone/computer view selector.",
+      "Added four themes: Midnight, Paper, Forest, Berry.",
+      "Improved dropdown contrast/touch size.",
+      "Added mobile bottom action bar.",
+      "Embedded fallback data in index.html so modules do not show 0 items when JSON fetch fails.",
+      "Kept learner-only interface."
+    ],
+    "embedded": {
+      "vokabular_files": 4,
+      "grammar_files": 9
+    },
+    "syntax_check": {
+      "returncode": 0,
+      "stderr": ""
+    }
+  },
+  "syntax_check": {
+    "returncode": 0,
+    "stderr": ""
   }
 }
