@@ -1,20 +1,31 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "learning-loop-ux-repair-2026-05-30",
-  "implemented_from_review": [
-    "Mobile bottom buttons fixed with event delegation.",
-    "renderProfile is called during render.",
-    "Phone/Computer/Auto selector implemented.",
-    "Quick-start learning-loop buttons added.",
-    "Tracker no longer exposes raw internal IDs.",
-    "Wrong-answer feedback now includes a teaching explanation.",
-    "Module cards no longer all say Active; selected module is distinguished.",
-    "Detected fake vocabulary placeholder examples replaced with natural generic examples.",
-    "Detected habe/bin grammar examples repaired."
+  "build": "themed-grouped-learning-2026-06-08",
+  "base": "Deutsch-wipa-2026_STRUCTURED_PROJECT.zip",
+  "implemented": [
+    "Grouped themes: Appearance + Flavor",
+    "Grouped modules: Vocabulary, Nouns, Verbs, Sentence logic, Forms, Communication",
+    "New connector engine",
+    "New negation engine",
+    "New TeKaMoLo sentence-order engine",
+    "Profile/progress in localStorage, learning DB in memory",
+    "Mobile bottom actions",
+    "Readable tracker"
   ],
-  "data_repairs": {
-    "fake_vocab_examples_replaced": 0,
-    "habe_bin_examples_repaired": 0
+  "counts": {
+    "vocab": 317,
+    "connectors": 90,
+    "negation": 85,
+    "tekamolo": 70,
+    "adjektivdeklination": 0,
+    "kasusergaenzungen": 0,
+    "konnektoren_nebensaetze": 0,
+    "nomen_artikel_plural": 0,
+    "praepositionalverben": 9,
+    "praepositionen": 0,
+    "pronomen": 0,
+    "starke_verben": 0,
+    "trennbare_verben": 0
   },
   "checks": {
     "node_check": {
@@ -25,6 +36,23 @@
       "returncode": 0,
       "stdout": "quality check passed\n",
       "stderr": ""
+    }
+  },
+  "copyright_note": "New grammar items are original practice prompts inspired by themes; uploaded worksheet text was not copied as a corpus.",
+  "deploy_package": {
+    "root_folder": "Deutsch-wipa-2026",
+    "ready_to_replace_repo_contents": true,
+    "includes_nojekyll": true,
+    "checks": {
+      "node_check": {
+        "returncode": 0,
+        "stderr": ""
+      },
+      "quality_check": {
+        "returncode": 0,
+        "stdout": "quality check passed\n",
+        "stderr": ""
+      }
     }
   }
 }

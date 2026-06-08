@@ -1,91 +1,76 @@
-# Deutsch WIPA 2026 · Stable Boot
+# Deutsch-wipa-2026
 
-This build fixes the empty dashboard by removing the unstable localStorage learning-database cache.
-
-The app now:
-- loads embedded learning data directly into memory on every page load,
-- stores only learner progress and settings,
-- does not call missing background fetch functions,
-- reports runtime errors visibly in the status line.
+Deutsch Trainer app for vocabulary, B1/B2 grammar, and active recall.
 
 Build marker:
 
 ```text
-stable-boot-no-localstorage-db-2026-05-30
+themed-grouped-learning-2026-06-08
 ```
 
+## How to deploy
 
-## Profile and theme update
+Replace the contents of your local `Deutsch-wipa-2026/` repository folder with the contents of this folder, then run:
 
-Added:
-
-```text
-- Learner name field
-- Personalized greeting
-- Local progress summary
-- Sessions / correct / wrong / best streak
-- Reset progress button
-- More themes:
-  Midnight, Paper, Forest, Berry, Graphite, Ocean, Sand, Violet, Mint, Rose, High Contrast
+```bash
+git status
+git add .
+git commit -m "Upgrade grouped learning UI and grammar engines"
+git push
 ```
 
-Build marker:
+If GitHub Pages is enabled for the repository, the app will update after the push.
+
+## Main files
 
 ```text
-stable-boot-profile-themes-2026-05-30
+Deutsch-wipa-2026/
+├── index.html
+├── README.md
+├── project_manifest.json
+├── .nojekyll
+├── vokabular/
+├── grammatik/
+├── docs/
+└── dev/
 ```
 
-
-## Grammar flow improvement
-
-Grammar modules now use a clearer cycle:
+## Implemented
 
 ```text
-Study card → Focus recall → Prompt practice
-```
+- Grouped themes:
+  Appearance: System / Light / Dark
+  Flavor: Classic / Ocean / Forest / Sand / Violet / Rose / High Contrast
 
-Example:
-
-```text
-Study:
-gratulieren + Dativ
-
-Focus recall:
-gratulieren + ?
-
-Prompt practice:
-Im Kurs gratuliere ich ___ Kollegin.
-```
-
-Build marker:
-
-```text
-stable-grammar-flow-improved-2026-05-30
-```
-
-
-## Learning-loop UX repair
-
-Implemented after review:
-
-```text
-- Mobile bottom buttons now work via event delegation.
-- Profile/progress card is rendered on page load.
-- Phone / Computer / Auto selector is implemented.
-- Quick-start choices added:
-  Continue review
-  Learn new items
-  Grammar training
+- Grouped modules:
   Vocabulary
-- Tracker now uses readable labels instead of internal IDs.
-- Wrong-answer feedback gives teaching explanation.
-- Module cards distinguish selected module.
-- Fake placeholder vocabulary examples replaced where detected.
-- “habe/bin ...” examples repaired where detected.
+  Nouns
+  Verbs
+  Sentence logic
+  Forms
+  Communication
+
+- Active learning engines:
+  Konnektoren
+  Negation
+  Satzordnung / TeKaMoLo
+
+- Local learner profile and progress tracking
+- Weak-item review
+- Mobile bottom navigation
+- Phone / Computer / Auto layout selector
 ```
 
-Build marker:
+## Build check
+
+Open the app, then in the browser console run:
+
+```js
+window.VOKABULAR_BUILD
+```
+
+Expected:
 
 ```text
-learning-loop-ux-repair-2026-05-30
+themed-grouped-learning-2026-06-08
 ```
