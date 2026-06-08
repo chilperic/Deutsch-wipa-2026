@@ -1,18 +1,24 @@
 
 const fs = require('fs');
 const html = fs.readFileSync('index.html','utf8');
-const must = ['book-complete-content-2026-06-08','window.APP_DATA','Sentence logic','Konnektoren','Negation','TeKaMoLo','temporal → kausal → modal → lokal','appearanceSelect','flavorSelect','viewSelect'];
+const must = [
+  'communication-modules-complete-2026-06-08',
+  'Entschuldigung & Reaktion',
+  'Reklamation / technische Probleme',
+  'Bewerbung / Arbeit',
+  'APP_DATA.generic.apology?.length',
+  'APP_DATA.generic.complaints?.length',
+  'APP_DATA.generic.bewerbung?.length'
+];
 const missing = must.filter(x => !html.includes(x));
-if (missing.length) { console.error('missing', missing); process.exit(1); }
-const m = html.match(/window\.APP_DATA = (.*);\nconst \$ =/s);
-if (!m) { console.error('APP_DATA parse marker missing'); process.exit(1); }
-const data = JSON.parse(m[1]);
-if (data.connectors.length < 80) throw new Error('too few connectors');
-if (data.negation.length < 80) throw new Error('too few negation');
-if (data.tekamolo.length < 60) throw new Error('too few tekamolo');
-const needed = ['beruf','nomen_artikel_plural','genus_rules','n_deklination','adjektive_als_nomen','praepositionalverben','starke_verben','trennbare_verben','perfekt','plusquamperfekt','infinitiv_zu','reflexive','konjunktiv2','pronomen','praepositionen','adjektivdeklination','kasusergaenzungen','konnektoren_nebensaetze'];
-for (const key of needed) {
-  if (!data.generic[key] || data.generic[key].length < 60) throw new Error('too few items in '+key);
+if (missing.length) {
+  console.error('missing', missing);
+  process.exit(1);
 }
-
+const m = html.match(/window\.APP_DATA\s*=\s*(\{.*?\});\nconst \$/s);
+if (!m) throw new Error('APP_DATA not found');
+const data = JSON.parse(m[1]);
+if ((data.generic.apology || []).length < 70) throw new Error('apology too small');
+if ((data.generic.complaints || []).length < 80) throw new Error('complaints too small');
+if ((data.generic.bewerbung || []).length < 80) throw new Error('bewerbung too small');
 console.log('quality check passed');

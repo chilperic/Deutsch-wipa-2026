@@ -1,6 +1,6 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "book-complete-content-2026-06-08",
+  "build": "communication-modules-complete-2026-06-08",
   "base": "Deutsch-wipa-2026_STRUCTURED_PROJECT.zip",
   "implemented": [
     "Grouped themes: Appearance + Flavor",
@@ -10,7 +10,11 @@
     "New TeKaMoLo sentence-order engine",
     "Profile/progress in localStorage, learning DB in memory",
     "Mobile bottom actions",
-    "Readable tracker"
+    "Readable tracker",
+    "Filled Entschuldigung & Reaktion communication module",
+    "Filled Reklamation / technische Probleme communication module",
+    "Filled Bewerbung / Arbeit communication module",
+    "Patched Communication group cards to show real counts and become playable"
   ],
   "counts": {
     "vocab": 317,
@@ -25,7 +29,10 @@
     "praepositionen": 0,
     "pronomen": 0,
     "starke_verben": 0,
-    "trennbare_verben": 0
+    "trennbare_verben": 0,
+    "Entschuldigung & Reaktion": 80,
+    "Reklamation / technische Probleme": 90,
+    "Bewerbung / Arbeit": 90
   },
   "checks": {
     "node_check": {
@@ -75,5 +82,10 @@
     "kasusergaenzungen": 80,
     "konnektoren_nebensaetze": 80
   },
-  "source_alignment": "Organized around Linie 1 Beruf B1/B2 chapter themes: new workplace, job search/workflow, career change, drivers/logistics, and grammar appendix topics."
+  "source_alignment": "Organized around Linie 1 Beruf B1/B2 chapter themes: new workplace, job search/workflow, career change, drivers/logistics, and grammar appendix topics.",
+  "license": "MIT",
+  "author": "Chilperic Armel Foko Kuate",
+  "repository_ready": true,
+  "readme": "README.md",
+  "license_file": "LICENSE"
 }

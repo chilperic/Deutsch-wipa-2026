@@ -1,0 +1,1500 @@
+{
+  "title": "Reklamation / technische Probleme",
+  "items": [
+    {
+      "id": "complaints_001",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Das Tablet funktioniert nicht. Was sagt der Kunde?",
+      "answer": "Dieses Tablet funktioniert leider nicht.",
+      "choices": [
+        "Dieses Tablet funktioniert leider nicht.",
+        "Das kann jedem mal passieren.",
+        "Ich habe die Stelle bekommen.",
+        "Der Termin ist morgen."
+      ],
+      "explanation": "State the problem clearly.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_002",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Du möchtest ein Gerät umtauschen. Was sagst du?",
+      "answer": "Ich möchte das Gerät umtauschen.",
+      "choices": [],
+      "explanation": "Use ich möchte + accusative object.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_003",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Der Kunde ist verärgert. Was sagst du als Mitarbeiter?",
+      "answer": "Ich kann verstehen, dass Sie verärgert sind.",
+      "choices": [],
+      "explanation": "Acknowledge frustration before solving the problem.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_004",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Du fragst nach dem Kassenbon.",
+      "answer": "Haben Sie den Kassenbon noch?",
+      "choices": [],
+      "explanation": "Service situation: ask for proof of purchase.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_005",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Das Gerät lädt nicht. Welche Reaktion passt?",
+      "answer": "Haben Sie es schon geladen?",
+      "choices": [
+        "Haben Sie es schon geladen?",
+        "Ich bin krank.",
+        "Das war keine Absicht.",
+        "Ich suche eine Wohnung."
+      ],
+      "explanation": "Ask a diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_006",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Du bietest Hilfe an.",
+      "answer": "Kann ich Ihnen helfen?",
+      "choices": [],
+      "explanation": "Formal help offer.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_007",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Die Reparatur kostet viel Geld. Formuliere eine Alternative.",
+      "answer": "Ich repariere die Lampe lieber selbst.",
+      "choices": [],
+      "explanation": "Use lieber to express preference.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_008",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Du hast ein Sonderangebot gefunden. Ergänze sinnvoll.",
+      "answer": "Der Computer war im Sonderangebot, sodass ich ihn mir leisten konnte.",
+      "choices": [],
+      "explanation": "sodass gives the result; verb at the end.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_009",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Waschmaschine / funktioniert nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum die Waschmaschine funktioniert nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_010",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: das Handy / druckt nicht.",
+      "answer": "Das handy druckt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_011",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die waschmaschine funktioniert nicht.“ Welche Reaktion passt?",
+      "answer": "Haben Sie den Kassenbon noch?",
+      "choices": [
+        "Haben Sie den Kassenbon noch?",
+        "Wir können das Gerät umtauschen.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Haben Sie es schon neu gestartet?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_012",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die App / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum die App druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_013",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die App / funktioniert nicht.",
+      "answer": "Die app funktioniert nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_014",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Das handy lädt nicht.“ Welche Reaktion passt?",
+      "answer": "Wir können das Gerät umtauschen.",
+      "choices": [
+        "Wir können das Gerät umtauschen.",
+        "Haben Sie den Kassenbon noch?",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Haben Sie es schon neu gestartet?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_015",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Tablet / zeigt eine Fehlermeldung.",
+      "answer": "Könnten Sie bitte prüfen, warum das Tablet zeigt eine Fehlermeldung?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_016",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die Kaffeemaschine / funktioniert nicht.",
+      "answer": "Die kaffeemaschine funktioniert nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_017",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die kaffeemaschine ist zu laut.“ Welche Reaktion passt?",
+      "answer": "Ich verstehe, dass das ärgerlich ist.",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Wir können das Gerät umtauschen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_018",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Laptop / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum der Laptop druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_019",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: das Tablet / startet nicht.",
+      "answer": "Das tablet startet nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_020",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die kaffeemaschine druckt nicht.“ Welche Reaktion passt?",
+      "answer": "Ich verstehe, dass das ärgerlich ist.",
+      "choices": [
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Haben Sie den Kassenbon noch?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_021",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Drucker / ist zu laut.",
+      "answer": "Könnten Sie bitte prüfen, warum der Drucker ist zu laut?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_022",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Bildschirm / verbindet sich nicht mit dem WLAN.",
+      "answer": "Der bildschirm verbindet sich nicht mit dem WLAN leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_023",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die waschmaschine ist zu laut.“ Welche Reaktion passt?",
+      "answer": "Ich verstehe, dass das ärgerlich ist.",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Haben Sie den Kassenbon noch?",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich kann das Gerät für Sie prüfen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_024",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Waschmaschine / verbindet sich nicht mit dem WLAN.",
+      "answer": "Könnten Sie bitte prüfen, warum die Waschmaschine verbindet sich nicht mit dem WLAN?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_025",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die App / druckt nicht.",
+      "answer": "Die app druckt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_026",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die app verbindet sich nicht mit dem WLAN.“ Welche Reaktion passt?",
+      "answer": "Haben Sie den Kassenbon noch?",
+      "choices": [
+        "Wir können das Gerät umtauschen.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Haben Sie den Kassenbon noch?",
+        "Ich brauche dafür die Seriennummer."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_027",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Alarmanlage / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum die Alarmanlage druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_028",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die Kaffeemaschine / verbindet sich nicht mit dem WLAN.",
+      "answer": "Die kaffeemaschine verbindet sich nicht mit dem WLAN leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_029",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Das ladegerät wurde falsch geliefert.“ Welche Reaktion passt?",
+      "answer": "Ich kann das Gerät für Sie prüfen.",
+      "choices": [
+        "Wir können das Gerät umtauschen.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Haben Sie es schon neu gestartet?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_030",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Tablet / reagiert nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum das Tablet reagiert nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_031",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die App / ist zu laut.",
+      "answer": "Die app ist zu laut leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_032",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die kaffeemaschine druckt nicht.“ Welche Reaktion passt?",
+      "answer": "Ich kann das Gerät für Sie prüfen.",
+      "choices": [
+        "Ich kann das Gerät für Sie prüfen.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Haben Sie den Kassenbon noch?",
+        "Wir können das Gerät umtauschen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_033",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Ladegerät / verbindet sich nicht mit dem WLAN.",
+      "answer": "Könnten Sie bitte prüfen, warum das Ladegerät verbindet sich nicht mit dem WLAN?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_034",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: das Ladegerät / zeigt eine Fehlermeldung.",
+      "answer": "Das ladegerät zeigt eine Fehlermeldung leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_035",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die app startet nicht.“ Welche Reaktion passt?",
+      "answer": "Ich verstehe, dass das ärgerlich ist.",
+      "choices": [
+        "Ich kann das Gerät für Sie prüfen.",
+        "Haben Sie es schon neu gestartet?",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich verstehe, dass das ärgerlich ist."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_036",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Waschmaschine / zeigt eine Fehlermeldung.",
+      "answer": "Könnten Sie bitte prüfen, warum die Waschmaschine zeigt eine Fehlermeldung?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_037",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Drucker / druckt nicht.",
+      "answer": "Der drucker druckt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_038",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die alarmanlage wurde falsch geliefert.“ Welche Reaktion passt?",
+      "answer": "Wir schicken das Gerät zur Reparatur.",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Haben Sie es schon neu gestartet?",
+        "Ich kann das Gerät für Sie prüfen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_039",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Handy / zeigt eine Fehlermeldung.",
+      "answer": "Könnten Sie bitte prüfen, warum das Handy zeigt eine Fehlermeldung?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_040",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die App / wurde falsch geliefert.",
+      "answer": "Die app wurde falsch geliefert leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_041",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die kaffeemaschine lädt nicht.“ Welche Reaktion passt?",
+      "answer": "Ich verstehe, dass das ärgerlich ist.",
+      "choices": [
+        "Ich kann das Gerät für Sie prüfen.",
+        "Haben Sie es schon neu gestartet?",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich verstehe, dass das ärgerlich ist."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_042",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Bildschirm / wurde falsch geliefert.",
+      "answer": "Könnten Sie bitte prüfen, warum der Bildschirm wurde falsch geliefert?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_043",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: das Handy / ist plötzlich ausgegangen.",
+      "answer": "Das handy ist plötzlich ausgegangen leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_044",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Das ladegerät wurde falsch geliefert.“ Welche Reaktion passt?",
+      "answer": "Ich verstehe, dass das ärgerlich ist.",
+      "choices": [
+        "Ich kann das Gerät für Sie prüfen.",
+        "Haben Sie es schon neu gestartet?",
+        "Ich brauche dafür die Seriennummer.",
+        "Ich verstehe, dass das ärgerlich ist."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_045",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Handy / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum das Handy druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_046",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Drucker / startet nicht.",
+      "answer": "Der drucker startet nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_047",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die app ist plötzlich ausgegangen.“ Welche Reaktion passt?",
+      "answer": "Haben Sie den Kassenbon noch?",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Haben Sie den Kassenbon noch?",
+        "Ich brauche dafür die Seriennummer.",
+        "Haben Sie es schon neu gestartet?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_048",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Bildschirm / wurde falsch geliefert.",
+      "answer": "Könnten Sie bitte prüfen, warum der Bildschirm wurde falsch geliefert?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_049",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die App / druckt nicht.",
+      "answer": "Die app druckt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_050",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die app ist plötzlich ausgegangen.“ Welche Reaktion passt?",
+      "answer": "Wir können das Gerät umtauschen.",
+      "choices": [
+        "Ich brauche dafür die Seriennummer.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Wir können das Gerät umtauschen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_051",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Drucker / zeigt eine Fehlermeldung.",
+      "answer": "Könnten Sie bitte prüfen, warum der Drucker zeigt eine Fehlermeldung?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_052",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Bildschirm / lädt nicht.",
+      "answer": "Der bildschirm lädt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_053",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die waschmaschine ist zu laut.“ Welche Reaktion passt?",
+      "answer": "Bitte beschreiben Sie das Problem genauer.",
+      "choices": [
+        "Haben Sie den Kassenbon noch?",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Wir können das Gerät umtauschen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_054",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Ladegerät / startet nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum das Ladegerät startet nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_055",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Drucker / lädt nicht.",
+      "answer": "Der drucker lädt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_056",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Das ladegerät druckt nicht.“ Welche Reaktion passt?",
+      "answer": "Wir schicken das Gerät zur Reparatur.",
+      "choices": [
+        "Haben Sie den Kassenbon noch?",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Ich kann das Gerät für Sie prüfen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_057",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Alarmanlage / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum die Alarmanlage druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_058",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Bildschirm / funktioniert nicht.",
+      "answer": "Der bildschirm funktioniert nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_059",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die kaffeemaschine zeigt eine Fehlermeldung.“ Welche Reaktion passt?",
+      "answer": "Haben Sie es schon neu gestartet?",
+      "choices": [
+        "Wir schicken das Gerät zur Reparatur.",
+        "Haben Sie es schon neu gestartet?",
+        "Ich brauche dafür die Seriennummer.",
+        "Bitte beschreiben Sie das Problem genauer."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_060",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Waschmaschine / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum die Waschmaschine druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_061",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Bildschirm / funktioniert nicht.",
+      "answer": "Der bildschirm funktioniert nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_062",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Das ladegerät verbindet sich nicht mit dem WLAN.“ Welche Reaktion passt?",
+      "answer": "Haben Sie es schon neu gestartet?",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Haben Sie es schon neu gestartet?",
+        "Wir können das Gerät umtauschen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_063",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Handy / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum das Handy druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_064",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Laptop / ist plötzlich ausgegangen.",
+      "answer": "Der laptop ist plötzlich ausgegangen leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_065",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Der laptop funktioniert nicht.“ Welche Reaktion passt?",
+      "answer": "Bitte beschreiben Sie das Problem genauer.",
+      "choices": [
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Wir können das Gerät umtauschen.",
+        "Ich kann das Gerät für Sie prüfen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_066",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Waschmaschine / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum die Waschmaschine druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_067",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die Waschmaschine / lädt nicht.",
+      "answer": "Die waschmaschine lädt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_068",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Der bildschirm funktioniert nicht.“ Welche Reaktion passt?",
+      "answer": "Haben Sie den Kassenbon noch?",
+      "choices": [
+        "Ich kann das Gerät für Sie prüfen.",
+        "Ich brauche dafür die Seriennummer.",
+        "Haben Sie den Kassenbon noch?",
+        "Wir schicken das Gerät zur Reparatur."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_069",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Drucker / funktioniert nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum der Drucker funktioniert nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_070",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die Alarmanlage / startet nicht.",
+      "answer": "Die alarmanlage startet nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_071",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Der drucker startet nicht.“ Welche Reaktion passt?",
+      "answer": "Ich brauche dafür die Seriennummer.",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Ich brauche dafür die Seriennummer."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_072",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: die Alarmanlage / wurde falsch geliefert.",
+      "answer": "Könnten Sie bitte prüfen, warum die Alarmanlage wurde falsch geliefert?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_073",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: das Handy / startet nicht.",
+      "answer": "Das handy startet nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_074",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die waschmaschine lädt nicht.“ Welche Reaktion passt?",
+      "answer": "Haben Sie den Kassenbon noch?",
+      "choices": [
+        "Ich brauche dafür die Seriennummer.",
+        "Haben Sie den Kassenbon noch?",
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich verstehe, dass das ärgerlich ist."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_075",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Handy / wurde falsch geliefert.",
+      "answer": "Könnten Sie bitte prüfen, warum das Handy wurde falsch geliefert?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_076",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Drucker / lädt nicht.",
+      "answer": "Der drucker lädt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_077",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die waschmaschine wurde falsch geliefert.“ Welche Reaktion passt?",
+      "answer": "Ich kann das Gerät für Sie prüfen.",
+      "choices": [
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Wir können das Gerät umtauschen.",
+        "Ich kann das Gerät für Sie prüfen.",
+        "Bitte beschreiben Sie das Problem genauer."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_078",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Tablet / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum das Tablet druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_079",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Bildschirm / lädt nicht.",
+      "answer": "Der bildschirm lädt nicht leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_080",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Das ladegerät verbindet sich nicht mit dem WLAN.“ Welche Reaktion passt?",
+      "answer": "Ich brauche dafür die Seriennummer.",
+      "choices": [
+        "Ich brauche dafür die Seriennummer.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Ich kann das Gerät für Sie prüfen."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_081",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Bildschirm / druckt nicht.",
+      "answer": "Könnten Sie bitte prüfen, warum der Bildschirm druckt nicht?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_082",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: die Alarmanlage / zeigt eine Fehlermeldung.",
+      "answer": "Die alarmanlage zeigt eine Fehlermeldung leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_083",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die kaffeemaschine ist zu laut.“ Welche Reaktion passt?",
+      "answer": "Ich kann das Gerät für Sie prüfen.",
+      "choices": [
+        "Ich kann das Gerät für Sie prüfen.",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Haben Sie es schon neu gestartet?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_084",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Bildschirm / verbindet sich nicht mit dem WLAN.",
+      "answer": "Könnten Sie bitte prüfen, warum der Bildschirm verbindet sich nicht mit dem WLAN?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_085",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: der Laptop / ist plötzlich ausgegangen.",
+      "answer": "Der laptop ist plötzlich ausgegangen leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_086",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Der drucker verbindet sich nicht mit dem WLAN.“ Welche Reaktion passt?",
+      "answer": "Bitte beschreiben Sie das Problem genauer.",
+      "choices": [
+        "Wir können das Gerät umtauschen.",
+        "Haben Sie es schon neu gestartet?",
+        "Bitte beschreiben Sie das Problem genauer.",
+        "Wir schicken das Gerät zur Reparatur."
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_087",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: das Handy / ist zu laut.",
+      "answer": "Könnten Sie bitte prüfen, warum das Handy ist zu laut?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_088",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Formuliere eine Reklamation: das Ladegerät / ist plötzlich ausgegangen.",
+      "answer": "Das ladegerät ist plötzlich ausgegangen leider.",
+      "choices": [],
+      "explanation": "A complaint should be clear and concrete.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_089",
+      "module": "complaints",
+      "type": "communication_choice",
+      "prompt": "Kunde: „Die app ist zu laut.“ Welche Reaktion passt?",
+      "answer": "Ich brauche dafür die Seriennummer.",
+      "choices": [
+        "Wir schicken das Gerät zur Reparatur.",
+        "Ich verstehe, dass das ärgerlich ist.",
+        "Ich brauche dafür die Seriennummer.",
+        "Haben Sie den Kassenbon noch?"
+      ],
+      "explanation": "In customer service, acknowledge the issue and ask a useful diagnostic question.",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    },
+    {
+      "id": "complaints_090",
+      "module": "complaints",
+      "type": "active_recall",
+      "prompt": "Bitte um Hilfe: der Drucker / zeigt eine Fehlermeldung.",
+      "answer": "Könnten Sie bitte prüfen, warum der Drucker zeigt eine Fehlermeldung?",
+      "choices": [],
+      "explanation": "Polite request: Könnten Sie bitte ...",
+      "level": "B1-B2",
+      "tags": [
+        "complaint",
+        "service",
+        "technical_problem"
+      ]
+    }
+  ]
+}
