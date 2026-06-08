@@ -74,3 +74,8 @@ Expected:
 ```text
 themed-grouped-learning-2026-06-08
 ```
+
+
+## Content completion update
+
+All previously planned module cards now contain active training content. The app is organized around workplace communication, noun systems, verb systems, sentence logic, and forms. Build marker: `book-complete-content-2026-06-08`.

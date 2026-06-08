@@ -1,6 +1,6 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "themed-grouped-learning-2026-06-08",
+  "build": "book-complete-content-2026-06-08",
   "base": "Deutsch-wipa-2026_STRUCTURED_PROJECT.zip",
   "implemented": [
     "Grouped themes: Appearance + Flavor",
@@ -54,5 +54,26 @@
         "stderr": ""
       }
     }
-  }
+  },
+  "content_completion": {
+    "beruf": 80,
+    "nomen_artikel_plural": 90,
+    "genus_rules": 70,
+    "n_deklination": 75,
+    "adjektive_als_nomen": 70,
+    "praepositionalverben": 120,
+    "starke_verben": 90,
+    "trennbare_verben": 90,
+    "perfekt": 80,
+    "plusquamperfekt": 75,
+    "infinitiv_zu": 70,
+    "reflexive": 80,
+    "konjunktiv2": 75,
+    "pronomen": 80,
+    "praepositionen": 80,
+    "adjektivdeklination": 80,
+    "kasusergaenzungen": 80,
+    "konnektoren_nebensaetze": 80
+  },
+  "source_alignment": "Organized around Linie 1 Beruf B1/B2 chapter themes: new workplace, job search/workflow, career change, drivers/logistics, and grammar appendix topics."
 }
