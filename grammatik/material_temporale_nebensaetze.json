@@ -10,12 +10,7 @@
       "exerciseType": "connector_selection",
       "prompt": "___ ich nach Deutschland gekommen bin, lerne ich Deutsch.",
       "answer": "Seitdem",
-      "choices": [
-        "Als",
-        "Seitdem",
-        "Wenn",
-        "Während"
-      ],
+      "choices": [],
       "explanation": "Seitdem introduces an action/state continuing from the past to now.",
       "example": "",
       "level": "B1/B2",
@@ -30,12 +25,7 @@
       "exerciseType": "connector_selection",
       "prompt": "___ ich Kind war, wollte ich im Ausland leben.",
       "answer": "Als",
-      "choices": [
-        "Als",
-        "Seitdem",
-        "Wenn",
-        "Während"
-      ],
+      "choices": [],
       "explanation": "Use als for one-time past situations.",
       "example": "",
       "level": "B1/B2",
@@ -50,12 +40,7 @@
       "exerciseType": "connector_selection",
       "prompt": "___ ich Zeit habe, wiederhole ich die Präpositionen.",
       "answer": "Wenn",
-      "choices": [
-        "Als",
-        "Seitdem",
-        "Wenn",
-        "Während"
-      ],
+      "choices": [],
       "explanation": "Use wenn for repeated or future conditions.",
       "example": "",
       "level": "B1/B2",
@@ -70,12 +55,7 @@
       "exerciseType": "connector_selection",
       "prompt": "Ich rufe dich an, ___ ich beim Arzt war.",
       "answer": "nachdem",
-      "choices": [
-        "Als",
-        "Seitdem",
-        "Wenn",
-        "nachdem"
-      ],
+      "choices": [],
       "explanation": "Nachdem expresses earlier action before the main action.",
       "example": "",
       "level": "B1/B2",
@@ -90,12 +70,7 @@
       "exerciseType": "connector_selection",
       "prompt": "___ der Kurs beginnt, lese ich die Hausaufgaben.",
       "answer": "Bevor",
-      "choices": [
-        "Als",
-        "Bevor",
-        "Seitdem",
-        "Wenn"
-      ],
+      "choices": [],
       "explanation": "Bevor introduces the later action; the main action happens first.",
       "example": "",
       "level": "B1/B2",
@@ -110,12 +85,7 @@
       "exerciseType": "connector_selection",
       "prompt": "___ ich arbeite, höre ich keine Musik.",
       "answer": "Während",
-      "choices": [
-        "Als",
-        "Seitdem",
-        "Wenn",
-        "Während"
-      ],
+      "choices": [],
       "explanation": "Während marks simultaneous actions.",
       "example": "",
       "level": "B1/B2",
@@ -130,12 +100,7 @@
       "exerciseType": "connector_selection",
       "prompt": "Ich habe die E-Mail geschrieben, ___ ich die Dokumente geprüft hatte.",
       "answer": "nachdem",
-      "choices": [
-        "Als",
-        "Seitdem",
-        "Wenn",
-        "nachdem"
-      ],
+      "choices": [],
       "explanation": "With past sequence: nachdem + Plusquamperfekt, main clause often Präteritum/Perfekt.",
       "example": "",
       "level": "B1/B2",
@@ -150,12 +115,7 @@
       "exerciseType": "connector_selection",
       "prompt": "___ ich die Kündigung erhalten hatte, suchte ich sofort eine neue Stelle.",
       "answer": "Nachdem",
-      "choices": [
-        "Als",
-        "Nachdem",
-        "Seitdem",
-        "Wenn"
-      ],
+      "choices": [],
       "explanation": "Earlier past event takes Plusquamperfekt.",
       "example": "",
       "level": "B1/B2",

@@ -58,7 +58,7 @@
       "id": "mat_b2_order_004",
       "module": "material_b2_order",
       "type": "active_recall",
-      "exerciseType": "sentence_correction",
+      "exerciseType": "multiple_choice",
       "prompt": "Correct: Ich habe nicht gestern im Büro gearbeitet, sondern heute.",
       "answer": "Ich habe nicht gestern im Büro gearbeitet, sondern heute.",
       "choices": [],

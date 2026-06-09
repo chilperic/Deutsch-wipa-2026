@@ -26,7 +26,7 @@
         "aber",
         "sondern"
       ],
-      "exerciseType": "connector_selection"
+      "dedup_group": "oder_choice_template"
     },
     {
       "id": "conn_core_003",
@@ -213,7 +213,7 @@
         "aber",
         "sondern"
       ],
-      "exerciseType": "connector_selection"
+      "dedup_group": "oder_choice_template"
     },
     {
       "id": "conn_gen_003",
@@ -460,7 +460,7 @@
         "aber",
         "sondern"
       ],
-      "exerciseType": "connector_selection"
+      "dedup_group": "oder_choice_template"
     },
     {
       "id": "conn_gen_027",
@@ -627,7 +627,7 @@
         "aber",
         "sondern"
       ],
-      "exerciseType": "connector_selection"
+      "dedup_group": "oder_choice_template"
     },
     {
       "id": "conn_gen_043",
@@ -694,7 +694,7 @@
         "aber",
         "sondern"
       ],
-      "exerciseType": "connector_selection"
+      "dedup_group": "oder_choice_template"
     },
     {
       "id": "conn_gen_049",
@@ -851,7 +851,7 @@
         "aber",
         "sondern"
       ],
-      "exerciseType": "connector_selection"
+      "dedup_group": "oder_choice_template"
     },
     {
       "id": "conn_gen_064",
