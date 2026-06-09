@@ -1,0 +1,259 @@
+{
+  "module": "speaking_prompts",
+  "title": "Sprechen · Beruf und Alltag",
+  "status": "ready",
+  "items": [
+    {
+      "id": "speak_intro",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Introduce yourself professionally.",
+      "answer": "Ich heiße ... Ich habe ... studiert/gearbeitet. Ich interessiere mich für ... Zurzeit suche ich ...",
+      "choices": [],
+      "explanation": "Speak clearly: situation → key information → request/opinion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear opening",
+        "specific information",
+        "polite phrasing"
+      ]
+    },
+    {
+      "id": "speak_interview",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Answer: Warum möchten Sie bei uns arbeiten?",
+      "answer": "Ich interessiere mich für diese Stelle, weil sie gut zu meinen Erfahrungen passt. Besonders spannend finde ich ...",
+      "choices": [],
+      "explanation": "Speak clearly: situation → key information → request/opinion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear opening",
+        "specific information",
+        "polite phrasing"
+      ]
+    },
+    {
+      "id": "speak_conflict",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Say politely that you disagree in a meeting.",
+      "answer": "Ich verstehe Ihren Punkt, aber ich sehe das etwas anders. Meiner Meinung nach sollten wir ...",
+      "choices": [],
+      "explanation": "Speak clearly: situation → key information → request/opinion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear opening",
+        "specific information",
+        "polite phrasing"
+      ]
+    },
+    {
+      "id": "speak_clarify",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Ask for clarification during a German course.",
+      "answer": "Entschuldigung, könnten Sie das bitte noch einmal erklären? Ich habe den letzten Punkt nicht ganz verstanden.",
+      "choices": [],
+      "explanation": "Speak clearly: situation → key information → request/opinion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear opening",
+        "specific information",
+        "polite phrasing"
+      ]
+    },
+    {
+      "id": "speak_doctor",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Explain symptoms to a doctor.",
+      "answer": "Ich habe seit drei Tagen Kopfschmerzen und bin sehr müde. Außerdem habe ich schlecht geschlafen.",
+      "choices": [],
+      "explanation": "Speak clearly: situation → key information → request/opinion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear opening",
+        "specific information",
+        "polite phrasing"
+      ]
+    },
+    {
+      "id": "speak_authority",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Explain at the Ausländerbehörde that you need information about your documents.",
+      "answer": "Ich möchte fragen, welche Unterlagen für meinen Antrag noch fehlen. Könnten Sie mir das bitte schriftlich geben?",
+      "choices": [],
+      "explanation": "Speak clearly: situation → key information → request/opinion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear opening",
+        "specific information",
+        "polite phrasing"
+      ]
+    },
+    {
+      "id": "speak_email_summary",
+      "module": "extra",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Summarize an email from your employer in German.",
+      "answer": "In der E-Mail steht, dass ... Der wichtigste Punkt ist ... Ich muss als Nächstes ...",
+      "choices": [],
+      "explanation": "Use a clear structure: context, main point, polite request or conclusion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "context",
+        "main point",
+        "polite formulation"
+      ]
+    },
+    {
+      "id": "speak_opinion_homeoffice",
+      "module": "extra",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Give your opinion about home office.",
+      "answer": "Meiner Meinung nach hat Homeoffice Vorteile und Nachteile. Einerseits spart man Zeit, andererseits fehlt der direkte Kontakt im Team.",
+      "choices": [],
+      "explanation": "Use a clear structure: context, main point, polite request or conclusion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "context",
+        "main point",
+        "polite formulation"
+      ]
+    },
+    {
+      "id": "speak_late",
+      "module": "extra",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Explain that you will be late because of public transport.",
+      "answer": "Entschuldigung, ich komme etwa zehn Minuten später, weil die Bahn Verspätung hat. Danke für Ihr Verständnis.",
+      "choices": [],
+      "explanation": "Use a clear structure: context, main point, polite request or conclusion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "context",
+        "main point",
+        "polite formulation"
+      ]
+    },
+    {
+      "id": "speak_landlord",
+      "module": "extra",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Call your landlord about a repair.",
+      "answer": "Guten Tag, in meiner Wohnung gibt es ein Problem mit ... Könnten Sie bitte einen Handwerker schicken?",
+      "choices": [],
+      "explanation": "Use a clear structure: context, main point, polite request or conclusion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "context",
+        "main point",
+        "polite formulation"
+      ]
+    },
+    {
+      "id": "speak_customer",
+      "module": "extra",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Respond to a customer complaint politely.",
+      "answer": "Es tut mir leid, dass es ein Problem gibt. Ich prüfe das sofort und melde mich mit einer Lösung.",
+      "choices": [],
+      "explanation": "Use a clear structure: context, main point, polite request or conclusion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "context",
+        "main point",
+        "polite formulation"
+      ]
+    },
+    {
+      "id": "speak_course",
+      "module": "extra",
+      "type": "active_recall",
+      "exerciseType": "speaking_prompt",
+      "prompt": "Ask your teacher for feedback after a German exercise.",
+      "answer": "Könnten Sie mir bitte sagen, welche Fehler ich besonders oft mache und wie ich sie besser üben kann?",
+      "choices": [],
+      "explanation": "Use a clear structure: context, main point, polite request or conclusion.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "speaking"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "context",
+        "main point",
+        "polite formulation"
+      ]
+    }
+  ]
+}

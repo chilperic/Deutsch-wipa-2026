@@ -1,0 +1,39 @@
+{
+  "version": "2026.06.09-feature-complete",
+  "module_count": 35,
+  "item_count": 2468,
+  "by_category": {
+    "grammar": 1140,
+    "communication": 420,
+    "conjugation": 500,
+    "vocabulary": 327,
+    "training": 36,
+    "writing": 21,
+    "reading": 12,
+    "speaking": 12
+  },
+  "implemented_exercise_types": [
+    "flashcard",
+    "gap_fill",
+    "multiple_choice",
+    "article_trainer",
+    "plural_trainer",
+    "case_trainer",
+    "verb_conjugation",
+    "perfekt_builder",
+    "connector_selection",
+    "word_order",
+    "sentence_correction",
+    "translation_into_german",
+    "translation_from_german",
+    "mini_dialogue_completion",
+    "formal_email_writing",
+    "semi_formal_message",
+    "opinion_text",
+    "report_summary",
+    "application_writing",
+    "speaking_prompt",
+    "reading_comprehension",
+    "mistake_review"
+  ]
+}

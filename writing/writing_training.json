@@ -1,0 +1,490 @@
+{
+  "module": "writing_training",
+  "title": "Schreiben · Beruf, Alltag, Bewerbung",
+  "status": "ready",
+  "items": [
+    {
+      "id": "write_formal_001",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write a formal email requesting an appointment at the Bürgeramt.",
+      "answer": "Sehr geehrte Damen und Herren,\n\nich möchte gern einen Termin beim Bürgeramt vereinbaren. Könnten Sie mir bitte mitteilen, welche Termine in den nächsten zwei Wochen frei sind?\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Use: ich möchte gern..., könnten Sie..., Mit freundlichen Grüßen",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "formal email",
+        "appointment_request"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Grund",
+        "Bitte/Lösung",
+        "Schlussformel"
+      ]
+    },
+    {
+      "id": "write_formal_002",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write a formal complaint because a device is defective.",
+      "answer": "Sehr geehrte Damen und Herren,\n\nich habe am 12. Mai bei Ihnen ein Gerät gekauft. Leider funktioniert es seit gestern nicht mehr. Ich bitte Sie um eine Reparatur oder einen Umtausch.\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Complaint pattern: purchase context → problem → requested solution.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "formal email",
+        "complaint"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Grund",
+        "Bitte/Lösung",
+        "Schlussformel"
+      ]
+    },
+    {
+      "id": "write_formal_003",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write a short application email for a job.",
+      "answer": "Sehr geehrte Damen und Herren,\n\nhiermit bewerbe ich mich um die ausgeschriebene Stelle als Mitarbeiter im Kundenservice. Ich bringe Erfahrung in Kommunikation und Organisation mit. Über eine Einladung zum Gespräch freue ich mich sehr.\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Mention position, relevant skill, and interview interest.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "formal email",
+        "application"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Grund",
+        "Bitte/Lösung",
+        "Schlussformel"
+      ]
+    },
+    {
+      "id": "write_formal_004",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write a formal sick-leave message to your employer.",
+      "answer": "Guten Morgen,\n\nleider bin ich krank und kann heute nicht zur Arbeit kommen. Ich werde einen Arzttermin vereinbaren und die Krankmeldung so schnell wie möglich schicken.\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Keep it short: illness, absence, certificate if needed.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "formal email",
+        "sick_leave"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Grund",
+        "Bitte/Lösung",
+        "Schlussformel"
+      ]
+    },
+    {
+      "id": "write_formal_005",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write an email asking for missing documents.",
+      "answer": "Sehr geehrte Damen und Herren,\n\nkönnten Sie mir bitte die fehlenden Unterlagen per E-Mail zusenden? Ich benötige sie für meinen Antrag. Vielen Dank im Voraus.\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Polite request with könnten Sie.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "formal email",
+        "documents"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Grund",
+        "Bitte/Lösung",
+        "Schlussformel"
+      ]
+    },
+    {
+      "id": "write_formal_006",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write a follow-up email after a job application.",
+      "answer": "Sehr geehrte Damen und Herren,\n\nich möchte mich höflich nach dem aktuellen Stand meiner Bewerbung erkundigen. Für eine kurze Rückmeldung wäre ich Ihnen sehr dankbar.\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Use höflich nachfragen, not pressure.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "formal email",
+        "follow_up"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Grund",
+        "Bitte/Lösung",
+        "Schlussformel"
+      ]
+    },
+    {
+      "id": "write_semi_007",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "semi_formal_message",
+      "prompt": "Write a semi-formal message to a classmate saying you will be 10 minutes late.",
+      "answer": "Hallo, ich komme heute etwa zehn Minuten später. Die Bahn hat Verspätung. Bis gleich!",
+      "choices": [],
+      "explanation": "Semi-formal messages are polite but shorter than formal letters.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "semi-formal",
+        "classmate"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Greeting",
+        "situation",
+        "request",
+        "closing"
+      ]
+    },
+    {
+      "id": "write_semi_008",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "semi_formal_message",
+      "prompt": "Write a message to a colleague asking whether the meeting is still taking place.",
+      "answer": "Hallo, findet die Besprechung heute noch statt? Ich bin mir nicht sicher. Danke dir!",
+      "choices": [],
+      "explanation": "Semi-formal messages are polite but shorter than formal letters.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "semi-formal",
+        "colleague"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Greeting",
+        "situation",
+        "request",
+        "closing"
+      ]
+    },
+    {
+      "id": "write_semi_009",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "semi_formal_message",
+      "prompt": "Write a message to your teacher asking for clarification about homework.",
+      "answer": "Guten Abend, könnten Sie mir bitte kurz erklären, welche Aufgabe wir bis morgen machen sollen? Vielen Dank!",
+      "choices": [],
+      "explanation": "Semi-formal messages are polite but shorter than formal letters.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "semi-formal",
+        "teacher"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Greeting",
+        "situation",
+        "request",
+        "closing"
+      ]
+    },
+    {
+      "id": "write_semi_010",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "semi_formal_message",
+      "prompt": "Write a message to your landlord because the heating does not work.",
+      "answer": "Guten Tag, die Heizung in meiner Wohnung funktioniert seit gestern nicht. Könnten Sie bitte jemanden schicken? Vielen Dank.",
+      "choices": [],
+      "explanation": "Semi-formal messages are polite but shorter than formal letters.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "semi-formal",
+        "landlord"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Greeting",
+        "situation",
+        "request",
+        "closing"
+      ]
+    },
+    {
+      "id": "write_opinion_011",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "opinion_text",
+      "prompt": "Write an opinion text: Advantages and disadvantages of working from home.",
+      "answer": "Ein Vorteil von Homeoffice ist, dass man Zeit spart. Außerdem kann man konzentrierter arbeiten. Ein Nachteil ist jedoch, dass der Kontakt zu Kolleginnen und Kollegen fehlt. Meiner Meinung nach ist eine Mischung aus Büro und Homeoffice am besten.",
+      "choices": [],
+      "explanation": "Opinion texts need connectors: einerseits, andererseits, weil, deshalb, meiner Meinung nach.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "opinion",
+        "advantages_disadvantages"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "topic sentence",
+        "reasons",
+        "connector",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "write_opinion_012",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "opinion_text",
+      "prompt": "Give reasons: Why is German important for work in Germany?",
+      "answer": "Deutsch ist für die Arbeit in Deutschland wichtig, weil man mit Kolleginnen, Kunden und Behörden kommunizieren muss. Außerdem versteht man Verträge und Regeln besser. Deshalb verbessert Deutsch die Chancen auf dem Arbeitsmarkt.",
+      "choices": [],
+      "explanation": "Opinion texts need connectors: einerseits, andererseits, weil, deshalb, meiner Meinung nach.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "opinion",
+        "reasons"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "topic sentence",
+        "reasons",
+        "connector",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "write_opinion_013",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "opinion_text",
+      "prompt": "Compare two options: language course online or in person.",
+      "answer": "Ein Onlinekurs ist flexibel und spart Zeit. Ein Kurs vor Ort ist persönlicher und man kann direkt sprechen üben. Für mich ist ein Kurs vor Ort besser, weil ich mehr Struktur brauche.",
+      "choices": [],
+      "explanation": "Opinion texts need connectors: einerseits, andererseits, weil, deshalb, meiner Meinung nach.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "opinion",
+        "compare_options"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "topic sentence",
+        "reasons",
+        "connector",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "write_opinion_014",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "opinion_text",
+      "prompt": "Write a short conclusion about Weiterbildung.",
+      "answer": "Zusammenfassend kann man sagen, dass Weiterbildung im Beruf sehr wichtig ist. Sie hilft, neue Aufgaben zu übernehmen und bessere Chancen zu bekommen.",
+      "choices": [],
+      "explanation": "Opinion texts need connectors: einerseits, andererseits, weil, deshalb, meiner Meinung nach.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "opinion",
+        "conclusion"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "topic sentence",
+        "reasons",
+        "connector",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "write_report_015",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "report_summary",
+      "prompt": "Describe a situation: You missed an appointment because the tram had an accident.",
+      "answer": "Heute Morgen konnte ich nicht pünktlich zum Termin kommen, weil meine Straßenbahn einen Unfall hatte. Ich habe sofort Bescheid gesagt und um Verständnis gebeten.",
+      "choices": [],
+      "explanation": "Reports should be factual: what happened, when, consequence, next step.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "report",
+        "situation"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "what happened",
+        "time/context",
+        "consequence",
+        "next step"
+      ]
+    },
+    {
+      "id": "write_report_016",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "report_summary",
+      "prompt": "Summarize: A company introduces flexible working hours.",
+      "answer": "Die Firma führt flexible Arbeitszeiten ein. Die Mitarbeitenden können morgens zwischen 7 und 10 Uhr anfangen. Dadurch sollen Familie und Beruf besser vereinbar werden.",
+      "choices": [],
+      "explanation": "Reports should be factual: what happened, when, consequence, next step.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "report",
+        "summary"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "what happened",
+        "time/context",
+        "consequence",
+        "next step"
+      ]
+    },
+    {
+      "id": "write_report_017",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "report_summary",
+      "prompt": "Explain a problem: Your computer does not work before an online meeting.",
+      "answer": "Kurz vor dem Online-Meeting hat mein Computer nicht mehr funktioniert. Ich konnte mich nicht einloggen und habe deshalb mein Handy benutzt. Danach habe ich den technischen Support informiert.",
+      "choices": [],
+      "explanation": "Reports should be factual: what happened, when, consequence, next step.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "report",
+        "problem"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "what happened",
+        "time/context",
+        "consequence",
+        "next step"
+      ]
+    },
+    {
+      "id": "write_application_018",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "application_writing",
+      "prompt": "Write three CV phrases about skills.",
+      "answer": "Gute Kenntnisse in Microsoft Office. Erfahrung in Datenanalyse und Projektarbeit. Sehr gute Englischkenntnisse in Wort und Schrift.",
+      "choices": [],
+      "explanation": "Application writing should be concrete, professional, and not exaggerated.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "application",
+        "cv_phrases"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear statement",
+        "relevant skill",
+        "concrete example",
+        "professional tone"
+      ]
+    },
+    {
+      "id": "write_application_019",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "application_writing",
+      "prompt": "Write motivation for applying to a job.",
+      "answer": "Ich bewerbe mich, weil die Stelle sehr gut zu meinen Erfahrungen und Interessen passt. Besonders interessant finde ich die Verbindung von Kommunikation, Organisation und praktischer Problemlösung.",
+      "choices": [],
+      "explanation": "Application writing should be concrete, professional, and not exaggerated.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "application",
+        "motivation"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear statement",
+        "relevant skill",
+        "concrete example",
+        "professional tone"
+      ]
+    },
+    {
+      "id": "write_application_020",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "application_writing",
+      "prompt": "Describe your skills for an interview.",
+      "answer": "Ich arbeite strukturiert und lerne schnell. Außerdem kann ich komplexe Informationen verständlich erklären. Im Team kommuniziere ich offen und zuverlässig.",
+      "choices": [],
+      "explanation": "Application writing should be concrete, professional, and not exaggerated.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "application",
+        "skills"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear statement",
+        "relevant skill",
+        "concrete example",
+        "professional tone"
+      ]
+    },
+    {
+      "id": "write_application_021",
+      "module": "feature_complete",
+      "type": "active_recall",
+      "exerciseType": "application_writing",
+      "prompt": "Describe previous experience.",
+      "answer": "In meiner bisherigen Tätigkeit habe ich Erfahrung mit Analyse, Organisation und schriftlicher Kommunikation gesammelt. Dabei habe ich gelernt, selbstständig und sorgfältig zu arbeiten.",
+      "choices": [],
+      "explanation": "Application writing should be concrete, professional, and not exaggerated.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "application",
+        "experience"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "clear statement",
+        "relevant skill",
+        "concrete example",
+        "professional tone"
+      ]
+    }
+  ]
+}

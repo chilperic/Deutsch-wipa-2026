@@ -1,0 +1,23 @@
+{
+  "name": "deutsch-wipa-2026",
+  "version": "3.1.0-feature-complete",
+  "private": false,
+  "description": "Feature-complete responsive B1/B2 German trainer with exercise-type engine, writing, reading, speaking, PWA, and multilingual UI.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "check:js": "node --check app.js",
+    "check:json": "python3 dev/validate_json.py",
+    "check": "npm run check:js && npm run check:json"
+  },
+  "keywords": [
+    "german",
+    "b1",
+    "b2",
+    "language-learning",
+    "pwa",
+    "deutsch",
+    "beruf"
+  ],
+  "license": "MIT"
+}

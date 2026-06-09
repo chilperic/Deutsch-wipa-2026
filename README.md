@@ -1,248 +1,89 @@
-# Deutsch Trainer
+# Deutsch-WiPA 2026
 
-Deutsch Trainer is a browser-based learning app for German vocabulary, workplace language, and B1/B2 grammar practice. It is designed for active recall: the learner sees a prompt, answers, receives feedback, and repeats weak items until the material becomes usable.
+Deutsch-WiPA 2026 is a static B1/B2 German trainer focused on work, everyday life, integration, and exam preparation. The content philosophy follows a **Linie 1 Beruf B1/B2** direction: practical German first, grammar in context, active recall, workplace communication, and real-life German in Germany.
 
-The project is based on the learning needs of B1/B2 German learners, especially learners preparing for professional communication in Germany. It includes vocabulary, article and plural training, workplace sentence banks, prepositional verbs, reflexive verbs, connectors, sentence order, negation, cases, adjective endings, strong verbs, separable verbs, tense practice, Konjunktiv II, and other grammar modules.
+## Current build
 
-## Features
+This is the feature-complete merged build based on the previous content-rich version, not the small prototype shell. It keeps the existing JSON content and adds the missing training engine, writing/speaking/reading modules, exercise-type filtering, and a stronger visual identity.
 
-- Vocabulary practice with article and plural feedback
-- Beruf & Büro sentence bank for workplace German
-- Grammar modules for B1/B2 transition
-- Active recall modes instead of passive reading
-- Weak-item review
-- Learner profile and local progress tracking
-- Multiple themes and layout modes
-- Mobile-friendly interface
-- No backend required
-- Static deployment through GitHub Pages
+### Included content
 
-## Project structure
+- `vokabular/kapitel1.json`
+- `vokabular/kapitel2.json`
+- `vokabular/kapitel3.json`
+- `vokabular/kapitel4.json`
+- `vokabular/beruf_buero.json`
+- `vokabular/kapitel3_foto_ergaenzung.json`
+- 25 grammar / communication / verb-form modules
+- 2,300+ source items plus generated vocabulary exercise variants
+- `training/exercise_types_complete.json` with ready-to-use examples for the requested exercise types
+- `writing/writing_training.json` with formal email, semi-formal message, opinion text, report/summary, and application writing tasks
+- `reading/reading_training.json` with short B1/B2 comprehension tasks
+- `speaking/speaking_prompts.json` with job, authority, doctor, and workplace prompts
 
-```text
-Deutsch-wipa-2026/
-├── index.html
-├── README.md
-├── LICENSE
-├── project_manifest.json
-├── vokabular/
-│   ├── kapitel1.json
-│   ├── kapitel2.json
-│   ├── kapitel3.json
-│   └── kapitel4.json
-├── grammatik/
-│   ├── adjektivdeklination.json
-│   ├── artikel_plural.json
-│   ├── beruf_buero.json
-│   ├── genus_regeln.json
-│   ├── infinitiv_mit_zu.json
-│   ├── kasusergaenzungen.json
-│   ├── konjunktiv_II.json
-│   ├── konnektoren_nebensaetze.json
-│   ├── n_deklination.json
-│   ├── negation.json
-│   ├── perfekt.json
-│   ├── plusquamperfekt.json
-│   ├── praepositionen.json
-│   ├── praepositionalverben.json
-│   ├── pronomen.json
-│   ├── reflexive_verben.json
-│   ├── satzordnung_tekamolo.json
-│   ├── starke_verben.json
-│   └── trennbare_verben.json
-├── docs/
-└── dev/
+### Main features
+
+- Responsive layout for phone, tablet, laptop, and desktop
+- Browser support across Android, iOS, Windows, macOS, and Linux
+- PWA-ready: manifest and service worker included
+- Multilingual interface
+- Arabic and Persian RTL support
+- Vocabulary, grammar, conjugation, and communication navigation
+- Progress tracker in sidebar
+- Mistake bank
+- Start / Check / Previous / Next flow
+- Wrong-answer correction with explanation
+- Learning, practice, challenge, and mistake-review modes
+- Exercise-type selector: flashcard, gap fill, multiple choice, article trainer, plural trainer, case trainer, verb conjugation, Perfekt builder, connector selection, word order, sentence correction, translation into German, translation from German, mini-dialogue, writing, speaking, reading, and mistake review
+- Open writing/speaking tasks with model answers and checklists
+- Improved SVG logo and mobile app icon
+- MIT license
+- GitHub Pages ready
+
+## Run locally
+
+```bash
+python3 -m http.server 8080
 ```
-
-File names may evolve as the app develops. The important principle is simple: vocabulary belongs in `vokabular/`, grammar and sentence-training content belongs in `grammatik/`, documentation belongs in `docs/`, and development checks belong in `dev/`.
-
-## Learning modules
-
-### Vocabulary
-
-The vocabulary modules train:
-
-- article recognition: `der`, `die`, `das`
-- plural forms
-- meaning recall
-- chapter-based vocabulary
-- wrong-answer correction
-
-### Grammar
-
-The grammar modules cover:
-
-- noun gender and article patterns
-- article and plural practice
-- prepositional verbs
-- verbs with Akkusativ, Dativ, and double objects
-- strong verbs
-- separable verbs
-- reflexive verbs
-- negation with `nicht` and `kein`
-- connectors and subordinate clauses
-- TeKaMoLo and sentence order
-- adjective declension
-- pronouns
-- Perfekt and Plusquamperfekt
-- Infinitiv mit `zu`
-- Konjunktiv II
-- workplace and office communication
-
-### Workplace German
-
-The workplace material focuses on practical communication:
-
-- introducing yourself
-- talking about work experience
-- job search and applications
-- first days at a new job
-- workplace routines
-- giving and accepting tasks
-- asking about urgency
-- customer requests
-- complaints and responses
-- accidents and help requests
-- professional qualifications
-- working conditions
-
-## Running locally
-
-No installation is required.
 
 Open:
 
 ```text
-index.html
+http://localhost:8080
 ```
 
-in a browser.
+Do not open `index.html` directly with `file://`; browsers restrict `fetch()` for local JSON files. Use a local server.
 
-For a cleaner local test, run a small local server from the project folder:
+## Validate
 
 ```bash
-python3 -m http.server 8000
+npm run check
 ```
 
-Then open:
+This checks JavaScript syntax and JSON validity.
 
-```text
-http://localhost:8000
-```
+## Deploy on GitHub Pages
 
-## Deploying to GitHub Pages
+1. Create a GitHub repository.
+2. Copy these files into the repository.
+3. Commit and push.
+4. In GitHub: Settings → Pages → Deploy from branch → `main` → root.
 
-Replace the contents of your repository with this project, then run:
+## Suggested commit
 
 ```bash
-git status
+git init
 git add .
-git commit -m "Update Deutsch Trainer content and UI"
-git push
+git commit -m "Build Deutsch-WiPA B1/B2 PWA"
+git branch -M main
+git remote add origin <your-repo-url>
+git push -u origin main
 ```
 
-If GitHub Pages is enabled, the app should update automatically after the push.
+## Content note
 
-## Development checks
-
-The `dev/` folder may contain validation scripts. Run them before committing when Node.js is available:
-
-```bash
-node --check dev/script_check.js
-node dev/quality_check.js
-```
-
-The checks are not a substitute for manual testing. At minimum, test the following in the browser:
-
-1. Open the app.
-2. Enter a learner name.
-3. Change the theme.
-4. Select a module.
-5. Start a session.
-6. Answer one item correctly and one item incorrectly.
-7. Confirm that feedback appears.
-8. Confirm that you can move to the next item.
-9. Open the tracker.
-10. Refresh the page and confirm that progress remains.
-
-## Content principles
-
-The app should not reveal the answer before the learner responds. A good item should have:
-
-- a clear prompt
-- one expected answer or a small controlled answer set
-- useful feedback
-- a short explanation when the answer is wrong
-- enough context to learn the grammar pattern
-- no unnecessary UI noise
-
-For nouns, include article and plural whenever possible. For verbs, include the required case or preposition. For connectors, include word-order feedback. For workplace phrases, include realistic professional contexts.
-
-## Adding new content
-
-Add new JSON content to the relevant folder.
-
-Use `vokabular/` for chapter vocabulary:
-
-```text
-vokabular/kapitel5.json
-```
-
-Use `grammatik/` for grammar or workplace modules:
-
-```text
-grammatik/new_module.json
-```
-
-A useful content item should normally contain:
-
-```json
-{
-  "id": "unique-id",
-  "module": "module-name",
-  "type": "active-recall",
-  "prompt": "Question shown to the learner",
-  "answer": "Expected answer",
-  "choices": ["option 1", "option 2", "option 3", "option 4"],
-  "explanation": "Short explanation after the answer",
-  "tags": ["B1", "B2", "grammar-topic"]
-}
-```
-
-The exact schema can be extended, but keep it consistent. Do not create a new schema for every module unless the learning interaction really requires it.
-
-## Contribution guidelines
-
-This project is open for further development. Useful contributions include:
-
-- more B1/B2 grammar items
-- better feedback explanations
-- better mobile layout
-- accessibility improvements
-- additional themes
-- better progress analytics
-- cleaner JSON schemas
-- tests for content quality
-- bug fixes
-- documentation improvements
-
-Before contributing, check that the app still works in a browser and that the learning flow does not expose the answer too early.
+Some vocabulary modules include multilingual translations from the previous dataset. For languages not present in the original content, the app falls back to German or English while keeping the full interface in the selected language. Arabic and Persian layout is right-to-left.
 
 ## License
 
-This project is released under the MIT License. You are free to use, modify, copy, merge, publish, distribute, sublicense, and build on it, provided that the license notice is included.
-
-See [`LICENSE`](LICENSE) for details.
-
-
-## Communication modules
-
-The communication section is now active and includes:
-
-```text
-- Entschuldigung & Reaktion
-- Reklamation / technische Probleme
-- Bewerbung / Arbeit
-```
-
-These modules train practical B1/B2 communication: apologies, polite reactions, complaints, customer-service answers, job interview phrases, workplace questions, and self-presentation.
+MIT. Free to use, modify, and extend.

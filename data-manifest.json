@@ -1,0 +1,250 @@
+{
+  "version": "2026.06.09-feature-complete",
+  "modules": [
+    {
+      "id": "grammatik_adjektivdeklination",
+      "path": "grammatik/adjektivdeklination.json",
+      "category": "grammar",
+      "title": "Adjektivdeklination",
+      "count": 80
+    },
+    {
+      "id": "grammatik_adjektive_als_nomen",
+      "path": "grammatik/adjektive_als_nomen.json",
+      "category": "grammar",
+      "title": "Adjektive Als Nomen",
+      "count": 70
+    },
+    {
+      "id": "grammatik_beruf",
+      "path": "grammatik/beruf.json",
+      "category": "communication",
+      "title": "Beruf",
+      "count": 80
+    },
+    {
+      "id": "grammatik_bewerbung_arbeit",
+      "path": "grammatik/bewerbung_arbeit.json",
+      "category": "communication",
+      "title": "Bewerbung / Arbeit",
+      "count": 90
+    },
+    {
+      "id": "grammatik_entschuldigung_reaktion",
+      "path": "grammatik/entschuldigung_reaktion.json",
+      "category": "communication",
+      "title": "Entschuldigung & Reaktion",
+      "count": 80
+    },
+    {
+      "id": "grammatik_genus_rules",
+      "path": "grammatik/genus_rules.json",
+      "category": "grammar",
+      "title": "Genus Rules",
+      "count": 70
+    },
+    {
+      "id": "grammatik_infinitiv_zu",
+      "path": "grammatik/infinitiv_zu.json",
+      "category": "grammar",
+      "title": "Infinitiv Zu",
+      "count": 70
+    },
+    {
+      "id": "grammatik_kasusergaenzungen",
+      "path": "grammatik/kasusergaenzungen.json",
+      "category": "grammar",
+      "title": "Kasusergaenzungen",
+      "count": 80
+    },
+    {
+      "id": "grammatik_konjunktiv2",
+      "path": "grammatik/konjunktiv2.json",
+      "category": "conjugation",
+      "title": "Konjunktiv2",
+      "count": 75
+    },
+    {
+      "id": "grammatik_konnektoren_engine",
+      "path": "grammatik/konnektoren_engine.json",
+      "category": "grammar",
+      "title": "Konnektoren",
+      "count": 90
+    },
+    {
+      "id": "grammatik_konnektoren_nebensaetze",
+      "path": "grammatik/konnektoren_nebensaetze.json",
+      "category": "grammar",
+      "title": "Konnektoren Nebensaetze",
+      "count": 80
+    },
+    {
+      "id": "grammatik_n_deklination",
+      "path": "grammatik/n_deklination.json",
+      "category": "grammar",
+      "title": "N Deklination",
+      "count": 75
+    },
+    {
+      "id": "grammatik_negation_engine",
+      "path": "grammatik/negation_engine.json",
+      "category": "grammar",
+      "title": "Negation",
+      "count": 85
+    },
+    {
+      "id": "grammatik_nomen_artikel_plural",
+      "path": "grammatik/nomen_artikel_plural.json",
+      "category": "grammar",
+      "title": "Nomen Artikel Plural",
+      "count": 90
+    },
+    {
+      "id": "grammatik_perfekt",
+      "path": "grammatik/perfekt.json",
+      "category": "conjugation",
+      "title": "Perfekt",
+      "count": 80
+    },
+    {
+      "id": "grammatik_plusquamperfekt",
+      "path": "grammatik/plusquamperfekt.json",
+      "category": "conjugation",
+      "title": "Plusquamperfekt",
+      "count": 75
+    },
+    {
+      "id": "grammatik_praepositionalverben",
+      "path": "grammatik/praepositionalverben.json",
+      "category": "grammar",
+      "title": "Praepositionalverben",
+      "count": 120
+    },
+    {
+      "id": "grammatik_praepositionen",
+      "path": "grammatik/praepositionen.json",
+      "category": "grammar",
+      "title": "Praepositionen",
+      "count": 80
+    },
+    {
+      "id": "grammatik_pronomen",
+      "path": "grammatik/pronomen.json",
+      "category": "grammar",
+      "title": "Pronomen",
+      "count": 80
+    },
+    {
+      "id": "grammatik_reflexive",
+      "path": "grammatik/reflexive.json",
+      "category": "conjugation",
+      "title": "Reflexive",
+      "count": 80
+    },
+    {
+      "id": "grammatik_reklamation_technische_probleme",
+      "path": "grammatik/reklamation_technische_probleme.json",
+      "category": "communication",
+      "title": "Reklamation / technische Probleme",
+      "count": 90
+    },
+    {
+      "id": "grammatik_starke_verben",
+      "path": "grammatik/starke_verben.json",
+      "category": "conjugation",
+      "title": "Starke Verben",
+      "count": 90
+    },
+    {
+      "id": "grammatik_tekamolo_engine",
+      "path": "grammatik/tekamolo_engine.json",
+      "category": "grammar",
+      "title": "Satzordnung / TeKaMoLo",
+      "count": 70
+    },
+    {
+      "id": "grammatik_trennbare_verben",
+      "path": "grammatik/trennbare_verben.json",
+      "category": "conjugation",
+      "title": "Trennbare Verben",
+      "count": 90
+    },
+    {
+      "id": "grammatik_verbformen_basis",
+      "path": "grammatik/verbformen_basis.json",
+      "category": "conjugation",
+      "title": "Verbformen: Präsens, Perfekt, Präteritum, Futur I",
+      "count": 10
+    },
+    {
+      "id": "vokabular_beruf_buero",
+      "path": "vokabular/beruf_buero.json",
+      "category": "communication",
+      "title": "Beruf & Büro",
+      "count": 80
+    },
+    {
+      "id": "vokabular_kapitel1",
+      "path": "vokabular/kapitel1.json",
+      "category": "vocabulary",
+      "title": "Kapitel 1",
+      "count": 81
+    },
+    {
+      "id": "vokabular_kapitel2",
+      "path": "vokabular/kapitel2.json",
+      "category": "vocabulary",
+      "title": "Kapitel 2",
+      "count": 93
+    },
+    {
+      "id": "vokabular_kapitel3",
+      "path": "vokabular/kapitel3.json",
+      "category": "vocabulary",
+      "title": "Kapitel 3",
+      "count": 76
+    },
+    {
+      "id": "vokabular_kapitel3_foto_ergaenzung",
+      "path": "vokabular/kapitel3_foto_ergaenzung.json",
+      "category": "vocabulary",
+      "title": "Kapitel 3 Foto-Ergänzung: Leben und Beruf im Wandel",
+      "count": 10
+    },
+    {
+      "id": "vokabular_kapitel4",
+      "path": "vokabular/kapitel4.json",
+      "category": "vocabulary",
+      "title": "Kapitel 4",
+      "count": 67
+    },
+    {
+      "id": "training_exercise_types_complete",
+      "path": "training/exercise_types_complete.json",
+      "category": "training",
+      "title": "18 Übungstypen · Ready-to-use",
+      "count": 36
+    },
+    {
+      "id": "writing_writing_training",
+      "path": "writing/writing_training.json",
+      "category": "writing",
+      "title": "Schreiben · E-Mail, Meinung, Bericht, Bewerbung",
+      "count": 21
+    },
+    {
+      "id": "reading_reading_training",
+      "path": "reading/reading_training.json",
+      "category": "reading",
+      "title": "Lesen · Arbeit und Alltag",
+      "count": 12
+    },
+    {
+      "id": "speaking_speaking_prompts",
+      "path": "speaking/speaking_prompts.json",
+      "category": "speaking",
+      "title": "Sprechen · Beruf und Alltag",
+      "count": 12
+    }
+  ]
+}
