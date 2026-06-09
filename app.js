@@ -1,171 +1,1106 @@
+// ═══════════════════════════════════════════════════════════════════════
+//  Deutsch-WiPA 2026  —  app.js
+//  Single-file SPA for B1/B2 German workplace vocabulary & grammar.
+// ═══════════════════════════════════════════════════════════════════════
+
+// ── Language config ─────────────────────────────────────────────────────
 const LANGS = [
-  ['de','Deutsch','ltr'], ['en','English','ltr'], ['fr','Français','ltr'], ['es','Español','ltr'],
-  ['it','Italiano','ltr'], ['pt','Português','ltr'], ['uk','Українська','ltr'], ['ru','Русский','ltr'],
-  ['pl','Polski','ltr'], ['tr','Türkçe','ltr'], ['ar','العربية','rtl'], ['fa','فارسی','rtl'],
-  ['zh','中文','ltr'], ['ja','日本語','ltr'], ['ko','한국어','ltr'], ['th','ไทย','ltr']
+  ['de','Deutsch','ltr'],['en','English','ltr'],['fr','Français','ltr'],['es','Español','ltr'],
+  ['it','Italiano','ltr'],['pt','Português','ltr'],['uk','Українська','ltr'],['ru','Русский','ltr'],
+  ['pl','Polski','ltr'],['tr','Türkçe','ltr'],['ar','العربية','rtl'],['fa','فارسی','rtl'],
+  ['zh','中文','ltr'],['ja','日本語','ltr'],['ko','한국어','ltr'],['th','ไทย','ltr']
 ];
-const NAME_TO_CODE = {German:'de',Deutsch:'de',English:'en',French:'fr',Français:'fr',Spanish:'es',Español:'es',Italian:'it',Italiano:'it',Portuguese:'pt',Português:'pt',Arabic:'ar',Persian:'fa',Ukrainian:'uk',Russian:'ru',Polish:'pl',Turkish:'tr',Chinese:'zh',Japanese:'ja',Korean:'ko',Thai:'th'};
-const CODE_TO_NAME = {de:'German',en:'English',fr:'French',es:'Spanish',it:'Italian',pt:'Portuguese',ar:'Arabic',fa:'Persian',uk:'Ukrainian',ru:'Russian',pl:'Polish',tr:'Turkish',zh:'Chinese',ja:'Japanese',ko:'Korean',th:'Thai'};
-const BASE_EN = {
-  subtitle:'B1/B2 Beruf trainer',learnerName:'Learner name',learningPath:'Learning path',module:'Module',progress:'Progress',answered:'Answered',correct:'Correct',mistakes:'Mistakes',restartModule:'Restart module',exercise:'Exercise',learnMode:'Learn',practiceMode:'Practice',challengeMode:'Challenge',mistakeReview:'Mistakes',install:'Install',previous:'Previous',start:'Start',check:'Check',next:'Next',helper:'Helper',mistakeBank:'Mistake bank',clearMistakes:'Clear mistakes',vocabulary:'Vocabulary',grammar:'Grammar',conjugation:'Verb forms',communication:'Communication',integration:'Everyday & integration',exam:'Exam training',training:'Exercise types',writing:'Writing',reading:'Reading',speaking:'Speaking',correctMsg:'Correct.',incorrectMsg:'Incorrect.',submittedMsg:'Submitted for self-check.',correctAnswer:'Model / correct answer',yourAnswer:'Your answer',why:'Why?',rule:'Rule',example:'Example',addedMistake:'Added to mistake bank.',noMistakes:'No mistakes yet.',loading:'Loading content...',writeAnswer:'Write your answer…',writeLongAnswer:'Write your text here…',chooseAnswer:'Choose an answer.',translation:'Translation',explanation:'Explanation',commonMistake:'Common mistake',modeLearnIntro:'Read the card, then press Start when ready.',allTypes:'All exercise types',checklist:'Checklist',selfCheck:'Compare your answer with the model. The app cannot fully grade open writing/speaking yet.',itemType:'Exercise type'
+const CODE_TO_NAME = {
+  de:'German',en:'English',fr:'French',es:'Spanish',it:'Italian',pt:'Portuguese',
+  ar:'Arabic',fa:'Persian',uk:'Ukrainian',ru:'Russian',pl:'Polish',tr:'Turkish',
+  zh:'Chinese',ja:'Japanese',ko:'Korean',th:'Thai'
 };
+
+// ── i18n strings ─────────────────────────────────────────────────────────
+const BASE_EN = {
+  subtitle:'B1/B2 Beruf trainer',learnerName:'Your name',
+  vocabulary:'Vocabulary',grammar:'Grammar',conjugation:'Verb forms',
+  communication:'Communication',integration:'Everyday & integration',
+  exam:'Exam training',training:'Exercise types',writing:'Writing',
+  reading:'Reading',speaking:'Speaking',
+  learnMode:'Learn',practiceMode:'Practice',challengeMode:'Challenge',mistakeMode:'Mistakes',
+  start:'Start',check:'Check',next:'Next',prev:'Back',
+  correctMsg:'Correct!',incorrectMsg:'Incorrect.',submittedMsg:'Self-check.',
+  correctAnswer:'Correct answer',yourAnswer:'Your answer',
+  why:'Explanation',rule:'Rule',example:'Example',
+  addedMistake:'Added to mistake bank.',noMistakes:'No mistakes yet.',
+  loading:'Loading…',writeAnswer:'Your answer…',writeLongAnswer:'Write your text here…',
+  chooseAnswer:'Choose an answer.',
+  translation:'Translation',explanation:'Explanation',
+  modeLearnIntro:'Study the card. Press Start to begin.',
+  allTypes:'All types',checklist:'Checklist',
+  selfCheck:'Compare with model. Open tasks are not auto-graded.',
+  itemType:'Type',wordCount:'words',noItems:'No items match this filter.',
+  globalStat:'All time',streakMsg:'in a row',install:'Install',
+  clearMistakes:'Clear all',speakBtn:'Speak',
+  hintTitle:'Hint',mistakeTitle:'Mistake bank',
+};
+
 const T = {
   en: BASE_EN,
-  de:{...BASE_EN, subtitle:'B1/B2 Berufstrainer',learnerName:'Name',learningPath:'Lernweg',module:'Modul',progress:'Fortschritt',answered:'Beantwortet',correct:'Richtig',mistakes:'Fehler',restartModule:'Modul neu starten',exercise:'Übung',learnMode:'Lernen',practiceMode:'Üben',challengeMode:'Challenge',mistakeReview:'Fehler',previous:'Zurück',start:'Start',check:'Prüfen',next:'Weiter',helper:'Hilfe',mistakeBank:'Fehlerbank',clearMistakes:'Fehler löschen',vocabulary:'Wortschatz',grammar:'Grammatik',conjugation:'Verbformen',communication:'Kommunikation',training:'Übungstypen',writing:'Schreiben',reading:'Lesen',speaking:'Sprechen',correctMsg:'Richtig.',incorrectMsg:'Falsch.',submittedMsg:'Zur Selbstkontrolle eingereicht.',correctAnswer:'Musterlösung / richtige Antwort',yourAnswer:'Deine Antwort',why:'Warum?',rule:'Regel',example:'Beispiel',addedMistake:'Zur Fehlerbank hinzugefügt.',noMistakes:'Noch keine Fehler.',loading:'Inhalte werden geladen...',writeAnswer:'Antwort schreiben…',writeLongAnswer:'Schreibe deinen Text hier…',chooseAnswer:'Antwort wählen.',translation:'Übersetzung',explanation:'Erklärung',commonMistake:'Typischer Fehler',modeLearnIntro:'Lies die Karte. Drücke danach Start.',allTypes:'Alle Übungstypen',checklist:'Checkliste',selfCheck:'Vergleiche deine Antwort mit der Musterlösung. Offene Schreib-/Sprechaufgaben werden noch nicht vollständig automatisch bewertet.',itemType:'Übungstyp'},
-  fr:{...BASE_EN, subtitle:'Allemand B1/B2 professionnel',learnerName:'Nom',learningPath:'Parcours',module:'Module',progress:'Progrès',answered:'Répondu',correct:'Correct',mistakes:'Erreurs',restartModule:'Recommencer',exercise:'Exercice',learnMode:'Apprendre',practiceMode:'Pratiquer',challengeMode:'Défi',mistakeReview:'Erreurs',previous:'Précédent',start:'Commencer',check:'Vérifier',next:'Suivant',helper:'Aide',mistakeBank:'Banque d’erreurs',clearMistakes:'Effacer',vocabulary:'Vocabulaire',grammar:'Grammaire',conjugation:'Formes verbales',communication:'Communication',training:'Types d’exercices',writing:'Écriture',reading:'Lecture',speaking:'Expression orale',correctMsg:'Correct.',incorrectMsg:'Incorrect.',correctAnswer:'Réponse modèle / correcte',yourAnswer:'Ta réponse',why:'Pourquoi ?',rule:'Règle',example:'Exemple',allTypes:'Tous les types'},
-  es:{...BASE_EN, subtitle:'Entrenador B1/B2 profesional',learnerName:'Nombre',learningPath:'Ruta',progress:'Progreso',answered:'Respondidas',correct:'Correctas',mistakes:'Errores',restartModule:'Reiniciar',exercise:'Ejercicio',learnMode:'Aprender',practiceMode:'Practicar',challengeMode:'Reto',mistakeReview:'Errores',previous:'Anterior',start:'Empezar',check:'Comprobar',next:'Siguiente',helper:'Ayuda',mistakeBank:'Banco de errores',clearMistakes:'Borrar',vocabulary:'Vocabulario',grammar:'Gramática',conjugation:'Formas verbales',communication:'Comunicación',training:'Tipos de ejercicio',writing:'Escritura',reading:'Lectura',speaking:'Hablar',correctMsg:'Correcto.',incorrectMsg:'Incorrecto.',correctAnswer:'Modelo / respuesta correcta',yourAnswer:'Tu respuesta',why:'¿Por qué?',rule:'Regla',example:'Ejemplo',allTypes:'Todos los tipos'},
-  ar:{...BASE_EN, subtitle:'مدرب ألمانية B1/B2 للعمل',learnerName:'اسم المتعلم',learningPath:'مسار التعلم',module:'الوحدة',progress:'التقدم',answered:'تمت الإجابة',correct:'صحيح',mistakes:'أخطاء',restartModule:'إعادة الوحدة',exercise:'تمرين',learnMode:'تعلّم',practiceMode:'تدريب',challengeMode:'تحدي',mistakeReview:'الأخطاء',previous:'السابق',start:'ابدأ',check:'تحقق',next:'التالي',helper:'مساعدة',mistakeBank:'بنك الأخطاء',clearMistakes:'مسح الأخطاء',vocabulary:'المفردات',grammar:'القواعد',conjugation:'تصريف الأفعال',communication:'التواصل',training:'أنواع التمارين',writing:'الكتابة',reading:'القراءة',speaking:'التحدث',correctMsg:'صحيح.',incorrectMsg:'خطأ.',submittedMsg:'تم الإرسال للمراجعة الذاتية.',correctAnswer:'النموذج / الإجابة الصحيحة',yourAnswer:'إجابتك',why:'لماذا؟',rule:'القاعدة',example:'مثال',allTypes:'كل أنواع التمارين',writeAnswer:'اكتب إجابتك…',writeLongAnswer:'اكتب نصك هنا…'},
-  fa:{...BASE_EN, subtitle:'تمرین آلمانی B1/B2 برای کار',learnerName:'نام زبان‌آموز',learningPath:'مسیر یادگیری',module:'بخش',progress:'پیشرفت',answered:'پاسخ داده‌شده',correct:'درست',mistakes:'اشتباه‌ها',restartModule:'شروع دوباره',exercise:'تمرین',learnMode:'یادگیری',practiceMode:'تمرین',challengeMode:'چالش',mistakeReview:'اشتباه‌ها',previous:'قبلی',start:'شروع',check:'بررسی',next:'بعدی',helper:'کمک',mistakeBank:'بانک اشتباه‌ها',clearMistakes:'پاک کردن',vocabulary:'واژگان',grammar:'گرامر',conjugation:'صرف فعل',communication:'ارتباط',training:'نوع تمرین‌ها',writing:'نوشتن',reading:'خواندن',speaking:'گفتار',correctMsg:'درست.',incorrectMsg:'نادرست.',submittedMsg:'برای خودارزیابی ثبت شد.',correctAnswer:'نمونه / پاسخ درست',yourAnswer:'پاسخ شما',why:'چرا؟',rule:'قاعده',example:'مثال',allTypes:'همه نوع تمرین‌ها',writeAnswer:'پاسخ را بنویسید…',writeLongAnswer:'متن خود را اینجا بنویسید…'},
-  uk:{...BASE_EN, subtitle:'Тренажер німецької B1/B2 для роботи',learnerName:'Ім’я',learningPath:'Навчальний шлях',module:'Модуль',progress:'Прогрес',answered:'Відповіді',correct:'Правильно',mistakes:'Помилки',restartModule:'Почати знову',exercise:'Вправа',learnMode:'Вивчати',practiceMode:'Практика',challengeMode:'Виклик',mistakeReview:'Помилки',previous:'Назад',start:'Старт',check:'Перевірити',next:'Далі',helper:'Допомога',mistakeBank:'Банк помилок',clearMistakes:'Очистити',vocabulary:'Словник',grammar:'Граматика',conjugation:'Форми дієслів',communication:'Комунікація',training:'Типи вправ',writing:'Письмо',reading:'Читання',speaking:'Говоріння',correctMsg:'Правильно.',incorrectMsg:'Неправильно.',correctAnswer:'Модель / правильна відповідь',yourAnswer:'Ваша відповідь',why:'Чому?',rule:'Правило',example:'Приклад',allTypes:'Усі типи'}
+  de: { ...BASE_EN,
+    subtitle:'B1/B2 Berufstrainer',learnerName:'Dein Name',
+    vocabulary:'Wortschatz',grammar:'Grammatik',conjugation:'Verbformen',
+    communication:'Kommunikation',integration:'Alltag & Integration',
+    exam:'Prüfungsvorbereitung',training:'Übungstypen',
+    writing:'Schreiben',reading:'Lesen',speaking:'Sprechen',
+    learnMode:'Lernen',practiceMode:'Üben',challengeMode:'Challenge',mistakeMode:'Fehler',
+    start:'Start',check:'Prüfen',next:'Weiter',prev:'Zurück',
+    correctMsg:'Richtig!',incorrectMsg:'Falsch.',submittedMsg:'Selbstkontrolle.',
+    correctAnswer:'Richtige Antwort',yourAnswer:'Deine Antwort',
+    why:'Erklärung',rule:'Regel',example:'Beispiel',
+    addedMistake:'In Fehlerbank gespeichert.',noMistakes:'Noch keine Fehler.',
+    loading:'Wird geladen…',writeAnswer:'Deine Antwort…',writeLongAnswer:'Schreibe deinen Text hier…',
+    chooseAnswer:'Wähle eine Antwort.',
+    translation:'Übersetzung',explanation:'Erklärung',
+    modeLearnIntro:'Schau dir die Karte an. Drücke Start um zu beginnen.',
+    allTypes:'Alle Typen',checklist:'Checkliste',
+    selfCheck:'Vergleiche mit der Musterlösung. Offene Aufgaben werden nicht automatisch bewertet.',
+    itemType:'Typ',wordCount:'Wörter',noItems:'Keine Einträge für diesen Filter.',
+    globalStat:'Gesamt',streakMsg:'in Folge',install:'Installieren',
+    clearMistakes:'Alle löschen',speakBtn:'Aussprechen',
+    hintTitle:'Hinweis',mistakeTitle:'Fehlerbank',
+  },
+  fr: { ...BASE_EN,
+    vocabulary:'Vocabulaire',grammar:'Grammaire',conjugation:'Conjugaison',
+    communication:'Communication',integration:'Vie quotidienne',exam:'Examen',
+    writing:'Écriture',reading:'Lecture',speaking:'Expression orale',
+    learnMode:'Apprendre',practiceMode:'Pratiquer',challengeMode:'Défi',mistakeMode:'Erreurs',
+    start:'Commencer',check:'Vérifier',next:'Suivant',prev:'Précédent',
+    correctMsg:'Correct !',incorrectMsg:'Incorrect.',submittedMsg:'Auto-évaluation.',
+    correctAnswer:'Réponse correcte',yourAnswer:'Ta réponse',
+    why:'Explication',noMistakes:'Pas encore d\'erreurs.',loading:'Chargement…',
+    writeAnswer:'Ta réponse…',writeLongAnswer:'Écris ton texte ici…',
+    translation:'Traduction',explanation:'Explication',
+    modeLearnIntro:'Étudie la carte. Appuie sur Commencer.',
+    allTypes:'Tous les types',itemType:'Type',noItems:'Aucun élément.',
+    clearMistakes:'Tout effacer',install:'Installer',
+  },
+  es: { ...BASE_EN,
+    vocabulary:'Vocabulario',grammar:'Gramática',conjugation:'Conjugación',
+    communication:'Comunicación',integration:'Vida cotidiana',exam:'Examen',
+    writing:'Escritura',reading:'Lectura',speaking:'Expresión oral',
+    learnMode:'Aprender',practiceMode:'Practicar',challengeMode:'Reto',mistakeMode:'Errores',
+    start:'Empezar',check:'Comprobar',next:'Siguiente',prev:'Anterior',
+    correctMsg:'¡Correcto!',incorrectMsg:'Incorrecto.',submittedMsg:'Autoevaluación.',
+    correctAnswer:'Respuesta correcta',yourAnswer:'Tu respuesta',
+    why:'Explicación',noMistakes:'Sin errores aún.',loading:'Cargando…',
+    writeAnswer:'Tu respuesta…',writeLongAnswer:'Escribe tu texto aquí…',
+    translation:'Traducción',explanation:'Explicación',
+    modeLearnIntro:'Estudia la tarjeta. Pulsa Empezar.',
+    allTypes:'Todos los tipos',itemType:'Tipo',noItems:'Sin elementos.',
+    clearMistakes:'Borrar todo',install:'Instalar',
+  },
+  ar: { ...BASE_EN,
+    vocabulary:'المفردات',grammar:'القواعد',conjugation:'تصريف الأفعال',
+    communication:'التواصل',integration:'الحياة اليومية',exam:'الامتحان',
+    writing:'الكتابة',reading:'القراءة',speaking:'التحدث',
+    learnMode:'تعلّم',practiceMode:'تدريب',challengeMode:'تحدي',mistakeMode:'أخطاء',
+    start:'ابدأ',check:'تحقق',next:'التالي',prev:'السابق',
+    correctMsg:'صحيح!',incorrectMsg:'خطأ.',submittedMsg:'مراجعة ذاتية.',
+    correctAnswer:'الإجابة الصحيحة',yourAnswer:'إجابتك',
+    why:'الشرح',noMistakes:'لا أخطاء بعد.',loading:'جارٍ التحميل…',
+    writeAnswer:'إجابتك…',writeLongAnswer:'اكتب نصك هنا…',
+    translation:'الترجمة',explanation:'الشرح',
+    modeLearnIntro:'ادرس البطاقة ثم اضغط ابدأ.',
+    allTypes:'كل الأنواع',itemType:'النوع',noItems:'لا توجد عناصر.',
+    clearMistakes:'حذف الكل',install:'تثبيت',
+  },
+  fa: { ...BASE_EN,
+    vocabulary:'واژگان',grammar:'دستور زبان',conjugation:'صرف فعل',
+    communication:'ارتباط',integration:'زندگی روزمره',exam:'آزمون',
+    writing:'نوشتن',reading:'خواندن',speaking:'مکالمه',
+    learnMode:'یادگیری',practiceMode:'تمرین',challengeMode:'چالش',mistakeMode:'اشتباه‌ها',
+    start:'شروع',check:'بررسی',next:'بعدی',prev:'قبلی',
+    correctMsg:'درست!',incorrectMsg:'نادرست.',submittedMsg:'بررسی شخصی.',
+    correctAnswer:'پاسخ درست',yourAnswer:'پاسخ شما',
+    why:'توضیح',noMistakes:'هنوز اشتباهی نیست.',loading:'بارگذاری…',
+    writeAnswer:'پاسخ شما…',writeLongAnswer:'متن خود را بنویسید…',
+    translation:'ترجمه',explanation:'توضیح',
+    modeLearnIntro:'کارت را مطالعه کنید، سپس شروع را بزنید.',
+    allTypes:'همه انواع',itemType:'نوع',noItems:'موردی یافت نشد.',
+    clearMistakes:'پاک کردن همه',install:'نصب',
+  },
+  uk: { ...BASE_EN,
+    vocabulary:'Словник',grammar:'Граматика',conjugation:'Відмінювання',
+    communication:'Спілкування',integration:'Повсякденне життя',exam:'Іспит',
+    writing:'Письмо',reading:'Читання',speaking:'Мовлення',
+    learnMode:'Вивчати',practiceMode:'Практика',challengeMode:'Виклик',mistakeMode:'Помилки',
+    start:'Старт',check:'Перевірити',next:'Далі',prev:'Назад',
+    correctMsg:'Правильно!',incorrectMsg:'Неправильно.',submittedMsg:'Самоперевірка.',
+    correctAnswer:'Правильна відповідь',yourAnswer:'Ваша відповідь',
+    why:'Пояснення',noMistakes:'Помилок ще немає.',loading:'Завантаження…',
+    writeAnswer:'Ваша відповідь…',writeLongAnswer:'Напишіть тут свій текст…',
+    translation:'Переклад',explanation:'Пояснення',
+    modeLearnIntro:'Вивчіть картку. Натисніть Старт.',
+    allTypes:'Усі типи',itemType:'Тип',noItems:'Немає елементів.',
+    clearMistakes:'Видалити все',install:'Встановити',
+  },
 };
-for (const code of ['it','pt','ru','pl','tr','zh','ja','ko','th']) T[code] = {...BASE_EN, subtitle: BASE_EN.subtitle + ' · partial UI'};
-Object.assign(T.de,{exam:'Prüfungsvorbereitung',integration:'Alltag & Integration',install:'Installieren',selfCheck:'Vergleiche deine Antwort mit der Musterlösung. Die App prüft offene Aufgaben über Mindestlänge und Checkliste.',noTypeItems:'Keine passenden Aufgaben in diesem Modul.',wordCount:'Wörter',speak:'Anhören'});
-Object.assign(T.fr,{exam:'Préparation à l’examen',integration:'Vie quotidienne & intégration',install:'Installer',submittedMsg:'Soumis pour auto-évaluation.',addedMistake:'Ajouté à la banque d’erreurs.',noMistakes:'Pas encore d’erreurs.',loading:'Chargement du contenu…',writeAnswer:'Écris ta réponse…',writeLongAnswer:'Écris ton texte ici…',chooseAnswer:'Choisis une réponse.',translation:'Traduction',explanation:'Explication',commonMistake:'Erreur fréquente',modeLearnIntro:'Lis la carte, puis appuie sur Commencer.',checklist:'Liste de contrôle',selfCheck:'Compare ta réponse avec le modèle.',itemType:'Type d’exercice',noTypeItems:'Aucun exercice de ce type dans ce module.',wordCount:'Mots',speak:'Écouter'});
-Object.assign(T.es,{exam:'Preparación de examen',integration:'Vida diaria e integración',install:'Instalar',submittedMsg:'Enviado para autoevaluación.',addedMistake:'Añadido al banco de errores.',noMistakes:'Aún no hay errores.',loading:'Cargando contenido…',writeAnswer:'Escribe tu respuesta…',writeLongAnswer:'Escribe tu texto aquí…',chooseAnswer:'Elige una respuesta.',translation:'Traducción',explanation:'Explicación',commonMistake:'Error común',modeLearnIntro:'Lee la tarjeta y luego pulsa Empezar.',checklist:'Lista de control',selfCheck:'Compara tu respuesta con el modelo.',itemType:'Tipo de ejercicio',noTypeItems:'No hay ejercicios de este tipo en este módulo.',wordCount:'Palabras',speak:'Escuchar'});
-Object.assign(T.uk,{exam:'Підготовка до іспиту',integration:'Повсякденне життя та інтеграція',install:'Встановити',submittedMsg:'Надіслано для самоперевірки.',addedMistake:'Додано до банку помилок.',noMistakes:'Помилок ще немає.',loading:'Завантаження матеріалів…',writeAnswer:'Напишіть відповідь…',writeLongAnswer:'Напишіть текст тут…',chooseAnswer:'Виберіть відповідь.',translation:'Переклад',explanation:'Пояснення',commonMistake:'Типова помилка',modeLearnIntro:'Прочитайте картку, потім натисніть Старт.',checklist:'Контрольний список',selfCheck:'Порівняйте відповідь із моделлю.',itemType:'Тип вправи',noTypeItems:'У цьому модулі немає вправ цього типу.',wordCount:'Слів',speak:'Прослухати'});
-Object.assign(T.ar,{exam:'التدريب للامتحان',integration:'الحياة اليومية والاندماج',install:'تثبيت',addedMistake:'أضيف إلى بنك الأخطاء.',noMistakes:'لا توجد أخطاء بعد.',loading:'جارٍ تحميل المحتوى…',chooseAnswer:'اختر إجابة.',translation:'ترجمة',explanation:'شرح',commonMistake:'خطأ شائع',modeLearnIntro:'اقرأ البطاقة ثم اضغط ابدأ.',checklist:'قائمة التحقق',selfCheck:'قارن إجابتك بالنموذج.',itemType:'نوع التمرين',noTypeItems:'لا توجد تمارين من هذا النوع في هذه الوحدة.',wordCount:'كلمات',speak:'استمع'});
-Object.assign(T.fa,{exam:'آمادگی آزمون',integration:'زندگی روزمره و ادغام',install:'نصب',addedMistake:'به بانک اشتباه‌ها افزوده شد.',noMistakes:'هنوز اشتباهی ثبت نشده است.',loading:'در حال بارگذاری محتوا…',chooseAnswer:'یک پاسخ انتخاب کنید.',translation:'ترجمه',explanation:'توضیح',commonMistake:'اشتباه رایج',modeLearnIntro:'کارت را بخوانید، سپس شروع را بزنید.',checklist:'چک‌لیست',selfCheck:'پاسخ خود را با نمونه مقایسه کنید.',itemType:'نوع تمرین',noTypeItems:'در این بخش تمرینی از این نوع وجود ندارد.',wordCount:'واژه‌ها',speak:'پخش'});
-Object.assign(T.ru,{subtitle:'Тренажер немецкого B1/B2 для работы',learnerName:'Имя',learningPath:'Путь обучения',module:'Модуль',progress:'Прогресс',answered:'Ответов',correct:'Правильно',mistakes:'Ошибки',restartModule:'Начать модуль заново',exercise:'Упражнение',learnMode:'Учить',practiceMode:'Практика',challengeMode:'Вызов',mistakeReview:'Ошибки',install:'Установить',previous:'Назад',start:'Старт',check:'Проверить',next:'Далее',helper:'Помощь',mistakeBank:'Банк ошибок',clearMistakes:'Очистить ошибки',vocabulary:'Словарь',grammar:'Грамматика',conjugation:'Формы глаголов',communication:'Коммуникация',integration:'Быт и интеграция',exam:'Подготовка к экзамену',training:'Типы упражнений',writing:'Письмо',reading:'Чтение',speaking:'Говорение',correctMsg:'Правильно.',incorrectMsg:'Неправильно.',submittedMsg:'Отправлено для самопроверки.',correctAnswer:'Модель / правильный ответ',yourAnswer:'Ваш ответ',why:'Почему?',rule:'Правило',example:'Пример',addedMistake:'Добавлено в банк ошибок.',noMistakes:'Ошибок пока нет.',loading:'Загрузка материалов…',writeAnswer:'Напишите ответ…',writeLongAnswer:'Напишите текст здесь…',chooseAnswer:'Выберите ответ.',translation:'Перевод',explanation:'Объяснение',commonMistake:'Типичная ошибка',modeLearnIntro:'Прочитайте карточку, затем нажмите Старт.',allTypes:'Все типы упражнений',checklist:'Список проверки',selfCheck:'Сравните ответ с моделью.',itemType:'Тип упражнения',noTypeItems:'В этом модуле нет упражнений этого типа.',wordCount:'Слов',speak:'Прослушать'});
-Object.assign(T.pl,{subtitle:'Trener niemieckiego B1/B2 do pracy',learnerName:'Imię',learningPath:'Ścieżka nauki',module:'Moduł',progress:'Postęp',answered:'Odpowiedzi',correct:'Poprawne',mistakes:'Błędy',restartModule:'Zacznij moduł od nowa',exercise:'Ćwiczenie',learnMode:'Nauka',practiceMode:'Praktyka',challengeMode:'Wyzwanie',mistakeReview:'Błędy',install:'Zainstaluj',previous:'Poprzednie',start:'Start',check:'Sprawdź',next:'Dalej',helper:'Pomoc',mistakeBank:'Bank błędów',clearMistakes:'Wyczyść błędy',vocabulary:'Słownictwo',grammar:'Gramatyka',conjugation:'Formy czasownika',communication:'Komunikacja',integration:'Codzienność i integracja',exam:'Przygotowanie do egzaminu',training:'Typy ćwiczeń',writing:'Pisanie',reading:'Czytanie',speaking:'Mówienie',correctMsg:'Poprawnie.',incorrectMsg:'Niepoprawnie.',submittedMsg:'Wysłano do samokontroli.',correctAnswer:'Model / poprawna odpowiedź',yourAnswer:'Twoja odpowiedź',why:'Dlaczego?',rule:'Reguła',example:'Przykład',addedMistake:'Dodano do banku błędów.',noMistakes:'Brak błędów.',loading:'Ładowanie treści…',writeAnswer:'Napisz odpowiedź…',writeLongAnswer:'Napisz tekst tutaj…',chooseAnswer:'Wybierz odpowiedź.',translation:'Tłumaczenie',explanation:'Wyjaśnienie',commonMistake:'Typowy błąd',modeLearnIntro:'Przeczytaj kartę, potem naciśnij Start.',allTypes:'Wszystkie typy ćwiczeń',checklist:'Lista kontrolna',selfCheck:'Porównaj odpowiedź z modelem.',itemType:'Typ ćwiczenia',noTypeItems:'Brak ćwiczeń tego typu w tym module.',wordCount:'Słów',speak:'Odsłuchaj'});
-Object.assign(T.tr,{subtitle:'İş için Almanca B1/B2 eğitmeni',learnerName:'Ad',learningPath:'Öğrenme yolu',module:'Modül',progress:'İlerleme',answered:'Cevaplandı',correct:'Doğru',mistakes:'Hatalar',restartModule:'Modülü yeniden başlat',exercise:'Alıştırma',learnMode:'Öğren',practiceMode:'Pratik',challengeMode:'Meydan okuma',mistakeReview:'Hatalar',install:'Yükle',previous:'Önceki',start:'Başlat',check:'Kontrol et',next:'Sonraki',helper:'Yardım',mistakeBank:'Hata bankası',clearMistakes:'Hataları temizle',vocabulary:'Kelime',grammar:'Dilbilgisi',conjugation:'Fiil biçimleri',communication:'İletişim',integration:'Günlük yaşam ve uyum',exam:'Sınav hazırlığı',training:'Alıştırma türleri',writing:'Yazma',reading:'Okuma',speaking:'Konuşma',correctMsg:'Doğru.',incorrectMsg:'Yanlış.',submittedMsg:'Öz kontrol için gönderildi.',correctAnswer:'Model / doğru cevap',yourAnswer:'Cevabın',why:'Neden?',rule:'Kural',example:'Örnek',addedMistake:'Hata bankasına eklendi.',noMistakes:'Henüz hata yok.',loading:'İçerik yükleniyor…',writeAnswer:'Cevabını yaz…',writeLongAnswer:'Metnini buraya yaz…',chooseAnswer:'Bir cevap seç.',translation:'Çeviri',explanation:'Açıklama',commonMistake:'Yaygın hata',modeLearnIntro:'Kartı oku, sonra Başlat’a bas.',allTypes:'Tüm alıştırma türleri',checklist:'Kontrol listesi',selfCheck:'Cevabını modelle karşılaştır.',itemType:'Alıştırma türü',noTypeItems:'Bu modülde bu tür alıştırma yok.',wordCount:'Kelime',speak:'Dinle'});
+for (const code of ['it','pt','ru','pl','tr','zh','ja','ko','th']) T[code] = BASE_EN;
 
-
-const EXERCISE_TYPES = [
-  ['all','allTypes'], ['flashcard','Flashcard'], ['gap_fill','Gap fill'], ['multiple_choice','Multiple choice'], ['article_trainer','Article trainer'], ['plural_trainer','Plural trainer'], ['case_trainer','Case trainer'], ['verb_conjugation','Verb conjugation'], ['perfekt_builder','Perfekt builder'], ['connector_selection','Connector selection'], ['word_order','Word order reconstruction'], ['sentence_correction','Sentence correction'], ['translation_into_german','Translation into German'], ['translation_from_german','Translation from German'], ['mini_dialogue_completion','Mini-dialogue completion'], ['formal_email_writing','Formal email writing'], ['semi_formal_message','Semi-formal message'], ['opinion_text','Opinion text'], ['report_summary','Report / summary'], ['application_writing','Application writing'], ['speaking_prompt','Speaking prompt'], ['reading_comprehension','Reading comprehension'], ['mistake_review','Mistake review']
+// ── Category metadata (icon, accent colour, i18n key) ────────────────────
+const CATEGORIES = [
+  { id:'vocabulary',   icon:'📚', color:'var(--cat-vocab)' },
+  { id:'grammar',      icon:'⚙️',  color:'var(--cat-gram)' },
+  { id:'conjugation',  icon:'🔄', color:'var(--cat-conj)' },
+  { id:'communication',icon:'💬', color:'var(--cat-comm)' },
+  { id:'training',     icon:'🎯', color:'var(--cat-train)' },
+  { id:'writing',      icon:'✍️',  color:'var(--cat-write)' },
+  { id:'reading',      icon:'📖', color:'var(--cat-read)' },
+  { id:'speaking',     icon:'🎤', color:'var(--cat-speak)' },
 ];
-const OPEN_TYPES = new Set(['formal_email_writing','semi_formal_message','opinion_text','report_summary','application_writing','speaking_prompt']);
-const CATEGORIES = ['vocabulary','grammar','conjugation','communication','training','writing','reading','speaking'];
+
+// Exercise types that accept free text (graded on word count)
+const OPEN_TYPES = new Set([
+  'formal_email_writing','semi_formal_message','opinion_text',
+  'report_summary','application_writing','speaking_prompt'
+]);
+// Exercise types where subject-pronoun omission is tolerated
+const SENTENCE_TYPES = new Set([
+  'verb_conjugation','perfekt_builder','word_order','sentence_correction',
+  'translation_into_german','gap_fill','active_recall','correction',
+  'contrast','contrast_v2','consequence_v2','addition','result_subordinate'
+]);
+// Exercise types that use multiple-choice UI
+const CHOICE_TYPES = new Set([
+  'multiple_choice','connector_selection','article_trainer',
+  'communication_choice','classify','case_trainer'
+]);
+
+// ── Utilities ────────────────────────────────────────────────────────────
 const $ = id => document.getElementById(id);
-const state = {lang:localStorage.getItem('dw_lang')||'en',theme:localStorage.getItem('dw_theme')||'auto',category:localStorage.getItem('dw_category')||'vocabulary',moduleId:localStorage.getItem('dw_module')||'',mode:localStorage.getItem('dw_mode')||'practice',exerciseType:localStorage.getItem('dw_exercise_type')||'all',manifest:null,modules:[],currentItems:[],index:0,started:false,checked:false,selectedChoice:'',stats:JSON.parse(localStorage.getItem('dw_stats')||'{}'),globalStats:JSON.parse(localStorage.getItem('dw_global_stats')||'{"answered":0,"correct":0}'),mistakes:JSON.parse(localStorage.getItem('dw_mistakes')||'[]'),srs:JSON.parse(localStorage.getItem('dw_srs')||'{}'),deferredPrompt:null};
-let cachedPoolKey='', cachedPool=[];
-function tr(key){return (T[state.lang]&&T[state.lang][key])||BASE_EN[key]||key;}
-function escapeHtml(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
-function normalizeAnswer(s=''){return String(s).trim().toLowerCase().replace(/[„“”]/g,'"').replace(/[.!?。؟،,;:]+$/g,'').replace(/\s+/g,' ');}
-function wordCount(s=''){return normalizeAnswer(s).split(/\s+/).filter(Boolean).length;}
-function answersMatch(user, correct, item={}){
-  const u=normalizeAnswer(user), c=normalizeAnswer(correct);
-  if(u===c) return true;
-  if(!u||!c) return false;
-  const sentenceTypes=new Set(['verb_conjugation','perfekt_builder','word_order','sentence_correction','translation_into_german','case_trainer']);
-  if(sentenceTypes.has(item.exerciseType)){
-    const cWords=c.split(' ');
-    if(cWords.length>1 && cWords.slice(1).join(' ')===u) return true;
-    if(c.replace(/^(ich|du|er|sie|es|wir|ihr|sie|Sie)\s+/i,'')===u) return true;
+const tr = key => (T[state.lang]?.[key]) || BASE_EN[key] || key;
+const esc = s => String(s ?? '').replace(/[&<>'"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+
+function normalizeStr(s = '') {
+  return String(s).trim().toLowerCase()
+    .replace(/[„""«»]/g, '"')
+    .replace(/[.!?。؟،,;:]+$/g, '')
+    .replace(/\s+/g, ' ');
+}
+
+// Accepts: exact match, leading-article stripped, subject-pronoun stripped,
+// and for vocab translation items: base form without ", -n" plural hint.
+function answersMatch(user, item) {
+  const u = normalizeStr(user);
+  const c = normalizeStr(item.answer || '');
+  if (!u) return false;
+  if (u === c) return true;
+
+  // Accept answer without the ", -n" / ", -e" plural hint suffix
+  // e.g. correct = "die Messe, -n", user = "die Messe" or "Messe"
+  const cNoPlural = c.replace(/,\s*-?\S+$/, '').trim();
+  if (u === cNoPlural) return true;
+
+  // Accept without leading article
+  const cNoArticle = c.replace(/^(der|die|das|den|dem|des)\s+/i, '');
+  const cNoPluralNoArticle = cNoPlural.replace(/^(der|die|das|den|dem|des)\s+/i, '');
+  if (u === cNoArticle || u === cNoPluralNoArticle) return true;
+
+  // For sentence types: accept without leading subject pronoun
+  if (SENTENCE_TYPES.has(item.exerciseType)) {
+    const cWords = c.split(' ');
+    if (cWords.length > 1 && cWords.slice(1).join(' ') === u) return true;
+    // Also accept if user just typed the key word/phrase inside a longer answer
+    // e.g. correct "keine" user "keine Zeit" — don't do this, too permissive
   }
   return false;
 }
-function shuffle(items){const a=[...items]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a;}
-function dueWeight(item){const rec=state.srs[item.id]; return !rec ? 0 : (rec.due<=Date.now() ? -rec.box : rec.due);}
-function isRTL(){return (LANGS.find(l=>l[0]===state.lang)?.[2])==='rtl';}
-function localized(v){if(!v)return''; if(typeof v==='string')return v; return v[CODE_TO_NAME[state.lang]]||v[state.lang]||v.German||v.English||Object.values(v)[0]||'';}
-function typeLabel(type){const rec=EXERCISE_TYPES.find(x=>x[0]===type); return rec ? (tr(rec[1])||rec[1]) : type.replaceAll('_',' ');}
 
-async function init(){setupLanguageSelect(); setupExerciseTypeSelect(); setupEvents(); applyTheme(); applyLanguage(); $('questionText').textContent=tr('loading'); state.manifest=await fetch('data-manifest.json').then(r=>r.json()); await loadAllModules(); renderCategories(); const first=state.modules.find(m=>m.id===state.moduleId&&m.category===state.category)||state.modules.find(m=>m.category===state.category)||state.modules[0]; if(first){state.category=first.category; state.moduleId=first.id;} selectModule(state.moduleId,false); if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});}
-function setupLanguageSelect(){$('languageSelect').innerHTML=LANGS.map(([code,label])=>`<option value="${code}">${label}</option>`).join(''); $('languageSelect').value=state.lang;}
-function setupExerciseTypeSelect(){
-  const groups={All:[['all','allTypes']],Vocabulary:['flashcard','article_trainer','plural_trainer','translation_into_german','translation_from_german'],Grammar:['gap_fill','multiple_choice','case_trainer','verb_conjugation','perfekt_builder','connector_selection','word_order','sentence_correction','mini_dialogue_completion'],Writing:['formal_email_writing','semi_formal_message','opinion_text','report_summary','application_writing'],Skills:['speaking_prompt','reading_comprehension','mistake_review']};
-  const byId=Object.fromEntries(EXERCISE_TYPES.map(x=>[x[0],x]));
-  $('exerciseTypeSelect').innerHTML=Object.entries(groups).map(([g,vals])=>`<optgroup label="${escapeHtml(g)}">`+vals.map(v=>{const rec=Array.isArray(v)?v:byId[v]; return `<option value="${rec[0]}">${rec[0]==='all'?tr('allTypes'):escapeHtml(rec[1])}</option>`;}).join('')+'</optgroup>').join('');
-  $('exerciseTypeSelect').value=state.exerciseType;
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
-function setupEvents(){
-  $('languageSelect').addEventListener('change',e=>{state.lang=e.target.value; localStorage.setItem('dw_lang',state.lang); applyLanguage(); renderAll();});
-  $('themeToggle').addEventListener('click',()=>{state.theme=state.theme==='dark'?'light':state.theme==='light'?'auto':'dark'; localStorage.setItem('dw_theme',state.theme); applyTheme();});
-  $('learnerName').value=localStorage.getItem('dw_name')||''; $('learnerName').addEventListener('input',e=>localStorage.setItem('dw_name',e.target.value));
-  $('moduleSelect').addEventListener('change',e=>selectModule(e.target.value,true));
-  $('modeSelect').value=state.mode; $('modeSelect').addEventListener('change',e=>{state.mode=e.target.value; localStorage.setItem('dw_mode',state.mode); resetRun(); renderExercise();});
-  $('exerciseTypeSelect').addEventListener('change',e=>{state.exerciseType=e.target.value; localStorage.setItem('dw_exercise_type',state.exerciseType); resetRun(); renderExercise();});
-  $('startButton').addEventListener('click',startSession); $('checkButton').addEventListener('click',checkAnswer); $('nextButton').addEventListener('click',nextItem); $('prevButton').addEventListener('click',prevItem);
-  $('answerInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!$('checkButton').disabled)checkAnswer();});
-  $('resetModule').addEventListener('click',()=>{delete state.stats[statKey()]; saveStats(); resetRun(); renderAll();});
-  $('clearMistakes').addEventListener('click',()=>{state.mistakes=[]; saveMistakes(); renderMistakes(); renderStats(); if(state.mode==='mistakes')renderExercise();});
-  $('menuToggle').addEventListener('click',()=>toggleDrawer(true)); $('mobileDrawerBackdrop').addEventListener('click',()=>toggleDrawer(false));
-  window.addEventListener('beforeinstallprompt',e=>{e.preventDefault(); state.deferredPrompt=e; $('installButton').classList.remove('hidden');});
-  $('installButton').addEventListener('click',async()=>{if(state.deferredPrompt){state.deferredPrompt.prompt(); state.deferredPrompt=null; $('installButton').classList.add('hidden');}});
-  $('categoryNav').addEventListener('click',e=>{const btn=e.target.closest('.cat-button'); if(!btn)return; state.category=btn.dataset.cat; localStorage.setItem('dw_category',state.category); const first=state.modules.find(m=>m.category===state.category); if(first)selectModule(first.id,true); toggleDrawer(false);});
-  document.addEventListener('click',e=>{const btn=e.target.closest('[data-speak]'); if(btn) speak(btn.dataset.speak);});
-  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&!$('nextButton').disabled)nextItem(); if(e.key==='ArrowLeft'&&!$('prevButton').disabled)prevItem(); if(e.key==='Enter'&&state.checked&&!$('nextButton').disabled)nextItem();});
+
+function isRTL() { return LANGS.find(l => l[0] === state.lang)?.[2] === 'rtl'; }
+function localize(v) {
+  if (!v) return '';
+  if (typeof v === 'string') return v;
+  const name = CODE_TO_NAME[state.lang];
+  return v[name] || v[state.lang] || v.German || v.English || Object.values(v)[0] || '';
 }
-function resetRun(){state.index=0; state.started=false; state.checked=false; state.selectedChoice=''; cachedPoolKey=''; cachedPool=[];}
-function toggleDrawer(open){$('sidebar').classList.toggle('open',open); $('mobileDrawerBackdrop').classList.toggle('hidden',!open); document.querySelector('.main-panel')?.toggleAttribute('inert',open); document.querySelector('.bottom-actions')?.toggleAttribute('inert',open);}
-function applyTheme(){const dark=state.theme==='dark'||(state.theme==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches); document.documentElement.dataset.theme=dark?'dark':'light'; $('themeToggle').textContent=state.theme==='auto'?'◐':(dark?'☾':'☼');}
-function applyLanguage(){document.documentElement.lang=state.lang; document.documentElement.dir=isRTL()?'rtl':'ltr'; document.body.classList.toggle('rtl',isRTL()); document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n; el.textContent=tr(key);}); $('answerInput').placeholder=tr('writeAnswer'); $('answerTextArea').placeholder=tr('writeLongAnswer'); setupExerciseTypeSelect();}
-async function loadAllModules(){
-  const results=await Promise.allSettled(state.manifest.modules.map(async meta=>{const data=await fetch(meta.path).then(r=>{if(!r.ok)throw new Error(meta.path); return r.json();}); const items=normalizeModule(data,meta); return {...meta,raw:data,items,count:items.length};}));
-  state.modules=results.filter(r=>r.status==='fulfilled').map(r=>r.value);
-  results.filter(r=>r.status==='rejected').forEach(r=>console.warn('failed module',r.reason));
+function getTranslation(t = {}) {
+  const name = CODE_TO_NAME[state.lang];
+  return t[name] || t[state.lang] || t.English || t.French || t.German || '';
 }
-function normalizeModule(data,meta){
-  if(data.vocabulary_entries && !data.words){data.words = data.vocabulary_entries.map((e,idx)=>({id:e.id||`${meta.id}_${idx}`,word:`${e.term}${e.plural?', '+e.plural:''}`,level:e.cefr||data.level||'B1/B2',tags:['collocation',e.corporate_context||meta.title],translations:{English:e.english_equivalent||''},data:{grammar:{article:(e.term||'').split(' ')[0],base:(e.term||'').replace(/^(der|die|das)\s+/,'') ,plural:e.plural||''},example_de:e.essential_collocations?.[0]?.example||'',explanation:`${e.corporate_context||''}. ${e.essential_collocations?.map(c=>c.collocation).join(' · ')||''}`,collocations:e.essential_collocations||[]}}));}
-  const arr=data.items||data.words||[]; let out=[];
-  arr.forEach((it,idx)=>{if(data.words){out.push(...normalizeVocabItem(it,idx,data,meta));}else{out.push(normalizeStandardItem(it,idx,data,meta));}});
-  return out.filter(x=>x&&x.prompt&&String(x.answer||x.openEnded).length);
+
+// Type label for badges
+const TYPE_LABELS = {
+  flashcard:'Flashcard', article_trainer:'Artikel', plural_trainer:'Plural',
+  translation_into_german:'→ Deutsch', translation_from_german:'→ Übersetzen',
+  gap_fill:'Lücke', multiple_choice:'Multiple choice', connector_selection:'Konnektor',
+  case_trainer:'Kasus', verb_conjugation:'Verb', perfekt_builder:'Perfekt',
+  word_order:'Wortstellung', sentence_correction:'Korrektur',
+  formal_email_writing:'Formal E-Mail', semi_formal_message:'Halbformell',
+  opinion_text:'Meinung', report_summary:'Bericht', application_writing:'Bewerbung',
+  speaking_prompt:'Sprechen', reading_comprehension:'Leseverstehen',
+  active_recall:'Recall', communication_choice:'Kommunikation',
+  classify:'Klassifizieren', contrast:'Kontrast', contrast_v2:'Kontrast',
+  consequence_v2:'Folge', addition:'Ergänzung', result_subordinate:'Ergebnis',
+  kein_declension:'Kein', nicht_position:'Nicht', temporal_subordinate:'Temporal',
+  correction:'Korrektur', mistake_review:'Fehlerwiederholung',
+};
+function typeLabel(type) { return TYPE_LABELS[type] || String(type).replaceAll('_',' '); }
+
+// ── App state ────────────────────────────────────────────────────────────
+const state = {
+  lang:         localStorage.getItem('dw_lang')         || 'de',
+  theme:        localStorage.getItem('dw_theme')        || 'auto',
+  category:     localStorage.getItem('dw_category')     || 'vocabulary',
+  moduleId:     localStorage.getItem('dw_module')       || '',
+  mode:         localStorage.getItem('dw_mode')         || 'practice',
+  exType:       localStorage.getItem('dw_extype')       || 'all',
+  manifest:     null,
+  modules:      [],
+  currentItems: [],
+  pool:         [],
+  index:        0,
+  started:      false,
+  checked:      false,
+  selectedChoice: '',
+  streak:       0,
+  stats:        JSON.parse(localStorage.getItem('dw_stats')   || '{}'),
+  mistakes:     JSON.parse(localStorage.getItem('dw_mistakes')|| '[]'),
+  globalStats:  JSON.parse(localStorage.getItem('dw_global')  || '{"answered":0,"correct":0}'),
+  deferredPrompt: null,
+};
+
+// ── Init ─────────────────────────────────────────────────────────────────
+async function init() {
+  setupLanguageSelect();
+  setupModeTabEvents();
+  setupExerciseTypeSelect();
+  setupMainEvents();
+  applyTheme();
+  applyLanguage();
+  $('questionText').textContent = tr('loading');
+
+  state.manifest = await fetch('data-manifest.json').then(r => r.json());
+  await loadAllModules();
+  renderCategories();
+
+  const first =
+    state.modules.find(m => m.id === state.moduleId && m.category === state.category) ||
+    state.modules.find(m => m.category === state.category) ||
+    state.modules[0];
+  if (first) { state.category = first.category; state.moduleId = first.id; }
+  selectModule(state.moduleId, false);
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 }
-function normalizeStandardItem(it,idx,data,meta){
-  const exType=it.exerciseType||inferExerciseType(it,meta);
-  const checklist=[...(it.checklist||[])];
-  if(it.required_structural_components?.length) checklist.push(...it.required_structural_components.map(x=>`Structure: ${x}`));
-  if(it.mandatory_vocabulary_tokens?.length) checklist.push(`Mandatory vocabulary: ${it.mandatory_vocabulary_tokens.join(', ')}`);
-  if(it.evaluation_hints?.minimum_word_count) checklist.push(`Minimum words: ${it.evaluation_hints.minimum_word_count}`);
-  return {id:it.id||`${meta.id}_${idx}`,module:meta.title,category:meta.category,kind:it.type||exType,exerciseType:exType,prompt:it.prompt||it.display||it.question||it.prompt_instruction||'',answer:it.answer||it.model_answer||'',display:it.display||it.category||'',choices:it.choices||[],explanation:it.explanation||it.example||it.meaning||it.prompt_instruction||'',example:it.example||'',level:it.level||it.cefr_level||data.level||'B1/B2',tags:it.tags||[],openEnded:!!it.openEnded||OPEN_TYPES.has(exType),checklist,passage:it.passage||'',raw:it};
+
+// ── Module loading (parallel) ────────────────────────────────────────────
+async function loadAllModules() {
+  const results = await Promise.allSettled(
+    state.manifest.modules.map(async meta => {
+      const data = await fetch(meta.path).then(r => r.json());
+      const items = normalizeModule(data, meta);
+      return { ...meta, raw: data, items, count: items.length };
+    })
+  );
+  state.modules = results.filter(r => r.status === 'fulfilled').map(r => r.value);
+  results.filter(r => r.status === 'rejected').forEach(r => console.warn('Module load failed:', r.reason));
 }
-function normalizeVocabItem(it,idx,data,meta){const d=it.data||{}; const translations=d.translations||it.translations||{}; const name=it.word||it.display||it.answer||''; const grammar=d.grammar||{}; const article=grammar.article||extractArticle(name); const base=grammar.base||name.replace(/^(der|die|das)\s+/,'').split(',')[0].trim(); const plural=grammar.plural||extractPlural(name,article,base); const explanation=d.explanation||it.explanation||d.grammar_clarification||''; const example=d.example_de||it.example_de||d.example||it.example||''; const trans=getTranslation(translations); const common={module:meta.title,category:meta.category,level:it.level||data.level||'B1/B2',tags:it.tags||[data.chapter||meta.title],translations,example,explanation,raw:it}; const id=it.id||`${meta.id}_${idx}`; const items=[];
-  items.push({...common,id:`${id}_flash`,kind:'vocab',exerciseType:'flashcard',prompt:`Flashcard: ${name}`,answer:trans||name,display:name});
-  if(trans) items.push({...common,id:`${id}_into_de`,kind:'vocab',exerciseType:'translation_into_german',prompt:`${trans} → Deutsch`,answer:name,display:name});
-  if(trans) items.push({...common,id:`${id}_from_de`,kind:'vocab',exerciseType:'translation_from_german',prompt:`German → ${CODE_TO_NAME[state.lang]||'translation'}: ${name}`,answer:trans,display:name});
-  if(article) items.push({...common,id:`${id}_article`,kind:'vocab',exerciseType:'article_trainer',prompt:`Artikel: ___ ${base}`,answer:article,display:name,choices:['der','die','das'],explanation:localized(d.grammar_clarification)||`Learn this noun as: ${article} ${base}.`});
-  if(plural) items.push({...common,id:`${id}_plural`,kind:'vocab',exerciseType:'plural_trainer',prompt:`Plural: ${article?article+' ':''}${base} → die ___`,answer:plural.replace(/^die\s+/,'').trim(),display:name,explanation:localized(d.grammar_clarification)||`Plural: die ${plural.replace(/^die\s+/,'')}.`});
+
+// ── Module normalisation ─────────────────────────────────────────────────
+function normalizeModule(data, meta) {
+  if (data.vocabulary_entries && !data.words) {
+    data.words = data.vocabulary_entries.map((e, idx) => ({
+      id: e.id || `${meta.id}_${idx}`,
+      word: `${e.term}${e.plural ? ', ' + e.plural : ''}`,
+      level: e.cefr || data.level || 'B1/B2',
+      tags: [e.corporate_context || meta.title],
+      translations: { English: e.english_equivalent || '' },
+      data: {
+        grammar: {
+          article: (e.term||'').split(' ')[0], base: (e.term||'').replace(/^(der|die|das)\s+/,''),
+          plural: e.plural || ''
+        },
+        example_de: e.essential_collocations?.[0]?.example || '',
+        explanation: e.corporate_context || '',
+        collocations: e.essential_collocations || []
+      }
+    }));
+  }
+  const arr = data.items || data.words || [];
+  const out = [];
+  arr.forEach((it, idx) => {
+    if (data.words) out.push(...normalizeVocabItem(it, idx, data, meta));
+    else            out.push(normalizeStandardItem(it, idx, data, meta));
+  });
+  return out.filter(x => x && x.prompt && (x.answer || x.openEnded || (x.choices && x.choices.length)));
+}
+
+function normalizeStandardItem(it, idx, data, meta) {
+  // Resolve exercise type — handles all the exotic types in the data
+  const rawType = it.exerciseType || it.type || '';
+  const exType  = resolveExerciseType(rawType, it, meta);
+  const isOpen  = !!it.openEnded || OPEN_TYPES.has(exType);
+
+  const checklist = [...(it.checklist || [])];
+  if (it.required_structural_components?.length)
+    checklist.push(...it.required_structural_components.map(x => 'Struktur: ' + x));
+  if (it.mandatory_vocabulary_tokens?.length)
+    checklist.push('Pflicht-Vokabular: ' + it.mandatory_vocabulary_tokens.join(', '));
+  if (it.evaluation_hints?.minimum_word_count)
+    checklist.push('Mindestwörter: ' + it.evaluation_hints.minimum_word_count);
+
+  return {
+    id:           it.id || `${meta.id}_${idx}`,
+    module:       meta.title,
+    category:     meta.category,
+    exerciseType: exType,
+    prompt:       it.prompt || it.display || it.question || it.prompt_instruction || '',
+    answer:       it.answer || it.model_answer || '',
+    display:      it.display || '',
+    choices:      it.choices || [],
+    explanation:  localize(it.explanation) || it.example || it.meaning || '',
+    example:      it.example || '',
+    level:        it.level || it.cefr_level || data.level || 'B1/B2',
+    tags:         it.tags || [],
+    openEnded:    isOpen,
+    minWords:     it.evaluation_hints?.minimum_word_count || (isOpen ? 25 : 0),
+    checklist,
+    passage:      it.passage || '',
+    raw:          it,
+  };
+}
+
+// Resolve the many exotic type strings in the JSON data to the canonical set
+function resolveExerciseType(raw, it, meta) {
+  if (OPEN_TYPES.has(raw))  return raw;
+  // Exact known types
+  const known = new Set([
+    'flashcard','article_trainer','plural_trainer','translation_into_german','translation_from_german',
+    'gap_fill','multiple_choice','connector_selection','case_trainer','verb_conjugation',
+    'perfekt_builder','word_order','sentence_correction','formal_email_writing','semi_formal_message',
+    'opinion_text','report_summary','application_writing','speaking_prompt','reading_comprehension',
+    'active_recall','communication_choice','classify','contrast','contrast_v2','consequence_v2',
+    'addition','result_subordinate','kein_declension','nicht_position','temporal_subordinate',
+    'correction','mistake_review'
+  ]);
+  if (known.has(raw)) return raw;
+
+  // Infer from type field aliases
+  if (raw === 'choice')          return (it.choices?.length) ? 'multiple_choice' : 'gap_fill';
+  if (raw === 'order')           return 'word_order';
+  if (raw === 'contrast')        return 'contrast';
+  if (raw === 'active_recall')   return 'active_recall';
+
+  // Infer from choices
+  if (it.choices?.length) {
+    const s = ((meta.id||'')+' '+(it.prompt||'')).toLowerCase();
+    if (s.includes('konnektor') || s.includes('connector')) return 'connector_selection';
+    if (s.includes('klassifi') || s.includes('classify'))   return 'classify';
+    if (s.includes('artikel'))                              return 'article_trainer';
+    return 'multiple_choice';
+  }
+
+  // Infer from prompt content
+  const s = ((meta.id||'')+' '+(meta.title||'')+' '+(it.prompt||'')).toLowerCase();
+  if (s.includes('artikel') || s.includes('genus'))         return 'article_trainer';
+  if (s.includes('plural'))                                 return 'plural_trainer';
+  if (s.includes('kasus') || s.includes('dativ') || s.includes('akkusativ')) return 'case_trainer';
+  if (s.includes('perfekt'))                                return 'perfekt_builder';
+  if (s.includes('konnektor') || s.includes('connector'))   return 'connector_selection';
+  if (s.includes('tekamolo') || s.includes('wortordnung') || s.includes('word order')) return 'word_order';
+  if (s.includes('translate into german') || s.includes('→ deutsch')) return 'translation_into_german';
+  if (s.includes('translate') || s.includes('übersetz'))    return 'translation_from_german';
+  if (s.includes('verb') || s.includes('konjunktiv') || s.includes('reflexiv')) return 'verb_conjugation';
+  if (s.includes('nicht'))                                  return 'nicht_position';
+  if (s.includes('kein'))                                   return 'kein_declension';
+  if (String(it.prompt||'').includes('___'))                return 'gap_fill';
+  return 'active_recall';
+}
+
+function normalizeVocabItem(it, idx, data, meta) {
+  const d     = it.data || {};
+  const trans = d.translations || it.translations || {};
+  const name  = it.word || it.display || '';
+  const g     = d.grammar || {};
+  const article = g.article || extractArticle(name);
+  const base    = g.base || name.replace(/^(der|die|das)\s+/i,'').split(',')[0].trim();
+  const plural  = g.plural || extractPlural(name, article, base);
+
+  // Use collocations as explanation when they exist; skip the boilerplate
+  const colls = d.collocations || [];
+  const explanation = colls.length
+    ? colls.map(c => c.collocation + (c.example ? ' — ' + c.example : '')).join('; ')
+    : localize(d.grammar_clarification || d.explanation || it.explanation || '');
+  const example  = d.example_de || it.example_de || '';
+  const tText    = getTranslation(trans);
+
+  const common = {
+    module: meta.title, category: meta.category,
+    level: it.level || data.level || 'B1/B2',
+    tags: it.tags || [data.chapter || meta.title],
+    translations: trans, example, explanation,
+    openEnded: false, minWords: 0, choices: [], checklist: [], passage: '',
+    collocations: colls, raw: it,
+    article, base, plural,
+  };
+  const id = it.id || `${meta.id}_${idx}`;
+  const items = [];
+
+  // Flashcard — shows full word with article + plural hint
+  items.push({ ...common, id:`${id}_flash`, exerciseType:'flashcard',
+    prompt: name, answer: tText || name, display: name });
+
+  // Translation → German
+  if (tText) items.push({ ...common, id:`${id}_into_de`, exerciseType:'translation_into_german',
+    // Answer is ONLY "article base" (e.g. "die Messe"), NOT "die Messe, -n"
+    // This prevents false-incorrect when user types "die Messe"
+    prompt: tText + ' → Deutsch',
+    answer: article ? `${article} ${base}` : base,
+    display: name });
+
+  // Translation from German
+  if (tText) items.push({ ...common, id:`${id}_from_de`, exerciseType:'translation_from_german',
+    prompt: name + ' → ' + (CODE_TO_NAME[state.lang] || 'Übersetzung'),
+    answer: tText, display: name });
+
+  // Article trainer (multiple-choice der/die/das)
+  if (article) items.push({ ...common, id:`${id}_art`, exerciseType:'article_trainer',
+    prompt: '___ ' + base,
+    answer: article, display: name,
+    choices: ['der','die','das'],
+    explanation: localize(d.grammar_clarification) || `Nomen mit Artikel merken: ${article} ${base}` });
+
+  // Plural trainer
+  if (plural) {
+    const pluralAns = plural.replace(/^die\s+/i,'').trim();
+    items.push({ ...common, id:`${id}_pl`, exerciseType:'plural_trainer',
+      prompt: (article ? article + ' ' : '') + base + ' → die ___',
+      answer: pluralAns, display: name,
+      explanation: localize(d.grammar_clarification) || `Plural: die ${pluralAns}` });
+  }
+
   return items;
 }
-function extractArticle(s){const m=String(s).match(/^(der|die|das)\s+/i); return m?m[1].toLowerCase():'';}
-function extractPlural(name,article,base){const m=String(name).match(/,\s*([^,]+)$/); if(!m)return''; const hint=m[1].trim(); if(hint.startsWith('-')) return base+hint.slice(1); return hint.replace(/^die\s+/,'');}
-function inferExerciseType(it,meta){const t=(it.type||''), id=(meta.id||'')+' '+(meta.title||'')+' '+(it.module||'')+' '+(it.prompt||''); const s=id.toLowerCase(); if(t.includes('choice')||(it.choices&&it.choices.length)) return s.includes('konnektor')?'connector_selection':'multiple_choice'; if(s.includes('artikel')||s.includes('genus')) return 'article_trainer'; if(s.includes('plural')) return 'plural_trainer'; if(s.includes('kasus')||s.includes('dativ')||s.includes('akkusativ')) return 'case_trainer'; if(s.includes('perfekt')) return 'perfekt_builder'; if(s.includes('verb')||s.includes('konjunktiv')||s.includes('reflexiv')||s.includes('trennbar')) return 'verb_conjugation'; if(s.includes('konnektor')) return 'connector_selection'; if(s.includes('tekamolo')||s.includes('satzordnung')||s.includes('word order')) return 'word_order'; if(s.includes('translate into german')) return 'translation_into_german'; if(s.includes('translate')) return 'translation_from_german'; return String(it.prompt||'').includes('___')?'gap_fill':'flashcard';}
-function getTranslation(translations={}){const name=CODE_TO_NAME[state.lang]; return translations[name]||translations[state.lang]||translations.English||translations.French||translations.Arabic||translations.Persian||translations.German||'';}
-function renderCategories(){$('categoryNav').innerHTML=CATEGORIES.map(cat=>`<button class="cat-button ${cat===state.category?'active':''}" data-cat="${cat}">${tr(cat)} <span class="minor">${state.modules.filter(m=>m.category===cat).length}</span></button>`).join('');}
-function renderModuleSelect(){const mods=state.modules.filter(m=>m.category===state.category); $('moduleSelect').innerHTML=mods.map(m=>`<option value="${m.id}">${escapeHtml(m.title)} · ${m.count}</option>`).join(''); $('moduleSelect').value=state.moduleId;}
-function selectModule(id,persist){const mod=state.modules.find(m=>m.id===id)||state.modules[0]; if(!mod)return; state.moduleId=mod.id; state.category=mod.category; state.currentItems=mod.items; resetRun(); if(persist){localStorage.setItem('dw_module',state.moduleId); localStorage.setItem('dw_category',state.category);} renderAll();}
-function renderAll(){renderCategories(); renderModuleSelect(); renderExercise(); renderStats(); renderMistakes();}
-function typeFiltered(items){return state.exerciseType==='all'?items:items.filter(i=>i.exerciseType===state.exerciseType);}
-function currentPool(){
-  let base;
-  if(state.mode==='mistakes') base=state.mistakes.map(m=>m.item).filter(Boolean);
-  else if(state.mode==='challenge') base=state.modules.flatMap(m=>m.items||[]);
-  else base=state.currentItems;
-  base=typeFiltered(base);
-  if(state.mode==='learn' || state.mode==='mistakes') return base;
-  const key=`${state.mode}:${state.moduleId}:${state.exerciseType}:${base.length}:${state.mistakes.length}`;
-  if(key!==cachedPoolKey){cachedPoolKey=key; cachedPool=shuffle(base).sort((a,b)=>dueWeight(a)-dueWeight(b));}
-  return cachedPool;
-}
-function currentItem(){const pool=currentPool(); return pool[state.index]||pool[0];}
-function renderExercise(){const mod=state.modules.find(m=>m.id===state.moduleId); const pool=currentPool(); if(state.index>=pool.length)state.index=0; const item=currentItem(); $('currentPath').textContent=`${tr(state.category)} · ${mod?mod.title:''}`; $('exercise-title').textContent=state.mode==='mistakes'?tr('mistakeReview'):(mod?mod.title:tr('exercise')); $('moduleCount').textContent=mod?`${pool.length} / ${mod.count} items · ${tr(state.category)} · ${typeLabel(state.exerciseType)}`:''; $('itemIndex').textContent=pool.length?`${state.index+1} / ${pool.length}`:'0 / 0'; $('itemLevel').textContent=item?.level||'B1/B2'; $('feedbackBox').className='feedback-box hidden'; $('feedbackBox').innerHTML=''; $('learnBlock').classList.add('hidden'); $('choiceList').classList.add('hidden'); $('choiceList').innerHTML=''; $('answerInput').value=''; $('answerTextArea').value=''; $('answerInput').classList.add('hidden'); $('answerTextArea').classList.add('hidden'); if(!item){$('questionText').textContent=state.mode==='mistakes'?tr('noMistakes'):(state.exerciseType!=='all'?tr('noTypeItems'):tr('loading')); renderHint({exerciseType:state.exerciseType,tags:[tr('module')],explanation:''}); updateButtons(); return;} if(!state.started){$('questionText').textContent=tr('modeLearnIntro'); renderLearnBlock(item); } else if(state.mode==='learn'||item.exerciseType==='flashcard'){ $('questionText').textContent=item.prompt; renderLearnBlock(item); } else { $('questionText').textContent=item.prompt; renderInputFor(item); } renderHint(item); updateButtons();}
-function renderInputFor(item){if(item.choices&&item.choices.length){$('choiceList').classList.remove('hidden'); $('choiceList').innerHTML=item.choices.map(c=>`<button class="choice-button ${c===state.selectedChoice?'selected':''}" data-choice="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join(''); document.querySelectorAll('.choice-button').forEach(b=>b.addEventListener('click',()=>{state.selectedChoice=b.dataset.choice; document.querySelectorAll('.choice-button').forEach(x=>x.classList.remove('selected')); b.classList.add('selected');}));} else if(item.openEnded){$('answerTextArea').classList.remove('hidden'); $('answerTextArea').placeholder=tr('writeLongAnswer'); setTimeout(()=>$('answerTextArea').focus(),50);} else {$('answerInput').classList.remove('hidden'); $('answerInput').placeholder=tr('writeAnswer'); setTimeout(()=>$('answerInput').focus(),50);}}
-function speaker(text){return text?` <button class="speaker-button" data-speak="${escapeHtml(text)}" title="${escapeHtml(tr('speak'))}">🔊</button>`:'';}
-function checklistHtml(items=[]){if(!items.length)return''; return `<div class="checklist-block"><strong>${tr('checklist')}</strong>${items.map(c=>`<label class="checklist-item"><input type="checkbox"> <span>${escapeHtml(c)}</span></label>`).join('')}</div>`;}
-function renderLearnBlock(item){const trans=item.translations?getTranslation(item.translations):''; const exp=localized(item.explanation); const parts=[]; parts.push(`<p><span class="type-badge">${escapeHtml(typeLabel(item.exerciseType))}</span></p>`); if(item.passage)parts.push(`<p><strong>Text:</strong><br>${escapeHtml(item.passage).replaceAll('\n','<br>')}${speaker(item.passage)}</p>`); if(item.display)parts.push(`<p><strong>Deutsch:</strong> ${escapeHtml(item.display)}${speaker(item.display)}</p>`); if(trans)parts.push(`<p><strong>${tr('translation')}:</strong> ${escapeHtml(trans)}</p>`); if(item.example)parts.push(`<p><strong>${tr('example')}:</strong> ${escapeHtml(item.example)}${speaker(item.example)}</p>`); if(item.raw?.data?.collocations?.length)parts.push(`<p><strong>Collocations:</strong> ${item.raw.data.collocations.map(c=>escapeHtml(c.collocation)+(c.example?` — ${escapeHtml(c.example)}`:'')).join('<br>')}</p>`); if(exp)parts.push(`<p><strong>${tr('explanation')}:</strong> ${escapeHtml(exp)}</p>`); if(item.checklist?.length)parts.push(checklistHtml(item.checklist)); if(item.answer)parts.push(`<p><strong>${tr('correctAnswer')}:</strong><br>${escapeHtml(item.answer).replaceAll('\n','<br>')}${speaker(item.answer)}</p>`); $('learnBlock').innerHTML=parts.join(''); $('learnBlock').classList.remove('hidden');}
-function renderHint(item){const tags=(item.tags||[]).join(' · '); const exp=localized(item.explanation); $('hintBox').innerHTML=`<p><span class="type-badge">${escapeHtml(typeLabel(item.exerciseType||'all'))}</span></p><p><strong>${tr('rule')}:</strong> ${escapeHtml(tags||item.module||'B1/B2')}</p>${exp?`<p>${escapeHtml(exp)}</p>`:''}${item.example?`<p><strong>${tr('example')}:</strong> ${escapeHtml(item.example)}${speaker(item.example)}</p>`:''}${item.raw?.data?.collocations?.length?`<p><strong>Collocations:</strong><br>${item.raw.data.collocations.map(c=>escapeHtml(c.collocation)+(c.example?` — ${escapeHtml(c.example)}`:'')).join('<br>')}</p>`:''}${item.checklist?.length?checklistHtml(item.checklist):''}`;}
-function updateButtons(){const pool=currentPool(), has=pool.length>0, item=currentItem(); $('startButton').disabled=state.started||!has; $('checkButton').disabled=!state.started||state.checked||state.mode==='learn'||item?.exerciseType==='flashcard'||!has; $('nextButton').disabled=!state.started||(!state.checked&&state.mode!=='learn'&&item?.exerciseType!=='flashcard')||state.index>=pool.length-1; $('prevButton').disabled=!has||state.index<=0;}
-function startSession(){state.started=true; state.checked=false; state.selectedChoice=''; renderExercise();}
-function getUserAnswer(item){if(item.choices&&item.choices.length)return state.selectedChoice; if(item.openEnded)return $('answerTextArea').value; return $('answerInput').value;}
-function checkAnswer(){const item=currentItem(); if(!item)return; const user=getUserAnswer(item); const wc=wordCount(user); const minWords=item.raw?.evaluation_hints?.minimum_word_count || (item.openEnded?25:0); const ok=item.openEnded ? wc>=minWords : answersMatch(user,item.answer,item); state.checked=true; updateStat(ok); updateSrs(item,ok); showFeedback(item,user,ok,wc,minWords); if(!ok && !item.openEnded)addMistake(item,user); if(item.openEnded && wc<5)addMistake(item,user); renderStats(); renderMistakes(); updateButtons();}
-function showFeedback(item,user,ok,wc=0,minWords=0){const exp=localized(item.explanation); const open=item.openEnded; $('feedbackBox').className=`feedback-box ${ok?'ok':'bad'}`; $('feedbackBox').innerHTML=`<div class="feedback-title">${open?tr('submittedMsg'):(ok?tr('correctMsg'):tr('incorrectMsg'))}</div>
-  ${open?`<p><strong>${tr('wordCount')}:</strong> ${wc}${minWords?` / ${minWords}`:''}</p>`:''}
-  <p><strong>${tr('correctAnswer')}:</strong><br>${escapeHtml(item.answer||'—').replaceAll('\n','<br>')}${speaker(item.answer||'')}</p>
-  ${user?`<p><strong>${tr('yourAnswer')}:</strong><br>${escapeHtml(user).replaceAll('\n','<br>')}</p>`:''}
-  ${exp?`<p><strong>${tr('why')}</strong> ${escapeHtml(exp)}</p>`:''}
-  ${item.checklist?.length?checklistHtml(item.checklist):''}
-  ${item.example?`<p><strong>${tr('example')}:</strong> ${escapeHtml(item.example)}${speaker(item.example)}</p>`:''}
-  ${open?`<p>${tr('selfCheck')}</p>`:(!ok?`<p>${tr('addedMistake')}</p>`:'')}`; $('feedbackBox').classList.remove('hidden');}
-function nextItem(){const pool=currentPool(); if(state.index<pool.length-1){state.index++; state.checked=false; state.selectedChoice=''; renderExercise();}}
-function prevItem(){if(state.index>0){state.index--; state.checked=false; state.selectedChoice=''; renderExercise();}}
 
-function updateSrs(item,ok){if(!item?.id)return; const rec=state.srs[item.id]||{box:0,interval:0}; rec.box=ok?Math.min((rec.box||0)+1,5):0; const days=[0,1,3,7,14,30][rec.box]||1; rec.interval=days; rec.due=Date.now()+days*86400000; state.srs[item.id]=rec; localStorage.setItem('dw_srs',JSON.stringify(state.srs)); cachedPoolKey='';}
-function speak(text,lang='de-DE'){if(!text||!window.speechSynthesis)return; const utt=new SpeechSynthesisUtterance(String(text).replace(/<[^>]*>/g,' ')); utt.lang=lang; utt.rate=.9; speechSynthesis.cancel(); speechSynthesis.speak(utt);}
-function statKey(){return `${state.moduleId}:${state.mode}:${state.exerciseType}`;}
-function updateStat(ok){const k=statKey(); state.stats[k]=state.stats[k]||{answered:0,correct:0}; state.stats[k].answered++; state.globalStats.answered=(state.globalStats.answered||0)+1; if(ok){state.stats[k].correct++; state.globalStats.correct=(state.globalStats.correct||0)+1;} saveStats();}
-function saveStats(){localStorage.setItem('dw_stats',JSON.stringify(state.stats)); localStorage.setItem('dw_global_stats',JSON.stringify(state.globalStats));}
-function addMistake(item,user){const existing=state.mistakes.find(m=>m.item.id===item.id); if(existing){existing.count++; existing.userAnswer=user; existing.last=Date.now();} else state.mistakes.unshift({item,userAnswer:user,count:1,last:Date.now()}); state.mistakes=state.mistakes.slice(0,300); saveMistakes();}
-function saveMistakes(){localStorage.setItem('dw_mistakes',JSON.stringify(state.mistakes));}
-function renderStats(){const s=state.stats[statKey()]||{answered:0,correct:0}; const pct=s.answered?Math.round(100*s.correct/s.answered):0; $('statAnswered').textContent=s.answered; $('statCorrect').textContent=s.correct; $('statMistakes').textContent=state.mistakes.length; $('progressPercent').textContent=`${pct}%`; document.querySelector('.progress-ring').style.setProperty('--p',`${pct*3.6}deg`); const g=state.globalStats||{answered:0,correct:0}; const gp=g.answered?Math.round(100*g.correct/g.answered):0; if($('moduleCount').textContent) $('moduleCount').textContent += ` · Global ${g.correct||0}/${g.answered||0} (${gp}%)`; }
-function renderMistakes(){if(!state.mistakes.length){$('mistakeList').innerHTML=`<div class="minor">${tr('noMistakes')}</div>`; return;} $('mistakeList').innerHTML=state.mistakes.slice(0,14).map(m=>`<div class="mistake-item"><strong>${escapeHtml(m.item.display||m.item.prompt)}</strong><div>${tr('correctAnswer')}: ${escapeHtml(m.item.answer||'—')}</div><div>${tr('itemType')}: ${escapeHtml(typeLabel(m.item.exerciseType))}</div><div>${tr('mistakes')}: ${m.count}</div></div>`).join('');}
-init().catch(err=>{console.error(err); $('questionText').textContent='Could not load the app content.';});
+function extractArticle(s) {
+  const m = String(s).match(/^(der|die|das)\s+/i);
+  return m ? m[1].toLowerCase() : '';
+}
+function extractPlural(name, article, base) {
+  const m = String(name).match(/,\s*([^,]+)$/);
+  if (!m) return '';
+  const hint = m[1].trim();
+  if (!hint || hint === '-') return base;
+  if (hint.startsWith('-')) return base + hint.slice(1);
+  return hint.replace(/^die\s+/i,'');
+}
+
+// ── Pool management ──────────────────────────────────────────────────────
+function buildPool() {
+  let base;
+  if (state.mode === 'mistakes') {
+    base = state.mistakes.map(m => m.item).filter(Boolean);
+  } else if (state.mode === 'challenge') {
+    base = state.modules.flatMap(m => m.items);
+  } else {
+    base = state.currentItems;
+  }
+  const filtered = state.exType === 'all' ? base : base.filter(i => i.exerciseType === state.exType);
+  state.pool = (state.mode === 'practice' || state.mode === 'challenge') ? shuffle(filtered) : filtered;
+  if (state.index >= state.pool.length) state.index = 0;
+}
+
+function currentItem() { return state.pool[state.index] || null; }
+
+// ── Select module ────────────────────────────────────────────────────────
+function selectModule(id, persist) {
+  const mod = state.modules.find(m => m.id === id) || state.modules[0];
+  if (!mod) return;
+  state.moduleId    = mod.id;
+  state.category    = mod.category;
+  state.currentItems = mod.items;
+  resetRun();
+  buildPool();
+  if (persist) {
+    localStorage.setItem('dw_module',   state.moduleId);
+    localStorage.setItem('dw_category', state.category);
+  }
+  renderAll();
+}
+function resetRun() {
+  state.index = 0; state.started = false; state.checked = false; state.selectedChoice = '';
+}
+
+// ── Setup functions ──────────────────────────────────────────────────────
+function setupLanguageSelect() {
+  $('languageSelect').innerHTML = LANGS.map(([c,l]) => `<option value="${c}">${l}</option>`).join('');
+  $('languageSelect').value = state.lang;
+}
+
+function setupExerciseTypeSelect() {
+  // Collect all exercise types actually present in loaded modules
+  const present = new Set(state.modules.flatMap(m => m.items.map(i => i.exerciseType)));
+  const types   = [['all', tr('allTypes')], ...Object.entries(TYPE_LABELS)
+    .filter(([k]) => present.has(k))
+    .map(([k,v]) => [k, v])];
+
+  $('exerciseTypeSelect').innerHTML = types.map(([v,l]) =>
+    `<option value="${v}">${esc(l)}</option>`).join('');
+  $('exerciseTypeSelect').value = state.exType;
+}
+
+function setupModeTabEvents() {
+  document.querySelectorAll('.mode-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.mode = btn.dataset.mode;
+      localStorage.setItem('dw_mode', state.mode);
+      document.querySelectorAll('.mode-tab').forEach(b => b.classList.toggle('active', b === btn));
+      resetRun();
+      buildPool();
+      renderExercise();
+    });
+  });
+  // Activate the saved mode tab
+  document.querySelectorAll('.mode-tab').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === state.mode));
+}
+
+function setupMainEvents() {
+  $('languageSelect').addEventListener('change', e => {
+    state.lang = e.target.value; localStorage.setItem('dw_lang', state.lang);
+    applyLanguage(); renderAll();
+  });
+  $('themeToggle').addEventListener('click', () => {
+    state.theme = state.theme === 'dark' ? 'light' : state.theme === 'light' ? 'auto' : 'dark';
+    localStorage.setItem('dw_theme', state.theme); applyTheme();
+  });
+  $('learnerName').value = localStorage.getItem('dw_name') || '';
+  $('learnerName').addEventListener('input', e => {
+    localStorage.setItem('dw_name', e.target.value);
+    updateAvatar();
+  });
+  updateAvatar();
+
+  $('moduleSelect').addEventListener('change', e => selectModule(e.target.value, true));
+  $('exerciseTypeSelect').addEventListener('change', e => {
+    state.exType = e.target.value; localStorage.setItem('dw_extype', state.exType);
+    resetRun(); buildPool(); renderExercise();
+  });
+
+  $('categoryNav').addEventListener('click', e => {
+    const btn = e.target.closest('.cat-btn');
+    if (!btn) return;
+    state.category = btn.dataset.cat; localStorage.setItem('dw_category', state.category);
+    const first = state.modules.find(m => m.category === state.category);
+    if (first) selectModule(first.id, true);
+    renderCategories(); closeSidebar();
+  });
+
+  $('startButton').addEventListener('click', startSession);
+  $('checkButton').addEventListener('click', checkAnswer);
+  $('nextButton').addEventListener('click', nextItem);
+  $('prevButton').addEventListener('click', prevItem);
+
+  // Enter in text inputs: check if available, else next
+  document.addEventListener('keydown', e => {
+    const tag = document.activeElement?.tagName;
+    if (tag === 'INPUT' && e.key === 'Enter' && !$('checkButton').disabled) { checkAnswer(); return; }
+    if (tag === 'INPUT' && e.key === 'Enter' && !$('nextButton').disabled)  { nextItem(); return; }
+    // Global shortcuts (not in text field)
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    if (e.key === 'ArrowRight' && !$('nextButton').disabled)  nextItem();
+    if (e.key === 'ArrowLeft'  && !$('prevButton').disabled)  prevItem();
+    if (e.key === 'Enter'      && !$('startButton').disabled) startSession();
+    if (e.key === 'Enter'      && !$('checkButton').disabled) checkAnswer();
+    if ((e.key === 'Enter' || e.key === ' ') && !$('nextButton').disabled && $('checkButton').disabled) nextItem();
+  });
+
+  $('resetModule').addEventListener('click', () => {
+    delete state.stats[statKey()]; saveStats(); resetRun(); buildPool(); renderAll();
+  });
+  $('clearMistakes').addEventListener('click', () => {
+    state.mistakes = []; saveMistakes(); renderMistakeBank(); renderStats();
+    if (state.mode === 'mistakes') { buildPool(); renderExercise(); }
+  });
+  $('menuToggle').addEventListener('click', () => toggleSidebar());
+  $('drawerBackdrop').addEventListener('click', () => closeSidebar());
+
+  // Real-time word count for textareas
+  $('answerTextAreaGlobal')?.addEventListener('input', updateWordCountHint);
+
+  $('speakBtn').addEventListener('click', () => {
+    const item = currentItem();
+    if (!item) return;
+    const text = item.display || item.prompt || item.answer || '';
+    speak(text);
+  });
+
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault(); state.deferredPrompt = e;
+    $('installButton').classList.remove('hidden');
+  });
+  $('installButton').addEventListener('click', async () => {
+    if (state.deferredPrompt) { state.deferredPrompt.prompt(); state.deferredPrompt = null; $('installButton').classList.add('hidden'); }
+  });
+}
+
+function updateAvatar() {
+  const name = ($('learnerName').value || '').trim();
+  $('learnerAvatar').textContent = name ? name[0].toUpperCase() : '?';
+}
+
+// ── Render all ───────────────────────────────────────────────────────────
+function renderAll() {
+  renderCategories();
+  renderModuleSelect();
+  renderExercise();
+  renderStats();
+  renderMistakeBank();
+}
+
+function renderCategories() {
+  $('categoryNav').innerHTML = CATEGORIES.map(cat => {
+    const count = state.modules.filter(m => m.category === cat.id).length;
+    const active = cat.id === state.category;
+    return `<button class="cat-btn${active?' active':''}" data-cat="${cat.id}"
+      style="--cat-color:${cat.color}">
+      <span class="cat-icon">${cat.icon}</span>
+      <span>${tr(cat.id)}</span>
+      <span class="cat-count">${count}</span>
+    </button>`;
+  }).join('');
+}
+
+function renderModuleSelect() {
+  const mods = state.modules.filter(m => m.category === state.category);
+  $('moduleSelect').innerHTML = mods.map(m =>
+    `<option value="${m.id}">${esc(m.title)} · ${m.count}</option>`).join('');
+  $('moduleSelect').value = state.moduleId;
+  // Update module meta
+  const mod = state.modules.find(m => m.id === state.moduleId);
+  $('moduleCount').textContent = mod
+    ? `${state.pool.length} / ${mod.count} Items`
+    : '';
+}
+
+// ── Exercise render ──────────────────────────────────────────────────────
+function renderExercise() {
+  const mod  = state.modules.find(m => m.id === state.moduleId);
+  const pool = state.pool;
+  if (state.index >= pool.length) state.index = 0;
+  const item = currentItem();
+
+  // Path label
+  const cat = CATEGORIES.find(c => c.id === state.category);
+  $('currentPath').textContent = (cat ? cat.icon + ' ' : '') + tr(state.category) + (mod ? ' · ' + mod.title : '');
+
+  // Progress bar + index
+  const pct = pool.length ? (state.index / pool.length) * 100 : 0;
+  $('progressBar').style.width = pct + '%';
+  $('itemIndex').textContent = pool.length ? `${state.index + 1} / ${pool.length}` : '0 / 0';
+  $('typeBadge').textContent = item ? typeLabel(item.exerciseType) : '—';
+
+  // Clear state
+  $('passageBlock').classList.add('hidden');
+  $('feedbackBox').classList.add('hidden');
+  $('feedbackBox').innerHTML = '';
+  $('learnBlock').classList.add('hidden');
+  $('inputArea').innerHTML = '';
+  $('speakBtn').classList.add('hidden');
+
+  // Empty states
+  if (!item) {
+    const msg = state.mode === 'mistakes' ? tr('noMistakes')
+      : state.exType !== 'all' ? tr('noItems')
+      : tr('loading');
+    $('questionText').textContent = msg;
+    $('hintBox').innerHTML = '';
+    updateButtons();
+    return;
+  }
+
+  // Passage for reading
+  if (item.passage) {
+    $('passageBlock').innerHTML = item.passage.split('\n').filter(Boolean)
+      .map(p => `<p>${esc(p)}</p>`).join('');
+    $('passageBlock').classList.remove('hidden');
+  }
+
+  // Question text — highlight blanks
+  $('questionText').innerHTML = esc(item.prompt)
+    .replace(/___/g, '<span class="blank">___</span>');
+
+  // Speak button for vocab items
+  if (item.display || item.exerciseType === 'flashcard') {
+    $('speakBtn').classList.remove('hidden');
+  }
+
+  // Content depends on state
+  if (!state.started) {
+    renderLearnBlock(item);
+  } else if (state.mode === 'learn' || item.exerciseType === 'flashcard') {
+    renderLearnBlock(item);
+  } else {
+    renderInput(item);
+  }
+
+  renderHint(item);
+  updateButtons();
+}
+
+function renderInput(item) {
+  const ia = $('inputArea');
+
+  if (item.choices && item.choices.length && CHOICE_TYPES.has(item.exerciseType)) {
+    // Multiple choice / connector / article / classify
+    const cols = item.choices.length <= 2 ? 1 : item.choices.length <= 4 ? 2 : 1;
+    ia.innerHTML = `<div class="choices-grid" style="grid-template-columns:repeat(${cols},1fr)">
+      ${item.choices.map(c =>
+        `<button class="choice-btn${c===state.selectedChoice?' selected':''}" data-c="${esc(c)}">${esc(c)}</button>`
+      ).join('')}
+    </div>`;
+    ia.querySelectorAll('.choice-btn').forEach(b =>
+      b.addEventListener('click', () => {
+        state.selectedChoice = b.dataset.c;
+        ia.querySelectorAll('.choice-btn').forEach(x => x.classList.remove('selected'));
+        b.classList.add('selected');
+      })
+    );
+  } else if (item.openEnded) {
+    const minW = item.minWords || 25;
+    ia.innerHTML = `
+      <textarea id="answerTA" class="answer-textarea" rows="7" placeholder="${tr('writeLongAnswer')}" spellcheck="true"></textarea>
+      <div class="word-count-hint" id="wcHint">0 / ${minW} ${tr('wordCount')}</div>
+      ${item.checklist?.length ? renderChecklistHTML(item.checklist) : ''}
+    `;
+    const ta = ia.querySelector('#answerTA');
+    const wc = ia.querySelector('#wcHint');
+    ta.addEventListener('input', () => {
+      const n = ta.value.trim().split(/\s+/).filter(Boolean).length;
+      wc.textContent = `${n} / ${minW} ${tr('wordCount')}`;
+      wc.className = 'word-count-hint' + (n >= minW ? ' met' : n > 0 ? ' under' : '');
+    });
+    setTimeout(() => ta.focus(), 50);
+  } else {
+    ia.innerHTML = `<input id="answerIn" class="answer-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="${tr('writeAnswer')}"/>`;
+    const inp = ia.querySelector('#answerIn');
+    inp.addEventListener('keydown', e => {
+      if (e.key === 'Enter' && !$('checkButton').disabled) checkAnswer();
+      else if (e.key === 'Enter' && !$('nextButton').disabled) nextItem();
+    });
+    setTimeout(() => inp.focus(), 50);
+  }
+}
+
+function renderChecklistHTML(items) {
+  return `<div class="checklist">${items.map(c =>
+    `<label class="check-item"><input type="checkbox"> ${esc(c)}</label>`).join('')}</div>`;
+}
+
+function renderLearnBlock(item) {
+  const trans = item.translations ? getTranslation(item.translations) : '';
+  const exp   = item.explanation || '';
+  let html = '';
+
+  if (item.exerciseType === 'flashcard' || item.exerciseType === 'translation_into_german') {
+    // Vocab flashcard: show the word prominently
+    const articleClass = item.article === 'der' ? 'article-der' : item.article === 'die' ? 'article-die' : 'article-das';
+    html += `<div class="learn-word">${
+      item.article ? `<span class="article-pill ${articleClass}">${item.article}</span>` : ''
+    }${esc(item.base || item.display || item.answer)}</div>`;
+    if (item.plural) html += `<div class="learn-row"><strong>Plural</strong><span>die ${esc(item.plural)}</span></div>`;
+    if (trans)       html += `<div class="learn-translation">${esc(trans)}</div>`;
+    if (item.example && !item.example.includes('Das Lernwort'))  // skip boilerplate
+      html += `<div class="learn-row"><strong>${tr('example')}</strong><span>${esc(item.example)}</span></div>`;
+    if (item.collocations?.length) {
+      html += `<div class="learn-row"><strong>Kollokationen</strong><div class="collocation-list">${
+        item.collocations.map(c => `<span class="collocation-chip">${esc(c.collocation)}</span>`).join('')
+      }</div></div>`;
+    }
+    if (exp && !exp.includes('This item belongs') && !exp.includes('Focus on meaning'))
+      html += `<div class="learn-row"><strong>${tr('explanation')}</strong><span>${esc(exp)}</span></div>`;
+  } else {
+    // Grammar / other: show the prompt + answer + explanation
+    if (item.answer)
+      html += `<div class="learn-word" style="font-size:1.3rem">${esc(item.answer)}</div>`;
+    if (trans)
+      html += `<div class="learn-translation">${esc(trans)}</div>`;
+    if (item.example)
+      html += `<div class="learn-row"><strong>${tr('example')}</strong><span>${esc(item.example)}</span></div>`;
+    if (exp)
+      html += `<div class="learn-row"><strong>${tr('explanation')}</strong><span>${esc(exp)}</span></div>`;
+    if (item.checklist?.length)
+      html += renderChecklistHTML(item.checklist);
+  }
+
+  $('learnBlock').innerHTML = html;
+  $('learnBlock').classList.remove('hidden');
+}
+
+function renderHint(item) {
+  const exp  = item.explanation || '';
+  const tags = (item.tags || []).join(' · ');
+  let html = '';
+  html += `<p class="hint-rule">${esc(tags || item.module || 'B1/B2')}</p>`;
+  if (exp && !exp.includes('This item belongs') && !exp.includes('Focus on meaning'))
+    html += `<p>${esc(exp)}</p>`;
+  if (item.example && !item.example.includes('Das Lernwort'))
+    html += `<p><strong>${tr('example')}:</strong> ${esc(item.example)}</p>`;
+  if (item.collocations?.length)
+    html += `<p>${item.collocations.slice(0,3).map(c => esc(c.collocation)).join(' · ')}</p>`;
+  $('hintBox').innerHTML = html || `<p class="hint-rule">${esc(typeLabel(item.exerciseType))}</p>`;
+}
+
+function updateButtons() {
+  const pool = state.pool, has = pool.length > 0, item = currentItem();
+  const passive = state.mode === 'learn' || item?.exerciseType === 'flashcard';
+  $('startButton').disabled = state.started || !has;
+  $('checkButton').disabled = !state.started || state.checked || passive || !has;
+  $('nextButton').disabled  = !state.started || (!state.checked && !passive) || state.index >= pool.length - 1;
+  $('prevButton').disabled  = !has || state.index <= 0;
+}
+
+// ── Session logic ────────────────────────────────────────────────────────
+function startSession() {
+  state.started = true; state.checked = false; state.selectedChoice = '';
+  renderExercise();
+}
+
+function getUserAnswer(item) {
+  const ia = $('inputArea');
+  if (item.choices?.length && CHOICE_TYPES.has(item.exerciseType)) return state.selectedChoice;
+  if (item.openEnded) return ia.querySelector('#answerTA')?.value || '';
+  return ia.querySelector('#answerIn')?.value || '';
+}
+
+function checkAnswer() {
+  const item = currentItem();
+  if (!item) return;
+  const user = getUserAnswer(item);
+
+  let ok;
+  if (item.openEnded) {
+    const wc = normalizeStr(user).split(/\s+/).filter(Boolean).length;
+    ok = wc >= (item.minWords || 25);
+  } else {
+    ok = answersMatch(user, item);
+  }
+
+  state.checked = true;
+  updateStat(ok);
+
+  // Streak
+  if (ok) { state.streak++; } else { state.streak = 0; }
+  renderStreak();
+
+  // Visual feedback on choice buttons
+  if (item.choices?.length && CHOICE_TYPES.has(item.exerciseType)) {
+    $('inputArea').querySelectorAll('.choice-btn').forEach(b => {
+      if (b.dataset.c === item.answer) b.classList.add('correct-reveal');
+      else if (b.dataset.c === user && !ok) b.classList.add('wrong-reveal');
+      b.disabled = true;
+    });
+  } else {
+    // Colour the text input
+    const inp = $('inputArea').querySelector('#answerIn');
+    if (inp) inp.classList.add(ok ? 'ok' : 'err');
+  }
+
+  showFeedback(item, user, ok);
+  if (!ok && !item.openEnded) addMistake(item, user);
+
+  renderStats();
+  renderMistakeBank();
+  updateButtons();
+}
+
+function showFeedback(item, user, ok) {
+  const exp  = item.explanation || '';
+  const open = item.openEnded;
+  const box  = $('feedbackBox');
+
+  let html = `<div class="feedback-head">`;
+  html += ok ? '✓ ' + tr('correctMsg') : open ? '📝 ' + tr('submittedMsg') : '✗ ' + tr('incorrectMsg');
+  html += `</div>`;
+
+  // Correct answer
+  html += `<div class="feedback-row"><strong>${tr('correctAnswer')}</strong>
+    <span class="val ${ok?'correct':'wrong'}">${esc(item.answer || '—').replace(/\n/g,'<br>')}</span></div>`;
+
+  // User answer
+  if (user && !ok) html += `<div class="feedback-row"><strong>${tr('yourAnswer')}</strong>
+    <span class="val wrong">${esc(user).replace(/\n/g,'<br>')}</span></div>`;
+
+  // Word count bar for open-ended
+  if (open) {
+    const wc   = normalizeStr(user).split(/\s+/).filter(Boolean).length;
+    const minW = item.minWords || 25;
+    const fillPct = Math.min(100, Math.round(wc / minW * 100));
+    html += `<div class="wc-bar"><span style="font-size:12px;color:var(--muted)">${wc}/${minW} ${tr('wordCount')}</span>
+      <div class="wc-track"><div class="wc-fill" style="width:${fillPct}%;background:${ok?'var(--ok)':'var(--err)'}"></div></div></div>`;
+    html += `<p style="font-size:12px;color:var(--muted);margin-top:8px">${tr('selfCheck')}</p>`;
+    // Checklist for open tasks
+    if (item.checklist?.length) html += renderChecklistHTML(item.checklist);
+  }
+
+  // Explanation
+  if (exp && !exp.includes('This item belongs') && !exp.includes('Focus on meaning'))
+    html += `<div class="feedback-row"><strong>${tr('why')}</strong><span>${esc(exp)}</span></div>`;
+
+  if (!ok && !open)
+    html += `<p style="font-size:12px;color:var(--muted);margin-top:6px">${tr('addedMistake')}</p>`;
+
+  box.className = 'feedback ' + (open ? 'neutral' : ok ? 'ok' : 'err');
+  box.innerHTML = html;
+  box.classList.remove('hidden');
+  // Scroll feedback into view
+  setTimeout(() => box.scrollIntoView({ behavior:'smooth', block:'nearest' }), 80);
+}
+
+function nextItem() {
+  if (state.index < state.pool.length - 1) {
+    state.index++; state.checked = false; state.selectedChoice = '';
+    renderExercise();
+  }
+}
+function prevItem() {
+  if (state.index > 0) {
+    state.index--; state.checked = false; state.selectedChoice = '';
+    renderExercise();
+  }
+}
+
+// ── Stats ────────────────────────────────────────────────────────────────
+function statKey() { return `${state.moduleId}:${state.mode}:${state.exType}`; }
+
+function updateStat(ok) {
+  const k = statKey();
+  state.stats[k] = state.stats[k] || { answered:0, correct:0 };
+  state.stats[k].answered++;
+  if (ok) state.stats[k].correct++;
+  state.globalStats.answered++;
+  if (ok) state.globalStats.correct++;
+  saveStats();
+}
+function saveStats() {
+  localStorage.setItem('dw_stats',  JSON.stringify(state.stats));
+  localStorage.setItem('dw_global', JSON.stringify(state.globalStats));
+}
+function addMistake(item, user) {
+  const ex = state.mistakes.find(m => m.item?.id === item.id);
+  if (ex) { ex.count++; ex.userAnswer = user; ex.last = Date.now(); }
+  else state.mistakes.unshift({ item, userAnswer: user, count:1, last: Date.now() });
+  state.mistakes = state.mistakes.slice(0, 300);
+  saveMistakes();
+}
+function saveMistakes() { localStorage.setItem('dw_mistakes', JSON.stringify(state.mistakes)); }
+
+function renderStats() {
+  const s   = state.stats[statKey()] || { answered:0, correct:0 };
+  const pct = s.answered ? Math.round(100 * s.correct / s.answered) : 0;
+  $('statAnswered').textContent = s.answered;
+  $('statCorrect').textContent  = s.correct;
+  $('statMistakes').textContent = state.mistakes.length;
+  $('progressPercent').textContent = pct + '%';
+
+  // SVG ring: circumference 163.36, offset = circ * (1 - pct/100)
+  const circ = 163.36;
+  $('ringArc').setAttribute('stroke-dashoffset', (circ * (1 - pct / 100)).toFixed(2));
+
+  // Global stats
+  const g = state.globalStats;
+  $('globalStats').textContent = g.answered
+    ? `${tr('globalStat')}: ${g.answered} · ${g.answered ? Math.round(100*g.correct/g.answered) : 0}%`
+    : '';
+}
+
+function renderMistakeBank() {
+  const mb = $('mistakeBadge');
+  if (state.mistakes.length) {
+    mb.textContent = state.mistakes.length;
+    mb.classList.remove('hidden');
+  } else {
+    mb.classList.add('hidden');
+  }
+
+  if (!state.mistakes.length) {
+    $('mistakeList').innerHTML = `<p style="font-size:12px;color:var(--muted)">${tr('noMistakes')}</p>`;
+    return;
+  }
+  $('mistakeList').innerHTML = state.mistakes.slice(0, 12).map(m =>
+    `<div class="mistake-item">
+      <strong>${esc(m.item?.display || m.item?.prompt || '?')}</strong>
+      <div class="mi-ans">${esc(m.item?.answer || '—')}</div>
+      <div class="mi-meta">${typeLabel(m.item?.exerciseType||'')} · ×${m.count}</div>
+    </div>`).join('');
+}
+
+function renderStreak() {
+  const bar = $('streakBar');
+  if (state.streak >= 3) {
+    $('streakCount').textContent = state.streak;
+    bar.classList.remove('hidden');
+  } else {
+    bar.classList.add('hidden');
+  }
+}
+
+// ── Theme & language ─────────────────────────────────────────────────────
+function applyTheme() {
+  const dark = state.theme === 'dark' || (state.theme === 'auto' && matchMedia('(prefers-color-scheme:dark)').matches);
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+}
+function applyLanguage() {
+  document.documentElement.lang = state.lang;
+  document.documentElement.dir  = isRTL() ? 'rtl' : 'ltr';
+  document.body.classList.toggle('rtl', isRTL());
+  // Update mode tab labels
+  document.querySelector('[data-mode="learn"]').textContent   = tr('learnMode');
+  document.querySelector('[data-mode="practice"]').textContent = tr('practiceMode');
+  document.querySelector('[data-mode="challenge"]').textContent= tr('challengeMode');
+  document.querySelector('[data-mode="mistakes"]').textContent = tr('mistakeMode');
+  // Update action buttons
+  $('startButton').querySelector('span').textContent  = tr('start');
+  $('checkButton').querySelector('span').textContent  = tr('check');
+  $('nextButton').querySelector('span').textContent   = tr('next');
+  $('prevButton').querySelector('span').textContent   = tr('prev');
+  setupExerciseTypeSelect();
+}
+
+// ── Sidebar ──────────────────────────────────────────────────────────────
+function toggleSidebar() {
+  const open = $('sidebar').classList.toggle('open');
+  $('drawerBackdrop').classList.toggle('hidden', !open);
+  document.querySelector('.main').toggleAttribute('inert', open);
+  document.querySelector('.helper').toggleAttribute('inert', open);
+}
+function closeSidebar() {
+  $('sidebar').classList.remove('open');
+  $('drawerBackdrop').classList.add('hidden');
+  document.querySelector('.main').removeAttribute('inert');
+  document.querySelector('.helper').removeAttribute('inert');
+}
+
+// ── Speech synthesis ─────────────────────────────────────────────────────
+function speak(text, lang = 'de-DE') {
+  if (!window.speechSynthesis || !text) return;
+  $('speakBtn').classList.add('speaking');
+  const utt = new SpeechSynthesisUtterance(String(text).replace(/,\s*-?\S+$/, ''));
+  utt.lang = lang; utt.rate = 0.88;
+  utt.onend = () => $('speakBtn').classList.remove('speaking');
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utt);
+}
+
+// ── Bootstrap ────────────────────────────────────────────────────────────
+init().catch(err => {
+  console.error(err);
+  $('questionText').textContent = 'Could not load content. See console.';
+});
