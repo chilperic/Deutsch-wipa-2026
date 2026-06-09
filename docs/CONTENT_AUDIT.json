@@ -1,0 +1,24 @@
+{
+  "build": "book-complete-content-2026-06-08",
+  "counts": {
+    "beruf": 80,
+    "nomen_artikel_plural": 90,
+    "genus_rules": 70,
+    "n_deklination": 75,
+    "adjektive_als_nomen": 70,
+    "praepositionalverben": 120,
+    "starke_verben": 90,
+    "trennbare_verben": 90,
+    "perfekt": 80,
+    "plusquamperfekt": 75,
+    "infinitiv_zu": 70,
+    "reflexive": 80,
+    "konjunktiv2": 75,
+    "pronomen": 80,
+    "praepositionen": 80,
+    "adjektivdeklination": 80,
+    "kasusergaenzungen": 80,
+    "konnektoren_nebensaetze": 80
+  },
+  "note": "Generated original active-recall prompts using the uploaded Linie 1 Beruf B1/B2 topics and vocabulary fields as the curriculum spine. Not a verbatim reproduction of the book."
+}

@@ -1,0 +1,155 @@
+{
+  "summary": [
+    {
+      "chapter": 1,
+      "nouns": 37,
+      "plural_added_or_present": 36,
+      "needs_manual_review": 1
+    },
+    {
+      "chapter": 2,
+      "nouns": 49,
+      "plural_added_or_present": 45,
+      "needs_manual_review": 4
+    },
+    {
+      "chapter": 3,
+      "nouns": 61,
+      "plural_added_or_present": 49,
+      "needs_manual_review": 12
+    },
+    {
+      "chapter": 4,
+      "nouns": 41,
+      "plural_added_or_present": 33,
+      "needs_manual_review": 8
+    }
+  ],
+  "manual_review": [
+    [
+      1,
+      "k1_033",
+      "die Einarbeitung"
+    ],
+    [
+      2,
+      "k2_022",
+      "die Verantwortung"
+    ],
+    [
+      2,
+      "k2_026",
+      "die Schichtarbeit"
+    ],
+    [
+      2,
+      "k2_029",
+      "der Handel"
+    ],
+    [
+      2,
+      "k2_071",
+      "der Ersatz"
+    ],
+    [
+      3,
+      "k3_001",
+      "der Außendienst"
+    ],
+    [
+      3,
+      "k3_004",
+      "die Kundenbetreuung"
+    ],
+    [
+      3,
+      "k3_005",
+      "das Marketing"
+    ],
+    [
+      3,
+      "k3_011",
+      "das Heimweh"
+    ],
+    [
+      3,
+      "k3_018",
+      "das Wiedersehen"
+    ],
+    [
+      3,
+      "k3_025",
+      "die Sicherheit"
+    ],
+    [
+      3,
+      "k3_026",
+      "das Vermögen"
+    ],
+    [
+      3,
+      "k3_028",
+      "der Export"
+    ],
+    [
+      3,
+      "k3_035",
+      "die Pflege"
+    ],
+    [
+      3,
+      "k3_038",
+      "die Chemie"
+    ],
+    [
+      3,
+      "k3_039",
+      "die Pharmazie"
+    ],
+    [
+      3,
+      "k3_049",
+      "die Arbeitswelt"
+    ],
+    [
+      4,
+      "k4_007",
+      "der Linienverkehr"
+    ],
+    [
+      4,
+      "k4_010",
+      "die Haarpflege"
+    ],
+    [
+      4,
+      "k4_013",
+      "die Nahrungsaufnahme"
+    ],
+    [
+      4,
+      "k4_014",
+      "die Körperpflege"
+    ],
+    [
+      4,
+      "k4_036",
+      "der Rettungsdienst"
+    ],
+    [
+      4,
+      "k4_050",
+      "der Berufsverkehr"
+    ],
+    [
+      4,
+      "k4_054",
+      "der ÖPNV"
+    ],
+    [
+      4,
+      "k4_055",
+      "der öffentliche Dienst"
+    ]
+  ]
+}
