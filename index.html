@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#exercise-title">Skip to exercise</a>
+  <!-- Skip link targets the first focusable control, not a heading -->
+  <a class="skip-link" href="#startButton">Skip to exercise</a>
   <div id="app" class="app-shell">
     <header class="topbar">
       <button id="menuToggle" class="icon-button" aria-label="Open navigation">☰</button>
@@ -34,33 +35,41 @@
       </section>
 
       <section class="panel">
-        <h2 data-i18n="learningPath">Learning path</h2>
-        <nav id="categoryNav" class="category-nav"></nav>
+        <!-- h3 so sidebar headings don't outrank main h2 -->
+        <h3 data-i18n="learningPath">Learning path</h3>
+        <!-- Event delegation: clicks bubble up from cat-button children -->
+        <nav id="categoryNav" class="category-nav" role="navigation" aria-label="Learning categories"></nav>
       </section>
 
       <section class="panel">
-        <h2 data-i18n="module">Module</h2>
+        <h3 data-i18n="module">Module</h3>
         <select id="moduleSelect" class="select wide"></select>
         <div id="moduleCount" class="minor"></div>
       </section>
 
       <section class="panel progress-panel">
-        <h2 data-i18n="progress">Progress</h2>
-        <div class="progress-ring" aria-live="polite"><span id="progressPercent">0%</span></div>
+        <h3 data-i18n="progress">Progress</h3>
+        <!-- aria-live on the percentage span only, not the whole ring -->
+        <div class="progress-ring">
+          <span id="progressPercent" aria-live="polite" aria-atomic="true">0%</span>
+        </div>
         <div class="stat-grid">
           <div><strong id="statAnswered">0</strong><span data-i18n="answered">Answered</span></div>
           <div><strong id="statCorrect">0</strong><span data-i18n="correct">Correct</span></div>
           <div><strong id="statMistakes">0</strong><span data-i18n="mistakes">Mistakes</span></div>
         </div>
+        <!-- Global stats line -->
+        <div id="globalStats" class="minor" style="margin-top:4px"></div>
         <button id="resetModule" class="ghost-button" data-i18n="restartModule">Restart module</button>
       </section>
     </aside>
 
-    <main class="main-panel">
+    <main class="main-panel" role="main">
       <section class="toolbar-card">
         <div>
           <div class="eyebrow" id="currentPath">Wortschatz · Kapitel</div>
-          <h1 id="exercise-title" data-i18n="exercise">Exercise</h1>
+          <!-- h2 for main exercise title (sidebar uses h3) -->
+          <h2 id="exercise-title" data-i18n="exercise">Exercise</h2>
         </div>
         <div class="toolbar-group">
           <select id="modeSelect" class="select" aria-label="Training mode">
@@ -69,22 +78,25 @@
             <option value="challenge" data-i18n="challengeMode">Challenge</option>
             <option value="mistakes" data-i18n="mistakeReview">Mistakes</option>
           </select>
+          <!-- Exercise type grouped by skill area -->
           <select id="exerciseTypeSelect" class="select" aria-label="Exercise type"></select>
           <button id="installButton" class="ghost-button hidden" data-i18n="install">Install</button>
         </div>
       </section>
 
-      <section id="exerciseCard" class="exercise-card" aria-live="polite">
+      <!-- aria-live removed from card; only questionText announces -->
+      <section id="exerciseCard" class="exercise-card">
         <div class="card-meta">
           <span id="itemIndex">0 / 0</span>
           <span id="itemLevel">B1/B2</span>
         </div>
-        <div id="questionText" class="question-text"></div>
+        <!-- Only the question text needs live announcement -->
+        <div id="questionText" class="question-text" aria-live="polite" aria-atomic="true"></div>
         <div id="choiceList" class="choice-list hidden"></div>
         <input id="answerInput" class="answer-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" />
         <textarea id="answerTextArea" class="answer-textarea hidden" rows="7" spellcheck="true"></textarea>
         <div id="learnBlock" class="learn-block hidden"></div>
-        <div id="feedbackBox" class="feedback-box hidden"></div>
+        <div id="feedbackBox" class="feedback-box hidden" aria-live="polite"></div>
       </section>
 
       <section class="button-row bottom-actions" aria-label="Exercise controls">
@@ -97,11 +109,11 @@
 
     <aside class="helper-panel" aria-label="Learning support">
       <section class="panel">
-        <h2 data-i18n="helper">Helper</h2>
+        <h3 data-i18n="helper">Helper</h3>
         <div id="hintBox" class="helper-box"></div>
       </section>
       <section class="panel">
-        <h2 data-i18n="mistakeBank">Mistake bank</h2>
+        <h3 data-i18n="mistakeBank">Mistake bank</h3>
         <div id="mistakeList" class="mistake-list"></div>
         <button id="clearMistakes" class="ghost-button" data-i18n="clearMistakes">Clear mistakes</button>
       </section>

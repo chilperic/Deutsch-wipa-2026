@@ -19,7 +19,14 @@
       "answer": "oder",
       "explanation": "Use oder for alternatives.",
       "level": "B1-B2",
-      "word_order": "main_clause"
+      "word_order": "main_clause",
+      "choices": [
+        "oder",
+        "und",
+        "aber",
+        "sondern"
+      ],
+      "exerciseType": "connector_selection"
     },
     {
       "id": "conn_core_003",
@@ -199,7 +206,14 @@
       "answer": "oder",
       "explanation": "oder presents alternatives.",
       "level": "B1-B2",
-      "word_order": "main_clause"
+      "word_order": "main_clause",
+      "choices": [
+        "oder",
+        "und",
+        "aber",
+        "sondern"
+      ],
+      "exerciseType": "connector_selection"
     },
     {
       "id": "conn_gen_003",
@@ -439,7 +453,14 @@
       "answer": "oder",
       "explanation": "oder presents alternatives.",
       "level": "B1-B2",
-      "word_order": "main_clause"
+      "word_order": "main_clause",
+      "choices": [
+        "oder",
+        "und",
+        "aber",
+        "sondern"
+      ],
+      "exerciseType": "connector_selection"
     },
     {
       "id": "conn_gen_027",
@@ -599,7 +620,14 @@
       "answer": "oder",
       "explanation": "oder presents alternatives.",
       "level": "B1-B2",
-      "word_order": "main_clause"
+      "word_order": "main_clause",
+      "choices": [
+        "oder",
+        "und",
+        "aber",
+        "sondern"
+      ],
+      "exerciseType": "connector_selection"
     },
     {
       "id": "conn_gen_043",
@@ -659,7 +687,14 @@
       "answer": "oder",
       "explanation": "oder presents alternatives.",
       "level": "B1-B2",
-      "word_order": "main_clause"
+      "word_order": "main_clause",
+      "choices": [
+        "oder",
+        "und",
+        "aber",
+        "sondern"
+      ],
+      "exerciseType": "connector_selection"
     },
     {
       "id": "conn_gen_049",
@@ -809,7 +844,14 @@
       "answer": "oder",
       "explanation": "oder presents alternatives.",
       "level": "B1-B2",
-      "word_order": "main_clause"
+      "word_order": "main_clause",
+      "choices": [
+        "oder",
+        "und",
+        "aber",
+        "sondern"
+      ],
+      "exerciseType": "connector_selection"
     },
     {
       "id": "conn_gen_064",
