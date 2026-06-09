@@ -1,0 +1,93 @@
+{
+  "version": "2026.06.09-material-expanded-final",
+  "total_modules": 45,
+  "total_items": 2260,
+  "items_by_category": {
+    "grammar": 1193,
+    "communication": 426,
+    "conjugation": 500,
+    "vocabulary": 45,
+    "training": 36,
+    "writing": 28,
+    "reading": 16,
+    "speaking": 16
+  },
+  "added_from_uploaded_material": [
+    {
+      "id": "grammatik_material_zu_infinitiv_brauchen",
+      "path": "grammatik/material_zu_infinitiv_brauchen.json",
+      "category": "grammar",
+      "title": "Material B1.1/B1.2 · zu-Infinitiv & brauchen zu",
+      "count": 19
+    },
+    {
+      "id": "grammatik_material_temporale_nebensaetze",
+      "path": "grammatik/material_temporale_nebensaetze.json",
+      "category": "grammar",
+      "title": "Material B1.2 · Temporale Nebensätze",
+      "count": 10
+    },
+    {
+      "id": "grammatik_material_b2_zweiteilige_konnektoren",
+      "path": "grammatik/material_b2_zweiteilige_konnektoren.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Zweiteilige Konnektoren",
+      "count": 8
+    },
+    {
+      "id": "grammatik_material_b2_nicht_tekamolo",
+      "path": "grammatik/material_b2_nicht_tekamolo.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Position von nicht & TeKaMoLo",
+      "count": 7
+    },
+    {
+      "id": "grammatik_material_b2_passiversatz_final_modal_es",
+      "path": "grammatik/material_b2_passiversatz_final_modal_es.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Passiversatz, finale/modale Sätze, es",
+      "count": 9
+    },
+    {
+      "id": "grammatik_material_redemittel_bitte_um_information",
+      "path": "grammatik/material_redemittel_bitte_um_information.json",
+      "category": "communication",
+      "title": "Material B2.1 · Redemittel: Bitte um Information",
+      "count": 6
+    },
+    {
+      "id": "vokabular_material_b1b2_ergaenzung",
+      "path": "vokabular/material_b1b2_ergaenzung.json",
+      "category": "vocabulary",
+      "title": "Material B1.1/B1.2/B2.1 · Wortschatz-Ergänzung",
+      "count": 45
+    },
+    {
+      "id": "writing_material_writing_expansion",
+      "path": "writing/material_writing_expansion.json",
+      "category": "writing",
+      "title": "Material-Erweiterung · Schreiben B1/B2",
+      "count": 7
+    },
+    {
+      "id": "reading_material_reading_expansion",
+      "path": "reading/material_reading_expansion.json",
+      "category": "reading",
+      "title": "Material-Erweiterung · Lesen B1/B2",
+      "count": 4
+    },
+    {
+      "id": "speaking_material_speaking_expansion",
+      "path": "speaking/material_speaking_expansion.json",
+      "category": "speaking",
+      "title": "Material-Erweiterung · Sprechen B1/B2",
+      "count": 4
+    }
+  ],
+  "relevance_notes": [
+    "B1.1 material: zu-Infinitiv, irregular verb reinforcement, core sentence correction patterns.",
+    "B1.2 material: brauchen nicht/nur/kein ... zu, Plusquamperfekt/temporal clauses, prepositional verbs.",
+    "B2.1 material: position of nicht, TeKaMoLo, two-part connectors, Redemittel for information requests, final/modal clauses, passive alternatives, placeholder es.",
+    "The large textbook PDFs were not copied wholesale; the build adds original practice items aligned with the topics."
+  ]
+}

@@ -1,6 +1,76 @@
 {
-  "version": "2026.06.09-feature-complete",
+  "version": "2026.06.09-production-audit-fixed",
   "modules": [
+    {
+      "id": "vokabular_production_workplace_collocations",
+      "path": "vokabular/production_workplace_collocations.json",
+      "category": "vocabulary",
+      "title": "Production Wortschatz · Berufliche Kollokationen",
+      "count": 40
+    },
+    {
+      "id": "grammatik_production_adjektivdeklination_structured",
+      "path": "grammatik/production_adjektivdeklination_structured.json",
+      "category": "grammar",
+      "title": "Production Grammatik · Adjektivdeklination",
+      "count": 12
+    },
+    {
+      "id": "grammatik_production_n_deklination_business",
+      "path": "grammatik/production_n_deklination_business.json",
+      "category": "grammar",
+      "title": "Production Grammatik · n-Deklination Beruf",
+      "count": 8
+    },
+    {
+      "id": "grammatik_production_plusquamperfekt_narrative",
+      "path": "grammatik/production_plusquamperfekt_narrative.json",
+      "category": "conjugation",
+      "title": "Production Verbformen · Plusquamperfekt Narrativ",
+      "count": 8
+    },
+    {
+      "id": "grammatik_production_tekamolo_tokenized_engine",
+      "path": "grammatik/production_tekamolo_tokenized_engine.json",
+      "category": "grammar",
+      "title": "Production Grammatik · TeKaMoLo Token Engine",
+      "count": 5
+    },
+    {
+      "id": "grammatik_production_praepositionen_abstract_business",
+      "path": "grammatik/production_praepositionen_abstract_business.json",
+      "category": "grammar",
+      "title": "Production Grammatik · Abstrakte Präpositionen",
+      "count": 10
+    },
+    {
+      "id": "grammatik_production_infinitiv_zu_business",
+      "path": "grammatik/production_infinitiv_zu_business.json",
+      "category": "grammar",
+      "title": "Production Grammatik · Infinitiv mit zu",
+      "count": 8
+    },
+    {
+      "id": "writing_production_writing_metrics",
+      "path": "writing/production_writing_metrics.json",
+      "category": "writing",
+      "title": "Production Schreiben · Bewertbare Aufgaben",
+      "count": 6
+    },
+    {
+      "id": "reading_production_reading_workplace_documents",
+      "path": "reading/production_reading_workplace_documents.json",
+      "category": "reading",
+      "title": "Production Lesen · Arbeitsplatzdokumente",
+      "count": 4
+    },
+    {
+      "id": "speaking_production_speaking_roleplays",
+      "path": "speaking/production_speaking_roleplays.json",
+      "category": "speaking",
+      "title": "Production Sprechen · Rollenspiele",
+      "count": 4
+    },
     {
       "id": "grammatik_adjektivdeklination",
       "path": "grammatik/adjektivdeklination.json",
@@ -245,6 +315,76 @@
       "category": "speaking",
       "title": "Sprechen · Beruf und Alltag",
       "count": 12
+    },
+    {
+      "id": "grammatik_material_zu_infinitiv_brauchen",
+      "path": "grammatik/material_zu_infinitiv_brauchen.json",
+      "category": "grammar",
+      "title": "Material B1.1/B1.2 · zu-Infinitiv & brauchen zu",
+      "count": 19
+    },
+    {
+      "id": "grammatik_material_temporale_nebensaetze",
+      "path": "grammatik/material_temporale_nebensaetze.json",
+      "category": "grammar",
+      "title": "Material B1.2 · Temporale Nebensätze",
+      "count": 10
+    },
+    {
+      "id": "grammatik_material_b2_zweiteilige_konnektoren",
+      "path": "grammatik/material_b2_zweiteilige_konnektoren.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Zweiteilige Konnektoren",
+      "count": 8
+    },
+    {
+      "id": "grammatik_material_b2_nicht_tekamolo",
+      "path": "grammatik/material_b2_nicht_tekamolo.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Position von nicht & TeKaMoLo",
+      "count": 7
+    },
+    {
+      "id": "grammatik_material_b2_passiversatz_final_modal_es",
+      "path": "grammatik/material_b2_passiversatz_final_modal_es.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Passiversatz, finale/modale Sätze, es",
+      "count": 9
+    },
+    {
+      "id": "grammatik_material_redemittel_bitte_um_information",
+      "path": "grammatik/material_redemittel_bitte_um_information.json",
+      "category": "communication",
+      "title": "Material B2.1 · Redemittel: Bitte um Information",
+      "count": 6
+    },
+    {
+      "id": "vokabular_material_b1b2_ergaenzung",
+      "path": "vokabular/material_b1b2_ergaenzung.json",
+      "category": "vocabulary",
+      "title": "Material B1.1/B1.2/B2.1 · Wortschatz-Ergänzung",
+      "count": 45
+    },
+    {
+      "id": "writing_material_writing_expansion",
+      "path": "writing/material_writing_expansion.json",
+      "category": "writing",
+      "title": "Material-Erweiterung · Schreiben B1/B2",
+      "count": 7
+    },
+    {
+      "id": "reading_material_reading_expansion",
+      "path": "reading/material_reading_expansion.json",
+      "category": "reading",
+      "title": "Material-Erweiterung · Lesen B1/B2",
+      "count": 4
+    },
+    {
+      "id": "speaking_material_speaking_expansion",
+      "path": "speaking/material_speaking_expansion.json",
+      "category": "speaking",
+      "title": "Material-Erweiterung · Sprechen B1/B2",
+      "count": 4
     }
   ]
 }

@@ -87,3 +87,31 @@ Some vocabulary modules include multilingual translations from the previous data
 ## License
 
 MIT. Free to use, modify, and extend.
+
+
+## Material expansion: B1.1 / B1.2 / B2.1
+
+This build adds curated practice modules derived from the uploaded course material topics:
+
+- B1.1: zu-Infinitiv, sentence correction, basic formal requests.
+- B1.2: brauchen ... zu, temporale Nebensätze, Plusquamperfekt sequencing.
+- B2.1: Position von nicht, TeKaMoLo, zweiteilige Konnektoren, Passiversatzformen, finale/modale Sätze, placeholder/correlate `es`, and Redemittel for information requests.
+- Additional ready-to-use writing, reading, speaking, and vocabulary expansion modules.
+
+The app keeps the Linie-style workplace/integration philosophy while using the added material as coverage reinforcement.
+
+
+## Production audit fix layer
+
+This build includes a production-quality layer added after a structural content audit:
+
+- tokenized TeKaMoLo syntax engine
+- business-focused adjective declension and n-declension modules
+- narrative Plusquamperfekt tasks with temporal anchors
+- abstract workplace prepositions
+- high-density workplace collocation vocabulary
+- writing tasks with mandatory vocabulary, structural checklists, and minimum word counts
+- workplace reading documents and speaking role-plays
+- `dev/content_audit.js` for duplication/placeholder checks
+
+Legacy modules are retained for breadth, but production modules are listed first in `data-manifest.json`.

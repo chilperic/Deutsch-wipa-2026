@@ -1,0 +1,169 @@
+{
+  "module": "material_b2_passiv_final",
+  "title": "Material B2.1 · Passiversatz, finale/modale Sätze, es",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_b2_passiv_001",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Transform with sich lassen: Man kann das Problem leicht lösen.",
+      "answer": "Das Problem lässt sich leicht lösen.",
+      "choices": [],
+      "explanation": "Passiversatzform: sich lassen + Infinitiv expresses possibility.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_002",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Transform with sein + zu: Man muss die Unterlagen bis Freitag einreichen.",
+      "answer": "Die Unterlagen sind bis Freitag einzureichen.",
+      "choices": [],
+      "explanation": "sein + zu + Infinitiv expresses necessity or possibility in formal style.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_003",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Transform with -bar: Man kann die Datei lesen.",
+      "answer": "Die Datei ist lesbar.",
+      "choices": [],
+      "explanation": "-bar forms an adjective expressing possibility.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_004",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Gap: Ich lerne Deutsch, ___ ich im Beruf sicherer kommunizieren kann.",
+      "answer": "damit",
+      "choices": [],
+      "explanation": "Final clause with damit; subject may differ.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_005",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Gap: Ich mache Notizen, ___ nichts zu vergessen.",
+      "answer": "um",
+      "choices": [],
+      "explanation": "um ... zu when the subject is the same.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_006",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Gap: Die App ist nützlich, ___ man jeden Tag kurz üben kann.",
+      "answer": "weil",
+      "choices": [],
+      "explanation": "Causal clause, not final/modal.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_007",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Correct: Ich lerne Deutsch, um ich eine Arbeit finde.",
+      "answer": "Ich lerne Deutsch, damit ich eine Arbeit finde.",
+      "choices": [],
+      "explanation": "um ... zu has no subject; with subject use damit.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_008",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Gap: ___ gibt viele Gründe, regelmäßig zu üben.",
+      "answer": "Es",
+      "choices": [],
+      "explanation": "Placeholder es often fills position 1.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    },
+    {
+      "id": "mat_b2_passiv_009",
+      "module": "material_b2_passiv_final",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Gap: Mir gefällt ___, dass die Übungen kurz sind.",
+      "answer": "es",
+      "choices": [],
+      "explanation": "Korrelat-es can announce a following dass-clause.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Passiversatz",
+        "Finalsatz",
+        "es"
+      ]
+    }
+  ]
+}

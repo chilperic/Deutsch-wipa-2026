@@ -1,0 +1,130 @@
+{
+  "module": "material_b2_order",
+  "title": "Material B2.1 · Position von nicht & TeKaMoLo",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_b2_order_001",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct: gestern / wegen der Verspätung / im Büro / nicht / gearbeitet / ich / habe",
+      "answer": "Ich habe gestern wegen der Verspätung im Büro nicht gearbeitet.",
+      "choices": [],
+      "explanation": "TeKaMoLo gives an orientation: temporal, causal, modal, local. Nicht usually negates what follows or the whole predicate near the end.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    },
+    {
+      "id": "mat_b2_order_002",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Place “nicht”: Ich habe die E-Mail gestern geschickt.",
+      "answer": "Ich habe die E-Mail gestern nicht geschickt.",
+      "choices": [],
+      "explanation": "Negating the whole action: nicht before the participle/predicate end.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    },
+    {
+      "id": "mat_b2_order_003",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Place “nicht”: Ich fahre morgen nach Berlin.",
+      "answer": "Ich fahre morgen nicht nach Berlin.",
+      "choices": [],
+      "explanation": "Negating the destination: nicht before the local complement.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    },
+    {
+      "id": "mat_b2_order_004",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "multiple_choice",
+      "prompt": "Correct: Ich habe nicht gestern im Büro gearbeitet, sondern heute.",
+      "answer": "Ich habe nicht gestern im Büro gearbeitet, sondern heute.",
+      "choices": [],
+      "explanation": "This is correct when specifically negating yesterday. Contrast determines nicht-position.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    },
+    {
+      "id": "mat_b2_order_005",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct: aus gesundheitlichen Gründen / heute / zu Hause / arbeitet / sie",
+      "answer": "Sie arbeitet heute aus gesundheitlichen Gründen zu Hause.",
+      "choices": [],
+      "explanation": "Neutral order: time → reason → place.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    },
+    {
+      "id": "mat_b2_order_006",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct: mit meinem Kollegen / gestern / in der Pause / über das Problem / gesprochen / ich / habe",
+      "answer": "Ich habe gestern in der Pause mit meinem Kollegen über das Problem gesprochen.",
+      "choices": [],
+      "explanation": "Time before situational details; verb bracket: habe ... gesprochen.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    },
+    {
+      "id": "mat_b2_order_007",
+      "module": "material_b2_order",
+      "type": "active_recall",
+      "exerciseType": "multiple_choice",
+      "prompt": "Choose the neutral order.",
+      "answer": "Ich habe gestern wegen des Termins im Büro länger gearbeitet.",
+      "choices": [
+        "Ich habe gestern wegen des Termins im Büro länger gearbeitet.",
+        "Ich habe im Büro länger wegen des Termins gestern gearbeitet.",
+        "Wegen des Termins gestern ich habe im Büro länger gearbeitet."
+      ],
+      "explanation": "Neutral B2 order keeps verb position stable and information ordered.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "nicht",
+        "TeKaMoLo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "module": "material_reading",
+  "title": "Material-Erweiterung · Lesen B1/B2",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_read_001",
+      "module": "material_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Read and answer: Frau Demir kann den Termin am Dienstag nicht wahrnehmen. Sie bittet um einen neuen Termin und möchte wissen, welche Unterlagen sie mitbringen soll. What does she need?",
+      "answer": "She needs a new appointment and information about required documents.",
+      "choices": [],
+      "explanation": "Identify purpose and requested information.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "appointment",
+        "documents"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "key information",
+        "not every detail",
+        "answer briefly"
+      ]
+    },
+    {
+      "id": "mat_read_002",
+      "module": "material_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Read and answer: Der Kurs beginnt voraussichtlich am 15. September. Die Anmeldung ist verbindlich. Eine Erstattung ist nur bis zwei Wochen vor Kursbeginn möglich. What is the refund rule?",
+      "answer": "A refund is only possible until two weeks before the course starts.",
+      "choices": [],
+      "explanation": "Find deadline and condition.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "course",
+        "refund"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "key information",
+        "not every detail",
+        "answer briefly"
+      ]
+    },
+    {
+      "id": "mat_read_003",
+      "module": "material_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Read and answer: Wegen eines technischen Problems konnte Herr Novak das Formular nicht hochladen. Er soll die Datei per E-Mail nachreichen. What should he do?",
+      "answer": "He should send/submit the file later by email.",
+      "choices": [],
+      "explanation": "nachreichen = submit later.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "technical problem",
+        "documents"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "key information",
+        "not every detail",
+        "answer briefly"
+      ]
+    },
+    {
+      "id": "mat_read_004",
+      "module": "material_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Read and answer: Die Stelle erfordert Erfahrung im Kundenkontakt, gute Deutschkenntnisse und die Bereitschaft zur Weiterbildung. Name two requirements.",
+      "answer": "Experience in customer contact and good German skills.",
+      "choices": [],
+      "explanation": "Requirements are often expressed with erfordern / Voraussetzung.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "job ad",
+        "requirements"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "key information",
+        "not every detail",
+        "answer briefly"
+      ]
+    }
+  ]
+}

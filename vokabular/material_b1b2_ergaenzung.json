@@ -1,0 +1,742 @@
+{
+  "module": "material_vocab_b1b2",
+  "title": "Material B1.1/B1.2/B2.1 · Wortschatz-Ergänzung",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_vocab_001",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Voraussetzung, -en",
+      "answer": "requirement",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Für die Anmeldung sind bestimmte Voraussetzungen nötig.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Voraussetzung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_001",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: requirement",
+      "answer": "die Voraussetzung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Für die Anmeldung sind bestimmte Voraussetzungen nötig.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_002",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Unterlage, -n",
+      "answer": "document",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Bitte bringen Sie alle Unterlagen mit.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Unterlage, -n"
+    },
+    {
+      "id": "mat_vocab_tr_002",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: document",
+      "answer": "die Unterlage",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Bitte bringen Sie alle Unterlagen mit.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_003",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Bescheinigung, -en",
+      "answer": "certificate",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich brauche eine Bescheinigung für die Krankenkasse.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Bescheinigung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_003",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: certificate",
+      "answer": "die Bescheinigung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Ich brauche eine Bescheinigung für die Krankenkasse.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_004",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Anmeldung, -en",
+      "answer": "registration",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Die Anmeldung ist bis Freitag möglich.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Anmeldung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_004",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: registration",
+      "answer": "die Anmeldung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Die Anmeldung ist bis Freitag möglich.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_005",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Weiterbildung, -en",
+      "answer": "further training",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Eine Weiterbildung kann die beruflichen Chancen verbessern.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Weiterbildung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_005",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: further training",
+      "answer": "die Weiterbildung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Eine Weiterbildung kann die beruflichen Chancen verbessern.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_006",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Erfahrung, -en",
+      "answer": "experience",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich habe Erfahrung im Kundenkontakt.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Erfahrung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_006",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: experience",
+      "answer": "die Erfahrung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Ich habe Erfahrung im Kundenkontakt.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_007",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Fähigkeit, -en",
+      "answer": "ability",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Teamfähigkeit ist im Beruf wichtig.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Fähigkeit, -en"
+    },
+    {
+      "id": "mat_vocab_tr_007",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: ability",
+      "answer": "die Fähigkeit",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Teamfähigkeit ist im Beruf wichtig.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_008",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Auskunft, Auskünfte",
+      "answer": "information",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Könnten Sie mir eine Auskunft geben?",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Auskunft, Auskünfte"
+    },
+    {
+      "id": "mat_vocab_tr_008",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: information",
+      "answer": "die Auskunft",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Könnten Sie mir eine Auskunft geben?",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_009",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: der Ansprechpartner, -",
+      "answer": "contact person",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Wer ist der Ansprechpartner für die Bewerbung?",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "der Ansprechpartner, -"
+    },
+    {
+      "id": "mat_vocab_tr_009",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: contact person",
+      "answer": "der Ansprechpartner",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Wer ist der Ansprechpartner für die Bewerbung?",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_010",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Rückmeldung, -en",
+      "answer": "feedback/response",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Vielen Dank für Ihre schnelle Rückmeldung.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Rückmeldung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_010",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: feedback/response",
+      "answer": "die Rückmeldung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Vielen Dank für Ihre schnelle Rückmeldung.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_011",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Beschwerde, -n",
+      "answer": "complaint",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich möchte eine Beschwerde einreichen.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Beschwerde, -n"
+    },
+    {
+      "id": "mat_vocab_tr_011",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: complaint",
+      "answer": "die Beschwerde",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Ich möchte eine Beschwerde einreichen.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_012",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: der Mangel, Mängel",
+      "answer": "defect",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Die Ware hat mehrere Mängel.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "der Mangel, Mängel"
+    },
+    {
+      "id": "mat_vocab_tr_012",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: defect",
+      "answer": "der Mangel",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Die Ware hat mehrere Mängel.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_013",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Erstattung, -en",
+      "answer": "refund",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich bitte um eine Erstattung.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Erstattung, -en"
+    },
+    {
+      "id": "mat_vocab_tr_013",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: refund",
+      "answer": "die Erstattung",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Ich bitte um eine Erstattung.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_014",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Frist, -en",
+      "answer": "deadline",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Die Frist endet am 30. Juni.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Frist, -en"
+    },
+    {
+      "id": "mat_vocab_tr_014",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: deadline",
+      "answer": "die Frist",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Die Frist endet am 30. Juni.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_015",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: die Voraussetzung erfüllen",
+      "answer": "to meet a requirement",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich erfülle die Voraussetzungen für den Kurs.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "die Voraussetzung erfüllen"
+    },
+    {
+      "id": "mat_vocab_tr_015",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "translation_into_german",
+      "prompt": "Translate into German: to meet a requirement",
+      "answer": "die Voraussetzung erfüllen",
+      "choices": [],
+      "explanation": "Translate the concept, then check article/pattern if given.",
+      "example": "Ich erfülle die Voraussetzungen für den Kurs.",
+      "level": "B1/B2",
+      "tags": [
+        "translation"
+      ]
+    },
+    {
+      "id": "mat_vocab_016",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: sich erkundigen nach + Dat.",
+      "answer": "to inquire about",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich erkundige mich nach den Kurszeiten.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "sich erkundigen nach + Dat."
+    },
+    {
+      "id": "mat_vocab_017",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: beantragen + Akk.",
+      "answer": "to apply for/request",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich beantrage eine neue Bescheinigung.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "beantragen + Akk."
+    },
+    {
+      "id": "mat_vocab_018",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: nachreichen + Akk.",
+      "answer": "to submit later",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich reiche die Unterlagen morgen nach.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "nachreichen + Akk."
+    },
+    {
+      "id": "mat_vocab_019",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: verschieben + Akk.",
+      "answer": "to postpone",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich muss den Termin verschieben.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "verschieben + Akk."
+    },
+    {
+      "id": "mat_vocab_020",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: stattfinden",
+      "answer": "to take place",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Der Kurs findet online statt.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "stattfinden"
+    },
+    {
+      "id": "mat_vocab_021",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: verfügbar",
+      "answer": "available",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Sind noch Plätze verfügbar?",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "verfügbar"
+    },
+    {
+      "id": "mat_vocab_022",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: verbindlich",
+      "answer": "binding",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Die Anmeldung ist verbindlich.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "verbindlich"
+    },
+    {
+      "id": "mat_vocab_023",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: fristgerecht",
+      "answer": "on time/by the deadline",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Bitte reichen Sie die Unterlagen fristgerecht ein.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "fristgerecht"
+    },
+    {
+      "id": "mat_vocab_024",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: zuständig",
+      "answer": "responsible",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Welche Abteilung ist dafür zuständig?",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "zuständig"
+    },
+    {
+      "id": "mat_vocab_025",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: nachvollziehbar",
+      "answer": "understandable",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ihre Erklärung ist nachvollziehbar.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "nachvollziehbar"
+    },
+    {
+      "id": "mat_vocab_026",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: ausführlich",
+      "answer": "detailed",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Bitte schicken Sie mir ausführliche Informationen.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "ausführlich"
+    },
+    {
+      "id": "mat_vocab_027",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: voraussichtlich",
+      "answer": "presumably/expected",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Der Kurs beginnt voraussichtlich im September.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "voraussichtlich"
+    },
+    {
+      "id": "mat_vocab_028",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: erforderlich",
+      "answer": "required",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ein Nachweis ist erforderlich.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "erforderlich"
+    },
+    {
+      "id": "mat_vocab_029",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: geeignet",
+      "answer": "suitable",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Der Kurs ist für Berufstätige geeignet.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "geeignet"
+    },
+    {
+      "id": "mat_vocab_030",
+      "module": "material_vocab_b1b2",
+      "type": "active_recall",
+      "exerciseType": "flashcard",
+      "prompt": "Flashcard: selbstständig",
+      "answer": "independently",
+      "choices": [],
+      "explanation": "Material-relevant B1/B2 workplace and course vocabulary.",
+      "example": "Ich kann selbstständig arbeiten.",
+      "level": "B1/B2",
+      "tags": [
+        "Material",
+        "Wortschatz"
+      ],
+      "display": "selbstständig"
+    }
+  ]
+}

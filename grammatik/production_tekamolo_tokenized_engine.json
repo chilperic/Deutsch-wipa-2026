@@ -1,0 +1,219 @@
+{
+  "engine_id": "tekamolo_matrix_wipa",
+  "title": "Production Grammatik · Tokenized TeKaMoLo Engine",
+  "status": "production",
+  "sentences": [
+    {
+      "id": "tkm_prod_001",
+      "context": "Workplace syntax",
+      "tokens": {
+        "subject": "Der Finanzvorstand",
+        "verb_part1": "hat",
+        "temporal": "gestern",
+        "kausal": "aufgrund des unerwarteten Quartalsverlusts",
+        "modal": "sehr kurzfristig",
+        "lokal": "im Konferenzraum",
+        "verb_part2": "eingeladen"
+      },
+      "permissible_variations": [
+        "Der Finanzvorstand hat gestern aufgrund des unerwarteten Quartalsverlusts sehr kurzfristig im Konferenzraum eingeladen."
+      ],
+      "strict_failures": [
+        {
+          "error_type": "Verb position 2 violation"
+        },
+        {
+          "error_type": "TeKaMoLo order violation"
+        }
+      ]
+    },
+    {
+      "id": "tkm_prod_002",
+      "context": "Workplace syntax",
+      "tokens": {
+        "subject": "Die Personalabteilung",
+        "verb_part1": "hat",
+        "temporal": "am Montag",
+        "kausal": "wegen fehlender Unterlagen",
+        "modal": "schriftlich",
+        "lokal": "per E-Mail",
+        "verb_part2": "nachgefragt"
+      },
+      "permissible_variations": [
+        "Die Personalabteilung hat am Montag wegen fehlender Unterlagen schriftlich per E-Mail nachgefragt."
+      ],
+      "strict_failures": [
+        {
+          "error_type": "Verb position 2 violation"
+        },
+        {
+          "error_type": "TeKaMoLo order violation"
+        }
+      ]
+    },
+    {
+      "id": "tkm_prod_003",
+      "context": "Workplace syntax",
+      "tokens": {
+        "subject": "Unser Team",
+        "verb_part1": "arbeitet",
+        "temporal": "seit letzter Woche",
+        "kausal": "wegen der hohen Nachfrage",
+        "modal": "unter großem Zeitdruck",
+        "lokal": "im Homeoffice",
+        "verb_part2": ""
+      },
+      "permissible_variations": [
+        "Unser Team arbeitet seit letzter Woche wegen der hohen Nachfrage unter großem Zeitdruck im Homeoffice."
+      ],
+      "strict_failures": [
+        {
+          "error_type": "Verb position 2 violation"
+        },
+        {
+          "error_type": "TeKaMoLo order violation"
+        }
+      ]
+    },
+    {
+      "id": "tkm_prod_004",
+      "context": "Workplace syntax",
+      "tokens": {
+        "subject": "Der Lieferant",
+        "verb_part1": "liefert",
+        "temporal": "nächsten Freitag",
+        "kausal": "aufgrund eines Engpasses",
+        "modal": "nur teilweise",
+        "lokal": "an unser Lager",
+        "verb_part2": ""
+      },
+      "permissible_variations": [
+        "Der Lieferant liefert nächsten Freitag aufgrund eines Engpasses nur teilweise an unser Lager."
+      ],
+      "strict_failures": [
+        {
+          "error_type": "Verb position 2 violation"
+        },
+        {
+          "error_type": "TeKaMoLo order violation"
+        }
+      ]
+    },
+    {
+      "id": "tkm_prod_005",
+      "context": "Workplace syntax",
+      "tokens": {
+        "subject": "Die Projektleiterin",
+        "verb_part1": "stellt",
+        "temporal": "morgen",
+        "kausal": "zur besseren Übersicht",
+        "modal": "kurz",
+        "lokal": "im Meeting",
+        "verb_part2": "die neue Planung vor"
+      },
+      "permissible_variations": [
+        "Die Projektleiterin stellt morgen zur besseren Übersicht kurz im Meeting die neue Planung vor."
+      ],
+      "strict_failures": [
+        {
+          "error_type": "Verb position 2 violation"
+        },
+        {
+          "error_type": "TeKaMoLo order violation"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "tkm_prod_001",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct in neutral TeKaMoLo order: Der Finanzvorstand | hat | gestern | aufgrund des unerwarteten Quartalsverlusts | sehr kurzfristig | im Konferenzraum | eingeladen",
+      "answer": "Der Finanzvorstand hat gestern aufgrund des unerwarteten Quartalsverlusts sehr kurzfristig im Konferenzraum eingeladen.",
+      "choices": [],
+      "explanation": "Neutral order after the subject: finite verb in position 2, then temporal → causal → modal → local. Variations are possible, but this drill trains the default workplace order.",
+      "example": "Der Finanzvorstand hat gestern aufgrund des unerwarteten Quartalsverlusts sehr kurzfristig im Konferenzraum eingeladen.",
+      "level": "B2",
+      "tags": [
+        "tekamolo",
+        "tokenized_syntax"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "tkm_prod_002",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct in neutral TeKaMoLo order: Die Personalabteilung | hat | am Montag | wegen fehlender Unterlagen | schriftlich | per E-Mail | nachgefragt",
+      "answer": "Die Personalabteilung hat am Montag wegen fehlender Unterlagen schriftlich per E-Mail nachgefragt.",
+      "choices": [],
+      "explanation": "Neutral order after the subject: finite verb in position 2, then temporal → causal → modal → local. Variations are possible, but this drill trains the default workplace order.",
+      "example": "Die Personalabteilung hat am Montag wegen fehlender Unterlagen schriftlich per E-Mail nachgefragt.",
+      "level": "B2",
+      "tags": [
+        "tekamolo",
+        "tokenized_syntax"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "tkm_prod_003",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct in neutral TeKaMoLo order: Unser Team | arbeitet | seit letzter Woche | wegen der hohen Nachfrage | unter großem Zeitdruck | im Homeoffice",
+      "answer": "Unser Team arbeitet seit letzter Woche wegen der hohen Nachfrage unter großem Zeitdruck im Homeoffice.",
+      "choices": [],
+      "explanation": "Neutral order after the subject: finite verb in position 2, then temporal → causal → modal → local. Variations are possible, but this drill trains the default workplace order.",
+      "example": "Unser Team arbeitet seit letzter Woche wegen der hohen Nachfrage unter großem Zeitdruck im Homeoffice.",
+      "level": "B2",
+      "tags": [
+        "tekamolo",
+        "tokenized_syntax"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "tkm_prod_004",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct in neutral TeKaMoLo order: Der Lieferant | liefert | nächsten Freitag | aufgrund eines Engpasses | nur teilweise | an unser Lager",
+      "answer": "Der Lieferant liefert nächsten Freitag aufgrund eines Engpasses nur teilweise an unser Lager.",
+      "choices": [],
+      "explanation": "Neutral order after the subject: finite verb in position 2, then temporal → causal → modal → local. Variations are possible, but this drill trains the default workplace order.",
+      "example": "Der Lieferant liefert nächsten Freitag aufgrund eines Engpasses nur teilweise an unser Lager.",
+      "level": "B2",
+      "tags": [
+        "tekamolo",
+        "tokenized_syntax"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "tkm_prod_005",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "word_order",
+      "prompt": "Reconstruct in neutral TeKaMoLo order: Die Projektleiterin | stellt | morgen | zur besseren Übersicht | kurz | im Meeting | die neue Planung vor",
+      "answer": "Die Projektleiterin stellt morgen zur besseren Übersicht kurz im Meeting die neue Planung vor.",
+      "choices": [],
+      "explanation": "Neutral order after the subject: finite verb in position 2, then temporal → causal → modal → local. Variations are possible, but this drill trains the default workplace order.",
+      "example": "Die Projektleiterin stellt morgen zur besseren Übersicht kurz im Meeting die neue Planung vor.",
+      "level": "B2",
+      "tags": [
+        "tekamolo",
+        "tokenized_syntax"
+      ],
+      "openEnded": false,
+      "checklist": []
+    }
+  ]
+}

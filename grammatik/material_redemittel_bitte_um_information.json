@@ -1,0 +1,111 @@
+{
+  "module": "material_redemittel_info",
+  "title": "Material B2.1 · Redemittel: Bitte um Information",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_redemittel_001",
+      "module": "material_redemittel_info",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Complete politely: ___ Sie mir bitte mitteilen, welche Unterlagen ich brauche?",
+      "answer": "Könnten",
+      "choices": [],
+      "explanation": "Polite information request: Könnten Sie mir bitte mitteilen, ...",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "B2.1",
+        "Bitte um Information"
+      ]
+    },
+    {
+      "id": "mat_redemittel_002",
+      "module": "material_redemittel_info",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Complete: Ich interessiere mich ___ den Kurs und hätte einige Fragen.",
+      "answer": "für",
+      "choices": [],
+      "explanation": "sich interessieren für + Akkusativ.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "B2.1",
+        "Bitte um Information"
+      ]
+    },
+    {
+      "id": "mat_redemittel_003",
+      "module": "material_redemittel_info",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Complete: Ich wäre Ihnen dankbar, ___ Sie mir weitere Informationen schicken könnten.",
+      "answer": "wenn",
+      "choices": [],
+      "explanation": "Formal conditional request with Konjunktiv II.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "B2.1",
+        "Bitte um Information"
+      ]
+    },
+    {
+      "id": "mat_redemittel_004",
+      "module": "material_redemittel_info",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Complete: Außerdem möchte ich wissen, ___ der Kurs online stattfindet.",
+      "answer": "ob",
+      "choices": [],
+      "explanation": "Indirect yes/no question uses ob.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "B2.1",
+        "Bitte um Information"
+      ]
+    },
+    {
+      "id": "mat_redemittel_005",
+      "module": "material_redemittel_info",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Complete: Können Sie mir sagen, ___ die Anmeldung endet?",
+      "answer": "wann",
+      "choices": [],
+      "explanation": "Indirect W-question; verb final.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "B2.1",
+        "Bitte um Information"
+      ]
+    },
+    {
+      "id": "mat_redemittel_006",
+      "module": "material_redemittel_info",
+      "type": "active_recall",
+      "exerciseType": "formal_email_writing",
+      "prompt": "Write a formal request for information about a German course.",
+      "answer": "Sehr geehrte Damen und Herren,\n\nich interessiere mich für Ihren Deutschkurs B2. Könnten Sie mir bitte mitteilen, wann der Kurs beginnt, wie hoch die Kosten sind und welche Unterlagen ich für die Anmeldung brauche?\n\nMit freundlichen Grüßen",
+      "choices": [],
+      "explanation": "Use formal greeting, reason, precise questions, polite closing.",
+      "example": "",
+      "level": "B2",
+      "tags": [
+        "B2.1",
+        "Bitte um Information"
+      ],
+      "openEnded": true,
+      "checklist": [
+        "Anrede",
+        "Interesse nennen",
+        "3 konkrete Fragen",
+        "höfliche Bitte",
+        "Schlussformel"
+      ]
+    }
+  ]
+}

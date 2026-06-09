@@ -87,5 +87,7 @@
   "author": "Chilperic Armel Foko Kuate",
   "repository_ready": true,
   "readme": "README.md",
-  "license_file": "LICENSE"
+  "license_file": "LICENSE",
+  "version": "2026.06.09-material-expanded-final",
+  "description": "Deutsch-WiPA B1/B2 PWA with feature-complete exercise engine and B1.1/B1.2/B2.1 material expansions."
 }

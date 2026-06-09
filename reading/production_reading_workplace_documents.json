@@ -1,0 +1,87 @@
+{
+  "module": "production_reading_workplace_documents",
+  "title": "Production Lesen · Arbeitsplatzdokumente",
+  "status": "production",
+  "items": [
+    {
+      "id": "read_prod_001",
+      "module": "production_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Service-Ticket: Serverausfall\n\nAm Montagmorgen meldeten mehrere Abteilungen, dass sie keinen Zugriff auf das interne Dokumentensystem hatten. Die IT-Abteilung stellte fest, dass ein fehlerhaftes Update den Serverdienst blockierte. Gegen 10:30 Uhr wurde das Update zurückgesetzt. Die Ausfallzeit betrug etwa zwei Stunden. Für die Zukunft empfiehlt die IT, Updates zunächst in einer Testumgebung zu prüfen.\n\nWarum empfiehlt die IT eine Testumgebung?",
+      "answer": "Damit fehlerhafte Updates erkannt werden, bevor sie den Betrieb stören.",
+      "choices": [
+        "Damit Mitarbeitende schneller Kaffee bekommen.",
+        "Damit fehlerhafte Updates erkannt werden, bevor sie den Betrieb stören.",
+        "Damit die Personalabteilung Verträge unterschreibt."
+      ],
+      "explanation": "The reason is in the final sentence: future updates should be tested before affecting operations.",
+      "level": "B1/B2",
+      "tags": [
+        "production_reading",
+        "workplace_documents"
+      ],
+      "passage": "Am Montagmorgen meldeten mehrere Abteilungen, dass sie keinen Zugriff auf das interne Dokumentensystem hatten. Die IT-Abteilung stellte fest, dass ein fehlerhaftes Update den Serverdienst blockierte. Gegen 10:30 Uhr wurde das Update zurückgesetzt. Die Ausfallzeit betrug etwa zwei Stunden. Für die Zukunft empfiehlt die IT, Updates zunächst in einer Testumgebung zu prüfen."
+    },
+    {
+      "id": "read_prod_002",
+      "module": "production_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Vertragsnotiz: Kündigungsfrist\n\nDer Dienstleistungsvertrag kann von beiden Parteien mit einer Frist von drei Monaten zum Monatsende gekündigt werden. Eine außerordentliche Kündigung bleibt bei schwerwiegenden Pflichtverletzungen möglich. Änderungen des Vertrags bedürfen der Schriftform.\n\nWann endet der Vertrag bei regulärer Kündigung?",
+      "answer": "Zum Monatsende nach einer dreimonatigen Kündigungsfrist.",
+      "choices": [
+        "Sofort am Tag der Kündigung.",
+        "Zum Monatsende nach einer dreimonatigen Kündigungsfrist.",
+        "Nur nach einer Gerichtsentscheidung."
+      ],
+      "explanation": "The key phrase is: mit einer Frist von drei Monaten zum Monatsende.",
+      "level": "B1/B2",
+      "tags": [
+        "production_reading",
+        "workplace_documents"
+      ],
+      "passage": "Der Dienstleistungsvertrag kann von beiden Parteien mit einer Frist von drei Monaten zum Monatsende gekündigt werden. Eine außerordentliche Kündigung bleibt bei schwerwiegenden Pflichtverletzungen möglich. Änderungen des Vertrags bedürfen der Schriftform."
+    },
+    {
+      "id": "read_prod_003",
+      "module": "production_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Interne Mitteilung: Einarbeitung\n\nAb dem 1. Juli beginnt eine neue Kollegin im Kundenservice. In der ersten Woche übernimmt Herr Schneider die fachliche Einarbeitung. Frau Yilmaz erklärt die internen Abläufe und die Nutzung des Ticketsystems. Alle Teammitglieder werden gebeten, Rückfragen der neuen Kollegin geduldig zu beantworten.\n\nWer erklärt die internen Abläufe?",
+      "answer": "Frau Yilmaz.",
+      "choices": [
+        "Herr Schneider.",
+        "Frau Yilmaz.",
+        "Alle Teammitglieder gemeinsam."
+      ],
+      "explanation": "Separate roles: Schneider = fachliche Einarbeitung, Yilmaz = Abläufe/Ticketsystem.",
+      "level": "B1/B2",
+      "tags": [
+        "production_reading",
+        "workplace_documents"
+      ],
+      "passage": "Ab dem 1. Juli beginnt eine neue Kollegin im Kundenservice. In der ersten Woche übernimmt Herr Schneider die fachliche Einarbeitung. Frau Yilmaz erklärt die internen Abläufe und die Nutzung des Ticketsystems. Alle Teammitglieder werden gebeten, Rückfragen der neuen Kollegin geduldig zu beantworten."
+    },
+    {
+      "id": "read_prod_004",
+      "module": "production_reading",
+      "type": "active_recall",
+      "exerciseType": "reading_comprehension",
+      "prompt": "Lieferantenmail: Engpass\n\nSehr geehrte Damen und Herren, aufgrund eines Engpasses bei einem Vorprodukt können wir die vereinbarte Liefermenge diese Woche nur teilweise bereitstellen. Die restliche Menge wird voraussichtlich am kommenden Dienstag versendet. Wir bitten die Unannehmlichkeiten zu entschuldigen.\n\nWas ist das Hauptproblem?",
+      "answer": "Die vereinbarte Liefermenge kann diese Woche nur teilweise bereitgestellt werden.",
+      "choices": [
+        "Die Rechnung wurde falsch adressiert.",
+        "Die vereinbarte Liefermenge kann diese Woche nur teilweise bereitgestellt werden.",
+        "Der Kunde hat die Bestellung storniert."
+      ],
+      "explanation": "The text says: nur teilweise bereitstellen.",
+      "level": "B1/B2",
+      "tags": [
+        "production_reading",
+        "workplace_documents"
+      ],
+      "passage": "Sehr geehrte Damen und Herren, aufgrund eines Engpasses bei einem Vorprodukt können wir die vereinbarte Liefermenge diese Woche nur teilweise bereitstellen. Die restliche Menge wird voraussichtlich am kommenden Dienstag versendet. Wir bitten die Unannehmlichkeiten zu entschuldigen."
+    }
+  ]
+}
