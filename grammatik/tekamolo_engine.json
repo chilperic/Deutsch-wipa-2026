@@ -8,7 +8,13 @@
       "prompt": "gestern",
       "answer": "temporal",
       "explanation": "gestern answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_002",
@@ -17,7 +23,13 @@
       "prompt": "am Montag",
       "answer": "temporal",
       "explanation": "am Montag answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_003",
@@ -26,7 +38,13 @@
       "prompt": "diese Woche",
       "answer": "temporal",
       "explanation": "diese Woche answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_004",
@@ -35,7 +53,13 @@
       "prompt": "vor zwei Tagen",
       "answer": "temporal",
       "explanation": "vor zwei Tagen answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_005",
@@ -44,7 +68,13 @@
       "prompt": "jeden Morgen",
       "answer": "temporal",
       "explanation": "jeden Morgen answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_006",
@@ -53,7 +83,13 @@
       "prompt": "seit drei Jahren",
       "answer": "temporal",
       "explanation": "seit drei Jahren answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_007",
@@ -62,7 +98,13 @@
       "prompt": "um acht Uhr",
       "answer": "temporal",
       "explanation": "um acht Uhr answers wann?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_008",
@@ -71,7 +113,13 @@
       "prompt": "wegen des Streiks",
       "answer": "kausal",
       "explanation": "wegen des Streiks answers warum?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_009",
@@ -80,7 +128,13 @@
       "prompt": "aus beruflichen Gründen",
       "answer": "kausal",
       "explanation": "aus beruflichen Gründen answers warum?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_010",
@@ -89,7 +143,13 @@
       "prompt": "wegen eines Termins",
       "answer": "kausal",
       "explanation": "wegen eines Termins answers warum?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_011",
@@ -98,7 +158,13 @@
       "prompt": "trotz des Regens",
       "answer": "kausal",
       "explanation": "trotz des Regens answers warum?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_012",
@@ -107,7 +173,13 @@
       "prompt": "aus Interesse",
       "answer": "kausal",
       "explanation": "aus Interesse answers warum?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_013",
@@ -116,7 +188,13 @@
       "prompt": "wegen der Verspätung",
       "answer": "kausal",
       "explanation": "wegen der Verspätung answers warum?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_014",
@@ -125,7 +203,13 @@
       "prompt": "mit dem Taxi",
       "answer": "modal",
       "explanation": "mit dem Taxi answers wie?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_015",
@@ -134,7 +218,13 @@
       "prompt": "sehr sorgfältig",
       "answer": "modal",
       "explanation": "sehr sorgfältig answers wie?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_016",
@@ -143,7 +233,13 @@
       "prompt": "mit großer Freude",
       "answer": "modal",
       "explanation": "mit großer Freude answers wie?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_017",
@@ -152,7 +248,13 @@
       "prompt": "ohne Probleme",
       "answer": "modal",
       "explanation": "ohne Probleme answers wie?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_018",
@@ -161,7 +263,13 @@
       "prompt": "mit viel Geduld",
       "answer": "modal",
       "explanation": "mit viel Geduld answers wie?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_019",
@@ -170,7 +278,13 @@
       "prompt": "per E-Mail",
       "answer": "modal",
       "explanation": "per E-Mail answers wie?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_020",
@@ -179,7 +293,13 @@
       "prompt": "im Büro",
       "answer": "lokal",
       "explanation": "im Büro answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_021",
@@ -188,7 +308,13 @@
       "prompt": "zur Arbeit",
       "answer": "lokal",
       "explanation": "zur Arbeit answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_022",
@@ -197,7 +323,13 @@
       "prompt": "in der Innenstadt",
       "answer": "lokal",
       "explanation": "in der Innenstadt answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_023",
@@ -206,7 +338,13 @@
       "prompt": "nach Hamburg",
       "answer": "lokal",
       "explanation": "nach Hamburg answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_024",
@@ -215,7 +353,13 @@
       "prompt": "bei der Firma",
       "answer": "lokal",
       "explanation": "bei der Firma answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_025",
@@ -224,7 +368,13 @@
       "prompt": "am Bahnhof",
       "answer": "lokal",
       "explanation": "am Bahnhof answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_class_026",
@@ -233,7 +383,13 @@
       "prompt": "in der Küche",
       "answer": "lokal",
       "explanation": "in der Küche answers wo?/wohin?.",
-      "level": "B2"
+      "level": "B2",
+      "choices": [
+        "temporal",
+        "kausal",
+        "modal",
+        "lokal"
+      ]
     },
     {
       "id": "teka_order_027",

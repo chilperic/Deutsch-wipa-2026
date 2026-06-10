@@ -1,24 +1,11 @@
 {
   "name": "deutsch-wipa-2026",
-  "version": "3.3.0-audit-corrected",
-  "private": false,
-  "description": "Audit-corrected responsive B1/B2 German trainer with fixed grading, mobile CSS, PWA cache, speech playback, SRS ordering, and validated content modules.",
-  "type": "module",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Responsive B1/B2 German workplace trainer PWA.",
   "scripts": {
     "start": "python3 -m http.server 8080",
-    "check:js": "node --check app.js",
-    "check:json": "python3 dev/validate_json.py",
-    "check": "npm run check:js && npm run check:json && npm run audit:content",
-    "audit:content": "node dev/content_audit.js"
+    "check": "node dev/check.js && node dev/content_audit.js"
   },
-  "keywords": [
-    "german",
-    "b1",
-    "b2",
-    "language-learning",
-    "pwa",
-    "deutsch",
-    "beruf"
-  ],
   "license": "MIT"
 }
