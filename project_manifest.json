@@ -88,7 +88,7 @@
   "repository_ready": true,
   "readme": "README.md",
   "license_file": "LICENSE",
-  "version": "2026.06.10-v12-verified-audit",
+  "version": "2026.06.10-v15-professional-core",
   "description": "Deutsch-WiPA B1/B2 PWA with feature-complete exercise engine and B1.1/B1.2/B2.1 material expansions.",
   "module_count": 56,
   "manifest_item_count": 5914

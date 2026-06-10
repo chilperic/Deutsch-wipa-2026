@@ -1,7 +1,7 @@
 {
-  "name": "Deutsch-WiPA 2026 · Grammar",
+  "name": "Deutsch-WiPA 2026 Professional Core",
   "short_name": "Deutsch-WiPA",
-  "description": "Grammar-first German B1/B2 app with separate light/dark appearance, accent colors, conjugation, vocabulary, progress backup, and SRS review.",
+  "description": "Grammar-first B1/B2 workplace German trainer with conjugation, declension, adverbs, SRS, and progress backup.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f6efe3",
