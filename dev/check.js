@@ -24,5 +24,5 @@ for (const [v,d] of Object.entries({antworten:['geantwortet','antworte'], arbeit
   if (!verbs[v]) { console.error('Missing verb', v); ok=false; continue; }
   if (verbs[v].part !== d[0] || !String(verbs[v].present?.[0]||'').includes(d[1])) { console.error('Bad verb core form', v, verbs[v]); ok=false; }
 }
-console.log(ok ? 'OK: v12 verification passed' : 'FAILED');
+console.log(ok ? 'OK: v14 verification passed' : 'FAILED');
 process.exit(ok ? 0 : 1);

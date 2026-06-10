@@ -1,4 +1,4 @@
-const CACHE = 'dwipa-v12-verified-audit-20260610';
+const CACHE = 'deutsch-wipa-2026-v14-localization-audit';
 const SHELL = ['./','./index.html','./styles.css','./app.js','./data-manifest.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./data/conjugator_verbs.json'];
 
 self.addEventListener('install', e => e.waitUntil(

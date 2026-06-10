@@ -1,0 +1,1892 @@
+{
+  "version": "2026.06.10-v14",
+  "description": "Centralized high-priority workplace localization pack for translation helper. German learning content remains source-of-truth; this file provides learner-language explanations.",
+  "entries": {
+    "abteilung": {
+      "lexical_key": "wipa_token_abteilung",
+      "domain": "Company structure",
+      "german_reference": {
+        "term": "Abteilung",
+        "context_definition": "Ich arbeite seit zwei Jahren in der IT-Abteilung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "department",
+          "context_note": "Company structure"
+        },
+        "fr": {
+          "equivalent": "service / département",
+          "context_note": "Company structure"
+        },
+        "es": {
+          "equivalent": "departamento",
+          "context_note": "Company structure"
+        },
+        "pl": {
+          "equivalent": "dział",
+          "context_note": "Company structure"
+        },
+        "tr": {
+          "equivalent": "departman / bölüm",
+          "context_note": "Company structure"
+        },
+        "uk": {
+          "equivalent": "відділ",
+          "context_note": "Company structure"
+        },
+        "ru": {
+          "equivalent": "отдел",
+          "context_note": "Company structure"
+        },
+        "ar": {
+          "equivalent": "قسم",
+          "context_note": "Company structure"
+        },
+        "fa": {
+          "equivalent": "بخش",
+          "context_note": "Company structure"
+        }
+      }
+    },
+    "ansprechpartner": {
+      "lexical_key": "wipa_token_ansprechpartner",
+      "domain": "Customer/service communication",
+      "german_reference": {
+        "term": "Ansprechpartner",
+        "context_definition": "Ich suche den richtigen Ansprechpartner für diese Anfrage."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "contact person",
+          "context_note": "Customer/service communication"
+        },
+        "fr": {
+          "equivalent": "interlocuteur / personne de contact",
+          "context_note": "Customer/service communication"
+        },
+        "es": {
+          "equivalent": "persona de contacto",
+          "context_note": "Customer/service communication"
+        },
+        "pl": {
+          "equivalent": "osoba kontaktowa",
+          "context_note": "Customer/service communication"
+        },
+        "tr": {
+          "equivalent": "irtibat kişisi",
+          "context_note": "Customer/service communication"
+        },
+        "uk": {
+          "equivalent": "контактна особа",
+          "context_note": "Customer/service communication"
+        },
+        "ru": {
+          "equivalent": "контактное лицо",
+          "context_note": "Customer/service communication"
+        },
+        "ar": {
+          "equivalent": "الشخص المسؤول للتواصل",
+          "context_note": "Customer/service communication"
+        },
+        "fa": {
+          "equivalent": "فرد تماس",
+          "context_note": "Customer/service communication"
+        }
+      }
+    },
+    "anfrage": {
+      "lexical_key": "wipa_token_anfrage",
+      "domain": "Email and service desk",
+      "german_reference": {
+        "term": "Anfrage",
+        "context_definition": "Vielen Dank für Ihre Anfrage; wir melden uns bis Freitag."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "inquiry / request",
+          "context_note": "Email and service desk"
+        },
+        "fr": {
+          "equivalent": "demande / requête",
+          "context_note": "Email and service desk"
+        },
+        "es": {
+          "equivalent": "consulta / solicitud",
+          "context_note": "Email and service desk"
+        },
+        "pl": {
+          "equivalent": "zapytanie / wniosek",
+          "context_note": "Email and service desk"
+        },
+        "tr": {
+          "equivalent": "talep / soru",
+          "context_note": "Email and service desk"
+        },
+        "uk": {
+          "equivalent": "запит",
+          "context_note": "Email and service desk"
+        },
+        "ru": {
+          "equivalent": "запрос",
+          "context_note": "Email and service desk"
+        },
+        "ar": {
+          "equivalent": "استفسار / طلب",
+          "context_note": "Email and service desk"
+        },
+        "fa": {
+          "equivalent": "درخواست / پرس‌وجو",
+          "context_note": "Email and service desk"
+        }
+      }
+    },
+    "ablauf": {
+      "lexical_key": "wipa_token_ablauf",
+      "domain": "Work organization",
+      "german_reference": {
+        "term": "Ablauf",
+        "context_definition": "Könnten Sie mir den Ablauf bitte kurz erklären?"
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "process / procedure",
+          "context_note": "Work organization"
+        },
+        "fr": {
+          "equivalent": "déroulement / procédure",
+          "context_note": "Work organization"
+        },
+        "es": {
+          "equivalent": "proceso / procedimiento",
+          "context_note": "Work organization"
+        },
+        "pl": {
+          "equivalent": "przebieg / procedura",
+          "context_note": "Work organization"
+        },
+        "tr": {
+          "equivalent": "süreç / prosedür",
+          "context_note": "Work organization"
+        },
+        "uk": {
+          "equivalent": "процес / порядок дій",
+          "context_note": "Work organization"
+        },
+        "ru": {
+          "equivalent": "процесс / порядок",
+          "context_note": "Work organization"
+        },
+        "ar": {
+          "equivalent": "سير العملية / إجراء",
+          "context_note": "Work organization"
+        },
+        "fa": {
+          "equivalent": "فرایند / روند",
+          "context_note": "Work organization"
+        }
+      }
+    },
+    "unterlage": {
+      "lexical_key": "wipa_token_unterlage",
+      "domain": "Administration",
+      "german_reference": {
+        "term": "Unterlage",
+        "context_definition": "Bitte reichen Sie die fehlenden Unterlagen bis Montag ein."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "document / file",
+          "context_note": "Administration"
+        },
+        "fr": {
+          "equivalent": "document / dossier",
+          "context_note": "Administration"
+        },
+        "es": {
+          "equivalent": "documento / expediente",
+          "context_note": "Administration"
+        },
+        "pl": {
+          "equivalent": "dokument / akta",
+          "context_note": "Administration"
+        },
+        "tr": {
+          "equivalent": "belge / dosya",
+          "context_note": "Administration"
+        },
+        "uk": {
+          "equivalent": "документ / матеріали",
+          "context_note": "Administration"
+        },
+        "ru": {
+          "equivalent": "документ / материалы",
+          "context_note": "Administration"
+        },
+        "ar": {
+          "equivalent": "مستند / ملف",
+          "context_note": "Administration"
+        },
+        "fa": {
+          "equivalent": "مدرک / پرونده",
+          "context_note": "Administration"
+        }
+      }
+    },
+    "rückmeldung": {
+      "lexical_key": "wipa_token_rückmeldung",
+      "domain": "Emails and follow-up",
+      "german_reference": {
+        "term": "Rückmeldung",
+        "context_definition": "Ich bitte um eine kurze Rückmeldung bis Ende der Woche."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "feedback / response",
+          "context_note": "Emails and follow-up"
+        },
+        "fr": {
+          "equivalent": "retour / réponse",
+          "context_note": "Emails and follow-up"
+        },
+        "es": {
+          "equivalent": "respuesta / comentario",
+          "context_note": "Emails and follow-up"
+        },
+        "pl": {
+          "equivalent": "informacja zwrotna / odpowiedź",
+          "context_note": "Emails and follow-up"
+        },
+        "tr": {
+          "equivalent": "geri bildirim / yanıt",
+          "context_note": "Emails and follow-up"
+        },
+        "uk": {
+          "equivalent": "відгук / відповідь",
+          "context_note": "Emails and follow-up"
+        },
+        "ru": {
+          "equivalent": "обратная связь / ответ",
+          "context_note": "Emails and follow-up"
+        },
+        "ar": {
+          "equivalent": "رد / ملاحظات",
+          "context_note": "Emails and follow-up"
+        },
+        "fa": {
+          "equivalent": "بازخورد / پاسخ",
+          "context_note": "Emails and follow-up"
+        }
+      }
+    },
+    "besprechung": {
+      "lexical_key": "wipa_token_besprechung",
+      "domain": "Office communication",
+      "german_reference": {
+        "term": "Besprechung",
+        "context_definition": "Ich nehme morgen an einer Besprechung mit dem Team teil."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "meeting",
+          "context_note": "Office communication"
+        },
+        "fr": {
+          "equivalent": "réunion",
+          "context_note": "Office communication"
+        },
+        "es": {
+          "equivalent": "reunión",
+          "context_note": "Office communication"
+        },
+        "pl": {
+          "equivalent": "spotkanie / narada",
+          "context_note": "Office communication"
+        },
+        "tr": {
+          "equivalent": "toplantı",
+          "context_note": "Office communication"
+        },
+        "uk": {
+          "equivalent": "нарада / зустріч",
+          "context_note": "Office communication"
+        },
+        "ru": {
+          "equivalent": "совещание / встреча",
+          "context_note": "Office communication"
+        },
+        "ar": {
+          "equivalent": "اجتماع",
+          "context_note": "Office communication"
+        },
+        "fa": {
+          "equivalent": "جلسه",
+          "context_note": "Office communication"
+        }
+      }
+    },
+    "frist": {
+      "lexical_key": "wipa_token_frist",
+      "domain": "Administration and contracts",
+      "german_reference": {
+        "term": "Frist",
+        "context_definition": "Leider konnten wir die Frist nicht einhalten."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "deadline",
+          "context_note": "Administration and contracts"
+        },
+        "fr": {
+          "equivalent": "délai / échéance",
+          "context_note": "Administration and contracts"
+        },
+        "es": {
+          "equivalent": "plazo / fecha límite",
+          "context_note": "Administration and contracts"
+        },
+        "pl": {
+          "equivalent": "termin / ostateczny termin",
+          "context_note": "Administration and contracts"
+        },
+        "tr": {
+          "equivalent": "son tarih / süre",
+          "context_note": "Administration and contracts"
+        },
+        "uk": {
+          "equivalent": "термін / крайній строк",
+          "context_note": "Administration and contracts"
+        },
+        "ru": {
+          "equivalent": "срок",
+          "context_note": "Administration and contracts"
+        },
+        "ar": {
+          "equivalent": "موعد نهائي / مهلة",
+          "context_note": "Administration and contracts"
+        },
+        "fa": {
+          "equivalent": "مهلت / ضرب‌الاجل",
+          "context_note": "Administration and contracts"
+        }
+      }
+    },
+    "vertrag": {
+      "lexical_key": "wipa_token_vertrag",
+      "domain": "Employment and services",
+      "german_reference": {
+        "term": "Vertrag",
+        "context_definition": "Ich habe den Arbeitsvertrag gestern unterschrieben."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "contract",
+          "context_note": "Employment and services"
+        },
+        "fr": {
+          "equivalent": "contrat",
+          "context_note": "Employment and services"
+        },
+        "es": {
+          "equivalent": "contrato",
+          "context_note": "Employment and services"
+        },
+        "pl": {
+          "equivalent": "umowa",
+          "context_note": "Employment and services"
+        },
+        "tr": {
+          "equivalent": "sözleşme",
+          "context_note": "Employment and services"
+        },
+        "uk": {
+          "equivalent": "договір / контракт",
+          "context_note": "Employment and services"
+        },
+        "ru": {
+          "equivalent": "договор / контракт",
+          "context_note": "Employment and services"
+        },
+        "ar": {
+          "equivalent": "عقد",
+          "context_note": "Employment and services"
+        },
+        "fa": {
+          "equivalent": "قرارداد",
+          "context_note": "Employment and services"
+        }
+      }
+    },
+    "kündigung": {
+      "lexical_key": "wipa_token_kündigung",
+      "domain": "Employment and contracts",
+      "german_reference": {
+        "term": "Kündigung",
+        "context_definition": "Er hat gestern die Kündigung erhalten."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "termination / notice",
+          "context_note": "Employment and contracts"
+        },
+        "fr": {
+          "equivalent": "résiliation / licenciement",
+          "context_note": "Employment and contracts"
+        },
+        "es": {
+          "equivalent": "rescisión / despido / renuncia",
+          "context_note": "Employment and contracts"
+        },
+        "pl": {
+          "equivalent": "wypowiedzenie / rozwiązanie umowy",
+          "context_note": "Employment and contracts"
+        },
+        "tr": {
+          "equivalent": "fesih / işten ayrılma bildirimi",
+          "context_note": "Employment and contracts"
+        },
+        "uk": {
+          "equivalent": "звільнення / розірвання договору",
+          "context_note": "Employment and contracts"
+        },
+        "ru": {
+          "equivalent": "увольнение / расторжение",
+          "context_note": "Employment and contracts"
+        },
+        "ar": {
+          "equivalent": "إنهاء العقد / إشعار فصل",
+          "context_note": "Employment and contracts"
+        },
+        "fa": {
+          "equivalent": "فسخ قرارداد / استعفا",
+          "context_note": "Employment and contracts"
+        }
+      }
+    },
+    "krankmeldung": {
+      "lexical_key": "wipa_token_krankmeldung",
+      "domain": "Workplace absence",
+      "german_reference": {
+        "term": "Krankmeldung",
+        "context_definition": "Bitte schicken Sie die Krankmeldung an die Personalabteilung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "sick note / absence notice",
+          "context_note": "Workplace absence"
+        },
+        "fr": {
+          "equivalent": "avis d’absence maladie",
+          "context_note": "Workplace absence"
+        },
+        "es": {
+          "equivalent": "baja médica / aviso de enfermedad",
+          "context_note": "Workplace absence"
+        },
+        "pl": {
+          "equivalent": "zgłoszenie choroby / zwolnienie",
+          "context_note": "Workplace absence"
+        },
+        "tr": {
+          "equivalent": "hastalık bildirimi / rapor",
+          "context_note": "Workplace absence"
+        },
+        "uk": {
+          "equivalent": "повідомлення про хворобу",
+          "context_note": "Workplace absence"
+        },
+        "ru": {
+          "equivalent": "сообщение о болезни / больничный",
+          "context_note": "Workplace absence"
+        },
+        "ar": {
+          "equivalent": "إشعار مرضي",
+          "context_note": "Workplace absence"
+        },
+        "fa": {
+          "equivalent": "اعلام بیماری / گواهی بیماری",
+          "context_note": "Workplace absence"
+        }
+      }
+    },
+    "einarbeitung": {
+      "lexical_key": "wipa_token_einarbeitung",
+      "domain": "Starting a job",
+      "german_reference": {
+        "term": "Einarbeitung",
+        "context_definition": "Meine Kollegin übernimmt meine Einarbeitung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "onboarding / induction",
+          "context_note": "Starting a job"
+        },
+        "fr": {
+          "equivalent": "intégration / formation initiale",
+          "context_note": "Starting a job"
+        },
+        "es": {
+          "equivalent": "incorporación / formación inicial",
+          "context_note": "Starting a job"
+        },
+        "pl": {
+          "equivalent": "wdrożenie do pracy",
+          "context_note": "Starting a job"
+        },
+        "tr": {
+          "equivalent": "işe alıştırma / oryantasyon",
+          "context_note": "Starting a job"
+        },
+        "uk": {
+          "equivalent": "введення в роботу / адаптація",
+          "context_note": "Starting a job"
+        },
+        "ru": {
+          "equivalent": "введение в должность / адаптация",
+          "context_note": "Starting a job"
+        },
+        "ar": {
+          "equivalent": "التهيئة للعمل / التدريب الأولي",
+          "context_note": "Starting a job"
+        },
+        "fa": {
+          "equivalent": "آموزش ورود به کار / آشنایی شغلی",
+          "context_note": "Starting a job"
+        }
+      }
+    },
+    "zuständigkeit": {
+      "lexical_key": "wipa_token_zuständigkeit",
+      "domain": "Work organization",
+      "german_reference": {
+        "term": "Zuständigkeit",
+        "context_definition": "Diese Aufgabe fällt nicht in meine Zuständigkeit."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "responsibility / area of competence",
+          "context_note": "Work organization"
+        },
+        "fr": {
+          "equivalent": "compétence / responsabilité",
+          "context_note": "Work organization"
+        },
+        "es": {
+          "equivalent": "responsabilidad / competencia",
+          "context_note": "Work organization"
+        },
+        "pl": {
+          "equivalent": "odpowiedzialność / zakres kompetencji",
+          "context_note": "Work organization"
+        },
+        "tr": {
+          "equivalent": "sorumluluk / yetki alanı",
+          "context_note": "Work organization"
+        },
+        "uk": {
+          "equivalent": "відповідальність / компетенція",
+          "context_note": "Work organization"
+        },
+        "ru": {
+          "equivalent": "ответственность / компетенция",
+          "context_note": "Work organization"
+        },
+        "ar": {
+          "equivalent": "المسؤولية / الاختصاص",
+          "context_note": "Work organization"
+        },
+        "fa": {
+          "equivalent": "مسئولیت / حوزه اختیار",
+          "context_note": "Work organization"
+        }
+      }
+    },
+    "voraussetzung": {
+      "lexical_key": "wipa_token_voraussetzung",
+      "domain": "Job ads and applications",
+      "german_reference": {
+        "term": "Voraussetzung",
+        "context_definition": "Ich erfülle die wichtigsten Voraussetzungen für die Stelle."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "requirement / prerequisite",
+          "context_note": "Job ads and applications"
+        },
+        "fr": {
+          "equivalent": "condition préalable / exigence",
+          "context_note": "Job ads and applications"
+        },
+        "es": {
+          "equivalent": "requisito / condición previa",
+          "context_note": "Job ads and applications"
+        },
+        "pl": {
+          "equivalent": "wymóg / warunek wstępny",
+          "context_note": "Job ads and applications"
+        },
+        "tr": {
+          "equivalent": "ön koşul / gereklilik",
+          "context_note": "Job ads and applications"
+        },
+        "uk": {
+          "equivalent": "вимога / передумова",
+          "context_note": "Job ads and applications"
+        },
+        "ru": {
+          "equivalent": "условие / требование",
+          "context_note": "Job ads and applications"
+        },
+        "ar": {
+          "equivalent": "شرط / متطلب",
+          "context_note": "Job ads and applications"
+        },
+        "fa": {
+          "equivalent": "پیش‌نیاز / شرط",
+          "context_note": "Job ads and applications"
+        }
+      }
+    },
+    "belastung": {
+      "lexical_key": "wipa_token_belastung",
+      "domain": "Health and work",
+      "german_reference": {
+        "term": "Belastung",
+        "context_definition": "Wir müssen die Belastung im Team reduzieren."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "workload / strain",
+          "context_note": "Health and work"
+        },
+        "fr": {
+          "equivalent": "charge / contrainte",
+          "context_note": "Health and work"
+        },
+        "es": {
+          "equivalent": "carga / presión",
+          "context_note": "Health and work"
+        },
+        "pl": {
+          "equivalent": "obciążenie",
+          "context_note": "Health and work"
+        },
+        "tr": {
+          "equivalent": "yük / zorlanma",
+          "context_note": "Health and work"
+        },
+        "uk": {
+          "equivalent": "навантаження",
+          "context_note": "Health and work"
+        },
+        "ru": {
+          "equivalent": "нагрузка",
+          "context_note": "Health and work"
+        },
+        "ar": {
+          "equivalent": "عبء / ضغط",
+          "context_note": "Health and work"
+        },
+        "fa": {
+          "equivalent": "فشار / بار کاری",
+          "context_note": "Health and work"
+        }
+      }
+    },
+    "weiterbildung": {
+      "lexical_key": "wipa_token_weiterbildung",
+      "domain": "Career development",
+      "german_reference": {
+        "term": "Weiterbildung",
+        "context_definition": "Ich möchte an einer Weiterbildung im Bereich Datenanalyse teilnehmen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "professional training / continuing education",
+          "context_note": "Career development"
+        },
+        "fr": {
+          "equivalent": "formation continue",
+          "context_note": "Career development"
+        },
+        "es": {
+          "equivalent": "formación continua",
+          "context_note": "Career development"
+        },
+        "pl": {
+          "equivalent": "dokształcanie / szkolenie zawodowe",
+          "context_note": "Career development"
+        },
+        "tr": {
+          "equivalent": "mesleki eğitim / gelişim",
+          "context_note": "Career development"
+        },
+        "uk": {
+          "equivalent": "підвищення кваліфікації",
+          "context_note": "Career development"
+        },
+        "ru": {
+          "equivalent": "повышение квалификации",
+          "context_note": "Career development"
+        },
+        "ar": {
+          "equivalent": "تدريب مهني مستمر",
+          "context_note": "Career development"
+        },
+        "fa": {
+          "equivalent": "آموزش تکمیلی / توسعه حرفه‌ای",
+          "context_note": "Career development"
+        }
+      }
+    },
+    "verfügbarkeit": {
+      "lexical_key": "wipa_token_verfügbarkeit",
+      "domain": "Scheduling and resources",
+      "german_reference": {
+        "term": "Verfügbarkeit",
+        "context_definition": "Ich prüfe die Verfügbarkeit des Raums."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "availability",
+          "context_note": "Scheduling and resources"
+        },
+        "fr": {
+          "equivalent": "disponibilité",
+          "context_note": "Scheduling and resources"
+        },
+        "es": {
+          "equivalent": "disponibilidad",
+          "context_note": "Scheduling and resources"
+        },
+        "pl": {
+          "equivalent": "dostępność",
+          "context_note": "Scheduling and resources"
+        },
+        "tr": {
+          "equivalent": "uygunluk / kullanılabilirlik",
+          "context_note": "Scheduling and resources"
+        },
+        "uk": {
+          "equivalent": "доступність / наявність",
+          "context_note": "Scheduling and resources"
+        },
+        "ru": {
+          "equivalent": "доступность / наличие",
+          "context_note": "Scheduling and resources"
+        },
+        "ar": {
+          "equivalent": "التوفر",
+          "context_note": "Scheduling and resources"
+        },
+        "fa": {
+          "equivalent": "دسترسی‌پذیری / موجود بودن",
+          "context_note": "Scheduling and resources"
+        }
+      }
+    },
+    "beschwerde": {
+      "lexical_key": "wipa_token_beschwerde",
+      "domain": "Customer service",
+      "german_reference": {
+        "term": "Beschwerde",
+        "context_definition": "Der Kunde hat eine Beschwerde wegen der Lieferverzögerung eingereicht."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "complaint",
+          "context_note": "Customer service"
+        },
+        "fr": {
+          "equivalent": "réclamation / plainte",
+          "context_note": "Customer service"
+        },
+        "es": {
+          "equivalent": "queja / reclamación",
+          "context_note": "Customer service"
+        },
+        "pl": {
+          "equivalent": "skarga / reklamacja",
+          "context_note": "Customer service"
+        },
+        "tr": {
+          "equivalent": "şikâyet",
+          "context_note": "Customer service"
+        },
+        "uk": {
+          "equivalent": "скарга",
+          "context_note": "Customer service"
+        },
+        "ru": {
+          "equivalent": "жалоба",
+          "context_note": "Customer service"
+        },
+        "ar": {
+          "equivalent": "شكوى",
+          "context_note": "Customer service"
+        },
+        "fa": {
+          "equivalent": "شکایت",
+          "context_note": "Customer service"
+        }
+      }
+    },
+    "reklamation": {
+      "lexical_key": "wipa_token_reklamation",
+      "domain": "Customer service",
+      "german_reference": {
+        "term": "Reklamation",
+        "context_definition": "Unsere Abteilung bearbeitet Reklamationen innerhalb von fünf Werktagen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "product complaint / claim",
+          "context_note": "Customer service"
+        },
+        "fr": {
+          "equivalent": "réclamation produit",
+          "context_note": "Customer service"
+        },
+        "es": {
+          "equivalent": "reclamación de producto",
+          "context_note": "Customer service"
+        },
+        "pl": {
+          "equivalent": "reklamacja",
+          "context_note": "Customer service"
+        },
+        "tr": {
+          "equivalent": "ürün şikâyeti / talep",
+          "context_note": "Customer service"
+        },
+        "uk": {
+          "equivalent": "рекламація / претензія",
+          "context_note": "Customer service"
+        },
+        "ru": {
+          "equivalent": "рекламация / претензия",
+          "context_note": "Customer service"
+        },
+        "ar": {
+          "equivalent": "مطالبة / شكوى بخصوص المنتج",
+          "context_note": "Customer service"
+        },
+        "fa": {
+          "equivalent": "شکایت کالا / مطالبه",
+          "context_note": "Customer service"
+        }
+      }
+    },
+    "mangel": {
+      "lexical_key": "wipa_token_mangel",
+      "domain": "Quality and service",
+      "german_reference": {
+        "term": "Mangel",
+        "context_definition": "Bitte melden Sie den Mangel schriftlich."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "defect / deficiency",
+          "context_note": "Quality and service"
+        },
+        "fr": {
+          "equivalent": "défaut / insuffisance",
+          "context_note": "Quality and service"
+        },
+        "es": {
+          "equivalent": "defecto / deficiencia",
+          "context_note": "Quality and service"
+        },
+        "pl": {
+          "equivalent": "wada / brak",
+          "context_note": "Quality and service"
+        },
+        "tr": {
+          "equivalent": "kusur / eksiklik",
+          "context_note": "Quality and service"
+        },
+        "uk": {
+          "equivalent": "дефект / недолік",
+          "context_note": "Quality and service"
+        },
+        "ru": {
+          "equivalent": "дефект / недостаток",
+          "context_note": "Quality and service"
+        },
+        "ar": {
+          "equivalent": "عيب / نقص",
+          "context_note": "Quality and service"
+        },
+        "fa": {
+          "equivalent": "نقص / عیب",
+          "context_note": "Quality and service"
+        }
+      }
+    },
+    "nachbesserung": {
+      "lexical_key": "wipa_token_nachbesserung",
+      "domain": "Complaints and warranty",
+      "german_reference": {
+        "term": "Nachbesserung",
+        "context_definition": "Wir verlangen eine kostenlose Nachbesserung innerhalb von 14 Tagen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "rectification / rework",
+          "context_note": "Complaints and warranty"
+        },
+        "fr": {
+          "equivalent": "correction / reprise",
+          "context_note": "Complaints and warranty"
+        },
+        "es": {
+          "equivalent": "subsanación / reparación",
+          "context_note": "Complaints and warranty"
+        },
+        "pl": {
+          "equivalent": "naprawa / poprawka",
+          "context_note": "Complaints and warranty"
+        },
+        "tr": {
+          "equivalent": "düzeltme / yeniden işleme",
+          "context_note": "Complaints and warranty"
+        },
+        "uk": {
+          "equivalent": "усунення недоліків / доопрацювання",
+          "context_note": "Complaints and warranty"
+        },
+        "ru": {
+          "equivalent": "исправление / доработка",
+          "context_note": "Complaints and warranty"
+        },
+        "ar": {
+          "equivalent": "تصحيح / إعادة تحسين",
+          "context_note": "Complaints and warranty"
+        },
+        "fa": {
+          "equivalent": "اصلاح / رفع نقص",
+          "context_note": "Complaints and warranty"
+        }
+      }
+    },
+    "ausfallzeit": {
+      "lexical_key": "wipa_token_ausfallzeit",
+      "domain": "Technical problems",
+      "german_reference": {
+        "term": "Ausfallzeit",
+        "context_definition": "Durch regelmäßige Wartung lassen sich Ausfallzeiten vermeiden."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "downtime",
+          "context_note": "Technical problems"
+        },
+        "fr": {
+          "equivalent": "temps d’arrêt",
+          "context_note": "Technical problems"
+        },
+        "es": {
+          "equivalent": "tiempo de inactividad",
+          "context_note": "Technical problems"
+        },
+        "pl": {
+          "equivalent": "przestój",
+          "context_note": "Technical problems"
+        },
+        "tr": {
+          "equivalent": "kesinti süresi",
+          "context_note": "Technical problems"
+        },
+        "uk": {
+          "equivalent": "час простою",
+          "context_note": "Technical problems"
+        },
+        "ru": {
+          "equivalent": "время простоя",
+          "context_note": "Technical problems"
+        },
+        "ar": {
+          "equivalent": "وقت التوقف",
+          "context_note": "Technical problems"
+        },
+        "fa": {
+          "equivalent": "زمان خرابی / توقف",
+          "context_note": "Technical problems"
+        }
+      }
+    },
+    "inbetriebnahme": {
+      "lexical_key": "wipa_token_inbetriebnahme",
+      "domain": "Technical systems",
+      "german_reference": {
+        "term": "Inbetriebnahme",
+        "context_definition": "Nach der Inbetriebnahme traten mehrere Störungen auf."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "commissioning / start-up",
+          "context_note": "Technical systems"
+        },
+        "fr": {
+          "equivalent": "mise en service",
+          "context_note": "Technical systems"
+        },
+        "es": {
+          "equivalent": "puesta en marcha",
+          "context_note": "Technical systems"
+        },
+        "pl": {
+          "equivalent": "uruchomienie",
+          "context_note": "Technical systems"
+        },
+        "tr": {
+          "equivalent": "devreye alma",
+          "context_note": "Technical systems"
+        },
+        "uk": {
+          "equivalent": "введення в експлуатацію",
+          "context_note": "Technical systems"
+        },
+        "ru": {
+          "equivalent": "ввод в эксплуатацию",
+          "context_note": "Technical systems"
+        },
+        "ar": {
+          "equivalent": "تشغيل أولي / وضع في الخدمة",
+          "context_note": "Technical systems"
+        },
+        "fa": {
+          "equivalent": "راه‌اندازی / بهره‌برداری اولیه",
+          "context_note": "Technical systems"
+        }
+      }
+    },
+    "engpass": {
+      "lexical_key": "wipa_token_engpass",
+      "domain": "Logistics and operations",
+      "german_reference": {
+        "term": "Engpass",
+        "context_definition": "Durch einen neuen Lieferanten konnten wir den Engpass überwinden."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "bottleneck / shortage",
+          "context_note": "Logistics and operations"
+        },
+        "fr": {
+          "equivalent": "goulot d’étranglement / pénurie",
+          "context_note": "Logistics and operations"
+        },
+        "es": {
+          "equivalent": "cuello de botella / escasez",
+          "context_note": "Logistics and operations"
+        },
+        "pl": {
+          "equivalent": "wąskie gardło / niedobór",
+          "context_note": "Logistics and operations"
+        },
+        "tr": {
+          "equivalent": "darboğaz / kıtlık",
+          "context_note": "Logistics and operations"
+        },
+        "uk": {
+          "equivalent": "вузьке місце / дефіцит",
+          "context_note": "Logistics and operations"
+        },
+        "ru": {
+          "equivalent": "узкое место / дефицит",
+          "context_note": "Logistics and operations"
+        },
+        "ar": {
+          "equivalent": "عنق زجاجة / نقص",
+          "context_note": "Logistics and operations"
+        },
+        "fa": {
+          "equivalent": "گلوگاه / کمبود",
+          "context_note": "Logistics and operations"
+        }
+      }
+    },
+    "lieferverzögerung": {
+      "lexical_key": "wipa_token_lieferverzögerung",
+      "domain": "Logistics",
+      "german_reference": {
+        "term": "Lieferverzögerung",
+        "context_definition": "Der Lieferant hat eine Lieferverzögerung angekündigt."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "delivery delay",
+          "context_note": "Logistics"
+        },
+        "fr": {
+          "equivalent": "retard de livraison",
+          "context_note": "Logistics"
+        },
+        "es": {
+          "equivalent": "retraso en la entrega",
+          "context_note": "Logistics"
+        },
+        "pl": {
+          "equivalent": "opóźnienie dostawy",
+          "context_note": "Logistics"
+        },
+        "tr": {
+          "equivalent": "teslimat gecikmesi",
+          "context_note": "Logistics"
+        },
+        "uk": {
+          "equivalent": "затримка доставки",
+          "context_note": "Logistics"
+        },
+        "ru": {
+          "equivalent": "задержка поставки",
+          "context_note": "Logistics"
+        },
+        "ar": {
+          "equivalent": "تأخير التسليم",
+          "context_note": "Logistics"
+        },
+        "fa": {
+          "equivalent": "تأخیر در تحویل",
+          "context_note": "Logistics"
+        }
+      }
+    },
+    "maßnahme": {
+      "lexical_key": "wipa_token_maßnahme",
+      "domain": "Management and problem solving",
+      "german_reference": {
+        "term": "Maßnahme",
+        "context_definition": "Wir müssen sofort Maßnahmen ergreifen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "measure / action",
+          "context_note": "Management and problem solving"
+        },
+        "fr": {
+          "equivalent": "mesure / action",
+          "context_note": "Management and problem solving"
+        },
+        "es": {
+          "equivalent": "medida / acción",
+          "context_note": "Management and problem solving"
+        },
+        "pl": {
+          "equivalent": "środek / działanie",
+          "context_note": "Management and problem solving"
+        },
+        "tr": {
+          "equivalent": "önlem / işlem",
+          "context_note": "Management and problem solving"
+        },
+        "uk": {
+          "equivalent": "захід / дія",
+          "context_note": "Management and problem solving"
+        },
+        "ru": {
+          "equivalent": "мера / действие",
+          "context_note": "Management and problem solving"
+        },
+        "ar": {
+          "equivalent": "إجراء / تدبير",
+          "context_note": "Management and problem solving"
+        },
+        "fa": {
+          "equivalent": "اقدام / تدبیر",
+          "context_note": "Management and problem solving"
+        }
+      }
+    },
+    "auswertung": {
+      "lexical_key": "wipa_token_auswertung",
+      "domain": "Reports and data",
+      "german_reference": {
+        "term": "Auswertung",
+        "context_definition": "Ich erstelle bis Freitag eine Auswertung der Ergebnisse."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "analysis / evaluation",
+          "context_note": "Reports and data"
+        },
+        "fr": {
+          "equivalent": "analyse / évaluation",
+          "context_note": "Reports and data"
+        },
+        "es": {
+          "equivalent": "análisis / evaluación",
+          "context_note": "Reports and data"
+        },
+        "pl": {
+          "equivalent": "analiza / ocena",
+          "context_note": "Reports and data"
+        },
+        "tr": {
+          "equivalent": "analiz / değerlendirme",
+          "context_note": "Reports and data"
+        },
+        "uk": {
+          "equivalent": "аналіз / оцінка",
+          "context_note": "Reports and data"
+        },
+        "ru": {
+          "equivalent": "анализ / оценка",
+          "context_note": "Reports and data"
+        },
+        "ar": {
+          "equivalent": "تحليل / تقييم",
+          "context_note": "Reports and data"
+        },
+        "fa": {
+          "equivalent": "تحلیل / ارزیابی",
+          "context_note": "Reports and data"
+        }
+      }
+    },
+    "einschätzung": {
+      "lexical_key": "wipa_token_einschätzung",
+      "domain": "Meetings and reports",
+      "german_reference": {
+        "term": "Einschätzung",
+        "context_definition": "Ich bitte Sie um Ihre fachliche Einschätzung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "assessment / estimate",
+          "context_note": "Meetings and reports"
+        },
+        "fr": {
+          "equivalent": "évaluation / estimation",
+          "context_note": "Meetings and reports"
+        },
+        "es": {
+          "equivalent": "evaluación / estimación",
+          "context_note": "Meetings and reports"
+        },
+        "pl": {
+          "equivalent": "ocena / szacunek",
+          "context_note": "Meetings and reports"
+        },
+        "tr": {
+          "equivalent": "değerlendirme / tahmin",
+          "context_note": "Meetings and reports"
+        },
+        "uk": {
+          "equivalent": "оцінка / припущення",
+          "context_note": "Meetings and reports"
+        },
+        "ru": {
+          "equivalent": "оценка",
+          "context_note": "Meetings and reports"
+        },
+        "ar": {
+          "equivalent": "تقييم / تقدير",
+          "context_note": "Meetings and reports"
+        },
+        "fa": {
+          "equivalent": "ارزیابی / برآورد",
+          "context_note": "Meetings and reports"
+        }
+      }
+    },
+    "umsetzung": {
+      "lexical_key": "wipa_token_umsetzung",
+      "domain": "Project management",
+      "german_reference": {
+        "term": "Umsetzung",
+        "context_definition": "Wir planen die Umsetzung im nächsten Quartal."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "implementation",
+          "context_note": "Project management"
+        },
+        "fr": {
+          "equivalent": "mise en œuvre",
+          "context_note": "Project management"
+        },
+        "es": {
+          "equivalent": "implementación",
+          "context_note": "Project management"
+        },
+        "pl": {
+          "equivalent": "wdrożenie",
+          "context_note": "Project management"
+        },
+        "tr": {
+          "equivalent": "uygulama",
+          "context_note": "Project management"
+        },
+        "uk": {
+          "equivalent": "впровадження",
+          "context_note": "Project management"
+        },
+        "ru": {
+          "equivalent": "реализация / внедрение",
+          "context_note": "Project management"
+        },
+        "ar": {
+          "equivalent": "تنفيذ",
+          "context_note": "Project management"
+        },
+        "fa": {
+          "equivalent": "اجرا / پیاده‌سازی",
+          "context_note": "Project management"
+        }
+      }
+    },
+    "vereinbarung": {
+      "lexical_key": "wipa_token_vereinbarung",
+      "domain": "Meetings/contracts",
+      "german_reference": {
+        "term": "Vereinbarung",
+        "context_definition": "Wir haben eine klare Vereinbarung getroffen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "agreement",
+          "context_note": "Meetings/contracts"
+        },
+        "fr": {
+          "equivalent": "accord / convention",
+          "context_note": "Meetings/contracts"
+        },
+        "es": {
+          "equivalent": "acuerdo",
+          "context_note": "Meetings/contracts"
+        },
+        "pl": {
+          "equivalent": "porozumienie / umowa",
+          "context_note": "Meetings/contracts"
+        },
+        "tr": {
+          "equivalent": "anlaşma",
+          "context_note": "Meetings/contracts"
+        },
+        "uk": {
+          "equivalent": "угода / домовленість",
+          "context_note": "Meetings/contracts"
+        },
+        "ru": {
+          "equivalent": "соглашение",
+          "context_note": "Meetings/contracts"
+        },
+        "ar": {
+          "equivalent": "اتفاق",
+          "context_note": "Meetings/contracts"
+        },
+        "fa": {
+          "equivalent": "توافق / قرارداد",
+          "context_note": "Meetings/contracts"
+        }
+      }
+    },
+    "verhandlung": {
+      "lexical_key": "wipa_token_verhandlung",
+      "domain": "Business negotiation",
+      "german_reference": {
+        "term": "Verhandlung",
+        "context_definition": "Die Geschäftsführung führt Verhandlungen mit dem Betriebsrat."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "negotiation",
+          "context_note": "Business negotiation"
+        },
+        "fr": {
+          "equivalent": "négociation",
+          "context_note": "Business negotiation"
+        },
+        "es": {
+          "equivalent": "negociación",
+          "context_note": "Business negotiation"
+        },
+        "pl": {
+          "equivalent": "negocjacje",
+          "context_note": "Business negotiation"
+        },
+        "tr": {
+          "equivalent": "müzakere",
+          "context_note": "Business negotiation"
+        },
+        "uk": {
+          "equivalent": "переговори",
+          "context_note": "Business negotiation"
+        },
+        "ru": {
+          "equivalent": "переговоры",
+          "context_note": "Business negotiation"
+        },
+        "ar": {
+          "equivalent": "مفاوضات",
+          "context_note": "Business negotiation"
+        },
+        "fa": {
+          "equivalent": "مذاکره",
+          "context_note": "Business negotiation"
+        }
+      }
+    },
+    "abfindung": {
+      "lexical_key": "wipa_token_abfindung",
+      "domain": "HR and termination",
+      "german_reference": {
+        "term": "Abfindung",
+        "context_definition": "Nach der betriebsbedingten Kündigung wurde eine Abfindung vereinbart."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "severance payment",
+          "context_note": "HR and termination"
+        },
+        "fr": {
+          "equivalent": "indemnité de départ",
+          "context_note": "HR and termination"
+        },
+        "es": {
+          "equivalent": "indemnización por despido",
+          "context_note": "HR and termination"
+        },
+        "pl": {
+          "equivalent": "odprawa",
+          "context_note": "HR and termination"
+        },
+        "tr": {
+          "equivalent": "kıdem / ayrılma tazminatı",
+          "context_note": "HR and termination"
+        },
+        "uk": {
+          "equivalent": "вихідна допомога",
+          "context_note": "HR and termination"
+        },
+        "ru": {
+          "equivalent": "выходное пособие",
+          "context_note": "HR and termination"
+        },
+        "ar": {
+          "equivalent": "تعويض نهاية الخدمة",
+          "context_note": "HR and termination"
+        },
+        "fa": {
+          "equivalent": "حق سنوات / غرامت پایان کار",
+          "context_note": "HR and termination"
+        }
+      }
+    },
+    "umsatzrentabilität": {
+      "lexical_key": "wipa_token_umsatzrentabilität",
+      "domain": "Finance and reporting",
+      "german_reference": {
+        "term": "Umsatzrentabilität",
+        "context_definition": "Durch Kostensenkungen wurde die Umsatzrentabilität gesteigert."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "return on sales",
+          "context_note": "Finance and reporting"
+        },
+        "fr": {
+          "equivalent": "rentabilité du chiffre d’affaires",
+          "context_note": "Finance and reporting"
+        },
+        "es": {
+          "equivalent": "rentabilidad sobre ventas",
+          "context_note": "Finance and reporting"
+        },
+        "pl": {
+          "equivalent": "rentowność sprzedaży",
+          "context_note": "Finance and reporting"
+        },
+        "tr": {
+          "equivalent": "satış kârlılığı",
+          "context_note": "Finance and reporting"
+        },
+        "uk": {
+          "equivalent": "рентабельність продажів",
+          "context_note": "Finance and reporting"
+        },
+        "ru": {
+          "equivalent": "рентабельность продаж",
+          "context_note": "Finance and reporting"
+        },
+        "ar": {
+          "equivalent": "ربحية المبيعات",
+          "context_note": "Finance and reporting"
+        },
+        "fa": {
+          "equivalent": "بازده فروش",
+          "context_note": "Finance and reporting"
+        }
+      }
+    },
+    "kostenstelle": {
+      "lexical_key": "wipa_token_kostenstelle",
+      "domain": "Accounting",
+      "german_reference": {
+        "term": "Kostenstelle",
+        "context_definition": "Die Ausgabe muss der richtigen Kostenstelle zugeordnet werden."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "cost center",
+          "context_note": "Accounting"
+        },
+        "fr": {
+          "equivalent": "centre de coûts",
+          "context_note": "Accounting"
+        },
+        "es": {
+          "equivalent": "centro de costes",
+          "context_note": "Accounting"
+        },
+        "pl": {
+          "equivalent": "miejsce powstawania kosztów",
+          "context_note": "Accounting"
+        },
+        "tr": {
+          "equivalent": "maliyet merkezi",
+          "context_note": "Accounting"
+        },
+        "uk": {
+          "equivalent": "центр витрат",
+          "context_note": "Accounting"
+        },
+        "ru": {
+          "equivalent": "центр затрат",
+          "context_note": "Accounting"
+        },
+        "ar": {
+          "equivalent": "مركز تكلفة",
+          "context_note": "Accounting"
+        },
+        "fa": {
+          "equivalent": "مرکز هزینه",
+          "context_note": "Accounting"
+        }
+      }
+    },
+    "schnittstelle": {
+      "lexical_key": "wipa_token_schnittstelle",
+      "domain": "IT and organization",
+      "german_reference": {
+        "term": "Schnittstelle",
+        "context_definition": "Die IT richtet eine Schnittstelle zwischen den Systemen ein."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "interface / point of contact",
+          "context_note": "IT and organization"
+        },
+        "fr": {
+          "equivalent": "interface / point de contact",
+          "context_note": "IT and organization"
+        },
+        "es": {
+          "equivalent": "interfaz / punto de contacto",
+          "context_note": "IT and organization"
+        },
+        "pl": {
+          "equivalent": "interfejs / punkt styku",
+          "context_note": "IT and organization"
+        },
+        "tr": {
+          "equivalent": "arayüz / temas noktası",
+          "context_note": "IT and organization"
+        },
+        "uk": {
+          "equivalent": "інтерфейс / точка взаємодії",
+          "context_note": "IT and organization"
+        },
+        "ru": {
+          "equivalent": "интерфейс / точка взаимодействия",
+          "context_note": "IT and organization"
+        },
+        "ar": {
+          "equivalent": "واجهة / نقطة اتصال",
+          "context_note": "IT and organization"
+        },
+        "fa": {
+          "equivalent": "رابط / نقطه تماس",
+          "context_note": "IT and organization"
+        }
+      }
+    },
+    "ausschreibung": {
+      "lexical_key": "wipa_token_ausschreibung",
+      "domain": "Procurement",
+      "german_reference": {
+        "term": "Ausschreibung",
+        "context_definition": "Unser Unternehmen nimmt an der öffentlichen Ausschreibung teil."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "tender / call for bids",
+          "context_note": "Procurement"
+        },
+        "fr": {
+          "equivalent": "appel d’offres",
+          "context_note": "Procurement"
+        },
+        "es": {
+          "equivalent": "licitación / concurso",
+          "context_note": "Procurement"
+        },
+        "pl": {
+          "equivalent": "przetarg",
+          "context_note": "Procurement"
+        },
+        "tr": {
+          "equivalent": "ihale",
+          "context_note": "Procurement"
+        },
+        "uk": {
+          "equivalent": "тендер",
+          "context_note": "Procurement"
+        },
+        "ru": {
+          "equivalent": "тендер / конкурс",
+          "context_note": "Procurement"
+        },
+        "ar": {
+          "equivalent": "مناقصة",
+          "context_note": "Procurement"
+        },
+        "fa": {
+          "equivalent": "مناقصه",
+          "context_note": "Procurement"
+        }
+      }
+    },
+    "lieferant": {
+      "lexical_key": "wipa_token_lieferant",
+      "domain": "Procurement",
+      "german_reference": {
+        "term": "Lieferant",
+        "context_definition": "Wir verhandeln mit einem neuen Lieferanten über bessere Konditionen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "supplier",
+          "context_note": "Procurement"
+        },
+        "fr": {
+          "equivalent": "fournisseur",
+          "context_note": "Procurement"
+        },
+        "es": {
+          "equivalent": "proveedor",
+          "context_note": "Procurement"
+        },
+        "pl": {
+          "equivalent": "dostawca",
+          "context_note": "Procurement"
+        },
+        "tr": {
+          "equivalent": "tedarikçi",
+          "context_note": "Procurement"
+        },
+        "uk": {
+          "equivalent": "постачальник",
+          "context_note": "Procurement"
+        },
+        "ru": {
+          "equivalent": "поставщик",
+          "context_note": "Procurement"
+        },
+        "ar": {
+          "equivalent": "مورّد",
+          "context_note": "Procurement"
+        },
+        "fa": {
+          "equivalent": "تأمین‌کننده",
+          "context_note": "Procurement"
+        }
+      }
+    },
+    "kunde": {
+      "lexical_key": "wipa_token_kunde",
+      "domain": "Customer contact",
+      "german_reference": {
+        "term": "Kunde",
+        "context_definition": "Ich berate den Kunden zu den verfügbaren Optionen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "customer / client",
+          "context_note": "Customer contact"
+        },
+        "fr": {
+          "equivalent": "client",
+          "context_note": "Customer contact"
+        },
+        "es": {
+          "equivalent": "cliente",
+          "context_note": "Customer contact"
+        },
+        "pl": {
+          "equivalent": "klient",
+          "context_note": "Customer contact"
+        },
+        "tr": {
+          "equivalent": "müşteri",
+          "context_note": "Customer contact"
+        },
+        "uk": {
+          "equivalent": "клієнт / замовник",
+          "context_note": "Customer contact"
+        },
+        "ru": {
+          "equivalent": "клиент / заказчик",
+          "context_note": "Customer contact"
+        },
+        "ar": {
+          "equivalent": "عميل / زبون",
+          "context_note": "Customer contact"
+        },
+        "fa": {
+          "equivalent": "مشتری",
+          "context_note": "Customer contact"
+        }
+      }
+    },
+    "praktikant": {
+      "lexical_key": "wipa_token_praktikant",
+      "domain": "Workplace roles",
+      "german_reference": {
+        "term": "Praktikant",
+        "context_definition": "Ich arbeite den neuen Praktikanten ein."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "intern",
+          "context_note": "Workplace roles"
+        },
+        "fr": {
+          "equivalent": "stagiaire",
+          "context_note": "Workplace roles"
+        },
+        "es": {
+          "equivalent": "becario / practicante",
+          "context_note": "Workplace roles"
+        },
+        "pl": {
+          "equivalent": "stażysta / praktykant",
+          "context_note": "Workplace roles"
+        },
+        "tr": {
+          "equivalent": "stajyer",
+          "context_note": "Workplace roles"
+        },
+        "uk": {
+          "equivalent": "стажер / практикант",
+          "context_note": "Workplace roles"
+        },
+        "ru": {
+          "equivalent": "стажёр / практикант",
+          "context_note": "Workplace roles"
+        },
+        "ar": {
+          "equivalent": "متدرب",
+          "context_note": "Workplace roles"
+        },
+        "fa": {
+          "equivalent": "کارآموز",
+          "context_note": "Workplace roles"
+        }
+      }
+    },
+    "angestellte": {
+      "lexical_key": "wipa_token_angestellte",
+      "domain": "Employment",
+      "german_reference": {
+        "term": "Angestellte",
+        "context_definition": "Ein neuer Angestellter beginnt am Montag."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "employee",
+          "context_note": "Employment"
+        },
+        "fr": {
+          "equivalent": "employé(e)",
+          "context_note": "Employment"
+        },
+        "es": {
+          "equivalent": "empleado/a",
+          "context_note": "Employment"
+        },
+        "pl": {
+          "equivalent": "pracownik / pracownica",
+          "context_note": "Employment"
+        },
+        "tr": {
+          "equivalent": "çalışan",
+          "context_note": "Employment"
+        },
+        "uk": {
+          "equivalent": "працівник / працівниця",
+          "context_note": "Employment"
+        },
+        "ru": {
+          "equivalent": "сотрудник / сотрудница",
+          "context_note": "Employment"
+        },
+        "ar": {
+          "equivalent": "موظف/ة",
+          "context_note": "Employment"
+        },
+        "fa": {
+          "equivalent": "کارمند",
+          "context_note": "Employment"
+        }
+      }
+    },
+    "abschreibung": {
+      "lexical_key": "wipa_token_abschreibung",
+      "domain": "Professional German",
+      "german_reference": {
+        "term": "Abschreibung",
+        "context_definition": "Professional German"
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "depreciation / amortization / write-off",
+          "context_note": "Professional German"
+        },
+        "fr": {
+          "equivalent": "amortissement / dépréciation",
+          "context_note": "Professional German"
+        },
+        "es": {
+          "equivalent": "depreciación / amortización / saneamiento contable",
+          "context_note": "Professional German"
+        },
+        "pl": {
+          "equivalent": "amortyzacja / odpis aktualizujący",
+          "context_note": "Professional German"
+        },
+        "tr": {
+          "equivalent": "amortisman / değer düşüklüğü kaydı",
+          "context_note": "Professional German"
+        },
+        "uk": {
+          "equivalent": "амортизація / знецінення активів",
+          "context_note": "Professional German"
+        },
+        "ru": {
+          "equivalent": "амортизация / обесценение",
+          "context_note": "Professional German"
+        },
+        "ar": {
+          "equivalent": "إهلاك / استهلاك محاسبي / شطب",
+          "context_note": "Professional German"
+        },
+        "fa": {
+          "equivalent": "استهلاک / کاهش ارزش / حذف حسابداری",
+          "context_note": "Professional German"
+        }
+      }
+    }
+  }
+}

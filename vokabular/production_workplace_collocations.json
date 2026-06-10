@@ -698,10 +698,14 @@
       ],
       "translations": {
         "English": "department",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "service / département",
+        "Arabic": "قسم",
+        "Persian": "بخش",
+        "Ukrainian": "відділ",
+        "Spanish": "departamento",
+        "Polish": "dział",
+        "Turkish": "departman / bölüm",
+        "Russian": "отдел"
       },
       "data": {
         "grammar": {
@@ -724,10 +728,14 @@
         "corporate_context": "Company structure",
         "translations": {
           "English": "department",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "service / département",
+          "Arabic": "قسم",
+          "Persian": "بخش",
+          "Ukrainian": "відділ",
+          "Spanish": "departamento",
+          "Polish": "dział",
+          "Turkish": "departman / bölüm",
+          "Russian": "отдел"
         }
       }
     },
@@ -742,10 +750,14 @@
       ],
       "translations": {
         "English": "contact person",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "interlocuteur / personne de contact",
+        "Arabic": "الشخص المسؤول للتواصل",
+        "Persian": "فرد تماس",
+        "Ukrainian": "контактна особа",
+        "Spanish": "persona de contacto",
+        "Polish": "osoba kontaktowa",
+        "Turkish": "irtibat kişisi",
+        "Russian": "контактное лицо"
       },
       "data": {
         "grammar": {
@@ -768,10 +780,14 @@
         "corporate_context": "Customer/service communication",
         "translations": {
           "English": "contact person",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "interlocuteur / personne de contact",
+          "Arabic": "الشخص المسؤول للتواصل",
+          "Persian": "فرد تماس",
+          "Ukrainian": "контактна особа",
+          "Spanish": "persona de contacto",
+          "Polish": "osoba kontaktowa",
+          "Turkish": "irtibat kişisi",
+          "Russian": "контактное лицо"
         }
       }
     },
@@ -786,10 +802,14 @@
       ],
       "translations": {
         "English": "inquiry / request",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "demande / requête",
+        "Arabic": "استفسار / طلب",
+        "Persian": "درخواست / پرس‌وجو",
+        "Ukrainian": "запит",
+        "Spanish": "consulta / solicitud",
+        "Polish": "zapytanie / wniosek",
+        "Turkish": "talep / soru",
+        "Russian": "запрос"
       },
       "data": {
         "grammar": {
@@ -812,10 +832,14 @@
         "corporate_context": "Email and service desk",
         "translations": {
           "English": "inquiry / request",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "demande / requête",
+          "Arabic": "استفسار / طلب",
+          "Persian": "درخواست / پرس‌وجو",
+          "Ukrainian": "запит",
+          "Spanish": "consulta / solicitud",
+          "Polish": "zapytanie / wniosek",
+          "Turkish": "talep / soru",
+          "Russian": "запрос"
         }
       }
     },
@@ -830,10 +854,14 @@
       ],
       "translations": {
         "English": "process / procedure",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "déroulement / procédure",
+        "Arabic": "سير العملية / إجراء",
+        "Persian": "فرایند / روند",
+        "Ukrainian": "процес / порядок дій",
+        "Spanish": "proceso / procedimiento",
+        "Polish": "przebieg / procedura",
+        "Turkish": "süreç / prosedür",
+        "Russian": "процесс / порядок"
       },
       "data": {
         "grammar": {
@@ -856,10 +884,14 @@
         "corporate_context": "Work organization",
         "translations": {
           "English": "process / procedure",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "déroulement / procédure",
+          "Arabic": "سير العملية / إجراء",
+          "Persian": "فرایند / روند",
+          "Ukrainian": "процес / порядок дій",
+          "Spanish": "proceso / procedimiento",
+          "Polish": "przebieg / procedura",
+          "Turkish": "süreç / prosedür",
+          "Russian": "процесс / порядок"
         }
       }
     },
@@ -874,10 +906,14 @@
       ],
       "translations": {
         "English": "document / file",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "document / dossier",
+        "Arabic": "مستند / ملف",
+        "Persian": "مدرک / پرونده",
+        "Ukrainian": "документ / матеріали",
+        "Spanish": "documento / expediente",
+        "Polish": "dokument / akta",
+        "Turkish": "belge / dosya",
+        "Russian": "документ / материалы"
       },
       "data": {
         "grammar": {
@@ -900,10 +936,14 @@
         "corporate_context": "Administration",
         "translations": {
           "English": "document / file",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "document / dossier",
+          "Arabic": "مستند / ملف",
+          "Persian": "مدرک / پرونده",
+          "Ukrainian": "документ / матеріали",
+          "Spanish": "documento / expediente",
+          "Polish": "dokument / akta",
+          "Turkish": "belge / dosya",
+          "Russian": "документ / материалы"
         }
       }
     },
@@ -918,10 +958,14 @@
       ],
       "translations": {
         "English": "feedback / response",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "retour / réponse",
+        "Arabic": "رد / ملاحظات",
+        "Persian": "بازخورد / پاسخ",
+        "Ukrainian": "відгук / відповідь",
+        "Spanish": "respuesta / comentario",
+        "Polish": "informacja zwrotna / odpowiedź",
+        "Turkish": "geri bildirim / yanıt",
+        "Russian": "обратная связь / ответ"
       },
       "data": {
         "grammar": {
@@ -944,10 +988,14 @@
         "corporate_context": "Emails and follow-up",
         "translations": {
           "English": "feedback / response",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "retour / réponse",
+          "Arabic": "رد / ملاحظات",
+          "Persian": "بازخورد / پاسخ",
+          "Ukrainian": "відгук / відповідь",
+          "Spanish": "respuesta / comentario",
+          "Polish": "informacja zwrotna / odpowiedź",
+          "Turkish": "geri bildirim / yanıt",
+          "Russian": "обратная связь / ответ"
         }
       }
     },
@@ -962,10 +1010,14 @@
       ],
       "translations": {
         "English": "meeting",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "réunion",
+        "Arabic": "اجتماع",
+        "Persian": "جلسه",
+        "Ukrainian": "нарада / зустріч",
+        "Spanish": "reunión",
+        "Polish": "spotkanie / narada",
+        "Turkish": "toplantı",
+        "Russian": "совещание / встреча"
       },
       "data": {
         "grammar": {
@@ -988,10 +1040,14 @@
         "corporate_context": "Office communication",
         "translations": {
           "English": "meeting",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "réunion",
+          "Arabic": "اجتماع",
+          "Persian": "جلسه",
+          "Ukrainian": "нарада / зустріч",
+          "Spanish": "reunión",
+          "Polish": "spotkanie / narada",
+          "Turkish": "toplantı",
+          "Russian": "совещание / встреча"
         }
       }
     },
@@ -1006,10 +1062,14 @@
       ],
       "translations": {
         "English": "deadline",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "délai / échéance",
+        "Arabic": "موعد نهائي / مهلة",
+        "Persian": "مهلت / ضرب‌الاجل",
+        "Ukrainian": "термін / крайній строк",
+        "Spanish": "plazo / fecha límite",
+        "Polish": "termin / ostateczny termin",
+        "Turkish": "son tarih / süre",
+        "Russian": "срок"
       },
       "data": {
         "grammar": {
@@ -1032,10 +1092,14 @@
         "corporate_context": "Administration and contracts",
         "translations": {
           "English": "deadline",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "délai / échéance",
+          "Arabic": "موعد نهائي / مهلة",
+          "Persian": "مهلت / ضرب‌الاجل",
+          "Ukrainian": "термін / крайній строк",
+          "Spanish": "plazo / fecha límite",
+          "Polish": "termin / ostateczny termin",
+          "Turkish": "son tarih / süre",
+          "Russian": "срок"
         }
       }
     },
@@ -1050,10 +1114,14 @@
       ],
       "translations": {
         "English": "contract",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "contrat",
+        "Arabic": "عقد",
+        "Persian": "قرارداد",
+        "Ukrainian": "договір / контракт",
+        "Spanish": "contrato",
+        "Polish": "umowa",
+        "Turkish": "sözleşme",
+        "Russian": "договор / контракт"
       },
       "data": {
         "grammar": {
@@ -1076,10 +1144,14 @@
         "corporate_context": "Employment and services",
         "translations": {
           "English": "contract",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "contrat",
+          "Arabic": "عقد",
+          "Persian": "قرارداد",
+          "Ukrainian": "договір / контракт",
+          "Spanish": "contrato",
+          "Polish": "umowa",
+          "Turkish": "sözleşme",
+          "Russian": "договор / контракт"
         }
       }
     },
@@ -1094,10 +1166,14 @@
       ],
       "translations": {
         "English": "termination / notice",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "résiliation / licenciement",
+        "Arabic": "إنهاء العقد / إشعار فصل",
+        "Persian": "فسخ قرارداد / استعفا",
+        "Ukrainian": "звільнення / розірвання договору",
+        "Spanish": "rescisión / despido / renuncia",
+        "Polish": "wypowiedzenie / rozwiązanie umowy",
+        "Turkish": "fesih / işten ayrılma bildirimi",
+        "Russian": "увольнение / расторжение"
       },
       "data": {
         "grammar": {
@@ -1120,10 +1196,14 @@
         "corporate_context": "Employment and contracts",
         "translations": {
           "English": "termination / notice",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "résiliation / licenciement",
+          "Arabic": "إنهاء العقد / إشعار فصل",
+          "Persian": "فسخ قرارداد / استعفا",
+          "Ukrainian": "звільнення / розірвання договору",
+          "Spanish": "rescisión / despido / renuncia",
+          "Polish": "wypowiedzenie / rozwiązanie umowy",
+          "Turkish": "fesih / işten ayrılma bildirimi",
+          "Russian": "увольнение / расторжение"
         }
       }
     },
@@ -1138,10 +1218,14 @@
       ],
       "translations": {
         "English": "sick note / absence notice",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "avis d’absence maladie",
+        "Arabic": "إشعار مرضي",
+        "Persian": "اعلام بیماری / گواهی بیماری",
+        "Ukrainian": "повідомлення про хворобу",
+        "Spanish": "baja médica / aviso de enfermedad",
+        "Polish": "zgłoszenie choroby / zwolnienie",
+        "Turkish": "hastalık bildirimi / rapor",
+        "Russian": "сообщение о болезни / больничный"
       },
       "data": {
         "grammar": {
@@ -1164,10 +1248,14 @@
         "corporate_context": "Workplace absence",
         "translations": {
           "English": "sick note / absence notice",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "avis d’absence maladie",
+          "Arabic": "إشعار مرضي",
+          "Persian": "اعلام بیماری / گواهی بیماری",
+          "Ukrainian": "повідомлення про хворобу",
+          "Spanish": "baja médica / aviso de enfermedad",
+          "Polish": "zgłoszenie choroby / zwolnienie",
+          "Turkish": "hastalık bildirimi / rapor",
+          "Russian": "сообщение о болезни / больничный"
         }
       }
     },
@@ -1182,10 +1270,14 @@
       ],
       "translations": {
         "English": "onboarding / induction",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "intégration / formation initiale",
+        "Arabic": "التهيئة للعمل / التدريب الأولي",
+        "Persian": "آموزش ورود به کار / آشنایی شغلی",
+        "Ukrainian": "введення в роботу / адаптація",
+        "Spanish": "incorporación / formación inicial",
+        "Polish": "wdrożenie do pracy",
+        "Turkish": "işe alıştırma / oryantasyon",
+        "Russian": "введение в должность / адаптация"
       },
       "data": {
         "grammar": {
@@ -1208,10 +1300,14 @@
         "corporate_context": "Starting a job",
         "translations": {
           "English": "onboarding / induction",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "intégration / formation initiale",
+          "Arabic": "التهيئة للعمل / التدريب الأولي",
+          "Persian": "آموزش ورود به کار / آشنایی شغلی",
+          "Ukrainian": "введення в роботу / адаптація",
+          "Spanish": "incorporación / formación inicial",
+          "Polish": "wdrożenie do pracy",
+          "Turkish": "işe alıştırma / oryantasyon",
+          "Russian": "введение в должность / адаптация"
         }
       }
     },
@@ -1225,11 +1321,15 @@
         "Work organization"
       ],
       "translations": {
-        "English": "responsibility / competence",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "English": "responsibility / area of competence",
+        "French": "compétence / responsabilité",
+        "Arabic": "المسؤولية / الاختصاص",
+        "Persian": "مسئولیت / حوزه اختیار",
+        "Ukrainian": "відповідальність / компетенція",
+        "Spanish": "responsabilidad / competencia",
+        "Polish": "odpowiedzialność / zakres kompetencji",
+        "Turkish": "sorumluluk / yetki alanı",
+        "Russian": "ответственность / компетенция"
       },
       "data": {
         "grammar": {
@@ -1251,11 +1351,15 @@
         ],
         "corporate_context": "Work organization",
         "translations": {
-          "English": "responsibility / competence",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "English": "responsibility / area of competence",
+          "French": "compétence / responsabilité",
+          "Arabic": "المسؤولية / الاختصاص",
+          "Persian": "مسئولیت / حوزه اختیار",
+          "Ukrainian": "відповідальність / компетенція",
+          "Spanish": "responsabilidad / competencia",
+          "Polish": "odpowiedzialność / zakres kompetencji",
+          "Turkish": "sorumluluk / yetki alanı",
+          "Russian": "ответственность / компетенция"
         }
       }
     },
@@ -1270,10 +1374,14 @@
       ],
       "translations": {
         "English": "requirement / prerequisite",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "condition préalable / exigence",
+        "Arabic": "شرط / متطلب",
+        "Persian": "پیش‌نیاز / شرط",
+        "Ukrainian": "вимога / передумова",
+        "Spanish": "requisito / condición previa",
+        "Polish": "wymóg / warunek wstępny",
+        "Turkish": "ön koşul / gereklilik",
+        "Russian": "условие / требование"
       },
       "data": {
         "grammar": {
@@ -1296,10 +1404,14 @@
         "corporate_context": "Job ads and applications",
         "translations": {
           "English": "requirement / prerequisite",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "condition préalable / exigence",
+          "Arabic": "شرط / متطلب",
+          "Persian": "پیش‌نیاز / شرط",
+          "Ukrainian": "вимога / передумова",
+          "Spanish": "requisito / condición previa",
+          "Polish": "wymóg / warunek wstępny",
+          "Turkish": "ön koşul / gereklilik",
+          "Russian": "условие / требование"
         }
       }
     },
@@ -1314,10 +1426,14 @@
       ],
       "translations": {
         "English": "workload / strain",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "charge / contrainte",
+        "Arabic": "عبء / ضغط",
+        "Persian": "فشار / بار کاری",
+        "Ukrainian": "навантаження",
+        "Spanish": "carga / presión",
+        "Polish": "obciążenie",
+        "Turkish": "yük / zorlanma",
+        "Russian": "нагрузка"
       },
       "data": {
         "grammar": {
@@ -1340,10 +1456,14 @@
         "corporate_context": "Health and work",
         "translations": {
           "English": "workload / strain",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "charge / contrainte",
+          "Arabic": "عبء / ضغط",
+          "Persian": "فشار / بار کاری",
+          "Ukrainian": "навантаження",
+          "Spanish": "carga / presión",
+          "Polish": "obciążenie",
+          "Turkish": "yük / zorlanma",
+          "Russian": "нагрузка"
         }
       }
     },
@@ -1357,11 +1477,15 @@
         "Career development"
       ],
       "translations": {
-        "English": "professional training",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "English": "professional training / continuing education",
+        "French": "formation continue",
+        "Arabic": "تدريب مهني مستمر",
+        "Persian": "آموزش تکمیلی / توسعه حرفه‌ای",
+        "Ukrainian": "підвищення кваліфікації",
+        "Spanish": "formación continua",
+        "Polish": "dokształcanie / szkolenie zawodowe",
+        "Turkish": "mesleki eğitim / gelişim",
+        "Russian": "повышение квалификации"
       },
       "data": {
         "grammar": {
@@ -1383,11 +1507,15 @@
         ],
         "corporate_context": "Career development",
         "translations": {
-          "English": "professional training",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "English": "professional training / continuing education",
+          "French": "formation continue",
+          "Arabic": "تدريب مهني مستمر",
+          "Persian": "آموزش تکمیلی / توسعه حرفه‌ای",
+          "Ukrainian": "підвищення кваліфікації",
+          "Spanish": "formación continua",
+          "Polish": "dokształcanie / szkolenie zawodowe",
+          "Turkish": "mesleki eğitim / gelişim",
+          "Russian": "повышение квалификации"
         }
       }
     },
@@ -1402,10 +1530,14 @@
       ],
       "translations": {
         "English": "availability",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "disponibilité",
+        "Arabic": "التوفر",
+        "Persian": "دسترسی‌پذیری / موجود بودن",
+        "Ukrainian": "доступність / наявність",
+        "Spanish": "disponibilidad",
+        "Polish": "dostępność",
+        "Turkish": "uygunluk / kullanılabilirlik",
+        "Russian": "доступность / наличие"
       },
       "data": {
         "grammar": {
@@ -1428,10 +1560,14 @@
         "corporate_context": "Scheduling and resources",
         "translations": {
           "English": "availability",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "disponibilité",
+          "Arabic": "التوفر",
+          "Persian": "دسترسی‌پذیری / موجود بودن",
+          "Ukrainian": "доступність / наявність",
+          "Spanish": "disponibilidad",
+          "Polish": "dostępność",
+          "Turkish": "uygunluk / kullanılabilirlik",
+          "Russian": "доступность / наличие"
         }
       }
     },
@@ -1446,10 +1582,14 @@
       ],
       "translations": {
         "English": "complaint",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "réclamation / plainte",
+        "Arabic": "شكوى",
+        "Persian": "شکایت",
+        "Ukrainian": "скарга",
+        "Spanish": "queja / reclamación",
+        "Polish": "skarga / reklamacja",
+        "Turkish": "şikâyet",
+        "Russian": "жалоба"
       },
       "data": {
         "grammar": {
@@ -1472,10 +1612,14 @@
         "corporate_context": "Customer service",
         "translations": {
           "English": "complaint",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "réclamation / plainte",
+          "Arabic": "شكوى",
+          "Persian": "شکایت",
+          "Ukrainian": "скарга",
+          "Spanish": "queja / reclamación",
+          "Polish": "skarga / reklamacja",
+          "Turkish": "şikâyet",
+          "Russian": "жалоба"
         }
       }
     },
@@ -1489,11 +1633,15 @@
         "Customer service"
       ],
       "translations": {
-        "English": "claim / complaint about product",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "English": "product complaint / claim",
+        "French": "réclamation produit",
+        "Arabic": "مطالبة / شكوى بخصوص المنتج",
+        "Persian": "شکایت کالا / مطالبه",
+        "Ukrainian": "рекламація / претензія",
+        "Spanish": "reclamación de producto",
+        "Polish": "reklamacja",
+        "Turkish": "ürün şikâyeti / talep",
+        "Russian": "рекламация / претензия"
       },
       "data": {
         "grammar": {
@@ -1515,11 +1663,15 @@
         ],
         "corporate_context": "Customer service",
         "translations": {
-          "English": "claim / complaint about product",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "English": "product complaint / claim",
+          "French": "réclamation produit",
+          "Arabic": "مطالبة / شكوى بخصوص المنتج",
+          "Persian": "شکایت کالا / مطالبه",
+          "Ukrainian": "рекламація / претензія",
+          "Spanish": "reclamación de producto",
+          "Polish": "reklamacja",
+          "Turkish": "ürün şikâyeti / talep",
+          "Russian": "рекламация / претензия"
         }
       }
     },
@@ -1534,10 +1686,14 @@
       ],
       "translations": {
         "English": "defect / deficiency",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "défaut / insuffisance",
+        "Arabic": "عيب / نقص",
+        "Persian": "نقص / عیب",
+        "Ukrainian": "дефект / недолік",
+        "Spanish": "defecto / deficiencia",
+        "Polish": "wada / brak",
+        "Turkish": "kusur / eksiklik",
+        "Russian": "дефект / недостаток"
       },
       "data": {
         "grammar": {
@@ -1560,10 +1716,14 @@
         "corporate_context": "Quality and service",
         "translations": {
           "English": "defect / deficiency",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "défaut / insuffisance",
+          "Arabic": "عيب / نقص",
+          "Persian": "نقص / عیب",
+          "Ukrainian": "дефект / недолік",
+          "Spanish": "defecto / deficiencia",
+          "Polish": "wada / brak",
+          "Turkish": "kusur / eksiklik",
+          "Russian": "дефект / недостаток"
         }
       }
     },
@@ -1578,10 +1738,14 @@
       ],
       "translations": {
         "English": "rectification / rework",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "correction / reprise",
+        "Arabic": "تصحيح / إعادة تحسين",
+        "Persian": "اصلاح / رفع نقص",
+        "Ukrainian": "усунення недоліків / доопрацювання",
+        "Spanish": "subsanación / reparación",
+        "Polish": "naprawa / poprawka",
+        "Turkish": "düzeltme / yeniden işleme",
+        "Russian": "исправление / доработка"
       },
       "data": {
         "grammar": {
@@ -1604,10 +1768,14 @@
         "corporate_context": "Complaints and warranty",
         "translations": {
           "English": "rectification / rework",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "correction / reprise",
+          "Arabic": "تصحيح / إعادة تحسين",
+          "Persian": "اصلاح / رفع نقص",
+          "Ukrainian": "усунення недоліків / доопрацювання",
+          "Spanish": "subsanación / reparación",
+          "Polish": "naprawa / poprawka",
+          "Turkish": "düzeltme / yeniden işleme",
+          "Russian": "исправление / доработка"
         }
       }
     },
@@ -1622,10 +1790,14 @@
       ],
       "translations": {
         "English": "downtime",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "temps d’arrêt",
+        "Arabic": "وقت التوقف",
+        "Persian": "زمان خرابی / توقف",
+        "Ukrainian": "час простою",
+        "Spanish": "tiempo de inactividad",
+        "Polish": "przestój",
+        "Turkish": "kesinti süresi",
+        "Russian": "время простоя"
       },
       "data": {
         "grammar": {
@@ -1648,10 +1820,14 @@
         "corporate_context": "Technical problems",
         "translations": {
           "English": "downtime",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "temps d’arrêt",
+          "Arabic": "وقت التوقف",
+          "Persian": "زمان خرابی / توقف",
+          "Ukrainian": "час простою",
+          "Spanish": "tiempo de inactividad",
+          "Polish": "przestój",
+          "Turkish": "kesinti süresi",
+          "Russian": "время простоя"
         }
       }
     },
@@ -1666,10 +1842,14 @@
       ],
       "translations": {
         "English": "commissioning / start-up",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "mise en service",
+        "Arabic": "تشغيل أولي / وضع في الخدمة",
+        "Persian": "راه‌اندازی / بهره‌برداری اولیه",
+        "Ukrainian": "введення в експлуатацію",
+        "Spanish": "puesta en marcha",
+        "Polish": "uruchomienie",
+        "Turkish": "devreye alma",
+        "Russian": "ввод в эксплуатацию"
       },
       "data": {
         "grammar": {
@@ -1692,10 +1872,14 @@
         "corporate_context": "Technical systems",
         "translations": {
           "English": "commissioning / start-up",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "mise en service",
+          "Arabic": "تشغيل أولي / وضع في الخدمة",
+          "Persian": "راه‌اندازی / بهره‌برداری اولیه",
+          "Ukrainian": "введення в експлуатацію",
+          "Spanish": "puesta en marcha",
+          "Polish": "uruchomienie",
+          "Turkish": "devreye alma",
+          "Russian": "ввод в эксплуатацию"
         }
       }
     },
@@ -1710,10 +1894,14 @@
       ],
       "translations": {
         "English": "bottleneck / shortage",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "goulot d’étranglement / pénurie",
+        "Arabic": "عنق زجاجة / نقص",
+        "Persian": "گلوگاه / کمبود",
+        "Ukrainian": "вузьке місце / дефіцит",
+        "Spanish": "cuello de botella / escasez",
+        "Polish": "wąskie gardło / niedobór",
+        "Turkish": "darboğaz / kıtlık",
+        "Russian": "узкое место / дефицит"
       },
       "data": {
         "grammar": {
@@ -1736,10 +1924,14 @@
         "corporate_context": "Logistics and operations",
         "translations": {
           "English": "bottleneck / shortage",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "goulot d’étranglement / pénurie",
+          "Arabic": "عنق زجاجة / نقص",
+          "Persian": "گلوگاه / کمبود",
+          "Ukrainian": "вузьке місце / дефіцит",
+          "Spanish": "cuello de botella / escasez",
+          "Polish": "wąskie gardło / niedobór",
+          "Turkish": "darboğaz / kıtlık",
+          "Russian": "узкое место / дефицит"
         }
       }
     },
@@ -1754,10 +1946,14 @@
       ],
       "translations": {
         "English": "delivery delay",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "retard de livraison",
+        "Arabic": "تأخير التسليم",
+        "Persian": "تأخیر در تحویل",
+        "Ukrainian": "затримка доставки",
+        "Spanish": "retraso en la entrega",
+        "Polish": "opóźnienie dostawy",
+        "Turkish": "teslimat gecikmesi",
+        "Russian": "задержка поставки"
       },
       "data": {
         "grammar": {
@@ -1780,10 +1976,14 @@
         "corporate_context": "Logistics",
         "translations": {
           "English": "delivery delay",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "retard de livraison",
+          "Arabic": "تأخير التسليم",
+          "Persian": "تأخیر در تحویل",
+          "Ukrainian": "затримка доставки",
+          "Spanish": "retraso en la entrega",
+          "Polish": "opóźnienie dostawy",
+          "Turkish": "teslimat gecikmesi",
+          "Russian": "задержка поставки"
         }
       }
     },
@@ -1798,10 +1998,14 @@
       ],
       "translations": {
         "English": "measure / action",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "mesure / action",
+        "Arabic": "إجراء / تدبير",
+        "Persian": "اقدام / تدبیر",
+        "Ukrainian": "захід / дія",
+        "Spanish": "medida / acción",
+        "Polish": "środek / działanie",
+        "Turkish": "önlem / işlem",
+        "Russian": "мера / действие"
       },
       "data": {
         "grammar": {
@@ -1824,10 +2028,14 @@
         "corporate_context": "Management and problem solving",
         "translations": {
           "English": "measure / action",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "mesure / action",
+          "Arabic": "إجراء / تدبير",
+          "Persian": "اقدام / تدبیر",
+          "Ukrainian": "захід / дія",
+          "Spanish": "medida / acción",
+          "Polish": "środek / działanie",
+          "Turkish": "önlem / işlem",
+          "Russian": "мера / действие"
         }
       }
     },
@@ -1842,10 +2050,14 @@
       ],
       "translations": {
         "English": "analysis / evaluation",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "analyse / évaluation",
+        "Arabic": "تحليل / تقييم",
+        "Persian": "تحلیل / ارزیابی",
+        "Ukrainian": "аналіз / оцінка",
+        "Spanish": "análisis / evaluación",
+        "Polish": "analiza / ocena",
+        "Turkish": "analiz / değerlendirme",
+        "Russian": "анализ / оценка"
       },
       "data": {
         "grammar": {
@@ -1868,10 +2080,14 @@
         "corporate_context": "Reports and data",
         "translations": {
           "English": "analysis / evaluation",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "analyse / évaluation",
+          "Arabic": "تحليل / تقييم",
+          "Persian": "تحلیل / ارزیابی",
+          "Ukrainian": "аналіз / оцінка",
+          "Spanish": "análisis / evaluación",
+          "Polish": "analiza / ocena",
+          "Turkish": "analiz / değerlendirme",
+          "Russian": "анализ / оценка"
         }
       }
     },
@@ -1886,10 +2102,14 @@
       ],
       "translations": {
         "English": "assessment / estimate",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "évaluation / estimation",
+        "Arabic": "تقييم / تقدير",
+        "Persian": "ارزیابی / برآورد",
+        "Ukrainian": "оцінка / припущення",
+        "Spanish": "evaluación / estimación",
+        "Polish": "ocena / szacunek",
+        "Turkish": "değerlendirme / tahmin",
+        "Russian": "оценка"
       },
       "data": {
         "grammar": {
@@ -1912,10 +2132,14 @@
         "corporate_context": "Meetings and reports",
         "translations": {
           "English": "assessment / estimate",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "évaluation / estimation",
+          "Arabic": "تقييم / تقدير",
+          "Persian": "ارزیابی / برآورد",
+          "Ukrainian": "оцінка / припущення",
+          "Spanish": "evaluación / estimación",
+          "Polish": "ocena / szacunek",
+          "Turkish": "değerlendirme / tahmin",
+          "Russian": "оценка"
         }
       }
     },
@@ -1930,10 +2154,14 @@
       ],
       "translations": {
         "English": "implementation",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "mise en œuvre",
+        "Arabic": "تنفيذ",
+        "Persian": "اجرا / پیاده‌سازی",
+        "Ukrainian": "впровадження",
+        "Spanish": "implementación",
+        "Polish": "wdrożenie",
+        "Turkish": "uygulama",
+        "Russian": "реализация / внедрение"
       },
       "data": {
         "grammar": {
@@ -1956,10 +2184,14 @@
         "corporate_context": "Project management",
         "translations": {
           "English": "implementation",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "mise en œuvre",
+          "Arabic": "تنفيذ",
+          "Persian": "اجرا / پیاده‌سازی",
+          "Ukrainian": "впровадження",
+          "Spanish": "implementación",
+          "Polish": "wdrożenie",
+          "Turkish": "uygulama",
+          "Russian": "реализация / внедрение"
         }
       }
     },
@@ -1974,10 +2206,14 @@
       ],
       "translations": {
         "English": "agreement",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "accord / convention",
+        "Arabic": "اتفاق",
+        "Persian": "توافق / قرارداد",
+        "Ukrainian": "угода / домовленість",
+        "Spanish": "acuerdo",
+        "Polish": "porozumienie / umowa",
+        "Turkish": "anlaşma",
+        "Russian": "соглашение"
       },
       "data": {
         "grammar": {
@@ -2000,10 +2236,14 @@
         "corporate_context": "Meetings/contracts",
         "translations": {
           "English": "agreement",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "accord / convention",
+          "Arabic": "اتفاق",
+          "Persian": "توافق / قرارداد",
+          "Ukrainian": "угода / домовленість",
+          "Spanish": "acuerdo",
+          "Polish": "porozumienie / umowa",
+          "Turkish": "anlaşma",
+          "Russian": "соглашение"
         }
       }
     },
@@ -2018,10 +2258,14 @@
       ],
       "translations": {
         "English": "negotiation",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "négociation",
+        "Arabic": "مفاوضات",
+        "Persian": "مذاکره",
+        "Ukrainian": "переговори",
+        "Spanish": "negociación",
+        "Polish": "negocjacje",
+        "Turkish": "müzakere",
+        "Russian": "переговоры"
       },
       "data": {
         "grammar": {
@@ -2044,10 +2288,14 @@
         "corporate_context": "Business negotiation",
         "translations": {
           "English": "negotiation",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "négociation",
+          "Arabic": "مفاوضات",
+          "Persian": "مذاکره",
+          "Ukrainian": "переговори",
+          "Spanish": "negociación",
+          "Polish": "negocjacje",
+          "Turkish": "müzakere",
+          "Russian": "переговоры"
         }
       }
     },
@@ -2062,10 +2310,14 @@
       ],
       "translations": {
         "English": "severance payment",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "indemnité de départ",
+        "Arabic": "تعويض نهاية الخدمة",
+        "Persian": "حق سنوات / غرامت پایان کار",
+        "Ukrainian": "вихідна допомога",
+        "Spanish": "indemnización por despido",
+        "Polish": "odprawa",
+        "Turkish": "kıdem / ayrılma tazminatı",
+        "Russian": "выходное пособие"
       },
       "data": {
         "grammar": {
@@ -2088,10 +2340,14 @@
         "corporate_context": "HR and termination",
         "translations": {
           "English": "severance payment",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "indemnité de départ",
+          "Arabic": "تعويض نهاية الخدمة",
+          "Persian": "حق سنوات / غرامت پایان کار",
+          "Ukrainian": "вихідна допомога",
+          "Spanish": "indemnización por despido",
+          "Polish": "odprawa",
+          "Turkish": "kıdem / ayrılma tazminatı",
+          "Russian": "выходное пособие"
         }
       }
     },
@@ -2106,10 +2362,14 @@
       ],
       "translations": {
         "English": "return on sales",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "rentabilité du chiffre d’affaires",
+        "Arabic": "ربحية المبيعات",
+        "Persian": "بازده فروش",
+        "Ukrainian": "рентабельність продажів",
+        "Spanish": "rentabilidad sobre ventas",
+        "Polish": "rentowność sprzedaży",
+        "Turkish": "satış kârlılığı",
+        "Russian": "рентабельность продаж"
       },
       "data": {
         "grammar": {
@@ -2132,10 +2392,14 @@
         "corporate_context": "Finance and reporting",
         "translations": {
           "English": "return on sales",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "rentabilité du chiffre d’affaires",
+          "Arabic": "ربحية المبيعات",
+          "Persian": "بازده فروش",
+          "Ukrainian": "рентабельність продажів",
+          "Spanish": "rentabilidad sobre ventas",
+          "Polish": "rentowność sprzedaży",
+          "Turkish": "satış kârlılığı",
+          "Russian": "рентабельность продаж"
         }
       }
     },
@@ -2150,10 +2414,14 @@
       ],
       "translations": {
         "English": "cost center",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "centre de coûts",
+        "Arabic": "مركز تكلفة",
+        "Persian": "مرکز هزینه",
+        "Ukrainian": "центр витрат",
+        "Spanish": "centro de costes",
+        "Polish": "miejsce powstawania kosztów",
+        "Turkish": "maliyet merkezi",
+        "Russian": "центр затрат"
       },
       "data": {
         "grammar": {
@@ -2176,10 +2444,14 @@
         "corporate_context": "Accounting",
         "translations": {
           "English": "cost center",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "centre de coûts",
+          "Arabic": "مركز تكلفة",
+          "Persian": "مرکز هزینه",
+          "Ukrainian": "центр витрат",
+          "Spanish": "centro de costes",
+          "Polish": "miejsce powstawania kosztów",
+          "Turkish": "maliyet merkezi",
+          "Russian": "центр затрат"
         }
       }
     },
@@ -2194,10 +2466,14 @@
       ],
       "translations": {
         "English": "interface / point of contact",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "interface / point de contact",
+        "Arabic": "واجهة / نقطة اتصال",
+        "Persian": "رابط / نقطه تماس",
+        "Ukrainian": "інтерфейс / точка взаємодії",
+        "Spanish": "interfaz / punto de contacto",
+        "Polish": "interfejs / punkt styku",
+        "Turkish": "arayüz / temas noktası",
+        "Russian": "интерфейс / точка взаимодействия"
       },
       "data": {
         "grammar": {
@@ -2220,10 +2496,14 @@
         "corporate_context": "IT and organization",
         "translations": {
           "English": "interface / point of contact",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "interface / point de contact",
+          "Arabic": "واجهة / نقطة اتصال",
+          "Persian": "رابط / نقطه تماس",
+          "Ukrainian": "інтерфейс / точка взаємодії",
+          "Spanish": "interfaz / punto de contacto",
+          "Polish": "interfejs / punkt styku",
+          "Turkish": "arayüz / temas noktası",
+          "Russian": "интерфейс / точка взаимодействия"
         }
       }
     },
@@ -2238,10 +2518,14 @@
       ],
       "translations": {
         "English": "tender / call for bids",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "appel d’offres",
+        "Arabic": "مناقصة",
+        "Persian": "مناقصه",
+        "Ukrainian": "тендер",
+        "Spanish": "licitación / concurso",
+        "Polish": "przetarg",
+        "Turkish": "ihale",
+        "Russian": "тендер / конкурс"
       },
       "data": {
         "grammar": {
@@ -2264,10 +2548,14 @@
         "corporate_context": "Procurement",
         "translations": {
           "English": "tender / call for bids",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "appel d’offres",
+          "Arabic": "مناقصة",
+          "Persian": "مناقصه",
+          "Ukrainian": "тендер",
+          "Spanish": "licitación / concurso",
+          "Polish": "przetarg",
+          "Turkish": "ihale",
+          "Russian": "тендер / конкурс"
         }
       }
     },
@@ -2282,10 +2570,14 @@
       ],
       "translations": {
         "English": "supplier",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "fournisseur",
+        "Arabic": "مورّد",
+        "Persian": "تأمین‌کننده",
+        "Ukrainian": "постачальник",
+        "Spanish": "proveedor",
+        "Polish": "dostawca",
+        "Turkish": "tedarikçi",
+        "Russian": "поставщик"
       },
       "data": {
         "grammar": {
@@ -2308,10 +2600,14 @@
         "corporate_context": "Procurement",
         "translations": {
           "English": "supplier",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "fournisseur",
+          "Arabic": "مورّد",
+          "Persian": "تأمین‌کننده",
+          "Ukrainian": "постачальник",
+          "Spanish": "proveedor",
+          "Polish": "dostawca",
+          "Turkish": "tedarikçi",
+          "Russian": "поставщик"
         }
       }
     },
@@ -2326,10 +2622,14 @@
       ],
       "translations": {
         "English": "customer / client",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "client",
+        "Arabic": "عميل / زبون",
+        "Persian": "مشتری",
+        "Ukrainian": "клієнт / замовник",
+        "Spanish": "cliente",
+        "Polish": "klient",
+        "Turkish": "müşteri",
+        "Russian": "клиент / заказчик"
       },
       "data": {
         "grammar": {
@@ -2352,10 +2652,14 @@
         "corporate_context": "Customer contact",
         "translations": {
           "English": "customer / client",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "client",
+          "Arabic": "عميل / زبون",
+          "Persian": "مشتری",
+          "Ukrainian": "клієнт / замовник",
+          "Spanish": "cliente",
+          "Polish": "klient",
+          "Turkish": "müşteri",
+          "Russian": "клиент / заказчик"
         }
       }
     },
@@ -2370,10 +2674,14 @@
       ],
       "translations": {
         "English": "intern",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "stagiaire",
+        "Arabic": "متدرب",
+        "Persian": "کارآموز",
+        "Ukrainian": "стажер / практикант",
+        "Spanish": "becario / practicante",
+        "Polish": "stażysta / praktykant",
+        "Turkish": "stajyer",
+        "Russian": "стажёр / практикант"
       },
       "data": {
         "grammar": {
@@ -2396,10 +2704,14 @@
         "corporate_context": "Workplace roles",
         "translations": {
           "English": "intern",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "stagiaire",
+          "Arabic": "متدرب",
+          "Persian": "کارآموز",
+          "Ukrainian": "стажер / практикант",
+          "Spanish": "becario / practicante",
+          "Polish": "stażysta / praktykant",
+          "Turkish": "stajyer",
+          "Russian": "стажёр / практикант"
         }
       }
     },
@@ -2414,10 +2726,14 @@
       ],
       "translations": {
         "English": "employee",
-        "French": "",
-        "Arabic": "",
-        "Persian": "",
-        "Ukrainian": ""
+        "French": "employé(e)",
+        "Arabic": "موظف/ة",
+        "Persian": "کارمند",
+        "Ukrainian": "працівник / працівниця",
+        "Spanish": "empleado/a",
+        "Polish": "pracownik / pracownica",
+        "Turkish": "çalışan",
+        "Russian": "сотрудник / сотрудница"
       },
       "data": {
         "grammar": {
@@ -2440,10 +2756,14 @@
         "corporate_context": "Employment",
         "translations": {
           "English": "employee",
-          "French": "",
-          "Arabic": "",
-          "Persian": "",
-          "Ukrainian": ""
+          "French": "employé(e)",
+          "Arabic": "موظف/ة",
+          "Persian": "کارمند",
+          "Ukrainian": "працівник / працівниця",
+          "Spanish": "empleado/a",
+          "Polish": "pracownik / pracownica",
+          "Turkish": "çalışan",
+          "Russian": "сотрудник / сотрудница"
         }
       }
     }

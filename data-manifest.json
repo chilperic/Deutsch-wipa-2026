@@ -1,5 +1,5 @@
 {
-  "version": "2026.06.10-v6-adverbien-deklination",
+  "version": "2026.06.10-v14-localization-audit",
   "modules": [
     {
       "id": "data_conjugator_verbs",
@@ -22,7 +22,7 @@
       "category": "grammar",
       "title": "Adverbien Intensiv · Position, Bedeutung, Satzlogik",
       "count": 415,
-      "description": "500 Übungen zu Adverbien und adverbialer Satzlogik."
+      "description": "Bereinigte Übungen zu Adverbien und adverbialer Satzlogik (415 Items)."
     },
     {
       "id": "grammatik_production_deklination_intensiv",
@@ -30,7 +30,7 @@
       "category": "grammar",
       "title": "Deklination Intensiv · Artikel, Adjektive, Nomen, Pronomen",
       "count": 369,
-      "description": "500 Übungen zu Fällen, Artikeln, Adjektivendungen, n-Deklination und Pronomen."
+      "description": "Bereinigte Übungen zu Deklination (369 Items)."
     },
     {
       "id": "grammatik_production_grammar_explanations_variations",

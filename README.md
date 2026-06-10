@@ -78,3 +78,25 @@ These settings are saved locally as `dw_appearance` and `dw_color` and are inclu
 ## v12 verification note
 
 This build keeps only the relevant audit fixes from the v11 audit: workplace-collocation translation shadowing, ambiguous adverb prompts, declension/cases path overlap, manifest count drift, local progress export/import, and mobile navigation. Older audit items about removed reading/writing/speaking modules are intentionally ignored.
+
+## v14 update: translation helper and resources
+
+The exercise card includes a `🌐` translation button. It shows stored translations when available and otherwise provides external translation links for the current German sentence or word. The target language follows the selected UI language.
+
+The learning panel also includes external resources, including Raim's Dreizunge app: https://raim.github.io/dreizunge/#
+
+## v14 localization and audit update
+
+This build adds a centralized learner-language lexicon under `data/locales/wipa_lexicon.json` for high-priority workplace vocabulary. The app now consults that lexicon before falling back to item-level translations or English. Priority localization coverage was added for English, French, Spanish, Polish, Turkish, Ukrainian, Russian, Arabic, and Persian.
+
+The conjugator data was also corrected for separable-verb Konjunktiv II. Examples now use `ich würde vorbereiten`, `ich würde teilnehmen`, and `ich würde abgeben`, not split present forms.
+
+Useful checks:
+
+```bash
+npm run check
+npm run audit:v14
+npm run audit:semantic
+```
+
+`audit:semantic` warns about duplicated legacy strings but only fails on placeholder text. Legacy duplicated textbook-style examples remain warnings until the vocabulary modules are manually curated.

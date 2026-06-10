@@ -152,12 +152,14 @@
                 <button id="prevButton" class="ghost small" title="Vorherige Frage" aria-label="Vorherige Frage">←</button>
                 <button id="skipButton" class="ghost small skip-btn" title="Überspringen" aria-label="Übung überspringen">↷</button>
                 <button id="speakButton" class="ghost small" title="Vorlesen" aria-label="Vorlesen">🔊</button>
+                <button id="translateButton" class="ghost small" title="Übersetzen" aria-label="Übersetzen">🌐</button>
               </div>
             </div>
             <h2 id="questionTitle" class="question-title">Bereit?</h2>
             <div id="questionText" class="question-text" aria-live="polite" aria-atomic="true">Starte die Sitzung.</div>
             <div id="answerZone" class="answer-zone"></div>
             <div id="choiceZone" class="choice-zone"></div>
+            <div id="translationBox" class="translation-box hidden" aria-live="polite"></div>
             <div id="feedbackBox" class="feedback hidden" aria-live="polite"></div>
             <div class="main-actions">
               <button id="primaryAction" class="primary-action">Sitzung starten</button>
@@ -185,6 +187,10 @@
               <button id="modePractice" class="mode-chip active">Üben</button>
               <button id="modeLearn" class="mode-chip">Lernen</button>
               <button id="modeReview" class="mode-chip">Wiederholen</button>
+            </div>
+            <div class="panel-block resources-panel">
+              <div class="eyebrow">Ressourcen</div>
+              <div id="resourceList" class="resource-list"></div>
             </div>
           </aside>
         </section>

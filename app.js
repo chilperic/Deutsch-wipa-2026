@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v12-verified-audit';
+const APP_VERSION = '2026.06.10-v14-localization-audit';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -12,7 +12,7 @@ const state = {
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
   profile: load('dw_modern_profile', {name:''}),
   lang: localStorage.dw_lang || 'de', appearance: localStorage.dw_appearance || 'system', color: localStorage.dw_color || 'teal',
-  conjugator: null, verb: null, tense: 'Präsens',
+  conjugator: null, localeLexicon: null, verb: null, tense: 'Präsens',
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [],
   // Memoised generateConjugatorPractice output: invalidated when verb/tense/mode changes
@@ -68,16 +68,16 @@ const PATHS = [
 ];
 
 const T = {
- de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten'},
- en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers'},
- fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau',answered:'réponses'},
- es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla',answered:'respuestas'},
- ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول',answered:'إجابات'},
- fa:{start:'شروع جلسه',check:'بررسی',next:'بعدی',skip:'رد کردن',restart:'شروع دوباره',correct:'درست',wrong:'هنوز نه',answer:'پاسخ درست',why:'چرا؟',empty:'برای این انتخاب موردی وجود ندارد.',ready:'جلسه را شروع کن.',complete:'جلسه کامل شد',noSrs:'هنوز مرور زمان‌بندی‌شده‌ای وجود ندارد. اول چند تمرین را پاسخ بده.',allModules:'همهٔ بخش‌ها',dueToday:'موعد امروز',item:'مورد',items:'مورد',yourAnswer:'پاسخ تو',retryMistake:'دوباره تمرین کن',sessionStats:'جلسه',verbConjTable:'نمایش جدول',answered:'پاسخ‌ها'},
- uk:{start:'Почати',check:'Перевірити',next:'Далі',skip:'Пропустити',restart:'Почати знову',correct:'Правильно',wrong:'Ще ні',answer:'Правильна відповідь',why:'Чому?',empty:'Немає завдань для цього вибору.',ready:'Почни сесію.',complete:'Сесію завершено',noSrs:'Поки немає повторень. Спочатку виконай кілька вправ.',allModules:'Усі модулі',dueToday:'на сьогодні',item:'завдання',items:'завдання',yourAnswer:'Твоя відповідь',retryMistake:'Тренуватися знову',sessionStats:'Сесія',verbConjTable:'Показати таблицю',answered:'відповіді'},
- ru:{start:'Начать',check:'Проверить',next:'Далее',skip:'Пропустить',restart:'Начать заново',correct:'Правильно',wrong:'Еще нет',answer:'Правильный ответ',why:'Почему?',empty:'Нет заданий для этого выбора.',ready:'Начни сессию.',complete:'Сессия завершена',noSrs:'Пока нет повторений. Сначала ответь на несколько упражнений.',allModules:'Все модули',dueToday:'на сегодня',item:'задание',items:'задания',yourAnswer:'Твой ответ',retryMistake:'Тренироваться снова',sessionStats:'Сессия',verbConjTable:'Показать таблицу',answered:'ответов'},
- pl:{start:'Rozpocznij',check:'Sprawdź',next:'Dalej',skip:'Pomiń',restart:'Zacznij od nowa',correct:'Poprawnie',wrong:'Jeszcze nie',answer:'Poprawna odpowiedź',why:'Dlaczego?',empty:'Brak zadań dla tego wyboru.',ready:'Rozpocznij sesję.',complete:'Sesja zakończona',noSrs:'Brak powtórek. Najpierw rozwiąż kilka ćwiczeń.',allModules:'Wszystkie moduły',dueToday:'na dziś',item:'zadanie',items:'zadania',yourAnswer:'Twoja odpowiedź',retryMistake:'Ćwicz ponownie',sessionStats:'Sesja',verbConjTable:'Pokaż tabelę',answered:'odpowiedzi'},
- tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster',answered:'cevap'}
+ de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten',mistakes:'Fehler',noMistakes:'Keine Fehler gespeichert',translate:'Übersetzung',translation:'Übersetzung',resources:'Ressourcen',externalTranslation:'Extern übersetzen',noStoredTranslation:'Keine gespeicherte Übersetzung für diese Karte.',resourceFriend:'Dreizunge · App von Raim',resourceConjugator:'Verbformen & Konjugation',resourceDictionary:'Wörterbuch',resourceGrammar:'Grammatik',resourceListening:'Hören & Deutsch lernen'},
+ en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers',mistakes:'mistakes',noMistakes:'No mistakes saved',translate:'Translate',translation:'Translation',resources:'Resources',externalTranslation:'Translate externally',noStoredTranslation:'No stored translation for this card.',resourceFriend:'Dreizunge · Raim’s app',resourceConjugator:'Verb forms & conjugation',resourceDictionary:'Dictionary',resourceGrammar:'Grammar',resourceListening:'Listening & German learning'},
+ fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau',answered:'réponses',mistakes:'erreurs',noMistakes:'Aucune erreur enregistrée',translate:'Traduire',translation:'Traduction',resources:'Ressources',externalTranslation:'Traduire avec un outil externe',noStoredTranslation:'Aucune traduction enregistrée pour cette carte.',resourceFriend:'Dreizunge · application de Raim',resourceConjugator:'Formes verbales et conjugaison',resourceDictionary:'Dictionnaire',resourceGrammar:'Grammaire',resourceListening:'Écoute et allemand'},
+ es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla',answered:'respuestas',mistakes:'errores',noMistakes:'No hay errores guardados',translate:'Traducir',translation:'Traducción',resources:'Recursos',externalTranslation:'Traducir externamente',noStoredTranslation:'No hay traducción guardada para esta tarjeta.',resourceFriend:'Dreizunge · app de Raim',resourceConjugator:'Formas verbales y conjugación',resourceDictionary:'Diccionario',resourceGrammar:'Gramática',resourceListening:'Escucha y alemán'},
+ ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول',answered:'إجابات',mistakes:'أخطاء',noMistakes:'لا توجد أخطاء محفوظة',translate:'ترجمة',translation:'الترجمة',resources:'موارد',externalTranslation:'ترجمة خارجية',noStoredTranslation:'لا توجد ترجمة محفوظة لهذه البطاقة.',resourceFriend:'Dreizunge · تطبيق Raim',resourceConjugator:'تصريف الأفعال',resourceDictionary:'قاموس',resourceGrammar:'قواعد',resourceListening:'الاستماع وتعلّم الألمانية'},
+ fa:{start:'شروع جلسه',check:'بررسی',next:'بعدی',skip:'رد کردن',restart:'شروع دوباره',correct:'درست',wrong:'هنوز نه',answer:'پاسخ درست',why:'چرا؟',empty:'برای این انتخاب موردی وجود ندارد.',ready:'جلسه را شروع کن.',complete:'جلسه کامل شد',noSrs:'هنوز مرور زمان‌بندی‌شده‌ای وجود ندارد. اول چند تمرین را پاسخ بده.',allModules:'همهٔ بخش‌ها',dueToday:'موعد امروز',item:'مورد',items:'مورد',yourAnswer:'پاسخ تو',retryMistake:'دوباره تمرین کن',sessionStats:'جلسه',verbConjTable:'نمایش جدول',answered:'پاسخ‌ها',mistakes:'اشتباه‌ها',noMistakes:'اشتباهی ذخیره نشده است',translate:'ترجمه',translation:'ترجمه',resources:'منابع',externalTranslation:'ترجمه بیرونی',noStoredTranslation:'برای این کارت ترجمه ذخیره‌شده وجود ندارد.',resourceFriend:'Dreizunge · برنامه Raim',resourceConjugator:'صرف فعل‌ها',resourceDictionary:'فرهنگ لغت',resourceGrammar:'گرامر',resourceListening:'شنیدن و یادگیری آلمانی'},
+ uk:{start:'Почати',check:'Перевірити',next:'Далі',skip:'Пропустити',restart:'Почати знову',correct:'Правильно',wrong:'Ще ні',answer:'Правильна відповідь',why:'Чому?',empty:'Немає завдань для цього вибору.',ready:'Почни сесію.',complete:'Сесію завершено',noSrs:'Поки немає повторень. Спочатку виконай кілька вправ.',allModules:'Усі модулі',dueToday:'на сьогодні',item:'завдання',items:'завдання',yourAnswer:'Твоя відповідь',retryMistake:'Тренуватися знову',sessionStats:'Сесія',verbConjTable:'Показати таблицю',answered:'відповіді',translate:'Переклад',translation:'Переклад',resources:'Ресурси',externalTranslation:'Перекласти зовнішньо',noStoredTranslation:'Для цієї картки немає збереженого перекладу.',resourceFriend:'Dreizunge · застосунок Raim',resourceConjugator:'Форми дієслів і відмінювання',resourceDictionary:'Словник',resourceGrammar:'Граматика',resourceListening:'Аудіювання та німецька'},
+ ru:{start:'Начать',check:'Проверить',next:'Далее',skip:'Пропустить',restart:'Начать заново',correct:'Правильно',wrong:'Еще нет',answer:'Правильный ответ',why:'Почему?',empty:'Нет заданий для этого выбора.',ready:'Начни сессию.',complete:'Сессия завершена',noSrs:'Пока нет повторений. Сначала ответь на несколько упражнений.',allModules:'Все модули',dueToday:'на сегодня',item:'задание',items:'задания',yourAnswer:'Твой ответ',retryMistake:'Тренироваться снова',sessionStats:'Сессия',verbConjTable:'Показать таблицу',answered:'ответов',mistakes:'ошибок',noMistakes:'Ошибок не сохранено',translate:'Перевод',translation:'Перевод',resources:'Ресурсы',externalTranslation:'Перевести внешне',noStoredTranslation:'Для этой карточки нет сохраненного перевода.',resourceFriend:'Dreizunge · приложение Raim',resourceConjugator:'Формы глаголов и спряжение',resourceDictionary:'Словарь',resourceGrammar:'Грамматика',resourceListening:'Аудирование и немецкий'},
+ pl:{start:'Rozpocznij',check:'Sprawdź',next:'Dalej',skip:'Pomiń',restart:'Zacznij od nowa',correct:'Poprawnie',wrong:'Jeszcze nie',answer:'Poprawna odpowiedź',why:'Dlaczego?',empty:'Brak zadań dla tego wyboru.',ready:'Rozpocznij sesję.',complete:'Sesja zakończona',noSrs:'Brak powtórek. Najpierw rozwiąż kilka ćwiczeń.',allModules:'Wszystkie moduły',dueToday:'na dziś',item:'zadanie',items:'zadania',yourAnswer:'Twoja odpowiedź',retryMistake:'Ćwicz ponownie',sessionStats:'Sesja',verbConjTable:'Pokaż tabelę',answered:'odpowiedzi',mistakes:'błędów',noMistakes:'Brak zapisanych błędów',translate:'Tłumaczenie',translation:'Tłumaczenie',resources:'Zasoby',externalTranslation:'Przetłumacz zewnętrznie',noStoredTranslation:'Brak zapisanych tłumaczeń dla tej karty.',resourceFriend:'Dreizunge · aplikacja Raima',resourceConjugator:'Formy czasowników i koniugacja',resourceDictionary:'Słownik',resourceGrammar:'Gramatyka',resourceListening:'Słuchanie i niemiecki'},
+ tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster',answered:'cevap',mistakes:'hata',noMistakes:'Kayıtlı hata yok',translate:'Çeviri',translation:'Çeviri',resources:'Kaynaklar',externalTranslation:'Harici çeviri',noStoredTranslation:'Bu kart için kayıtlı çeviri yok.',resourceFriend:'Dreizunge · Raim’in uygulaması',resourceConjugator:'Fiil biçimleri ve çekim',resourceDictionary:'Sözlük',resourceGrammar:'Dilbilgisi',resourceListening:'Dinleme ve Almanca öğrenme'}
 };
 function tr(k){return T[state.lang]?.[k]??T.en[k]??T.de[k]??k}
 function load(k,fallback){try{return JSON.parse(localStorage.getItem(k))??fallback}catch{return fallback}}
@@ -92,7 +92,7 @@ function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Ma
 async function init(){
   applyDesign(false);
   updateDirection();renderLangs();renderDesignControls();bind();
-  await loadData();await loadConjugator();
+  await loadLocaleLexicon();await loadData();await loadConjugator();
   renderPath();selectPath('conjugation');
   route('learn');renderAll();
   if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
@@ -139,6 +139,7 @@ function bind(){
   $('primaryAction').onclick=primary;$('secondaryAction').onclick=next;$('prevButton').onclick=prev;
   $('skipButton').onclick=skipItem;
   $('speakButton').onclick=()=>{const item=current();if(!item)return;speak(item.germanSpeak||item.example||item.prompt||item.answer||'')};
+  $('translateButton').onclick=toggleTranslation;
   $('modePractice').onclick=()=>setMode('practice');$('modeLearn').onclick=()=>setMode('learn');$('modeReview').onclick=()=>setMode('review');
   $('clearMistakes').onclick=()=>{state.mistakes=[];save('dw_modern_mistakes',state.mistakes);renderMistakes();renderStats()};
   let vsTimer=null;$('verbSearch').oninput=()=>{clearTimeout(vsTimer);vsTimer=setTimeout(renderVerbList,120)};
@@ -219,6 +220,47 @@ function syncMobileControls(){
 }
 function toggleDrawer(open){$('sidebar').classList.toggle('open',open);$('backdrop').classList.toggle('hidden',!open);document.querySelector('.main').toggleAttribute('inert',open)}
 
+
+async function loadLocaleLexicon(){
+  try{
+    state.localeLexicon=await vfetch('data/locales/wipa_lexicon.json').then(r=>r.json());
+  }catch(e){
+    console.warn('Locale lexicon unavailable', e);
+    state.localeLexicon={entries:{}};
+  }
+}
+function localeCode(){
+  const map={de:'de',en:'en',fr:'fr',es:'es',ar:'ar',fa:'fa',uk:'uk',ru:'ru',pl:'pl',tr:'tr'};
+  return map[state.lang]||'en';
+}
+function cleanLexicalKey(s=''){
+  return norm(stripHtml(String(s||'')))
+    .replace(/^(der|die|das|den|dem|des|ein|eine|einen|einem|einer|eines)\s+/,'')
+    .replace(/,.*$/,'')
+    .trim();
+}
+function lookupLexicon(term){
+  if(!state.localeLexicon||!state.localeLexicon.entries)return null;
+  const k=cleanLexicalKey(term);
+  if(!k)return null;
+  return state.localeLexicon.entries[k]||null;
+}
+function localizedTerm(term){
+  const entry=lookupLexicon(term);
+  if(!entry)return '';
+  const lang=localeCode();
+  const loc=entry.localizations?.[lang]||entry.localizations?.en;
+  if(!loc)return '';
+  const note=loc.context_note?` — ${loc.context_note}`:'';
+  return `${loc.equivalent||''}${note}`.trim();
+}
+function displayVerbMeaning(v){
+  const m=String(v?.meaning||'').trim();
+  if(!m||/meaning to be added/i.test(m))return '';
+  if(/^[a-zäöüß]+- \+ [a-zäöüß]+$/i.test(m))return '';
+  return m;
+}
+
 async function loadData(){
   state.manifest=await vfetch('data-manifest.json').then(r=>r.json());
   const res=await Promise.allSettled(state.manifest.modules.map(async m=>{
@@ -231,7 +273,7 @@ async function loadData(){
 function normalizeModule(raw,meta){if(meta.category==='konjugator')return[];let arr=raw.items||raw.words||raw.vocabulary_entries||raw.vocabulary||raw.questions||[];if(raw.exercise_pool)arr=raw.exercise_pool.flatMap(x=>x.cases||[]);return arr.map((it,i)=>normalizeItem(it,meta,i)).filter(Boolean)}
 function pickLang(obj){if(!obj)return''; if(typeof obj!=='object')return stringify(obj); return obj.German||obj.Deutsch||obj[state.lang]||obj.English||Object.values(obj).find(Boolean)||''}
 function germanDisplay(d){const g=d.grammar||{};const trans=d.translations||{};const raw=d.word||d.term||d.german||d.display||d.title||d.prompt||pickLang(trans);if(raw&&raw!=='undefined')return stringify(raw);if(g.article&&g.base)return`${g.article} ${g.base}${g.plural?`, ${String(g.plural).replace(/^die\s+/,'')}`:''}`; if(g.base)return stringify(g.base);return''}
-function translationOf(d,it=null){const t=d.translations||{};const tp=(it&&it.translations)||{};return t[state.lang]||t.English||tp[state.lang]||tp.English||d.english_equivalent||d.meaning||d.translation||d.answer||''}
+function translationOf(d,it=null){const t=d.translations||{};const tp=(it&&it.translations)||{};const loc=localizedTerm(germanDisplay(d));return loc||t[state.lang]||t.English||tp[state.lang]||tp.English||d.english_equivalent||d.meaning||d.translation||d.answer||''}
 function normalizeAnswerValue(v){return stringify(v).replace(/^undefined$/,'').trim()}
 function normalizeItem(it,meta,i){
   const d=(it&&it.data)||it; if(!d||typeof d!=='object')return null;
@@ -255,15 +297,16 @@ function normalizeItem(it,meta,i){
   if(d.type==='classify')type='multiple_choice';
   if(d.type==='choice'&&!d.choices&&!d.options&&!String(prompt).includes('___'))type=inferType(prompt,d,meta);
   const explanation=richExplanation(d,meta,isVocab);
+  const translation=normalizeAnswerValue(translationOf(d,it));
   const example=normalizeAnswerValue(d.example||d.example_de||d.example_sentence||d.essential_collocations?.[0]?.example||d.collocations?.[0]?.example||'');
   const choices=d.choices||d.options||makeChoices(answer,type,d);
   if(!prompt||prompt==='undefined')prompt=`${meta.title} · Item ${i+1}`;
   if(!answer||answer==='undefined')answer=prompt;
-  return{id:d.id||`${meta.id}_${i}`,moduleId:meta.id,moduleTitle:meta.title,category:meta.category,exerciseType:type,prompt,answer,choices,explanation,example,raw:d,tags:d.tags||[],level:d.level||d.cefr||rawLevel(meta),germanSpeak:de||example||prompt};
+  return{id:d.id||`${meta.id}_${i}`,moduleId:meta.id,moduleTitle:meta.title,category:meta.category,exerciseType:type,prompt,answer,choices,explanation,example,translation,raw:d,tags:d.tags||[],level:d.level||d.cefr||rawLevel(meta),germanSpeak:de||example||prompt};
 }
 function rawLevel(m){return(m.title||'').includes('B2')?'B2':'B1/B2'}
 function inferType(prompt,d,meta){const p=String(prompt||'');const hay=`${p} ${meta.title} ${meta.id}`;if(d.choices||d.options||d.type==='classify')return'multiple_choice';if(p.includes('___'))return'gap_fill';if(/korrig|correct/i.test(p))return'sentence_correction';if(/conjug|Präsens|Präteritum|Perfekt|Modalverben|Konjugator/i.test(hay))return'verb_conjugation';return'flashcard'}
-function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const trans=translationOf(d, meta?.raw || null) || translationOf(d);if(trans)pieces.push(`Bedeutung: ${trans}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
+function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const trans=translationOf(d) || translationOf(d, meta?.raw || null);if(trans)pieces.push(`Bedeutung: ${trans}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
 function makeChoices(answer,type,context={}){const ans=String(answer||'').trim();if(!ans)return[];if(type==='article_trainer')return shuffle(['der','die','das']);if(type==='connector_selection'||/konnektor|connector/i.test(String(context.tags||context.category||'')+' '+String(context.prompt||''))){const pool=['und','aber','oder','sondern','weil','obwohl','trotzdem','deshalb','damit','bevor'];return[...new Set([ans,...pool.filter(x=>x!==ans)])].slice(0,4)}if(type==='multiple_choice'){const valid=context.choices||context.options;return valid&&valid.length?valid:[]}return[]}
 
 function renderPath(){
@@ -325,9 +368,9 @@ function generateConjugatorPractice(){
           prompt:`Konjugiere: ${pr} / ${verb} / ${tense}`,
           answer:ans,example:ans+'.',
           // Show full paradigm in explanation, not just Partizip
-          explanation:`${verb} (${v.type}): ${tense}. Hilfsverb: ${v.aux}. Partizip II: ${v.part}. ${v.zu}. Bedeutung: ${v.meaning||'—'}.`,
+          explanation:`${verb} (${v.type}): ${tense}. Hilfsverb: ${v.aux}. Partizip II: ${v.part}. ${v.zu}. Bedeutung: ${displayVerbMeaning(v)||'—'}.`,
           tags:['dynamic_conjugator',verb,tense],level:'A1-B2',
-          germanSpeak:ans,_verb:verb,_tense:tense
+          translation:displayVerbMeaning(v)||'',germanSpeak:ans,_verb:verb,_tense:tense
         });
       }
     }
@@ -361,9 +404,48 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator();renderResources()}
+
+function renderResources(){
+  const box=$('resourceList'); if(!box)return;
+  const links=[
+    [tr('resourceFriend'),'https://raim.github.io/dreizunge/#'],
+    ['DW Learn German','https://learngerman.dw.com/'],
+    [tr('resourceConjugator'),'https://www.verbformen.de/'],
+    [tr('resourceDictionary'),'https://dict.leo.org/german-english/'],
+    [tr('resourceGrammar'),'https://deutsch.lingolia.com/en/'],
+    ['Duden','https://www.duden.de/'],
+    ['Reverso Konjugator','https://conjugator.reverso.net/conjugation-german.html'],
+    ['Goethe Übungen','https://www.goethe.de/en/spr/ueb.html']
+  ];
+  box.innerHTML=links.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`).join('');
+}
 function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
 function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
+
+function targetLang(){return state.lang==='de'?'en':state.lang}
+function textForTranslation(item){return item?.example||item?.prompt||item?.germanSpeak||item?.answer||''}
+function translationLinks(text){
+  const tl=encodeURIComponent(targetLang());
+  const q=encodeURIComponent(stripHtml(text));
+  return [
+    ['Google Translate',`https://translate.google.com/?sl=de&tl=${tl}&text=${q}&op=translate`],
+    ['DeepL',`https://www.deepl.com/translator#de/${tl}/${q}`]
+  ];
+}
+function toggleTranslation(){
+  const item=current(); if(!item)return;
+  const box=$('translationBox');
+  if(!box.classList.contains('hidden')){box.classList.add('hidden');box.innerHTML='';return;}
+  const source=textForTranslation(item);
+  const stored=(item.translation && norm(item.translation)!==norm(source) ? item.translation : '') || localizedTerm(item.prompt) || localizedTerm(item.germanSpeak) || localizedTerm(item.raw?.word||item.raw?.term||'');
+  const links=translationLinks(source).map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`).join(' · ');
+  box.innerHTML=`<div class="translation-head"><strong>${tr('translation')}</strong><span>${esc(state.lang.toUpperCase())}</span></div>
+    <div class="translation-source"><b>DE:</b> ${safeHtml(source||'—')}</div>
+    <div class="translation-target">${stored?`<b>${esc(targetLang().toUpperCase())}:</b> ${safeHtml(stored)}`:esc(tr('noStoredTranslation'))}</div>
+    <div class="translation-links">${tr('externalTranslation')}: ${links}</div>`;
+  box.classList.remove('hidden');
+}
 
 function renderExercise(){
   const p=PATHS.find(x=>x.id===state.path);
@@ -382,6 +464,7 @@ function renderExercise(){
   if($('meterWrap'))$('meterWrap').setAttribute('aria-valuenow',pct);
 
   $('feedbackBox').className='feedback hidden';
+  $('translationBox').className='translation-box hidden';$('translationBox').innerHTML='';
   $('choiceZone').innerHTML='';$('answerZone').innerHTML='';
   $('secondaryAction').classList.add('hidden');
   $('conjugatorLink').classList.add('hidden');
@@ -554,12 +637,12 @@ function renderStats(){
   $('meterBar').style.width=pct+'%';
   if($('meterWrap'))$('meterWrap').setAttribute('aria-valuenow',pct);
   $('answeredCount').textContent=`${s.a} ${tr('answered')}`;
-  $('mistakeCount').textContent=`${state.mistakes.length} Fehler · ${dueCount()} ${tr('dueToday')}`;
+  $('mistakeCount').textContent=`${state.mistakes.length} ${tr('mistakes')} · ${dueCount()} ${tr('dueToday')}`;
   if($('progressLabel'))$('progressLabel').textContent=tr('sessionStats');
 }
 function renderMistakes(){
   if(!$('mistakeList'))return;
-  if(!state.mistakes.length){$('mistakeList').innerHTML=`<p class="muted">Keine Fehler gespeichert. ${dueCount()} ${tr('dueToday')}.</p>`;return}
+  if(!state.mistakes.length){$('mistakeList').innerHTML=`<p class="muted">${tr('noMistakes')}. ${dueCount()} ${tr('dueToday')}.</p>`;return}
   $('mistakeList').innerHTML=state.mistakes.map((m,idx)=>`<div class="mistake-item">
     <strong>${esc(m.item.prompt)}</strong><br>
     <span>${tr('yourAnswer')}: ${esc(m.user||'—')}</span><br>
@@ -600,7 +683,7 @@ function renderVerbList(){
     meta=`Starterliste · ${verbs.length} angezeigt · ${all.length} verfügbar`;
   }
   const toggle=!q?`<button class="link-button" id="toggleVerbList">${state.showAllVerbs?'Starter anzeigen':'Alle anzeigen'}</button>`:'';
-  $('verbList').innerHTML=`<div class="verb-list-meta"><span>${esc(meta)}</span>${toggle}</div>`+verbs.map(v=>`<button class="verb-btn ${v===state.verb?'active':''}" data-verb="${esc(v)}"><strong>${esc(v)}</strong><br><small>${esc(state.conjugator.verbs[v].meaning||'')}</small></button>`).join('');
+  $('verbList').innerHTML=`<div class="verb-list-meta"><span>${esc(meta)}</span>${toggle}</div>`+verbs.map(v=>`<button class="verb-btn ${v===state.verb?'active':''}" data-verb="${esc(v)}"><strong>${esc(v)}</strong><br><small>${esc(displayVerbMeaning(state.conjugator.verbs[v])||'')}</small></button>`).join('');
   const toggleBtn=$('toggleVerbList');
   if(toggleBtn)toggleBtn.onclick=()=>{state.showAllVerbs=!state.showAllVerbs;renderVerbList()};
   document.querySelectorAll('.verb-btn').forEach(b=>b.onclick=()=>{state.verb=b.dataset.verb;state.tense='Präsens';renderVerbList();renderVerbDetail()});
@@ -608,7 +691,7 @@ function renderVerbList(){
 function renderVerbDetail(){
   const v=state.conjugator.verbs[state.verb];if(!v)return;
   const keys={'Präsens':'present','Präteritum':'preterite','Perfekt':'perfect','Plusquamperfekt':'plusquam','Futur I':'futur1','Konjunktiv II':'konj2','Imperativ':'imperative'};
-  $('verbMeta').innerHTML=`<div class="eyebrow">${esc(v.type)}</div><h2>${esc(state.verb)}</h2><div class="verb-chips"><span>Hilfsverb: ${esc(v.aux)}</span><span>Partizip II: ${esc(v.part)}</span><span>${esc(v.zu)}</span><span>${esc(v.meaning||'')}</span></div><p>${esc(v.example)}</p>`;
+  $('verbMeta').innerHTML=`<div class="eyebrow">${esc(v.type)}</div><h2>${esc(state.verb)}</h2><div class="verb-chips"><span>Hilfsverb: ${esc(v.aux)}</span><span>Partizip II: ${esc(v.part)}</span><span>${esc(v.zu)}</span><span>${esc(displayVerbMeaning(v)||'')}</span></div><p>${esc(v.example)}</p>`;
   $('tenseTabs').innerHTML=Object.keys(keys).map(t=>`<button class="tense-tab ${t===state.tense?'active':''}" data-tense="${t}" role="tab" aria-selected="${t===state.tense}">${t}</button>`).join('');
   document.querySelectorAll('.tense-tab').forEach(b=>b.onclick=()=>{state.tense=b.dataset.tense;renderVerbDetail()});
   const forms=v[keys[state.tense]]||[];
