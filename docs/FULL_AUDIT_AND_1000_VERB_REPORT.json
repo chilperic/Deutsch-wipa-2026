@@ -1,0 +1,19 @@
+{
+  "version": "v2-1000verbs-auditfixed",
+  "logo": "assets/icon.svg plus PNG 192/512 generated",
+  "conjugator_verbs": 1100,
+  "conjugator_drills": 23100,
+  "raw_json_errors": [],
+  "fixed": [
+    "undefined vocabulary prompt fallback",
+    "[object Object] explanation/grammar rendering",
+    "English speaker priority",
+    "XSS-safe HTML",
+    "1000+ verb conjugator",
+    "updated manifest counts",
+    "larger PWA logo set"
+  ],
+  "known_limitations": [
+    "Many generated prefixed verbs are useful for conjugation practice but should still be manually reviewed over time for semantic priority and B2 register."
+  ]
+}

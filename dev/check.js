@@ -7,23 +7,23 @@ function walk(d) {
     return e.isDirectory() ? walk(p) : [p];
   });
 }
+function readJson(f) { return JSON.parse(fs.readFileSync(f, 'utf8')); }
 
 for (const f of walk('.').filter(x => x.endsWith('.json'))) {
-  try { JSON.parse(fs.readFileSync(f, 'utf8')); }
+  try { readJson(f); }
   catch (e) { console.error('Invalid JSON', f, e.message); process.exit(1); }
 }
-
 new Function(fs.readFileSync('app.js', 'utf8').replace(/^import .*$/mg, ''));
 
-const manifest = JSON.parse(fs.readFileSync('data-manifest.json', 'utf8'));
+const manifest = readJson('data-manifest.json');
 const paths = [
-  { cats: ['conjugation', 'konjugator'], match: ['modal', 'modalverb', 'infinitiv', 'infinitiv_zu'] },
-  { match: ['tekamolo', 'negation', 'nebensatz', 'satzordnung', 'satzvariation', 'passiv', 'passiversatz', 'final', 'modal_es'] },
-  { match: ['kasus', 'n_deklination', 'n-deklination', 'pronomen'] },
-  { match: ['praeposition', 'präposition'] },
-  { match: ['nomen', 'artikel', 'plural', 'genus'] },
+  { cats: ['conjugation', 'konjugator'], match: ['modal','modalverb','infinitiv','verbformen','starke_verben','trennbare','reflexive','perfekt','plusquamperfekt','konjugator'] },
+  { match: ['tekamolo','negation','nebensatz','satzordnung','satzvariation','passiv','passiversatz','final','modal_es','temporale'] },
+  { match: ['kasus','n_deklination','n-deklination','pronomen'] },
+  { match: ['praeposition','präposition'] },
+  { match: ['nomen','artikel','plural','genus'] },
   { match: ['adjektiv'] },
-  { match: ['konnektor', 'konnektoren', 'temporal', 'kausal', 'konzessiv', 'zweiteilige'] },
+  { match: ['konnektor','konnektoren','temporal','kausal','konzessiv','zweiteilige'] },
   { cats: ['vocabulary', 'workplace'] }
 ];
 const visible = new Set();
@@ -39,4 +39,20 @@ if (invisible.length) {
   process.exit(1);
 }
 
-console.log('OK: JSON valid, app.js parses, active modules are reachable.');
+const conj = readJson('data/conjugator_verbs.json');
+const verbCount = Object.keys(conj.verbs || {}).length;
+if (verbCount < 1000) {
+  console.error(`Conjugator has only ${verbCount} verbs; expected at least 1000.`);
+  process.exit(1);
+}
+const drills = readJson('grammatik/production_konjugator_drills.json').items || [];
+if (drills.length < 5000) {
+  console.error(`Too few conjugator drills: ${drills.length}`);
+  process.exit(1);
+}
+const allJsonText = walk('.').filter(x => x.endsWith('.json') && !x.startsWith('docs/')).map(f => fs.readFileSync(f, 'utf8')).join('\n');
+if (/\[object Object\]/.test(allJsonText)) {
+  console.error('Found [object Object] literal in JSON data.');
+  process.exit(1);
+}
+console.log(`OK: JSON valid, app.js parses, active modules reachable, ${verbCount} verbs, ${drills.length} drills.`);

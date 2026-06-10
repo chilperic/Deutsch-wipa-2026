@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#17223b"/><stop offset=".62" stop-color="#23395d"/><stop offset="1" stop-color="#e46d3d"/></linearGradient></defs><rect width="512" height="512" rx="118" fill="#f7f0e7"/><path d="M96 120c0-24 20-44 44-44h232c24 0 44 20 44 44v272c0 24-20 44-44 44H140c-24 0-44-20-44-44z" fill="url(#g)"/><path d="M151 155h210v42H151zm0 79h152v36H151zm0 68h210v36H151z" fill="#fffaf3"/><circle cx="365" cy="318" r="56" fill="#efb84a"/><path d="M338 318l18 18 38-45" fill="none" stroke="#17223b" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Deutsch-WiPA logo">
+<defs><linearGradient id="g" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#17223B"/><stop offset=".52" stop-color="#235C66"/><stop offset="1" stop-color="#D9893D"/></linearGradient><linearGradient id="paper" x1="120" y1="112" x2="386" y2="422"><stop stop-color="#FFF7EA"/><stop offset="1" stop-color="#F2C572"/></linearGradient><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#17223B" flood-opacity=".28"/></filter></defs>
+<rect width="512" height="512" rx="116" fill="url(#g)"/>
+<path d="M111 120c0-29 24-52 53-52h184c29 0 53 23 53 52v272c0 29-24 52-53 52H164c-29 0-53-23-53-52V120Z" fill="url(#paper)" filter="url(#s)"/>
+<path d="M167 139h178M167 184h178M167 363h178" stroke="#17223B" stroke-opacity=".22" stroke-width="16" stroke-linecap="round"/>
+<path d="M162 254c0-47 38-85 85-85h21c47 0 85 38 85 85s-38 85-85 85h-21c-47 0-85-38-85-85Z" fill="#17223B"/>
+<path d="M214 294V214h22l24 39 24-39h22v80h-23v-40l-16 27h-14l-16-27v40h-23Z" fill="#FFF7EA"/>
+<path d="M250 102l32-34 32 34M250 410l32 34 32-34" stroke="#FFF7EA" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+<circle cx="394" cy="104" r="28" fill="#D9893D"/><text x="394" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#17223B">B2</text>
+</svg>
