@@ -1,0 +1,1429 @@
+{
+  "module": "Konjugator",
+  "description": "Reverso-style learner conjugator with German B1/B2 focus; original tables and examples.",
+  "pronouns": [
+    "ich",
+    "du",
+    "er/sie/es",
+    "wir",
+    "ihr",
+    "sie/Sie"
+  ],
+  "verbs": {
+    "sein": {
+      "meaning": "to be",
+      "aux": "sein",
+      "part": "gewesen",
+      "zu": "zu sein",
+      "type": "irregular",
+      "present": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid",
+        "sind"
+      ],
+      "preterite": [
+        "war",
+        "warst",
+        "war",
+        "waren",
+        "wart",
+        "waren"
+      ],
+      "konj2": [
+        "wäre",
+        "wärst",
+        "wäre",
+        "wären",
+        "wärt",
+        "wären"
+      ],
+      "imperative": [
+        "sei",
+        "seid",
+        "seien Sie"
+      ],
+      "example": "Ich bin heute im Büro.",
+      "perfect": [
+        "bin gewesen",
+        "bist gewesen",
+        "ist gewesen",
+        "sind gewesen",
+        "seid gewesen",
+        "sind gewesen"
+      ],
+      "plusquam": [
+        "war gewesen",
+        "warst gewesen",
+        "war gewesen",
+        "waren gewesen",
+        "wart gewesen",
+        "waren gewesen"
+      ],
+      "futur1": [
+        "werde sein",
+        "wirst sein",
+        "wird sein",
+        "werden sein",
+        "werdet sein",
+        "werden sein"
+      ]
+    },
+    "haben": {
+      "meaning": "to have",
+      "aux": "haben",
+      "part": "gehabt",
+      "zu": "zu haben",
+      "type": "irregular",
+      "present": [
+        "habe",
+        "hast",
+        "hat",
+        "haben",
+        "habt",
+        "haben"
+      ],
+      "preterite": [
+        "hatte",
+        "hattest",
+        "hatte",
+        "hatten",
+        "hattet",
+        "hatten"
+      ],
+      "konj2": [
+        "hätte",
+        "hättest",
+        "hätte",
+        "hätten",
+        "hättet",
+        "hätten"
+      ],
+      "imperative": [
+        "hab",
+        "habt",
+        "haben Sie"
+      ],
+      "example": "Wir haben morgen einen Termin.",
+      "perfect": [
+        "habe gehabt",
+        "hast gehabt",
+        "hat gehabt",
+        "haben gehabt",
+        "habt gehabt",
+        "haben gehabt"
+      ],
+      "plusquam": [
+        "hatte gehabt",
+        "hattest gehabt",
+        "hatte gehabt",
+        "hatten gehabt",
+        "hattet gehabt",
+        "hatten gehabt"
+      ],
+      "futur1": [
+        "werde haben",
+        "wirst haben",
+        "wird haben",
+        "werden haben",
+        "werdet haben",
+        "werden haben"
+      ]
+    },
+    "werden": {
+      "meaning": "to become / will",
+      "aux": "sein",
+      "part": "geworden",
+      "zu": "zu werden",
+      "type": "irregular",
+      "present": [
+        "werde",
+        "wirst",
+        "wird",
+        "werden",
+        "werdet",
+        "werden"
+      ],
+      "preterite": [
+        "wurde",
+        "wurdest",
+        "wurde",
+        "wurden",
+        "wurdet",
+        "wurden"
+      ],
+      "konj2": [
+        "würde",
+        "würdest",
+        "würde",
+        "würden",
+        "würdet",
+        "würden"
+      ],
+      "imperative": [
+        "werde",
+        "werdet",
+        "werden Sie"
+      ],
+      "example": "Die Aufgabe wird morgen erledigt.",
+      "perfect": [
+        "bin geworden",
+        "bist geworden",
+        "ist geworden",
+        "sind geworden",
+        "seid geworden",
+        "sind geworden"
+      ],
+      "plusquam": [
+        "war geworden",
+        "warst geworden",
+        "war geworden",
+        "waren geworden",
+        "wart geworden",
+        "waren geworden"
+      ],
+      "futur1": [
+        "werde werden",
+        "wirst werden",
+        "wird werden",
+        "werden werden",
+        "werdet werden",
+        "werden werden"
+      ]
+    },
+    "können": {
+      "meaning": "can / be able to",
+      "aux": "haben",
+      "part": "können",
+      "zu": "können",
+      "type": "modal",
+      "present": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "preterite": [
+        "konnte",
+        "konntest",
+        "konnte",
+        "konnten",
+        "konntet",
+        "konnten"
+      ],
+      "konj2": [
+        "könnte",
+        "könntest",
+        "könnte",
+        "könnten",
+        "könntet",
+        "könnten"
+      ],
+      "example": "Ich kann den Bericht heute schreiben.",
+      "perfect": [
+        "habe arbeiten können",
+        "hast arbeiten können",
+        "hat arbeiten können",
+        "haben arbeiten können",
+        "habt arbeiten können",
+        "haben arbeiten können"
+      ],
+      "plusquam": [
+        "hatte arbeiten können",
+        "hattest arbeiten können",
+        "hatte arbeiten können",
+        "hatten arbeiten können",
+        "hattet arbeiten können",
+        "hatten arbeiten können"
+      ],
+      "futur1": [
+        "werde arbeiten können",
+        "wirst arbeiten können",
+        "wird arbeiten können",
+        "werden arbeiten können",
+        "werdet arbeiten können",
+        "werden arbeiten können"
+      ]
+    },
+    "müssen": {
+      "meaning": "must / have to",
+      "aux": "haben",
+      "part": "müssen",
+      "zu": "müssen",
+      "type": "modal",
+      "present": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "preterite": [
+        "musste",
+        "musstest",
+        "musste",
+        "mussten",
+        "musstet",
+        "mussten"
+      ],
+      "konj2": [
+        "müsste",
+        "müsstest",
+        "müsste",
+        "müssten",
+        "müsstet",
+        "müssten"
+      ],
+      "example": "Wir müssen die Unterlagen einreichen.",
+      "perfect": [
+        "habe arbeiten müssen",
+        "hast arbeiten müssen",
+        "hat arbeiten müssen",
+        "haben arbeiten müssen",
+        "habt arbeiten müssen",
+        "haben arbeiten müssen"
+      ],
+      "plusquam": [
+        "hatte arbeiten müssen",
+        "hattest arbeiten müssen",
+        "hatte arbeiten müssen",
+        "hatten arbeiten müssen",
+        "hattet arbeiten müssen",
+        "hatten arbeiten müssen"
+      ],
+      "futur1": [
+        "werde arbeiten müssen",
+        "wirst arbeiten müssen",
+        "wird arbeiten müssen",
+        "werden arbeiten müssen",
+        "werdet arbeiten müssen",
+        "werden arbeiten müssen"
+      ]
+    },
+    "dürfen": {
+      "meaning": "may / be allowed to",
+      "aux": "haben",
+      "part": "dürfen",
+      "zu": "dürfen",
+      "type": "modal",
+      "present": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "preterite": [
+        "durfte",
+        "durftest",
+        "durfte",
+        "durften",
+        "durftet",
+        "durften"
+      ],
+      "konj2": [
+        "dürfte",
+        "dürftest",
+        "dürfte",
+        "dürften",
+        "dürftet",
+        "dürften"
+      ],
+      "example": "Sie dürfen früher gehen.",
+      "perfect": [
+        "habe arbeiten dürfen",
+        "hast arbeiten dürfen",
+        "hat arbeiten dürfen",
+        "haben arbeiten dürfen",
+        "habt arbeiten dürfen",
+        "haben arbeiten dürfen"
+      ],
+      "plusquam": [
+        "hatte arbeiten dürfen",
+        "hattest arbeiten dürfen",
+        "hatte arbeiten dürfen",
+        "hatten arbeiten dürfen",
+        "hattet arbeiten dürfen",
+        "hatten arbeiten dürfen"
+      ],
+      "futur1": [
+        "werde arbeiten dürfen",
+        "wirst arbeiten dürfen",
+        "wird arbeiten dürfen",
+        "werden arbeiten dürfen",
+        "werdet arbeiten dürfen",
+        "werden arbeiten dürfen"
+      ]
+    },
+    "sollen": {
+      "meaning": "should / be supposed to",
+      "aux": "haben",
+      "part": "sollen",
+      "zu": "sollen",
+      "type": "modal",
+      "present": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "preterite": [
+        "sollte",
+        "solltest",
+        "sollte",
+        "sollten",
+        "solltet",
+        "sollten"
+      ],
+      "konj2": [
+        "sollte",
+        "solltest",
+        "sollte",
+        "sollten",
+        "solltet",
+        "sollten"
+      ],
+      "example": "Ich soll den Kunden informieren.",
+      "perfect": [
+        "habe arbeiten sollen",
+        "hast arbeiten sollen",
+        "hat arbeiten sollen",
+        "haben arbeiten sollen",
+        "habt arbeiten sollen",
+        "haben arbeiten sollen"
+      ],
+      "plusquam": [
+        "hatte arbeiten sollen",
+        "hattest arbeiten sollen",
+        "hatte arbeiten sollen",
+        "hatten arbeiten sollen",
+        "hattet arbeiten sollen",
+        "hatten arbeiten sollen"
+      ],
+      "futur1": [
+        "werde arbeiten sollen",
+        "wirst arbeiten sollen",
+        "wird arbeiten sollen",
+        "werden arbeiten sollen",
+        "werdet arbeiten sollen",
+        "werden arbeiten sollen"
+      ]
+    },
+    "wollen": {
+      "meaning": "want to",
+      "aux": "haben",
+      "part": "wollen",
+      "zu": "wollen",
+      "type": "modal",
+      "present": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "preterite": [
+        "wollte",
+        "wolltest",
+        "wollte",
+        "wollten",
+        "wolltet",
+        "wollten"
+      ],
+      "konj2": [
+        "wollte",
+        "wolltest",
+        "wollte",
+        "wollten",
+        "wolltet",
+        "wollten"
+      ],
+      "example": "Wir wollen den Prozess verbessern.",
+      "perfect": [
+        "habe arbeiten wollen",
+        "hast arbeiten wollen",
+        "hat arbeiten wollen",
+        "haben arbeiten wollen",
+        "habt arbeiten wollen",
+        "haben arbeiten wollen"
+      ],
+      "plusquam": [
+        "hatte arbeiten wollen",
+        "hattest arbeiten wollen",
+        "hatte arbeiten wollen",
+        "hatten arbeiten wollen",
+        "hattet arbeiten wollen",
+        "hatten arbeiten wollen"
+      ],
+      "futur1": [
+        "werde arbeiten wollen",
+        "wirst arbeiten wollen",
+        "wird arbeiten wollen",
+        "werden arbeiten wollen",
+        "werdet arbeiten wollen",
+        "werden arbeiten wollen"
+      ]
+    },
+    "mögen": {
+      "meaning": "like",
+      "aux": "haben",
+      "part": "gemocht",
+      "zu": "zu mögen",
+      "type": "modal/irregular",
+      "present": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "preterite": [
+        "mochte",
+        "mochtest",
+        "mochte",
+        "mochten",
+        "mochtet",
+        "mochten"
+      ],
+      "konj2": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "example": "Ich mag klare Aufgaben.",
+      "perfect": [
+        "habe arbeiten mögen",
+        "hast arbeiten mögen",
+        "hat arbeiten mögen",
+        "haben arbeiten mögen",
+        "habt arbeiten mögen",
+        "haben arbeiten mögen"
+      ],
+      "plusquam": [
+        "hatte arbeiten mögen",
+        "hattest arbeiten mögen",
+        "hatte arbeiten mögen",
+        "hatten arbeiten mögen",
+        "hattet arbeiten mögen",
+        "hatten arbeiten mögen"
+      ],
+      "futur1": [
+        "werde arbeiten mögen",
+        "wirst arbeiten mögen",
+        "wird arbeiten mögen",
+        "werden arbeiten mögen",
+        "werdet arbeiten mögen",
+        "werden arbeiten mögen"
+      ]
+    },
+    "möchten": {
+      "meaning": "would like",
+      "aux": "haben",
+      "part": "möchten",
+      "zu": "möchten",
+      "type": "polite modal form",
+      "present": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "preterite": [
+        "wollte",
+        "wolltest",
+        "wollte",
+        "wollten",
+        "wolltet",
+        "wollten"
+      ],
+      "konj2": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "example": "Ich möchte einen Termin vereinbaren.",
+      "perfect": [
+        "habe arbeiten möchten",
+        "hast arbeiten möchten",
+        "hat arbeiten möchten",
+        "haben arbeiten möchten",
+        "habt arbeiten möchten",
+        "haben arbeiten möchten"
+      ],
+      "plusquam": [
+        "hatte arbeiten möchten",
+        "hattest arbeiten möchten",
+        "hatte arbeiten möchten",
+        "hatten arbeiten möchten",
+        "hattet arbeiten möchten",
+        "hatten arbeiten möchten"
+      ],
+      "futur1": [
+        "werde arbeiten möchten",
+        "wirst arbeiten möchten",
+        "wird arbeiten möchten",
+        "werden arbeiten möchten",
+        "werdet arbeiten möchten",
+        "werden arbeiten möchten"
+      ]
+    },
+    "machen": {
+      "meaning": "to do / make",
+      "aux": "haben",
+      "part": "gemacht",
+      "zu": "zu machen",
+      "type": "regular",
+      "present": [
+        "mache",
+        "machst",
+        "macht",
+        "machen",
+        "macht",
+        "machen"
+      ],
+      "preterite": [
+        "machte",
+        "machtest",
+        "machte",
+        "machten",
+        "machtet",
+        "machten"
+      ],
+      "example": "Ich mache die Aufgabe fertig.",
+      "konj2": [
+        "würde machen",
+        "würdest machen",
+        "würde machen",
+        "würden machen",
+        "würdet machen",
+        "würden machen"
+      ],
+      "perfect": [
+        "habe gemacht",
+        "hast gemacht",
+        "hat gemacht",
+        "haben gemacht",
+        "habt gemacht",
+        "haben gemacht"
+      ],
+      "plusquam": [
+        "hatte gemacht",
+        "hattest gemacht",
+        "hatte gemacht",
+        "hatten gemacht",
+        "hattet gemacht",
+        "hatten gemacht"
+      ],
+      "futur1": [
+        "werde machen",
+        "wirst machen",
+        "wird machen",
+        "werden machen",
+        "werdet machen",
+        "werden machen"
+      ]
+    },
+    "arbeiten": {
+      "meaning": "to work",
+      "aux": "haben",
+      "part": "gearbeitet",
+      "zu": "zu arbeiten",
+      "type": "regular",
+      "present": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten",
+        "arbeitet",
+        "arbeiten"
+      ],
+      "preterite": [
+        "arbeitete",
+        "arbeitetest",
+        "arbeitete",
+        "arbeiteten",
+        "arbeitetet",
+        "arbeiteten"
+      ],
+      "example": "Wir arbeiten an einem Projekt.",
+      "konj2": [
+        "würde arbeiten",
+        "würdest arbeiten",
+        "würde arbeiten",
+        "würden arbeiten",
+        "würdet arbeiten",
+        "würden arbeiten"
+      ],
+      "perfect": [
+        "habe gearbeitet",
+        "hast gearbeitet",
+        "hat gearbeitet",
+        "haben gearbeitet",
+        "habt gearbeitet",
+        "haben gearbeitet"
+      ],
+      "plusquam": [
+        "hatte gearbeitet",
+        "hattest gearbeitet",
+        "hatte gearbeitet",
+        "hatten gearbeitet",
+        "hattet gearbeitet",
+        "hatten gearbeitet"
+      ],
+      "futur1": [
+        "werde arbeiten",
+        "wirst arbeiten",
+        "wird arbeiten",
+        "werden arbeiten",
+        "werdet arbeiten",
+        "werden arbeiten"
+      ]
+    },
+    "lernen": {
+      "meaning": "to learn",
+      "aux": "haben",
+      "part": "gelernt",
+      "zu": "zu lernen",
+      "type": "regular",
+      "present": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen",
+        "lernt",
+        "lernen"
+      ],
+      "preterite": [
+        "lernte",
+        "lerntest",
+        "lernte",
+        "lernten",
+        "lerntet",
+        "lernten"
+      ],
+      "example": "Ich lerne Deutsch für den Beruf.",
+      "konj2": [
+        "würde lernen",
+        "würdest lernen",
+        "würde lernen",
+        "würden lernen",
+        "würdet lernen",
+        "würden lernen"
+      ],
+      "perfect": [
+        "habe gelernt",
+        "hast gelernt",
+        "hat gelernt",
+        "haben gelernt",
+        "habt gelernt",
+        "haben gelernt"
+      ],
+      "plusquam": [
+        "hatte gelernt",
+        "hattest gelernt",
+        "hatte gelernt",
+        "hatten gelernt",
+        "hattet gelernt",
+        "hatten gelernt"
+      ],
+      "futur1": [
+        "werde lernen",
+        "wirst lernen",
+        "wird lernen",
+        "werden lernen",
+        "werdet lernen",
+        "werden lernen"
+      ]
+    },
+    "gehen": {
+      "meaning": "to go",
+      "aux": "sein",
+      "part": "gegangen",
+      "zu": "zu gehen",
+      "type": "strong",
+      "present": [
+        "gehe",
+        "gehst",
+        "geht",
+        "gehen",
+        "geht",
+        "gehen"
+      ],
+      "preterite": [
+        "ging",
+        "gingst",
+        "ging",
+        "gingen",
+        "gingt",
+        "gingen"
+      ],
+      "example": "Ich gehe zur Arbeit.",
+      "konj2": [
+        "würde gehen",
+        "würdest gehen",
+        "würde gehen",
+        "würden gehen",
+        "würdet gehen",
+        "würden gehen"
+      ],
+      "perfect": [
+        "bin gegangen",
+        "bist gegangen",
+        "ist gegangen",
+        "sind gegangen",
+        "seid gegangen",
+        "sind gegangen"
+      ],
+      "plusquam": [
+        "war gegangen",
+        "warst gegangen",
+        "war gegangen",
+        "waren gegangen",
+        "wart gegangen",
+        "waren gegangen"
+      ],
+      "futur1": [
+        "werde gehen",
+        "wirst gehen",
+        "wird gehen",
+        "werden gehen",
+        "werdet gehen",
+        "werden gehen"
+      ]
+    },
+    "kommen": {
+      "meaning": "to come",
+      "aux": "sein",
+      "part": "gekommen",
+      "zu": "zu kommen",
+      "type": "strong",
+      "present": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen",
+        "kommt",
+        "kommen"
+      ],
+      "preterite": [
+        "kam",
+        "kamst",
+        "kam",
+        "kamen",
+        "kamt",
+        "kamen"
+      ],
+      "example": "Der Lieferant kommt morgen.",
+      "konj2": [
+        "würde kommen",
+        "würdest kommen",
+        "würde kommen",
+        "würden kommen",
+        "würdet kommen",
+        "würden kommen"
+      ],
+      "perfect": [
+        "bin gekommen",
+        "bist gekommen",
+        "ist gekommen",
+        "sind gekommen",
+        "seid gekommen",
+        "sind gekommen"
+      ],
+      "plusquam": [
+        "war gekommen",
+        "warst gekommen",
+        "war gekommen",
+        "waren gekommen",
+        "wart gekommen",
+        "waren gekommen"
+      ],
+      "futur1": [
+        "werde kommen",
+        "wirst kommen",
+        "wird kommen",
+        "werden kommen",
+        "werdet kommen",
+        "werden kommen"
+      ]
+    },
+    "fahren": {
+      "meaning": "to drive / travel",
+      "aux": "sein",
+      "part": "gefahren",
+      "zu": "zu fahren",
+      "type": "strong",
+      "present": [
+        "fahre",
+        "fährst",
+        "fährt",
+        "fahren",
+        "fahrt",
+        "fahren"
+      ],
+      "preterite": [
+        "fuhr",
+        "fuhrst",
+        "fuhr",
+        "fuhren",
+        "fuhrt",
+        "fuhren"
+      ],
+      "example": "Ich fahre nach Berlin.",
+      "konj2": [
+        "würde fahren",
+        "würdest fahren",
+        "würde fahren",
+        "würden fahren",
+        "würdet fahren",
+        "würden fahren"
+      ],
+      "perfect": [
+        "bin gefahren",
+        "bist gefahren",
+        "ist gefahren",
+        "sind gefahren",
+        "seid gefahren",
+        "sind gefahren"
+      ],
+      "plusquam": [
+        "war gefahren",
+        "warst gefahren",
+        "war gefahren",
+        "waren gefahren",
+        "wart gefahren",
+        "waren gefahren"
+      ],
+      "futur1": [
+        "werde fahren",
+        "wirst fahren",
+        "wird fahren",
+        "werden fahren",
+        "werdet fahren",
+        "werden fahren"
+      ]
+    },
+    "schreiben": {
+      "meaning": "to write",
+      "aux": "haben",
+      "part": "geschrieben",
+      "zu": "zu schreiben",
+      "type": "strong",
+      "present": [
+        "schreibe",
+        "schreibst",
+        "schreibt",
+        "schreiben",
+        "schreibt",
+        "schreiben"
+      ],
+      "preterite": [
+        "schrieb",
+        "schriebst",
+        "schrieb",
+        "schrieben",
+        "schriebt",
+        "schrieben"
+      ],
+      "example": "Sie schreibt eine E-Mail.",
+      "konj2": [
+        "würde schreiben",
+        "würdest schreiben",
+        "würde schreiben",
+        "würden schreiben",
+        "würdet schreiben",
+        "würden schreiben"
+      ],
+      "perfect": [
+        "habe geschrieben",
+        "hast geschrieben",
+        "hat geschrieben",
+        "haben geschrieben",
+        "habt geschrieben",
+        "haben geschrieben"
+      ],
+      "plusquam": [
+        "hatte geschrieben",
+        "hattest geschrieben",
+        "hatte geschrieben",
+        "hatten geschrieben",
+        "hattet geschrieben",
+        "hatten geschrieben"
+      ],
+      "futur1": [
+        "werde schreiben",
+        "wirst schreiben",
+        "wird schreiben",
+        "werden schreiben",
+        "werdet schreiben",
+        "werden schreiben"
+      ]
+    },
+    "finden": {
+      "meaning": "to find",
+      "aux": "haben",
+      "part": "gefunden",
+      "zu": "zu finden",
+      "type": "strong",
+      "present": [
+        "finde",
+        "findest",
+        "findet",
+        "finden",
+        "findet",
+        "finden"
+      ],
+      "preterite": [
+        "fand",
+        "fandest",
+        "fand",
+        "fanden",
+        "fandet",
+        "fanden"
+      ],
+      "example": "Ich finde die Lösung sinnvoll.",
+      "konj2": [
+        "würde finden",
+        "würdest finden",
+        "würde finden",
+        "würden finden",
+        "würdet finden",
+        "würden finden"
+      ],
+      "perfect": [
+        "habe gefunden",
+        "hast gefunden",
+        "hat gefunden",
+        "haben gefunden",
+        "habt gefunden",
+        "haben gefunden"
+      ],
+      "plusquam": [
+        "hatte gefunden",
+        "hattest gefunden",
+        "hatte gefunden",
+        "hatten gefunden",
+        "hattet gefunden",
+        "hatten gefunden"
+      ],
+      "futur1": [
+        "werde finden",
+        "wirst finden",
+        "wird finden",
+        "werden finden",
+        "werdet finden",
+        "werden finden"
+      ]
+    },
+    "geben": {
+      "meaning": "to give",
+      "aux": "haben",
+      "part": "gegeben",
+      "zu": "zu geben",
+      "type": "strong",
+      "present": [
+        "gebe",
+        "gibst",
+        "gibt",
+        "geben",
+        "gebt",
+        "geben"
+      ],
+      "preterite": [
+        "gab",
+        "gabst",
+        "gab",
+        "gaben",
+        "gabt",
+        "gaben"
+      ],
+      "example": "Es gibt ein Problem.",
+      "konj2": [
+        "würde geben",
+        "würdest geben",
+        "würde geben",
+        "würden geben",
+        "würdet geben",
+        "würden geben"
+      ],
+      "perfect": [
+        "habe gegeben",
+        "hast gegeben",
+        "hat gegeben",
+        "haben gegeben",
+        "habt gegeben",
+        "haben gegeben"
+      ],
+      "plusquam": [
+        "hatte gegeben",
+        "hattest gegeben",
+        "hatte gegeben",
+        "hatten gegeben",
+        "hattet gegeben",
+        "hatten gegeben"
+      ],
+      "futur1": [
+        "werde geben",
+        "wirst geben",
+        "wird geben",
+        "werden geben",
+        "werdet geben",
+        "werden geben"
+      ]
+    },
+    "nehmen": {
+      "meaning": "to take",
+      "aux": "haben",
+      "part": "genommen",
+      "zu": "zu nehmen",
+      "type": "strong",
+      "present": [
+        "nehme",
+        "nimmst",
+        "nimmt",
+        "nehmen",
+        "nehmt",
+        "nehmen"
+      ],
+      "preterite": [
+        "nahm",
+        "nahmst",
+        "nahm",
+        "nahmen",
+        "nahmt",
+        "nahmen"
+      ],
+      "example": "Ich nehme an dem Kurs teil.",
+      "konj2": [
+        "würde nehmen",
+        "würdest nehmen",
+        "würde nehmen",
+        "würden nehmen",
+        "würdet nehmen",
+        "würden nehmen"
+      ],
+      "perfect": [
+        "habe genommen",
+        "hast genommen",
+        "hat genommen",
+        "haben genommen",
+        "habt genommen",
+        "haben genommen"
+      ],
+      "plusquam": [
+        "hatte genommen",
+        "hattest genommen",
+        "hatte genommen",
+        "hatten genommen",
+        "hattet genommen",
+        "hatten genommen"
+      ],
+      "futur1": [
+        "werde nehmen",
+        "wirst nehmen",
+        "wird nehmen",
+        "werden nehmen",
+        "werdet nehmen",
+        "werden nehmen"
+      ]
+    },
+    "sprechen": {
+      "meaning": "to speak",
+      "aux": "haben",
+      "part": "gesprochen",
+      "zu": "zu sprechen",
+      "type": "strong",
+      "present": [
+        "spreche",
+        "sprichst",
+        "spricht",
+        "sprechen",
+        "sprecht",
+        "sprechen"
+      ],
+      "preterite": [
+        "sprach",
+        "sprachst",
+        "sprach",
+        "sprachen",
+        "spracht",
+        "sprachen"
+      ],
+      "example": "Wir sprechen über die Aufgabe.",
+      "konj2": [
+        "würde sprechen",
+        "würdest sprechen",
+        "würde sprechen",
+        "würden sprechen",
+        "würdet sprechen",
+        "würden sprechen"
+      ],
+      "perfect": [
+        "habe gesprochen",
+        "hast gesprochen",
+        "hat gesprochen",
+        "haben gesprochen",
+        "habt gesprochen",
+        "haben gesprochen"
+      ],
+      "plusquam": [
+        "hatte gesprochen",
+        "hattest gesprochen",
+        "hatte gesprochen",
+        "hatten gesprochen",
+        "hattet gesprochen",
+        "hatten gesprochen"
+      ],
+      "futur1": [
+        "werde sprechen",
+        "wirst sprechen",
+        "wird sprechen",
+        "werden sprechen",
+        "werdet sprechen",
+        "werden sprechen"
+      ]
+    },
+    "sich bewerben": {
+      "meaning": "to apply",
+      "aux": "haben",
+      "part": "beworben",
+      "zu": "sich zu bewerben",
+      "type": "reflexive strong",
+      "present": [
+        "bewerbe mich",
+        "bewirbst dich",
+        "bewirbt sich",
+        "bewerben uns",
+        "bewerbt euch",
+        "bewerben sich"
+      ],
+      "preterite": [
+        "bewarb mich",
+        "bewarbst dich",
+        "bewarb sich",
+        "bewarben uns",
+        "bewerbt euch",
+        "bewarben sich"
+      ],
+      "example": "Ich bewerbe mich um eine Stelle.",
+      "konj2": [
+        "würde bewerben",
+        "würdest bewerben",
+        "würde bewerben",
+        "würden bewerben",
+        "würdet bewerben",
+        "würden bewerben"
+      ],
+      "perfect": [
+        "habe beworben",
+        "hast beworben",
+        "hat beworben",
+        "haben beworben",
+        "habt beworben",
+        "haben beworben"
+      ],
+      "plusquam": [
+        "hatte beworben",
+        "hattest beworben",
+        "hatte beworben",
+        "hatten beworben",
+        "hattet beworben",
+        "hatten beworben"
+      ],
+      "futur1": [
+        "werde bewerben",
+        "wirst bewerben",
+        "wird bewerben",
+        "werden bewerben",
+        "werdet bewerben",
+        "werden bewerben"
+      ]
+    },
+    "teilnehmen": {
+      "meaning": "to participate",
+      "aux": "haben",
+      "part": "teilgenommen",
+      "zu": "teilzunehmen",
+      "type": "separable strong",
+      "present": [
+        "nehme teil",
+        "nimmst teil",
+        "nimmt teil",
+        "nehmen teil",
+        "nehmt teil",
+        "nehmen teil"
+      ],
+      "preterite": [
+        "nahm teil",
+        "nahmst teil",
+        "nahm teil",
+        "nahmen teil",
+        "nahmt teil",
+        "nahmen teil"
+      ],
+      "example": "Ich nehme an dem Kurs teil.",
+      "konj2": [
+        "würde teilnehmen",
+        "würdest teilnehmen",
+        "würde teilnehmen",
+        "würden teilnehmen",
+        "würdet teilnehmen",
+        "würden teilnehmen"
+      ],
+      "perfect": [
+        "habe teilgenommen",
+        "hast teilgenommen",
+        "hat teilgenommen",
+        "haben teilgenommen",
+        "habt teilgenommen",
+        "haben teilgenommen"
+      ],
+      "plusquam": [
+        "hatte teilgenommen",
+        "hattest teilgenommen",
+        "hatte teilgenommen",
+        "hatten teilgenommen",
+        "hattet teilgenommen",
+        "hatten teilgenommen"
+      ],
+      "futur1": [
+        "werde teilnehmen",
+        "wirst teilnehmen",
+        "wird teilnehmen",
+        "werden teilnehmen",
+        "werdet teilnehmen",
+        "werden teilnehmen"
+      ]
+    },
+    "besprechen": {
+      "meaning": "to discuss",
+      "aux": "haben",
+      "part": "besprochen",
+      "zu": "zu besprechen",
+      "type": "inseparable strong",
+      "present": [
+        "bespreche",
+        "besprichst",
+        "bespricht",
+        "besprechen",
+        "besprecht",
+        "besprechen"
+      ],
+      "preterite": [
+        "besprach",
+        "besprachst",
+        "besprach",
+        "besprachen",
+        "bespracht",
+        "besprachen"
+      ],
+      "example": "Wir besprechen die nächsten Schritte.",
+      "konj2": [
+        "würde besprechen",
+        "würdest besprechen",
+        "würde besprechen",
+        "würden besprechen",
+        "würdet besprechen",
+        "würden besprechen"
+      ],
+      "perfect": [
+        "habe besprochen",
+        "hast besprochen",
+        "hat besprochen",
+        "haben besprochen",
+        "habt besprochen",
+        "haben besprochen"
+      ],
+      "plusquam": [
+        "hatte besprochen",
+        "hattest besprochen",
+        "hatte besprochen",
+        "hatten besprochen",
+        "hattet besprochen",
+        "hatten besprochen"
+      ],
+      "futur1": [
+        "werde besprechen",
+        "wirst besprechen",
+        "wird besprechen",
+        "werden besprechen",
+        "werdet besprechen",
+        "werden besprechen"
+      ]
+    },
+    "erledigen": {
+      "meaning": "to complete / handle",
+      "aux": "haben",
+      "part": "erledigt",
+      "zu": "zu erledigen",
+      "type": "regular",
+      "present": [
+        "erledige",
+        "erledigst",
+        "erledigt",
+        "erledigen",
+        "erledigt",
+        "erledigen"
+      ],
+      "preterite": [
+        "erledigte",
+        "erledigtest",
+        "erledigte",
+        "erledigten",
+        "erledigtet",
+        "erledigten"
+      ],
+      "example": "Ich erledige die Aufgabe bis Freitag.",
+      "konj2": [
+        "würde erledigen",
+        "würdest erledigen",
+        "würde erledigen",
+        "würden erledigen",
+        "würdet erledigen",
+        "würden erledigen"
+      ],
+      "perfect": [
+        "habe erledigt",
+        "hast erledigt",
+        "hat erledigt",
+        "haben erledigt",
+        "habt erledigt",
+        "haben erledigt"
+      ],
+      "plusquam": [
+        "hatte erledigt",
+        "hattest erledigt",
+        "hatte erledigt",
+        "hatten erledigt",
+        "hattet erledigt",
+        "hatten erledigt"
+      ],
+      "futur1": [
+        "werde erledigen",
+        "wirst erledigen",
+        "wird erledigen",
+        "werden erledigen",
+        "werdet erledigen",
+        "werden erledigen"
+      ]
+    }
+  }
+}

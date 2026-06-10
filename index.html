@@ -1,225 +1,138 @@
 <!doctype html>
-<html lang="de" dir="ltr">
+<html lang="de">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-  <meta name="theme-color" content="#111827"/>
-  <meta name="description" content="Deutsch-WiPA 2026 — B1/B2 grammar-first German trainer based on Beruf contexts"/>
-  <title>Deutsch-WiPA 2026</title>
-  <link rel="manifest" href="manifest.webmanifest"/>
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17223b">
+  <title>Deutsch-WiPA 2026 · Grammatik & Konjugation</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#startButton">Zum Inhalt springen</a>
-
-  <!-- Top navigation bar -->
-  <header class="topbar" role="banner">
-    <button id="menuToggle" class="nav-btn" aria-label="Menü öffnen">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="14" x2="17" y2="14"/>
-      </svg>
-    </button>
-    <div class="brand">
-      <span class="brand-de"><img src="assets/icon.svg" alt=""/></span>
-      <div class="brand-text">
-        <span class="brand-name">Deutsch-WiPA</span>
-        <span class="brand-tagline">Grammar-first · Beruf</span>
+  <a class="skip-link" href="#primaryAction">Zur Übung springen</a>
+  <div id="app" class="app">
+    <header class="topbar">
+      <button id="mobileMenu" class="icon-button mobile-only" aria-label="Menü öffnen">☰</button>
+      <div class="brand">
+        <img src="assets/icon.svg" alt="" class="brand-mark">
+        <div>
+          <div class="brand-title">Deutsch-WiPA</div>
+          <div class="brand-subtitle">B1 → B2 · Grammatik · Beruf</div>
+        </div>
       </div>
-    </div>
-    <div class="topbar-right">
-      <select id="languageSelect" class="pill-select" aria-label="Sprache"></select>
-      <button id="themeToggle" class="nav-btn" aria-label="Design wechseln" title="Toggle theme">
-        <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-      </button>
-      <button id="installButton" class="pill-btn hidden">Install</button>
-    </div>
-  </header>
+      <nav class="top-tabs" aria-label="Hauptbereiche">
+        <button data-route="learn" class="top-tab active">Lernen</button>
+        <button data-route="conjugator" class="top-tab">Konjugator</button>
+        <button data-route="mistakes" class="top-tab">Fehlerbank</button>
+      </nav>
+      <div class="top-actions">
+        <select id="languageSelect" class="select compact" aria-label="Interface language"></select>
+        <button id="themeButton" class="icon-button" title="Theme">◐</button>
+      </div>
+    </header>
 
-  <div class="layout">
-    <!-- Left sidebar: navigation -->
-    <aside id="sidebar" class="sidebar" aria-label="Navigation">
-      <div class="sidebar-inner">
-
-        <!-- Learner identity -->
-        <div class="learner-card">
-          <div class="learner-avatar" id="learnerAvatar">?</div>
-          <div class="learner-info">
-            <input id="learnerName" class="learner-input" type="text" placeholder="Dein Name" autocomplete="name" maxlength="30"/>
-            <div class="learner-level">B1 → B2 · Grammatik im Beruf</div>
-          </div>
-        </div>
-
-        <!-- Category navigation -->
-        <div class="nav-section">
-          <div class="nav-label">Lernweg</div>
-          <nav id="categoryNav" role="navigation" aria-label="Kategorien"></nav>
-        </div>
-
-        <!-- Module selector -->
-        <div class="nav-section">
-          <div class="nav-label" id="moduleSectionLabel">Modul</div>
-          <select id="moduleSelect" class="full-select" aria-labelledby="moduleSectionLabel"></select>
-          <div id="moduleCount" class="module-meta"></div>
-        </div>
-
-        <!-- Session stats -->
-        <div class="stats-card">
-          <div class="stats-ring-wrap">
-            <svg class="stats-ring" viewBox="0 0 64 64" width="64" height="64">
-              <circle class="ring-bg" cx="32" cy="32" r="26" fill="none" stroke-width="6"/>
-              <circle id="ringArc" class="ring-fg" cx="32" cy="32" r="26" fill="none" stroke-width="6"
-                stroke-dasharray="163.36" stroke-dashoffset="163.36" stroke-linecap="round"
-                transform="rotate(-90 32 32)"/>
-            </svg>
-            <span id="progressPercent" class="ring-pct">0%</span>
-          </div>
-          <div class="stats-grid">
-            <div class="stat-box"><span id="statAnswered" class="stat-n">0</span><span class="stat-l">Beantwortet</span></div>
-            <div class="stat-box"><span id="statCorrect" class="stat-n ok">0</span><span class="stat-l">Richtig</span></div>
-            <div class="stat-box"><span id="statMistakes" class="stat-n err">0</span><span class="stat-l">Fehler</span></div>
-          </div>
-          <div id="globalStats" class="global-stat"></div>
-          <button id="resetModule" class="text-btn">↺ Neu starten</button>
-        </div>
-
-        <!-- Streak indicator -->
-        <div id="streakBar" class="streak-bar hidden">
-          <span class="streak-fire">🔥</span>
-          <span id="streakCount" class="streak-n">0</span>
-          <span class="streak-l">in a row</span>
-        </div>
-
+    <aside id="sidebar" class="sidebar" aria-label="Lernpfad">
+      <div class="sidebar-head">
+        <div class="eyebrow">Lernpfad</div>
+        <h2>Was willst du trainieren?</h2>
+      </div>
+      <div id="pathNav" class="path-nav"></div>
+      <div class="progress-card">
+        <div class="progress-top"><span>Heute</span><strong id="todayScore">0%</strong></div>
+        <div class="meter"><span id="meterBar"></span></div>
+        <div class="progress-mini"><span id="answeredCount">0 Antworten</span><span id="mistakeCount">0 Fehler</span></div>
       </div>
     </aside>
 
-    <!-- Main content area -->
-    <main class="main" role="main">
-
-      <!-- Toolbar -->
-      <div class="toolbar">
-        <div class="toolbar-path">
-          <span id="currentPath" class="path-text">Wortschatz</span>
-        </div>
-        <div class="toolbar-controls">
-          <div class="mode-tabs" role="group" aria-label="Lernmodus">
-            <button class="mode-tab active" data-mode="practice">Üben</button>
-            <button class="mode-tab" data-mode="learn">Lernen</button>
-            <button class="mode-tab" data-mode="challenge">Challenge</button>
-            <button class="mode-tab" data-mode="mistakes">Fehler</button>
+    <main class="main" id="main">
+      <section id="learnView" class="view active-view">
+        <section class="hero-card">
+          <div>
+            <div class="eyebrow" id="currentPathLabel">Konjugation</div>
+            <h1 id="moduleTitle">Verbformen beherrschen</h1>
+            <p id="moduleDescription">Wähle links ein Thema. Trainiere mit klaren Regeln, Variation und direkter Korrektur.</p>
           </div>
-          <select id="exerciseTypeSelect" class="pill-select small" aria-label="Übungstyp"></select>
-        </div>
-      </div>
+          <div class="hero-stats">
+            <span id="moduleCount">0 Items</span>
+            <span id="levelBadge">B1/B2</span>
+          </div>
+        </section>
 
+        <section class="study-layout">
+          <article class="exercise-card" aria-labelledby="questionTitle">
+            <div class="card-head">
+              <span class="pill" id="exercisePill">Übung</span>
+              <div class="soft-controls">
+                <button id="prevButton" class="ghost small" title="Vorherige Frage">←</button>
+                <button id="speakButton" class="ghost small" title="Vorlesen">🔊</button>
+              </div>
+            </div>
+            <h2 id="questionTitle">Bereit?</h2>
+            <div id="questionText" class="question-text" aria-live="polite" aria-atomic="true">Starte die Sitzung.</div>
+            <div id="answerZone" class="answer-zone"></div>
+            <div id="choiceZone" class="choice-zone"></div>
+            <div id="feedbackBox" class="feedback hidden"></div>
+            <div class="main-actions">
+              <button id="primaryAction" class="primary-action">Sitzung starten</button>
+              <button id="secondaryAction" class="secondary-action hidden">Weiter</button>
+            </div>
+          </article>
 
-      <section class="focus-hero" aria-label="Grammar focus">
-        <div>
-          <p class="eyebrow">Grammar cockpit</p>
-          <h1>Modalverben, Kasus, Satzbau — trainiert mit Berufssätzen</h1>
-          <p>Mehr Grammatik, weniger Ablenkung: Lernen → Üben → Fehlerbank → Wiederholung.</p>
-        </div>
-        <div class="hero-metric"><strong>Grammar-first</strong><span>B1/B2 Linie-Beruf style</span></div>
+          <aside class="learn-panel">
+            <div class="panel-block">
+              <div class="eyebrow">Regel</div>
+              <div id="ruleBox" class="rule-box">Die Erklärung erscheint nach dem Start.</div>
+            </div>
+            <div class="panel-block">
+              <div class="eyebrow">Beispiele</div>
+              <div id="exampleBox" class="example-box">—</div>
+            </div>
+            <div class="panel-block compact-panel">
+              <button id="modePractice" class="mode-chip active">Üben</button>
+              <button id="modeLearn" class="mode-chip">Lernen</button>
+              <button id="modeReview" class="mode-chip">Wiederholen</button>
+            </div>
+          </aside>
+        </section>
       </section>
 
-      <!-- Exercise card -->
-      <div id="exerciseCard" class="exercise-card">
-
-        <!-- Card header: progress + type badge -->
-        <div class="card-header">
-          <div class="card-progress">
-            <div class="progress-bar-wrap">
-              <div id="progressBar" class="progress-bar-fill" style="width:0%"></div>
-            </div>
-            <span id="itemIndex" class="item-index">0 / 0</span>
+      <section id="conjugatorView" class="view">
+        <section class="hero-card conjugator-hero">
+          <div>
+            <div class="eyebrow">Konjugator</div>
+            <h1>Verbtabellen wie ein echtes Nachschlagewerk</h1>
+            <p>Suche ein Verb, vergleiche Zeiten und starte direkt passende Übungen.</p>
           </div>
-          <span id="typeBadge" class="type-badge">—</span>
-        </div>
+          <input id="verbSearch" class="search-input" placeholder="Verb suchen: sein, haben, müssen…">
+        </section>
+        <section class="conjugator-grid">
+          <aside class="verb-list" id="verbList"></aside>
+          <article class="verb-detail">
+            <div id="verbMeta" class="verb-meta"></div>
+            <div class="tense-tabs" id="tenseTabs"></div>
+            <div id="tenseTable" class="tense-table"></div>
+            <div id="verbPractice" class="verb-practice"></div>
+          </article>
+        </section>
+      </section>
 
-        <!-- Optional source text -->
-        <div id="passageBlock" class="passage-block hidden"></div>
-
-        <!-- Question -->
-        <div id="questionText" class="question" aria-live="polite" aria-atomic="true"></div>
-
-        <!-- Input area -->
-        <div id="inputArea" class="input-area">
-          <!-- Populated by JS: choice buttons / text input / textarea -->
-        </div>
-
-        <!-- Feedback -->
-        <div id="feedbackBox" class="feedback hidden" aria-live="polite"></div>
-
-        <!-- Learn / flashcard reveal -->
-        <div id="learnBlock" class="learn-block hidden"></div>
-
-      </div>
-
-      <!-- Action bar -->
-      <div class="action-bar" aria-label="Übungssteuerung">
-        <button id="prevButton" class="act-btn secondary" aria-label="Vorherige Frage">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="10,3 5,8 10,13"/></svg>
-          <span>Zurück</span>
-        </button>
-        <button id="startButton" class="act-btn primary">
-          <span>Start</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="5,3 13,8 5,13" fill="currentColor" stroke="none"/></svg>
-        </button>
-        <button id="checkButton" class="act-btn primary" disabled>
-          <span>Prüfen</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2,9 6,13 14,4"/></svg>
-        </button>
-        <button id="nextButton" class="act-btn secondary" disabled>
-          <span>Weiter</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6,3 11,8 6,13"/></svg>
-        </button>
-      </div>
-
+      <section id="mistakesView" class="view">
+        <section class="hero-card">
+          <div>
+            <div class="eyebrow">Fehlerbank</div>
+            <h1>Wiederhole nur, was wirklich schwach ist</h1>
+            <p>Falsche Antworten werden hier gesammelt. Keine unnötigen Schreib-/Sprechmodule.</p>
+          </div>
+          <button id="clearMistakes" class="danger-soft">Fehlerbank leeren</button>
+        </section>
+        <div id="mistakeList" class="mistake-list"></div>
+      </section>
     </main>
 
-    <!-- Right panel: hints + mistakes -->
-    <aside class="helper" aria-label="Hilfe">
-
-      <!-- Hint box -->
-      <div class="helper-section">
-        <div class="helper-title">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
-          Hinweis
-        </div>
-        <div id="hintBox" class="hint-body"></div>
-      </div>
-
-      <!-- Audio button -->
-      <button id="speakBtn" class="speak-btn hidden" aria-label="Aussprechen">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" stroke="none" opacity=".9"/>
-          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-        </svg>
-        Aussprechen
-      </button>
-
-      <!-- Mistake bank -->
-      <div class="helper-section">
-        <div class="helper-title">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-          Fehlerbank
-          <span id="mistakeBadge" class="mistake-badge hidden">0</span>
-        </div>
-        <div id="mistakeList" class="mistake-list"></div>
-        <button id="clearMistakes" class="text-btn small">Alle löschen</button>
-      </div>
-
-    </aside>
+    <div id="backdrop" class="backdrop hidden"></div>
   </div>
-
-  <!-- Mobile drawer backdrop -->
-  <div id="drawerBackdrop" class="drawer-bg hidden"></div>
-
   <script src="app.js" type="module"></script>
 </body>
 </html>

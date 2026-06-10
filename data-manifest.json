@@ -1,6 +1,27 @@
 {
-  "version": "2026.06.10-grammar-modal-ui",
+  "version": "2026-modern-grammar-v1",
   "modules": [
+    {
+      "id": "data_conjugator_verbs",
+      "path": "data/conjugator_verbs.json",
+      "category": "konjugator",
+      "title": "Konjugator · Verbtabellen",
+      "count": 25
+    },
+    {
+      "id": "grammatik_production_konjugator_drills",
+      "path": "grammatik/production_konjugator_drills.json",
+      "category": "conjugation",
+      "title": "Konjugator · Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I",
+      "count": 975
+    },
+    {
+      "id": "grammatik_production_grammar_explanations_variations",
+      "path": "grammatik/production_grammar_explanations_variations.json",
+      "category": "grammar",
+      "title": "Grammatik · Erklärungen und Satzvariation",
+      "count": 30
+    },
     {
       "id": "grammatik_production_modalverben_uebersicht",
       "path": "grammatik/production_modalverben_uebersicht.json",
@@ -102,21 +123,21 @@
     {
       "id": "grammatik_beruf",
       "path": "grammatik/beruf.json",
-      "category": "communication",
+      "category": "workplace",
       "title": "Beruf",
       "count": 80
     },
     {
       "id": "grammatik_bewerbung_arbeit",
       "path": "grammatik/bewerbung_arbeit.json",
-      "category": "communication",
+      "category": "workplace",
       "title": "Bewerbung / Arbeit",
       "count": 90
     },
     {
       "id": "grammatik_entschuldigung_reaktion",
       "path": "grammatik/entschuldigung_reaktion.json",
-      "category": "communication",
+      "category": "workplace",
       "title": "Entschuldigung & Reaktion",
       "count": 80
     },
@@ -228,7 +249,7 @@
     {
       "id": "grammatik_reklamation_technische_probleme",
       "path": "grammatik/reklamation_technische_probleme.json",
-      "category": "communication",
+      "category": "workplace",
       "title": "Reklamation / technische Probleme",
       "count": 90
     },
@@ -263,7 +284,7 @@
     {
       "id": "vokabular_beruf_buero",
       "path": "vokabular/beruf_buero.json",
-      "category": "communication",
+      "category": "workplace",
       "title": "Beruf & Büro",
       "count": 80
     },
@@ -305,7 +326,7 @@
     {
       "id": "training_exercise_types_complete",
       "path": "training/exercise_types_complete.json",
-      "category": "training",
+      "category": "practice",
       "title": "18 Übungstypen · Ready-to-use",
       "count": 36
     },
@@ -347,7 +368,7 @@
     {
       "id": "grammatik_material_redemittel_bitte_um_information",
       "path": "grammatik/material_redemittel_bitte_um_information.json",
-      "category": "communication",
+      "category": "workplace",
       "title": "Material B2.1 · Redemittel: Bitte um Information",
       "count": 6
     },
@@ -358,5 +379,6 @@
       "title": "Material B1.1/B1.2/B2.1 · Wortschatz-Ergänzung",
       "count": 45
     }
-  ]
+  ],
+  "focus": "Grammar-first + conjugation-rich + workplace vocabulary"
 }

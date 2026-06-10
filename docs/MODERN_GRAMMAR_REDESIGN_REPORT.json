@@ -1,0 +1,20 @@
+{
+  "version": "modern-grammar-v1",
+  "changes": [
+    "complete UI redesign",
+    "learner-facing theme map",
+    "Reverso-style conjugator logic without copying external content",
+    "removed visible reading/writing/speaking emphasis",
+    "expanded conjugation drills",
+    "expanded modal verb variations",
+    "simplified buttons",
+    "mobile-first bottom navigation",
+    "new logo and icons"
+  ],
+  "counts": {
+    "verbs": 25,
+    "new_conjugator_drills": 975,
+    "new_explanation_variations": 30,
+    "manifest_modules": 54
+  }
+}

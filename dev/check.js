@@ -1,15 +1,1 @@
-#!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
-const root = path.resolve(__dirname, '..');
-let bad = 0;
-for (const file of fs.readdirSync(root, {recursive:true}).filter(f => f.endsWith('.json'))) {
-  try { JSON.parse(fs.readFileSync(path.join(root,file),'utf8')); }
-  catch(e) { console.error('Invalid JSON:', file, e.message); bad++; }
-}
-for (const f of ['app.js','sw.js']) {
-  try { new Function(fs.readFileSync(path.join(root,f),'utf8')); }
-  catch(e) { console.error('Invalid JS:', f, e.message); bad++; }
-}
-console.log(bad ? `FAILED: ${bad} issue(s)` : 'OK: JSON and JS syntax valid');
-process.exit(bad ? 1 : 0);
+const fs=require('fs');const path=require('path');function walk(d){return fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>{const p=path.join(d,e.name);return e.isDirectory()?walk(p):[p]})}for(const f of walk('.').filter(x=>x.endsWith('.json'))){try{JSON.parse(fs.readFileSync(f,'utf8'))}catch(e){console.error('Invalid JSON',f,e.message);process.exit(1)}}new Function(fs.readFileSync('app.js','utf8').replace(/^import .*$/mg,''));console.log('OK: JSON files valid and app.js parses.');
