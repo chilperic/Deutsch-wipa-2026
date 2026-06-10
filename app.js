@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v15-professional-core';
+const APP_VERSION = '2026.06.10-v16-professional-core';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -80,6 +80,19 @@ const T = {
  tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster',answered:'cevap',mistakes:'hata',noMistakes:'Kayıtlı hata yok',translate:'Çeviri',translation:'Çeviri',resources:'Kaynaklar',externalTranslation:'Harici çeviri',noStoredTranslation:'Bu kart için kayıtlı çeviri yok.',resourceFriend:'Dreizunge · Raim’in uygulaması',resourceConjugator:'Fiil biçimleri ve çekim',resourceDictionary:'Sözlük',resourceGrammar:'Dilbilgisi',resourceListening:'Dinleme ve Almanca öğrenme'}
 };
 function tr(k){return T[state.lang]?.[k]??T.en[k]??T.de[k]??k}
+
+const QUICKSTART_I18N_PATCH = {
+  fr:{onboardingTitle:'Entraînement ciblé aujourd’hui',onboardingText:'Choisis un parcours clair. Sessions courtes, correction directe, révision plus tard.',quickConj:'Formes verbales',quickDecl:'Déclinaison',quickPrep:'Prépositions',quickReview:'Révision',starter:'Débutant',curated:'Verbes sélectionnés',allVerbs:'Tous les verbes'},
+  es:{onboardingTitle:'Entrena con un objetivo claro hoy',onboardingText:'Elige una ruta de aprendizaje. Sesiones cortas, corrección directa y repaso posterior.',quickConj:'Formas verbales',quickDecl:'Declinación',quickPrep:'Preposiciones',quickReview:'Repaso',starter:'Inicio',curated:'Verbos seleccionados',allVerbs:'Todos los verbos'},
+  ar:{onboardingTitle:'تدرّب اليوم بتركيز واضح',onboardingText:'اختر مساراً واضحاً. جلسات قصيرة، تصحيح مباشر، ومراجعة لاحقاً.',quickConj:'تصريف الأفعال',quickDecl:'الإعراب/التصريف',quickPrep:'حروف الجر',quickReview:'المراجعة',starter:'البداية',curated:'أفعال مختارة',allVerbs:'كل الأفعال'},
+  fa:{onboardingTitle:'امروز هدفمند تمرین کن',onboardingText:'یک مسیر روشن انتخاب کن. جلسه‌های کوتاه، تصحیح مستقیم و مرور بعدی.',quickConj:'صرف فعل‌ها',quickDecl:'صرف/دکلیناسیون',quickPrep:'حروف اضافه',quickReview:'مرور',starter:'شروع',curated:'فعل‌های منتخب',allVerbs:'همهٔ فعل‌ها'},
+  uk:{onboardingTitle:'Тренуйся сьогодні цілеспрямовано',onboardingText:'Обери чіткий навчальний шлях. Короткі сесії, пряма корекція, повторення пізніше.',quickConj:'Форми дієслів',quickDecl:'Відмінювання',quickPrep:'Прийменники',quickReview:'Повторення',starter:'Старт',curated:'Відібрані дієслова',allVerbs:'Усі дієслова',mistakes:'помилки',noMistakes:'Збережених помилок немає'},
+  ru:{onboardingTitle:'Тренируйся сегодня с чёткой целью',onboardingText:'Выбери понятный путь. Короткие сессии, прямая коррекция и повторение позже.',quickConj:'Формы глаголов',quickDecl:'Склонение',quickPrep:'Предлоги',quickReview:'Повторение',starter:'Старт',curated:'Отобранные глаголы',allVerbs:'Все глаголы'},
+  pl:{onboardingTitle:'Ćwicz dziś z jasnym celem',onboardingText:'Wybierz konkretną ścieżkę. Krótkie sesje, bezpośrednia korekta i późniejsze powtórki.',quickConj:'Formy czasowników',quickDecl:'Deklinacja',quickPrep:'Przyimki',quickReview:'Powtórka',starter:'Start',curated:'Wybrane czasowniki',allVerbs:'Wszystkie czasowniki'},
+  tr:{onboardingTitle:'Bugün net bir hedefle çalış',onboardingText:'Açık bir öğrenme yolu seç. Kısa oturumlar, doğrudan düzeltme ve sonra tekrar.',quickConj:'Fiil biçimleri',quickDecl:'Çekim / hâl ekleri',quickPrep:'Edatlar',quickReview:'Tekrar',starter:'Başlangıç',curated:'Seçilmiş fiiller',allVerbs:'Tüm fiiller'}
+};
+for (const [lang, entries] of Object.entries(QUICKSTART_I18N_PATCH)) Object.assign(T[lang] ||= {}, entries);
+T.en.curated = 'Curated verbs';
 function load(k,fallback){try{return JSON.parse(localStorage.getItem(k))??fallback}catch{return fallback}}
 function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
 function norm(s=''){return String(s).trim().toLowerCase().replace(/[„""]/g,'"').replace(/[.!?。؟،,;:]+$/g,'').replace(/\s+/g,' ')}
@@ -94,7 +107,7 @@ async function init(){
   updateDirection();renderLangs();renderDesignControls();bind();
   await loadLocaleLexicon();await loadData();await loadConjugator();
   renderPath();selectPath('conjugation');
-  route('learn');renderAll();
+  route('learn');renderAll();renderResources();
   if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
@@ -130,7 +143,7 @@ if(window.matchMedia){
 
 
 function bind(){
-  $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
+  if($('languageSelect'))$('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
   document.querySelectorAll('#appearanceSelect,.appearance-select-control').forEach(el=>{el.onchange=e=>setAppearance(e.target.value)});
   document.querySelectorAll('#colorSelect,.color-select-control').forEach(el=>{el.onchange=e=>setColor(e.target.value)});
   bindProfileControls();
@@ -342,7 +355,8 @@ function resetSession(){state.index=0;state.started=false;state.checked=false;st
 // Memoised dynamic conjugation generator — only rebuilds when verb/tense/mode actually changes
 function generateConjugatorPractice(){
   if(!state.conjugator)return[];
-  const memoKey=`${state.tenseFilter}:${state.dynamicVerb}:${state.mode}`;
+  const verbCount=state.conjugator?.verbs?Object.keys(state.conjugator.verbs).length:0;
+  const memoKey=`${state.tenseFilter}:${state.dynamicVerb}:${state.mode}:${verbCount}`;
   if(state._conjGenKey===memoKey)return state._conjGenItems;
 
   const tenseMap={'Präsens':'present','Präteritum':'preterite','Perfekt':'perfect','Plusquamperfekt':'plusquam','Futur I':'futur1','Konjunktiv II':'konj2','Imperativ':'imperative'};
@@ -404,7 +418,32 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator();renderResources()}
+
+function renderQuickStart(){
+  const box=$('quickStartPanel');
+  if(!box)return;
+  if(state.route!=='learn' || state.started || state.checked || state.sessionComplete){box.classList.add('hidden');box.innerHTML='';return;}
+  const tiles=[
+    ['quickConj','conjugation','dynamic_conjugator','practice','⚙️'],
+    ['quickDecl','declension','all','practice','🧬'],
+    ['quickPrep','prepositions','all','practice','📍'],
+    ['quickReview',state.path,state.moduleId||'all','review','↻']
+  ];
+  box.innerHTML=`<div class="qs-head"><div class="eyebrow">${esc(tr('onboardingTitle'))}</div><p>${esc(tr('onboardingText'))}</p></div><div class="qs-tiles">${tiles.map(([k,path,mod,mode,icon])=>`<button class="qs-tile" data-qs="${esc(path)}" data-mod="${esc(mod)}" data-mode="${esc(mode)}"><span>${icon}</span><strong>${esc(tr(k))}</strong></button>`).join('')}</div>`;
+  box.classList.remove('hidden');
+  box.querySelectorAll('.qs-tile').forEach(b=>b.onclick=()=>{
+    selectPath(b.dataset.qs);
+    state.moduleId=b.dataset.mod||'all';
+    state.mode=b.dataset.mode||'practice';
+    resetSession();
+    if(state.mode==='review')setMode('review'); else setMode('practice');
+    renderModuleSelect();
+    renderExercise();
+    box.classList.add('hidden');
+  });
+}
+
+function renderAll(){renderPath();renderModuleSelect();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator()}
 
 function renderResources(){
   const box=$('resourceList'); if(!box)return;
