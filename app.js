@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v6-adverbien-deklination';
+const APP_VERSION = '2026.06.10-v7-clean-ui-audit';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -12,7 +12,7 @@ const state = {
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
   lang: localStorage.dw_lang || 'de', theme: localStorage.dw_theme || 'light',
   conjugator: null, verb: null, tense: 'Präsens',
-  tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '',
+  tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [],
   // Memoised generateConjugatorPractice output: invalidated when verb/tense/mode changes
   _conjGenKey: '', _conjGenItems: []
@@ -20,7 +20,7 @@ const state = {
 
 const LANGS = [['de','Deutsch'],['en','English'],['fr','Français'],['es','Español'],['ar','العربية'],['fa','فارسی'],['uk','Українська'],['ru','Русский'],['pl','Polski'],['tr','Türkçe']];
 const PATHS = [
-  {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'1000+ Verben, Tabellen, Modalverben, Infinitiv',cats:['conjugation','konjugator'],match:['modal','modalverb','infinitiv','verbformen','starke_verben','trennbare','reflexive','perfekt','plusquamperfekt','konjugator']},
+  {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Verbformen, Modalverben, Infinitiv',cats:['conjugation','konjugator'],match:['modal','modalverb','infinitiv','verbformen','starke_verben','trennbare','reflexive','perfekt','plusquamperfekt','konjugator']},
   {id:'syntax',icon:'🧩',title:'Satzbau',sub:'Verbposition, TeKaMoLo, nicht, Passiversatz',match:['tekamolo','negation','nebensatz','satzordnung','satzvariation','passiv','passiversatz','final','modal_es','temporale']},
   {id:'cases',icon:'🎯',title:'Fälle',sub:'Akkusativ, Dativ, n-Deklination, Pronomen',match:['kasus','n_deklination','n-deklination','pronomen']},
   {id:'declension',icon:'🧬',title:'Deklination',sub:'Artikel, Adjektivendungen, Nomen, Pronomen',match:['deklination','adjektivdeklination','adjektive_als_nomen','n_deklination','kasus','pronomen']},
@@ -159,7 +159,7 @@ function selectPath(id){
   $('conjugationControls').classList.toggle('hidden',!isConj);
   renderModuleSelect();renderAll();
 }
-function renderModuleSelect(){const mods=modulesForPath(state.path);let html=`<option value="all">${tr('allModules')}</option>`;if(state.path==='conjugation')html=`<option value="dynamic_conjugator">Konjugator · 1000+ Verbübungen</option>`+html;html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');$('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId}
+function renderModuleSelect(){const mods=modulesForPath(state.path);let html=`<option value="all">${tr('allModules')}</option>`;if(state.path==='conjugation')html=`<option value="dynamic_conjugator">Verbtraining</option>`+html;html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');$('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId}
 function itemsForCurrentPath(){if(state.path==='conjugation'&&state.moduleId==='dynamic_conjugator')return generateConjugatorPractice();const mods=modulesForPath(state.path).filter(m=>state.moduleId==='all'||m.id===state.moduleId);return mods.flatMap(m=>m.items)}
 function resetSession(){state.index=0;state.started=false;state.checked=false;state.selectedChoice='';state.sessionComplete=false;state.poolKey='';state.poolItems=[]}
 
@@ -187,7 +187,7 @@ function generateConjugatorPractice(){
         const ans=`${pr} ${forms[i]}`;
         out.push({
           id:`dyn_${verb}_${key}_${i}`.replace(/\s+/g,'_'),
-          moduleId:'dynamic_conjugator',moduleTitle:'Konjugator · dynamische Übung',
+          moduleId:'dynamic_conjugator',moduleTitle:'Verbtraining',
           category:'conjugation',exerciseType:'verb_conjugation',
           prompt:`Konjugiere: ${pr} / ${verb} / ${tense}`,
           answer:ans,example:ans+'.',
@@ -453,9 +453,23 @@ function renderVerbList(){
   if(!state.conjugator)return;
   const q=norm($('verbSearch')?.value||'');
   const starter=['sein','haben','werden','können','müssen','dürfen','sollen','wollen','mögen','arbeiten','antworten','beantworten','bekommen','bedeuten','berichten','vergleichen','machen','gehen','kommen','fahren','schreiben','sprechen','nehmen','geben','finden'];
-  const all=Object.keys(state.conjugator.verbs);
-  const verbs=q?all.filter(v=>norm(v).includes(q)).slice(0,160):starter.filter(v=>state.conjugator.verbs[v]);
-  $('verbList').innerHTML=verbs.map(v=>`<button class="verb-btn ${v===state.verb?'active':''}" data-verb="${esc(v)}"><strong>${esc(v)}</strong><br><small>${esc(state.conjugator.verbs[v].meaning||'')}</small></button>`).join('');
+  const all=Object.keys(state.conjugator.verbs).sort((a,b)=>a.localeCompare(b,'de'));
+  let verbs;
+  let meta='';
+  if(q){
+    verbs=all.filter(v=>norm(v).includes(q));
+    meta=`${verbs.length} Treffer · ${all.length} Verben verfügbar`;
+  }else if(state.showAllVerbs){
+    verbs=all;
+    meta=`Alle ${all.length} Verben`;
+  }else{
+    verbs=starter.filter(v=>state.conjugator.verbs[v]);
+    meta=`Starterliste · ${verbs.length} angezeigt · ${all.length} verfügbar`;
+  }
+  const toggle=!q?`<button class="link-button" id="toggleVerbList">${state.showAllVerbs?'Starter anzeigen':'Alle anzeigen'}</button>`:'';
+  $('verbList').innerHTML=`<div class="verb-list-meta"><span>${esc(meta)}</span>${toggle}</div>`+verbs.map(v=>`<button class="verb-btn ${v===state.verb?'active':''}" data-verb="${esc(v)}"><strong>${esc(v)}</strong><br><small>${esc(state.conjugator.verbs[v].meaning||'')}</small></button>`).join('');
+  const toggleBtn=$('toggleVerbList');
+  if(toggleBtn)toggleBtn.onclick=()=>{state.showAllVerbs=!state.showAllVerbs;renderVerbList()};
   document.querySelectorAll('.verb-btn').forEach(b=>b.onclick=()=>{state.verb=b.dataset.verb;state.tense='Präsens';renderVerbList();renderVerbDetail()});
 }
 function renderVerbDetail(){
@@ -467,7 +481,7 @@ function renderVerbDetail(){
   const forms=v[keys[state.tense]]||[];
   const pronouns=state.tense==='Imperativ'?['du','ihr','Sie']:state.conjugator.pronouns;
   $('tenseTable').innerHTML=forms.map((f,i)=>`<div class="tense-row"><strong>${esc(pronouns[i]||'')}</strong><span>${esc(f)}</span></div>`).join('');
-  $('verbPractice').innerHTML=`<strong>${Object.keys(state.conjugator.verbs).length}+ Verben.</strong> Klicke "Jetzt üben" für gezielte Übungen mit <b>${esc(state.verb)}</b> im ${esc(state.tense)}.`;
+  $('verbPractice').innerHTML=`Übe <b>${esc(state.verb)}</b> im ${esc(state.tense)}.`;
 }
 function launchVerbPractice(){
   route('learn');selectPath('conjugation');

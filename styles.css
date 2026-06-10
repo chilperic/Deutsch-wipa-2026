@@ -147,7 +147,7 @@ button:disabled { opacity: .5; cursor: not-allowed; }
   backdrop-filter: blur(16px);
   box-shadow: var(--shadow-soft);
 }
-.sidebar-head h2 { margin: 4px 0 14px; font-size: 1.25rem; letter-spacing: -.03em; }
+.sidebar-head h3 { margin: 4px 0 14px; font-size: 1.25rem; letter-spacing: -.03em; }
 .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .11em; font-size: .72rem; font-weight: 800; }
 .path-nav { display: grid; gap: 10px; }
 .path-btn {
@@ -465,3 +465,8 @@ button:disabled { opacity: .5; cursor: not-allowed; }
   .hero-card.collapsed { padding: 8px 14px; }
   .card-progress { margin: 0 6px; }
 }
+
+/* v7: compact verb-browser metadata */
+.verb-list-meta { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:8px 4px 12px; color:var(--muted); font-size:.84rem; font-weight:800; }
+.link-button { border:0; background:transparent; color:var(--primary); font-weight:900; padding:6px 8px; border-radius:999px; }
+.link-button:hover { background:rgba(35,92,102,.10); }

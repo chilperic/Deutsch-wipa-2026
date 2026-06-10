@@ -5,7 +5,7 @@
       "id": "data_conjugator_verbs",
       "path": "data/conjugator_verbs.json",
       "category": "konjugator",
-      "title": "Konjugator · 1000+ Verben (korrigierte Datenbasis)",
+      "title": "Konjugator · geprüfte Verbtabellen",
       "count": 1077
     },
     {
@@ -14,7 +14,7 @@
       "category": "conjugation",
       "title": "Konjugation · geprüfte Starter-Drills",
       "count": 1152,
-      "description": "Small starter drills; full verb sessions are generated dynamically."
+      "description": "Starter-Drills; größere Verb-Sitzungen werden bei Bedarf erzeugt."
     },
     {
       "id": "grammatik_production_adverbien_intensiv",
@@ -397,5 +397,5 @@
       "count": 45
     }
   ],
-  "focus": "Grammar-first app with corrected 1000+ verb reference, fast startup, tense filters and dynamic capped practice sessions."
+  "focus": "Grammar-first app with corrected verb reference, fast startup, tense filters and capped practice sessions."
 }
