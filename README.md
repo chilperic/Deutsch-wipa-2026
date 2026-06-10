@@ -51,3 +51,15 @@ Checks:
 - JSON validity
 - `app.js` parse validity
 
+
+## Progress storage
+
+Deutsch-WiPA is a static PWA. User progress is saved locally in the browser with `localStorage`:
+
+- `dw_modern_profile` for the learner name
+- `dw_modern_stats` and `dw_modern_module_stats` for progress
+- `dw_modern_mistakes` for the mistake bank
+- `dw_modern_srs` for spaced repetition
+- `dw_lang` and `dw_theme` for interface preferences
+
+There is no cloud sync. Use the in-app **Backup → Export / Import** controls to transfer progress between devices.

@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v7-clean-ui-audit';
+const APP_VERSION = '2026.06.10-v8-profile-mobile-audit';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -10,6 +10,7 @@ const state = {
   index: 0, started: false, checked: false, selectedChoice: '', mode: 'practice',
   stats: load('dw_modern_stats', {}), moduleStats: load('dw_modern_module_stats', {}),
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
+  profile: load('dw_modern_profile', {name:''}),
   lang: localStorage.dw_lang || 'de', theme: localStorage.dw_theme || 'light',
   conjugator: null, verb: null, tense: 'Präsens',
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
@@ -33,8 +34,8 @@ const PATHS = [
 ];
 
 const T = {
- de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen'},
- en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table'},
+ de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import'},
+ en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import'},
  fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau'},
  es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla'},
  ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول'},
@@ -68,6 +69,7 @@ function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option
 function bind(){
   $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
   $('themeButton').onclick=()=>{state.theme=state.theme==='dark'?'light':'dark';localStorage.dw_theme=state.theme;document.documentElement.dataset.theme=state.theme};
+  bindProfileControls();
   document.querySelectorAll('.top-tab').forEach(b=>b.onclick=()=>route(b.dataset.route));
   $('mobileMenu').onclick=()=>toggleDrawer(true);$('backdrop').onclick=()=>toggleDrawer(false);
   $('primaryAction').onclick=primary;$('secondaryAction').onclick=next;$('prevButton').onclick=prev;
@@ -76,7 +78,10 @@ function bind(){
   $('modePractice').onclick=()=>setMode('practice');$('modeLearn').onclick=()=>setMode('learn');$('modeReview').onclick=()=>setMode('review');
   $('clearMistakes').onclick=()=>{state.mistakes=[];save('dw_modern_mistakes',state.mistakes);renderMistakes();renderStats()};
   let vsTimer=null;$('verbSearch').oninput=()=>{clearTimeout(vsTimer);vsTimer=setTimeout(renderVerbList,120)};
-  $('moduleSelect').onchange=e=>{state.moduleId=e.target.value;state.dynamicVerb='';resetSession();renderExercise()};
+  $('moduleSelect').onchange=e=>{state.moduleId=e.target.value;state.dynamicVerb='';resetSession();syncMobileControls();renderExercise()};
+  if($('mobilePathSelect'))$('mobilePathSelect').onchange=e=>selectPath(e.target.value);
+  if($('mobileModuleSelect'))$('mobileModuleSelect').onchange=e=>{state.moduleId=e.target.value;state.dynamicVerb='';resetSession();renderModuleSelect();renderExercise()};
+  if($('mobileOpenSidebar'))$('mobileOpenSidebar').onclick=()=>toggleDrawer(true);
   $('tenseFilter').onchange=e=>{state.tenseFilter=e.target.value;state._conjGenKey='';resetSession();renderExercise()};
   $('sessionLimit').onchange=e=>{state.sessionLimit=e.target.value==='all'?'all':Number(e.target.value);resetSession();renderExercise()};
   $('verbPracticeButton').onclick=launchVerbPractice;
@@ -95,6 +100,58 @@ function bind(){
     if(e.key==='ArrowLeft')prev();
     if(e.key==='Escape')skipItem();
   });
+}
+
+function bindProfileControls(){
+  const name=$('profileName');
+  if(name){
+    name.value=state.profile?.name||'';
+    name.oninput=()=>{
+      state.profile={...state.profile,name:name.value.trim()};
+      save('dw_modern_profile',state.profile);
+      const status=$('profileSaveStatus');
+      if(status)status.textContent=name.value.trim()?`${tr('profileSaved')}: ${name.value.trim()}`:tr('progressLocal');
+    };
+  }
+  const status=$('profileSaveStatus');
+  if(status)status.textContent=(state.profile?.name)?`${tr('profileSaved')}: ${state.profile.name}`:tr('progressLocal');
+  const exportBtn=$('exportProgress');
+  if(exportBtn)exportBtn.onclick=exportProgress;
+  const importInput=$('importProgress');
+  if(importInput)importInput.onchange=importProgress;
+}
+function exportProgress(){
+  const payload={
+    app:'Deutsch-WiPA 2026',version:APP_VERSION,exportedAt:new Date().toISOString(),
+    profile:state.profile,lang:state.lang,theme:state.theme,
+    stats:state.stats,moduleStats:state.moduleStats,mistakes:state.mistakes,srs:state.srs
+  };
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  const safeName=(state.profile?.name||'user').replace(/[^a-z0-9_-]+/gi,'_');
+  a.href=URL.createObjectURL(blob);a.download=`deutsch-wipa-progress-${safeName}.json`;a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function importProgress(e){
+  const file=e.target.files&&e.target.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const data=JSON.parse(reader.result);
+      state.profile=data.profile||state.profile||{name:''};
+      state.stats=data.stats||{};state.moduleStats=data.moduleStats||{};state.mistakes=data.mistakes||[];state.srs=data.srs||{};
+      if(data.lang)state.lang=data.lang;if(data.theme)state.theme=data.theme;
+      save('dw_modern_profile',state.profile);save('dw_modern_stats',state.stats);save('dw_modern_module_stats',state.moduleStats);save('dw_modern_mistakes',state.mistakes);save(SRS_KEY,state.srs);
+      localStorage.dw_lang=state.lang;localStorage.dw_theme=state.theme;
+      document.documentElement.dataset.theme=state.theme;updateDirection();renderLangs();bindProfileControls();renderAll();
+    }catch(err){alert('Import fehlgeschlagen: ungültige JSON-Datei.');}
+    e.target.value='';
+  };
+  reader.readAsText(file);
+}
+function syncMobileControls(){
+  const path=$('mobilePathSelect');if(path)path.value=state.path;
+  const mod=$('mobileModuleSelect');if(mod)mod.value=state.moduleId;
 }
 function toggleDrawer(open){$('sidebar').classList.toggle('open',open);$('backdrop').classList.toggle('hidden',!open);document.querySelector('.main').toggleAttribute('inert',open)}
 
@@ -145,7 +202,12 @@ function inferType(prompt,d,meta){const p=String(prompt||'');const hay=`${p} ${m
 function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const trans=translationOf(d);if(trans)pieces.push(`Bedeutung: ${trans}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
 function makeChoices(answer,type,context={}){const ans=String(answer||'').trim();if(!ans)return[];if(type==='article_trainer')return shuffle(['der','die','das']);if(type==='connector_selection'||/konnektor|connector/i.test(String(context.tags||context.category||'')+' '+String(context.prompt||''))){const pool=['und','aber','oder','sondern','weil','obwohl','trotzdem','deshalb','damit','bevor'];return[...new Set([ans,...pool.filter(x=>x!==ans)])].slice(0,4)}if(type==='multiple_choice'){const valid=context.choices||context.options;return valid&&valid.length?valid:[]}return[]}
 
-function renderPath(){$('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(p.title)}</span><span class="path-sub">${esc(p.sub)}</span></span><span class="path-count">${count}</span></button>`}).join('');document.querySelectorAll('.path-btn').forEach(b=>b.onclick=()=>{selectPath(b.dataset.path);toggleDrawer(false)})}
+function renderPath(){
+  const pathOptions=PATHS.map(p=>`<option value="${p.id}">${esc(p.title)}</option>`).join('');
+  if($('mobilePathSelect')){$('mobilePathSelect').innerHTML=pathOptions;$('mobilePathSelect').value=state.path;}
+  $('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(p.title)}</span><span class="path-sub">${esc(p.sub)}</span></span><span class="path-count">${count}</span></button>`}).join('');
+  document.querySelectorAll('.path-btn').forEach(b=>b.onclick=()=>{selectPath(b.dataset.path);toggleDrawer(false)})
+}
 function modulesForPath(id){const p=PATHS.find(x=>x.id===id);if(!p)return[];return state.modules.filter(m=>{const hay=`${m.id} ${m.title} ${m.path}`.toLowerCase();return(p.cats&&p.cats.includes(m.category))||(p.match&&p.match.some(s=>hay.includes(s)))})}
 function selectPath(id){
   state.path=id;
@@ -159,7 +221,14 @@ function selectPath(id){
   $('conjugationControls').classList.toggle('hidden',!isConj);
   renderModuleSelect();renderAll();
 }
-function renderModuleSelect(){const mods=modulesForPath(state.path);let html=`<option value="all">${tr('allModules')}</option>`;if(state.path==='conjugation')html=`<option value="dynamic_conjugator">Verbtraining</option>`+html;html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');$('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId}
+function renderModuleSelect(){
+  const mods=modulesForPath(state.path);
+  let html=`<option value="all">${tr('allModules')}</option>`;
+  if(state.path==='conjugation')html=`<option value="dynamic_conjugator">Verbtraining</option>`+html;
+  html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');
+  $('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId;
+  if($('mobileModuleSelect')){$('mobileModuleSelect').innerHTML=html;$('mobileModuleSelect').value=state.moduleId;}
+}
 function itemsForCurrentPath(){if(state.path==='conjugation'&&state.moduleId==='dynamic_conjugator')return generateConjugatorPractice();const mods=modulesForPath(state.path).filter(m=>state.moduleId==='all'||m.id===state.moduleId);return mods.flatMap(m=>m.items)}
 function resetSession(){state.index=0;state.started=false;state.checked=false;state.selectedChoice='';state.sessionComplete=false;state.poolKey='';state.poolItems=[]}
 
@@ -228,7 +297,7 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();bindProfileControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
 function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
 function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
 

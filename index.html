@@ -40,6 +40,21 @@
         <div class="eyebrow">Lernpfad</div>
         <h3>Was willst du trainieren?</h3>
       </div>
+
+      <div class="profile-card" aria-label="Profil und lokaler Fortschritt">
+        <label for="profileName" class="eyebrow">Profil</label>
+        <input id="profileName" class="input profile-input" type="text" autocomplete="name" placeholder="Dein Name">
+        <div id="profileSaveStatus" class="profile-status">Fortschritt wird lokal gespeichert.</div>
+        <details class="backup-details">
+          <summary>Backup</summary>
+          <div class="backup-actions">
+            <button id="exportProgress" class="ghost small wide" type="button">Export</button>
+            <label class="ghost small wide file-label" for="importProgress">Import</label>
+            <input id="importProgress" type="file" accept="application/json" hidden>
+          </div>
+        </details>
+      </div>
+
       <div id="pathNav" class="path-nav"></div>
 
       <div class="module-filter-card">
@@ -86,6 +101,18 @@
 
     <main class="main" id="main" role="main">
       <section id="learnView" class="view active-view">
+        <section class="mobile-control-panel" aria-label="Schnelle Navigation">
+          <label>
+            <span>Thema</span>
+            <select id="mobilePathSelect" class="select"></select>
+          </label>
+          <label>
+            <span>Modul</span>
+            <select id="mobileModuleSelect" class="select"></select>
+          </label>
+          <button id="mobileOpenSidebar" class="ghost" type="button">Optionen</button>
+        </section>
+
         <!-- Hero collapses once session starts via JS class toggle -->
         <section class="hero-card" id="heroCard">
           <div>
