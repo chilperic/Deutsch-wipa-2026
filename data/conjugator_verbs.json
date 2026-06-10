@@ -1424,6 +1424,921 @@
         "werdet erledigen",
         "werden erledigen"
       ]
+    },
+    "beauftragen": {
+      "meaning": "to commission / assign",
+      "aux": "haben",
+      "part": "beauftragt",
+      "zu": "zu beauftragen",
+      "type": "workplace verb",
+      "present": [
+        "beauftrage",
+        "beauftragst",
+        "beauftragt",
+        "beauftragen",
+        "beauftragt",
+        "beauftragen"
+      ],
+      "preterite": [
+        "beauftragte",
+        "beauftragtest",
+        "beauftragte",
+        "beauftragten",
+        "beauftragtet",
+        "beauftragten"
+      ],
+      "konj2": [
+        "würde beauftragen",
+        "würdest beauftragen",
+        "würde beauftragen",
+        "würden beauftragen",
+        "würdet beauftragen",
+        "würden beauftragen"
+      ],
+      "imperative": [
+        "beauftrag",
+        "beauftragt",
+        "beauftragen Sie"
+      ],
+      "example": "Wir beauftragen einen externen Dienstleister.",
+      "perfect": [
+        "habe beauftragt",
+        "hast beauftragt",
+        "hat beauftragt",
+        "haben beauftragt",
+        "habt beauftragt",
+        "haben beauftragt"
+      ],
+      "plusquam": [
+        "hatte beauftragt",
+        "hattest beauftragt",
+        "hatte beauftragt",
+        "hatten beauftragt",
+        "hattet beauftragt",
+        "hatten beauftragt"
+      ],
+      "futur1": [
+        "werde beauftragen",
+        "wirst beauftragen",
+        "wird beauftragen",
+        "werden beauftragen",
+        "werdet beauftragen",
+        "werden beauftragen"
+      ]
+    },
+    "vereinbaren": {
+      "meaning": "to arrange / agree on",
+      "aux": "haben",
+      "part": "vereinbart",
+      "zu": "zu vereinbaren",
+      "type": "workplace verb",
+      "present": [
+        "vereinbare",
+        "vereinbarst",
+        "vereinbart",
+        "vereinbaren",
+        "vereinbart",
+        "vereinbaren"
+      ],
+      "preterite": [
+        "vereinbarte",
+        "vereinbartest",
+        "vereinbarte",
+        "vereinbarten",
+        "vereinbartet",
+        "vereinbarten"
+      ],
+      "konj2": [
+        "würde vereinbaren",
+        "würdest vereinbaren",
+        "würde vereinbaren",
+        "würden vereinbaren",
+        "würdet vereinbaren",
+        "würden vereinbaren"
+      ],
+      "imperative": [
+        "vereinbar",
+        "vereinbart",
+        "vereinbaren Sie"
+      ],
+      "example": "Wir vereinbaren einen neuen Termin.",
+      "perfect": [
+        "habe vereinbart",
+        "hast vereinbart",
+        "hat vereinbart",
+        "haben vereinbart",
+        "habt vereinbart",
+        "haben vereinbart"
+      ],
+      "plusquam": [
+        "hatte vereinbart",
+        "hattest vereinbart",
+        "hatte vereinbart",
+        "hatten vereinbart",
+        "hattet vereinbart",
+        "hatten vereinbart"
+      ],
+      "futur1": [
+        "werde vereinbaren",
+        "wirst vereinbaren",
+        "wird vereinbaren",
+        "werden vereinbaren",
+        "werdet vereinbaren",
+        "werden vereinbaren"
+      ]
+    },
+    "veranlassen": {
+      "meaning": "to arrange / initiate",
+      "aux": "haben",
+      "part": "veranlasst",
+      "zu": "zu veranlassen",
+      "type": "workplace verb",
+      "present": [
+        "veranlasse",
+        "veranlassst",
+        "veranlasst",
+        "veranlassen",
+        "veranlasst",
+        "veranlassen"
+      ],
+      "preterite": [
+        "veranlasste",
+        "veranlasstest",
+        "veranlasste",
+        "veranlassten",
+        "veranlasstet",
+        "veranlassten"
+      ],
+      "konj2": [
+        "würde veranlassen",
+        "würdest veranlassen",
+        "würde veranlassen",
+        "würden veranlassen",
+        "würdet veranlassen",
+        "würden veranlassen"
+      ],
+      "imperative": [
+        "veranlass",
+        "veranlasst",
+        "veranlassen Sie"
+      ],
+      "example": "Die Leitung veranlasst eine Prüfung.",
+      "perfect": [
+        "habe veranlasst",
+        "hast veranlasst",
+        "hat veranlasst",
+        "haben veranlasst",
+        "habt veranlasst",
+        "haben veranlasst"
+      ],
+      "plusquam": [
+        "hatte veranlasst",
+        "hattest veranlasst",
+        "hatte veranlasst",
+        "hatten veranlasst",
+        "hattet veranlasst",
+        "hatten veranlasst"
+      ],
+      "futur1": [
+        "werde veranlassen",
+        "wirst veranlassen",
+        "wird veranlassen",
+        "werden veranlassen",
+        "werdet veranlassen",
+        "werden veranlassen"
+      ]
+    },
+    "beantragen": {
+      "meaning": "to apply for / request formally",
+      "aux": "haben",
+      "part": "beantragt",
+      "zu": "zu beantragen",
+      "type": "workplace verb",
+      "present": [
+        "beantrage",
+        "beantragst",
+        "beantragt",
+        "beantragen",
+        "beantragt",
+        "beantragen"
+      ],
+      "preterite": [
+        "beantragte",
+        "beantragtest",
+        "beantragte",
+        "beantragten",
+        "beantragtet",
+        "beantragten"
+      ],
+      "konj2": [
+        "würde beantragen",
+        "würdest beantragen",
+        "würde beantragen",
+        "würden beantragen",
+        "würdet beantragen",
+        "würden beantragen"
+      ],
+      "imperative": [
+        "beantrag",
+        "beantragt",
+        "beantragen Sie"
+      ],
+      "example": "Ich beantrage eine Verlängerung.",
+      "perfect": [
+        "habe beantragt",
+        "hast beantragt",
+        "hat beantragt",
+        "haben beantragt",
+        "habt beantragt",
+        "haben beantragt"
+      ],
+      "plusquam": [
+        "hatte beantragt",
+        "hattest beantragt",
+        "hatte beantragt",
+        "hatten beantragt",
+        "hattet beantragt",
+        "hatten beantragt"
+      ],
+      "futur1": [
+        "werde beantragen",
+        "wirst beantragen",
+        "wird beantragen",
+        "werden beantragen",
+        "werdet beantragen",
+        "werden beantragen"
+      ]
+    },
+    "genehmigen": {
+      "meaning": "to approve / authorize",
+      "aux": "haben",
+      "part": "genehmigt",
+      "zu": "zu genehmigen",
+      "type": "workplace verb",
+      "present": [
+        "genehmige",
+        "genehmigst",
+        "genehmigt",
+        "genehmigen",
+        "genehmigt",
+        "genehmigen"
+      ],
+      "preterite": [
+        "genehmigte",
+        "genehmigtest",
+        "genehmigte",
+        "genehmigten",
+        "genehmigtet",
+        "genehmigten"
+      ],
+      "konj2": [
+        "würde genehmigen",
+        "würdest genehmigen",
+        "würde genehmigen",
+        "würden genehmigen",
+        "würdet genehmigen",
+        "würden genehmigen"
+      ],
+      "imperative": [
+        "genehmig",
+        "genehmigt",
+        "genehmigen Sie"
+      ],
+      "example": "Die Behörde genehmigt den Antrag.",
+      "perfect": [
+        "habe genehmigt",
+        "hast genehmigt",
+        "hat genehmigt",
+        "haben genehmigt",
+        "habt genehmigt",
+        "haben genehmigt"
+      ],
+      "plusquam": [
+        "hatte genehmigt",
+        "hattest genehmigt",
+        "hatte genehmigt",
+        "hatten genehmigt",
+        "hattet genehmigt",
+        "hatten genehmigt"
+      ],
+      "futur1": [
+        "werde genehmigen",
+        "wirst genehmigen",
+        "wird genehmigen",
+        "werden genehmigen",
+        "werdet genehmigen",
+        "werden genehmigen"
+      ]
+    },
+    "kündigen": {
+      "meaning": "to terminate / give notice",
+      "aux": "haben",
+      "part": "gekündigt",
+      "zu": "zu kündigen",
+      "type": "workplace verb",
+      "present": [
+        "kündige",
+        "kündigst",
+        "kündigt",
+        "kündigen",
+        "kündigt",
+        "kündigen"
+      ],
+      "preterite": [
+        "kündigte",
+        "kündigtest",
+        "kündigte",
+        "kündigten",
+        "kündigtet",
+        "kündigten"
+      ],
+      "konj2": [
+        "würde kündigen",
+        "würdest kündigen",
+        "würde kündigen",
+        "würden kündigen",
+        "würdet kündigen",
+        "würden kündigen"
+      ],
+      "imperative": [
+        "kündig",
+        "kündigt",
+        "kündigen Sie"
+      ],
+      "example": "Der Mitarbeiter kündigt den Vertrag.",
+      "perfect": [
+        "habe gekündigt",
+        "hast gekündigt",
+        "hat gekündigt",
+        "haben gekündigt",
+        "habt gekündigt",
+        "haben gekündigt"
+      ],
+      "plusquam": [
+        "hatte gekündigt",
+        "hattest gekündigt",
+        "hatte gekündigt",
+        "hatten gekündigt",
+        "hattet gekündigt",
+        "hatten gekündigt"
+      ],
+      "futur1": [
+        "werde kündigen",
+        "wirst kündigen",
+        "wird kündigen",
+        "werden kündigen",
+        "werdet kündigen",
+        "werden kündigen"
+      ]
+    },
+    "bestätigen": {
+      "meaning": "to confirm",
+      "aux": "haben",
+      "part": "bestätigt",
+      "zu": "zu bestätigen",
+      "type": "workplace verb",
+      "present": [
+        "bestätige",
+        "bestätigst",
+        "bestätigt",
+        "bestätigen",
+        "bestätigt",
+        "bestätigen"
+      ],
+      "preterite": [
+        "bestätigte",
+        "bestätigtest",
+        "bestätigte",
+        "bestätigten",
+        "bestätigtet",
+        "bestätigten"
+      ],
+      "konj2": [
+        "würde bestätigen",
+        "würdest bestätigen",
+        "würde bestätigen",
+        "würden bestätigen",
+        "würdet bestätigen",
+        "würden bestätigen"
+      ],
+      "imperative": [
+        "beätigst",
+        "bestätigt",
+        "bestätigen Sie"
+      ],
+      "example": "Bitte bestätigen Sie den Termin.",
+      "perfect": [
+        "habe bestätigt",
+        "hast bestätigt",
+        "hat bestätigt",
+        "haben bestätigt",
+        "habt bestätigt",
+        "haben bestätigt"
+      ],
+      "plusquam": [
+        "hatte bestätigt",
+        "hattest bestätigt",
+        "hatte bestätigt",
+        "hatten bestätigt",
+        "hattet bestätigt",
+        "hatten bestätigt"
+      ],
+      "futur1": [
+        "werde bestätigen",
+        "wirst bestätigen",
+        "wird bestätigen",
+        "werden bestätigen",
+        "werdet bestätigen",
+        "werden bestätigen"
+      ]
+    },
+    "verschieben": {
+      "meaning": "to postpone / reschedule",
+      "aux": "haben",
+      "part": "verschoben",
+      "zu": "zu verschieben",
+      "type": "workplace verb",
+      "present": [
+        "verschiebe",
+        "verschiebst",
+        "verschiebt",
+        "verschieben",
+        "verschiebt",
+        "verschieben"
+      ],
+      "preterite": [
+        "verschiebte",
+        "verschiebtest",
+        "verschiebte",
+        "verschiebten",
+        "verschiebtet",
+        "verschiebten"
+      ],
+      "konj2": [
+        "würde verschieben",
+        "würdest verschieben",
+        "würde verschieben",
+        "würden verschieben",
+        "würdet verschieben",
+        "würden verschieben"
+      ],
+      "imperative": [
+        "verschieb",
+        "verschiebt",
+        "verschieben Sie"
+      ],
+      "example": "Wir verschieben die Besprechung auf Montag.",
+      "perfect": [
+        "habe verschoben",
+        "hast verschoben",
+        "hat verschoben",
+        "haben verschoben",
+        "habt verschoben",
+        "haben verschoben"
+      ],
+      "plusquam": [
+        "hatte verschoben",
+        "hattest verschoben",
+        "hatte verschoben",
+        "hatten verschoben",
+        "hattet verschoben",
+        "hatten verschoben"
+      ],
+      "futur1": [
+        "werde verschieben",
+        "wirst verschieben",
+        "wird verschieben",
+        "werden verschieben",
+        "werdet verschieben",
+        "werden verschieben"
+      ]
+    },
+    "vorbereiten": {
+      "meaning": "to prepare",
+      "aux": "haben",
+      "part": "vorbereitet",
+      "zu": "vorzubereiten",
+      "type": "workplace verb",
+      "present": [
+        "bereite vor",
+        "bereitst vor",
+        "bereitt vor",
+        "bereiten",
+        "bereitt vor",
+        "bereiten"
+      ],
+      "preterite": [
+        "bereitte vor",
+        "bereittest vor",
+        "bereitte vor",
+        "bereitten vor",
+        "bereittet vor",
+        "bereitten vor"
+      ],
+      "konj2": [
+        "würde vorbereiten",
+        "würdest vorbereiten",
+        "würde vorbereiten",
+        "würden vorbereiten",
+        "würdet vorbereiten",
+        "würden vorbereiten"
+      ],
+      "imperative": [
+        "bereit vor",
+        "bereitt vor",
+        "vorbereiten Sie"
+      ],
+      "example": "Ich bereite die Unterlagen vor.",
+      "perfect": [
+        "habe vorbereitet",
+        "hast vorbereitet",
+        "hat vorbereitet",
+        "haben vorbereitet",
+        "habt vorbereitet",
+        "haben vorbereitet"
+      ],
+      "plusquam": [
+        "hatte vorbereitet",
+        "hattest vorbereitet",
+        "hatte vorbereitet",
+        "hatten vorbereitet",
+        "hattet vorbereitet",
+        "hatten vorbereitet"
+      ],
+      "futur1": [
+        "werde vorbereiten",
+        "wirst vorbereiten",
+        "wird vorbereiten",
+        "werden vorbereiten",
+        "werdet vorbereiten",
+        "werden vorbereiten"
+      ]
+    },
+    "einreichen": {
+      "meaning": "to submit",
+      "aux": "haben",
+      "part": "eingereicht",
+      "zu": "einzureichen",
+      "type": "workplace verb",
+      "present": [
+        "reiche ein",
+        "reichst ein",
+        "reicht ein",
+        "reichen",
+        "reicht ein",
+        "reichen"
+      ],
+      "preterite": [
+        "reichte ein",
+        "reichtest ein",
+        "reichte ein",
+        "reichten ein",
+        "reichtet ein",
+        "reichten ein"
+      ],
+      "konj2": [
+        "würde einreichen",
+        "würdest einreichen",
+        "würde einreichen",
+        "würden einreichen",
+        "würdet einreichen",
+        "würden einreichen"
+      ],
+      "imperative": [
+        "reich ein",
+        "reicht ein",
+        "einreichen Sie"
+      ],
+      "example": "Sie reicht die Unterlagen fristgerecht ein.",
+      "perfect": [
+        "habe eingereicht",
+        "hast eingereicht",
+        "hat eingereicht",
+        "haben eingereicht",
+        "habt eingereicht",
+        "haben eingereicht"
+      ],
+      "plusquam": [
+        "hatte eingereicht",
+        "hattest eingereicht",
+        "hatte eingereicht",
+        "hatten eingereicht",
+        "hattet eingereicht",
+        "hatten eingereicht"
+      ],
+      "futur1": [
+        "werde einreichen",
+        "wirst einreichen",
+        "wird einreichen",
+        "werden einreichen",
+        "werdet einreichen",
+        "werden einreichen"
+      ]
+    },
+    "sich erkundigen": {
+      "meaning": "to inquire",
+      "aux": "haben",
+      "part": "erkundigt",
+      "zu": "sich zu erkundigen",
+      "type": "workplace verb",
+      "present": [
+        "erkundige mich",
+        "erkundigst dich",
+        "erkundigt sich",
+        "erkundigen uns",
+        "erkundigt euch",
+        "erkundigen sich"
+      ],
+      "preterite": [
+        "erkundigte mich",
+        "erkundigtest dich",
+        "erkundigte sich",
+        "erkundigten uns",
+        "erkundigtet euch",
+        "erkundigten sich"
+      ],
+      "konj2": [
+        "würde mich erkundigen",
+        "würdest dich erkundigen",
+        "würde sich erkundigen",
+        "würden uns erkundigen",
+        "würdet euch erkundigen",
+        "würden sich erkundigen"
+      ],
+      "imperative": [
+        "erkundige dich",
+        "erkundigt euch",
+        "erkundigen Sie sich"
+      ],
+      "example": "Ich erkundige mich nach dem Bearbeitungsstand.",
+      "perfect": [
+        "habe mich erkundigt",
+        "hast dich erkundigt",
+        "hat sich erkundigt",
+        "haben uns erkundigt",
+        "habt euch erkundigt",
+        "haben sich erkundigt"
+      ],
+      "plusquam": [
+        "hatte mich erkundigt",
+        "hattest dich erkundigt",
+        "hatte sich erkundigt",
+        "hatten uns erkundigt",
+        "hattet euch erkundigt",
+        "hatten sich erkundigt"
+      ],
+      "futur1": [
+        "werde mich erkundigen",
+        "wirst dich erkundigen",
+        "wird sich erkundigen",
+        "werden uns erkundigen",
+        "werdet euch erkundigen",
+        "werden sich erkundigen"
+      ]
+    },
+    "durchführen": {
+      "meaning": "to carry out / conduct",
+      "aux": "haben",
+      "part": "durchgeführt",
+      "zu": "durchzuführen",
+      "type": "workplace verb",
+      "present": [
+        "führe durch",
+        "führst durch",
+        "führt durch",
+        "führen",
+        "führt durch",
+        "führen"
+      ],
+      "preterite": [
+        "führte durch",
+        "führtest durch",
+        "führte durch",
+        "führten durch",
+        "führtet durch",
+        "führten durch"
+      ],
+      "konj2": [
+        "würde durchführen",
+        "würdest durchführen",
+        "würde durchführen",
+        "würden durchführen",
+        "würdet durchführen",
+        "würden durchführen"
+      ],
+      "imperative": [
+        "führ durch",
+        "führt durch",
+        "durchführen Sie"
+      ],
+      "example": "Wir führen die Analyse intern durch.",
+      "perfect": [
+        "habe durchgeführt",
+        "hast durchgeführt",
+        "hat durchgeführt",
+        "haben durchgeführt",
+        "habt durchgeführt",
+        "haben durchgeführt"
+      ],
+      "plusquam": [
+        "hatte durchgeführt",
+        "hattest durchgeführt",
+        "hatte durchgeführt",
+        "hatten durchgeführt",
+        "hattet durchgeführt",
+        "hatten durchgeführt"
+      ],
+      "futur1": [
+        "werde durchführen",
+        "wirst durchführen",
+        "wird durchführen",
+        "werden durchführen",
+        "werdet durchführen",
+        "werden durchführen"
+      ]
+    },
+    "entscheiden": {
+      "meaning": "to decide",
+      "aux": "haben",
+      "part": "entschieden",
+      "zu": "zu entscheiden",
+      "type": "strong workplace verb",
+      "present": [
+        "entscheide",
+        "entscheidest",
+        "entscheidet",
+        "entscheiden",
+        "entscheidet",
+        "entscheiden"
+      ],
+      "preterite": [
+        "entschied",
+        "entschiedest",
+        "entschied",
+        "entschieden",
+        "entschiedet",
+        "entschieden"
+      ],
+      "konj2": [
+        "würde entscheiden",
+        "würdest entscheiden",
+        "würde entscheiden",
+        "würden entscheiden",
+        "würdet entscheiden",
+        "würden entscheiden"
+      ],
+      "imperative": [
+        "entscheide",
+        "entscheidet",
+        "entscheiden Sie"
+      ],
+      "example": "Wir entscheiden nächste Woche über den Antrag.",
+      "perfect": [
+        "habe entschieden",
+        "hast entschieden",
+        "hat entschieden",
+        "haben entschieden",
+        "habt entschieden",
+        "haben entschieden"
+      ],
+      "plusquam": [
+        "hatte entschieden",
+        "hattest entschieden",
+        "hatte entschieden",
+        "hatten entschieden",
+        "hattet entschieden",
+        "hatten entschieden"
+      ],
+      "futur1": [
+        "werde entscheiden",
+        "wirst entscheiden",
+        "wird entscheiden",
+        "werden entscheiden",
+        "werdet entscheiden",
+        "werden entscheiden"
+      ]
+    },
+    "anbieten": {
+      "meaning": "to offer",
+      "aux": "haben",
+      "part": "angeboten",
+      "zu": "anzubieten",
+      "type": "separable strong verb",
+      "present": [
+        "biete an",
+        "bietest an",
+        "bietet an",
+        "bieten an",
+        "bietet an",
+        "bieten an"
+      ],
+      "preterite": [
+        "bot an",
+        "botest an",
+        "bot an",
+        "boten an",
+        "botet an",
+        "boten an"
+      ],
+      "konj2": [
+        "würde anbieten",
+        "würdest anbieten",
+        "würde anbieten",
+        "würden anbieten",
+        "würdet anbieten",
+        "würden anbieten"
+      ],
+      "imperative": [
+        "biete an",
+        "bietet an",
+        "bieten Sie an"
+      ],
+      "example": "Wir bieten dem Kunden eine Lösung an.",
+      "perfect": [
+        "habe angeboten",
+        "hast angeboten",
+        "hat angeboten",
+        "haben angeboten",
+        "habt angeboten",
+        "haben angeboten"
+      ],
+      "plusquam": [
+        "hatte angeboten",
+        "hattest angeboten",
+        "hatte angeboten",
+        "hatten angeboten",
+        "hattet angeboten",
+        "hatten angeboten"
+      ],
+      "futur1": [
+        "werde anbieten",
+        "wirst anbieten",
+        "wird anbieten",
+        "werden anbieten",
+        "werdet anbieten",
+        "werden anbieten"
+      ]
+    },
+    "auffordern": {
+      "meaning": "to ask/request someone to do something",
+      "aux": "haben",
+      "part": "aufgefordert",
+      "zu": "aufzufordern",
+      "type": "workplace verb",
+      "present": [
+        "fordere auf",
+        "forderst auf",
+        "fordert auf",
+        "fordern",
+        "fordert auf",
+        "fordern"
+      ],
+      "preterite": [
+        "forderte auf",
+        "fordertest auf",
+        "forderte auf",
+        "forderten auf",
+        "fordertet auf",
+        "forderten auf"
+      ],
+      "konj2": [
+        "würde auffordern",
+        "würdest auffordern",
+        "würde auffordern",
+        "würden auffordern",
+        "würdet auffordern",
+        "würden auffordern"
+      ],
+      "imperative": [
+        "forder auf",
+        "fordert auf",
+        "auffordern Sie"
+      ],
+      "example": "Wir fordern den Lieferanten zur Nachbesserung auf.",
+      "perfect": [
+        "habe aufgefordert",
+        "hast aufgefordert",
+        "hat aufgefordert",
+        "haben aufgefordert",
+        "habt aufgefordert",
+        "haben aufgefordert"
+      ],
+      "plusquam": [
+        "hatte aufgefordert",
+        "hattest aufgefordert",
+        "hatte aufgefordert",
+        "hatten aufgefordert",
+        "hattet aufgefordert",
+        "hatten aufgefordert"
+      ],
+      "futur1": [
+        "werde auffordern",
+        "wirst auffordern",
+        "wird auffordern",
+        "werden auffordern",
+        "werdet auffordern",
+        "werden auffordern"
+      ]
     }
   }
 }

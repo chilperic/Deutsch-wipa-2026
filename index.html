@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17223b">
+  <meta name="description" content="Deutsch-WiPA 2026 is a grammar-first B1/B2 German learning app with conjugation tables, workplace vocabulary, mistake review, and spaced repetition.">
   <title>Deutsch-WiPA 2026 · Grammatik & Konjugation</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
@@ -39,6 +40,10 @@
         <h2>Was willst du trainieren?</h2>
       </div>
       <div id="pathNav" class="path-nav"></div>
+      <div class="module-filter-card">
+        <label for="moduleSelect" class="eyebrow">Modul</label>
+        <select id="moduleSelect" class="select module-select" aria-label="Modul auswählen"></select>
+      </div>
       <div class="progress-card">
         <div class="progress-top"><span>Heute</span><strong id="todayScore">0%</strong></div>
         <div class="meter"><span id="meterBar"></span></div>
@@ -46,12 +51,12 @@
       </div>
     </aside>
 
-    <main class="main" id="main">
+    <main class="main" id="main" role="main">
       <section id="learnView" class="view active-view">
         <section class="hero-card">
           <div>
             <div class="eyebrow" id="currentPathLabel">Konjugation</div>
-            <h1 id="moduleTitle">Verbformen beherrschen</h1>
+            <h2 id="moduleTitle">Verbformen beherrschen</h2>
             <p id="moduleDescription">Wähle links ein Thema. Trainiere mit klaren Regeln, Variation und direkter Korrektur.</p>
           </div>
           <div class="hero-stats">
@@ -64,6 +69,7 @@
           <article class="exercise-card" aria-labelledby="questionTitle">
             <div class="card-head">
               <span class="pill" id="exercisePill">Übung</span>
+              <span class="pill muted-pill" id="itemIndex">—</span>
               <div class="soft-controls">
                 <button id="prevButton" class="ghost small" title="Vorherige Frage">←</button>
                 <button id="speakButton" class="ghost small" title="Vorlesen">🔊</button>
@@ -102,7 +108,7 @@
         <section class="hero-card conjugator-hero">
           <div>
             <div class="eyebrow">Konjugator</div>
-            <h1>Verbtabellen wie ein echtes Nachschlagewerk</h1>
+            <h2>Verbtabellen wie ein echtes Nachschlagewerk</h2>
             <p>Suche ein Verb, vergleiche Zeiten und starte direkt passende Übungen.</p>
           </div>
           <input id="verbSearch" class="search-input" placeholder="Verb suchen: sein, haben, müssen…">
@@ -114,6 +120,7 @@
             <div class="tense-tabs" id="tenseTabs"></div>
             <div id="tenseTable" class="tense-table"></div>
             <div id="verbPractice" class="verb-practice"></div>
+            <button id="verbPracticeButton" class="primary-action verb-practice-button">Jetzt üben</button>
           </article>
         </section>
       </section>
@@ -122,8 +129,8 @@
         <section class="hero-card">
           <div>
             <div class="eyebrow">Fehlerbank</div>
-            <h1>Wiederhole nur, was wirklich schwach ist</h1>
-            <p>Falsche Antworten werden hier gesammelt. Keine unnötigen Schreib-/Sprechmodule.</p>
+            <h2>Wiederhole nur, was wirklich schwach ist</h2>
+            <p>Falsche Antworten und fällige Wiederholungen werden hier gesammelt.</p>
           </div>
           <button id="clearMistakes" class="danger-soft">Fehlerbank leeren</button>
         </section>

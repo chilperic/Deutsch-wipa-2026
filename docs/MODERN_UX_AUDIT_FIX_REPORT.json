@@ -1,0 +1,36 @@
+{
+  "build": "deutsch-wipa-2026-modern-grammar-audit-applied",
+  "major_changes": [
+    "Applied learner-facing theme reorganization",
+    "Expanded PATHS matching so infinitiv, modal, temporal and passiv modules are reachable",
+    "Added module-level selector for targeted practice",
+    "Added stable practice-mode shuffle",
+    "Fixed speech button priority to read German example/prompt before answer",
+    "Escaped explanation rendering to prevent XSS while preserving safe <br> display",
+    "Fixed SRS review to include only seen items",
+    "Added review empty-state explanation",
+    "Added item index and session-complete state",
+    "Added direct conjugator practice launcher",
+    "Added B2 workplace verbs to conjugator",
+    "Added 540 new B2 workplace conjugation drills",
+    "Changed modal Perfekt gap-fill items to gap_fill type",
+    "Expanded and formatted CSS for maintainability",
+    "Added reduced-motion rule and fixed mobile overlap risks",
+    "Demoted hidden h1 headings and added role=main/meta description"
+  ],
+  "active_navigation": [
+    "Konjugation",
+    "Satzbau",
+    "Fälle",
+    "Präpositionen",
+    "Artikel & Nomen",
+    "Adjektive",
+    "Konnektoren",
+    "Wortschatz Beruf"
+  ],
+  "conjugator": {
+    "verbs": 40,
+    "tenses": ["Präsens", "Präteritum", "Perfekt", "Plusquamperfekt", "Futur I", "Konjunktiv II", "Imperativ"]
+  },
+  "known_deliberate_choice": "training_exercise_types_complete remains in the repository but is not exposed in active learning paths because the app is now grammar-first and not writing/reading/speaking focused."
+}
