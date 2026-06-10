@@ -1,4 +1,4 @@
-const CACHE = 'dwipa-v9-color-themes-20260610';
+const CACHE = 'dwipa-v10-theme-visible-20260610';
 const SHELL = ['./','./index.html','./styles.css','./app.js','./data-manifest.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./data/conjugator_verbs.json'];
 
 self.addEventListener('install', e => e.waitUntil(

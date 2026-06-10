@@ -699,3 +699,13 @@ button:disabled { opacity: .5; cursor: not-allowed; }
   .card-head { flex-wrap: wrap; }
   .card-progress { order: 3; flex-basis: 100%; margin: 4px 0 0; }
 }
+
+/* v10: visible theme controls */
+.theme-label { display:block; margin-top: 14px; }
+.theme-select-control { width: 100%; margin-top: 8px; min-height: 44px; }
+.top-actions { display:flex; align-items:center; gap:8px; }
+#themeSelect { min-width: 150px; }
+@media (max-width: 720px) {
+  .top-actions { display:none; }
+  .mobile-control-panel { grid-template-columns: 1fr; }
+}

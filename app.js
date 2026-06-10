@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v9-color-themes';
+const APP_VERSION = '2026.06.10-v10-theme-visible';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -82,12 +82,22 @@ async function init(){
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
-function renderThemes(){const el=$('themeSelect');if(!el)return;el.innerHTML=THEMES.map(([c,n])=>`<option value="${c}" ${c===state.theme?'selected':''}>${n}</option>`).join('')}
+function renderThemes(){
+  const options=THEMES.map(([c,n])=>`<option value="${c}" ${c===state.theme?'selected':''}>${n}</option>`).join('');
+  document.querySelectorAll('#themeSelect,.theme-select-control').forEach(el=>{ el.innerHTML=options; el.value=state.theme; });
+}
+function applyTheme(value){
+  state.theme=value||'parchment';
+  localStorage.dw_theme=state.theme;
+  document.documentElement.dataset.theme=state.theme;
+  updateThemeMeta();
+  renderThemes();
+}
 function updateThemeMeta(){const colors={parchment:'#f6efe3',forest:'#eaf4ea',ocean:'#e8f4fb',sunset:'#fff0e4',lavender:'#f2edff',rose:'#fff0f5',sand:'#fbf2dc',graphite:'#111827',midnight:'#07111f',highcontrast:'#ffffff'};document.querySelector('meta[name="theme-color"]')?.setAttribute('content',colors[state.theme]||colors.parchment)}
 
 function bind(){
   $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
-  const themeSelect=$('themeSelect');if(themeSelect)themeSelect.onchange=e=>{state.theme=e.target.value;localStorage.dw_theme=state.theme;document.documentElement.dataset.theme=state.theme;updateThemeMeta()};
+  document.querySelectorAll('#themeSelect,.theme-select-control').forEach(el=>{el.onchange=e=>applyTheme(e.target.value)});
   bindProfileControls();
   document.querySelectorAll('.top-tab').forEach(b=>b.onclick=()=>route(b.dataset.route));
   $('mobileMenu').onclick=()=>toggleDrawer(true);$('backdrop').onclick=()=>toggleDrawer(false);

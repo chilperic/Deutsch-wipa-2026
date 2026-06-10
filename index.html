@@ -45,6 +45,8 @@
         <label for="profileName" class="eyebrow">Profil</label>
         <input id="profileName" class="input profile-input" type="text" autocomplete="name" placeholder="Dein Name">
         <div id="profileSaveStatus" class="profile-status">Fortschritt wird lokal gespeichert.</div>
+        <label for="sidebarThemeSelect" class="eyebrow theme-label">Farbe</label>
+        <select id="sidebarThemeSelect" class="select theme-select-control" aria-label="Farbthema auswählen"></select>
         <details class="backup-details">
           <summary>Backup</summary>
           <div class="backup-actions">
@@ -109,6 +111,10 @@
           <label>
             <span>Modul</span>
             <select id="mobileModuleSelect" class="select"></select>
+          </label>
+          <label>
+            <span>Farbe</span>
+            <select id="mobileThemeSelect" class="select theme-select-control"></select>
           </label>
           <button id="mobileOpenSidebar" class="ghost" type="button">Optionen</button>
         </section>
