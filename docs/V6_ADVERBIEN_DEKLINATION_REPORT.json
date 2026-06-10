@@ -1,0 +1,17 @@
+{
+  "version": "v6-adverbien-deklination",
+  "base": "deutsch-wipa-2026-v5.zip",
+  "changes": [
+    "Added Adverbien as a visible learning path",
+    "Added Deklination as a visible learning path",
+    "Added production_adverbien_intensiv.json with 500 items",
+    "Added production_deklination_intensiv.json with 500 items",
+    "Updated app version and service-worker cache",
+    "Added npm run check/start"
+  ],
+  "counts": {
+    "adverbien_items": 500,
+    "deklination_items": 500,
+    "manifest_modules": 56
+  }
+}

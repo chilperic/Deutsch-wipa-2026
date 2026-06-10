@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17223b">
   <meta name="description" content="Deutsch-WiPA 2026 is a grammar-first B1/B2 German learning app with conjugation tables, workplace vocabulary, mistake review, and spaced repetition.">
-  <title>Deutsch-WiPA 2026 · Grammatik & Konjugation</title>
-  <link rel="manifest" href="manifest.webmanifest?v=20260610-separable-logo-v4">
-  <link rel="icon" href="assets/icon.svg?v=20260610-separable-logo-v4" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/icon-192.png?v=20260610-separable-logo-v4">
-  <link rel="stylesheet" href="styles.css?v=20260610-separable-logo-v4">
+  <title>Deutsch-WiPA 2026 · Grammatik &amp; Konjugation</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#primaryAction">Zur Übung springen</a>
@@ -30,47 +30,64 @@
       </nav>
       <div class="top-actions">
         <select id="languageSelect" class="select compact" aria-label="Interface language"></select>
-        <button id="themeButton" class="icon-button" title="Theme">◐</button>
+        <button id="themeButton" class="icon-button" title="Theme" aria-label="Theme wechseln">◐</button>
       </div>
     </header>
 
     <aside id="sidebar" class="sidebar" aria-label="Lernpfad">
+      <!-- h3: sidebar is subordinate to the main h2 -->
       <div class="sidebar-head">
         <div class="eyebrow">Lernpfad</div>
-        <h2>Was willst du trainieren?</h2>
+        <h3>Was willst du trainieren?</h3>
       </div>
       <div id="pathNav" class="path-nav"></div>
+
       <div class="module-filter-card">
         <label for="moduleSelect" class="eyebrow">Modul</label>
         <select id="moduleSelect" class="select module-select" aria-label="Modul auswählen"></select>
-        <label for="tenseFilter" class="eyebrow sublabel">Zeitform</label>
-        <select id="tenseFilter" class="select module-select" aria-label="Zeitform auswählen">
-          <option value="Präsens">Präsens</option>
-          <option value="Perfekt">Perfekt</option>
-          <option value="Präteritum">Präteritum</option>
-          <option value="Plusquamperfekt">Plusquamperfekt</option>
-          <option value="Futur I">Futur I</option>
-          <option value="Konjunktiv II">Konjunktiv II</option>
-          <option value="all">Alle Zeitformen</option>
-        </select>
-        <label for="sessionLimit" class="eyebrow sublabel">Sitzung</label>
-        <select id="sessionLimit" class="select module-select" aria-label="Sitzungslänge auswählen">
-          <option value="20">20 Items</option>
-          <option value="40">40 Items</option>
-          <option value="80">80 Items</option>
-          <option value="all">Alle</option>
-        </select>
+
+        <!-- tenseFilter: shown only for conjugation path via JS -->
+        <div id="conjugationControls" class="conjugation-controls hidden">
+          <label for="tenseFilter" class="eyebrow sublabel">Zeitform</label>
+          <select id="tenseFilter" class="select module-select" aria-label="Zeitform auswählen">
+            <option value="Präsens">Präsens</option>
+            <option value="Perfekt">Perfekt</option>
+            <option value="Präteritum">Präteritum</option>
+            <option value="Plusquamperfekt">Plusquamperfekt</option>
+            <option value="Futur I">Futur I</option>
+            <option value="Konjunktiv II">Konjunktiv II</option>
+            <option value="Imperativ">Imperativ</option>
+            <option value="all">Alle Zeitformen</option>
+          </select>
+          <label for="sessionLimit" class="eyebrow sublabel">Sitzungslänge</label>
+          <select id="sessionLimit" class="select module-select" aria-label="Sitzungslänge auswählen">
+            <option value="20">20 Items</option>
+            <option value="40">40 Items</option>
+            <option value="80">80 Items</option>
+            <option value="all">Alle</option>
+          </select>
+        </div>
       </div>
+
       <div class="progress-card">
-        <div class="progress-top"><span>Heute</span><strong id="todayScore">0%</strong></div>
-        <div class="meter"><span id="meterBar"></span></div>
-        <div class="progress-mini"><span id="answeredCount">0 Antworten</span><span id="mistakeCount">0 Fehler</span></div>
+        <div class="progress-top">
+          <span id="progressLabel">Sitzung</span>
+          <strong id="todayScore">0%</strong>
+        </div>
+        <div class="meter" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="meterWrap">
+          <span id="meterBar"></span>
+        </div>
+        <div class="progress-mini">
+          <span id="answeredCount">0 Antworten</span>
+          <span id="mistakeCount">0 Fehler</span>
+        </div>
       </div>
     </aside>
 
     <main class="main" id="main" role="main">
       <section id="learnView" class="view active-view">
-        <section class="hero-card">
+        <!-- Hero collapses once session starts via JS class toggle -->
+        <section class="hero-card" id="heroCard">
           <div>
             <div class="eyebrow" id="currentPathLabel">Konjugation</div>
             <h2 id="moduleTitle">Verbformen beherrschen</h2>
@@ -86,17 +103,22 @@
           <article class="exercise-card" aria-labelledby="questionTitle">
             <div class="card-head">
               <span class="pill" id="exercisePill">Übung</span>
+              <!-- Progress bar replaces the "n / total" pill for a more modern feel -->
+              <div class="card-progress" aria-hidden="true">
+                <div class="card-progress-bar" id="cardProgressBar" style="width:0%"></div>
+              </div>
               <span class="pill muted-pill" id="itemIndex">—</span>
               <div class="soft-controls">
-                <button id="prevButton" class="ghost small" title="Vorherige Frage">←</button>
-                <button id="speakButton" class="ghost small" title="Vorlesen">🔊</button>
+                <button id="prevButton" class="ghost small" title="Vorherige Frage" aria-label="Vorherige Frage">←</button>
+                <button id="skipButton" class="ghost small skip-btn" title="Überspringen" aria-label="Übung überspringen">↷</button>
+                <button id="speakButton" class="ghost small" title="Vorlesen" aria-label="Vorlesen">🔊</button>
               </div>
             </div>
-            <h2 id="questionTitle">Bereit?</h2>
+            <h2 id="questionTitle" class="question-title">Bereit?</h2>
             <div id="questionText" class="question-text" aria-live="polite" aria-atomic="true">Starte die Sitzung.</div>
             <div id="answerZone" class="answer-zone"></div>
             <div id="choiceZone" class="choice-zone"></div>
-            <div id="feedbackBox" class="feedback hidden"></div>
+            <div id="feedbackBox" class="feedback hidden" aria-live="polite"></div>
             <div class="main-actions">
               <button id="primaryAction" class="primary-action">Sitzung starten</button>
               <button id="secondaryAction" class="secondary-action hidden">Weiter</button>
@@ -109,8 +131,15 @@
               <div id="ruleBox" class="rule-box">Die Erklärung erscheint nach dem Start.</div>
             </div>
             <div class="panel-block">
-              <div class="eyebrow">Beispiele</div>
+              <div class="eyebrow">Beispiel</div>
               <div id="exampleBox" class="example-box">—</div>
+            </div>
+            <!-- Conjugator deep-link: shown only for verb_conjugation items -->
+            <div id="conjugatorLink" class="panel-block conjugator-deeplink hidden">
+              <div class="eyebrow">Konjugator</div>
+              <button id="openConjugator" class="conjugator-link-btn">
+                Vollständige Tabelle anzeigen →
+              </button>
             </div>
             <div class="panel-block compact-panel">
               <button id="modePractice" class="mode-chip active">Üben</button>
@@ -126,15 +155,15 @@
           <div>
             <div class="eyebrow">Konjugator</div>
             <h2>1000+ Verben wie ein echtes Nachschlagewerk</h2>
-            <p>Suche ein Verb, vergleiche Zeiten und starte direkt passende Übungen. Der Konjugator umfasst über 1000 A1–B2-Verben.</p>
+            <p>Suche ein Verb, vergleiche Zeiten und starte direkt passende Übungen.</p>
           </div>
-          <input id="verbSearch" class="search-input" placeholder="Verb suchen: sein, haben, müssen…">
+          <input id="verbSearch" class="search-input" placeholder="Verb suchen: sein, haben, müssen…" aria-label="Verb suchen">
         </section>
         <section class="conjugator-grid">
-          <aside class="verb-list" id="verbList"></aside>
+          <aside class="verb-list" id="verbList" aria-label="Verbliste"></aside>
           <article class="verb-detail">
             <div id="verbMeta" class="verb-meta"></div>
-            <div class="tense-tabs" id="tenseTabs"></div>
+            <div class="tense-tabs" id="tenseTabs" role="tablist"></div>
             <div id="tenseTable" class="tense-table"></div>
             <div id="verbPractice" class="verb-practice"></div>
             <button id="verbPracticeButton" class="primary-action verb-practice-button">Jetzt üben</button>
@@ -157,6 +186,6 @@
 
     <div id="backdrop" class="backdrop hidden"></div>
   </div>
-  <script src="app.js?v=20260610-separable-logo-v4" type="module"></script>
+  <script src="app.js" type="module"></script>
 </body>
 </html>

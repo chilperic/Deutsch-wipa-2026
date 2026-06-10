@@ -335,3 +335,133 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 .rule-box,.example-box{overflow-wrap:anywhere;}
 
 .sublabel{display:block;margin-top:12px}.module-filter-card .select+ .sublabel{margin-top:14px}
+
+/* ── v5 additions: new components, UX fixes ─────────────────────────── */
+
+/* Conjugation controls: hidden for non-conjugation paths */
+.conjugation-controls { display: flex; flex-direction: column; gap: 0; }
+.conjugation-controls.hidden { display: none !important; }
+
+/* Progress bar inside card header */
+.card-progress {
+  flex: 1; height: 4px; background: var(--border);
+  border-radius: 999px; overflow: hidden; margin: 0 8px;
+}
+.card-progress-bar {
+  height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 999px; transition: width .35s ease;
+}
+
+/* Skip button */
+.skip-btn {
+  color: var(--muted);
+  font-size: 1rem;
+}
+.skip-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Choice buttons: reveal correct/wrong on check */
+.choice-btn.correct-reveal {
+  background: rgba(22,122,83,.15) !important;
+  border-color: #167a53 !important;
+  color: #167a53 !important;
+  font-weight: 800;
+}
+.choice-btn.wrong-reveal {
+  background: rgba(179,58,58,.12) !important;
+  border-color: #b33a3a !important;
+  color: #b33a3a !important;
+}
+[data-theme="dark"] .choice-btn.correct-reveal {
+  background: rgba(61,214,140,.15) !important;
+  border-color: #3dd68c !important; color: #3dd68c !important;
+}
+[data-theme="dark"] .choice-btn.wrong-reveal {
+  background: rgba(240,112,96,.15) !important;
+  border-color: #f07060 !important; color: #f07060 !important;
+}
+
+/* Hero card collapses to breadcrumb when session is active */
+.hero-card.collapsed {
+  padding: 10px 18px;
+  border-radius: 16px;
+  margin-bottom: 14px;
+}
+.hero-card.collapsed h2,
+.hero-card.collapsed p { display: none; }
+.hero-card.collapsed .eyebrow { font-size: .78rem; }
+.hero-card.collapsed .hero-stats { gap: 6px; }
+.hero-card.collapsed .hero-stats span { padding: .3rem .55rem; font-size: .75rem; }
+
+/* Feedback box: smooth entrance */
+.feedback {
+  animation: feedIn .2s ease;
+}
+@keyframes feedIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.feedback-correct-mark, .feedback-wrong-mark { font-size: 1.1rem; margin-right: 4px; }
+
+/* Conjugator deep-link button in learn panel */
+.conjugator-deeplink { border-top: 1px solid var(--border); padding-top: 14px; }
+.conjugator-link-btn {
+  width: 100%; text-align: left; background: rgba(217,137,61,.1);
+  border: 1px solid rgba(217,137,61,.3); border-radius: 12px;
+  padding: 10px 12px; color: var(--accent); font-weight: 700;
+  font-size: .85rem; cursor: pointer; transition: background .15s;
+}
+.conjugator-link-btn:hover { background: rgba(217,137,61,.18); }
+
+/* Feedback link to conjugator */
+.feedback-verb-link {
+  display: inline-block; margin-top: 10px; padding: 6px 12px;
+  background: rgba(217,137,61,.12); border: 1px solid rgba(217,137,61,.3);
+  border-radius: 10px; color: var(--accent); font-size: .82rem;
+  font-weight: 700; cursor: pointer; text-decoration: none;
+}
+.feedback-verb-link:hover { background: rgba(217,137,61,.22); }
+
+/* Progress label fix: neutral wording */
+#progressLabel { font-size: .82rem; color: var(--muted); }
+
+/* question-title is the h2 inside exercise-card */
+.question-title {
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: var(--muted); font-weight: 700; letter-spacing: -.01em;
+  margin: 0 0 6px; line-height: 1.2;
+}
+
+/* Mistake item: add retry button */
+.mistake-item .mistake-retry {
+  margin-top: 8px; padding: 5px 10px;
+  background: rgba(217,137,61,.12); border: 1px solid rgba(217,137,61,.3);
+  border-radius: 8px; color: var(--accent); font-size: .8rem; font-weight: 700;
+  cursor: pointer;
+}
+.mistake-item .mistake-retry:hover { background: rgba(217,137,61,.22); }
+
+/* Session complete: single click restart */
+.session-complete-card {
+  text-align: center; padding: 32px 20px;
+}
+.session-complete-card .complete-icon { font-size: 3rem; margin-bottom: 8px; }
+.session-complete-card h3 { font-size: 1.6rem; margin: 0 0 6px; }
+.session-complete-card p { color: var(--muted); margin: 0 0 20px; }
+
+/* Fix: font-weight 750 → 700 (non-standard value removed in existing rules below) */
+.eyebrow { font-weight: 700 !important; }
+.path-title { font-weight: 700 !important; }
+
+/* Sidebar h3 (was h2 — demoted for correct heading hierarchy) */
+.sidebar-head h3 {
+  font-size: 1.35rem; margin: .35rem 0 .8rem;
+  letter-spacing: -.045em; line-height: 1.03; font-weight: 800;
+}
+
+/* Imperativ tense tab styling */
+.tense-tab[data-tense="Imperativ"] { font-style: italic; }
+
+@media (max-width: 720px) {
+  .hero-card.collapsed { padding: 8px 14px; }
+  .card-progress { margin: 0 6px; }
+}

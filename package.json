@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "python3 -m http.server 8080",
-    "check": "node dev/check.js"
+    "check": "node --check app.js && node dev/check.js"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "private": true
 }
