@@ -46,8 +46,18 @@ if (verbCount < 1000) {
   process.exit(1);
 }
 const drills = readJson('grammatik/production_konjugator_drills.json').items || [];
-if (drills.length < 5000) {
-  console.error(`Too few conjugator drills: ${drills.length}`);
+if (drills.length < 300) {
+  console.error(`Too few starter conjugator drills: ${drills.length}`);
+  process.exit(1);
+}
+let corrupt=[];
+for (const [verb, v] of Object.entries(conj.verbs || {})) {
+  const blob = JSON.stringify(v);
+  if (/tworte an|twortest an|twortet an|angetwortt|gearbeitt|gewartt|berichtt|bedeutt|gebiett|gebittt/.test(blob)) corrupt.push(verb);
+  if (v.meaning === `to ${verb}`) corrupt.push(verb);
+}
+if (corrupt.length) {
+  console.error('Corrupt verb entries:', [...new Set(corrupt)].slice(0, 30).join(', '));
   process.exit(1);
 }
 const allJsonText = walk('.').filter(x => x.endsWith('.json') && !x.startsWith('docs/')).map(f => fs.readFileSync(f, 'utf8')).join('\n');
@@ -55,4 +65,4 @@ if (/\[object Object\]/.test(allJsonText)) {
   console.error('Found [object Object] literal in JSON data.');
   process.exit(1);
 }
-console.log(`OK: JSON valid, app.js parses, active modules reachable, ${verbCount} verbs, ${drills.length} drills.`);
+console.log(`OK: JSON valid, app.js parses, active modules reachable, ${verbCount} verbs, ${drills.length} starter drills, dynamic practice enabled.`);

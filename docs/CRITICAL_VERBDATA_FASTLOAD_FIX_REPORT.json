@@ -1,0 +1,14 @@
+{
+  "version": "2026-fast-corrected-verbdata",
+  "source_audit_applied": [
+    "wrong participles regenerated",
+    "antworten corrected",
+    "fabricated verbs blacklisted",
+    "large static drill file removed from startup path",
+    "dynamic capped conjugation sessions added"
+  ],
+  "verb_count": 1079,
+  "starter_drills": 360,
+  "startup_fix": "production_konjugator_drills.json reduced from 23100 to starter set; full practice generated dynamically from corrected conjugator data only when selected.",
+  "remaining_limitation": "Meanings are curated for high-priority A1-B2/workplace verbs; rare generated compounds may still show generic meaning-to-be-added rather than a false translation."
+}

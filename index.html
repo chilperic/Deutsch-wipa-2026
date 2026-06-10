@@ -20,7 +20,7 @@
         <img src="assets/icon.svg" alt="" class="brand-mark">
         <div>
           <div class="brand-title">Deutsch-WiPA</div>
-          <div class="brand-subtitle">B1 → B2 · 1000+ Verben · Beruf</div>
+          <div class="brand-subtitle">B1 → B2 · 1000+ geprüfte Verben · Beruf</div>
         </div>
       </div>
       <nav class="top-tabs" aria-label="Hauptbereiche">
@@ -43,6 +43,23 @@
       <div class="module-filter-card">
         <label for="moduleSelect" class="eyebrow">Modul</label>
         <select id="moduleSelect" class="select module-select" aria-label="Modul auswählen"></select>
+        <label for="tenseFilter" class="eyebrow sublabel">Zeitform</label>
+        <select id="tenseFilter" class="select module-select" aria-label="Zeitform auswählen">
+          <option value="Präsens">Präsens</option>
+          <option value="Perfekt">Perfekt</option>
+          <option value="Präteritum">Präteritum</option>
+          <option value="Plusquamperfekt">Plusquamperfekt</option>
+          <option value="Futur I">Futur I</option>
+          <option value="Konjunktiv II">Konjunktiv II</option>
+          <option value="all">Alle Zeitformen</option>
+        </select>
+        <label for="sessionLimit" class="eyebrow sublabel">Sitzung</label>
+        <select id="sessionLimit" class="select module-select" aria-label="Sitzungslänge auswählen">
+          <option value="20">20 Items</option>
+          <option value="40">40 Items</option>
+          <option value="80">80 Items</option>
+          <option value="all">Alle</option>
+        </select>
       </div>
       <div class="progress-card">
         <div class="progress-top"><span>Heute</span><strong id="todayScore">0%</strong></div>

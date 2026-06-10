@@ -1,19 +1,20 @@
 {
-  "version": "2026-modern-grammar-v2-1000verbs-auditfixed",
+  "version": "2026-modern-grammar-v4-corrected-fastload",
   "modules": [
     {
       "id": "data_conjugator_verbs",
       "path": "data/conjugator_verbs.json",
       "category": "konjugator",
-      "title": "Konjugator · 1000+ Verbtabellen",
-      "count": 1100
+      "title": "Konjugator · 1000+ geprüfte Verbtabellen",
+      "count": 1079
     },
     {
       "id": "grammatik_production_konjugator_drills",
       "path": "grammatik/production_konjugator_drills.json",
       "category": "conjugation",
-      "title": "Konjugator · 1000+ Verben Drill",
-      "count": 23100
+      "title": "Konjugation · Starter-Drills",
+      "count": 360,
+      "description": "Small starter drills; full verb sessions are generated dynamically."
     },
     {
       "id": "grammatik_production_grammar_explanations_variations",
@@ -380,5 +381,5 @@
       "count": 45
     }
   ],
-  "focus": "Grammar-first + conjugation-rich + workplace vocabulary"
+  "focus": "Grammar-first app with corrected 1000+ verb reference, fast startup, tense filters and dynamic capped practice sessions."
 }
