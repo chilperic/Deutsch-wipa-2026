@@ -721,7 +721,14 @@
             "example": "Sie leitet die Abteilung für Kundenservice."
           }
         ],
-        "corporate_context": "Company structure"
+        "corporate_context": "Company structure",
+        "translations": {
+          "English": "department",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -758,7 +765,14 @@
             "example": "Ich leite Ihre Nachricht an den zuständigen Ansprechpartner weiter."
           }
         ],
-        "corporate_context": "Customer/service communication"
+        "corporate_context": "Customer/service communication",
+        "translations": {
+          "English": "contact person",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -795,7 +809,14 @@
             "example": "Unsere Abteilung bearbeitet täglich viele Kundenanfragen."
           }
         ],
-        "corporate_context": "Email and service desk"
+        "corporate_context": "Email and service desk",
+        "translations": {
+          "English": "inquiry / request",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -832,7 +853,14 @@
             "example": "Wir möchten den Ablauf im Bewerbungsprozess verbessern."
           }
         ],
-        "corporate_context": "Work organization"
+        "corporate_context": "Work organization",
+        "translations": {
+          "English": "process / procedure",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -869,7 +897,14 @@
             "example": "Ich habe die Unterlagen meiner Bewerbung beigefügt."
           }
         ],
-        "corporate_context": "Administration"
+        "corporate_context": "Administration",
+        "translations": {
+          "English": "document / file",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -906,7 +941,14 @@
             "example": "Bisher habe ich noch keine Rückmeldung erhalten."
           }
         ],
-        "corporate_context": "Emails and follow-up"
+        "corporate_context": "Emails and follow-up",
+        "translations": {
+          "English": "feedback / response",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -943,7 +985,14 @@
             "example": "Die Besprechung musste wegen Krankheit verschoben werden."
           }
         ],
-        "corporate_context": "Office communication"
+        "corporate_context": "Office communication",
+        "translations": {
+          "English": "meeting",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -980,7 +1029,14 @@
             "example": "Könnten Sie die Frist um zwei Tage verlängern?"
           }
         ],
-        "corporate_context": "Administration and contracts"
+        "corporate_context": "Administration and contracts",
+        "translations": {
+          "English": "deadline",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1017,7 +1073,14 @@
             "example": "Der Vertrag kann mit einer Frist von drei Monaten gekündigt werden."
           }
         ],
-        "corporate_context": "Employment and services"
+        "corporate_context": "Employment and services",
+        "translations": {
+          "English": "contract",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1054,7 +1117,14 @@
             "example": "Sie hat ihre Kündigung schriftlich eingereicht."
           }
         ],
-        "corporate_context": "Employment and contracts"
+        "corporate_context": "Employment and contracts",
+        "translations": {
+          "English": "termination / notice",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1091,7 +1161,14 @@
             "example": "Ich muss mich heute krankmelden, weil ich Fieber habe."
           }
         ],
-        "corporate_context": "Workplace absence"
+        "corporate_context": "Workplace absence",
+        "translations": {
+          "English": "sick note / absence notice",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1128,7 +1205,14 @@
             "example": "Während der Einarbeitung lerne ich die internen Abläufe."
           }
         ],
-        "corporate_context": "Starting a job"
+        "corporate_context": "Starting a job",
+        "translations": {
+          "English": "onboarding / induction",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1165,7 +1249,14 @@
             "example": "Wir müssen die Zuständigkeiten im Team klären."
           }
         ],
-        "corporate_context": "Work organization"
+        "corporate_context": "Work organization",
+        "translations": {
+          "English": "responsibility / competence",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1202,7 +1293,14 @@
             "example": "Unter bestimmten Voraussetzungen ist Homeoffice möglich."
           }
         ],
-        "corporate_context": "Job ads and applications"
+        "corporate_context": "Job ads and applications",
+        "translations": {
+          "English": "requirement / prerequisite",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1239,7 +1337,14 @@
             "example": "Unter hoher Belastung passieren schneller Fehler."
           }
         ],
-        "corporate_context": "Health and work"
+        "corporate_context": "Health and work",
+        "translations": {
+          "English": "workload / strain",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1276,7 +1381,14 @@
             "example": "Der Arbeitgeber finanziert eine Weiterbildung."
           }
         ],
-        "corporate_context": "Career development"
+        "corporate_context": "Career development",
+        "translations": {
+          "English": "professional training",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1313,7 +1425,14 @@
             "example": "Der Service ist am Wochenende nur eingeschränkt verfügbar."
           }
         ],
-        "corporate_context": "Scheduling and resources"
+        "corporate_context": "Scheduling and resources",
+        "translations": {
+          "English": "availability",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1350,7 +1469,14 @@
             "example": "Wir müssen professionell auf die Beschwerde reagieren."
           }
         ],
-        "corporate_context": "Customer service"
+        "corporate_context": "Customer service",
+        "translations": {
+          "English": "complaint",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1387,7 +1513,14 @@
             "example": "Die Reklamation wurde wegen fehlender Rechnung abgelehnt."
           }
         ],
-        "corporate_context": "Customer service"
+        "corporate_context": "Customer service",
+        "translations": {
+          "English": "claim / complaint about product",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1424,7 +1557,14 @@
             "example": "Der Techniker konnte den Mangel noch nicht beheben."
           }
         ],
-        "corporate_context": "Quality and service"
+        "corporate_context": "Quality and service",
+        "translations": {
+          "English": "defect / deficiency",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1461,7 +1601,14 @@
             "example": "Der Hersteller wurde zur Nachbesserung aufgefordert."
           }
         ],
-        "corporate_context": "Complaints and warranty"
+        "corporate_context": "Complaints and warranty",
+        "translations": {
+          "English": "rectification / rework",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1498,7 +1645,14 @@
             "example": "Der Serverfehler führte zu langen Ausfallzeiten."
           }
         ],
-        "corporate_context": "Technical problems"
+        "corporate_context": "Technical problems",
+        "translations": {
+          "English": "downtime",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1535,7 +1689,14 @@
             "example": "Ein Techniker begleitet die Inbetriebnahme der Anlage."
           }
         ],
-        "corporate_context": "Technical systems"
+        "corporate_context": "Technical systems",
+        "translations": {
+          "English": "commissioning / start-up",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1572,7 +1733,14 @@
             "example": "Die Streiks führen zu Lieferengpässen bei Rohstoffen."
           }
         ],
-        "corporate_context": "Logistics and operations"
+        "corporate_context": "Logistics and operations",
+        "translations": {
+          "English": "bottleneck / shortage",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1609,7 +1777,14 @@
             "example": "Wegen einer Lieferverzögerung müssen wir den Termin verschieben."
           }
         ],
-        "corporate_context": "Logistics"
+        "corporate_context": "Logistics",
+        "translations": {
+          "English": "delivery delay",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1646,7 +1821,14 @@
             "example": "Die Maßnahme wurde im gesamten Team umgesetzt."
           }
         ],
-        "corporate_context": "Management and problem solving"
+        "corporate_context": "Management and problem solving",
+        "translations": {
+          "English": "measure / action",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1683,7 +1865,14 @@
             "example": "Wir besprechen die Auswertung im nächsten Meeting."
           }
         ],
-        "corporate_context": "Reports and data"
+        "corporate_context": "Reports and data",
+        "translations": {
+          "English": "analysis / evaluation",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1720,7 +1909,14 @@
             "example": "Nach meiner Einschätzung ist der Zeitplan zu knapp."
           }
         ],
-        "corporate_context": "Meetings and reports"
+        "corporate_context": "Meetings and reports",
+        "translations": {
+          "English": "assessment / estimate",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1757,7 +1953,14 @@
             "example": "Ich kann Sie bei der Umsetzung unterstützen."
           }
         ],
-        "corporate_context": "Project management"
+        "corporate_context": "Project management",
+        "translations": {
+          "English": "implementation",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1794,7 +1997,14 @@
             "example": "Bitte halten Sie sich an die getroffene Vereinbarung."
           }
         ],
-        "corporate_context": "Meetings/contracts"
+        "corporate_context": "Meetings/contracts",
+        "translations": {
+          "English": "agreement",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1831,7 +2041,14 @@
             "example": "Das Unternehmen steht mit mehreren Partnern in Verhandlungen."
           }
         ],
-        "corporate_context": "Business negotiation"
+        "corporate_context": "Business negotiation",
+        "translations": {
+          "English": "negotiation",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1868,7 +2085,14 @@
             "example": "Nicht jeder Beschäftigte hat automatisch Anspruch auf eine Abfindung."
           }
         ],
-        "corporate_context": "HR and termination"
+        "corporate_context": "HR and termination",
+        "translations": {
+          "English": "severance payment",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1905,7 +2129,14 @@
             "example": "Eine niedrige Umsatzrentabilität weist auf Effizienzprobleme hin."
           }
         ],
-        "corporate_context": "Finance and reporting"
+        "corporate_context": "Finance and reporting",
+        "translations": {
+          "English": "return on sales",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1942,7 +2173,14 @@
             "example": "Für das neue Projekt wird eine eigene Kostenstelle angelegt."
           }
         ],
-        "corporate_context": "Accounting"
+        "corporate_context": "Accounting",
+        "translations": {
+          "English": "cost center",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -1979,7 +2217,14 @@
             "example": "Sie fungiert als Schnittstelle zwischen Vertrieb und Technik."
           }
         ],
-        "corporate_context": "IT and organization"
+        "corporate_context": "IT and organization",
+        "translations": {
+          "English": "interface / point of contact",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -2016,7 +2261,14 @@
             "example": "Die Stadt hat eine neue Ausschreibung veröffentlicht."
           }
         ],
-        "corporate_context": "Procurement"
+        "corporate_context": "Procurement",
+        "translations": {
+          "English": "tender / call for bids",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -2053,7 +2305,14 @@
             "example": "Die Einkaufsabteilung bewertet die Lieferanten jährlich."
           }
         ],
-        "corporate_context": "Procurement"
+        "corporate_context": "Procurement",
+        "translations": {
+          "English": "supplier",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -2090,7 +2349,14 @@
             "example": "Wir müssen den Termin mit dem Kunden klären."
           }
         ],
-        "corporate_context": "Customer contact"
+        "corporate_context": "Customer contact",
+        "translations": {
+          "English": "customer / client",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -2127,7 +2393,14 @@
             "example": "Bitte sprechen Sie mit dem Praktikanten über die Aufgabe."
           }
         ],
-        "corporate_context": "Workplace roles"
+        "corporate_context": "Workplace roles",
+        "translations": {
+          "English": "intern",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     },
     {
@@ -2164,7 +2437,14 @@
             "example": "Die Angestellten wurden über die Änderung informiert."
           }
         ],
-        "corporate_context": "Employment"
+        "corporate_context": "Employment",
+        "translations": {
+          "English": "employee",
+          "French": "",
+          "Arabic": "",
+          "Persian": "",
+          "Ukrainian": ""
+        }
       }
     }
   ]

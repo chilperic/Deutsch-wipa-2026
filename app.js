@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v11-appearance-color';
+const APP_VERSION = '2026.06.10-v12-verified-audit';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -11,7 +11,7 @@ const state = {
   stats: load('dw_modern_stats', {}), moduleStats: load('dw_modern_module_stats', {}),
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
   profile: load('dw_modern_profile', {name:''}),
-  lang: localStorage.dw_lang || 'de', appearance: localStorage.dw_appearance || 'system', color: localStorage.dw_color || 'teal', theme: localStorage.dw_theme || '',
+  lang: localStorage.dw_lang || 'de', appearance: localStorage.dw_appearance || 'system', color: localStorage.dw_color || 'teal',
   conjugator: null, verb: null, tense: 'Präsens',
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [],
@@ -22,7 +22,7 @@ const state = {
 // v11 migration: theme/dark-light is separate from accent color.
 // Older builds stored both ideas in dw_theme. Preserve useful choices without mixing concepts.
 (function migrateDesign(){
-  const legacy = state.theme || localStorage.dw_theme || '';
+  const legacy = localStorage.dw_theme || '';
   if(!localStorage.dw_appearance){
     if(legacy === 'dark' || legacy === 'graphite' || legacy === 'midnight') state.appearance = 'dark';
     else if(legacy === 'light') state.appearance = 'light';
@@ -57,8 +57,8 @@ const COLORS = [
 const PATHS = [
   {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Verbformen, Modalverben, Infinitiv',cats:['conjugation','konjugator'],match:['modal','modalverb','infinitiv','verbformen','starke_verben','trennbare','reflexive','perfekt','plusquamperfekt','konjugator']},
   {id:'syntax',icon:'🧩',title:'Satzbau',sub:'Verbposition, TeKaMoLo, nicht, Passiversatz',match:['tekamolo','negation','nebensatz','satzordnung','satzvariation','passiv','passiversatz','final','modal_es','temporale']},
-  {id:'cases',icon:'🎯',title:'Fälle',sub:'Akkusativ, Dativ, n-Deklination, Pronomen',match:['kasus','n_deklination','n-deklination','pronomen']},
-  {id:'declension',icon:'🧬',title:'Deklination',sub:'Artikel, Adjektivendungen, Nomen, Pronomen',match:['deklination','adjektivdeklination','adjektive_als_nomen','n_deklination','kasus','pronomen']},
+  {id:'cases',icon:'🎯',title:'Fälle',sub:'Akkusativ, Dativ, n-Deklination, Pronomen',match:['kasus','n_deklination','n-deklination','pronomen'],exclude:['production_deklination_intensiv']},
+  {id:'declension',icon:'🧬',title:'Deklination',sub:'Adjektivendungen, Nominalisierung',ids:['grammatik_production_deklination_intensiv','grammatik_production_adjektivdeklination_structured','grammatik_adjektivdeklination','grammatik_adjektive_als_nomen']},
   {id:'adverbs',icon:'🧭',title:'Adverbien',sub:'Zeit, Ort, Häufigkeit, Modalität, Satzlogik',match:['adverb','adverbien']},
   {id:'prepositions',icon:'📍',title:'Präpositionen',sub:'lokal, temporal, Verben + Präposition',match:['praeposition','präposition']},
   {id:'nouns',icon:'📚',title:'Artikel & Nomen',sub:'Genus, Plural, Nominalisierung',match:['nomen','artikel','plural','genus']},
@@ -68,16 +68,16 @@ const PATHS = [
 ];
 
 const T = {
- de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import'},
- en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import'},
- fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau'},
- es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla'},
- ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول'},
- fa:{start:'شروع جلسه',check:'بررسی',next:'بعدی',skip:'رد کردن',restart:'شروع دوباره',correct:'درست',wrong:'هنوز نه',answer:'پاسخ درست',why:'چرا؟',empty:'برای این انتخاب موردی وجود ندارد.',ready:'جلسه را شروع کن.',complete:'جلسه کامل شد',noSrs:'هنوز مرور زمان‌بندی‌شده‌ای وجود ندارد. اول چند تمرین را پاسخ بده.',allModules:'همهٔ بخش‌ها',dueToday:'موعد امروز',item:'مورد',items:'مورد',yourAnswer:'پاسخ تو',retryMistake:'دوباره تمرین کن',sessionStats:'جلسه',verbConjTable:'نمایش جدول'},
- uk:{start:'Почати',check:'Перевірити',next:'Далі',skip:'Пропустити',restart:'Почати знову',correct:'Правильно',wrong:'Ще ні',answer:'Правильна відповідь',why:'Чому?',empty:'Немає завдань для цього вибору.',ready:'Почни сесію.',complete:'Сесію завершено',noSrs:'Поки немає повторень. Спочатку виконай кілька вправ.',allModules:'Усі модулі',dueToday:'на сьогодні',item:'завдання',items:'завдання',yourAnswer:'Твоя відповідь',retryMistake:'Тренуватися знову',sessionStats:'Сесія',verbConjTable:'Показати таблицю'},
- ru:{start:'Начать',check:'Проверить',next:'Далее',skip:'Пропустить',restart:'Начать заново',correct:'Правильно',wrong:'Еще нет',answer:'Правильный ответ',why:'Почему?',empty:'Нет заданий для этого выбора.',ready:'Начни сессию.',complete:'Сессия завершена',noSrs:'Пока нет повторений. Сначала ответь на несколько упражнений.',allModules:'Все модули',dueToday:'на сегодня',item:'задание',items:'задания',yourAnswer:'Твой ответ',retryMistake:'Тренироваться снова',sessionStats:'Сессия',verbConjTable:'Показать таблицу'},
- pl:{start:'Rozpocznij',check:'Sprawdź',next:'Dalej',skip:'Pomiń',restart:'Zacznij od nowa',correct:'Poprawnie',wrong:'Jeszcze nie',answer:'Poprawna odpowiedź',why:'Dlaczego?',empty:'Brak zadań dla tego wyboru.',ready:'Rozpocznij sesję.',complete:'Sesja zakończona',noSrs:'Brak powtórek. Najpierw rozwiąż kilka ćwiczeń.',allModules:'Wszystkie moduły',dueToday:'na dziś',item:'zadanie',items:'zadania',yourAnswer:'Twoja odpowiedź',retryMistake:'Ćwicz ponownie',sessionStats:'Sesja',verbConjTable:'Pokaż tabelę'},
- tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster'}
+ de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten'},
+ en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers'},
+ fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau',answered:'réponses'},
+ es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla',answered:'respuestas'},
+ ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول',answered:'إجابات'},
+ fa:{start:'شروع جلسه',check:'بررسی',next:'بعدی',skip:'رد کردن',restart:'شروع دوباره',correct:'درست',wrong:'هنوز نه',answer:'پاسخ درست',why:'چرا؟',empty:'برای این انتخاب موردی وجود ندارد.',ready:'جلسه را شروع کن.',complete:'جلسه کامل شد',noSrs:'هنوز مرور زمان‌بندی‌شده‌ای وجود ندارد. اول چند تمرین را پاسخ بده.',allModules:'همهٔ بخش‌ها',dueToday:'موعد امروز',item:'مورد',items:'مورد',yourAnswer:'پاسخ تو',retryMistake:'دوباره تمرین کن',sessionStats:'جلسه',verbConjTable:'نمایش جدول',answered:'پاسخ‌ها'},
+ uk:{start:'Почати',check:'Перевірити',next:'Далі',skip:'Пропустити',restart:'Почати знову',correct:'Правильно',wrong:'Ще ні',answer:'Правильна відповідь',why:'Чому?',empty:'Немає завдань для цього вибору.',ready:'Почни сесію.',complete:'Сесію завершено',noSrs:'Поки немає повторень. Спочатку виконай кілька вправ.',allModules:'Усі модулі',dueToday:'на сьогодні',item:'завдання',items:'завдання',yourAnswer:'Твоя відповідь',retryMistake:'Тренуватися знову',sessionStats:'Сесія',verbConjTable:'Показати таблицю',answered:'відповіді'},
+ ru:{start:'Начать',check:'Проверить',next:'Далее',skip:'Пропустить',restart:'Начать заново',correct:'Правильно',wrong:'Еще нет',answer:'Правильный ответ',why:'Почему?',empty:'Нет заданий для этого выбора.',ready:'Начни сессию.',complete:'Сессия завершена',noSrs:'Пока нет повторений. Сначала ответь на несколько упражнений.',allModules:'Все модули',dueToday:'на сегодня',item:'задание',items:'задания',yourAnswer:'Твой ответ',retryMistake:'Тренироваться снова',sessionStats:'Сессия',verbConjTable:'Показать таблицу',answered:'ответов'},
+ pl:{start:'Rozpocznij',check:'Sprawdź',next:'Dalej',skip:'Pomiń',restart:'Zacznij od nowa',correct:'Poprawnie',wrong:'Jeszcze nie',answer:'Poprawna odpowiedź',why:'Dlaczego?',empty:'Brak zadań dla tego wyboru.',ready:'Rozpocznij sesję.',complete:'Sesja zakończona',noSrs:'Brak powtórek. Najpierw rozwiąż kilka ćwiczeń.',allModules:'Wszystkie moduły',dueToday:'na dziś',item:'zadanie',items:'zadania',yourAnswer:'Twoja odpowiedź',retryMistake:'Ćwicz ponownie',sessionStats:'Sesja',verbConjTable:'Pokaż tabelę',answered:'odpowiedzi'},
+ tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster',answered:'cevap'}
 };
 function tr(k){return T[state.lang]?.[k]??T.en[k]??T.de[k]??k}
 function load(k,fallback){try{return JSON.parse(localStorage.getItem(k))??fallback}catch{return fallback}}
@@ -187,13 +187,13 @@ function bindProfileControls(){
 function exportProgress(){
   const payload={
     app:'Deutsch-WiPA 2026',version:APP_VERSION,exportedAt:new Date().toISOString(),
-    profile:state.profile,lang:state.lang,appearance:state.appearance,color:state.color,theme:state.color,
+    profile:state.profile,lang:state.lang,appearance:state.appearance,color:state.color,
     stats:state.stats,moduleStats:state.moduleStats,mistakes:state.mistakes,srs:state.srs
   };
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
   const a=document.createElement('a');
   const safeName=(state.profile?.name||'user').replace(/[^a-z0-9_-]+/gi,'_');
-  a.href=URL.createObjectURL(blob);a.download=`deutsch-wipa-progress-${safeName}.json`;a.click();
+  a.href=URL.createObjectURL(blob);const exportDate=new Date().toISOString().slice(0,10);a.download=`deutsch-wipa-progress-${safeName}-${exportDate}.json`;a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 function importProgress(e){
@@ -207,7 +207,7 @@ function importProgress(e){
       if(data.lang)state.lang=data.lang;if(data.appearance)state.appearance=data.appearance;if(data.color)state.color=data.color;else if(data.theme)state.color=data.theme;
       save('dw_modern_profile',state.profile);save('dw_modern_stats',state.stats);save('dw_modern_module_stats',state.moduleStats);save('dw_modern_mistakes',state.mistakes);save(SRS_KEY,state.srs);
       localStorage.dw_lang=state.lang;localStorage.dw_appearance=state.appearance;localStorage.dw_color=state.color;
-      applyDesign(false);updateDirection();renderLangs();renderDesignControls();bindProfileControls();renderAll();
+      applyDesign(false);updateDirection();renderLangs();renderDesignControls();renderAll();
     }catch(err){alert('Import fehlgeschlagen: ungültige JSON-Datei.');}
     e.target.value='';
   };
@@ -231,7 +231,7 @@ async function loadData(){
 function normalizeModule(raw,meta){if(meta.category==='konjugator')return[];let arr=raw.items||raw.words||raw.vocabulary_entries||raw.vocabulary||raw.questions||[];if(raw.exercise_pool)arr=raw.exercise_pool.flatMap(x=>x.cases||[]);return arr.map((it,i)=>normalizeItem(it,meta,i)).filter(Boolean)}
 function pickLang(obj){if(!obj)return''; if(typeof obj!=='object')return stringify(obj); return obj.German||obj.Deutsch||obj[state.lang]||obj.English||Object.values(obj).find(Boolean)||''}
 function germanDisplay(d){const g=d.grammar||{};const trans=d.translations||{};const raw=d.word||d.term||d.german||d.display||d.title||d.prompt||pickLang(trans);if(raw&&raw!=='undefined')return stringify(raw);if(g.article&&g.base)return`${g.article} ${g.base}${g.plural?`, ${String(g.plural).replace(/^die\s+/,'')}`:''}`; if(g.base)return stringify(g.base);return''}
-function translationOf(d){const t=d.translations||{};return t[state.lang]||t.English||d.english_equivalent||d.meaning||d.translation||d.answer||''}
+function translationOf(d,it=null){const t=d.translations||{};const tp=(it&&it.translations)||{};return t[state.lang]||t.English||tp[state.lang]||tp.English||d.english_equivalent||d.meaning||d.translation||d.answer||''}
 function normalizeAnswerValue(v){return stringify(v).replace(/^undefined$/,'').trim()}
 function normalizeItem(it,meta,i){
   const d=(it&&it.data)||it; if(!d||typeof d!=='object')return null;
@@ -241,7 +241,7 @@ function normalizeItem(it,meta,i){
   let type=d.exerciseType||d.type||inferType(prompt,d,meta);
   const de=germanDisplay(d);
   if(isVocab){
-    const trans=normalizeAnswerValue(translationOf(d));
+    const trans=normalizeAnswerValue(translationOf(d,it));
     const grammar=d.grammar||{};
     if(!answer)answer=trans||de;
     if(!prompt||prompt==='undefined')prompt=de||trans||`Vokabel ${i+1}`;
@@ -263,7 +263,7 @@ function normalizeItem(it,meta,i){
 }
 function rawLevel(m){return(m.title||'').includes('B2')?'B2':'B1/B2'}
 function inferType(prompt,d,meta){const p=String(prompt||'');const hay=`${p} ${meta.title} ${meta.id}`;if(d.choices||d.options||d.type==='classify')return'multiple_choice';if(p.includes('___'))return'gap_fill';if(/korrig|correct/i.test(p))return'sentence_correction';if(/conjug|Präsens|Präteritum|Perfekt|Modalverben|Konjugator/i.test(hay))return'verb_conjugation';return'flashcard'}
-function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const trans=translationOf(d);if(trans)pieces.push(`Bedeutung: ${trans}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
+function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const trans=translationOf(d, meta?.raw || null) || translationOf(d);if(trans)pieces.push(`Bedeutung: ${trans}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
 function makeChoices(answer,type,context={}){const ans=String(answer||'').trim();if(!ans)return[];if(type==='article_trainer')return shuffle(['der','die','das']);if(type==='connector_selection'||/konnektor|connector/i.test(String(context.tags||context.category||'')+' '+String(context.prompt||''))){const pool=['und','aber','oder','sondern','weil','obwohl','trotzdem','deshalb','damit','bevor'];return[...new Set([ans,...pool.filter(x=>x!==ans)])].slice(0,4)}if(type==='multiple_choice'){const valid=context.choices||context.options;return valid&&valid.length?valid:[]}return[]}
 
 function renderPath(){
@@ -272,7 +272,7 @@ function renderPath(){
   $('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(p.title)}</span><span class="path-sub">${esc(p.sub)}</span></span><span class="path-count">${count}</span></button>`}).join('');
   document.querySelectorAll('.path-btn').forEach(b=>b.onclick=()=>{selectPath(b.dataset.path);toggleDrawer(false)})
 }
-function modulesForPath(id){const p=PATHS.find(x=>x.id===id);if(!p)return[];return state.modules.filter(m=>{const hay=`${m.id} ${m.title} ${m.path}`.toLowerCase();return(p.cats&&p.cats.includes(m.category))||(p.match&&p.match.some(s=>hay.includes(s)))})}
+function modulesForPath(id){const p=PATHS.find(x=>x.id===id);if(!p)return[];return state.modules.filter(m=>{if(p.ids)return p.ids.includes(m.id);const hay=`${m.id} ${m.title} ${m.path}`.toLowerCase();if(p.exclude&&p.exclude.some(s=>hay.includes(s)))return false;return(p.cats&&p.cats.includes(m.category))||(p.match&&p.match.some(s=>hay.includes(s)))})}
 function selectPath(id){
   state.path=id;
   state.moduleId=id==='conjugation'?'dynamic_conjugator':'all';
@@ -361,7 +361,7 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderDesignControls();bindProfileControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
 function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
 function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
 
@@ -553,7 +553,7 @@ function renderStats(){
   $('todayScore').textContent=pct+'%';
   $('meterBar').style.width=pct+'%';
   if($('meterWrap'))$('meterWrap').setAttribute('aria-valuenow',pct);
-  $('answeredCount').textContent=`${s.a} Antworten`;
+  $('answeredCount').textContent=`${s.a} ${tr('answered')}`;
   $('mistakeCount').textContent=`${state.mistakes.length} Fehler · ${dueCount()} ${tr('dueToday')}`;
   if($('progressLabel'))$('progressLabel').textContent=tr('sessionStats');
 }

@@ -3,6 +3,5 @@
     "start": "python3 -m http.server 8080",
     "check": "node --check app.js && node dev/check.js"
   },
-  "devDependencies": {},
-  "private": true
+  "devDependencies": {}
 }

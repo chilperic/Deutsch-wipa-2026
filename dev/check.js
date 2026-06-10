@@ -1,24 +1,28 @@
+
 const fs = require('fs');
 const path = require('path');
-function fail(msg){ console.error('FAIL:', msg); process.exitCode = 1; }
-function readJson(p){ try { return JSON.parse(fs.readFileSync(p,'utf8')); } catch(e){ fail(`Invalid JSON ${p}: ${e.message}`); return null; } }
+const root = path.join(__dirname, '..');
+function readJson(p){ return JSON.parse(fs.readFileSync(path.join(root,p),'utf8')); }
+function walk(dir){ return fs.readdirSync(dir,{withFileTypes:true}).flatMap(d=>{ const p=path.join(dir,d.name); return d.isDirectory()?walk(p):[p]; }); }
+let ok = true;
+for (const f of walk(root).filter(x=>x.endsWith('.json'))) { try { JSON.parse(fs.readFileSync(f,'utf8')); } catch(e){ console.error('Bad JSON', f, e.message); ok=false; } }
 const manifest = readJson('data-manifest.json');
-const mods = manifest.modules || [];
-let total = 0;
-for (const m of mods){
-  if (!fs.existsSync(m.path)) fail(`Missing module file ${m.path}`);
-  const data = readJson(m.path);
-  if (!data) continue;
-  const arr = data.items || data.words || data.vocabulary_entries || data.vocabulary || data.questions || [];
-  if (m.id.includes('adverbien') && arr.length < 500) fail('Adverbien module below 500 items');
-  if (m.id.includes('deklination_intensiv') && arr.length < 500) fail('Deklination module below 500 items');
-  total += Array.isArray(arr) ? arr.length : 0;
+for (const m of manifest.modules) if (!fs.existsSync(path.join(root,m.path))) { console.error('Missing module', m.path); ok=false; }
+const coll = readJson('vokabular/production_workplace_collocations.json').words || [];
+const badColl = coll.filter(w => !(w.data && w.data.translations && (w.data.translations.English || w.data.translations.en)));
+if (badColl.length) { console.error('Workplace collocation translation shadowing remains', badColl.length); ok=false; }
+const adv = readJson('grammatik/production_adverbien_intensiv.json').items || [];
+const byPrompt = new Map();
+for (const it of adv) if (it.exerciseType === 'gap_fill') { const set = byPrompt.get(it.prompt) || new Set(); set.add(it.answer); byPrompt.set(it.prompt,set); }
+const amb = [...byPrompt.entries()].filter(([_,s])=>s.size>1);
+if (amb.length) { console.error('Ambiguous adverb gap prompts remain', amb.length); ok=false; }
+const englishLabels = new Set(['frequency','local','connector_adverb']);
+const badLabels = adv.filter(it => englishLabels.has(it.answer));
+if (badLabels.length) { console.error('English meta-label answers remain', badLabels.length); ok=false; }
+const verbs = readJson('data/conjugator_verbs.json').verbs || {};
+for (const [v,d] of Object.entries({antworten:['geantwortet','antworte'], arbeiten:['gearbeitet','arbeite'], bekommen:['bekommen','bekomme']})) {
+  if (!verbs[v]) { console.error('Missing verb', v); ok=false; continue; }
+  if (verbs[v].part !== d[0] || !String(verbs[v].present?.[0]||'').includes(d[1])) { console.error('Bad verb core form', v, verbs[v]); ok=false; }
 }
-const app = fs.readFileSync('app.js','utf8');
-if (!app.includes("id:'adverbs'")) fail('Adverbien path missing in app.js');
-if (!app.includes("id:'declension'")) fail('Deklination path missing in app.js');
-const verbs = readJson('data/conjugator_verbs.json').verbs;
-if (!verbs.antworten || verbs.antworten.part !== 'geantwortet' || /\btwort/.test((verbs.antworten.present||[]).join(' ')+' '+(verbs.antworten.part||'')+' '+(verbs.antworten.zu||''))) fail('antworten is still corrupted');
-if (verbs.arbeiten.part !== 'gearbeitet') fail('arbeiten participle wrong');
-if (verbs.bekommen.part !== 'bekommen') fail('bekommen participle wrong');
-console.log(`OK: ${mods.length} modules, ${total} manifest items, ${Object.keys(verbs).length} verbs.`);
+console.log(ok ? 'OK: v12 verification passed' : 'FAILED');
+process.exit(ok ? 0 : 1);

@@ -10,8 +10,8 @@ This version applies the full modern-UX and audit-correction pass:
 - Learner-facing paths instead of raw internal folders.
 - Writing, reading and speaking removed from active navigation.
 - Real conjugator section with verb tables and direct practice launch.
-- 40 conjugator verbs, including B2 workplace verbs such as `beauftragen`, `vereinbaren`, `beantragen`, `genehmigen`, `einreichen`, `durchführen`, `entscheiden`, `anbieten`.
-- 1,500+ conjugation drills across Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I and Konjunktiv II.
+- 1,077 verified conjugator verbs with corrected regular, irregular, separable and non-separable forms.
+- Dynamic conjugation practice generated on demand, with tense and session-length filters.
 - Modal verb modules with Präsens, Präteritum, Perfekt and Doppelinfinitiv.
 - Spaced-review logic that only reviews items the learner has actually answered.
 - Practice mode uses stable per-session randomization.
@@ -60,14 +60,10 @@ Deutsch-WiPA is a static PWA. User progress is saved locally in the browser with
 - `dw_modern_stats` and `dw_modern_module_stats` for progress
 - `dw_modern_mistakes` for the mistake bank
 - `dw_modern_srs` for spaced repetition
-- `dw_lang` and `dw_theme` for interface preferences
+- `dw_lang`, `dw_appearance`, and `dw_color` for interface preferences
 
 There is no cloud sync. Use the in-app **Backup → Export / Import** controls to transfer progress between devices.
 
-
-## Visual themes
-
-The app includes ten readable themes: Parchment, Forest, Ocean, Sunset, Lavender, Rose, Sand, Graphite, Midnight, and High contrast. The selected theme is saved locally in `localStorage.dw_theme` and included in progress export/import.
 
 ## Appearance and color
 
@@ -77,3 +73,8 @@ The UI separates visual mode from color:
 - **Color**: Teal, Forest, Ocean, Sunset, Lavender, Rose, Sand, Graphite, Midnight, High contrast
 
 These settings are saved locally as `dw_appearance` and `dw_color` and are included in exported progress backups.
+
+
+## v12 verification note
+
+This build keeps only the relevant audit fixes from the v11 audit: workplace-collocation translation shadowing, ambiguous adverb prompts, declension/cases path overlap, manifest count drift, local progress export/import, and mobile navigation. Older audit items about removed reading/writing/speaking modules are intentionally ignored.

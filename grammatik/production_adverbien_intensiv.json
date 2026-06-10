@@ -5,22 +5,6 @@
   "description": "500 Übungen zu temporalen, lokalen, modalen, Häufigkeits- und Konjunktionaladverbien. Schwerpunkt: Position im Satz, Bedeutung und Berufskontexte.",
   "items": [
     {
-      "id": "adv_gap_001",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "heute",
-      "example": "Wir schicken die Unterlagen heute im Kurs.",
-      "explanation": "heute: Temporal: Zeitpunkt am aktuellen Tag. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_002",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -36,22 +20,6 @@
       ],
       "example": "Wir schicken die Unterlagen heute im Kurs.",
       "explanation": "heute bedeutet: today. Temporal: Zeitpunkt am aktuellen Tag.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_003",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "morgen",
-      "example": "Der Kunde ruft die Sachbearbeiterin an morgen bei der Arbeit.",
-      "explanation": "morgen: Temporal: nächster Tag. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -81,22 +49,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_005",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "gestern",
-      "example": "Mein Team arbeitet im Büro gestern in der Besprechung.",
-      "explanation": "gestern: Temporal: vorheriger Tag. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_006",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -112,22 +64,6 @@
       ],
       "example": "Mein Team arbeitet im Büro gestern in der Besprechung.",
       "explanation": "gestern bedeutet: yesterday. Temporal: vorheriger Tag.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_007",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "später",
-      "example": "Die Firma bespricht den Vertrag später bei der Behörde.",
-      "explanation": "später: Temporal: späterer Zeitpunkt. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -157,22 +93,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_009",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "vorher",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung vorher in der Abteilung.",
-      "explanation": "vorher: Temporal: vor einer anderen Handlung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_010",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -188,22 +108,6 @@
       ],
       "example": "Die Sachbearbeiterin wartet auf die Rückmeldung vorher in der Abteilung.",
       "explanation": "vorher bedeutet: beforehand. Temporal: vor einer anderen Handlung.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_011",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "danach",
-      "example": "Wir vereinbaren einen neuen Termin danach im Kurs.",
-      "explanation": "danach: Temporal: nach einer anderen Handlung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -233,22 +137,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_013",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "inzwischen",
-      "example": "Der Kunde beschwert sich über die Rechnung inzwischen bei der Arbeit.",
-      "explanation": "inzwischen: Temporal: Entwicklung bis jetzt. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_014",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -264,22 +152,6 @@
       ],
       "example": "Der Kunde beschwert sich über die Rechnung inzwischen bei der Arbeit.",
       "explanation": "inzwischen bedeutet: meanwhile/by now. Temporal: Entwicklung bis jetzt.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_015",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "neulich",
-      "example": "Ich komme zum Termin neulich in der Besprechung.",
-      "explanation": "neulich: Temporal: vor kurzer Zeit, ungenauer Zeitpunkt. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -309,22 +181,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_017",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "kürzlich",
-      "example": "Die Kollegin prüft den Antrag kürzlich bei der Behörde.",
-      "explanation": "kürzlich: Temporal: vor kurzer Zeit, eher formell. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_018",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -340,22 +196,6 @@
       ],
       "example": "Die Kollegin prüft den Antrag kürzlich bei der Behörde.",
       "explanation": "kürzlich bedeutet: recently. Temporal: vor kurzer Zeit, eher formell.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_019",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "bereits",
-      "example": "Unsere Abteilung bereitet die Präsentation vor bereits in der Abteilung.",
-      "explanation": "bereits: Temporal: etwas ist früher als erwartet passiert. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -385,22 +225,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_021",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
-      "answer": "schon",
-      "example": "Der Lieferant antwortet auf die E-Mail schon im Kurs.",
-      "explanation": "schon: Temporal/Grad: etwas ist eingetreten. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_022",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -416,22 +240,6 @@
       ],
       "example": "Der Lieferant antwortet auf die E-Mail schon im Kurs.",
       "explanation": "schon bedeutet: already. Temporal/Grad: etwas ist eingetreten.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_023",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
-      "answer": "noch",
-      "example": "Der Kursleiter organisiert die Besprechung noch bei der Arbeit.",
-      "explanation": "noch: Temporal: etwas dauert weiter an. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -461,22 +269,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_025",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
-      "answer": "erst",
-      "example": "Ich beantrage das Zertifikat erst in der Besprechung.",
-      "explanation": "erst: Temporal: später oder weniger als erwartet. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_026",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -492,22 +284,6 @@
       ],
       "example": "Ich beantrage das Zertifikat erst in der Besprechung.",
       "explanation": "erst bedeutet: only/not until. Temporal: später oder weniger als erwartet.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_027",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
-      "answer": "damals",
-      "example": "Die Kollegin erklärt die Regel damals bei der Behörde.",
-      "explanation": "damals: Temporal: früherer Zeitraum. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -537,22 +313,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_029",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
-      "answer": "bald",
-      "example": "Unsere Abteilung meldet das Problem bald in der Abteilung.",
-      "explanation": "bald: Temporal: in kurzer Zeit. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_030",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -568,22 +328,6 @@
       ],
       "example": "Unsere Abteilung meldet das Problem bald in der Abteilung.",
       "explanation": "bald bedeutet: soon. Temporal: in kurzer Zeit.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_031",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "sofort",
-      "example": "Wir schicken die Unterlagen sofort im Kurs.",
-      "explanation": "sofort: Temporal: ohne Verzögerung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -613,22 +357,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_033",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "demnächst",
-      "example": "Der Kunde ruft die Sachbearbeiterin an demnächst bei der Arbeit.",
-      "explanation": "demnächst: Temporal: bald, oft bei Planung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_034",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -644,22 +372,6 @@
       ],
       "example": "Der Kunde ruft die Sachbearbeiterin an demnächst bei der Arbeit.",
       "explanation": "demnächst bedeutet: soon/in the near future. Temporal: bald, oft bei Planung.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_035",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "mittlerweile",
-      "example": "Mein Team arbeitet im Büro mittlerweile in der Besprechung.",
-      "explanation": "mittlerweile: Temporal: Veränderung bis zur Gegenwart. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -689,22 +401,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_037",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "zunächst",
-      "example": "Die Firma bespricht den Vertrag zunächst bei der Behörde.",
-      "explanation": "zunächst: Temporal: erster Schritt. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_038",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -720,22 +416,6 @@
       ],
       "example": "Die Firma bespricht den Vertrag zunächst bei der Behörde.",
       "explanation": "zunächst bedeutet: initially. Temporal: erster Schritt.",
-      "tags": [
-        "adverbien",
-        "temporal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_039",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "temporal",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "anschließend",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung anschließend in der Abteilung.",
-      "explanation": "anschließend: Temporal: nächster Schritt in einer Reihenfolge. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "temporal"
@@ -765,22 +445,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_041",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "immer",
-      "example": "Wir vereinbaren einen neuen Termin immer im Kurs.",
-      "explanation": "immer: Häufigkeit: 100%. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_042",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -796,22 +460,6 @@
       ],
       "example": "Wir vereinbaren einen neuen Termin immer im Kurs.",
       "explanation": "immer bedeutet: always. Häufigkeit: 100%.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_043",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "meistens",
-      "example": "Der Kunde beschwert sich über die Rechnung meistens bei der Arbeit.",
-      "explanation": "meistens: Häufigkeit: sehr oft, aber nicht immer. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -841,22 +489,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_045",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "oft",
-      "example": "Ich komme zum Termin oft in der Besprechung.",
-      "explanation": "oft: Häufigkeit: viele Male. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_046",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -872,22 +504,6 @@
       ],
       "example": "Ich komme zum Termin oft in der Besprechung.",
       "explanation": "oft bedeutet: often. Häufigkeit: viele Male.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_047",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "häufig",
-      "example": "Die Kollegin prüft den Antrag häufig bei der Behörde.",
-      "explanation": "häufig: Häufigkeit: formeller als oft. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -917,22 +533,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_049",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "manchmal",
-      "example": "Unsere Abteilung bereitet die Präsentation vor manchmal in der Abteilung.",
-      "explanation": "manchmal: Häufigkeit: gelegentlich. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_050",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -948,22 +548,6 @@
       ],
       "example": "Unsere Abteilung bereitet die Präsentation vor manchmal in der Abteilung.",
       "explanation": "manchmal bedeutet: sometimes. Häufigkeit: gelegentlich.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_051",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
-      "answer": "selten",
-      "example": "Der Lieferant antwortet auf die E-Mail selten im Kurs.",
-      "explanation": "selten: Häufigkeit: nicht oft. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -993,22 +577,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_053",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
-      "answer": "nie",
-      "example": "Der Kursleiter organisiert die Besprechung nie bei der Arbeit.",
-      "explanation": "nie: Häufigkeit: 0%. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_054",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1024,22 +592,6 @@
       ],
       "example": "Der Kursleiter organisiert die Besprechung nie bei der Arbeit.",
       "explanation": "nie bedeutet: never. Häufigkeit: 0%.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_055",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
-      "answer": "niemals",
-      "example": "Ich beantrage das Zertifikat niemals in der Besprechung.",
-      "explanation": "niemals: Häufigkeit: stärker als nie. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1069,22 +621,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_057",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
-      "answer": "gelegentlich",
-      "example": "Die Kollegin erklärt die Regel gelegentlich bei der Behörde.",
-      "explanation": "gelegentlich: Häufigkeit: ab und zu, eher formell. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_058",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1100,22 +636,6 @@
       ],
       "example": "Die Kollegin erklärt die Regel gelegentlich bei der Behörde.",
       "explanation": "gelegentlich bedeutet: occasionally. Häufigkeit: ab und zu, eher formell.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_059",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
-      "answer": "regelmäßig",
-      "example": "Unsere Abteilung meldet das Problem regelmäßig in der Abteilung.",
-      "explanation": "regelmäßig: Häufigkeit: nach einem Plan. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1145,22 +665,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_061",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "täglich",
-      "example": "Wir schicken die Unterlagen täglich im Kurs.",
-      "explanation": "täglich: Häufigkeit: jeden Tag. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_062",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1176,22 +680,6 @@
       ],
       "example": "Wir schicken die Unterlagen täglich im Kurs.",
       "explanation": "täglich bedeutet: daily. Häufigkeit: jeden Tag.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_063",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "wöchentlich",
-      "example": "Der Kunde ruft die Sachbearbeiterin an wöchentlich bei der Arbeit.",
-      "explanation": "wöchentlich: Häufigkeit: jede Woche. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1221,22 +709,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_065",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "monatlich",
-      "example": "Mein Team arbeitet im Büro monatlich in der Besprechung.",
-      "explanation": "monatlich: Häufigkeit: jeden Monat. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_066",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1252,22 +724,6 @@
       ],
       "example": "Mein Team arbeitet im Büro monatlich in der Besprechung.",
       "explanation": "monatlich bedeutet: monthly. Häufigkeit: jeden Monat.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_067",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "jährlich",
-      "example": "Die Firma bespricht den Vertrag jährlich bei der Behörde.",
-      "explanation": "jährlich: Häufigkeit: jedes Jahr. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1297,22 +753,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_069",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "ab und zu",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung ab und zu in der Abteilung.",
-      "explanation": "ab und zu: Häufigkeit: manchmal, informell. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_070",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1328,22 +768,6 @@
       ],
       "example": "Die Sachbearbeiterin wartet auf die Rückmeldung ab und zu in der Abteilung.",
       "explanation": "ab und zu bedeutet: now and then. Häufigkeit: manchmal, informell.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_071",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "ständig",
-      "example": "Wir vereinbaren einen neuen Termin ständig im Kurs.",
-      "explanation": "ständig: Häufigkeit: sehr oft, oft negativ. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1373,22 +797,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_073",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "dauernd",
-      "example": "Der Kunde beschwert sich über die Rechnung dauernd bei der Arbeit.",
-      "explanation": "dauernd: Häufigkeit: sehr oft, umgangssprachlich. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_074",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1404,22 +812,6 @@
       ],
       "example": "Der Kunde beschwert sich über die Rechnung dauernd bei der Arbeit.",
       "explanation": "dauernd bedeutet: all the time. Häufigkeit: sehr oft, umgangssprachlich.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_075",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "mehrmals",
-      "example": "Ich komme zum Termin mehrmals in der Besprechung.",
-      "explanation": "mehrmals: Häufigkeit: mehr als einmal. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1449,22 +841,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_077",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "einmal",
-      "example": "Die Kollegin prüft den Antrag einmal bei der Behörde.",
-      "explanation": "einmal: Häufigkeit: eine Wiederholung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_078",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1480,22 +856,6 @@
       ],
       "example": "Die Kollegin prüft den Antrag einmal bei der Behörde.",
       "explanation": "einmal bedeutet: once. Häufigkeit: eine Wiederholung.",
-      "tags": [
-        "adverbien",
-        "frequency"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_079",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "frequency",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "zweimal",
-      "example": "Unsere Abteilung bereitet die Präsentation vor zweimal in der Abteilung.",
-      "explanation": "zweimal: Häufigkeit: zwei Wiederholungen. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "frequency"
@@ -1525,22 +885,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_081",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
-      "answer": "gern",
-      "example": "Der Lieferant antwortet auf die E-Mail gern im Kurs.",
-      "explanation": "gern: Modal: beschreibt Vorliebe. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_082",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1556,22 +900,6 @@
       ],
       "example": "Der Lieferant antwortet auf die E-Mail gern im Kurs.",
       "explanation": "gern bedeutet: gladly/like to. Modal: beschreibt Vorliebe.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_083",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
-      "answer": "lieber",
-      "example": "Der Kursleiter organisiert die Besprechung lieber bei der Arbeit.",
-      "explanation": "lieber: Modal: bevorzugte Alternative. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -1601,22 +929,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_085",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
-      "answer": "leider",
-      "example": "Ich beantrage das Zertifikat leider in der Besprechung.",
-      "explanation": "leider: Modal: Bewertung durch Sprecher. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_086",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1632,22 +944,6 @@
       ],
       "example": "Ich beantrage das Zertifikat leider in der Besprechung.",
       "explanation": "leider bedeutet: unfortunately. Modal: Bewertung durch Sprecher.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_087",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
-      "answer": "vielleicht",
-      "example": "Die Kollegin erklärt die Regel vielleicht bei der Behörde.",
-      "explanation": "vielleicht: Modal: Unsicherheit. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -1677,22 +973,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_089",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
-      "answer": "wahrscheinlich",
-      "example": "Unsere Abteilung meldet das Problem wahrscheinlich in der Abteilung.",
-      "explanation": "wahrscheinlich: Modal: hohe Wahrscheinlichkeit. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_090",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1708,22 +988,6 @@
       ],
       "example": "Unsere Abteilung meldet das Problem wahrscheinlich in der Abteilung.",
       "explanation": "wahrscheinlich bedeutet: probably. Modal: hohe Wahrscheinlichkeit.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_091",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "vermutlich",
-      "example": "Wir schicken die Unterlagen vermutlich im Kurs.",
-      "explanation": "vermutlich: Modal: Annahme. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -1753,22 +1017,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_093",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "sicher",
-      "example": "Der Kunde ruft die Sachbearbeiterin an sicher bei der Arbeit.",
-      "explanation": "sicher: Modal: Gewissheit oder Art und Weise. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_094",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1784,22 +1032,6 @@
       ],
       "example": "Der Kunde ruft die Sachbearbeiterin an sicher bei der Arbeit.",
       "explanation": "sicher bedeutet: certainly/safely. Modal: Gewissheit oder Art und Weise.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_095",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "kaum",
-      "example": "Mein Team arbeitet im Büro kaum in der Besprechung.",
-      "explanation": "kaum: Modal/Grad: fast nicht. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -1829,22 +1061,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_097",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "fast",
-      "example": "Die Firma bespricht den Vertrag fast bei der Behörde.",
-      "explanation": "fast: Grad: beinahe. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_098",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1860,22 +1076,6 @@
       ],
       "example": "Die Firma bespricht den Vertrag fast bei der Behörde.",
       "explanation": "fast bedeutet: almost. Grad: beinahe.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_099",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "besonders",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung besonders in der Abteilung.",
-      "explanation": "besonders: Grad: stärker hervorgehoben. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -1905,22 +1105,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_101",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "ziemlich",
-      "example": "Wir vereinbaren einen neuen Termin ziemlich im Kurs.",
-      "explanation": "ziemlich: Grad: mittel bis stark. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_102",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -1936,22 +1120,6 @@
       ],
       "example": "Wir vereinbaren einen neuen Termin ziemlich im Kurs.",
       "explanation": "ziemlich bedeutet: quite/rather. Grad: mittel bis stark.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_103",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "sehr",
-      "example": "Der Kunde beschwert sich über die Rechnung sehr bei der Arbeit.",
-      "explanation": "sehr: Grad: stark. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -1981,22 +1149,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_105",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "wirklich",
-      "example": "Ich komme zum Termin wirklich in der Besprechung.",
-      "explanation": "wirklich: Grad/Betonung: tatsächlich. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_106",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2012,22 +1164,6 @@
       ],
       "example": "Ich komme zum Termin wirklich in der Besprechung.",
       "explanation": "wirklich bedeutet: really. Grad/Betonung: tatsächlich.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_107",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "eigentlich",
-      "example": "Die Kollegin prüft den Antrag eigentlich bei der Behörde.",
-      "explanation": "eigentlich: Modal: Erwartung, Gegensatz oder Korrektur. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -2057,22 +1193,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_109",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "genau",
-      "example": "Unsere Abteilung bereitet die Präsentation vor genau in der Abteilung.",
-      "explanation": "genau: Modal: Präzision. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_110",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2088,22 +1208,6 @@
       ],
       "example": "Unsere Abteilung bereitet die Präsentation vor genau in der Abteilung.",
       "explanation": "genau bedeutet: exactly. Modal: Präzision.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_111",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
-      "answer": "einfach",
-      "example": "Der Lieferant antwortet auf die E-Mail einfach im Kurs.",
-      "explanation": "einfach: Modal: unkompliziert oder betonend. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -2133,22 +1237,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_113",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
-      "answer": "vorsichtig",
-      "example": "Der Kursleiter organisiert die Besprechung vorsichtig bei der Arbeit.",
-      "explanation": "vorsichtig: Modal: Art und Weise. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_114",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2164,22 +1252,6 @@
       ],
       "example": "Der Kursleiter organisiert die Besprechung vorsichtig bei der Arbeit.",
       "explanation": "vorsichtig bedeutet: carefully. Modal: Art und Weise.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_115",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
-      "answer": "gründlich",
-      "example": "Ich beantrage das Zertifikat gründlich in der Besprechung.",
-      "explanation": "gründlich: Modal: sorgfältig. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -2209,22 +1281,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_117",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
-      "answer": "gemeinsam",
-      "example": "Die Kollegin erklärt die Regel gemeinsam bei der Behörde.",
-      "explanation": "gemeinsam: Modal: zusammen mit anderen. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_118",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2240,22 +1296,6 @@
       ],
       "example": "Die Kollegin erklärt die Regel gemeinsam bei der Behörde.",
       "explanation": "gemeinsam bedeutet: together. Modal: zusammen mit anderen.",
-      "tags": [
-        "adverbien",
-        "modal"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_119",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "modal",
-      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
-      "answer": "allein",
-      "example": "Unsere Abteilung meldet das Problem allein in der Abteilung.",
-      "explanation": "allein: Modal: ohne andere Personen. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "modal"
@@ -2285,22 +1325,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_121",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "hier",
-      "example": "Wir schicken die Unterlagen hier im Kurs.",
-      "explanation": "hier: Lokal: am Ort des Sprechers. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_122",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2316,22 +1340,6 @@
       ],
       "example": "Wir schicken die Unterlagen hier im Kurs.",
       "explanation": "hier bedeutet: here. Lokal: am Ort des Sprechers.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_123",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "dort",
-      "example": "Der Kunde ruft die Sachbearbeiterin an dort bei der Arbeit.",
-      "explanation": "dort: Lokal: anderer Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2361,22 +1369,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_125",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "da",
-      "example": "Mein Team arbeitet im Büro da in der Besprechung.",
-      "explanation": "da: Lokal: kontextabhängiger Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_126",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2392,22 +1384,6 @@
       ],
       "example": "Mein Team arbeitet im Büro da in der Besprechung.",
       "explanation": "da bedeutet: there/here. Lokal: kontextabhängiger Ort.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_127",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "draußen",
-      "example": "Die Firma bespricht den Vertrag draußen bei der Behörde.",
-      "explanation": "draußen: Lokal: außerhalb. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2437,22 +1413,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_129",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "drinnen",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung drinnen in der Abteilung.",
-      "explanation": "drinnen: Lokal: innerhalb. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_130",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2468,22 +1428,6 @@
       ],
       "example": "Die Sachbearbeiterin wartet auf die Rückmeldung drinnen in der Abteilung.",
       "explanation": "drinnen bedeutet: inside. Lokal: innerhalb.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_131",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "oben",
-      "example": "Wir vereinbaren einen neuen Termin oben im Kurs.",
-      "explanation": "oben: Lokal: höherer Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2513,22 +1457,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_133",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "unten",
-      "example": "Der Kunde beschwert sich über die Rechnung unten bei der Arbeit.",
-      "explanation": "unten: Lokal: tieferer Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_134",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2544,22 +1472,6 @@
       ],
       "example": "Der Kunde beschwert sich über die Rechnung unten bei der Arbeit.",
       "explanation": "unten bedeutet: downstairs/below. Lokal: tieferer Ort.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_135",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "vorne",
-      "example": "Ich komme zum Termin vorne in der Besprechung.",
-      "explanation": "vorne: Lokal: vorderer Bereich. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2589,22 +1501,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_137",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "hinten",
-      "example": "Die Kollegin prüft den Antrag hinten bei der Behörde.",
-      "explanation": "hinten: Lokal: hinterer Bereich. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_138",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2620,22 +1516,6 @@
       ],
       "example": "Die Kollegin prüft den Antrag hinten bei der Behörde.",
       "explanation": "hinten bedeutet: at the back. Lokal: hinterer Bereich.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_139",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "links",
-      "example": "Unsere Abteilung bereitet die Präsentation vor links in der Abteilung.",
-      "explanation": "links: Lokal: linke Seite. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2665,22 +1545,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_141",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
-      "answer": "rechts",
-      "example": "Der Lieferant antwortet auf die E-Mail rechts im Kurs.",
-      "explanation": "rechts: Lokal: rechte Seite. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_142",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2696,22 +1560,6 @@
       ],
       "example": "Der Lieferant antwortet auf die E-Mail rechts im Kurs.",
       "explanation": "rechts bedeutet: right. Lokal: rechte Seite.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_143",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
-      "answer": "überall",
-      "example": "Der Kursleiter organisiert die Besprechung überall bei der Arbeit.",
-      "explanation": "überall: Lokal: an allen Orten. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2741,22 +1589,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_145",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
-      "answer": "nirgends",
-      "example": "Ich beantrage das Zertifikat nirgends in der Besprechung.",
-      "explanation": "nirgends: Lokal: an keinem Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_146",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2772,22 +1604,6 @@
       ],
       "example": "Ich beantrage das Zertifikat nirgends in der Besprechung.",
       "explanation": "nirgends bedeutet: nowhere. Lokal: an keinem Ort.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_147",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
-      "answer": "dorthin",
-      "example": "Die Kollegin erklärt die Regel dorthin bei der Behörde.",
-      "explanation": "dorthin: Direktional: Bewegung zu einem Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2817,22 +1633,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_149",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
-      "answer": "dahin",
-      "example": "Unsere Abteilung meldet das Problem dahin in der Abteilung.",
-      "explanation": "dahin: Direktional: Bewegung in Richtung eines bekannten Ortes. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_150",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2848,22 +1648,6 @@
       ],
       "example": "Unsere Abteilung meldet das Problem dahin in der Abteilung.",
       "explanation": "dahin bedeutet: to there. Direktional: Bewegung in Richtung eines bekannten Ortes.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_151",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "heraus",
-      "example": "Wir schicken die Unterlagen heraus im Kurs.",
-      "explanation": "heraus: Direktional: aus etwas heraus. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2893,22 +1677,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_153",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "hinein",
-      "example": "Der Kunde ruft die Sachbearbeiterin an hinein bei der Arbeit.",
-      "explanation": "hinein: Direktional: in etwas hinein. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_154",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -2924,22 +1692,6 @@
       ],
       "example": "Der Kunde ruft die Sachbearbeiterin an hinein bei der Arbeit.",
       "explanation": "hinein bedeutet: into. Direktional: in etwas hinein.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_155",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "zurück",
-      "example": "Mein Team arbeitet im Büro zurück in der Besprechung.",
-      "explanation": "zurück: Direktional: zurück zum Ausgangspunkt. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -2969,22 +1721,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_157",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "weg",
-      "example": "Die Firma bespricht den Vertrag weg bei der Behörde.",
-      "explanation": "weg: Direktional: vom Ort fort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_158",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3000,22 +1736,6 @@
       ],
       "example": "Die Firma bespricht den Vertrag weg bei der Behörde.",
       "explanation": "weg bedeutet: away. Direktional: vom Ort fort.",
-      "tags": [
-        "adverbien",
-        "local"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_159",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "local",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "vorbei",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung vorbei in der Abteilung.",
-      "explanation": "vorbei: Direktional/Lokal: an etwas vorbei. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "local"
@@ -3045,22 +1765,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_161",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "deshalb",
-      "example": "Wir vereinbaren einen neuen Termin deshalb im Kurs.",
-      "explanation": "deshalb: Konjunktionaladverb: Grund → Folge. Verb steht auf Position 2. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_162",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3076,22 +1780,6 @@
       ],
       "example": "Wir vereinbaren einen neuen Termin deshalb im Kurs.",
       "explanation": "deshalb bedeutet: therefore. Konjunktionaladverb: Grund → Folge. Verb steht auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_163",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "deswegen",
-      "example": "Der Kunde beschwert sich über die Rechnung deswegen bei der Arbeit.",
-      "explanation": "deswegen: Konjunktionaladverb: Grund → Folge. Verbposition 2. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3121,22 +1809,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_165",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "darum",
-      "example": "Ich komme zum Termin darum in der Besprechung.",
-      "explanation": "darum: Konjunktionaladverb: Grund → Folge, oft alltagssprachlich. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_166",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3152,22 +1824,6 @@
       ],
       "example": "Ich komme zum Termin darum in der Besprechung.",
       "explanation": "darum bedeutet: therefore. Konjunktionaladverb: Grund → Folge, oft alltagssprachlich.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_167",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "daher",
-      "example": "Die Kollegin prüft den Antrag daher bei der Behörde.",
-      "explanation": "daher: Konjunktionaladverb: eher formell. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3197,22 +1853,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_169",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "trotzdem",
-      "example": "Unsere Abteilung bereitet die Präsentation vor trotzdem in der Abteilung.",
-      "explanation": "trotzdem: Konjunktionaladverb: Gegensatz trotz Hindernis. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_170",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3228,22 +1868,6 @@
       ],
       "example": "Unsere Abteilung bereitet die Präsentation vor trotzdem in der Abteilung.",
       "explanation": "trotzdem bedeutet: nevertheless. Konjunktionaladverb: Gegensatz trotz Hindernis.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_171",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
-      "answer": "dennoch",
-      "example": "Der Lieferant antwortet auf die E-Mail dennoch im Kurs.",
-      "explanation": "dennoch: Konjunktionaladverb: formeller als trotzdem. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3273,22 +1897,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_173",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
-      "answer": "außerdem",
-      "example": "Der Kursleiter organisiert die Besprechung außerdem bei der Arbeit.",
-      "explanation": "außerdem: Konjunktionaladverb: zusätzliche Information. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_174",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3304,22 +1912,6 @@
       ],
       "example": "Der Kursleiter organisiert die Besprechung außerdem bei der Arbeit.",
       "explanation": "außerdem bedeutet: besides/furthermore. Konjunktionaladverb: zusätzliche Information.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_175",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
-      "answer": "nämlich",
-      "example": "Ich beantrage das Zertifikat nämlich in der Besprechung.",
-      "explanation": "nämlich: Erklärendes Adverb: liefert Begründung; oft in Position 3. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3349,22 +1941,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_177",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
-      "answer": "sonst",
-      "example": "Die Kollegin erklärt die Regel sonst bei der Behörde.",
-      "explanation": "sonst: Konjunktionaladverb: Konsequenz bei Nicht-Erfüllung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_178",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3380,22 +1956,6 @@
       ],
       "example": "Die Kollegin erklärt die Regel sonst bei der Behörde.",
       "explanation": "sonst bedeutet: otherwise. Konjunktionaladverb: Konsequenz bei Nicht-Erfüllung.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_179",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
-      "answer": "allerdings",
-      "example": "Unsere Abteilung meldet das Problem allerdings in der Abteilung.",
-      "explanation": "allerdings: Konjunktionaladverb: Einschränkung oder Gegensatz. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3425,22 +1985,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_181",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
-      "answer": "folglich",
-      "example": "Wir schicken die Unterlagen folglich im Kurs.",
-      "explanation": "folglich: Konjunktionaladverb: logische Folge. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_182",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3456,22 +2000,6 @@
       ],
       "example": "Wir schicken die Unterlagen folglich im Kurs.",
       "explanation": "folglich bedeutet: consequently. Konjunktionaladverb: logische Folge.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_183",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
-      "answer": "dagegen",
-      "example": "Der Kunde ruft die Sachbearbeiterin an dagegen bei der Arbeit.",
-      "explanation": "dagegen: Konjunktionaladverb: Kontrast. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3501,22 +2029,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_185",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
-      "answer": "hingegen",
-      "example": "Mein Team arbeitet im Büro hingegen in der Besprechung.",
-      "explanation": "hingegen: Konjunktionaladverb: formeller Kontrast. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_186",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3532,22 +2044,6 @@
       ],
       "example": "Mein Team arbeitet im Büro hingegen in der Besprechung.",
       "explanation": "hingegen bedeutet: whereas. Konjunktionaladverb: formeller Kontrast.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_187",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
-      "answer": "stattdessen",
-      "example": "Die Firma bespricht den Vertrag stattdessen bei der Behörde.",
-      "explanation": "stattdessen: Konjunktionaladverb: Alternative. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3577,22 +2073,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_189",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
-      "answer": "zudem",
-      "example": "Die Sachbearbeiterin wartet auf die Rückmeldung zudem in der Abteilung.",
-      "explanation": "zudem: Konjunktionaladverb: zusätzliche Information, formell. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_190",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3608,22 +2088,6 @@
       ],
       "example": "Die Sachbearbeiterin wartet auf die Rückmeldung zudem in der Abteilung.",
       "explanation": "zudem bedeutet: moreover. Konjunktionaladverb: zusätzliche Information, formell.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_191",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
-      "answer": "somit",
-      "example": "Wir vereinbaren einen neuen Termin somit im Kurs.",
-      "explanation": "somit: Konjunktionaladverb: Schlussfolgerung. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3653,22 +2117,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_193",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
-      "answer": "anschließend",
-      "example": "Der Kunde beschwert sich über die Rechnung anschließend bei der Arbeit.",
-      "explanation": "anschließend: Konjunktionaladverb/Temporal: Reihenfolge. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_194",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3684,22 +2132,6 @@
       ],
       "example": "Der Kunde beschwert sich über die Rechnung anschließend bei der Arbeit.",
       "explanation": "anschließend bedeutet: afterwards. Konjunktionaladverb/Temporal: Reihenfolge.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_195",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
-      "answer": "danach",
-      "example": "Ich komme zum Termin danach in der Besprechung.",
-      "explanation": "danach: Konjunktionaladverb/Temporal: Reihenfolge. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3729,22 +2161,6 @@
       "level": "B1-B2"
     },
     {
-      "id": "adv_gap_197",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
-      "answer": "vorher",
-      "example": "Die Kollegin prüft den Antrag vorher bei der Behörde.",
-      "explanation": "vorher: Konjunktionaladverb/Temporal: Vorzeitigkeit. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
       "id": "adv_choice_198",
       "exerciseType": "multiple_choice",
       "type": "choice",
@@ -3760,22 +2176,6 @@
       ],
       "example": "Die Kollegin prüft den Antrag vorher bei der Behörde.",
       "explanation": "vorher bedeutet: before that. Konjunktionaladverb/Temporal: Vorzeitigkeit.",
-      "tags": [
-        "adverbien",
-        "connector_adverb"
-      ],
-      "level": "B1-B2"
-    },
-    {
-      "id": "adv_gap_199",
-      "exerciseType": "gap_fill",
-      "type": "gap_fill",
-      "category": "Adverbien",
-      "subtopic": "connector_adverb",
-      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
-      "answer": "infolgedessen",
-      "example": "Unsere Abteilung bereitet die Präsentation vor infolgedessen in der Abteilung.",
-      "explanation": "infolgedessen: Konjunktionaladverb: formelle Folge. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das finite Verb auf Position 2.",
       "tags": [
         "adverbien",
         "connector_adverb"
@@ -3814,10 +2214,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro heute im Büro.",
       "explanation": "heute: Temporal: Zeitpunkt am aktuellen Tag.",
@@ -3872,10 +2272,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin später in der Besprechung.",
       "explanation": "später: Temporal: späterer Zeitpunkt.",
@@ -3930,10 +2330,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag inzwischen im Büro.",
       "explanation": "inzwischen: Temporal: Entwicklung bis jetzt.",
@@ -3988,10 +2388,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung bereits in der Besprechung.",
       "explanation": "bereits: Temporal: etwas ist früher als erwartet passiert.",
@@ -4046,10 +2446,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem erst im Büro.",
       "explanation": "erst: Temporal: später oder weniger als erwartet.",
@@ -4104,10 +2504,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro sofort in der Besprechung.",
       "explanation": "sofort: Temporal: ohne Verzögerung.",
@@ -4162,10 +2562,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin zunächst im Büro.",
       "explanation": "zunächst: Temporal: erster Schritt.",
@@ -4217,13 +2617,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'meistens'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag meistens in der Besprechung.",
       "explanation": "meistens: Häufigkeit: sehr oft, aber nicht immer.",
@@ -4275,13 +2675,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'manchmal'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung manchmal im Büro.",
       "explanation": "manchmal: Häufigkeit: gelegentlich.",
@@ -4333,13 +2733,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'niemals'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem niemals in der Besprechung.",
       "explanation": "niemals: Häufigkeit: stärker als nie.",
@@ -4391,13 +2791,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'täglich'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro täglich im Büro.",
       "explanation": "täglich: Häufigkeit: jeden Tag.",
@@ -4449,13 +2849,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'jährlich'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin jährlich in der Besprechung.",
       "explanation": "jährlich: Häufigkeit: jedes Jahr.",
@@ -4507,13 +2907,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'dauernd'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag dauernd im Büro.",
       "explanation": "dauernd: Häufigkeit: sehr oft, umgangssprachlich.",
@@ -4565,13 +2965,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'zweimal'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung zweimal in der Besprechung.",
       "explanation": "zweimal: Häufigkeit: zwei Wiederholungen.",
@@ -4626,10 +3026,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem leider im Büro.",
       "explanation": "leider: Modal: Bewertung durch Sprecher.",
@@ -4684,10 +3084,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro vermutlich in der Besprechung.",
       "explanation": "vermutlich: Modal: Annahme.",
@@ -4742,10 +3142,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin fast im Büro.",
       "explanation": "fast: Grad: beinahe.",
@@ -4800,10 +3200,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag sehr in der Besprechung.",
       "explanation": "sehr: Grad: stark.",
@@ -4858,10 +3258,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung genau im Büro.",
       "explanation": "genau: Modal: Präzision.",
@@ -4916,10 +3316,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem gründlich in der Besprechung.",
       "explanation": "gründlich: Modal: sorgfältig.",
@@ -4971,13 +3371,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'hier'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro hier im Büro.",
       "explanation": "hier: Lokal: am Ort des Sprechers.",
@@ -5029,13 +3429,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'draußen'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin draußen in der Besprechung.",
       "explanation": "draußen: Lokal: außerhalb.",
@@ -5087,13 +3487,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'unten'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag unten im Büro.",
       "explanation": "unten: Lokal: tieferer Ort.",
@@ -5145,13 +3545,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'links'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung links in der Besprechung.",
       "explanation": "links: Lokal: linke Seite.",
@@ -5203,13 +3603,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'nirgends'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem nirgends im Büro.",
       "explanation": "nirgends: Lokal: an keinem Ort.",
@@ -5261,13 +3661,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'heraus'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro heraus in der Besprechung.",
       "explanation": "heraus: Direktional: aus etwas heraus.",
@@ -5319,13 +3719,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'weg'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin weg im Büro.",
       "explanation": "weg: Direktional: vom Ort fort.",
@@ -5377,13 +3777,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'deswegen'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag deswegen in der Besprechung.",
       "explanation": "deswegen: Konjunktionaladverb: Grund → Folge. Verbposition 2.",
@@ -5435,13 +3835,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'trotzdem'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung trotzdem im Büro.",
       "explanation": "trotzdem: Konjunktionaladverb: Gegensatz trotz Hindernis.",
@@ -5493,13 +3893,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'nämlich'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem nämlich in der Besprechung.",
       "explanation": "nämlich: Erklärendes Adverb: liefert Begründung; oft in Position 3.",
@@ -5551,13 +3951,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'folglich'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro folglich im Büro.",
       "explanation": "folglich: Konjunktionaladverb: logische Folge.",
@@ -5609,13 +4009,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'stattdessen'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin stattdessen in der Besprechung.",
       "explanation": "stattdessen: Konjunktionaladverb: Alternative.",
@@ -5667,13 +4067,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'anschließend'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag anschließend im Büro.",
       "explanation": "anschließend: Konjunktionaladverb/Temporal: Reihenfolge.",
@@ -5725,13 +4125,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'infolgedessen'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung infolgedessen in der Besprechung.",
       "explanation": "infolgedessen: Konjunktionaladverb: formelle Folge.",
@@ -5786,10 +4186,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem gestern im Büro.",
       "explanation": "gestern: Temporal: vorheriger Tag.",
@@ -5844,10 +4244,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro danach in der Besprechung.",
       "explanation": "danach: Temporal: nach einer anderen Handlung.",
@@ -5902,10 +4302,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin kürzlich im Büro.",
       "explanation": "kürzlich: Temporal: vor kurzer Zeit, eher formell.",
@@ -5960,10 +4360,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag noch in der Besprechung.",
       "explanation": "noch: Temporal: etwas dauert weiter an.",
@@ -6018,10 +4418,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung bald im Büro.",
       "explanation": "bald: Temporal: in kurzer Zeit.",
@@ -6076,10 +4476,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem mittlerweile in der Besprechung.",
       "explanation": "mittlerweile: Temporal: Veränderung bis zur Gegenwart.",
@@ -6131,13 +4531,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'immer'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro immer im Büro.",
       "explanation": "immer: Häufigkeit: 100%.",
@@ -6189,13 +4589,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'häufig'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin häufig in der Besprechung.",
       "explanation": "häufig: Häufigkeit: formeller als oft.",
@@ -6247,13 +4647,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'nie'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag nie im Büro.",
       "explanation": "nie: Häufigkeit: 0%.",
@@ -6305,13 +4705,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'regelmäßig'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung regelmäßig in der Besprechung.",
       "explanation": "regelmäßig: Häufigkeit: nach einem Plan.",
@@ -6363,13 +4763,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'monatlich'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem monatlich im Büro.",
       "explanation": "monatlich: Häufigkeit: jeden Monat.",
@@ -6421,13 +4821,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'ständig'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro ständig in der Besprechung.",
       "explanation": "ständig: Häufigkeit: sehr oft, oft negativ.",
@@ -6479,13 +4879,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'einmal'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin einmal im Büro.",
       "explanation": "einmal: Häufigkeit: eine Wiederholung.",
@@ -6540,10 +4940,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag lieber in der Besprechung.",
       "explanation": "lieber: Modal: bevorzugte Alternative.",
@@ -6598,10 +4998,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung wahrscheinlich im Büro.",
       "explanation": "wahrscheinlich: Modal: hohe Wahrscheinlichkeit.",
@@ -6656,10 +5056,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem kaum in der Besprechung.",
       "explanation": "kaum: Modal/Grad: fast nicht.",
@@ -6714,10 +5114,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro ziemlich im Büro.",
       "explanation": "ziemlich: Grad: mittel bis stark.",
@@ -6772,10 +5172,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin eigentlich in der Besprechung.",
       "explanation": "eigentlich: Modal: Erwartung, Gegensatz oder Korrektur.",
@@ -6830,10 +5230,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag vorsichtig im Büro.",
       "explanation": "vorsichtig: Modal: Art und Weise.",
@@ -6888,10 +5288,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung allein in der Besprechung.",
       "explanation": "allein: Modal: ohne andere Personen.",
@@ -6943,13 +5343,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'da'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem da im Büro.",
       "explanation": "da: Lokal: kontextabhängiger Ort.",
@@ -7001,13 +5401,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'oben'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro oben in der Besprechung.",
       "explanation": "oben: Lokal: höherer Ort.",
@@ -7059,13 +5459,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'hinten'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin hinten im Büro.",
       "explanation": "hinten: Lokal: hinterer Bereich.",
@@ -7117,13 +5517,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'überall'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag überall in der Besprechung.",
       "explanation": "überall: Lokal: an allen Orten.",
@@ -7175,13 +5575,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'dahin'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung dahin im Büro.",
       "explanation": "dahin: Direktional: Bewegung in Richtung eines bekannten Ortes.",
@@ -7233,13 +5633,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'zurück'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem zurück in der Besprechung.",
       "explanation": "zurück: Direktional: zurück zum Ausgangspunkt.",
@@ -7291,13 +5691,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'deshalb'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro deshalb im Büro.",
       "explanation": "deshalb: Konjunktionaladverb: Grund → Folge. Verb steht auf Position 2.",
@@ -7349,13 +5749,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'daher'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin daher in der Besprechung.",
       "explanation": "daher: Konjunktionaladverb: eher formell.",
@@ -7407,13 +5807,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'außerdem'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag außerdem im Büro.",
       "explanation": "außerdem: Konjunktionaladverb: zusätzliche Information.",
@@ -7465,13 +5865,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'allerdings'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung allerdings in der Besprechung.",
       "explanation": "allerdings: Konjunktionaladverb: Einschränkung oder Gegensatz.",
@@ -7523,13 +5923,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'hingegen'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem hingegen im Büro.",
       "explanation": "hingegen: Konjunktionaladverb: formeller Kontrast.",
@@ -7581,13 +5981,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'somit'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro somit in der Besprechung.",
       "explanation": "somit: Konjunktionaladverb: Schlussfolgerung.",
@@ -7639,13 +6039,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'vorher'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin vorher im Büro.",
       "explanation": "vorher: Konjunktionaladverb/Temporal: Vorzeitigkeit.",
@@ -7700,10 +6100,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag morgen in der Besprechung.",
       "explanation": "morgen: Temporal: nächster Tag.",
@@ -7758,10 +6158,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung vorher im Büro.",
       "explanation": "vorher: Temporal: vor einer anderen Handlung.",
@@ -7816,10 +6216,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem neulich in der Besprechung.",
       "explanation": "neulich: Temporal: vor kurzer Zeit, ungenauer Zeitpunkt.",
@@ -7874,10 +6274,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro schon im Büro.",
       "explanation": "schon: Temporal/Grad: etwas ist eingetreten.",
@@ -7932,10 +6332,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin damals in der Besprechung.",
       "explanation": "damals: Temporal: früherer Zeitraum.",
@@ -7990,10 +6390,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag demnächst im Büro.",
       "explanation": "demnächst: Temporal: bald, oft bei Planung.",
@@ -8048,10 +6448,10 @@
       "answer": "temporal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung anschließend in der Besprechung.",
       "explanation": "anschließend: Temporal: nächster Schritt in einer Reihenfolge.",
@@ -8103,13 +6503,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'oft'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem oft im Büro.",
       "explanation": "oft: Häufigkeit: viele Male.",
@@ -8161,13 +6561,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'selten'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro selten in der Besprechung.",
       "explanation": "selten: Häufigkeit: nicht oft.",
@@ -8219,13 +6619,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'gelegentlich'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin gelegentlich im Büro.",
       "explanation": "gelegentlich: Häufigkeit: ab und zu, eher formell.",
@@ -8277,13 +6677,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'wöchentlich'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag wöchentlich in der Besprechung.",
       "explanation": "wöchentlich: Häufigkeit: jede Woche.",
@@ -8335,13 +6735,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'ab und zu'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung ab und zu im Büro.",
       "explanation": "ab und zu: Häufigkeit: manchmal, informell.",
@@ -8393,13 +6793,13 @@
       "category": "Adverbien",
       "subtopic": "frequency",
       "prompt": "Welche Funktion hat das Adverb 'mehrmals'?",
-      "answer": "frequency",
+      "answer": "Häufigkeit",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem mehrmals in der Besprechung.",
       "explanation": "mehrmals: Häufigkeit: mehr als einmal.",
@@ -8454,10 +6854,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro gern im Büro.",
       "explanation": "gern: Modal: beschreibt Vorliebe.",
@@ -8512,10 +6912,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin vielleicht in der Besprechung.",
       "explanation": "vielleicht: Modal: Unsicherheit.",
@@ -8570,10 +6970,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag sicher im Büro.",
       "explanation": "sicher: Modal: Gewissheit oder Art und Weise.",
@@ -8628,10 +7028,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung besonders in der Besprechung.",
       "explanation": "besonders: Grad: stärker hervorgehoben.",
@@ -8686,10 +7086,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem wirklich im Büro.",
       "explanation": "wirklich: Grad/Betonung: tatsächlich.",
@@ -8744,10 +7144,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro einfach in der Besprechung.",
       "explanation": "einfach: Modal: unkompliziert oder betonend.",
@@ -8802,10 +7202,10 @@
       "answer": "modal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin gemeinsam im Büro.",
       "explanation": "gemeinsam: Modal: zusammen mit anderen.",
@@ -8857,13 +7257,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'dort'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag dort in der Besprechung.",
       "explanation": "dort: Lokal: anderer Ort.",
@@ -8915,13 +7315,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'drinnen'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung drinnen im Büro.",
       "explanation": "drinnen: Lokal: innerhalb.",
@@ -8973,13 +7373,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'vorne'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem vorne in der Besprechung.",
       "explanation": "vorne: Lokal: vorderer Bereich.",
@@ -9031,13 +7431,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'rechts'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro rechts im Büro.",
       "explanation": "rechts: Lokal: rechte Seite.",
@@ -9089,13 +7489,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'dorthin'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin dorthin in der Besprechung.",
       "explanation": "dorthin: Direktional: Bewegung zu einem Ort.",
@@ -9147,13 +7547,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'hinein'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag hinein im Büro.",
       "explanation": "hinein: Direktional: in etwas hinein.",
@@ -9205,13 +7605,13 @@
       "category": "Adverbien",
       "subtopic": "local",
       "prompt": "Welche Funktion hat das Adverb 'vorbei'?",
-      "answer": "local",
+      "answer": "lokal",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung vorbei in der Besprechung.",
       "explanation": "vorbei: Direktional/Lokal: an etwas vorbei.",
@@ -9263,13 +7663,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'darum'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem darum im Büro.",
       "explanation": "darum: Konjunktionaladverb: Grund → Folge, oft alltagssprachlich.",
@@ -9321,13 +7721,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'dennoch'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Mein Team arbeitet im Büro dennoch in der Besprechung.",
       "explanation": "dennoch: Konjunktionaladverb: formeller als trotzdem.",
@@ -9379,13 +7779,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'sonst'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Wir vereinbaren einen neuen Termin sonst im Büro.",
       "explanation": "sonst: Konjunktionaladverb: Konsequenz bei Nicht-Erfüllung.",
@@ -9437,13 +7837,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'dagegen'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Die Kollegin prüft den Antrag dagegen in der Besprechung.",
       "explanation": "dagegen: Konjunktionaladverb: Kontrast.",
@@ -9495,13 +7895,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'zudem'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Der Kursleiter organisiert die Besprechung zudem im Büro.",
       "explanation": "zudem: Konjunktionaladverb: zusätzliche Information, formell.",
@@ -9553,13 +7953,13 @@
       "category": "Adverbien",
       "subtopic": "connector_adverb",
       "prompt": "Welche Funktion hat das Adverb 'danach'?",
-      "answer": "connector_adverb",
+      "answer": "satzverbindend",
       "choices": [
         "temporal",
-        "frequency",
+        "Häufigkeit",
         "modal",
-        "local",
-        "connector_adverb"
+        "lokal",
+        "satzverbindend"
       ],
       "example": "Unsere Abteilung meldet das Problem danach in der Besprechung.",
       "explanation": "danach: Konjunktionaladverb/Temporal: Reihenfolge.",
@@ -9603,6 +8003,241 @@
         "connector_adverb"
       ],
       "level": "B1-B2"
+    },
+    {
+      "id": "adv_gap_001_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Wir schicken die Unterlagen ___ im Kurs.",
+      "answer": "heute",
+      "choices": [
+        "heute",
+        "sofort",
+        "täglich",
+        "vermutlich",
+        "hier",
+        "heraus",
+        "folglich"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. heute: heute: Temporal: Zeitpunkt am aktuellen Tag. Adverbien werden nicht dekliniert.  | sofort: sofort: Temporal: ohne Verzögerung. Adverbien werden nicht dekliniert. Im Haupts | täglich: täglich: Häufigkeit: jeden Tag. Adverbien werden nicht dekliniert. Im Hauptsatz  | vermutlich: vermutlich: Modal: Annahme. Adverbien werden nicht dekliniert. Im Hauptsatz blei | hier: hier: Lokal: am Ort des Sprechers. Adverbien werden nicht dekliniert. Im Hauptsa | heraus: heraus: Direktional: aus etwas heraus. Adverbien werden nicht dekliniert. Im Hau | folglich: folglich: Konjunktionaladverb: logische Folge. Adverbien werden nicht dekliniert"
+    },
+    {
+      "id": "adv_gap_003_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Kunde ruft die Sachbearbeiterin an ___ bei der Arbeit.",
+      "answer": "morgen",
+      "choices": [
+        "morgen",
+        "demnächst",
+        "wöchentlich",
+        "sicher",
+        "dort",
+        "hinein",
+        "dagegen"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. morgen: morgen: Temporal: nächster Tag. Adverbien werden nicht dekliniert. Im Hauptsatz  | demnächst: demnächst: Temporal: bald, oft bei Planung. Adverbien werden nicht dekliniert. I | wöchentlich: wöchentlich: Häufigkeit: jede Woche. Adverbien werden nicht dekliniert. Im Haupt | sicher: sicher: Modal: Gewissheit oder Art und Weise. Adverbien werden nicht dekliniert. | dort: dort: Lokal: anderer Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt | hinein: hinein: Direktional: in etwas hinein. Adverbien werden nicht dekliniert. Im Haup | dagegen: dagegen: Konjunktionaladverb: Kontrast. Adverbien werden nicht dekliniert. Im Ha"
+    },
+    {
+      "id": "adv_gap_005_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Mein Team arbeitet im Büro ___ in der Besprechung.",
+      "answer": "gestern",
+      "choices": [
+        "gestern",
+        "mittlerweile",
+        "monatlich",
+        "kaum",
+        "da",
+        "zurück",
+        "hingegen"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. gestern: gestern: Temporal: vorheriger Tag. Adverbien werden nicht dekliniert. Im Hauptsa | mittlerweile: mittlerweile: Temporal: Veränderung bis zur Gegenwart. Adverbien werden nicht de | monatlich: monatlich: Häufigkeit: jeden Monat. Adverbien werden nicht dekliniert. Im Haupts | kaum: kaum: Modal/Grad: fast nicht. Adverbien werden nicht dekliniert. Im Hauptsatz bl | da: da: Lokal: kontextabhängiger Ort. Adverbien werden nicht dekliniert. Im Hauptsat | zurück: zurück: Direktional: zurück zum Ausgangspunkt. Adverbien werden nicht dekliniert | hingegen: hingegen: Konjunktionaladverb: formeller Kontrast. Adverbien werden nicht deklin"
+    },
+    {
+      "id": "adv_gap_007_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die Firma bespricht den Vertrag ___ bei der Behörde.",
+      "answer": "später",
+      "choices": [
+        "später",
+        "zunächst",
+        "jährlich",
+        "fast",
+        "draußen",
+        "weg",
+        "stattdessen"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. später: später: Temporal: späterer Zeitpunkt. Adverbien werden nicht dekliniert. Im Haup | zunächst: zunächst: Temporal: erster Schritt. Adverbien werden nicht dekliniert. Im Haupts | jährlich: jährlich: Häufigkeit: jedes Jahr. Adverbien werden nicht dekliniert. Im Hauptsat | fast: fast: Grad: beinahe. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das  | draußen: draußen: Lokal: außerhalb. Adverbien werden nicht dekliniert. Im Hauptsatz bleib | weg: weg: Direktional: vom Ort fort. Adverbien werden nicht dekliniert. Im Hauptsatz  | stattdessen: stattdessen: Konjunktionaladverb: Alternative. Adverbien werden nicht dekliniert"
+    },
+    {
+      "id": "adv_gap_009_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die Sachbearbeiterin wartet auf die Rückmeldung ___ in der Abteilung.",
+      "answer": "vorher",
+      "choices": [
+        "vorher",
+        "anschließend",
+        "ab und zu",
+        "besonders",
+        "drinnen",
+        "vorbei",
+        "zudem"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. vorher: vorher: Temporal: vor einer anderen Handlung. Adverbien werden nicht dekliniert. | anschließend: anschließend: Temporal: nächster Schritt in einer Reihenfolge. Adverbien werden  | ab und zu: ab und zu: Häufigkeit: manchmal, informell. Adverbien werden nicht dekliniert. I | besonders: besonders: Grad: stärker hervorgehoben. Adverbien werden nicht dekliniert. Im Ha | drinnen: drinnen: Lokal: innerhalb. Adverbien werden nicht dekliniert. Im Hauptsatz bleib | vorbei: vorbei: Direktional/Lokal: an etwas vorbei. Adverbien werden nicht dekliniert. I | zudem: zudem: Konjunktionaladverb: zusätzliche Information, formell. Adverbien werden n"
+    },
+    {
+      "id": "adv_gap_011_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Wir vereinbaren einen neuen Termin ___ im Kurs.",
+      "answer": "danach",
+      "choices": [
+        "danach",
+        "immer",
+        "ständig",
+        "ziemlich",
+        "oben",
+        "deshalb",
+        "somit"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. danach: danach: Temporal: nach einer anderen Handlung. Adverbien werden nicht dekliniert | immer: immer: Häufigkeit: 100%. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt  | ständig: ständig: Häufigkeit: sehr oft, oft negativ. Adverbien werden nicht dekliniert. I | ziemlich: ziemlich: Grad: mittel bis stark. Adverbien werden nicht dekliniert. Im Hauptsat | oben: oben: Lokal: höherer Ort. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt | deshalb: deshalb: Konjunktionaladverb: Grund → Folge. Verb steht auf Position 2. Adverbie | somit: somit: Konjunktionaladverb: Schlussfolgerung. Adverbien werden nicht dekliniert."
+    },
+    {
+      "id": "adv_gap_013_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Kunde beschwert sich über die Rechnung ___ bei der Arbeit.",
+      "answer": "inzwischen",
+      "choices": [
+        "inzwischen",
+        "meistens",
+        "dauernd",
+        "sehr",
+        "unten",
+        "deswegen",
+        "anschließend"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. inzwischen: inzwischen: Temporal: Entwicklung bis jetzt. Adverbien werden nicht dekliniert.  | meistens: meistens: Häufigkeit: sehr oft, aber nicht immer. Adverbien werden nicht deklini | dauernd: dauernd: Häufigkeit: sehr oft, umgangssprachlich. Adverbien werden nicht deklini | sehr: sehr: Grad: stark. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das fi | unten: unten: Lokal: tieferer Ort. Adverbien werden nicht dekliniert. Im Hauptsatz blei | deswegen: deswegen: Konjunktionaladverb: Grund → Folge. Verbposition 2. Adverbien werden n | anschließend: anschließend: Konjunktionaladverb/Temporal: Reihenfolge. Adverbien werden nicht "
+    },
+    {
+      "id": "adv_gap_015_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Ich komme zum Termin ___ in der Besprechung.",
+      "answer": "neulich",
+      "choices": [
+        "neulich",
+        "oft",
+        "mehrmals",
+        "wirklich",
+        "vorne",
+        "darum",
+        "danach"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. neulich: neulich: Temporal: vor kurzer Zeit, ungenauer Zeitpunkt. Adverbien werden nicht  | oft: oft: Häufigkeit: viele Male. Adverbien werden nicht dekliniert. Im Hauptsatz ble | mehrmals: mehrmals: Häufigkeit: mehr als einmal. Adverbien werden nicht dekliniert. Im Hau | wirklich: wirklich: Grad/Betonung: tatsächlich. Adverbien werden nicht dekliniert. Im Haup | vorne: vorne: Lokal: vorderer Bereich. Adverbien werden nicht dekliniert. Im Hauptsatz  | darum: darum: Konjunktionaladverb: Grund → Folge, oft alltagssprachlich. Adverbien werd | danach: danach: Konjunktionaladverb/Temporal: Reihenfolge. Adverbien werden nicht deklin"
+    },
+    {
+      "id": "adv_gap_017_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die Kollegin prüft den Antrag ___ bei der Behörde.",
+      "answer": "kürzlich",
+      "choices": [
+        "kürzlich",
+        "häufig",
+        "einmal",
+        "eigentlich",
+        "hinten",
+        "daher",
+        "vorher"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. kürzlich: kürzlich: Temporal: vor kurzer Zeit, eher formell. Adverbien werden nicht deklin | häufig: häufig: Häufigkeit: formeller als oft. Adverbien werden nicht dekliniert. Im Hau | einmal: einmal: Häufigkeit: eine Wiederholung. Adverbien werden nicht dekliniert. Im Hau | eigentlich: eigentlich: Modal: Erwartung, Gegensatz oder Korrektur. Adverbien werden nicht d | hinten: hinten: Lokal: hinterer Bereich. Adverbien werden nicht dekliniert. Im Hauptsatz | daher: daher: Konjunktionaladverb: eher formell. Adverbien werden nicht dekliniert. Im  | vorher: vorher: Konjunktionaladverb/Temporal: Vorzeitigkeit. Adverbien werden nicht dekl"
+    },
+    {
+      "id": "adv_gap_019_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Unsere Abteilung bereitet die Präsentation vor ___ in der Abteilung.",
+      "answer": "bereits",
+      "choices": [
+        "bereits",
+        "manchmal",
+        "zweimal",
+        "genau",
+        "links",
+        "trotzdem",
+        "infolgedessen"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. bereits: bereits: Temporal: etwas ist früher als erwartet passiert. Adverbien werden nich | manchmal: manchmal: Häufigkeit: gelegentlich. Adverbien werden nicht dekliniert. Im Haupts | zweimal: zweimal: Häufigkeit: zwei Wiederholungen. Adverbien werden nicht dekliniert. Im  | genau: genau: Modal: Präzision. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt  | links: links: Lokal: linke Seite. Adverbien werden nicht dekliniert. Im Hauptsatz bleib | trotzdem: trotzdem: Konjunktionaladverb: Gegensatz trotz Hindernis. Adverbien werden nicht | infolgedessen: infolgedessen: Konjunktionaladverb: formelle Folge. Adverbien werden nicht dekli"
+    },
+    {
+      "id": "adv_gap_021_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Lieferant antwortet auf die E-Mail ___ im Kurs.",
+      "answer": "schon",
+      "choices": [
+        "schon",
+        "selten",
+        "gern",
+        "einfach",
+        "rechts",
+        "dennoch"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. schon: schon: Temporal/Grad: etwas ist eingetreten. Adverbien werden nicht dekliniert.  | selten: selten: Häufigkeit: nicht oft. Adverbien werden nicht dekliniert. Im Hauptsatz b | gern: gern: Modal: beschreibt Vorliebe. Adverbien werden nicht dekliniert. Im Hauptsat | einfach: einfach: Modal: unkompliziert oder betonend. Adverbien werden nicht dekliniert.  | rechts: rechts: Lokal: rechte Seite. Adverbien werden nicht dekliniert. Im Hauptsatz ble | dennoch: dennoch: Konjunktionaladverb: formeller als trotzdem. Adverbien werden nicht dek"
+    },
+    {
+      "id": "adv_gap_023_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Kursleiter organisiert die Besprechung ___ bei der Arbeit.",
+      "answer": "noch",
+      "choices": [
+        "noch",
+        "nie",
+        "lieber",
+        "vorsichtig",
+        "überall",
+        "außerdem"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. noch: noch: Temporal: etwas dauert weiter an. Adverbien werden nicht dekliniert. Im Ha | nie: nie: Häufigkeit: 0%. Adverbien werden nicht dekliniert. Im Hauptsatz bleibt das  | lieber: lieber: Modal: bevorzugte Alternative. Adverbien werden nicht dekliniert. Im Hau | vorsichtig: vorsichtig: Modal: Art und Weise. Adverbien werden nicht dekliniert. Im Hauptsat | überall: überall: Lokal: an allen Orten. Adverbien werden nicht dekliniert. Im Hauptsatz  | außerdem: außerdem: Konjunktionaladverb: zusätzliche Information. Adverbien werden nicht d"
+    },
+    {
+      "id": "adv_gap_025_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Ich beantrage das Zertifikat ___ in der Besprechung.",
+      "answer": "erst",
+      "choices": [
+        "erst",
+        "niemals",
+        "leider",
+        "gründlich",
+        "nirgends",
+        "nämlich"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. erst: erst: Temporal: später oder weniger als erwartet. Adverbien werden nicht deklini | niemals: niemals: Häufigkeit: stärker als nie. Adverbien werden nicht dekliniert. Im Haup | leider: leider: Modal: Bewertung durch Sprecher. Adverbien werden nicht dekliniert. Im H | gründlich: gründlich: Modal: sorgfältig. Adverbien werden nicht dekliniert. Im Hauptsatz bl | nirgends: nirgends: Lokal: an keinem Ort. Adverbien werden nicht dekliniert. Im Hauptsatz  | nämlich: nämlich: Erklärendes Adverb: liefert Begründung; oft in Position 3. Adverbien we"
+    },
+    {
+      "id": "adv_gap_027_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die Kollegin erklärt die Regel ___ bei der Behörde.",
+      "answer": "damals",
+      "choices": [
+        "damals",
+        "gelegentlich",
+        "vielleicht",
+        "gemeinsam",
+        "dorthin",
+        "sonst"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. damals: damals: Temporal: früherer Zeitraum. Adverbien werden nicht dekliniert. Im Haupt | gelegentlich: gelegentlich: Häufigkeit: ab und zu, eher formell. Adverbien werden nicht deklin | vielleicht: vielleicht: Modal: Unsicherheit. Adverbien werden nicht dekliniert. Im Hauptsatz | gemeinsam: gemeinsam: Modal: zusammen mit anderen. Adverbien werden nicht dekliniert. Im Ha | dorthin: dorthin: Direktional: Bewegung zu einem Ort. Adverbien werden nicht dekliniert.  | sonst: sonst: Konjunktionaladverb: Konsequenz bei Nicht-Erfüllung. Adverbien werden nic"
+    },
+    {
+      "id": "adv_gap_029_mc",
+      "exerciseType": "multiple_choice",
+      "prompt": "Unsere Abteilung meldet das Problem ___ in der Abteilung.",
+      "answer": "bald",
+      "choices": [
+        "bald",
+        "regelmäßig",
+        "wahrscheinlich",
+        "allein",
+        "dahin",
+        "allerdings"
+      ],
+      "explanation": "Mehrere Adverbien passen grammatisch. bald: bald: Temporal: in kurzer Zeit. Adverbien werden nicht dekliniert. Im Hauptsatz  | regelmäßig: regelmäßig: Häufigkeit: nach einem Plan. Adverbien werden nicht dekliniert. Im H | wahrscheinlich: wahrscheinlich: Modal: hohe Wahrscheinlichkeit. Adverbien werden nicht deklinier | allein: allein: Modal: ohne andere Personen. Adverbien werden nicht dekliniert. Im Haupt | dahin: dahin: Direktional: Bewegung in Richtung eines bekannten Ortes. Adverbien werden | allerdings: allerdings: Konjunktionaladverb: Einschränkung oder Gegensatz. Adverbien werden "
     }
   ]
 }

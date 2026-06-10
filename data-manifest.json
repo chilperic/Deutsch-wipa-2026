@@ -21,7 +21,7 @@
       "path": "grammatik/production_adverbien_intensiv.json",
       "category": "grammar",
       "title": "Adverbien Intensiv · Position, Bedeutung, Satzlogik",
-      "count": 500,
+      "count": 415,
       "description": "500 Übungen zu Adverbien und adverbialer Satzlogik."
     },
     {
@@ -29,7 +29,7 @@
       "path": "grammatik/production_deklination_intensiv.json",
       "category": "grammar",
       "title": "Deklination Intensiv · Artikel, Adjektive, Nomen, Pronomen",
-      "count": 500,
+      "count": 369,
       "description": "500 Übungen zu Fällen, Artikeln, Adjektivendungen, n-Deklination und Pronomen."
     },
     {
@@ -107,7 +107,7 @@
       "path": "grammatik/production_tekamolo_tokenized_engine.json",
       "category": "grammar",
       "title": "Production Grammatik · TeKaMoLo Token Engine",
-      "count": 5
+      "count": 10
     },
     {
       "id": "grammatik_production_praepositionen_abstract_business",
