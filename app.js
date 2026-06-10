@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v10-theme-visible';
+const APP_VERSION = '2026.06.10-v11-appearance-color';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -11,7 +11,7 @@ const state = {
   stats: load('dw_modern_stats', {}), moduleStats: load('dw_modern_module_stats', {}),
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
   profile: load('dw_modern_profile', {name:''}),
-  lang: localStorage.dw_lang || 'de', theme: localStorage.dw_theme || 'parchment',
+  lang: localStorage.dw_lang || 'de', appearance: localStorage.dw_appearance || 'system', color: localStorage.dw_color || 'teal', theme: localStorage.dw_theme || '',
   conjugator: null, verb: null, tense: 'Präsens',
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [],
@@ -19,14 +19,31 @@ const state = {
   _conjGenKey: '', _conjGenItems: []
 };
 
-if(state.theme==='light')state.theme='parchment';
-if(state.theme==='dark')state.theme='graphite';
-localStorage.dw_theme=state.theme;
+// v11 migration: theme/dark-light is separate from accent color.
+// Older builds stored both ideas in dw_theme. Preserve useful choices without mixing concepts.
+(function migrateDesign(){
+  const legacy = state.theme || localStorage.dw_theme || '';
+  if(!localStorage.dw_appearance){
+    if(legacy === 'dark' || legacy === 'graphite' || legacy === 'midnight') state.appearance = 'dark';
+    else if(legacy === 'light') state.appearance = 'light';
+  }
+  if(!localStorage.dw_color){
+    const legacyColors = ['parchment','forest','ocean','sunset','lavender','rose','sand','graphite','midnight','highcontrast'];
+    if(legacyColors.includes(legacy)) state.color = legacy === 'parchment' ? 'teal' : legacy;
+  }
+  localStorage.dw_appearance = state.appearance;
+  localStorage.dw_color = state.color;
+})();
 
 const LANGS = [['de','Deutsch'],['en','English'],['fr','Français'],['es','Español'],['ar','العربية'],['fa','فارسی'],['uk','Українська'],['ru','Русский'],['pl','Polski'],['tr','Türkçe']];
 
-const THEMES = [
-  ['parchment','Parchment'],
+const APPEARANCES = [
+  ['system','System'],
+  ['light','Light'],
+  ['dark','Dark']
+];
+const COLORS = [
+  ['teal','Teal'],
   ['forest','Forest'],
   ['ocean','Ocean'],
   ['sunset','Sunset'],
@@ -73,8 +90,8 @@ function stripHtml(s=''){const d=document.createElement('div');d.innerHTML=safeH
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
 async function init(){
-  document.documentElement.dataset.theme=state.theme;updateThemeMeta();
-  updateDirection();renderLangs();renderThemes();bind();
+  applyDesign(false);
+  updateDirection();renderLangs();renderDesignControls();bind();
   await loadData();await loadConjugator();
   renderPath();selectPath('conjugation');
   route('learn');renderAll();
@@ -82,22 +99,40 @@ async function init(){
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
-function renderThemes(){
-  const options=THEMES.map(([c,n])=>`<option value="${c}" ${c===state.theme?'selected':''}>${n}</option>`).join('');
-  document.querySelectorAll('#themeSelect,.theme-select-control').forEach(el=>{ el.innerHTML=options; el.value=state.theme; });
+function renderDesignControls(){
+  const appearanceOptions=APPEARANCES.map(([c,n])=>`<option value="${c}" ${c===state.appearance?'selected':''}>${n}</option>`).join('');
+  const colorOptions=COLORS.map(([c,n])=>`<option value="${c}" ${c===state.color?'selected':''}>${n}</option>`).join('');
+  document.querySelectorAll('#appearanceSelect,.appearance-select-control').forEach(el=>{ if(el){el.innerHTML=appearanceOptions; el.value=state.appearance;} });
+  document.querySelectorAll('#colorSelect,.color-select-control').forEach(el=>{ if(el){el.innerHTML=colorOptions; el.value=state.color;} });
 }
-function applyTheme(value){
-  state.theme=value||'parchment';
-  localStorage.dw_theme=state.theme;
-  document.documentElement.dataset.theme=state.theme;
+function systemPrefersDark(){return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches}
+function resolvedAppearance(){return state.appearance==='system' ? (systemPrefersDark()?'dark':'light') : state.appearance}
+function applyDesign(rerender=true){
+  const resolved=resolvedAppearance();
+  document.documentElement.dataset.appearance=resolved;
+  document.documentElement.dataset.color=state.color || 'teal';
+  document.documentElement.dataset.theme=resolved; // legacy CSS compatibility only
+  document.documentElement.style.colorScheme=resolved==='dark'?'dark':'light';
   updateThemeMeta();
-  renderThemes();
+  if(rerender)renderDesignControls();
 }
-function updateThemeMeta(){const colors={parchment:'#f6efe3',forest:'#eaf4ea',ocean:'#e8f4fb',sunset:'#fff0e4',lavender:'#f2edff',rose:'#fff0f5',sand:'#fbf2dc',graphite:'#111827',midnight:'#07111f',highcontrast:'#ffffff'};document.querySelector('meta[name="theme-color"]')?.setAttribute('content',colors[state.theme]||colors.parchment)}
+function setAppearance(value){state.appearance=value||'system';localStorage.dw_appearance=state.appearance;applyDesign(true)}
+function setColor(value){state.color=value||'teal';localStorage.dw_color=state.color;applyDesign(true)}
+function updateThemeMeta(){
+  const light={teal:'#f6efe3',forest:'#eaf4ea',ocean:'#e8f4fb',sunset:'#fff0e4',lavender:'#f2edff',rose:'#fff0f5',sand:'#fbf2dc',graphite:'#f4f4f5',midnight:'#eef2ff',highcontrast:'#ffffff'};
+  const dark={teal:'#111827',forest:'#0d1f17',ocean:'#081827',sunset:'#20120d',lavender:'#161128',rose:'#24111b',sand:'#211908',graphite:'#111827',midnight:'#07111f',highcontrast:'#000000'};
+  const table=resolvedAppearance()==='dark'?dark:light;
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content',table[state.color]||table.teal);
+}
+if(window.matchMedia){
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>{if(state.appearance==='system')applyDesign(true)});
+}
+
 
 function bind(){
   $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
-  document.querySelectorAll('#themeSelect,.theme-select-control').forEach(el=>{el.onchange=e=>applyTheme(e.target.value)});
+  document.querySelectorAll('#appearanceSelect,.appearance-select-control').forEach(el=>{el.onchange=e=>setAppearance(e.target.value)});
+  document.querySelectorAll('#colorSelect,.color-select-control').forEach(el=>{el.onchange=e=>setColor(e.target.value)});
   bindProfileControls();
   document.querySelectorAll('.top-tab').forEach(b=>b.onclick=()=>route(b.dataset.route));
   $('mobileMenu').onclick=()=>toggleDrawer(true);$('backdrop').onclick=()=>toggleDrawer(false);
@@ -152,7 +187,7 @@ function bindProfileControls(){
 function exportProgress(){
   const payload={
     app:'Deutsch-WiPA 2026',version:APP_VERSION,exportedAt:new Date().toISOString(),
-    profile:state.profile,lang:state.lang,theme:state.theme,
+    profile:state.profile,lang:state.lang,appearance:state.appearance,color:state.color,theme:state.color,
     stats:state.stats,moduleStats:state.moduleStats,mistakes:state.mistakes,srs:state.srs
   };
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
@@ -169,10 +204,10 @@ function importProgress(e){
       const data=JSON.parse(reader.result);
       state.profile=data.profile||state.profile||{name:''};
       state.stats=data.stats||{};state.moduleStats=data.moduleStats||{};state.mistakes=data.mistakes||[];state.srs=data.srs||{};
-      if(data.lang)state.lang=data.lang;if(data.theme)state.theme=data.theme;
+      if(data.lang)state.lang=data.lang;if(data.appearance)state.appearance=data.appearance;if(data.color)state.color=data.color;else if(data.theme)state.color=data.theme;
       save('dw_modern_profile',state.profile);save('dw_modern_stats',state.stats);save('dw_modern_module_stats',state.moduleStats);save('dw_modern_mistakes',state.mistakes);save(SRS_KEY,state.srs);
-      localStorage.dw_lang=state.lang;localStorage.dw_theme=state.theme;
-      document.documentElement.dataset.theme=state.theme;updateThemeMeta();updateDirection();renderLangs();renderThemes();bindProfileControls();renderAll();
+      localStorage.dw_lang=state.lang;localStorage.dw_appearance=state.appearance;localStorage.dw_color=state.color;
+      applyDesign(false);updateDirection();renderLangs();renderDesignControls();bindProfileControls();renderAll();
     }catch(err){alert('Import fehlgeschlagen: ungültige JSON-Datei.');}
     e.target.value='';
   };
@@ -326,7 +361,7 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderThemes();bindProfileControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();renderDesignControls();bindProfileControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
 function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
 function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
 

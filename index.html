@@ -30,7 +30,8 @@
       </nav>
       <div class="top-actions">
         <select id="languageSelect" class="select compact" aria-label="Interface language"></select>
-        <select id="themeSelect" class="select compact theme-select" aria-label="Farbthema auswählen"></select>
+        <select id="appearanceSelect" class="select compact appearance-select" aria-label="Darstellung auswählen"></select>
+        <select id="colorSelect" class="select compact color-select" aria-label="Farbe auswählen"></select>
       </div>
     </header>
 
@@ -45,8 +46,10 @@
         <label for="profileName" class="eyebrow">Profil</label>
         <input id="profileName" class="input profile-input" type="text" autocomplete="name" placeholder="Dein Name">
         <div id="profileSaveStatus" class="profile-status">Fortschritt wird lokal gespeichert.</div>
-        <label for="sidebarThemeSelect" class="eyebrow theme-label">Farbe</label>
-        <select id="sidebarThemeSelect" class="select theme-select-control" aria-label="Farbthema auswählen"></select>
+        <label for="sidebarAppearanceSelect" class="eyebrow theme-label">Design</label>
+        <select id="sidebarAppearanceSelect" class="select appearance-select-control" aria-label="Darstellung auswählen"></select>
+        <label for="sidebarColorSelect" class="eyebrow theme-label compact-label">Farbe</label>
+        <select id="sidebarColorSelect" class="select color-select-control" aria-label="Farbe auswählen"></select>
         <details class="backup-details">
           <summary>Backup</summary>
           <div class="backup-actions">
@@ -113,8 +116,12 @@
             <select id="mobileModuleSelect" class="select"></select>
           </label>
           <label>
+            <span>Design</span>
+            <select id="mobileAppearanceSelect" class="select appearance-select-control"></select>
+          </label>
+          <label>
             <span>Farbe</span>
-            <select id="mobileThemeSelect" class="select theme-select-control"></select>
+            <select id="mobileColorSelect" class="select color-select-control"></select>
           </label>
           <button id="mobileOpenSidebar" class="ghost" type="button">Optionen</button>
         </section>

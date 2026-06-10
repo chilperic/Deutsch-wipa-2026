@@ -1,7 +1,7 @@
 {
-  "name": "Deutsch-WiPA 2026 · Grammar Themes",
-  "short_name": "WiPA Themes",
-  "description": "Grammar-first German B1/B2 app with conjugation, workplace vocabulary, progress backup, and multiple visual themes.",
+  "name": "Deutsch-WiPA 2026 · Grammar",
+  "short_name": "Deutsch-WiPA",
+  "description": "Grammar-first German B1/B2 app with separate light/dark appearance, accent colors, conjugation, vocabulary, progress backup, and SRS review.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f6efe3",

@@ -68,3 +68,12 @@ There is no cloud sync. Use the in-app **Backup → Export / Import** controls t
 ## Visual themes
 
 The app includes ten readable themes: Parchment, Forest, Ocean, Sunset, Lavender, Rose, Sand, Graphite, Midnight, and High contrast. The selected theme is saved locally in `localStorage.dw_theme` and included in progress export/import.
+
+## Appearance and color
+
+The UI separates visual mode from color:
+
+- **Appearance**: System, Light, Dark
+- **Color**: Teal, Forest, Ocean, Sunset, Lavender, Rose, Sand, Graphite, Midnight, High contrast
+
+These settings are saved locally as `dw_appearance` and `dw_color` and are included in exported progress backups.
