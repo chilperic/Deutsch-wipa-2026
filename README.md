@@ -63,3 +63,8 @@ Deutsch-WiPA is a static PWA. User progress is saved locally in the browser with
 - `dw_lang` and `dw_theme` for interface preferences
 
 There is no cloud sync. Use the in-app **Backup → Export / Import** controls to transfer progress between devices.
+
+
+## Visual themes
+
+The app includes ten readable themes: Parchment, Forest, Ocean, Sunset, Lavender, Rose, Sand, Graphite, Midnight, and High contrast. The selected theme is saved locally in `localStorage.dw_theme` and included in progress export/import.

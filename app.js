@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.10-v8-profile-mobile-audit';
+const APP_VERSION = '2026.06.10-v9-color-themes';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -11,7 +11,7 @@ const state = {
   stats: load('dw_modern_stats', {}), moduleStats: load('dw_modern_module_stats', {}),
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
   profile: load('dw_modern_profile', {name:''}),
-  lang: localStorage.dw_lang || 'de', theme: localStorage.dw_theme || 'light',
+  lang: localStorage.dw_lang || 'de', theme: localStorage.dw_theme || 'parchment',
   conjugator: null, verb: null, tense: 'Präsens',
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [],
@@ -19,7 +19,24 @@ const state = {
   _conjGenKey: '', _conjGenItems: []
 };
 
+if(state.theme==='light')state.theme='parchment';
+if(state.theme==='dark')state.theme='graphite';
+localStorage.dw_theme=state.theme;
+
 const LANGS = [['de','Deutsch'],['en','English'],['fr','Français'],['es','Español'],['ar','العربية'],['fa','فارسی'],['uk','Українська'],['ru','Русский'],['pl','Polski'],['tr','Türkçe']];
+
+const THEMES = [
+  ['parchment','Parchment'],
+  ['forest','Forest'],
+  ['ocean','Ocean'],
+  ['sunset','Sunset'],
+  ['lavender','Lavender'],
+  ['rose','Rose'],
+  ['sand','Sand'],
+  ['graphite','Graphite'],
+  ['midnight','Midnight'],
+  ['highcontrast','High contrast']
+];
 const PATHS = [
   {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Verbformen, Modalverben, Infinitiv',cats:['conjugation','konjugator'],match:['modal','modalverb','infinitiv','verbformen','starke_verben','trennbare','reflexive','perfekt','plusquamperfekt','konjugator']},
   {id:'syntax',icon:'🧩',title:'Satzbau',sub:'Verbposition, TeKaMoLo, nicht, Passiversatz',match:['tekamolo','negation','nebensatz','satzordnung','satzvariation','passiv','passiversatz','final','modal_es','temporale']},
@@ -56,8 +73,8 @@ function stripHtml(s=''){const d=document.createElement('div');d.innerHTML=safeH
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
 async function init(){
-  document.documentElement.dataset.theme=state.theme;
-  updateDirection();renderLangs();bind();
+  document.documentElement.dataset.theme=state.theme;updateThemeMeta();
+  updateDirection();renderLangs();renderThemes();bind();
   await loadData();await loadConjugator();
   renderPath();selectPath('conjugation');
   route('learn');renderAll();
@@ -65,10 +82,12 @@ async function init(){
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
+function renderThemes(){const el=$('themeSelect');if(!el)return;el.innerHTML=THEMES.map(([c,n])=>`<option value="${c}" ${c===state.theme?'selected':''}>${n}</option>`).join('')}
+function updateThemeMeta(){const colors={parchment:'#f6efe3',forest:'#eaf4ea',ocean:'#e8f4fb',sunset:'#fff0e4',lavender:'#f2edff',rose:'#fff0f5',sand:'#fbf2dc',graphite:'#111827',midnight:'#07111f',highcontrast:'#ffffff'};document.querySelector('meta[name="theme-color"]')?.setAttribute('content',colors[state.theme]||colors.parchment)}
 
 function bind(){
   $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
-  $('themeButton').onclick=()=>{state.theme=state.theme==='dark'?'light':'dark';localStorage.dw_theme=state.theme;document.documentElement.dataset.theme=state.theme};
+  const themeSelect=$('themeSelect');if(themeSelect)themeSelect.onchange=e=>{state.theme=e.target.value;localStorage.dw_theme=state.theme;document.documentElement.dataset.theme=state.theme;updateThemeMeta()};
   bindProfileControls();
   document.querySelectorAll('.top-tab').forEach(b=>b.onclick=()=>route(b.dataset.route));
   $('mobileMenu').onclick=()=>toggleDrawer(true);$('backdrop').onclick=()=>toggleDrawer(false);
@@ -143,7 +162,7 @@ function importProgress(e){
       if(data.lang)state.lang=data.lang;if(data.theme)state.theme=data.theme;
       save('dw_modern_profile',state.profile);save('dw_modern_stats',state.stats);save('dw_modern_module_stats',state.moduleStats);save('dw_modern_mistakes',state.mistakes);save(SRS_KEY,state.srs);
       localStorage.dw_lang=state.lang;localStorage.dw_theme=state.theme;
-      document.documentElement.dataset.theme=state.theme;updateDirection();renderLangs();bindProfileControls();renderAll();
+      document.documentElement.dataset.theme=state.theme;updateThemeMeta();updateDirection();renderLangs();renderThemes();bindProfileControls();renderAll();
     }catch(err){alert('Import fehlgeschlagen: ungültige JSON-Datei.');}
     e.target.value='';
   };
@@ -297,7 +316,7 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();bindProfileControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();renderThemes();bindProfileControls();syncMobileControls();renderExercise();renderStats();renderMistakes();renderConjugator()}
 function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
 function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
 
