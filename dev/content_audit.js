@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const root = path.resolve(__dirname, '..');
-const dirs = ['grammatik','vokabular','writing','reading','speaking','training'];
+const dirs = ['grammatik','vokabular','training'];
 let invalid = 0, brokenChoices = 0, duplicateCount = 0;
 const seen = new Map();
 function walkFiles(dir) {

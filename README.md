@@ -1,3 +1,14 @@
+# Deutsch-WiPA 2026 — Grammar-first B1/B2 Build
+
+This version de-emphasises writing, reading and speaking practice and prioritises grammar training, especially modal verbs in Präsens, Präteritum and Perfekt. It preserves the existing vocabulary/grammar base while adding a stronger Linie-Beruf-style grammar layer.
+
+## Main update
+
+- More grammar-first navigation.
+- New modal-verb modules: overview, present, past, perfect/double infinitive, sentence variation.
+- Writing/reading/speaking modules are not loaded in the manifest.
+- Redesigned interface with a cleaner grammar cockpit and improved mobile/tablet/desktop layout.
+
 # Deutsch-WiPA 2026
 
 Deutsch-WiPA 2026 is a static B1/B2 German trainer focused on work, everyday life, integration, and exam preparation. The content philosophy follows a **Linie 1 Beruf B1/B2** direction: practical German first, grammar in context, active recall, workplace communication, and real-life German in Germany.

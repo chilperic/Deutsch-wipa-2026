@@ -1,8 +1,8 @@
 {
   "name": "deutsch-wipa-2026",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
-  "description": "Responsive B1/B2 German workplace trainer PWA.",
+  "description": "Responsive grammar-first B1/B2 German workplace trainer PWA.",
   "scripts": {
     "start": "python3 -m http.server 8080",
     "check": "node dev/check.js && node dev/content_audit.js"

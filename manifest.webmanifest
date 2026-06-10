@@ -1,11 +1,11 @@
 {
   "name": "Deutsch-WiPA 2026",
   "short_name": "Deutsch-WiPA",
-  "description": "B1/B2 German trainer for work, everyday life, integration and exam practice.",
+  "description": "B1/B2 grammar-first German workplace trainer with modal verbs, cases, word order and vocabulary.",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#f4f7f8",
-  "theme_color": "#145A6E",
+  "background_color": "#f3f0ea",
+  "theme_color": "#111827",
   "icons": [
     {
       "src": "assets/icon-192.png",
@@ -25,5 +25,5 @@
       "purpose": "any maskable"
     }
   ],
-  "version": "2026.06.09-updated-from-v2"
+  "version": "2026.06.10-grammar-modal-ui"
 }

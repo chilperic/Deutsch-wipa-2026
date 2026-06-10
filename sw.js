@@ -2,7 +2,7 @@
 // Strategy:
 //   - Shell files (HTML, CSS, JS, icon, manifest): cache-first
 //   - Data files (.json): stale-while-revalidate (updates visible on next load)
-const CACHE = 'deutsch-wipa-2026-v2-20260609-updated';
+const CACHE = 'deutsch-wipa-2026-v2-20260610-grammar-modal-ui';
 const SHELL = [
   './', './index.html', './styles.css', './app.js',
   './manifest.webmanifest', './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png'

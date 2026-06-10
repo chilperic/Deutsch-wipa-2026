@@ -1,6 +1,41 @@
 {
-  "version": "2026.06.09-production-audit-fixed",
+  "version": "2026.06.10-grammar-modal-ui",
   "modules": [
+    {
+      "id": "grammatik_production_modalverben_uebersicht",
+      "path": "grammatik/production_modalverben_uebersicht.json",
+      "category": "grammar",
+      "title": "Grammar Focus · Modalverben Überblick",
+      "count": 19
+    },
+    {
+      "id": "grammatik_production_modalverben_praesens",
+      "path": "grammatik/production_modalverben_praesens.json",
+      "category": "conjugation",
+      "title": "Grammar Focus · Modalverben Präsens",
+      "count": 77
+    },
+    {
+      "id": "grammatik_production_modalverben_praeteritum",
+      "path": "grammatik/production_modalverben_praeteritum.json",
+      "category": "conjugation",
+      "title": "Grammar Focus · Modalverben Präteritum",
+      "count": 60
+    },
+    {
+      "id": "grammatik_production_modalverben_perfekt_doppelinfinitiv",
+      "path": "grammatik/production_modalverben_perfekt_doppelinfinitiv.json",
+      "category": "conjugation",
+      "title": "Grammar Focus · Modalverben Perfekt",
+      "count": 73
+    },
+    {
+      "id": "grammatik_production_modalverben_variationen",
+      "path": "grammatik/production_modalverben_variationen.json",
+      "category": "grammar",
+      "title": "Grammar Focus · Modalverben Satzvariation",
+      "count": 19
+    },
     {
       "id": "vokabular_production_workplace_collocations",
       "path": "vokabular/production_workplace_collocations.json",
@@ -49,27 +84,6 @@
       "category": "grammar",
       "title": "Production Grammatik · Infinitiv mit zu",
       "count": 8
-    },
-    {
-      "id": "writing_production_writing_metrics",
-      "path": "writing/production_writing_metrics.json",
-      "category": "writing",
-      "title": "Production Schreiben · Bewertbare Aufgaben",
-      "count": 6
-    },
-    {
-      "id": "reading_production_reading_workplace_documents",
-      "path": "reading/production_reading_workplace_documents.json",
-      "category": "reading",
-      "title": "Production Lesen · Arbeitsplatzdokumente",
-      "count": 4
-    },
-    {
-      "id": "speaking_production_speaking_roleplays",
-      "path": "speaking/production_speaking_roleplays.json",
-      "category": "speaking",
-      "title": "Production Sprechen · Rollenspiele",
-      "count": 4
     },
     {
       "id": "grammatik_adjektivdeklination",
@@ -296,27 +310,6 @@
       "count": 36
     },
     {
-      "id": "writing_writing_training",
-      "path": "writing/writing_training.json",
-      "category": "writing",
-      "title": "Schreiben · E-Mail, Meinung, Bericht, Bewerbung",
-      "count": 21
-    },
-    {
-      "id": "reading_reading_training",
-      "path": "reading/reading_training.json",
-      "category": "reading",
-      "title": "Lesen · Arbeit und Alltag",
-      "count": 12
-    },
-    {
-      "id": "speaking_speaking_prompts",
-      "path": "speaking/speaking_prompts.json",
-      "category": "speaking",
-      "title": "Sprechen · Beruf und Alltag",
-      "count": 12
-    },
-    {
       "id": "grammatik_material_zu_infinitiv_brauchen",
       "path": "grammatik/material_zu_infinitiv_brauchen.json",
       "category": "grammar",
@@ -364,27 +357,6 @@
       "category": "vocabulary",
       "title": "Material B1.1/B1.2/B2.1 · Wortschatz-Ergänzung",
       "count": 45
-    },
-    {
-      "id": "writing_material_writing_expansion",
-      "path": "writing/material_writing_expansion.json",
-      "category": "writing",
-      "title": "Material-Erweiterung · Schreiben B1/B2",
-      "count": 7
-    },
-    {
-      "id": "reading_material_reading_expansion",
-      "path": "reading/material_reading_expansion.json",
-      "category": "reading",
-      "title": "Material-Erweiterung · Lesen B1/B2",
-      "count": 4
-    },
-    {
-      "id": "speaking_material_speaking_expansion",
-      "path": "speaking/material_speaking_expansion.json",
-      "category": "speaking",
-      "title": "Material-Erweiterung · Sprechen B1/B2",
-      "count": 4
     }
   ]
 }

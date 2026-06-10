@@ -195,21 +195,15 @@ T.th = { ...BASE_EN,
 
 // ── Category metadata (icon, accent colour, i18n key) ────────────────────
 const CATEGORIES = [
-  { id:'vocabulary',   icon:'📚', color:'var(--cat-vocab)' },
   { id:'grammar',      icon:'⚙️',  color:'var(--cat-gram)' },
   { id:'conjugation',  icon:'🔄', color:'var(--cat-conj)' },
+  { id:'vocabulary',   icon:'📚', color:'var(--cat-vocab)' },
   { id:'communication',icon:'💬', color:'var(--cat-comm)' },
   { id:'training',     icon:'🎯', color:'var(--cat-train)' },
-  { id:'writing',      icon:'✍️',  color:'var(--cat-write)' },
-  { id:'reading',      icon:'📖', color:'var(--cat-read)' },
-  { id:'speaking',     icon:'🎤', color:'var(--cat-speak)' },
 ];
 
 // Exercise types that accept free text (graded on word count)
-const OPEN_TYPES = new Set([
-  'formal_email_writing','semi_formal_message','opinion_text',
-  'report_summary','application_writing','speaking_prompt'
-]);
+const OPEN_TYPES = new Set([]);
 // Exercise types where subject-pronoun omission is tolerated
 const SENTENCE_TYPES = new Set([
   'verb_conjugation','perfekt_builder','word_order','sentence_correction',
@@ -323,6 +317,7 @@ const TYPE_LABELS = {
   consequence_v2:'Folge', addition:'Ergänzung', result_subordinate:'Ergebnis',
   kein_declension:'Kein', nicht_position:'Nicht', temporal_subordinate:'Temporal',
   correction:'Korrektur', mistake_review:'Fehlerwiederholung',
+  modal_meaning:'Modal-Bedeutung', modal_present:'Modal Präsens', modal_preterite:'Modal Präteritum',
 };
 function typeLabel(type) { return TYPE_LABELS[type] || String(type).replaceAll('_',' '); }
 
@@ -330,7 +325,7 @@ function typeLabel(type) { return TYPE_LABELS[type] || String(type).replaceAll('
 const state = {
   lang:         localStorage.getItem('dw_lang')         || 'de',
   theme:        localStorage.getItem('dw_theme')        || 'auto',
-  category:     localStorage.getItem('dw_category')     || 'vocabulary',
+  category:     localStorage.getItem('dw_category')     || 'grammar',
   moduleId:     localStorage.getItem('dw_module')       || '',
   mode:         localStorage.getItem('dw_mode')         || 'practice',
   exType:       localStorage.getItem('dw_extype')       || 'all',
@@ -739,6 +734,7 @@ function updateAvatar() {
 function renderAll() {
   renderCategories();
   renderModuleSelect();
+  setupExerciseTypeSelect();
   renderExercise();
   renderStats();
   renderMistakeBank();

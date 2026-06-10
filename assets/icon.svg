@@ -1,18 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Deutsch WiPA">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Deutsch-WiPA">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#10263f"/><stop offset="0.56" stop-color="#146a75"/><stop offset="1" stop-color="#e8a020"/>
-    </linearGradient>
-    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e9f2f4"/>
-    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset=".55" stop-color="#1e3a8a"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f97316"/></linearGradient>
   </defs>
-  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
-  <circle cx="256" cy="256" r="176" fill="none" stroke="rgba(255,255,255,.23)" stroke-width="18"/>
-  <path d="M140 163c42-18 78-13 116 14v190c-38-28-74-33-116-15V163Z" fill="url(#page)"/>
-  <path d="M256 177c38-27 74-32 116-14v189c-42-18-78-13-116 15V177Z" fill="#f8fafc"/>
-  <path d="M256 177v190" stroke="#10263f" stroke-width="10" stroke-linecap="round" opacity=".5"/>
-  <path d="M166 221h58M166 260h58M166 299h46M288 221h58M288 260h58M288 299h46" stroke="#146a75" stroke-width="14" stroke-linecap="round" opacity=".9"/>
-  <path d="M146 389h220" stroke="#ffd166" stroke-width="24" stroke-linecap="round"/>
-  <text x="256" y="435" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="44" font-weight="800" fill="#ffffff">WiPA</text>
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+  <circle cx="396" cy="112" r="60" fill="url(#a)" opacity=".95"/>
+  <path d="M108 151h190c47 0 81 32 81 76s-34 77-81 77H206v57h-98V151zm98 78h79c15 0 25-8 25-22s-10-22-25-22h-79v44z" fill="#fff" opacity=".96"/>
+  <path d="M109 384h294" stroke="#fbbf24" stroke-width="28" stroke-linecap="round"/>
+  <text x="111" y="121" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="900" fill="#fff">WiPA</text>
 </svg>

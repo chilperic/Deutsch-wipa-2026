@@ -564,3 +564,126 @@ button:disabled { opacity: .4; cursor: not-allowed; }
   position: fixed; inset: 0; background: rgba(0,0,0,.45);
   z-index: 34; backdrop-filter: blur(2px);
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   2026-06-10 Grammar-first visual redesign
+   Goal: less workbook, more focused training cockpit.
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  --navy:#111827;
+  --navy-2:#172554;
+  --navy-3:#1e3a8a;
+  --amber:#f59e0b;
+  --amber-2:#fbbf24;
+  --bg:#f3f0ea;
+  --surface:rgba(255,255,255,.86);
+  --surface-2:rgba(255,255,255,.68);
+  --border:rgba(17,24,39,.12);
+  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --shadow-lg:0 24px 70px rgba(15,23,42,.22);
+  --cat-gram:#7c3aed;
+  --cat-conj:#2563eb;
+  --cat-vocab:#059669;
+  --cat-comm:#ea580c;
+  --cat-train:#0891b2;
+}
+body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(124,58,237,.18), transparent 28rem),
+    radial-gradient(circle at 92% 12%, rgba(245,158,11,.20), transparent 26rem),
+    linear-gradient(135deg,#f8fafc 0%,#f3f0ea 52%,#ede9fe 100%);
+}
+[data-theme="dark"] body,
+[data-theme="dark"] {
+  --bg:#07111f;
+  --surface:rgba(15,23,42,.84);
+  --surface-2:rgba(30,41,59,.72);
+  --border:rgba(255,255,255,.11);
+}
+.topbar {
+  background:linear-gradient(135deg, rgba(17,24,39,.96), rgba(30,58,138,.94) 62%, rgba(124,58,237,.90));
+  backdrop-filter:blur(18px);
+  box-shadow:0 12px 34px rgba(15,23,42,.20);
+}
+.brand-de {
+  width:40px;height:40px;border-radius:14px;background:transparent;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.25);
+}
+.brand-de img { width:100%; height:100%; display:block; }
+.brand-name { font-weight:900; letter-spacing:-.03em; font-size:15px; }
+.brand-tagline { color:rgba(255,255,255,.68); }
+.layout { gap:18px; padding-inline:18px; padding-bottom:18px; }
+.sidebar,.helper,.exercise-card,.stats-card,.toolbar,.focus-hero {
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.sidebar {
+  margin-block:18px; border-radius:24px; border:1px solid var(--border);
+  box-shadow:var(--shadow); height:calc(100vh - var(--topbar-h) - 36px);
+}
+.helper {
+  margin-block:18px; border-radius:24px; border:1px solid var(--border);
+  box-shadow:var(--shadow); height:calc(100vh - var(--topbar-h) - 36px);
+}
+.main { padding:18px 0 20px; gap:16px; }
+.learner-card {
+  background:linear-gradient(135deg,#111827,#1e3a8a 68%,#7c3aed);
+  border:1px solid rgba(255,255,255,.14); box-shadow:0 16px 40px rgba(30,58,138,.22);
+}
+.learner-avatar { background:linear-gradient(135deg,#fbbf24,#f97316); }
+.cat-btn { border:1px solid transparent; min-height:42px; }
+.cat-btn.active {
+  background:linear-gradient(90deg, color-mix(in srgb, var(--cat-color) 16%, transparent), rgba(255,255,255,.38));
+  border-color:color-mix(in srgb, var(--cat-color) 24%, transparent);
+  box-shadow:0 6px 18px rgba(15,23,42,.06);
+}
+.full-select,.pill-select,.answer-input,.answer-textarea {
+  border-radius:16px; box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+}
+.toolbar {
+  border:1px solid var(--border); border-radius:24px; padding:14px 16px;
+  background:linear-gradient(135deg, rgba(255,255,255,.80), rgba(255,255,255,.50));
+  box-shadow:var(--shadow);
+}
+.focus-hero {
+  display:flex; justify-content:space-between; gap:18px; align-items:center;
+  padding:22px 24px; border-radius:28px; color:white; overflow:hidden; position:relative;
+  background:
+    linear-gradient(135deg, rgba(17,24,39,.96), rgba(30,58,138,.96) 58%, rgba(124,58,237,.92));
+  box-shadow:0 24px 64px rgba(30,58,138,.28);
+}
+.focus-hero::after {
+  content:""; position:absolute; inset:auto -40px -85px auto; width:260px; height:260px; border-radius:50%;
+  background:radial-gradient(circle, rgba(251,191,36,.55), transparent 64%);
+}
+.focus-hero h1 { font-size:clamp(1.35rem,3vw,2.35rem); line-height:1.05; letter-spacing:-.055em; margin:.15rem 0 .45rem; max-width:720px; }
+.focus-hero p { color:rgba(255,255,255,.76); max-width:720px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:.72rem; font-weight:900; color:#fbbf24 !important; }
+.hero-metric { z-index:1; min-width:170px; padding:16px; border-radius:22px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.17); }
+.hero-metric strong { display:block; font-size:1.15rem; }
+.hero-metric span { color:rgba(255,255,255,.7); font-size:.82rem; }
+.exercise-card {
+  border-radius:30px; border:1px solid rgba(255,255,255,.50);
+  box-shadow:0 30px 80px rgba(15,23,42,.14);
+  background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.78));
+  overflow:hidden;
+}
+[data-theme="dark"] .exercise-card,
+[data-theme="dark"] .toolbar { background:linear-gradient(180deg, rgba(15,23,42,.92), rgba(15,23,42,.74)); border-color:rgba(255,255,255,.10); }
+.card-header { background:linear-gradient(90deg, rgba(124,58,237,.10), rgba(245,158,11,.10)); border-bottom:1px solid var(--border); }
+.question { font-size:clamp(1.25rem,2vw,1.75rem); line-height:1.38; letter-spacing:-.025em; }
+.blank { color:#7c3aed; background:rgba(124,58,237,.11); border-radius:10px; padding:0 .25em; }
+.choice-btn { border-radius:18px; padding:14px 16px; background:rgba(255,255,255,.74); box-shadow:0 6px 18px rgba(15,23,42,.05); }
+.choice-btn:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 14px 30px rgba(15,23,42,.10); }
+.feedback,.learn-block { border-radius:22px; }
+.learn-word { letter-spacing:-.04em; }
+.act-btn { height:52px; border-radius:18px; box-shadow:0 8px 22px rgba(15,23,42,.08); }
+.act-btn.primary { background:linear-gradient(135deg,#111827,#1e3a8a); border-color:transparent; }
+.act-btn.primary:hover:not(:disabled) { background:linear-gradient(135deg,#172554,#7c3aed); transform:translateY(-1px); }
+.act-btn.secondary { background:rgba(255,255,255,.74); }
+.stats-card { border:1px solid var(--border); border-radius:22px; padding:14px; background:linear-gradient(180deg,rgba(255,255,255,.72),rgba(255,255,255,.48)); }
+.ring-fg { stroke:#7c3aed; }
+.helper-title { color:#7c3aed; }
+@media (max-width:1080px){ .layout{padding-inline:12px;gap:12px}.helper{margin-block:0 18px;height:auto}.sidebar{margin-block:12px;height:calc(100vh - var(--topbar-h) - 24px)} }
+@media (max-width:860px){ .layout{display:block}.sidebar{margin:0;border-radius:0 24px 24px 0}.main{padding:12px}.focus-hero{border-radius:24px;align-items:flex-start;flex-direction:column}.hero-metric{width:100%}.action-bar{position:sticky;bottom:0;z-index:20;padding:10px;background:linear-gradient(180deg,transparent,var(--bg) 30%);backdrop-filter:blur(12px)} }
+@media (max-width:520px){ .focus-hero{padding:18px}.action-bar{display:grid;grid-template-columns:1fr 1fr}.act-btn{width:100%;justify-content:center}.exercise-card{border-radius:24px}.toolbar{border-radius:22px}.toolbar-controls{gap:8px}.mode-tabs{width:100%}.hero-metric{display:none} }
