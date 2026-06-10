@@ -1,0 +1,206 @@
+{
+  "version": "2026.06.10-separable-logo-v4",
+  "verb_count": 1077,
+  "antworten": {
+    "type": "regular verb",
+    "part": "geantwortet",
+    "zu": "zu antworten",
+    "present": [
+      "antworte",
+      "antwortest",
+      "antwortet",
+      "antworten",
+      "antwortet",
+      "antworten"
+    ],
+    "preterite": [
+      "antwortete",
+      "antwortetest",
+      "antwortete",
+      "antworteten",
+      "antwortetet",
+      "antworteten"
+    ],
+    "perfect": [
+      "habe geantwortet",
+      "hast geantwortet",
+      "hat geantwortet",
+      "haben geantwortet",
+      "habt geantwortet",
+      "haben geantwortet"
+    ]
+  },
+  "checked_examples": {
+    "antworten": {
+      "type": "regular verb",
+      "part": "geantwortet",
+      "zu": "zu antworten",
+      "present": [
+        "antworte",
+        "antwortest",
+        "antwortet"
+      ]
+    },
+    "beantworten": {
+      "type": "inseparable verb",
+      "part": "beantwortet",
+      "zu": "zu beantworten",
+      "present": [
+        "beantworte",
+        "beantwortest",
+        "beantwortet"
+      ]
+    },
+    "bedeuten": {
+      "type": "inseparable verb",
+      "part": "bedeutet",
+      "zu": "zu bedeuten",
+      "present": [
+        "bedeute",
+        "bedeutest",
+        "bedeutet"
+      ]
+    },
+    "berichten": {
+      "type": "inseparable verb",
+      "part": "berichtet",
+      "zu": "zu berichten",
+      "present": [
+        "berichte",
+        "berichtest",
+        "berichtet"
+      ]
+    },
+    "bekommen": {
+      "type": "irregular",
+      "part": "bekommen",
+      "zu": "zu bekommen",
+      "present": [
+        "bekomme",
+        "bekommst",
+        "bekommt"
+      ]
+    },
+    "vergleichen": {
+      "type": "irregular",
+      "part": "verglichen",
+      "zu": "zu vergleichen",
+      "present": [
+        "vergleiche",
+        "vergleichst",
+        "vergleicht"
+      ]
+    },
+    "erkennen": {
+      "type": "irregular",
+      "part": "erkannt",
+      "zu": "zu erkennen",
+      "present": [
+        "erkenne",
+        "erkennst",
+        "erkennt"
+      ]
+    },
+    "vorbereiten": {
+      "type": "separable verb",
+      "part": "vorbereitet",
+      "zu": "vorzubereiten",
+      "present": [
+        "bereite vor",
+        "bereitest vor",
+        "bereitet vor"
+      ]
+    },
+    "aufbereiten": {
+      "type": "separable verb",
+      "part": "aufbereitet",
+      "zu": "aufzubereiten",
+      "present": [
+        "bereite auf",
+        "bereitest auf",
+        "bereitet auf"
+      ]
+    },
+    "teilnehmen": {
+      "type": "separable verb",
+      "part": "teilgenommen",
+      "zu": "teilzunehmen",
+      "present": [
+        "nehme teil",
+        "nimmst teil",
+        "nimmt teil"
+      ]
+    },
+    "anbieten": {
+      "type": "separable verb",
+      "part": "angeboten",
+      "zu": "anzubieten",
+      "present": [
+        "biete an",
+        "bietest an",
+        "bietet an"
+      ]
+    },
+    "zustimmen": {
+      "type": "separable verb",
+      "part": "zugestimmt",
+      "zu": "zuzustimmen",
+      "present": [
+        "stimme zu",
+        "stimmst zu",
+        "stimmt zu"
+      ]
+    }
+  },
+  "false_separable_inseparable_prefix_count": 0,
+  "known_bad_forms_present": [
+    {
+      "tworte an": [
+        "dev/check.js",
+        "data/conjugator_verbs.json"
+      ]
+    },
+    {
+      "twortest an": [
+        "dev/check.js"
+      ]
+    },
+    {
+      "angetwort": [
+        "dev/check.js",
+        "docs/SEPARABLE_VERB_LOGO_AUDIT.json"
+      ]
+    },
+    {
+      "anzutwort": [
+        "dev/check.js"
+      ]
+    },
+    {
+      "gearbeitt": [
+        "dev/check.js",
+        "docs/SEPARABLE_VERB_LOGO_AUDIT.json"
+      ]
+    },
+    {
+      "gewartt": [
+        "dev/check.js",
+        "docs/SEPARABLE_VERB_LOGO_AUDIT.json"
+      ]
+    },
+    {
+      "berichtt": [
+        "dev/check.js",
+        "docs/SEPARABLE_VERB_LOGO_AUDIT.json"
+      ]
+    },
+    {
+      "bedeutt": [
+        "dev/check.js",
+        "docs/SEPARABLE_VERB_LOGO_AUDIT.json"
+      ]
+    }
+  ],
+  "logo": "assets/icon.svg plus 192/512 PNG icons replaced with new book/orbit WiPA mark",
+  "cache_bust": "service worker cache and app asset URLs versioned to force browser refresh"
+}

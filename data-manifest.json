@@ -5,15 +5,15 @@
       "id": "data_conjugator_verbs",
       "path": "data/conjugator_verbs.json",
       "category": "konjugator",
-      "title": "Konjugator · 1000+ geprüfte Verbtabellen",
-      "count": 1079
+      "title": "Konjugator · 1000+ Verben (korrigierte Datenbasis)",
+      "count": 1077
     },
     {
       "id": "grammatik_production_konjugator_drills",
       "path": "grammatik/production_konjugator_drills.json",
       "category": "conjugation",
-      "title": "Konjugation · Starter-Drills",
-      "count": 360,
+      "title": "Konjugation · geprüfte Starter-Drills",
+      "count": 1152,
       "description": "Small starter drills; full verb sessions are generated dynamically."
     },
     {

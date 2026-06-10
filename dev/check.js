@@ -66,3 +66,17 @@ if (/\[object Object\]/.test(allJsonText)) {
   process.exit(1);
 }
 console.log(`OK: JSON valid, app.js parses, active modules reachable, ${verbCount} verbs, ${drills.length} starter drills, dynamic practice enabled.`);
+
+
+const verbs = conj.verbs || {};
+function assert2(cond,msg){ if(!cond){ console.error('FAIL:',msg); process.exit(1); } }
+assert2(verbs.antworten.type === 'regular verb', 'antworten must be regular, not separable');
+assert2(verbs.antworten.part === 'geantwortet', 'antworten Partizip II must be geantwortet');
+assert2(verbs.antworten.zu === 'zu antworten', 'antworten zu-form must be zu antworten');
+assert2(JSON.stringify(verbs.antworten.present) === JSON.stringify(['antworte','antwortest','antwortet','antworten','antwortet','antworten']), 'antworten present forms are wrong');
+for (const bad of ['tworte an','twortest an','twortet an','angetwort','anzutwort','gearbeitt','gewartt','berichtt','bedeutt','vorgebereitet','aufgebereitet']) {
+  assert2(!JSON.stringify(verbs).includes(bad), 'bad form still present: '+bad);
+}
+const falseSep = Object.entries(verbs).filter(([k,v]) => v.type === 'separable verb' && /^(be|emp|ent|er|ge|miss|ver|zer)/.test(k));
+assert2(falseSep.length === 0, 'false separable verbs with inseparable prefixes: '+falseSep.slice(0,10).map(x=>x[0]).join(', '));
+console.log('OK: separable verb audit passed');
