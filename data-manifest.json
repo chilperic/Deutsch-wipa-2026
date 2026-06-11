@@ -1,5 +1,5 @@
 {
-  "version": "2026.06.11-v18.2-context-160-reliable-tutor",
+  "version": "2026.06.11-v18.2.1-cache-declension-hotfix",
   "philosophy": "context-enriched reliable tutor with 160-item core modules and Kapitel 1–4 vocabulary integrated through wipa_lexicon.",
   "defaultLevel": "B1+",
   "modules": [
@@ -206,5 +206,9 @@
     ],
     "core_target_per_module": 160,
     "vocabulary_chapter_items": 327
+  },
+  "hotfix": {
+    "cache": "network-first for app/data files; bumped service-worker cache key; appends build query to data fetches",
+    "declension": "added Deklination path and wired quickDecl to it"
   }
 }

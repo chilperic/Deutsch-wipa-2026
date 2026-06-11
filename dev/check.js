@@ -56,3 +56,12 @@ for (const it of chapterVocab.items) {
 }
 console.log('OK: v18.2 context-160 reliable tutor audit passed');
 
+
+
+// v18.2.1 hotfix guards
+const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
+if (!appSource.includes("id:'declension'")) fail('PATHS must define declension path');
+if (!appSource.includes("APP_BUILD = 'v18.2.1-cache-declension-hotfix'")) fail('app.js must include v18.2.1 cache-busting build constant');
+const swSource = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+if (swSource.includes('deutsch-wipa-v16-quickstart-fix')) fail('old v16 service-worker cache key still present');
+if (swSource.includes('data/conjugator_verbs.json')) fail('service worker must not precache removed conjugator_verbs.json');

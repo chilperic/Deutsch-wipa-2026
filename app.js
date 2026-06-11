@@ -2,7 +2,11 @@ const APP_VERSION = '2026.06.11-v18-final-reliable-tutor';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
-const vfetch = path => fetch(path);
+const APP_BUILD = 'v18.2.1-cache-declension-hotfix';
+const vfetch = path => {
+  const sep = String(path).includes('?') ? '&' : '?';
+  return fetch(`${path}${sep}v=${encodeURIComponent(APP_BUILD)}`, { cache: 'no-store' });
+};
 
 const SRS_KEY = 'dw_modern_srs';
 const state = {
@@ -60,6 +64,7 @@ const PATHS = [
   {id:'complaints',icon:'⚖️',title:'Reklamation & Konflikt',sub:'Mängelrüge, invoice dispute, deadlines, objective register',match:['reklamation','rechnung','dispute','invoice','maengel','mängel'],cats:['workplace']},
   {id:'negotiation',icon:'🤝',title:'Verhandlung & Diplomatie',sub:'Konjunktiv II, softening, alternatives, confirmation requests',match:['konjunktiv','negotiation','verhandlung','liefertermin'],cats:['workplace']},
   {id:'grammar_core',icon:'🧠',title:'Grammar Core',sub:'Kasus, nicht/kein, Konnektoren, TeKaMoLo, Satzmuster',match:['kasus','nicht','kein','konnektor','tekamolo','adjektiv','variable','satzmuster']},
+  {id:'declension',icon:'🧬',title:'Deklination',sub:'Adjektivdeklination, Artikel, Nomen und Kasusendungen',match:['adjektivdeklination','artikel_nomen','artikel','nomen','deklination','kasus'],exclude:['konjugation']},
   {id:'artikel_nomen',icon:'📚',title:'Artikel & Nomen',sub:'Genus, Plural, Nominalisierung, Kasusartikel',match:['artikel','nomen','plural','nominalisierung']},
   {id:'adverbien',icon:'🕒',title:'Adverbien',sub:'Zeit, Ort, Häufigkeit, Modalität, Satzlogik',match:['adverb','adverbien','temporal','lokal','modalität','satzlogik']},
   {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Large verb backend, filtered practice, modal verbs',cats:['conjugation','konjugator'],match:['modal','modalverb','verbformen','konjugator','curated_verbs']},
@@ -103,7 +108,17 @@ async function init(){
   await loadLocaleLexicon();await loadData();await loadConjugator();
   renderPath();selectPath('conjugation');
   route('learn');renderAll();
-  if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register(`./sw.js?v=${encodeURIComponent(APP_BUILD)}`).then(reg => {
+      reg.update().catch(()=>{});
+    }).catch(()=>{});
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!sessionStorage.getItem('dw_sw_reloaded_'+APP_BUILD)) {
+        sessionStorage.setItem('dw_sw_reloaded_'+APP_BUILD, '1');
+        location.reload();
+      }
+    });
+  }
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
