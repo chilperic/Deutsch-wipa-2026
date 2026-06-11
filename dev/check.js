@@ -26,3 +26,6 @@ for (const [v,d] of Object.entries({antworten:['geantwortet','antworte'], arbeit
 }
 console.log(ok ? 'OK: v14 verification passed' : 'FAILED');
 process.exit(ok ? 0 : 1);
+
+// v16 added: syntax check
+try{ require('child_process').execSync('node --check ' + require('path').join(__dirname,'..','app.js'), {stdio:'inherit'}); console.log('OK: app.js syntax'); }catch(e){ process.exit(1); }

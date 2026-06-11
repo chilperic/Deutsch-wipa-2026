@@ -1,0 +1,497 @@
+{
+  "module": "v17_nicht_kein",
+  "title": "v17 · nicht / kein · kuratiert",
+  "status": "curated",
+  "items": [
+    {
+      "id": "v17_neg_001",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für ein langes Gespräch.",
+      "answer": "keine",
+      "explanation": "Use kein for negating an indefinite noun: keine Zeit.",
+      "translation": "I do not have time today for a long conversation.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keine",
+        "nicht",
+        "keinen",
+        "kein"
+      ]
+    },
+    {
+      "id": "v17_neg_002",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir heute ___.",
+      "answer": "nicht",
+      "explanation": "nicht negates the whole statement or a specific verb/adverb phrase.",
+      "translation": "The appointment does not suit me today.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_003",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Raum gefunden.",
+      "answer": "keinen",
+      "explanation": "Raum is masculine accusative: keinen Raum.",
+      "translation": "We did not find a suitable room.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keinen",
+        "nicht",
+        "kein",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_004",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Datei lässt sich ___ öffnen.",
+      "answer": "nicht",
+      "explanation": "nicht negates the verb phrase lässt sich öffnen.",
+      "translation": "The file cannot be opened.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_005",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe ___ Rückmeldung bekommen.",
+      "answer": "keine",
+      "explanation": "Rückmeldung is feminine; use keine.",
+      "translation": "I did not receive any reply.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keine",
+        "nicht",
+        "keinen",
+        "kein"
+      ]
+    },
+    {
+      "id": "v17_neg_006",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ mein Aufgabenbereich.",
+      "answer": "nicht",
+      "explanation": "With possessives like mein, use nicht before the noun phrase.",
+      "translation": "That is not my area of responsibility.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keinen",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_007",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können den Vertrag heute ___ unterschreiben.",
+      "answer": "nicht",
+      "explanation": "nicht negates the action unterschreiben.",
+      "translation": "We cannot sign the contract today.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keinen",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_008",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe ___ Interesse an dieser Stelle.",
+      "answer": "kein",
+      "explanation": "Interesse is neuter: kein Interesse.",
+      "translation": "I have no interest in this position.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "kein",
+        "nicht",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_009",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Bericht ist ___ vollständig.",
+      "answer": "nicht",
+      "explanation": "Adjectives are normally negated with nicht.",
+      "translation": "The report is not complete.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keinen",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_010",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt heute ___ neuen Informationen.",
+      "answer": "keine",
+      "explanation": "Plural noun: keine Informationen.",
+      "translation": "There is no new information today.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keine",
+        "nicht",
+        "keinen",
+        "kein"
+      ]
+    },
+    {
+      "id": "v17_neg_011",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich arbeite morgen ___ im Büro, sondern im Homeoffice.",
+      "answer": "nicht",
+      "explanation": "nicht negates the location phrase im Büro.",
+      "translation": "I am not working in the office tomorrow, but from home.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keinen",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_012",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Lösung für das Problem.",
+      "answer": "keine",
+      "explanation": "Lösung is feminine: keine Lösung.",
+      "translation": "We have no solution for the problem.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keine",
+        "nicht",
+        "keinen",
+        "kein"
+      ]
+    },
+    {
+      "id": "v17_neg_013",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Kundin war mit dem Service ___ zufrieden.",
+      "answer": "nicht",
+      "explanation": "zufrieden is an adjective; use nicht.",
+      "translation": "The customer was not satisfied with the service.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_014",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich kenne den neuen Kollegen noch ___.",
+      "answer": "nicht",
+      "explanation": "nicht negates kennen.",
+      "translation": "I do not know the new colleague yet.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keinen",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_015",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Einladung erhalten.",
+      "answer": "keine",
+      "explanation": "Einladung is feminine: keine Einladung.",
+      "translation": "We received no invitation.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_016",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Drucker funktioniert leider ___.",
+      "answer": "nicht",
+      "explanation": "Fixed phrase: funktioniert leider nicht.",
+      "translation": "Unfortunately, the printer does not work.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_017",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich kann an der Besprechung ___ teilnehmen.",
+      "answer": "nicht",
+      "explanation": "nicht negates the verb teilnehmen.",
+      "translation": "I cannot take part in the meeting.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keinen",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_018",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ gute Idee.",
+      "answer": "keine",
+      "explanation": "Idee is feminine: keine gute Idee.",
+      "translation": "That is not a good idea.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_019",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Zugriff auf das System.",
+      "answer": "keinen",
+      "explanation": "Zugriff is masculine accusative: keinen Zugriff.",
+      "translation": "We have no access to the system.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "keinen",
+        "nicht",
+        "kein",
+        "keine"
+      ]
+    },
+    {
+      "id": "v17_neg_020",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Adresse ist ___ korrekt.",
+      "answer": "nicht",
+      "explanation": "Adjectives are negated with nicht.",
+      "translation": "The address is not correct.",
+      "level": "B1+",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation"
+      ],
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "v17_neg_corr_001",
+      "module": "v17_nicht_kein",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich nicht habe Zeit.",
+      "answer": "Ich habe keine Zeit.",
+      "explanation": "For indefinite nouns, use kein; finite verb stays in position 2.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Negation"
+      ]
+    },
+    {
+      "id": "v17_neg_corr_002",
+      "module": "v17_nicht_kein",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Der Termin nicht passt mir.",
+      "answer": "Der Termin passt mir nicht.",
+      "explanation": "nicht usually follows the finite verb and complements.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Negation"
+      ]
+    },
+    {
+      "id": "v17_neg_corr_003",
+      "module": "v17_nicht_kein",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich habe nicht Rückmeldung bekommen.",
+      "answer": "Ich habe keine Rückmeldung bekommen.",
+      "explanation": "Use kein for negating an indefinite noun.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Negation"
+      ]
+    },
+    {
+      "id": "v17_neg_corr_004",
+      "module": "v17_nicht_kein",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Die Datei nicht lässt sich öffnen.",
+      "answer": "Die Datei lässt sich nicht öffnen.",
+      "explanation": "nicht comes before the infinitive phrase here.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Negation"
+      ]
+    },
+    {
+      "id": "v17_neg_corr_005",
+      "module": "v17_nicht_kein",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich arbeite im Büro nicht morgen.",
+      "answer": "Ich arbeite morgen nicht im Büro.",
+      "explanation": "A neutral order is temporal before negated local phrase.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Negation"
+      ]
+    }
+  ]
+}

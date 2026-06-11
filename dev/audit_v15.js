@@ -13,9 +13,9 @@ try {
   const verbs = readJson('data/conjugator_verbs.json').verbs || {};
   const curated = readJson('data/curated_verbs.json');
 
-  if(!app.includes("2026.06.10-v16-professional-core")) fail('APP_VERSION is not v16'); else ok('APP_VERSION v16');
+  if(!app.includes("2026.06.10-v16-quickstart-fix")) fail('APP_VERSION is not v15'); else ok('APP_VERSION v15');
   if(!html.includes('quickStartPanel')) fail('quick start panel missing'); else ok('quick start panel present');
-  if(!/function\s+renderQuickStart\s*\(/.test(app)) fail('renderQuickStart function missing'); else ok('quick start renderer function present');
+  if(!/function\s+renderQuickStart\s*\(/.test(app)) fail('renderQuickStart not defined'); else ok('quick start renderer defined');
   if(!curated.starter || curated.starter.length < 20) fail('starter verb set too small'); else ok(`starter verbs: ${curated.starter.length}`);
   if(!curated.top300 || curated.top300.length < 250) fail('curated verb set below 250'); else ok(`curated verbs: ${curated.top300.length}`);
   const missing = [...curated.starter, ...curated.top300].filter(v => !verbs[v]);
@@ -40,7 +40,7 @@ try {
   }
   ok('regional locale layer present');
   if(process.exitCode) process.exit(process.exitCode);
-  console.log('OK: v15/v16 professional-core audit passed');
+  console.log('OK: v15 professional-core audit passed');
 } catch (e) {
   console.error(e);
   process.exit(1);

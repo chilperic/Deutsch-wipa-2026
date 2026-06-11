@@ -1,0 +1,491 @@
+{
+  "module": "v17_konnektoren",
+  "title": "v17 · Konnektoren & Satzbau · kuratiert",
+  "status": "curated",
+  "items": [
+    {
+      "id": "v17_conn_001",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe die Datei geprüft, ___ ich sie verschickt habe.",
+      "answer": "bevor",
+      "explanation": "bevor introduces the later action; first check, then send.",
+      "translation": "I checked the file before I sent it.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "bevor",
+        "nachdem",
+        "weil",
+        "obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_002",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ die Rechnung fehlerhaft ist, bitten wir um eine Korrektur.",
+      "answer": "Da",
+      "explanation": "Da gives the reason in a subordinate clause; finite verb goes to the end.",
+      "translation": "Since the invoice is incorrect, we ask for a correction.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Da",
+        "Obwohl",
+        "Trotzdem",
+        "Deshalb"
+      ]
+    },
+    {
+      "id": "v17_conn_003",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die App funktioniert nicht. ___ schreibe ich dem Support.",
+      "answer": "Deshalb",
+      "explanation": "Deshalb starts a main clause; the conjugated verb follows immediately.",
+      "translation": "The app does not work. Therefore I write to support.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Deshalb",
+        "Obwohl",
+        "Weil",
+        "Damit"
+      ]
+    },
+    {
+      "id": "v17_conn_004",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich komme zum Termin, ___ ich heute wenig Zeit habe.",
+      "answer": "obwohl",
+      "explanation": "obwohl introduces a contrast and sends the verb to the end.",
+      "translation": "I come to the appointment although I have little time today.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "obwohl",
+        "weil",
+        "deshalb",
+        "denn"
+      ]
+    },
+    {
+      "id": "v17_conn_005",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lieferung ist angekommen, ___ ein Teil fehlt.",
+      "answer": "aber",
+      "explanation": "aber connects two main clauses with contrast; no verb-final order.",
+      "translation": "The delivery arrived, but one part is missing.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "aber",
+        "weil",
+        "deshalb",
+        "damit"
+      ]
+    },
+    {
+      "id": "v17_conn_006",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir rufen den Kunden an, ___ wir die Änderung erklären können.",
+      "answer": "damit",
+      "explanation": "damit expresses purpose: so that we can explain the change.",
+      "translation": "We call the customer so that we can explain the change.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "damit",
+        "weil",
+        "trotzdem",
+        "nachdem"
+      ]
+    },
+    {
+      "id": "v17_conn_007",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ ich in Deutschland bin, lerne ich jeden Tag neue Wörter.",
+      "answer": "Seit",
+      "explanation": "Seit marks a duration starting in the past and continuing now.",
+      "translation": "Since I have been in Germany, I learn new words every day.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Seit",
+        "Bevor",
+        "Nachdem",
+        "Obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_008",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe die E-Mail beantwortet, ___ ich den Anhang gelesen hatte.",
+      "answer": "nachdem",
+      "explanation": "nachdem marks the earlier completed action.",
+      "translation": "I answered the email after I had read the attachment.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "nachdem",
+        "bevor",
+        "weil",
+        "damit"
+      ]
+    },
+    {
+      "id": "v17_conn_009",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin wurde verschoben, ___ der Kunde krank ist.",
+      "answer": "weil",
+      "explanation": "weil gives the reason; verb final in the subordinate clause.",
+      "translation": "The appointment was postponed because the customer is ill.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "weil",
+        "trotzdem",
+        "aber",
+        "damit"
+      ]
+    },
+    {
+      "id": "v17_conn_010",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gab ein technisches Problem. ___ konnten wir die Datei nicht hochladen.",
+      "answer": "Deshalb",
+      "explanation": "Deshalb expresses consequence; verb-second order follows.",
+      "translation": "There was a technical problem. Therefore we could not upload the file.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Deshalb",
+        "Obwohl",
+        "Damit",
+        "Während"
+      ]
+    },
+    {
+      "id": "v17_conn_011",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich lerne Deutsch, ___ ich bessere Chancen auf dem Arbeitsmarkt habe.",
+      "answer": "damit",
+      "explanation": "damit expresses a goal or purpose.",
+      "translation": "I learn German so that I have better chances on the job market.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "damit",
+        "obwohl",
+        "nachdem",
+        "trotzdem"
+      ]
+    },
+    {
+      "id": "v17_conn_012",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ der Kurs beginnt, wiederhole ich die wichtigsten Wörter.",
+      "answer": "Bevor",
+      "explanation": "Bevor introduces the later action; the repetition happens first.",
+      "translation": "Before the course starts, I review the most important words.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Bevor",
+        "Nachdem",
+        "Seit",
+        "Obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_013",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Kollegin ist krank, ___ übernimmt Herr Müller die Aufgabe.",
+      "answer": "deshalb",
+      "explanation": "deshalb: consequence with verb-second word order.",
+      "translation": "The colleague is ill, therefore Mr Müller takes over the task.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "deshalb",
+        "obwohl",
+        "weil",
+        "denn"
+      ]
+    },
+    {
+      "id": "v17_conn_014",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Drucker funktioniert, ___ das Papier richtig eingelegt ist.",
+      "answer": "wenn",
+      "explanation": "wenn expresses condition here.",
+      "translation": "The printer works if the paper is inserted correctly.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "wenn",
+        "obwohl",
+        "bevor",
+        "trotzdem"
+      ]
+    },
+    {
+      "id": "v17_conn_015",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich unterschreibe den Vertrag nicht, ___ ich ihn vollständig gelesen habe.",
+      "answer": "bevor",
+      "explanation": "bevor: do not sign before reading.",
+      "translation": "I do not sign the contract before I have read it completely.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "bevor",
+        "nachdem",
+        "damit",
+        "während"
+      ]
+    },
+    {
+      "id": "v17_conn_016",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Kunde war verärgert, ___ blieb die Mitarbeiterin ruhig.",
+      "answer": "trotzdem",
+      "explanation": "trotzdem starts a main clause with contrast; verb-second follows.",
+      "translation": "The customer was upset; nevertheless the employee remained calm.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "trotzdem",
+        "weil",
+        "damit",
+        "nachdem"
+      ]
+    },
+    {
+      "id": "v17_conn_017",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir hatten wenig Zeit, ___ haben wir die wichtigsten Punkte besprochen.",
+      "answer": "trotzdem",
+      "explanation": "trotzdem expresses contrast against expectation.",
+      "translation": "We had little time; nevertheless we discussed the most important points.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "trotzdem",
+        "weil",
+        "damit",
+        "bevor"
+      ]
+    },
+    {
+      "id": "v17_conn_018",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich schreibe eine kurze Notiz, ___ ich den Termin nicht vergesse.",
+      "answer": "damit",
+      "explanation": "damit gives the purpose of the note.",
+      "translation": "I write a short note so that I do not forget the appointment.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "damit",
+        "weil",
+        "obwohl",
+        "nachdem"
+      ]
+    },
+    {
+      "id": "v17_conn_019",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ die Besprechung vorbei war, schickte ich das Protokoll.",
+      "answer": "Nachdem",
+      "explanation": "Nachdem marks the earlier completed event.",
+      "translation": "After the meeting was over, I sent the minutes.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Nachdem",
+        "Bevor",
+        "Während",
+        "Obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_020",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können heute nicht liefern, ___ das Ersatzteil fehlt.",
+      "answer": "denn",
+      "explanation": "denn gives a reason but keeps main-clause word order after it.",
+      "translation": "We cannot deliver today because the spare part is missing.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "denn",
+        "trotzdem",
+        "deshalb",
+        "damit"
+      ]
+    },
+    {
+      "id": "v17_conn_corr_001",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Weil die Rechnung ist falsch, bitten wir um eine Korrektur.",
+      "answer": "Weil die Rechnung falsch ist, bitten wir um eine Korrektur.",
+      "explanation": "In a subordinate clause with weil, the finite verb goes to the end.",
+      "translation": "",
+      "level": "B2",
+      "tags": [
+        "Korrektur",
+        "Wortstellung"
+      ]
+    },
+    {
+      "id": "v17_conn_corr_002",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich komme trotzdem zum Kurs, obwohl ich bin müde.",
+      "answer": "Ich komme trotzdem zum Kurs, obwohl ich müde bin.",
+      "explanation": "obwohl sends the finite verb to the end.",
+      "translation": "",
+      "level": "B2",
+      "tags": [
+        "Korrektur",
+        "Wortstellung"
+      ]
+    },
+    {
+      "id": "v17_conn_corr_003",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Deshalb ich schreibe dem Support.",
+      "answer": "Deshalb schreibe ich dem Support.",
+      "explanation": "After deshalb at position 1, the finite verb comes in position 2.",
+      "translation": "",
+      "level": "B2",
+      "tags": [
+        "Korrektur",
+        "Wortstellung"
+      ]
+    },
+    {
+      "id": "v17_conn_corr_004",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich habe die Datei geschickt, bevor ich habe sie geprüft.",
+      "answer": "Ich habe die Datei geschickt, bevor ich sie geprüft habe.",
+      "explanation": "In the bevor-clause, the finite verb goes to the end.",
+      "translation": "",
+      "level": "B2",
+      "tags": [
+        "Korrektur",
+        "Wortstellung"
+      ]
+    },
+    {
+      "id": "v17_conn_corr_005",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Einerseits die Arbeit ist anspruchsvoll, andererseits ist sie interessant.",
+      "answer": "Einerseits ist die Arbeit anspruchsvoll, andererseits ist sie interessant.",
+      "explanation": "With einerseits at position 1, the finite verb follows immediately.",
+      "translation": "",
+      "level": "B2",
+      "tags": [
+        "Korrektur",
+        "Wortstellung"
+      ]
+    },
+    {
+      "id": "v17_conn_corr_006",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Zwar arbeitet er viel, aber nimmt er sich Zeit für Deutsch.",
+      "answer": "Zwar arbeitet er viel, aber er nimmt sich Zeit für Deutsch.",
+      "explanation": "After aber, keep a complete main clause with subject and finite verb.",
+      "translation": "",
+      "level": "B2",
+      "tags": [
+        "Korrektur",
+        "Wortstellung"
+      ]
+    }
+  ]
+}

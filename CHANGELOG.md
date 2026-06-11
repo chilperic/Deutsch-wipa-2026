@@ -1,5 +1,28 @@
 # Changelog
 
+## v16.0.0 · Quick-Start Fix & Robustness
+
+- Fixed: `renderQuickStart` was called but undefined (blocked every render after first paint).
+- Quick-start panel now shipped with tiles, accent for due reviews, and CSS.
+- Service worker precaches data-manifest modules + curated/lexicon JSON at install (real offline-first).
+- Dropped `?v=` cache-buster on JSON; SW cache name handles invalidation.
+- Removed dead `cleanReq` line in sw.js.
+- Capitalisation now enforced for noun/article/plural trainers (with friendly hint).
+- Import: schema validation + overwrite confirm.
+- Skip: detect end-of-pass and finish session instead of looping forever.
+- Profile name save debounced (300 ms).
+- Speak debounced (250 ms) to stop word truncation on double-tap.
+- Mistake retry buttons use event delegation.
+- Design selects no longer wipe their value on every render.
+- Escape key closes the drawer first, then falls back to skip.
+- Hard-coded German strings ('Bereit?', 'Keine Items', 'Review leer') now translated.
+- Exercise type pill (`label()`) localized to EN.
+- EN translation pack fix: 'Curated verbs' instead of 'Kuratierte Verben'.
+- Stricter audit: checks for function *definition*, not just substring.
+- `dev/check.js` runs `node --check app.js` to catch parse errors before deploy.
+
+# Changelog
+
 ## v15.0.0 · Professional Core
 
 - Added quick-start learning panel.
@@ -13,11 +36,3 @@
 - Added centralized workplace lexicon.
 - Fixed separable Konjunktiv II for core verbs.
 - Added localization support for key DACH workforce languages.
-
-## v16 Professional Core Fix
-
-- Fixed missing renderQuickStart runtime crash.
-- Added quick-start tile rendering and CSS.
-- Added quick-start i18n coverage for all supported UI languages.
-- Updated service worker caching for versioned JSON and module precaching.
-- Strengthened release audits.

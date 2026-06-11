@@ -1,8 +1,8 @@
-const APP_VERSION = '2026.06.10-v16-professional-core';
+const APP_VERSION = '2026.06.11-v17-reliable-tutor-middle-db';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
-const vfetch = path => fetch(path + (path.includes('?') ? '&' : '?') + 'v=' + APP_VERSION);
+const vfetch = path => fetch(path);
 
 const SRS_KEY = 'dw_modern_srs';
 const state = {
@@ -68,8 +68,8 @@ const PATHS = [
 ];
 
 const T = {
- de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten',mistakes:'Fehler',noMistakes:'Keine Fehler gespeichert',translate:'Übersetzung',translation:'Übersetzung',resources:'Ressourcen',externalTranslation:'Extern übersetzen',noStoredTranslation:'Keine gespeicherte Übersetzung für diese Karte.',resourceFriend:'Dreizunge · App von Raim',resourceConjugator:'Verbformen & Konjugation',resourceDictionary:'Wörterbuch',resourceGrammar:'Grammatik',resourceListening:'Hören & Deutsch lernen',onboardingTitle:'Heute gezielt trainieren',onboardingText:'Wähle einen klaren Lernpfad. Kurze Sitzungen, direkte Korrektur, Wiederholung später.',quickConj:'Verbformen',quickDecl:'Deklination',quickPrep:'Präpositionen',quickReview:'Wiederholen',starter:'Starter',curated:'Kuratierte Verben',allVerbs:'Alle Verben'},
- en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers',mistakes:'mistakes',noMistakes:'No mistakes saved',translate:'Translate',translation:'Translation',resources:'Resources',externalTranslation:'Translate externally',noStoredTranslation:'No stored translation for this card.',resourceFriend:'Dreizunge · Raim’s app',resourceConjugator:'Verb forms & conjugation',resourceDictionary:'Dictionary',resourceGrammar:'Grammar',resourceListening:'Listening & German learning',onboardingTitle:'Train with a clear focus today',onboardingText:'Choose one learning path. Short sessions, direct correction, later review.',quickConj:'Verb forms',quickDecl:'Declension',quickPrep:'Prepositions',quickReview:'Review',starter:'Starter',curated:'Kuratierte Verben',allVerbs:'All verbs'},
+ de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten',mistakes:'Fehler',noMistakes:'Keine Fehler gespeichert',translate:'Übersetzung',translation:'Übersetzung',resources:'Ressourcen',externalTranslation:'Extern übersetzen',noStoredTranslation:'Keine gespeicherte Übersetzung für diese Karte.',resourceFriend:'Dreizunge · App von Raim',resourceConjugator:'Verbformen & Konjugation',resourceDictionary:'Wörterbuch',resourceGrammar:'Grammatik',resourceListening:'Hören & Deutsch lernen',onboardingTitle:'Heute gezielt trainieren',onboardingText:'Wähle einen verlässlichen Tutor-Pfad. Kurze Sitzungen, direkte Korrektur, Wiederholung später, Ressourcen in der Seitenleiste.',quickConj:'Verbformen',quickDecl:'Deklination',quickPrep:'Präpositionen',quickReview:'Wiederholen',starter:'Starter',curated:'Kuratierte Verben',allVerbs:'Alle Verben'},
+ en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers',mistakes:'mistakes',noMistakes:'No mistakes saved',translate:'Translate',translation:'Translation',resources:'Resources',externalTranslation:'Translate externally',noStoredTranslation:'No stored translation for this card.',resourceFriend:'Dreizunge · Raim’s app',resourceConjugator:'Verb forms & conjugation',resourceDictionary:'Dictionary',resourceGrammar:'Grammar',resourceListening:'Listening & German learning',onboardingTitle:'Train with a clear focus today',onboardingText:'Choose one reliable tutor path. Short sessions, direct correction, later review, resources visible in the side panel.',quickConj:'Verb forms',quickDecl:'Declension',quickPrep:'Prepositions',quickReview:'Review',starter:'Starter',curated:'Curated verbs',allVerbs:'All verbs'},
  fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau',answered:'réponses',mistakes:'erreurs',noMistakes:'Aucune erreur enregistrée',translate:'Traduire',translation:'Traduction',resources:'Ressources',externalTranslation:'Traduire avec un outil externe',noStoredTranslation:'Aucune traduction enregistrée pour cette carte.',resourceFriend:'Dreizunge · application de Raim',resourceConjugator:'Formes verbales et conjugaison',resourceDictionary:'Dictionnaire',resourceGrammar:'Grammaire',resourceListening:'Écoute et allemand'},
  es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla',answered:'respuestas',mistakes:'errores',noMistakes:'No hay errores guardados',translate:'Traducir',translation:'Traducción',resources:'Recursos',externalTranslation:'Traducir externamente',noStoredTranslation:'No hay traducción guardada para esta tarjeta.',resourceFriend:'Dreizunge · app de Raim',resourceConjugator:'Formas verbales y conjugación',resourceDictionary:'Diccionario',resourceGrammar:'Gramática',resourceListening:'Escucha y alemán'},
  ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول',answered:'إجابات',mistakes:'أخطاء',noMistakes:'لا توجد أخطاء محفوظة',translate:'ترجمة',translation:'الترجمة',resources:'موارد',externalTranslation:'ترجمة خارجية',noStoredTranslation:'لا توجد ترجمة محفوظة لهذه البطاقة.',resourceFriend:'Dreizunge · تطبيق Raim',resourceConjugator:'تصريف الأفعال',resourceDictionary:'قاموس',resourceGrammar:'قواعد',resourceListening:'الاستماع وتعلّم الألمانية'},
@@ -79,20 +79,13 @@ const T = {
  pl:{start:'Rozpocznij',check:'Sprawdź',next:'Dalej',skip:'Pomiń',restart:'Zacznij od nowa',correct:'Poprawnie',wrong:'Jeszcze nie',answer:'Poprawna odpowiedź',why:'Dlaczego?',empty:'Brak zadań dla tego wyboru.',ready:'Rozpocznij sesję.',complete:'Sesja zakończona',noSrs:'Brak powtórek. Najpierw rozwiąż kilka ćwiczeń.',allModules:'Wszystkie moduły',dueToday:'na dziś',item:'zadanie',items:'zadania',yourAnswer:'Twoja odpowiedź',retryMistake:'Ćwicz ponownie',sessionStats:'Sesja',verbConjTable:'Pokaż tabelę',answered:'odpowiedzi',mistakes:'błędów',noMistakes:'Brak zapisanych błędów',translate:'Tłumaczenie',translation:'Tłumaczenie',resources:'Zasoby',externalTranslation:'Przetłumacz zewnętrznie',noStoredTranslation:'Brak zapisanych tłumaczeń dla tej karty.',resourceFriend:'Dreizunge · aplikacja Raima',resourceConjugator:'Formy czasowników i koniugacja',resourceDictionary:'Słownik',resourceGrammar:'Gramatyka',resourceListening:'Słuchanie i niemiecki'},
  tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster',answered:'cevap',mistakes:'hata',noMistakes:'Kayıtlı hata yok',translate:'Çeviri',translation:'Çeviri',resources:'Kaynaklar',externalTranslation:'Harici çeviri',noStoredTranslation:'Bu kart için kayıtlı çeviri yok.',resourceFriend:'Dreizunge · Raim’in uygulaması',resourceConjugator:'Fiil biçimleri ve çekim',resourceDictionary:'Sözlük',resourceGrammar:'Dilbilgisi',resourceListening:'Dinleme ve Almanca öğrenme'}
 };
-function tr(k){return T[state.lang]?.[k]??T.en[k]??T.de[k]??k}
 
-const QUICKSTART_I18N_PATCH = {
-  fr:{onboardingTitle:'Entraînement ciblé aujourd’hui',onboardingText:'Choisis un parcours clair. Sessions courtes, correction directe, révision plus tard.',quickConj:'Formes verbales',quickDecl:'Déclinaison',quickPrep:'Prépositions',quickReview:'Révision',starter:'Débutant',curated:'Verbes sélectionnés',allVerbs:'Tous les verbes'},
-  es:{onboardingTitle:'Entrena con un objetivo claro hoy',onboardingText:'Elige una ruta de aprendizaje. Sesiones cortas, corrección directa y repaso posterior.',quickConj:'Formas verbales',quickDecl:'Declinación',quickPrep:'Preposiciones',quickReview:'Repaso',starter:'Inicio',curated:'Verbos seleccionados',allVerbs:'Todos los verbos'},
-  ar:{onboardingTitle:'تدرّب اليوم بتركيز واضح',onboardingText:'اختر مساراً واضحاً. جلسات قصيرة، تصحيح مباشر، ومراجعة لاحقاً.',quickConj:'تصريف الأفعال',quickDecl:'الإعراب/التصريف',quickPrep:'حروف الجر',quickReview:'المراجعة',starter:'البداية',curated:'أفعال مختارة',allVerbs:'كل الأفعال'},
-  fa:{onboardingTitle:'امروز هدفمند تمرین کن',onboardingText:'یک مسیر روشن انتخاب کن. جلسه‌های کوتاه، تصحیح مستقیم و مرور بعدی.',quickConj:'صرف فعل‌ها',quickDecl:'صرف/دکلیناسیون',quickPrep:'حروف اضافه',quickReview:'مرور',starter:'شروع',curated:'فعل‌های منتخب',allVerbs:'همهٔ فعل‌ها'},
-  uk:{onboardingTitle:'Тренуйся сьогодні цілеспрямовано',onboardingText:'Обери чіткий навчальний шлях. Короткі сесії, пряма корекція, повторення пізніше.',quickConj:'Форми дієслів',quickDecl:'Відмінювання',quickPrep:'Прийменники',quickReview:'Повторення',starter:'Старт',curated:'Відібрані дієслова',allVerbs:'Усі дієслова',mistakes:'помилки',noMistakes:'Збережених помилок немає'},
-  ru:{onboardingTitle:'Тренируйся сегодня с чёткой целью',onboardingText:'Выбери понятный путь. Короткие сессии, прямая коррекция и повторение позже.',quickConj:'Формы глаголов',quickDecl:'Склонение',quickPrep:'Предлоги',quickReview:'Повторение',starter:'Старт',curated:'Отобранные глаголы',allVerbs:'Все глаголы'},
-  pl:{onboardingTitle:'Ćwicz dziś z jasnym celem',onboardingText:'Wybierz konkretną ścieżkę. Krótkie sesje, bezpośrednia korekta i późniejsze powtórki.',quickConj:'Formy czasowników',quickDecl:'Deklinacja',quickPrep:'Przyimki',quickReview:'Powtórka',starter:'Start',curated:'Wybrane czasowniki',allVerbs:'Wszystkie czasowniki'},
-  tr:{onboardingTitle:'Bugün net bir hedefle çalış',onboardingText:'Açık bir öğrenme yolu seç. Kısa oturumlar, doğrudan düzeltme ve sonra tekrar.',quickConj:'Fiil biçimleri',quickDecl:'Çekim / hâl ekleri',quickPrep:'Edatlar',quickReview:'Tekrar',starter:'Başlangıç',curated:'Seçilmiş fiiller',allVerbs:'Tüm fiiller'}
-};
-for (const [lang, entries] of Object.entries(QUICKSTART_I18N_PATCH)) Object.assign(T[lang] ||= {}, entries);
-T.en.curated = 'Curated verbs';
+// Late-bound translation extensions (i18n parity polish)
+const EXTRA_T={de:{ready_q:'Bereit?',no_items:'Keine Items',review_empty:'Review leer',practice:'Üben',learn:'Lernen',review:'Wiederholen'},
+ en:{ready_q:'Ready?',no_items:'No items',review_empty:'Review empty',practice:'Practice',learn:'Learn',review:'Review'}};
+for(const k in EXTRA_T)Object.assign(T[k]||(T[k]={}),EXTRA_T[k]);
+
+function tr(k){return T[state.lang]?.[k]??T.en[k]??T.de[k]??k}
 function load(k,fallback){try{return JSON.parse(localStorage.getItem(k))??fallback}catch{return fallback}}
 function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
 function norm(s=''){return String(s).trim().toLowerCase().replace(/[„""]/g,'"').replace(/[.!?。؟،,;:]+$/g,'').replace(/\s+/g,' ')}
@@ -107,16 +100,16 @@ async function init(){
   updateDirection();renderLangs();renderDesignControls();bind();
   await loadLocaleLexicon();await loadData();await loadConjugator();
   renderPath();selectPath('conjugation');
-  route('learn');renderAll();renderResources();
+  route('learn');renderAll();
   if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
 function renderDesignControls(){
-  const appearanceOptions=APPEARANCES.map(([c,n])=>`<option value="${c}" ${c===state.appearance?'selected':''}>${n}</option>`).join('');
-  const colorOptions=COLORS.map(([c,n])=>`<option value="${c}" ${c===state.color?'selected':''}>${n}</option>`).join('');
-  document.querySelectorAll('#appearanceSelect,.appearance-select-control').forEach(el=>{ if(el){el.innerHTML=appearanceOptions; el.value=state.appearance;} });
-  document.querySelectorAll('#colorSelect,.color-select-control').forEach(el=>{ if(el){el.innerHTML=colorOptions; el.value=state.color;} });
+  const appearanceOptions=APPEARANCES.map(([c,n])=>`<option value="${c}">${n}</option>`).join('');
+  const colorOptions=COLORS.map(([c,n])=>`<option value="${c}">${n}</option>`).join('');
+  document.querySelectorAll('#appearanceSelect,.appearance-select-control').forEach(el=>{ if(!el)return; if(!el.dataset.populated){el.innerHTML=appearanceOptions;el.dataset.populated='1';} el.value=state.appearance; });
+  document.querySelectorAll('#colorSelect,.color-select-control').forEach(el=>{ if(!el)return; if(!el.dataset.populated){el.innerHTML=colorOptions;el.dataset.populated='1';} el.value=state.color; });
 }
 function systemPrefersDark(){return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches}
 function resolvedAppearance(){return state.appearance==='system' ? (systemPrefersDark()?'dark':'light') : state.appearance}
@@ -143,18 +136,18 @@ if(window.matchMedia){
 
 
 function bind(){
-  if($('languageSelect'))$('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
+  $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
   document.querySelectorAll('#appearanceSelect,.appearance-select-control').forEach(el=>{el.onchange=e=>setAppearance(e.target.value)});
   document.querySelectorAll('#colorSelect,.color-select-control').forEach(el=>{el.onchange=e=>setColor(e.target.value)});
   bindProfileControls();
   document.querySelectorAll('.top-tab').forEach(b=>b.onclick=()=>route(b.dataset.route));
-  $('mobileMenu').onclick=()=>toggleDrawer(true);$('backdrop').onclick=()=>toggleDrawer(false);
+  $('mobileMenu')?.addEventListener('click',()=>toggleDrawer(true));$('backdrop')?.addEventListener('click',()=>toggleDrawer(false));
   $('primaryAction').onclick=primary;$('secondaryAction').onclick=next;$('prevButton').onclick=prev;
   $('skipButton').onclick=skipItem;
   $('speakButton').onclick=()=>{const item=current();if(!item)return;speak(item.germanSpeak||item.example||item.prompt||item.answer||'')};
-  $('translateButton').onclick=toggleTranslation;
+  $('translateButton')?.addEventListener('click',toggleTranslation);
   $('modePractice').onclick=()=>setMode('practice');$('modeLearn').onclick=()=>setMode('learn');$('modeReview').onclick=()=>setMode('review');
-  $('clearMistakes').onclick=()=>{state.mistakes=[];save('dw_modern_mistakes',state.mistakes);renderMistakes();renderStats()};
+  $('clearMistakes')&&($('clearMistakes').onclick=()=>{state.mistakes=[];save('dw_modern_mistakes',state.mistakes);renderMistakes();renderStats()});
   let vsTimer=null;$('verbSearch').oninput=()=>{clearTimeout(vsTimer);vsTimer=setTimeout(renderVerbList,120)};
   $('moduleSelect').onchange=e=>{state.moduleId=e.target.value;state.dynamicVerb='';resetSession();syncMobileControls();renderExercise()};
   if($('mobilePathSelect'))$('mobilePathSelect').onchange=e=>selectPath(e.target.value);
@@ -176,7 +169,7 @@ function bind(){
     if(e.key==='Enter'&&tag==='input'&&!$('primaryAction').disabled){e.preventDefault();primary()}
     if(e.key==='ArrowRight'&&!$('secondaryAction').classList.contains('hidden'))next();
     if(e.key==='ArrowLeft')prev();
-    if(e.key==='Escape')skipItem();
+    if(e.key==='Escape'){if($('sidebar')?.classList.contains('open'))toggleDrawer(false);else skipItem();}
   });
 }
 
@@ -184,11 +177,15 @@ function bindProfileControls(){
   const name=$('profileName');
   if(name){
     name.value=state.profile?.name||'';
+    let _pTimer=null;
     name.oninput=()=>{
-      state.profile={...state.profile,name:name.value.trim()};
-      save('dw_modern_profile',state.profile);
-      const status=$('profileSaveStatus');
-      if(status)status.textContent=name.value.trim()?`${tr('profileSaved')}: ${name.value.trim()}`:tr('progressLocal');
+      clearTimeout(_pTimer);
+      _pTimer=setTimeout(()=>{
+        state.profile={...state.profile,name:name.value.trim()};
+        save('dw_modern_profile',state.profile);
+        const status=$('profileSaveStatus');
+        if(status)status.textContent=name.value.trim()?`${tr('profileSaved')}: ${name.value.trim()}`:tr('progressLocal');
+      },300);
     };
   }
   const status=$('profileSaveStatus');
@@ -216,6 +213,9 @@ function importProgress(e){
   reader.onload=()=>{
     try{
       const data=JSON.parse(reader.result);
+      if(!data||typeof data!=='object'||(!data.stats&&!data.srs&&!data.profile))throw new Error('shape');
+      const hasExisting=Object.keys(state.stats||{}).length||Object.keys(state.srs||{}).length||(state.mistakes||[]).length;
+      if(hasExisting && !confirm('Vorhandenen Fortschritt überschreiben?')){e.target.value='';return;}
       state.profile=data.profile||state.profile||{name:''};
       state.stats=data.stats||{};state.moduleStats=data.moduleStats||{};state.mistakes=data.mistakes||[];state.srs=data.srs||{};
       if(data.lang)state.lang=data.lang;if(data.appearance)state.appearance=data.appearance;if(data.color)state.color=data.color;else if(data.theme)state.color=data.theme;
@@ -350,13 +350,12 @@ function renderModuleSelect(){
   if($('mobileModuleSelect')){$('mobileModuleSelect').innerHTML=html;$('mobileModuleSelect').value=state.moduleId;}
 }
 function itemsForCurrentPath(){if(state.path==='conjugation'&&state.moduleId==='dynamic_conjugator')return generateConjugatorPractice();const mods=modulesForPath(state.path).filter(m=>state.moduleId==='all'||m.id===state.moduleId);return mods.flatMap(m=>m.items)}
-function resetSession(){state.index=0;state.started=false;state.checked=false;state.selectedChoice='';state.sessionComplete=false;state.poolKey='';state.poolItems=[]}
+function resetSession(){state.index=0;state.started=false;state.checked=false;state.selectedChoice='';state.sessionComplete=false;state.poolKey='';state.poolItems=[];state._skipped=new Set()}
 
 // Memoised dynamic conjugation generator — only rebuilds when verb/tense/mode actually changes
 function generateConjugatorPractice(){
   if(!state.conjugator)return[];
-  const verbCount=state.conjugator?.verbs?Object.keys(state.conjugator.verbs).length:0;
-  const memoKey=`${state.tenseFilter}:${state.dynamicVerb}:${state.mode}:${verbCount}`;
+  const memoKey=`${state.tenseFilter}:${state.dynamicVerb}:${state.mode}`;
   if(state._conjGenKey===memoKey)return state._conjGenItems;
 
   const tenseMap={'Präsens':'present','Präteritum':'preterite','Perfekt':'perfect','Plusquamperfekt':'plusquam','Futur I':'futur1','Konjunktiv II':'konj2','Imperativ':'imperative'};
@@ -420,30 +419,29 @@ function baseFilteredItems(){
 
 
 function renderQuickStart(){
-  const box=$('quickStartPanel');
-  if(!box)return;
-  if(state.route!=='learn' || state.started || state.checked || state.sessionComplete){box.classList.add('hidden');box.innerHTML='';return;}
+  const box=$('quickStartPanel'); if(!box) return;
   const tiles=[
-    ['quickConj','conjugation','dynamic_conjugator','practice','⚙️'],
-    ['quickDecl','declension','all','practice','🧬'],
-    ['quickPrep','prepositions','all','practice','📍'],
-    ['quickReview',state.path,state.moduleId||'all','review','↻']
+    {key:'quickConj',path:'conjugation',mod:'dynamic_conjugator',mode:'practice',icon:'⚙️'},
+    {key:'quickDecl',path:'declension',mod:'all',mode:'practice',icon:'🧬'},
+    {key:'quickPrep',path:'prepositions',mod:'all',mode:'practice',icon:'📍'},
+    {key:'quickReview',path:state.path,mod:state.moduleId,mode:'review',icon:'🔁'}
   ];
-  box.innerHTML=`<div class="qs-head"><div class="eyebrow">${esc(tr('onboardingTitle'))}</div><p>${esc(tr('onboardingText'))}</p></div><div class="qs-tiles">${tiles.map(([k,path,mod,mode,icon])=>`<button class="qs-tile" data-qs="${esc(path)}" data-mod="${esc(mod)}" data-mode="${esc(mode)}"><span>${icon}</span><strong>${esc(tr(k))}</strong></button>`).join('')}</div>`;
-  box.classList.remove('hidden');
+  const due=dueCount();
+  box.innerHTML=`<div class="qs-head"><div class="eyebrow">${esc(tr('onboardingTitle'))}</div><p>${esc(tr('onboardingText'))}</p></div>
+    <div class="qs-tiles">${tiles.map(t=>`<button class="qs-tile${t.mode==='review'&&due?' qs-tile--accent':''}" data-path="${esc(t.path)}" data-mod="${esc(t.mod)}" data-mode="${esc(t.mode)}"><span class="qs-icon" aria-hidden="true">${t.icon}</span><span class="qs-label">${esc(tr(t.key))}</span>${t.mode==='review'?`<span class="qs-meta">${due} ${esc(tr('dueToday'))}</span>`:''}</button>`).join('')}</div>`;
   box.querySelectorAll('.qs-tile').forEach(b=>b.onclick=()=>{
-    selectPath(b.dataset.qs);
-    state.moduleId=b.dataset.mod||'all';
-    state.mode=b.dataset.mode||'practice';
-    resetSession();
-    if(state.mode==='review')setMode('review'); else setMode('practice');
+    const path=b.dataset.path, mod=b.dataset.mod, mode=b.dataset.mode;
+    selectPath(path);
+    state.moduleId=mod;
+    if(path==='conjugation'&&mod==='dynamic_conjugator'){state.dynamicVerb='';state._conjGenKey='';}
+    setMode(mode);
     renderModuleSelect();
+    syncMobileControls();
     renderExercise();
-    box.classList.add('hidden');
   });
 }
 
-function renderAll(){renderPath();renderModuleSelect();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator();renderResources()}
 
 function renderResources(){
   const box=$('resourceList'); if(!box)return;
@@ -514,7 +512,7 @@ function renderExercise(){
   else hero.classList.remove('collapsed');
 
   if(!item){
-    $('questionTitle').textContent=state.mode==='review'&&state.reviewEmptyReason==='noSrs'?'Review leer':'Keine Items';
+    $('questionTitle').textContent=state.mode==='review'&&state.reviewEmptyReason==='noSrs'?tr('review_empty'):tr('no_items');
     $('questionText').textContent=state.mode==='review'&&state.reviewEmptyReason==='noSrs'?tr('noSrs'):tr('empty');
     $('primaryAction').textContent=tr('start');
     $('ruleBox').innerHTML='—';$('exampleBox').innerHTML='—';
@@ -538,7 +536,7 @@ function renderExercise(){
     return;
   }
   if(!state.started){
-    $('questionTitle').textContent='Bereit?';
+    $('questionTitle').textContent=tr('ready_q');
     $('questionText').textContent=tr('ready');
     $('primaryAction').textContent=tr('start');
     return;
@@ -578,6 +576,12 @@ function primary(){
 
 function answersMatch(user,correct,item){
   const u=norm(user),c=norm(correct);
+  // Strict capitalisation for nouns/articles/plurals
+  if(['article_trainer','plural_trainer','case_trainer'].includes(item?.exerciseType)){
+    if(String(user).trim()===String(correct).trim())return true;
+    if(u===c)return 'case_mismatch';
+    return false;
+  }
   if(u===c)return true;if(!u||!c)return false;
   const pronounOptional=new Set(['verb_conjugation','sentence_correction','word_order','translation_into_german','active_recall','gap_fill','correction','perfekt_builder']);
   const cw=c.split(' '),uw=u.split(' ');
@@ -592,7 +596,9 @@ function answersMatch(user,correct,item){
 
 function checkAnswer(item){
   const user=state.selectedChoice||$('answerInput')?.value||'';
-  const ok=answersMatch(user,item.answer,item);
+  const matchResult=answersMatch(user,item.answer,item);
+  const ok=matchResult===true;
+  const nearMiss=matchResult==='case_mismatch';
   state.checked=true;
 
   // Visual feedback on choice buttons
@@ -607,7 +613,7 @@ function checkAnswer(item){
   // Feedback content
   let fbHtml=ok
     ?`<span class="feedback-correct-mark">✓</span><strong>${tr('correct')}.</strong><br>${safeHtml(item.example||item.answer)}`
-    :`<span class="feedback-wrong-mark">✗</span><strong>${tr('wrong')}.</strong><br><b>${tr('answer')}:</b> ${esc(item.answer)}<br><b>${tr('why')}</b> ${safeHtml(item.explanation||'')}`;
+    :`<span class="feedback-wrong-mark">✗</span><strong>${tr('wrong')}.</strong>${nearMiss?' <em>(Großschreibung beachten)</em>':''}<br><b>${tr('answer')}:</b> ${esc(item.answer)}<br><b>${tr('why')}</b> ${safeHtml(item.explanation||'')}`;
 
   // Deep-link to conjugator for verb_conjugation items
   if(item.exerciseType==='verb_conjugation'){
@@ -640,10 +646,12 @@ function skipItem(){
   if(!state.started||state.checked)return;
   const items=filteredItems();
   if(!items.length)return;
-  // Move skipped item to end of pool so it returns later
+  state._skipped=state._skipped||new Set();
+  const cur=state.poolItems[state.index];
+  if(cur)state._skipped.add(cur.id);
+  if(state._skipped.size>=state.poolItems.length){state.sessionComplete=true;state.started=false;state._skipped=new Set();renderExercise();return;}
   const skipped=state.poolItems.splice(state.index,1)[0];
   state.poolItems.push(skipped);
-  // Don't advance index (next item shifted into current position)
   if(state.index>=state.poolItems.length)state.index=0;
   state.checked=false;state.selectedChoice='';
   renderExercise();
@@ -689,18 +697,13 @@ function renderMistakes(){
     <p>${safeHtml(m.item.explanation||'')}</p>
     <button class="mistake-retry" data-idx="${idx}">${tr('retryMistake')} →</button>
   </div>`).join('');
-  document.querySelectorAll('.mistake-retry').forEach(b=>b.onclick=()=>{
-    const m=state.mistakes[Number(b.dataset.idx)];if(!m)return;
-    // Launch a single-item practice session
-    route('learn');selectPath(state.path);
-    state.poolItems=[m.item];state.poolKey='retry:'+m.id;
-    state.index=0;state.started=true;state.checked=false;state.selectedChoice='';
-    renderExercise();
-  });
+  $('mistakeList').onclick=ev=>{const b=ev.target.closest('.mistake-retry');if(!b)return;const m=state.mistakes[Number(b.dataset.idx)];if(!m)return;route('learn');selectPath(state.path);state.poolItems=[m.item];state.poolKey='retry:'+m.id;state.index=0;state.started=true;state.checked=false;state.selectedChoice='';renderExercise();};
 }
 
-function label(x){return({verb_conjugation:'Konjugation',gap_fill:'Lücke',multiple_choice:'Auswahl',sentence_correction:'Korrektur',flashcard:'Karte',translation_into_german:'Übersetzen',active_recall:'Aktiv erinnern',perfekt_builder:'Perfekt',connector_selection:'Konnektor',article_trainer:'Artikel',plural_trainer:'Plural',case_trainer:'Kasus'})[x]||x||'Übung'}
-function speak(text){if(!text||!('speechSynthesis'in window))return;const u=new SpeechSynthesisUtterance(stripHtml(text));u.lang='de-DE';u.rate=.9;speechSynthesis.cancel();speechSynthesis.speak(u)}
+const LABELS={de:{verb_conjugation:'Konjugation',gap_fill:'Lücke',multiple_choice:'Auswahl',sentence_correction:'Korrektur',flashcard:'Karte',translation_into_german:'Übersetzen',active_recall:'Aktiv erinnern',perfekt_builder:'Perfekt',connector_selection:'Konnektor',article_trainer:'Artikel',plural_trainer:'Plural',case_trainer:'Kasus'},en:{verb_conjugation:'Conjugation',gap_fill:'Gap',multiple_choice:'Choice',sentence_correction:'Correction',flashcard:'Card',translation_into_german:'Translate',active_recall:'Recall',perfekt_builder:'Perfekt',connector_selection:'Connector',article_trainer:'Article',plural_trainer:'Plural',case_trainer:'Case'}};
+function label(x){const pack=LABELS[state.lang]||LABELS.en;return pack[x]||LABELS.en[x]||LABELS.de[x]||x||'Übung'}
+let _lastSpeak=0;
+function speak(text){if(!text||!('speechSynthesis'in window))return;const now=Date.now();if(now-_lastSpeak<250)return;_lastSpeak=now;const u=new SpeechSynthesisUtterance(stripHtml(text));u.lang='de-DE';u.rate=.9;speechSynthesis.cancel();speechSynthesis.speak(u)}
 
 async function loadConjugator(){
   try{
