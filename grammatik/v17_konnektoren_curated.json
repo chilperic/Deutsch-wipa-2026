@@ -486,6 +486,126 @@
         "Korrektur",
         "Wortstellung"
       ]
+    },
+    {
+      "id": "v17_conn_027",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Ausfallkosten aus.",
+      "answer": "Je; desto",
+      "explanation": "je ... desto links two comparative clauses. The finite verb stays at the end in the je-clause.",
+      "level": "B2+",
+      "translation": "The longer the supply chain remains interrupted, the higher the downtime costs will be.",
+      "tags": [
+        "Konnektor",
+        "Satzbau",
+        "WiPa"
+      ],
+      "choices": [
+        "Je; desto",
+        "Weil; deshalb",
+        "Obwohl; trotzdem",
+        "Entweder; oder"
+      ]
+    },
+    {
+      "id": "v17_conn_028",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Zahlung ist noch nicht eingegangen. ___ können wir die Ware nicht freigeben.",
+      "answer": "Infolgedessen",
+      "explanation": "Infolgedessen is a formal consequence connector; verb follows in position two.",
+      "level": "B2+",
+      "translation": "The payment has not yet arrived. Consequently, we cannot release the goods.",
+      "tags": [
+        "Konnektor",
+        "Satzbau",
+        "WiPa"
+      ],
+      "choices": [
+        "Infolgedessen",
+        "Obwohl",
+        "Während",
+        "Je"
+      ]
+    },
+    {
+      "id": "v17_conn_029",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Datenlage ist unvollständig; ___ ist eine belastbare Prognose derzeit nicht möglich.",
+      "answer": "demzufolge",
+      "explanation": "demzufolge introduces a logical conclusion in formal writing.",
+      "level": "B2+",
+      "translation": "The data basis is incomplete; as a result, a reliable forecast is currently not possible.",
+      "tags": [
+        "Konnektor",
+        "Satzbau",
+        "WiPa"
+      ],
+      "choices": [
+        "demzufolge",
+        "obwohl",
+        "je",
+        "sobald"
+      ]
+    },
+    {
+      "id": "v17_conn_030",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ die Frist abläuft, müssen die Unterlagen vollständig vorliegen.",
+      "answer": "Bevor",
+      "explanation": "bevor introduces the later deadline event; verb at the end.",
+      "level": "B2",
+      "translation": "Before the deadline expires, the documents must be complete.",
+      "tags": [
+        "Konnektor",
+        "Satzbau",
+        "WiPa"
+      ],
+      "choices": [
+        "Bevor",
+        "Trotzdem",
+        "Demzufolge",
+        "Je"
+      ]
+    },
+    {
+      "id": "v17_conn_031",
+      "module": "v17_konnektoren",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigieren: Je die Nachfrage steigt, desto erhöhen sich die Lieferzeiten.",
+      "answer": "Je stärker die Nachfrage steigt, desto länger werden die Lieferzeiten.",
+      "explanation": "je ... desto requires comparative forms on both sides.",
+      "level": "B2+",
+      "translation": "The more strongly demand rises, the longer delivery times become.",
+      "tags": [
+        "Konnektor",
+        "Satzbau",
+        "WiPa"
+      ]
+    },
+    {
+      "id": "v17_conn_032",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Ware wurde beschädigt geliefert; ___ machen wir einen Gewährleistungsanspruch geltend.",
+      "answer": "daher",
+      "explanation": "daher expresses consequence in a written business register.",
+      "level": "B2",
+      "translation": "The goods were delivered damaged; therefore we assert a warranty claim.",
+      "tags": [
+        "Konnektor",
+        "Satzbau",
+        "WiPa"
+      ],
+      "choices": [
+        "daher",
+        "obwohl",
+        "während",
+        "bevor"
+      ]
     }
   ]
 }

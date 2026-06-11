@@ -1,28 +1,31 @@
-# Deutsch-WiPA 2026 — v17 Reliable Tutor Middle DB
+# Deutsch-WiPA 2026 — v18 Final Reliable Tutor
 
-This build is a content-quality reset of v16. The app shell is preserved, but the default database is now smaller, curated, and tutor-oriented.
+This build is the consolidated reliable-tutor app.
 
-## What changed
+## What is included
 
-- Unsafe generated modules are no longer loaded by `data-manifest.json`.
-- New v17 curated modules were added for: Präpositionalverben, Konnektoren, nicht/kein, Kasus, TeKaMoLo, Reklamation, E-Mail-Redemittel, Konjunktiv II, and Adjektivdeklination.
-- The large conjugator backend remains available.
-- Known separable-verb Konjunktiv II errors in `production_konjugator_drills.json` were repaired: e.g. `ich würde bereite vor` → `ich würde vorbereiten`.
-- v16 generated files remain in the repository for audit/reference, but many are quarantined and excluded from default loading.
-
-## Tutor standard
-
-Each new v17 item should test one main thing, use realistic German, include an explanation, and avoid fake workplace phrases.
+- secured curated database only; contaminated legacy engines remain deleted
+- one large verb backend in `data/curated_verbs.json`
+- localized vocabulary through `data/locales/wipa_lexicon.json`
+- thematic tracks: Corporate Emails, Reklamation & Konflikt, Verhandlung & Diplomatie, Grammar Core, Präpositionalverben, Wortschatz Beruf, Konjugation
+- sequenced business artifacts:
+  - B2B Reklamation / Mängelrüge
+  - formal follow-up email
+  - Konjunktiv-II negotiation email
+  - invoice-dispute decision simulation
+- safe variable templates with validated slots only
+- progressive feedback for sequenced and ordinary curated exercises
+- DIN-style final artifact preview for assembled business emails
 
 ## Run
 
 ```bash
 npm run check
-python3 -m http.server 8080
+npm start
 ```
 
 Then open `http://localhost:8080`.
 
-## Development rule
+## Design rule
 
-Do not add bulk generated German directly to the manifest. Add it first as `status: needs_review` or keep it outside the default manifest until hand-checked.
+No raw generated German enters the default tutor path. Dynamic variation is allowed only through validated slots with grammatical and semantic constraints.

@@ -1,0 +1,307 @@
+{
+  "module": "v17_beruf_wortschatz",
+  "title": "v17 · Berufs- und Bürowortschatz",
+  "status": "curated",
+  "items": [
+    {
+      "id": "v17_vocab_001",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Unterlage, -n",
+      "example": "Die fehlenden Unterlagen reiche ich morgen nach.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_unterlage",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_002",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Rückmeldung, -en",
+      "example": "Vielen Dank für Ihre schnelle Rückmeldung.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_rückmeldung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_003",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Frist, -en",
+      "example": "Bitte beachten Sie die Frist für die Bewerbung.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_frist",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_004",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Besprechung, -en",
+      "example": "Die Besprechung wurde auf Freitag verschoben.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_besprechung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_005",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "der Vorgang, -e",
+      "example": "Wir prüfen den Vorgang intern.",
+      "level": "B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_vorgang",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_006",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Rechnung, -en",
+      "example": "Die Rechnung enthält leider einen falschen Betrag.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_rechnung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_007",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "das Angebot, -e",
+      "example": "Könnten Sie uns ein aktualisiertes Angebot schicken?",
+      "level": "B1+/B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_angebot",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_008",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Stelle, -n",
+      "example": "Ich bewerbe mich um die Stelle als Datenanalyst.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_stelle",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_009",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "das Arbeitszeugnis, -se",
+      "example": "Bitte fügen Sie Ihr Arbeitszeugnis der Bewerbung bei.",
+      "level": "B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_arbeitszeugnis",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_010",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "der Umsatz, Umsätze",
+      "example": "Der Umsatz ist im letzten Quartal gestiegen.",
+      "level": "B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_umsatz",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_011",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "der Gewinn, -e",
+      "example": "Trotz höherem Umsatz ist der Gewinn gesunken.",
+      "level": "B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_gewinn",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_012",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Rückstellung, -en",
+      "example": "Die Rückstellung wurde im Jahresabschluss berücksichtigt.",
+      "level": "C1 optional",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_rueckstellung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_013",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Abteilung, -en",
+      "example": "Ich leite Ihre Anfrage an die zuständige Abteilung weiter.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_abteilung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_014",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "zuständig",
+      "example": "Wer ist für diesen Vorgang zuständig?",
+      "level": "B1+/B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_zustaendig",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_015",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "vollständig",
+      "example": "Die Unterlagen sind vollständig.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_vollstaendig",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_016",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "fehlerhaft",
+      "example": "Die Rechnung ist fehlerhaft.",
+      "level": "B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_fehlerhaft",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_017",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "schriftlich",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_schriftlich",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_018",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Bestätigung, -en",
+      "example": "Ich bitte um eine kurze Bestätigung.",
+      "level": "B1+",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_bestaetigung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_019",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "die Nacherfüllung",
+      "example": "Wir setzen eine Frist zur Nacherfüllung.",
+      "level": "C1 optional",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_nacherfuellung",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    },
+    {
+      "id": "v17_vocab_020",
+      "module": "v17_beruf_wortschatz",
+      "exerciseType": "flashcard",
+      "prompt": "der Mangel, Mängel",
+      "example": "Der Artikel weist erhebliche Mängel auf.",
+      "level": "B2",
+      "tags": [
+        "Wortschatz",
+        "Beruf",
+        "WiPa"
+      ],
+      "lexical_key": "wipa_token_mangel",
+      "localization_source": "data/locales/wipa_lexicon.json"
+    }
+  ]
+}

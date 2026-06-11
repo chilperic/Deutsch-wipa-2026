@@ -782,6 +782,246 @@
         "Präpositionalverb"
       ],
       "example": "Ich verlasse mich auf meinen Kollegen."
+    },
+    {
+      "id": "v17_prep_extra_001",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vertrag besteht ___ drei Teilen.",
+      "answer": "aus",
+      "explanation": "bestehen aus + Dativ = to consist of. Drei Teilen is dative plural.",
+      "translation": "The contract consists of three parts.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "aus",
+        "auf",
+        "für",
+        "über"
+      ],
+      "example": "Der Vertrag besteht aus drei Teilen."
+    },
+    {
+      "id": "v17_prep_extra_002",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Arbeitszeiten.",
+      "answer": "auf",
+      "explanation": "bestehen auf + Akkusativ = to insist on something.",
+      "translation": "The works council insists on strict adherence to working hours.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "aus",
+        "an",
+        "für"
+      ],
+      "example": "Der Betriebsrat besteht auf die Einhaltung der Arbeitszeiten."
+    },
+    {
+      "id": "v17_prep_extra_003",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Der Vertrag besteht auf drei Teilen.",
+      "answer": "Der Vertrag besteht aus drei Teilen.",
+      "explanation": "bestehen aus = consist of; bestehen auf = insist on.",
+      "translation": "The contract consists of three parts.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "example": "Der Vertrag besteht aus drei Teilen."
+    },
+    {
+      "id": "v17_prep_extra_004",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Wir warten über Ihre Rückmeldung.",
+      "answer": "Wir warten auf Ihre Rückmeldung.",
+      "explanation": "warten auf + Akkusativ.",
+      "translation": "We are waiting for your feedback.",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "example": "Wir warten auf Ihre Rückmeldung."
+    },
+    {
+      "id": "v17_prep_extra_005",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich erkundige mich ___ dem Stand meiner Bewerbung.",
+      "answer": "nach",
+      "explanation": "sich erkundigen nach + Dativ.",
+      "translation": "I am asking about the status of my application.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "nach",
+        "über",
+        "um",
+        "für"
+      ],
+      "example": "Ich erkundige mich nach dem Stand meiner Bewerbung."
+    },
+    {
+      "id": "v17_prep_extra_006",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir achten ___ die Einhaltung der Frist.",
+      "answer": "auf",
+      "explanation": "achten auf + Akkusativ.",
+      "translation": "We pay attention to compliance with the deadline.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "an",
+        "mit",
+        "bei"
+      ],
+      "example": "Wir achten auf die Einhaltung der Frist."
+    },
+    {
+      "id": "v17_prep_extra_007",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Entscheidung hängt ___ der Zustimmung der Geschäftsführung ab.",
+      "answer": "von",
+      "explanation": "abhängen von + Dativ.",
+      "translation": "The decision depends on approval by management.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "von",
+        "auf",
+        "über",
+        "für"
+      ],
+      "example": "Die Entscheidung hängt von der Zustimmung der Geschäftsführung ab."
+    },
+    {
+      "id": "v17_prep_extra_008",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich verfüge ___ gute Deutschkenntnisse.",
+      "answer": "über",
+      "explanation": "verfügen über + Akkusativ.",
+      "translation": "I have good German skills.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "über",
+        "von",
+        "mit",
+        "an"
+      ],
+      "example": "Ich verfüge über gute Deutschkenntnisse."
+    },
+    {
+      "id": "v17_prep_extra_009",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir einigen uns ___ einen neuen Termin.",
+      "answer": "auf",
+      "explanation": "sich einigen auf + Akkusativ.",
+      "translation": "We agree on a new appointment.",
+      "level": "B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "über",
+        "mit",
+        "an"
+      ],
+      "example": "Wir einigen uns auf einen neuen Termin."
+    },
+    {
+      "id": "v17_prep_extra_010",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Kundin beschwert sich ___ die fehlerhafte Rechnung.",
+      "answer": "über",
+      "explanation": "sich beschweren über + Akkusativ.",
+      "translation": "The customer complains about the incorrect invoice.",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "über",
+        "um",
+        "an",
+        "mit"
+      ],
+      "example": "Die Kundin beschwert sich über die fehlerhafte Rechnung."
+    },
+    {
+      "id": "v17_prep_extra_011",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir kümmern uns ___ die offenen Punkte.",
+      "answer": "um",
+      "explanation": "sich kümmern um + Akkusativ.",
+      "translation": "We take care of the open points.",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "um",
+        "für",
+        "an",
+        "bei"
+      ],
+      "example": "Wir kümmern uns um die offenen Punkte."
+    },
+    {
+      "id": "v17_prep_extra_012",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Abteilung arbeitet ___ einer neuen Lösung.",
+      "answer": "an",
+      "explanation": "arbeiten an + Dativ.",
+      "translation": "The department is working on a new solution.",
+      "level": "B1+/B2",
+      "tags": [
+        "Präpositionalverb",
+        "Beruf"
+      ],
+      "choices": [
+        "an",
+        "auf",
+        "über",
+        "für"
+      ],
+      "example": "Die Abteilung arbeitet an einer neuen Lösung."
     }
   ]
 }

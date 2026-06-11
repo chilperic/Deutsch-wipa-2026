@@ -492,6 +492,138 @@
         "Korrektur",
         "Negation"
       ]
+    },
+    {
+      "id": "v17_neg_026",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Zahlen sind ___ korrekt.",
+      "answer": "nicht",
+      "explanation": "nicht negates the adjective korrekt. This is neutral and precise in reports.",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "level": "B2",
+      "translation": "The figures are not correct.",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "WiPa"
+      ]
+    },
+    {
+      "id": "v17_neg_027",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Zahl.",
+      "answer": "keine",
+      "explanation": "Zahl is feminine; negating an indefinite noun requires keine.",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "level": "B2",
+      "translation": "That is not a correct figure.",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "WiPa"
+      ]
+    },
+    {
+      "id": "v17_neg_028",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Angebot ist noch ___.",
+      "answer": "unverbindlich",
+      "explanation": "unverbindlich means non-binding. It is a lexical negation with un-, not a simple nicht phrase.",
+      "choices": [
+        "unverbindlich",
+        "nicht verbindlichst",
+        "kein verbindlich",
+        "desverbindlich"
+      ],
+      "level": "B2",
+      "translation": "The offer is still non-binding.",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "WiPa"
+      ]
+    },
+    {
+      "id": "v17_neg_029",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___.",
+      "answer": "unvollständig",
+      "explanation": "unvollständig is the professional adjective for incomplete information.",
+      "choices": [
+        "unvollständig",
+        "nicht vollständigst",
+        "keine vollständig",
+        "desvollständig"
+      ],
+      "level": "B1+/B2",
+      "translation": "The information is incomplete.",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "WiPa"
+      ]
+    },
+    {
+      "id": "v17_neg_030",
+      "module": "v17_nicht_kein",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Form klingt in einer Reklamation diplomatischer?",
+      "answer": "Die Lieferung ist nicht vollständig.",
+      "explanation": "not vollständig is neutral and objective; kaputt-style wording is too blunt.",
+      "choices": [
+        "Die Lieferung ist nicht vollständig.",
+        "Die Lieferung ist total kaputt.",
+        "Die Lieferung hat keine vollständig.",
+        "Die Lieferung ist nichts vollständig."
+      ],
+      "level": "B2",
+      "translation": "Which form sounds more diplomatic in a complaint?",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "WiPa"
+      ]
+    },
+    {
+      "id": "v17_neg_031",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Abweichung ist ___ unerheblich.",
+      "answer": "nicht",
+      "explanation": "nicht unerheblich is cautious formal understatement: not insignificant.",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "un"
+      ],
+      "level": "B2+",
+      "translation": "The deviation is not insignificant.",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "WiPa"
+      ]
     }
   ]
 }

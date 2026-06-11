@@ -1,0 +1,58 @@
+{
+  "module_id": "v18_variable_templates_curated",
+  "module_type": "variable_template_module",
+  "cefr_level": "B2",
+  "business_track": "Dynamic grammar-safe sentence variation",
+  "templates": [
+    {
+      "id": "vt_delay_001",
+      "exerciseType": "gap_fill",
+      "skill": "safe dative-location substitution",
+      "target_slot": "location_dative",
+      "template": "Aufgrund von {problem_plural} in {location_dative} müssen wir die Auslieferung um {number} Tage verschieben.",
+      "prompt_template": "Aufgrund von {problem_plural} in ___ müssen wir die Auslieferung um {number} Tage verschieben.",
+      "answer_slot": "location_dative",
+      "slots": {
+        "problem_plural": [
+          "Lieferengpässen",
+          "Personalengpässen",
+          "technischen Störungen"
+        ],
+        "location_dative": [
+          "dem Hauptwerk",
+          "der Berliner Niederlassung",
+          "unserem Logistikzentrum"
+        ],
+        "number": [
+          "zwei",
+          "drei",
+          "fünf"
+        ]
+      },
+      "explanation": "The preposition 'in' is dative here because it describes location/state, not direction. The slot is restricted to validated dative forms.",
+      "translation": "Due to problems in the specified location, we have to postpone delivery by several days.",
+      "level": "B2",
+      "count": 9
+    },
+    {
+      "id": "vt_invoice_001",
+      "exerciseType": "gap_fill",
+      "skill": "formal finance collocation",
+      "target_slot": "verb_final",
+      "template": "Nach Eingang der korrigierten Rechnung werden wir die Zahlung umgehend {verb_final}.",
+      "prompt_template": "Nach Eingang der korrigierten Rechnung werden wir die Zahlung umgehend ___.",
+      "answer_slot": "verb_final",
+      "slots": {
+        "verb_final": [
+          "veranlassen",
+          "freigeben",
+          "prüfen"
+        ]
+      },
+      "explanation": "Formal finance collocations: eine Zahlung veranlassen/freigeben/prüfen. The finite verb 'werden' controls the infinitive at the end.",
+      "translation": "After receiving the corrected invoice, we will promptly process/release/check the payment.",
+      "level": "B2",
+      "count": 3
+    }
+  ]
+}

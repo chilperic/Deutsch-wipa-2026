@@ -1,0 +1,235 @@
+{
+  "module": "v17_modalverben_business",
+  "title": "v17 · Modalverben im Beruf · kuratiert",
+  "status": "curated",
+  "items": [
+    {
+      "id": "v17_modal_001",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ die Unterlagen bis Freitag einreichen.",
+      "answer": "müssen",
+      "explanation": "müssen expresses an obligation or deadline pressure in a professional context.",
+      "level": "B1+",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "müssen",
+        "dürfen",
+        "wollen",
+        "mögen"
+      ],
+      "translation": "We have to submit the documents by Friday."
+    },
+    {
+      "id": "v17_modal_002",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie ___ die Rechnung erst nach der Korrektur bezahlen.",
+      "answer": "sollten",
+      "explanation": "sollten softens advice in business communication.",
+      "level": "B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "sollten",
+        "mussten",
+        "durften",
+        "konnten"
+      ],
+      "translation": "You should pay the invoice only after the correction."
+    },
+    {
+      "id": "v17_modal_003",
+      "module": "v17_modalverben_business",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigieren: Wir haben den Bericht einreichen gemusst.",
+      "answer": "Wir haben den Bericht einreichen müssen.",
+      "explanation": "With a modal plus lexical verb in the perfect tense, German uses Ersatzinfinitiv: haben + infinitive + modal infinitive.",
+      "level": "B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "translation": "We had to submit the report."
+    },
+    {
+      "id": "v17_modal_004",
+      "module": "v17_modalverben_business",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigieren: ..., weil wir den Bericht einreichen gemusst haben.",
+      "answer": "..., weil wir den Bericht haben einreichen müssen.",
+      "explanation": "In subordinate clauses with double infinitive, haben moves before the two infinitives.",
+      "level": "B2+",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "translation": "... because we had to submit the report."
+    },
+    {
+      "id": "v17_modal_005",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Wäre es möglich, dass wir den Termin auf Freitag ___?",
+      "answer": "verschieben könnten",
+      "explanation": "Konjunktiv II with können makes a request diplomatic rather than demanding.",
+      "level": "B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "verschieben könnten",
+        "verschoben müssen",
+        "verschieben mussten",
+        "verschieben dürfen"
+      ],
+      "translation": "Would it be possible for us to move the appointment to Friday?"
+    },
+    {
+      "id": "v17_modal_006",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vertrag ___ vor der Unterschrift rechtlich geprüft werden.",
+      "answer": "muss",
+      "explanation": "Passive plus modal: muss geprüft werden = must be reviewed.",
+      "level": "B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "muss",
+        "kann",
+        "will",
+        "mag"
+      ],
+      "translation": "The contract must be legally reviewed before signature."
+    },
+    {
+      "id": "v17_modal_007",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Datei ___ nicht geöffnet werden.",
+      "answer": "konnte",
+      "explanation": "konnte marks past ability/impossibility: could not be opened.",
+      "level": "B1+",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "konnte",
+        "musste",
+        "sollte",
+        "wollte"
+      ],
+      "translation": "The file could not be opened."
+    },
+    {
+      "id": "v17_modal_008",
+      "module": "v17_modalverben_business",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigieren: Da der Kunde warten hat müssen, entschuldigen wir uns.",
+      "answer": "Da der Kunde hat warten müssen, entschuldigen wir uns.",
+      "explanation": "Subordinate clause with Ersatzinfinitiv: hat warten müssen.",
+      "level": "B2+",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "translation": "Since the customer had to wait, we apologize."
+    },
+    {
+      "id": "v17_modal_009",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ Ihnen bis Montag eine Rückmeldung geben.",
+      "answer": "können",
+      "explanation": "können expresses what is possible/available in a professional response.",
+      "level": "B1+",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "können",
+        "müssen",
+        "dürfen",
+        "wollen"
+      ],
+      "translation": "We can give you feedback by Monday."
+    },
+    {
+      "id": "v17_modal_010",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Darf ich Sie bitten, das Angebot noch einmal zu ___?",
+      "answer": "prüfen",
+      "explanation": "dürfen + bitten is a polite formal request pattern.",
+      "level": "B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "prüfen",
+        "geprüft",
+        "prüften",
+        "Prüfung"
+      ],
+      "translation": "May I ask you to review the offer once more?"
+    },
+    {
+      "id": "v17_modal_011",
+      "module": "v17_modalverben_business",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigieren: Wir würden gern die Unterlagen nachgereicht.",
+      "answer": "Wir würden die Unterlagen gern nachreichen.",
+      "explanation": "würden + infinitive uses the full infinitive; do not use the participle.",
+      "level": "B1+/B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "translation": "We would like to submit the documents later."
+    },
+    {
+      "id": "v17_modal_012",
+      "module": "v17_modalverben_business",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Entscheidung ___ intern abgestimmt werden.",
+      "answer": "muss",
+      "explanation": "Modal passive: must be coordinated internally.",
+      "level": "B2",
+      "tags": [
+        "Modalverben",
+        "Beruf",
+        "WiPa"
+      ],
+      "choices": [
+        "muss",
+        "möchte",
+        "will",
+        "mag"
+      ],
+      "translation": "The decision must be coordinated internally."
+    }
+  ]
+}

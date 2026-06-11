@@ -1,0 +1,229 @@
+{
+  "module_id": "v18_email_formal_sequenced",
+  "module_type": "sequenced_business_artifact",
+  "artifact_type": "formal_business_email",
+  "cefr_level": "B2+",
+  "business_track": "Corporate Email Etiquette & Administration",
+  "scenario": {
+    "id": "email_angebot_nachfassen_001",
+    "domain": "Vendor Communication",
+    "situation": "You need to follow up on an offer after a phone call and ask for an updated written version with delivery details.",
+    "sender_role": "Project coordination",
+    "recipient_role": "supplier sales contact",
+    "tone_target": "formal_clear_diplomatic",
+    "chronology_anchors": [
+      {
+        "index": 1,
+        "event": "Telefonat",
+        "data": "heute Vormittag"
+      },
+      {
+        "index": 2,
+        "event": "Angebot",
+        "data": "aktualisierte Fassung"
+      },
+      {
+        "index": 3,
+        "event": "Lieferung",
+        "data": "Liefertermin und Konditionen"
+      },
+      {
+        "index": 4,
+        "event": "Anlage",
+        "data": "Spezifikation als PDF"
+      },
+      {
+        "index": 5,
+        "event": "Antwort",
+        "data": "bis Freitag"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_id": "email_001_subject",
+      "chronology_index": 1,
+      "section": "subject_line",
+      "skill": "precise formal email subject",
+      "exercise_type": "choice_register",
+      "prompt": "Select the best subject line for a formal follow-up email.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kurze Frage zum Angebot",
+          "score": 1,
+          "diagnosis": "Understandable, but too vague for a traceable business email."
+        },
+        {
+          "id": "b",
+          "text": "Nachfrage zum aktualisierten Angebot – Projekt Serverausstattung",
+          "score": 3,
+          "diagnosis": "Best choice. It states the action, document type, and project context."
+        },
+        {
+          "id": "c",
+          "text": "Sie haben das Angebot noch nicht geschickt",
+          "score": 0,
+          "diagnosis": "Too accusatory. It frames the recipient as failing before establishing the context."
+        }
+      ],
+      "best_choice": "b",
+      "rule": {
+        "id": "email_subject_traceability",
+        "concept": "A formal subject line should make the business action and reference clear without sounding accusatory."
+      },
+      "progressive_feedback": {
+        "first_failure": "Check whether the subject is precise and neutral.",
+        "second_failure": "Use a noun phrase like 'Nachfrage zum aktualisierten Angebot' plus project context.",
+        "resolved_model": "Nachfrage zum aktualisierten Angebot – Projekt Serverausstattung"
+      }
+    },
+    {
+      "step_id": "email_002_reference",
+      "chronology_index": 1,
+      "section": "opening_reference",
+      "skill": "formulaic reference phrase",
+      "exercise_type": "gap_fill_syntax",
+      "prompt": "Complete the formal reference phrase.",
+      "text_template": "Bezugnehmend ___ unser Telefonat von heute Vormittag bitte ich Sie um eine aktualisierte Fassung des Angebots.",
+      "accepted_answers": [
+        "auf"
+      ],
+      "distractors": [
+        "an",
+        "zu",
+        "über"
+      ],
+      "rule": {
+        "id": "bezugnehmend_auf",
+        "concept": "The fixed formal phrase is 'Bezugnehmend auf ...'. It introduces the prior communication politely and precisely."
+      },
+      "progressive_feedback": {
+        "first_failure": "This is a fixed formal phrase.",
+        "second_failure": "The phrase is 'Bezugnehmend auf + Akkusativ'.",
+        "resolved_model": "Bezugnehmend auf unser Telefonat von heute Vormittag bitte ich Sie um eine aktualisierte Fassung des Angebots."
+      }
+    },
+    {
+      "step_id": "email_003_attachment",
+      "chronology_index": 4,
+      "section": "attachment_notice",
+      "skill": "attachment formula and dative",
+      "exercise_type": "gap_fill_syntax",
+      "prompt": "Complete the standard attachment formula.",
+      "text_template": "___ Anhang erhalten Sie die technische Spezifikation als PDF.",
+      "accepted_answers": [
+        "Im"
+      ],
+      "distractors": [
+        "In der",
+        "Am",
+        "Auf dem"
+      ],
+      "rule": {
+        "id": "im_anhang",
+        "concept": "The standard business-email formula is 'Im Anhang erhalten Sie ...'. 'Anhang' is masculine: in dem Anhang → im Anhang."
+      },
+      "progressive_feedback": {
+        "first_failure": "Check article and case in the fixed phrase.",
+        "second_failure": "Use 'im Anhang', not 'in der Anhang' or 'am Anhang'.",
+        "resolved_model": "Im Anhang erhalten Sie die technische Spezifikation als PDF."
+      }
+    },
+    {
+      "step_id": "email_004_request",
+      "chronology_index": 3,
+      "section": "request_details",
+      "skill": "polite controlled request",
+      "exercise_type": "production_controlled",
+      "prompt": "Ask the supplier to include delivery date and payment conditions in the updated offer.",
+      "target_phrases": [
+        "Bitte nehmen Sie den Liefertermin sowie die Zahlungsbedingungen in das aktualisierte Angebot auf.",
+        "Wir bitten Sie, den Liefertermin sowie die Zahlungsbedingungen in das aktualisierte Angebot aufzunehmen."
+      ],
+      "accepted_patterns": [
+        "liefertermin",
+        "zahlungsbedingungen",
+        "angebot"
+      ],
+      "mandatory_tokens": [
+        "Liefertermin",
+        "Zahlungsbedingungen",
+        "Angebot"
+      ],
+      "forbidden_patterns": [
+        {
+          "pattern": "Sie müssen",
+          "diagnosis": "Too direct. Use 'Bitte ...' or 'Wir bitten Sie, ...'."
+        },
+        {
+          "pattern": "schicken Sie sofort",
+          "diagnosis": "Too abrupt for formal business correspondence."
+        }
+      ],
+      "rule": {
+        "id": "formal_request_softening",
+        "concept": "Formal requests combine clarity with polite framing: 'Bitte ...' or 'Wir bitten Sie, ... zu ...'."
+      },
+      "progressive_feedback": {
+        "first_failure": "Your sentence must request the missing details politely.",
+        "second_failure": "Use 'Liefertermin', 'Zahlungsbedingungen', and 'Angebot'.",
+        "resolved_model": "Wir bitten Sie, den Liefertermin sowie die Zahlungsbedingungen in das aktualisierte Angebot aufzunehmen."
+      }
+    },
+    {
+      "step_id": "email_005_deadline",
+      "chronology_index": 5,
+      "section": "deadline_closing",
+      "skill": "deadline with polite closing",
+      "exercise_type": "choice_register",
+      "prompt": "Choose the most appropriate closing sentence with a deadline.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Schicken Sie das bitte bis Freitag.",
+          "score": 1,
+          "diagnosis": "Understandable, but too short and informal for this email."
+        },
+        {
+          "id": "b",
+          "text": "Für eine Rückmeldung bis Freitag wären wir Ihnen dankbar.",
+          "score": 3,
+          "diagnosis": "Best choice. It is concise, polite, and uses Konjunktiv II for diplomatic tone."
+        },
+        {
+          "id": "c",
+          "text": "Ohne Antwort bis Freitag suchen wir einen anderen Anbieter.",
+          "score": 0,
+          "diagnosis": "Too threatening for a first follow-up email."
+        }
+      ],
+      "best_choice": "b",
+      "rule": {
+        "id": "deadline_polite_konjunktiv",
+        "concept": "Konjunktiv II softens a deadline request: 'wären wir Ihnen dankbar'."
+      },
+      "progressive_feedback": {
+        "first_failure": "Look for a sentence that gives a deadline without pressure.",
+        "second_failure": "Formal German often uses 'wären wir Ihnen dankbar' for polite deadlines.",
+        "resolved_model": "Für eine Rückmeldung bis Freitag wären wir Ihnen dankbar."
+      }
+    }
+  ],
+  "artifact_assembly": {
+    "render_target": "formal_email",
+    "final_output_template": [
+      "Betreff: {subject_line}",
+      "",
+      "Sehr geehrte Damen und Herren,",
+      "",
+      "{opening_reference}",
+      "{attachment_notice}",
+      "{request_details}",
+      "{deadline_closing}",
+      "",
+      "Mit freundlichen Grüßen",
+      "Projektkoordination"
+    ]
+  }
+}

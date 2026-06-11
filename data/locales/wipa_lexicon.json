@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.10-v14",
-  "description": "Centralized high-priority workplace localization pack for translation helper. German learning content remains source-of-truth; this file provides learner-language explanations.",
+  "version": "2026.06.11-v17.2-lexical-key-bound",
+  "description": "Central WiPa localization matrix. Vocabulary modules must reference lexical_key; learner-language equivalents are resolved here.",
   "entries": {
     "abteilung": {
       "lexical_key": "wipa_token_abteilung",
@@ -1885,6 +1885,650 @@
         "fa": {
           "equivalent": "استهلاک / کاهش ارزش / حذف حسابداری",
           "context_note": "Professional German"
+        }
+      }
+    },
+    "vorgang": {
+      "lexical_key": "wipa_token_vorgang",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "der Vorgang, -e",
+        "context_definition": "Wir prüfen den Vorgang intern."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "case / process / matter",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Vorgang is common in administrative German."
+        }
+      }
+    },
+    "rechnung": {
+      "lexical_key": "wipa_token_rechnung",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "die Rechnung, -en",
+        "context_definition": "Die Rechnung enthält leider einen falschen Betrag."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "invoice",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Rechnung means invoice/bill, not calculation in this context."
+        }
+      }
+    },
+    "angebot": {
+      "lexical_key": "wipa_token_angebot",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "das Angebot, -e",
+        "context_definition": "Könnten Sie uns ein aktualisiertes Angebot schicken?"
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "offer / quotation",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "In business, Angebot often means commercial quotation."
+        }
+      }
+    },
+    "stelle": {
+      "lexical_key": "wipa_token_stelle",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "die Stelle, -n",
+        "context_definition": "Ich bewerbe mich um die Stelle als Datenanalyst."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "position / job",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "In Bewerbungen, Stelle means job position."
+        }
+      }
+    },
+    "arbeitszeugnis": {
+      "lexical_key": "wipa_token_arbeitszeugnis",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "das Arbeitszeugnis, -se",
+        "context_definition": "Bitte fügen Sie Ihr Arbeitszeugnis der Bewerbung bei."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "employment reference",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Arbeitszeugnis is not a school report card."
+        }
+      }
+    },
+    "umsatz": {
+      "lexical_key": "wipa_token_umsatz",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "der Umsatz, Umsätze",
+        "context_definition": "Der Umsatz ist im letzten Quartal gestiegen."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "revenue / turnover",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Umsatz is revenue/turnover, not profit."
+        }
+      }
+    },
+    "gewinn": {
+      "lexical_key": "wipa_token_gewinn",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "der Gewinn, -e",
+        "context_definition": "Trotz höherem Umsatz ist der Gewinn gesunken."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "profit",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Gewinn is profit after costs, not revenue."
+        }
+      }
+    },
+    "rückstellung": {
+      "lexical_key": "wipa_token_rueckstellung",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "die Rückstellung, -en",
+        "context_definition": "Die Rückstellung wurde im Jahresabschluss berücksichtigt."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "accounting provision / accrued liability",
+          "context_note": "Accounting term; not postponement."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Accounting term; not postponement."
+        }
+      }
+    },
+    "zuständig": {
+      "lexical_key": "wipa_token_zustaendig",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "zuständig",
+        "context_definition": "Wer ist für diesen Vorgang zuständig?"
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "responsible / in charge",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Usually used with für + Akkusativ."
+        }
+      }
+    },
+    "vollständig": {
+      "lexical_key": "wipa_token_vollstaendig",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "vollständig",
+        "context_definition": "Die Unterlagen sind vollständig."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "complete",
+          "context_note": "Useful in applications and administration."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Useful in applications and administration."
+        }
+      }
+    },
+    "fehlerhaft": {
+      "lexical_key": "wipa_token_fehlerhaft",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "fehlerhaft",
+        "context_definition": "Die Rechnung ist fehlerhaft."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "incorrect / faulty",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "More formal than falsch/kaputt."
+        }
+      }
+    },
+    "schriftlich": {
+      "lexical_key": "wipa_token_schriftlich",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "schriftlich",
+        "context_definition": "Bitte senden Sie uns eine schriftliche Bestätigung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "in writing / written",
+          "context_note": "High-frequency in formal requests."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "High-frequency in formal requests."
+        }
+      }
+    },
+    "bestätigung": {
+      "lexical_key": "wipa_token_bestaetigung",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "die Bestätigung, -en",
+        "context_definition": "Ich bitte um eine kurze Bestätigung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "confirmation",
+          "context_note": "Used in emails and appointments."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Used in emails and appointments."
+        }
+      }
+    },
+    "nacherfüllung": {
+      "lexical_key": "wipa_token_nacherfuellung",
+      "domain": "Professional/business German",
+      "german_reference": {
+        "term": "die Nacherfüllung",
+        "context_definition": "Wir setzen eine Frist zur Nacherfüllung."
+      },
+      "localizations": {
+        "en": {
+          "equivalent": "supplementary performance / remedy",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "fr": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "es": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "pl": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "tr": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "uk": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "ru": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "ar": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
+        },
+        "fa": {
+          "equivalent": "",
+          "context_note": "Legal complaint term; advanced track only."
         }
       }
     }

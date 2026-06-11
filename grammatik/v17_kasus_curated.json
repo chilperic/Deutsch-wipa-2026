@@ -442,6 +442,132 @@
         "der",
         "die"
       ]
+    },
+    {
+      "id": "v17_case_021",
+      "module": "v17_kasus",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese vertragliche Anpassung bedarf weiterer rechtlicher ___.",
+      "answer": "Prüfung",
+      "explanation": "bedürfen requires the genitive: weiterer rechtlicher Prüfung. This is formal written German.",
+      "level": "B2+",
+      "translation": "This contractual adjustment requires further legal review.",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Genitiv",
+        "WiPa"
+      ],
+      "choices": [
+        "Prüfung",
+        "Prüfung der",
+        "Prüfung die",
+        "Prüfung dem"
+      ]
+    },
+    {
+      "id": "v17_case_022",
+      "module": "v17_kasus",
+      "exerciseType": "gap_fill",
+      "prompt": "Die aktuellen Verkaufszahlen widersprechen ___ anfänglichen Prognose.",
+      "answer": "unserer",
+      "explanation": "widersprechen takes dative: unserer Prognose.",
+      "level": "B2",
+      "translation": "The current sales figures contradict our initial forecast.",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Genitiv",
+        "WiPa"
+      ],
+      "choices": [
+        "unserer",
+        "unsere",
+        "unseren",
+        "unserem"
+      ]
+    },
+    {
+      "id": "v17_case_023",
+      "module": "v17_kasus",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir danken ___ für Ihre schnelle Rückmeldung.",
+      "answer": "Ihnen",
+      "explanation": "danken takes dative. Ihnen is the formal dative pronoun.",
+      "level": "B1+/B2",
+      "translation": "We thank you for your quick response.",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Genitiv",
+        "WiPa"
+      ],
+      "choices": [
+        "Ihnen",
+        "Sie",
+        "Ihr",
+        "Ihre"
+      ]
+    },
+    {
+      "id": "v17_case_024",
+      "module": "v17_kasus",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Bericht entspricht ___ Anforderungen nicht vollständig.",
+      "answer": "den",
+      "explanation": "entsprechen takes dative plural: den Anforderungen.",
+      "level": "B2",
+      "translation": "The report does not fully meet the requirements.",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Genitiv",
+        "WiPa"
+      ],
+      "choices": [
+        "den",
+        "die",
+        "der",
+        "dem"
+      ]
+    },
+    {
+      "id": "v17_case_025",
+      "module": "v17_kasus",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Entscheidung hängt von ___ Genehmigung der Geschäftsführung ab.",
+      "answer": "der",
+      "explanation": "abhängen von takes dative; Genehmigung is feminine: von der Genehmigung.",
+      "level": "B2",
+      "translation": "The decision depends on the management’s approval.",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Genitiv",
+        "WiPa"
+      ],
+      "choices": [
+        "der",
+        "die",
+        "den",
+        "das"
+      ]
+    },
+    {
+      "id": "v17_case_026",
+      "module": "v17_kasus",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigieren: Die aktuellen Zahlen widersprechen unsere Prognose.",
+      "answer": "Die aktuellen Zahlen widersprechen unserer Prognose.",
+      "explanation": "widersprechen governs the dative, not accusative.",
+      "level": "B2",
+      "translation": "The current figures contradict our forecast.",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Genitiv",
+        "WiPa"
+      ]
     }
   ]
 }

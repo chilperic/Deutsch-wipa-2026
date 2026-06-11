@@ -1,4 +1,4 @@
-const APP_VERSION = '2026.06.11-v17-reliable-tutor-middle-db';
+const APP_VERSION = '2026.06.11-v18-final-reliable-tutor';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
@@ -16,7 +16,8 @@ const state = {
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [], verbListMode: 'starter',
   // Memoised generateConjugatorPractice output: invalidated when verb/tense/mode changes
-  _conjGenKey: '', _conjGenItems: []
+  _conjGenKey: '', _conjGenItems: [],
+  sequencedSessions: load('dw_modern_sequenced_sessions', {})
 };
 
 // v11 migration: theme/dark-light is separate from accent color.
@@ -55,16 +56,14 @@ const COLORS = [
   ['highcontrast','High contrast']
 ];
 const PATHS = [
-  {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Verbformen, Modalverben, Infinitiv',cats:['conjugation','konjugator'],match:['modal','modalverb','infinitiv','verbformen','starke_verben','trennbare','reflexive','perfekt','plusquamperfekt','konjugator']},
-  {id:'syntax',icon:'🧩',title:'Satzbau',sub:'Verbposition, TeKaMoLo, nicht, Passiversatz',match:['tekamolo','negation','nebensatz','satzordnung','satzvariation','passiv','passiversatz','final','modal_es','temporale']},
-  {id:'cases',icon:'🎯',title:'Fälle',sub:'Akkusativ, Dativ, n-Deklination, Pronomen',match:['kasus','n_deklination','n-deklination','pronomen'],exclude:['production_deklination_intensiv']},
-  {id:'declension',icon:'🧬',title:'Deklination',sub:'Adjektivendungen, Nominalisierung',ids:['grammatik_production_deklination_intensiv','grammatik_production_adjektivdeklination_structured','grammatik_adjektivdeklination','grammatik_adjektive_als_nomen']},
-  {id:'adverbs',icon:'🧭',title:'Adverbien',sub:'Zeit, Ort, Häufigkeit, Modalität, Satzlogik',match:['adverb','adverbien']},
-  {id:'prepositions',icon:'📍',title:'Präpositionen',sub:'lokal, temporal, Verben + Präposition',match:['praeposition','präposition']},
-  {id:'nouns',icon:'📚',title:'Artikel & Nomen',sub:'Genus, Plural, Nominalisierung',match:['nomen','artikel','plural','genus']},
-  {id:'adjectives',icon:'✨',title:'Adjektive',sub:'stark, schwach, gemischt',match:['adjektiv']},
-  {id:'connectors',icon:'🔗',title:'Konnektoren',sub:'temporal, kausal, konzessiv, zweiteilig',match:['konnektor','konnektoren','temporal','kausal','konzessiv','zweiteilige']},
-  {id:'workplace',icon:'💼',title:'Wortschatz Beruf',sub:'Linie-Beruf Kapitel, Büro, Kollokationen',cats:['vocabulary','workplace']}
+  {id:'business_email',icon:'✉️',title:'Corporate Emails',sub:'Sequenced formal e-mails, references, attachments, polite deadlines',match:['email','formelle','angebot','anhang','redemittel'],cats:['workplace']},
+  {id:'complaints',icon:'⚖️',title:'Reklamation & Konflikt',sub:'Mängelrüge, invoice dispute, deadlines, objective register',match:['reklamation','rechnung','dispute','invoice','maengel','mängel'],cats:['workplace']},
+  {id:'negotiation',icon:'🤝',title:'Verhandlung & Diplomatie',sub:'Konjunktiv II, softening, alternatives, confirmation requests',match:['konjunktiv','negotiation','verhandlung','liefertermin'],cats:['workplace']},
+  {id:'grammar_core',icon:'🧠',title:'Grammar Core',sub:'Kasus, nicht/kein, Konnektoren, TeKaMoLo, Satzmuster',match:['kasus','nicht','kein','konnektor','tekamolo','adjektiv','variable','satzmuster']},
+  {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Large verb backend, filtered practice, modal verbs',cats:['conjugation','konjugator'],match:['modal','modalverb','verbformen','konjugator','curated_verbs']},
+  {id:'prepositions',icon:'📍',title:'Präpositionalverben',sub:'verbs + fixed preposition + case',match:['praeposition','präposition','prep']},
+  {id:'workplace',icon:'💼',title:'Wortschatz Beruf',sub:'lexicon-key vocabulary, collocations, office/business terms',cats:['vocabulary','workplace']},
+  {id:'syntax',icon:'🧩',title:'Satzbau',sub:'word order, TeKaMoLo, connectors, negation',match:['tekamolo','konnektor','satz','nicht','kein','variable']}
 ];
 
 const T = {
@@ -254,7 +253,11 @@ function cleanLexicalKey(s=''){
 }
 function lookupLexicon(term){
   if(!state.localeLexicon||!state.localeLexicon.entries)return null;
-  const k=cleanLexicalKey(term);
+  const raw=String(term||'').trim();
+  if(!raw)return null;
+  const direct=Object.values(state.localeLexicon.entries).find(e=>e&&e.lexical_key===raw);
+  if(direct)return direct;
+  const k=cleanLexicalKey(raw);
   if(!k)return null;
   return state.localeLexicon.entries[k]||null;
 }
@@ -283,10 +286,58 @@ async function loadData(){
   }));
   state.modules=res.filter(r=>r.status==='fulfilled'&&r.value).map(r=>r.value);
 }
-function normalizeModule(raw,meta){if(meta.category==='konjugator')return[];let arr=raw.items||raw.words||raw.vocabulary_entries||raw.vocabulary||raw.questions||[];if(raw.exercise_pool)arr=raw.exercise_pool.flatMap(x=>x.cases||[]);return arr.map((it,i)=>normalizeItem(it,meta,i)).filter(Boolean)}
+function normalizeModule(raw,meta){
+  if(meta.category==='konjugator')return[];
+  if(raw.module_type==='sequenced_business_artifact')return [normalizeSequencedArtifact(raw,meta)];
+  if(raw.module_type==='variable_template_module')return expandVariableTemplates(raw,meta);
+  let arr=raw.items||raw.words||raw.vocabulary_entries||raw.vocabulary||raw.questions||[];
+  if(raw.exercise_pool)arr=raw.exercise_pool.flatMap(x=>x.cases||[]);
+  return arr.map((it,i)=>normalizeItem(it,meta,i)).filter(Boolean)
+}
+
+function expandVariableTemplates(raw,meta){
+  const items=[];
+  for(const tpl of raw.templates||[]){
+    const slots=tpl.slots||{};
+    const keys=Object.keys(slots);
+    const total=Number(tpl.count||Math.max(1,keys.reduce((a,k)=>a*(slots[k]?.length||1),1)));
+    for(let i=0;i<total;i++){
+      const values={};
+      keys.forEach((k,idx)=>{const arr=slots[k]||['']; values[k]=arr[(i+idx)%arr.length];});
+      const fill=s=>String(s||'').replace(/\{([^}]+)\}/g,(_,k)=>values[k]??`{${k}}`);
+      const answer=values[tpl.answer_slot]||'';
+      items.push({
+        id:`${tpl.id}_${i+1}`,
+        moduleId:meta.id,moduleTitle:meta.title,category:meta.category,
+        exerciseType:tpl.exerciseType||'gap_fill',
+        prompt:fill(tpl.prompt_template||tpl.template),answer,
+        choices:shuffle([answer,...Object.values(slots[tpl.answer_slot]||[]).filter(x=>x!==answer)]).slice(0,4),
+        explanation:tpl.explanation||`Dynamic template from ${meta.title}.`,
+        example:fill(tpl.template),translation:tpl.translation||'',raw:{...tpl,generatedValues:values},
+        tags:['dynamic_template',tpl.skill].filter(Boolean),level:tpl.level||raw.cefr_level||'B2',germanSpeak:fill(tpl.template)
+      });
+    }
+  }
+  return items;
+}
+function normalizeSequencedArtifact(raw,meta){
+  const steps=[...(raw.steps||[])].sort((a,b)=>(a.chronology_index||0)-(b.chronology_index||0));
+  return {
+    id:raw.scenario?.id||raw.module_id||meta.id,
+    moduleId:meta.id,moduleTitle:meta.title,category:meta.category,
+    exerciseType:'sequenced_business_artifact',
+    prompt:raw.scenario?.situation||raw.title||meta.title,
+    answer:'Sequenz abschließen',choices:[],
+    explanation:`${raw.business_track||'Wirtschaftsdeutsch'} · ${raw.scenario?.tone_target||'formal'}.`,
+    example:raw.artifact_assembly?.final_output_template?.join('\n')||'',
+    translation:raw.scenario?.situation||'',
+    level:raw.cefr_level||raw.level||'B2/C1',tags:['sequenced_artifact',raw.artifact_type||'business_artifact'],
+    raw,steps,germanSpeak:raw.scenario?.situation||meta.title
+  };
+}
 function pickLang(obj){if(!obj)return''; if(typeof obj!=='object')return stringify(obj); return obj.German||obj.Deutsch||obj[state.lang]||obj.English||Object.values(obj).find(Boolean)||''}
 function germanDisplay(d){const g=d.grammar||{};const trans=d.translations||{};const raw=d.word||d.term||d.german||d.display||d.title||d.prompt||pickLang(trans);if(raw&&raw!=='undefined')return stringify(raw);if(g.article&&g.base)return`${g.article} ${g.base}${g.plural?`, ${String(g.plural).replace(/^die\s+/,'')}`:''}`; if(g.base)return stringify(g.base);return''}
-function translationOf(d,it=null){const t=d.translations||{};const tp=(it&&it.translations)||{};const loc=localizedTerm(germanDisplay(d));return loc||t[state.lang]||t.English||tp[state.lang]||tp.English||d.english_equivalent||d.meaning||d.translation||d.answer||''}
+function translationOf(d,it=null){const t=d.translations||{};const tp=(it&&it.translations)||{};const loc=localizedTerm(d.lexical_key)||localizedTerm(germanDisplay(d));return loc||t[state.lang]||t.English||tp[state.lang]||tp.English||d.english_equivalent||d.meaning||d.translation||d.answer||''}
 function normalizeAnswerValue(v){return stringify(v).replace(/^undefined$/,'').trim()}
 function normalizeItem(it,meta,i){
   const d=(it&&it.data)||it; if(!d||typeof d!=='object')return null;
@@ -319,7 +370,7 @@ function normalizeItem(it,meta,i){
 }
 function rawLevel(m){return(m.title||'').includes('B2')?'B2':'B1/B2'}
 function inferType(prompt,d,meta){const p=String(prompt||'');const hay=`${p} ${meta.title} ${meta.id}`;if(d.choices||d.options||d.type==='classify')return'multiple_choice';if(p.includes('___'))return'gap_fill';if(/korrig|correct/i.test(p))return'sentence_correction';if(/conjug|Präsens|Präteritum|Perfekt|Modalverben|Konjugator/i.test(hay))return'verb_conjugation';return'flashcard'}
-function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const trans=translationOf(d) || translationOf(d, meta?.raw || null);if(trans)pieces.push(`Bedeutung: ${trans}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
+function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof ex==='string'&&!ex.includes('Focus on meaning'))return ex;if(d.grammar_clarification)return stringify(d.grammar_clarification);if(d.grammar?.pattern)return stringify(d.grammar.pattern);if(d.essential_collocations?.length)return d.essential_collocations.map(c=>`${stringify(c.collocation)} — ${stringify(c.example)}`).join('<br>');if(d.collocations?.length)return d.collocations.map(c=>`${stringify(c.collocation||c)}${c.example?' — '+stringify(c.example):''}`).join('<br>');if(isVocab){const g=d.grammar||{};const pieces=[];if(g.article&&g.base)pieces.push(`Artikel: ${g.article}. Wort: ${g.base}.`);if(g.plural)pieces.push(`Plural: ${g.plural}.`);const entry=lookupLexicon(d.lexical_key)||lookupLexicon(germanDisplay(d));const trans=translationOf(d) || translationOf(d, meta?.raw || null);if(trans)pieces.push(`Bedeutung: ${trans}.`);const def=entry?.german_reference?.context_definition;if(def)pieces.push(`Kontext: ${def}.`);return pieces.join(' ')||`Wortschatz aus ${meta.title}.`}if(ex&&typeof ex==='object')return pickLang(ex);return`Thema: ${meta.title}. Achte auf Form, Position und Kontext.`}
 function makeChoices(answer,type,context={}){const ans=String(answer||'').trim();if(!ans)return[];if(type==='article_trainer')return shuffle(['der','die','das']);if(type==='connector_selection'||/konnektor|connector/i.test(String(context.tags||context.category||'')+' '+String(context.prompt||''))){const pool=['und','aber','oder','sondern','weil','obwohl','trotzdem','deshalb','damit','bevor'];return[...new Set([ans,...pool.filter(x=>x!==ans)])].slice(0,4)}if(type==='multiple_choice'){const valid=context.choices||context.options;return valid&&valid.length?valid:[]}return[]}
 
 function renderPath(){
@@ -484,6 +535,120 @@ function toggleTranslation(){
   box.classList.remove('hidden');
 }
 
+
+function sessionKeyFor(item){return `seq:${item.moduleId}:${item.id}`}
+function getSequencedSession(item){
+  const key=sessionKeyFor(item);
+  if(!state.sequencedSessions[key]){
+    state.sequencedSessions[key]={currentStepIndex:0,userOutputs:{},failures:{},completed:false,failedRules:[]};
+    save('dw_modern_sequenced_sessions',state.sequencedSessions);
+  }
+  return state.sequencedSessions[key];
+}
+function saveSequencedSession(item,session){state.sequencedSessions[sessionKeyFor(item)]=session;save('dw_modern_sequenced_sessions',state.sequencedSessions)}
+function currentSequencedStep(item){const s=getSequencedSession(item);return item.steps[Math.min(s.currentStepIndex,item.steps.length-1)]}
+function resetSequencedSession(item){delete state.sequencedSessions[sessionKeyFor(item)];save('dw_modern_sequenced_sessions',state.sequencedSessions)}
+function renderSequencedArtifact(item){
+  const session=getSequencedSession(item);
+  const raw=item.raw||{};
+  const step=currentSequencedStep(item);
+  $('levelBadge').textContent=item.level||'B2/C1';
+  $('exercisePill').textContent='Sequenz';
+  $('itemIndex').textContent=session.completed?`${item.steps.length} / ${item.steps.length}`:`${Math.min(session.currentStepIndex+1,item.steps.length)} / ${item.steps.length}`;
+  $('cardProgressBar').style.width=(item.steps.length?Math.round((session.currentStepIndex/item.steps.length)*100):0)+'%';
+  $('ruleBox').innerHTML=safeHtml(step?.rule?.concept||item.explanation||'—');
+  $('exampleBox').innerHTML=safeHtml((raw.scenario?.tone_target?`Ton: ${raw.scenario.tone_target}. `:'')+(raw.business_track||''));
+  $('questionTitle').textContent=raw.artifact_type==='formal_complaint_email'?'Reklamation als Geschäftsartefakt':item.moduleTitle;
+  $('choiceZone').innerHTML='';$('answerZone').innerHTML='';$('feedbackBox').className='feedback hidden';$('translationBox').className='translation-box hidden';$('translationBox').innerHTML='';
+  if(session.completed){renderAssembledArtifact(item,session);return;}
+  $('questionText').innerHTML=renderScenarioHeader(item,session,step);
+  renderSequencedInput(step);
+  $('primaryAction').textContent='Prüfen';
+  $('secondaryAction').classList.add('hidden');
+}
+function renderScenarioHeader(item,session,step){
+  const s=item.raw?.scenario||{};
+  const anchors=(s.chronology_anchors||[]).map(a=>`<span class="chrono-pill ${a.index===step?.chronology_index?'active':''}">${esc(a.event)}: ${esc(a.data)}</span>`).join('');
+  return `<div class="scenario-card"><div class="scenario-meta"><span>${esc(item.raw?.business_track||'Wirtschaftsdeutsch')}</span><span>${esc(s.tone_target||'formal')}</span></div><p>${esc(s.situation||item.prompt)}</p><div class="chronology-row">${anchors}</div></div><h3 class="step-title">${esc(step?.section||'Step')} · ${esc(step?.skill||'')}</h3><p>${safeHtml(step?.prompt||'')}</p>${step?.text_template?`<p class="template-line">${safeHtml(step.text_template)}</p>`:''}`;
+}
+function renderSequencedInput(step){
+  if(!step)return;
+  if(step.exercise_type==='choice_register'){
+    $('choiceZone').innerHTML=(step.choices||[]).map(c=>`<button class="choice-btn" data-choice="${esc(c.id)}"><span class="choice-id">${esc(c.id.toUpperCase())}</span>${esc(c.text)}</button>`).join('');
+    document.querySelectorAll('.choice-btn').forEach(b=>b.onclick=()=>{state.selectedChoice=b.dataset.choice;document.querySelectorAll('.choice-btn').forEach(x=>x.classList.remove('selected'));b.classList.add('selected')});
+  } else if(step.exercise_type==='syntax_ordering'){
+    const tokens=shuffle(step.tokens||[]);
+    $('choiceZone').innerHTML=`<div class="token-bank">${tokens.map(t=>`<button class="token-btn" data-token="${esc(t)}">${esc(t)}</button>`).join('')}</div><div id="sequenceAnswer" class="sequence-answer" aria-label="Antwortsequenz"></div><button type="button" id="clearSequence" class="secondary-action small-inline">Zurücksetzen</button>`;
+    document.querySelectorAll('.token-btn').forEach(b=>b.onclick=()=>{const span=document.createElement('button');span.type='button';span.className='seq-token';span.dataset.token=b.dataset.token;span.textContent=b.dataset.token;span.onclick=()=>{span.remove();b.disabled=false};$('sequenceAnswer').appendChild(span);b.disabled=true});
+    $('clearSequence').onclick=()=>{document.querySelectorAll('.token-btn').forEach(b=>b.disabled=false);$('sequenceAnswer').innerHTML=''};
+  } else {
+    const placeholder=step.exercise_type==='production_controlled'?'Formuliere den Satz…':'Antwort eingeben…';
+    $('answerZone').innerHTML=`<textarea id="answerInput" class="answer-input long-answer" autocomplete="off" placeholder="${placeholder}"></textarea>`;
+    setTimeout(()=>$('answerInput')?.focus(),30);
+  }
+}
+function readSequencedAnswer(step){
+  if(step.exercise_type==='choice_register')return state.selectedChoice||'';
+  if(step.exercise_type==='syntax_ordering')return Array.from(document.querySelectorAll('#sequenceAnswer .seq-token')).map(x=>x.dataset.token||x.textContent);
+  return $('answerInput')?.value||'';
+}
+function normalizeGerman(s){return norm(String(s||'')).replace(/[.,;:!?]/g,'').replace(/\s+/g,' ').trim()}
+function arraysEqual(a,b){return Array.isArray(a)&&Array.isArray(b)&&a.length===b.length&&a.every((x,i)=>String(x).trim()===String(b[i]).trim())}
+function detectOrderingError(step,userTokens){const joined=userTokens.join(' ');for(const item of step.distractor_analysis||[]){const pattern=(item.pattern||[]).join(' ');if(pattern&&joined.includes(pattern))return{diagnosis:item.diagnosis,highlightTokens:item.pattern}}return null}
+function detectForbiddenPattern(step,userText){const u=normalizeGerman(userText);for(const item of step.forbidden_patterns||[]){if(u.includes(normalizeGerman(item.pattern)))return{diagnosis:item.diagnosis,highlightTokens:[item.pattern]}}return null}
+function matchesControlledProduction(step,userText){const u=normalizeGerman(userText);if((step.forbidden_patterns||[]).some(p=>u.includes(normalizeGerman(p.pattern))))return false;const mandatory=step.mandatory_tokens||[];if(mandatory.length&&mandatory.some(t=>!u.includes(normalizeGerman(t))))return false;const patterns=step.accepted_patterns||step.target_phrases||[];if(patterns.length)return patterns.some(p=>u.includes(normalizeGerman(p)));return !!u}
+function resolveStepOutput(step,userAnswer){
+  if(step.exercise_type==='choice_register'){const c=(step.choices||[]).find(x=>x.id===userAnswer)||{};return c.text||step.progressive_feedback?.resolved_model||''}
+  if(step.exercise_type==='syntax_ordering')return Array.isArray(userAnswer)?userAnswer.join(' '):String(userAnswer||'');
+  if(step.exercise_type==='gap_fill_syntax')return step.text_template?step.text_template.replace('___',String(userAnswer||'')):String(userAnswer||'');
+  return String(userAnswer||step.progressive_feedback?.resolved_model||'');
+}
+function evaluateSequencedStep(step,userAnswer,session){
+  let correct=false, detectedError=null;
+  if(step.exercise_type==='choice_register'){
+    correct=userAnswer===step.best_choice;const choice=(step.choices||[]).find(c=>c.id===userAnswer);if(!correct&&choice)detectedError={diagnosis:choice.diagnosis};
+  } else if(step.exercise_type==='gap_fill_syntax'){
+    correct=(step.accepted_answers||[]).map(normalizeGerman).includes(normalizeGerman(userAnswer));
+  } else if(step.exercise_type==='syntax_ordering'){
+    correct=arraysEqual(userAnswer,step.correct_sequence);if(!correct)detectedError=detectOrderingError(step,userAnswer);
+  } else if(step.exercise_type==='production_controlled'){
+    correct=matchesControlledProduction(step,userAnswer);if(!correct)detectedError=detectForbiddenPattern(step,userAnswer);
+  }
+  if(correct)return{status:'correct',stage:0,stepId:step.step_id,ruleId:step.rule?.id,message:'Richtig.',resolvedModel:resolveStepOutput(step,userAnswer),reviewTags:[step.rule?.id,step.skill].filter(Boolean)};
+  const f=session.failures||{};const stage=Math.min((f[step.step_id]||0)+1,3);f[step.step_id]=stage;session.failures=f;
+  const pf=step.progressive_feedback||{};
+  return{status:stage>=3?'resolved':'incorrect',stage,stepId:step.step_id,ruleId:step.rule?.id,message:stage===1?pf.first_failure:stage===2?pf.second_failure:'Modelllösung angezeigt.',diagnosis:detectedError?.diagnosis||step.rule?.concept||'',highlightTokens:detectedError?.highlightTokens||[],resolvedModel:stage>=3?pf.resolved_model:null,reviewTags:[step.rule?.id,step.skill].filter(Boolean)};
+}
+function renderProgressiveFeedback(result,step){
+  const box=$('feedbackBox');box.className=`feedback ${result.status==='correct'?'ok':'bad'} feedback-stage-${result.stage||0}`;
+  const title=result.status==='correct'?'✓ Richtig':(result.stage===1?'Noch nicht · Struktur prüfen':result.stage===2?'Regelhinweis':'Modelllösung');
+  const highlights=(result.highlightTokens||[]).length?`<div class="feedback-highlights"><b>Prüfe:</b> ${(result.highlightTokens||[]).map(esc).join(' · ')}</div>`:'';
+  const rule=(result.stage>=2&&step.rule?.concept)?`<aside class="rule-hint">${esc(step.rule.concept)}</aside>`:'';
+  const model=result.resolvedModel?`<div class="resolved-model">${esc(result.resolvedModel)}</div>`:'';
+  box.innerHTML=`<h3>${esc(title)}</h3><p>${safeHtml(result.message||'')}</p>${result.diagnosis?`<p class="feedback-diagnosis">${safeHtml(result.diagnosis)}</p>`:''}${highlights}${rule}${model}`;
+  box.classList.remove('hidden');
+}
+function checkSequencedAnswer(item){
+  const session=getSequencedSession(item);const step=currentSequencedStep(item);const userAnswer=readSequencedAnswer(step);const result=evaluateSequencedStep(step,userAnswer,session);
+  renderProgressiveFeedback(result,step);saveSequencedSession(item,session);
+  if(result.status==='correct'||result.status==='resolved'){
+    session.userOutputs[step.section]=result.resolvedModel||resolveStepOutput(step,userAnswer);
+    session.currentStepIndex+=1;session.failedRules=[...(session.failedRules||[]),...(result.status==='resolved'?[step.rule?.id]:[])].filter(Boolean);
+    if(session.currentStepIndex>=item.steps.length)session.completed=true;
+    saveSequencedSession(item,session);
+    $('secondaryAction').textContent=session.completed?'Artefakt anzeigen':'Nächster Schritt';
+    $('secondaryAction').classList.remove('hidden');
+    $('secondaryAction').onclick=()=>{state.selectedChoice='';renderExercise()};
+    updateStats(result.status==='correct',item);if(result.status!=='correct')addMistake(item,result.resolvedModel||'resolved');scheduleSrs(item,result.status==='correct');renderStats();
+  }
+}
+function renderAssembledArtifact(item,session){
+  const raw=item.raw||{};const lines=(raw.artifact_assembly?.final_output_template||[]).map(line=>line.replace(/\{([^}]+)\}/g,(_,k)=>session.userOutputs[k]||`[${k}]`));
+  $('questionText').innerHTML=`<div class="artifact-preview din-letter"><h3>Fertige Reklamation</h3><pre>${esc(lines.join('\n'))}</pre></div>`;
+  $('choiceZone').innerHTML='';$('answerZone').innerHTML='';$('feedbackBox').className='feedback ok';$('feedbackBox').innerHTML='<strong>Sequenz abgeschlossen.</strong> Die Antworten wurden zu einem Geschäftsartefakt zusammengesetzt.';
+  $('primaryAction').textContent='Sequenz neu starten';$('secondaryAction').classList.add('hidden');
+}
+
 function renderExercise(){
   const p=PATHS.find(x=>x.id===state.path);
   const items=filteredItems();
@@ -541,6 +706,7 @@ function renderExercise(){
     $('primaryAction').textContent=tr('start');
     return;
   }
+  if(item.exerciseType==='sequenced_business_artifact'){renderSequencedArtifact(item);return;}
   $('questionTitle').textContent=item.moduleTitle||'Übung';
   $('questionText').textContent=item.prompt;
   renderInput(item);
@@ -570,6 +736,11 @@ function primary(){
   if(state.sessionComplete){resetSession();renderExercise();return}
   if(!state.started){state.started=true;state.checked=false;renderExercise();return}
   const item=current();if(!item)return;
+  if(item.exerciseType==='sequenced_business_artifact'){
+    const session=getSequencedSession(item);
+    if(session.completed){resetSequencedSession(item);state.selectedChoice='';renderExercise();return;}
+    checkSequencedAnswer(item);return;
+  }
   if(state.mode==='learn'){next();return}
   checkAnswer(item);
 }
@@ -594,26 +765,53 @@ function answersMatch(user,correct,item){
   return false;
 }
 
+
+function feedbackKey(item){return `dw_fail:${item.moduleId}:${item.id}`}
+function getGenericFailureStage(item){const k=feedbackKey(item);const n=Math.min(Number(localStorage.getItem(k)||0)+1,3);localStorage.setItem(k,String(n));return n}
+function resetGenericFailureStage(item){localStorage.removeItem(feedbackKey(item))}
+function genericHintFor(item,stage,user){
+  const raw=item.raw||{};
+  const base=raw.feedback||raw.progressive_feedback||{};
+  const rule=item.explanation||raw.rule?.concept||'';
+  if(stage===1)return base.first_failure||base.firstFailure||'Noch nicht. Prüfe Form, Kasus, Wortstellung oder Register.';
+  if(stage===2)return base.second_failure||base.secondFailure||rule||'Nutze die Regel im rechten Panel und vergleiche die Struktur mit dem Beispiel.';
+  return base.resolved_model||base.resolvedModel||`Modell: ${item.answer}`;
+}
 function checkAnswer(item){
   const user=state.selectedChoice||$('answerInput')?.value||'';
   const matchResult=answersMatch(user,item.answer,item);
   const ok=matchResult===true;
   const nearMiss=matchResult==='case_mismatch';
-  state.checked=true;
+  let stage=0;
+  if(ok){
+    resetGenericFailureStage(item);
+    state.checked=true;
+  }else{
+    stage=getGenericFailureStage(item);
+    state.checked=stage>=3;
+  }
 
-  // Visual feedback on choice buttons
+  // Visual feedback on choice buttons. Do not reveal the correct answer before stage 3.
   if(item.choices&&item.choices.length){
     document.querySelectorAll('.choice-btn').forEach(b=>{
-      b.disabled=true;
-      if(b.dataset.choice===item.answer)b.classList.add('correct-reveal');
-      else if(b.dataset.choice===user&&!ok)b.classList.add('wrong-reveal');
+      b.disabled=ok || stage>=3;
+      b.classList.remove('correct-reveal','wrong-reveal');
+      if(ok && b.dataset.choice===item.answer)b.classList.add('correct-reveal');
+      if(!ok && b.dataset.choice===user)b.classList.add('wrong-reveal');
+      if(!ok && stage>=3 && b.dataset.choice===item.answer)b.classList.add('correct-reveal');
     });
   }
 
-  // Feedback content
-  let fbHtml=ok
-    ?`<span class="feedback-correct-mark">✓</span><strong>${tr('correct')}.</strong><br>${safeHtml(item.example||item.answer)}`
-    :`<span class="feedback-wrong-mark">✗</span><strong>${tr('wrong')}.</strong>${nearMiss?' <em>(Großschreibung beachten)</em>':''}<br><b>${tr('answer')}:</b> ${esc(item.answer)}<br><b>${tr('why')}</b> ${safeHtml(item.explanation||'')}`;
+  // Progressive feedback content. First two failures are hints; third failure resolves.
+  let fbHtml='';
+  if(ok){
+    fbHtml=`<span class="feedback-correct-mark">✓</span><strong>${tr('correct')}.</strong><br>${safeHtml(item.example||item.answer)}<br>${safeHtml(item.explanation||'')}`;
+  }else{
+    const hint=genericHintFor(item,stage,user);
+    const title=stage===1?'Noch nicht · gezielter Hinweis':stage===2?'Regelhinweis':'Modelllösung';
+    const answerLine=stage>=3?`<br><b>${tr('answer')}:</b> ${esc(item.answer)}`:'';
+    fbHtml=`<span class="feedback-wrong-mark">${stage>=3?'✗':'?'}</span><strong>${nearMiss?'Fast richtig: Groß-/Kleinschreibung prüfen.':title}</strong><br>${safeHtml(hint)}${answerLine}<br><b>${tr('why')}</b> ${safeHtml(item.explanation||'')}`;
+  }
 
   // Deep-link to conjugator for verb_conjugation items
   if(item.exerciseType==='verb_conjugation'){
@@ -631,14 +829,20 @@ function checkAnswer(item){
     }
   }
 
-  $('feedbackBox').className=`feedback ${ok?'ok':'bad'}`;
+  $('feedbackBox').className=`feedback ${ok?'ok':'bad'} feedback-stage-${stage}`;
   $('feedbackBox').innerHTML=fbHtml;
-  $('secondaryAction').textContent=tr('next');
-  $('secondaryAction').classList.remove('hidden');
-  updateStats(ok,item);
-  if(!ok)addMistake(item,user);
-  scheduleSrs(item,ok);
-  renderStats();
+
+  if(ok || stage>=3){
+    $('secondaryAction').textContent=tr('next');
+    $('secondaryAction').classList.remove('hidden');
+    updateStats(ok,item);
+    if(!ok)addMistake(item,user);
+    scheduleSrs(item,ok);
+    renderStats();
+  }else{
+    $('secondaryAction').classList.add('hidden');
+    $('primaryAction').textContent=tr('check');
+  }
 }
 
 // Skip item: moves to next without marking right or wrong
@@ -700,16 +904,17 @@ function renderMistakes(){
   $('mistakeList').onclick=ev=>{const b=ev.target.closest('.mistake-retry');if(!b)return;const m=state.mistakes[Number(b.dataset.idx)];if(!m)return;route('learn');selectPath(state.path);state.poolItems=[m.item];state.poolKey='retry:'+m.id;state.index=0;state.started=true;state.checked=false;state.selectedChoice='';renderExercise();};
 }
 
-const LABELS={de:{verb_conjugation:'Konjugation',gap_fill:'Lücke',multiple_choice:'Auswahl',sentence_correction:'Korrektur',flashcard:'Karte',translation_into_german:'Übersetzen',active_recall:'Aktiv erinnern',perfekt_builder:'Perfekt',connector_selection:'Konnektor',article_trainer:'Artikel',plural_trainer:'Plural',case_trainer:'Kasus'},en:{verb_conjugation:'Conjugation',gap_fill:'Gap',multiple_choice:'Choice',sentence_correction:'Correction',flashcard:'Card',translation_into_german:'Translate',active_recall:'Recall',perfekt_builder:'Perfekt',connector_selection:'Connector',article_trainer:'Article',plural_trainer:'Plural',case_trainer:'Case'}};
+const LABELS={de:{verb_conjugation:'Konjugation',gap_fill:'Lücke',multiple_choice:'Auswahl',sentence_correction:'Korrektur',flashcard:'Karte',translation_into_german:'Übersetzen',active_recall:'Aktiv erinnern',perfekt_builder:'Perfekt',connector_selection:'Konnektor',article_trainer:'Artikel',plural_trainer:'Plural',case_trainer:'Kasus',sequenced_business_artifact:'Sequenz',gap_fill_syntax:'Lücke',choice_register:'Register',syntax_ordering:'Satzbau',production_controlled:'Produktion'},en:{verb_conjugation:'Conjugation',gap_fill:'Gap',multiple_choice:'Choice',sentence_correction:'Correction',flashcard:'Card',translation_into_german:'Translate',active_recall:'Recall',perfekt_builder:'Perfekt',connector_selection:'Connector',article_trainer:'Article',plural_trainer:'Plural',case_trainer:'Case',sequenced_business_artifact:'Sequence',gap_fill_syntax:'Gap',choice_register:'Register',syntax_ordering:'Word order',production_controlled:'Production'}};
 function label(x){const pack=LABELS[state.lang]||LABELS.en;return pack[x]||LABELS.en[x]||LABELS.de[x]||x||'Übung'}
 let _lastSpeak=0;
 function speak(text){if(!text||!('speechSynthesis'in window))return;const now=Date.now();if(now-_lastSpeak<250)return;_lastSpeak=now;const u=new SpeechSynthesisUtterance(stripHtml(text));u.lang='de-DE';u.rate=.9;speechSynthesis.cancel();speechSynthesis.speak(u)}
 
 async function loadConjugator(){
   try{
-    state.conjugator=await vfetch('data/conjugator_verbs.json').then(r=>r.json());
+    const verbPack=await vfetch('data/curated_verbs.json').then(r=>r.json());
+    state.curatedVerbs=verbPack;
+    state.conjugator={pronouns:verbPack.pronouns||['ich','du','er/sie/es','wir','ihr','sie/Sie'],verbs:verbPack.verbs||{}};
     state.verb=Object.keys(state.conjugator.verbs)[0];
-    try{state.curatedVerbs=await vfetch('data/curated_verbs.json').then(r=>r.json())}catch{state.curatedVerbs={starter:[],top300:[]}}
   }catch(e){console.warn('Could not load conjugator',e)}
 }
 function renderConjugator(){if(!state.conjugator||state.route!=='conjugator')return;renderVerbList();renderVerbDetail()}
