@@ -29,3 +29,15 @@ Then open `http://localhost:8080`.
 ## Design rule
 
 No raw generated German enters the default tutor path. Dynamic variation is allowed only through validated slots with grammatical and semantic constraints.
+
+
+## v18.1 content-complete correction
+
+This build fixes the v18 underpopulation problem. Empty tracks were removed by adding real expanded modules for Artikel & Nomen, Adverbien, and Wortschatz-Ergänzung B1/B2. Core grammar modules were expanded to practical middle-size ranges instead of 10–30 item placeholders.
+
+
+## v18.2 context + 160-item expansion
+
+This build expands the core tutor modules to 160 contextualized items each and integrates Kapitel 1–4 vocabulary as a lexicon-backed B1/B2 vocabulary track. Generic placeholder examples such as “Das Lernwort heute ist …” were not used as final learning examples; chapter items now include source chapter, context domain, and a German sentence usable in class/workplace practice.
+
+Expanded to 160 items: Modalverben, Präpositionalverben, Konnektoren, nicht/kein, Kasus, TeKaMoLo, Adjektivdeklination, Artikel & Nomen, Adverbien, Berufs- und Bürowortschatz. Kapitel vocabulary contains all imported chapter words from Kapitel 1–4 plus Foto-Ergänzung.

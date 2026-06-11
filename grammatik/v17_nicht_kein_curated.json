@@ -1,628 +1,3846 @@
 {
   "module": "v17_nicht_kein",
   "title": "v17 · nicht / kein · kuratiert",
-  "status": "curated",
+  "status": "curated_expanded_context_160",
   "items": [
     {
-      "id": "v17_neg_001",
+      "id": "v18_2_neg_001",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Ich habe heute ___ Zeit für ein langes Gespräch.",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
       "answer": "keine",
-      "explanation": "Use kein for negating an indefinite noun: keine Zeit.",
-      "translation": "I do not have time today for a long conversation.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
       "choices": [
         "keine",
         "nicht",
-        "keinen",
-        "kein"
-      ]
-    },
-    {
-      "id": "v17_neg_002",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Termin passt mir heute ___.",
-      "answer": "nicht",
-      "explanation": "nicht negates the whole statement or a specific verb/adverb phrase.",
-      "translation": "The appointment does not suit me today.",
-      "level": "B1+",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_002",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
       "choices": [
         "nicht",
         "kein",
         "keine",
         "keinen"
-      ]
-    },
-    {
-      "id": "v17_neg_003",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben ___ passenden Raum gefunden.",
-      "answer": "keinen",
-      "explanation": "Raum is masculine accusative: keinen Raum.",
-      "translation": "We did not find a suitable room.",
-      "level": "B1+",
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_003",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
       "choices": [
-        "keinen",
+        "keine",
         "nicht",
         "kein",
-        "keine"
-      ]
-    },
-    {
-      "id": "v17_neg_004",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Datei lässt sich ___ öffnen.",
-      "answer": "nicht",
-      "explanation": "nicht negates the verb phrase lässt sich öffnen.",
-      "translation": "The file cannot be opened.",
-      "level": "B1+",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_004",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
       "choices": [
         "nicht",
         "kein",
         "keine",
         "keinen"
-      ]
-    },
-    {
-      "id": "v17_neg_005",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich habe ___ Rückmeldung bekommen.",
-      "answer": "keine",
-      "explanation": "Rückmeldung is feminine; use keine.",
-      "translation": "I did not receive any reply.",
-      "level": "B1+",
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_005",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
       "choices": [
         "keine",
         "nicht",
-        "keinen",
-        "kein"
-      ]
-    },
-    {
-      "id": "v17_neg_006",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Das ist ___ mein Aufgabenbereich.",
-      "answer": "nicht",
-      "explanation": "With possessives like mein, use nicht before the noun phrase.",
-      "translation": "That is not my area of responsibility.",
-      "level": "B1+",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
-        "kein",
-        "keinen",
-        "keine"
+        "Negation",
+        "Kommunikation"
       ]
     },
     {
-      "id": "v17_neg_007",
+      "id": "v18_2_neg_006",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Wir können den Vertrag heute ___ unterschreiben.",
+      "prompt": "Die Lösung ist ___ praktikabel.",
       "answer": "nicht",
-      "explanation": "nicht negates the action unterschreiben.",
-      "translation": "We cannot sign the contract today.",
-      "level": "B1+",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
-        "kein",
-        "keinen",
-        "keine"
+        "Negation",
+        "Projektmanagement"
       ]
     },
     {
-      "id": "v17_neg_008",
+      "id": "v18_2_neg_007",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Ich habe ___ Interesse an dieser Stelle.",
+      "prompt": "Es liegt ___ Angebot vor.",
       "answer": "kein",
-      "explanation": "Interesse is neuter: kein Interesse.",
-      "translation": "I have no interest in this position.",
-      "level": "B1+",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_008",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
       "choices": [
-        "kein",
         "nicht",
+        "kein",
         "keine",
         "keinen"
-      ]
-    },
-    {
-      "id": "v17_neg_009",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht ist ___ vollständig.",
-      "answer": "nicht",
-      "explanation": "Adjectives are normally negated with nicht.",
-      "translation": "The report is not complete.",
-      "level": "B1+",
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
-        "kein",
-        "keinen",
-        "keine"
+        "Negation",
+        "IT-Support"
       ]
     },
     {
-      "id": "v17_neg_010",
+      "id": "v18_2_neg_009",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Es gibt heute ___ neuen Informationen.",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_010",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
       "answer": "keine",
-      "explanation": "Plural noun: keine Informationen.",
-      "translation": "There is no new information today.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
       "choices": [
         "keine",
         "nicht",
-        "keinen",
-        "kein"
-      ]
-    },
-    {
-      "id": "v17_neg_011",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich arbeite morgen ___ im Büro, sondern im Homeoffice.",
-      "answer": "nicht",
-      "explanation": "nicht negates the location phrase im Büro.",
-      "translation": "I am not working in the office tomorrow, but from home.",
-      "level": "B1+",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
-        "kein",
-        "keinen",
-        "keine"
+        "Negation",
+        "Rechnungsklärung"
       ]
     },
     {
-      "id": "v17_neg_012",
+      "id": "v18_2_neg_011",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Wir haben ___ Lösung für das Problem.",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_012",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
       "answer": "keine",
-      "explanation": "Lösung is feminine: keine Lösung.",
-      "translation": "We have no solution for the problem.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
-      "choices": [
-        "keine",
-        "nicht",
-        "keinen",
-        "kein"
-      ]
-    },
-    {
-      "id": "v17_neg_013",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kundin war mit dem Service ___ zufrieden.",
-      "answer": "nicht",
-      "explanation": "zufrieden is an adjective; use nicht.",
-      "translation": "The customer was not satisfied with the service.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
-        "kein",
-        "keine",
-        "keinen"
-      ]
-    },
-    {
-      "id": "v17_neg_014",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich kenne den neuen Kollegen noch ___.",
-      "answer": "nicht",
-      "explanation": "nicht negates kennen.",
-      "translation": "I do not know the new colleague yet.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
-        "kein",
-        "keinen",
-        "keine"
-      ]
-    },
-    {
-      "id": "v17_neg_015",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben ___ Einladung erhalten.",
-      "answer": "keine",
-      "explanation": "Einladung is feminine: keine Einladung.",
-      "translation": "We received no invitation.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
       "choices": [
         "keine",
         "nicht",
         "kein",
         "keinen"
-      ]
-    },
-    {
-      "id": "v17_neg_016",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Drucker funktioniert leider ___.",
-      "answer": "nicht",
-      "explanation": "Fixed phrase: funktioniert leider nicht.",
-      "translation": "Unfortunately, the printer does not work.",
-      "level": "B1+",
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
-        "Negation"
-      ],
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_013",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
       "choices": [
         "nicht",
         "kein",
         "keine",
         "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
       ]
     },
     {
-      "id": "v17_neg_017",
+      "id": "v18_2_neg_014",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Ich kann an der Besprechung ___ teilnehmen.",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
       "answer": "nicht",
-      "explanation": "nicht negates the verb teilnehmen.",
-      "translation": "I cannot take part in the meeting.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
       "choices": [
         "nicht",
         "kein",
-        "keinen",
-        "keine"
-      ]
-    },
-    {
-      "id": "v17_neg_018",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Das ist ___ gute Idee.",
-      "answer": "keine",
-      "explanation": "Idee is feminine: keine gute Idee.",
-      "translation": "That is not a good idea.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
-      "choices": [
         "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
         "nicht",
         "kein",
-        "keinen"
+        "Negation",
+        "Planung"
       ]
     },
     {
-      "id": "v17_neg_019",
+      "id": "v18_2_neg_015",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Wir haben ___ Zugriff auf das System.",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
       "answer": "keinen",
-      "explanation": "Zugriff is masculine accusative: keinen Zugriff.",
-      "translation": "We have no access to the system.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
       "choices": [
         "keinen",
-        "nicht",
-        "kein",
-        "keine"
-      ]
-    },
-    {
-      "id": "v17_neg_020",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Adresse ist ___ korrekt.",
-      "answer": "nicht",
-      "explanation": "Adjectives are negated with nicht.",
-      "translation": "The address is not correct.",
-      "level": "B1+",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation"
-      ],
-      "choices": [
-        "nicht",
         "kein",
         "keine",
-        "keinen"
-      ]
-    },
-    {
-      "id": "v17_neg_corr_001",
-      "module": "v17_nicht_kein",
-      "exerciseType": "sentence_correction",
-      "prompt": "Korrigiere: Ich nicht habe Zeit.",
-      "answer": "Ich habe keine Zeit.",
-      "explanation": "For indefinite nouns, use kein; finite verb stays in position 2.",
-      "translation": "",
-      "level": "B1+/B2",
-      "tags": [
-        "Korrektur",
-        "Negation"
-      ]
-    },
-    {
-      "id": "v17_neg_corr_002",
-      "module": "v17_nicht_kein",
-      "exerciseType": "sentence_correction",
-      "prompt": "Korrigiere: Der Termin nicht passt mir.",
-      "answer": "Der Termin passt mir nicht.",
-      "explanation": "nicht usually follows the finite verb and complements.",
-      "translation": "",
-      "level": "B1+/B2",
-      "tags": [
-        "Korrektur",
-        "Negation"
-      ]
-    },
-    {
-      "id": "v17_neg_corr_003",
-      "module": "v17_nicht_kein",
-      "exerciseType": "sentence_correction",
-      "prompt": "Korrigiere: Ich habe nicht Rückmeldung bekommen.",
-      "answer": "Ich habe keine Rückmeldung bekommen.",
-      "explanation": "Use kein for negating an indefinite noun.",
-      "translation": "",
-      "level": "B1+/B2",
-      "tags": [
-        "Korrektur",
-        "Negation"
-      ]
-    },
-    {
-      "id": "v17_neg_corr_004",
-      "module": "v17_nicht_kein",
-      "exerciseType": "sentence_correction",
-      "prompt": "Korrigiere: Die Datei nicht lässt sich öffnen.",
-      "answer": "Die Datei lässt sich nicht öffnen.",
-      "explanation": "nicht comes before the infinitive phrase here.",
-      "translation": "",
-      "level": "B1+/B2",
-      "tags": [
-        "Korrektur",
-        "Negation"
-      ]
-    },
-    {
-      "id": "v17_neg_corr_005",
-      "module": "v17_nicht_kein",
-      "exerciseType": "sentence_correction",
-      "prompt": "Korrigiere: Ich arbeite im Büro nicht morgen.",
-      "answer": "Ich arbeite morgen nicht im Büro.",
-      "explanation": "A neutral order is temporal before negated local phrase.",
-      "translation": "",
-      "level": "B1+/B2",
-      "tags": [
-        "Korrektur",
-        "Negation"
-      ]
-    },
-    {
-      "id": "v17_neg_026",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen sind ___ korrekt.",
-      "answer": "nicht",
-      "explanation": "nicht negates the adjective korrekt. This is neutral and precise in reports.",
-      "choices": [
-        "nicht",
-        "keine",
-        "kein",
-        "keinen"
+        "nicht"
       ],
-      "level": "B2",
-      "translation": "The figures are not correct.",
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
         "Negation",
-        "WiPa"
+        "Bewerbung"
       ]
     },
     {
-      "id": "v17_neg_027",
+      "id": "v18_2_neg_016",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Das ist ___ korrekte Zahl.",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_017",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_018",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_019",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
       "answer": "keine",
-      "explanation": "Zahl is feminine; negating an indefinite noun requires keine.",
       "choices": [
         "keine",
         "nicht",
         "kein",
         "keinen"
       ],
-      "level": "B2",
-      "translation": "That is not a correct figure.",
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
         "Negation",
-        "WiPa"
+        "Besprechung"
       ]
     },
     {
-      "id": "v17_neg_028",
+      "id": "v18_2_neg_020",
       "module": "v17_nicht_kein",
       "exerciseType": "gap_fill",
-      "prompt": "Das Angebot ist noch ___.",
-      "answer": "unverbindlich",
-      "explanation": "unverbindlich means non-binding. It is a lexical negation with un-, not a simple nicht phrase.",
-      "choices": [
-        "unverbindlich",
-        "nicht verbindlichst",
-        "kein verbindlich",
-        "desverbindlich"
-      ],
-      "level": "B2",
-      "translation": "The offer is still non-binding.",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation",
-        "WiPa"
-      ]
-    },
-    {
-      "id": "v17_neg_029",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Angaben sind ___.",
-      "answer": "unvollständig",
-      "explanation": "unvollständig is the professional adjective for incomplete information.",
-      "choices": [
-        "unvollständig",
-        "nicht vollständigst",
-        "keine vollständig",
-        "desvollständig"
-      ],
-      "level": "B1+/B2",
-      "translation": "The information is incomplete.",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation",
-        "WiPa"
-      ]
-    },
-    {
-      "id": "v17_neg_030",
-      "module": "v17_nicht_kein",
-      "exerciseType": "multiple_choice",
-      "prompt": "Welche Form klingt in einer Reklamation diplomatischer?",
-      "answer": "Die Lieferung ist nicht vollständig.",
-      "explanation": "not vollständig is neutral and objective; kaputt-style wording is too blunt.",
-      "choices": [
-        "Die Lieferung ist nicht vollständig.",
-        "Die Lieferung ist total kaputt.",
-        "Die Lieferung hat keine vollständig.",
-        "Die Lieferung ist nichts vollständig."
-      ],
-      "level": "B2",
-      "translation": "Which form sounds more diplomatic in a complaint?",
-      "tags": [
-        "nicht",
-        "kein",
-        "Negation",
-        "WiPa"
-      ]
-    },
-    {
-      "id": "v17_neg_031",
-      "module": "v17_nicht_kein",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abweichung ist ___ unerheblich.",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
       "answer": "nicht",
-      "explanation": "nicht unerheblich is cautious formal understatement: not insignificant.",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_021",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_022",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_023",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_024",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_025",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_026",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_027",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_028",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_029",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
       "choices": [
         "nicht",
         "keine",
         "kein",
-        "un"
+        "keinen"
       ],
-      "level": "B2+",
-      "translation": "The deviation is not insignificant.",
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
       "tags": [
         "nicht",
         "kein",
         "Negation",
-        "WiPa"
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_030",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_031",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_032",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_033",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_034",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_035",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_036",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_037",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_038",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_039",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_040",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_041",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_042",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_043",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_044",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_045",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_046",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_047",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_048",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_049",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_050",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_051",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_052",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_053",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_054",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_055",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_056",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_057",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_058",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_059",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_060",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_061",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_062",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_063",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_064",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_065",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_066",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_067",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_068",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_069",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_070",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_071",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_072",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_073",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_074",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_075",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_076",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_077",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_078",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_079",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_080",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_081",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_082",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_083",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_084",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_085",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_086",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_087",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_088",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_089",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_090",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_091",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_092",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_093",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_094",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_095",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_096",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_097",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_098",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_099",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_100",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_101",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_102",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_103",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_104",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_105",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_106",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_107",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_108",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_109",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_110",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_111",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_112",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_113",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_114",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_115",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_116",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_117",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_118",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_119",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_120",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_121",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_122",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_123",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_124",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_125",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_126",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_127",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_128",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_129",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_130",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_131",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_132",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_133",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_134",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_135",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_136",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_137",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_138",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_139",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_140",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_141",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe heute ___ Zeit für eine Besprechung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "kein negates indefinite nouns: keine Zeit. Kontext: Terminplanung.",
+      "example": "Ich habe heute keine Zeit für eine Besprechung.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_142",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin passt mir ___.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "nicht negates the verb phrase passt. Kontext: Terminplanung.",
+      "example": "Der Termin passt mir nicht.",
+      "context": "Terminplanung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_143",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ verbindliche Zusage.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Zusage is feminine; negate noun with keine. Kontext: Verhandlung.",
+      "example": "Das ist keine verbindliche Zusage.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_144",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Angaben sind ___ vollständig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjectives are negated with nicht. Kontext: Reporting.",
+      "example": "Die Angaben sind nicht vollständig.",
+      "context": "Reporting",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_neg_145",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ Rückmeldung erhalten.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Rückmeldung is a noun; keine Rückmeldung. Kontext: Kommunikation.",
+      "example": "Wir haben keine Rückmeldung erhalten.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_146",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Lösung ist ___ praktikabel.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht praktikabel. Kontext: Projektmanagement.",
+      "example": "Die Lösung ist nicht praktikabel.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "id": "v18_2_neg_147",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es liegt ___ Angebot vor.",
+      "answer": "kein",
+      "choices": [
+        "kein",
+        "keine",
+        "nicht",
+        "keinen"
+      ],
+      "explanation": "Angebot is neuter; kein Angebot. Kontext: Einkauf.",
+      "example": "Es liegt kein Angebot vor.",
+      "context": "Einkauf",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Einkauf"
+      ]
+    },
+    {
+      "id": "v18_2_neg_148",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Fehler wurde ___ absichtlich verursacht.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adverb/verb phrase: nicht absichtlich. Kontext: IT-Support.",
+      "example": "Der Fehler wurde nicht absichtlich verursacht.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_149",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Rechnung ist ___ korrekt.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht korrekt. Kontext: Rechnungsklärung.",
+      "example": "Die Rechnung ist nicht korrekt.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_150",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das ist ___ korrekte Rechnung.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase with feminine Rechnung: keine korrekte Rechnung. Kontext: Rechnungsklärung.",
+      "example": "Das ist keine korrekte Rechnung.",
+      "context": "Rechnungsklärung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Rechnungsklärung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_151",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Information ist ___ verbindlich.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht verbindlich. Kontext: Formelle E-Mail.",
+      "example": "Die Information ist nicht verbindlich.",
+      "context": "Formelle E-Mail",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_neg_152",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir möchten ___ unnötige Verzögerung riskieren.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Noun phrase: keine unnötige Verzögerung. Kontext: Logistik.",
+      "example": "Wir möchten keine unnötige Verzögerung riskieren.",
+      "context": "Logistik",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_neg_153",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Vorschlag ist ___ uninteressant.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Litotes/partial negation: nicht uninteressant. Kontext: Verhandlung.",
+      "example": "Der Vorschlag ist nicht uninteressant.",
+      "context": "Verhandlung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Verhandlung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_154",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Diese Option ist ___ ausgeschlossen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Participial adjective: nicht ausgeschlossen. Kontext: Planung.",
+      "example": "Diese Option ist nicht ausgeschlossen.",
+      "context": "Planung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Planung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_155",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben ___ passenden Kandidaten gefunden.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Kandidat is masculine accusative: keinen Kandidaten. Kontext: Bewerbung.",
+      "example": "Wir haben keinen passenden Kandidaten gefunden.",
+      "context": "Bewerbung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Bewerbung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_156",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Frist ist ___ eingehalten worden.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Passive verb phrase: nicht eingehalten worden. Kontext: Vertrag.",
+      "example": "Die Frist ist nicht eingehalten worden.",
+      "context": "Vertrag",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Vertrag"
+      ]
+    },
+    {
+      "id": "v18_2_neg_157",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Antwort war ___ eindeutig.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Adjective: nicht eindeutig. Kontext: Kommunikation.",
+      "example": "Die Antwort war nicht eindeutig.",
+      "context": "Kommunikation",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_neg_158",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gibt ___ technischen Grund für die Verzögerung.",
+      "answer": "keinen",
+      "choices": [
+        "keinen",
+        "kein",
+        "keine",
+        "nicht"
+      ],
+      "explanation": "Grund is masculine accusative: keinen Grund. Kontext: IT-Support.",
+      "example": "Es gibt keinen technischen Grund für die Verzögerung.",
+      "context": "IT-Support",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "IT-Support"
+      ]
+    },
+    {
+      "id": "v18_2_neg_159",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Das Protokoll enthält ___ neuen Beschlüsse.",
+      "answer": "keine",
+      "choices": [
+        "keine",
+        "nicht",
+        "kein",
+        "keinen"
+      ],
+      "explanation": "Plural noun phrase: keine neuen Beschlüsse. Kontext: Besprechung.",
+      "example": "Das Protokoll enthält keine neuen Beschlüsse.",
+      "context": "Besprechung",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Besprechung"
+      ]
+    },
+    {
+      "id": "v18_2_neg_160",
+      "module": "v17_nicht_kein",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir können die Änderung ___ sofort umsetzen.",
+      "answer": "nicht",
+      "choices": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "explanation": "Negates adverbial/verb phrase: nicht sofort umsetzen. Kontext: Projektmanagement.",
+      "example": "Wir können die Änderung nicht sofort umsetzen.",
+      "context": "Projektmanagement",
+      "translation": "Negation in professional German.",
+      "level": "B1/B2",
+      "tags": [
+        "nicht",
+        "kein",
+        "Negation",
+        "Projektmanagement"
       ]
     }
   ]

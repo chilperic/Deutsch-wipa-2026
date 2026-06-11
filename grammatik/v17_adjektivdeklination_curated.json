@@ -1,206 +1,3518 @@
 {
   "module": "v17_adjektivdeklination",
   "title": "v17 · Adjektivdeklination · kuratiert",
-  "status": "curated",
+  "status": "curated_expanded_context_160",
   "items": [
     {
-      "id": "v17_adj_001",
+      "id": "v18_2_adj_001",
       "module": "v17_adjektivdeklination",
       "exerciseType": "gap_fill",
-      "prompt": "Ich habe ___ Termin. (ein / wichtig)",
-      "answer": "einen wichtigen",
-      "explanation": "After ein + masculine accusative: einen wichtigen Termin.",
-      "translation": "I have an important appointment.",
-      "level": "B1+/B2",
-      "tags": [
-        "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "einen wichtigen",
-        "ein wichtiger",
-        "einem wichtigen",
-        "einen wichtige"
-      ]
-    },
-    {
-      "id": "v17_adj_002",
-      "module": "v17_adjektivdeklination",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir suchen ___ Mitarbeiterin. (eine / erfahren)",
-      "answer": "eine erfahrene",
-      "explanation": "Feminine accusative after eine: erfahrene.",
-      "translation": "We are looking for an experienced employee.",
-      "level": "B1+/B2",
-      "tags": [
-        "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "eine erfahrene",
-        "eine erfahrenen",
-        "einer erfahrenen",
-        "eine erfahrener"
-      ]
-    },
-    {
-      "id": "v17_adj_003",
-      "module": "v17_adjektivdeklination",
-      "exerciseType": "gap_fill",
-      "prompt": "Mit ___ Kollegen arbeite ich gern. (der / neu)",
-      "answer": "dem neuen",
-      "explanation": "Dative masculine after der-word: dem neuen Kollegen.",
-      "translation": "I like working with the new colleague.",
-      "level": "B1+/B2",
-      "tags": [
-        "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "dem neuen",
-        "den neuen",
-        "der neue",
-        "dem neuem"
-      ]
-    },
-    {
-      "id": "v17_adj_004",
-      "module": "v17_adjektivdeklination",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich antworte ___ Kundin. (die / unzufrieden)",
-      "answer": "der unzufriedenen",
-      "explanation": "Dative feminine: der unzufriedenen Kundin.",
-      "translation": "I answer the dissatisfied customer.",
-      "level": "B1+/B2",
-      "tags": [
-        "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "der unzufriedenen",
-        "die unzufriedene",
-        "den unzufriedenen",
-        "der unzufriedene"
-      ]
-    },
-    {
-      "id": "v17_adj_005",
-      "module": "v17_adjektivdeklination",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen ___ Lösung. (eine / schnell)",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
       "answer": "eine schnelle",
-      "explanation": "Feminine accusative: eine schnelle Lösung.",
-      "translation": "We need a quick solution.",
-      "level": "B1+/B2",
-      "tags": [
-        "Adjektivdeklination",
-        "Kasus"
-      ],
       "choices": [
         "eine schnelle",
-        "einer schnellen",
-        "eine schnellen",
-        "einen schnellen"
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
       ]
     },
     {
-      "id": "v17_adj_006",
+      "id": "v18_2_adj_002",
       "module": "v17_adjektivdeklination",
       "exerciseType": "gap_fill",
-      "prompt": "Das ist ___ Problem. (ein / technisch)",
-      "answer": "ein technisches",
-      "explanation": "Neuter nominative after ein: ein technisches Problem.",
-      "translation": "That is a technical problem.",
-      "level": "B1+/B2",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
       "tags": [
         "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "ein technisches",
-        "ein technische",
-        "einen technischen",
-        "einem technischen"
+        "Beruf"
       ]
     },
     {
-      "id": "v17_adj_007",
+      "id": "v18_2_adj_003",
       "module": "v17_adjektivdeklination",
       "exerciseType": "gap_fill",
-      "prompt": "Trotz ___ Situation bleiben wir ruhig. (die / schwierig)",
-      "answer": "der schwierigen",
-      "explanation": "trotz + Genitiv/Dativ in practice; here: der schwierigen Situation.",
-      "translation": "Despite the difficult situation, we stay calm.",
-      "level": "B1+/B2",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
       "tags": [
         "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "der schwierigen",
-        "die schwierige",
-        "den schwierigen",
-        "der schwierige"
+        "Beruf"
       ]
     },
     {
-      "id": "v17_adj_008",
+      "id": "v18_2_adj_004",
       "module": "v17_adjektivdeklination",
       "exerciseType": "gap_fill",
-      "prompt": "Ich habe mit ___ Team gesprochen. (das / ganz)",
-      "answer": "dem ganzen",
-      "explanation": "mit + Dativ; das Team -> dem ganzen Team.",
-      "translation": "I spoke with the whole team.",
-      "level": "B1+/B2",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
       "tags": [
         "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "dem ganzen",
-        "das ganze",
-        "den ganzen",
-        "dem ganzem"
+        "Beruf"
       ]
     },
     {
-      "id": "v17_adj_009",
+      "id": "v18_2_adj_005",
       "module": "v17_adjektivdeklination",
       "exerciseType": "gap_fill",
-      "prompt": "Bitte schicken Sie mir ___ Unterlagen. (die / fehlend)",
-      "answer": "die fehlenden",
-      "explanation": "Plural accusative with definite article: die fehlenden Unterlagen.",
-      "translation": "Please send me the missing documents.",
-      "level": "B1+/B2",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
       "tags": [
         "Adjektivdeklination",
-        "Kasus"
-      ],
-      "choices": [
-        "die fehlenden",
-        "den fehlenden",
-        "der fehlenden",
-        "die fehlende"
+        "Beruf"
       ]
     },
     {
-      "id": "v17_adj_010",
+      "id": "v18_2_adj_006",
       "module": "v17_adjektivdeklination",
       "exerciseType": "gap_fill",
-      "prompt": "Wir arbeiten an ___ Projekt. (ein / neu)",
-      "answer": "einem neuen",
-      "explanation": "an + Dativ for fixed location/project context: an einem neuen Projekt.",
-      "translation": "We are working on a new project.",
-      "level": "B1+/B2",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
       "tags": [
         "Adjektivdeklination",
-        "Kasus"
-      ],
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_007",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
       "choices": [
-        "einem neuen",
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_008",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_009",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_010",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_011",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
         "ein neues",
-        "einen neuen",
-        "einem neuem"
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_012",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_013",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_014",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_015",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_016",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_017",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_018",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_019",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_020",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_021",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_022",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_023",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_024",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_025",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_026",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_027",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_028",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_029",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_030",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_031",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_032",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_033",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_034",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_035",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_036",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_037",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_038",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_039",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_040",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_041",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_042",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_043",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_044",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_045",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_046",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_047",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_048",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_049",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_050",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_051",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_052",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_053",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_054",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_055",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_056",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_057",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_058",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_059",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_060",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_061",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_062",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_063",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_064",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_065",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_066",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_067",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_068",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_069",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_070",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_071",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_072",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_073",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_074",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_075",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_076",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_077",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_078",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_079",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_080",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_081",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_082",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_083",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_084",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_085",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_086",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_087",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_088",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_089",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_090",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_091",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_092",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_093",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_094",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_095",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_096",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_097",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_098",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_099",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_100",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_101",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_102",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_103",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_104",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_105",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_106",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_107",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_108",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_109",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_110",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_111",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_112",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_113",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_114",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_115",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_116",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_117",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_118",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_119",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_120",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_121",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_122",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_123",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_124",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_125",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_126",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_127",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_128",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_129",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_130",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_131",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_132",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_133",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_134",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_135",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_136",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_137",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_138",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_139",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_140",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_141",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Lösung für den Kunden.",
+      "answer": "eine schnelle",
+      "choices": [
+        "eine schnelle",
+        "enine schnelle",
+        "eine",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ/Nominativ nach eine: eine schnelle Lösung. Kontext: Wir brauchen eine schnelle Lösung für den Kunden.",
+      "example": "Wir brauchen eine schnelle Lösung für den Kunden.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_142",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe morgen ___ Termin.",
+      "answer": "einen wichtigen",
+      "choices": [
+        "einen wichtigen",
+        "eninen wichtigen",
+        "ein",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach ein: einen wichtigen Termin. Kontext: Ich habe morgen einen wichtigen Termin.",
+      "example": "Ich habe morgen einen wichtigen Termin.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_143",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Angebot.",
+      "answer": "das aktuelle",
+      "choices": [
+        "das aktuelle",
+        "das aktuenlle",
+        "das",
+        "der"
+      ],
+      "explanation": "Neutrum nach bestimmtem Artikel: das aktuelle Angebot. Kontext: Bitte prüfen Sie das aktuelle Angebot.",
+      "example": "Bitte prüfen Sie das aktuelle Angebot.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_144",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Kollegin. (die / zuständig)",
+      "answer": "die zuständige",
+      "choices": [
+        "die zuständige",
+        "dien zuständige",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine nach bestimmtem Artikel: die zuständige Kollegin. Kontext: Die zuständige Kollegin ruft zurück.",
+      "example": "Die zuständige Kollegin ruft zurück.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_145",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir benötigen ___ Unterlagen.",
+      "answer": "technische",
+      "choices": [
+        "technische",
+        "tenchnische",
+        "ohne Artikel",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel: technische Unterlagen. Kontext: Wir benötigen technische Unterlagen.",
+      "example": "Wir benötigen technische Unterlagen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_146",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich spreche mit ___ Mitarbeiter.",
+      "answer": "dem neuen",
+      "choices": [
+        "dem neuen",
+        "denm neuen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Maskulin: mit dem neuen Mitarbeiter. Kontext: Ich spreche mit dem neuen Mitarbeiter.",
+      "example": "Ich spreche mit dem neuen Mitarbeiter.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_147",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Anfrage liegt in ___ Abteilung.",
+      "answer": "der zuständigen",
+      "choices": [
+        "der zuständigen",
+        "denr zuständigen",
+        "in",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: in der zuständigen Abteilung. Kontext: Die Anfrage liegt in der zuständigen Abteilung.",
+      "example": "Die Anfrage liegt in der zuständigen Abteilung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_148",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich interessiere mich für ___ Stelle.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: für die offene Stelle. Kontext: Ich interessiere mich für die offene Stelle.",
+      "example": "Ich interessiere mich für die offene Stelle.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_149",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wegen ___ Anfrage melden wir uns heute.",
+      "answer": "der dringenden",
+      "choices": [
+        "der dringenden",
+        "denr dringenden",
+        "wegen",
+        "der"
+      ],
+      "explanation": "Genitiv/Festformel: wegen der dringenden Anfrage. Kontext: Wegen der dringenden Anfrage melden wir uns heute.",
+      "example": "Wegen der dringenden Anfrage melden wir uns heute.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_150",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir brauchen ___ Bestätigung. (mit / schriftlich)",
+      "answer": "einer schriftlichen",
+      "choices": [
+        "einer schriftlichen",
+        "eniner schriftlichen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ nach mit: mit einer schriftlichen Bestätigung. Kontext: Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "example": "Bitte senden Sie uns eine schriftliche Bestätigung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_151",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir starten ___ Projekt.",
+      "answer": "ein neues",
+      "choices": [
+        "ein neues",
+        "enin neues",
+        "ein",
+        "der"
+      ],
+      "explanation": "Neutrum Nominativ/Akkusativ nach ein: ein neues Projekt. Kontext: Wir starten ein neues Projekt.",
+      "example": "Wir starten ein neues Projekt.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_152",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Ich habe ___ Bericht gelesen.",
+      "answer": "den letzten",
+      "choices": [
+        "den letzten",
+        "denn letzten",
+        "der"
+      ],
+      "explanation": "Maskulin Akkusativ nach der: den letzten Bericht. Kontext: Ich habe den letzten Bericht gelesen.",
+      "example": "Ich habe den letzten Bericht gelesen.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_153",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bitte prüfen Sie ___ Rechnung.",
+      "answer": "die offene",
+      "choices": [
+        "die offene",
+        "dien offene",
+        "die",
+        "der"
+      ],
+      "explanation": "Feminine Akkusativ: die offene Rechnung. Kontext: Bitte prüfen Sie die offene Rechnung.",
+      "example": "Bitte prüfen Sie die offene Rechnung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_154",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Das Formular gilt mit ___ Unterschrift.",
+      "answer": "einer digitalen",
+      "choices": [
+        "einer digitalen",
+        "eniner digitalen",
+        "mit",
+        "der"
+      ],
+      "explanation": "Dativ Feminin: mit einer digitalen Unterschrift. Kontext: Das Formular gilt mit einer digitalen Unterschrift.",
+      "example": "Das Formular gilt mit einer digitalen Unterschrift.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_155",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Die Präsentation ist für ___ Kunden gedacht.",
+      "answer": "internationale",
+      "choices": [
+        "internationale",
+        "intenrnationale",
+        "für",
+        "der"
+      ],
+      "explanation": "Plural ohne Artikel nach für: internationale Kunden. Kontext: Die Präsentation ist für internationale Kunden gedacht.",
+      "example": "Die Präsentation ist für internationale Kunden gedacht.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_156",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Nach ___ Besprechung senden wir das Protokoll.",
+      "answer": "der kurzen",
+      "choices": [
+        "der kurzen",
+        "denr kurzen",
+        "nach",
+        "der"
+      ],
+      "explanation": "Dativ Feminin nach nach: nach der kurzen Besprechung. Kontext: Nach der kurzen Besprechung senden wir das Protokoll.",
+      "example": "Nach der kurzen Besprechung senden wir das Protokoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_157",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Aufgrund ___ Verzögerung verschieben wir die Lieferung.",
+      "answer": "der unerwarteten",
+      "choices": [
+        "der unerwarteten",
+        "denr unerwarteten",
+        "aufgrund",
+        "der"
+      ],
+      "explanation": "Genitiv Feminin: aufgrund der unerwarteten Verzögerung. Kontext: Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "example": "Aufgrund der unerwarteten Verzögerung verschieben wir die Lieferung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_158",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Bei ___ Problem hilft der Support.",
+      "answer": "einem technischen",
+      "choices": [
+        "einem technischen",
+        "eninem technischen",
+        "bei",
+        "der"
+      ],
+      "explanation": "Dativ Neutrum: bei einem technischen Problem. Kontext: Bei einem technischen Problem hilft der Support.",
+      "example": "Bei einem technischen Problem hilft der Support.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_159",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Trotz ___ Kosten bleibt das Projekt sinnvoll.",
+      "answer": "der hohen",
+      "choices": [
+        "der hohen",
+        "denr hohen",
+        "trotz",
+        "der"
+      ],
+      "explanation": "Genitiv Plural/Femininform: trotz der hohen Kosten. Kontext: Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "example": "Trotz der hohen Kosten bleibt das Projekt sinnvoll.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v18_2_adj_160",
+      "module": "v17_adjektivdeklination",
+      "exerciseType": "gap_fill",
+      "prompt": "Ergänzen Sie: Wir bitten um ___ Rückmeldung.",
+      "answer": "eine verbindliche",
+      "choices": [
+        "eine verbindliche",
+        "enine verbindliche",
+        "für",
+        "der"
+      ],
+      "explanation": "Akkusativ Feminin: eine verbindliche Rückmeldung. Kontext: Wir bitten um eine verbindliche Rückmeldung.",
+      "example": "Wir bitten um eine verbindliche Rückmeldung.",
+      "context": "Adjektivdeklination in Berufssätzen",
+      "translation": "Adjective declension with realistic workplace nouns.",
+      "level": "B1/B2",
+      "tags": [
+        "Adjektivdeklination",
+        "Beruf"
       ]
     }
   ]

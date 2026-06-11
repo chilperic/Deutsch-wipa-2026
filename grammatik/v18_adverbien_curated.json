@@ -1,0 +1,3847 @@
+{
+  "module": "v18_adverbien",
+  "title": "v18 · Adverbien · Zeit, Ort, Häufigkeit, Modalität, Satzlogik",
+  "status": "curated_expanded_context_160",
+  "items": [
+    {
+      "id": "v18_2_adv_001",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_002",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_003",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_004",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_005",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_006",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_007",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_008",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_009",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_010",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_011",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_012",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_013",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_014",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_015",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_016",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_017",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_018",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_019",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_020",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_021",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_022",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_023",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_024",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_025",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_026",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_027",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_028",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_029",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_030",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_031",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_032",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_033",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_034",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_035",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_036",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_037",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_038",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_039",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_040",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_041",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_042",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_043",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_044",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_045",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_046",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_047",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_048",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_049",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_050",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_051",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_052",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_053",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_054",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_055",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_056",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_057",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_058",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_059",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_060",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_061",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_062",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_063",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_064",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_065",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_066",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_067",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_068",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_069",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_070",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_071",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_072",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_073",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_074",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_075",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_076",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_077",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_078",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_079",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_080",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_081",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_082",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_083",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_084",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_085",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_086",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_087",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_088",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_089",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_090",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_091",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_092",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_093",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_094",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_095",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_096",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_097",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_098",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_099",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_100",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_101",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_102",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_103",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_104",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_105",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_106",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_107",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_108",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_109",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_110",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_111",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_112",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_113",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_114",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_115",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_116",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_117",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_118",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_119",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_120",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_121",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_122",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_123",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_124",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_125",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_126",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_127",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_128",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_129",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_130",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_131",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_132",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_133",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_134",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_135",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_136",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_137",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_138",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_139",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_140",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_141",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „heute“ in diesem Satz? Wir senden Ihnen die Unterlagen heute zu.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„heute“: time: today. Kontext: Formelle E-Mail.",
+      "example": "Wir senden Ihnen die Unterlagen heute zu.",
+      "context": "Formelle E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Formelle E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_142",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „morgen“ in diesem Satz? Der Termin findet morgen statt.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„morgen“: time: tomorrow. Kontext: Terminplanung.",
+      "example": "Der Termin findet morgen statt.",
+      "context": "Terminplanung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Terminplanung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_143",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „gestern“ in diesem Satz? Die Lieferung ist gestern angekommen.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„gestern“: time: yesterday. Kontext: Logistik.",
+      "example": "Die Lieferung ist gestern angekommen.",
+      "context": "Logistik",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Logistik"
+      ]
+    },
+    {
+      "id": "v18_2_adv_144",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „regelmäßig“ in diesem Satz? Wir prüfen die Berichte regelmäßig.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„regelmäßig“: frequency: regularly. Kontext: Reporting.",
+      "example": "Wir prüfen die Berichte regelmäßig.",
+      "context": "Reporting",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "v18_2_adv_145",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „selten“ in diesem Satz? Solche Fehler treten selten auf.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„selten“: frequency: rarely. Kontext: Qualität.",
+      "example": "Solche Fehler treten selten auf.",
+      "context": "Qualität",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Qualität"
+      ]
+    },
+    {
+      "id": "v18_2_adv_146",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „häufig“ in diesem Satz? Kunden fragen häufig nach dem Lieferstatus.",
+      "answer": "frequency",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„häufig“: frequency: often. Kontext: Kundenservice.",
+      "example": "Kunden fragen häufig nach dem Lieferstatus.",
+      "context": "Kundenservice",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "frequency",
+        "Kundenservice"
+      ]
+    },
+    {
+      "id": "v18_2_adv_147",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „intern“ in diesem Satz? Die Anfrage wird intern geprüft.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„intern“: manner/process: internally. Kontext: Administration.",
+      "example": "Die Anfrage wird intern geprüft.",
+      "context": "Administration",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Administration"
+      ]
+    },
+    {
+      "id": "v18_2_adv_148",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „schriftlich“ in diesem Satz? Bitte bestätigen Sie den Termin schriftlich.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„schriftlich“: manner: in writing. Kontext: E-Mail.",
+      "example": "Bitte bestätigen Sie den Termin schriftlich.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_149",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „telefonisch“ in diesem Satz? Wir klären die Rückfrage telefonisch.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„telefonisch“: manner: by phone. Kontext: Kommunikation.",
+      "example": "Wir klären die Rückfrage telefonisch.",
+      "context": "Kommunikation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Kommunikation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_150",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „vor Ort“ in diesem Satz? Der Techniker prüft das Gerät vor Ort.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„vor Ort“: place: on site. Kontext: Service.",
+      "example": "Der Techniker prüft das Gerät vor Ort.",
+      "context": "Service",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Service"
+      ]
+    },
+    {
+      "id": "v18_2_adv_151",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „im Büro“ in diesem Satz? Die Unterlagen liegen im Büro.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„im Büro“: place: in the office. Kontext: Büro.",
+      "example": "Die Unterlagen liegen im Büro.",
+      "context": "Büro",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Büro"
+      ]
+    },
+    {
+      "id": "v18_2_adv_152",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „in der Zentrale“ in diesem Satz? Die Entscheidung wird in der Zentrale getroffen.",
+      "answer": "lokal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„in der Zentrale“: place: headquarters. Kontext: Unternehmen.",
+      "example": "Die Entscheidung wird in der Zentrale getroffen.",
+      "context": "Unternehmen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "lokal",
+        "Unternehmen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_153",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „deshalb“ in diesem Satz? Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„deshalb“: logical consequence. Kontext: Rechnung.",
+      "example": "Die Rechnung ist fehlerhaft; deshalb bitten wir um Korrektur.",
+      "context": "Rechnung",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Rechnung"
+      ]
+    },
+    {
+      "id": "v18_2_adv_154",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „trotzdem“ in diesem Satz? Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„trotzdem“: contrast/concession. Kontext: Termin.",
+      "example": "Der Termin ist kurzfristig; trotzdem nehmen wir teil.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Termin"
+      ]
+    },
+    {
+      "id": "v18_2_adv_155",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „außerdem“ in diesem Satz? Außerdem benötigen wir eine Bestätigung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„außerdem“: addition. Kontext: E-Mail.",
+      "example": "Außerdem benötigen wir eine Bestätigung.",
+      "context": "E-Mail",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "E-Mail"
+      ]
+    },
+    {
+      "id": "v18_2_adv_156",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „zunächst“ in diesem Satz? Zunächst prüfen wir die Unterlagen.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„zunächst“: sequence/order. Kontext: Prozess.",
+      "example": "Zunächst prüfen wir die Unterlagen.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_157",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „anschließend“ in diesem Satz? Anschließend senden wir Ihnen eine Rückmeldung.",
+      "answer": "satzlogik",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„anschließend“: sequence/order. Kontext: Prozess.",
+      "example": "Anschließend senden wir Ihnen eine Rückmeldung.",
+      "context": "Prozess",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "satzlogik",
+        "Prozess"
+      ]
+    },
+    {
+      "id": "v18_2_adv_158",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „sofort“ in diesem Satz? Bitte melden Sie den Schaden sofort.",
+      "answer": "temporal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„sofort“: immediate time. Kontext: Reklamation.",
+      "example": "Bitte melden Sie den Schaden sofort.",
+      "context": "Reklamation",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "temporal",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v18_2_adv_159",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „fristgerecht“ in diesem Satz? Die Unterlagen wurden fristgerecht eingereicht.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„fristgerecht“: manner/compliance. Kontext: Fristen.",
+      "example": "Die Unterlagen wurden fristgerecht eingereicht.",
+      "context": "Fristen",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Fristen"
+      ]
+    },
+    {
+      "id": "v18_2_adv_160",
+      "module": "v18_adverbien",
+      "exerciseType": "multiple_choice",
+      "prompt": "Welche Funktion hat „ausnahmsweise“ in diesem Satz? Ausnahmsweise können wir den Termin verschieben.",
+      "answer": "modal",
+      "choices": [
+        "temporal",
+        "lokal",
+        "modal",
+        "frequency",
+        "satzlogik"
+      ],
+      "explanation": "„ausnahmsweise“: exception manner. Kontext: Termin.",
+      "example": "Ausnahmsweise können wir den Termin verschieben.",
+      "context": "Termin",
+      "translation": "Classify adverbial function in context.",
+      "level": "B1/B2",
+      "tags": [
+        "Adverbien",
+        "modal",
+        "Termin"
+      ]
+    }
+  ]
+}

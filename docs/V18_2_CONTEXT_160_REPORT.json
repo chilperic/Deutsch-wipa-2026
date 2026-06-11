@@ -1,0 +1,24 @@
+{
+  "version": "v18.2-context-160-reliable-tutor",
+  "core_modules_expanded_to_160": [
+    "v17_modalverben_business",
+    "v17_praepositionalverben",
+    "v17_konnektoren",
+    "v17_nicht_kein",
+    "v17_kasus",
+    "v17_tekamolo",
+    "v17_adjektivdeklination",
+    "v17_beruf_wortschatz",
+    "v18_artikel_nomen",
+    "v18_adverbien"
+  ],
+  "chapter_vocab_items": 327,
+  "chapter_sources": [
+    "kapitel1.json",
+    "kapitel2.json",
+    "kapitel3.json",
+    "kapitel3_foto_ergaenzung.json",
+    "kapitel4.json"
+  ],
+  "principle": "context first, no empty modules, no generic placeholder examples as final examples"
+}

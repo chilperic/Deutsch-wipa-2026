@@ -25,4 +25,34 @@ for(const it of vocab.items){if(!it.lexical_key)fail(`vocab item missing lexical
 const lex=JSON.parse(fs.readFileSync(path.join(root,'data/locales/wipa_lexicon.json'),'utf8'));
 const keys=new Set(Object.values(lex.entries).map(e=>e.lexical_key));
 for(const it of vocab.items){if(!keys.has(it.lexical_key))fail(`lexicon missing lexical_key: ${it.lexical_key}`)}
-console.log('OK: v18 final reliable tutor audit passed');
+
+// v18.1: no visible core path should be empty
+const requiredExpanded = ['grammatik/v18_artikel_nomen_curated.json','grammatik/v18_adverbien_curated.json','vokabular/v18_wortschatz_ergaenzung_b1b2_curated.json'];
+for (const rel of requiredExpanded) {
+  const raw = JSON.parse(fs.readFileSync(path.join(root, rel), 'utf8'));
+  if (!raw.items || raw.items.length < 80) fail(`expanded module too small: ${rel}`);
+}
+
+
+// v18.2: core modules must be context-enriched and expanded to 160 items.
+const target160 = [
+  'v17_modalverben_business','v17_praepositionalverben','v17_konnektoren','v17_nicht_kein','v17_kasus','v17_tekamolo','v17_adjektivdeklination','v17_beruf_wortschatz','v18_artikel_nomen','v18_adverbien'
+];
+for (const id of target160) {
+  const mod = manifest.modules.find(m => m.id === id);
+  if (!mod) fail(`missing v18.2 module: ${id}`);
+  if (mod.count < 160) fail(`module not expanded to 160: ${id}`);
+  const raw = JSON.parse(fs.readFileSync(path.join(root, mod.path), 'utf8'));
+  if (!raw.items || raw.items.length < 160) fail(`actual module too small for v18.2: ${id}`);
+  for (const it of raw.items.slice(0, 160)) {
+    const hay = JSON.stringify(it);
+    if (!/context|Kontext|source_chapter|domain/i.test(hay)) fail(`item lacks contextual metadata: ${id} ${it.id}`);
+  }
+}
+const chapterVocab = JSON.parse(fs.readFileSync(path.join(root, 'vokabular/v18_wortschatz_ergaenzung_b1b2_curated.json'), 'utf8'));
+if (!chapterVocab.items || chapterVocab.items.length < 250) fail('Kapitel 1-4 vocabulary integration too small');
+for (const it of chapterVocab.items) {
+  if (!it.lexical_key || !it.context || !it.example) fail(`chapter vocab item lacks key/context/example: ${it.id}`);
+}
+console.log('OK: v18.2 context-160 reliable tutor audit passed');
+

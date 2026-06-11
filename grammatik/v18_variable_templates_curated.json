@@ -29,10 +29,11 @@
           "fünf"
         ]
       },
-      "explanation": "The preposition 'in' is dative here because it describes location/state, not direction. The slot is restricted to validated dative forms.",
+      "explanation": "The preposition 'in' is dative here because it describes location/state, not direction. The slot is restricted to validated dative forms. Kontext: Slot values are restricted to verified business tokens.",
       "translation": "Due to problems in the specified location, we have to postpone delivery by several days.",
       "level": "B2",
-      "count": 9
+      "count": 9,
+      "context": "Dynamic but slot-validated business sentence pattern"
     },
     {
       "id": "vt_invoice_001",
@@ -49,10 +50,11 @@
           "prüfen"
         ]
       },
-      "explanation": "Formal finance collocations: eine Zahlung veranlassen/freigeben/prüfen. The finite verb 'werden' controls the infinitive at the end.",
+      "explanation": "Formal finance collocations: eine Zahlung veranlassen/freigeben/prüfen. The finite verb 'werden' controls the infinitive at the end. Kontext: Slot values are restricted to verified business tokens.",
       "translation": "After receiving the corrected invoice, we will promptly process/release/check the payment.",
       "level": "B2",
-      "count": 3
+      "count": 3,
+      "context": "Dynamic but slot-validated business sentence pattern"
     }
   ]
 }

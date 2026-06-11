@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.11-v18-final-reliable-tutor",
-  "philosophy": "final reliable tutor: secured curated database, thematic tracks, sequenced business artifacts, progressive feedback, safe variable templates, and large filtered conjugator backend",
+  "version": "2026.06.11-v18.2-context-160-reliable-tutor",
+  "philosophy": "context-enriched reliable tutor with 160-item core modules and Kapitel 1–4 vocabulary integrated through wipa_lexicon.",
   "defaultLevel": "B1+",
   "modules": [
     {
@@ -8,48 +8,48 @@
       "path": "grammatik/v17_modalverben_business_curated.json",
       "category": "grammar",
       "title": "v17 · Modalverben im Beruf",
-      "count": 12,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_praepositionalverben",
       "path": "grammatik/v17_praepositionalverben_curated.json",
       "category": "grammar",
       "title": "v17 · Präpositionalverben",
-      "count": 52,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_konnektoren",
       "path": "grammatik/v17_konnektoren_curated.json",
       "category": "grammar",
       "title": "v17 · Konnektoren & Wortstellung",
-      "count": 32,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_nicht_kein",
       "path": "grammatik/v17_nicht_kein_curated.json",
       "category": "grammar",
       "title": "v17 · nicht / kein",
-      "count": 31,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_kasus",
       "path": "grammatik/v17_kasus_curated.json",
       "category": "grammar",
       "title": "v17 · Kasus Akkusativ/Dativ",
-      "count": 26,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_tekamolo",
       "path": "grammatik/v17_tekamolo_curated.json",
       "category": "grammar",
       "title": "v17 · TeKaMoLo",
-      "count": 16,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_reklamation_sequenced",
@@ -92,16 +92,16 @@
       "path": "grammatik/v17_adjektivdeklination_curated.json",
       "category": "grammar",
       "title": "v17 · Adjektivdeklination",
-      "count": 10,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v17_beruf_wortschatz",
       "path": "vokabular/v17_beruf_wortschatz_curated.json",
       "category": "vocabulary",
       "title": "v17 · Berufs- und Bürowortschatz",
-      "count": 20,
-      "status": "curated"
+      "count": 160,
+      "status": "curated_expanded_context_160"
     },
     {
       "id": "v18_variable_templates",
@@ -111,6 +111,30 @@
       "count": 12,
       "status": "curated_dynamic",
       "module_type": "variable_template_module"
+    },
+    {
+      "id": "v18_artikel_nomen",
+      "path": "grammatik/v18_artikel_nomen_curated.json",
+      "category": "grammar",
+      "title": "v18 · Artikel & Nomen",
+      "count": 160,
+      "status": "curated_expanded_context_160"
+    },
+    {
+      "id": "v18_adverbien",
+      "path": "grammatik/v18_adverbien_curated.json",
+      "category": "grammar",
+      "title": "v18 · Adverbien",
+      "count": 160,
+      "status": "curated_expanded_context_160"
+    },
+    {
+      "id": "v18_wortschatz_ergaenzung_b1b2",
+      "path": "vokabular/v18_wortschatz_ergaenzung_b1b2_curated.json",
+      "category": "vocabulary",
+      "title": "v18.2 · Wortschatz-Ergänzung B1/B2 · Kapitel 1–4 mit Kontext",
+      "count": 327,
+      "status": "curated_expanded_context_chapters"
     }
   ],
   "removedLegacy": [
@@ -171,5 +195,16 @@
     "production_modalverben_praeteritum.json",
     "v17_email_redemittel_curated.json",
     "v17_konjunktiv2_curated.json"
-  ]
+  ],
+  "contextExpansion": {
+    "chapter_files_used": [
+      "kapitel1.json",
+      "kapitel2.json",
+      "kapitel3.json",
+      "kapitel3_foto_ergaenzung.json",
+      "kapitel4.json"
+    ],
+    "core_target_per_module": 160,
+    "vocabulary_chapter_items": 327
+  }
 }

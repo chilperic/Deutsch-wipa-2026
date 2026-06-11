@@ -60,9 +60,12 @@ const PATHS = [
   {id:'complaints',icon:'⚖️',title:'Reklamation & Konflikt',sub:'Mängelrüge, invoice dispute, deadlines, objective register',match:['reklamation','rechnung','dispute','invoice','maengel','mängel'],cats:['workplace']},
   {id:'negotiation',icon:'🤝',title:'Verhandlung & Diplomatie',sub:'Konjunktiv II, softening, alternatives, confirmation requests',match:['konjunktiv','negotiation','verhandlung','liefertermin'],cats:['workplace']},
   {id:'grammar_core',icon:'🧠',title:'Grammar Core',sub:'Kasus, nicht/kein, Konnektoren, TeKaMoLo, Satzmuster',match:['kasus','nicht','kein','konnektor','tekamolo','adjektiv','variable','satzmuster']},
+  {id:'artikel_nomen',icon:'📚',title:'Artikel & Nomen',sub:'Genus, Plural, Nominalisierung, Kasusartikel',match:['artikel','nomen','plural','nominalisierung']},
+  {id:'adverbien',icon:'🕒',title:'Adverbien',sub:'Zeit, Ort, Häufigkeit, Modalität, Satzlogik',match:['adverb','adverbien','temporal','lokal','modalität','satzlogik']},
   {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Large verb backend, filtered practice, modal verbs',cats:['conjugation','konjugator'],match:['modal','modalverb','verbformen','konjugator','curated_verbs']},
   {id:'prepositions',icon:'📍',title:'Präpositionalverben',sub:'verbs + fixed preposition + case',match:['praeposition','präposition','prep']},
   {id:'workplace',icon:'💼',title:'Wortschatz Beruf',sub:'lexicon-key vocabulary, collocations, office/business terms',cats:['vocabulary','workplace']},
+  {id:'wortschatz_b1b2',icon:'🗂️',title:'Wortschatz-Ergänzung B1/B2',sub:'zusätzlicher WiPa-Wortschatz aus Büro, Bewerbung, Finanzen, IT, Logistik',ids:['v18_wortschatz_ergaenzung_b1b2','v17_beruf_wortschatz']},
   {id:'syntax',icon:'🧩',title:'Satzbau',sub:'word order, TeKaMoLo, connectors, negation',match:['tekamolo','konnektor','satz','nicht','kein','variable']}
 ];
 

@@ -1,0 +1,3374 @@
+{
+  "module": "v18_artikel_nomen",
+  "title": "v18 · Artikel & Nomen · Genus, Plural, Nominalisierung",
+  "status": "curated_expanded_context_160",
+  "items": [
+    {
+      "id": "v18_2_artikel_001",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Antrag",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Antrag. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_002",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Anlage",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Anlage. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_003",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Angebot",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Angebot. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_004",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Ablauf",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Ablauf. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_005",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Abteilung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Abteilung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_006",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Anliegen",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Anliegen. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_007",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Ansprechpartner",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Ansprechpartner. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_008",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Besprechung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Besprechung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_009",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Dokument",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Dokument. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_010",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Entwurf",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Entwurf. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_011",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Entscheidung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Entscheidung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_012",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Ergebnis",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Ergebnis. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_013",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Fehler",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Fehler. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_014",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Frist",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Frist. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_015",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Formular",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Formular. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_016",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Kunden",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Kunden. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_017",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Kundin",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Kundin. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_018",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Protokoll",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Protokoll. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_019",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Termin",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Termin. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_020",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Rechnung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Rechnung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_021",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Gespräch",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Gespräch. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_022",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Vertrag",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Vertrag. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_023",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Lieferung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Lieferung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_024",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Gerät",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Gerät. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_025",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Mangel",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Mangel. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_026",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Rückmeldung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Rückmeldung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_027",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Zertifikat",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Zertifikat. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_028",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Nachweis",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Nachweis. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_029",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Voraussetzung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Voraussetzung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_030",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Verfahren",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Verfahren. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_031",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Vorgang",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Vorgang. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_032",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Anfrage",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Anfrage. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_033",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Schreiben",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Schreiben. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_034",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Bericht",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Bericht. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_035",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Vereinbarung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Vereinbarung. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_036",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Ziel",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Ziel. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_037",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Bereich",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Bereich. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_038",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Maßnahme",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Maßnahme. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_039",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Risiko",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Risiko. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_040",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Bedarf",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Bedarf. Lerne Artikel und Wort zusammen. Kontext: Artikel und Nomen im Beruf. Beispiel: ",
+      "example": "",
+      "context": "Artikel und Nomen im Beruf",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_041",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Messe",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Messe. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Wir stellen unser neues Produkt auf der Messe in Köln vor.",
+      "example": "Wir stellen unser neues Produkt auf der Messe in Köln vor.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_042",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Premiere",
+      "answer": "die Premieren",
+      "choices": [],
+      "explanation": "die Premiere. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Die Premiere des Films findet am Freitag im Kulturzentrum statt.",
+      "example": "Die Premiere des Films findet am Freitag im Kulturzentrum statt.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_043",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Spezialität",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Spezialität. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Spezialität in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Spezialität in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_044",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Profil",
+      "answer": "die Profile",
+      "choices": [],
+      "explanation": "das Profil. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Bitte aktualisieren Sie Ihr berufliches Profil vor dem Gespräch.",
+      "example": "Bitte aktualisieren Sie Ihr berufliches Profil vor dem Gespräch.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_045",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Steckbrief",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Steckbrief. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Für die Projektgruppe erstellt jede Person einen kurzen Steckbrief.",
+      "example": "Für die Projektgruppe erstellt jede Person einen kurzen Steckbrief.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_046",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Herausforderung",
+      "answer": "die Herausforderungen",
+      "choices": [],
+      "explanation": "die Herausforderung. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Die neue Aufgabe ist eine fachliche Herausforderung.",
+      "example": "Die neue Aufgabe ist eine fachliche Herausforderung.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_047",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Erfahrung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Erfahrung. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Für diese Stelle ist berufliche Erfahrung wichtig.",
+      "example": "Für diese Stelle ist berufliche Erfahrung wichtig.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_048",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Nachricht",
+      "answer": "die Nachrichten",
+      "choices": [],
+      "explanation": "die Nachricht. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Nachricht in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Nachricht in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_049",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Charaktereigenschaft",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Charaktereigenschaft. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Charaktereigenschaft in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Charaktereigenschaft in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_050",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Ausbildung",
+      "answer": "die Ausbildungen",
+      "choices": [],
+      "explanation": "die Ausbildung. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Ausbildung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Ausbildung in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_051",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Veränderung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Veränderung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Viele Beschäftigte müssen sich an die Veränderung gewöhnen.",
+      "example": "Viele Beschäftigte müssen sich an die Veränderung gewöhnen.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_052",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Agentur",
+      "answer": "die Agenturen",
+      "choices": [],
+      "explanation": "die Agentur. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Agentur in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Agentur in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_053",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Einarbeitung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Einarbeitung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Einarbeitung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Einarbeitung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_054",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Aufgabengebiet",
+      "answer": "die Aufgabengebiete",
+      "choices": [],
+      "explanation": "das Aufgabengebiet. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Aufgabengebiet in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Aufgabengebiet in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_055",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Stelle",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Stelle. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Stelle in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Stelle in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_056",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Zusage",
+      "answer": "die Zusagen",
+      "choices": [],
+      "explanation": "die Zusage. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Zusage in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Zusage in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_057",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Überstunde",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Überstunde. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Überstunde in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Überstunde in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_058",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Rucksack",
+      "answer": "die Rucksäcke",
+      "choices": [],
+      "explanation": "der Rucksack. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir der Rucksack in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Rucksack in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_059",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Entspannung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Entspannung. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Entspannung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Entspannung in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_060",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Bewegung",
+      "answer": "die Bewegungen",
+      "choices": [],
+      "explanation": "die Bewegung. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Bewegung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Bewegung in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_061",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Leidenschaft",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Leidenschaft. Lerne Artikel und Wort zusammen. Kontext: Profil, Kultur und berufliche Selbstdarstellung. Beispiel: Im beruflichen Kontext verwenden wir die Leidenschaft in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Leidenschaft in einem klaren Satz.",
+      "context": "Profil, Kultur und berufliche Selbstdarstellung",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_062",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Wettbewerb",
+      "answer": "die Wettbewerbe",
+      "choices": [],
+      "explanation": "der Wettbewerb. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Wettbewerb in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Wettbewerb in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_063",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Naturschutzgebiet",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Naturschutzgebiet. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Naturschutzgebiet in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Naturschutzgebiet in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_064",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Geschäftsbedingungen (Pl.)",
+      "answer": "die Geschäftsbedingungen (Pl.)",
+      "choices": [],
+      "explanation": "die Geschäftsbedingungen (Pl.). Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Geschäftsbedingungen (Pl.) in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Geschäftsbedingungen (Pl.) in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_065",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Bewerbung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Bewerbung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Bewerbung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Bewerbung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_066",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Praktikum",
+      "answer": "die Praktika",
+      "choices": [],
+      "explanation": "das Praktikum. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Praktikum in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Praktikum in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_067",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Aufstiegsmöglichkeit",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Aufstiegsmöglichkeit. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Aufstiegsmöglichkeit in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Aufstiegsmöglichkeit in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_068",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Stellenangebot",
+      "answer": "die Stellenangebote",
+      "choices": [],
+      "explanation": "das Stellenangebot. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Stellenangebot in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Stellenangebot in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_069",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Engagement",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Engagement. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Engagement in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Engagement in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_070",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Sprachkenntnis",
+      "answer": "die Sprachkenntnisse",
+      "choices": [],
+      "explanation": "die Sprachkenntnis. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Sprachkenntnis in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Sprachkenntnis in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_071",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Lebenslauf",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Lebenslauf. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Lebenslauf in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Lebenslauf in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_072",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Berufserfahrung",
+      "answer": "die Berufserfahrungen",
+      "choices": [],
+      "explanation": "die Berufserfahrung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Für diese Stelle ist berufliche Erfahrung wichtig.",
+      "example": "Für diese Stelle ist berufliche Erfahrung wichtig.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_073",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Bewerbungsgespräch",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Bewerbungsgespräch. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Bewerbungsgespräch in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Bewerbungsgespräch in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_074",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Vorstellungsgespräch",
+      "answer": "die Vorstellungsgespräche",
+      "choices": [],
+      "explanation": "das Vorstellungsgespräch. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Vorstellungsgespräch in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Vorstellungsgespräch in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_075",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Prüfung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Prüfung. Lerne Artikel und Wort zusammen. Kontext: Bewerbung und Arbeitssuche. Beispiel: Die Prüfung der Unterlagen dauert ungefähr zwei Tage.",
+      "example": "Die Prüfung der Unterlagen dauert ungefähr zwei Tage.",
+      "context": "Bewerbung und Arbeitssuche",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_076",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Anschreiben",
+      "answer": "die Anschreiben",
+      "choices": [],
+      "explanation": "das Anschreiben. Lerne Artikel und Wort zusammen. Kontext: Bewerbung und Arbeitssuche. Beispiel: Bitte laden Sie das Anschreiben zusammen mit dem Lebenslauf hoch.",
+      "example": "Bitte laden Sie das Anschreiben zusammen mit dem Lebenslauf hoch.",
+      "context": "Bewerbung und Arbeitssuche",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_077",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Zeugnis",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Zeugnis. Lerne Artikel und Wort zusammen. Kontext: Bewerbung und Arbeitssuche. Beispiel: Für die Bewerbung brauche ich mein letztes Arbeitszeugnis.",
+      "example": "Für die Bewerbung brauche ich mein letztes Arbeitszeugnis.",
+      "context": "Bewerbung und Arbeitssuche",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_078",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Experte",
+      "answer": "die Experten",
+      "choices": [],
+      "explanation": "der Experte. Lerne Artikel und Wort zusammen. Kontext: Bewerbung und Arbeitssuche. Beispiel: Der Experte prüft die technischen Angaben im Angebot.",
+      "example": "Der Experte prüft die technischen Angaben im Angebot.",
+      "context": "Bewerbung und Arbeitssuche",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_079",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Expertin",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Expertin. Lerne Artikel und Wort zusammen. Kontext: Bewerbung und Arbeitssuche. Beispiel: Für die Bewerbung ist die Expertin relevant.",
+      "example": "Für die Bewerbung ist die Expertin relevant.",
+      "context": "Bewerbung und Arbeitssuche",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_080",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Dachdecker",
+      "answer": "die Dachdecker",
+      "choices": [],
+      "explanation": "der Dachdecker. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Dachdecker in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Dachdecker in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_081",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Dachdeckerin",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Dachdeckerin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Dachdeckerin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Dachdeckerin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_082",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Schulabschluss",
+      "answer": "die Schulabschlusse",
+      "choices": [],
+      "explanation": "der Schulabschluss. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Schulabschluss in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Schulabschluss in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_083",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Schneider",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Schneider. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Schneider in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Schneider in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_084",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Schneiderin",
+      "answer": "die Schneiderinnen",
+      "choices": [],
+      "explanation": "die Schneiderin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Schneiderin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Schneiderin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_085",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Verantwortung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Verantwortung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Verantwortung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Verantwortung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_086",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Fremdwort",
+      "answer": "die Fremdworter",
+      "choices": [],
+      "explanation": "das Fremdwort. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Fremdwort in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Fremdwort in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_087",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Qualifikation",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Qualifikation. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Qualifikation in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Qualifikation in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_088",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Schichtarbeit",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Schichtarbeit. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Schichtarbeit in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Schichtarbeit in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_089",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Branche",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Branche. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Branche in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Branche in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_090",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Handel",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Handel. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Handel in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Handel in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_091",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Dienstleistung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Dienstleistung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Dienstleistung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Dienstleistung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_092",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Arbeitsplatz",
+      "answer": "die Arbeitsplatze",
+      "choices": [],
+      "explanation": "der Arbeitsplatz. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Arbeitsplatz in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Arbeitsplatz in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_093",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Karrierechance",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Karrierechance. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Karrierechance in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Karrierechance in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_094",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Nachfrage",
+      "answer": "die Nachfragen",
+      "choices": [],
+      "explanation": "die Nachfrage. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Nachfrage in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Nachfrage in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_095",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Auftrag",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Auftrag. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Auftrag in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Auftrag in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_096",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Auftragsbuch",
+      "answer": "die Auftragsbucher",
+      "choices": [],
+      "explanation": "das Auftragsbuch. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Auftragsbuch in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Auftragsbuch in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_097",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Ware",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Ware. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Ware in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Ware in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_098",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Reklamation",
+      "answer": "die Reklamationen",
+      "choices": [],
+      "explanation": "die Reklamation. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Reklamation in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Reklamation in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_099",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Reihenfolge",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Reihenfolge. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Reihenfolge in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Reihenfolge in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_100",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Knopf",
+      "answer": "die Knopfe",
+      "choices": [],
+      "explanation": "der Knopf. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Knopf in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Knopf in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_101",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Arbeitsauftrag",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Arbeitsauftrag. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Arbeitsauftrag in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Arbeitsauftrag in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_102",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Priorität",
+      "answer": "die Prioritäten",
+      "choices": [],
+      "explanation": "die Priorität. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Priorität in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Priorität in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_103",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Nachbestellung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Nachbestellung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Nachbestellung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Nachbestellung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_104",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Stoff",
+      "answer": "die Stoffe",
+      "choices": [],
+      "explanation": "der Stoff. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Stoff in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Stoff in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_105",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Missverständnis",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Missverständnis. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Missverständnis in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Missverständnis in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_106",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Beschwerde",
+      "answer": "die Beschwerden",
+      "choices": [],
+      "explanation": "die Beschwerde. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Beschwerde in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Beschwerde in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_107",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Ersatz",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Ersatz. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Ersatz in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Ersatz in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_108",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Unternehmen",
+      "answer": "die Unternehmen",
+      "choices": [],
+      "explanation": "das Unternehmen. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Unternehmen in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Unternehmen in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_109",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Bewerber",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Bewerber. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Bewerber in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Bewerber in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_110",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Bewerberin",
+      "answer": "die Bewerberinnen",
+      "choices": [],
+      "explanation": "die Bewerberin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Bewerberin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Bewerberin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_111",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Gemeinsamkeit",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Gemeinsamkeit. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Nach dem Umzug fühlte sie sich im neuen Umfeld einsam.",
+      "example": "Nach dem Umzug fühlte sie sich im neuen Umfeld einsam.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_112",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Station",
+      "answer": "die Stationen",
+      "choices": [],
+      "explanation": "die Station. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Station in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Station in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_113",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Zusatzqualifikation",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Zusatzqualifikation. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Zusatzqualifikation in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Zusatzqualifikation in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_114",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Diskriminierung",
+      "answer": "die Diskriminierungen",
+      "choices": [],
+      "explanation": "die Diskriminierung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Diskriminierung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Diskriminierung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_115",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Pflicht",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Pflicht. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Pflicht in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Pflicht in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_116",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Lücke",
+      "answer": "die Lücken",
+      "choices": [],
+      "explanation": "die Lücke. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Lücke in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Lücke in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_117",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Stichwort",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Stichwort. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Stichwort in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Stichwort in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_118",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Vorlage",
+      "answer": "die Vorlagen",
+      "choices": [],
+      "explanation": "die Vorlage. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Vorlage in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Vorlage in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_119",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Außendienst",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Außendienst. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Im Außendienst besucht er regelmäßig Kunden vor Ort.",
+      "example": "Im Außendienst besucht er regelmäßig Kunden vor Ort.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_120",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Kundenbetreuung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Kundenbetreuung. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Die Kundenbetreuung beantwortet die Anfrage innerhalb eines Tages.",
+      "example": "Die Kundenbetreuung beantwortet die Anfrage innerhalb eines Tages.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_121",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Marketing",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Marketing. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Das Marketing plant eine neue Kampagne für den Herbst.",
+      "example": "Das Marketing plant eine neue Kampagne für den Herbst.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_122",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Beziehung",
+      "answer": "die Beziehungen",
+      "choices": [],
+      "explanation": "die Beziehung. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Im beruflichen Netzwerk spielt die Beziehung eine Rolle.",
+      "example": "Im beruflichen Netzwerk spielt die Beziehung eine Rolle.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_123",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Stipendium",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Stipendium. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Das Stipendium finanziert einen Teil der Weiterbildung.",
+      "example": "Das Stipendium finanziert einen Teil der Weiterbildung.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_124",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Heimweh",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Heimweh. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Im beruflichen Netzwerk spielt das Heimweh eine Rolle.",
+      "example": "Im beruflichen Netzwerk spielt das Heimweh eine Rolle.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_125",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Filiale",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Filiale. Lerne Artikel und Wort zusammen. Kontext: berufliche Kontakte und Netzwerke. Beispiel: Im beruflichen Netzwerk spielt die Filiale eine Rolle.",
+      "example": "Im beruflichen Netzwerk spielt die Filiale eine Rolle.",
+      "context": "berufliche Kontakte und Netzwerke",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_126",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Stand",
+      "answer": "die Stande",
+      "choices": [],
+      "explanation": "der Stand. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Stand in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Stand in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_127",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Neuigkeit",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Neuigkeit. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Neuigkeit in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Neuigkeit in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_128",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Wiedersehen",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Wiedersehen. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Wiedersehen in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Wiedersehen in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_129",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Nebenjob",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Nebenjob. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Nebenjob in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Nebenjob in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_130",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Schwierigkeit",
+      "answer": "die Schwierigkeiten",
+      "choices": [],
+      "explanation": "die Schwierigkeit. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Schwierigkeit in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Schwierigkeit in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_131",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Zulassung",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Zulassung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Zulassung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Zulassung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_132",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Sicherheit",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Sicherheit. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Sicherheit in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Sicherheit in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_133",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Vermögen",
+      "answer": "das",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "das Vermögen. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir das Vermögen in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir das Vermögen in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_134",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Mitmensch",
+      "answer": "die Mitmenschen",
+      "choices": [],
+      "explanation": "der Mitmensch. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Mitmensch in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Mitmensch in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_135",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Export",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Export. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Export in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Export in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_136",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Altenpfleger",
+      "answer": "die Altenpfleger",
+      "choices": [],
+      "explanation": "der Altenpfleger. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Altenpfleger in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Altenpfleger in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_137",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Altenpflegerin",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Altenpflegerin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Altenpflegerin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Altenpflegerin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_138",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Kinderarzt",
+      "answer": "die Kinderarzte",
+      "choices": [],
+      "explanation": "der Kinderarzt. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Kinderarzt in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Kinderarzt in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_139",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Kinderärztin",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Kinderärztin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Kinderärztin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Kinderärztin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_140",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Zusatzausbildung",
+      "answer": "die Zusatzausbildungen",
+      "choices": [],
+      "explanation": "die Zusatzausbildung. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Zusatzausbildung in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Zusatzausbildung in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_141",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Praxis",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Praxis. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Praxis in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Praxis in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_142",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Pflege",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Pflege. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Pflege in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Pflege in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_143",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Florist",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Florist. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Florist in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Florist in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_144",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Floristin",
+      "answer": "die Floristinnen",
+      "choices": [],
+      "explanation": "die Floristin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Floristin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Floristin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_145",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Chemie",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Chemie. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Chemie in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Chemie in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_146",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Pharmazie",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Pharmazie. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Pharmazie in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Pharmazie in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_147",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Gemüseladen",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Gemüseladen. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Gemüseladen in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Gemüseladen in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_148",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Arzthelfer",
+      "answer": "die Arzthelfer",
+      "choices": [],
+      "explanation": "der Arzthelfer. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir der Arzthelfer in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir der Arzthelfer in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_149",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Arzthelferin",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Arzthelferin. Lerne Artikel und Wort zusammen. Kontext: Beruf, Arbeit und Alltag. Beispiel: Im beruflichen Kontext verwenden wir die Arzthelferin in einem klaren Satz.",
+      "example": "Im beruflichen Kontext verwenden wir die Arzthelferin in einem klaren Satz.",
+      "context": "Beruf, Arbeit und Alltag",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_150",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Ladenkasse",
+      "answer": "die Ladenkassen",
+      "choices": [],
+      "explanation": "die Ladenkasse. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist die Ladenkasse ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist die Ladenkasse ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_151",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Patient",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Patient. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist der Patient ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist der Patient ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_152",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: die Patientin",
+      "answer": "die Patientinnen",
+      "choices": [],
+      "explanation": "die Patientin. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist die Patientin ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist die Patientin ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_153",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Roboter",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Roboter. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Der Bote bringt die Unterlagen zur Zentrale.",
+      "example": "Der Bote bringt die Unterlagen zur Zentrale.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_154",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Arbeitswelt",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Arbeitswelt. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist die Arbeitswelt ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist die Arbeitswelt ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_155",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Industrie",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Industrie. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist die Industrie ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist die Industrie ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_156",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Großhandelskaufmann",
+      "answer": "die Großhandelskaufmanner",
+      "choices": [],
+      "explanation": "der Großhandelskaufmann. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist der Großhandelskaufmann ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist der Großhandelskaufmann ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_157",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Großhandelskauffrau",
+      "answer": "die",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "die Großhandelskauffrau. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist die Großhandelskauffrau ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist die Großhandelskauffrau ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_158",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: das Berufsfeld",
+      "answer": "die Berufsfelder",
+      "choices": [],
+      "explanation": "das Berufsfeld. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist das Berufsfeld ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist das Berufsfeld ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_159",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "article_trainer",
+      "prompt": "Welcher Artikel? Umsatz",
+      "answer": "der",
+      "choices": [
+        "der",
+        "die",
+        "das"
+      ],
+      "explanation": "der Umsatz. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist der Umsatz ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist der Umsatz ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Kapitel 1-4"
+      ]
+    },
+    {
+      "id": "v18_2_artikel_160",
+      "module": "v18_artikel_nomen",
+      "exerciseType": "plural_trainer",
+      "prompt": "Plural: der Discounter",
+      "answer": "die Discounter",
+      "choices": [],
+      "explanation": "der Discounter. Lerne Artikel und Wort zusammen. Kontext: Leben und Beruf im Wandel. Beispiel: Im beruflichen Wandel ist der Discounter ein wichtiges Thema.",
+      "example": "Im beruflichen Wandel ist der Discounter ein wichtiges Thema.",
+      "context": "Leben und Beruf im Wandel",
+      "translation": "Article, gender and plural in contextual B1/B2 vocabulary.",
+      "level": "B1/B2",
+      "tags": [
+        "Artikel",
+        "Nomen",
+        "Plural",
+        "Kapitel 1-4"
+      ]
+    }
+  ]
+}
