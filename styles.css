@@ -966,3 +966,89 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 .long-answer{min-height:105px;resize:vertical}
 .verb-list-modes .link-button.active{font-weight:800;text-decoration:underline}
 @media (max-width:800px){.artifact-preview.din-letter{padding:1rem}.chronology-row{overflow-x:auto;flex-wrap:nowrap}.chrono-pill{white-space:nowrap}}
+
+
+/* v18.2.3 UI simplification audit fix
+   - no fixed bottom top navigation on phone/tablet
+   - one design/color location only: profile/sidebar
+   - resources moved to a dedicated route
+   - quick start hidden on narrow screens to reduce cognitive load
+*/
+.resources-page {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl, 28px);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 18px;
+}
+.resource-list-page {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+@media (max-width: 1100px) {
+  .topbar {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+  }
+  .top-tabs {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: stretch;
+    box-shadow: none;
+    background: transparent;
+    margin-top: 8px;
+  }
+  .top-tab {
+    flex: 1 1 145px;
+    min-height: 40px;
+  }
+  .main {
+    padding-bottom: calc(24px + var(--safe-bottom));
+  }
+  .mobile-control-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  }
+  .exercise-card {
+    padding-bottom: calc(92px + var(--safe-bottom));
+  }
+  .main-actions {
+    bottom: calc(10px + var(--safe-bottom));
+  }
+}
+@media (max-width: 720px) {
+  .quick-start-panel {
+    display: none !important;
+  }
+  .topbar {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+  .top-tabs {
+    gap: 6px;
+  }
+  .top-tab {
+    flex: 1 1 calc(50% - 6px);
+    font-size: .82rem;
+    padding: 8px 6px;
+  }
+  .mobile-control-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 8px;
+  }
+  .mobile-control-panel .ghost {
+    grid-column: 1 / -1;
+  }
+  .soft-controls {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .resource-list-page {
+    grid-template-columns: 1fr;
+  }
+}

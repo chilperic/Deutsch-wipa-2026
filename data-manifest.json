@@ -1,6 +1,6 @@
 {
-  "version": "2026.06.11-v18.2.1-cache-declension-hotfix",
-  "philosophy": "context-enriched reliable tutor with 160-item core modules and Kapitel 1–4 vocabulary integrated through wipa_lexicon.",
+  "version": "2026.06.11-v18.2.3-ui-simplification",
+  "philosophy": "context-enriched reliable tutor with simplified navigation, visible resources, and de-duplicated UI controls.",
   "defaultLevel": "B1+",
   "modules": [
     {

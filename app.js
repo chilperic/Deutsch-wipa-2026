@@ -1,8 +1,8 @@
-const APP_VERSION = '2026.06.11-v18-final-reliable-tutor';
+const APP_VERSION = '2026.06.11-v18.2.3-ui-simplification';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
-const APP_BUILD = 'v18.2.1-cache-declension-hotfix';
+const APP_BUILD = 'v18.2.3-ui-simplification';
 const vfetch = path => {
   const sep = String(path).includes('?') ? '&' : '?';
   return fetch(`${path}${sep}v=${encodeURIComponent(APP_BUILD)}`, { cache: 'no-store' });
@@ -17,7 +17,7 @@ const state = {
   profile: load('dw_modern_profile', {name:''}),
   lang: localStorage.dw_lang || 'de', appearance: localStorage.dw_appearance || 'system', color: localStorage.dw_color || 'teal',
   conjugator: null, localeLexicon: null, curatedVerbs: null, verb: null, tense: 'Präsens',
-  tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
+  tenseFilter: 'Präsens', sessionLimit: 50, dynamicVerb: '', showAllVerbs: false,
   sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [], verbListMode: 'starter',
   // Memoised generateConjugatorPractice output: invalidated when verb/tense/mode changes
   _conjGenKey: '', _conjGenItems: [],
@@ -64,10 +64,10 @@ const PATHS = [
   {id:'complaints',icon:'⚖️',title:'Reklamation & Konflikt',sub:'Mängelrüge, invoice dispute, deadlines, objective register',match:['reklamation','rechnung','dispute','invoice','maengel','mängel'],cats:['workplace']},
   {id:'negotiation',icon:'🤝',title:'Verhandlung & Diplomatie',sub:'Konjunktiv II, softening, alternatives, confirmation requests',match:['konjunktiv','negotiation','verhandlung','liefertermin'],cats:['workplace']},
   {id:'grammar_core',icon:'🧠',title:'Grammar Core',sub:'Kasus, nicht/kein, Konnektoren, TeKaMoLo, Satzmuster',match:['kasus','nicht','kein','konnektor','tekamolo','adjektiv','variable','satzmuster']},
-  {id:'declension',icon:'🧬',title:'Deklination',sub:'Adjektivdeklination, Artikel, Nomen und Kasusendungen',match:['adjektivdeklination','artikel_nomen','artikel','nomen','deklination','kasus'],exclude:['konjugation']},
-  {id:'artikel_nomen',icon:'📚',title:'Artikel & Nomen',sub:'Genus, Plural, Nominalisierung, Kasusartikel',match:['artikel','nomen','plural','nominalisierung']},
-  {id:'adverbien',icon:'🕒',title:'Adverbien',sub:'Zeit, Ort, Häufigkeit, Modalität, Satzlogik',match:['adverb','adverbien','temporal','lokal','modalität','satzlogik']},
-  {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Large verb backend, filtered practice, modal verbs',cats:['conjugation','konjugator'],match:['modal','modalverb','verbformen','konjugator','curated_verbs']},
+  {id:'declension',icon:'🧬',title:'Deklination',sub:'Adjektivdeklination, Artikel, Nomen und Kasusendungen',ids:['v17_adjektivdeklination','v18_artikel_nomen','v17_kasus']},
+  {id:'artikel_nomen',icon:'📚',title:'Artikel & Nomen',sub:'Genus, Plural, Nominalisierung, Kasusartikel',ids:['v18_artikel_nomen']},
+  {id:'adverbien',icon:'🕒',title:'Adverbien',sub:'Zeit, Ort, Häufigkeit, Modalität, Satzlogik',ids:['v18_adverbien']},
+  {id:'conjugation',icon:'⚙️',title:'Konjugation',sub:'Large verb backend, filtered practice, modal verbs',ids:['v17_modalverben_business'],cats:['conjugation','konjugator'],match:['modal','modalverb','verbformen','konjugator','curated_verbs']},
   {id:'prepositions',icon:'📍',title:'Präpositionalverben',sub:'verbs + fixed preposition + case',match:['praeposition','präposition','prep']},
   {id:'workplace',icon:'💼',title:'Wortschatz Beruf',sub:'lexicon-key vocabulary, collocations, office/business terms',cats:['vocabulary','workplace']},
   {id:'wortschatz_b1b2',icon:'🗂️',title:'Wortschatz-Ergänzung B1/B2',sub:'zusätzlicher WiPa-Wortschatz aus Büro, Bewerbung, Finanzen, IT, Logistik',ids:['v18_wortschatz_ergaenzung_b1b2','v17_beruf_wortschatz']},
@@ -75,8 +75,8 @@ const PATHS = [
 ];
 
 const T = {
- de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten',mistakes:'Fehler',noMistakes:'Keine Fehler gespeichert',translate:'Übersetzung',translation:'Übersetzung',resources:'Ressourcen',externalTranslation:'Extern übersetzen',noStoredTranslation:'Keine gespeicherte Übersetzung für diese Karte.',resourceFriend:'Dreizunge · App von Raim',resourceConjugator:'Verbformen & Konjugation',resourceDictionary:'Wörterbuch',resourceGrammar:'Grammatik',resourceListening:'Hören & Deutsch lernen',onboardingTitle:'Heute gezielt trainieren',onboardingText:'Wähle einen verlässlichen Tutor-Pfad. Kurze Sitzungen, direkte Korrektur, Wiederholung später, Ressourcen in der Seitenleiste.',quickConj:'Verbformen',quickDecl:'Deklination',quickPrep:'Präpositionen',quickReview:'Wiederholen',starter:'Starter',curated:'Kuratierte Verben',allVerbs:'Alle Verben'},
- en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers',mistakes:'mistakes',noMistakes:'No mistakes saved',translate:'Translate',translation:'Translation',resources:'Resources',externalTranslation:'Translate externally',noStoredTranslation:'No stored translation for this card.',resourceFriend:'Dreizunge · Raim’s app',resourceConjugator:'Verb forms & conjugation',resourceDictionary:'Dictionary',resourceGrammar:'Grammar',resourceListening:'Listening & German learning',onboardingTitle:'Train with a clear focus today',onboardingText:'Choose one reliable tutor path. Short sessions, direct correction, later review, resources visible in the side panel.',quickConj:'Verb forms',quickDecl:'Declension',quickPrep:'Prepositions',quickReview:'Review',starter:'Starter',curated:'Curated verbs',allVerbs:'All verbs'},
+ de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten',mistakes:'Fehler',noMistakes:'Keine Fehler gespeichert',translate:'Übersetzung',translation:'Übersetzung',resources:'Ressourcen',externalTranslation:'Extern übersetzen',noStoredTranslation:'Keine gespeicherte Übersetzung für diese Karte.',resourceFriend:'Dreizunge · App von Raim',resourceConjugator:'Verbformen & Konjugation',resourceDictionary:'Wörterbuch',resourceGrammar:'Grammatik',resourceListening:'Hören & Deutsch lernen',onboardingTitle:'Heute gezielt trainieren',onboardingText:'Wähle einen verlässlichen Tutor-Pfad. Kurze Sitzungen, direkte Korrektur, Wiederholung später, Ressourcen über den eigenen Tab.',quickConj:'Verbformen',quickDecl:'Deklination',quickPrep:'Präpositionen',quickReview:'Wiederholen',starter:'Starter',curated:'Kuratierte Verben',allVerbs:'Alle Verben'},
+ en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers',mistakes:'mistakes',noMistakes:'No mistakes saved',translate:'Translate',translation:'Translation',resources:'Resources',externalTranslation:'Translate externally',noStoredTranslation:'No stored translation for this card.',resourceFriend:'Dreizunge · Raim’s app',resourceConjugator:'Verb forms & conjugation',resourceDictionary:'Dictionary',resourceGrammar:'Grammar',resourceListening:'Listening & German learning',onboardingTitle:'Train with a clear focus today',onboardingText:'Choose one reliable tutor path. Short sessions, direct correction, later review, resources available in their own tab.',quickConj:'Verb forms',quickDecl:'Declension',quickPrep:'Prepositions',quickReview:'Review',starter:'Starter',curated:'Curated verbs',allVerbs:'All verbs'},
  fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau',answered:'réponses',mistakes:'erreurs',noMistakes:'Aucune erreur enregistrée',translate:'Traduire',translation:'Traduction',resources:'Ressources',externalTranslation:'Traduire avec un outil externe',noStoredTranslation:'Aucune traduction enregistrée pour cette carte.',resourceFriend:'Dreizunge · application de Raim',resourceConjugator:'Formes verbales et conjugaison',resourceDictionary:'Dictionnaire',resourceGrammar:'Grammaire',resourceListening:'Écoute et allemand'},
  es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla',answered:'respuestas',mistakes:'errores',noMistakes:'No hay errores guardados',translate:'Traducir',translation:'Traducción',resources:'Recursos',externalTranslation:'Traducir externamente',noStoredTranslation:'No hay traducción guardada para esta tarjeta.',resourceFriend:'Dreizunge · app de Raim',resourceConjugator:'Formas verbales y conjugación',resourceDictionary:'Diccionario',resourceGrammar:'Gramática',resourceListening:'Escucha y alemán'},
  ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول',answered:'إجابات',mistakes:'أخطاء',noMistakes:'لا توجد أخطاء محفوظة',translate:'ترجمة',translation:'الترجمة',resources:'موارد',externalTranslation:'ترجمة خارجية',noStoredTranslation:'لا توجد ترجمة محفوظة لهذه البطاقة.',resourceFriend:'Dreizunge · تطبيق Raim',resourceConjugator:'تصريف الأفعال',resourceDictionary:'قاموس',resourceGrammar:'قواعد',resourceListening:'الاستماع وتعلّم الألمانية'},
@@ -102,23 +102,25 @@ function stringify(v){if(v==null)return''; if(typeof v==='string'||typeof v==='n
 function stripHtml(s=''){const d=document.createElement('div');d.innerHTML=safeHtml(s);return d.textContent||d.innerText||''}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
+async function clearOldCachesAndServiceWorkers(){
+  try{
+    if('serviceWorker' in navigator){
+      const regs=await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r=>r.unregister().catch(()=>{})));
+    }
+    if('caches' in window){
+      const keys=await caches.keys();
+      await Promise.all(keys.filter(k=>/^deutsch-wipa/i.test(k)||/wipa/i.test(k)).map(k=>caches.delete(k).catch(()=>{})));
+    }
+  }catch(e){console.warn('Cache cleanup skipped',e)}
+}
 async function init(){
   applyDesign(false);
   updateDirection();renderLangs();renderDesignControls();bind();
+  await clearOldCachesAndServiceWorkers();
   await loadLocaleLexicon();await loadData();await loadConjugator();
-  renderPath();selectPath('conjugation');
+  renderPath();selectPath('grammar_core');
   route('learn');renderAll();
-  if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register(`./sw.js?v=${encodeURIComponent(APP_BUILD)}`).then(reg => {
-      reg.update().catch(()=>{});
-    }).catch(()=>{});
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (!sessionStorage.getItem('dw_sw_reloaded_'+APP_BUILD)) {
-        sessionStorage.setItem('dw_sw_reloaded_'+APP_BUILD, '1');
-        location.reload();
-      }
-    });
-  }
 }
 function updateDirection(){document.documentElement.dir=['ar','fa'].includes(state.lang)?'rtl':'ltr'}
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
@@ -397,7 +399,17 @@ function renderPath(){
   $('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(p.title)}</span><span class="path-sub">${esc(p.sub)}</span></span><span class="path-count">${count}</span></button>`}).join('');
   document.querySelectorAll('.path-btn').forEach(b=>b.onclick=()=>{selectPath(b.dataset.path);toggleDrawer(false)})
 }
-function modulesForPath(id){const p=PATHS.find(x=>x.id===id);if(!p)return[];return state.modules.filter(m=>{if(p.ids)return p.ids.includes(m.id);const hay=`${m.id} ${m.title} ${m.path}`.toLowerCase();if(p.exclude&&p.exclude.some(s=>hay.includes(s)))return false;return(p.cats&&p.cats.includes(m.category))||(p.match&&p.match.some(s=>hay.includes(s)))})}
+function modulesForPath(id){
+  const p=PATHS.find(x=>x.id===id);if(!p)return[];
+  return state.modules.filter(m=>{
+    const hay=`${m.id} ${m.title} ${m.path}`.toLowerCase();
+    if(p.exclude&&p.exclude.some(s=>hay.includes(s)))return false;
+    const byId=Array.isArray(p.ids)&&p.ids.includes(m.id);
+    const byCat=Array.isArray(p.cats)&&p.cats.includes(m.category);
+    const byMatch=Array.isArray(p.match)&&p.match.some(s=>hay.includes(String(s).toLowerCase()));
+    return byId||byCat||byMatch;
+  });
+}
 function selectPath(id){
   state.path=id;
   state.moduleId=id==='conjugation'?'dynamic_conjugator':'all';
@@ -526,7 +538,7 @@ function renderResources(){
   ];
   box.innerHTML=links.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`).join('');
 }
-function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
+function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));const view=$(`${r}View`);if(view)view.classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator();if(r==='resources')renderResources();toggleDrawer(false)}
 function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
 
 function targetLang(){return state.lang==='de'?'en':state.lang}

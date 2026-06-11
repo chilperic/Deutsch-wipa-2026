@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="de">
 <head>
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="app-build" content="v18.2.3-ui-simplification">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17223b">
   <meta name="description" content="Deutsch-WiPA 2026 is a mobile-first grammar and workplace German trainer for B1/B2 learners, with conjugation, declension, adverbs, vocabulary, progress backup, and spaced repetition.">
-  <title>Deutsch-WiPA 2026 · Professional Core · v16</title>
+  <title>Deutsch-WiPA 2026 · v18.2.3 Reliable Tutor</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=18.2.3">
 </head>
 <body>
   <a class="skip-link" href="#primaryAction">Zur Übung springen</a>
@@ -27,11 +30,10 @@
         <button data-route="learn" class="top-tab active">Lernen</button>
         <button data-route="conjugator" class="top-tab">Konjugator</button>
         <button data-route="mistakes" class="top-tab">Fehlerbank</button>
+        <button data-route="resources" class="top-tab">Ressourcen</button>
       </nav>
       <div class="top-actions">
         <select id="languageSelect" class="select compact" aria-label="Interface language"></select>
-        <select id="appearanceSelect" class="select compact appearance-select" aria-label="Darstellung auswählen"></select>
-        <select id="colorSelect" class="select compact color-select" aria-label="Farbe auswählen"></select>
       </div>
     </header>
 
@@ -117,14 +119,6 @@
             <span>Modul</span>
             <select id="mobileModuleSelect" class="select"></select>
           </label>
-          <label>
-            <span>Design</span>
-            <select id="mobileAppearanceSelect" class="select appearance-select-control"></select>
-          </label>
-          <label>
-            <span>Farbe</span>
-            <select id="mobileColorSelect" class="select color-select-control"></select>
-          </label>
           <button id="mobileOpenSidebar" class="ghost" type="button">Optionen</button>
         </section>
 
@@ -187,12 +181,8 @@
             </div>
             <div class="panel-block compact-panel">
               <button id="modePractice" class="mode-chip active">Üben</button>
-              <button id="modeLearn" class="mode-chip">Lernen</button>
+              <button id="modeLearn" class="mode-chip">Lösung</button>
               <button id="modeReview" class="mode-chip">Wiederholen</button>
-            </div>
-            <div class="panel-block resources-panel">
-              <div class="eyebrow">Ressourcen</div>
-              <div id="resourceList" class="resource-list"></div>
             </div>
           </aside>
         </section>
@@ -230,10 +220,23 @@
         </section>
         <div id="mistakeList" class="mistake-list"></div>
       </section>
+
+      <section id="resourcesView" class="view">
+        <section class="hero-card resources-hero">
+          <div>
+            <div class="eyebrow">Ressourcen</div>
+            <h2>Externe Ressourcen</h2>
+            <p>Direkte Links zu Wörterbüchern, Konjugatoren, Grammatik und Hörmaterial. Diese Ansicht ist bewusst separat, damit die Übungsoberfläche frei bleibt.</p>
+          </div>
+        </section>
+        <section class="resources-page">
+          <div id="resourceList" class="resource-list resource-list-page"></div>
+        </section>
+      </section>
     </main>
 
     <div id="backdrop" class="backdrop hidden"></div>
   </div>
-  <script src="app.js" type="module"></script>
+  <script src="app.js?v=18.2.3" type="module"></script>
 </body>
 </html>

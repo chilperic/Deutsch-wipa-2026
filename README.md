@@ -1,3 +1,16 @@
+# Deutsch-WiPA 2026 v18.2.3
+
+Hotfix: disables stale service-worker caching and fixes exact routing for Deklination / Artikel & Nomen / Adverbien / Konjugation.
+
+Run:
+
+```bash
+npm run check
+npm run start
+```
+
+If an older build still appears once, open DevTools → Application/Storage → Clear site data, then hard-refresh. This build also unregisters old service workers automatically.
+
 # Deutsch-WiPA 2026 — v18 Final Reliable Tutor
 
 This build is the consolidated reliable-tutor app.
