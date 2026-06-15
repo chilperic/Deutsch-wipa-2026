@@ -1,0 +1,319 @@
+{
+  "module": "material_zu_infinitiv",
+  "title": "Material B1.1/B1.2 · zu-Infinitiv & brauchen zu",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_zu_001",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Es ist wichtig, ___ .",
+      "answer": "pünktlich zu kommen",
+      "choices": [],
+      "explanation": "zu + Infinitiv after adjective expressions.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_002",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe vor, ___ .",
+      "answer": "mich weiterzubilden",
+      "choices": [],
+      "explanation": "Infinitiv with zu after “vorhaben”.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_003",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie versucht, ___ .",
+      "answer": "den Termin zu verschieben",
+      "choices": [],
+      "explanation": "Infinitive clause after versuchen.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_004",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat vergessen, ___ .",
+      "answer": "die Unterlagen mitzuschicken",
+      "choices": [],
+      "explanation": "With separable verbs, zu stands between prefix and verb: mit-zu-schicken.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_005",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir freuen uns darauf, ___ .",
+      "answer": "Sie kennenzulernen",
+      "choices": [],
+      "explanation": "Infinitive clause after prepositional expression: sich freuen darauf, ... zu.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_006",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich bitte Sie, ___ .",
+      "answer": "mir die Rechnung zu schicken",
+      "choices": [],
+      "explanation": "Formal request pattern: bitten + object + zu + infinitive.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_007",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Es lohnt sich, ___ .",
+      "answer": "regelmäßig zu wiederholen",
+      "choices": [],
+      "explanation": "Impersonal expression + zu + infinitive.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_008",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe keine Lust, ___ .",
+      "answer": "lange zu diskutieren",
+      "choices": [],
+      "explanation": "Noun phrase + zu + infinitive.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_009",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Statt ___, sollten wir eine Lösung suchen.",
+      "answer": "zu streiten",
+      "choices": [],
+      "explanation": "statt/ohne/um + zu + infinitive.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_zu_010",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Um Deutsch zu verbessern, muss man ___ .",
+      "answer": "jeden Tag üben",
+      "choices": [],
+      "explanation": "um ... zu introduces purpose; second verb in main clause.",
+      "example": "",
+      "level": "B1",
+      "tags": [
+        "B1.1",
+        "zu + Infinitiv"
+      ]
+    },
+    {
+      "id": "mat_brauchen_001",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ heute nicht zu kommen.",
+      "answer": "brauchst",
+      "choices": [],
+      "explanation": "“brauchen ... nicht/kein/nur zu” works like a modal verb in negative/restrictive meaning.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_brauchen_002",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie brauchen die Rechnung nicht sofort ___ .",
+      "answer": "zu bezahlen",
+      "choices": [],
+      "explanation": "Use brauchen + nicht + zu + infinitive.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_brauchen_003",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Man braucht den Antrag nur online ___ .",
+      "answer": "auszufüllen",
+      "choices": [],
+      "explanation": "With separable verbs: auszufüllen.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_brauchen_004",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich brauche keine Angst ___ haben.",
+      "answer": "zu",
+      "choices": [],
+      "explanation": "Fixed structure: keine Angst zu haben.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_brauchen_005",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir brauchen die Dokumente nicht ___ .",
+      "answer": "auszudrucken",
+      "choices": [],
+      "explanation": "Negative brauchen + zu + infinitive.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_brauchen_006",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Correct the sentence: Ich brauche morgen kommen.",
+      "answer": "Ich brauche morgen nicht zu kommen.",
+      "choices": [],
+      "explanation": "Without nicht/kein/nur, brauchen + zu is usually not used as a modal substitute in standard German.",
+      "example": "Ich muss morgen kommen. / Ich brauche morgen nicht zu kommen.",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_brauchen_007",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Correct the sentence: Sie braucht das Formular ausfüllen.",
+      "answer": "Sie braucht das Formular nur auszufüllen.",
+      "choices": [],
+      "explanation": "With brauchen as modal-like verb, add nur/nicht/kein and zu.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.2",
+        "brauchen zu"
+      ]
+    },
+    {
+      "id": "mat_zu_mc_001",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "multiple_choice",
+      "prompt": "Which sentence is correct?",
+      "answer": "Ich brauche heute nicht zu arbeiten.",
+      "choices": [
+        "Ich brauche heute nicht zu arbeiten.",
+        "Ich brauche heute nicht arbeiten zu.",
+        "Ich brauche heute zu nicht arbeiten."
+      ],
+      "explanation": "Correct pattern: brauchen + nicht + zu + Infinitiv.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.1",
+        "B1.2"
+      ]
+    },
+    {
+      "id": "mat_zu_mc_002",
+      "module": "material_zu_infinitiv",
+      "type": "active_recall",
+      "exerciseType": "multiple_choice",
+      "prompt": "Which sentence is correct?",
+      "answer": "Er hat vergessen, das Formular abzugeben.",
+      "choices": [
+        "Er hat vergessen, das Formular zu abgeben.",
+        "Er hat vergessen, das Formular abzugeben.",
+        "Er hat vergessen, abzugeben das Formular."
+      ],
+      "explanation": "Separable verb: abzugeben.",
+      "example": "",
+      "level": "B1+",
+      "tags": [
+        "B1.1",
+        "B1.2"
+      ]
+    }
+  ]
+}

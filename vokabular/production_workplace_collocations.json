@@ -1,0 +1,2771 @@
+{
+  "module": "production_workplace_collocations",
+  "title": "Production Wortschatz · Berufliche Kollokationen",
+  "status": "production",
+  "level": "B1/B2",
+  "chapter": "Workplace collocations",
+  "vocabulary_entries": [
+    {
+      "term": "die Abteilung",
+      "plural": "die Abteilungen",
+      "cefr": "B1",
+      "english_equivalent": "department",
+      "corporate_context": "Company structure",
+      "essential_collocations": [
+        {
+          "collocation": "in einer Abteilung arbeiten",
+          "example": "Ich arbeite seit zwei Jahren in der IT-Abteilung."
+        },
+        {
+          "collocation": "eine Abteilung leiten",
+          "example": "Sie leitet die Abteilung für Kundenservice."
+        }
+      ]
+    },
+    {
+      "term": "der Ansprechpartner",
+      "plural": "die Ansprechpartner",
+      "cefr": "B1",
+      "english_equivalent": "contact person",
+      "corporate_context": "Customer/service communication",
+      "essential_collocations": [
+        {
+          "collocation": "den richtigen Ansprechpartner finden",
+          "example": "Ich suche den richtigen Ansprechpartner für diese Anfrage."
+        },
+        {
+          "collocation": "an den Ansprechpartner weiterleiten",
+          "example": "Ich leite Ihre Nachricht an den zuständigen Ansprechpartner weiter."
+        }
+      ]
+    },
+    {
+      "term": "die Anfrage",
+      "plural": "die Anfragen",
+      "cefr": "B1",
+      "english_equivalent": "inquiry / request",
+      "corporate_context": "Email and service desk",
+      "essential_collocations": [
+        {
+          "collocation": "auf eine Anfrage antworten",
+          "example": "Vielen Dank für Ihre Anfrage; wir melden uns bis Freitag."
+        },
+        {
+          "collocation": "eine Anfrage bearbeiten",
+          "example": "Unsere Abteilung bearbeitet täglich viele Kundenanfragen."
+        }
+      ]
+    },
+    {
+      "term": "der Ablauf",
+      "plural": "die Abläufe",
+      "cefr": "B1",
+      "english_equivalent": "process / procedure",
+      "corporate_context": "Work organization",
+      "essential_collocations": [
+        {
+          "collocation": "den Ablauf erklären",
+          "example": "Könnten Sie mir den Ablauf bitte kurz erklären?"
+        },
+        {
+          "collocation": "einen Ablauf verbessern",
+          "example": "Wir möchten den Ablauf im Bewerbungsprozess verbessern."
+        }
+      ]
+    },
+    {
+      "term": "die Unterlage",
+      "plural": "die Unterlagen",
+      "cefr": "B1",
+      "english_equivalent": "document / file",
+      "corporate_context": "Administration",
+      "essential_collocations": [
+        {
+          "collocation": "Unterlagen einreichen",
+          "example": "Bitte reichen Sie die fehlenden Unterlagen bis Montag ein."
+        },
+        {
+          "collocation": "Unterlagen beifügen",
+          "example": "Ich habe die Unterlagen meiner Bewerbung beigefügt."
+        }
+      ]
+    },
+    {
+      "term": "die Rückmeldung",
+      "plural": "die Rückmeldungen",
+      "cefr": "B1",
+      "english_equivalent": "feedback / response",
+      "corporate_context": "Emails and follow-up",
+      "essential_collocations": [
+        {
+          "collocation": "um Rückmeldung bitten",
+          "example": "Ich bitte um eine kurze Rückmeldung bis Ende der Woche."
+        },
+        {
+          "collocation": "eine Rückmeldung erhalten",
+          "example": "Bisher habe ich noch keine Rückmeldung erhalten."
+        }
+      ]
+    },
+    {
+      "term": "die Besprechung",
+      "plural": "die Besprechungen",
+      "cefr": "B1",
+      "english_equivalent": "meeting",
+      "corporate_context": "Office communication",
+      "essential_collocations": [
+        {
+          "collocation": "an einer Besprechung teilnehmen",
+          "example": "Ich nehme morgen an einer Besprechung mit dem Team teil."
+        },
+        {
+          "collocation": "eine Besprechung verschieben",
+          "example": "Die Besprechung musste wegen Krankheit verschoben werden."
+        }
+      ]
+    },
+    {
+      "term": "die Frist",
+      "plural": "die Fristen",
+      "cefr": "B1",
+      "english_equivalent": "deadline",
+      "corporate_context": "Administration and contracts",
+      "essential_collocations": [
+        {
+          "collocation": "eine Frist einhalten",
+          "example": "Leider konnten wir die Frist nicht einhalten."
+        },
+        {
+          "collocation": "eine Frist verlängern",
+          "example": "Könnten Sie die Frist um zwei Tage verlängern?"
+        }
+      ]
+    },
+    {
+      "term": "der Vertrag",
+      "plural": "die Verträge",
+      "cefr": "B1",
+      "english_equivalent": "contract",
+      "corporate_context": "Employment and services",
+      "essential_collocations": [
+        {
+          "collocation": "einen Vertrag unterschreiben",
+          "example": "Ich habe den Arbeitsvertrag gestern unterschrieben."
+        },
+        {
+          "collocation": "einen Vertrag kündigen",
+          "example": "Der Vertrag kann mit einer Frist von drei Monaten gekündigt werden."
+        }
+      ]
+    },
+    {
+      "term": "die Kündigung",
+      "plural": "die Kündigungen",
+      "cefr": "B1",
+      "english_equivalent": "termination / notice",
+      "corporate_context": "Employment and contracts",
+      "essential_collocations": [
+        {
+          "collocation": "eine Kündigung erhalten",
+          "example": "Er hat gestern die Kündigung erhalten."
+        },
+        {
+          "collocation": "eine Kündigung einreichen",
+          "example": "Sie hat ihre Kündigung schriftlich eingereicht."
+        }
+      ]
+    },
+    {
+      "term": "die Krankmeldung",
+      "plural": "die Krankmeldungen",
+      "cefr": "B1",
+      "english_equivalent": "sick note / absence notice",
+      "corporate_context": "Workplace absence",
+      "essential_collocations": [
+        {
+          "collocation": "eine Krankmeldung schicken",
+          "example": "Bitte schicken Sie die Krankmeldung an die Personalabteilung."
+        },
+        {
+          "collocation": "sich krankmelden",
+          "example": "Ich muss mich heute krankmelden, weil ich Fieber habe."
+        }
+      ]
+    },
+    {
+      "term": "die Einarbeitung",
+      "plural": "die Einarbeitungen",
+      "cefr": "B1+",
+      "english_equivalent": "onboarding / induction",
+      "corporate_context": "Starting a job",
+      "essential_collocations": [
+        {
+          "collocation": "die Einarbeitung übernehmen",
+          "example": "Meine Kollegin übernimmt meine Einarbeitung."
+        },
+        {
+          "collocation": "während der Einarbeitung",
+          "example": "Während der Einarbeitung lerne ich die internen Abläufe."
+        }
+      ]
+    },
+    {
+      "term": "die Zuständigkeit",
+      "plural": "die Zuständigkeiten",
+      "cefr": "B2",
+      "english_equivalent": "responsibility / competence",
+      "corporate_context": "Work organization",
+      "essential_collocations": [
+        {
+          "collocation": "in die Zuständigkeit fallen",
+          "example": "Diese Aufgabe fällt nicht in meine Zuständigkeit."
+        },
+        {
+          "collocation": "Zuständigkeiten klären",
+          "example": "Wir müssen die Zuständigkeiten im Team klären."
+        }
+      ]
+    },
+    {
+      "term": "die Voraussetzung",
+      "plural": "die Voraussetzungen",
+      "cefr": "B1+",
+      "english_equivalent": "requirement / prerequisite",
+      "corporate_context": "Job ads and applications",
+      "essential_collocations": [
+        {
+          "collocation": "eine Voraussetzung erfüllen",
+          "example": "Ich erfülle die wichtigsten Voraussetzungen für die Stelle."
+        },
+        {
+          "collocation": "unter bestimmten Voraussetzungen",
+          "example": "Unter bestimmten Voraussetzungen ist Homeoffice möglich."
+        }
+      ]
+    },
+    {
+      "term": "die Belastung",
+      "plural": "die Belastungen",
+      "cefr": "B1+",
+      "english_equivalent": "workload / strain",
+      "corporate_context": "Health and work",
+      "essential_collocations": [
+        {
+          "collocation": "die Belastung reduzieren",
+          "example": "Wir müssen die Belastung im Team reduzieren."
+        },
+        {
+          "collocation": "unter hoher Belastung arbeiten",
+          "example": "Unter hoher Belastung passieren schneller Fehler."
+        }
+      ]
+    },
+    {
+      "term": "die Weiterbildung",
+      "plural": "die Weiterbildungen",
+      "cefr": "B1",
+      "english_equivalent": "professional training",
+      "corporate_context": "Career development",
+      "essential_collocations": [
+        {
+          "collocation": "an einer Weiterbildung teilnehmen",
+          "example": "Ich möchte an einer Weiterbildung im Bereich Datenanalyse teilnehmen."
+        },
+        {
+          "collocation": "eine Weiterbildung finanzieren",
+          "example": "Der Arbeitgeber finanziert eine Weiterbildung."
+        }
+      ]
+    },
+    {
+      "term": "die Verfügbarkeit",
+      "plural": "die Verfügbarkeiten",
+      "cefr": "B2",
+      "english_equivalent": "availability",
+      "corporate_context": "Scheduling and resources",
+      "essential_collocations": [
+        {
+          "collocation": "die Verfügbarkeit prüfen",
+          "example": "Ich prüfe die Verfügbarkeit des Raums."
+        },
+        {
+          "collocation": "eingeschränkt verfügbar sein",
+          "example": "Der Service ist am Wochenende nur eingeschränkt verfügbar."
+        }
+      ]
+    },
+    {
+      "term": "die Beschwerde",
+      "plural": "die Beschwerden",
+      "cefr": "B1",
+      "english_equivalent": "complaint",
+      "corporate_context": "Customer service",
+      "essential_collocations": [
+        {
+          "collocation": "eine Beschwerde einreichen",
+          "example": "Der Kunde hat eine Beschwerde wegen der Lieferverzögerung eingereicht."
+        },
+        {
+          "collocation": "auf eine Beschwerde reagieren",
+          "example": "Wir müssen professionell auf die Beschwerde reagieren."
+        }
+      ]
+    },
+    {
+      "term": "die Reklamation",
+      "plural": "die Reklamationen",
+      "cefr": "B1+",
+      "english_equivalent": "claim / complaint about product",
+      "corporate_context": "Customer service",
+      "essential_collocations": [
+        {
+          "collocation": "eine Reklamation bearbeiten",
+          "example": "Unsere Abteilung bearbeitet Reklamationen innerhalb von fünf Werktagen."
+        },
+        {
+          "collocation": "eine Reklamation ablehnen",
+          "example": "Die Reklamation wurde wegen fehlender Rechnung abgelehnt."
+        }
+      ]
+    },
+    {
+      "term": "der Mangel",
+      "plural": "die Mängel",
+      "cefr": "B1+",
+      "english_equivalent": "defect / deficiency",
+      "corporate_context": "Quality and service",
+      "essential_collocations": [
+        {
+          "collocation": "einen Mangel melden",
+          "example": "Bitte melden Sie den Mangel schriftlich."
+        },
+        {
+          "collocation": "einen Mangel beheben",
+          "example": "Der Techniker konnte den Mangel noch nicht beheben."
+        }
+      ]
+    },
+    {
+      "term": "die Nachbesserung",
+      "plural": "die Nachbesserungen",
+      "cefr": "B2",
+      "english_equivalent": "rectification / rework",
+      "corporate_context": "Complaints and warranty",
+      "essential_collocations": [
+        {
+          "collocation": "eine Nachbesserung verlangen",
+          "example": "Wir verlangen eine kostenlose Nachbesserung innerhalb von 14 Tagen."
+        },
+        {
+          "collocation": "zur Nachbesserung auffordern",
+          "example": "Der Hersteller wurde zur Nachbesserung aufgefordert."
+        }
+      ]
+    },
+    {
+      "term": "die Ausfallzeit",
+      "plural": "die Ausfallzeiten",
+      "cefr": "B2",
+      "english_equivalent": "downtime",
+      "corporate_context": "Technical problems",
+      "essential_collocations": [
+        {
+          "collocation": "Ausfallzeiten vermeiden",
+          "example": "Durch regelmäßige Wartung lassen sich Ausfallzeiten vermeiden."
+        },
+        {
+          "collocation": "zu Ausfallzeiten führen",
+          "example": "Der Serverfehler führte zu langen Ausfallzeiten."
+        }
+      ]
+    },
+    {
+      "term": "die Inbetriebnahme",
+      "plural": "die Inbetriebnahmen",
+      "cefr": "B2",
+      "english_equivalent": "commissioning / start-up",
+      "corporate_context": "Technical systems",
+      "essential_collocations": [
+        {
+          "collocation": "nach der Inbetriebnahme",
+          "example": "Nach der Inbetriebnahme traten mehrere Störungen auf."
+        },
+        {
+          "collocation": "die Inbetriebnahme begleiten",
+          "example": "Ein Techniker begleitet die Inbetriebnahme der Anlage."
+        }
+      ]
+    },
+    {
+      "term": "der Engpass",
+      "plural": "die Engpässe",
+      "cefr": "B2",
+      "english_equivalent": "bottleneck / shortage",
+      "corporate_context": "Logistics and operations",
+      "essential_collocations": [
+        {
+          "collocation": "einen Engpass überwinden",
+          "example": "Durch einen neuen Lieferanten konnten wir den Engpass überwinden."
+        },
+        {
+          "collocation": "zu Lieferengpässen führen",
+          "example": "Die Streiks führen zu Lieferengpässen bei Rohstoffen."
+        }
+      ]
+    },
+    {
+      "term": "die Lieferverzögerung",
+      "plural": "die Lieferverzögerungen",
+      "cefr": "B1+",
+      "english_equivalent": "delivery delay",
+      "corporate_context": "Logistics",
+      "essential_collocations": [
+        {
+          "collocation": "eine Lieferverzögerung ankündigen",
+          "example": "Der Lieferant hat eine Lieferverzögerung angekündigt."
+        },
+        {
+          "collocation": "wegen einer Lieferverzögerung",
+          "example": "Wegen einer Lieferverzögerung müssen wir den Termin verschieben."
+        }
+      ]
+    },
+    {
+      "term": "die Maßnahme",
+      "plural": "die Maßnahmen",
+      "cefr": "B2",
+      "english_equivalent": "measure / action",
+      "corporate_context": "Management and problem solving",
+      "essential_collocations": [
+        {
+          "collocation": "Maßnahmen ergreifen",
+          "example": "Wir müssen sofort Maßnahmen ergreifen."
+        },
+        {
+          "collocation": "eine Maßnahme umsetzen",
+          "example": "Die Maßnahme wurde im gesamten Team umgesetzt."
+        }
+      ]
+    },
+    {
+      "term": "die Auswertung",
+      "plural": "die Auswertungen",
+      "cefr": "B1+",
+      "english_equivalent": "analysis / evaluation",
+      "corporate_context": "Reports and data",
+      "essential_collocations": [
+        {
+          "collocation": "eine Auswertung erstellen",
+          "example": "Ich erstelle bis Freitag eine Auswertung der Ergebnisse."
+        },
+        {
+          "collocation": "die Auswertung besprechen",
+          "example": "Wir besprechen die Auswertung im nächsten Meeting."
+        }
+      ]
+    },
+    {
+      "term": "die Einschätzung",
+      "plural": "die Einschätzungen",
+      "cefr": "B2",
+      "english_equivalent": "assessment / estimate",
+      "corporate_context": "Meetings and reports",
+      "essential_collocations": [
+        {
+          "collocation": "um eine Einschätzung bitten",
+          "example": "Ich bitte Sie um Ihre fachliche Einschätzung."
+        },
+        {
+          "collocation": "nach meiner Einschätzung",
+          "example": "Nach meiner Einschätzung ist der Zeitplan zu knapp."
+        }
+      ]
+    },
+    {
+      "term": "die Umsetzung",
+      "plural": "die Umsetzungen",
+      "cefr": "B2",
+      "english_equivalent": "implementation",
+      "corporate_context": "Project management",
+      "essential_collocations": [
+        {
+          "collocation": "die Umsetzung planen",
+          "example": "Wir planen die Umsetzung im nächsten Quartal."
+        },
+        {
+          "collocation": "bei der Umsetzung unterstützen",
+          "example": "Ich kann Sie bei der Umsetzung unterstützen."
+        }
+      ]
+    },
+    {
+      "term": "die Vereinbarung",
+      "plural": "die Vereinbarungen",
+      "cefr": "B1+",
+      "english_equivalent": "agreement",
+      "corporate_context": "Meetings/contracts",
+      "essential_collocations": [
+        {
+          "collocation": "eine Vereinbarung treffen",
+          "example": "Wir haben eine klare Vereinbarung getroffen."
+        },
+        {
+          "collocation": "sich an eine Vereinbarung halten",
+          "example": "Bitte halten Sie sich an die getroffene Vereinbarung."
+        }
+      ]
+    },
+    {
+      "term": "die Verhandlung",
+      "plural": "die Verhandlungen",
+      "cefr": "B2",
+      "english_equivalent": "negotiation",
+      "corporate_context": "Business negotiation",
+      "essential_collocations": [
+        {
+          "collocation": "Verhandlungen führen",
+          "example": "Die Geschäftsführung führt Verhandlungen mit dem Betriebsrat."
+        },
+        {
+          "collocation": "in Verhandlungen stehen",
+          "example": "Das Unternehmen steht mit mehreren Partnern in Verhandlungen."
+        }
+      ]
+    },
+    {
+      "term": "die Abfindung",
+      "plural": "die Abfindungen",
+      "cefr": "B2+",
+      "english_equivalent": "severance payment",
+      "corporate_context": "HR and termination",
+      "essential_collocations": [
+        {
+          "collocation": "eine Abfindung vereinbaren",
+          "example": "Nach der betriebsbedingten Kündigung wurde eine Abfindung vereinbart."
+        },
+        {
+          "collocation": "Anspruch auf eine Abfindung haben",
+          "example": "Nicht jeder Beschäftigte hat automatisch Anspruch auf eine Abfindung."
+        }
+      ]
+    },
+    {
+      "term": "die Umsatzrentabilität",
+      "plural": "die Umsatzrentabilitäten",
+      "cefr": "B2+",
+      "english_equivalent": "return on sales",
+      "corporate_context": "Finance and reporting",
+      "essential_collocations": [
+        {
+          "collocation": "die Umsatzrentabilität steigern",
+          "example": "Durch Kostensenkungen wurde die Umsatzrentabilität gesteigert."
+        },
+        {
+          "collocation": "eine niedrige Umsatzrentabilität",
+          "example": "Eine niedrige Umsatzrentabilität weist auf Effizienzprobleme hin."
+        }
+      ]
+    },
+    {
+      "term": "die Kostenstelle",
+      "plural": "die Kostenstellen",
+      "cefr": "B2",
+      "english_equivalent": "cost center",
+      "corporate_context": "Accounting",
+      "essential_collocations": [
+        {
+          "collocation": "einer Kostenstelle zuordnen",
+          "example": "Die Ausgabe muss der richtigen Kostenstelle zugeordnet werden."
+        },
+        {
+          "collocation": "eine Kostenstelle anlegen",
+          "example": "Für das neue Projekt wird eine eigene Kostenstelle angelegt."
+        }
+      ]
+    },
+    {
+      "term": "die Schnittstelle",
+      "plural": "die Schnittstellen",
+      "cefr": "B2",
+      "english_equivalent": "interface / point of contact",
+      "corporate_context": "IT and organization",
+      "essential_collocations": [
+        {
+          "collocation": "eine Schnittstelle einrichten",
+          "example": "Die IT richtet eine Schnittstelle zwischen den Systemen ein."
+        },
+        {
+          "collocation": "als Schnittstelle fungieren",
+          "example": "Sie fungiert als Schnittstelle zwischen Vertrieb und Technik."
+        }
+      ]
+    },
+    {
+      "term": "die Ausschreibung",
+      "plural": "die Ausschreibungen",
+      "cefr": "B2",
+      "english_equivalent": "tender / call for bids",
+      "corporate_context": "Procurement",
+      "essential_collocations": [
+        {
+          "collocation": "an einer Ausschreibung teilnehmen",
+          "example": "Unser Unternehmen nimmt an der öffentlichen Ausschreibung teil."
+        },
+        {
+          "collocation": "eine Ausschreibung veröffentlichen",
+          "example": "Die Stadt hat eine neue Ausschreibung veröffentlicht."
+        }
+      ]
+    },
+    {
+      "term": "der Lieferant",
+      "plural": "die Lieferanten",
+      "cefr": "B1+",
+      "english_equivalent": "supplier",
+      "corporate_context": "Procurement",
+      "essential_collocations": [
+        {
+          "collocation": "mit einem Lieferanten verhandeln",
+          "example": "Wir verhandeln mit einem neuen Lieferanten über bessere Konditionen."
+        },
+        {
+          "collocation": "einen Lieferanten bewerten",
+          "example": "Die Einkaufsabteilung bewertet die Lieferanten jährlich."
+        }
+      ]
+    },
+    {
+      "term": "der Kunde",
+      "plural": "die Kunden",
+      "cefr": "B1",
+      "english_equivalent": "customer / client",
+      "corporate_context": "Customer contact",
+      "essential_collocations": [
+        {
+          "collocation": "einen Kunden beraten",
+          "example": "Ich berate den Kunden zu den verfügbaren Optionen."
+        },
+        {
+          "collocation": "mit dem Kunden klären",
+          "example": "Wir müssen den Termin mit dem Kunden klären."
+        }
+      ]
+    },
+    {
+      "term": "der Praktikant",
+      "plural": "die Praktikanten",
+      "cefr": "B1",
+      "english_equivalent": "intern",
+      "corporate_context": "Workplace roles",
+      "essential_collocations": [
+        {
+          "collocation": "einen Praktikanten einarbeiten",
+          "example": "Ich arbeite den neuen Praktikanten ein."
+        },
+        {
+          "collocation": "mit dem Praktikanten sprechen",
+          "example": "Bitte sprechen Sie mit dem Praktikanten über die Aufgabe."
+        }
+      ]
+    },
+    {
+      "term": "der Angestellte",
+      "plural": "die Angestellten",
+      "cefr": "B1+",
+      "english_equivalent": "employee",
+      "corporate_context": "Employment",
+      "essential_collocations": [
+        {
+          "collocation": "ein neuer Angestellter",
+          "example": "Ein neuer Angestellter beginnt am Montag."
+        },
+        {
+          "collocation": "die Angestellten informieren",
+          "example": "Die Angestellten wurden über die Änderung informiert."
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "prod_vocab_001",
+      "word": "die Abteilung, die Abteilungen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Company structure"
+      ],
+      "translations": {
+        "English": "department",
+        "French": "service / département",
+        "Arabic": "قسم",
+        "Persian": "بخش",
+        "Ukrainian": "відділ",
+        "Spanish": "departamento",
+        "Polish": "dział",
+        "Turkish": "departman / bölüm",
+        "Russian": "отдел"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Abteilung",
+          "plural": "die Abteilungen"
+        },
+        "example_de": "Ich arbeite seit zwei Jahren in der IT-Abteilung.",
+        "explanation": "Company structure. Collocations: in einer Abteilung arbeiten; eine Abteilung leiten.",
+        "collocations": [
+          {
+            "collocation": "in einer Abteilung arbeiten",
+            "example": "Ich arbeite seit zwei Jahren in der IT-Abteilung."
+          },
+          {
+            "collocation": "eine Abteilung leiten",
+            "example": "Sie leitet die Abteilung für Kundenservice."
+          }
+        ],
+        "corporate_context": "Company structure",
+        "translations": {
+          "English": "department",
+          "French": "service / département",
+          "Arabic": "قسم",
+          "Persian": "بخش",
+          "Ukrainian": "відділ",
+          "Spanish": "departamento",
+          "Polish": "dział",
+          "Turkish": "departman / bölüm",
+          "Russian": "отдел"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_002",
+      "word": "der Ansprechpartner, die Ansprechpartner",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Customer/service communication"
+      ],
+      "translations": {
+        "English": "contact person",
+        "French": "interlocuteur / personne de contact",
+        "Arabic": "الشخص المسؤول للتواصل",
+        "Persian": "فرد تماس",
+        "Ukrainian": "контактна особа",
+        "Spanish": "persona de contacto",
+        "Polish": "osoba kontaktowa",
+        "Turkish": "irtibat kişisi",
+        "Russian": "контактное лицо"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Ansprechpartner",
+          "plural": "die Ansprechpartner"
+        },
+        "example_de": "Ich suche den richtigen Ansprechpartner für diese Anfrage.",
+        "explanation": "Customer/service communication. Collocations: den richtigen Ansprechpartner finden; an den Ansprechpartner weiterleiten.",
+        "collocations": [
+          {
+            "collocation": "den richtigen Ansprechpartner finden",
+            "example": "Ich suche den richtigen Ansprechpartner für diese Anfrage."
+          },
+          {
+            "collocation": "an den Ansprechpartner weiterleiten",
+            "example": "Ich leite Ihre Nachricht an den zuständigen Ansprechpartner weiter."
+          }
+        ],
+        "corporate_context": "Customer/service communication",
+        "translations": {
+          "English": "contact person",
+          "French": "interlocuteur / personne de contact",
+          "Arabic": "الشخص المسؤول للتواصل",
+          "Persian": "فرد تماس",
+          "Ukrainian": "контактна особа",
+          "Spanish": "persona de contacto",
+          "Polish": "osoba kontaktowa",
+          "Turkish": "irtibat kişisi",
+          "Russian": "контактное лицо"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_003",
+      "word": "die Anfrage, die Anfragen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Email and service desk"
+      ],
+      "translations": {
+        "English": "inquiry / request",
+        "French": "demande / requête",
+        "Arabic": "استفسار / طلب",
+        "Persian": "درخواست / پرس‌وجو",
+        "Ukrainian": "запит",
+        "Spanish": "consulta / solicitud",
+        "Polish": "zapytanie / wniosek",
+        "Turkish": "talep / soru",
+        "Russian": "запрос"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Anfrage",
+          "plural": "die Anfragen"
+        },
+        "example_de": "Vielen Dank für Ihre Anfrage; wir melden uns bis Freitag.",
+        "explanation": "Email and service desk. Collocations: auf eine Anfrage antworten; eine Anfrage bearbeiten.",
+        "collocations": [
+          {
+            "collocation": "auf eine Anfrage antworten",
+            "example": "Vielen Dank für Ihre Anfrage; wir melden uns bis Freitag."
+          },
+          {
+            "collocation": "eine Anfrage bearbeiten",
+            "example": "Unsere Abteilung bearbeitet täglich viele Kundenanfragen."
+          }
+        ],
+        "corporate_context": "Email and service desk",
+        "translations": {
+          "English": "inquiry / request",
+          "French": "demande / requête",
+          "Arabic": "استفسار / طلب",
+          "Persian": "درخواست / پرس‌وجو",
+          "Ukrainian": "запит",
+          "Spanish": "consulta / solicitud",
+          "Polish": "zapytanie / wniosek",
+          "Turkish": "talep / soru",
+          "Russian": "запрос"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_004",
+      "word": "der Ablauf, die Abläufe",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Work organization"
+      ],
+      "translations": {
+        "English": "process / procedure",
+        "French": "déroulement / procédure",
+        "Arabic": "سير العملية / إجراء",
+        "Persian": "فرایند / روند",
+        "Ukrainian": "процес / порядок дій",
+        "Spanish": "proceso / procedimiento",
+        "Polish": "przebieg / procedura",
+        "Turkish": "süreç / prosedür",
+        "Russian": "процесс / порядок"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Ablauf",
+          "plural": "die Abläufe"
+        },
+        "example_de": "Könnten Sie mir den Ablauf bitte kurz erklären?",
+        "explanation": "Work organization. Collocations: den Ablauf erklären; einen Ablauf verbessern.",
+        "collocations": [
+          {
+            "collocation": "den Ablauf erklären",
+            "example": "Könnten Sie mir den Ablauf bitte kurz erklären?"
+          },
+          {
+            "collocation": "einen Ablauf verbessern",
+            "example": "Wir möchten den Ablauf im Bewerbungsprozess verbessern."
+          }
+        ],
+        "corporate_context": "Work organization",
+        "translations": {
+          "English": "process / procedure",
+          "French": "déroulement / procédure",
+          "Arabic": "سير العملية / إجراء",
+          "Persian": "فرایند / روند",
+          "Ukrainian": "процес / порядок дій",
+          "Spanish": "proceso / procedimiento",
+          "Polish": "przebieg / procedura",
+          "Turkish": "süreç / prosedür",
+          "Russian": "процесс / порядок"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_005",
+      "word": "die Unterlage, die Unterlagen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Administration"
+      ],
+      "translations": {
+        "English": "document / file",
+        "French": "document / dossier",
+        "Arabic": "مستند / ملف",
+        "Persian": "مدرک / پرونده",
+        "Ukrainian": "документ / матеріали",
+        "Spanish": "documento / expediente",
+        "Polish": "dokument / akta",
+        "Turkish": "belge / dosya",
+        "Russian": "документ / материалы"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Unterlage",
+          "plural": "die Unterlagen"
+        },
+        "example_de": "Bitte reichen Sie die fehlenden Unterlagen bis Montag ein.",
+        "explanation": "Administration. Collocations: Unterlagen einreichen; Unterlagen beifügen.",
+        "collocations": [
+          {
+            "collocation": "Unterlagen einreichen",
+            "example": "Bitte reichen Sie die fehlenden Unterlagen bis Montag ein."
+          },
+          {
+            "collocation": "Unterlagen beifügen",
+            "example": "Ich habe die Unterlagen meiner Bewerbung beigefügt."
+          }
+        ],
+        "corporate_context": "Administration",
+        "translations": {
+          "English": "document / file",
+          "French": "document / dossier",
+          "Arabic": "مستند / ملف",
+          "Persian": "مدرک / پرونده",
+          "Ukrainian": "документ / матеріали",
+          "Spanish": "documento / expediente",
+          "Polish": "dokument / akta",
+          "Turkish": "belge / dosya",
+          "Russian": "документ / материалы"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_006",
+      "word": "die Rückmeldung, die Rückmeldungen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Emails and follow-up"
+      ],
+      "translations": {
+        "English": "feedback / response",
+        "French": "retour / réponse",
+        "Arabic": "رد / ملاحظات",
+        "Persian": "بازخورد / پاسخ",
+        "Ukrainian": "відгук / відповідь",
+        "Spanish": "respuesta / comentario",
+        "Polish": "informacja zwrotna / odpowiedź",
+        "Turkish": "geri bildirim / yanıt",
+        "Russian": "обратная связь / ответ"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Rückmeldung",
+          "plural": "die Rückmeldungen"
+        },
+        "example_de": "Ich bitte um eine kurze Rückmeldung bis Ende der Woche.",
+        "explanation": "Emails and follow-up. Collocations: um Rückmeldung bitten; eine Rückmeldung erhalten.",
+        "collocations": [
+          {
+            "collocation": "um Rückmeldung bitten",
+            "example": "Ich bitte um eine kurze Rückmeldung bis Ende der Woche."
+          },
+          {
+            "collocation": "eine Rückmeldung erhalten",
+            "example": "Bisher habe ich noch keine Rückmeldung erhalten."
+          }
+        ],
+        "corporate_context": "Emails and follow-up",
+        "translations": {
+          "English": "feedback / response",
+          "French": "retour / réponse",
+          "Arabic": "رد / ملاحظات",
+          "Persian": "بازخورد / پاسخ",
+          "Ukrainian": "відгук / відповідь",
+          "Spanish": "respuesta / comentario",
+          "Polish": "informacja zwrotna / odpowiedź",
+          "Turkish": "geri bildirim / yanıt",
+          "Russian": "обратная связь / ответ"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_007",
+      "word": "die Besprechung, die Besprechungen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Office communication"
+      ],
+      "translations": {
+        "English": "meeting",
+        "French": "réunion",
+        "Arabic": "اجتماع",
+        "Persian": "جلسه",
+        "Ukrainian": "нарада / зустріч",
+        "Spanish": "reunión",
+        "Polish": "spotkanie / narada",
+        "Turkish": "toplantı",
+        "Russian": "совещание / встреча"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Besprechung",
+          "plural": "die Besprechungen"
+        },
+        "example_de": "Ich nehme morgen an einer Besprechung mit dem Team teil.",
+        "explanation": "Office communication. Collocations: an einer Besprechung teilnehmen; eine Besprechung verschieben.",
+        "collocations": [
+          {
+            "collocation": "an einer Besprechung teilnehmen",
+            "example": "Ich nehme morgen an einer Besprechung mit dem Team teil."
+          },
+          {
+            "collocation": "eine Besprechung verschieben",
+            "example": "Die Besprechung musste wegen Krankheit verschoben werden."
+          }
+        ],
+        "corporate_context": "Office communication",
+        "translations": {
+          "English": "meeting",
+          "French": "réunion",
+          "Arabic": "اجتماع",
+          "Persian": "جلسه",
+          "Ukrainian": "нарада / зустріч",
+          "Spanish": "reunión",
+          "Polish": "spotkanie / narada",
+          "Turkish": "toplantı",
+          "Russian": "совещание / встреча"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_008",
+      "word": "die Frist, die Fristen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Administration and contracts"
+      ],
+      "translations": {
+        "English": "deadline",
+        "French": "délai / échéance",
+        "Arabic": "موعد نهائي / مهلة",
+        "Persian": "مهلت / ضرب‌الاجل",
+        "Ukrainian": "термін / крайній строк",
+        "Spanish": "plazo / fecha límite",
+        "Polish": "termin / ostateczny termin",
+        "Turkish": "son tarih / süre",
+        "Russian": "срок"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Frist",
+          "plural": "die Fristen"
+        },
+        "example_de": "Leider konnten wir die Frist nicht einhalten.",
+        "explanation": "Administration and contracts. Collocations: eine Frist einhalten; eine Frist verlängern.",
+        "collocations": [
+          {
+            "collocation": "eine Frist einhalten",
+            "example": "Leider konnten wir die Frist nicht einhalten."
+          },
+          {
+            "collocation": "eine Frist verlängern",
+            "example": "Könnten Sie die Frist um zwei Tage verlängern?"
+          }
+        ],
+        "corporate_context": "Administration and contracts",
+        "translations": {
+          "English": "deadline",
+          "French": "délai / échéance",
+          "Arabic": "موعد نهائي / مهلة",
+          "Persian": "مهلت / ضرب‌الاجل",
+          "Ukrainian": "термін / крайній строк",
+          "Spanish": "plazo / fecha límite",
+          "Polish": "termin / ostateczny termin",
+          "Turkish": "son tarih / süre",
+          "Russian": "срок"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_009",
+      "word": "der Vertrag, die Verträge",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Employment and services"
+      ],
+      "translations": {
+        "English": "contract",
+        "French": "contrat",
+        "Arabic": "عقد",
+        "Persian": "قرارداد",
+        "Ukrainian": "договір / контракт",
+        "Spanish": "contrato",
+        "Polish": "umowa",
+        "Turkish": "sözleşme",
+        "Russian": "договор / контракт"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Vertrag",
+          "plural": "die Verträge"
+        },
+        "example_de": "Ich habe den Arbeitsvertrag gestern unterschrieben.",
+        "explanation": "Employment and services. Collocations: einen Vertrag unterschreiben; einen Vertrag kündigen.",
+        "collocations": [
+          {
+            "collocation": "einen Vertrag unterschreiben",
+            "example": "Ich habe den Arbeitsvertrag gestern unterschrieben."
+          },
+          {
+            "collocation": "einen Vertrag kündigen",
+            "example": "Der Vertrag kann mit einer Frist von drei Monaten gekündigt werden."
+          }
+        ],
+        "corporate_context": "Employment and services",
+        "translations": {
+          "English": "contract",
+          "French": "contrat",
+          "Arabic": "عقد",
+          "Persian": "قرارداد",
+          "Ukrainian": "договір / контракт",
+          "Spanish": "contrato",
+          "Polish": "umowa",
+          "Turkish": "sözleşme",
+          "Russian": "договор / контракт"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_010",
+      "word": "die Kündigung, die Kündigungen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Employment and contracts"
+      ],
+      "translations": {
+        "English": "termination / notice",
+        "French": "résiliation / licenciement",
+        "Arabic": "إنهاء العقد / إشعار فصل",
+        "Persian": "فسخ قرارداد / استعفا",
+        "Ukrainian": "звільнення / розірвання договору",
+        "Spanish": "rescisión / despido / renuncia",
+        "Polish": "wypowiedzenie / rozwiązanie umowy",
+        "Turkish": "fesih / işten ayrılma bildirimi",
+        "Russian": "увольнение / расторжение"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Kündigung",
+          "plural": "die Kündigungen"
+        },
+        "example_de": "Er hat gestern die Kündigung erhalten.",
+        "explanation": "Employment and contracts. Collocations: eine Kündigung erhalten; eine Kündigung einreichen.",
+        "collocations": [
+          {
+            "collocation": "eine Kündigung erhalten",
+            "example": "Er hat gestern die Kündigung erhalten."
+          },
+          {
+            "collocation": "eine Kündigung einreichen",
+            "example": "Sie hat ihre Kündigung schriftlich eingereicht."
+          }
+        ],
+        "corporate_context": "Employment and contracts",
+        "translations": {
+          "English": "termination / notice",
+          "French": "résiliation / licenciement",
+          "Arabic": "إنهاء العقد / إشعار فصل",
+          "Persian": "فسخ قرارداد / استعفا",
+          "Ukrainian": "звільнення / розірвання договору",
+          "Spanish": "rescisión / despido / renuncia",
+          "Polish": "wypowiedzenie / rozwiązanie umowy",
+          "Turkish": "fesih / işten ayrılma bildirimi",
+          "Russian": "увольнение / расторжение"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_011",
+      "word": "die Krankmeldung, die Krankmeldungen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Workplace absence"
+      ],
+      "translations": {
+        "English": "sick note / absence notice",
+        "French": "avis d’absence maladie",
+        "Arabic": "إشعار مرضي",
+        "Persian": "اعلام بیماری / گواهی بیماری",
+        "Ukrainian": "повідомлення про хворобу",
+        "Spanish": "baja médica / aviso de enfermedad",
+        "Polish": "zgłoszenie choroby / zwolnienie",
+        "Turkish": "hastalık bildirimi / rapor",
+        "Russian": "сообщение о болезни / больничный"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Krankmeldung",
+          "plural": "die Krankmeldungen"
+        },
+        "example_de": "Bitte schicken Sie die Krankmeldung an die Personalabteilung.",
+        "explanation": "Workplace absence. Collocations: eine Krankmeldung schicken; sich krankmelden.",
+        "collocations": [
+          {
+            "collocation": "eine Krankmeldung schicken",
+            "example": "Bitte schicken Sie die Krankmeldung an die Personalabteilung."
+          },
+          {
+            "collocation": "sich krankmelden",
+            "example": "Ich muss mich heute krankmelden, weil ich Fieber habe."
+          }
+        ],
+        "corporate_context": "Workplace absence",
+        "translations": {
+          "English": "sick note / absence notice",
+          "French": "avis d’absence maladie",
+          "Arabic": "إشعار مرضي",
+          "Persian": "اعلام بیماری / گواهی بیماری",
+          "Ukrainian": "повідомлення про хворобу",
+          "Spanish": "baja médica / aviso de enfermedad",
+          "Polish": "zgłoszenie choroby / zwolnienie",
+          "Turkish": "hastalık bildirimi / rapor",
+          "Russian": "сообщение о болезни / больничный"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_012",
+      "word": "die Einarbeitung, die Einarbeitungen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Starting a job"
+      ],
+      "translations": {
+        "English": "onboarding / induction",
+        "French": "intégration / formation initiale",
+        "Arabic": "التهيئة للعمل / التدريب الأولي",
+        "Persian": "آموزش ورود به کار / آشنایی شغلی",
+        "Ukrainian": "введення в роботу / адаптація",
+        "Spanish": "incorporación / formación inicial",
+        "Polish": "wdrożenie do pracy",
+        "Turkish": "işe alıştırma / oryantasyon",
+        "Russian": "введение в должность / адаптация"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Einarbeitung",
+          "plural": "die Einarbeitungen"
+        },
+        "example_de": "Meine Kollegin übernimmt meine Einarbeitung.",
+        "explanation": "Starting a job. Collocations: die Einarbeitung übernehmen; während der Einarbeitung.",
+        "collocations": [
+          {
+            "collocation": "die Einarbeitung übernehmen",
+            "example": "Meine Kollegin übernimmt meine Einarbeitung."
+          },
+          {
+            "collocation": "während der Einarbeitung",
+            "example": "Während der Einarbeitung lerne ich die internen Abläufe."
+          }
+        ],
+        "corporate_context": "Starting a job",
+        "translations": {
+          "English": "onboarding / induction",
+          "French": "intégration / formation initiale",
+          "Arabic": "التهيئة للعمل / التدريب الأولي",
+          "Persian": "آموزش ورود به کار / آشنایی شغلی",
+          "Ukrainian": "введення в роботу / адаптація",
+          "Spanish": "incorporación / formación inicial",
+          "Polish": "wdrożenie do pracy",
+          "Turkish": "işe alıştırma / oryantasyon",
+          "Russian": "введение в должность / адаптация"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_013",
+      "word": "die Zuständigkeit, die Zuständigkeiten",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Work organization"
+      ],
+      "translations": {
+        "English": "responsibility / area of competence",
+        "French": "compétence / responsabilité",
+        "Arabic": "المسؤولية / الاختصاص",
+        "Persian": "مسئولیت / حوزه اختیار",
+        "Ukrainian": "відповідальність / компетенція",
+        "Spanish": "responsabilidad / competencia",
+        "Polish": "odpowiedzialność / zakres kompetencji",
+        "Turkish": "sorumluluk / yetki alanı",
+        "Russian": "ответственность / компетенция"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Zuständigkeit",
+          "plural": "die Zuständigkeiten"
+        },
+        "example_de": "Diese Aufgabe fällt nicht in meine Zuständigkeit.",
+        "explanation": "Work organization. Collocations: in die Zuständigkeit fallen; Zuständigkeiten klären.",
+        "collocations": [
+          {
+            "collocation": "in die Zuständigkeit fallen",
+            "example": "Diese Aufgabe fällt nicht in meine Zuständigkeit."
+          },
+          {
+            "collocation": "Zuständigkeiten klären",
+            "example": "Wir müssen die Zuständigkeiten im Team klären."
+          }
+        ],
+        "corporate_context": "Work organization",
+        "translations": {
+          "English": "responsibility / area of competence",
+          "French": "compétence / responsabilité",
+          "Arabic": "المسؤولية / الاختصاص",
+          "Persian": "مسئولیت / حوزه اختیار",
+          "Ukrainian": "відповідальність / компетенція",
+          "Spanish": "responsabilidad / competencia",
+          "Polish": "odpowiedzialność / zakres kompetencji",
+          "Turkish": "sorumluluk / yetki alanı",
+          "Russian": "ответственность / компетенция"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_014",
+      "word": "die Voraussetzung, die Voraussetzungen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Job ads and applications"
+      ],
+      "translations": {
+        "English": "requirement / prerequisite",
+        "French": "condition préalable / exigence",
+        "Arabic": "شرط / متطلب",
+        "Persian": "پیش‌نیاز / شرط",
+        "Ukrainian": "вимога / передумова",
+        "Spanish": "requisito / condición previa",
+        "Polish": "wymóg / warunek wstępny",
+        "Turkish": "ön koşul / gereklilik",
+        "Russian": "условие / требование"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Voraussetzung",
+          "plural": "die Voraussetzungen"
+        },
+        "example_de": "Ich erfülle die wichtigsten Voraussetzungen für die Stelle.",
+        "explanation": "Job ads and applications. Collocations: eine Voraussetzung erfüllen; unter bestimmten Voraussetzungen.",
+        "collocations": [
+          {
+            "collocation": "eine Voraussetzung erfüllen",
+            "example": "Ich erfülle die wichtigsten Voraussetzungen für die Stelle."
+          },
+          {
+            "collocation": "unter bestimmten Voraussetzungen",
+            "example": "Unter bestimmten Voraussetzungen ist Homeoffice möglich."
+          }
+        ],
+        "corporate_context": "Job ads and applications",
+        "translations": {
+          "English": "requirement / prerequisite",
+          "French": "condition préalable / exigence",
+          "Arabic": "شرط / متطلب",
+          "Persian": "پیش‌نیاز / شرط",
+          "Ukrainian": "вимога / передумова",
+          "Spanish": "requisito / condición previa",
+          "Polish": "wymóg / warunek wstępny",
+          "Turkish": "ön koşul / gereklilik",
+          "Russian": "условие / требование"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_015",
+      "word": "die Belastung, die Belastungen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Health and work"
+      ],
+      "translations": {
+        "English": "workload / strain",
+        "French": "charge / contrainte",
+        "Arabic": "عبء / ضغط",
+        "Persian": "فشار / بار کاری",
+        "Ukrainian": "навантаження",
+        "Spanish": "carga / presión",
+        "Polish": "obciążenie",
+        "Turkish": "yük / zorlanma",
+        "Russian": "нагрузка"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Belastung",
+          "plural": "die Belastungen"
+        },
+        "example_de": "Wir müssen die Belastung im Team reduzieren.",
+        "explanation": "Health and work. Collocations: die Belastung reduzieren; unter hoher Belastung arbeiten.",
+        "collocations": [
+          {
+            "collocation": "die Belastung reduzieren",
+            "example": "Wir müssen die Belastung im Team reduzieren."
+          },
+          {
+            "collocation": "unter hoher Belastung arbeiten",
+            "example": "Unter hoher Belastung passieren schneller Fehler."
+          }
+        ],
+        "corporate_context": "Health and work",
+        "translations": {
+          "English": "workload / strain",
+          "French": "charge / contrainte",
+          "Arabic": "عبء / ضغط",
+          "Persian": "فشار / بار کاری",
+          "Ukrainian": "навантаження",
+          "Spanish": "carga / presión",
+          "Polish": "obciążenie",
+          "Turkish": "yük / zorlanma",
+          "Russian": "нагрузка"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_016",
+      "word": "die Weiterbildung, die Weiterbildungen",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Career development"
+      ],
+      "translations": {
+        "English": "professional training / continuing education",
+        "French": "formation continue",
+        "Arabic": "تدريب مهني مستمر",
+        "Persian": "آموزش تکمیلی / توسعه حرفه‌ای",
+        "Ukrainian": "підвищення кваліфікації",
+        "Spanish": "formación continua",
+        "Polish": "dokształcanie / szkolenie zawodowe",
+        "Turkish": "mesleki eğitim / gelişim",
+        "Russian": "повышение квалификации"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Weiterbildung",
+          "plural": "die Weiterbildungen"
+        },
+        "example_de": "Ich möchte an einer Weiterbildung im Bereich Datenanalyse teilnehmen.",
+        "explanation": "Career development. Collocations: an einer Weiterbildung teilnehmen; eine Weiterbildung finanzieren.",
+        "collocations": [
+          {
+            "collocation": "an einer Weiterbildung teilnehmen",
+            "example": "Ich möchte an einer Weiterbildung im Bereich Datenanalyse teilnehmen."
+          },
+          {
+            "collocation": "eine Weiterbildung finanzieren",
+            "example": "Der Arbeitgeber finanziert eine Weiterbildung."
+          }
+        ],
+        "corporate_context": "Career development",
+        "translations": {
+          "English": "professional training / continuing education",
+          "French": "formation continue",
+          "Arabic": "تدريب مهني مستمر",
+          "Persian": "آموزش تکمیلی / توسعه حرفه‌ای",
+          "Ukrainian": "підвищення кваліфікації",
+          "Spanish": "formación continua",
+          "Polish": "dokształcanie / szkolenie zawodowe",
+          "Turkish": "mesleki eğitim / gelişim",
+          "Russian": "повышение квалификации"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_017",
+      "word": "die Verfügbarkeit, die Verfügbarkeiten",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Scheduling and resources"
+      ],
+      "translations": {
+        "English": "availability",
+        "French": "disponibilité",
+        "Arabic": "التوفر",
+        "Persian": "دسترسی‌پذیری / موجود بودن",
+        "Ukrainian": "доступність / наявність",
+        "Spanish": "disponibilidad",
+        "Polish": "dostępność",
+        "Turkish": "uygunluk / kullanılabilirlik",
+        "Russian": "доступность / наличие"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Verfügbarkeit",
+          "plural": "die Verfügbarkeiten"
+        },
+        "example_de": "Ich prüfe die Verfügbarkeit des Raums.",
+        "explanation": "Scheduling and resources. Collocations: die Verfügbarkeit prüfen; eingeschränkt verfügbar sein.",
+        "collocations": [
+          {
+            "collocation": "die Verfügbarkeit prüfen",
+            "example": "Ich prüfe die Verfügbarkeit des Raums."
+          },
+          {
+            "collocation": "eingeschränkt verfügbar sein",
+            "example": "Der Service ist am Wochenende nur eingeschränkt verfügbar."
+          }
+        ],
+        "corporate_context": "Scheduling and resources",
+        "translations": {
+          "English": "availability",
+          "French": "disponibilité",
+          "Arabic": "التوفر",
+          "Persian": "دسترسی‌پذیری / موجود بودن",
+          "Ukrainian": "доступність / наявність",
+          "Spanish": "disponibilidad",
+          "Polish": "dostępność",
+          "Turkish": "uygunluk / kullanılabilirlik",
+          "Russian": "доступность / наличие"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_018",
+      "word": "die Beschwerde, die Beschwerden",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Customer service"
+      ],
+      "translations": {
+        "English": "complaint",
+        "French": "réclamation / plainte",
+        "Arabic": "شكوى",
+        "Persian": "شکایت",
+        "Ukrainian": "скарга",
+        "Spanish": "queja / reclamación",
+        "Polish": "skarga / reklamacja",
+        "Turkish": "şikâyet",
+        "Russian": "жалоба"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Beschwerde",
+          "plural": "die Beschwerden"
+        },
+        "example_de": "Der Kunde hat eine Beschwerde wegen der Lieferverzögerung eingereicht.",
+        "explanation": "Customer service. Collocations: eine Beschwerde einreichen; auf eine Beschwerde reagieren.",
+        "collocations": [
+          {
+            "collocation": "eine Beschwerde einreichen",
+            "example": "Der Kunde hat eine Beschwerde wegen der Lieferverzögerung eingereicht."
+          },
+          {
+            "collocation": "auf eine Beschwerde reagieren",
+            "example": "Wir müssen professionell auf die Beschwerde reagieren."
+          }
+        ],
+        "corporate_context": "Customer service",
+        "translations": {
+          "English": "complaint",
+          "French": "réclamation / plainte",
+          "Arabic": "شكوى",
+          "Persian": "شکایت",
+          "Ukrainian": "скарга",
+          "Spanish": "queja / reclamación",
+          "Polish": "skarga / reklamacja",
+          "Turkish": "şikâyet",
+          "Russian": "жалоба"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_019",
+      "word": "die Reklamation, die Reklamationen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Customer service"
+      ],
+      "translations": {
+        "English": "product complaint / claim",
+        "French": "réclamation produit",
+        "Arabic": "مطالبة / شكوى بخصوص المنتج",
+        "Persian": "شکایت کالا / مطالبه",
+        "Ukrainian": "рекламація / претензія",
+        "Spanish": "reclamación de producto",
+        "Polish": "reklamacja",
+        "Turkish": "ürün şikâyeti / talep",
+        "Russian": "рекламация / претензия"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Reklamation",
+          "plural": "die Reklamationen"
+        },
+        "example_de": "Unsere Abteilung bearbeitet Reklamationen innerhalb von fünf Werktagen.",
+        "explanation": "Customer service. Collocations: eine Reklamation bearbeiten; eine Reklamation ablehnen.",
+        "collocations": [
+          {
+            "collocation": "eine Reklamation bearbeiten",
+            "example": "Unsere Abteilung bearbeitet Reklamationen innerhalb von fünf Werktagen."
+          },
+          {
+            "collocation": "eine Reklamation ablehnen",
+            "example": "Die Reklamation wurde wegen fehlender Rechnung abgelehnt."
+          }
+        ],
+        "corporate_context": "Customer service",
+        "translations": {
+          "English": "product complaint / claim",
+          "French": "réclamation produit",
+          "Arabic": "مطالبة / شكوى بخصوص المنتج",
+          "Persian": "شکایت کالا / مطالبه",
+          "Ukrainian": "рекламація / претензія",
+          "Spanish": "reclamación de producto",
+          "Polish": "reklamacja",
+          "Turkish": "ürün şikâyeti / talep",
+          "Russian": "рекламация / претензия"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_020",
+      "word": "der Mangel, die Mängel",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Quality and service"
+      ],
+      "translations": {
+        "English": "defect / deficiency",
+        "French": "défaut / insuffisance",
+        "Arabic": "عيب / نقص",
+        "Persian": "نقص / عیب",
+        "Ukrainian": "дефект / недолік",
+        "Spanish": "defecto / deficiencia",
+        "Polish": "wada / brak",
+        "Turkish": "kusur / eksiklik",
+        "Russian": "дефект / недостаток"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Mangel",
+          "plural": "die Mängel"
+        },
+        "example_de": "Bitte melden Sie den Mangel schriftlich.",
+        "explanation": "Quality and service. Collocations: einen Mangel melden; einen Mangel beheben.",
+        "collocations": [
+          {
+            "collocation": "einen Mangel melden",
+            "example": "Bitte melden Sie den Mangel schriftlich."
+          },
+          {
+            "collocation": "einen Mangel beheben",
+            "example": "Der Techniker konnte den Mangel noch nicht beheben."
+          }
+        ],
+        "corporate_context": "Quality and service",
+        "translations": {
+          "English": "defect / deficiency",
+          "French": "défaut / insuffisance",
+          "Arabic": "عيب / نقص",
+          "Persian": "نقص / عیب",
+          "Ukrainian": "дефект / недолік",
+          "Spanish": "defecto / deficiencia",
+          "Polish": "wada / brak",
+          "Turkish": "kusur / eksiklik",
+          "Russian": "дефект / недостаток"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_021",
+      "word": "die Nachbesserung, die Nachbesserungen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Complaints and warranty"
+      ],
+      "translations": {
+        "English": "rectification / rework",
+        "French": "correction / reprise",
+        "Arabic": "تصحيح / إعادة تحسين",
+        "Persian": "اصلاح / رفع نقص",
+        "Ukrainian": "усунення недоліків / доопрацювання",
+        "Spanish": "subsanación / reparación",
+        "Polish": "naprawa / poprawka",
+        "Turkish": "düzeltme / yeniden işleme",
+        "Russian": "исправление / доработка"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Nachbesserung",
+          "plural": "die Nachbesserungen"
+        },
+        "example_de": "Wir verlangen eine kostenlose Nachbesserung innerhalb von 14 Tagen.",
+        "explanation": "Complaints and warranty. Collocations: eine Nachbesserung verlangen; zur Nachbesserung auffordern.",
+        "collocations": [
+          {
+            "collocation": "eine Nachbesserung verlangen",
+            "example": "Wir verlangen eine kostenlose Nachbesserung innerhalb von 14 Tagen."
+          },
+          {
+            "collocation": "zur Nachbesserung auffordern",
+            "example": "Der Hersteller wurde zur Nachbesserung aufgefordert."
+          }
+        ],
+        "corporate_context": "Complaints and warranty",
+        "translations": {
+          "English": "rectification / rework",
+          "French": "correction / reprise",
+          "Arabic": "تصحيح / إعادة تحسين",
+          "Persian": "اصلاح / رفع نقص",
+          "Ukrainian": "усунення недоліків / доопрацювання",
+          "Spanish": "subsanación / reparación",
+          "Polish": "naprawa / poprawka",
+          "Turkish": "düzeltme / yeniden işleme",
+          "Russian": "исправление / доработка"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_022",
+      "word": "die Ausfallzeit, die Ausfallzeiten",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Technical problems"
+      ],
+      "translations": {
+        "English": "downtime",
+        "French": "temps d’arrêt",
+        "Arabic": "وقت التوقف",
+        "Persian": "زمان خرابی / توقف",
+        "Ukrainian": "час простою",
+        "Spanish": "tiempo de inactividad",
+        "Polish": "przestój",
+        "Turkish": "kesinti süresi",
+        "Russian": "время простоя"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Ausfallzeit",
+          "plural": "die Ausfallzeiten"
+        },
+        "example_de": "Durch regelmäßige Wartung lassen sich Ausfallzeiten vermeiden.",
+        "explanation": "Technical problems. Collocations: Ausfallzeiten vermeiden; zu Ausfallzeiten führen.",
+        "collocations": [
+          {
+            "collocation": "Ausfallzeiten vermeiden",
+            "example": "Durch regelmäßige Wartung lassen sich Ausfallzeiten vermeiden."
+          },
+          {
+            "collocation": "zu Ausfallzeiten führen",
+            "example": "Der Serverfehler führte zu langen Ausfallzeiten."
+          }
+        ],
+        "corporate_context": "Technical problems",
+        "translations": {
+          "English": "downtime",
+          "French": "temps d’arrêt",
+          "Arabic": "وقت التوقف",
+          "Persian": "زمان خرابی / توقف",
+          "Ukrainian": "час простою",
+          "Spanish": "tiempo de inactividad",
+          "Polish": "przestój",
+          "Turkish": "kesinti süresi",
+          "Russian": "время простоя"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_023",
+      "word": "die Inbetriebnahme, die Inbetriebnahmen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Technical systems"
+      ],
+      "translations": {
+        "English": "commissioning / start-up",
+        "French": "mise en service",
+        "Arabic": "تشغيل أولي / وضع في الخدمة",
+        "Persian": "راه‌اندازی / بهره‌برداری اولیه",
+        "Ukrainian": "введення в експлуатацію",
+        "Spanish": "puesta en marcha",
+        "Polish": "uruchomienie",
+        "Turkish": "devreye alma",
+        "Russian": "ввод в эксплуатацию"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Inbetriebnahme",
+          "plural": "die Inbetriebnahmen"
+        },
+        "example_de": "Nach der Inbetriebnahme traten mehrere Störungen auf.",
+        "explanation": "Technical systems. Collocations: nach der Inbetriebnahme; die Inbetriebnahme begleiten.",
+        "collocations": [
+          {
+            "collocation": "nach der Inbetriebnahme",
+            "example": "Nach der Inbetriebnahme traten mehrere Störungen auf."
+          },
+          {
+            "collocation": "die Inbetriebnahme begleiten",
+            "example": "Ein Techniker begleitet die Inbetriebnahme der Anlage."
+          }
+        ],
+        "corporate_context": "Technical systems",
+        "translations": {
+          "English": "commissioning / start-up",
+          "French": "mise en service",
+          "Arabic": "تشغيل أولي / وضع في الخدمة",
+          "Persian": "راه‌اندازی / بهره‌برداری اولیه",
+          "Ukrainian": "введення в експлуатацію",
+          "Spanish": "puesta en marcha",
+          "Polish": "uruchomienie",
+          "Turkish": "devreye alma",
+          "Russian": "ввод в эксплуатацию"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_024",
+      "word": "der Engpass, die Engpässe",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Logistics and operations"
+      ],
+      "translations": {
+        "English": "bottleneck / shortage",
+        "French": "goulot d’étranglement / pénurie",
+        "Arabic": "عنق زجاجة / نقص",
+        "Persian": "گلوگاه / کمبود",
+        "Ukrainian": "вузьке місце / дефіцит",
+        "Spanish": "cuello de botella / escasez",
+        "Polish": "wąskie gardło / niedobór",
+        "Turkish": "darboğaz / kıtlık",
+        "Russian": "узкое место / дефицит"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Engpass",
+          "plural": "die Engpässe"
+        },
+        "example_de": "Durch einen neuen Lieferanten konnten wir den Engpass überwinden.",
+        "explanation": "Logistics and operations. Collocations: einen Engpass überwinden; zu Lieferengpässen führen.",
+        "collocations": [
+          {
+            "collocation": "einen Engpass überwinden",
+            "example": "Durch einen neuen Lieferanten konnten wir den Engpass überwinden."
+          },
+          {
+            "collocation": "zu Lieferengpässen führen",
+            "example": "Die Streiks führen zu Lieferengpässen bei Rohstoffen."
+          }
+        ],
+        "corporate_context": "Logistics and operations",
+        "translations": {
+          "English": "bottleneck / shortage",
+          "French": "goulot d’étranglement / pénurie",
+          "Arabic": "عنق زجاجة / نقص",
+          "Persian": "گلوگاه / کمبود",
+          "Ukrainian": "вузьке місце / дефіцит",
+          "Spanish": "cuello de botella / escasez",
+          "Polish": "wąskie gardło / niedobór",
+          "Turkish": "darboğaz / kıtlık",
+          "Russian": "узкое место / дефицит"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_025",
+      "word": "die Lieferverzögerung, die Lieferverzögerungen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Logistics"
+      ],
+      "translations": {
+        "English": "delivery delay",
+        "French": "retard de livraison",
+        "Arabic": "تأخير التسليم",
+        "Persian": "تأخیر در تحویل",
+        "Ukrainian": "затримка доставки",
+        "Spanish": "retraso en la entrega",
+        "Polish": "opóźnienie dostawy",
+        "Turkish": "teslimat gecikmesi",
+        "Russian": "задержка поставки"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Lieferverzögerung",
+          "plural": "die Lieferverzögerungen"
+        },
+        "example_de": "Der Lieferant hat eine Lieferverzögerung angekündigt.",
+        "explanation": "Logistics. Collocations: eine Lieferverzögerung ankündigen; wegen einer Lieferverzögerung.",
+        "collocations": [
+          {
+            "collocation": "eine Lieferverzögerung ankündigen",
+            "example": "Der Lieferant hat eine Lieferverzögerung angekündigt."
+          },
+          {
+            "collocation": "wegen einer Lieferverzögerung",
+            "example": "Wegen einer Lieferverzögerung müssen wir den Termin verschieben."
+          }
+        ],
+        "corporate_context": "Logistics",
+        "translations": {
+          "English": "delivery delay",
+          "French": "retard de livraison",
+          "Arabic": "تأخير التسليم",
+          "Persian": "تأخیر در تحویل",
+          "Ukrainian": "затримка доставки",
+          "Spanish": "retraso en la entrega",
+          "Polish": "opóźnienie dostawy",
+          "Turkish": "teslimat gecikmesi",
+          "Russian": "задержка поставки"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_026",
+      "word": "die Maßnahme, die Maßnahmen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Management and problem solving"
+      ],
+      "translations": {
+        "English": "measure / action",
+        "French": "mesure / action",
+        "Arabic": "إجراء / تدبير",
+        "Persian": "اقدام / تدبیر",
+        "Ukrainian": "захід / дія",
+        "Spanish": "medida / acción",
+        "Polish": "środek / działanie",
+        "Turkish": "önlem / işlem",
+        "Russian": "мера / действие"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Maßnahme",
+          "plural": "die Maßnahmen"
+        },
+        "example_de": "Wir müssen sofort Maßnahmen ergreifen.",
+        "explanation": "Management and problem solving. Collocations: Maßnahmen ergreifen; eine Maßnahme umsetzen.",
+        "collocations": [
+          {
+            "collocation": "Maßnahmen ergreifen",
+            "example": "Wir müssen sofort Maßnahmen ergreifen."
+          },
+          {
+            "collocation": "eine Maßnahme umsetzen",
+            "example": "Die Maßnahme wurde im gesamten Team umgesetzt."
+          }
+        ],
+        "corporate_context": "Management and problem solving",
+        "translations": {
+          "English": "measure / action",
+          "French": "mesure / action",
+          "Arabic": "إجراء / تدبير",
+          "Persian": "اقدام / تدبیر",
+          "Ukrainian": "захід / дія",
+          "Spanish": "medida / acción",
+          "Polish": "środek / działanie",
+          "Turkish": "önlem / işlem",
+          "Russian": "мера / действие"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_027",
+      "word": "die Auswertung, die Auswertungen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Reports and data"
+      ],
+      "translations": {
+        "English": "analysis / evaluation",
+        "French": "analyse / évaluation",
+        "Arabic": "تحليل / تقييم",
+        "Persian": "تحلیل / ارزیابی",
+        "Ukrainian": "аналіз / оцінка",
+        "Spanish": "análisis / evaluación",
+        "Polish": "analiza / ocena",
+        "Turkish": "analiz / değerlendirme",
+        "Russian": "анализ / оценка"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Auswertung",
+          "plural": "die Auswertungen"
+        },
+        "example_de": "Ich erstelle bis Freitag eine Auswertung der Ergebnisse.",
+        "explanation": "Reports and data. Collocations: eine Auswertung erstellen; die Auswertung besprechen.",
+        "collocations": [
+          {
+            "collocation": "eine Auswertung erstellen",
+            "example": "Ich erstelle bis Freitag eine Auswertung der Ergebnisse."
+          },
+          {
+            "collocation": "die Auswertung besprechen",
+            "example": "Wir besprechen die Auswertung im nächsten Meeting."
+          }
+        ],
+        "corporate_context": "Reports and data",
+        "translations": {
+          "English": "analysis / evaluation",
+          "French": "analyse / évaluation",
+          "Arabic": "تحليل / تقييم",
+          "Persian": "تحلیل / ارزیابی",
+          "Ukrainian": "аналіз / оцінка",
+          "Spanish": "análisis / evaluación",
+          "Polish": "analiza / ocena",
+          "Turkish": "analiz / değerlendirme",
+          "Russian": "анализ / оценка"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_028",
+      "word": "die Einschätzung, die Einschätzungen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Meetings and reports"
+      ],
+      "translations": {
+        "English": "assessment / estimate",
+        "French": "évaluation / estimation",
+        "Arabic": "تقييم / تقدير",
+        "Persian": "ارزیابی / برآورد",
+        "Ukrainian": "оцінка / припущення",
+        "Spanish": "evaluación / estimación",
+        "Polish": "ocena / szacunek",
+        "Turkish": "değerlendirme / tahmin",
+        "Russian": "оценка"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Einschätzung",
+          "plural": "die Einschätzungen"
+        },
+        "example_de": "Ich bitte Sie um Ihre fachliche Einschätzung.",
+        "explanation": "Meetings and reports. Collocations: um eine Einschätzung bitten; nach meiner Einschätzung.",
+        "collocations": [
+          {
+            "collocation": "um eine Einschätzung bitten",
+            "example": "Ich bitte Sie um Ihre fachliche Einschätzung."
+          },
+          {
+            "collocation": "nach meiner Einschätzung",
+            "example": "Nach meiner Einschätzung ist der Zeitplan zu knapp."
+          }
+        ],
+        "corporate_context": "Meetings and reports",
+        "translations": {
+          "English": "assessment / estimate",
+          "French": "évaluation / estimation",
+          "Arabic": "تقييم / تقدير",
+          "Persian": "ارزیابی / برآورد",
+          "Ukrainian": "оцінка / припущення",
+          "Spanish": "evaluación / estimación",
+          "Polish": "ocena / szacunek",
+          "Turkish": "değerlendirme / tahmin",
+          "Russian": "оценка"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_029",
+      "word": "die Umsetzung, die Umsetzungen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Project management"
+      ],
+      "translations": {
+        "English": "implementation",
+        "French": "mise en œuvre",
+        "Arabic": "تنفيذ",
+        "Persian": "اجرا / پیاده‌سازی",
+        "Ukrainian": "впровадження",
+        "Spanish": "implementación",
+        "Polish": "wdrożenie",
+        "Turkish": "uygulama",
+        "Russian": "реализация / внедрение"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Umsetzung",
+          "plural": "die Umsetzungen"
+        },
+        "example_de": "Wir planen die Umsetzung im nächsten Quartal.",
+        "explanation": "Project management. Collocations: die Umsetzung planen; bei der Umsetzung unterstützen.",
+        "collocations": [
+          {
+            "collocation": "die Umsetzung planen",
+            "example": "Wir planen die Umsetzung im nächsten Quartal."
+          },
+          {
+            "collocation": "bei der Umsetzung unterstützen",
+            "example": "Ich kann Sie bei der Umsetzung unterstützen."
+          }
+        ],
+        "corporate_context": "Project management",
+        "translations": {
+          "English": "implementation",
+          "French": "mise en œuvre",
+          "Arabic": "تنفيذ",
+          "Persian": "اجرا / پیاده‌سازی",
+          "Ukrainian": "впровадження",
+          "Spanish": "implementación",
+          "Polish": "wdrożenie",
+          "Turkish": "uygulama",
+          "Russian": "реализация / внедрение"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_030",
+      "word": "die Vereinbarung, die Vereinbarungen",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Meetings/contracts"
+      ],
+      "translations": {
+        "English": "agreement",
+        "French": "accord / convention",
+        "Arabic": "اتفاق",
+        "Persian": "توافق / قرارداد",
+        "Ukrainian": "угода / домовленість",
+        "Spanish": "acuerdo",
+        "Polish": "porozumienie / umowa",
+        "Turkish": "anlaşma",
+        "Russian": "соглашение"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Vereinbarung",
+          "plural": "die Vereinbarungen"
+        },
+        "example_de": "Wir haben eine klare Vereinbarung getroffen.",
+        "explanation": "Meetings/contracts. Collocations: eine Vereinbarung treffen; sich an eine Vereinbarung halten.",
+        "collocations": [
+          {
+            "collocation": "eine Vereinbarung treffen",
+            "example": "Wir haben eine klare Vereinbarung getroffen."
+          },
+          {
+            "collocation": "sich an eine Vereinbarung halten",
+            "example": "Bitte halten Sie sich an die getroffene Vereinbarung."
+          }
+        ],
+        "corporate_context": "Meetings/contracts",
+        "translations": {
+          "English": "agreement",
+          "French": "accord / convention",
+          "Arabic": "اتفاق",
+          "Persian": "توافق / قرارداد",
+          "Ukrainian": "угода / домовленість",
+          "Spanish": "acuerdo",
+          "Polish": "porozumienie / umowa",
+          "Turkish": "anlaşma",
+          "Russian": "соглашение"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_031",
+      "word": "die Verhandlung, die Verhandlungen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Business negotiation"
+      ],
+      "translations": {
+        "English": "negotiation",
+        "French": "négociation",
+        "Arabic": "مفاوضات",
+        "Persian": "مذاکره",
+        "Ukrainian": "переговори",
+        "Spanish": "negociación",
+        "Polish": "negocjacje",
+        "Turkish": "müzakere",
+        "Russian": "переговоры"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Verhandlung",
+          "plural": "die Verhandlungen"
+        },
+        "example_de": "Die Geschäftsführung führt Verhandlungen mit dem Betriebsrat.",
+        "explanation": "Business negotiation. Collocations: Verhandlungen führen; in Verhandlungen stehen.",
+        "collocations": [
+          {
+            "collocation": "Verhandlungen führen",
+            "example": "Die Geschäftsführung führt Verhandlungen mit dem Betriebsrat."
+          },
+          {
+            "collocation": "in Verhandlungen stehen",
+            "example": "Das Unternehmen steht mit mehreren Partnern in Verhandlungen."
+          }
+        ],
+        "corporate_context": "Business negotiation",
+        "translations": {
+          "English": "negotiation",
+          "French": "négociation",
+          "Arabic": "مفاوضات",
+          "Persian": "مذاکره",
+          "Ukrainian": "переговори",
+          "Spanish": "negociación",
+          "Polish": "negocjacje",
+          "Turkish": "müzakere",
+          "Russian": "переговоры"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_032",
+      "word": "die Abfindung, die Abfindungen",
+      "level": "B2+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "HR and termination"
+      ],
+      "translations": {
+        "English": "severance payment",
+        "French": "indemnité de départ",
+        "Arabic": "تعويض نهاية الخدمة",
+        "Persian": "حق سنوات / غرامت پایان کار",
+        "Ukrainian": "вихідна допомога",
+        "Spanish": "indemnización por despido",
+        "Polish": "odprawa",
+        "Turkish": "kıdem / ayrılma tazminatı",
+        "Russian": "выходное пособие"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Abfindung",
+          "plural": "die Abfindungen"
+        },
+        "example_de": "Nach der betriebsbedingten Kündigung wurde eine Abfindung vereinbart.",
+        "explanation": "HR and termination. Collocations: eine Abfindung vereinbaren; Anspruch auf eine Abfindung haben.",
+        "collocations": [
+          {
+            "collocation": "eine Abfindung vereinbaren",
+            "example": "Nach der betriebsbedingten Kündigung wurde eine Abfindung vereinbart."
+          },
+          {
+            "collocation": "Anspruch auf eine Abfindung haben",
+            "example": "Nicht jeder Beschäftigte hat automatisch Anspruch auf eine Abfindung."
+          }
+        ],
+        "corporate_context": "HR and termination",
+        "translations": {
+          "English": "severance payment",
+          "French": "indemnité de départ",
+          "Arabic": "تعويض نهاية الخدمة",
+          "Persian": "حق سنوات / غرامت پایان کار",
+          "Ukrainian": "вихідна допомога",
+          "Spanish": "indemnización por despido",
+          "Polish": "odprawa",
+          "Turkish": "kıdem / ayrılma tazminatı",
+          "Russian": "выходное пособие"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_033",
+      "word": "die Umsatzrentabilität, die Umsatzrentabilitäten",
+      "level": "B2+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Finance and reporting"
+      ],
+      "translations": {
+        "English": "return on sales",
+        "French": "rentabilité du chiffre d’affaires",
+        "Arabic": "ربحية المبيعات",
+        "Persian": "بازده فروش",
+        "Ukrainian": "рентабельність продажів",
+        "Spanish": "rentabilidad sobre ventas",
+        "Polish": "rentowność sprzedaży",
+        "Turkish": "satış kârlılığı",
+        "Russian": "рентабельность продаж"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Umsatzrentabilität",
+          "plural": "die Umsatzrentabilitäten"
+        },
+        "example_de": "Durch Kostensenkungen wurde die Umsatzrentabilität gesteigert.",
+        "explanation": "Finance and reporting. Collocations: die Umsatzrentabilität steigern; eine niedrige Umsatzrentabilität.",
+        "collocations": [
+          {
+            "collocation": "die Umsatzrentabilität steigern",
+            "example": "Durch Kostensenkungen wurde die Umsatzrentabilität gesteigert."
+          },
+          {
+            "collocation": "eine niedrige Umsatzrentabilität",
+            "example": "Eine niedrige Umsatzrentabilität weist auf Effizienzprobleme hin."
+          }
+        ],
+        "corporate_context": "Finance and reporting",
+        "translations": {
+          "English": "return on sales",
+          "French": "rentabilité du chiffre d’affaires",
+          "Arabic": "ربحية المبيعات",
+          "Persian": "بازده فروش",
+          "Ukrainian": "рентабельність продажів",
+          "Spanish": "rentabilidad sobre ventas",
+          "Polish": "rentowność sprzedaży",
+          "Turkish": "satış kârlılığı",
+          "Russian": "рентабельность продаж"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_034",
+      "word": "die Kostenstelle, die Kostenstellen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Accounting"
+      ],
+      "translations": {
+        "English": "cost center",
+        "French": "centre de coûts",
+        "Arabic": "مركز تكلفة",
+        "Persian": "مرکز هزینه",
+        "Ukrainian": "центр витрат",
+        "Spanish": "centro de costes",
+        "Polish": "miejsce powstawania kosztów",
+        "Turkish": "maliyet merkezi",
+        "Russian": "центр затрат"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Kostenstelle",
+          "plural": "die Kostenstellen"
+        },
+        "example_de": "Die Ausgabe muss der richtigen Kostenstelle zugeordnet werden.",
+        "explanation": "Accounting. Collocations: einer Kostenstelle zuordnen; eine Kostenstelle anlegen.",
+        "collocations": [
+          {
+            "collocation": "einer Kostenstelle zuordnen",
+            "example": "Die Ausgabe muss der richtigen Kostenstelle zugeordnet werden."
+          },
+          {
+            "collocation": "eine Kostenstelle anlegen",
+            "example": "Für das neue Projekt wird eine eigene Kostenstelle angelegt."
+          }
+        ],
+        "corporate_context": "Accounting",
+        "translations": {
+          "English": "cost center",
+          "French": "centre de coûts",
+          "Arabic": "مركز تكلفة",
+          "Persian": "مرکز هزینه",
+          "Ukrainian": "центр витрат",
+          "Spanish": "centro de costes",
+          "Polish": "miejsce powstawania kosztów",
+          "Turkish": "maliyet merkezi",
+          "Russian": "центр затрат"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_035",
+      "word": "die Schnittstelle, die Schnittstellen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "IT and organization"
+      ],
+      "translations": {
+        "English": "interface / point of contact",
+        "French": "interface / point de contact",
+        "Arabic": "واجهة / نقطة اتصال",
+        "Persian": "رابط / نقطه تماس",
+        "Ukrainian": "інтерфейс / точка взаємодії",
+        "Spanish": "interfaz / punto de contacto",
+        "Polish": "interfejs / punkt styku",
+        "Turkish": "arayüz / temas noktası",
+        "Russian": "интерфейс / точка взаимодействия"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Schnittstelle",
+          "plural": "die Schnittstellen"
+        },
+        "example_de": "Die IT richtet eine Schnittstelle zwischen den Systemen ein.",
+        "explanation": "IT and organization. Collocations: eine Schnittstelle einrichten; als Schnittstelle fungieren.",
+        "collocations": [
+          {
+            "collocation": "eine Schnittstelle einrichten",
+            "example": "Die IT richtet eine Schnittstelle zwischen den Systemen ein."
+          },
+          {
+            "collocation": "als Schnittstelle fungieren",
+            "example": "Sie fungiert als Schnittstelle zwischen Vertrieb und Technik."
+          }
+        ],
+        "corporate_context": "IT and organization",
+        "translations": {
+          "English": "interface / point of contact",
+          "French": "interface / point de contact",
+          "Arabic": "واجهة / نقطة اتصال",
+          "Persian": "رابط / نقطه تماس",
+          "Ukrainian": "інтерфейс / точка взаємодії",
+          "Spanish": "interfaz / punto de contacto",
+          "Polish": "interfejs / punkt styku",
+          "Turkish": "arayüz / temas noktası",
+          "Russian": "интерфейс / точка взаимодействия"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_036",
+      "word": "die Ausschreibung, die Ausschreibungen",
+      "level": "B2",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Procurement"
+      ],
+      "translations": {
+        "English": "tender / call for bids",
+        "French": "appel d’offres",
+        "Arabic": "مناقصة",
+        "Persian": "مناقصه",
+        "Ukrainian": "тендер",
+        "Spanish": "licitación / concurso",
+        "Polish": "przetarg",
+        "Turkish": "ihale",
+        "Russian": "тендер / конкурс"
+      },
+      "data": {
+        "grammar": {
+          "article": "die",
+          "base": "Ausschreibung",
+          "plural": "die Ausschreibungen"
+        },
+        "example_de": "Unser Unternehmen nimmt an der öffentlichen Ausschreibung teil.",
+        "explanation": "Procurement. Collocations: an einer Ausschreibung teilnehmen; eine Ausschreibung veröffentlichen.",
+        "collocations": [
+          {
+            "collocation": "an einer Ausschreibung teilnehmen",
+            "example": "Unser Unternehmen nimmt an der öffentlichen Ausschreibung teil."
+          },
+          {
+            "collocation": "eine Ausschreibung veröffentlichen",
+            "example": "Die Stadt hat eine neue Ausschreibung veröffentlicht."
+          }
+        ],
+        "corporate_context": "Procurement",
+        "translations": {
+          "English": "tender / call for bids",
+          "French": "appel d’offres",
+          "Arabic": "مناقصة",
+          "Persian": "مناقصه",
+          "Ukrainian": "тендер",
+          "Spanish": "licitación / concurso",
+          "Polish": "przetarg",
+          "Turkish": "ihale",
+          "Russian": "тендер / конкурс"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_037",
+      "word": "der Lieferant, die Lieferanten",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Procurement"
+      ],
+      "translations": {
+        "English": "supplier",
+        "French": "fournisseur",
+        "Arabic": "مورّد",
+        "Persian": "تأمین‌کننده",
+        "Ukrainian": "постачальник",
+        "Spanish": "proveedor",
+        "Polish": "dostawca",
+        "Turkish": "tedarikçi",
+        "Russian": "поставщик"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Lieferant",
+          "plural": "die Lieferanten"
+        },
+        "example_de": "Wir verhandeln mit einem neuen Lieferanten über bessere Konditionen.",
+        "explanation": "Procurement. Collocations: mit einem Lieferanten verhandeln; einen Lieferanten bewerten.",
+        "collocations": [
+          {
+            "collocation": "mit einem Lieferanten verhandeln",
+            "example": "Wir verhandeln mit einem neuen Lieferanten über bessere Konditionen."
+          },
+          {
+            "collocation": "einen Lieferanten bewerten",
+            "example": "Die Einkaufsabteilung bewertet die Lieferanten jährlich."
+          }
+        ],
+        "corporate_context": "Procurement",
+        "translations": {
+          "English": "supplier",
+          "French": "fournisseur",
+          "Arabic": "مورّد",
+          "Persian": "تأمین‌کننده",
+          "Ukrainian": "постачальник",
+          "Spanish": "proveedor",
+          "Polish": "dostawca",
+          "Turkish": "tedarikçi",
+          "Russian": "поставщик"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_038",
+      "word": "der Kunde, die Kunden",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Customer contact"
+      ],
+      "translations": {
+        "English": "customer / client",
+        "French": "client",
+        "Arabic": "عميل / زبون",
+        "Persian": "مشتری",
+        "Ukrainian": "клієнт / замовник",
+        "Spanish": "cliente",
+        "Polish": "klient",
+        "Turkish": "müşteri",
+        "Russian": "клиент / заказчик"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Kunde",
+          "plural": "die Kunden"
+        },
+        "example_de": "Ich berate den Kunden zu den verfügbaren Optionen.",
+        "explanation": "Customer contact. Collocations: einen Kunden beraten; mit dem Kunden klären.",
+        "collocations": [
+          {
+            "collocation": "einen Kunden beraten",
+            "example": "Ich berate den Kunden zu den verfügbaren Optionen."
+          },
+          {
+            "collocation": "mit dem Kunden klären",
+            "example": "Wir müssen den Termin mit dem Kunden klären."
+          }
+        ],
+        "corporate_context": "Customer contact",
+        "translations": {
+          "English": "customer / client",
+          "French": "client",
+          "Arabic": "عميل / زبون",
+          "Persian": "مشتری",
+          "Ukrainian": "клієнт / замовник",
+          "Spanish": "cliente",
+          "Polish": "klient",
+          "Turkish": "müşteri",
+          "Russian": "клиент / заказчик"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_039",
+      "word": "der Praktikant, die Praktikanten",
+      "level": "B1",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Workplace roles"
+      ],
+      "translations": {
+        "English": "intern",
+        "French": "stagiaire",
+        "Arabic": "متدرب",
+        "Persian": "کارآموز",
+        "Ukrainian": "стажер / практикант",
+        "Spanish": "becario / practicante",
+        "Polish": "stażysta / praktykant",
+        "Turkish": "stajyer",
+        "Russian": "стажёр / практикант"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Praktikant",
+          "plural": "die Praktikanten"
+        },
+        "example_de": "Ich arbeite den neuen Praktikanten ein.",
+        "explanation": "Workplace roles. Collocations: einen Praktikanten einarbeiten; mit dem Praktikanten sprechen.",
+        "collocations": [
+          {
+            "collocation": "einen Praktikanten einarbeiten",
+            "example": "Ich arbeite den neuen Praktikanten ein."
+          },
+          {
+            "collocation": "mit dem Praktikanten sprechen",
+            "example": "Bitte sprechen Sie mit dem Praktikanten über die Aufgabe."
+          }
+        ],
+        "corporate_context": "Workplace roles",
+        "translations": {
+          "English": "intern",
+          "French": "stagiaire",
+          "Arabic": "متدرب",
+          "Persian": "کارآموز",
+          "Ukrainian": "стажер / практикант",
+          "Spanish": "becario / practicante",
+          "Polish": "stażysta / praktykant",
+          "Turkish": "stajyer",
+          "Russian": "стажёр / практикант"
+        }
+      }
+    },
+    {
+      "id": "prod_vocab_040",
+      "word": "der Angestellte, die Angestellten",
+      "level": "B1+",
+      "tags": [
+        "production",
+        "workplace_collocation",
+        "Employment"
+      ],
+      "translations": {
+        "English": "employee",
+        "French": "employé(e)",
+        "Arabic": "موظف/ة",
+        "Persian": "کارمند",
+        "Ukrainian": "працівник / працівниця",
+        "Spanish": "empleado/a",
+        "Polish": "pracownik / pracownica",
+        "Turkish": "çalışan",
+        "Russian": "сотрудник / сотрудница"
+      },
+      "data": {
+        "grammar": {
+          "article": "der",
+          "base": "Angestellte",
+          "plural": "die Angestellten"
+        },
+        "example_de": "Ein neuer Angestellter beginnt am Montag.",
+        "explanation": "Employment. Collocations: ein neuer Angestellter; die Angestellten informieren.",
+        "collocations": [
+          {
+            "collocation": "ein neuer Angestellter",
+            "example": "Ein neuer Angestellter beginnt am Montag."
+          },
+          {
+            "collocation": "die Angestellten informieren",
+            "example": "Die Angestellten wurden über die Änderung informiert."
+          }
+        ],
+        "corporate_context": "Employment",
+        "translations": {
+          "English": "employee",
+          "French": "employé(e)",
+          "Arabic": "موظف/ة",
+          "Persian": "کارمند",
+          "Ukrainian": "працівник / працівниця",
+          "Spanish": "empleado/a",
+          "Polish": "pracownik / pracownica",
+          "Turkish": "çalışan",
+          "Russian": "сотрудник / сотрудница"
+        }
+      }
+    }
+  ]
+}

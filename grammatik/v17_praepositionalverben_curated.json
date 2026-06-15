@@ -1,3687 +1,787 @@
 {
   "module": "v17_praepositionalverben",
   "title": "v17 · Präpositionalverben · kuratiert",
-  "status": "curated_expanded_context_160",
+  "status": "curated",
   "items": [
     {
-      "id": "v18_2_prep_001",
+      "id": "v17_prep_001",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_002",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_003",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_004",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_005",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_006",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
+      "prompt": "Ich bewerbe mich ___ die Stelle.",
       "answer": "um",
+      "explanation": "sich bewerben um + Akkusativ. Wrong: Ich bewerbe mich auf die Stelle. In standard German: sich bewerben um + Akkusativ.",
+      "translation": "to apply for the position",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "um",
+        "bei",
+        "in",
+        "zu",
         "für",
-        "an",
-        "auf"
+        "mit"
       ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
+      "example": "Ich bewerbe mich um die Stelle."
     },
     {
-      "id": "v18_2_prep_007",
+      "id": "v17_prep_corr_001",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich bewerbe mich für die Stelle.",
+      "answer": "Ich bewerbe mich um die Stelle.",
+      "explanation": "Correct pattern: sich bewerben um + Akkusativ.",
+      "translation": "to apply for the position",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich bewerbe mich um die Stelle."
+    },
+    {
+      "id": "v17_prep_002",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
+      "prompt": "Ich nehme ___ der Besprechung teil.",
       "answer": "an",
+      "explanation": "teilnehmen an + Dativ. teilnehmen uses an + Dativ; die Besprechung -> der Besprechung.",
+      "translation": "to take part in the meeting",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
       "choices": [
         "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_008",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_009",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_010",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_011",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_012",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_013",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_014",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_015",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Ich nehme an der Besprechung teil."
     },
     {
-      "id": "v18_2_prep_016",
+      "id": "v17_prep_corr_002",
       "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "auf",
-        "an"
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich nehme bei der Besprechung teil.",
+      "answer": "Ich nehme an der Besprechung teil.",
+      "explanation": "Correct pattern: teilnehmen an + Dativ.",
+      "translation": "to take part in the meeting",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
       ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
+      "example": "Ich nehme an der Besprechung teil."
     },
     {
-      "id": "v18_2_prep_017",
+      "id": "v17_prep_003",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_018",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_019",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_020",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_021",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_022",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_023",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_024",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_025",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
+      "prompt": "Ich interessiere mich ___ das Praktikum.",
       "answer": "für",
+      "explanation": "sich interessieren für + Akkusativ. für always takes accusative here.",
+      "translation": "to be interested in the internship",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_026",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_027",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_028",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_029",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_030",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_031",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_032",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_033",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_034",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_035",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Ich interessiere mich für das Praktikum."
     },
     {
-      "id": "v18_2_prep_036",
+      "id": "v17_prep_corr_003",
       "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "auf",
-        "an"
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich interessiere mich an das Praktikum.",
+      "answer": "Ich interessiere mich für das Praktikum.",
+      "explanation": "Correct pattern: sich interessieren für + Akkusativ.",
+      "translation": "to be interested in the internship",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
       ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
+      "example": "Ich interessiere mich für das Praktikum."
     },
     {
-      "id": "v18_2_prep_037",
+      "id": "v17_prep_004",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_038",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_039",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
+      "prompt": "Ich warte ___ die Rückmeldung.",
       "answer": "auf",
+      "explanation": "warten auf + Akkusativ. warten auf + Akkusativ.",
+      "translation": "to wait for the reply",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_040",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_041",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_042",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_043",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_044",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_045",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_046",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_047",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_048",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_049",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_050",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_051",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_052",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_053",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_054",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_055",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Ich warte auf die Rückmeldung."
     },
     {
-      "id": "v18_2_prep_056",
+      "id": "v17_prep_corr_004",
       "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "auf",
-        "an"
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich warte an die Rückmeldung.",
+      "answer": "Ich warte auf die Rückmeldung.",
+      "explanation": "Correct pattern: warten auf + Akkusativ.",
+      "translation": "to wait for the reply",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
       ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
+      "example": "Ich warte auf die Rückmeldung."
     },
     {
-      "id": "v18_2_prep_057",
+      "id": "v17_prep_005",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_058",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
+      "prompt": "Ich spreche ___ dem Vorgesetzten.",
       "answer": "mit",
+      "explanation": "sprechen mit + Dativ. mit always takes dative.",
+      "translation": "to speak with the supervisor",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
       "choices": [
         "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_059",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_060",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_061",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_062",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_063",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_064",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_065",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_066",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_067",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_068",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_069",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_070",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_071",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_072",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_073",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_074",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_075",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Ich spreche mit dem Vorgesetzten."
     },
     {
-      "id": "v18_2_prep_076",
+      "id": "v17_prep_corr_005",
       "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "auf",
-        "an"
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich spreche zu dem Vorgesetzten.",
+      "answer": "Ich spreche mit dem Vorgesetzten.",
+      "explanation": "Correct pattern: sprechen mit + Dativ.",
+      "translation": "to speak with the supervisor",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
       ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
+      "example": "Ich spreche mit dem Vorgesetzten."
     },
     {
-      "id": "v18_2_prep_077",
+      "id": "v17_prep_006",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_078",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_079",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_080",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_081",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_082",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_083",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
+      "prompt": "Wir sprechen ___ den Vertrag.",
       "answer": "über",
+      "explanation": "sprechen über + Akkusativ. über + Akkusativ for topic after sprechen.",
+      "translation": "to talk about the contract",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_084",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_085",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_086",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_087",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_088",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_089",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_090",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_091",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_092",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_093",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_094",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_095",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Wir sprechen über den Vertrag."
     },
     {
-      "id": "v18_2_prep_096",
+      "id": "v17_prep_corr_006",
       "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "auf",
-        "an"
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Wir sprechen von den Vertrag.",
+      "answer": "Wir sprechen über den Vertrag.",
+      "explanation": "Correct pattern: sprechen über + Akkusativ.",
+      "translation": "to talk about the contract",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
       ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
+      "example": "Wir sprechen über den Vertrag."
     },
     {
-      "id": "v18_2_prep_097",
+      "id": "v17_prep_007",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_098",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_099",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_100",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_101",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_102",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_103",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
+      "prompt": "Ich beschwere mich ___ die Rechnung.",
       "answer": "über",
+      "explanation": "sich beschweren über + Akkusativ. sich beschweren über + Akkusativ.",
+      "translation": "to complain about the invoice",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_104",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_105",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_106",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_107",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_108",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_109",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_110",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_111",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_112",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_113",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_114",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_115",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Ich beschwere mich über die Rechnung."
     },
     {
-      "id": "v18_2_prep_116",
+      "id": "v17_prep_corr_007",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich beschwere mich von die Rechnung.",
+      "answer": "Ich beschwere mich über die Rechnung.",
+      "explanation": "Correct pattern: sich beschweren über + Akkusativ.",
+      "translation": "to complain about the invoice",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich beschwere mich über die Rechnung."
+    },
+    {
+      "id": "v17_prep_008",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
+      "prompt": "Ich bitte ___ eine Bestätigung.",
       "answer": "um",
+      "explanation": "bitten um + Akkusativ. bitten um + Akkusativ.",
+      "translation": "to ask for confirmation",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "um",
-        "für",
-        "auf",
-        "an"
-      ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
-    },
-    {
-      "id": "v18_2_prep_117",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_118",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_119",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_120",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_121",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_122",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_123",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_124",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_125",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_126",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_127",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_128",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
-    },
-    {
-      "id": "v18_2_prep_129",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "aus",
-        "über",
-        "mit"
-      ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
-    },
-    {
-      "id": "v18_2_prep_130",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_131",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_132",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Bitte achten Sie ___ die Frist.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "für"
-      ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
-    },
-    {
-      "id": "v18_2_prep_133",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "bei",
         "zu",
-        "an"
+        "für",
+        "mit"
       ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
+      "example": "Ich bitte um eine Bestätigung."
     },
     {
-      "id": "v18_2_prep_134",
+      "id": "v17_prep_corr_008",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich bitte für eine Bestätigung.",
+      "answer": "Ich bitte um eine Bestätigung.",
+      "explanation": "Correct pattern: bitten um + Akkusativ.",
+      "translation": "to ask for confirmation",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich bitte um eine Bestätigung."
+    },
+    {
+      "id": "v17_prep_009",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
+      "prompt": "Ich erkundige mich ___ dem Termin.",
       "answer": "nach",
+      "explanation": "sich erkundigen nach + Dativ. sich erkundigen nach + Dativ.",
+      "translation": "to ask about the appointment",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
       "choices": [
         "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_135",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "mit"
-      ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
-    },
-    {
-      "id": "v18_2_prep_136",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "auf",
-        "an"
-      ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
-    },
-    {
-      "id": "v18_2_prep_137",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_138",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_139",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
-        "mit"
-      ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_140",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_141",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich beziehe mich ___ Ihre E-Mail vom Montag.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "sich beziehen auf + Akkusativ. Kontext: Formelle E-Mail.",
-      "example": "Ich beziehe mich auf Ihre E-Mail vom Montag.",
-      "context": "Formelle E-Mail",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_prep_142",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir warten ___ Ihre Rückmeldung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "für",
-        "um"
-      ],
-      "explanation": "warten auf + Akkusativ. Kontext: Kommunikation.",
-      "example": "Wir warten auf Ihre Rückmeldung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_143",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ die verspätete Lieferung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "bei"
-      ],
-      "explanation": "sich beschweren über + Akkusativ. Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich über die verspätete Lieferung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_144",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde beschwert sich ___ der Kundenbetreuung.",
-      "answer": "bei",
-      "choices": [
-        "bei",
-        "über",
-        "auf",
-        "für"
-      ],
-      "explanation": "sich beschweren bei + Dativ (person/institution). Kontext: Reklamation.",
-      "example": "Der Kunde beschwert sich bei der Kundenbetreuung.",
-      "context": "Reklamation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Reklamation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_145",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich interessiere mich ___ die offene Stelle.",
-      "answer": "für",
-      "choices": [
-        "für",
-        "an",
-        "auf",
-        "um"
-      ],
-      "explanation": "sich interessieren für + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich interessiere mich für die offene Stelle.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_146",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich bewerbe mich ___ die Stelle als Analyst.",
-      "answer": "um",
-      "choices": [
-        "um",
-        "für",
-        "an",
-        "auf"
-      ],
-      "explanation": "sich bewerben um + Akkusativ. Kontext: Bewerbung.",
-      "example": "Ich bewerbe mich um die Stelle als Analyst.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_147",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir nehmen ___ der Besprechung teil.",
-      "answer": "an",
-      "choices": [
-        "an",
         "bei",
         "in",
-        "auf"
-      ],
-      "explanation": "teilnehmen an + Dativ. Kontext: Besprechung.",
-      "example": "Wir nehmen an der Besprechung teil.",
-      "context": "Besprechung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Besprechung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_148",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Abteilung besteht ___ fünf Personen.",
-      "answer": "aus",
-      "choices": [
-        "aus",
-        "auf",
-        "über",
+        "zu",
+        "für",
         "mit"
       ],
-      "explanation": "bestehen aus + Dativ = consist of. Kontext: Teamstruktur.",
-      "example": "Die Abteilung besteht aus fünf Personen.",
-      "context": "Teamstruktur",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Teamstruktur"
-      ]
+      "example": "Ich erkundige mich nach dem Termin."
     },
     {
-      "id": "v18_2_prep_149",
+      "id": "v17_prep_corr_009",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich erkundige mich über dem Termin.",
+      "answer": "Ich erkundige mich nach dem Termin.",
+      "explanation": "Correct pattern: sich erkundigen nach + Dativ.",
+      "translation": "to ask about the appointment",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich erkundige mich nach dem Termin."
+    },
+    {
+      "id": "v17_prep_010",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Der Betriebsrat besteht ___ die Einhaltung der Regeln.",
-      "answer": "auf",
+      "prompt": "Das hängt ___ der Entscheidung ab.",
+      "answer": "von",
+      "explanation": "abhängen von + Dativ. abhängen von + Dativ; separable verb.",
+      "translation": "to depend on the decision",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
       "choices": [
-        "auf",
-        "aus",
-        "über",
+        "von",
+        "bei",
+        "in",
+        "zu",
+        "für",
         "mit"
       ],
-      "explanation": "bestehen auf + Akkusativ/Dativ phrase = insist on. Kontext: Arbeitsrecht.",
-      "example": "Der Betriebsrat besteht auf die Einhaltung der Regeln.",
-      "context": "Arbeitsrecht",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsrecht"
-      ]
+      "example": "Das hängt von der Entscheidung ab."
     },
     {
-      "id": "v18_2_prep_150",
+      "id": "v17_prep_corr_010",
       "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir einigen uns ___ einen neuen Termin.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "über",
-        "an",
-        "für"
-      ],
-      "explanation": "sich einigen auf + Akkusativ. Kontext: Terminplanung.",
-      "example": "Wir einigen uns auf einen neuen Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Das hängt mit der Entscheidung ab.",
+      "answer": "Das hängt von der Entscheidung ab.",
+      "explanation": "Correct pattern: abhängen von + Dativ.",
+      "translation": "to depend on the decision",
+      "level": "B1+/B2",
       "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Das hängt von der Entscheidung ab."
     },
     {
-      "id": "v18_2_prep_151",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma informiert uns ___ die Änderung.",
-      "answer": "über",
-      "choices": [
-        "über",
-        "auf",
-        "an",
-        "mit"
-      ],
-      "explanation": "informieren über + Akkusativ. Kontext: Kommunikation.",
-      "example": "Die Firma informiert uns über die Änderung.",
-      "context": "Kommunikation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_prep_152",
+      "id": "v17_prep_011",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
       "prompt": "Bitte achten Sie ___ die Frist.",
       "answer": "auf",
+      "explanation": "achten auf + Akkusativ. achten auf + Akkusativ.",
+      "translation": "to pay attention to the deadline",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "auf",
-        "an",
-        "über",
-        "für"
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
       ],
-      "explanation": "achten auf + Akkusativ. Kontext: Fristen.",
-      "example": "Bitte achten Sie auf die Frist.",
-      "context": "Fristen",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Fristen"
-      ]
+      "example": "Bitte achten Sie auf die Frist."
     },
     {
-      "id": "v18_2_prep_153",
+      "id": "v17_prep_corr_011",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Bitte achten Sie an die Frist.",
+      "answer": "Bitte achten Sie auf die Frist.",
+      "explanation": "Correct pattern: achten auf + Akkusativ.",
+      "translation": "to pay attention to the deadline",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Bitte achten Sie auf die Frist."
+    },
+    {
+      "id": "v17_prep_012",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen ___ dem Kunden über den Vertrag.",
+      "prompt": "Ich bereite mich ___ das Gespräch vor.",
+      "answer": "auf",
+      "explanation": "sich vorbereiten auf + Akkusativ. sich vorbereiten auf + Akkusativ.",
+      "translation": "to prepare for the interview/meeting",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Ich bereite mich auf das Gespräch vor."
+    },
+    {
+      "id": "v17_prep_corr_012",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich bereite mich an das Gespräch vor.",
+      "answer": "Ich bereite mich auf das Gespräch vor.",
+      "explanation": "Correct pattern: sich vorbereiten auf + Akkusativ.",
+      "translation": "to prepare for the interview/meeting",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich bereite mich auf das Gespräch vor."
+    },
+    {
+      "id": "v17_prep_013",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich rechne ___ einer Antwort bis Freitag.",
       "answer": "mit",
+      "explanation": "rechnen mit + Dativ. rechnen mit + Dativ.",
+      "translation": "to expect an answer",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
       "choices": [
         "mit",
         "bei",
+        "in",
         "zu",
-        "an"
-      ],
-      "explanation": "sprechen mit + Dativ. Kontext: Verhandlung.",
-      "example": "Wir sprechen mit dem Kunden über den Vertrag.",
-      "context": "Verhandlung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Verhandlung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_154",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich erkundige mich ___ dem Stand der Bewerbung.",
-      "answer": "nach",
-      "choices": [
-        "nach",
-        "über",
-        "bei",
-        "auf"
-      ],
-      "explanation": "sich erkundigen nach + Dativ. Kontext: Bewerbung.",
-      "example": "Ich erkundige mich nach dem Stand der Bewerbung.",
-      "context": "Bewerbung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_155",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung hängt ___ den Kosten ab.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
+        "für",
         "mit"
       ],
-      "explanation": "abhängen von + Dativ. Kontext: Budget.",
-      "example": "Die Entscheidung hängt von den Kosten ab.",
-      "context": "Budget",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Budget"
-      ]
+      "example": "Ich rechne mit einer Antwort bis Freitag."
     },
     {
-      "id": "v18_2_prep_156",
+      "id": "v17_prep_corr_013",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich rechne zu einer Antwort bis Freitag.",
+      "answer": "Ich rechne mit einer Antwort bis Freitag.",
+      "explanation": "Correct pattern: rechnen mit + Dativ.",
+      "translation": "to expect an answer",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich rechne mit einer Antwort bis Freitag."
+    },
+    {
+      "id": "v17_prep_014",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Wir kümmern uns ___ die Unterlagen.",
+      "prompt": "Der Fehler führt ___ einer Verzögerung.",
+      "answer": "zu",
+      "explanation": "führen zu + Dativ. führen zu + Dativ.",
+      "translation": "to lead to a delay",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
+      "choices": [
+        "zu",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Der Fehler führt zu einer Verzögerung."
+    },
+    {
+      "id": "v17_prep_corr_014",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Der Fehler führt in einer Verzögerung.",
+      "answer": "Der Fehler führt zu einer Verzögerung.",
+      "explanation": "Correct pattern: führen zu + Dativ.",
+      "translation": "to lead to a delay",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Der Fehler führt zu einer Verzögerung."
+    },
+    {
+      "id": "v17_prep_015",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich kümmere mich ___ die Unterlagen.",
       "answer": "um",
+      "explanation": "sich kümmern um + Akkusativ. sich kümmern um + Akkusativ.",
+      "translation": "to take care of the documents",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "um",
+        "bei",
+        "in",
+        "zu",
         "für",
-        "auf",
-        "an"
-      ],
-      "explanation": "sich kümmern um + Akkusativ. Kontext: Administration.",
-      "example": "Wir kümmern uns um die Unterlagen.",
-      "context": "Administration",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Administration"
-      ]
-    },
-    {
-      "id": "v18_2_prep_157",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin erinnert mich ___ den Termin.",
-      "answer": "an",
-      "choices": [
-        "an",
-        "auf",
-        "über",
-        "bei"
-      ],
-      "explanation": "jemanden erinnern an + Akkusativ. Kontext: Terminplanung.",
-      "example": "Die Kollegin erinnert mich an den Termin.",
-      "context": "Terminplanung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_158",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rechnen ___ einer Verzögerung.",
-      "answer": "mit",
-      "choices": [
-        "mit",
-        "auf",
-        "an",
-        "über"
-      ],
-      "explanation": "rechnen mit + Dativ. Kontext: Planung.",
-      "example": "Wir rechnen mit einer Verzögerung.",
-      "context": "Planung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Planung"
-      ]
-    },
-    {
-      "id": "v18_2_prep_159",
-      "module": "v17_praepositionalverben",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma verzichtet ___ eine Mahnung.",
-      "answer": "auf",
-      "choices": [
-        "auf",
-        "an",
-        "über",
         "mit"
       ],
-      "explanation": "verzichten auf + Akkusativ. Kontext: Rechnung.",
-      "example": "Die Firma verzichtet auf eine Mahnung.",
-      "context": "Rechnung",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
-      "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Rechnung"
-      ]
+      "example": "Ich kümmere mich um die Unterlagen."
     },
     {
-      "id": "v18_2_prep_160",
+      "id": "v17_prep_corr_015",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich kümmere mich für die Unterlagen.",
+      "answer": "Ich kümmere mich um die Unterlagen.",
+      "explanation": "Correct pattern: sich kümmern um + Akkusativ.",
+      "translation": "to take care of the documents",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich kümmere mich um die Unterlagen."
+    },
+    {
+      "id": "v17_prep_016",
       "module": "v17_praepositionalverben",
       "exerciseType": "gap_fill",
-      "prompt": "Wir profitieren ___ der neuen Regelung.",
-      "answer": "von",
-      "choices": [
-        "von",
-        "auf",
-        "über",
-        "an"
-      ],
-      "explanation": "profitieren von + Dativ. Kontext: Arbeitsorganisation.",
-      "example": "Wir profitieren von der neuen Regelung.",
-      "context": "Arbeitsorganisation",
-      "translation": "Prepositional verbs in workplace German.",
-      "level": "B1/B2",
+      "prompt": "Der Test besteht ___ drei Teilen.",
+      "answer": "aus",
+      "explanation": "bestehen aus + Dativ. bestehen aus + Dativ.",
+      "translation": "to consist of three parts",
+      "level": "B1+",
       "tags": [
-        "Präpositionalverben",
-        "Kasus",
-        "Arbeitsorganisation"
-      ]
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
+      "choices": [
+        "aus",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Der Test besteht aus drei Teilen."
+    },
+    {
+      "id": "v17_prep_corr_016",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Der Test besteht von drei Teilen.",
+      "answer": "Der Test besteht aus drei Teilen.",
+      "explanation": "Correct pattern: bestehen aus + Dativ.",
+      "translation": "to consist of three parts",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Der Test besteht aus drei Teilen."
+    },
+    {
+      "id": "v17_prep_017",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Kunde fragt ___ dem Preis.",
+      "answer": "nach",
+      "explanation": "fragen nach + Dativ. fragen nach + Dativ.",
+      "translation": "to ask about the price",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Dativ",
+        "Beruf"
+      ],
+      "choices": [
+        "nach",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Der Kunde fragt nach dem Preis."
+    },
+    {
+      "id": "v17_prep_corr_017",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Der Kunde fragt über dem Preis.",
+      "answer": "Der Kunde fragt nach dem Preis.",
+      "explanation": "Correct pattern: fragen nach + Dativ.",
+      "translation": "to ask about the price",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Der Kunde fragt nach dem Preis."
+    },
+    {
+      "id": "v17_prep_018",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich antworte ___ die E-Mail.",
+      "answer": "auf",
+      "explanation": "antworten auf + Akkusativ. antworten auf + Akkusativ.",
+      "translation": "to answer the email",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Ich antworte auf die E-Mail."
+    },
+    {
+      "id": "v17_prep_corr_018",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich antworte an die E-Mail.",
+      "answer": "Ich antworte auf die E-Mail.",
+      "explanation": "Correct pattern: antworten auf + Akkusativ.",
+      "translation": "to answer the email",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich antworte auf die E-Mail."
+    },
+    {
+      "id": "v17_prep_019",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir einigen uns ___ einen Termin.",
+      "answer": "auf",
+      "explanation": "sich einigen auf + Akkusativ. sich einigen auf + Akkusativ.",
+      "translation": "to agree on a date",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Wir einigen uns auf einen Termin."
+    },
+    {
+      "id": "v17_prep_corr_019",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Wir einigen uns an einen Termin.",
+      "answer": "Wir einigen uns auf einen Termin.",
+      "explanation": "Correct pattern: sich einigen auf + Akkusativ.",
+      "translation": "to agree on a date",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Wir einigen uns auf einen Termin."
+    },
+    {
+      "id": "v17_prep_020",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich verlasse mich ___ meinen Kollegen.",
+      "answer": "auf",
+      "explanation": "sich verlassen auf + Akkusativ. sich verlassen auf + Akkusativ.",
+      "translation": "to rely on my colleague",
+      "level": "B1+",
+      "tags": [
+        "Präpositionalverb",
+        "Akkusativ",
+        "Beruf"
+      ],
+      "choices": [
+        "auf",
+        "bei",
+        "in",
+        "zu",
+        "für",
+        "mit"
+      ],
+      "example": "Ich verlasse mich auf meinen Kollegen."
+    },
+    {
+      "id": "v17_prep_corr_020",
+      "module": "v17_praepositionalverben",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich verlasse mich an meinen Kollegen.",
+      "answer": "Ich verlasse mich auf meinen Kollegen.",
+      "explanation": "Correct pattern: sich verlassen auf + Akkusativ.",
+      "translation": "to rely on my colleague",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Präpositionalverb"
+      ],
+      "example": "Ich verlasse mich auf meinen Kollegen."
     }
   ]
 }

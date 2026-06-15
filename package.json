@@ -1,12 +1,12 @@
 {
   "scripts": {
     "start": "python3 -m http.server 8080",
-    "check": "node dev/check.js",
+    "check": "node dev/check.js && node dev/audit_v14.js && node dev/audit_v15.js",
     "audit:v14": "node dev/audit_v14.js",
     "audit:semantic": "node dev/semantic_guard.js",
     "audit:v15": "node dev/audit_v15.js",
-    "audit": "node dev/check.js"
+    "audit": "node dev/check.js && node dev/audit_v14.js && node dev/audit_v15.js"
   },
   "devDependencies": {},
-  "version": "18.2.5"
+  "version": "17.0.0"
 }

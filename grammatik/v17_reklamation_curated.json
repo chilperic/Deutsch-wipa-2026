@@ -1,0 +1,329 @@
+{
+  "module": "v17_reklamation",
+  "title": "v17 · Reklamation / technische Probleme · kuratiert",
+  "status": "curated",
+  "items": [
+    {
+      "id": "v17_compl_001",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Das Tablet funktioniert nicht. Was sagt der Kunde?",
+      "answer": "Das Tablet funktioniert leider nicht.",
+      "explanation": "leider normally comes before nicht in this sentence.",
+      "translation": "The tablet unfortunately does not work.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Das Tablet funktioniert leider nicht.",
+        "Das Tablet druckt nicht leider.",
+        "Ich habe die Stelle bekommen.",
+        "Der Termin ist morgen."
+      ]
+    },
+    {
+      "id": "v17_compl_002",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Drucker druckt nicht. Was sagt der Kunde?",
+      "answer": "Der Drucker druckt leider nicht.",
+      "explanation": "Correct order: leider nicht.",
+      "translation": "The printer unfortunately does not print.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Der Drucker druckt leider nicht.",
+        "Der Drucker druckt nicht leider.",
+        "Der Drucker ist sehr freundlich.",
+        "Ich komme später."
+      ]
+    },
+    {
+      "id": "v17_compl_003",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die App öffnet sich nicht. Formuliere höflich.",
+      "answer": "Die App öffnet sich leider nicht.",
+      "explanation": "Use a clear complaint sentence, not a random template.",
+      "translation": "The app unfortunately does not open.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Die App öffnet sich leider nicht.",
+        "Die App öffnet sich nicht leider.",
+        "Ich öffne die Kollegin.",
+        "Die App bewirbt sich."
+      ]
+    },
+    {
+      "id": "v17_compl_004",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Könnten Sie bitte prüfen, ___ das Handy nicht lädt?",
+      "answer": "warum",
+      "explanation": "Indirect question: warum + subject + nicht + verb at the end.",
+      "translation": "Could you please check why the phone does not charge?",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "warum",
+        "weil",
+        "deshalb",
+        "trotzdem"
+      ]
+    },
+    {
+      "id": "v17_compl_005",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Könnten Sie bitte prüfen, warum die Waschmaschine ___?",
+      "answer": "nicht funktioniert",
+      "explanation": "Indirect question needs verb-final order.",
+      "translation": "Could you please check why the washing machine does not work?",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "nicht funktioniert",
+        "funktioniert nicht",
+        "druckt nicht",
+        "nicht leider funktioniert"
+      ]
+    },
+    {
+      "id": "v17_compl_006",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Könnten Sie bitte prüfen, warum die Ware falsch ___?",
+      "answer": "geliefert wurde",
+      "explanation": "Passive in an indirect question: verb-final wurde.",
+      "translation": "Could you please check why the goods were delivered incorrectly?",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "geliefert wurde",
+        "wurde geliefert",
+        "liefert wurde",
+        "geliefert hat"
+      ]
+    },
+    {
+      "id": "v17_compl_007",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Ich möchte den Artikel zurückgeben, weil er beschädigt ___.",
+      "answer": "ist",
+      "explanation": "beschädigt sein describes the state.",
+      "translation": "I would like to return the item because it is damaged.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "ist",
+        "wurde",
+        "hat",
+        "sein"
+      ]
+    },
+    {
+      "id": "v17_compl_008",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die Rechnung ist falsch. Was ist höflich?",
+      "answer": "Könnten Sie die Rechnung bitte korrigieren?",
+      "explanation": "Use polite request with könnten Sie bitte.",
+      "translation": "Could you please correct the invoice?",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Könnten Sie die Rechnung bitte korrigieren?",
+        "Korrigieren Sie sofort, das ist schlecht.",
+        "Ich kann die Rechnung nicht leider.",
+        "Die Rechnung arbeitet nicht."
+      ]
+    },
+    {
+      "id": "v17_compl_009",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Die Lieferung ist unvollständig. Was sagst du?",
+      "answer": "Leider fehlt ein Teil der Lieferung.",
+      "explanation": "Natural complaint: Leider fehlt ein Teil.",
+      "translation": "Unfortunately, one part of the delivery is missing.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Leider fehlt ein Teil der Lieferung.",
+        "Die Lieferung ist nicht leider vollständig.",
+        "Der Bildschirm druckt nicht.",
+        "Ich nehme an der Lieferung teil."
+      ]
+    },
+    {
+      "id": "v17_compl_010",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Bildschirm zeigt eine Fehlermeldung. Formuliere als indirekte Frage.",
+      "answer": "Könnten Sie bitte prüfen, warum der Bildschirm eine Fehlermeldung zeigt?",
+      "explanation": "Indirect question: verb at the end.",
+      "translation": "Could you please check why the screen shows an error message?",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Könnten Sie bitte prüfen, warum der Bildschirm eine Fehlermeldung zeigt?",
+        "Könnten Sie bitte prüfen, warum der Bildschirm zeigt eine Fehlermeldung?",
+        "Warum zeigt der Bildschirm eine Fehlermeldung prüfen?",
+        "Der Bildschirm druckt nicht leider."
+      ]
+    },
+    {
+      "id": "v17_compl_011",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Akku hält nur eine Stunde. Was ist präzise?",
+      "answer": "Der Akku hält leider nur eine Stunde.",
+      "explanation": "Use a device-specific description.",
+      "translation": "Unfortunately, the battery lasts only one hour.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Der Akku hält leider nur eine Stunde.",
+        "Der Akku arbeitet nicht im Büro.",
+        "Der Akku druckt nicht leider.",
+        "Ich habe keinen Akku beworben."
+      ]
+    },
+    {
+      "id": "v17_compl_012",
+      "module": "v17_reklamation",
+      "exerciseType": "multiple_choice",
+      "prompt": "Der Termin mit dem Support wurde nicht bestätigt. Was sagst du?",
+      "answer": "Ich habe leider noch keine Bestätigung erhalten.",
+      "explanation": "kein for missing confirmation; leider before the missing-information phrase.",
+      "translation": "Unfortunately, I have not yet received a confirmation.",
+      "level": "B1+/B2",
+      "tags": [
+        "Reklamation",
+        "Technik",
+        "Service"
+      ],
+      "choices": [
+        "Ich habe leider noch keine Bestätigung erhalten.",
+        "Ich habe nicht leider Bestätigung bekommen.",
+        "Der Support druckt nicht.",
+        "Ich nehme an der Bestätigung teil."
+      ]
+    },
+    {
+      "id": "v17_compl_corr_001",
+      "module": "v17_reklamation",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Das Handy lädt nicht leider.",
+      "answer": "Das Handy lädt leider nicht.",
+      "explanation": "leider usually precedes nicht.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v17_compl_corr_002",
+      "module": "v17_reklamation",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Könnten Sie bitte prüfen, warum die App funktioniert nicht?",
+      "answer": "Könnten Sie bitte prüfen, warum die App nicht funktioniert?",
+      "explanation": "Indirect question: finite verb at the end.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v17_compl_corr_003",
+      "module": "v17_reklamation",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Könnten Sie bitte prüfen, warum das Handy wurde falsch geliefert?",
+      "answer": "Könnten Sie bitte prüfen, warum das Handy falsch geliefert wurde?",
+      "explanation": "Passive indirect question: wurde goes to the end.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v17_compl_corr_004",
+      "module": "v17_reklamation",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Der Bildschirm druckt nicht.",
+      "answer": "Der Bildschirm zeigt kein Bild.",
+      "explanation": "Use device-specific verbs; screens do not print.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Reklamation"
+      ]
+    },
+    {
+      "id": "v17_compl_corr_005",
+      "module": "v17_reklamation",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Die Waschmaschine druckt nicht.",
+      "answer": "Die Waschmaschine funktioniert nicht.",
+      "explanation": "Washing machines do not print.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "Korrektur",
+        "Reklamation"
+      ]
+    }
+  ]
+}

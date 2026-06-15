@@ -1,0 +1,197 @@
+{
+  "module": "material_temporal",
+  "title": "Material B1.2 · Temporale Nebensätze",
+  "status": "material-expanded",
+  "items": [
+    {
+      "id": "mat_temp_001",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "___ ich nach Deutschland gekommen bin, lerne ich Deutsch.",
+      "answer": "Seitdem",
+      "choices": [
+        "Als",
+        "Seitdem",
+        "Wenn",
+        "Während"
+      ],
+      "explanation": "Seitdem introduces an action/state continuing from the past to now.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_002",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "___ ich Kind war, wollte ich im Ausland leben.",
+      "answer": "Als",
+      "choices": [
+        "Als",
+        "Seitdem",
+        "Wenn",
+        "Während"
+      ],
+      "explanation": "Use als for one-time past situations.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_003",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "___ ich Zeit habe, wiederhole ich die Präpositionen.",
+      "answer": "Wenn",
+      "choices": [
+        "Als",
+        "Seitdem",
+        "Wenn",
+        "Während"
+      ],
+      "explanation": "Use wenn for repeated or future conditions.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_004",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "Ich rufe dich an, ___ ich beim Arzt war.",
+      "answer": "nachdem",
+      "choices": [
+        "Als",
+        "Seitdem",
+        "Wenn",
+        "nachdem"
+      ],
+      "explanation": "Nachdem expresses earlier action before the main action.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_005",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "___ der Kurs beginnt, lese ich die Hausaufgaben.",
+      "answer": "Bevor",
+      "choices": [
+        "Als",
+        "Bevor",
+        "Seitdem",
+        "Wenn"
+      ],
+      "explanation": "Bevor introduces the later action; the main action happens first.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_006",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "___ ich arbeite, höre ich keine Musik.",
+      "answer": "Während",
+      "choices": [
+        "Als",
+        "Seitdem",
+        "Wenn",
+        "Während"
+      ],
+      "explanation": "Während marks simultaneous actions.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_007",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "Ich habe die E-Mail geschrieben, ___ ich die Dokumente geprüft hatte.",
+      "answer": "nachdem",
+      "choices": [
+        "Als",
+        "Seitdem",
+        "Wenn",
+        "nachdem"
+      ],
+      "explanation": "With past sequence: nachdem + Plusquamperfekt, main clause often Präteritum/Perfekt.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_008",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "connector_selection",
+      "prompt": "___ ich die Kündigung erhalten hatte, suchte ich sofort eine neue Stelle.",
+      "answer": "Nachdem",
+      "choices": [
+        "Als",
+        "Nachdem",
+        "Seitdem",
+        "Wenn"
+      ],
+      "explanation": "Earlier past event takes Plusquamperfekt.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_009",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Correct: Wenn ich 2019 nach Düsseldorf kam, war alles neu.",
+      "answer": "Als ich 2019 nach Düsseldorf kam, war alles neu.",
+      "choices": [],
+      "explanation": "Specific past event → als, not wenn.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    },
+    {
+      "id": "mat_temp_010",
+      "module": "material_temporal",
+      "type": "active_recall",
+      "exerciseType": "sentence_correction",
+      "prompt": "Correct: Seit ich in Deutschland bin, ich lerne jeden Tag.",
+      "answer": "Seit ich in Deutschland bin, lerne ich jeden Tag.",
+      "choices": [],
+      "explanation": "Nebensatz first → conjugated verb directly after comma in main clause.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "temporale Nebensätze"
+      ]
+    }
+  ]
+}

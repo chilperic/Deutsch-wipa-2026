@@ -13,7 +13,7 @@ try {
   const verbs = readJson('data/conjugator_verbs.json').verbs || {};
   const curated = readJson('data/curated_verbs.json');
 
-  if(!app.includes("2026.06.11-v17-reliable-tutor-middle-db")) fail('APP_VERSION is not v17'); else ok('APP_VERSION v17');
+  if(!app.includes("2026.06.10-v16-quickstart-fix")) fail('APP_VERSION is not v15'); else ok('APP_VERSION v15');
   if(!html.includes('quickStartPanel')) fail('quick start panel missing'); else ok('quick start panel present');
   if(!/function\s+renderQuickStart\s*\(/.test(app)) fail('renderQuickStart not defined'); else ok('quick start renderer defined');
   if(!curated.starter || curated.starter.length < 20) fail('starter verb set too small'); else ok(`starter verbs: ${curated.starter.length}`);
@@ -30,13 +30,7 @@ try {
   }
   ok('separable Konjunktiv II valid for core verbs');
   const modules = manifest.modules || [];
-  if(modules.length < 15 || modules.length > 25) fail('module count outside v17 middle-db target'); else ok(`v17 middle-db modules: ${modules.length}`);
-  const quarantined = manifest.quarantine || [];
-  for(const bad of ['grammatik/production_adverbien_intensiv.json','grammatik/konnektoren_engine.json','grammatik/reklamation_technische_probleme.json']){
-    if(modules.some(m=>m.path===bad)) fail('quarantined unsafe module still loaded: '+bad);
-    if(!quarantined.includes(bad)) fail('quarantine list missing: '+bad);
-  }
-  ok('unsafe generated modules excluded from default manifest');
+  if(modules.length < 50) fail('module count unexpectedly low'); else ok(`modules: ${modules.length}`);
   const allFiles = modules.map(m => m.path).filter(Boolean);
   const missingFiles = allFiles.filter(p => !fs.existsSync(path.join(root,p)));
   if(missingFiles.length) fail('manifest missing files: '+missingFiles.join(', ')); else ok('manifest files present');
@@ -46,7 +40,7 @@ try {
   }
   ok('regional locale layer present');
   if(process.exitCode) process.exit(process.exitCode);
-  console.log('OK: v17 reliable-tutor audit passed');
+  console.log('OK: v15 professional-core audit passed');
 } catch (e) {
   console.error(e);
   process.exit(1);

@@ -88,9 +88,8 @@
   "repository_ready": true,
   "readme": "README.md",
   "license_file": "LICENSE",
-  "version": "17.1.0",
+  "version": "2026.06.11-v17-reliable-tutor-middle-db",
   "description": "Deutsch-WiPA B1/B2 PWA with feature-complete exercise engine and B1.1/B1.2/B2.1 material expansions.",
   "module_count": 56,
-  "manifest_item_count": 5914,
-  "name": "Deutsch-WiPA 2026 v17.1 Reliable Tutor Purged"
+  "manifest_item_count": 5914
 }

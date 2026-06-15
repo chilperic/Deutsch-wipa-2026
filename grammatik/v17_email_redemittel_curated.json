@@ -1,0 +1,187 @@
+{
+  "module": "v17_email_redemittel",
+  "title": "v17 · E-Mail & formelle Redemittel · kuratiert",
+  "status": "curated",
+  "items": [
+    {
+      "id": "v17_email_001",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Bitte um Information: Startdatum eines Kurses",
+      "answer": "Könnten Sie mir bitte mitteilen, wann der Kurs beginnt?",
+      "explanation": "Polite request: Könnten Sie mir bitte mitteilen, ...",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_002",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Bitte um Information: fehlende Unterlagen",
+      "answer": "Könnten Sie mir bitte sagen, welche Unterlagen noch fehlen?",
+      "explanation": "Indirect question with verb-final order: welche Unterlagen noch fehlen.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_003",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Termin bestätigen",
+      "answer": "Hiermit bestätige ich den Termin am Montag um 10 Uhr.",
+      "explanation": "Formal confirmation phrase.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_004",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Termin verschieben",
+      "answer": "Könnten wir den Termin bitte auf nächste Woche verschieben?",
+      "explanation": "Polite request with Konjunktiv II.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_005",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Entschuldigung für Verspätung",
+      "answer": "Entschuldigen Sie bitte die Verspätung.",
+      "explanation": "Standard formal apology.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_006",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Anhang erwähnen",
+      "answer": "Im Anhang finden Sie die gewünschten Unterlagen.",
+      "explanation": "Standard email phrase.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_007",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Rückmeldung erbitten",
+      "answer": "Ich freue mich über eine kurze Rückmeldung.",
+      "explanation": "Polite closing request.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_008",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Nachfrage nach Bewerbung",
+      "answer": "Ich wollte mich erkundigen, ob es Neuigkeiten zu meiner Bewerbung gibt.",
+      "explanation": "sich erkundigen + ob-clause.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_009",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Dank für schnelle Antwort",
+      "answer": "Vielen Dank für Ihre schnelle Rückmeldung.",
+      "explanation": "Common formal thanks.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_010",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Bitte um Korrektur",
+      "answer": "Könnten Sie die Rechnung bitte noch einmal prüfen?",
+      "explanation": "Polite service request.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_011",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Absage formulieren",
+      "answer": "Leider kann ich den Termin morgen nicht wahrnehmen.",
+      "explanation": "wahrnehmen = attend/keep an appointment.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    },
+    {
+      "id": "v17_email_012",
+      "module": "v17_email_redemittel",
+      "exerciseType": "active_recall",
+      "prompt": "Formuliere höflich: Alternative anbieten",
+      "answer": "Gern schlage ich Dienstag um 14 Uhr als Alternative vor.",
+      "explanation": "vorschlagen is separable: ich schlage ... vor.",
+      "translation": "",
+      "level": "B1+/B2",
+      "tags": [
+        "E-Mail",
+        "Redemittel",
+        "Beruf"
+      ]
+    }
+  ]
+}

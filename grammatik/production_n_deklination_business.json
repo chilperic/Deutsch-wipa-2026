@@ -1,0 +1,191 @@
+{
+  "module": "production_n_deklination_business",
+  "title": "Production Grammatik · n-Deklination im Beruf",
+  "status": "production",
+  "items": [
+    {
+      "id": "ndecl_prod_001",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Ich spreche morgen mit dem ___.",
+      "answer": "Kunden",
+      "choices": [
+        "Kunden",
+        "Kunde",
+        "Kundee",
+        ""
+      ],
+      "explanation": "Weak masculine noun in dative: der Kunde → dem Kunden.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_002",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Wir verhandeln mit einem neuen ___.",
+      "answer": "Lieferanten",
+      "choices": [
+        "Lieferanten",
+        "Lieferant",
+        "Lieferante",
+        ""
+      ],
+      "explanation": "Weak masculine noun in dative after mit: Lieferant → Lieferanten.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_003",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Die Teamleiterin erklärt dem ___ den Ablauf.",
+      "answer": "Praktikanten",
+      "choices": [
+        "Praktikanten",
+        "Praktikant",
+        "Praktikante",
+        ""
+      ],
+      "explanation": "Weak masculine noun in dative: dem Praktikanten.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_004",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Ich frage den ___ nach den Unterlagen.",
+      "answer": "Kollegen",
+      "choices": [
+        "Kollegen",
+        "Kollege",
+        "Kollegee",
+        ""
+      ],
+      "explanation": "Weak masculine noun in accusative: den Kollegen.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_005",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Die Personalabteilung lädt den ___ zum Gespräch ein.",
+      "answer": "Bewerber",
+      "choices": [
+        "Bewerber",
+        "Bewerber",
+        "Bewerbern",
+        ""
+      ],
+      "explanation": "Not every masculine person noun is weak. der Bewerber remains den Bewerber.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_006",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Die Entscheidung betrifft den ___.",
+      "answer": "Menschen",
+      "choices": [
+        "Menschen",
+        "Mensch",
+        "Mensche",
+        ""
+      ],
+      "explanation": "Weak masculine: den Menschen.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_007",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Bitte tragen Sie Ihren ___ vollständig ein.",
+      "answer": "Namen",
+      "choices": [
+        "Namen",
+        "Name",
+        "Namee",
+        ""
+      ],
+      "explanation": "der Name is weak/irregular: den Namen.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "ndecl_prod_008",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "case_trainer",
+      "prompt": "Ich habe Herrn Müller / den ___ informiert.",
+      "answer": "Herrn",
+      "choices": [
+        "Herrn",
+        "Herr",
+        "Herre",
+        ""
+      ],
+      "explanation": "der Herr → den Herrn/dem Herrn.",
+      "example": "",
+      "level": "B1/B2",
+      "tags": [
+        "n_deklination",
+        "business_people"
+      ],
+      "openEnded": false,
+      "checklist": []
+    }
+  ]
+}

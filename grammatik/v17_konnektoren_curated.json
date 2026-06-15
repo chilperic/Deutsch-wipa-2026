@@ -1,3686 +1,490 @@
 {
   "module": "v17_konnektoren",
   "title": "v17 · Konnektoren & Satzbau · kuratiert",
-  "status": "curated_expanded_context_160",
+  "status": "curated",
   "items": [
     {
-      "id": "v18_2_conn_001",
+      "id": "v17_conn_001",
       "module": "v17_konnektoren",
       "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_002",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_003",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_004",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_005",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_006",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_007",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_008",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_009",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
+      "prompt": "Ich habe die Datei geprüft, ___ ich sie verschickt habe.",
       "answer": "bevor",
+      "explanation": "bevor introduces the later action; first check, then send.",
+      "translation": "I checked the file before I sent it.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
       "choices": [
         "bevor",
         "nachdem",
+        "weil",
+        "obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_002",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ die Rechnung fehlerhaft ist, bitten wir um eine Korrektur.",
+      "answer": "Da",
+      "explanation": "Da gives the reason in a subordinate clause; finite verb goes to the end.",
+      "translation": "Since the invoice is incorrect, we ask for a correction.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Da",
+        "Obwohl",
+        "Trotzdem",
+        "Deshalb"
+      ]
+    },
+    {
+      "id": "v17_conn_003",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die App funktioniert nicht. ___ schreibe ich dem Support.",
+      "answer": "Deshalb",
+      "explanation": "Deshalb starts a main clause; the conjugated verb follows immediately.",
+      "translation": "The app does not work. Therefore I write to support.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Deshalb",
+        "Obwohl",
+        "Weil",
+        "Damit"
+      ]
+    },
+    {
+      "id": "v17_conn_004",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich komme zum Termin, ___ ich heute wenig Zeit habe.",
+      "answer": "obwohl",
+      "explanation": "obwohl introduces a contrast and sends the verb to the end.",
+      "translation": "I come to the appointment although I have little time today.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "obwohl",
+        "weil",
         "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_010",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_011",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_012",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
         "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
       ]
     },
     {
-      "id": "v18_2_conn_013",
+      "id": "v17_conn_005",
       "module": "v17_konnektoren",
       "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_014",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
+      "prompt": "Die Lieferung ist angekommen, ___ ein Teil fehlt.",
       "answer": "aber",
+      "explanation": "aber connects two main clauses with contrast; no verb-final order.",
+      "translation": "The delivery arrived, but one part is missing.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
       "choices": [
         "aber",
         "weil",
         "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
+        "damit"
       ]
     },
     {
-      "id": "v18_2_conn_015",
+      "id": "v17_conn_006",
       "module": "v17_konnektoren",
       "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
+      "prompt": "Wir rufen den Kunden an, ___ wir die Änderung erklären können.",
+      "answer": "damit",
+      "explanation": "damit expresses purpose: so that we can explain the change.",
+      "translation": "We call the customer so that we can explain the change.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
       "choices": [
+        "damit",
+        "weil",
+        "trotzdem",
+        "nachdem"
+      ]
+    },
+    {
+      "id": "v17_conn_007",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ ich in Deutschland bin, lerne ich jeden Tag neue Wörter.",
+      "answer": "Seit",
+      "explanation": "Seit marks a duration starting in the past and continuing now.",
+      "translation": "Since I have been in Germany, I learn new words every day.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Seit",
+        "Bevor",
+        "Nachdem",
+        "Obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_008",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe die E-Mail beantwortet, ___ ich den Anhang gelesen hatte.",
+      "answer": "nachdem",
+      "explanation": "nachdem marks the earlier completed action.",
+      "translation": "I answered the email after I had read the attachment.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "nachdem",
+        "bevor",
+        "weil",
+        "damit"
+      ]
+    },
+    {
+      "id": "v17_conn_009",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Termin wurde verschoben, ___ der Kunde krank ist.",
+      "answer": "weil",
+      "explanation": "weil gives the reason; verb final in the subordinate clause.",
+      "translation": "The appointment was postponed because the customer is ill.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "weil",
+        "trotzdem",
+        "aber",
+        "damit"
+      ]
+    },
+    {
+      "id": "v17_conn_010",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Es gab ein technisches Problem. ___ konnten wir die Datei nicht hochladen.",
+      "answer": "Deshalb",
+      "explanation": "Deshalb expresses consequence; verb-second order follows.",
+      "translation": "There was a technical problem. Therefore we could not upload the file.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Deshalb",
+        "Obwohl",
+        "Damit",
+        "Während"
+      ]
+    },
+    {
+      "id": "v17_conn_011",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich lerne Deutsch, ___ ich bessere Chancen auf dem Arbeitsmarkt habe.",
+      "answer": "damit",
+      "explanation": "damit expresses a goal or purpose.",
+      "translation": "I learn German so that I have better chances on the job market.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "damit",
+        "obwohl",
+        "nachdem",
+        "trotzdem"
+      ]
+    },
+    {
+      "id": "v17_conn_012",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "___ der Kurs beginnt, wiederhole ich die wichtigsten Wörter.",
+      "answer": "Bevor",
+      "explanation": "Bevor introduces the later action; the repetition happens first.",
+      "translation": "Before the course starts, I review the most important words.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "Bevor",
+        "Nachdem",
+        "Seit",
+        "Obwohl"
+      ]
+    },
+    {
+      "id": "v17_conn_013",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Die Kollegin ist krank, ___ übernimmt Herr Müller die Aufgabe.",
+      "answer": "deshalb",
+      "explanation": "deshalb: consequence with verb-second word order.",
+      "translation": "The colleague is ill, therefore Mr Müller takes over the task.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "deshalb",
         "obwohl",
         "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
+        "denn"
       ]
     },
     {
-      "id": "v18_2_conn_016",
+      "id": "v17_conn_014",
       "module": "v17_konnektoren",
       "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
+      "prompt": "Der Drucker funktioniert, ___ das Papier richtig eingelegt ist.",
+      "answer": "wenn",
+      "explanation": "wenn expresses condition here.",
+      "translation": "The printer works if the paper is inserted correctly.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "wenn",
+        "obwohl",
+        "bevor",
+        "trotzdem"
+      ]
+    },
+    {
+      "id": "v17_conn_015",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich unterschreibe den Vertrag nicht, ___ ich ihn vollständig gelesen habe.",
+      "answer": "bevor",
+      "explanation": "bevor: do not sign before reading.",
+      "translation": "I do not sign the contract before I have read it completely.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "bevor",
+        "nachdem",
+        "damit",
+        "während"
+      ]
+    },
+    {
+      "id": "v17_conn_016",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Kunde war verärgert, ___ blieb die Mitarbeiterin ruhig.",
+      "answer": "trotzdem",
+      "explanation": "trotzdem starts a main clause with contrast; verb-second follows.",
+      "translation": "The customer was upset; nevertheless the employee remained calm.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "trotzdem",
+        "weil",
+        "damit",
+        "nachdem"
+      ]
+    },
+    {
+      "id": "v17_conn_017",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir hatten wenig Zeit, ___ haben wir die wichtigsten Punkte besprochen.",
+      "answer": "trotzdem",
+      "explanation": "trotzdem expresses contrast against expectation.",
+      "translation": "We had little time; nevertheless we discussed the most important points.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
+      "choices": [
+        "trotzdem",
+        "weil",
+        "damit",
+        "bevor"
+      ]
+    },
+    {
+      "id": "v17_conn_018",
+      "module": "v17_konnektoren",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich schreibe eine kurze Notiz, ___ ich den Termin nicht vergesse.",
       "answer": "damit",
+      "explanation": "damit gives the purpose of the note.",
+      "translation": "I write a short note so that I do not forget the appointment.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
       "choices": [
         "damit",
         "weil",
         "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
+        "nachdem"
       ]
     },
     {
-      "id": "v18_2_conn_017",
+      "id": "v17_conn_019",
       "module": "v17_konnektoren",
       "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_018",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_019",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_020",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_021",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_022",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_023",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_024",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_025",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_026",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_027",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_028",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
+      "prompt": "___ die Besprechung vorbei war, schickte ich das Protokoll.",
       "answer": "Nachdem",
+      "explanation": "Nachdem marks the earlier completed event.",
+      "translation": "After the meeting was over, I sent the minutes.",
+      "level": "B1+/B2",
+      "tags": [
+        "Konnektor",
+        "Satzbau"
+      ],
       "choices": [
         "Nachdem",
         "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
+        "Während",
+        "Obwohl"
       ]
     },
     {
-      "id": "v18_2_conn_029",
+      "id": "v17_conn_020",
       "module": "v17_konnektoren",
       "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "prompt": "Wir können heute nicht liefern, ___ das Ersatzteil fehlt.",
+      "answer": "denn",
+      "explanation": "denn gives a reason but keeps main-clause word order after it.",
+      "translation": "We cannot deliver today because the spare part is missing.",
+      "level": "B1+/B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_030",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
+        "Konnektor",
+        "Satzbau"
       ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_031",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
       "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_032",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_033",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_034",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
-      ]
-    },
-    {
-      "id": "v18_2_conn_035",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_036",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_037",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_038",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_039",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_040",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_041",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_042",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_043",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_044",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_045",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_046",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
+        "denn",
         "trotzdem",
         "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_047",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_048",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_049",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_050",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_051",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_052",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_053",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_054",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
-      ]
-    },
-    {
-      "id": "v18_2_conn_055",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_056",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_057",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_058",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_059",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_060",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_061",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_062",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_063",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_064",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_065",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_066",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_067",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_068",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_069",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_070",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_071",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_072",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_073",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_074",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
-      ]
-    },
-    {
-      "id": "v18_2_conn_075",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_076",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_077",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_078",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_079",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_080",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_081",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_082",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_083",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_084",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_085",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_086",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_087",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_088",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_089",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_090",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_091",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_092",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_093",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_094",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
-      ]
-    },
-    {
-      "id": "v18_2_conn_095",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_096",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_097",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_098",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_099",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_100",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_101",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_102",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_103",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_104",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_105",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_106",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_107",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_108",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_109",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_110",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_111",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_112",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_113",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_114",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
-      ]
-    },
-    {
-      "id": "v18_2_conn_115",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_116",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_117",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_118",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_119",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_120",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_121",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_122",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_123",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_124",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_125",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_126",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_127",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_128",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_129",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_130",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_131",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_132",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_133",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_134",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
-      ]
-    },
-    {
-      "id": "v18_2_conn_135",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_136",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_137",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_138",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
-      ]
-    },
-    {
-      "id": "v18_2_conn_139",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_140",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_141",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Rechnung ist fehlerhaft, ___ bitten wir um Korrektur.",
-      "answer": "deshalb",
-      "choices": [
-        "deshalb",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "deshalb links cause/result; Verb directly after connector. Kontext: Rechnungsklärung.",
-      "example": "Die Rechnung ist fehlerhaft, deshalb bitten wir um Korrektur.",
-      "context": "Rechnungsklärung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Rechnungsklärung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_142",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "answer": "Obwohl",
-      "choices": [
-        "Obwohl",
-        "Weil",
-        "Deshalb",
-        "Trotzdem"
-      ],
-      "explanation": "obwohl introduces a subordinate concessive clause. Kontext: Logistik.",
-      "example": "Obwohl die Lieferung verspätet war, blieb der Kunde kooperativ.",
-      "context": "Logistik",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Logistik"
-      ]
-    },
-    {
-      "id": "v18_2_conn_143",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir bestätigen den Termin, ___ Sie uns die Unterlagen senden.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "aber"
-      ],
-      "explanation": "sobald = as soon as; verb at end in Nebensatz. Kontext: Formelle E-Mail.",
-      "example": "Wir bestätigen den Termin, sobald Sie uns die Unterlagen senden.",
-      "context": "Formelle E-Mail",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Formelle E-Mail"
-      ]
-    },
-    {
-      "id": "v18_2_conn_144",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kosten steigen, ___ müssen wir den Plan anpassen.",
-      "answer": "daher",
-      "choices": [
-        "daher",
-        "weil",
-        "obwohl",
-        "während"
-      ],
-      "explanation": "daher is a main-clause connector: therefore. Kontext: Budgetplanung.",
-      "example": "Die Kosten steigen, daher müssen wir den Plan anpassen.",
-      "context": "Budgetplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Budgetplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_145",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ länger die Lieferkette unterbrochen bleibt, ___ höher fallen die Kosten aus.",
-      "answer": "Je; desto",
-      "choices": [
-        "Je; desto",
-        "Wenn; dann",
-        "Zwar; aber",
-        "Sowohl; als auch"
-      ],
-      "explanation": "je ... desto expresses proportional comparison. Kontext: Lieferkette.",
-      "example": "Je länger die Lieferkette unterbrochen bleibt, desto höher fallen die Kosten aus.",
-      "context": "Lieferkette",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Lieferkette"
-      ]
-    },
-    {
-      "id": "v18_2_conn_146",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir haben den Fehler dokumentiert, ___ er erneut auftritt.",
-      "answer": "falls",
-      "choices": [
-        "falls",
-        "trotzdem",
-        "deshalb",
-        "und"
-      ],
-      "explanation": "falls = if/in case; subordinate clause. Kontext: IT-Support.",
-      "example": "Wir haben den Fehler dokumentiert, falls er erneut auftritt.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
-      ]
-    },
-    {
-      "id": "v18_2_conn_147",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Anfrage ist dringend, ___ sollte sie heute beantwortet werden.",
-      "answer": "deswegen",
-      "choices": [
-        "deswegen",
-        "obwohl",
-        "während",
-        "sondern"
-      ],
-      "explanation": "deswegen connects reason and consequence. Kontext: Kundenservice.",
-      "example": "Die Anfrage ist dringend, deswegen sollte sie heute beantwortet werden.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
-      ]
-    },
-    {
-      "id": "v18_2_conn_148",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "___ der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "answer": "Nachdem",
-      "choices": [
-        "Nachdem",
-        "Bevor",
-        "Obwohl",
-        "Trotzdem"
-      ],
-      "explanation": "nachdem marks the earlier completed action. Kontext: Vertrag.",
-      "example": "Nachdem der Vertrag geprüft wurde, unterschreiben wir ihn.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_149",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir unterschreiben nicht, ___ alle offenen Punkte geklärt sind.",
-      "answer": "bevor",
-      "choices": [
-        "bevor",
-        "nachdem",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "bevor = before; the main action waits. Kontext: Vertrag.",
-      "example": "Wir unterschreiben nicht, bevor alle offenen Punkte geklärt sind.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
-      ]
-    },
-    {
-      "id": "v18_2_conn_150",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Daten sind unvollständig; ___ kann der Bericht nicht freigegeben werden.",
-      "answer": "infolgedessen",
-      "choices": [
-        "infolgedessen",
-        "obwohl",
-        "während",
-        "sowohl"
-      ],
-      "explanation": "infolgedessen = consequently; formal written register. Kontext: Reporting.",
-      "example": "Die Daten sind unvollständig; infolgedessen kann der Bericht nicht freigegeben werden.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
-      ]
-    },
-    {
-      "id": "v18_2_conn_151",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Nachfrage ist gestiegen; ___ erhöhen wir die Kapazität.",
-      "answer": "demzufolge",
-      "choices": [
-        "demzufolge",
-        "obwohl",
-        "während",
-        "bevor"
-      ],
-      "explanation": "demzufolge = as a result; formal conclusion. Kontext: Produktion.",
-      "example": "Die Nachfrage ist gestiegen; demzufolge erhöhen wir die Kapazität.",
-      "context": "Produktion",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Produktion"
-      ]
-    },
-    {
-      "id": "v18_2_conn_152",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er spricht sowohl mit dem Kunden ___ mit der Buchhaltung.",
-      "answer": "als auch",
-      "choices": [
-        "als auch",
-        "aber auch",
-        "oder",
-        "denn"
-      ],
-      "explanation": "sowohl ... als auch pairs two equal elements. Kontext: Koordination.",
-      "example": "Er spricht sowohl mit dem Kunden als auch mit der Buchhaltung.",
-      "context": "Koordination",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Koordination"
-      ]
-    },
-    {
-      "id": "v18_2_conn_153",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir können den Termin entweder verschieben ___ online durchführen.",
-      "answer": "oder",
-      "choices": [
-        "oder",
-        "als auch",
-        "sondern",
-        "denn"
-      ],
-      "explanation": "entweder ... oder presents alternatives. Kontext: Terminplanung.",
-      "example": "Wir können den Termin entweder verschieben oder online durchführen.",
-      "context": "Terminplanung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Terminplanung"
-      ]
-    },
-    {
-      "id": "v18_2_conn_154",
-      "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Zwar ist das Angebot teuer, ___ die Qualität überzeugt.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "deshalb",
-        "obwohl"
-      ],
-      "explanation": "zwar ... aber contrasts concession and main point. Kontext: Einkauf.",
-      "example": "Zwar ist das Angebot teuer, aber die Qualität überzeugt.",
-      "context": "Einkauf",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
-      "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Einkauf"
+        "damit"
       ]
     },
     {
-      "id": "v18_2_conn_155",
+      "id": "v17_conn_corr_001",
       "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die App funktioniert nicht, ___ der Nutzer alles korrekt eingegeben hat.",
-      "answer": "obwohl",
-      "choices": [
-        "obwohl",
-        "weil",
-        "deshalb",
-        "daher"
-      ],
-      "explanation": "obwohl shows contrast against expectation. Kontext: IT-Support.",
-      "example": "Die App funktioniert nicht, obwohl der Nutzer alles korrekt eingegeben hat.",
-      "context": "IT-Support",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Weil die Rechnung ist falsch, bitten wir um eine Korrektur.",
+      "answer": "Weil die Rechnung falsch ist, bitten wir um eine Korrektur.",
+      "explanation": "In a subordinate clause with weil, the finite verb goes to the end.",
+      "translation": "",
+      "level": "B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "IT-Support"
+        "Korrektur",
+        "Wortstellung"
       ]
     },
     {
-      "id": "v18_2_conn_156",
+      "id": "v17_conn_corr_002",
       "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir brauchen die Daten, ___ wir den Bericht abschließen können.",
-      "answer": "damit",
-      "choices": [
-        "damit",
-        "weil",
-        "obwohl",
-        "trotzdem"
-      ],
-      "explanation": "damit expresses purpose. Kontext: Reporting.",
-      "example": "Wir brauchen die Daten, damit wir den Bericht abschließen können.",
-      "context": "Reporting",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich komme trotzdem zum Kurs, obwohl ich bin müde.",
+      "answer": "Ich komme trotzdem zum Kurs, obwohl ich müde bin.",
+      "explanation": "obwohl sends the finite verb to the end.",
+      "translation": "",
+      "level": "B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Reporting"
+        "Korrektur",
+        "Wortstellung"
       ]
     },
     {
-      "id": "v18_2_conn_157",
+      "id": "v17_conn_corr_003",
       "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Bewerbung ist vollständig, ___ fehlt noch das Zeugnis.",
-      "answer": "aber",
-      "choices": [
-        "aber",
-        "weil",
-        "obwohl",
-        "daher"
-      ],
-      "explanation": "aber connects a restriction/contrast. Kontext: Bewerbung.",
-      "example": "Die Bewerbung ist vollständig, aber fehlt noch das Zeugnis.",
-      "context": "Bewerbung",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Deshalb ich schreibe dem Support.",
+      "answer": "Deshalb schreibe ich dem Support.",
+      "explanation": "After deshalb at position 1, the finite verb comes in position 2.",
+      "translation": "",
+      "level": "B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Bewerbung"
+        "Korrektur",
+        "Wortstellung"
       ]
     },
     {
-      "id": "v18_2_conn_158",
+      "id": "v17_conn_corr_004",
       "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Er hat nicht angerufen, ___ eine E-Mail geschickt.",
-      "answer": "sondern",
-      "choices": [
-        "sondern",
-        "aber",
-        "oder",
-        "weil"
-      ],
-      "explanation": "sondern follows a negated alternative. Kontext: Kommunikation.",
-      "example": "Er hat nicht angerufen, sondern eine E-Mail geschickt.",
-      "context": "Kommunikation",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Ich habe die Datei geschickt, bevor ich habe sie geprüft.",
+      "answer": "Ich habe die Datei geschickt, bevor ich sie geprüft habe.",
+      "explanation": "In the bevor-clause, the finite verb goes to the end.",
+      "translation": "",
+      "level": "B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kommunikation"
+        "Korrektur",
+        "Wortstellung"
       ]
     },
     {
-      "id": "v18_2_conn_159",
+      "id": "v17_conn_corr_005",
       "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir rufen Sie zurück, ___ wir eine Antwort erhalten haben.",
-      "answer": "sobald",
-      "choices": [
-        "sobald",
-        "deshalb",
-        "trotzdem",
-        "jedoch"
-      ],
-      "explanation": "sobald = as soon as. Kontext: Kundenservice.",
-      "example": "Wir rufen Sie zurück, sobald wir eine Antwort erhalten haben.",
-      "context": "Kundenservice",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Einerseits die Arbeit ist anspruchsvoll, andererseits ist sie interessant.",
+      "answer": "Einerseits ist die Arbeit anspruchsvoll, andererseits ist sie interessant.",
+      "explanation": "With einerseits at position 1, the finite verb follows immediately.",
+      "translation": "",
+      "level": "B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Kundenservice"
+        "Korrektur",
+        "Wortstellung"
       ]
     },
     {
-      "id": "v18_2_conn_160",
+      "id": "v17_conn_corr_006",
       "module": "v17_konnektoren",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Kollegin prüft den Vertrag, ___ der Kunde wartet.",
-      "answer": "während",
-      "choices": [
-        "während",
-        "weil",
-        "deshalb",
-        "trotzdem"
-      ],
-      "explanation": "während marks simultaneous actions or contrast. Kontext: Vertrag.",
-      "example": "Die Kollegin prüft den Vertrag, während der Kunde wartet.",
-      "context": "Vertrag",
-      "translation": "Connectors and word order in professional contexts.",
-      "level": "B1/B2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Korrigiere: Zwar arbeitet er viel, aber nimmt er sich Zeit für Deutsch.",
+      "answer": "Zwar arbeitet er viel, aber er nimmt sich Zeit für Deutsch.",
+      "explanation": "After aber, keep a complete main clause with subject and finite verb.",
+      "translation": "",
+      "level": "B2",
       "tags": [
-        "Konnektoren",
-        "Satzbau",
-        "Vertrag"
+        "Korrektur",
+        "Wortstellung"
       ]
     }
   ]

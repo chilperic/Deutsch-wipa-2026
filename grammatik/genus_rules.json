@@ -1,0 +1,1337 @@
+{
+  "module": "genus_rules",
+  "title": "Genus Rules",
+  "status": "active",
+  "items": [
+    {
+      "id": "genus_rules_001",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_002",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_003",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_004",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_005",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_006",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_007",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_008",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_009",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_010",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_011",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_012",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_013",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_014",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_015",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_016",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_017",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_018",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_019",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_020",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_021",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_022",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_023",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_024",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_025",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_026",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_027",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_028",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_029",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_030",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_031",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_032",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_033",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_034",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_035",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_036",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_037",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_038",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_039",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_040",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_041",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_042",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_043",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_044",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_045",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_046",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_047",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_048",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_049",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_050",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_051",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_052",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_053",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_054",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_055",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -chen?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Mädchen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_056",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -lein?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Häuschen. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_057",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -nis?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Ergebnis. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_058",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ment?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Dokument. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_059",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -um?",
+      "answer": "das",
+      "meaning": "",
+      "case": "",
+      "example": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: das Zentrum. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_060",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -er?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Fahrer. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_061",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -el?",
+      "answer": "often der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Mantel. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_062",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: days/months/seasons?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Montag. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_063",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: male persons/jobs?",
+      "answer": "der",
+      "meaning": "",
+      "case": "",
+      "example": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: der Kollege. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_064",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: female persons/jobs?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Kollegin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_065",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ung?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bewerbung. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_066",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -heit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Sicherheit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_067",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -keit?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Möglichkeit. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_068",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -tion?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Information. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_069",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -ei?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Bäckerei. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    },
+    {
+      "id": "genus_rules_070",
+      "module": "genus_rules",
+      "display": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "prompt": "According to the rule, which article is most likely for nouns ending/meaning: -in?",
+      "answer": "die",
+      "meaning": "",
+      "case": "",
+      "example": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "explanation": "Example: die Fahrerin. This is a rule of thumb; always learn exceptions.",
+      "choices": [
+        "der",
+        "die",
+        "das",
+        "often der",
+        "often die",
+        "often das"
+      ]
+    }
+  ]
+}

@@ -1,3686 +1,446 @@
 {
   "module": "v17_kasus",
   "title": "v17 · Kasus Akkusativ/Dativ · kuratiert",
-  "status": "curated_expanded_context_160",
+  "status": "curated",
   "items": [
     {
-      "id": "v18_2_case_001",
+      "id": "v17_case_001",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
+      "prompt": "Ich schreibe ___ Kollegen eine kurze Nachricht.",
       "answer": "dem",
+      "explanation": "schreiben takes the person as dative: dem Kollegen.",
+      "translation": "I write a short message to the colleague.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "dem",
         "den",
         "der",
         "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     },
     {
-      "id": "v18_2_case_002",
+      "id": "v17_case_002",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
+      "prompt": "Die Firma sucht ___ erfahrenen Techniker.",
+      "answer": "einen",
+      "explanation": "suchen takes accusative; Techniker is masculine.",
+      "translation": "The company is looking for an experienced technician.",
+      "level": "B1+",
       "tags": [
         "Kasus",
-        "Valenz",
+        "Dativ",
+        "Akkusativ",
         "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_003",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
       ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_004",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
       "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_005",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_006",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_007",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_008",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_009",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_010",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
         "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "ein",
+        "einem",
+        "eine"
       ]
     },
     {
-      "id": "v18_2_case_011",
+      "id": "v17_case_003",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_012",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_013",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_014",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
+      "prompt": "Wir helfen ___ Kundin sofort.",
       "answer": "der",
+      "explanation": "helfen takes dative; die Kundin -> der Kundin.",
+      "translation": "We help the customer immediately.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "der",
         "die",
         "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_015",
+      "id": "v17_case_004",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
+      "prompt": "Ich frage ___ Vorgesetzten nach dem Termin.",
+      "answer": "den",
+      "explanation": "fragen takes accusative for the person asked.",
+      "translation": "I ask the supervisor about the appointment.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
-        "die",
         "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_016",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
         "dem",
-        "den",
         "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "die"
       ]
     },
     {
-      "id": "v18_2_case_017",
+      "id": "v17_case_005",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
+      "prompt": "Bitte geben Sie ___ Mitarbeiterin die Unterlagen.",
+      "answer": "der",
+      "explanation": "geben: recipient in dative; die Mitarbeiterin -> der Mitarbeiterin.",
+      "translation": "Please give the employee the documents.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
+        "der",
         "die",
         "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_018",
+      "id": "v17_case_006",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
+      "prompt": "Wir brauchen ___ neuen Drucker.",
+      "answer": "einen",
+      "explanation": "brauchen takes accusative; Drucker is masculine.",
+      "translation": "We need a new printer.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
+      "choices": [
+        "einen",
+        "ein",
+        "einem",
+        "eine"
+      ]
+    },
+    {
+      "id": "v17_case_007",
+      "module": "v17_kasus",
+      "exerciseType": "gap_fill",
+      "prompt": "Der Chef erklärt ___ Team die neue Regel.",
       "answer": "dem",
+      "explanation": "erklären: recipient in dative; das Team -> dem Team.",
+      "translation": "The boss explains the new rule to the team.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "dem",
         "das",
         "den",
         "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     },
     {
-      "id": "v18_2_case_019",
+      "id": "v17_case_008",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
+      "prompt": "Ich rufe ___ Kunden heute zurück.",
+      "answer": "den",
+      "explanation": "anrufen takes accusative; der Kunde -> den Kunden.",
+      "translation": "I call the customer back today.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
-        "der",
-        "die",
         "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem",
+        "der",
+        "die"
       ]
     },
     {
-      "id": "v18_2_case_020",
+      "id": "v17_case_009",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_021",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
+      "prompt": "Das Unternehmen bietet ___ Bewerber eine Stelle an.",
       "answer": "dem",
+      "explanation": "anbieten: recipient in dative. Weak noun: dem Bewerber.",
+      "translation": "The company offers the applicant a position.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "dem",
         "den",
         "der",
         "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     },
     {
-      "id": "v18_2_case_022",
+      "id": "v17_case_010",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
+      "prompt": "Wir informieren ___ Abteilung über die Änderung.",
       "answer": "die",
+      "explanation": "informieren takes accusative for the informed person/group.",
+      "translation": "We inform the department about the change.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "die",
         "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_023",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_024",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
         "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_025",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_026",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_027",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_028",
+      "id": "v17_case_011",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
       "prompt": "Ich danke ___ Kollegin für die Hilfe.",
       "answer": "der",
+      "explanation": "danken takes dative.",
+      "translation": "I thank the colleague for the help.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "der",
         "die",
         "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_029",
+      "id": "v17_case_012",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
+      "prompt": "Der Kurs hilft ___ Teilnehmern im Berufsalltag.",
+      "answer": "den",
+      "explanation": "Plural dative often adds -n: den Teilnehmern.",
+      "translation": "The course helps participants in everyday work.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
-        "der",
-        "die",
         "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "die",
+        "der",
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_030",
+      "id": "v17_case_013",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_031",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
+      "prompt": "Wir schicken ___ Kunden die Rechnung.",
       "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
+      "explanation": "Recipient is dative: dem Kunden.",
+      "translation": "We send the customer the invoice.",
+      "level": "B1+",
       "tags": [
         "Kasus",
-        "Valenz",
+        "Dativ",
+        "Akkusativ",
         "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_032",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
       ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_033",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_034",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_035",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_036",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_037",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_038",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_039",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_040",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_041",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
-      "answer": "dem",
       "choices": [
         "dem",
         "den",
         "der",
         "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     },
     {
-      "id": "v18_2_case_042",
+      "id": "v17_case_014",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
+      "prompt": "Ich kenne ___ neue Kollegin noch nicht.",
       "answer": "die",
+      "explanation": "kennen takes accusative; feminine stays die.",
+      "translation": "I do not know the new colleague yet.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "die",
         "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_043",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_044",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
         "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_045",
+      "id": "v17_case_015",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_046",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_047",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_048",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_049",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_050",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_051",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
+      "prompt": "Die Aufgabe gehört ___ Praktikanten.",
       "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
+      "explanation": "gehören takes dative; weak masculine noun: dem Praktikanten.",
+      "translation": "The task belongs to the intern.",
+      "level": "B1+",
       "tags": [
         "Kasus",
-        "Valenz",
+        "Dativ",
+        "Akkusativ",
         "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_052",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
       ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_053",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_054",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_055",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_056",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_057",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_058",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_059",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_060",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_061",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
-      "answer": "dem",
       "choices": [
         "dem",
         "den",
         "der",
         "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     },
     {
-      "id": "v18_2_case_062",
+      "id": "v17_case_016",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_063",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_064",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_065",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
+      "prompt": "Bitte legen Sie ___ Vertrag auf den Tisch.",
       "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
+      "explanation": "legen takes accusative object; Vertrag is masculine.",
+      "translation": "Please put the contract on the table.",
+      "level": "B1+",
       "tags": [
         "Kasus",
-        "Valenz",
+        "Dativ",
+        "Akkusativ",
         "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_066",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
+      ],
       "choices": [
         "den",
         "dem",
         "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "die"
       ]
     },
     {
-      "id": "v18_2_case_067",
+      "id": "v17_case_017",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_068",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
+      "prompt": "Ich antworte ___ Kundin morgen.",
       "answer": "der",
+      "explanation": "antworten takes dative.",
+      "translation": "I answer the customer tomorrow.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "der",
         "die",
         "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_069",
+      "id": "v17_case_018",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_070",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_071",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_072",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_073",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
+      "prompt": "Der Fehler betrifft ___ ganze Abteilung.",
       "answer": "die",
+      "explanation": "betreffen takes accusative; feminine: die Abteilung.",
+      "translation": "The error affects the whole department.",
+      "level": "B1+",
+      "tags": [
+        "Kasus",
+        "Dativ",
+        "Akkusativ",
+        "Beruf"
+      ],
       "choices": [
         "die",
         "der",
         "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
+        "dem"
       ]
     },
     {
-      "id": "v18_2_case_074",
+      "id": "v17_case_019",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_075",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_076",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
+      "prompt": "Wir folgen ___ neuen Ablauf.",
       "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
+      "explanation": "folgen takes dative; der Ablauf -> dem Ablauf.",
+      "translation": "We follow the new procedure.",
+      "level": "B1+",
       "tags": [
         "Kasus",
-        "Valenz",
+        "Dativ",
+        "Akkusativ",
         "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_077",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
       ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_078",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_079",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_080",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_081",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
-      "answer": "dem",
       "choices": [
         "dem",
         "den",
         "der",
         "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     },
     {
-      "id": "v18_2_case_082",
+      "id": "v17_case_020",
       "module": "v17_kasus",
       "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_083",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_084",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_085",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
+      "prompt": "Ich sehe ___ Kollegen jeden Morgen.",
       "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
+      "explanation": "sehen takes accusative; der Kollege -> den Kollegen.",
+      "translation": "I see the colleague every morning.",
+      "level": "B1+",
       "tags": [
         "Kasus",
-        "Valenz",
+        "Dativ",
+        "Akkusativ",
         "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_086",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
+      ],
       "choices": [
         "den",
         "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_087",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_088",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_089",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_090",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_091",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_092",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_093",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_094",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_095",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_096",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_097",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_098",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_099",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_100",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_101",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
         "der",
         "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_102",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_103",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_104",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_105",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_106",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_107",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_108",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_109",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_110",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_111",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_112",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_113",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_114",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_115",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_116",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_117",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_118",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_119",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_120",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_121",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_122",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_123",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_124",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_125",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_126",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_127",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_128",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_129",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_130",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_131",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_132",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_133",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_134",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_135",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_136",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_137",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_138",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_139",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_140",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_141",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir helfen ___ Kunden bei der Einrichtung.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "die"
-      ],
-      "explanation": "helfen + Dativ. Kontext: Support / Kundenservice.",
-      "example": "Wir helfen dem Kunden bei der Einrichtung.",
-      "context": "Support / Kundenservice",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_142",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich rufe ___ Kundin heute zurück.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "das",
-        "den"
-      ],
-      "explanation": "anrufen + Akkusativ. Kontext: Kundenkommunikation.",
-      "example": "Ich rufe die Kundin heute zurück.",
-      "context": "Kundenkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_143",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Diese Anpassung bedarf ___ rechtlichen Prüfung.",
-      "answer": "weiterer",
-      "choices": [
-        "weiterer",
-        "weitere",
-        "weiteren",
-        "weiterem"
-      ],
-      "explanation": "bedürfen + Genitiv; Prüfung ist feminin. Kontext: Vertrag / Recht.",
-      "example": "Diese Anpassung bedarf weiterer rechtlichen Prüfung.",
-      "context": "Vertrag / Recht",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_144",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Zahlen widersprechen ___ Prognose.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "widersprechen + Dativ. Kontext: Reporting.",
-      "example": "Die Zahlen widersprechen der Prognose.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_145",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Das Angebot entspricht ___ Anforderungen.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "die",
-        "der",
-        "das"
-      ],
-      "explanation": "entsprechen + Dativ. Kontext: Angebot / Einkauf.",
-      "example": "Das Angebot entspricht den Anforderungen.",
-      "context": "Angebot / Einkauf",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_146",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir informieren ___ Bewerber über den Stand.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "informieren + Akkusativ. Kontext: Bewerbung.",
-      "example": "Wir informieren den Bewerber über den Stand.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_147",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Änderung betrifft ___ Vertrag.",
-      "answer": "den",
-      "choices": [
-        "den",
-        "dem",
-        "der",
-        "das"
-      ],
-      "explanation": "betreffen + Akkusativ. Kontext: Vertrag.",
-      "example": "Die Änderung betrifft den Vertrag.",
-      "context": "Vertrag",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_148",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Ich danke ___ Kollegin für die Hilfe.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "danken + Dativ. Kontext: Teamkommunikation.",
-      "example": "Ich danke der Kollegin für die Hilfe.",
-      "context": "Teamkommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_149",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Lösung dient ___ Sicherheit.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "dienen + Dativ. Kontext: Arbeitssicherheit.",
-      "example": "Die Lösung dient der Sicherheit.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_150",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir benötigen ___ schriftliche Bestätigung.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "benötigen + Akkusativ; Bestätigung feminin. Kontext: Formelle E-Mail.",
-      "example": "Wir benötigen eine schriftliche Bestätigung.",
-      "context": "Formelle E-Mail",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_151",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Fehler wurde ___ Support gemeldet.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "die",
-        "das"
-      ],
-      "explanation": "melden an/bei; hier Dativ bei passiver Empfängerangabe. Kontext: IT-Support.",
-      "example": "Der Fehler wurde dem Support gemeldet.",
-      "context": "IT-Support",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_152",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Firma beauftragt ___ externe Agentur.",
-      "answer": "eine",
-      "choices": [
-        "eine",
-        "einer",
-        "einen",
-        "einem"
-      ],
-      "explanation": "beauftragen + Akkusativ. Kontext: Marketing.",
-      "example": "Die Firma beauftragt eine externe Agentur.",
-      "context": "Marketing",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_153",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Frist gilt für ___ Lieferung.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "der",
-        "den",
-        "das"
-      ],
-      "explanation": "für + Akkusativ; Lieferung feminin. Kontext: Logistik.",
-      "example": "Die Frist gilt für die Lieferung.",
-      "context": "Logistik",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_154",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir sprechen mit ___ zuständigen Person.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "mit + Dativ; Person feminin. Kontext: Kommunikation.",
-      "example": "Wir sprechen mit der zuständigen Person.",
-      "context": "Kommunikation",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_155",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Maßnahme schützt ___ Mitarbeitenden.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "schützen + Akkusativ Plural. Kontext: Arbeitssicherheit.",
-      "example": "Die Maßnahme schützt die Mitarbeitenden.",
-      "context": "Arbeitssicherheit",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_156",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Kunde stimmt ___ Vorschlag zu.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "zustimmen + Dativ. Kontext: Verhandlung.",
-      "example": "Der Kunde stimmt dem Vorschlag zu.",
-      "context": "Verhandlung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_157",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Wir prüfen ___ eingereichten Unterlagen.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "prüfen + Akkusativ Plural. Kontext: Bewerbung.",
-      "example": "Wir prüfen die eingereichten Unterlagen.",
-      "context": "Bewerbung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_158",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Verzögerung schadet ___ Projekt.",
-      "answer": "dem",
-      "choices": [
-        "dem",
-        "das",
-        "den",
-        "der"
-      ],
-      "explanation": "schaden + Dativ. Kontext: Projektmanagement.",
-      "example": "Die Verzögerung schadet dem Projekt.",
-      "context": "Projektmanagement",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_159",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Die Entscheidung folgt ___ Empfehlung.",
-      "answer": "der",
-      "choices": [
-        "der",
-        "die",
-        "den",
-        "das"
-      ],
-      "explanation": "folgen + Dativ. Kontext: Entscheidung.",
-      "example": "Die Entscheidung folgt der Empfehlung.",
-      "context": "Entscheidung",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
-      ]
-    },
-    {
-      "id": "v18_2_case_160",
-      "module": "v17_kasus",
-      "exerciseType": "gap_fill",
-      "prompt": "Der Bericht erwähnt ___ wichtigsten Risiken.",
-      "answer": "die",
-      "choices": [
-        "die",
-        "den",
-        "der",
-        "das"
-      ],
-      "explanation": "erwähnen + Akkusativ Plural. Kontext: Reporting.",
-      "example": "Der Bericht erwähnt die wichtigsten Risiken.",
-      "context": "Reporting",
-      "translation": "Case government in contextual German.",
-      "level": "B1/B2",
-      "tags": [
-        "Kasus",
-        "Valenz",
-        "Beruf"
       ]
     }
   ]
