@@ -1,28 +1,49 @@
-# Deutsch-WiPA 2026 — v17 Reliable Tutor Middle DB
+# Deutsch-WiPA v19 Core
 
-This build is a content-quality reset of v16. The app shell is preserved, but the default database is now smaller, curated, and tutor-oriented.
+Deutsch-WiPA v19 Core is a deliberately reduced B1/B2 German trainer.
 
-## What changed
+This version removes the unsafe v18 generated content and keeps only a small verified core:
 
-- Unsafe generated modules are no longer loaded by `data-manifest.json`.
-- New v17 curated modules were added for: Präpositionalverben, Konnektoren, nicht/kein, Kasus, TeKaMoLo, Reklamation, E-Mail-Redemittel, Konjunktiv II, and Adjektivdeklination.
-- The large conjugator backend remains available.
-- Known separable-verb Konjunktiv II errors in `production_konjugator_drills.json` were repaired: e.g. `ich würde bereite vor` → `ich würde vorbereiten`.
-- v16 generated files remain in the repository for audit/reference, but many are quarantined and excluded from default loading.
+1. Vocabulary
+2. Articles and plurals
+3. Prepositional verbs
+4. Connectors and word order
 
-## Tutor standard
+The target language is German. The support/interface language is limited to German, English, and French. Other languages were removed until their content can be verified.
 
-Each new v17 item should test one main thing, use realistic German, include an explanation, and avoid fake workplace phrases.
+## Why v19 is smaller
 
-## Run
+The previous build contained duplicated items, incorrect plural forms, invalid gap-fill exercises, taxonomy pollution, and incomplete localization. Those defects could mislead learners. v19 prioritizes correctness over quantity.
+
+## Run locally
 
 ```bash
-npm run check
 python3 -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+Then open:
 
-## Development rule
+```text
+http://localhost:8080
+```
 
-Do not add bulk generated German directly to the manifest. Add it first as `status: needs_review` or keep it outside the default manifest until hand-checked.
+## Validate
+
+```bash
+npm run check
+```
+
+The check blocks:
+
+- duplicate function declarations
+- unsafe/quarantined module exposure
+- duplicate prompt-answer pairs
+- gap-fill items without `___`
+- multiple-choice items missing the correct answer
+- article/plural items without article or plural article
+- missing examples and diagnostic feedback
+- known incorrect German strings from the v18 audit
+
+## License
+
+MIT. Free to use, inspect, adapt, and improve.

@@ -1,16 +1,21 @@
 # Contributing
 
-Before adding new content:
+Add content only to `data/core_v19.json` unless a new validated dataset is introduced.
 
-1. Use existing module schemas where possible.
-2. Avoid duplicate prompts with different answers.
-3. Avoid placeholder meanings such as `meaning to be added` in curated material.
-4. Keep generated content out of curated lists unless manually checked.
-5. Run:
+Before committing, run:
 
 ```bash
 npm run check
-npm run audit
 ```
 
-Content that fails the audit should not be shipped.
+A new item must include:
+
+- stable `id`
+- valid `type`
+- German prompt or term
+- correct answer
+- German example
+- EN and FR example translation
+- diagnostic feedback in DE/EN/FR
+
+Do not add generated bulk content without manual review. Do not inflate item counts by repeating prompt-answer pairs.

@@ -1,31 +1,84 @@
-
 const fs = require('fs');
 const path = require('path');
-const root = path.join(__dirname, '..');
+const root = path.resolve(__dirname, '..');
+let failures = [];
+function fail(msg){ failures.push(msg); }
 function readJson(p){ return JSON.parse(fs.readFileSync(path.join(root,p),'utf8')); }
-function walk(dir){ return fs.readdirSync(dir,{withFileTypes:true}).flatMap(d=>{ const p=path.join(dir,d.name); return d.isDirectory()?walk(p):[p]; }); }
-let ok = true;
-for (const f of walk(root).filter(x=>x.endsWith('.json'))) { try { JSON.parse(fs.readFileSync(f,'utf8')); } catch(e){ console.error('Bad JSON', f, e.message); ok=false; } }
-const manifest = readJson('data-manifest.json');
-for (const m of manifest.modules) if (!fs.existsSync(path.join(root,m.path))) { console.error('Missing module', m.path); ok=false; }
-const coll = readJson('vokabular/production_workplace_collocations.json').words || [];
-const badColl = coll.filter(w => !(w.data && w.data.translations && (w.data.translations.English || w.data.translations.en)));
-if (badColl.length) { console.error('Workplace collocation translation shadowing remains', badColl.length); ok=false; }
-const adv = readJson('grammatik/production_adverbien_intensiv.json').items || [];
-const byPrompt = new Map();
-for (const it of adv) if (it.exerciseType === 'gap_fill') { const set = byPrompt.get(it.prompt) || new Set(); set.add(it.answer); byPrompt.set(it.prompt,set); }
-const amb = [...byPrompt.entries()].filter(([_,s])=>s.size>1);
-if (amb.length) { console.error('Ambiguous adverb gap prompts remain', amb.length); ok=false; }
-const englishLabels = new Set(['frequency','local','connector_adverb']);
-const badLabels = adv.filter(it => englishLabels.has(it.answer));
-if (badLabels.length) { console.error('English meta-label answers remain', badLabels.length); ok=false; }
-const verbs = readJson('data/conjugator_verbs.json').verbs || {};
-for (const [v,d] of Object.entries({antworten:['geantwortet','antworte'], arbeiten:['gearbeitet','arbeite'], bekommen:['bekommen','bekomme']})) {
-  if (!verbs[v]) { console.error('Missing verb', v); ok=false; continue; }
-  if (verbs[v].part !== d[0] || !String(verbs[v].present?.[0]||'').includes(d[1])) { console.error('Bad verb core form', v, verbs[v]); ok=false; }
-}
-console.log(ok ? 'OK: v14 verification passed' : 'FAILED');
-process.exit(ok ? 0 : 1);
 
-// v16 added: syntax check
-try{ require('child_process').execSync('node --check ' + require('path').join(__dirname,'..','app.js'), {stdio:'inherit'}); console.log('OK: app.js syntax'); }catch(e){ process.exit(1); }
+const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
+const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
+const data = readJson('data/core_v19.json');
+
+// 1. Basic file/version gates
+if(!html.includes('app.js?v=19.0.0')) fail('index.html must reference app.js?v=19.0.0');
+if(!html.includes('styles.css?v=19.0.0')) fail('index.html must reference styles.css?v=19.0.0');
+if(!app.includes('v19.0.0-core-reset')) fail('app.js build string missing v19.0.0-core-reset');
+
+// 2. No duplicate top-level function declarations
+const fnMatches = [...app.matchAll(/^function\s+([A-Za-z0-9_$]+)\s*\(/gm)].map(m=>m[1]);
+const seenFns = new Set();
+for(const name of fnMatches){ if(seenFns.has(name)) fail(`duplicate function declaration: ${name}`); seenFns.add(name); }
+
+// 3. V19 must not expose quarantined modules in data/core_v19.json
+const bannedPathIds = new Set(['business_email','complaints','negotiation','workplace','wortschatz_b1b2','adverbien','declension','grammar_core','syntax','conjugation']);
+for(const p of data.paths || []) if(bannedPathIds.has(p.id)) fail(`unsafe/quarantined path exposed: ${p.id}`);
+const allowedModuleIds = new Set(['vocab_core','article_plural','prep_verbs','connectors']);
+for(const m of data.modules || []) if(!allowedModuleIds.has(m.id)) fail(`unexpected module exposed in v19 core: ${m.id}`);
+
+// 4. Data schema and content gates
+const moduleIds = new Set((data.modules || []).map(m=>m.id));
+const itemIds = new Set();
+const pairs = new Set();
+for(const p of data.paths || []){
+  if(!p.id || !p.title || !p.sub || !Array.isArray(p.modules)) fail(`invalid path shell: ${JSON.stringify(p)}`);
+  for(const mid of p.modules) if(!moduleIds.has(mid)) fail(`path ${p.id} references missing module ${mid}`);
+}
+for(const m of data.modules || []){
+  if(!m.id || !m.path || !m.title || !m.description || !Array.isArray(m.items)) fail(`invalid module shell: ${m.id || 'unknown'}`);
+  if(m.items.length < 8) fail(`module ${m.id} has too few verified items (${m.items.length})`);
+  for(const item of m.items){
+    if(!item.id) fail(`${m.id}: item without id`);
+    if(itemIds.has(item.id)) fail(`duplicate item id ${item.id}`);
+    itemIds.add(item.id);
+    const pair = `${item.type}|${item.prompt || item.german || item.singular}|${typeof item.answer === 'object' ? item.answer.en : item.answer}`;
+    if(pairs.has(pair)) fail(`duplicate prompt-answer pair in ${item.id}`);
+    pairs.add(pair);
+    if(!item.type) fail(`${item.id}: missing type`);
+    if(!item.example_de) fail(`${item.id}: missing German example`);
+    if(!item.example || !item.example.en || !item.example.fr) fail(`${item.id}: missing EN/FR example translation`);
+    if(!item.feedback || !item.feedback.de || !item.feedback.en || !item.feedback.fr) fail(`${item.id}: missing diagnostic feedback in DE/EN/FR`);
+    if(item.type === 'gap_fill'){
+      if(!String(item.prompt || '').includes('___')) fail(`${item.id}: gap_fill without ___`);
+      if(!item.answer) fail(`${item.id}: gap_fill missing answer`);
+      if(String(item.prompt).includes(item.answer) && !String(item.prompt).includes('___')) fail(`${item.id}: answer leakage`);
+    }
+    if(item.type === 'multiple_choice'){
+      if(!Array.isArray(item.choices) || item.choices.length < 3) fail(`${item.id}: multiple_choice needs at least three choices`);
+      if(!item.choices.includes(item.answer)) fail(`${item.id}: multiple_choice choices missing answer`);
+    }
+    if(item.type === 'vocabulary_choice'){
+      for(const lang of data.supportLanguages || []){
+        if(!item.answer || !item.answer[lang]) fail(`${item.id}: missing ${lang} answer`);
+        if(!Array.isArray(item.choices?.[lang])) fail(`${item.id}: missing ${lang} choices`);
+        else if(!item.choices[lang].includes(item.answer[lang])) fail(`${item.id}: ${lang} choices missing answer`);
+      }
+      if(item.answer?.fr && item.answer.fr === item.answer.en && !['qualification'].includes(item.answer.en)) fail(`${item.id}: suspicious copied EN→FR answer`);
+    }
+    if(item.type === 'article_plural'){
+      if(!/^(der|die|das)\s/.test(item.singular || '')) fail(`${item.id}: singular must include der/die/das`);
+      if(!/^die\s/.test(item.answer || '')) fail(`${item.id}: plural answer must start with die`);
+    }
+  }
+}
+
+// 5. Known harmful strings must not exist in verified core data.
+const dataText = JSON.stringify(data);
+const bannedStrings = ['Schulabschlusse','Fremdworter','Arbeitsplatze','Auftragsbucher','Knopfe','Stande','Kinderarzte','Großhandelskaufmanner','weiterer rechtlichen Prüfung'];
+for(const s of bannedStrings) if(dataText.includes(s)) fail(`known incorrect German still present: ${s}`);
+
+if(failures.length){
+  console.error('Deutsch-WiPA v19 checks failed:');
+  for(const f of failures) console.error(' - ' + f);
+  process.exit(1);
+}
+console.log(`Deutsch-WiPA v19 checks passed: ${data.modules.length} modules, ${itemIds.size} verified items, ${fnMatches.length} app functions.`);
