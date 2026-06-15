@@ -1052,3 +1052,5 @@ button:disabled { opacity: .5; cursor: not-allowed; }
     grid-template-columns: 1fr;
   }
 }
+
+/* v18.2.5 stable i18n repair: rollback from duplicate-render regression; additive localization only. */

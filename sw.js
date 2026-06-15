@@ -1,4 +1,4 @@
-// v18.2.3: service worker disabled for local development to prevent stale app/data files.
+// v18.2.5: service worker disabled for local development to prevent stale app/data files.
 self.addEventListener('install', event => { self.skipWaiting(); });
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {

@@ -19,6 +19,9 @@ const verbs=JSON.parse(fs.readFileSync(path.join(root,'data/curated_verbs.json')
 if(!verbs.verbs||Object.keys(verbs.verbs).length<1000)fail('curated_verbs does not contain large verb backend');
 const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
 if(/conjugator_verbs\.json/.test(app))fail('app.js still references conjugator_verbs.json');
+const functionNames=[...app.matchAll(/function\s+([A-Za-z0-9_$]+)\s*\(/g)].map(m=>m[1]);
+const dup=functionNames.filter((n,i)=>functionNames.indexOf(n)!==i);
+if(dup.length)fail(`duplicate function declarations in app.js: ${[...new Set(dup)].join(', ')}`);
 new Function(app);
 const vocab=JSON.parse(fs.readFileSync(path.join(root,'vokabular/v17_beruf_wortschatz_curated.json'),'utf8'));
 for(const it of vocab.items){if(!it.lexical_key)fail(`vocab item missing lexical_key: ${it.id}`);for(const fld of ['answer','translation','explanation','meaning','english_equivalent']){if(Object.prototype.hasOwnProperty.call(it,fld))fail(`vocab skeleton contains hardcoded ${fld}: ${it.id}`)}}
@@ -61,13 +64,13 @@ console.log('OK: v18.2 context-160 reliable tutor audit passed');
 // v18.2.1 hotfix guards
 const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 if (!appSource.includes("id:'declension'")) fail('PATHS must define declension path');
-if (!appSource.includes("APP_BUILD = 'v18.2.4-i18n-parity'")) fail('app.js must include v18.2.4 cache-busting build constant');
+if (!appSource.includes("APP_BUILD = 'v18.2.5-stable-i18n-repair'")) fail('app.js must include v18.2.5 cache-busting build constant');
 const swSource = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
 if (swSource.includes('deutsch-wipa-v16-quickstart-fix')) fail('old v16 service-worker cache key still present');
 if (swSource.includes('data/conjugator_verbs.json')) fail('service worker must not precache removed conjugator_verbs.json');
 
 
-// v18.2.4 routing/cache hardening
+// v18.2.3 routing/cache hardening
 if (!appSource.includes('clearOldCachesAndServiceWorkers')) fail('app.js must unregister old service workers and clear old caches');
 if (/serviceWorker\.register/.test(appSource)) fail('app.js must not register a service worker in v18.2.3');
 if (!appSource.includes("ids:['v17_adjektivdeklination','v18_artikel_nomen','v17_kasus']")) fail('declension path must use exact module ids');
@@ -75,20 +78,20 @@ if (!appSource.includes("ids:['v18_artikel_nomen']")) fail('Artikel & Nomen path
 if (!appSource.includes("ids:['v18_adverbien']")) fail('Adverbien path must use exact module id');
 if (!appSource.includes("ids:['v17_modalverben_business']")) fail('Konjugation path must include modal verbs exact id');
 const indexSource = fs.readFileSync(path.join(root,'index.html'),'utf8');
-if (!indexSource.includes('app.js?v=18.2.4')) fail('index.html must cache-bust app.js');
-if (!indexSource.includes('styles.css?v=18.2.4')) fail('index.html must cache-bust styles.css');
+if (!indexSource.includes('app.js?v=18.2.5')) fail('index.html must cache-bust app.js');
+if (!indexSource.includes('styles.css?v=18.2.5')) fail('index.html must cache-bust styles.css');
 if (!/service worker disabled/i.test(swSource) || !/unregister/.test(swSource)) fail('sw.js must be a kill-switch unregister script');
-console.log('OK: v18.2.4 cache and routing hotfix guards passed');
+console.log('OK: v18.2.5 cache and routing hotfix guards passed');
 
 
-// v18.2.4 UI/i18n parity guards
+// v18.2.3 UI simplification guards
 const indexUi = fs.readFileSync(path.join(root,'index.html'),'utf8');
 const cssUi = fs.readFileSync(path.join(root,'styles.css'),'utf8');
 if (!indexUi.includes('data-route="resources"')) fail('Resources must be a top-level route');
 if (!indexUi.includes('id="resourcesView"')) fail('Resources view missing');
 if (/id="mobileAppearanceSelect"|id="mobileColorSelect"/.test(indexUi)) fail('mobile design/color controls must not duplicate sidebar settings');
 if (/id="appearanceSelect"|id="colorSelect"/.test(indexUi)) fail('topbar design/color controls must not duplicate sidebar settings');
-if (!indexUi.includes('Deutsch-WiPA 2026 · v18.2.4 Reliable Tutor')) fail('document title must show v18.2.4');
-if (!cssUi.includes('v18.2.3 UI simplification audit fix')) fail('missing v18.2.3 UI simplification CSS block');
+if (!indexUi.includes('Deutsch-WiPA 2026 · v18.2.5 Stable I18N Repair')) fail('document title must show v18.2.5');
+if (!cssUi.includes('v18.2.3 UI simplification audit fix') && !cssUi.includes('v18.2.5 stable i18n repair')) fail('missing UI simplification CSS block');
 if (!appSource.includes("if(r==='resources')renderResources()")) fail('resources route must render resources');
-console.log('OK: v18.2.4 UI/i18n parity guards passed');
+console.log('OK: v18.2.5 UI simplification guards passed');

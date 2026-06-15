@@ -1,4 +1,4 @@
-# Deutsch-WiPA 2026 v18.2.4
+# Deutsch-WiPA 2026 v18.2.3
 
 Hotfix: disables stale service-worker caching and fixes exact routing for Deklination / Artikel & Nomen / Adverbien / Konjugation.
 

@@ -1,8 +1,8 @@
-const APP_VERSION = '2026.06.15-v18.2.4-i18n-parity';
+const APP_VERSION = '2026.06.15-v18.2.5-stable-i18n-repair';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
-const APP_BUILD = 'v18.2.4-i18n-parity';
+const APP_BUILD = 'v18.2.5-stable-i18n-repair';
 const vfetch = path => {
   const sep = String(path).includes('?') ? '&' : '?';
   return fetch(`${path}${sep}v=${encodeURIComponent(APP_BUILD)}`, { cache: 'no-store' });
@@ -74,6 +74,41 @@ const PATHS = [
   {id:'syntax',icon:'🧩',title:'Satzbau',sub:'word order, TeKaMoLo, connectors, negation',match:['tekamolo','konnektor','satz','nicht','kein','variable']}
 ];
 
+const PATH_I18N={
+  business_email:{en:['Corporate emails','Sequenced formal emails, references, attachments, polite deadlines'],fr:['E-mails professionnels','E-mails formels séquencés, références, pièces jointes, délais polis'],es:['Correos corporativos','Correos formales secuenciados, referencias, adjuntos y plazos corteses'],de:['Corporate Emails','Sequenzierte formelle E-Mails, Referenzen, Anhänge, höfliche Fristen']},
+  complaints:{en:['Complaints & conflict','Defects, invoice disputes, deadlines, objective register'],fr:['Réclamation & conflit','Défauts, litiges de facture, délais, registre objectif'],es:['Reclamación y conflicto','Defectos, disputa de factura, plazos y registro objetivo'],de:['Reklamation & Konflikt','Mängelrüge, Rechnungskonflikt, Fristen, sachliches Register']},
+  negotiation:{en:['Negotiation & diplomacy','Konjunktiv II, softening, alternatives, confirmation requests'],fr:['Négociation & diplomatie','Konjunktiv II, atténuation, alternatives, demandes de confirmation'],es:['Negociación y diplomacia','Konjunktiv II, suavización, alternativas y confirmación'],de:['Verhandlung & Diplomatie','Konjunktiv II, Abschwächung, Alternativen, Rückfragen']},
+  grammar_core:{en:['Grammar core','Cases, nicht/kein, connectors, TeKaMoLo, sentence patterns'],fr:['Noyau grammatical','Cas, nicht/kein, connecteurs, TeKaMoLo, modèles de phrase'],es:['Gramática central','Casos, nicht/kein, conectores, TeKaMoLo y patrones de frase'],de:['Grammar Core','Kasus, nicht/kein, Konnektoren, TeKaMoLo, Satzmuster']},
+  declension:{en:['Declension','Adjective declension, articles, nouns and case endings'],fr:['Déclinaison','Déclinaison des adjectifs, articles, noms et terminaisons'],es:['Declinación','Declinación de adjetivos, artículos, nombres y casos'],de:['Deklination','Adjektivdeklination, Artikel, Nomen und Kasusendungen']},
+  artikel_nomen:{en:['Articles & nouns','Gender, plural, nominalisation, case articles'],fr:['Articles et noms','Genre, pluriel, nominalisation et articles de cas'],es:['Artículos y nombres','Género, plural, nominalización y artículos de caso'],de:['Artikel & Nomen','Genus, Plural, Nominalisierung, Kasusartikel']},
+  adverbien:{en:['Adverbs','Time, place, frequency, modality, sentence logic'],fr:['Adverbes','Temps, lieu, fréquence, modalité, logique de phrase'],es:['Adverbios','Tiempo, lugar, frecuencia, modalidad y lógica de frase'],de:['Adverbien','Zeit, Ort, Häufigkeit, Modalität, Satzlogik']},
+  conjugation:{en:['Conjugation','Large verb backend, filtered practice, modal verbs'],fr:['Conjugaison','Grande base de verbes, pratique filtrée, verbes modaux'],es:['Conjugación','Base amplia de verbos, práctica filtrada, verbos modales'],de:['Konjugation','Große Verbbasis, gefiltertes Training, Modalverben']},
+  prepositions:{en:['Prepositional verbs','Verbs with fixed preposition and case'],fr:['Verbes prépositionnels','Verbes avec préposition fixe et cas'],es:['Verbos preposicionales','Verbos con preposición fija y caso'],de:['Präpositionalverben','Verben mit fester Präposition und Kasus']},
+  workplace:{en:['Workplace vocabulary','Vocabulary, collocations, office and business terms'],fr:['Vocabulaire professionnel','Vocabulaire, collocations, termes de bureau et d’entreprise'],es:['Vocabulario laboral','Vocabulario, colocaciones y términos de oficina/empresa'],de:['Wortschatz Beruf','Wortschatz, Kollokationen, Büro- und Geschäftssprache']},
+  wortschatz_b1b2:{en:['B1/B2 vocabulary extension','Additional WiPa vocabulary from office, applications, finance, IT and logistics'],fr:['Extension vocabulaire B1/B2','Vocabulaire WiPa supplémentaire : bureau, candidature, finances, IT, logistique'],es:['Extensión de vocabulario B1/B2','Vocabulario WiPa adicional: oficina, solicitud, finanzas, IT, logística'],de:['Wortschatz-Ergänzung B1/B2','Zusätzlicher WiPa-Wortschatz aus Büro, Bewerbung, Finanzen, IT, Logistik']},
+  syntax:{en:['Sentence structure','Word order, TeKaMoLo, connectors, negation'],fr:['Structure de phrase','Ordre des mots, TeKaMoLo, connecteurs, négation'],es:['Estructura de frase','Orden de palabras, TeKaMoLo, conectores, negación'],de:['Satzbau','Wortstellung, TeKaMoLo, Konnektoren, Negation']}
+};
+function pathText(id,part){
+  const p=PATHS.find(x=>x.id===id)||{};
+  const pair=PATH_I18N[id]?.[state.lang]||PATH_I18N[id]?.en||PATH_I18N[id]?.de;
+  return pair ? pair[part==='sub'?1:0] : (part==='sub' ? (p.sub||'') : (p.title||id));
+}
+function localizeStaticUI(){
+  const set=(sel,text)=>{const el=document.querySelector(sel); if(el)el.textContent=text;};
+  set('[data-route="learn"]',tr('learnRoute')); set('[data-route="conjugator"]',tr('conjugatorRoute')); set('[data-route="mistakes"]',tr('mistakesRoute')); set('[data-route="resources"]',tr('resourcesRoute'));
+  set('.brand-subtitle',tr('brandSub')); set('.sidebar-head .eyebrow',tr('sidebarPath')); set('.sidebar-head h3',tr('sidebarQuestion'));
+  set('label[for="profileName"]',tr('profile')); set('label[for="sidebarAppearanceSelect"]',tr('design')); set('label[for="sidebarColorSelect"]',tr('color')); set('.backup-details summary',tr('backup'));
+  set('label[for="moduleSelect"]',tr('module')); set('label[for="tenseFilter"]',tr('tense')); set('label[for="sessionLimit"]',tr('sessionLength'));
+  set('label[for="mobilePathSelect"] span',tr('topic')); set('label[for="mobileModuleSelect"] span',tr('module')); set('#mobileOpenSidebar',tr('options'));
+  const setTitle=(id,text)=>{const el=$(id); if(el){el.title=text; el.setAttribute('aria-label',text);}};
+  setTitle('prevButton',tr('previousQuestion')); setTitle('skipButton',tr('skipExercise')); setTitle('speakButton',tr('speak')); setTitle('translateButton',tr('translate'));
+  const eyes=document.querySelectorAll('.learn-panel .panel-block .eyebrow'); if(eyes[0])eyes[0].textContent=tr('rule'); if(eyes[1])eyes[1].textContent=tr('exampleLabel');
+  set('#conjugatorLink .eyebrow',tr('conjugator')); set('#modePractice',tr('practice')); set('#modeLearn',tr('learn')); set('#modeReview',tr('review')); set('#clearMistakes',tr('clearMistakes'));
+  const r=document.querySelector('#resourcesView .hero-card div'); if(r){const e=r.querySelector('.eyebrow'); const h=r.querySelector('h2'); const p=r.querySelector('p'); if(e)e.textContent=tr('resourcesRoute'); if(h)h.textContent=tr('resourcesTitle'); if(p)p.textContent=tr('resourcesDesc');}
+  const status=$('profileSaveStatus'); if(status && !(state.profile?.name)) status.textContent=tr('progressLocal');
+}
+
+
 const T = {
  de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Export',importProgress:'Import',answered:'Antworten',mistakes:'Fehler',noMistakes:'Keine Fehler gespeichert',translate:'Übersetzung',translation:'Übersetzung',resources:'Ressourcen',externalTranslation:'Extern übersetzen',noStoredTranslation:'Keine gespeicherte Übersetzung für diese Karte.',resourceFriend:'Dreizunge · App von Raim',resourceConjugator:'Verbformen & Konjugation',resourceDictionary:'Wörterbuch',resourceGrammar:'Grammatik',resourceListening:'Hören & Deutsch lernen',onboardingTitle:'Heute gezielt trainieren',onboardingText:'Wähle einen verlässlichen Tutor-Pfad. Kurze Sitzungen, direkte Korrektur, Wiederholung später, Ressourcen über den eigenen Tab.',quickConj:'Verbformen',quickDecl:'Deklination',quickPrep:'Präpositionen',quickReview:'Wiederholen',starter:'Starter',curated:'Kuratierte Verben',allVerbs:'Alle Verben'},
  en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',answered:'answers',mistakes:'mistakes',noMistakes:'No mistakes saved',translate:'Translate',translation:'Translation',resources:'Resources',externalTranslation:'Translate externally',noStoredTranslation:'No stored translation for this card.',resourceFriend:'Dreizunge · Raim’s app',resourceConjugator:'Verb forms & conjugation',resourceDictionary:'Dictionary',resourceGrammar:'Grammar',resourceListening:'Listening & German learning',onboardingTitle:'Train with a clear focus today',onboardingText:'Choose one reliable tutor path. Short sessions, direct correction, later review, resources available in their own tab.',quickConj:'Verb forms',quickDecl:'Declension',quickPrep:'Prepositions',quickReview:'Review',starter:'Starter',curated:'Curated verbs',allVerbs:'All verbs'},
@@ -87,9 +122,19 @@ const T = {
  tr:{start:'Oturumu başlat',check:'Kontrol et',next:'Sonraki',skip:'Geç',restart:'Yeniden başlat',correct:'Doğru',wrong:'Henüz değil',answer:'Doğru cevap',why:'Neden?',empty:'Bu seçim için öğe yok.',ready:'Oturumu başlat.',complete:'Oturum tamamlandı',noSrs:'Henüz tekrar yok. Önce birkaç alıştırma çöz.',allModules:'Tüm modüller',dueToday:'bugün tekrar',item:'öğe',items:'öğe',yourAnswer:'Cevabın',retryMistake:'Tekrar pratik yap',sessionStats:'Oturum',verbConjTable:'Tabloyu göster',answered:'cevap',mistakes:'hata',noMistakes:'Kayıtlı hata yok',translate:'Çeviri',translation:'Çeviri',resources:'Kaynaklar',externalTranslation:'Harici çeviri',noStoredTranslation:'Bu kart için kayıtlı çeviri yok.',resourceFriend:'Dreizunge · Raim’in uygulaması',resourceConjugator:'Fiil biçimleri ve çekim',resourceDictionary:'Sözlük',resourceGrammar:'Dilbilgisi',resourceListening:'Dinleme ve Almanca öğrenme'}
 };
 
-// Late-bound translation extensions (i18n parity polish)
-const EXTRA_T={de:{ready_q:'Bereit?',no_items:'Keine Items',review_empty:'Review leer',practice:'Üben',learn:'Lernen',review:'Wiederholen'},
- en:{ready_q:'Ready?',no_items:'No items',review_empty:'Review empty',practice:'Practice',learn:'Learn',review:'Review'}};
+// Late-bound translation extensions. Keep this additive: do not override core render functions.
+const EXTRA_T={
+  de:{ready_q:'Bereit?',no_items:'Keine Items',review_empty:'Review leer',practice:'Üben',learn:'Lernen',review:'Wiederholen',learnRoute:'Lernen',conjugatorRoute:'Konjugator',mistakesRoute:'Fehlerbank',resourcesRoute:'Ressourcen',brandSub:'B1 → B2 · Grammatik & Beruf',sidebarPath:'Lernpfad',sidebarQuestion:'Was willst du trainieren?',profile:'Profil',design:'Design',color:'Farbe',backup:'Backup',module:'Modul',tense:'Zeitform',sessionLength:'Sitzungslänge',topic:'Thema',options:'Optionen',previousQuestion:'Vorherige Frage',skipExercise:'Übung überspringen',speak:'Vorlesen',rule:'Regel',exampleLabel:'Beispiel',conjugator:'Konjugator',clearMistakes:'Fehlerbank leeren',resourcesTitle:'Externe Ressourcen',resourcesDesc:'Direkte Links zu Wörterbüchern, Konjugatoren, Grammatik und Hörmaterial.',answerPlaceholder:'Antwort eingeben…',verbTraining:'Verbtraining',exercise:'Übung',completedItems:'abgeschlossen',hits:'Treffer',verbsAvailable:'Verben verfügbar',allCount:'Alle',curatedSelection:'Kuratierte Auswahl',shown:'angezeigt',starterList:'Starterliste',available:'verfügbar',auxVerb:'Hilfsverb',participle:'Partizip II',practiceVerb:'Übe',inTense:'im'},
+  en:{ready_q:'Ready?',no_items:'No items',review_empty:'Review empty',practice:'Practice',learn:'Learn',review:'Review',learnRoute:'Learn',conjugatorRoute:'Conjugator',mistakesRoute:'Mistakes',resourcesRoute:'Resources',brandSub:'B1 → B2 · Grammar & workplace German',sidebarPath:'Learning path',sidebarQuestion:'What do you want to train?',profile:'Profile',design:'Design',color:'Color',backup:'Backup',module:'Module',tense:'Tense',sessionLength:'Session length',topic:'Topic',options:'Options',previousQuestion:'Previous question',skipExercise:'Skip exercise',speak:'Read aloud',rule:'Rule',exampleLabel:'Example',conjugator:'Conjugator',clearMistakes:'Clear mistakes',resourcesTitle:'External resources',resourcesDesc:'Direct links to dictionaries, conjugators, grammar, and listening material.',answerPlaceholder:'Enter your answer…',verbTraining:'Verb training',exercise:'Exercise',completedItems:'completed',hits:'hits',verbsAvailable:'verbs available',allCount:'All',curatedSelection:'Curated selection',shown:'shown',starterList:'Starter list',available:'available',auxVerb:'Auxiliary',participle:'Past participle',practiceVerb:'Practise',inTense:'in'},
+  fr:{ready_q:'Prêt ?',no_items:'Aucun item',review_empty:'Révision vide',practice:'Pratiquer',learn:'Apprendre',review:'Réviser',learnRoute:'Apprendre',conjugatorRoute:'Conjugateur',mistakesRoute:'Erreurs',resourcesRoute:'Ressources',brandSub:'B1 → B2 · Grammaire & allemand professionnel',sidebarPath:'Parcours',sidebarQuestion:'Que veux-tu travailler ?',profile:'Profil',design:'Design',color:'Couleur',backup:'Sauvegarde',module:'Module',tense:'Temps',sessionLength:'Durée de session',topic:'Thème',options:'Options',previousQuestion:'Question précédente',skipExercise:'Passer l’exercice',speak:'Lire à voix haute',rule:'Règle',exampleLabel:'Exemple',conjugator:'Conjugateur',clearMistakes:'Effacer les erreurs',resourcesTitle:'Ressources externes',resourcesDesc:'Liens directs vers dictionnaires, conjugueurs, grammaire et écoute.',answerPlaceholder:'Écris ta réponse…',verbTraining:'Entraînement verbal',exercise:'Exercice',completedItems:'terminés',hits:'résultats',verbsAvailable:'verbes disponibles',allCount:'Tous',curatedSelection:'Sélection organisée',shown:'affichés',starterList:'Liste de départ',available:'disponibles',auxVerb:'Auxiliaire',participle:'Participe II',practiceVerb:'Travaille',inTense:'au'},
+  es:{ready_q:'¿Listo?',no_items:'Sin ítems',review_empty:'Repaso vacío',practice:'Practicar',learn:'Aprender',review:'Repasar',learnRoute:'Aprender',conjugatorRoute:'Conjugador',mistakesRoute:'Errores',resourcesRoute:'Recursos',brandSub:'B1 → B2 · Gramática y alemán laboral',sidebarPath:'Ruta de aprendizaje',sidebarQuestion:'¿Qué quieres practicar?',profile:'Perfil',design:'Diseño',color:'Color',backup:'Copia de seguridad',module:'Módulo',tense:'Tiempo verbal',sessionLength:'Duración de sesión',topic:'Tema',options:'Opciones',previousQuestion:'Pregunta anterior',skipExercise:'Omitir ejercicio',speak:'Leer en voz alta',rule:'Regla',exampleLabel:'Ejemplo',conjugator:'Conjugador',clearMistakes:'Borrar errores',resourcesTitle:'Recursos externos',resourcesDesc:'Enlaces directos a diccionarios, conjugadores, gramática y escucha.',answerPlaceholder:'Escribe tu respuesta…',verbTraining:'Práctica de verbos',exercise:'Ejercicio',completedItems:'completados',hits:'resultados',verbsAvailable:'verbos disponibles',allCount:'Todos',curatedSelection:'Selección curada',shown:'mostrados',starterList:'Lista inicial',available:'disponibles',auxVerb:'Auxiliar',participle:'Participio II',practiceVerb:'Practica',inTense:'en'},
+  ar:{ready_q:'جاهز؟',no_items:'لا توجد عناصر',review_empty:'المراجعة فارغة',practice:'تدرّب',learn:'تعلّم',review:'راجع',learnRoute:'تعلّم',conjugatorRoute:'مصرّف الأفعال',mistakesRoute:'الأخطاء',resourcesRoute:'الموارد',brandSub:'B1 → B2 · القواعد والألمانية المهنية',sidebarPath:'مسار التعلّم',sidebarQuestion:'ماذا تريد أن تتدرّب؟',profile:'الملف',design:'التصميم',color:'اللون',backup:'نسخ احتياطي',module:'الوحدة',tense:'الزمن',sessionLength:'طول الجلسة',topic:'الموضوع',options:'خيارات',previousQuestion:'السؤال السابق',skipExercise:'تخطي التمرين',speak:'قراءة صوتية',rule:'القاعدة',exampleLabel:'مثال',conjugator:'مصرّف الأفعال',clearMistakes:'مسح الأخطاء',resourcesTitle:'موارد خارجية',resourcesDesc:'روابط مباشرة إلى القواميس والتصريف والقواعد والاستماع.',answerPlaceholder:'اكتب إجابتك…',verbTraining:'تدريب الأفعال',exercise:'تمرين',completedItems:'مكتملة',hits:'نتائج',verbsAvailable:'أفعال متاحة',allCount:'كل',curatedSelection:'اختيار منظم',shown:'معروضة',starterList:'قائمة البداية',available:'متاحة',auxVerb:'الفعل المساعد',participle:'Partizip II',practiceVerb:'تدرّب على',inTense:'في'},
+  fa:{ready_q:'آماده‌ای؟',no_items:'موردی نیست',review_empty:'مرور خالی است',practice:'تمرین',learn:'یادگیری',review:'مرور',learnRoute:'یادگیری',conjugatorRoute:'صرف فعل',mistakesRoute:'اشتباه‌ها',resourcesRoute:'منابع',brandSub:'B1 → B2 · گرامر و آلمانی کاری',sidebarPath:'مسیر یادگیری',sidebarQuestion:'چه چیزی را تمرین می‌کنی؟',profile:'پروفایل',design:'طراحی',color:'رنگ',backup:'پشتیبان',module:'بخش',tense:'زمان',sessionLength:'طول جلسه',topic:'موضوع',options:'گزینه‌ها',previousQuestion:'پرسش قبلی',skipExercise:'رد کردن تمرین',speak:'خواندن صوتی',rule:'قاعده',exampleLabel:'مثال',conjugator:'صرف فعل',clearMistakes:'پاک کردن اشتباه‌ها',resourcesTitle:'منابع بیرونی',resourcesDesc:'پیوندهای مستقیم به فرهنگ لغت، صرف فعل، گرامر و شنیدار.',answerPlaceholder:'پاسخت را بنویس…',verbTraining:'تمرین فعل',exercise:'تمرین',completedItems:'کامل شد',hits:'نتیجه',verbsAvailable:'فعل موجود',allCount:'همه',curatedSelection:'گزینش‌شده',shown:'نمایش داده شد',starterList:'فهرست آغازین',available:'موجود',auxVerb:'فعل کمکی',participle:'Partizip II',practiceVerb:'تمرین کن',inTense:'در'},
+  uk:{ready_q:'Готово?',no_items:'Немає завдань',review_empty:'Повторення порожнє',practice:'Практика',learn:'Навчання',review:'Повторення',learnRoute:'Навчання',conjugatorRoute:'Дієвідмінювання',mistakesRoute:'Помилки',resourcesRoute:'Ресурси',brandSub:'B1 → B2 · Граматика й робоча німецька',sidebarPath:'Навчальний шлях',sidebarQuestion:'Що тренувати?',profile:'Профіль',design:'Дизайн',color:'Колір',backup:'Резервна копія',module:'Модуль',tense:'Час',sessionLength:'Довжина сесії',topic:'Тема',options:'Опції',previousQuestion:'Попереднє питання',skipExercise:'Пропустити вправу',speak:'Прочитати вголос',rule:'Правило',exampleLabel:'Приклад',conjugator:'Дієвідмінювання',clearMistakes:'Очистити помилки',resourcesTitle:'Зовнішні ресурси',resourcesDesc:'Прямі посилання на словники, дієвідмінювання, граматику та аудіювання.',answerPlaceholder:'Введи відповідь…',verbTraining:'Тренування дієслів',exercise:'Вправа',completedItems:'завершено',hits:'результатів',verbsAvailable:'дієслів доступно',allCount:'Усі',curatedSelection:'Добірка',shown:'показано',starterList:'Стартовий список',available:'доступно',auxVerb:'Допоміжне дієслово',participle:'Partizip II',practiceVerb:'Тренуй',inTense:'у'},
+  ru:{ready_q:'Готово?',no_items:'Нет заданий',review_empty:'Повторение пустое',practice:'Практика',learn:'Учить',review:'Повторять',learnRoute:'Учить',conjugatorRoute:'Спряжение',mistakesRoute:'Ошибки',resourcesRoute:'Ресурсы',brandSub:'B1 → B2 · Грамматика и рабочий немецкий',sidebarPath:'Учебный путь',sidebarQuestion:'Что тренировать?',profile:'Профиль',design:'Дизайн',color:'Цвет',backup:'Резервная копия',module:'Модуль',tense:'Время',sessionLength:'Длина сессии',topic:'Тема',options:'Опции',previousQuestion:'Предыдущий вопрос',skipExercise:'Пропустить упражнение',speak:'Прочитать вслух',rule:'Правило',exampleLabel:'Пример',conjugator:'Спряжение',clearMistakes:'Очистить ошибки',resourcesTitle:'Внешние ресурсы',resourcesDesc:'Прямые ссылки на словари, спряжение, грамматику и аудирование.',answerPlaceholder:'Введите ответ…',verbTraining:'Тренировка глаголов',exercise:'Упражнение',completedItems:'завершено',hits:'результатов',verbsAvailable:'глаголов доступно',allCount:'Все',curatedSelection:'Подборка',shown:'показано',starterList:'Стартовый список',available:'доступно',auxVerb:'Вспомогательный глагол',participle:'Partizip II',practiceVerb:'Тренируй',inTense:'в'},
+  pl:{ready_q:'Gotowe?',no_items:'Brak zadań',review_empty:'Powtórka pusta',practice:'Ćwicz',learn:'Ucz się',review:'Powtórz',learnRoute:'Nauka',conjugatorRoute:'Koniugator',mistakesRoute:'Błędy',resourcesRoute:'Zasoby',brandSub:'B1 → B2 · Gramatyka i niemiecki w pracy',sidebarPath:'Ścieżka nauki',sidebarQuestion:'Co chcesz ćwiczyć?',profile:'Profil',design:'Wygląd',color:'Kolor',backup:'Kopia zapasowa',module:'Moduł',tense:'Czas',sessionLength:'Długość sesji',topic:'Temat',options:'Opcje',previousQuestion:'Poprzednie pytanie',skipExercise:'Pomiń ćwiczenie',speak:'Przeczytaj na głos',rule:'Reguła',exampleLabel:'Przykład',conjugator:'Koniugator',clearMistakes:'Wyczyść błędy',resourcesTitle:'Zewnętrzne zasoby',resourcesDesc:'Bezpośrednie linki do słowników, koniugatorów, gramatyki i słuchania.',answerPlaceholder:'Wpisz odpowiedź…',verbTraining:'Trening czasowników',exercise:'Ćwiczenie',completedItems:'ukończone',hits:'wyników',verbsAvailable:'czasowników dostępnych',allCount:'Wszystkie',curatedSelection:'Wybrana lista',shown:'pokazano',starterList:'Lista startowa',available:'dostępne',auxVerb:'Czasownik posiłkowy',participle:'Partizip II',practiceVerb:'Ćwicz',inTense:'w'},
+  tr:{ready_q:'Hazır mı?',no_items:'Öğe yok',review_empty:'Tekrar boş',practice:'Pratik',learn:'Öğren',review:'Tekrar',learnRoute:'Öğren',conjugatorRoute:'Fiil çekimi',mistakesRoute:'Hatalar',resourcesRoute:'Kaynaklar',brandSub:'B1 → B2 · Dilbilgisi ve iş Almancası',sidebarPath:'Öğrenme yolu',sidebarQuestion:'Neyi çalışmak istiyorsun?',profile:'Profil',design:'Tasarım',color:'Renk',backup:'Yedekleme',module:'Modül',tense:'Zaman',sessionLength:'Oturum uzunluğu',topic:'Konu',options:'Seçenekler',previousQuestion:'Önceki soru',skipExercise:'Alıştırmayı geç',speak:'Sesli oku',rule:'Kural',exampleLabel:'Örnek',conjugator:'Fiil çekimi',clearMistakes:'Hataları temizle',resourcesTitle:'Dış kaynaklar',resourcesDesc:'Sözlükler, fiil çekimi, dilbilgisi ve dinleme için doğrudan bağlantılar.',answerPlaceholder:'Cevabını yaz…',verbTraining:'Fiil çalışması',exercise:'Alıştırma',completedItems:'tamamlandı',hits:'sonuç',verbsAvailable:'fiil mevcut',allCount:'Tümü',curatedSelection:'Seçilmiş liste',shown:'gösterildi',starterList:'Başlangıç listesi',available:'mevcut',auxVerb:'Yardımcı fiil',participle:'Partizip II',practiceVerb:'Çalış',inTense:'zamanında'}
+};
 for(const k in EXTRA_T)Object.assign(T[k]||(T[k]={}),EXTRA_T[k]);
 
 function tr(k){return T[state.lang]?.[k]??T.en[k]??T.de[k]??k}
@@ -394,9 +439,9 @@ function richExplanation(d,meta,isVocab=false){const ex=d.explanation;if(typeof 
 function makeChoices(answer,type,context={}){const ans=String(answer||'').trim();if(!ans)return[];if(type==='article_trainer')return shuffle(['der','die','das']);if(type==='connector_selection'||/konnektor|connector/i.test(String(context.tags||context.category||'')+' '+String(context.prompt||''))){const pool=['und','aber','oder','sondern','weil','obwohl','trotzdem','deshalb','damit','bevor'];return[...new Set([ans,...pool.filter(x=>x!==ans)])].slice(0,4)}if(type==='multiple_choice'){const valid=context.choices||context.options;return valid&&valid.length?valid:[]}return[]}
 
 function renderPath(){
-  const pathOptions=PATHS.map(p=>`<option value="${p.id}">${esc(p.title)}</option>`).join('');
+  const pathOptions=PATHS.map(p=>`<option value="${p.id}">${esc(pathText(p.id,'title'))}</option>`).join('');
   if($('mobilePathSelect')){$('mobilePathSelect').innerHTML=pathOptions;$('mobilePathSelect').value=state.path;}
-  $('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(p.title)}</span><span class="path-sub">${esc(p.sub)}</span></span><span class="path-count">${count}</span></button>`}).join('');
+  $('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(pathText(p.id,'title'))}</span><span class="path-sub">${esc(pathText(p.id,'sub'))}</span></span><span class="path-count">${count}</span></button>`}).join('');
   document.querySelectorAll('.path-btn').forEach(b=>b.onclick=()=>{selectPath(b.dataset.path);toggleDrawer(false)})
 }
 function modulesForPath(id){
@@ -425,7 +470,7 @@ function selectPath(id){
 function renderModuleSelect(){
   const mods=modulesForPath(state.path);
   let html=`<option value="all">${tr('allModules')}</option>`;
-  if(state.path==='conjugation')html=`<option value="dynamic_conjugator">Verbtraining</option>`+html;
+  if(state.path==='conjugation')html=`<option value="dynamic_conjugator">${tr('verbTraining')}</option>`+html;
   html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');
   $('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId;
   if($('mobileModuleSelect')){$('mobileModuleSelect').innerHTML=html;$('mobileModuleSelect').value=state.moduleId;}
@@ -522,7 +567,7 @@ function renderQuickStart(){
   });
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator();renderResources()}
+function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator();renderResources();localizeStaticUI()}
 
 function renderResources(){
   const box=$('resourceList'); if(!box)return;
@@ -683,12 +728,12 @@ function renderExercise(){
   const p=PATHS.find(x=>x.id===state.path);
   const items=filteredItems();
   const item=items[state.index];
-  $('currentPathLabel').textContent=p?.title||'Lernen';
-  $('moduleTitle').textContent=p?.title||'Deutsch trainieren';
-  $('moduleDescription').textContent=p?.sub||'';
+  $('currentPathLabel').textContent=pathText(state.path,'title')||tr('learnRoute');
+  $('moduleTitle').textContent=pathText(state.path,'title')||'Deutsch trainieren';
+  $('moduleDescription').textContent=pathText(state.path,'sub')||'';
   $('moduleCount').textContent=`${items.length} ${items.length===1?tr('item'):tr('items')}`;
   $('levelBadge').textContent=item?.level||'B1/B2';
-  $('exercisePill').textContent=item?label(item.exerciseType):'Übung';
+  $('exercisePill').textContent=item?label(item.exerciseType):tr('exercise');
   $('itemIndex').textContent=items.length?`${Math.min(state.index+1,items.length)} / ${items.length}`:'—';
   // Progress bar
   const pct=items.length?Math.round((state.index/items.length)*100):0;
@@ -723,7 +768,7 @@ function renderExercise(){
     $('questionText').innerHTML=`<div class="session-complete-card">
       <div class="complete-icon">✓</div>
       <h3>${tr('complete')}</h3>
-      <p>${items.length} ${items.length===1?tr('item'):tr('items')} abgeschlossen.</p>
+      <p>${items.length} ${items.length===1?tr('item'):tr('items')} ${tr('completedItems')}.</p>
     </div>`;
     // Single-click restart — primary button directly restarts
     $('primaryAction').textContent=tr('restart');
@@ -737,7 +782,7 @@ function renderExercise(){
     return;
   }
   if(item.exerciseType==='sequenced_business_artifact'){renderSequencedArtifact(item);return;}
-  $('questionTitle').textContent=item.moduleTitle||'Übung';
+  $('questionTitle').textContent=item.moduleTitle||tr('exercise');
   $('questionText').textContent=item.prompt;
   renderInput(item);
   $('primaryAction').textContent=state.mode==='learn'?tr('next'):tr('check');
@@ -757,7 +802,7 @@ function renderInput(item){
       b.classList.add('selected');
     });
   } else {
-    $('answerZone').innerHTML=`<input id="answerInput" class="answer-input" autocomplete="off" placeholder="Antwort eingeben…">`;
+    $('answerZone').innerHTML=`<input id="answerInput" class="answer-input" autocomplete="off" placeholder="${esc(tr('answerPlaceholder'))}">`;
     setTimeout(()=>$('answerInput')?.focus(),30);
   }
 }
@@ -935,7 +980,8 @@ function renderMistakes(){
 }
 
 const LABELS={de:{verb_conjugation:'Konjugation',gap_fill:'Lücke',multiple_choice:'Auswahl',sentence_correction:'Korrektur',flashcard:'Karte',translation_into_german:'Übersetzen',active_recall:'Aktiv erinnern',perfekt_builder:'Perfekt',connector_selection:'Konnektor',article_trainer:'Artikel',plural_trainer:'Plural',case_trainer:'Kasus',sequenced_business_artifact:'Sequenz',gap_fill_syntax:'Lücke',choice_register:'Register',syntax_ordering:'Satzbau',production_controlled:'Produktion'},en:{verb_conjugation:'Conjugation',gap_fill:'Gap',multiple_choice:'Choice',sentence_correction:'Correction',flashcard:'Card',translation_into_german:'Translate',active_recall:'Recall',perfekt_builder:'Perfekt',connector_selection:'Connector',article_trainer:'Article',plural_trainer:'Plural',case_trainer:'Case',sequenced_business_artifact:'Sequence',gap_fill_syntax:'Gap',choice_register:'Register',syntax_ordering:'Word order',production_controlled:'Production'}};
-function label(x){const pack=LABELS[state.lang]||LABELS.en;return pack[x]||LABELS.en[x]||LABELS.de[x]||x||'Übung'}
+Object.assign(LABELS,{fr:{verb_conjugation:'Conjugaison',gap_fill:'Trou',multiple_choice:'Choix',sentence_correction:'Correction',flashcard:'Carte',translation_into_german:'Traduction',active_recall:'Rappel actif',perfekt_builder:'Perfekt',connector_selection:'Connecteur',article_trainer:'Article',plural_trainer:'Pluriel',case_trainer:'Cas',sequenced_business_artifact:'Séquence',gap_fill_syntax:'Trou',choice_register:'Registre',syntax_ordering:'Ordre des mots',production_controlled:'Production'},es:{verb_conjugation:'Conjugación',gap_fill:'Hueco',multiple_choice:'Opción',sentence_correction:'Corrección',flashcard:'Tarjeta',translation_into_german:'Traducción',active_recall:'Recuerdo activo',perfekt_builder:'Perfekt',connector_selection:'Conector',article_trainer:'Artículo',plural_trainer:'Plural',case_trainer:'Caso',sequenced_business_artifact:'Secuencia',gap_fill_syntax:'Hueco',choice_register:'Registro',syntax_ordering:'Orden de palabras',production_controlled:'Producción'}});
+function label(x){const pack=LABELS[state.lang]||LABELS.en;return pack[x]||LABELS.en[x]||LABELS.de[x]||x||tr('exercise')}
 let _lastSpeak=0;
 function speak(text){if(!text||!('speechSynthesis'in window))return;const now=Date.now();if(now-_lastSpeak<250)return;_lastSpeak=now;const u=new SpeechSynthesisUtterance(stripHtml(text));u.lang='de-DE';u.rate=.9;speechSynthesis.cancel();speechSynthesis.speak(u)}
 
@@ -958,237 +1004,19 @@ function renderVerbList(){
   let verbs,meta='';
   if(q){
     verbs=all.filter(v=>norm(v).includes(q));
-    meta=`${verbs.length} Treffer · ${all.length} Verben verfügbar`;
+    meta=`${verbs.length} ${tr('hits')} · ${all.length} ${tr('verbsAvailable')}`;
   }else if(state.verbListMode==='all'){
-    verbs=all; meta=`Alle ${all.length} Verben`;
+    verbs=all; meta=`${tr('allCount')} ${all.length} ${tr('verbsAvailable')}`;
   }else if(state.verbListMode==='curated'){
-    verbs=top300; meta=`Kuratierte Auswahl · ${verbs.length} angezeigt · ${all.length} verfügbar`;
+    verbs=top300; meta=`${tr('curatedSelection')} · ${verbs.length} ${tr('shown')} · ${all.length} ${tr('available')}`;
   }else{
-    verbs=starter; meta=`Starterliste · ${verbs.length} angezeigt · ${all.length} verfügbar`;
+    verbs=starter; meta=`${tr('starterList')} · ${verbs.length} ${tr('shown')} · ${all.length} ${tr('available')}`;
   }
   const modeControls=!q?`<div class="verb-list-modes">
     <button class="link-button ${state.verbListMode==='starter'?'active':''}" data-vmode="starter">${tr('starter')}</button>
     <button class="link-button ${state.verbListMode==='curated'?'active':''}" data-vmode="curated">${tr('curated')}</button>
     <button class="link-button ${state.verbListMode==='all'?'active':''}" data-vmode="all">${tr('allVerbs')}</button>
   </div>`:'';
-  $('verbList').innerHTML=`<div class="verb-list-meta"><span>${esc(meta)}</span></div>${modeControls}`+verbs.map(v=>`<button class="verb-btn ${v===state.verb?'active':''}" data-verb="${esc(v)}"><strong>${esc(v)}</strong><br><small>${esc(displayVerbMeaning(state.conjugator.verbs[v])||'')}</small></button>`).join('');
-  document.querySelectorAll('[data-vmode]').forEach(b=>b.onclick=()=>{state.verbListMode=b.dataset.vmode;renderVerbList()});
-  document.querySelectorAll('.verb-btn').forEach(b=>b.onclick=()=>{state.verb=b.dataset.verb;state.tense='Präsens';renderVerbList();renderVerbDetail()});
-}
-function renderVerbDetail(){
-  const v=state.conjugator.verbs[state.verb];if(!v)return;
-  const keys={'Präsens':'present','Präteritum':'preterite','Perfekt':'perfect','Plusquamperfekt':'plusquam','Futur I':'futur1','Konjunktiv II':'konj2','Imperativ':'imperative'};
-  $('verbMeta').innerHTML=`<div class="eyebrow">${esc(v.type)}</div><h2>${esc(state.verb)}</h2><div class="verb-chips"><span>Hilfsverb: ${esc(v.aux)}</span><span>Partizip II: ${esc(v.part)}</span><span>${esc(v.zu)}</span><span>${esc(displayVerbMeaning(v)||'')}</span></div><p>${esc(v.example)}</p>`;
-  $('tenseTabs').innerHTML=Object.keys(keys).map(t=>`<button class="tense-tab ${t===state.tense?'active':''}" data-tense="${t}" role="tab" aria-selected="${t===state.tense}">${t}</button>`).join('');
-  document.querySelectorAll('.tense-tab').forEach(b=>b.onclick=()=>{state.tense=b.dataset.tense;renderVerbDetail()});
-  const forms=v[keys[state.tense]]||[];
-  const pronouns=state.tense==='Imperativ'?['du','ihr','Sie']:state.conjugator.pronouns;
-  $('tenseTable').innerHTML=forms.map((f,i)=>`<div class="tense-row"><strong>${esc(pronouns[i]||'')}</strong><span>${esc(f)}</span></div>`).join('');
-  $('verbPractice').innerHTML=`Übe <b>${esc(state.verb)}</b> im ${esc(state.tense)}.`;
-}
-function launchVerbPractice(){
-  route('learn');selectPath('conjugation');
-  state.moduleId='dynamic_conjugator';
-  state.dynamicVerb=state.verb;
-  state.tenseFilter=state.tense||'Präsens';
-  state._conjGenKey=''; // force regeneration with new verb/tense
-  renderModuleSelect();
-  $('tenseFilter').value=state.tenseFilter;
-  state.mode='practice';
-  setMode('practice');
-  state.started=true;
-  renderExercise();
-}
-
-
-/* ============================================================
-   v18.2.4 professional i18n parity patch
-   Goal: language selector controls the full UI shell, path labels,
-   feedback stages, placeholders, exercise chrome, and conjugator chrome.
-   German remains the target language; selected language is the support UI.
-   ============================================================ */
-const I18N_PARITY_PATCH = {
-  de:{ready_q:'Bereit?',no_items:'Keine Items',review_empty:'Review leer',practice:'Üben',learn:'Lernen',review:'Wiederholen',learnRoute:'Lernen',conjugatorRoute:'Konjugator',mistakesRoute:'Fehlerbank',resourcesRoute:'Ressourcen',brandSub:'B1 → B2 · Grammatik & Beruf',sidebarPath:'Lernpfad',sidebarQuestion:'Was willst du trainieren?',profile:'Profil',design:'Design',color:'Farbe',backup:'Backup',module:'Modul',topic:'Thema',options:'Optionen',tense:'Zeitform',sessionLength:'Sitzungslänge',previousQuestion:'Vorherige Frage',skipExercise:'Übung überspringen',speak:'Vorlesen',rule:'Regel',exampleLabel:'Beispiel',conjugator:'Konjugator',showTable:'Tabelle anzeigen →',clearMistakes:'Fehlerbank leeren',resourcesTitle:'Externe Ressourcen',resourcesDesc:'Direkte Links zu Wörterbüchern, Konjugatoren, Grammatik und Hörmaterial. Diese Ansicht ist bewusst separat, damit die Übungsoberfläche frei bleibt.',defaultTitle:'Deutsch trainieren',exercise:'Übung',answerPlaceholder:'Antwort eingeben…',completedWord:'abgeschlossen',verbTraining:'Verbtraining',hits:'Treffer',verbsAvailable:'Verben verfügbar',allCount:'Alle',shown:'angezeigt',starterList:'Starterliste',curatedSelection:'Kuratierte Auswahl',auxVerb:'Hilfsverb',participle:'Partizip II',practiceVerb:'Übe',inTense:'im',notYetHint:'Noch nicht · gezielter Hinweis',ruleHint:'Regelhinweis',modelSolution:'Modelllösung',caseNearMiss:'Fast richtig: Groß-/Kleinschreibung prüfen.',genericHint1:'Noch nicht. Prüfe Form, Kasus, Wortstellung oder Register.',genericHint2:'Nutze die Regel im rechten Panel und vergleiche die Struktur mit dem Beispiel.',model:'Modell'},
-  en:{ready_q:'Ready?',no_items:'No items',review_empty:'Review empty',practice:'Practice',learn:'Learn',review:'Review',learnRoute:'Learn',conjugatorRoute:'Conjugator',mistakesRoute:'Mistake bank',resourcesRoute:'Resources',brandSub:'B1 → B2 · grammar & workplace German',sidebarPath:'Learning path',sidebarQuestion:'What do you want to train?',profile:'Profile',design:'Appearance',color:'Color',backup:'Backup',module:'Module',topic:'Topic',options:'Options',tense:'Tense',sessionLength:'Session length',previousQuestion:'Previous question',skipExercise:'Skip exercise',speak:'Read aloud',rule:'Rule',exampleLabel:'Example',conjugator:'Conjugator',showTable:'Show table →',clearMistakes:'Clear mistake bank',resourcesTitle:'External resources',resourcesDesc:'Direct links to dictionaries, conjugators, grammar and listening material. This view stays separate so the exercise interface remains clean.',defaultTitle:'Train German',exercise:'Exercise',answerPlaceholder:'Type your answer…',completedWord:'completed',verbTraining:'Verb training',hits:'results',verbsAvailable:'verbs available',allCount:'All',shown:'shown',starterList:'Starter list',curatedSelection:'Curated selection',auxVerb:'Auxiliary',participle:'Past participle',practiceVerb:'Practice',inTense:'in',notYetHint:'Not yet · targeted hint',ruleHint:'Rule hint',modelSolution:'Model answer',caseNearMiss:'Almost correct: check capitalisation.',genericHint1:'Not yet. Check form, case, word order, or register.',genericHint2:'Use the rule in the side panel and compare the structure with the example.',model:'Model'},
-  fr:{ready_q:'Prêt ?',no_items:'Aucun item',review_empty:'Révision vide',practice:'Pratiquer',learn:'Apprendre',review:'Réviser',learnRoute:'Apprendre',conjugatorRoute:'Conjugueur',mistakesRoute:'Erreurs',resourcesRoute:'Ressources',brandSub:'B1 → B2 · grammaire et allemand professionnel',sidebarPath:'Parcours',sidebarQuestion:'Que veux-tu travailler ?',profile:'Profil',design:'Apparence',color:'Couleur',backup:'Sauvegarde',module:'Module',topic:'Thème',options:'Options',tense:'Temps',sessionLength:'Longueur de session',previousQuestion:'Question précédente',skipExercise:'Passer l’exercice',speak:'Lire à voix haute',rule:'Règle',exampleLabel:'Exemple',conjugator:'Conjugueur',showTable:'Afficher le tableau →',clearMistakes:'Vider les erreurs',resourcesTitle:'Ressources externes',resourcesDesc:'Liens directs vers dictionnaires, conjugueurs, grammaire et écoute. Cette vue reste séparée pour garder l’exercice clair.',defaultTitle:'Travailler l’allemand',exercise:'Exercice',answerPlaceholder:'Écris ta réponse…',completedWord:'terminés',verbTraining:'Entraînement verbal',hits:'résultats',verbsAvailable:'verbes disponibles',allCount:'Tous',shown:'affichés',starterList:'Liste de départ',curatedSelection:'Sélection curatée',auxVerb:'Auxiliaire',participle:'Participe II',practiceVerb:'Travaille',inTense:'au',notYetHint:'Pas encore · indice ciblé',ruleHint:'Indice de règle',modelSolution:'Solution modèle',caseNearMiss:'Presque correct : vérifie les majuscules.',genericHint1:'Pas encore. Vérifie la forme, le cas, l’ordre des mots ou le registre.',genericHint2:'Utilise la règle dans le panneau latéral et compare avec l’exemple.',model:'Modèle'},
-  es:{ready_q:'¿Listo?',no_items:'No hay ítems',review_empty:'Repaso vacío',practice:'Practicar',learn:'Aprender',review:'Repasar',learnRoute:'Aprender',conjugatorRoute:'Conjugador',mistakesRoute:'Errores',resourcesRoute:'Recursos',brandSub:'B1 → B2 · gramática y alemán profesional',sidebarPath:'Ruta de aprendizaje',sidebarQuestion:'¿Qué quieres practicar?',profile:'Perfil',design:'Apariencia',color:'Color',backup:'Copia',module:'Módulo',topic:'Tema',options:'Opciones',tense:'Tiempo verbal',sessionLength:'Longitud de sesión',previousQuestion:'Pregunta anterior',skipExercise:'Omitir ejercicio',speak:'Leer en voz alta',rule:'Regla',exampleLabel:'Ejemplo',conjugator:'Conjugador',showTable:'Mostrar tabla →',clearMistakes:'Vaciar errores',resourcesTitle:'Recursos externos',resourcesDesc:'Enlaces directos a diccionarios, conjugadores, gramática y escucha. Esta vista queda separada para mantener limpia la práctica.',defaultTitle:'Practicar alemán',exercise:'Ejercicio',answerPlaceholder:'Escribe tu respuesta…',completedWord:'completados',verbTraining:'Práctica verbal',hits:'resultados',verbsAvailable:'verbos disponibles',allCount:'Todos',shown:'mostrados',starterList:'Lista inicial',curatedSelection:'Selección curada',auxVerb:'Auxiliar',participle:'Participio II',practiceVerb:'Practica',inTense:'en',notYetHint:'Todavía no · pista dirigida',ruleHint:'Pista de regla',modelSolution:'Solución modelo',caseNearMiss:'Casi correcto: revisa mayúsculas.',genericHint1:'Todavía no. Revisa forma, caso, orden de palabras o registro.',genericHint2:'Usa la regla del panel lateral y compara la estructura con el ejemplo.',model:'Modelo'},
-  ar:{ready_q:'جاهز؟',no_items:'لا توجد عناصر',review_empty:'المراجعة فارغة',practice:'تدرّب',learn:'تعلّم',review:'راجع',learnRoute:'تعلّم',conjugatorRoute:'تصريف الأفعال',mistakesRoute:'بنك الأخطاء',resourcesRoute:'الموارد',brandSub:'B1 → B2 · القواعد والألمانية المهنية',sidebarPath:'مسار التعلّم',sidebarQuestion:'ماذا تريد أن تتدرّب عليه؟',profile:'الملف',design:'المظهر',color:'اللون',backup:'نسخة احتياطية',module:'الوحدة',topic:'الموضوع',options:'خيارات',tense:'الزمن',sessionLength:'طول الجلسة',previousQuestion:'السؤال السابق',skipExercise:'تخطي التمرين',speak:'قراءة بصوت عالٍ',rule:'القاعدة',exampleLabel:'مثال',conjugator:'تصريف الأفعال',showTable:'عرض الجدول →',clearMistakes:'مسح بنك الأخطاء',resourcesTitle:'موارد خارجية',resourcesDesc:'روابط مباشرة إلى قواميس وتصريف وقواعد ومواد استماع. تبقى هذه الصفحة منفصلة حتى تظل واجهة التمرين واضحة.',defaultTitle:'تدرّب على الألمانية',exercise:'تمرين',answerPlaceholder:'اكتب إجابتك…',completedWord:'مكتملة',verbTraining:'تدريب الأفعال',hits:'نتائج',verbsAvailable:'أفعال متاحة',allCount:'كل',shown:'معروضة',starterList:'قائمة البداية',curatedSelection:'اختيار منقّح',auxVerb:'الفعل المساعد',participle:'اسم المفعول II',practiceVerb:'تدرّب على',inTense:'في',notYetHint:'ليس بعد · تلميح موجّه',ruleHint:'تلميح القاعدة',modelSolution:'حل نموذجي',caseNearMiss:'قريب من الصحيح: راجع الحروف الكبيرة/الصغيرة.',genericHint1:'ليس بعد. راجع الشكل أو الحالة أو ترتيب الكلمات أو الأسلوب.',genericHint2:'استخدم القاعدة في اللوحة الجانبية وقارن البنية بالمثال.',model:'نموذج'},
-  fa:{ready_q:'آماده‌ای؟',no_items:'موردی نیست',review_empty:'مرور خالی است',practice:'تمرین',learn:'یادگیری',review:'مرور',learnRoute:'یادگیری',conjugatorRoute:'صرف فعل',mistakesRoute:'بانک خطا',resourcesRoute:'منابع',brandSub:'B1 → B2 · گرامر و آلمانی کاری',sidebarPath:'مسیر یادگیری',sidebarQuestion:'چه چیزی را می‌خواهی تمرین کنی؟',profile:'پروفایل',design:'ظاهر',color:'رنگ',backup:'پشتیبان',module:'بخش',topic:'موضوع',options:'گزینه‌ها',tense:'زمان فعل',sessionLength:'طول جلسه',previousQuestion:'پرسش قبلی',skipExercise:'رد کردن تمرین',speak:'بلندخوانی',rule:'قاعده',exampleLabel:'مثال',conjugator:'صرف فعل',showTable:'نمایش جدول →',clearMistakes:'پاک کردن بانک خطا',resourcesTitle:'منابع بیرونی',resourcesDesc:'پیوندهای مستقیم به فرهنگ لغت، صرف فعل، گرامر و شنیدار. این بخش جدا می‌ماند تا تمرین خلوت بماند.',defaultTitle:'تمرین آلمانی',exercise:'تمرین',answerPlaceholder:'پاسخت را بنویس…',completedWord:'کامل شد',verbTraining:'تمرین فعل',hits:'نتیجه',verbsAvailable:'فعل موجود',allCount:'همه',shown:'نمایش داده‌شده',starterList:'فهرست شروع',curatedSelection:'انتخاب گزینشی',auxVerb:'فعل کمکی',participle:'Partizip II',practiceVerb:'تمرین کن',inTense:'در',notYetHint:'هنوز نه · راهنمایی هدفمند',ruleHint:'راهنمای قاعده',modelSolution:'پاسخ نمونه',caseNearMiss:'تقریباً درست: بزرگی/کوچکی حرف را بررسی کن.',genericHint1:'هنوز نه. شکل، حالت، ترتیب واژه‌ها یا لحن را بررسی کن.',genericHint2:'از قاعده در پنل کناری استفاده کن و ساختار را با مثال مقایسه کن.',model:'نمونه'},
-  uk:{ready_q:'Готово?',no_items:'Немає завдань',review_empty:'Повторення порожнє',practice:'Практика',learn:'Навчання',review:'Повторення',learnRoute:'Вчитися',conjugatorRoute:'Відмінювання',mistakesRoute:'Помилки',resourcesRoute:'Ресурси',brandSub:'B1 → B2 · граматика і професійна німецька',sidebarPath:'Навчальний шлях',sidebarQuestion:'Що хочеш тренувати?',profile:'Профіль',design:'Вигляд',color:'Колір',backup:'Резервна копія',module:'Модуль',topic:'Тема',options:'Опції',tense:'Час',sessionLength:'Довжина сесії',previousQuestion:'Попереднє питання',skipExercise:'Пропустити вправу',speak:'Прочитати вголос',rule:'Правило',exampleLabel:'Приклад',conjugator:'Відмінювання',showTable:'Показати таблицю →',clearMistakes:'Очистити помилки',resourcesTitle:'Зовнішні ресурси',resourcesDesc:'Прямі посилання на словники, відмінювання, граматику та аудіювання. Цей розділ окремий, щоб інтерфейс вправ був чистим.',defaultTitle:'Тренувати німецьку',exercise:'Вправа',answerPlaceholder:'Введи відповідь…',completedWord:'завершено',verbTraining:'Тренування дієслів',hits:'результатів',verbsAvailable:'дієслів доступно',allCount:'Усі',shown:'показано',starterList:'Стартовий список',curatedSelection:'Відібрана добірка',auxVerb:'Допоміжне дієслово',participle:'Partizip II',practiceVerb:'Тренуй',inTense:'у',notYetHint:'Ще ні · точна підказка',ruleHint:'Підказка правила',modelSolution:'Модельна відповідь',caseNearMiss:'Майже правильно: перевір великі літери.',genericHint1:'Ще ні. Перевір форму, відмінок, порядок слів або регістр.',genericHint2:'Використай правило у бічній панелі й порівняй структуру з прикладом.',model:'Модель'},
-  ru:{ready_q:'Готово?',no_items:'Нет заданий',review_empty:'Повторение пустое',practice:'Практика',learn:'Учить',review:'Повторять',learnRoute:'Учить',conjugatorRoute:'Спряжение',mistakesRoute:'Ошибки',resourcesRoute:'Ресурсы',brandSub:'B1 → B2 · грамматика и деловой немецкий',sidebarPath:'Учебный путь',sidebarQuestion:'Что хочешь тренировать?',profile:'Профиль',design:'Вид',color:'Цвет',backup:'Резервная копия',module:'Модуль',topic:'Тема',options:'Опции',tense:'Время',sessionLength:'Длина сессии',previousQuestion:'Предыдущий вопрос',skipExercise:'Пропустить упражнение',speak:'Прочитать вслух',rule:'Правило',exampleLabel:'Пример',conjugator:'Спряжение',showTable:'Показать таблицу →',clearMistakes:'Очистить ошибки',resourcesTitle:'Внешние ресурсы',resourcesDesc:'Прямые ссылки на словари, спряжение, грамматику и аудирование. Этот раздел отделён, чтобы интерфейс упражнений оставался чистым.',defaultTitle:'Тренировать немецкий',exercise:'Упражнение',answerPlaceholder:'Введи ответ…',completedWord:'завершено',verbTraining:'Тренировка глаголов',hits:'результатов',verbsAvailable:'глаголов доступно',allCount:'Все',shown:'показано',starterList:'Стартовый список',curatedSelection:'Отобранная подборка',auxVerb:'Вспомогательный глагол',participle:'Partizip II',practiceVerb:'Тренируй',inTense:'в',notYetHint:'Еще нет · точная подсказка',ruleHint:'Подсказка правила',modelSolution:'Модельный ответ',caseNearMiss:'Почти правильно: проверь заглавные буквы.',genericHint1:'Еще нет. Проверь форму, падеж, порядок слов или регистр.',genericHint2:'Используй правило в боковой панели и сравни структуру с примером.',model:'Модель'},
-  pl:{ready_q:'Gotowe?',no_items:'Brak zadań',review_empty:'Powtórka pusta',practice:'Ćwicz',learn:'Ucz się',review:'Powtarzaj',learnRoute:'Nauka',conjugatorRoute:'Koniugator',mistakesRoute:'Błędy',resourcesRoute:'Zasoby',brandSub:'B1 → B2 · gramatyka i niemiecki zawodowy',sidebarPath:'Ścieżka nauki',sidebarQuestion:'Co chcesz ćwiczyć?',profile:'Profil',design:'Wygląd',color:'Kolor',backup:'Kopia',module:'Moduł',topic:'Temat',options:'Opcje',tense:'Czas',sessionLength:'Długość sesji',previousQuestion:'Poprzednie pytanie',skipExercise:'Pomiń ćwiczenie',speak:'Czytaj na głos',rule:'Reguła',exampleLabel:'Przykład',conjugator:'Koniugator',showTable:'Pokaż tabelę →',clearMistakes:'Wyczyść błędy',resourcesTitle:'Zewnętrzne zasoby',resourcesDesc:'Bezpośrednie linki do słowników, koniugatorów, gramatyki i słuchania. Widok jest oddzielny, aby ćwiczenia pozostały przejrzyste.',defaultTitle:'Ćwicz niemiecki',exercise:'Ćwiczenie',answerPlaceholder:'Wpisz odpowiedź…',completedWord:'ukończono',verbTraining:'Trening czasowników',hits:'wyników',verbsAvailable:'czasowników dostępnych',allCount:'Wszystkie',shown:'pokazano',starterList:'Lista startowa',curatedSelection:'Wybrana selekcja',auxVerb:'Czasownik posiłkowy',participle:'Partizip II',practiceVerb:'Ćwicz',inTense:'w',notYetHint:'Jeszcze nie · wskazówka',ruleHint:'Wskazówka reguły',modelSolution:'Odpowiedź modelowa',caseNearMiss:'Prawie dobrze: sprawdź wielkie litery.',genericHint1:'Jeszcze nie. Sprawdź formę, przypadek, szyk słów lub rejestr.',genericHint2:'Użyj reguły w panelu bocznym i porównaj strukturę z przykładem.',model:'Model'},
-  tr:{ready_q:'Hazır mısın?',no_items:'Öğe yok',review_empty:'Tekrar boş',practice:'Pratik',learn:'Öğren',review:'Tekrar',learnRoute:'Öğren',conjugatorRoute:'Fiil çekimi',mistakesRoute:'Hata bankası',resourcesRoute:'Kaynaklar',brandSub:'B1 → B2 · gramer ve iş Almancası',sidebarPath:'Öğrenme yolu',sidebarQuestion:'Ne çalışmak istiyorsun?',profile:'Profil',design:'Görünüm',color:'Renk',backup:'Yedek',module:'Modül',topic:'Konu',options:'Seçenekler',tense:'Zaman',sessionLength:'Oturum uzunluğu',previousQuestion:'Önceki soru',skipExercise:'Alıştırmayı geç',speak:'Sesli oku',rule:'Kural',exampleLabel:'Örnek',conjugator:'Fiil çekimi',showTable:'Tabloyu göster →',clearMistakes:'Hata bankasını temizle',resourcesTitle:'Dış kaynaklar',resourcesDesc:'Sözlükler, fiil çekimi, gramer ve dinleme için doğrudan bağlantılar. Alıştırma arayüzü temiz kalsın diye bu görünüm ayrıdır.',defaultTitle:'Almanca çalış',exercise:'Alıştırma',answerPlaceholder:'Cevabını yaz…',completedWord:'tamamlandı',verbTraining:'Fiil çalışması',hits:'sonuç',verbsAvailable:'fiil mevcut',allCount:'Tüm',shown:'gösterildi',starterList:'Başlangıç listesi',curatedSelection:'Seçilmiş liste',auxVerb:'Yardımcı fiil',participle:'Partizip II',practiceVerb:'Çalış',inTense:'zamanında',notYetHint:'Henüz değil · hedefli ipucu',ruleHint:'Kural ipucu',modelSolution:'Model cevap',caseNearMiss:'Neredeyse doğru: büyük/küçük harfi kontrol et.',genericHint1:'Henüz değil. Biçimi, hâli, kelime sırasını veya üslubu kontrol et.',genericHint2:'Yan paneldeki kuralı kullan ve yapıyı örnekle karşılaştır.',model:'Model'}
-};
-Object.keys(I18N_PARITY_PATCH).forEach(lang=>Object.assign(T[lang]||(T[lang]={}), I18N_PARITY_PATCH[lang]));
-
-const PATH_I18N = {
-  business_email:{en:['Corporate emails','Sequenced formal emails, references, attachments, polite deadlines'],fr:['E-mails professionnels','E-mails formels séquencés, références, pièces jointes, délais polis'],es:['Correos profesionales','Correos formales secuenciados, referencias, adjuntos y plazos corteses'],de:['Corporate Emails','Sequenced formal e-mails, references, attachments, polite deadlines']},
-  complaints:{en:['Complaints & conflict','Defects, invoice disputes, deadlines, objective register'],fr:['Réclamation et conflit','Défauts, litiges de facture, délais, registre objectif'],es:['Reclamación y conflicto','Defectos, disputas de factura, plazos y registro objetivo'],de:['Reklamation & Konflikt','Mängelrüge, invoice dispute, deadlines, objective register']},
-  negotiation:{en:['Negotiation & diplomacy','Konjunktiv II, softening, alternatives, confirmation requests'],fr:['Négociation et diplomatie','Konjunktiv II, atténuation, alternatives, demandes de confirmation'],es:['Negociación y diplomacia','Konjunktiv II, suavización, alternativas, solicitudes de confirmación'],de:['Verhandlung & Diplomatie','Konjunktiv II, softening, alternatives, confirmation requests']},
-  grammar_core:{en:['Grammar core','Cases, nicht/kein, connectors, TeKaMoLo, sentence patterns'],fr:['Grammaire centrale','Cas, nicht/kein, connecteurs, TeKaMoLo, modèles de phrase'],es:['Gramática central','Casos, nicht/kein, conectores, TeKaMoLo, patrones de frase'],de:['Grammar Core','Kasus, nicht/kein, Konnektoren, TeKaMoLo, Satzmuster']},
-  declension:{en:['Declension','Adjective declension, articles, nouns and case endings'],fr:['Déclinaison','Déclinaison des adjectifs, articles, noms et terminaisons'],es:['Declinación','Adjetivos, artículos, nombres y terminaciones de caso'],de:['Deklination','Adjektivdeklination, Artikel, Nomen und Kasusendungen']},
-  artikel_nomen:{en:['Articles & nouns','Gender, plural, nominalisation, case articles'],fr:['Articles et noms','Genre, pluriel, nominalisation, articles de cas'],es:['Artículos y nombres','Género, plural, nominalización y artículos de caso'],de:['Artikel & Nomen','Genus, Plural, Nominalisierung, Kasusartikel']},
-  adverbien:{en:['Adverbs','Time, place, frequency, modality, sentence logic'],fr:['Adverbes','Temps, lieu, fréquence, modalité, logique de phrase'],es:['Adverbios','Tiempo, lugar, frecuencia, modalidad y lógica de frase'],de:['Adverbien','Zeit, Ort, Häufigkeit, Modalität, Satzlogik']},
-  conjugation:{en:['Conjugation','Large verb backend, filtered practice, modal verbs'],fr:['Conjugaison','Grand backend de verbes, pratique filtrée, verbes modaux'],es:['Conjugación','Base amplia de verbos, práctica filtrada, verbos modales'],de:['Konjugation','Large verb backend, filtered practice, modal verbs']},
-  prepositions:{en:['Prepositional verbs','Verbs with fixed preposition and case'],fr:['Verbes prépositionnels','Verbes avec préposition fixe et cas'],es:['Verbos preposicionales','Verbos con preposición fija y caso'],de:['Präpositionalverben','verbs + fixed preposition + case']},
-  workplace:{en:['Workplace vocabulary','Lexicon-key vocabulary, collocations, office/business terms'],fr:['Vocabulaire professionnel','Vocabulaire indexé, collocations, termes de bureau'],es:['Vocabulario laboral','Vocabulario indexado, colocaciones, términos de oficina'],de:['Wortschatz Beruf','lexicon-key vocabulary, collocations, office/business terms']},
-  wortschatz_b1b2:{en:['B1/B2 vocabulary extension','Additional WiPa vocabulary from office, applications, finance, IT, logistics'],fr:['Extension vocabulaire B1/B2','Vocabulaire WiPa supplémentaire : bureau, candidature, finances, IT, logistique'],es:['Extensión de vocabulario B1/B2','Vocabulario WiPa adicional: oficina, solicitud, finanzas, IT, logística'],de:['Wortschatz-Ergänzung B1/B2','zusätzlicher WiPa-Wortschatz aus Büro, Bewerbung, Finanzen, IT, Logistik']},
-  syntax:{en:['Sentence structure','Word order, TeKaMoLo, connectors, negation'],fr:['Structure de phrase','Ordre des mots, TeKaMoLo, connecteurs, négation'],es:['Estructura de frase','Orden de palabras, TeKaMoLo, conectores, negación'],de:['Satzbau','word order, TeKaMoLo, connectors, negation']}
-};
-function pathText(id,part){
-  const p=PATHS.find(x=>x.id===id)||{};
-  const lang=state.lang;
-  const pair=PATH_I18N[id]?.[lang]||PATH_I18N[id]?.en||PATH_I18N[id]?.de;
-  return pair ? pair[part==='sub'?1:0] : (part==='sub' ? (p.sub||'') : (p.title||id));
-}
-function localizeStaticUI(){
-  document.querySelector('[data-route="learn"]') && (document.querySelector('[data-route="learn"]').textContent=tr('learnRoute'));
-  document.querySelector('[data-route="conjugator"]') && (document.querySelector('[data-route="conjugator"]').textContent=tr('conjugatorRoute'));
-  document.querySelector('[data-route="mistakes"]') && (document.querySelector('[data-route="mistakes"]').textContent=tr('mistakesRoute'));
-  document.querySelector('[data-route="resources"]') && (document.querySelector('[data-route="resources"]').textContent=tr('resourcesRoute'));
-  document.querySelector('.brand-subtitle') && (document.querySelector('.brand-subtitle').textContent=tr('brandSub'));
-  document.querySelector('.sidebar-head .eyebrow') && (document.querySelector('.sidebar-head .eyebrow').textContent=tr('sidebarPath'));
-  document.querySelector('.sidebar-head h3') && (document.querySelector('.sidebar-head h3').textContent=tr('sidebarQuestion'));
-  document.querySelector('label[for="profileName"]') && (document.querySelector('label[for="profileName"]').textContent=tr('profile'));
-  document.querySelector('label[for="sidebarAppearanceSelect"]') && (document.querySelector('label[for="sidebarAppearanceSelect"]').textContent=tr('design'));
-  document.querySelector('label[for="sidebarColorSelect"]') && (document.querySelector('label[for="sidebarColorSelect"]').textContent=tr('color'));
-  document.querySelector('.backup-details summary') && (document.querySelector('.backup-details summary').textContent=tr('backup'));
-  document.querySelector('label[for="moduleSelect"]') && (document.querySelector('label[for="moduleSelect"]').textContent=tr('module'));
-  document.querySelector('label[for="tenseFilter"]') && (document.querySelector('label[for="tenseFilter"]').textContent=tr('tense'));
-  document.querySelector('label[for="sessionLimit"]') && (document.querySelector('label[for="sessionLimit"]').textContent=tr('sessionLength'));
-  document.querySelector('label[for="mobilePathSelect"] span') && (document.querySelector('label[for="mobilePathSelect"] span').textContent=tr('topic'));
-  document.querySelector('label[for="mobileModuleSelect"] span') && (document.querySelector('label[for="mobileModuleSelect"] span').textContent=tr('module'));
-  $('mobileOpenSidebar') && ($('mobileOpenSidebar').textContent=tr('options'));
-  $('prevButton') && ($('prevButton').title=tr('previousQuestion'), $('prevButton').setAttribute('aria-label',tr('previousQuestion')));
-  $('skipButton') && ($('skipButton').title=tr('skipExercise'), $('skipButton').setAttribute('aria-label',tr('skipExercise')));
-  $('speakButton') && ($('speakButton').title=tr('speak'), $('speakButton').setAttribute('aria-label',tr('speak')));
-  $('translateButton') && ($('translateButton').title=tr('translate'), $('translateButton').setAttribute('aria-label',tr('translate')));
-  document.querySelectorAll('.learn-panel .panel-block .eyebrow')[0] && (document.querySelectorAll('.learn-panel .panel-block .eyebrow')[0].textContent=tr('rule'));
-  document.querySelectorAll('.learn-panel .panel-block .eyebrow')[1] && (document.querySelectorAll('.learn-panel .panel-block .eyebrow')[1].textContent=tr('exampleLabel'));
-  document.querySelector('#conjugatorLink .eyebrow') && (document.querySelector('#conjugatorLink .eyebrow').textContent=tr('conjugator'));
-  $('modePractice') && ($('modePractice').textContent=tr('practice'));
-  $('modeLearn') && ($('modeLearn').textContent=tr('learn'));
-  $('modeReview') && ($('modeReview').textContent=tr('review'));
-  $('clearMistakes') && ($('clearMistakes').textContent=tr('clearMistakes'));
-  const resHero=document.querySelector('#resourcesView .hero-card div');
-  if(resHero){resHero.querySelector('.eyebrow')&&(resHero.querySelector('.eyebrow').textContent=tr('resourcesRoute'));resHero.querySelector('h2')&&(resHero.querySelector('h2').textContent=tr('resourcesTitle'));resHero.querySelector('p')&&(resHero.querySelector('p').textContent=tr('resourcesDesc'));}
-  const status=$('profileSaveStatus');
-  if(status && !(state.profile?.name)) status.textContent=tr('progressLocal');
-}
-function renderPath(){
-  const pathOptions=PATHS.map(p=>`<option value="${p.id}">${esc(pathText(p.id,'title'))}</option>`).join('');
-  if($('mobilePathSelect')){$('mobilePathSelect').innerHTML=pathOptions;$('mobilePathSelect').value=state.path;}
-  $('pathNav').innerHTML=PATHS.map(p=>{const count=modulesForPath(p.id).reduce((a,m)=>a+m.items.length,0);return`<button class="path-btn" data-path="${p.id}"><span class="path-icon">${p.icon}</span><span><span class="path-title">${esc(pathText(p.id,'title'))}</span><span class="path-sub">${esc(pathText(p.id,'sub'))}</span></span><span class="path-count">${count}</span></button>`}).join('');
-  document.querySelectorAll('.path-btn').forEach(b=>b.onclick=()=>{selectPath(b.dataset.path);toggleDrawer(false)});
-  document.querySelectorAll('.path-btn').forEach(b=>b.classList.toggle('active',b.dataset.path===state.path));
-}
-function renderModuleSelect(){
-  const mods=modulesForPath(state.path);
-  let html=`<option value="all">${tr('allModules')}</option>`;
-  if(state.path==='conjugation')html=`<option value="dynamic_conjugator">${tr('verbTraining')}</option>`+html;
-  html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');
-  $('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId;
-  if($('mobileModuleSelect')){$('mobileModuleSelect').innerHTML=html;$('mobileModuleSelect').value=state.moduleId;}
-}
-function renderAll(){renderPath();renderModuleSelect();renderDesignControls();syncMobileControls();renderQuickStart();renderExercise();renderStats();renderMistakes();renderConjugator();renderResources();localizeStaticUI()}
-function renderExercise(){
-  const items=filteredItems();
-  const item=items[state.index];
-  $('currentPathLabel').textContent=pathText(state.path,'title')||tr('learnRoute');
-  $('moduleTitle').textContent=pathText(state.path,'title')||tr('defaultTitle');
-  $('moduleDescription').textContent=pathText(state.path,'sub')||'';
-  $('moduleCount').textContent=`${items.length} ${items.length===1?tr('item'):tr('items')}`;
-  $('levelBadge').textContent=item?.level||'B1/B2';
-  $('exercisePill').textContent=item?label(item.exerciseType):tr('exercise');
-  $('itemIndex').textContent=items.length?`${Math.min(state.index+1,items.length)} / ${items.length}`:'—';
-  const pct=items.length?Math.round((state.index/items.length)*100):0;
-  $('cardProgressBar').style.width=pct+'%';
-  if($('meterWrap'))$('meterWrap').setAttribute('aria-valuenow',pct);
-  $('feedbackBox').className='feedback hidden';
-  $('translationBox').className='translation-box hidden';$('translationBox').innerHTML='';
-  $('choiceZone').innerHTML='';$('answerZone').innerHTML='';
-  $('secondaryAction').classList.add('hidden');
-  $('conjugatorLink').classList.add('hidden');
-  const hero=$('heroCard');
-  if(state.started&&item)hero.classList.add('collapsed'); else hero.classList.remove('collapsed');
-  if(!item){
-    $('questionTitle').textContent=state.mode==='review'&&state.reviewEmptyReason==='noSrs'?tr('review_empty'):tr('no_items');
-    $('questionText').textContent=state.mode==='review'&&state.reviewEmptyReason==='noSrs'?tr('noSrs'):tr('empty');
-    $('primaryAction').textContent=tr('start');
-    $('ruleBox').innerHTML='—';$('exampleBox').innerHTML='—';
-    localizeStaticUI();
-    return;
-  }
-  $('ruleBox').innerHTML=safeHtml(item.explanation||'—');
-  $('exampleBox').innerHTML=safeHtml(item.example||item.answer||'—');
-  if(state.sessionComplete){
-    $('questionTitle').textContent=tr('complete');
-    $('questionText').innerHTML=`<div class="session-complete-card"><div class="complete-icon">✓</div><h3>${tr('complete')}</h3><p>${items.length} ${items.length===1?tr('item'):tr('items')} ${tr('completedWord')}.</p></div>`;
-    $('primaryAction').textContent=tr('restart');
-    state.started=false;
-    localizeStaticUI();
-    return;
-  }
-  if(!state.started){
-    $('questionTitle').textContent=tr('ready_q');
-    $('questionText').textContent=tr('ready');
-    $('primaryAction').textContent=tr('start');
-    localizeStaticUI();
-    return;
-  }
-  if(item.exerciseType==='sequenced_business_artifact'){renderSequencedArtifact(item);localizeStaticUI();return;}
-  $('questionTitle').textContent=item.moduleTitle||tr('exercise');
-  $('questionText').textContent=item.prompt;
-  renderInput(item);
-  $('primaryAction').textContent=state.mode==='learn'?tr('next'):tr('check');
-  localizeStaticUI();
-}
-function renderInput(item){
-  if(state.mode==='learn'||item.exerciseType==='flashcard'){
-    $('answerZone').innerHTML=`<div class="learn-answer"><strong>${tr('answer')}:</strong><br>${esc(item.answer||'—')}</div>`;
-    $('primaryAction').textContent=tr('next');
-    state.checked=true;return;
-  }
-  if(item.choices&&item.choices.length){
-    $('choiceZone').innerHTML=shuffle(item.choices).map(c=>`<button class="choice-btn" data-choice="${esc(c)}">${esc(c)}</button>`).join('');
-    document.querySelectorAll('.choice-btn').forEach(b=>b.onclick=()=>{state.selectedChoice=b.dataset.choice;document.querySelectorAll('.choice-btn').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');});
-  } else {
-    $('answerZone').innerHTML=`<input id="answerInput" class="answer-input" autocomplete="off" placeholder="${esc(tr('answerPlaceholder'))}">`;
-    setTimeout(()=>$('answerInput')?.focus(),30);
-  }
-}
-const LABEL_PATCH={
-  fr:{verb_conjugation:'Conjugaison',gap_fill:'Trou',multiple_choice:'Choix',sentence_correction:'Correction',flashcard:'Carte',translation_into_german:'Traduction',active_recall:'Rappel actif',perfekt_builder:'Perfekt',connector_selection:'Connecteur',article_trainer:'Article',plural_trainer:'Pluriel',case_trainer:'Cas',sequenced_business_artifact:'Séquence',gap_fill_syntax:'Trou',choice_register:'Registre',syntax_ordering:'Ordre des mots',production_controlled:'Production'},
-  es:{verb_conjugation:'Conjugación',gap_fill:'Hueco',multiple_choice:'Opción',sentence_correction:'Corrección',flashcard:'Tarjeta',translation_into_german:'Traducción',active_recall:'Recuerdo activo',perfekt_builder:'Perfekt',connector_selection:'Conector',article_trainer:'Artículo',plural_trainer:'Plural',case_trainer:'Caso',sequenced_business_artifact:'Secuencia',gap_fill_syntax:'Hueco',choice_register:'Registro',syntax_ordering:'Orden',production_controlled:'Producción'},
-  ar:{verb_conjugation:'تصريف',gap_fill:'فراغ',multiple_choice:'اختيار',sentence_correction:'تصحيح',flashcard:'بطاقة',translation_into_german:'ترجمة',active_recall:'استرجاع',perfekt_builder:'Perfekt',connector_selection:'رابط',article_trainer:'أداة التعريف',plural_trainer:'جمع',case_trainer:'حالة',sequenced_business_artifact:'تسلسل',gap_fill_syntax:'فراغ',choice_register:'أسلوب',syntax_ordering:'ترتيب الجملة',production_controlled:'إنتاج'},
-  fa:{verb_conjugation:'صرف',gap_fill:'جای خالی',multiple_choice:'گزینه',sentence_correction:'تصحیح',flashcard:'کارت',translation_into_german:'ترجمه',active_recall:'یادآوری',perfekt_builder:'Perfekt',connector_selection:'پیونددهنده',article_trainer:'آرتیکل',plural_trainer:'جمع',case_trainer:'حالت',sequenced_business_artifact:'توالی',gap_fill_syntax:'جای خالی',choice_register:'لحن',syntax_ordering:'ترتیب جمله',production_controlled:'تولید'},
-  uk:{verb_conjugation:'Відмінювання',gap_fill:'Пропуск',multiple_choice:'Вибір',sentence_correction:'Корекція',flashcard:'Картка',translation_into_german:'Переклад',active_recall:'Активне згадування',perfekt_builder:'Perfekt',connector_selection:'Сполучник',article_trainer:'Артикль',plural_trainer:'Множина',case_trainer:'Відмінок',sequenced_business_artifact:'Послідовність',gap_fill_syntax:'Пропуск',choice_register:'Регістр',syntax_ordering:'Порядок слів',production_controlled:'Продукція'},
-  ru:{verb_conjugation:'Спряжение',gap_fill:'Пропуск',multiple_choice:'Выбор',sentence_correction:'Коррекция',flashcard:'Карточка',translation_into_german:'Перевод',active_recall:'Активное вспоминание',perfekt_builder:'Perfekt',connector_selection:'Союз',article_trainer:'Артикль',plural_trainer:'Множественное число',case_trainer:'Падеж',sequenced_business_artifact:'Последовательность',gap_fill_syntax:'Пропуск',choice_register:'Регистр',syntax_ordering:'Порядок слов',production_controlled:'Продукция'},
-  pl:{verb_conjugation:'Koniugacja',gap_fill:'Luka',multiple_choice:'Wybór',sentence_correction:'Korekta',flashcard:'Karta',translation_into_german:'Tłumaczenie',active_recall:'Aktywne przypominanie',perfekt_builder:'Perfekt',connector_selection:'Łącznik',article_trainer:'Rodzajnik',plural_trainer:'Liczba mnoga',case_trainer:'Przypadek',sequenced_business_artifact:'Sekwencja',gap_fill_syntax:'Luka',choice_register:'Rejestr',syntax_ordering:'Szyk zdania',production_controlled:'Produkcja'},
-  tr:{verb_conjugation:'Çekim',gap_fill:'Boşluk',multiple_choice:'Seçim',sentence_correction:'Düzeltme',flashcard:'Kart',translation_into_german:'Çeviri',active_recall:'Aktif hatırlama',perfekt_builder:'Perfekt',connector_selection:'Bağlaç',article_trainer:'Artikel',plural_trainer:'Çoğul',case_trainer:'Hâl',sequenced_business_artifact:'Sıralama',gap_fill_syntax:'Boşluk',choice_register:'Üslup',syntax_ordering:'Cümle sırası',production_controlled:'Üretim'}
-};
-function label(x){const pack=LABEL_PATCH[state.lang]||LABELS[state.lang]||LABELS.en;return pack[x]||LABELS.en[x]||LABELS.de[x]||x||tr('exercise')}
-function genericHintFor(item,stage,user){
-  const raw=item.raw||{};
-  const base=raw.feedback||raw.progressive_feedback||{};
-  const rule=item.explanation||raw.rule?.concept||'';
-  if(stage===1)return base.first_failure||base.firstFailure||tr('genericHint1');
-  if(stage===2)return base.second_failure||base.secondFailure||rule||tr('genericHint2');
-  return base.resolved_model||base.resolvedModel||`${tr('model')}: ${item.answer}`;
-}
-function renderVerbList(){
-  if(!state.conjugator)return;
-  const q=norm($('verbSearch')?.value||'');
-  const defaultStarter=['sein','haben','werden','können','müssen','dürfen','sollen','wollen','mögen','arbeiten','antworten','beantworten','bekommen','bedeuten','berichten','vergleichen','machen','gehen','kommen','fahren','schreiben','sprechen','nehmen','geben','finden'];
-  const starter=(state.curatedVerbs?.starter||defaultStarter).filter(v=>state.conjugator.verbs[v]);
-  const top300=(state.curatedVerbs?.top300||starter).filter(v=>state.conjugator.verbs[v]);
-  const all=Object.keys(state.conjugator.verbs).sort((a,b)=>a.localeCompare(b,'de'));
-  let verbs,meta='';
-  if(q){verbs=all.filter(v=>norm(v).includes(q));meta=`${verbs.length} ${tr('hits')} · ${all.length} ${tr('verbsAvailable')}`;}
-  else if(state.verbListMode==='all'){verbs=all; meta=`${tr('allCount')} ${all.length} ${tr('verbsAvailable')}`;}
-  else if(state.verbListMode==='curated'){verbs=top300; meta=`${tr('curatedSelection')} · ${verbs.length} ${tr('shown')} · ${all.length} ${tr('verbsAvailable')}`;}
-  else{verbs=starter; meta=`${tr('starterList')} · ${verbs.length} ${tr('shown')} · ${all.length} ${tr('verbsAvailable')}`;}
-  const modeControls=!q?`<div class="verb-list-modes"><button class="link-button ${state.verbListMode==='starter'?'active':''}" data-vmode="starter">${tr('starter')}</button><button class="link-button ${state.verbListMode==='curated'?'active':''}" data-vmode="curated">${tr('curated')}</button><button class="link-button ${state.verbListMode==='all'?'active':''}" data-vmode="all">${tr('allVerbs')}</button></div>`:'';
   $('verbList').innerHTML=`<div class="verb-list-meta"><span>${esc(meta)}</span></div>${modeControls}`+verbs.map(v=>`<button class="verb-btn ${v===state.verb?'active':''}" data-verb="${esc(v)}"><strong>${esc(v)}</strong><br><small>${esc(displayVerbMeaning(state.conjugator.verbs[v])||'')}</small></button>`).join('');
   document.querySelectorAll('[data-vmode]').forEach(b=>b.onclick=()=>{state.verbListMode=b.dataset.vmode;renderVerbList()});
   document.querySelectorAll('.verb-btn').forEach(b=>b.onclick=()=>{state.verb=b.dataset.verb;state.tense='Präsens';renderVerbList();renderVerbDetail()});
@@ -1204,49 +1032,18 @@ function renderVerbDetail(){
   $('tenseTable').innerHTML=forms.map((f,i)=>`<div class="tense-row"><strong>${esc(pronouns[i]||'')}</strong><span>${esc(f)}</span></div>`).join('');
   $('verbPractice').innerHTML=`${tr('practiceVerb')} <b>${esc(state.verb)}</b> ${tr('inTense')} ${esc(state.tense)}.`;
 }
-function checkAnswer(item){
-  const user=state.selectedChoice||$('answerInput')?.value||'';
-  const matchResult=answersMatch(user,item.answer,item);
-  const ok=matchResult===true;
-  const nearMiss=matchResult==='case_mismatch';
-  let stage=0;
-  if(ok){resetGenericFailureStage(item);state.checked=true;}else{stage=getGenericFailureStage(item);state.checked=stage>=3;}
-  if(item.choices&&item.choices.length){
-    document.querySelectorAll('.choice-btn').forEach(b=>{
-      b.disabled=ok || stage>=3;
-      b.classList.remove('correct-reveal','wrong-reveal');
-      if(ok && b.dataset.choice===item.answer)b.classList.add('correct-reveal');
-      if(!ok && b.dataset.choice===user)b.classList.add('wrong-reveal');
-      if(!ok && stage>=3 && b.dataset.choice===item.answer)b.classList.add('correct-reveal');
-    });
-  }
-  let fbHtml='';
-  if(ok){fbHtml=`<span class="feedback-correct-mark">✓</span><strong>${tr('correct')}.</strong><br>${safeHtml(item.example||item.answer)}<br>${safeHtml(item.explanation||'')}`;}
-  else{
-    const hint=genericHintFor(item,stage,user);
-    const title=stage===1?tr('notYetHint'):stage===2?tr('ruleHint'):tr('modelSolution');
-    const answerLine=stage>=3?`<br><b>${tr('answer')}:</b> ${esc(item.answer)}`:'';
-    fbHtml=`<span class="feedback-wrong-mark">${stage>=3?'✗':'?'}</span><strong>${nearMiss?tr('caseNearMiss'):title}</strong><br>${safeHtml(hint)}${answerLine}<br><b>${tr('why')}</b> ${safeHtml(item.explanation||'')}`;
-  }
-  if(item.exerciseType==='verb_conjugation'){
-    const verbMatch=item.prompt.match(/\/ (\S+) \//);
-    if(verbMatch){
-      $('conjugatorLink').classList.remove('hidden');
-      const verb=verbMatch[1];
-      $('openConjugator').textContent=`${verb} ${tr('verbConjTable')} →`;
-      $('openConjugator').onclick=()=>{state.verb=verb;const tm=item.prompt.split(' / ')[2]?.trim();if(tm)state.tense=tm;route('conjugator');};
-    }
-  }
-  $('feedbackBox').className=`feedback ${ok?'ok':'bad'} feedback-stage-${stage}`;
-  $('feedbackBox').innerHTML=fbHtml;
-  if(ok || stage>=3){
-    $('secondaryAction').textContent=tr('next');
-    $('secondaryAction').classList.remove('hidden');
-    updateStats(ok,item);
-    if(!ok)addMistake(item,user);
-    scheduleSrs(item,ok);
-    renderStats();
-  }else{$('secondaryAction').classList.add('hidden');$('primaryAction').textContent=tr('check');}
+function launchVerbPractice(){
+  route('learn');selectPath('conjugation');
+  state.moduleId='dynamic_conjugator';
+  state.dynamicVerb=state.verb;
+  state.tenseFilter=state.tense||'Präsens';
+  state._conjGenKey=''; // force regeneration with new verb/tense
+  renderModuleSelect();
+  $('tenseFilter').value=state.tenseFilter;
+  state.mode='practice';
+  setMode('practice');
+  state.started=true;
+  renderExercise();
 }
 
 init();
