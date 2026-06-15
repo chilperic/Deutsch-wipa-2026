@@ -1,5 +1,13 @@
 # Changelog
 
+## v18.2.4 — i18n parity audit and fix
+
+- Connected the language selector to static navigation, sidebar labels, quick controls, exercise chrome, path cards, feedback stages, resources view, and conjugator chrome.
+- Added non-English parity keys for French, Spanish, Arabic, Persian, Ukrainian, Russian, Polish, and Turkish.
+- Preserved German as the learning target language while using the selected language as the support/interface language.
+- Added localized placeholders and feedback-stage labels so language switching no longer appears English/German-only.
+
+
 ## v16.0.0 · Quick-Start Fix & Robustness
 
 - Fixed: `renderQuickStart` was called but undefined (blocked every render after first paint).
