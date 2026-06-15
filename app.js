@@ -1,5 +1,5 @@
-const APP_VERSION = '2026.06.16-v19.0.0-core-reset';
-const APP_BUILD = 'v19.0.0-core-reset';
+const APP_VERSION = '2026.06.16-v19.1.0-expanded-core';
+const APP_BUILD = 'v19.1.0-expanded-core';
 const $ = id => document.getElementById(id);
 
 const LANGS = [['de','Deutsch'],['en','English'],['fr','Français']];

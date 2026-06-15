@@ -10,9 +10,9 @@ const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
 const data = readJson('data/core_v19.json');
 
 // 1. Basic file/version gates
-if(!html.includes('app.js?v=19.0.0')) fail('index.html must reference app.js?v=19.0.0');
-if(!html.includes('styles.css?v=19.0.0')) fail('index.html must reference styles.css?v=19.0.0');
-if(!app.includes('v19.0.0-core-reset')) fail('app.js build string missing v19.0.0-core-reset');
+if(!html.includes('app.js?v=19.1.0')) fail('index.html must reference app.js?v=19.1.0');
+if(!html.includes('styles.css?v=19.1.0')) fail('index.html must reference styles.css?v=19.1.0');
+if(!app.includes('v19.1.0-expanded-core')) fail('app.js build string missing v19.1.0-expanded-core');
 
 // 2. No duplicate top-level function declarations
 const fnMatches = [...app.matchAll(/^function\s+([A-Za-z0-9_$]+)\s*\(/gm)].map(m=>m[1]);
@@ -22,7 +22,7 @@ for(const name of fnMatches){ if(seenFns.has(name)) fail(`duplicate function dec
 // 3. V19 must not expose quarantined modules in data/core_v19.json
 const bannedPathIds = new Set(['business_email','complaints','negotiation','workplace','wortschatz_b1b2','adverbien','declension','grammar_core','syntax','conjugation']);
 for(const p of data.paths || []) if(bannedPathIds.has(p.id)) fail(`unsafe/quarantined path exposed: ${p.id}`);
-const allowedModuleIds = new Set(['vocab_core','article_plural','prep_verbs','connectors']);
+const allowedModuleIds = new Set(['vocab_core','article_plural','prep_verbs','connectors','cases_core','modal_verbs','separable_verbs','adjective_endings','negation_core','word_order_core']);
 for(const m of data.modules || []) if(!allowedModuleIds.has(m.id)) fail(`unexpected module exposed in v19 core: ${m.id}`);
 
 // 4. Data schema and content gates
