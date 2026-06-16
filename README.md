@@ -61,3 +61,8 @@ Current validated result:
 ## License
 
 MIT. Free to use, inspect, adapt, and improve.
+
+
+## v19.2 Vocabulary expansion
+
+The Wortschatz module now contains 260 verified workplace/office nouns with articles and plurals.

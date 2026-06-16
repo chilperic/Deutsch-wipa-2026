@@ -1,6 +1,14 @@
 # Changelog
 
-## v19.1.0 Expanded Core
+## v19.2.0 Vocabulary 250
+
+- Expanded `vocab_core` to 260 verified workplace/office nouns.
+- Added plural forms to every vocabulary item.
+- Displayed vocabulary plurals directly in the exercise card and answer feedback.
+- Added validation gates requiring at least 250 vocabulary items and a valid plural for every vocabulary noun.
+- Kept all quarantined v18 content disabled.
+
+## v19.2.0 Expanded Core
 
 - Expanded the verified curriculum from 4 modules / 56 items to 10 modules / 204 items.
 - Added six new validated modules:
@@ -13,7 +21,7 @@
 - Expanded the existing vocabulary, article/plural, prepositional-verb, and connector modules.
 - Kept the v19 safety rule: no legacy v18 generated modules were reactivated.
 - Updated `dev/check.js` to whitelist only the verified v19.1 modules.
-- Updated version/cache strings to `v19.1.0-expanded-core`.
+- Updated version/cache strings to `v19.2.0-vocabulary-250`.
 - Kept support/interface languages limited to DE/EN/FR.
 
 ## v19.0.0 Core Reset

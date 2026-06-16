@@ -1,5 +1,5 @@
-const APP_VERSION = '2026.06.16-v19.1.0-expanded-core';
-const APP_BUILD = 'v19.1.0-expanded-core';
+const APP_VERSION = '2026.06.16-v19.2.0-vocabulary-250';
+const APP_BUILD = 'v19.2.0-vocabulary-250';
 const $ = id => document.getElementById(id);
 
 const LANGS = [['de','Deutsch'],['en','English'],['fr','Français']];
@@ -274,7 +274,7 @@ function questionTitle(item){
   return map[item.type] || t('practice');
 }
 function questionText(item){
-  if(item.type==='vocabulary_choice') return `<strong>${esc(item.german)}</strong>`;
+  if(item.type==='vocabulary_choice') return `<strong>${esc(item.german)}</strong>${item.plural ? `<span class="vocab-meta">Plural: ${esc(item.plural)}</span>` : ''}`;
   if(item.type==='article_plural') return `Schreibe den Plural mit Artikel:<br><strong>${esc(item.singular)}</strong>`;
   if(item.type==='gap_fill') return esc(item.prompt).replace('___','<mark>___</mark>');
   if(item.type==='multiple_choice') return esc(item.prompt);
@@ -314,7 +314,7 @@ function checkAnswer(){
   if(!ok){ state.mistakes.unshift({ts:new Date().toISOString(),module:state.moduleId,item,given,expected}); state.mistakes=state.mistakes.slice(0,80); save('dw_v19_mistakes',state.mistakes); }
   save('dw_v19_stats',state.stats);
   const box=$('feedbackBox'); box.className = `feedback ${ok?'good':'bad'}`;
-  box.innerHTML = `<strong>${ok?t('correct'):t('wrong')}</strong><br>${esc(L(item.feedback))}<br><span class="muted">${esc(t('solution'))}: ${esc(expected)}</span>`;
+  box.innerHTML = `<strong>${ok?t('correct'):t('wrong')}</strong><br>${esc(L(item.feedback))}<br><span class="muted">${esc(t('solution'))}: ${esc(expected)}${item.plural ? ` · Plural: ${esc(item.plural)}` : ''}</span>`;
   showSolution(item);
   renderStats(); renderMistakes();
 }

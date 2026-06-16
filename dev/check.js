@@ -10,9 +10,9 @@ const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
 const data = readJson('data/core_v19.json');
 
 // 1. Basic file/version gates
-if(!html.includes('app.js?v=19.1.0')) fail('index.html must reference app.js?v=19.1.0');
-if(!html.includes('styles.css?v=19.1.0')) fail('index.html must reference styles.css?v=19.1.0');
-if(!app.includes('v19.1.0-expanded-core')) fail('app.js build string missing v19.1.0-expanded-core');
+if(!html.includes('app.js?v=19.2.0')) fail('index.html must reference app.js?v=19.2.0');
+if(!html.includes('styles.css?v=19.2.0')) fail('index.html must reference styles.css?v=19.2.0');
+if(!app.includes('v19.2.0-vocabulary-250')) fail('app.js build string missing v19.2.0-vocabulary-250');
 
 // 2. No duplicate top-level function declarations
 const fnMatches = [...app.matchAll(/^function\s+([A-Za-z0-9_$]+)\s*\(/gm)].map(m=>m[1]);
@@ -57,12 +57,13 @@ for(const m of data.modules || []){
       if(!item.choices.includes(item.answer)) fail(`${item.id}: multiple_choice choices missing answer`);
     }
     if(item.type === 'vocabulary_choice'){
+      if(!item.plural || !/^die\s/.test(item.plural)) fail(`${item.id}: vocabulary noun must include a plural starting with die`);
       for(const lang of data.supportLanguages || []){
         if(!item.answer || !item.answer[lang]) fail(`${item.id}: missing ${lang} answer`);
         if(!Array.isArray(item.choices?.[lang])) fail(`${item.id}: missing ${lang} choices`);
         else if(!item.choices[lang].includes(item.answer[lang])) fail(`${item.id}: ${lang} choices missing answer`);
       }
-      if(item.answer?.fr && item.answer.fr === item.answer.en && !['qualification'].includes(item.answer.en)) fail(`${item.id}: suspicious copied EN→FR answer`);
+      if(item.answer?.fr && item.answer.fr === item.answer.en && !['qualification', 'bonus', 'service', 'message', 'invitation', 'confirmation', 'solution', 'phase', 'document', 'programme', 'archive', 'signature', 'attestation', 'original', 'permission', 'machine', 'cause', 'plan', 'communication', 'conversation', 'description', 'question', 'danger', 'condition', 'exception'].includes(item.answer.en)) fail(`${item.id}: suspicious copied EN→FR answer`);
     }
     if(item.type === 'article_plural'){
       if(!/^(der|die|das)\s/.test(item.singular || '')) fail(`${item.id}: singular must include der/die/das`);
@@ -71,7 +72,19 @@ for(const m of data.modules || []){
   }
 }
 
-// 5. Known harmful strings must not exist in verified core data.
+// 5. Wortschatz expansion gate: at least 250 vocabulary nouns with plurals.
+const vocabModule = (data.modules || []).find(m => m.id === 'vocab_core');
+if(!vocabModule) fail('missing vocab_core module');
+else {
+  const vocabItems = vocabModule.items || [];
+  if(vocabItems.length < 250) fail(`vocab_core must contain at least 250 items, found ${vocabItems.length}`);
+  for(const item of vocabItems){
+    if(item.type !== 'vocabulary_choice') fail(`${item.id}: vocab_core may contain only vocabulary_choice items`);
+    if(!item.plural || !/^die\s/.test(item.plural)) fail(`${item.id}: missing valid plural in vocab_core`);
+  }
+}
+
+// 6. Known harmful strings must not exist in verified core data.
 const dataText = JSON.stringify(data);
 const bannedStrings = ['Schulabschlusse','Fremdworter','Arbeitsplatze','Auftragsbucher','Knopfe','Stande','Kinderarzte','Großhandelskaufmanner','weiterer rechtlichen Prüfung'];
 for(const s of bannedStrings) if(dataText.includes(s)) fail(`known incorrect German still present: ${s}`);
