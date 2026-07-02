@@ -1,0 +1,31 @@
+{
+  "version": "v22.0.0",
+  "strategy": "controlled unpredictability: the learner cannot predict the next item, but every selected item has a scheduler reason",
+  "templates": {
+    "b1_beruf": {
+      "level": "B1",
+      "length": 10,
+      "quota": ["vocabulary", "article/plural", "preposition", "production", "vocabulary", "article/plural", "word order", "preposition", "production", "review"]
+    },
+    "b2_beruf": {
+      "level": "B2",
+      "length": 12,
+      "quota": ["production", "word order", "grammar", "production", "preposition", "connectors", "review", "production", "grammar", "register", "vocabulary", "review"]
+    },
+    "application": {
+      "level": "B1/B2",
+      "length": 10,
+      "include": ["bewerbung", "lebenslauf", "vorstellung", "rückmeldung", "stelle", "interview", "hr"]
+    },
+    "complaint": {
+      "level": "B1/B2",
+      "length": 10,
+      "include": ["reklamation", "problem", "fehler", "technisch", "gerät", "lösung", "defekt"]
+    },
+    "bureaucracy": {
+      "level": "B1/B2",
+      "length": 10,
+      "include": ["termin", "unterlagen", "frist", "bescheid", "amt", "jobcenter", "ausländerbehörde", "antrag"]
+    }
+  }
+}

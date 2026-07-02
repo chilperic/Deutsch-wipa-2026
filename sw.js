@@ -1,10 +1,10 @@
-// v19: service worker disabled to prevent stale educational content.
-self.addEventListener('install', event => { self.skipWaiting(); });
+// v25: service worker intentionally disabled during active content/UI development.
+// This prevents stale learning data and old shells from surviving local or GitHub Pages deployments.
+self.addEventListener('install', event => self.skipWaiting());
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(keys.map(k => caches.delete(k)));
-    await self.registration.unregister();
+    if (self.registration) await self.registration.unregister();
+    const clients = await self.clients.matchAll({type: 'window'});
+    for (const client of clients) client.navigate(client.url);
   })());
 });
-self.addEventListener('fetch', () => {});

@@ -1,0 +1,21 @@
+{
+  "reason": "Excluded from active app because previous audit found broken localization, suspected copied translations, generated repetition, or unvalidated German forms.",
+  "excluded_files": [
+    {
+      "path": "data/conjugator_verbs.json",
+      "reason": "Large table has separable-verb Konjunktiv II problems and unnatural generated verbs; keep disabled until validated."
+    },
+    {
+      "path": "grammatik/production_adverbien_intensiv.json",
+      "reason": "Contains known bad word-order examples; not safe for learners."
+    },
+    {
+      "path": "grammatik/production_deklination_intensiv.json",
+      "reason": "High-volume generated drill bank; needs linguistic QA before activation."
+    },
+    {
+      "path": "unsupported interface languages",
+      "reason": "Older data used full language names while UI used language codes; only de/en/fr are active in v20."
+    }
+  ]
+}

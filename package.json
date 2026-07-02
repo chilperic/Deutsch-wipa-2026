@@ -1,9 +1,10 @@
 {
-  "version": "19.2.0",
+  "version": "25.0.0",
   "scripts": {
-    "start": "python3 -m http.server 8080",
+    "start": "python3 dev/no_cache_server.py 8000",
     "check": "node dev/check.js",
-    "audit": "node dev/check.js"
+    "audit": "node dev/check.js",
+    "serve": "python3 dev/no_cache_server.py 8000"
   },
   "devDependencies": {}
 }

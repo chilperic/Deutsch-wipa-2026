@@ -1,0 +1,14 @@
+{
+  "version": "v22.0.0",
+  "error_types": {
+    "meaning": "Wrong semantic match or vocabulary meaning.",
+    "article_plural": "Wrong article, noun gender, or plural form.",
+    "preposition_case": "Wrong preposition or missing case pattern after a prepositional verb.",
+    "verb_position": "Wrong German word order, especially in subordinate clauses.",
+    "grammar_form": "Wrong verb, modal, infinitive, passive, or form structure.",
+    "register_politeness": "Too direct or not formal enough for workplace/bureaucracy communication.",
+    "too_short": "Answer is too short to satisfy a B1/B2 production task.",
+    "partial_meaning": "Part of the intended meaning is present but the answer is incomplete.",
+    "unclear": "The answer is not diagnosable by the current rule set."
+  }
+}

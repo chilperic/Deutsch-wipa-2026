@@ -1,68 +1,64 @@
-# Deutsch-WiPA v19.1 Expanded Core
+# Deutsch-WiPA 2026 v25 · Functional Responsive Trainer
 
-Deutsch-WiPA v19.1 is a reduced but expanded B1/B2 German trainer. It keeps the v19 safety principle: no generated filler, no unchecked legacy modules, and no fake multilingual claims.
+Deutsch-WiPA is a browser-based B1/B2 German-for-work trainer. v25 deliberately returns to the stronger functional baseline from v22, while repairing the UI problems introduced by the over-minimal v23/v24 shells.
 
-Active curriculum:
+## What v25 is
 
-1. Vocabulary
-2. Articles and plurals
-3. Prepositional verbs
-4. Connectors and subordinate clauses
-5. Dative vs accusative
-6. Modal verbs
-7. Separable verbs
-8. Adjective endings
-9. Negation: `nicht` vs `kein`
-10. Main-clause word order
+A practical learning trainer for Beruf, Bewerbung, Reklamation, Amt/Jobcenter, grammar, vocabulary, articles/plurals, prepositions, connectors, writing and review.
 
-The target language is German. The support/interface language is limited to German, English, and French. Other languages remain disabled until their content can be verified.
+## Design decision
 
-## Why the app is smaller than v18
+v25 does **not** remove features to look clean. It keeps the working trainer surface and reorganizes it:
 
-The old v18 build contained duplicated items, invalid gap-fill exercises, incorrect plural forms, taxonomy pollution, and incomplete localization. Those defects could mislead learners. v19 prioritizes verified learning value over apparent size.
+- adaptive training templates remain visible;
+- module/path access remains visible;
+- review/mistake bank remains visible;
+- profile, theme, color, backup/import remain available;
+- resources remain available;
+- the disabled internal conjugator placeholder is replaced by useful external verb checking links.
 
-## Run locally
+## Local test
 
 ```bash
-python3 -m http.server 8080
+deactivate 2>/dev/null || true
+hash -r
+
+cd ~/Downloads
+
+rm -rf deutsch-wipa-2026-v25-functional-responsive-trainer
+unzip -o deutsch-wipa-2026-v25-functional-responsive-trainer.zip
+
+cd deutsch-wipa-2026-v25-functional-responsive-trainer
+
+node --check app.js && \
+node --check sw.js && \
+node --check dev/check.js && \
+python3 -m json.tool data/core_v25.json >/dev/null && \
+python3 -m json.tool data/session_templates.json >/dev/null && \
+python3 -m json.tool data/mistake_taxonomy.json >/dev/null && \
+python3 -m json.tool data/quarantine_manifest.json >/dev/null && \
+npm run check && \
+python3 dev/no_cache_server.py 8000
 ```
 
-Then open:
+Open:
 
 ```text
-http://localhost:8080
+http://localhost:8000/?v=25.0.0
 ```
 
-## Validate
-
-```bash
-npm run check
-```
-
-The check blocks:
-
-- duplicate function declarations
-- unsafe/quarantined path exposure
-- unexpected module exposure
-- duplicate prompt-answer pairs
-- gap-fill items without `___`
-- multiple-choice items missing the correct answer
-- article/plural items without article or plural article
-- missing examples and diagnostic feedback in German, English, and French
-- suspicious English copied into French localizations
-- known incorrect German strings from the v18 audit
-
-Current validated result:
+## Validation target
 
 ```text
-10 modules, 204 verified items, 43 app functions
+16 modules
+830 checked learning items
+200 production items
+28 adaptive Beruf micro-simulations
+adaptive scheduler + learner model retained
 ```
 
-## License
+## Browser target
 
-MIT. Free to use, inspect, adapt, and improve.
+Chrome / Chromium, Firefox, Edge, Safari, Android Chrome, iOS Safari.
 
-
-## v19.2 Vocabulary expansion
-
-The Wortschatz module now contains 260 verified workplace/office nouns with articles and plurals.
+The app is static HTML/CSS/JS and does not require a backend.
