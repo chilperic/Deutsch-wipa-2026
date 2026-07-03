@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17223b">
   <meta name="description" content="Deutsch-WiPA 2026 is a B1/B2 Beruf learning trainer with internal verb conjugation, grammar modules, workplace vocabulary, mistake review, spaced repetition, profile saving, and resumable sessions.">
-  <meta name="deutsch-wipa-build" content="v28.0.0">
-  <title>Deutsch-WiPA 2026 · B1/B2 Berufstrainer</title>
+    <title>Deutsch-WiPA 2026 · B1/B2 Berufstrainer</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css?v=28.0.0">
+  <link rel="stylesheet" href="styles.css?v=28.1.0">
 </head>
-<body data-build="v28.0.0">
+<body>
   <a class="skip-link" href="#primaryAction">Zur Übung springen</a>
   <div id="app" class="app">
     <header class="topbar">
@@ -22,7 +21,6 @@
         <div>
           <div class="brand-title">Deutsch-WiPA</div>
           <div class="brand-subtitle">B1/B2 · Beruf · Verben · Fehlerbank</div>
-          <div class="build-line"><span id="buildBadge" class="build-badge">v28.0.0</span><span class="build-note">Deployment-konsistent</span></div>
         </div>
       </div>
       <nav class="top-tabs" aria-label="Hauptbereiche">
@@ -85,9 +83,9 @@
           </select>
           <label for="sessionLimit" class="eyebrow sublabel">Sitzungslänge</label>
           <select id="sessionLimit" class="select module-select" aria-label="Sitzungslänge auswählen">
-            <option value="20">20 Items</option>
-            <option value="40">40 Items</option>
-            <option value="80">80 Items</option>
+            <option value="20">20 Übungen</option>
+            <option value="40">40 Übungen</option>
+            <option value="80">80 Übungen</option>
             <option value="all">Alle</option>
           </select>
         </div>
@@ -118,7 +116,7 @@
             <p id="moduleDescription">Wähle ein Thema. Trainiere mit Regeln, Beispielen und direkter Korrektur.</p>
           </div>
           <div class="hero-stats">
-            <span id="moduleCount">0 Items</span>
+            <span id="moduleCount">0 Übungen</span>
             <span id="levelBadge">B1/B2</span>
           </div>
         </section>
@@ -200,7 +198,7 @@
           <div>
             <div class="eyebrow">Fehlerbank</div>
             <h2>Fehlerbank</h2>
-            <p>Wiederhole falsche Antworten und fällige Items.</p>
+            <p>Wiederhole falsche Antworten und fällige Übungen.</p>
           </div>
           <div class="hero-stats" id="mistakeSummary">
             <span>0 Fehler</span>
@@ -220,8 +218,8 @@
             <p>Die Übungen und das Verbtraining bleiben intern. Diese Links sind nur zum Nachschlagen.</p>
           </div>
           <div class="hero-stats">
-            <span>optional</span>
-            <span>nicht Teil der Bewertung</span>
+            <span>Nachschlagen</span>
+            <span>Grammatik & Wörterbücher</span>
           </div>
         </section>
         <section class="resource-grid" aria-label="Externe Hilfen">
@@ -255,7 +253,6 @@
 
     <div id="backdrop" class="backdrop hidden"></div>
   </div>
-  <script>window.DEUTSCH_WIPA_BUILD={app:'Deutsch-WiPA 2026',version:'28.0.0',build:'v28-deployment-consistent-learning-platform',serviceWorker:'disabled-during-active-development'};</script>
-  <script src="app.js?v=28.0.0" type="module"></script>
+  <script src="app.js?v=28.1.0" type="module"></script>
 </body>
 </html>

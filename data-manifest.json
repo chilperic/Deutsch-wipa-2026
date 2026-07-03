@@ -1,5 +1,5 @@
 {
-  "version": "28.0.0",
+  "version": "28.1.0",
   "modules": [
     {
       "id": "data_conjugator_verbs",
@@ -398,5 +398,5 @@
     }
   ],
   "focus": "Grammar-first app with corrected verb reference, fast startup, tense filters and capped practice sessions.",
-  "build": "v28-deployment-consistent-learning-platform"
+  "build": "v28.1-learner-clean-ui"
 }

@@ -1,5 +1,4 @@
-// Deutsch-WiPA v28: service worker intentionally disabled during active development.
-// This file removes older caches and unregisters itself so GitHub Pages cannot serve stale app shells.
+// Deutsch-WiPA cache cleanup for reliable updates.
 self.addEventListener('install', event => {
   self.skipWaiting();
 });
