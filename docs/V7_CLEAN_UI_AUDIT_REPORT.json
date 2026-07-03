@@ -1,0 +1,18 @@
+{
+  "version": "v7-clean-ui-audit",
+  "audit_findings": [
+    "The app did not actually expose fewer than 100 verbs; it loaded 1077 verbs, but the conjugator intentionally displayed only a 25-verb starter list when the search box was empty.",
+    "UI copy overclaimed and felt noisy: \"1000+ Verben wie ein echtes Nachschlagewerk\", \"Konjugator · dynamische Übung\", and long subtitles were learner-irrelevant.",
+    "The learning paths used internal/category-style descriptions rather than compact learner labels.",
+    "The dynamic verb module name was technical and should not be visible to learners."
+  ],
+  "changes": [
+    "Replaced inflated conjugator headline with \"Konjugator\".",
+    "Replaced dynamic/internal labels with \"Verbtraining\".",
+    "Added clear verb-list metadata: starter count, available count, search result count.",
+    "Added an \"Alle anzeigen\" toggle so all 1077 verbs are visible without requiring search.",
+    "Removed or shortened redundant brand subtitles and helper copy.",
+    "Kept the grammar-first structure and v6 adverb/deklination modules."
+  ],
+  "verb_count": 1077
+}

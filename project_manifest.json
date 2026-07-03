@@ -1,0 +1,102 @@
+{
+  "project": "Deutsch-wipa-2026",
+  "build": "v26-content-restored-responsive-2026-07-03",
+  "base": "deutsch-wipa-2026-v7-clean-ui-audit.zip",
+  "implemented": [
+    "Grouped themes: Appearance + Flavor",
+    "Grouped modules: Vocabulary, Nouns, Verbs, Sentence logic, Forms, Communication",
+    "New connector engine",
+    "New negation engine",
+    "New TeKaMoLo sentence-order engine",
+    "Profile/progress in localStorage, learning DB in memory",
+    "Mobile bottom actions",
+    "Readable tracker",
+    "Filled Entschuldigung & Reaktion communication module",
+    "Filled Reklamation / technische Probleme communication module",
+    "Filled Bewerbung / Arbeit communication module",
+    "Patched Communication group cards to show real counts and become playable"
+  ],
+  "counts": {
+    "vocab": 317,
+    "connectors": 90,
+    "negation": 85,
+    "tekamolo": 70,
+    "adjektivdeklination": 0,
+    "kasusergaenzungen": 0,
+    "konnektoren_nebensaetze": 0,
+    "nomen_artikel_plural": 0,
+    "praepositionalverben": 9,
+    "praepositionen": 0,
+    "pronomen": 0,
+    "starke_verben": 0,
+    "trennbare_verben": 0,
+    "Entschuldigung & Reaktion": 80,
+    "Reklamation / technische Probleme": 90,
+    "Bewerbung / Arbeit": 90
+  },
+  "checks": {
+    "node_check": {
+      "returncode": 0,
+      "stderr": ""
+    },
+    "quality_check": {
+      "returncode": 0,
+      "stdout": "quality check passed\n",
+      "stderr": ""
+    }
+  },
+  "copyright_note": "New grammar items are original practice prompts inspired by themes; uploaded worksheet text was not copied as a corpus.",
+  "deploy_package": {
+    "root_folder": "Deutsch-wipa-2026",
+    "ready_to_replace_repo_contents": true,
+    "includes_nojekyll": true,
+    "checks": {
+      "node_check": {
+        "returncode": 0,
+        "stderr": ""
+      },
+      "quality_check": {
+        "returncode": 0,
+        "stdout": "quality check passed\n",
+        "stderr": ""
+      }
+    }
+  },
+  "content_completion": {
+    "beruf": 80,
+    "nomen_artikel_plural": 90,
+    "genus_rules": 70,
+    "n_deklination": 75,
+    "adjektive_als_nomen": 70,
+    "praepositionalverben": 120,
+    "starke_verben": 90,
+    "trennbare_verben": 90,
+    "perfekt": 80,
+    "plusquamperfekt": 75,
+    "infinitiv_zu": 70,
+    "reflexive": 80,
+    "konjunktiv2": 75,
+    "pronomen": 80,
+    "praepositionen": 80,
+    "adjektivdeklination": 80,
+    "kasusergaenzungen": 80,
+    "konnektoren_nebensaetze": 80
+  },
+  "source_alignment": "Organized around Linie 1 Beruf B1/B2 chapter themes: new workplace, job search/workflow, career change, drivers/logistics, and grammar appendix topics.",
+  "license": "MIT",
+  "author": "Chilperic Armel Foko Kuate",
+  "repository_ready": true,
+  "readme": "README.md",
+  "license_file": "LICENSE",
+  "version": "26.0.0",
+  "description": "Content-rich B1/B2 Beruf trainer restored from v7 with internal conjugator, 56 modules, 1077 verbs, and responsive shell fixes.",
+  "implemented_v26": [
+    "Restored v7 content-rich app as baseline instead of reduced v25 shell",
+    "Kept internal conjugator with 1077 verbs",
+    "Kept 56 manifest modules and 5048 normalized manifest items in validation",
+    "Replaced float desktop shell with CSS grid layout",
+    "Improved smartphone responsiveness and bottom navigation overflow",
+    "Added resources page with Mein Deutschbuch and Mein Deutschbuch resource",
+    "Added no-cache local server on port 8000"
+  ]
+}

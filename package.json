@@ -1,10 +1,10 @@
 {
-  "version": "25.0.0",
   "scripts": {
     "start": "python3 dev/no_cache_server.py 8000",
-    "check": "node dev/check.js",
-    "audit": "node dev/check.js",
+    "check": "node --check app.js && node dev/check.js",
     "serve": "python3 dev/no_cache_server.py 8000"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "private": true,
+  "version": "26.0.0"
 }

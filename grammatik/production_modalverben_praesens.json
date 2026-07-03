@@ -1,0 +1,1322 @@
+{
+  "module": "Modalverben · Präsens",
+  "level": "B1",
+  "items": [
+    {
+      "id": "modal_praesens_können_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ gut schwimmen.",
+      "answer": "kann",
+      "explanation": "Präsens von können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_können_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ schnell laufen.",
+      "answer": "kannst",
+      "explanation": "Präsens von können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_können_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ Deutsch sprechen.",
+      "answer": "kann",
+      "explanation": "Präsens von können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_können_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ gut kochen.",
+      "answer": "können",
+      "explanation": "Präsens von können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_können_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ laut werden.",
+      "answer": "könnt",
+      "explanation": "Präsens von können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_können_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ heute kommen.",
+      "answer": "können",
+      "explanation": "Präsens von können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_können_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ gut schwimmen.",
+      "answer": "kann",
+      "choices": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "explanation": "können im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich kann gut schwimmen.",
+      "example": "Ich kann gut schwimmen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_können_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ schnell laufen.",
+      "answer": "kannst",
+      "choices": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "explanation": "können im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du kannst schnell laufen.",
+      "example": "Du kannst schnell laufen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_können_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ Deutsch sprechen.",
+      "answer": "kann",
+      "choices": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "explanation": "können im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er kann Deutsch sprechen.",
+      "example": "Er kann Deutsch sprechen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_können_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ gut kochen.",
+      "answer": "können",
+      "choices": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "explanation": "können im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir können gut kochen.",
+      "example": "Wir können gut kochen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_können_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ laut werden.",
+      "answer": "könnt",
+      "choices": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "explanation": "können im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr könnt laut werden.",
+      "example": "Ihr könnt laut werden.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_müssen_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ arbeiten.",
+      "answer": "muss",
+      "explanation": "Präsens von müssen: ich muss, du musst, er/sie/es muss, wir müssen, ihr müsst, sie/Sie müssen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich muss heute arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_müssen_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ lernen.",
+      "answer": "musst",
+      "explanation": "Präsens von müssen: ich muss, du musst, er/sie/es muss, wir müssen, ihr müsst, sie/Sie müssen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich muss heute arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_müssen_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ früh aufstehen.",
+      "answer": "muss",
+      "explanation": "Präsens von müssen: ich muss, du musst, er/sie/es muss, wir müssen, ihr müsst, sie/Sie müssen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich muss heute arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_müssen_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ einkaufen.",
+      "answer": "müssen",
+      "explanation": "Präsens von müssen: ich muss, du musst, er/sie/es muss, wir müssen, ihr müsst, sie/Sie müssen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich muss heute arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_müssen_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ repariert werden.",
+      "answer": "müsst",
+      "explanation": "Präsens von müssen: ich muss, du musst, er/sie/es muss, wir müssen, ihr müsst, sie/Sie müssen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich muss heute arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_müssen_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ warten.",
+      "answer": "müssen",
+      "explanation": "Präsens von müssen: ich muss, du musst, er/sie/es muss, wir müssen, ihr müsst, sie/Sie müssen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich muss heute arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_müssen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ arbeiten.",
+      "answer": "muss",
+      "choices": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "explanation": "müssen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich muss arbeiten.",
+      "example": "Ich muss arbeiten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_müssen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ lernen.",
+      "answer": "musst",
+      "choices": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "explanation": "müssen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du musst lernen.",
+      "example": "Du musst lernen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_müssen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ früh aufstehen.",
+      "answer": "muss",
+      "choices": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "explanation": "müssen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er muss früh aufstehen.",
+      "example": "Er muss früh aufstehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_müssen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ einkaufen.",
+      "answer": "müssen",
+      "choices": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "explanation": "müssen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir müssen einkaufen.",
+      "example": "Wir müssen einkaufen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_müssen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ repariert werden.",
+      "answer": "müsst",
+      "choices": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "explanation": "müssen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr müsst repariert werden.",
+      "example": "Ihr müsst repariert werden.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_dürfen_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ fernsehen.",
+      "answer": "darf",
+      "explanation": "Präsens von dürfen: ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft, sie/Sie dürfen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Sie darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_dürfen_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ hier stehen.",
+      "answer": "darfst",
+      "explanation": "Präsens von dürfen: ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft, sie/Sie dürfen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Sie darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_dürfen_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ eintreten.",
+      "answer": "darf",
+      "explanation": "Präsens von dürfen: ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft, sie/Sie dürfen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Sie darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_dürfen_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ spielen.",
+      "answer": "dürfen",
+      "explanation": "Präsens von dürfen: ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft, sie/Sie dürfen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Sie darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_dürfen_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ heute länger bleiben.",
+      "answer": "dürft",
+      "explanation": "Präsens von dürfen: ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft, sie/Sie dürfen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Sie darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_dürfen_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ mitkommen.",
+      "answer": "dürfen",
+      "explanation": "Präsens von dürfen: ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft, sie/Sie dürfen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Sie darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_dürfen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ fernsehen.",
+      "answer": "darf",
+      "choices": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "explanation": "dürfen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich darf fernsehen.",
+      "example": "Ich darf fernsehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_dürfen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ hier stehen.",
+      "answer": "darfst",
+      "choices": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "explanation": "dürfen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du darfst hier stehen.",
+      "example": "Du darfst hier stehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_dürfen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ eintreten.",
+      "answer": "darf",
+      "choices": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "explanation": "dürfen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er darf eintreten.",
+      "example": "Er darf eintreten.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_dürfen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ spielen.",
+      "answer": "dürfen",
+      "choices": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "explanation": "dürfen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir dürfen spielen.",
+      "example": "Wir dürfen spielen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_dürfen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ heute länger bleiben.",
+      "answer": "dürft",
+      "choices": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "explanation": "dürfen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr dürft heute länger bleiben.",
+      "example": "Ihr dürft heute länger bleiben.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sollen_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ pünktlich kommen.",
+      "answer": "soll",
+      "explanation": "Präsens von sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Er soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sollen_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ anrufen.",
+      "answer": "sollst",
+      "explanation": "Präsens von sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Er soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sollen_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ morgen regnen.",
+      "answer": "soll",
+      "explanation": "Präsens von sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Er soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sollen_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ helfen.",
+      "answer": "sollen",
+      "explanation": "Präsens von sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Er soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sollen_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ zuhören.",
+      "answer": "sollt",
+      "explanation": "Präsens von sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Er soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sollen_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ den Brief schreiben.",
+      "answer": "sollen",
+      "explanation": "Präsens von sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Er soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_sollen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ pünktlich kommen.",
+      "answer": "soll",
+      "choices": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "explanation": "sollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich soll pünktlich kommen.",
+      "example": "Ich soll pünktlich kommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_sollen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ anrufen.",
+      "answer": "sollst",
+      "choices": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "explanation": "sollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du sollst anrufen.",
+      "example": "Du sollst anrufen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_sollen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ morgen regnen.",
+      "answer": "soll",
+      "choices": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "explanation": "sollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er soll morgen regnen.",
+      "example": "Er soll morgen regnen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_sollen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ helfen.",
+      "answer": "sollen",
+      "choices": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "explanation": "sollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir sollen helfen.",
+      "example": "Wir sollen helfen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_sollen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ zuhören.",
+      "answer": "sollt",
+      "choices": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "explanation": "sollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr sollt zuhören.",
+      "example": "Ihr sollt zuhören.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_wollen_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ nach Hause gehen.",
+      "answer": "will",
+      "explanation": "Präsens von wollen: ich will, du willst, er/sie/es will, wir wollen, ihr wollt, sie/Sie wollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_wollen_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ Fußball spielen.",
+      "answer": "willst",
+      "explanation": "Präsens von wollen: ich will, du willst, er/sie/es will, wir wollen, ihr wollt, sie/Sie wollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_wollen_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ Arzt werden.",
+      "answer": "will",
+      "explanation": "Präsens von wollen: ich will, du willst, er/sie/es will, wir wollen, ihr wollt, sie/Sie wollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_wollen_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ ein Buch kaufen.",
+      "answer": "wollen",
+      "explanation": "Präsens von wollen: ich will, du willst, er/sie/es will, wir wollen, ihr wollt, sie/Sie wollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_wollen_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ nicht funktionieren.",
+      "answer": "wollt",
+      "explanation": "Präsens von wollen: ich will, du willst, er/sie/es will, wir wollen, ihr wollt, sie/Sie wollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_wollen_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ reisen.",
+      "answer": "wollen",
+      "explanation": "Präsens von wollen: ich will, du willst, er/sie/es will, wir wollen, ihr wollt, sie/Sie wollen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_wollen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ nach Hause gehen.",
+      "answer": "will",
+      "choices": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "explanation": "wollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich will nach Hause gehen.",
+      "example": "Ich will nach Hause gehen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_wollen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ Fußball spielen.",
+      "answer": "willst",
+      "choices": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "explanation": "wollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du willst Fußball spielen.",
+      "example": "Du willst Fußball spielen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_wollen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ Arzt werden.",
+      "answer": "will",
+      "choices": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "explanation": "wollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er will Arzt werden.",
+      "example": "Er will Arzt werden.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_wollen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ ein Buch kaufen.",
+      "answer": "wollen",
+      "choices": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "explanation": "wollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir wollen ein Buch kaufen.",
+      "example": "Wir wollen ein Buch kaufen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_wollen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ nicht funktionieren.",
+      "answer": "wollt",
+      "choices": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "explanation": "wollen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr wollt nicht funktionieren.",
+      "example": "Ihr wollt nicht funktionieren.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_mögen_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ Schokolade.",
+      "answer": "mag",
+      "explanation": "Präsens von mögen: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich mag Kaffee.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_mögen_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ Musik.",
+      "answer": "magst",
+      "explanation": "Präsens von mögen: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich mag Kaffee.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_mögen_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ Hunde.",
+      "answer": "mag",
+      "explanation": "Präsens von mögen: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich mag Kaffee.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_mögen_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ Blumen.",
+      "answer": "mögen",
+      "explanation": "Präsens von mögen: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich mag Kaffee.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_mögen_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ Wärme.",
+      "answer": "mögt",
+      "explanation": "Präsens von mögen: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich mag Kaffee.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_mögen_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ Pizza.",
+      "answer": "mögen",
+      "explanation": "Präsens von mögen: ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich mag Kaffee.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_mögen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ Schokolade.",
+      "answer": "mag",
+      "choices": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "explanation": "mögen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich mag Schokolade.",
+      "example": "Ich mag Schokolade.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_mögen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ Musik.",
+      "answer": "magst",
+      "choices": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "explanation": "mögen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du magst Musik.",
+      "example": "Du magst Musik.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_mögen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ Hunde.",
+      "answer": "mag",
+      "choices": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "explanation": "mögen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er mag Hunde.",
+      "example": "Er mag Hunde.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_mögen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ Blumen.",
+      "answer": "mögen",
+      "choices": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "explanation": "mögen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir mögen Blumen.",
+      "example": "Wir mögen Blumen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_mögen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ Wärme.",
+      "answer": "mögt",
+      "choices": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "explanation": "mögen im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr mögt Wärme.",
+      "example": "Ihr mögt Wärme.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_möchten_0",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ich ___ einen Tee trinken.",
+      "answer": "möchte",
+      "explanation": "Präsens von möchten: ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_möchten_1",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: du ___ mitkommen.",
+      "answer": "möchtest",
+      "explanation": "Präsens von möchten: ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_möchten_2",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: er ___ ein Fahrrad kaufen.",
+      "answer": "möchte",
+      "explanation": "Präsens von möchten: ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_möchten_3",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: wir ___ Deutsch lernen.",
+      "answer": "möchten",
+      "explanation": "Präsens von möchten: ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_möchten_4",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: ihr ___ niemanden stören.",
+      "answer": "möchtet",
+      "explanation": "Präsens von möchten: ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_möchten_5",
+      "exerciseType": "verb_conjugation",
+      "prompt": "Präsens: sie ___ verreisen.",
+      "answer": "möchten",
+      "explanation": "Präsens von möchten: ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Modalverb steht auf Position 2, Vollverb am Satzende im Infinitiv.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_möchten_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich ___ einen Tee trinken.",
+      "answer": "möchte",
+      "choices": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "explanation": "möchten im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ich möchte einen Tee trinken.",
+      "example": "Ich möchte einen Tee trinken.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_möchten_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du ___ mitkommen.",
+      "answer": "möchtest",
+      "choices": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "explanation": "möchten im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Du möchtest mitkommen.",
+      "example": "Du möchtest mitkommen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_möchten_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er ___ ein Fahrrad kaufen.",
+      "answer": "möchte",
+      "choices": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "explanation": "möchten im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Er möchte ein Fahrrad kaufen.",
+      "example": "Er möchte ein Fahrrad kaufen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_möchten_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir ___ Deutsch lernen.",
+      "answer": "möchten",
+      "choices": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "explanation": "möchten im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Wir möchten Deutsch lernen.",
+      "example": "Wir möchten Deutsch lernen.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    },
+    {
+      "id": "modal_praesens_sentence_möchten_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr ___ niemanden stören.",
+      "answer": "möchtet",
+      "choices": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "explanation": "möchten im Präsens: Verbform nach Subjekt. Das zweite Verb bleibt im Infinitiv am Ende: Ihr möchtet niemanden stören.",
+      "example": "Ihr möchtet niemanden stören.",
+      "level": "B1",
+      "tags": [
+        "Modalverben",
+        "Präsens",
+        "Variation"
+      ]
+    }
+  ]
+}

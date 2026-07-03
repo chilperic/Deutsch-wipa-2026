@@ -1,0 +1,1028 @@
+{
+  "module": "Modalverben · Perfekt und Doppelinfinitiv",
+  "level": "B1/B2",
+  "items": [
+    {
+      "id": "modal_perfekt_können_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe gut schwimmen ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe gut schwimmen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_können_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast schnell laufen ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast schnell laufen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_können_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat Deutsch sprechen ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat Deutsch sprechen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_können_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat gut kochen ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat gut kochen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_können_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat laut werden ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat laut werden können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_können_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben heute kommen ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben heute kommen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_können_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt das Problem lösen ___.",
+      "answer": "können",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt das Problem lösen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_können_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich kann gut schwimmen.",
+      "answer": "Ich habe gut schwimmen können.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + gut schwimmen + können. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe gut schwimmen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_können_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du kannst schnell laufen.",
+      "answer": "Du hast schnell laufen können.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + schnell laufen + können. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast schnell laufen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_können_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er kann Deutsch sprechen.",
+      "answer": "Er hat Deutsch sprechen können.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + Deutsch sprechen + können. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat Deutsch sprechen können.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe arbeiten ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe arbeiten müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast lernen ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast lernen müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat früh aufstehen ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat früh aufstehen müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat einkaufen ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat einkaufen müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat repariert werden ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat repariert werden müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben warten ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben warten müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_müssen_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt leise sein ___.",
+      "answer": "müssen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt leise sein müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_müssen_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich muss arbeiten.",
+      "answer": "Ich habe arbeiten müssen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + arbeiten + müssen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe arbeiten müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_müssen_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du musst lernen.",
+      "answer": "Du hast lernen müssen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + lernen + müssen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast lernen müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_müssen_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er muss früh aufstehen.",
+      "answer": "Er hat früh aufstehen müssen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + früh aufstehen + müssen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat früh aufstehen müssen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe länger bleiben ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe länger bleiben dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast mitkommen ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast mitkommen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat das Auto benutzen ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat das Auto benutzen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat fernsehen ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat fernsehen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat hier stehen ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat hier stehen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben eintreten ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben eintreten dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_dürfen_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt spielen ___.",
+      "answer": "dürfen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt spielen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_dürfen_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich darf fernsehen.",
+      "answer": "Ich habe fernsehen dürfen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + fernsehen + dürfen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe fernsehen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_dürfen_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du darfst hier stehen.",
+      "answer": "Du hast hier stehen dürfen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + hier stehen + dürfen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast hier stehen dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_dürfen_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er darf eintreten.",
+      "answer": "Er hat eintreten dürfen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + eintreten + dürfen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat eintreten dürfen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe den Brief schreiben ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe den Brief schreiben sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast mehr schlafen ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast mehr schlafen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat pünktlich kommen ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat pünktlich kommen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat anrufen ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat anrufen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat morgen regnen ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat morgen regnen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben helfen ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben helfen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_sollen_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt zuhören ___.",
+      "answer": "sollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt zuhören sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_sollen_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich soll pünktlich kommen.",
+      "answer": "Ich habe pünktlich kommen sollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + pünktlich kommen + sollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe pünktlich kommen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_sollen_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du sollst anrufen.",
+      "answer": "Du hast anrufen sollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + anrufen + sollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast anrufen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_sollen_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er soll morgen regnen.",
+      "answer": "Er hat morgen regnen sollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + morgen regnen + sollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat morgen regnen sollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe nach Hause gehen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe nach Hause gehen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast Fußball spielen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast Fußball spielen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat Arzt werden ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat Arzt werden wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat ein Buch kaufen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat ein Buch kaufen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat nicht funktionieren ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat nicht funktionieren wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben reisen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben reisen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_wollen_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt gewinnen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt gewinnen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_wollen_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich will nach Hause gehen.",
+      "answer": "Ich habe nach Hause gehen wollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + nach Hause gehen + wollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe nach Hause gehen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_wollen_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du willst Fußball spielen.",
+      "answer": "Du hast Fußball spielen wollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + Fußball spielen + wollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast Fußball spielen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_wollen_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er will Arzt werden.",
+      "answer": "Er hat Arzt werden wollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + Arzt werden + wollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat Arzt werden wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe Schokolade ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe Schokolade gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast Musik ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast Musik gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat Hunde ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat Hunde gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat Blumen ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat Blumen gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat Wärme ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat Wärme gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben Pizza ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben Pizza gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_mögen_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt Bücher ___.",
+      "answer": "gemocht",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt Bücher gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_mögen_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich mag Schokolade.",
+      "answer": "Ich habe Schokolade mögen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + Schokolade + mögen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe Schokolade mögen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_mögen_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du magst Musik.",
+      "answer": "Du hast Musik mögen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + Musik + mögen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast Musik mögen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_mögen_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er mag Hunde.",
+      "answer": "Er hat Hunde mögen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + Hunde + mögen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat Hunde mögen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe einen Termin vereinbaren ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ich habe einen Termin vereinbaren wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Du hast einen Kaffee trinken ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Du hast einen Kaffee trinken wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Er hat mitkommen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Er hat mitkommen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_3",
+      "exerciseType": "gap_fill",
+      "prompt": "Sie hat sich informieren ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Sie hat sich informieren wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_4",
+      "exerciseType": "gap_fill",
+      "prompt": "Es hat nicht funktionieren ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Es hat nicht funktionieren wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_5",
+      "exerciseType": "gap_fill",
+      "prompt": "Wir haben helfen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Wir haben helfen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_möchten_6",
+      "exerciseType": "gap_fill",
+      "prompt": "Ihr habt teilnehmen ___.",
+      "answer": "wollen",
+      "explanation": "Perfekt mit Modalverb + Vollverb bildet man meistens mit doppeltem Infinitiv: haben + Vollverb im Infinitiv + Modalverb im Infinitiv. Beispiel: Ich habe Deutsch sprechen können. Nicht: gesprochen gekonnt.",
+      "example": "Ihr habt teilnehmen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Doppelinfinitiv"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_möchten_0",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Ich möchte einen Tee trinken.",
+      "answer": "Ich habe einen Tee trinken wollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Ich habe + einen Tee trinken + wollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Ich habe einen Tee trinken wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_möchten_1",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Du möchtest mitkommen.",
+      "answer": "Du hast mitkommen wollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Du hast + mitkommen + wollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Du hast mitkommen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_transform_möchten_2",
+      "exerciseType": "sentence_correction",
+      "prompt": "Bilde Perfekt: Er möchte ein Fahrrad kaufen.",
+      "answer": "Er hat ein Fahrrad kaufen wollen.",
+      "explanation": "Bei Modalverb mit zweitem Verb: Er hat + ein Fahrrad kaufen + wollen. Das Modalverb steht als Infinitiv ganz am Ende.",
+      "example": "Er hat ein Fahrrad kaufen wollen.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Satzbau"
+      ]
+    },
+    {
+      "id": "modal_perfekt_solo_0",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe Kaffee immer ___.",
+      "answer": "gemocht",
+      "explanation": "Ohne zweites Vollverb kann mögen im Perfekt als Partizip stehen: Ich habe Kaffee gemocht.",
+      "example": "Ich habe Kaffee immer gemocht.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Ausnahme"
+      ]
+    },
+    {
+      "id": "modal_perfekt_solo_1",
+      "exerciseType": "gap_fill",
+      "prompt": "Ich habe das nicht ___.",
+      "answer": "gewollt",
+      "explanation": "Ohne zweites Vollverb kann wollen im Perfekt als Partizip stehen: Ich habe das nicht gewollt.",
+      "example": "Ich habe das nicht gewollt.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Ausnahme"
+      ]
+    },
+    {
+      "id": "modal_perfekt_solo_2",
+      "exerciseType": "gap_fill",
+      "prompt": "Das habe ich nicht ___.",
+      "answer": "gekonnt",
+      "explanation": "Ohne zweites Vollverb ist das Partizip möglich, aber oft klingt Präteritum natürlicher: Das konnte ich nicht.",
+      "example": "Das habe ich nicht gekonnt.",
+      "level": "B1/B2",
+      "tags": [
+        "Modalverben",
+        "Perfekt",
+        "Ausnahme"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "module": "production_plusquamperfekt_narrative",
+  "title": "Production Grammatik · Plusquamperfekt mit Zeitanker",
+  "status": "production",
+  "items": [
+    {
+      "id": "pq_prod_001",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Nachdem wir die Unterlagen geprüft hatten, konnten wir den Antrag freigeben.  Cue: wir / die Unterlagen prüfen",
+      "answer": "hatten geprüft",
+      "choices": [],
+      "explanation": "Plusquamperfekt marks the earlier action: first prüfen, then freigeben.",
+      "example": "Nachdem wir die Unterlagen geprüft hatten, konnten wir den Antrag freigeben.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_002",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Bevor der Kunde anrief, hatte ich die Reklamation bereits dokumentiert.  Cue: ich / die Reklamation dokumentieren",
+      "answer": "hatte dokumentiert",
+      "choices": [],
+      "explanation": "The documentation happened before the call.",
+      "example": "Bevor der Kunde anrief, hatte ich die Reklamation bereits dokumentiert.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_003",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Nachdem die Anlage in Betrieb genommen worden war, traten mehrere Störungen auf.  Cue: die Anlage / in Betrieb nehmen",
+      "answer": "war in Betrieb genommen worden",
+      "choices": [],
+      "explanation": "Passive Plusquamperfekt: war + Partizip II + worden.",
+      "example": "Nachdem die Anlage in Betrieb genommen worden war, traten mehrere Störungen auf.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_004",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Bevor wir den Lieferanten wechselten, hatten wir mehrere Engpässe erlebt.  Cue: wir / mehrere Engpässe erleben",
+      "answer": "hatten erlebt",
+      "choices": [],
+      "explanation": "Earlier experience explains the later decision.",
+      "example": "Bevor wir den Lieferanten wechselten, hatten wir mehrere Engpässe erlebt.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_005",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Nachdem die Frist abgelaufen war, schickten wir eine Mahnung.  Cue: die Frist / ablaufen",
+      "answer": "war abgelaufen",
+      "choices": [],
+      "explanation": "Change of state/event uses war + Partizip II.",
+      "example": "Nachdem die Frist abgelaufen war, schickten wir eine Mahnung.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_006",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Bevor ich die Bewerbung abschickte, hatte ich den Lebenslauf aktualisiert.  Cue: ich / den Lebenslauf aktualisieren",
+      "answer": "hatte aktualisiert",
+      "choices": [],
+      "explanation": "Earlier preparation before sending.",
+      "example": "Bevor ich die Bewerbung abschickte, hatte ich den Lebenslauf aktualisiert.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_007",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Nachdem der Server ausgefallen war, informierten wir alle Mitarbeitenden.  Cue: der Server / ausfallen",
+      "answer": "war ausgefallen",
+      "choices": [],
+      "explanation": "Ausfallen describes a change/event, so use war.",
+      "example": "Nachdem der Server ausgefallen war, informierten wir alle Mitarbeitenden.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    },
+    {
+      "id": "pq_prod_008",
+      "module": "production",
+      "type": "active_recall",
+      "exerciseType": "perfekt_builder",
+      "prompt": "Complete the earlier past action: Bevor die Besprechung begann, hatte die Projektleiterin die Tagesordnung verschickt.  Cue: die Projektleiterin / die Tagesordnung verschicken",
+      "answer": "hatte verschickt",
+      "choices": [],
+      "explanation": "Earlier action: agenda sent before meeting began.",
+      "example": "Bevor die Besprechung begann, hatte die Projektleiterin die Tagesordnung verschickt.",
+      "level": "B2",
+      "tags": [
+        "plusquamperfekt",
+        "narrative_anchor"
+      ],
+      "openEnded": false,
+      "checklist": []
+    }
+  ]
+}

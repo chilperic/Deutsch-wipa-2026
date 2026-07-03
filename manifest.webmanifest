@@ -1,10 +1,11 @@
 {
-  "name": "Deutsch-WiPA v25 Functional Responsive Trainer",
-  "short_name": "WiPA v25",
+  "name": "Deutsch-WiPA 2026 · Grammar & Conjugator",
+  "short_name": "WiPA Grammar",
+  "description": "Grammar-first German B1/B2 app with a 1000+ verb conjugator, workplace vocabulary, and smart mistake review.",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#f6efe3",
-  "theme_color": "#17223b",
+  "background_color": "#FFF7EA",
+  "theme_color": "#111827",
   "icons": [
     {
       "src": "assets/icon-192.png",
@@ -14,8 +15,13 @@
     {
       "src": "assets/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
-  ],
-  "description": "B1/B2 German for work trainer with adaptive practice, review, vocabulary, grammar, production and responsive layouts."
+  ]
 }

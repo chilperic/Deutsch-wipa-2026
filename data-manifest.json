@@ -1,0 +1,401 @@
+{
+  "version": "2026.06.10-v6-adverbien-deklination",
+  "modules": [
+    {
+      "id": "data_conjugator_verbs",
+      "path": "data/conjugator_verbs.json",
+      "category": "konjugator",
+      "title": "Konjugator · geprüfte Verbtabellen",
+      "count": 1077
+    },
+    {
+      "id": "grammatik_production_konjugator_drills",
+      "path": "grammatik/production_konjugator_drills.json",
+      "category": "conjugation",
+      "title": "Konjugation · geprüfte Starter-Drills",
+      "count": 1152,
+      "description": "Starter-Drills; größere Verb-Sitzungen werden bei Bedarf erzeugt."
+    },
+    {
+      "id": "grammatik_production_adverbien_intensiv",
+      "path": "grammatik/production_adverbien_intensiv.json",
+      "category": "grammar",
+      "title": "Adverbien Intensiv · Position, Bedeutung, Satzlogik",
+      "count": 500,
+      "description": "500 Übungen zu Adverbien und adverbialer Satzlogik."
+    },
+    {
+      "id": "grammatik_production_deklination_intensiv",
+      "path": "grammatik/production_deklination_intensiv.json",
+      "category": "grammar",
+      "title": "Deklination Intensiv · Artikel, Adjektive, Nomen, Pronomen",
+      "count": 500,
+      "description": "500 Übungen zu Fällen, Artikeln, Adjektivendungen, n-Deklination und Pronomen."
+    },
+    {
+      "id": "grammatik_production_grammar_explanations_variations",
+      "path": "grammatik/production_grammar_explanations_variations.json",
+      "category": "grammar",
+      "title": "Grammatik · Erklärungen und Satzvariation",
+      "count": 30
+    },
+    {
+      "id": "grammatik_production_modalverben_uebersicht",
+      "path": "grammatik/production_modalverben_uebersicht.json",
+      "category": "grammar",
+      "title": "Grammar Focus · Modalverben Überblick",
+      "count": 19
+    },
+    {
+      "id": "grammatik_production_modalverben_praesens",
+      "path": "grammatik/production_modalverben_praesens.json",
+      "category": "conjugation",
+      "title": "Grammar Focus · Modalverben Präsens",
+      "count": 77
+    },
+    {
+      "id": "grammatik_production_modalverben_praeteritum",
+      "path": "grammatik/production_modalverben_praeteritum.json",
+      "category": "conjugation",
+      "title": "Grammar Focus · Modalverben Präteritum",
+      "count": 60
+    },
+    {
+      "id": "grammatik_production_modalverben_perfekt_doppelinfinitiv",
+      "path": "grammatik/production_modalverben_perfekt_doppelinfinitiv.json",
+      "category": "conjugation",
+      "title": "Grammar Focus · Modalverben Perfekt",
+      "count": 73
+    },
+    {
+      "id": "grammatik_production_modalverben_variationen",
+      "path": "grammatik/production_modalverben_variationen.json",
+      "category": "grammar",
+      "title": "Grammar Focus · Modalverben Satzvariation",
+      "count": 19
+    },
+    {
+      "id": "vokabular_production_workplace_collocations",
+      "path": "vokabular/production_workplace_collocations.json",
+      "category": "vocabulary",
+      "title": "Production Wortschatz · Berufliche Kollokationen",
+      "count": 40
+    },
+    {
+      "id": "grammatik_production_adjektivdeklination_structured",
+      "path": "grammatik/production_adjektivdeklination_structured.json",
+      "category": "grammar",
+      "title": "Production Grammatik · Adjektivdeklination",
+      "count": 12
+    },
+    {
+      "id": "grammatik_production_n_deklination_business",
+      "path": "grammatik/production_n_deklination_business.json",
+      "category": "grammar",
+      "title": "Production Grammatik · n-Deklination Beruf",
+      "count": 8
+    },
+    {
+      "id": "grammatik_production_plusquamperfekt_narrative",
+      "path": "grammatik/production_plusquamperfekt_narrative.json",
+      "category": "conjugation",
+      "title": "Production Verbformen · Plusquamperfekt Narrativ",
+      "count": 8
+    },
+    {
+      "id": "grammatik_production_tekamolo_tokenized_engine",
+      "path": "grammatik/production_tekamolo_tokenized_engine.json",
+      "category": "grammar",
+      "title": "Production Grammatik · TeKaMoLo Token Engine",
+      "count": 5
+    },
+    {
+      "id": "grammatik_production_praepositionen_abstract_business",
+      "path": "grammatik/production_praepositionen_abstract_business.json",
+      "category": "grammar",
+      "title": "Production Grammatik · Abstrakte Präpositionen",
+      "count": 10
+    },
+    {
+      "id": "grammatik_production_infinitiv_zu_business",
+      "path": "grammatik/production_infinitiv_zu_business.json",
+      "category": "grammar",
+      "title": "Production Grammatik · Infinitiv mit zu",
+      "count": 8
+    },
+    {
+      "id": "grammatik_adjektivdeklination",
+      "path": "grammatik/adjektivdeklination.json",
+      "category": "grammar",
+      "title": "Adjektivdeklination",
+      "count": 80
+    },
+    {
+      "id": "grammatik_adjektive_als_nomen",
+      "path": "grammatik/adjektive_als_nomen.json",
+      "category": "grammar",
+      "title": "Adjektive Als Nomen",
+      "count": 70
+    },
+    {
+      "id": "grammatik_beruf",
+      "path": "grammatik/beruf.json",
+      "category": "workplace",
+      "title": "Beruf",
+      "count": 80
+    },
+    {
+      "id": "grammatik_bewerbung_arbeit",
+      "path": "grammatik/bewerbung_arbeit.json",
+      "category": "workplace",
+      "title": "Bewerbung / Arbeit",
+      "count": 90
+    },
+    {
+      "id": "grammatik_entschuldigung_reaktion",
+      "path": "grammatik/entschuldigung_reaktion.json",
+      "category": "workplace",
+      "title": "Entschuldigung & Reaktion",
+      "count": 80
+    },
+    {
+      "id": "grammatik_genus_rules",
+      "path": "grammatik/genus_rules.json",
+      "category": "grammar",
+      "title": "Genus Rules",
+      "count": 70
+    },
+    {
+      "id": "grammatik_infinitiv_zu",
+      "path": "grammatik/infinitiv_zu.json",
+      "category": "grammar",
+      "title": "Infinitiv Zu",
+      "count": 70
+    },
+    {
+      "id": "grammatik_kasusergaenzungen",
+      "path": "grammatik/kasusergaenzungen.json",
+      "category": "grammar",
+      "title": "Kasusergaenzungen",
+      "count": 80
+    },
+    {
+      "id": "grammatik_konjunktiv2",
+      "path": "grammatik/konjunktiv2.json",
+      "category": "conjugation",
+      "title": "Konjunktiv2",
+      "count": 75
+    },
+    {
+      "id": "grammatik_konnektoren_engine",
+      "path": "grammatik/konnektoren_engine.json",
+      "category": "grammar",
+      "title": "Konnektoren",
+      "count": 90
+    },
+    {
+      "id": "grammatik_konnektoren_nebensaetze",
+      "path": "grammatik/konnektoren_nebensaetze.json",
+      "category": "grammar",
+      "title": "Konnektoren Nebensaetze",
+      "count": 80
+    },
+    {
+      "id": "grammatik_n_deklination",
+      "path": "grammatik/n_deklination.json",
+      "category": "grammar",
+      "title": "N Deklination",
+      "count": 75
+    },
+    {
+      "id": "grammatik_negation_engine",
+      "path": "grammatik/negation_engine.json",
+      "category": "grammar",
+      "title": "Negation",
+      "count": 85
+    },
+    {
+      "id": "grammatik_nomen_artikel_plural",
+      "path": "grammatik/nomen_artikel_plural.json",
+      "category": "grammar",
+      "title": "Nomen Artikel Plural",
+      "count": 90
+    },
+    {
+      "id": "grammatik_perfekt",
+      "path": "grammatik/perfekt.json",
+      "category": "conjugation",
+      "title": "Perfekt",
+      "count": 80
+    },
+    {
+      "id": "grammatik_plusquamperfekt",
+      "path": "grammatik/plusquamperfekt.json",
+      "category": "conjugation",
+      "title": "Plusquamperfekt",
+      "count": 75
+    },
+    {
+      "id": "grammatik_praepositionalverben",
+      "path": "grammatik/praepositionalverben.json",
+      "category": "grammar",
+      "title": "Praepositionalverben",
+      "count": 120
+    },
+    {
+      "id": "grammatik_praepositionen",
+      "path": "grammatik/praepositionen.json",
+      "category": "grammar",
+      "title": "Praepositionen",
+      "count": 80
+    },
+    {
+      "id": "grammatik_pronomen",
+      "path": "grammatik/pronomen.json",
+      "category": "grammar",
+      "title": "Pronomen",
+      "count": 80
+    },
+    {
+      "id": "grammatik_reflexive",
+      "path": "grammatik/reflexive.json",
+      "category": "conjugation",
+      "title": "Reflexive",
+      "count": 80
+    },
+    {
+      "id": "grammatik_reklamation_technische_probleme",
+      "path": "grammatik/reklamation_technische_probleme.json",
+      "category": "workplace",
+      "title": "Reklamation / technische Probleme",
+      "count": 90
+    },
+    {
+      "id": "grammatik_starke_verben",
+      "path": "grammatik/starke_verben.json",
+      "category": "conjugation",
+      "title": "Starke Verben",
+      "count": 90
+    },
+    {
+      "id": "grammatik_tekamolo_engine",
+      "path": "grammatik/tekamolo_engine.json",
+      "category": "grammar",
+      "title": "Satzordnung / TeKaMoLo",
+      "count": 70
+    },
+    {
+      "id": "grammatik_trennbare_verben",
+      "path": "grammatik/trennbare_verben.json",
+      "category": "conjugation",
+      "title": "Trennbare Verben",
+      "count": 90
+    },
+    {
+      "id": "grammatik_verbformen_basis",
+      "path": "grammatik/verbformen_basis.json",
+      "category": "conjugation",
+      "title": "Verbformen: Präsens, Perfekt, Präteritum, Futur I",
+      "count": 10
+    },
+    {
+      "id": "vokabular_beruf_buero",
+      "path": "vokabular/beruf_buero.json",
+      "category": "workplace",
+      "title": "Beruf & Büro",
+      "count": 80
+    },
+    {
+      "id": "vokabular_kapitel1",
+      "path": "vokabular/kapitel1.json",
+      "category": "vocabulary",
+      "title": "Kapitel 1",
+      "count": 81
+    },
+    {
+      "id": "vokabular_kapitel2",
+      "path": "vokabular/kapitel2.json",
+      "category": "vocabulary",
+      "title": "Kapitel 2",
+      "count": 93
+    },
+    {
+      "id": "vokabular_kapitel3",
+      "path": "vokabular/kapitel3.json",
+      "category": "vocabulary",
+      "title": "Kapitel 3",
+      "count": 76
+    },
+    {
+      "id": "vokabular_kapitel3_foto_ergaenzung",
+      "path": "vokabular/kapitel3_foto_ergaenzung.json",
+      "category": "vocabulary",
+      "title": "Kapitel 3 Foto-Ergänzung: Leben und Beruf im Wandel",
+      "count": 10
+    },
+    {
+      "id": "vokabular_kapitel4",
+      "path": "vokabular/kapitel4.json",
+      "category": "vocabulary",
+      "title": "Kapitel 4",
+      "count": 67
+    },
+    {
+      "id": "training_exercise_types_complete",
+      "path": "training/exercise_types_complete.json",
+      "category": "practice",
+      "title": "18 Übungstypen · Ready-to-use",
+      "count": 36
+    },
+    {
+      "id": "grammatik_material_zu_infinitiv_brauchen",
+      "path": "grammatik/material_zu_infinitiv_brauchen.json",
+      "category": "grammar",
+      "title": "Material B1.1/B1.2 · zu-Infinitiv & brauchen zu",
+      "count": 19
+    },
+    {
+      "id": "grammatik_material_temporale_nebensaetze",
+      "path": "grammatik/material_temporale_nebensaetze.json",
+      "category": "grammar",
+      "title": "Material B1.2 · Temporale Nebensätze",
+      "count": 10
+    },
+    {
+      "id": "grammatik_material_b2_zweiteilige_konnektoren",
+      "path": "grammatik/material_b2_zweiteilige_konnektoren.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Zweiteilige Konnektoren",
+      "count": 8
+    },
+    {
+      "id": "grammatik_material_b2_nicht_tekamolo",
+      "path": "grammatik/material_b2_nicht_tekamolo.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Position von nicht & TeKaMoLo",
+      "count": 7
+    },
+    {
+      "id": "grammatik_material_b2_passiversatz_final_modal_es",
+      "path": "grammatik/material_b2_passiversatz_final_modal_es.json",
+      "category": "grammar",
+      "title": "Material B2.1 · Passiversatz, finale/modale Sätze, es",
+      "count": 9
+    },
+    {
+      "id": "grammatik_material_redemittel_bitte_um_information",
+      "path": "grammatik/material_redemittel_bitte_um_information.json",
+      "category": "workplace",
+      "title": "Material B2.1 · Redemittel: Bitte um Information",
+      "count": 6
+    },
+    {
+      "id": "vokabular_material_b1b2_ergaenzung",
+      "path": "vokabular/material_b1b2_ergaenzung.json",
+      "category": "vocabulary",
+      "title": "Material B1.1/B1.2/B2.1 · Wortschatz-Ergänzung",
+      "count": 45
+    }
+  ],
+  "focus": "Grammar-first app with corrected verb reference, fast startup, tense filters and capped practice sessions."
+}
