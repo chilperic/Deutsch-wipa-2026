@@ -502,3 +502,41 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 @media (min-width: 1101px) {
   .top-tabs { max-width:100%; overflow-x:auto; }
 }
+
+/* v27 learning-platform core: profile, resume, Fehlerbank depth */
+.profile-card,.resume-card{
+  margin: 0 0 14px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255,255,255,.34);
+}
+.profile-input{width:100%;margin-top:8px;min-height:44px;}
+.profile-status,.last-session-summary{margin-top:8px;color:var(--muted);font-size:.84rem;line-height:1.35;overflow-wrap:anywhere;}
+.last-session-summary span{color:var(--muted);font-size:.78rem;}
+.profile-actions,.resume-actions{display:flex;gap:8px;margin-top:10px;align-items:center;}
+.mini-action,.resume-button,.mistake-retry-all{
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-solid);
+  color:var(--ink);
+  min-height:40px;
+  padding:8px 11px;
+  font-weight:800;
+  font-size:.86rem;
+}
+.file-action{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;}
+.resume-button{flex:1;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:white;border:0;}
+.resume-button:disabled{background:var(--surface-solid);color:var(--muted);border:1px solid var(--border);box-shadow:none;}
+.mistake-overview{
+  display:grid;gap:10px;margin:18px 0;padding:16px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);box-shadow:var(--shadow-soft);
+}
+.mistake-overview>div{display:flex;gap:8px;flex-wrap:wrap;}
+.mistake-chip,.mistake-meta span{display:inline-flex;align-items:center;border:1px solid var(--border);border-radius:999px;padding:5px 9px;background:rgba(255,255,255,.42);color:var(--muted);font-size:.78rem;font-weight:800;}
+.mistake-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+.mistake-retry-all{justify-self:start;color:white;background:linear-gradient(135deg,var(--primary),var(--primary-2));border:0;}
+@media (max-width: 720px){
+  .profile-card,.resume-card,.module-filter-card,.progress-card{padding:12px;border-radius:16px;}
+  .profile-actions,.resume-actions{display:grid;grid-template-columns:1fr 1fr;}
+  .resume-button{grid-column:1/-1;}
+}

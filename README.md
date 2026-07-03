@@ -1,29 +1,30 @@
-# Deutsch-WiPA 2026 v26 · Functional Responsive Trainer
+# Deutsch-WiPA 2026 · v27 Learning Platform Core
 
-This release restores the rich v7/v22 learning surface instead of the reduced v24/v25 shell. The app is meant to be a B1/B2 Beruf German trainer with visible functionality: modules, grammar practice, internal verb conjugation, mistake review, spaced repetition, and workplace vocabulary.
+A browser-based B1/B2 Beruf learning trainer with restored internal content depth, internal verb conjugation, profile storage, latest-session resume, Fehlerbank, spaced repetition, and responsive desktop/mobile layout.
 
-## Why v26 exists
+## Core features
 
-The previous reduced builds looked cleaner but felt empty. v26 uses the content-rich v7 app as the base and repairs responsiveness without removing learning tools.
-
-## Included learning areas
-
-- Internal Konjugator with 1077 verbs
-- 56 module entries in the manifest
-- Kapitel vocabulary 1–4
-- Beruf & Büro vocabulary
-- Präpositionalverben
-- Starke Verben and trennbare Verben
-- Modalverben and tense drills
-- Perfekt, Plusquamperfekt, Konjunktiv II
-- Pronomen, Kasus, Präpositionen, Nomen/Artikel/Plural
-- Satzbau, TeKaMoLo, Negation, Konnektoren
-- Bewerbung, Reklamation, Entschuldigung, workplace communication
-- Fehlerbank and SRS-style local progress
+- 56 loaded learning modules from the restored content architecture.
+- 5,048 manifest items.
+- 1,077 internal conjugator verbs.
+- User profile/name saved locally in the browser.
+- Latest session saved and resumable.
+- Fehlerbank with grouped mistake types and retry sessions.
+- Export/import of profile, progress, SRS and mistakes.
+- Internal verb tables and practice; external resources are optional only.
+- Smartphone-friendly sidebar drawer and bottom navigation behavior.
 
 ## Local test
 
 ```bash
+deactivate 2>/dev/null || true
+hash -r
+
+cd ~/Downloads
+rm -rf deutsch-wipa-2026-v27-learning-platform-core
+unzip -o deutsch-wipa-2026-v27-learning-platform-core.zip
+cd deutsch-wipa-2026-v27-learning-platform-core
+
 node --check app.js && \
 node dev/check.js && \
 python3 -m json.tool data-manifest.json >/dev/null && \
@@ -35,13 +36,9 @@ python3 dev/no_cache_server.py 8000
 Open:
 
 ```text
-http://localhost:8000/?v=26.0.0
+http://localhost:8000/?v=27.0.0
 ```
 
-## Browser targets
+## Design rule
 
-Target: Chrome/Chromium, Firefox, Edge, Safari, Android Chrome, iOS Safari. The interface avoids hover-only controls and keeps tap targets large enough for smartphone use.
-
-## External resources
-
-The app does **not** outsource verb learning. Verb training is internal. External links are only optional reference aids. The visible resource list uses Mein Deutschbuch as the main grammar reference.
+This version restores function first. Do not strip modules, verb training, review, profile, session resume, or Fehlerbank for the sake of visual minimalism.

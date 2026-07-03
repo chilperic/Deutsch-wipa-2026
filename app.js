@@ -1,19 +1,22 @@
-const APP_VERSION = '2026.07.03-v26-content-restored-responsive';
+const APP_VERSION = '2026.07.03-v27-learning-platform-core';
 const $ = id => document.getElementById(id);
 // vfetch: cache-busting for version forcing BUT allows SW to intercept
 // Using 'default' cache mode so the SW stale-while-revalidate strategy works
 const vfetch = path => fetch(path + (path.includes('?') ? '&' : '?') + 'v=' + APP_VERSION);
 
 const SRS_KEY = 'dw_modern_srs';
+const PROFILE_KEY = 'dw_modern_profile';
+const LAST_SESSION_KEY = 'dw_modern_last_session_v27';
 const state = {
   manifest: null, modules: [], route: 'learn', path: 'conjugation', moduleId: 'all',
   index: 0, started: false, checked: false, selectedChoice: '', mode: 'practice',
   stats: load('dw_modern_stats', {}), moduleStats: load('dw_modern_module_stats', {}),
   mistakes: load('dw_modern_mistakes', []), srs: load(SRS_KEY, {}),
+  profile: load(PROFILE_KEY, {name:''}), lastSession: load(LAST_SESSION_KEY, null),
   lang: localStorage.dw_lang || 'de', theme: localStorage.dw_theme || 'light',
   conjugator: null, verb: null, tense: 'Präsens',
   tenseFilter: 'Präsens', sessionLimit: 20, dynamicVerb: '', showAllVerbs: false,
-  sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [],
+  sessionComplete: false, reviewEmptyReason: '', poolKey: '', poolItems: [], overridePool: null,
   // Memoised generateConjugatorPractice output: invalidated when verb/tense/mode changes
   _conjGenKey: '', _conjGenItems: []
 };
@@ -33,9 +36,9 @@ const PATHS = [
 ];
 
 const T = {
- de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen'},
- en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table'},
- fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau'},
+ de:{start:'Sitzung starten',check:'Prüfen',next:'Weiter',skip:'Überspringen',restart:'Neu starten',correct:'Richtig',wrong:'Noch nicht',answer:'Richtige Antwort',why:'Warum?',empty:'In diesem Thema gibt es für diese Auswahl keine Items.',ready:'Starte die Sitzung.',complete:'Sitzung abgeschlossen',noSrs:'Noch keine fälligen Wiederholungen. Beantworte zuerst einige Übungen.',allModules:'Alle Module',dueToday:'fällig heute',item:'Item',items:'Items',yourAnswer:'Deine Antwort',retryMistake:'Nochmal üben',sessionStats:'Sitzung',verbConjTable:'Tabelle anzeigen',progressLocal:'Fortschritt lokal im Browser gespeichert',profileSaved:'Profil gespeichert',exportProgress:'Exportieren',importProgress:'Importieren',continueSession:'Letzte Sitzung fortsetzen',startFresh:'Neu starten'},
+ en:{start:'Start session',check:'Check',next:'Next',skip:'Skip',restart:'Restart',correct:'Correct',wrong:'Not yet',answer:'Correct answer',why:'Why?',empty:'No items for this selection.',ready:'Start the session.',complete:'Session complete',noSrs:'No due reviews yet. Answer a few exercises first.',allModules:'All modules',dueToday:'due today',item:'item',items:'items',yourAnswer:'Your answer',retryMistake:'Practice again',sessionStats:'Session',verbConjTable:'Show table',progressLocal:'Progress saved locally in this browser',profileSaved:'Profile saved',exportProgress:'Export',importProgress:'Import',continueSession:'Continue last session',startFresh:'Start fresh'},
+ fr:{start:'Commencer',check:'Vérifier',next:'Suivant',skip:'Passer',restart:'Recommencer',correct:'Correct',wrong:'Pas encore',answer:'Bonne réponse',why:'Pourquoi ?',empty:'Aucun item pour cette sélection.',ready:'Commence la session.',complete:'Session terminée',noSrs:"Aucune révision prévue. Réponds d'abord à quelques exercices.",allModules:'Tous les modules',dueToday:"à réviser aujourd'hui",item:'item',items:'items',yourAnswer:'Ta réponse',retryMistake:'Réessayer',sessionStats:'Session',verbConjTable:'Voir tableau',progressLocal:'Progression sauvegardée localement dans ce navigateur',profileSaved:'Profil enregistré',exportProgress:'Exporter',importProgress:'Importer',continueSession:'Reprendre la dernière session',startFresh:'Recommencer'},
  es:{start:'Empezar',check:'Comprobar',next:'Siguiente',skip:'Omitir',restart:'Reiniciar',correct:'Correcto',wrong:'Todavía no',answer:'Respuesta correcta',why:'¿Por qué?',empty:'No hay elementos para esta selección.',ready:'Empieza la sesión.',complete:'Sesión completada',noSrs:'Aún no hay repasos pendientes. Responde primero algunos ejercicios.',allModules:'Todos los módulos',dueToday:'para repasar hoy',item:'ítem',items:'ítems',yourAnswer:'Tu respuesta',retryMistake:'Practicar de nuevo',sessionStats:'Sesión',verbConjTable:'Ver tabla'},
  ar:{start:'ابدأ الجلسة',check:'تحقق',next:'التالي',skip:'تخطي',restart:'إعادة البدء',correct:'صحيح',wrong:'ليس بعد',answer:'الإجابة الصحيحة',why:'لماذا؟',empty:'لا توجد عناصر لهذا الاختيار.',ready:'ابدأ الجلسة.',complete:'اكتملت الجلسة',noSrs:'لا توجد مراجعات مستحقة بعد. أجب عن بعض التمارين أولاً.',allModules:'كل الوحدات',dueToday:'مستحق اليوم',item:'عنصر',items:'عناصر',yourAnswer:'إجابتك',retryMistake:'تدرب مجدداً',sessionStats:'جلسة',verbConjTable:'عرض الجدول'},
  fa:{start:'شروع جلسه',check:'بررسی',next:'بعدی',skip:'رد کردن',restart:'شروع دوباره',correct:'درست',wrong:'هنوز نه',answer:'پاسخ درست',why:'چرا؟',empty:'برای این انتخاب موردی وجود ندارد.',ready:'جلسه را شروع کن.',complete:'جلسه کامل شد',noSrs:'هنوز مرور زمان‌بندی‌شده‌ای وجود ندارد. اول چند تمرین را پاسخ بده.',allModules:'همهٔ بخش‌ها',dueToday:'موعد امروز',item:'مورد',items:'مورد',yourAnswer:'پاسخ تو',retryMistake:'دوباره تمرین کن',sessionStats:'جلسه',verbConjTable:'نمایش جدول'},
@@ -66,8 +69,10 @@ function updateDirection(){document.documentElement.dir=['ar','fa'].includes(sta
 function renderLangs(){$('languageSelect').innerHTML=LANGS.map(([c,n])=>`<option value="${c}" ${c===state.lang?'selected':''}>${n}</option>`).join('')}
 
 function bind(){
-  $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll()};
-  $('themeButton').onclick=()=>{state.theme=state.theme==='dark'?'light':'dark';localStorage.dw_theme=state.theme;document.documentElement.dataset.theme=state.theme};
+  $('languageSelect').onchange=e=>{state.lang=e.target.value;localStorage.dw_lang=state.lang;updateDirection();renderAll();saveLastSession()};
+  $('themeButton').onclick=()=>{state.theme=state.theme==='dark'?'light':'dark';localStorage.dw_theme=state.theme;document.documentElement.dataset.theme=state.theme;saveLastSession()};
+  bindProfileControls();
+  bindProgressControls();
   document.querySelectorAll('.top-tab').forEach(b=>b.onclick=()=>route(b.dataset.route));
   $('mobileMenu').onclick=()=>toggleDrawer(true);$('backdrop').onclick=()=>toggleDrawer(false);
   $('primaryAction').onclick=primary;$('secondaryAction').onclick=next;$('prevButton').onclick=prev;
@@ -76,10 +81,12 @@ function bind(){
   $('modePractice').onclick=()=>setMode('practice');$('modeLearn').onclick=()=>setMode('learn');$('modeReview').onclick=()=>setMode('review');
   $('clearMistakes').onclick=()=>{state.mistakes=[];save('dw_modern_mistakes',state.mistakes);renderMistakes();renderStats()};
   let vsTimer=null;$('verbSearch').oninput=()=>{clearTimeout(vsTimer);vsTimer=setTimeout(renderVerbList,120)};
-  $('moduleSelect').onchange=e=>{state.moduleId=e.target.value;state.dynamicVerb='';resetSession();renderExercise()};
-  $('tenseFilter').onchange=e=>{state.tenseFilter=e.target.value;state._conjGenKey='';resetSession();renderExercise()};
-  $('sessionLimit').onchange=e=>{state.sessionLimit=e.target.value==='all'?'all':Number(e.target.value);resetSession();renderExercise()};
+  $('moduleSelect').onchange=e=>{state.moduleId=e.target.value;state.dynamicVerb='';resetSession();renderExercise();saveLastSession()};
+  $('tenseFilter').onchange=e=>{state.tenseFilter=e.target.value;state._conjGenKey='';resetSession();renderExercise();saveLastSession()};
+  $('sessionLimit').onchange=e=>{state.sessionLimit=e.target.value==='all'?'all':Number(e.target.value);resetSession();renderExercise();saveLastSession()};
   $('verbPracticeButton').onclick=launchVerbPractice;
+  if($('resumeSessionButton'))$('resumeSessionButton').onclick=restoreLastSession;
+  if($('freshSessionButton'))$('freshSessionButton').onclick=()=>{localStorage.removeItem(LAST_SESSION_KEY);state.lastSession=null;resetSession();renderAll()};
   $('openConjugator').onclick=()=>{
     const item=current();
     if(!item)return;
@@ -97,6 +104,106 @@ function bind(){
   });
 }
 function toggleDrawer(open){$('sidebar').classList.toggle('open',open);$('backdrop').classList.toggle('hidden',!open);document.querySelector('.main').toggleAttribute('inert',open)}
+
+function bindProfileControls(){
+  const input=$('profileName');
+  if(input){
+    input.value=state.profile?.name||'';
+    input.oninput=()=>{
+      state.profile={...state.profile,name:input.value.trim()};
+      save(PROFILE_KEY,state.profile);
+      renderProfileStatus();
+      renderLastSession();
+    };
+  }
+  renderProfileStatus();
+}
+function renderProfileStatus(){
+  const status=$('profileSaveStatus');
+  if(!status)return;
+  const name=state.profile?.name||'';
+  status.textContent=name?`${tr('profileSaved')}: ${name}`:tr('progressLocal');
+}
+function bindProgressControls(){
+  const exp=$('exportProgressButton');
+  if(exp)exp.onclick=exportProgress;
+  const imp=$('importProgressInput');
+  if(imp)imp.onchange=importProgress;
+}
+function progressPayload(){
+  return {
+    app:'Deutsch-WiPA',version:APP_VERSION,exportedAt:new Date().toISOString(),
+    profile:state.profile,lang:state.lang,theme:state.theme,
+    path:state.path,moduleId:state.moduleId,mode:state.mode,tenseFilter:state.tenseFilter,sessionLimit:state.sessionLimit,dynamicVerb:state.dynamicVerb,
+    stats:state.stats,moduleStats:state.moduleStats,mistakes:state.mistakes,srs:state.srs,lastSession:load(LAST_SESSION_KEY,null)
+  };
+}
+function exportProgress(){
+  const blob=new Blob([JSON.stringify(progressPayload(),null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  const safe=(state.profile?.name||'user').replace(/[^a-z0-9_-]+/gi,'_')||'user';
+  a.href=URL.createObjectURL(blob);
+  a.download=`deutsch-wipa-progress-${safe}.json`;
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function importProgress(ev){
+  const file=ev.target.files?.[0];
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const data=JSON.parse(reader.result);
+      state.profile=data.profile||state.profile||{name:''};
+      state.lang=data.lang||state.lang; state.theme=data.theme||state.theme;
+      state.stats=data.stats||{}; state.moduleStats=data.moduleStats||{}; state.mistakes=data.mistakes||[]; state.srs=data.srs||{};
+      state.lastSession=data.lastSession||state.lastSession;
+      save(PROFILE_KEY,state.profile); save('dw_modern_stats',state.stats); save('dw_modern_module_stats',state.moduleStats); save('dw_modern_mistakes',state.mistakes); save(SRS_KEY,state.srs);
+      if(state.lastSession)save(LAST_SESSION_KEY,state.lastSession);
+      localStorage.dw_lang=state.lang; localStorage.dw_theme=state.theme; document.documentElement.dataset.theme=state.theme; updateDirection(); renderLangs(); renderAll();
+    }catch(e){alert('Import fehlgeschlagen: ungültige JSON-Datei.')}
+    ev.target.value='';
+  };
+  reader.readAsText(file);
+}
+function saveLastSession(){
+  if(!state.manifest)return;
+  const items=state.poolItems&&state.poolItems.length?state.poolItems:filteredItems();
+  const currentItem=items[state.index];
+  const p=PATHS.find(x=>x.id===state.path);
+  const payload={
+    savedAt:Date.now(),path:state.path,moduleId:state.moduleId,mode:state.mode,tenseFilter:state.tenseFilter,sessionLimit:state.sessionLimit,dynamicVerb:state.dynamicVerb,
+    index:state.index,started:state.started,checked:false,itemId:currentItem?.id||'',pathTitle:p?.title||'',itemPrompt:currentItem?.prompt||'',total:items.length
+  };
+  state.lastSession=payload;
+  save(LAST_SESSION_KEY,payload);
+  renderLastSession();
+}
+function renderLastSession(){
+  const box=$('lastSessionSummary');
+  const btn=$('resumeSessionButton');
+  if(!box||!btn)return;
+  const saved=load(LAST_SESSION_KEY,null);
+  state.lastSession=saved;
+  if(!saved){box.innerHTML='Noch keine Sitzung gespeichert.';btn.disabled=true;return;}
+  const when=new Date(saved.savedAt||Date.now()).toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short'});
+  const name=state.profile?.name?`${esc(state.profile.name)} · `:'';
+  box.innerHTML=`${name}${esc(saved.pathTitle||'Lernen')} · ${Math.min((saved.index||0)+1,saved.total||1)} / ${saved.total||'?'}<br><span>${esc(saved.itemPrompt||'') || 'Letzte Übung'} · ${when}</span>`;
+  btn.disabled=false;
+}
+function restoreLastSession(){
+  const saved=load(LAST_SESSION_KEY,null);
+  if(!saved)return;
+  state.path=saved.path||'conjugation'; state.moduleId=saved.moduleId||'all'; state.mode=saved.mode||'practice';
+  state.tenseFilter=saved.tenseFilter||'Präsens'; state.sessionLimit=saved.sessionLimit||20; state.dynamicVerb=saved.dynamicVerb||'';
+  state.index=Math.max(0,Number(saved.index)||0); state.started=true; state.checked=false; state.selectedChoice=''; state.sessionComplete=false; state.poolKey=''; state.poolItems=[];
+  route('learn'); renderPath(); document.querySelectorAll('.path-btn').forEach(b=>b.classList.toggle('active',b.dataset.path===state.path));
+  $('conjugationControls').classList.toggle('hidden',state.path!=='conjugation');
+  renderModuleSelect(); if($('tenseFilter'))$('tenseFilter').value=state.tenseFilter; if($('sessionLimit'))$('sessionLimit').value=String(state.sessionLimit);
+  document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));
+  const modeEl=$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[state.mode]); if(modeEl)modeEl.classList.add('active');
+  toggleDrawer(false); renderAll();
+}
 
 async function loadData(){
   state.manifest=await vfetch('data-manifest.json').then(r=>r.json());
@@ -157,11 +264,11 @@ function selectPath(id){
   // Show/hide conjugation-specific controls
   const isConj=id==='conjugation';
   $('conjugationControls').classList.toggle('hidden',!isConj);
-  renderModuleSelect();renderAll();
+  renderModuleSelect();renderAll();saveLastSession();
 }
 function renderModuleSelect(){const mods=modulesForPath(state.path);let html=`<option value="all">${tr('allModules')}</option>`;if(state.path==='conjugation')html=`<option value="dynamic_conjugator">Verbtraining</option>`+html;html+=mods.map(m=>`<option value="${esc(m.id)}">${esc(m.title)} (${m.items.length})</option>`).join('');$('moduleSelect').innerHTML=html;$('moduleSelect').value=state.moduleId}
 function itemsForCurrentPath(){if(state.path==='conjugation'&&state.moduleId==='dynamic_conjugator')return generateConjugatorPractice();const mods=modulesForPath(state.path).filter(m=>state.moduleId==='all'||m.id===state.moduleId);return mods.flatMap(m=>m.items)}
-function resetSession(){state.index=0;state.started=false;state.checked=false;state.selectedChoice='';state.sessionComplete=false;state.poolKey='';state.poolItems=[]}
+function resetSession(){state.index=0;state.started=false;state.checked=false;state.selectedChoice='';state.sessionComplete=false;state.poolKey='';state.poolItems=[];state.overridePool=null}
 
 // Memoised dynamic conjugation generator — only rebuilds when verb/tense/mode actually changes
 function generateConjugatorPractice(){
@@ -206,6 +313,7 @@ function generateConjugatorPractice(){
 
 function current(){return filteredItems()[state.index]}
 function filteredItems(){
+  if(state.overridePool&&state.overridePool.length)return state.overridePool;
   const base=baseFilteredItems();
   const key=`${state.path}:${state.moduleId}:${state.mode}:${state.tenseFilter}:${state.sessionLimit}:${state.dynamicVerb}:${base.length}:${base[0]?.id||''}:${base.at(-1)?.id||''}`;
   if(state.poolKey!==key){
@@ -228,9 +336,9 @@ function baseFilteredItems(){
   return items;
 }
 
-function renderAll(){renderPath();renderModuleSelect();renderExercise();renderStats();renderMistakes();renderConjugator()}
+function renderAll(){renderPath();renderModuleSelect();bindProfileControls();renderLastSession();renderExercise();renderStats();renderMistakes();renderConjugator()}
 function route(r){state.route=r;document.querySelectorAll('.top-tab').forEach(b=>b.classList.toggle('active',b.dataset.route===r));document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view'));$(`${r}View`).classList.add('active-view');if(r==='mistakes')renderMistakes();if(r==='conjugator')renderConjugator()}
-function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats()}
+function setMode(m){state.mode=m;resetSession();document.querySelectorAll('.mode-chip').forEach(b=>b.classList.remove('active'));$({practice:'modePractice',learn:'modeLearn',review:'modeReview'}[m]).classList.add('active');renderExercise();renderStats();saveLastSession()}
 
 function renderExercise(){
   const p=PATHS.find(x=>x.id===state.path);
@@ -292,6 +400,7 @@ function renderExercise(){
   $('questionText').textContent=item.prompt;
   renderInput(item);
   $('primaryAction').textContent=state.mode==='learn'?tr('next'):tr('check');
+  if(state.started||state.index>0)saveLastSession();
 }
 
 function renderInput(item){
@@ -315,7 +424,7 @@ function renderInput(item){
 
 function primary(){
   if(state.sessionComplete){resetSession();renderExercise();return}
-  if(!state.started){state.started=true;state.checked=false;renderExercise();return}
+  if(!state.started){state.started=true;state.checked=false;renderExercise();saveLastSession();return}
   const item=current();if(!item)return;
   if(state.mode==='learn'){next();return}
   checkAnswer(item);
@@ -377,7 +486,7 @@ function checkAnswer(item){
   updateStats(ok,item);
   if(!ok)addMistake(item,user);
   scheduleSrs(item,ok);
-  renderStats();
+  renderStats();saveLastSession();
 }
 
 // Skip item: moves to next without marking right or wrong
@@ -391,7 +500,7 @@ function skipItem(){
   // Don't advance index (next item shifted into current position)
   if(state.index>=state.poolItems.length)state.index=0;
   state.checked=false;state.selectedChoice='';
-  renderExercise();
+  renderExercise();saveLastSession();
 }
 
 function statKey(item){return`${state.path}:${state.moduleId||'all'}:${item?.moduleId||'unknown'}`}
@@ -400,17 +509,17 @@ function updateStats(ok,item){
   const mkey=statKey(item);const m=state.moduleStats[mkey]||{a:0,c:0};m.a++;if(ok)m.c++;state.moduleStats[mkey]=m;save('dw_modern_module_stats',state.moduleStats);
 }
 function scheduleSrs(item,ok){const cur=state.srs[item.id]||{box:0};const box=ok?Math.min(5,(cur.box||0)+1):1;const days=[0,1,3,7,14,30][box];state.srs[item.id]={box,due:Date.now()+days*86400000,seen:true};save(SRS_KEY,state.srs)}
-function addMistake(item,user){state.mistakes=[{id:item.id,when:Date.now(),user,item},...state.mistakes.filter(m=>m.id!==item.id)].slice(0,120);save('dw_modern_mistakes',state.mistakes)}
+function addMistake(item,user){const prev=state.mistakes.find(m=>m.id===item.id);const count=(prev?.count||0)+1;state.mistakes=[{id:item.id,when:Date.now(),user,item,count,type:item.exerciseType||'Übung',path:state.path,moduleId:item.moduleId},...state.mistakes.filter(m=>m.id!==item.id)].slice(0,160);save('dw_modern_mistakes',state.mistakes)}
 
 function next(){
   const items=filteredItems();if(!items.length)return;
   const nextIdx=state.index+1;
-  if(nextIdx>=items.length){state.sessionComplete=true;state.index=0;state.started=false;state.checked=false;state.selectedChoice='';renderExercise();return}
-  state.index=nextIdx;state.started=true;state.checked=false;state.selectedChoice='';renderExercise();
+  if(nextIdx>=items.length){state.sessionComplete=true;state.index=0;state.started=false;state.checked=false;state.selectedChoice='';renderExercise();saveLastSession();return}
+  state.index=nextIdx;state.started=true;state.checked=false;state.selectedChoice='';renderExercise();saveLastSession();
 }
 function prev(){
   const items=filteredItems();if(!items.length)return;
-  state.sessionComplete=false;state.index=Math.max(0,state.index-1);state.started=true;state.checked=false;state.selectedChoice='';renderExercise();
+  state.sessionComplete=false;state.index=Math.max(0,state.index-1);state.started=true;state.checked=false;state.selectedChoice='';renderExercise();saveLastSession();
 }
 function dueCount(){return Object.values(state.srs).filter(v=>v&&typeof v.due==='number'&&v.due<=Date.now()).length}
 
@@ -423,24 +532,37 @@ function renderStats(){
   $('answeredCount').textContent=`${s.a} Antworten`;
   $('mistakeCount').textContent=`${state.mistakes.length} Fehler · ${dueCount()} ${tr('dueToday')}`;
   if($('progressLabel'))$('progressLabel').textContent=tr('sessionStats');
+  renderLastSession();
 }
+
 function renderMistakes(){
   if(!$('mistakeList'))return;
+  const summary=$('mistakeSummary');
+  if(summary)summary.innerHTML=`<span>${state.mistakes.length} Fehler</span><span>${dueCount()} fällig</span>`;
   if(!state.mistakes.length){$('mistakeList').innerHTML=`<p class="muted">Keine Fehler gespeichert. ${dueCount()} ${tr('dueToday')}.</p>`;return}
-  $('mistakeList').innerHTML=state.mistakes.map((m,idx)=>`<div class="mistake-item">
+  const typeCounts=state.mistakes.reduce((a,m)=>{const k=label(m.type||m.item?.exerciseType);a[k]=(a[k]||0)+1;return a},{})
+  const chips=Object.entries(typeCounts).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([k,v])=>`<span class="mistake-chip">${esc(k)} · ${v}</span>`).join('');
+  $('mistakeList').innerHTML=`<div class="mistake-overview"><strong>Schwerpunkte:</strong><div>${chips}</div><button class="mistake-retry-all" id="retryAllMistakes">Fehlerbank als Sitzung üben</button></div>`+state.mistakes.map((m,idx)=>`<div class="mistake-item">
+    <div class="mistake-meta"><span>${esc(label(m.type||m.item.exerciseType))}</span><span>${m.count?`${m.count}× falsch`:''}</span><span>${new Date(m.when||Date.now()).toLocaleDateString('de-DE')}</span></div>
     <strong>${esc(m.item.prompt)}</strong><br>
     <span>${tr('yourAnswer')}: ${esc(m.user||'—')}</span><br>
     <span>${tr('answer')}: ${esc(m.item.answer||'—')}</span>
     <p>${safeHtml(m.item.explanation||'')}</p>
     <button class="mistake-retry" data-idx="${idx}">${tr('retryMistake')} →</button>
   </div>`).join('');
+  const retryAll=$('retryAllMistakes');
+  if(retryAll)retryAll.onclick=()=>{
+    route('learn');
+    state.overridePool=state.mistakes.map(m=>m.item).filter(Boolean);state.poolItems=state.overridePool;state.poolKey='mistake-bank-session';
+    state.index=0;state.started=true;state.checked=false;state.selectedChoice='';state.mode='practice';
+    renderExercise();saveLastSession();
+  };
   document.querySelectorAll('.mistake-retry').forEach(b=>b.onclick=()=>{
     const m=state.mistakes[Number(b.dataset.idx)];if(!m)return;
-    // Launch a single-item practice session
-    route('learn');selectPath(state.path);
-    state.poolItems=[m.item];state.poolKey='retry:'+m.id;
+    route('learn');
+    state.overridePool=[m.item];state.poolItems=state.overridePool;state.poolKey='retry:'+m.id;
     state.index=0;state.started=true;state.checked=false;state.selectedChoice='';
-    renderExercise();
+    renderExercise();saveLastSession();
   });
 }
 
@@ -494,7 +616,7 @@ function launchVerbPractice(){
   state.mode='practice';
   setMode('practice');
   state.started=true;
-  renderExercise();
+  renderExercise();saveLastSession();
 }
 
 init();

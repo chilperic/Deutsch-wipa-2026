@@ -1,6 +1,6 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "v26-content-restored-responsive-2026-07-03",
+  "build": "v27-learning-platform-core-2026-07-03",
   "base": "deutsch-wipa-2026-v7-clean-ui-audit.zip",
   "implemented": [
     "Grouped themes: Appearance + Flavor",
@@ -88,9 +88,9 @@
   "repository_ready": true,
   "readme": "README.md",
   "license_file": "LICENSE",
-  "version": "26.0.0",
+  "version": "27.0.0",
   "description": "Content-rich B1/B2 Beruf trainer restored from v7 with internal conjugator, 56 modules, 1077 verbs, and responsive shell fixes.",
-  "implemented_v26": [
+  "implemented_v27": [
     "Restored v7 content-rich app as baseline instead of reduced v25 shell",
     "Kept internal conjugator with 1077 verbs",
     "Kept 56 manifest modules and 5048 normalized manifest items in validation",

@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css?v=26.0.0">
+  <link rel="stylesheet" href="styles.css?v=27.0.0">
 </head>
 <body>
   <a class="skip-link" href="#primaryAction">Zur Übung springen</a>
@@ -20,7 +20,7 @@
         <img src="assets/icon.svg" alt="" class="brand-mark">
         <div>
           <div class="brand-title">Deutsch-WiPA</div>
-          <div class="brand-subtitle">B1/B2 · Beruf · Grammatik · Verben</div>
+          <div class="brand-subtitle">B1/B2 · Beruf · Verben · Fehlerbank</div>
         </div>
       </div>
       <nav class="top-tabs" aria-label="Hauptbereiche">
@@ -41,6 +41,27 @@
         <div class="eyebrow">Lernpfad</div>
         <h3>Was willst du trainieren?</h3>
       </div>
+
+      <div class="profile-card" aria-label="Profil und lokaler Speicher">
+        <label for="profileName" class="eyebrow">Profil</label>
+        <input id="profileName" class="input profile-input" type="text" autocomplete="name" placeholder="Dein Name">
+        <div id="profileSaveStatus" class="profile-status">Fortschritt wird lokal gespeichert.</div>
+        <div class="profile-actions">
+          <button id="exportProgressButton" class="mini-action" type="button">Export</button>
+          <label class="mini-action file-action" for="importProgressInput">Import</label>
+          <input id="importProgressInput" type="file" accept="application/json,.json" class="hidden">
+        </div>
+      </div>
+
+      <div class="resume-card" aria-label="Letzte Sitzung">
+        <div class="eyebrow">Letzte Sitzung</div>
+        <div id="lastSessionSummary" class="last-session-summary">Noch keine Sitzung gespeichert.</div>
+        <div class="resume-actions">
+          <button id="resumeSessionButton" class="resume-button" type="button" disabled>Fortsetzen</button>
+          <button id="freshSessionButton" class="mini-action" type="button">Neu</button>
+        </div>
+      </div>
+
       <div id="pathNav" class="path-nav"></div>
 
       <div class="module-filter-card">
@@ -179,6 +200,10 @@
             <h2>Fehlerbank</h2>
             <p>Wiederhole falsche Antworten und fällige Items.</p>
           </div>
+          <div class="hero-stats" id="mistakeSummary">
+            <span>0 Fehler</span>
+            <span>0 fällig</span>
+          </div>
           <button id="clearMistakes" class="danger-soft">Fehlerbank leeren</button>
         </section>
         <div id="mistakeList" class="mistake-list"></div>
@@ -228,6 +253,6 @@
 
     <div id="backdrop" class="backdrop hidden"></div>
   </div>
-  <script src="app.js?v=26.0.0" type="module"></script>
+  <script src="app.js?v=27.0.0" type="module"></script>
 </body>
 </html>

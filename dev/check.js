@@ -21,4 +21,14 @@ const verbs = readJson('data/conjugator_verbs.json').verbs;
 if (!verbs.antworten || verbs.antworten.part !== 'geantwortet' || /\btwort/.test((verbs.antworten.present||[]).join(' ')+' '+(verbs.antworten.part||'')+' '+(verbs.antworten.zu||''))) fail('antworten is still corrupted');
 if (verbs.arbeiten.part !== 'gearbeitet') fail('arbeiten participle wrong');
 if (verbs.bekommen.part !== 'bekommen') fail('bekommen participle wrong');
-console.log(`OK: ${mods.length} modules, ${total} manifest items, ${Object.keys(verbs).length} verbs.`);
+
+const html = fs.readFileSync('index.html','utf8');
+for (const token of ['profileName','resumeSessionButton','lastSessionSummary','exportProgressButton','importProgressInput','mistakeSummary']) {
+  if (!html.includes(token)) fail(`Missing v27 UI element ${token}`);
+}
+for (const token of ['PROFILE_KEY','LAST_SESSION_KEY','saveLastSession','restoreLastSession','exportProgress','importProgress','mistake-retry-all']) {
+  if (!app.includes(token)) fail(`Missing v27 learning-platform function/token ${token}`);
+}
+if (!html.includes('styles.css?v=27.0.0') || !html.includes('app.js?v=27.0.0')) fail('v27 cache-busting version not applied');
+
+console.log(`OK: ${mods.length} modules, ${total} manifest items, ${Object.keys(verbs).length} verbs; v27 profile/resume/Fehlerbank UI present.`);

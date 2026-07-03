@@ -1,4 +1,4 @@
-const CACHE = 'dwipa-v26-content-restored-20260703';
+const CACHE = 'dwipa-v27-content-restored-20260703';
 const SHELL = ['./','./index.html','./styles.css','./app.js','./data-manifest.json','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png','./data/conjugator_verbs.json'];
 
 self.addEventListener('install', e => e.waitUntil(
