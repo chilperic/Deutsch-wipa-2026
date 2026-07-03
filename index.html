@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17223b">
-  <meta name="description" content="Deutsch-WiPA 2026 is a B1/B2 Beruf learning trainer with internal verb conjugation, grammar modules, workplace vocabulary, mistake review, and spaced repetition.">
+  <meta name="description" content="Deutsch-WiPA 2026 is a B1/B2 Beruf learning trainer with internal verb conjugation, grammar modules, workplace vocabulary, mistake review, spaced repetition, profile saving, and resumable sessions.">
+  <meta name="deutsch-wipa-build" content="v28.0.0">
   <title>Deutsch-WiPA 2026 · B1/B2 Berufstrainer</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css?v=27.0.0">
+  <link rel="stylesheet" href="styles.css?v=28.0.0">
 </head>
-<body>
+<body data-build="v28.0.0">
   <a class="skip-link" href="#primaryAction">Zur Übung springen</a>
   <div id="app" class="app">
     <header class="topbar">
@@ -21,6 +22,7 @@
         <div>
           <div class="brand-title">Deutsch-WiPA</div>
           <div class="brand-subtitle">B1/B2 · Beruf · Verben · Fehlerbank</div>
+          <div class="build-line"><span id="buildBadge" class="build-badge">v28.0.0</span><span class="build-note">Deployment-konsistent</span></div>
         </div>
       </div>
       <nav class="top-tabs" aria-label="Hauptbereiche">
@@ -253,6 +255,7 @@
 
     <div id="backdrop" class="backdrop hidden"></div>
   </div>
-  <script src="app.js?v=27.0.0" type="module"></script>
+  <script>window.DEUTSCH_WIPA_BUILD={app:'Deutsch-WiPA 2026',version:'28.0.0',build:'v28-deployment-consistent-learning-platform',serviceWorker:'disabled-during-active-development'};</script>
+  <script src="app.js?v=28.0.0" type="module"></script>
 </body>
 </html>

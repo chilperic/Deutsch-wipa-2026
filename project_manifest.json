@@ -1,6 +1,6 @@
 {
   "project": "Deutsch-wipa-2026",
-  "build": "v27-learning-platform-core-2026-07-03",
+  "build": "v28-deployment-consistent-learning-platform-2026-07-03",
   "base": "deutsch-wipa-2026-v7-clean-ui-audit.zip",
   "implemented": [
     "Grouped themes: Appearance + Flavor",
@@ -88,7 +88,7 @@
   "repository_ready": true,
   "readme": "README.md",
   "license_file": "LICENSE",
-  "version": "27.0.0",
+  "version": "28.0.0",
   "description": "Content-rich B1/B2 Beruf trainer restored from v7 with internal conjugator, 56 modules, 1077 verbs, and responsive shell fixes.",
   "implemented_v27": [
     "Restored v7 content-rich app as baseline instead of reduced v25 shell",
@@ -98,5 +98,14 @@
     "Improved smartphone responsiveness and bottom navigation overflow",
     "Added resources page with Mein Deutschbuch and Mein Deutschbuch resource",
     "Added no-cache local server on port 8000"
+  ],
+  "implemented_v28": [
+    "deployment-consistent build self-test",
+    "service worker disabled/unregistered",
+    "synchronized version strings",
+    "content language code mapping",
+    "namespaced SRS keys",
+    "namespaced Fehlerbank keys",
+    "strict validator for online drift"
   ]
 }

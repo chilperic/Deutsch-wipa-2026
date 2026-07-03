@@ -540,3 +540,9 @@ button:disabled { opacity: .5; cursor: not-allowed; }
   .profile-actions,.resume-actions{display:grid;grid-template-columns:1fr 1fr;}
   .resume-button{grid-column:1/-1;}
 }
+
+/* v28 deployment consistency and online-debug badge */
+.build-line{display:flex;align-items:center;gap:.45rem;margin-top:.2rem;flex-wrap:wrap}
+.build-badge{display:inline-flex;align-items:center;min-height:1.25rem;padding:.16rem .48rem;border-radius:999px;background:rgba(35,92,102,.10);border:1px solid rgba(35,92,102,.26);font-size:.72rem;font-weight:800;color:var(--primary);letter-spacing:.02em}
+.build-note{font-size:.72rem;color:var(--muted)}
+@media (max-width:700px){.build-note{display:none}.build-badge{font-size:.68rem}.brand-subtitle{font-size:.78rem}}

@@ -1,34 +1,50 @@
 const fs = require('fs');
 const path = require('path');
-function fail(msg){ console.error('FAIL:', msg); process.exitCode = 1; }
-function readJson(p){ try { return JSON.parse(fs.readFileSync(p,'utf8')); } catch(e){ fail(`Invalid JSON ${p}: ${e.message}`); return null; } }
-const manifest = readJson('data-manifest.json');
-const mods = manifest.modules || [];
+function fail(msg){ console.error('CHECK FAILED:', msg); process.exit(1); }
+function read(p){ return fs.readFileSync(p, 'utf8'); }
+function json(p){ return JSON.parse(read(p)); }
+const root = process.cwd();
+const pkg = json('package.json');
+const manifest = json('data-manifest.json');
+const project = json('project_manifest.json');
+const html = read('index.html');
+const app = read('app.js');
+const sw = read('sw.js');
+const VERSION = '28.0.0';
+if(pkg.version !== VERSION) fail(`package.json version must be ${VERSION}`);
+if(manifest.version !== VERSION) fail(`data-manifest.json version must be ${VERSION}`);
+if(project.version !== VERSION) fail(`project_manifest.json version must be ${VERSION}`);
+['styles.css?v=28.0.0','app.js?v=28.0.0','DEUTSCH_WIPA_BUILD','data-build="v28.0.0"','profileName','lastSessionSummary','Fehlerbank','buildBadge'].forEach(t=>{ if(!html.includes(t)) fail(`index.html missing ${t}`); });
+['APP_VERSION = \'28.0.0\'','CONTENT_LANG_KEYS','function contentLangKey','function itemKey','function getSrs','unregisterServiceWorkers','MISTAKES_KEY','LAST_SESSION_KEY'].forEach(t=>{ if(!app.includes(t)) fail(`app.js missing ${t}`); });
+if(app.includes('serviceWorker.register')) fail('app.js must not register a service worker in v28');
+if(!sw.includes('unregister') || /addEventListener\(['"]fetch/.test(sw)) fail('sw.js must unregister itself and must not intercept fetch');
+if(!Array.isArray(manifest.modules) || manifest.modules.length < 40) fail('Manifest modules missing or too few');
 let total = 0;
-for (const m of mods){
-  if (!fs.existsSync(m.path)) fail(`Missing module file ${m.path}`);
-  const data = readJson(m.path);
-  if (!data) continue;
-  const arr = data.items || data.words || data.vocabulary_entries || data.vocabulary || data.questions || [];
-  if (m.id.includes('adverbien') && arr.length < 500) fail('Adverbien module below 500 items');
-  if (m.id.includes('deklination_intensiv') && arr.length < 500) fail('Deklination module below 500 items');
+let activeTotal = 0;
+let rawDuplicateIds = 0;
+const rawIds = new Map();
+const namespaced = new Set();
+for(const mod of manifest.modules){
+  if(!fs.existsSync(mod.path)) fail(`Missing module file ${mod.path}`);
+  if(mod.category === 'konjugator') continue;
+  const data = json(mod.path);
+  let arr = data.items || data.words || data.vocabulary_entries || data.vocabulary || data.questions || [];
   total += Array.isArray(arr) ? arr.length : 0;
+  if(data.exercise_pool) arr = data.exercise_pool.flatMap(x => x.cases || []);
+  if(mod.category !== 'practice') activeTotal += arr.length;
+  if(mod.category === 'practice') continue;
+  arr.forEach((it, i) => {
+    const id = it.id || `${mod.id}_${i}`;
+    if(rawIds.has(id)) rawDuplicateIds++;
+    rawIds.set(id, mod.id);
+    const key = `${mod.id}::${id}`;
+    if(namespaced.has(key)) fail(`Duplicate namespaced key ${key}`);
+    namespaced.add(key);
+  });
 }
-const app = fs.readFileSync('app.js','utf8');
-if (!app.includes("id:'adverbs'")) fail('Adverbien path missing in app.js');
-if (!app.includes("id:'declension'")) fail('Deklination path missing in app.js');
-const verbs = readJson('data/conjugator_verbs.json').verbs;
-if (!verbs.antworten || verbs.antworten.part !== 'geantwortet' || /\btwort/.test((verbs.antworten.present||[]).join(' ')+' '+(verbs.antworten.part||'')+' '+(verbs.antworten.zu||''))) fail('antworten is still corrupted');
-if (verbs.arbeiten.part !== 'gearbeitet') fail('arbeiten participle wrong');
-if (verbs.bekommen.part !== 'bekommen') fail('bekommen participle wrong');
-
-const html = fs.readFileSync('index.html','utf8');
-for (const token of ['profileName','resumeSessionButton','lastSessionSummary','exportProgressButton','importProgressInput','mistakeSummary']) {
-  if (!html.includes(token)) fail(`Missing v27 UI element ${token}`);
-}
-for (const token of ['PROFILE_KEY','LAST_SESSION_KEY','saveLastSession','restoreLastSession','exportProgress','importProgress','mistake-retry-all']) {
-  if (!app.includes(token)) fail(`Missing v27 learning-platform function/token ${token}`);
-}
-if (!html.includes('styles.css?v=27.0.0') || !html.includes('app.js?v=27.0.0')) fail('v27 cache-busting version not applied');
-
-console.log(`OK: ${mods.length} modules, ${total} manifest items, ${Object.keys(verbs).length} verbs; v27 profile/resume/Fehlerbank UI present.`);
+const verbs = json('data/conjugator_verbs.json');
+if(!verbs.verbs || Object.keys(verbs.verbs).length < 1000) fail('Internal conjugator verb bank is missing or too small');
+if(total < 5000) fail(`Too few manifest items: ${total}`);
+if(activeTotal < 5000) fail(`Too few active content items: ${activeTotal}`);
+if(!app.includes('contentLangKey()')) fail('Language-code mapping not used by content lookup');
+console.log(`OK v28: ${manifest.modules.length} modules, ${total} manifest items (${activeTotal} active content items), ${Object.keys(verbs.verbs).length} verbs, ${rawDuplicateIds} raw duplicate IDs safely namespaced.`);

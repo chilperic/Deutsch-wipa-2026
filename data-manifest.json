@@ -1,5 +1,5 @@
 {
-  "version": "2026.06.10-v6-adverbien-deklination",
+  "version": "28.0.0",
   "modules": [
     {
       "id": "data_conjugator_verbs",
@@ -397,5 +397,6 @@
       "count": 45
     }
   ],
-  "focus": "Grammar-first app with corrected verb reference, fast startup, tense filters and capped practice sessions."
+  "focus": "Grammar-first app with corrected verb reference, fast startup, tense filters and capped practice sessions.",
+  "build": "v28-deployment-consistent-learning-platform"
 }

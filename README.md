@@ -1,18 +1,16 @@
-# Deutsch-WiPA 2026 · v27 Learning Platform Core
+# Deutsch-WiPA 2026 · v28 Deployment-Consistent Learning Platform
 
-A browser-based B1/B2 Beruf learning trainer with restored internal content depth, internal verb conjugation, profile storage, latest-session resume, Fehlerbank, spaced repetition, and responsive desktop/mobile layout.
+v28 fixes the online/local inconsistency detected in v27 while preserving the rich v7/v26 content base.
 
-## Core features
+## What v28 fixes
 
-- 56 loaded learning modules from the restored content architecture.
-- 5,048 manifest items.
-- 1,077 internal conjugator verbs.
-- User profile/name saved locally in the browser.
-- Latest session saved and resumable.
-- Fehlerbank with grouped mistake types and retry sessions.
-- Export/import of profile, progress, SRS and mistakes.
-- Internal verb tables and practice; external resources are optional only.
-- Smartphone-friendly sidebar drawer and bottom navigation behavior.
+- Visible build badge: `v28.0.0`.
+- `window.DEUTSCH_WIPA_BUILD` self-test for online verification.
+- Service worker disabled and self-unregistering to prevent stale GitHub Pages shells.
+- All version strings synchronized to `28.0.0`.
+- Language-code mapping fixed: UI codes such as `fr`, `ar`, `fa` now map to content keys such as `French`, `Arabic`, `Persian`.
+- SRS and Fehlerbank keys are namespaced by module, e.g. `grammatik_beruf::beruf_001`, avoiding collisions between modules.
+- Profile, local progress, latest session, Fehlerbank, export/import, and the internal 1,077-verb conjugator are preserved.
 
 ## Local test
 
@@ -21,9 +19,11 @@ deactivate 2>/dev/null || true
 hash -r
 
 cd ~/Downloads
-rm -rf deutsch-wipa-2026-v27-learning-platform-core
-unzip -o deutsch-wipa-2026-v27-learning-platform-core.zip
-cd deutsch-wipa-2026-v27-learning-platform-core
+
+rm -rf deutsch-wipa-2026-v28-deployment-consistent-learning-platform
+unzip -o deutsch-wipa-2026-v28-deployment-consistent-learning-platform.zip
+
+cd deutsch-wipa-2026-v28-deployment-consistent-learning-platform
 
 node --check app.js && \
 node dev/check.js && \
@@ -36,9 +36,15 @@ python3 dev/no_cache_server.py 8000
 Open:
 
 ```text
-http://localhost:8000/?v=27.0.0
+http://localhost:8000/?v=28.0.0
 ```
 
-## Design rule
+## Online deployment check
 
-This version restores function first. Do not strip modules, verb training, review, profile, session resume, or Fehlerbank for the sake of visual minimalism.
+After pushing to GitHub Pages, verify that the deployed HTML is not stale:
+
+```bash
+curl -L https://chilperic.github.io/Deutsch-wipa-2026/ | grep -E "v28.0.0|DEUTSCH_WIPA_BUILD|profileName|lastSessionSummary|Fehlerbank"
+```
+
+Expected: matching lines. If not, GitHub Pages is still serving the wrong artifact or a stale shell.

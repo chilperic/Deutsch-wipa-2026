@@ -1,7 +1,7 @@
 {
-  "name": "Deutsch-WiPA 2026 · Grammar & Conjugator",
-  "short_name": "WiPA Grammar",
-  "description": "Grammar-first German B1/B2 app with a 1000+ verb conjugator, workplace vocabulary, and smart mistake review.",
+  "name": "Deutsch-WiPA 2026 · B1/B2 Berufstrainer",
+  "short_name": "Deutsch-WiPA",
+  "description": "B1/B2 Beruf learning trainer with profile, Fehlerbank, resumable sessions, grammar modules, and internal conjugator.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FFF7EA",
