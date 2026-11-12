@@ -47,3 +47,7 @@ curl -L https://chilperic.github.io/Deutsch-wipa-2026/ | grep -E "v28.1.0|DEUTSC
 ```
 
 Expected: matching lines. If not, GitHub Pages is still serving the wrong artifact or a stale shell.
+
+## Maintaining this repository
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the directory map, output conventions, provenance and cleanup boundaries.
